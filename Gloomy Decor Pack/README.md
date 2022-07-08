@@ -23,11 +23,6 @@ A: Maybe.<br>
 Q: Баланс?<br>
 A: Возможно.<br>
 #-------------------------------------------------------------#<br>
-Q: Why do I even need this bunker roofs?<br>
-A: Pure aesthetics.<br>
-Q: Зачем мне вообще эти бункерные крыши?<br>
-A: Ради эстетики.<br>
-#-------------------------------------------------------------#<br>
 Q: Why my signs isn't displaying crops?<br>
 A: I really don't know.<br>
 Q: Почему мои таблички не отображают посевы?<br>
