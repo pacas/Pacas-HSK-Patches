@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 파니엘 파괴 -->
+
+  <PN_KnowColonyAutomatonDied.stages.0.label>Наш автоматон уничтожена</PN_KnowColonyAutomatonDied.stages.0.label>
+  <PN_KnowColonyAutomatonDied.stages.0.description>Одна из наших автоматонов уничтожена. Она была нашей собственностью.</PN_KnowColonyAutomatonDied.stages.0.description>
+
+  <PN_AutomatonWithGoodOpinionDied.stages.0.label>Моя подруга {0} уничтожена</PN_AutomatonWithGoodOpinionDied.stages.0.label>
+  <PN_AutomatonWithGoodOpinionDied.stages.0.description>Такой замечательный автоматон, ушедшая навсегда. Каждый новый день всё мрачнее.</PN_AutomatonWithGoodOpinionDied.stages.0.description>
+
+  <PN_AutomatonWithBadOpinionDied.stages.0.label>Моя соперница {0} уничтожена</PN_AutomatonWithBadOpinionDied.stages.0.label>
+  <PN_AutomatonWithBadOpinionDied.stages.0.description>Этот кусок металла наконец-то уничтожен.</PN_AutomatonWithBadOpinionDied.stages.0.description>
+
+  <PN_WitnessedDestroyedAlly.stages.0.label>Видел уничтожение союзника</PN_WitnessedDestroyedAlly.stages.0.label>
+  <PN_WitnessedDestroyedAlly.stages.0.description>Я видел, как одна из наших автоматонов была уничтожена. Она была нашей собственностью.</PN_WitnessedDestroyedAlly.stages.0.description>
+
+
+  <!-- 파니엘 파괴 for 파니엘 -->
+
+  <PN_KnowColonyAutomatonDiedforPN.stages.0.label>Наш автоматон уничтожена</PN_KnowColonyAutomatonDiedforPN.stages.0.label>
+  <PN_KnowColonyAutomatonDiedforPN.stages.0.description>Моя коллега была уничтожена. Выполнила ли она свои обязанности?</PN_KnowColonyAutomatonDiedforPN.stages.0.description>
+
+  <PN_AutomatonWithGoodOpinionDiedforPN.stages.0.label>Моя подруга {0} уничтожена</PN_AutomatonWithGoodOpinionDiedforPN.stages.0.label>
+  <PN_AutomatonWithGoodOpinionDiedforPN.stages.0.description>Моя подруга погибла. Так грустно, что мы не сможем больше вместе выполнять свои обязанности.</PN_AutomatonWithGoodOpinionDiedforPN.stages.0.description>
+
+  <PN_AutomatonWithBadOpinionDiedforPN.stages.0.label>Моя соперница {0} уничтожена</PN_AutomatonWithBadOpinionDiedforPN.stages.0.label>
+  <PN_AutomatonWithBadOpinionDiedforPN.stages.0.description>Этот кусок металла наконец-то уничтожен.</PN_AutomatonWithBadOpinionDiedforPN.stages.0.description>
+
+  <PN_WitnessedDestroyedAllyforPN.stages.0.label>Видела уничтожение союзника</PN_WitnessedDestroyedAllyforPN.stages.0.label>
+  <PN_WitnessedDestroyedAllyforPN.stages.0.description>Я видела, как одна из наших автоматонов была уничтожена. Выполнила ли она свои обязанности?</PN_WitnessedDestroyedAllyforPN.stages.0.description>
+
+
+  <!-- 파니엘 실종 -->
+
+  <PN_ColonyAutomatonLost.stages.0.label>Наш автоматон пропал</PN_ColonyAutomatonLost.stages.0.label>
+  <PN_ColonyAutomatonLost.stages.0.description>Одна из наших автоматонов пропала. Она была нашей собственностью.</PN_ColonyAutomatonLost.stages.0.description>
+
+  <PN_AutomatonWithGoodOpinionLost.stages.0.label>Моя подруга {0} пропала</PN_AutomatonWithGoodOpinionLost.stages.0.label>
+  <PN_AutomatonWithGoodOpinionLost.stages.0.description>Такой замечательный автоматон, исчезла. Каждый новый день всё мрачнее.</PN_AutomatonWithGoodOpinionLost.stages.0.description>
+
+  <PN_AutomatonWithBadOpinionLost.stages.0.label>Моя соперница {0} пропала</PN_AutomatonWithBadOpinionLost.stages.0.label>
+  <PN_AutomatonWithBadOpinionLost.stages.0.description>Этот кусок металла наконец-то исчез.</PN_AutomatonWithBadOpinionLost.stages.0.description>
+
+
+  <!-- 파니엘 실종 for 파니엘 -->
+
+  <PN_ColonyAutomatonLostforPN.stages.0.label>Наш автоматон пропала</PN_ColonyAutomatonLostforPN.stages.0.label>
+  <PN_ColonyAutomatonLostforPN.stages.0.description>Моя коллега пропала. Выполнила ли она свой долг?</PN_ColonyAutomatonLostforPN.stages.0.description>
+
+  <PN_AutomatonWithGoodOpinionLostforPN.stages.0.label>Моя подруга {0} пропала</PN_AutomatonWithGoodOpinionLostforPN.stages.0.label>
+  <PN_AutomatonWithGoodOpinionLostforPN.stages.0.description>Моя подруга пропала. Так грустно, что мы не сможем больше вместе выполнять свои обязанности.</PN_AutomatonWithGoodOpinionLostforPN.stages.0.description>
+
+  <PN_AutomatonWithBadOpinionLostforPN.stages.0.label>Моя соперница {0} пропала</PN_AutomatonWithBadOpinionLostforPN.stages.0.label>
+  <PN_AutomatonWithBadOpinionLostforPN.stages.0.description>Этот кусок металла наконец-то исчез.</PN_AutomatonWithBadOpinionLostforPN.stages.0.description>
+
+
+  <!-- 파니엘 분해 -->
+
+  <PN_ColonyAutomatondisassemble.stages.0.label>Наш автоматон разобрана</PN_ColonyAutomatondisassemble.stages.0.label>
+  <PN_ColonyAutomatondisassemble.stages.0.description>Одну из наших автоматонов разобрали. Жаль, что мы больше её не увидим.</PN_ColonyAutomatondisassemble.stages.0.description>
+
+  <PN_AutomatonWithGoodOpiniondisassemble.stages.0.label>Моя подруга {0} разобрана</PN_AutomatonWithGoodOpiniondisassemble.stages.0.label>
+  <PN_AutomatonWithGoodOpiniondisassemble.stages.0.description>Такой замечательный автоматон, разобрана. Это было решение колонии, но мне всё-равно трудно это принять.</PN_AutomatonWithGoodOpiniondisassemble.stages.0.description>
+
+  <PN_AutomatonWithBadOpiniondisassemble.stages.0.label>Моя соперница {0} разобрана</PN_AutomatonWithBadOpiniondisassemble.stages.0.label>
+  <PN_AutomatonWithBadOpiniondisassemble.stages.0.description>Этот кусок металла наконец-то разобрали.</PN_AutomatonWithBadOpiniondisassemble.stages.0.description>
+
+
+  <!-- 파니엘 분해 for 파니엘 -->
+
+  <PN_ColonyAutomatondisassembleforPN.stages.0.label>Наш автоматон разобрана</PN_ColonyAutomatondisassembleforPN.stages.0.label>
+  <PN_ColonyAutomatondisassembleforPN.stages.0.description>Мою коллегу разобрали. Выполнила ли она свой долг?</PN_ColonyAutomatondisassembleforPN.stages.0.description>
+
+  <PN_AutomatonWithGoodOpiniondisassembleforPN.stages.0.label>Моя подруга {0} разобрана</PN_AutomatonWithGoodOpiniondisassembleforPN.stages.0.label>
+  <PN_AutomatonWithGoodOpiniondisassembleforPN.stages.0.description>Мою подругу разобрали. Так грустно, что мы не сможем больше вместе выполнять свои обязанности.</PN_AutomatonWithGoodOpiniondisassembleforPN.stages.0.description>
+
+  <PN_AutomatonWithBadOpiniondisassembleforPN.stages.0.label>Моя соперница {0} разобрана</PN_AutomatonWithBadOpiniondisassembleforPN.stages.0.label>
+  <PN_AutomatonWithBadOpiniondisassembleforPN.stages.0.description>Этот кусок металла наконец-то разобрали.</PN_AutomatonWithBadOpiniondisassembleforPN.stages.0.description>
+
+
+  <!-- 파니엘 추방 -->
+
+  <PN_AutomatonBanished.stages.0.label>Автоматон изгнана</PN_AutomatonBanished.stages.0.label>
+  <PN_AutomatonBanished.stages.0.description>Мы только что прогнали автоматона. Я надеюсь, что она сможет найти себе нового хозяина.</PN_AutomatonBanished.stages.0.description>
+
+  <PN_AutomatonBanishedToDie.stages.0.label>Автоматон изгнана на уничтожение</PN_AutomatonBanishedToDie.stages.0.label>
+  <PN_AutomatonBanishedToDie.stages.0.description>Мы изгнали автоматона у которой нет и шанса на выживание.</PN_AutomatonBanishedToDie.stages.0.description>
+
+
+  <!-- 파니엘 추방 for 파니엘 -->
+
+  <PN_AutomatonBanishedforPN.stages.0.label>Автоматон изгнана</PN_AutomatonBanishedforPN.stages.0.label>
+  <PN_AutomatonBanishedforPN.stages.0.description>Мы только что прогнали мою коллегу. Я надеюсь, что она сможет найти себе нового хозяина.</PN_AutomatonBanishedforPN.stages.0.description>
+
+  <PN_AutomatonBanishedToDieforPN.stages.0.label>Автоматон изгнана на уничтожение</PN_AutomatonBanishedToDieforPN.stages.0.label>
+  <PN_AutomatonBanishedToDieforPN.stages.0.description>Мы изгнали коллегу у которой нет и шанса на выживание.</PN_AutomatonBanishedToDieforPN.stages.0.description>
+
+
+</LanguageData>

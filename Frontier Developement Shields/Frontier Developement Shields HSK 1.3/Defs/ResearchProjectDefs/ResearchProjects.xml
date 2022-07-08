@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>ShieldGenerator</defName>
+		<label>Shield Generator</label>
+		<description>This shield generator will stop incoming projectiles while allowing ones out providing the ultimate in static defenses.  Also protects against artillery, hostile pod insertion, falling meteors, etc.  You name it, we stop it.</description>
+		<baseCost>3000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>Buildings_SK</tab>
+		<prerequisites>
+			<li>Super_matter_E2</li>
+		</prerequisites>
+		<researchViewX>23</researchViewX>
+		<researchViewY>11</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ShieldGeneratorLarge</defName>
+		<label>Large Shield</label>
+		<description>This larger shield generator sustains a larger field and more heat before collapsing.</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>Buildings_SK</tab>
+		<prerequisites>
+			<li>ShieldGenerator</li>
+		</prerequisites>
+		<researchViewX>24</researchViewX>
+		<researchViewY>11</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ShieldGeneratorPortable</defName>
+		<label>Portable Shield</label>
+		<description>A portable shield generator with small internal battery.</description>
+		<baseCost>4500</baseCost>
+		<techLevel>Ultra</techLevel>
+		<tab>Buildings_SK</tab>
+		<prerequisites>
+			<li>ShieldGenerator</li>
+		</prerequisites>
+		<researchViewX>24</researchViewX>
+		<researchViewY>12</researchViewY>
+	</ResearchProjectDef>
+</Defs>

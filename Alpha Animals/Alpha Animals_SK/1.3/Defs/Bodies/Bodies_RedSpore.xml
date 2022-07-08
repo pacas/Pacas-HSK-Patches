@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyDef>
+		<defName>AA_RedSporeBody</defName>
+		<label>red spore</label>
+		<corePart>
+			<def>AA_JellyfishMainBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>AA_Nucleus</def>
+					<customLabel>nucleus</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				
+				<li>
+					<def>AA_HydrogenSac</def>
+					<customLabel>left hydrogen sac</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>AA_HydrogenSac</def>
+					<customLabel>right hydrogen sac</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				
+				
+				<li>
+					<def>AA_JellyfishTentacle</def>
+					<customLabel>first tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+
+				</li>
+				<li>
+					<def>AA_JellyfishTentacle</def>
+					<customLabel>second tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+
+				</li>
+				<li>
+					<def>AA_JellyfishTentacle</def>
+					<customLabel>third tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+
+				</li>
+				<li>
+					<def>AA_JellyfishTentacle</def>
+					<customLabel>fourth tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+
+				</li>
+
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

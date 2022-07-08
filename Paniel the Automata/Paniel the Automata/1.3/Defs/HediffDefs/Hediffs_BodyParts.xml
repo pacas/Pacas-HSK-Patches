@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--==================================== 베이스 ====================================-->
+    <HediffDef Name="PN_ImplantHediffBase" Abstract="True">
+        <hediffClass>Hediff_Implant</hediffClass>
+        <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+        <isBad>false</isBad>
+        <priceImpact>true</priceImpact>
+        <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+    </HediffDef>
+
+    <HediffDef Name="PN_AddedBodyPartBase" ParentName="PN_ImplantHediffBase" Abstract="True">
+        <hediffClass>Hediff_AddedPart</hediffClass>
+        <priceImpact>true</priceImpact>
+    </HediffDef>
+
+    <ThingCategoryDef>
+        <defName>PN_BodyPartsAutomaton</defName>
+        <label>Automaton</label>
+        <parent>BodyParts</parent>
+        <iconPath>Things/Item/Health/HealthItem</iconPath>
+    </ThingCategoryDef>
+
+    <ThingDef Name="PN_BodyPartBase" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <altitudeLayer>Item</altitudeLayer>
+        <tickerType>Never</tickerType>
+        <alwaysHaulable>true</alwaysHaulable>
+        <isTechHediff>true</isTechHediff>
+        <pathCost>14</pathCost>
+        <tradeability>Buyable</tradeability>
+        <statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>0.7</Flammability>
+			<Beauty>-4</Beauty>
+			<Mass>1.5</Mass>
+			<Bulk>2</Bulk>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+        <tradeTags>
+            <li>PN_BodyParts</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+    </ThingDef>
+
+    <ThingDef Name="PN_BodyPartNormalBase" ParentName="PN_BodyPartBase" Abstract="True">
+        <techLevel>Industrial</techLevel>
+        <thingCategories>
+            <li>PN_BodyPartsAutomaton</li>
+        </thingCategories>
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+            <color>(247,180,130)</color>
+        </graphicData>
+        <tradeTags>
+            <li>PN_BodyPartsNormal</li>
+        </tradeTags>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkillLearnPerTick>0.8</workSkillLearnPerTick>	  
+			<workSkill>Crafting</workSkill>
+			<workAmount>2500</workAmount>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>EPOEAssembling</soundWorking>
+            <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Prosthetics</researchPrerequisite>
+            <recipeUsers>
+                <li>PN_AutomatonBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef Name="PN_BodyPartRoyalBase" ParentName="PN_BodyPartBase" Abstract="True">
+        <techLevel>Spacer</techLevel>
+        <thingCategories>
+            <li>PN_BodyPartsAutomaton</li>
+        </thingCategories>
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+            <color>(189,169,118)</color>
+        </graphicData>
+        <tradeTags>
+            <li>PN_BodyPartsRoyal</li>
+        </tradeTags>
+        <recipeMaker>
+            <workSpeedStat>ElectronicCraftingSpeed</workSpeedStat>
+			<workSkillLearnPerTick>0.8</workSkillLearnPerTick>	  
+			<workSkill>Crafting</workSkill>
+			<workAmount>8000</workAmount>
+			<effectWorking>Smith</effectWorking>
+			<soundWorking>EPOEAssembling</soundWorking>
+            <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Bionics</researchPrerequisite>
+            <recipeUsers>
+                <li>PN_AutomatonBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef Name="PN_SurgeryInstallImplantBase" ParentName="PN_Surgery" Abstract="True">
+        <workerClass>Recipe_InstallImplant</workerClass>
+        <workAmount>2500</workAmount>
+        <skillRequirements>
+            <Medicine>5</Medicine>
+        </skillRequirements>
+        <recipeUsers>
+            <li>Paniel_Race</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef Name="PN_SurgeryInstallBodyPartArtificialBase" ParentName="PN_SurgeryInstallImplantBase" Abstract="True">
+        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    </RecipeDef>
+
+    <RecipeDef Name="PN_SurgeryInstallBodyPartProstheticBase" ParentName="PN_SurgeryInstallBodyPartArtificialBase" Abstract="True">
+        <skillRequirements>
+            <Medicine>4</Medicine>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef Name="PN_SurgeryRemoveImplantBase" ParentName="PN_Surgery" Abstract="True">
+        <workerClass>Recipe_RemoveImplant</workerClass>
+        <workAmount>2500</workAmount>
+        <isViolation>true</isViolation>
+        <skillRequirements>
+            <Medicine>5</Medicine>
+        </skillRequirements>
+        <recipeUsers>
+            <li>Paniel_Race</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <!--==================================== 실험적 임플란트 ====================================-->
+    <HediffDef ParentName="PN_ImplantHediffBase">
+        <defName>PN_ExperimentalModuleHediff</defName>
+        <label>custom core implant</label>
+        <description>Warning: This implant is not a PnL licensed implant. When installed, the performance of the Automaton will decrease.\n\nThis implant makes the automaton learn like a human, but makes it mentally unstable.\n\nThis implant cannot be removed after installation.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_ExperimentalModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PsychicSensitivity>1.0</PsychicSensitivity>
+                    <GlobalLearningFactor>0.80</GlobalLearningFactor>
+                    <MentalBreakThreshold>0.12</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_PostRemoveTrigger_HediffAdd">
+                <triggeredHediff>
+                    <li>PN_Learning_Limit_System</li>
+                </triggeredHediff>
+            </li>
+            <li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+                <hediffToNullify>
+                    <li>PN_Learning_Limit_System</li>
+                </hediffToNullify>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>PN_Ex_filterA</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>custom core filter A</label>
+        <description>This pawn is Automaton.</description>
+        <defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+        <isBad>false</isBad>
+        <stages>
+
+        </stages>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_Ex_filterB</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_SyncNormal_Modified</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>PN_Ex_filterB</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>custom core filter B</label>
+        <description>This pawn is Automaton.</description>
+        <defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+        <isBad>false</isBad>
+        <stages>
+
+        </stages>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_HediffExclusive">
+                <hediffToNullify>
+                    <li>PN_SyncNormal_Combat</li>
+                    <li>PN_SyncGood_Combat</li>
+                    <li>PN_SyncExcellent_Combat</li>
+                    <li>PN_SyncMasterwork_Combat</li>
+                    <li>PN_SyncLegendary_Combat</li>
+
+                    <li>PN_SyncNormal_Engineer</li>
+                    <li>PN_SyncGood_Engineer</li>
+                    <li>PN_SyncExcellent_Engineer</li>
+                    <li>PN_SyncMasterwork_Engineer</li>
+                    <li>PN_SyncLegendary_Engineer</li>
+
+                    <li>PN_SyncNormal_Domestic</li>
+                    <li>PN_SyncGood_Domestic</li>
+                    <li>PN_SyncExcellent_Domestic</li>
+                    <li>PN_SyncMasterwork_Domestic</li>
+                    <li>PN_SyncLegendary_Domestic</li>
+
+                    <li>PN_SyncGood_Testsubject</li>
+                    <li>PN_SyncAwful_Failure</li>
+                    <li>PN_SyncPoor_Failure</li>
+
+                    <li>PN_Learning_Limit_System</li>
+                </hediffToNullify>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <ThingDef ParentName="PN_BodyPartNormalBase">
+        <defName>PN_ExperimentalModule</defName>
+        <label>automaton custom core implant</label>
+        <description>Warning: This implant is not a PnL licensed implant. When installed, the performance of the Automaton will decrease.\n\nThis implant makes the automaton learn like a human, but makes it mentally unstable.\n\nThis implant cannot be removed after installation.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>PN_InstallExperimentalModule</RecipeDef>
+        </descriptionHyperlinks>
+        <tradeability>None</tradeability>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+            <PN_Component>1</PN_Component>
+        </costList>
+        <statBases>
+            <Mass>0.3</Mass>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_ExperimentalModule</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+        <defName>PN_InstallExperimentalModule</defName>
+        <label>install custom core implant</label>
+        <description>Install a custom core implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_ExperimentalModule</ThingDef>
+            <HediffDef>PN_ExperimentalModuleHediff</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing custom core implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PN_ExperimentalModule</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PNBrain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PN_ExperimentalModuleHediff</addsHediff>
+    </RecipeDef>
+
+    <!--==================================== 부활 임플란트 ====================================-->
+    <HediffDef ParentName="PN_ImplantHediffBase">
+        <defName>PN_ResurrectModule</defName>
+        <label>resurrect implant</label>
+        <labelNoun>a resurrect implant</labelNoun>
+        <description>This is the implant using resurrector mech serum.\nAn automaton equipped with this implant resurrection after death in a few seconds.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_ResurrectModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+
+        </stages>
+        <spawnThingOnRemoved>PN_ResurrectModule</spawnThingOnRemoved>
+    </HediffDef>
+
+    <ThingDef ParentName="PN_BodyPartNormalBase">
+        <defName>PN_ResurrectModule</defName>
+        <label>automaton resurrect implant</label>
+        <description>This is the implant using resurrector mech serum.\nAn automaton equipped with this implant resurrection after death in a few seconds.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>PN_InstallResurrectModule</RecipeDef>
+        </descriptionHyperlinks>
+        <costList>
+            <ComponentIndustrial>1</ComponentIndustrial>
+            <MechSerumResurrector>1</MechSerumResurrector>
+        </costList>
+        <statBases>
+            <Mass>0.3</Mass>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_ResurrectModule</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+        <defName>PN_InstallResurrectModule</defName>
+        <label>install resurrect implant</label>
+        <description>Install a resurrect implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_ResurrectModule</ThingDef>
+            <HediffDef>PN_ResurrectModule</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing resurrect implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PN_ResurrectModule</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PNCore</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PN_ResurrectModule</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_SurgeryRemoveImplantBase">
+        <defName>PN_RemoveResurrectModule</defName>
+        <label>remove resurrect implant</label>
+        <description>Remove the resurrect implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_ResurrectModule</ThingDef>
+            <HediffDef>PN_ResurrectModule</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing resurrect implant.</jobString>
+        <removesHediff>PN_ResurrectModule</removesHediff>
+    </RecipeDef>
+</Defs>

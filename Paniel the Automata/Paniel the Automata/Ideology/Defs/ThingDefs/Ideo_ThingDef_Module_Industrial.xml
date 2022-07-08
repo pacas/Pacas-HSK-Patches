@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================================== 난사광 모듈 ====================================-->
+    <ThingDef ParentName="PN_ApparelModuleIndustrial">
+        <defName>PN_RapidFireModule</defName>
+        <label>rapid fire module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nCombat model (legd), (mast), (exc)\n\nThis module allows automaton to use rapid fire ability.</description>
+        <descriptionHyperlinks>
+            <AbilityDef>PN_RapidFireAbility</AbilityDef>
+            <HediffDef>PN_RapidFireModuleHediff</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <TitaniumBar>30</TitaniumBar>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <PN_Component>1</PN_Component>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierB_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <apparel>
+            <tags>
+
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_RapidFireModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelIndustrialModuleHediffBase">
+        <defName>PN_RapidFireModuleHediff</defName>
+        <label>rapid fire module</label>
+        <description>The hediff created by installing rapid fire module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_RapidFireModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+                    <AimingDelayFactor>-0.20</AimingDelayFactor>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDef>PN_RapidFireAbility</abilityDef>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!--==================================== 근접전 모듈 ====================================-->
+    <ThingDef ParentName="PN_ApparelModuleIndustrial">
+        <defName>PN_CQCModule</defName>
+        <label>CQC module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nCombat model (legd), (mast), (exc)\n\nThis module increases the automaton's close quarters combat stat, and allows automaton to use CQC ability.</description>
+        <descriptionHyperlinks>
+            <AbilityDef>PN_CQCAbility</AbilityDef>
+            <HediffDef>PN_CQCModuleHediff</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <TitaniumBar>30</TitaniumBar>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <PN_Component>1</PN_Component>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierB_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <apparel>
+            <tags>
+
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_CQCModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelIndustrialModuleHediffBase">
+        <defName>PN_CQCModuleHediff</defName>
+        <label>CQC module</label>
+        <description>The hediff created by installing close quarters combat module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_CQCModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MeleeHitChance>2</MeleeHitChance>
+                    <MeleeDodgeChance>2</MeleeDodgeChance>
+                    <ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDef>PN_CQCAbility</abilityDef>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!--==================================== 채굴 모듈 ====================================-->
+    <ThingDef ParentName="PN_ApparelModuleIndustrial">
+        <defName>PN_MiningModule</defName>
+        <label>mining module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nEngineer model (legd), (mast), (exc)\n\nThis module increases the automaton's miner speed stat.</description>
+        <descriptionHyperlinks>
+            <HediffDef>PN_MiningModuleHediff</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <TitaniumBar>30</TitaniumBar>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <PN_Component>1</PN_Component>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierB_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <apparel>
+            <tags>
+
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_MiningModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelIndustrialModuleHediffBase">
+        <defName>PN_MiningModuleHediff</defName>
+        <label>mining module</label>
+        <description>The hediff created by installing mining module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_MiningModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statFactors>
+                    <MiningSpeed>1.30</MiningSpeed>
+                    <DeepDrillingSpeed>1.30</DeepDrillingSpeed>
+                    <GeneralLaborSpeed>0.60</GeneralLaborSpeed>
+                    <ConstructionSpeed>0.60</ConstructionSpeed>
+                    <DrugCookingSpeed>0.60</DrugCookingSpeed>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+
+        </comps>
+    </HediffDef>
+
+    <!--==================================== 건설 모듈 ====================================-->
+    <ThingDef ParentName="PN_ApparelModuleIndustrial">
+        <defName>PN_ConstructionModule</defName>
+        <label>construction module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nEngineer model (legd), (mast), (exc)\n\nThis module increases the automaton's construction speed stat.</description>
+        <descriptionHyperlinks>
+            <HediffDef>PN_ConstructionModuleHediff</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <TitaniumBar>30</TitaniumBar>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <PN_Component>1</PN_Component>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierB_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <apparel>
+            <tags>
+
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_ConstructionModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelIndustrialModuleHediffBase">
+        <defName>PN_ConstructionModuleHediff</defName>
+        <label>construction module</label>
+        <description>The hediff created by installing construction module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_ConstructionModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statFactors>
+                    <MiningSpeed>0.60</MiningSpeed>
+                    <DeepDrillingSpeed>0.60</DeepDrillingSpeed>
+                    <GeneralLaborSpeed>0.60</GeneralLaborSpeed>
+                    <ConstructionSpeed>1.30</ConstructionSpeed>
+                    <DrugCookingSpeed>0.60</DrugCookingSpeed>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+
+        </comps>
+    </HediffDef>
+
+    <!--==================================== 제작 모듈 ====================================-->
+    <ThingDef ParentName="PN_ApparelModuleIndustrial">
+        <defName>PN_CraftingModule</defName>
+        <label>crafting module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nEngineer model (legd), (mast), (exc)\n\nThis module increases the automaton's general labor speed stat.</description>
+        <descriptionHyperlinks>
+            <HediffDef>PN_CraftingModuleHediff</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <TitaniumBar>30</TitaniumBar>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <PN_Component>1</PN_Component>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierB_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <apparel>
+            <tags>
+
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_CraftingModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelIndustrialModuleHediffBase">
+        <defName>PN_CraftingModuleHediff</defName>
+        <label>crafting module</label>
+        <description>The hediff created by installing crafting module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_CraftingModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statFactors>
+                    <MiningSpeed>0.60</MiningSpeed>
+                    <DeepDrillingSpeed>0.60</DeepDrillingSpeed>
+                    <GeneralLaborSpeed>1.30</GeneralLaborSpeed>
+                    <ConstructionSpeed>0.60</ConstructionSpeed>
+                    <DrugCookingSpeed>1.30</DrugCookingSpeed>
+                    <SmithingSpeed>1.3</SmithingSpeed>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+
+        </comps>
+    </HediffDef>
+
+    <!--==================================== 농부 모듈 ====================================-->
+    <ThingDef ParentName="PN_ApparelModuleIndustrial">
+        <defName>PN_PlantsModule</defName>
+        <label>plants module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nDomestic model (legd), (mast), (exc)\n\nThis module increases the automaton's plant work speed stat.</description>
+        <descriptionHyperlinks>
+            <HediffDef>PN_PlantsModuleHediff</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <TitaniumBar>30</TitaniumBar>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <PN_Component>1</PN_Component>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierB_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <apparel>
+            <tags>
+
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_PlantsModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelIndustrialModuleHediffBase">
+        <defName>PN_PlantsModuleHediff</defName>
+        <label>plants module</label>
+        <description>The hediff created by installing plants module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_PlantsModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statFactors>
+                    <PlantWorkSpeed>1.30</PlantWorkSpeed>
+                    <MedicalTendSpeed>0.60</MedicalTendSpeed>
+                    <MedicalOperationSpeed>0.60</MedicalOperationSpeed>
+                    <ButcheryFleshSpeed>0.60</ButcheryFleshSpeed>
+                    <CookSpeed>0.60</CookSpeed>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+
+        </comps>
+    </HediffDef>
+
+    <!--==================================== 셰프 모듈 ====================================-->
+    <ThingDef ParentName="PN_ApparelModuleIndustrial">
+        <defName>PN_CookingModule</defName>
+        <label>cooking module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nDomestic model (legd), (mast), (exc)\n\nThis module increases the automaton's cooking speed stat.</description>
+        <descriptionHyperlinks>
+            <HediffDef>PN_CookingModuleHediff</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <TitaniumBar>30</TitaniumBar>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <PN_Component>1</PN_Component>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierB_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <apparel>
+            <tags>
+
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_CookingModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelIndustrialModuleHediffBase">
+        <defName>PN_CookingModuleHediff</defName>
+        <label>cooking module</label>
+        <description>The hediff created by installing cooking module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_CookingModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statFactors>
+                    <PlantWorkSpeed>0.60</PlantWorkSpeed>
+                    <MedicalTendSpeed>0.60</MedicalTendSpeed>
+                    <MedicalOperationSpeed>0.60</MedicalOperationSpeed>
+                    <ButcheryFleshSpeed>1.30</ButcheryFleshSpeed>
+                    <CookSpeed>1.30</CookSpeed>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+
+        </comps>
+    </HediffDef>
+
+    <!--==================================== 간호 모듈 ====================================-->
+    <ThingDef ParentName="PN_ApparelModuleIndustrial">
+        <defName>PN_NursingModule</defName>
+        <label>nursing module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nDomestic model (legd), (mast), (exc)\n\nThis module increases the automaton's medical speed stat.</description>
+        <descriptionHyperlinks>
+            <HediffDef>PN_NursingModuleHediff</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <TitaniumBar>30</TitaniumBar>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <PN_Component>1</PN_Component>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierB_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_NursingModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelIndustrialModuleHediffBase">
+        <defName>PN_NursingModuleHediff</defName>
+        <label>nursing module</label>
+        <description>The hediff created by installing nursing module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_NursingModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statFactors>
+                    <PlantWorkSpeed>0.60</PlantWorkSpeed>
+                    <MedicalTendSpeed>1.30</MedicalTendSpeed>
+                    <MedicalOperationSpeed>1.10</MedicalOperationSpeed>
+                    <ButcheryFleshSpeed>0.60</ButcheryFleshSpeed>
+                    <CookSpeed>0.60</CookSpeed>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+
+        </comps>
+    </HediffDef>
+</Defs>

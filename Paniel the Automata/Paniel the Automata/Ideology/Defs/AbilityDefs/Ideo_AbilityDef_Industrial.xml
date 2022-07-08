@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--Ability_Duration-->
+    <!--1 day = 60000 tick = 1000 (real time 1000s)-->
+    <!--1 hour = 2500 tick = 41.666-->
+
+    <!--==================================== 난사광 모듈 ====================================-->
+    <AbilityDef>
+        <defName>PN_RapidFireAbility</defName>
+        <label>rapid fire</label>
+        <description>This ability allows users to shoot quickly, but lowers the shooting accuracy.</description>
+        <descriptionHyperlinks>
+            <HediffDef>PN_RapidFire</HediffDef>
+        </descriptionHyperlinks>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <targetRequired>False</targetRequired>
+        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+        <iconPath>UI/Abilities/PNTriggerHappy</iconPath>
+        <warmupMoteSocialSymbol>UI/Abilities/PNTriggerHappy</warmupMoteSocialSymbol>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showPsycastEffects>False</showPsycastEffects>
+        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+        <groupDef>PNModule_1day</groupDef>
+        <hotKey>Misc12</hotKey>
+        <uiOrder>3</uiOrder>
+        <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+        <statBases>
+            <Ability_Duration>84</Ability_Duration>
+        </statBases>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0.5</warmupTime>
+            <range>-1</range>
+            <drawAimPie>False</drawAimPie>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetMechs>false</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>PN_RapidFire</hediffDef>
+                <onlyApplyToSelf>True</onlyApplyToSelf>
+                <replaceExisting>true</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!--==================================== 근접전 모듈 ====================================-->
+    <AbilityDef>
+        <defName>PN_CQCAbility</defName>
+        <label>CQC mode</label>
+        <description>This ability increases users to close quarters combat stat, but lowers the shooting accuracy.</description>
+        <descriptionHyperlinks>
+            <HediffDef>PN_CQC</HediffDef>
+        </descriptionHyperlinks>
+        <jobDef>CastAbilityOnThing</jobDef>
+        <targetRequired>False</targetRequired>
+        <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+        <iconPath>UI/Abilities/PNCQC</iconPath>
+        <warmupMoteSocialSymbol>UI/Abilities/PNCQC</warmupMoteSocialSymbol>
+        <stunTargetWhileCasting>True</stunTargetWhileCasting>
+        <showPsycastEffects>False</showPsycastEffects>
+        <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+        <groupDef>PNModule_1day</groupDef>
+        <hotKey>Misc12</hotKey>
+        <uiOrder>3</uiOrder>
+        <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+        <statBases>
+            <Ability_Duration>84</Ability_Duration>
+        </statBases>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>0.5</warmupTime>
+            <range>-1</range>
+            <drawAimPie>False</drawAimPie>
+            <requireLineOfSight>False</requireLineOfSight>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetHumans>false</canTargetHumans>
+                <canTargetMechs>false</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>PN_CQC</hediffDef>
+                <onlyApplyToSelf>True</onlyApplyToSelf>
+                <replaceExisting>true</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef>
+
+</Defs>

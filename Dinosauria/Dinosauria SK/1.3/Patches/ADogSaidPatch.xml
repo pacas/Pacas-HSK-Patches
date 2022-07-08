@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>A Dog Said... Animal Prosthetics</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Organ installing recipes == should be most animals -->
+				<li Class="PatchOperationAdd">
+
+					<xpath>/Defs/RecipeDef[@Name = "OldWoundsAnimal"]/recipeUsers</xpath>
+					<value>
+
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+
+
+
+					</value>
+				</li>
+
+				<!-- Organ installing recipes == should be most animals -->
+				<li Class="PatchOperationAdd">
+					<!-- "Inserting animal defNames into InstallBionicAnimalStomach surgery <recipeUsers>" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalStomach"]/recipeUsers</xpath>
+					<value>
+
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<!-- "Inserting animal defNames into InstallBionicAnimalKidney surgery <recipeUsers>" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalKidney"]/recipeUsers</xpath>
+					<value>
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<!-- "Inserting animal defNames into InstallBionicAnimalLiver surgery <recipeUsers>" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLiver"]/recipeUsers</xpath>
+					<value>
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<!-- "Inserting animal defNames into InstallBionicAnimalLung surgery <recipeUsers>" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalLung"]/recipeUsers</xpath>
+					<value>
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<!-- "Inserting animal defNames into InstallBionicAnimalHeart surgery <recipeUsers>" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicAnimalHeart"]/recipeUsers</xpath>
+					<value>
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<!-- "Inserting animal defNames into InstallAnimalBrainStimulator surgery <recipeUsers>" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallAnimalBrainStimulator"]/recipeUsers</xpath>
+					<value>
+
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<!-- "Inserting animal defNames into InstallSpineAnimalBionic surgery <recipeUsers>" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallSpineAnimalBionic" or defName = "InstallSpineAnimalSimple"]/recipeUsers</xpath>
+					<value>
+
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+
+					</value>
+				</li>
+
+
+
+				<li Class="PatchOperationAdd">
+					<!-- "Inserting animal defNames into InstallJawAnimalBionic surgery <recipeUsers> -->
+					<xpath>/Defs/RecipeDef[defName = "InstallJawAnimalBionic" or defName ="InstallJawAnimalSimple"]/recipeUsers</xpath>
+					<value>
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+					</value>
+				</li>
+
+
+
+				<li Class="PatchOperationAdd">
+					<!-- "Inserting animal defNames into InstallNoseAnimalSimple surgery <recipeUsers>" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallNoseAnimalSimple"]/recipeUsers</xpath>
+					<value>
+
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<!-- "Inserting animal defNames into InstallBionicEyeAnimal surgery <recipeUsers>" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallBionicEyeAnimal"]/recipeUsers</xpath>
+					<value>
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+
+					</value>
+				</li>
+
+				
+
+				<li Class="PatchOperationAdd">
+					<!-- "Inserting animal defNames into InstallEarAnimalSimple surgery <recipeUsers>" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallEarAnimalSimple" or defName ="InstallEarAnimalBionic"]/recipeUsers</xpath>
+					<value>
+
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+						
+					</value>
+				</li>
+
+
+
+
+				<!-- Leg installing recipes == should be most animals -->
+				<li Class="PatchOperationAdd">
+					<!-- "Inserting animal defNames into InstallPegLegAnimal surgery <recipeUsers>" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallPegLegAnimal" or defName ="InstallSimpleProstheticLegAnimal" or defName ="InstallBionicLegAnimal"]/recipeUsers</xpath>
+					<value>
+
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+
+					</value>
+				</li>
+				
+
+
+
+
+
+
+
+				<!-- Tail installing recipe == Only for animal with tail-->
+				<li Class="PatchOperationAdd">
+					<!-- "Inserting animal defNames into InstallSimpleProstheticTailAnimal surgery <recipeUsers>" -->
+					<xpath>/Defs/RecipeDef[defName = "InstallSimpleProstheticTailAnimal"]/recipeUsers</xpath>
+					<value>
+
+
+						<li>TyrannosaurusRex</li>
+						<li>Yutyrannus</li>
+						<li>Carnotaurus</li>
+						<li>Allosaurus</li>
+						<li>Spinosaurus</li>
+						<li>Baryonyx</li>
+						<li>Ankylosaurus</li>
+						<li>Minmi</li>
+						<li>Brachiosaurus</li>
+						<li>Brontosaurus</li>
+						<li>Diplodocus</li>
+						<li>Magyarosaurus</li>
+						<li>Utahraptor</li>
+						<li>Dakotaraptor</li>
+						<li>Velociraptor</li>
+						<li>Dilophosaurus</li>
+						<li>Compsognathus</li>
+						<li>Gallimimus</li>
+						<li>Gigantoraptor</li>
+						<li>Iguanodon</li>
+						<li>Parasaur</li>
+						<li>Corythosaurus</li>
+						<li>Deinocheirus</li>
+						<li>Therizinosaurus</li>
+						<li>Pachycephalosaurus</li>
+						<li>Stygimoloch</li>
+						<li>Dryosaurus</li>
+						<li>Stegosaurus</li>
+						<li>Triceratops</li>
+						<li>Protoceratops</li>
+						<li>Quetzalcoatlus</li>
+						<li>Pteranodon</li>
+
+
+
+					</value>
+				</li>
+				
+
+
+
+
+
+			
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

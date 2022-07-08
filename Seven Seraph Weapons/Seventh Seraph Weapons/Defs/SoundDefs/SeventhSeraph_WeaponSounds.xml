@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>shot_seventhseraphofficerrevolver</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+          <grains>
+            <li Class="AudioGrain_Clip">
+              <clipPath>shot_seventhseraphofficerrevolver</clipPath>
+            </li>
+          </grains>      
+          <volumeRange>35~35</volumeRange>      
+          <sustainLoop>False</sustainLoop>
+        </li>
+    </subSounds>
+	</SoundDef>
+
+  <!-- ============================================== -->
+
+  <SoundDef>
+    <defName>shot_seventhseraphcqc</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>shot_seventhseraphcqc</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>94.70588~94.70588</volumeRange>      
+        <distRange>39.11765~70</distRange>
+      </li>    
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Weapon/Shotgun/Rack</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>10.58823~10.58823</volumeRange>      
+        <pitchRange>0.9311765~1.137647</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+    
+  <!-- ============================================== -->
+
+  <SoundDef>
+    <defName>shot_seventhseraphvy7</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>   
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>shot_seventhseraphvy7</clipPath>
+          </li>
+        </grains>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- ============================================== -->
+
+  <SoundDef>
+    <defName>shot_seventhseraphsi2</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>shot_seventhseraphsi2</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>61.76471~61.76471</volumeRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- ============================================== -->
+
+  <SoundDef>
+    <defName>shot_seventhseraphcarbine</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>shot_seventhseraphcarbine</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>45.2941~45.2941</volumeRange>      
+        <pitchRange>1.091765~1</pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- ============================================== -->
+
+ <SoundDef>
+    <defName>shot_seventhseraphsaw</defName>  
+    <context>MapOnly</context>  
+    <maxVoices>8</maxVoices>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>shot_seventhseraphsaw</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>33.52942~33.52942</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

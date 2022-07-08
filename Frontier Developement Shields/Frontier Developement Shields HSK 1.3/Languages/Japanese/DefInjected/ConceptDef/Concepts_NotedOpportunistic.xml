@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Concepts taught through the learning readout, when opportunities arise -->
+
+  <FD_Shields.label>FD: シールド発生装置</FD_Shields.label>
+  <FD_Shields.helpText>シールドは、バッテリーの電力を消費して、着弾した発射体を受け止めます。しかし、装置は人々がシールドを通過するのを妨害しません。待機中には低電力消費ですが、射撃攻撃を防護すると電力消費が増大します。\n\nシールドは瞬間的に非常に高い消費電力が発生するため、バッテリーを接続して使用することをおすすめします。射撃攻撃が継続することよって自動稼働すると電力がより早く消費されるため、複数のバッテリーを接続しておくことを推奨します。
+		</FD_Shields.helpText>
+
+  <FD_CoilTemperature.label>FD: シールド放熱コイル</FD_CoilTemperature.label>
+  <FD_CoilTemperature.helpText>シールドが着弾した発射体を受け止めると、シールド放熱コイルが発熱します。シールド発生装置は自然放熱できる限界温度に達するまで、ゆっくりと設置された部屋に放熱します。\n\n100℃以上：軽度の事故が発生し、シールドがオーバーヒートして電力網をショート(短絡)させる被害が生じる可能性があります。\n\n150℃以上：中程度の事故が発生し、ショート(短絡)や装置が故障するなどの被害が生じる可能性があります。\n\n200C以上：重大な事故が発生し、オーバーヒートにより電力網がショート(短絡)、故障、爆発などの被害を生じる可能性があります。
+		</FD_CoilTemperature.helpText>
+
+  <FD_ShieldsPortable.label>FD: 可搬型シールド発生装置</FD_ShieldsPortable.label>
+  <FD_ShieldsPortable.helpText>ポータブルシールドは小型化が可能で、あなたの目的に合わせてシールド発生装置を移動させることができます。これらには単独で動作できるように装置に電力を供給することができる小さな内蔵バッテリーが付属しています。\n\n通常の電力網にも接続することが可能で、通常のバッテリーとしても動作します。これらのシールドは、固定されたシールド半径を持っています。
+		</FD_ShieldsPortable.helpText>
+
+</LanguageData>

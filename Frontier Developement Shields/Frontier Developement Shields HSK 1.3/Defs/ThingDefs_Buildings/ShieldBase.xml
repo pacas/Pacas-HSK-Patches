@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Name="ElectricShieldBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<selectable>true</selectable>
+		<thingClass>FrontierDevelopments.Shields.Buildings.Building_ElectricShield</thingClass>
+		<minifiedDef>MinifiedShieldGeneratorPortable</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<blockLight>true</blockLight>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<rotatable>false</rotatable>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<designationCategory>Security</designationCategory>
+		<holdsRoof>false</holdsRoof>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+		<!--<shaderType>CutoutComplex</shaderType>-->
+			<shadowData>
+				<volume>(0.3, 0.4, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Flammability>1.0</Flammability>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="FrontierDevelopments.General.EnergySources.CompProperties_ElectricEnergySource">
+				<minimumOnlinePower>500</minimumOnlinePower>
+			</li>
+			<li Class="FrontierDevelopments.Shields.Comps.CompProperties_ShieldResistance">
+				<resists>
+					<li class="FrontierDevelopments.Shields.Comps.ShieldResistance">
+						<damageDefName>EMP</damageDefName>
+						<resist>true</resist>
+						<multiplier>4</multiplier>
+					</li>
+					<li class="FrontierDevelopments.Shields.Comps.ShieldResistance">
+						<damageDefName>Extinguish</damageDefName>
+						<resist>false</resist>
+						<multiplier>0</multiplier>
+					</li>
+				</resists>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+        <inspectorTabs>
+			<li>FrontierDevelopments.Shields.ITab_Shield</li>
+		</inspectorTabs>
+	</ThingDef>
+	
+	<ThingDef Name="StationaryElectricShieldBase" ParentName="ElectricShieldBase" Abstract="True">
+		<thingCategories>
+			<li>Buildings</li>
+		</thingCategories>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+			</li>
+            <li Class="FrontierDevelopments.General.Comps.CompProperties_FlickBoard"/>
+		</comps>
+	<constructionSkillPrerequisite>17</constructionSkillPrerequisite>	
+	</ThingDef>
+</Defs>

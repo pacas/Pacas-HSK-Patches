@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<SkinSet>
+  
+   <lifeStage>
+    <appliesToAll>true</appliesToAll>
+    <variants>
+      <skin>
+        <color>(180,148,109)</color>
+        <commonality>1</commonality>
+        <texName>AA_AnimusVox</texName>
+      </skin>
+      <skin>
+        <color>(196,170,137)</color>
+        <commonality>0.5</commonality>
+        <texName>AA_AnimusVox</texName>
+      </skin>
+      <skin>
+        <color>(161,137,109)</color>
+        <commonality>0.5</commonality>
+        <texName>AA_AnimusVox</texName>
+      </skin>
+      <skin>
+        <color>(173,134,87)</color>
+        <commonality>0.5</commonality>
+        <texName>AA_AnimusVox</texName>
+      </skin>
+      <skin>
+        <color>(209,190,167)</color>
+        <commonality>0.3</commonality>
+        <texName>AA_AnimusVox</texName>
+      </skin>     
+      <skin>
+        <color>(222,212,200)</color>
+        <commonality>0.3</commonality>
+        <texName>AA_AnimusVox</texName>
+      </skin>           
+    </variants>  
+	
+    <winterCoat>
+      <useWinterCoat>false</useWinterCoat>
+    </winterCoat>
+  </lifeStage>
+  
+</SkinSet>

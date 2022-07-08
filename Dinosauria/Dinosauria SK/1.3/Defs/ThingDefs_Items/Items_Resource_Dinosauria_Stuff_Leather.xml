@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Abstract="True" ParentName="SK_LeatherBase" Name="SK_LeatherDinoBase">
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <MarketValue>3</MarketValue>
+            <StuffPower_Armor_Sharp>0.5</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+            <Mass>0.01</Mass>
+            <Bulk>0.01</Bulk>
+        </statBases>
+        <stuffProps>
+            <color>(114,124,60)</color>
+            <commonality>0.075</commonality>
+            <statFactors>
+                <MaxHitPoints>1.2</MaxHitPoints>
+                <Beauty>3</Beauty>
+                <MoveSpeed>1</MoveSpeed>
+                <MarketValue>0.7</MarketValue>
+                <WorkToMake>1.5</WorkToMake>
+                <WorkToBuild>1.5</WorkToBuild>
+                <BedRestEffectiveness>1.05</BedRestEffectiveness>
+                <ImmunityGainSpeedFactor>1.2</ImmunityGainSpeedFactor>
+                <Mass>1</Mass>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <!--========== Basic leathers ============-->
+
+    <ThingDef ParentName="SK_LeatherDinoBase">
+        <defName>Leather_DinosaurFuzz</defName>
+        <label>dinosaur fuzz</label>
+        <description>The semi-strong leather of a fuzzy dinosaur, covered in stage-one and stage-two feathers, also known as dino-fuzz. Compared to most leather, it is a bit tougher and while it insulates against all kinds of temperature, this particular type works better against the hot.</description>
+        <graphicData>
+            <color>(107,123,156)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>3</MarketValue>
+            <StuffPower_Armor_Sharp>0.84</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>7</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>11</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(107,123,156)</color>
+            <commonality>0.05</commonality>
+            <statFactors>
+                <MaxHitPoints>1.1</MaxHitPoints>
+                <BedRestEffectiveness>1.1</BedRestEffectiveness>
+                <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_LeatherDinoBase">
+        <defName>Leather_DinosaurHide</defName>
+        <label>dinosaur hide</label>
+        <description>The thick leather of a big dinosaur. Neither feathered nor scaled, it is a bit on the tougher side but insulates well against the heat.</description>
+        <graphicData>
+            <color>(107,123,156)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>3</MarketValue>
+            <StuffPower_Armor_Sharp>1.04</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.75</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(107,123,156)</color>
+            <commonality>0.05</commonality>
+            <statFactors>
+                <Beauty>0</Beauty>
+                <MaxHitPoints>1.2</MaxHitPoints>
+                <WorkToMake>1.3</WorkToMake>
+                <WorkToBuild>1.3</WorkToBuild>
+                <BedRestEffectiveness>0.9</BedRestEffectiveness>
+                <ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+  
+    <!--========== Thin leathers ============-->
+  
+    <ThingDef ParentName="SK_LeatherDinoBase">
+        <defName>Leather_DinosaurSkin</defName>
+        <label>dinosaur skin</label>
+        <description>The tanned skin of a smaller sized dinosaur. Although reasonably tough, this type of skin insulates poorly.</description>
+        <statBases>
+            <MarketValue>2.1</MarketValue>
+            <StuffPower_Armor_Sharp>0.81</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.67</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+        </statBases>
+        <graphicData>
+            <color>(107,101,0)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(107,101,0)</color>
+            <commonality>0.075</commonality>
+            <statFactors>
+                <MaxHitPoints>0.9</MaxHitPoints>
+                <Beauty>1</Beauty>
+                <MoveSpeed>1.1</MoveSpeed>
+                <WorkToMake>1.1</WorkToMake>
+                <WorkToBuild>1.1</WorkToBuild>
+                <BedRestEffectiveness>1</BedRestEffectiveness>
+                <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+                <Mass>0.8</Mass>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <!--========== Tough leathers ============-->
+
+    <ThingDef ParentName="SK_LeatherDinoBase">
+        <defName>Leather_Theropod</defName>
+        <label>tough dinosaur leather</label>
+        <description>Thick leather partially covered in scales and dino-fuzz. Harvested from a large dinosaur, this thick skin insulates and protects very well.</description>
+        <graphicData>
+            <color>(82,97,108)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>3.8</MarketValue>
+            <StuffPower_Armor_Sharp>1.02</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.82</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.12</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(82,97,108)</color>
+            <commonality>0.025</commonality>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <Beauty>1</Beauty>
+                <MoveSpeed>0.85</MoveSpeed>
+                <MarketValue>0.7</MarketValue>
+                <BedRestEffectiveness>0.85</BedRestEffectiveness>
+                <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+                <Mass>1.4</Mass>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_LeatherDinoBase">
+        <defName>Leather_Sauropod</defName>
+        <label>supertough dinosaur leather</label>
+        <description>Very thick leather from a gigantic dinosaur. This thick skin insulates and protects very well.</description>
+        <graphicData>
+            <color>(95,90,86)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>3.7</MarketValue>
+            <StuffPower_Armor_Sharp>1.32</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.12</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.16</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>11</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(95,90,86)</color>
+            <commonality>0.025</commonality>
+            <statFactors>
+                <MaxHitPoints>1.7</MaxHitPoints>
+                <Beauty>1</Beauty>
+                <MoveSpeed>0.75</MoveSpeed>
+                <WorkToMake>2.2</WorkToMake>
+                <WorkToBuild>2.2</WorkToBuild>
+                <BedRestEffectiveness>0.5</BedRestEffectiveness>
+                <ImmunityGainSpeedFactor>1.2</ImmunityGainSpeedFactor>
+                <Mass>1.6</Mass>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+  
+    <!--========== Super leathers ============-->
+
+    <ThingDef ParentName="SK_LeatherDinoBase">
+        <defName>Leather_Tyrannosaurus</defName>
+        <label>apex dinosaur leather</label>
+        <description>Strong leather, almost as strong as the animal it came from. It's definitely prestigious to wear anything made out of this leather, as a legacy of the hunt. This leather particularly insulates well against cold.</description>
+        <graphicData>
+            <color>(104,85,52)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>8.0</MarketValue>
+            <StuffPower_Armor_Sharp>1.88</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.66</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>22</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>16</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(104,85,52)</color>
+            <commonality>0.0025</commonality>
+            <statFactors>
+                <MaxHitPoints>2.5</MaxHitPoints>
+                <Beauty>3</Beauty>
+                <MoveSpeed>0.8</MoveSpeed>
+                <MarketValue>0.9</MarketValue>
+                <WorkToMake>3</WorkToMake>
+                <WorkToBuild>3</WorkToBuild>
+                <BedRestEffectiveness>0.5</BedRestEffectiveness>
+                <ImmunityGainSpeedFactor>1.2</ImmunityGainSpeedFactor>
+                <Mass>1.8</Mass>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_LeatherDinoBase">
+        <defName>Leather_Bluefuzz</defName>
+        <label>apex dinosaur fuzz</label>
+        <description>Strong leather obtained from skinning a Yutyrannus, covered in dino-fuzz of various densities, which are simply stage-one and stage-two dinosaur feathers. This leather insulates well only against the cold.</description>
+        <graphicData>
+            <color>(91,144,155)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>7.0</MarketValue>
+            <StuffPower_Armor_Sharp>1.7</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.2</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>34</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>-16</StuffPower_Insulation_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(91,144,155)</color>
+            <commonality>0.0025</commonality>
+            <statFactors>
+                <MaxHitPoints>1.8</MaxHitPoints>
+                <Beauty>5</Beauty>
+                <MoveSpeed>1</MoveSpeed>
+                <MarketValue>0.9</MarketValue>
+                <WorkToMake>1.3</WorkToMake>
+                <WorkToBuild>1.3</WorkToBuild>
+                <BedRestEffectiveness>1.45</BedRestEffectiveness>
+                <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+                <Mass>1.2</Mass>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_LeatherDinoBase">
+        <defName>Leather_ArmoredDino</defName>
+        <label>armored dinosaur hide</label>
+        <description>Super strong leather obtained from a heavily armored dinosaur, such as an ankylosaurus or a minmi.</description>
+        <graphicData>
+            <color>(179,147,34)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>10.0</MarketValue>
+            <StuffPower_Armor_Sharp>2.04</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>2.06</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.08</StuffPower_Armor_Heat>
+        </statBases>
+        <stuffProps>
+            <color>(179,147,34)</color>
+            <commonality>0.0025</commonality>
+            <statFactors>
+                <MaxHitPoints>2.7</MaxHitPoints>
+                <Beauty>0</Beauty>
+                <MoveSpeed>0.5</MoveSpeed>
+                <MarketValue>0.9</MarketValue>
+                <WorkToMake>4</WorkToMake>
+                <WorkToBuild>4</WorkToBuild>
+                <BedRestEffectiveness>0.45</BedRestEffectiveness>
+                <ImmunityGainSpeedFactor>0.8</ImmunityGainSpeedFactor>
+                <Mass>3</Mass>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef>
+        <defName>PN_Maintenance</defName>
+        <hediffClass>AutomataRace.Hediff_Maintenance</hediffClass>
+        <label>Maintenance</label>
+        <defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
+        <description>The maintenance status of the automaton.\nIf it is low, it will cause malfunction.\n\nMaintenance is required every year (60 rimworld days).</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_RepairKit</ThingDef>
+            <ThingDef>PN_SelfRepairKit</ThingDef>
+            <RecipeDef>PN_Maintenance</RecipeDef>
+            <RecipeDef>PN_Repair</RecipeDef>
+        </descriptionHyperlinks>
+        <causesNeed>PN_Need_Maintenance</causesNeed>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <label>urgent</label>
+                <minSeverity>0.1</minSeverity>
+                <becomeVisible>true</becomeVisible>
+                <restFallFactor>1.50</restFallFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>0.5</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>0.5</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <postFactor>0.5</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <postFactor>0.5</postFactor>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <PsychicSensitivity>0.80</PsychicSensitivity>
+                    <MentalBreakThreshold>0.16</MentalBreakThreshold>
+                    <WorkSpeedGlobal>-0.20</WorkSpeedGlobal>
+                    <MoveSpeed>-0.8</MoveSpeed>
+                </statOffsets>
+            </li>
+            <li>
+                <label>required</label>
+                <minSeverity>0.2</minSeverity>
+                <restFallFactor>1.25</restFallFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>0.75</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>0.75</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <postFactor>0.75</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <postFactor>0.75</postFactor>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <PsychicSensitivity>0.40</PsychicSensitivity>
+                    <MentalBreakThreshold>0.08</MentalBreakThreshold>
+                    <WorkSpeedGlobal>-0.10</WorkSpeedGlobal>
+                    <MoveSpeed>-0.4</MoveSpeed>
+                </statOffsets>
+            </li>
+            <li>
+                <label>stable</label>
+                <minSeverity>0.80</minSeverity>
+                <capMods>
+                    <!--<li>
+            <capacity>Consciousness</capacity>
+            <offset>0</offset>
+          </li>-->
+                </capMods>
+                <statOffsets>
+                    <!--<PsychicSensitivity>0.20</PsychicSensitivity>
+          <MentalBreakThreshold>0</MentalBreakThreshold>
+          <WorkSpeedGlobal>0.0</WorkSpeedGlobal>
+          <MoveSpeed>0.0</MoveSpeed>-->
+                </statOffsets>
+            </li>
+            <li>
+                <label>flawless</label>
+                <minSeverity>1</minSeverity>
+                <capMods>
+
+                </capMods>
+                <statOffsets>
+                    <PsychicSensitivity>-0.20</PsychicSensitivity>
+                    <MentalBreakThreshold>-0.04</MentalBreakThreshold>
+                    <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+                    <MoveSpeed>0.2</MoveSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="YORHG.HediffDefModExtension">
+                <race>Paniel_Race</race>
+            </li>
+        </modExtensions>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>PN_Maintenance_Thought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>PN_Maintenance</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Maintenance (urgent)</label>
+                <description>I feel weird. I don't think my body is mine.</description>
+                <baseMoodEffect>-15</baseMoodEffect>
+            </li>
+            <li>
+                <label>Maintenance (required)</label>
+                <description>I can't move my body well.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+            <li>
+                <visible>false</visible>
+            </li>
+            <li>
+                <label>Maintenance (flawless)</label>
+                <description>I feel like I'm made new!</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

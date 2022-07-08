@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 삽 -->
+
+  <PN_Shovel.label>Лопата ПнЛ</PN_Shovel.label>
+  <PN_Shovel.description>Маленькая лопата. Полезна для работы с растениями, добычи руды и строительства. Она выглядит мощной даже в качестве оружия.</PN_Shovel.description>
+  <PN_Shovel.tools.0.label>рукоятка</PN_Shovel.tools.0.label>
+  <PN_Shovel.tools.1.label>кромка лопаты</PN_Shovel.tools.1.label>
+  <PN_Shovel.tools.2.label>навершие лопаты</PN_Shovel.tools.2.label>
+
+
+  <!-- 체인소드 -->
+
+  <PN_Chainsword.label>Цепной меч ПнЛ</PN_Chainsword.label>
+  <PN_Chainsword.description>[Предупреждение] : Эксклюзивное оружие для автоматонов.\n\nМеч с цепной пилой на месте лезвия. Он работает, запитываясь от автоматона.</PN_Chainsword.description>
+  <PN_Chainsword.tools.0.label>рукоятка</PN_Chainsword.tools.0.label>
+  <PN_Chainsword.tools.1.label>острие</PN_Chainsword.tools.1.label>
+  <PN_Chainsword.tools.2.label>лезвие</PN_Chainsword.tools.2.label>
+
+
+  <!-- 체인 롱소드 -->
+
+  <PN_Chainlongsword.label>Длинный цепной меч ПнЛ</PN_Chainlongsword.label>
+  <PN_Chainlongsword.description>[Предупреждение] : Эксклюзивное оружие для автоматонов.\n\nДлинный меч с цепной пилой. Он работает, запитываясь от автоматона.</PN_Chainlongsword.description>
+  <PN_Chainlongsword.tools.0.label>рукоятка</PN_Chainlongsword.tools.0.label>
+  <PN_Chainlongsword.tools.1.label>острие</PN_Chainlongsword.tools.1.label>
+  <PN_Chainlongsword.tools.2.label>лезвие</PN_Chainlongsword.tools.2.label>
+
+
+  <!-- 리볼버 -->
+
+  <PN_Revolver.label>Револьвер ПнЛ</PN_Revolver.label>
+  <PN_Revolver.description>[Предупреждение] : Эксклюзивное оружие для автоматонов.\n\nРевольвер, похожий на дробовик, стреляющий сразу из шести стволов. Легко перезаряжается в руках автоматона. </PN_Revolver.description>
+  <PN_Revolver.tools.0.label>рукоятка</PN_Revolver.tools.0.label>
+  <PN_Revolver.tools.1.label>ствол</PN_Revolver.tools.1.label>
+
+  <PN_Bullet_Revolver_Volley.label>пуля револьвера ПнЛ</PN_Bullet_Revolver_Volley.label>
+
+
+  <!-- 레버액션 -->
+
+  <PN_Rifle.label>Винтовка ПнЛ</PN_Rifle.label>
+  <PN_Rifle.description>Винтовка с рычажным механизмом производства ПнЛ Индастри. Пользователи могут выбирать между беглым и точным режимом стрельбы.</PN_Rifle.description>
+  <PN_Rifle.tools.0.label>приклад</PN_Rifle.tools.0.label>
+  <PN_Rifle.tools.1.label>ствол</PN_Rifle.tools.1.label>
+  <PN_Rifle.verbs.0.label>беглая стрельба</PN_Rifle.verbs.0.label>
+  <PN_Rifle.verbs.1.label>точная стрельба</PN_Rifle.verbs.1.label>
+
+  <PN_Bullet_Rifle.label>пуля винтовки ПнЛ</PN_Bullet_Rifle.label>
+
+
+  <!-- 기관총 -->
+
+  <PN_Machinegun.label>Пулемет ПнЛ</PN_Machinegun.label>
+  <PN_Machinegun.description>Пулемет производства ПнЛ Индастри</PN_Machinegun.description>
+  <PN_Machinegun.tools.0.label>ствол</PN_Machinegun.tools.0.label>
+
+  <PN_Bullet_Machinegun.label>пулеметная пуля ПнЛ</PN_Bullet_Machinegun.label>
+
+
+  <!-- 포터블 캐논 -->
+
+  <PN_Cannon.label>Портативная пушка ПнЛ</PN_Cannon.label>
+  <PN_Cannon.description>Портативная пушка производства ПнЛ Индастри. Может вести огонь осколочно-фугасными и бронебойными снарядами.</PN_Cannon.description>
+  <PN_Cannon.tools.0.label>ствол</PN_Cannon.tools.0.label>
+  <PN_Cannon.verbs.0.label>БР</PN_Cannon.verbs.0.label>
+  <PN_Cannon.verbs.1.label>ОФ</PN_Cannon.verbs.1.label>
+
+  <PN_Bullet_HE.label>ОФ снаряд ПнЛ</PN_Bullet_HE.label>
+  <PN_Bullet_AP.label>БР снаряд ПнЛ</PN_Bullet_AP.label>
+
+
+  <!-- 로열 트윈 피스톨 -->
+
+  <PN_TwinPistol.label>Двойные пистолеты ПнЛ</PN_TwinPistol.label>
+  <PN_TwinPistol.description>[Предупреждение] : Эксклюзивное оружие для автоматонов.\n\nСдвоенные пистолеты, стреляющие множеством пуль на близком расстоянии. Используются особым подразделением автоматонов королевских стражников. В руках автоматона они быстро перезаряжаются и усиливают навыки ближнего боя пользователя.</PN_TwinPistol.description>
+  <PN_TwinPistol.tools.0.label>рукоятка</PN_TwinPistol.tools.0.label>
+  <PN_TwinPistol.tools.1.label>пинок</PN_TwinPistol.tools.1.label>
+  <PN_TwinPistol.tools.2.label>выстрел в упор</PN_TwinPistol.tools.2.label>
+
+  <PN_Bullet_TwinPistol.label>пуля двойных пистолетов ПнЛ</PN_Bullet_TwinPistol.label>
+
+
+  <!-- 로열 라이플 -->
+
+  <PN_RoyalRifle.label>Королевская винтовка ПнЛ</PN_RoyalRifle.label>
+  <PN_RoyalRifle.description>[Предупреждение] : Эксклюзивное оружие для автоматонов.\n\nВинтовка королевской стражи производства ПнЛ Индастри. Пользователи могут выбирать между беглым и точным режимом стрельбы.</PN_RoyalRifle.description>
+  <PN_RoyalRifle.tools.0.label>приклад</PN_RoyalRifle.tools.0.label>
+  <PN_RoyalRifle.tools.1.label>ствол</PN_RoyalRifle.tools.1.label>
+  <PN_RoyalRifle.verbs.0.label>беглая стрельба</PN_RoyalRifle.verbs.0.label>
+  <PN_RoyalRifle.verbs.1.label>точная стрельба</PN_RoyalRifle.verbs.1.label>
+
+  <PN_Bullet_RoyalRifle.label>пуля королевской винтовки ПнЛ</PN_Bullet_RoyalRifle.label>
+
+
+  <!-- 로열 LSW (멀티런쳐) -->
+
+  <PN_RoyalLSW.label>Многозарядный гранатомет ПнЛ</PN_RoyalLSW.label>
+  <PN_RoyalLSW.description>[Предупреждение] : Эксклюзивное оружие для автоматонов.\n\Гранатомет, способный стрелять различными гранатами. Пользователи могут стрелять осколочными, зажигательными, ЭМИ, дымовыми и пенными гранатами.</PN_RoyalLSW.description>
+  <PN_RoyalLSW.tools.0.label>приклад</PN_RoyalLSW.tools.0.label>
+  <PN_RoyalLSW.tools.1.label>ствол</PN_RoyalLSW.tools.1.label>
+  <PN_RoyalLSW.verbs.0.label>Осколочный</PN_RoyalLSW.verbs.0.label>
+  <PN_RoyalLSW.verbs.1.label>Зажигательный</PN_RoyalLSW.verbs.1.label>
+  <PN_RoyalLSW.verbs.2.label>ЭМИ</PN_RoyalLSW.verbs.2.label>
+  <PN_RoyalLSW.verbs.3.label>Дымовая</PN_RoyalLSW.verbs.3.label>
+  <PN_RoyalLSW.verbs.4.label>Пенная</PN_RoyalLSW.verbs.4.label>
+
+  <PN_Bullet_LSW_bomb.label>снаряд гранатомета ПнЛ</PN_Bullet_LSW_bomb.label>
+  <PN_Bullet_LSW_Flame.label>снаряд гранатомета ПнЛ</PN_Bullet_LSW_Flame.label>
+  <PN_Bullet_LSW_EMP.label>снаряд гранатомета ПнЛ</PN_Bullet_LSW_EMP.label>
+  <PN_Bullet_LSW_Smoke.label>снаряд гранатомета ПнЛ</PN_Bullet_LSW_Smoke.label>
+  <PN_Bullet_LSW_FF.label>снаряд гранатомета ПнЛ</PN_Bullet_LSW_FF.label>
+
+
+  <!-- 일회용 레일건 -->
+
+  <PN_PrototypeRailGun.label>Прототип рельсовой пушки ПнЛ</PN_PrototypeRailGun.label>
+  <PN_PrototypeRailGun.description>Экспериментальный рельсотрон, уступающий по характеристикам полноценной версии.</PN_PrototypeRailGun.description>
+  <PN_PrototypeRailGun.tools.0.label>ствол</PN_PrototypeRailGun.tools.0.label>
+
+  <PN_Bullet_RailGun.label>снаряд прототипа рельсовой пушки</PN_Bullet_RailGun.label>
+
+
+</LanguageData>

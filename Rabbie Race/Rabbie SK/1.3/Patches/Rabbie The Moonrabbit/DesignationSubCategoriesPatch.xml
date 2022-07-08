@@ -1,0 +1,24 @@
+﻿<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Sewing"]/defNames</xpath>
+		<value>
+			<li>RB_MoonTailoringBench</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Sewing"]/defNames</xpath>
+		<value>
+			<li>RB_MoonTableMachining</li>
+		</value>
+	</Operation>
+    
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Medicine"]/defNames</xpath>
+		<value>
+			<li>Planetariumrefinery</li>
+		</value>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Biomes</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> --> <!-- TESTING -->
+			<operations>
+
+				<!--==================== Firefly Alpha Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+					<value>
+
+						<AB_FeraliskInfestedJungle>2</AB_FeraliskInfestedJungle>
+						<AB_GallatrossGraveyard>3</AB_GallatrossGraveyard>
+						<AB_GelatinousSuperorganism>1</AB_GelatinousSuperorganism>
+						<AB_MechanoidIntrusion>1</AB_MechanoidIntrusion>
+						<AB_MycoticJungle>2</AB_MycoticJungle>
+						<AB_OcularForest>3</AB_OcularForest>
+						<AB_PyroclasticConflagration>1</AB_PyroclasticConflagration>
+                        <AB_PropaneLakes>1</AB_PropaneLakes>
+						<AB_RockyCrags>1</AB_RockyCrags>
+						<AB_TarPits>1</AB_TarPits>
+
+					</value>
+				</li>
+
+            </operations>
+		</match>
+	</Operation>
+
+</Patch>

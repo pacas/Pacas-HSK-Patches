@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+        <defName>PN_Fuel</defName>
+        <label>Automaton Fuel</label>
+        <parent>Drugs</parent>
+        <iconPath>UI/Icons/PNCT_PNFuel</iconPath>
+    </ThingCategoryDef>
+
+    <!--==================================== 오토마톤 연료 ====================================-->
+    <ThingDef ParentName="DrugPillBase">
+        <defName>PN_AutomatonFuel</defName>
+        <label>PnL fuel</label>
+        <description>Warning: Do not use on humans.\nThis fuel is for automaton only.\n\nThe fuel used by the automaton. Added a large amount of Psychite for mental stability.</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Item/PNFuel</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+        <uiIconForStackCount>1</uiIconForStackCount>
+        <stackLimit>150</stackLimit>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>6.1</MarketValue>
+            <Mass>0.05</Mass>
+            <Flammability>2.0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+        <techLevel>Spacer</techLevel>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <baseIngestTicks>210</baseIngestTicks>
+            <ingestSound>Ingest_Drink</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.18,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Drink {0}</ingestCommandString>
+            <ingestReportString>Drinking {0}.</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <chairSearchRadius>25</chairSearchRadius>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>PN_ateFuel</hediffDef>
+                    <severity>1</severity>
+                    <doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+                </li>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>PN_deletFuel</hediffDef>
+                    <severity>1</severity>
+                    <doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+                </li>
+            </outcomeDoers>
+            <tasteThought>PN_Atefuel_nopn</tasteThought>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <chemical>PN_Chemical_Fuel</chemical>
+                <addictiveness>0.000000001</addictiveness>
+                <needLevelOffset>0.20</needLevelOffset>
+                <listOrder>1028</listOrder>
+            </li>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.1</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+                <startWickOnDamageTaken>
+                    <li>Flame</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <wickTicks>70~150</wickTicks>
+            </li>
+        </comps>
+        <tradeTags Inherit="false">
+            <li>PN_Fuel</li>
+        </tradeTags>
+        <tradeability>Buyable</tradeability>
+        <thingCategories Inherit="false">
+            <li>PN_Fuel</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThoughtDef>
+        <defName>PN_Atefuel_nopn</defName>
+        <durationDays>1</durationDays>
+        <stages>
+            <li>
+                <label>ate PnL fuel</label>
+                <description>...</description>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!--==================================== 오토마톤 연료 효과 ====================================-->
+    <HediffDef>
+        <defName>PN_ateFuel</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Ate automaton fuel</label>
+        <labelNoun>Ate Automaton Fuel</labelNoun>
+        <description>...</description>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PsychiteAddiction</hediff>
+                    </li>
+                    <li>
+                        <hediff>FoodPoisoning</hediff>
+                    </li>
+                    <li>
+                        <hediff>DrugOverdose</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_deletFuel</hediff>
+                    </li>
+                </hediffAndBodypart>
+                <bodyDefBlackList>
+                    <li>PanielBody</li>
+                </bodyDefBlackList>
+                <debug>false</debug>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>PN_deletFuel</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Ate automaton fuel</label>
+        <labelNoun>Ate Automaton Fuel</labelNoun>
+        <description>...</description>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_HediffExclusive">
+                <hediffToNullify>
+                    <li>PN_AutomatonFuel_Addiction</li>
+                </hediffToNullify>
+                <bodyDefBlackList>
+                    <li>PanielBody</li>
+                </bodyDefBlackList>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <ChemicalDef>
+        <defName>PN_Chemical_Fuel</defName>
+        <label>Automaton Fuel</label>
+        <addictionHediff>PN_AutomatonFuel_Addiction</addictionHediff>
+        <canBinge>false</canBinge>
+        <onGeneratedAddictedToleranceChance>0</onGeneratedAddictedToleranceChance>
+    </ChemicalDef>
+
+    <HediffDef ParentName="AddictionBase">
+        <defName>PN_AutomatonFuel_Addiction</defName>
+        <hediffClass>Hediff_Addiction</hediffClass>
+        <label>Automaton Fuel</label>
+        <description>A condition that requires PnL fuel.</description>
+        <defaultLabelColor>(222,90,90)</defaultLabelColor>
+        <causesNeed>PN_Need_Fuel</causesNeed>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <everCurableByItem>false</everCurableByItem>
+        <isBad>false</isBad>
+        <comps>
+            <!--<li Class="HediffCompProperties_Discoverable">
+        <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+        <discoverLetterLabel>Automaton fuel required</discoverLetterLabel>
+        <discoverLetterText>{0} ran out of fuel and switched to emergency power.\n\nEmergency power will only run for 15 days, after which {0} will destroy.\n\nPlease check fuel stock and refuel {0}.</discoverLetterText>
+        <letterType>NegativeEvent</letterType>
+        <messageType>NegativeEvent</messageType>
+      </li>-->
+        </comps>
+        <stages>
+            <li>
+                <label>stable</label>
+            </li>
+            <!--<li>
+        <label>required</label>
+        <lifeThreatening>true</lifeThreatening>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+        <hungerRateFactor>0.1</hungerRateFactor>
+      </li>-->
+            <li>
+                <label>required</label>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.3</setMax>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0.3</setMax>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <setMax>0.3</setMax>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <setMax>0.3</setMax>
+                    </li>
+                </capMods>
+                <hungerRateFactor>2.0</hungerRateFactor>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="YORHG.HediffDefModExtension">
+                <race>Paniel_Race</race>
+            </li>
+        </modExtensions>
+    </HediffDef>
+</Defs>

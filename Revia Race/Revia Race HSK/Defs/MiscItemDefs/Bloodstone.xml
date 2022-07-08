@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="SK_ResourceBase">
+    <defName>ReviaRaceBloodstone</defName>
+    <label>bloodstone</label>
+    <description>A blessing given by the Revian pantheon. Supposedly confers divine favour on the user.</description>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(200, 50, 0)</color>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <thingCategories>
+      <li>ReviaCategoryArtifact</li>
+    </thingCategories>
+    <tradeTags>
+        <li>Artifact</li>
+    </tradeTags>
+    <tradeability>None</tradeability>
+    <statBases>
+      <Mass>0.01</Mass>
+      <Bulk>0.01</Bulk>
+      <MarketValue>100</MarketValue>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <DeteriorationRate>0.0</DeteriorationRate>
+      <Beauty>4</Beauty>
+    </statBases>
+    <tickerType>Never</tickerType>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseArtifact</useJob>
+        <useLabel>Make offering</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>ReviaRace.Comps.InvokeGreaterBlessing</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    
+    <!-- Settings ///////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- Integrations Section -->
+    <fd.settings.shield.integrations.heading>Integrations</fd.settings.shield.integrations.heading>
+
+    <fd.settings.shield.climatecontrol.label>Enable Centralized Climate Control support (requires game restart!)</fd.settings.shield.climatecontrol.label>
+    <fd.settings.shield.climatecontrol.description>Enables cooling of shields with Centralized Climate Control pipes</fd.settings.shield.climatecontrol.description>
+
+    <fd.settings.shield.badhygiene.label>Enable Dubs Bad Hygiene support (requires game restart!)</fd.settings.shield.badhygiene.label>
+    <fd.settings.shield.badhygiene.description>Enables cooling of shields with Bad Hygiene cooling units</fd.settings.shield.badhygiene.description>
+
+    <!-- General section -->
+    <fd.settings.shield.general.heading>General</fd.settings.shield.general.heading>
+
+    <fd.settings.shield.shootout.label>Enable shooting out</fd.settings.shield.shootout.label>
+    <fd.settings.shield.shootout.description>Enables shoots originating within a shield to travel out of the shield</fd.settings.shield.shootout.description>
+
+    <fd.settings.shield.shootin.label>Enable shooting at friendly shields</fd.settings.shield.shootin.label>
+    <fd.settings.shield.shootin.description>Allow colonists to attempt to shoot into friendly shields (for testing, not recommended for normal gameplay!)</fd.settings.shield.shootin.description>
+
+    <fd.settings.shield.blockskyfallers.label>Block skyfallers</fd.settings.shield.blockskyfallers.label>
+    <fd.settings.shield.blockskyfallers.description>Enables blocking of skyfallers. Disabling this feature can be useful to allow mods that are unsupported to land within shields</fd.settings.shield.blockskyfallers.description>
+
+    <fd.settings.shield.autosaveskyfallers.label>Autosave on Skyfallers</fd.settings.shield.autosaveskyfallers.label>
+    <fd.settings.shield.autosaveskyfallers.description>Enables autosaving on instances where skyfallers can impact on shields. This allows reversing events where things impact the shield unexpectedly (typically due mod support being needed)</fd.settings.shield.autosaveskyfallers.description>
+
+    <!-- Performance Section -->
+    <fd.settings.shield.performance.heading>Performance</fd.settings.shield.performance.heading>
+    <fd.settings.shield.performance.description>Settings relating to performance. Disabling any will improve game performance at the cost of the AI not understanding what is shielded</fd.settings.shield.performance.description>
+
+    <fd.settings.shield.performance.target.label>Enable AI preference to shoot unshielded targets (Impact: Low)</fd.settings.shield.performance.target.label>
+    <fd.settings.shield.performance.target.description>Enabling allows the AI to prefer to shoot at targets that are unshielded</fd.settings.shield.performance.target.description>
+
+    <fd.settings.shield.performance.cast.label>Enable AI to attempt to shoot from shielded areas (Impact: High)</fd.settings.shield.performance.cast.label>
+    <fd.settings.shield.performance.cast.description>Enabling allows AI to find shielded areas to shoot from. Disabling will cause the AI to not consider shielding as part of cover calculation</fd.settings.shield.performance.cast.description>
+
+    <fd.settings.shield.performance.verb.label>Enable AI to check if their shot will hit a shield (Impact: Medium)</fd.settings.shield.performance.verb.label>
+    <fd.settings.shield.performance.verb.description>Enabling allows the AI to check their shotlines. Disabling will cause pawns to shoot friendly shields in combat and may cause hunters to endlessly shoot at shields while hunting</fd.settings.shield.performance.verb.description>
+    
+    <fd.settings.shield.performance.flee.label>Enable AI to check if they can hide under shields (Impact: Medium)</fd.settings.shield.performance.flee.label>
+    <fd.settings.shield.performance.flee.description>Enabling allows the AI to check their surrounding. Disabling will cause pawns to shoot in meter radius from shield.</fd.settings.shield.performance.flee.description>
+
+    <!-- Power section -->
+    <fd.settings.shield.power.heading>Power</fd.settings.shield.power.heading>
+
+    <fd.settings.shield.power.per_tile.label>Power to tile</fd.settings.shield.power.per_tile.label>
+    <fd.settings.shield.power.minimum_online.label>Minimum power online</fd.settings.shield.power.minimum_online.label>
+
+    <!-- Integrity section -->
+    <fd.settings.shield.integrity.heading>Integrity</fd.settings.shield.integrity.heading>
+
+    <fd.settings.shield.integrity.power_per_damage.label>Power per damage</fd.settings.shield.integrity.power_per_damage.label>
+    <fd.settings.shield.integrity.drop_pod_damage.label>Drop pod damage</fd.settings.shield.integrity.drop_pod_damage.label>
+    <fd.settings.shield.integrity.skyfaller_damage.label>Meteorite damage</fd.settings.shield.integrity.skyfaller_damage.label>
+
+    <!-- Thermal section-->
+    <fd.settings.shield.thermal.heading>Thermal</fd.settings.shield.thermal.heading>
+
+    <fd.settings.shield.thermal.per_power.label>Heat per power</fd.settings.shield.thermal.per_power.label>
+
+    <fd.settings.shield.thermal.label>Enable shield heat</fd.settings.shield.thermal.label>
+    <fd.settings.shield.thermal.description>Enables shield heat. Can cause shields to malfunction and generate incidents</fd.settings.shield.thermal.description>
+
+    <fd.settings.shield.minor_thermal_incidents.label>Enable minor thermal incidents</fd.settings.shield.minor_thermal_incidents.label>
+    <fd.settings.shield.minor_thermal_incidents.description>Incidents are limited affecting the shield only</fd.settings.shield.minor_thermal_incidents.description>
+
+    <fd.settings.shield.major_thermal_incidents.label>Enable major thermal incidents</fd.settings.shield.major_thermal_incidents.label>
+    <fd.settings.shield.major_thermal_incidents.description>Incidents can affect the shield and power network</fd.settings.shield.major_thermal_incidents.description>
+
+    <fd.settings.shield.critical_thermal_incidents.label>Enable critical thermal incidents</fd.settings.shield.critical_thermal_incidents.label>
+    <fd.settings.shield.critical_thermal_incidents.description>Incidents can affect the shield, power network, and map</fd.settings.shield.critical_thermal_incidents.description>
+    
+    <!-- Alerts /////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <fd.shields.alert.lowpower.label>Shields are offline due to low power</fd.shields.alert.lowpower.label>
+    <fd.shields.alert.lowpower.description>{0} Shield(s) are offline due to low power. Shields need to be connected to power networks with batteries with atleast {1} stored power to work</fd.shields.alert.lowpower.description>
+
+    <!-- Incidents //////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+    <fd.shields.incident.offline.body>A shield generator has gone offline</fd.shields.incident.offline.body>
+
+    <fd.shields.incident.skyfaller.blocked.body>Falling debris has impacted on a shield and was destroyed</fd.shields.incident.skyfaller.blocked.body>
+    <fd.shields.incident.droppod.blocked.body>A drop pod has impacted on a shield and was destroyed</fd.shields.incident.droppod.blocked.body>
+    <fd.shields.incident.shuttle.blocked.body>A shuttle has impacted on a shield and was destroyed</fd.shields.incident.shuttle.blocked.body>
+    <fd.shields.incident.ship.blocked.body>A ship has impacted on a shield and was destroyed</fd.shields.incident.ship.blocked.body>
+    <fd.shields.incident.crashpod.blocked.body>A crashed ship part has impacted on a shield and was destroyed</fd.shields.incident.crashpod.blocked.body>
+
+    <fd.shields.incident.minor.title>Shield Zzzt!</fd.shields.incident.minor.title>
+    <fd.shields.incident.minor.body>An overheating shield emitter coil had a short circuit draining {0}Wd of energy from the power network.</fd.shields.incident.minor.body>
+
+    <fd.shields.incident.major.title>Shield breakdown</fd.shields.incident.major.title>
+    <fd.shields.incident.major.body>An overheating shield emitter coil has broken down and drained {0}Wd of energy from the power network.</fd.shields.incident.major.body>
+
+    <fd.shields.incident.critical.title>Shield explosion</fd.shields.incident.critical.title>
+    <fd.shields.incident.critical.body>An overheating shield emitter coil exploded and drained {0}Wd of energy from the power network.</fd.shields.incident.critical.body>
+    
+    <!-- UI /////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- Text inspection -->
+    <fd.heatsink.temperature>Heatsink temperature</fd.heatsink.temperature>
+
+    <shield.status.offline>Shield offline</shield.status.offline>
+    <shield.status.no_power>Not connected to power</shield.status.no_power>
+    <shield.status.unpowered>Powered off</shield.status.unpowered>
+    <shield.status.no_battieres>No batteries are available</shield.status.no_battieres>
+    <shield.status.battery_too_low>Available battery power below</shield.status.battery_too_low>
+    <shield.status.internal_battery_discharged>Internal battery discharged</shield.status.internal_battery_discharged>
+    <shield.status.thermal_safety>Thermal shutoff safety engaged</shield.status.thermal_safety>
+    <shield.status.online>Shield online</shield.status.online>
+    
+    <!-- Gizmos -->
+    <radius.label>Radius</radius.label>
+    <radius.description>Sets the shield's radius</radius.description>
+    
+    <thermal_shutoff.label>Thermal shutoff</thermal_shutoff.label>
+    <thermal_shutoff.description>Prevents damage to the shield emitter coil from excessive heat</thermal_shutoff.description>
+    
+    <charge_internal_battery.label>Charge internal battery</charge_internal_battery.label>
+    <charge_internal_battery.description>Draws power from any connected batteries to charge the internal battery</charge_internal_battery.description>
+    
+    <fd.shield.render_field.label>Toggle visibility</fd.shield.render_field.label>
+    <fd.shield.render_field.description>Toggles field visibility (cosmetic only)</fd.shield.render_field.description>
+
+    <fd.heatsink.climate.net.connect.label>Use air network</fd.heatsink.climate.net.connect.label>
+    <fd.heatsink.climate.net.connect.description>Connect shield to air network</fd.heatsink.climate.net.connect.description>
+
+    <fd.heatsink.dubs.net.connect.label>Use air-con pipes</fd.heatsink.dubs.net.connect.label>
+    <fd.heatsink.dubs.net.connect.description>Connect shield to air-con pipes</fd.heatsink.dubs.net.connect.description>
+    
+    <FrontierDevelopments.Shields.ITab.Shield>Shield</FrontierDevelopments.Shields.ITab.Shield>
+    <FrontierDevelopments.General.CancelFlick>Reset</FrontierDevelopments.General.CancelFlick>
+    <FrontierDevelopments.Shields.ITab.CanBlock>Battery power reserve</FrontierDevelopments.Shields.ITab.CanBlock>
+    
+</LanguageData>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <TaleDef>
+        <defName>KilledByImpactingOnShield</defName>
+        <label>impacted on shield</label>
+        <taleClass>FrontierDevelopments.Shields.Tale.Tale_KilledByImpactingOnShield</taleClass>
+        <type>Volatile</type>
+        <baseInterest>1.0</baseInterest>
+        <colonistOnly>false</colonistOnly>
+        <rulePack>
+            <rulesStrings>
+                <li>tale_noun->[PAWN_nameDef]'s impacting on a shield</li>
+                <li>image->[PAWN_nameFull] impacting on a shield [circumstance_group]</li>
+                <li>image->[PAWN_nameFull] striking a shield [circumstance_group]</li>
+                <li>image->[PAWN_nameFull] hitting a shield [circumstance_group]</li>
+                <li>image->[PAWN_nameFull] hitting a shield [circumstance_group]</li>
+                <li>circumstance_phrase->in front of a [TerrainFeature]</li>
+                <li>circumstance_phrase->with incredible force</li>
+                <li>circumstance_phrase->in a plume of smoke and mangled steel.</li>
+                <li>desc_sentence->[PAWN_pronoun] is concentrating intently on the controls.</li>
+                <li>desc_sentence->[PAWN_pronoun] has [PAWN_possessive] eyes closed and looks afraid.</li>
+                <li>desc_sentence->[PAWN_pronoun] is unconscious, [PAWN_possessive] tongue lolling out, drool dripping.</li>
+                <li>desc_sentence->[PAWN_pronoun] struggles against their fate.</li>
+                <li>desc_sentence->[PAWN_pronoun] seems to have no idea [PAWN_pronoun] is doomed.</li>
+                <li>desc_sentence->[PAWN_pronoun] is helpless to prevent [PAWN_possessive] fate.</li>
+                <li>desc_sentence->There is a flame trail across the sky.</li>
+                <li>desc_sentence->A nearby [Animal] is looking up, startled.</li>
+                <li>desc_sentence->A [Animal] is fleeing the impact in fear.</li>
+                <li>desc_sentence->There is a [TerrainFeature] in the background.</li>
+                <li>desc_sentence->A [PersonJob] watches silently from afar.</li>
+            </rulesStrings>
+        </rulePack>
+    </TaleDef>
+</Defs>

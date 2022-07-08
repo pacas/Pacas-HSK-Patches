@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BaseGun_ShortBarreled">
+        <defName>HC_SeventhSeraphOfficerRevolver</defName>
+        <label>Seventh Seraph Officer Revolver</label>
+        <description>A thing of elegance from a more civilized age.\nCaliber: .45 ACP</description>
+        <graphicData>
+            <texPath>seventhseraphrevolver</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Revolver</soundInteract>
+        <weaponTags>
+            <li>PT2</li>
+            <li>Gun</li>
+            <li>TierTwoPistol</li>
+            <li>CE_Sidearm</li>
+            <li>CE_AI_Pistol</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>Pistols</li>
+        </thingCategories>
+        <statBases>
+            <MarketValue>700</MarketValue>
+            <Mass>1.25</Mass>
+            <RangedWeapon_Cooldown>0.41</RangedWeapon_Cooldown>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.17</ShotSpread>
+            <SwayFactor>1.33</SwayFactor>
+            <Bulk>2.75</Bulk>
+        </statBases>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+                <warmupTime>0.4</warmupTime>
+                <range>35</range>
+                <soundCast>shot_seventhseraphofficerrevolver</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <recoilPattern>Regular</recoilPattern>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>7</magazineSize>
+                <reloadTime>2.6</reloadTime>
+                <ammoSet>AmmoSet_45ACP</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Pistol_Component>1</Pistol_Component>
+            <Weapon_Parts>3</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>SG_SeventhSeraphCQC</defName>
+        <label>Seventh Seraph CQC-12</label>
+        <description>Word into law, held at gunpoint.\nCaliber: 12 Gauge</description>
+        <graphicData>
+            <texPath>seventhseraphcqc</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <weaponTags>
+            <li>ST3</li>
+            <li>Gun</li>
+            <li>TierTwoSMG</li>
+            <li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <statBases>
+            <MarketValue>1400</MarketValue>
+            <Mass>3.5</Mass>
+            <Bulk>8.8</Bulk>
+            <SwayFactor>1.25</SwayFactor>
+            <ShotSpread>0.12</ShotSpread>
+            <SightsEfficiency>1</SightsEfficiency>
+            <RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Slug</defaultProjectile>
+                <warmupTime>0.5</warmupTime>
+                <range>23</range>
+                <soundCast>shot_seventhseraphcqc</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>4</magazineSize>
+                <reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.5</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>10</Weapon_Parts>
+            <Plastic>4</Plastic>
+        </smeltProducts>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>SMG_SeventhSeraphVY</defName>
+        <label>Seventh Seraph VY-7</label>
+        <description>No offense is too small to reprimand.\nCaliber: .45 ACP</description>
+        <graphicData>
+            <texPath>seventhseraphvy7</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_SMG</soundInteract>
+        <weaponTags>
+            <li>SMG2</li>
+            <li>Gun</li>
+            <li>TierTwoSMG</li>
+            <li>CE_SMG</li>
+            <li>CE_AI_AssaultWeapon</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>SMGs</li>
+        </thingCategories>
+        <statBases>
+            <MarketValue>900</MarketValue>
+            <Mass>2.80</Mass>
+            <Bulk>4.50</Bulk>
+            <SwayFactor>0.75</SwayFactor>
+            <ShotSpread>0.16</ShotSpread>
+            <SightsEfficiency>1</SightsEfficiency>
+            <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilPattern>Regular</recoilPattern>
+                <recoilAmount>1.22</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+                <burstShotCount>5</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>0.5</warmupTime>
+                <range>25</range>
+                <soundCast>shot_seventhseraphvy7</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>Snapshot</aiAimMode>
+                <aiUseBurstMode>True</aiUseBurstMode>
+                <aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>30</magazineSize>
+                <reloadTime>2.2</reloadTime>
+                <ammoSet>AmmoSet_45ACP</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <SMG_Component>1</SMG_Component>
+            <Weapon_Parts>3</Weapon_Parts>
+            <Plastic>3</Plastic>
+        </smeltProducts>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_ShortBarreled">
+        <defName>SI_SeventhSeraphSI</defName>
+        <label>Seventh Seraph SI-2</label>
+        <description>Kept in holster as the last line. Known for its reliability.\nCaliber: .45 ACP</description>
+        <graphicData>
+            <texPath>seventhseraphsi2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Autopistol</soundInteract>
+        <weaponTags>
+            <li>PT2</li>
+            <li>Gun</li>
+            <li>TierTwoPistol</li>
+            <li>CE_Sidearm</li>
+            <li>CE_AI_Pistol</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>Pistols</li>
+        </thingCategories>
+        <statBases>
+            <MarketValue>650</MarketValue>
+            <Mass>2.28</Mass>
+            <Bulk>4.76</Bulk>
+            <SwayFactor>1.38</SwayFactor>
+            <ShotSpread>0.16</ShotSpread>
+            <SightsEfficiency>0.8</SightsEfficiency>
+            <RangedWeapon_Cooldown>0.46</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+                <warmupTime>0.5</warmupTime>
+                <burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <range>24</range>
+                <soundCast>shot_seventhseraphsi2</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>2</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>15</magazineSize>
+                <reloadTime>2</reloadTime>
+                <ammoSet>AmmoSet_45ACP</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Pistol_Component>1</Pistol_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>AR_seventhseraphcarbine</defName>
+        <label>Seventh Seraph Carbine</label>
+        <description>The old workhorse, still with many years to give.\nCaliber: 5.56x45mm NATO</description>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>seventhseraphcarbine</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <Mass>4.0</Mass>
+            <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+            <SightsEfficiency>1.2</SightsEfficiency>
+            <ShotSpread>0.10</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <Bulk>9.90</Bulk>
+            <MarketValue>1850</MarketValue>
+        </statBases>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.2</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+                <burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1</warmupTime>
+                <range>50</range>
+                <soundCast>shot_seventhseraphcarbine</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>34</magazineSize>
+                <reloadTime>2.6</reloadTime>
+                <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+            </li>
+        </comps>
+        <weaponTags>
+            <li>RF3</li>
+            <li>AdvancedGun</li>
+            <li>TierOneRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <smeltProducts>
+            <AdvRifle_Component>1</AdvRifle_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierThree</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>MG_SevethSeraphSAW</defName>
+        <label>Seventh Seraph SAW</label>
+        <description>Chained away long ago; its jaws too eager in times of peace.\nCaliber: 7.62x39mm Soviet</description>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <graphicData>
+            <texPath>seventhseraphsaw</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>2250</MarketValue>
+            <Mass>14.8</Mass>
+            <Bulk>26.00</Bulk>
+            <SwayFactor>1.52</SwayFactor>
+            <ShotSpread>0.1</ShotSpread>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+        </statBases>
+        <techLevel>Spacer</techLevel>
+        <thingCategories>
+            <li>MachineGun</li>
+        </thingCategories>
+        <weaponTags>
+            <li>MG2</li>
+            <li>GunHeavy</li>
+            <li>MachineGun</li>
+            <li>BrotherhoodHeavy</li>
+            <li>SectarianHeavy</li>
+            <li>SyndicateMachineGun</li>
+            <li>OrionHeavy</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+        </weaponTags>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.35</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>
+                <burstShotCount>15</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <warmupTime>1.25</warmupTime>
+                <range>56</range>
+                <soundCast>shot_seventhseraphsaw</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <recoilAmount>1.2</recoilAmount>
+                <recoilPattern>Mounted</recoilPattern>
+                <targetParams>
+                    <canTargetLocations>True</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>5</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>60</magazineSize>
+                <reloadTime>4.5</reloadTime>
+                <ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>6</Weapon_Parts>
+            <Plastic>7</Plastic>
+        </smeltProducts>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ====================================================== -->
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_MycoidColossus</defName>
+        <label>mycoid colossus</label>
+        <description>The Mycoid Colossus is a variant of the Overgrown colossus native to a mycotic jungle.\n\nIt seems to be reptilian in nature, with cold blood, a slow metabolism, and a very weird body plan: it has six legs, two intertwined spines and six eyes. It has a symbiotic relationship with fungi, with several mutant Agarilux mushrooms growing on its back. These fungi trap insects and seem to provide sustenance in a symbiotic relationship with the colossus. Weirdly enough, this colossus reproduces by sporulation, instead of being a viviparous creature, so its children are completely wild and independent from it, with no concept of parenthood.\n\nWhen tamed, the Mycoid Colossus can be periodically "trimmed" to obtain raw agarilux mushrooms.</description>
+        <statBases>
+            <MoveSpeed>2.00</MoveSpeed>
+            <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+            <MarketValue>550</MarketValue>
+            <MeatAmount>0</MeatAmount>
+            <LeatherAmount>0</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>1.85</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_AsexualReproduction">
+                <reproductionIntervalDays>85</reproductionIntervalDays>
+                <customString>Dispersing spores in: </customString>
+                <produceEggs>true</produceEggs>
+                <eggDef>AA_MycoidColossusSpores</eggDef>
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+                <resourceDef>Rawmushroom</resourceDef>
+                <gatheringIntervalDays>10</gatheringIntervalDays>
+                <resourceAmount>100</resourceAmount>
+                <customResourceString>RawMushrooms</customResourceString>
+            </li>
+        </comps>
+        <race>
+            <body>AA_Hexapod</body>
+            <baseBodySize>6</baseBodySize>
+            <baseHealthScale>2.7</baseHealthScale>
+            <baseHungerRate>0.25</baseHungerRate>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <wildness>0.90</wildness>
+            <hasGenders>false</hasGenders>
+            <mateMtbHours>10000</mateMtbHours>
+            <gestationPeriodDays>10000</gestationPeriodDays>
+            <trainability>Intermediate</trainability>
+            <manhunterOnDamageChance>.75</manhunterOnDamageChance>
+            <useMeatFrom>Elephant</useMeatFrom>
+            <lifeExpectancy>570</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.5</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>1</minAge>
+                    <soundWounded>Pawn_Rhinoceros_Wounded</soundWounded>
+                    <soundDeath>Pawn_Rhinoceros_Death</soundDeath>
+                    <soundCall>Pawn_Rhinoceros_Call</soundCall>
+                    <soundAngry>Pawn_Rhinoceros_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <butcherProducts>
+            <Rawmushroom>240</Rawmushroom>
+            <RawShimmershroom>10</RawShimmershroom>
+            <RawGlowbulb>10</RawGlowbulb>
+            <GleamcapStem>10</GleamcapStem>
+        </butcherProducts>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_SecondaryRole</li>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Farm</li>
+                    <li>AA_Tank</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_FarmFoodDesc</li>
+                    <li>AA_ArmouredTankDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_MycoidColossus</defName>
+        <label>mycoid colossus</label>
+        <race>AA_MycoidColossus</race>
+        <combatPower>500</combatPower>
+        <ecoSystemWeight>.75</ecoSystemWeight>
+        <canArriveManhunter>false</canArriveManhunter>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_MycoidColossus/AA_MycoidColossus</texPath>
+                    <drawSize>4</drawSize>
+                    <shadowData>
+                        <volume>(0.30, 0.25, 0.20)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_OvergrownColossus/AA_Dessicated_OvergrownColossus</texPath>
+                    <drawSize>4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_MycoidColossus/AA_MycoidColossus</texPath>
+                    <drawSize>5</drawSize>
+                    <shadowData>
+                        <volume>(0.375, 0.375, 0.375)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_OvergrownColossus/AA_Dessicated_OvergrownColossus</texPath>
+                    <drawSize>5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_MycoidColossus/AA_MycoidColossus</texPath>
+                    <drawSize>6</drawSize>
+                    <shadowData>
+                        <volume>(0.5, 0.5, 0.4)</volume>
+                        <offset>(0,0,-0.05)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_OvergrownColossus/AA_Dessicated_OvergrownColossus</texPath>
+                    <drawSize>6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

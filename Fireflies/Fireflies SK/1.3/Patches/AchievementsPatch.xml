@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<!--==================== Fireflies Tab Creation ====================-->
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>Fireflies_Achievements</defName>
+							<label>Fireflies</label>
+						</AchievementsExpanded.AchievementTabDef>
+
+						<AchievementsExpanded.AchievementDef Name="Fireflies_AchievementParent" Abstract="true">					
+							<bgtexPath>Achievements/Fireflies_AchievementBackground</bgtexPath>
+							<tab>Fireflies_Achievements</tab>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--==================== Tame a Firefly ====================-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
+							<defName>FF_Achievement_Tame_Firefly</defName>
+							<label>A firefly has joined the colony!</label>
+							<description>Tame a firefly.</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>FF_FireflyKind</key>
+										<value>1</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/FF_Achievement_Tame_Firefly</texPath>
+							<points>1</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--==================== Tame 2 Fireflies ====================-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
+							<defName>FF_Achievement_Tame_Firefly_2</defName>
+							<label>A second firefly has joined the colony.</label>
+							<description>Tame another firefly.</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>FF_FireflyKind</key>
+										<value>2</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/FF_Achievement_Tame_Firefly_2</texPath>
+							<points>2</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--==================== Tame 3 Fireflies ====================-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
+							<defName>FF_Achievement_Tame_Firefly_3</defName>
+							<label>A third firefly has joined the colony...</label>
+							<description>Tame yet another firefly.</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>FF_FireflyKind</key>
+										<value>3</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/FF_Achievement_Tame_Firefly_3</texPath>
+							<points>3</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--==================== Tame 5 Fireflies ====================-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
+							<defName>FF_Achievement_Tame_Firefly_5</defName>
+							<label>Five of them? Hmm...</label>
+							<description>Tame five fireflies.</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>FF_FireflyKind</key>
+										<value>5</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/FF_Achievement_Tame_Firefly_5</texPath>
+							<points>5</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--==================== Tame 8 Fireflies ====================-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
+							<defName>FF_Achievement_Tame_Firefly_8</defName>
+							<label>Eight? This is getting a little ridiculous.</label>
+							<description>Tame eight fireflies.</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>FF_FireflyKind</key>
+										<value>8</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/FF_Achievement_Tame_Firefly_8</texPath>
+							<points>8</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--==================== Tame 13 Fireflies ====================-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
+							<defName>FF_Achievement_Tame_Firefly_13</defName>
+							<label>An ecologists dozen.</label>
+							<description>Tame thirteen fireflies.</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>FF_FireflyKind</key>
+										<value>13</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/FF_Achievement_Tame_Firefly_13</texPath>
+							<points>13</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--==================== Tame 21 Fireflies ====================-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
+							<defName>FF_Achievement_Tame_Firefly_21</defName>
+							<label>Alright, alright, is this enough light?</label>
+							<description>Tame twenty-one fireflies.</description>
+
+							<tracker Class="AchievementsExpanded.KindDefTracker">
+								<kindDefs>
+									<li>
+										<key>FF_FireflyKind</key>
+										<value>21</value>
+									</li>
+								</kindDefs>
+							</tracker>
+
+							<texPath>Achievements/FF_Achievement_Tame_Firefly_21</texPath>
+							<points>21</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--==================== Build a Jar of Fireflies ====================-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
+							<defName>FF_Achievement_Build_Firefly_Jar</defName>
+							<label>Cozy, heartwarming, bright, what more do you need?</label>
+							<description>Build a jar of fireflies.</description>
+
+							<tracker Class="AchievementsExpanded.BuildingTracker">
+								<def>FF_Firefly_Jar</def>
+								<count>1</count>
+							</tracker>
+
+							<texPath>Achievements/FF_Achievement_Build_Firefly_Jar</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+
+						<!--==================== Collect 90 Firefly Essence ====================-->
+
+						<AchievementsExpanded.AchievementDef ParentName="Fireflies_AchievementParent">
+							<defName>FF_Achievement_Collect_Firefly_Essence</defName>
+							<label>I almost want to... eat it...</label>
+							<description>Collect 90 firefly essence.</description>
+
+							<tracker Class="AchievementsExpanded.ItemTracker">
+								<def>FF_Firefly_Essence</def>
+								<count>90</count>
+							</tracker>
+
+							<texPath>Achievements/FF_Achievement_Collect_Firefly_Essence</texPath>
+							<points>10</points>
+						</AchievementsExpanded.AchievementDef>
+                        
+                    </value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

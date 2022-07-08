@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RefinedPlanetarium.label>Планетариум</RefinedPlanetarium.label>
+  <RefinedPlanetarium.description>Минеральное вещество, очищенное от твердых частиц в атмосфере, рассеянных вулканической деятельностью.
+  \n\nПланетариум жизненно необходим для выживания рабби, ибо без него они в конце концов впадают в безумие. Стимулируя активность мозга, кролики, потребляющие это вещество в течение длительного времени, начинают видеть кратковременные пророческие видения, заглядывая на несколько секунд в будущее.
+  \n\nОбычно называемое пряностью, это вещество вызывает сильное привыкание и других рас, но только у рабби появляются пророческие видения. Как бы то ни было, употребление этого вещества обычно вызывает приятное эйфорическое ощущение.</RefinedPlanetarium.description>
+  <RefinedPlanetarium.ingestible.ingestCommandString>Нюхать {0}</RefinedPlanetarium.ingestible.ingestCommandString>
+  <RefinedPlanetarium.ingestible.ingestReportString>Нюхает {0}</RefinedPlanetarium.ingestible.ingestReportString>
+
+  <RB_Braincrystal.label>Мозговой кристал</RB_Braincrystal.label>
+  <RB_Braincrystal.description>Полутвердое кристаллическое вещество, находящееся внутри голов рабби.
+  \n\nСодержит небольшую дозу планетариума и может удовлетворить зависимость к этому веществу, но его поедание отвратительно и ужасает.</RB_Braincrystal.description>
+  <RB_Braincrystal.ingestible.ingestCommandString>Съесть {0}</RB_Braincrystal.ingestible.ingestCommandString>
+  <RB_Braincrystal.ingestible.ingestReportString>Ест {0}</RB_Braincrystal.ingestible.ingestReportString>
+
+  <PlanetariumTea.label>Планетариумный чай</PlanetariumTea.label>
+  <PlanetariumTea.description>Ароматный чай из заваренного планетариума. Наиболее распространенный метод потребления планетария, который обеспечивает большее удовольствие по сравнению с потреблением его в сыром виде.</PlanetariumTea.description>
+  <PlanetariumTea.ingestible.ingestCommandString>Выпить {0}</PlanetariumTea.ingestible.ingestCommandString>
+  <PlanetariumTea.ingestible.ingestReportString>Пьет {0}</PlanetariumTea.ingestible.ingestReportString>
+
+</LanguageData>

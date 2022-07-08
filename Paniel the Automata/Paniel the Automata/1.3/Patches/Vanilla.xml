@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/WorkGiverDef[defName="DoBillsFabricationBench"]/fixedBillGiverDefs</xpath>
+        <value>
+            <li>PN_AutomatonBench</li>
+        </value>
+    </Operation>
+
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef[defName = "OutlanderCivil"]/caravanTraderKinds</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/FactionDef[defName = "OutlanderCivil"]</xpath>
+            <value>
+                <caravanTraderKinds>
+                    <li>PN_Caravan_PnLindustry</li>
+                </caravanTraderKinds>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/FactionDef[defName = "OutlanderCivil"]/caravanTraderKinds</xpath>
+            <value>
+                <li>PN_Caravan_PnLindustry</li>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>

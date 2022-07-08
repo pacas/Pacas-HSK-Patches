@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 플라네타리움 아이템 -->
+
+  <RefinedPlanetarium.label>플라네타륨</RefinedPlanetarium.label>
+  <RefinedPlanetarium.description>행성의 대기에 화산활동으로 뿌려진 미량의 성분을 포집해서, 정제한 귀한 물질입니다.
+\n\n플라네타리움은 래비들의 맑은 정신 유지를 가능케 하여 생존엔 없어선 안 될 물질입니다. 그들의 빠른 뇌 활동에 관여함은 물론, 오랜 시간 꾸준히 이 물질을 섭취한 래비는 긴장했을 때 몇 초간의 짧고 흐릿한 미래를 내다볼수 있는 능력을 가진다고 합니다.
+\n\n래비 제국의 군대는 보통 '향신료'라 불리우는 이 물질을 달의 시민들에게 안정적으로 공급하는 데 온 힘을 쏟고 있습니다.\n타 종족은 중독될 뿐 아무 효과도 없지만 향을 즐기거나 거래하는 이들은 있는 모양입니다.</RefinedPlanetarium.description>
+  <RefinedPlanetarium.ingestible.ingestCommandString>{0}을 먹기</RefinedPlanetarium.ingestible.ingestCommandString>
+  <RefinedPlanetarium.ingestible.ingestReportString>{0}을 먹기.</RefinedPlanetarium.ingestible.ingestReportString>
+
+  <RB_Braincrystal.label>뇌석</RB_Braincrystal.label>
+  <RB_Braincrystal.description>래비의 뇌 속에서 나온 무언가입니다. \n\n그로테스크한 부정형의 모습을 하고 있으며, 먹으면 결정으로 침착된 플라네타륨 성분을 섭취할 수 있습니다. 이 비릿한 냄새를 좋아할 사람은 없겠지만요.</RB_Braincrystal.description>
+  <RB_Braincrystal.ingestible.ingestCommandString>{0}을 삼키기</RB_Braincrystal.ingestible.ingestCommandString>
+  <RB_Braincrystal.ingestible.ingestReportString>{0}을 삼키기.</RB_Braincrystal.ingestible.ingestReportString>
+
+  <PlanetariumTea.label>플라네타륨 차</PlanetariumTea.label>
+  <PlanetariumTea.description>플라네타리움으로 끓인 향긋한 차입니다. \n\n기호품으로서의 역할도 하는 플라네타리움을 즐기는 방법으로 래비 제국에서 가장 널리 알려졌습니다. 달의 도시의 카페에서는 어느 곳이든 취급하고 있으며, 풍부하고 깊은 향신료의 향긋함이 가루로 섭취했을 때보다 오래 갑니다.\n\n약물로서의 즐거움도 조금 상승합니다.</PlanetariumTea.description>
+  <PlanetariumTea.ingestible.ingestCommandString>{0}를 마시기</PlanetariumTea.ingestible.ingestCommandString>
+  <PlanetariumTea.ingestible.ingestReportString>{0}를 마시기.</PlanetariumTea.ingestible.ingestReportString>
+
+
+</LanguageData>

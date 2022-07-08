@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>RB_BionicTail</defName>
+        <label>생체공학 래비 꼬리</label>
+        <labelNoun>생체공학 래비 꼬리</labelNoun>
+        <description>생체공학 꼬리의 보정으로 인해 움직임이 조금 빨라집니다.</description>
+        <spawnThingOnRemoved>RB_BionicTail</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+</Defs>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <CustomizableRecipe.StatOverrideDef>
+        <defName>PN_PackagedAutomaton_MarketValue</defName>
+        <thingDef>Packaged_NormalAutomaton</thingDef>
+        <statDef>MarketValue</statDef>
+        <worker Class="AutomataRace.StatOverrideWorker_MarketValue_Automaton">
+        </worker>
+    </CustomizableRecipe.StatOverrideDef>
+
+    <CustomizableRecipe.StatOverrideDef>
+        <defName>PN_Paniel_Race_MarketValue</defName>
+        <thingDef>Paniel_Race</thingDef>
+        <statDef>MarketValue</statDef>
+        <worker Class="AutomataRace.StatOverrideWorker_MarketValue_Automaton">
+            <multiplier>1.00</multiplier>
+        </worker>
+    </CustomizableRecipe.StatOverrideDef>
+
+    <CustomizableRecipe.StatOverrideDef>
+        <defName>PN_Paniel_Race_ArmorRating_Sharp</defName>
+        <thingDef>Paniel_Race</thingDef>
+        <statDef>ArmorRating_Sharp</statDef>
+        <worker Class="AutomataRace.StatOverrideWorker_ArmorRating_Automaton">
+            <addition>0</addition>
+            <multiplier>0.6</multiplier>
+        </worker>
+    </CustomizableRecipe.StatOverrideDef>
+
+    <CustomizableRecipe.StatOverrideDef>
+        <defName>PN_Paniel_Race_ArmorRating_Blunt</defName>
+        <thingDef>Paniel_Race</thingDef>
+        <statDef>ArmorRating_Blunt</statDef>
+        <worker Class="AutomataRace.StatOverrideWorker_ArmorRating_Automaton">
+            <addition>0</addition>
+            <multiplier>0.6</multiplier>
+        </worker>
+    </CustomizableRecipe.StatOverrideDef>
+
+    <CustomizableRecipe.StatOverrideDef>
+        <defName>PN_Paniel_Race_ArmorRating_Heat</defName>
+        <thingDef>Paniel_Race</thingDef>
+        <statDef>ArmorRating_Heat</statDef>
+        <worker Class="AutomataRace.StatOverrideWorker_ArmorRating_Automaton">
+            <multiplier>1.0</multiplier>
+        </worker>
+    </CustomizableRecipe.StatOverrideDef>
+</Defs>

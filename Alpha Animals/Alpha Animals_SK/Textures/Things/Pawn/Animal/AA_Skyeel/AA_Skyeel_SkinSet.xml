@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<SkinSet>
+  
+   <lifeStage>
+    <appliesToAll>true</appliesToAll>
+    <variants>
+      <skin>
+        <color>(256,256,256)</color>
+        <commonality>1</commonality>
+        <texName>AA_Skyeel</texName>
+      </skin>
+      <skin>
+        <color>(189,216,225)</color>
+        <commonality>0.5</commonality>
+        <texName>AA_Skyeel</texName>
+      </skin>
+      <skin>
+        <color>(169,234,255)</color>
+        <commonality>0.5</commonality>
+        <texName>AA_Skyeel</texName>
+      </skin>
+      <skin>
+        <color>(58,166,201)</color>
+        <commonality>0.5</commonality>
+        <texName>AA_Skyeel</texName>
+      </skin>
+      <skin>
+        <color>(118,176,255)</color>
+        <commonality>0.3</commonality>
+        <texName>AA_Skyeel</texName>
+      </skin>     
+          
+    </variants>  
+	
+    <winterCoat>
+      <useWinterCoat>false</useWinterCoat>
+    </winterCoat>
+  </lifeStage>
+  
+</SkinSet>

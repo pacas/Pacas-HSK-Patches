@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Concepts taught through the learning readout, when opportunities arise -->
+
+  <FD_Shields.label>屏障生成器</FD_Shields.label>
+  <FD_Shields.helpText>屏障護盾以電池電量為代價阻止來襲的炮彈。然而，它們並不能阻止人們穿過它們。它們在空閒時使用低功率，在停止來襲火力時消耗更多的能量。\n\n建議使用電池，因為防護罩的瞬時功率消耗非常高。自動持續射擊會更快地消耗電力，所以建議使用多個電池。
+    </FD_Shields.helpText>
+
+  <FD_CoilTemperature.label>屏障溫度線圈</FD_CoilTemperature.label>
+  <FD_CoilTemperature.helpText>當屏障護盾吸收來襲的炮彈時，護盾線圈會發熱。生成器將緩慢地與室內的熱量交換，直到達到環境溫度。\n\n超過100C：輕微故障，屏蔽可能會導緻電網短路。\n\n 150C以上：中度故障，屏蔽可能會導緻短路並可能擊穿。\n\n超過200C：嚴重故障，屏蔽短路，擊穿，在爆炸中受到傷害。
+		</FD_CoilTemperature.helpText>
+
+  <FD_ShieldsPortable.label>便攜式屏障生成器</FD_ShieldsPortable.label>
+  <FD_ShieldsPortable.helpText>便攜式屏障是一種小型化的防護裝置，允許你移動發電機。它們帶有一個小的內部電池，可以作為獨立的電源為設備供電。\n\n它可以連接到正常的電網，並作為普通電池使用。這些護盾有固定的防禦半徑。
+		</FD_ShieldsPortable.helpText>
+
+
+</LanguageData>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BodyPartDef>
+    <defName>ReviaRaceTail</defName>
+    <label>revia tail</label>
+    <description>One or more large, fluffy vulpine tails. Smells faintly of copper.</description>
+    <hitPoints>35</hitPoints>
+    <frostbiteVulnerability>0.20</frostbiteVulnerability>
+    <skinCovered>false</skinCovered>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+</Defs>

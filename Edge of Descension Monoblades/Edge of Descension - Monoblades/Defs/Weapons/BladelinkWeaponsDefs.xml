@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="DW_Bladelink" ParentName="SK_BaseMeleeWeapon" Abstract="True">
+        <techLevel>Ultra</techLevel>
+        <tradeNeverStack>true</tradeNeverStack>
+        <relicChance>3</relicChance>
+        <weaponTags>
+            <li>Bladelink</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Ultratech</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>WeaponsMeleeBladelink</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_BladelinkWeapon">
+                <biocodeOnEquip>true</biocodeOnEquip>
+            </li>
+            <li Class="CompProperties_GeneratedName">
+                <nameMaker>NamerWeaponBladelink</nameMaker>
+            </li>
+            <li Class="CompProperties_Styleable"/>
+        </comps>
+        <smeltable>true</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <thingSetMakerTags>
+            <li>WeaponBladelink</li>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+    <ThingDef ParentName="DW_Bladelink">
+        <defName>MeleeWeapon_MonobladeBladelink</defName>
+        <label>persona monoblade</label>
+        <description>A crystal-metallic blade infused with mechanites that maintain a mono-molecular cutting edge. The blade permits fast swings combined with its high armor penetration, resulting in a fierce combination perfect in the battlefield.\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <statBases>
+            <MarketValue>3000</MarketValue>
+            <Mass>1.9</Mass>
+            <Bulk>5</Bulk>
+            <MeleeCounterParryBonus>0.50</MeleeCounterParryBonus>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <relicChance>3</relicChance>
+        <graphicData>
+            <texPath>Weapons/monoblade1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(255,200,200)</color>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+        <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+        <equippedStatOffsets>
+            <MeleeCritChance>1.10</MeleeCritChance>
+            <MeleeParryChance>0.50</MeleeParryChance>
+            <MeleeDodgeChance>0.37</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>1.4</cooldownTime>
+                <armorPenetrationBlunt>0.7</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>0.78</cooldownTime>
+                <armorPenetrationBlunt>1.35</armorPenetrationBlunt>
+                <armorPenetrationSharp>30.77</armorPenetrationSharp>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>33</power>
+                <cooldownTime>0.67</cooldownTime>
+                <chanceFactor>1.33</chanceFactor>
+                <armorPenetrationBlunt>7.18</armorPenetrationBlunt>
+                <armorPenetrationSharp>25.3</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
+  
+    <ThingDef ParentName="DW_Bladelink">
+        <defName>MeleeWeapon_MonobladePrestigeBladelink</defName>
+        <label>persona prestige monoblade</label>
+        <description>A crystal-metallic blade infused with mechanites that maintain a mono-molecular cutting edge. The blade permits fast swings combined with its high armor penetration, resulting in a fierce combination perfect in the battlefield.\nExpensive and beautiful, prestige weapon like this is usually made for those of high status, indirectly improving their social capabilities. The variant comes with enhanced psychic capabilities and improved swordplay.\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <statBases>
+            <MarketValue>4000</MarketValue>
+            <Mass>1.9</Mass>
+            <Bulk>5</Bulk>
+            <MeleeCounterParryBonus>0.50</MeleeCounterParryBonus>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <equippedStatOffsets>
+            <PsychicSensitivityOffset>0.10</PsychicSensitivityOffset>
+            <PsychicEntropyRecoveryRate>0.085</PsychicEntropyRecoveryRate>
+            <SocialImpact>0.2</SocialImpact>
+            <MeleeCritChance>1.10</MeleeCritChance>
+            <MeleeParryChance>0.50</MeleeParryChance>
+            <MeleeDodgeChance>0.37</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <relicChance>3</relicChance>
+        <graphicData>
+            <texPath>Weapons/monoblade2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(255,200,200)</color>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+        <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>1.4</cooldownTime>
+                <armorPenetrationBlunt>0.7</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>0.78</cooldownTime>
+                <armorPenetrationBlunt>1.35</armorPenetrationBlunt>
+                <armorPenetrationSharp>30.77</armorPenetrationSharp>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>34</power>
+                <cooldownTime>0.67</cooldownTime>
+                <chanceFactor>1.33</chanceFactor>
+                <armorPenetrationBlunt>7.18</armorPenetrationBlunt>
+                <armorPenetrationSharp>27.3</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef Name="DescensionWeapons_Bladelink" ParentName="SK_BaseMeleeWeapon" Abstract="True">
+        <techLevel>Archotech</techLevel>
+        <tradeNeverStack>true</tradeNeverStack>
+        <relicChance>3</relicChance>
+        <weaponTags>
+            <li>Bladelink</li>
+            <li>ArchotechMelee</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Ultratech</li>
+        </weaponClasses>
+        <comps>
+            <li Class="CompProperties_BladelinkWeapon">
+                <biocodeOnEquip>true</biocodeOnEquip>
+            </li>
+            <li Class="CompProperties_GeneratedName">
+                <nameMaker>NamerWeaponBladelink</nameMaker>
+            </li>
+            <li Class="CompProperties_Styleable"/>
+        </comps>
+        <smeltable>false</smeltable>
+        <burnableByRecipe>false</burnableByRecipe>
+        <thingCategories>
+            <li>WeaponsMeleeBladelink</li>
+        </thingCategories>
+        <thingSetMakerTags>
+            <li>WeaponBladelink</li>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+  
+    <ThingDef ParentName="DescensionWeapons_Bladelink">
+        <defName>MeleeWeapon_Archoblade</defName>
+        <label>Archoblade</label>
+        <description>An ancient archotech weapon that resembles an eastern-styled sword rumored to be capable of slicing a moon. Every slice is powerful, capable of stunning the enemy. Exceptionally lethal.\nThis weapon has an onboard persona that can bond to only a single wielder.</description>
+        <statBases>
+            <MarketValue>6000</MarketValue>
+            <Mass>1.9</Mass>
+            <Bulk>7</Bulk>
+            <MeleeCounterParryBonus>1.20</MeleeCounterParryBonus>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <relicChance>3</relicChance>
+        <equippedStatOffsets>
+            <MeleeCritChance>2.50</MeleeCritChance>
+            <MeleeParryChance>1.0</MeleeParryChance>
+            <MeleeDodgeChance>0.45</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <graphicData>
+            <texPath>Weapons/monoblade3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+        <meleeHitSound>MeleeHit_BladelinkMonoSword</meleeHitSound>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleePiercer</li>
+            <li>Ultratech</li>
+        </weaponClasses>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>7</power>
+                <cooldownTime>1.4</cooldownTime>
+                <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>26</power>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Stun</def>
+                        <amount>5</amount>
+                        <chance>0.3</chance>
+                    </li>
+                </extraMeleeDamages>
+                <cooldownTime>0.71</cooldownTime>
+                <armorPenetrationBlunt>11.72</armorPenetrationBlunt>
+                <armorPenetrationSharp>63.25</armorPenetrationSharp>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>45</power>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Stun</def>
+                        <amount>5</amount>
+                        <chance>0.3</chance>
+                    </li>
+                </extraMeleeDamages>
+                <cooldownTime>0.6</cooldownTime>
+                <chanceFactor>1.33</chanceFactor>
+                <armorPenetrationBlunt>12.28</armorPenetrationBlunt>
+                <armorPenetrationSharp>47</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
+ 
+</Defs>

@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================================== 베이스 ====================================-->
+
+    <!--싱크 베이스-->
+
+    <HediffDef Abstract="True" Name="PN_Sync_Base">
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+        <isBad>false</isBad>
+        <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+    </HediffDef>
+
+    <!--필터-->
+
+    <HediffDef ParentName="PN_Sync_Base" Abstract="True" Name="PN_Give_Base">
+        <label>filter</label>
+        <description>...</description>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--등급 베이스-->
+
+    <HediffDef ParentName="PN_Sync_Base" Abstract="True" Name="PN_SyncAwful_Base">
+        <description>This pawn is an automaton.\nAfter production, it was rated awful grade.</description>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.30</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_Sync_Base" Abstract="True" Name="PN_SyncPoor_Base">
+        <description>This pawn is an automaton.\nAfter production, it was rated poor grade.</description>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_Sync_Base" Abstract="True" Name="PN_SyncNormal_Base">
+        <description>This pawn is an automaton.\nAfter production, it was rated normal grade.</description>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_Sync_Base" Abstract="True" Name="PN_SyncGood_Base">
+        <description>This pawn is an automaton.\nAfter production, it was rated good grade.</description>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_Sync_Base" Abstract="True" Name="PN_SyncExcellent_Base">
+        <description>This pawn is an automaton.\nAfter production, it was rated excellent grade.</description>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_Sync_Base" Abstract="True" Name="PN_SyncMasterwork_Base">
+        <description>This pawn is an automaton.\nAfter production, it was rated masterwork grade.</description>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <MentalBreakThreshold>-0.04</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_Sync_Base" Abstract="True" Name="PN_SyncLegendary_Base">
+        <description>This pawn is an automaton.\nAfter production, it was rated legendary grade.</description>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.50</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <MentalBreakThreshold>-0.08</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--==================================== 전투형 ====================================-->
+
+    <!--평범-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade C norm)</label>
+        <defName>PN_Give_Normal_Combat</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncNormal_Combat</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncNormal_Base">
+        <defName>PN_SyncNormal_Combat</defName>
+        <label>Combat model (norm)</label>
+    </HediffDef>
+
+    <!--상급-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade C good)</label>
+        <defName>PN_Give_Good_Combat</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncGood_Combat</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncGood_Base">
+        <defName>PN_SyncGood_Combat</defName>
+        <label>Combat model (good)</label>
+    </HediffDef>
+
+    <!--완벽-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade C exc)</label>
+        <defName>PN_Give_Excellent_Combat</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncExcellent_Combat</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncExcellent_Base">
+        <defName>PN_SyncExcellent_Combat</defName>
+        <label>Combat model (exc)</label>
+    </HediffDef>
+
+    <!--걸작-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade C mast)</label>
+        <defName>PN_Give_Masterwork_Combat</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncMasterwork_Combat</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncMasterwork_Base">
+        <defName>PN_SyncMasterwork_Combat</defName>
+        <label>Combat model (mast)</label>
+        <stages Inherit="false">
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <IncomingDamageFactor>-0.15</IncomingDamageFactor>
+                    <MentalBreakThreshold>-0.04</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--전설-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade C legd)</label>
+        <defName>PN_Give_Legendary_Combat</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncLegendary_Combat</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncLegendary_Base">
+        <defName>PN_SyncLegendary_Combat</defName>
+        <label>Combat model (legd)</label>
+        <stages Inherit="false">
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.50</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <IncomingDamageFactor>-0.30</IncomingDamageFactor>
+                    <MentalBreakThreshold>-0.08</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--==================================== 제작형 ====================================-->
+
+    <!--평범-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade E norm)</label>
+        <defName>PN_Give_Normal_Engineer</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncNormal_Engineer</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncNormal_Base">
+        <defName>PN_SyncNormal_Engineer</defName>
+        <label>Engineer model (norm)</label>
+    </HediffDef>
+
+    <!--상급-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade E good)</label>
+        <defName>PN_Give_Good_Engineer</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncGood_Engineer</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncGood_Base">
+        <defName>PN_SyncGood_Engineer</defName>
+        <label>Engineer model (good)</label>
+    </HediffDef>
+
+    <!--완벽-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade E exc)</label>
+        <defName>PN_Give_Excellent_Engineer</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncExcellent_Engineer</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncExcellent_Base">
+        <defName>PN_SyncExcellent_Engineer</defName>
+        <label>Engineer model (exc)</label>
+    </HediffDef>
+
+    <!--걸작-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade E mast)</label>
+        <defName>PN_Give_Masterwork_Engineer</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncMasterwork_Engineer</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncMasterwork_Base">
+        <defName>PN_SyncMasterwork_Engineer</defName>
+        <label>Engineer model (mast)</label>
+        <stages Inherit="false">
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+                    <MentalBreakThreshold>-0.04</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--전설-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade E legd)</label>
+        <defName>PN_Give_Legendary_Engineer</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncLegendary_Engineer</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncLegendary_Base">
+        <defName>PN_SyncLegendary_Engineer</defName>
+        <label>Engineer model (legd)</label>
+        <stages Inherit="false">
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.50</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+                    <MentalBreakThreshold>-0.08</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--==================================== 가정형 ====================================-->
+
+    <!--평범-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade D norm)</label>
+        <defName>PN_Give_Normal_Domestic</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncNormal_Domestic</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncNormal_Base">
+        <defName>PN_SyncNormal_Domestic</defName>
+        <label>Domestic model (norm)</label>
+    </HediffDef>
+
+    <!--상급-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade D good)</label>
+        <defName>PN_Give_Good_Domestic</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncGood_Domestic</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncGood_Base">
+        <defName>PN_SyncGood_Domestic</defName>
+        <label>Domestic model (good)</label>
+    </HediffDef>
+
+    <!--완벽-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade D exc)</label>
+        <defName>PN_Give_Excellent_Domestic</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncExcellent_Domestic</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncExcellent_Base">
+        <defName>PN_SyncExcellent_Domestic</defName>
+        <label>Domestic model (exc)</label>
+    </HediffDef>
+
+    <!--걸작-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade D mast)</label>
+        <defName>PN_Give_Masterwork_Domestic</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncMasterwork_Domestic</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncMasterwork_Base">
+        <defName>PN_SyncMasterwork_Domestic</defName>
+        <label>Domestic model (mast)</label>
+        <stages Inherit="false">
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+                    <MentalBreakThreshold>-0.04</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--전설-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade D legd)</label>
+        <defName>PN_Give_Legendary_Domestic</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncLegendary_Domestic</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncLegendary_Base">
+        <defName>PN_SyncLegendary_Domestic</defName>
+        <label>Domestic model (legd)</label>
+        <stages Inherit="false">
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.50</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.20</WorkSpeedGlobal>
+                    <MentalBreakThreshold>-0.08</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--==================================== 기타 ====================================-->
+
+    <!--실험체-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade test)</label>
+        <defName>PN_Give_Testsubject</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_HediffExclusive">
+                <hediffToApply>PN_SyncGood_Testsubject</hediffToApply>
+                <bodyDef>PanielBody</bodyDef>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncGood_Base">
+        <defName>PN_SyncGood_Testsubject</defName>
+        <label>Test model (good)</label>
+        <stages Inherit="false">
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <PsychicSensitivity>1.0</PsychicSensitivity>
+                    <ResearchSpeed>0.9</ResearchSpeed>
+                    <GlobalLearningFactor>1.50</GlobalLearningFactor>
+                    <MentalBreakThreshold>0.12</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--개조당함-->
+
+    <HediffDef ParentName="PN_SyncNormal_Base">
+        <defName>PN_SyncNormal_Modified</defName>
+        <label>modified model</label>
+        <description>This pawn is an automaton.\nAfter production, It has been modified in an unauthorized way.</description>
+    </HediffDef>
+
+    <!--꽝끔찍-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade awfl)</label>
+        <defName>PN_Give_Awful_Failure</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncAwful_Failure</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncAwful_Base">
+        <defName>PN_SyncAwful_Failure</defName>
+        <label>Failure (awfl)</label>
+    </HediffDef>
+
+    <!--꽝빈약-->
+
+    <HediffDef ParentName="PN_Give_Base">
+        <label>filter(PNgrade poor)</label>
+        <defName>PN_Give_Poor_Failure</defName>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <bodyDef>PanielBody</bodyDef>
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_SyncPoor_Failure</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_Learning_Limit_System</hediff>
+                    </li>
+                </hediffAndBodypart>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="PN_SyncPoor_Base">
+        <defName>PN_SyncPoor_Failure</defName>
+        <label>Failure (poor)</label>
+    </HediffDef>
+</Defs>

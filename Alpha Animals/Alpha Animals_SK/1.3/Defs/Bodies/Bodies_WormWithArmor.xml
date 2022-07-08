@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======================== Great Devourer ======================== -->
+
+	<BodyDef>
+		<defName>AA_WormWithArmor</defName>
+		<label>worm with armor</label>
+		<corePart>
+			<def>SnakeBody</def>
+			<coverage>0.10</coverage>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			
+			<parts>
+				<li>
+					<def>AA_FirstWormSegment</def>
+					<coverage>0.20</coverage>
+					<height>Middle</height>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>Heart</def>
+							<coverage>0.1</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>AA_SecondWormSegment</def>
+					<coverage>0.20</coverage>
+					<height>Middle</height>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>Lung</def>
+												<customLabel>left lung</customLabel>
+
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>Lung</def>
+												<customLabel>right lung</customLabel>
+
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>AA_ThirdWormSegment</def>
+					<coverage>0.20</coverage>
+					<height>Middle</height>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>Stomach</def>
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>Liver</def>
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>AA_FourthWormSegment</def>
+					<coverage>0.20</coverage>
+					<height>Middle</height>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>Kidney</def>
+												<customLabel>left kidney</customLabel>
+
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>Kidney</def>
+												<customLabel>right kidney</customLabel>
+
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>SnakeHead</def>
+					<coverage>0.1</coverage>
+					<groups>
+                <li>HeadAttackTool</li>
+              </groups>
+					<parts>
+						<li>
+						<def>Skull</def>
+						<coverage>0.15</coverage>
+						<depth>Inside</depth>
+						<parts>
+							<li>
+								<def>Brain</def>
+								<coverage>0.5</coverage>
+								<depth>Inside</depth>
+							</li>
+						</parts>
+						</li>
+						<li>
+							<def>AA_EcholocationOrgan</def>
+																			<customLabel>echolocation organ</customLabel>
+
+							<coverage>0.3</coverage>
+						</li>
+						
+						<li>
+							<def>Nose</def>
+							<coverage>0.1</coverage>
+						</li>
+						<li>
+							<def>Jaw</def>
+							<coverage>0.1</coverage>
+							
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

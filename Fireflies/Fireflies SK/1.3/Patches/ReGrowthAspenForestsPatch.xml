@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>ReGrowth: Aspen Forests</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> --> <!-- TESTING -->
+			<operations>
+
+				<!--==================== ReGrowth: Aspen Forests Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+					<value>
+
+						<RG-AF_AspenForest>1</RG-AF_AspenForest>
+
+					</value>
+				</li>
+
+            </operations>
+		</match>
+	</Operation>
+
+</Patch>

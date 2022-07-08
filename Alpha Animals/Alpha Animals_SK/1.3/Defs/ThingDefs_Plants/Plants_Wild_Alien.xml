@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AA_AlienGrass</defName>
+		<label>alien grass</label>
+		<description>This grass is completely alien, probably not even 100% carbon based, and it seems to be decaying quickly from exposure to a terrestrial environment.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/GU_AlienGrass</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>1</growDays>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1</wildOrder>
+			<lifespanDaysPerGrowDays>1</lifespanDaysPerGrowDays>
+
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AA_RedLeaves</defName>
+		<label>alien plant</label>
+		<description>This grass is completely alien, probably not even 100% carbon based, and it seems to be decaying quickly from exposure to a terrestrial environment.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/GU_RedLeaves</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.1</fertilitySensitivity>
+			<growDays>1</growDays>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>1</maxMeshCount>
+			<visualSizeRange>1~1.6</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1</wildOrder>
+			<lifespanDaysPerGrowDays>1</lifespanDaysPerGrowDays>
+
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AA_RedPlantsTall</defName>
+		<label>alien plant</label>
+		<description>This grass is completely alien, probably not even 100% carbon based, and it seems to be decaying quickly from exposure to a terrestrial environment.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/GU_RedLeaves2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.1</fertilitySensitivity>
+			<growDays>1</growDays>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>1</maxMeshCount>
+			<visualSizeRange>1~1.6</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1</wildOrder>
+			<lifespanDaysPerGrowDays>1</lifespanDaysPerGrowDays>
+
+		</plant>
+	</ThingDef>
+	<!--============================ Trees ============================-->
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AA_AlienTree</defName>
+		<label>ocular tree</label>
+		<description>This tree is completely alien, probably not even 100% carbon based, and it seems to be struggling to grow from exposure to a terrestrial environment. Strange fruits resembling eyeballs hang from the tree, but they are probably not edible. Its wood releases a powerful, sweet scent. Perhaps it can be somehow useful?</description>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/GU_AlienTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<fillPercent>0.35</fillPercent>
+		<passability>PassThroughOnly</passability>
+		<pathCost>130</pathCost>
+		<blockWind>true</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+
+		</ingestible>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>5</growDays>
+
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<harvestWork>300</harvestWork>
+			<harvestedThingDef>RedWoodLog</harvestedThingDef>
+			<harvestTag>Wood</harvestTag>
+			<harvestYield>10</harvestYield>
+			<harvestMinGrowth>0.2</harvestMinGrowth>
+			<harvestFailable>false</harvestFailable>
+			<visualSizeRange>2.3~3</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+
+		</plant>
+	</ThingDef>
+
+
+
+
+
+</Defs>

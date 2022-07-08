@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>PNMeleeWeapon</defName>
+		<label>Paniel Melee</label>
+		<parent>WeaponsMelee</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>PNRangeWeapon</defName>
+		<label>Paniel Range</label>
+		<parent>WeaponsRanged</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>PN_Apparel</defName>
+		<label>Paniel apparel</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>PN_Headgear</defName>
+		<label>Paniel headgear</label>
+		<parent>RK_Apparel</parent>
+	</ThingCategoryDef>
+
+</Defs>

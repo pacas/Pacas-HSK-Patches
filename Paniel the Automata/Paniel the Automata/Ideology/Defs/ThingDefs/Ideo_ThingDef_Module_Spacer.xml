@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================================== 장교 모듈 ====================================-->
+    <ThingDef ParentName="PN_ApparelModuleSpacer">
+        <defName>PN_OfficerModule</defName>
+        <label>officer module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nCombat model (legd)\n\nThis module allows automaton to use officer command ability.</description>
+        <descriptionHyperlinks>
+            <AbilityDef>PN_OfficerCommandAbility</AbilityDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+        </statBases>
+        <costList>
+            <Titanium>20</Titanium>
+            <ComponentSpacer>5</ComponentSpacer>
+            <PN_Component>3</PN_Component>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierC_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <apparel>
+            <tags>
+
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_OfficerModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelSpacerModuleHediffBase">
+        <defName>PN_OfficerModuleHediff</defName>
+        <label>officer module</label>
+        <description>The hediff created by installing officer module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_OfficerModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDef>PN_OfficerCommandAbility</abilityDef>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!--==================================== 마이스터 모듈 ====================================-->
+    <ThingDef ParentName="PN_ApparelModuleSpacer">
+        <defName>PN_MeisterModule</defName>
+        <label>meister module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nEngineer model (legd)\n\nThis module allows automaton to use meister's advice ability.</description>
+        <descriptionHyperlinks>
+            <AbilityDef>PN_MeisterAdviceAbility</AbilityDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+        </statBases>
+        <costList>
+            <Titanium>20</Titanium>
+            <ComponentSpacer>5</ComponentSpacer>
+            <PN_Component>3</PN_Component>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierC_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <apparel>
+            <tags>
+
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_MeisterModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelSpacerModuleHediffBase">
+        <defName>PN_MeisterModuleHediff</defName>
+        <label>meister module</label>
+        <description>The hediff created by installing meister module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_MeisterModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDef>PN_MeisterAdviceAbility</abilityDef>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!--==================================== 집중 의료 모듈 ====================================-->
+    <ThingDef ParentName="PN_ApparelModuleSpacer">
+        <defName>PN_IntensiveMedicalModule</defName>
+        <label>intensive medical module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nDomestic model (legd)\n\nThis module allows automaton to use intensive medical mode ability.\nAnd if automaton activates intensive medical mode, immunity drive ability can be used.</description>
+        <descriptionHyperlinks>
+            <AbilityDef>PN_IntensiveMedicalAbility</AbilityDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+        </statBases>
+        <costList>
+            <Titanium>20</Titanium>
+            <ComponentSpacer>5</ComponentSpacer>
+            <PN_Component>3</PN_Component>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierC_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <apparel>
+            <tags>
+
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_IntensiveMedicalModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelSpacerModuleHediffBase">
+        <defName>PN_IntensiveMedicalModuleHediff</defName>
+        <label>intensive medical module</label>
+        <description>The hediff created by installing intensive medical module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_IntensiveMedicalModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDef>PN_IntensiveMedicalAbility</abilityDef>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!--==================================== 야전 의료 모듈 ====================================-->
+    <ThingDef ParentName="PN_ApparelModuleSpacer">
+        <defName>PN_FieldMedicModule</defName>
+        <label>field medic module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nDomestic model (legd)\nCombat model (legd)\n\nThis module allows automaton to use field medic mode ability.\nAnd if automaton activates field medic mod, injection stim pack ability can be used.</description>
+        <descriptionHyperlinks>
+            <AbilityDef>PN_FieldMedicAbility</AbilityDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <WorkToMake>12000</WorkToMake>
+        </statBases>
+        <costList>
+            <Titanium>20</Titanium>
+            <ComponentSpacer>5</ComponentSpacer>
+            <PN_Component>3</PN_Component>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierC_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <apparel>
+            <tags>
+
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_FieldMedicModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelSpacerModuleHediffBase">
+        <defName>PN_FieldMedicModuleHediff</defName>
+        <label>field medical module</label>
+        <description>The hediff created by installing intensive field medical module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_FieldMedicModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDef>PN_FieldMedicAbility</abilityDef>
+            </li>
+        </comps>
+    </HediffDef>
+</Defs>

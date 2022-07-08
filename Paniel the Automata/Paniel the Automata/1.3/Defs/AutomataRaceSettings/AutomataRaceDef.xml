@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AlienRace.ThingDef_AlienRace ParentName="BaseHumanlikePawn">
+        <defName>Paniel_Race</defName>
+        <label>Paniel</label>
+        <description>This pawn is automaton designed by PnL Industry.</description>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <alienRace>
+            <generalSettings>
+                <maleGenderProbability>0</maleGenderProbability>
+                <immuneToAge>false</immuneToAge>
+                <maxDamageForSocialfight>8</maxDamageForSocialfight>
+                <minAgeForAdulthood>0</minAgeForAdulthood>
+                <chemicalSettings>
+                    <li>
+                        <chemical>Psychite</chemical>
+                        <ingestible>false</ingestible>
+                    </li>
+                    <li>
+                        <chemical>GoJuice</chemical>
+                        <ingestible>false</ingestible>
+                    </li>
+                </chemicalSettings>
+                <forcedRaceTraitEntries>
+                    <li>
+                        <defName>Kind</defName>
+                    </li>
+                </forcedRaceTraitEntries>
+                <disallowedTraits>
+                    <li>
+                        <defName>DrugDesire</defName>
+                    </li>
+                    <li>
+                        <defName>Cannibal</defName>
+                    </li>
+                    <li>
+                        <defName>Greedy</defName>
+                    </li>
+                    <li>
+                        <defName>Jealous</defName>
+                    </li>
+                    <li>
+                        <defName>DislikesMen</defName>
+                    </li>
+                    <li>
+                        <defName>DislikesWomen</defName>
+                    </li>
+                    <li>
+                        <defName>Xenophobia</defName>
+                    </li>
+                    <li>
+                        <defName>AnnoyingVoice</defName>
+                    </li>
+                    <li>
+                        <defName>CreepyBreathing</defName>
+                    </li>
+                    <li>
+                        <defName>Wimp</defName>
+                    </li>
+                    <li>
+                        <defName>Nudist</defName>
+                    </li>
+                    <li>
+                        <defName>Bloodlust</defName>
+                    </li>
+                    <li>
+                        <defName>Psychopath</defName>
+                    </li>
+                    <li>
+                        <defName>Abrasive</defName>
+                    </li>
+                    <li>
+                        <defName>Masochist</defName>
+                    </li>
+                    <li>
+                        <defName>NightOwl</defName>
+                    </li>
+                    <li>
+                        <defName>Ascetic</defName>
+                    </li>
+                    <li>
+                        <defName>FastLearner</defName>
+                    </li>
+                    <li>
+                        <defName>SlowLearner</defName>
+                    </li>
+                    <li>
+                        <defName>Undergrounder</defName>
+                    </li>
+                    <li>
+                        <defName>Transhumanist</defName>
+                    </li>
+                    <li>
+                        <defName>BodyPurist</defName>
+                    </li>
+                    <li>
+                        <defName>GreatMemory</defName>
+                    </li>
+                    <li>
+                        <defName>Gourmand</defName>
+                    </li>
+                    <li>
+                        <defName>QuickSleeper</defName>
+                    </li>
+                    <li>
+                        <defName>Beauty</defName>
+                        <degree>-1</degree>
+                    </li>
+                    <li>
+                        <defName>Beauty</defName>
+                        <degree>-2</degree>
+                    </li>
+                    <li>
+                        <defName>Immunity</defName>
+                    </li>
+                    <li>
+                        <defName>TooSmart</defName>
+                    </li>
+                </disallowedTraits>
+                <additionalTraits>0</additionalTraits>
+                <immuneToXenophobia>true</immuneToXenophobia>
+                <alienPartGenerator>
+                    <atlasScale>4</atlasScale>
+                    <borderScale>1</borderScale>
+                    <aliencrowntypes>
+                        <li>HeadsAverage_Normal</li>
+                    </aliencrowntypes>
+                    <alienbodytypes>
+                        <li>Female</li>
+                    </alienbodytypes>
+                    <headOffset>(-0.1, 0.0)</headOffset>
+                    <useGenderedHeads>false</useGenderedHeads>
+                    <useGenderedBodies>false</useGenderedBodies>
+                    <customDrawSize>(1, 1)</customDrawSize>
+                    <customPortraitDrawSize>(1, 1)</customPortraitDrawSize>
+                    <headBodyPartDef>PNHead</headBodyPartDef>
+                    <colorChannels>
+                        <li>
+                            <name>skin</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(255,255,255)</only>
+                                    </li>
+                                </options>
+                            </first>
+                        </li>
+                        <li>
+                            <name>hair</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>10</weight>
+                                        <only>(255,255,255)</only>
+                                    </li>
+                                </options>
+                            </first>
+                        </li>
+                    </colorChannels>
+                    <bodyAddons>
+
+                        <li>
+                            <drawSize>1</drawSize>
+                            <path>Paniel/Hairs/Addon/Hair</path>
+                            <bodyPart>PNHead</bodyPart>
+                            <shaderType>CutoutComplex</shaderType>
+                            <inFrontOfBody>false</inFrontOfBody>
+                            <colorChannel>hair</colorChannel>
+                            <drawnInBed>true</drawnInBed>
+                            <drawnDesiccated>true</drawnDesiccated>
+                            <alignWithHead>true</alignWithHead>
+                            <offsets>
+                                <north>
+                                    <layerOffset>-0.275</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </north>
+                                <south>
+                                    <layerOffset>-0.326</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </south>
+                                <east>
+                                    <layerOffset>-0.326</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </east>
+                            </offsets>
+                            <hiddenUnderApparelTag>
+                                <li MayRequire="Ludeon.RimWorld.Ideology">PN_Burka</li>
+                            </hiddenUnderApparelTag>
+                        </li>
+
+                        <li Class="MoharCustomHAR.MoharBodyAddon">
+                            <drawSize>1</drawSize>
+                            <path>Paniel/Heads/Face/Face</path>
+                            <bodyPart>PNHead</bodyPart>
+                            <shaderType>CutoutComplex</shaderType>
+                            <inFrontOfBody>false</inFrontOfBody>
+                            <layerInvert>false</layerInvert>
+                            <colorChannel>skin</colorChannel>
+                            <drawnInBed>false</drawnInBed>
+                            <drawIfDead>false</drawIfDead>
+                            <drawnDesiccated>false</drawnDesiccated>
+                            <alignWithHead>true</alignWithHead>
+                            <angle>0</angle>
+                            <offsets>
+                                <north>
+                                    <layerOffset>-0.275</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </north>
+                                <south>
+                                    <layerOffset>-0.325</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </south>
+                                <east>
+                                    <layerOffset>-0.325</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </east>
+                            </offsets>
+                            <jobParams>
+                                <hideIfJob>
+                                    <li>
+                                        <job>LayDown</job>
+                                        <postureOrMoving>
+                                            <postures>
+                                                <li>LayingInBed</li>
+                                                <li>LayingOnGroundFaceUp</li>
+                                                <li>LayingOnGroundNormal</li>
+                                            </postures>
+                                            <moving>false</moving>
+                                        </postureOrMoving>
+                                    </li>
+                                    <li>
+                                        <job>Wait_Downed</job>
+                                        <postureOrMoving>
+                                            <postures>
+                                                <li>LayingInBed</li>
+                                                <li>LayingOnGroundFaceUp</li>
+                                                <li>LayingOnGroundNormal</li>
+                                            </postures>
+                                            <moving>false</moving>
+                                        </postureOrMoving>
+                                    </li>
+                                </hideIfJob>
+                            </jobParams>
+                            <hiddenUnderApparelTag>
+                                <li MayRequire="Ludeon.RimWorld.Ideology">PN_Burka</li>
+                            </hiddenUnderApparelTag>
+                        </li>
+
+                        <li>
+                            <drawSize>1</drawSize>
+                            <path>Paniel/Ear/PanielLeftEar</path>
+                            <bodyPart>left hearing sensor</bodyPart>
+                            <shaderType>CutoutComplex</shaderType>
+                            <inFrontOfBody>false</inFrontOfBody>
+                            <colorChannel>skin</colorChannel>
+                            <drawnInBed>true</drawnInBed>
+                            <drawnDesiccated>false</drawnDesiccated>
+                            <alignWithHead>true</alignWithHead>
+                            <angle>0</angle>
+                            <offsets>
+                                <north>
+                                    <layerOffset>-0.279</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </north>
+                                <south>
+                                    <layerOffset>-0.324</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </south>
+                                <east>
+                                    <layerOffset>-0.327</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </east>
+                            </offsets>
+                            <hiddenUnderApparelTag>
+                                <li MayRequire="Ludeon.RimWorld.Ideology">PN_Burka</li>
+                            </hiddenUnderApparelTag>
+                        </li>
+
+                        <li>
+                            <drawSize>1</drawSize>
+                            <path>Paniel/Ear/PanielRightEar</path>
+                            <bodyPart>right hearing sensor</bodyPart>
+                            <shaderType>CutoutComplex</shaderType>
+                            <inFrontOfBody>false</inFrontOfBody>
+                            <colorChannel>skin</colorChannel>
+                            <drawnInBed>true</drawnInBed>
+                            <drawnDesiccated>false</drawnDesiccated>
+                            <alignWithHead>true</alignWithHead>
+                            <angle>0</angle>
+                            <offsets>
+                                <north>
+                                    <layerOffset>-0.279</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </north>
+                                <south>
+                                    <layerOffset>-0.324</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </south>
+                                <east>
+                                    <layerOffset>-0.327</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </east>
+                            </offsets>
+                            <hiddenUnderApparelTag>
+                                <li MayRequire="Ludeon.RimWorld.Ideology">PN_Burka</li>
+                            </hiddenUnderApparelTag>
+                        </li>
+
+                        <li>
+                            <drawSize>1</drawSize>
+                            <path>Paniel/Tail/PanielTail</path>
+                            <bodyPart>tail</bodyPart>
+                            <shaderType>CutoutComplex</shaderType>
+                            <inFrontOfBody>false</inFrontOfBody>
+                            <colorChannel>skin</colorChannel>
+                            <drawnInBed>false</drawnInBed>
+                            <defaultOffset>Center</defaultOffset>
+                            <drawnDesiccated>false</drawnDesiccated>
+                            <offsets>
+                                <north>
+                                    <layerOffset>-0.275</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </north>
+                                <south>
+                                    <layerOffset>-0.309</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </south>
+                                <east>
+                                    <layerOffset>-0.309</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </east>
+                            </offsets>
+                            <hiddenUnderApparelTag>
+                                <li MayRequire="Ludeon.RimWorld.Ideology">PN_Burka</li>
+                            </hiddenUnderApparelTag>
+                        </li>
+
+                    </bodyAddons>
+                </alienPartGenerator>
+            </generalSettings>
+            <graphicPaths>
+                <li>
+                    <body>Paniel/Body/</body>
+                    <head>Paniel/Heads/</head>
+                    <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
+                </li>
+            </graphicPaths>
+            <styleSettings>
+                <li>
+                    <key>HairDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>BeardDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+                <li>
+                    <key>TattooDef</key>
+                    <value>
+                        <hasStyle>false</hasStyle>
+                    </value>
+                </li>
+            </styleSettings>
+            <thoughtSettings>
+                <replacerList>
+                    <!--오토마톤사망실종-->
+                    <li>
+                        <original>PN_KnowColonyAutomatonDied</original>
+                        <replacer>PN_KnowColonyAutomatonDiedforPN</replacer>
+                    </li>
+                    <li>
+                        <original>PN_AutomatonWithGoodOpinionDied</original>
+                        <replacer>PN_AutomatonWithGoodOpinionDiedforPN</replacer>
+                    </li>
+                    <li>
+                        <original>PN_AutomatonWithBadOpinionDied</original>
+                        <replacer>PN_AutomatonWithBadOpinionDiedforPN</replacer>
+                    </li>
+                    <li>
+                        <original>PN_ColonyAutomatonLost</original>
+                        <replacer>PN_ColonyAutomatonLostforPN</replacer>
+                    </li>
+                    <li>
+                        <original>PN_AutomatonWithGoodOpinionLost</original>
+                        <replacer>PN_AutomatonWithGoodOpinionLostforPN</replacer>
+                    </li>
+                    <li>
+                        <original>PN_AutomatonWithBadOpinionLost</original>
+                        <replacer>PN_AutomatonWithBadOpinionLostforPN</replacer>
+                    </li>
+                    <li>
+                        <original>PN_WitnessedDestroyedAlly</original>
+                        <replacer>PN_WitnessedDestroyedAllyforPN</replacer>
+                    </li>
+                    <li>
+                        <original>PN_AutomatonBanished</original>
+                        <replacer>PN_AutomatonBanishedforPN</replacer>
+                    </li>
+                    <li>
+                        <original>PN_AutomatonBanishedToDie</original>
+                        <replacer>PN_AutomatonBanishedToDieforPN</replacer>
+                    </li>
+
+                    <!--이데올로기-->
+                    <li MayRequire="Ludeon.RimWorld.Ideology">
+                        <original>PN_OfficerCommandThought</original>
+                    </li>
+                </replacerList>
+                <cannotReceiveThoughts>
+                    <!--<li></li>-->
+                    <!--memory death-->
+                    <li>KnowGuestExecuted</li>
+                    <li>KnowPrisonerDiedInnocent</li>
+                    <!--memory eating-->
+                    <li>AteRawFood</li>
+                    <li>AteNutrientPasteMeal</li>
+                    <!--memory misc-->
+                    <li>AteWithoutTable</li>
+                    <li>SleepDisturbed</li>
+                    <li>SleptOutside</li>
+                    <li>SleptOnGround</li>
+                    <li>SleptInCold</li>
+                    <li>SleptInHeat</li>
+                    <li>KnowPrisonerSold</li>
+                    <li>ReleasedHealthyPrisoner</li>
+                    <li>KnowGuestOrganHarvested</li>
+                    <li>SoakingWet</li>
+                    <li>ButcheredHumanlikeCorpse</li>
+                    <li>KnowButcheredHumanlikeCorpse</li>
+                    <li>ButcheredHumanlikeCorpseOpinion</li>
+                    <li>ObservedLayingCorpse</li>
+                    <li>ObservedLayingRottingCorpse</li>
+                    <li>DeniedJoining</li>
+                    <li>PrisonerBanishedToDie</li>
+                    <!--memory roomstat-->
+                    <li>SleptInBarracks</li>
+                    <!--memory social-->
+                    <!--situation general-->
+                    <li>EnvironmentDark</li>
+                    <li>Sick</li>
+                    <li>EnvironmentCold</li>
+                    <li>EnvironmentHot</li>
+                    <!--situation need-->
+                    <li>NeedRoomSize</li>
+                    <li>NeedOutdoors</li>
+                    <li>DrugDesireFascination</li>
+                    <li>DrugDesireFascinationSatisfied</li>
+                    <li>DrugDesireInterest</li>
+                    <li>DrugDesireInterestSatisfied</li>
+                    <!--situation roomstat-->
+                    <li>PrisonBarracks</li>
+                    <!--situation social-->
+                    <li>Incestuous</li>
+                    <li>Disfigured</li>
+                    <li>HardWorkerVsLazy</li>
+                    <li>TeetotalerVsChemicalInterest</li>
+                    <li>TeetotalerVsAddict</li>
+                    <li>ChemicalInterestVsTeetotaler</li>
+                    <li>Drunk</li>
+                    <li>Pretty</li>
+                    <li>Ugly</li>
+                    <li>AnnoyingVoice</li>
+                    <li>CreepyBreathing</li>
+                    <li>Man</li>
+                    <li>Woman</li>
+                    <li>TranshumanistAppreciation</li>
+                    <li>BodyPuristDisgust</li>
+                    <li>ButcheredHumanlikeCorpseOpinion</li>
+                    <li>AteRawHumanlikeMeat</li>
+                    <li>KilledColonyAnimal</li>
+                    <li>NotBondedAnimalMaster</li>
+                    <!--situation special-->
+                    <li>SharedBed</li>
+                    <li>Naked</li>
+                    <li>Pain</li>
+                    <li>Joywire</li>
+                    <li>DoingPassionateWork</li>
+                    <!--situation trait-->
+                    <li>MasochistPain</li>
+                    <li>ProsthophileNoProsthetic</li>
+                    <li>ProsthophileHappy</li>
+                    <li>ProsthophobeUnhappy</li>
+                    <li>ClothedNudist</li>
+                    <li>HappyNude</li>
+                    <li>UndergrounderIndoors</li>
+                    <li>UndergrounderUnderground</li>
+                    <li>UndergrounderOutdoors</li>
+                    <li>NightOwlDuringTheDay</li>
+                    <li>NightOwlDuringTheNight</li>
+                    <li>Greedy</li>
+                    <li>Jealous</li>
+                    <li>Ascetic</li>
+                    <!--Misc-->
+                    <li>PN_Atefuel_nopn</li>
+                    <li>PsychiteWithdrawal</li>
+                    <li>YayoHigh</li>
+                    <li>PsychiteTeaHigh</li>
+                    <li>FlakeHigh</li>
+                    <li>GoJuiceHigh</li>
+                    <li>GoJuiceWithdrawal</li>
+
+                    <!--[Royalty]-->
+                    <!--<li MayRequire="Ludeon.RimWorld.Royalty"></li>-->
+
+                    <!--[Ideology]-->
+                    <!--<li MayRequire="Ludeon.RimWorld.Ideology"></li>-->
+
+                    <!--Thoughts_IdeoBuilding-->
+                    <!--Thoughts_IdeoRaiding-->
+                    <!--Thoughts_IdeoRole-->
+                    <li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleLost</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleEmpty</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentStandard</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentDisapproved</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentHorrible</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentAbhorrent</li>
+                    <!--Thoughts_Memory_Social-->
+                    <!--Thoughts_Memory_Terror-->
+                    <li MayRequire="Ludeon.RimWorld.Ideology">ObservedTerror</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">ObservedGibbetCage</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">ObservedSkullspike</li>
+                    <!--Thoughts_Ritual-->
+                    <!--Thoughts_Ritual_Quality-->
+                    <!--Thoughts_Situational-->
+                    <li MayRequire="Ludeon.RimWorld.Ideology">LookChangeDesired</li>
+
+                    <!--Misc-->
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_OfficerCommandThought</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_MeisterAdviceThought</li>
+                </cannotReceiveThoughts>
+            </thoughtSettings>
+            <raceRestriction><!--착용 장비 관련-->
+                <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+                <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
+                <onlyBuildRaceRestrictedBuildings>false</onlyBuildRaceRestrictedBuildings>
+                <onlyEatRaceRestrictedFood>false</onlyEatRaceRestrictedFood>
+                <apparelList>
+                    <li>PN_ApparelBasic</li>
+                    <li>PN_ApparelBasicHat</li>
+                    <li>PN_ApparelCape</li>
+                    <li>PN_ApparelMilitia</li>
+                    <li>PN_ApparelMilitiaHat</li>
+                    <li>PN_ApparelMaid</li>
+                    <li>PN_ApparelMaidHat</li>
+                    <li>PN_ApparelWorker</li>
+                    <li>PN_ApparelWorkerHat</li>
+                    <li>PN_ApparelSoldier</li>
+                    <li>PN_ApparelSoldierHat</li>
+                    <li>PN_ApparelRoyalguard</li>
+                    <li>PN_ApparelRoyalguardHat</li>
+                    <li>PN_ApparelRoyalmaid</li>
+                    <li>PN_ApparelRoyalmaidHat</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_OfficerModule</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_MeisterModule</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_IntensiveMedicalModule</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_FieldMedicModule</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_RapidFireModule</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_CQCModule</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_MiningModule</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_ConstructionModule</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_CraftingModule</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_PlantsModule</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_CookingModule</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_NursingModule</li>
+                </apparelList>
+                <whiteApparelList>
+                    <!--바닐라-->
+                    <li>Apparel_ShieldBelt</li>
+                    <li>Apparel_PsychicShockLance</li>
+                    <li>Apparel_PsychicInsanityLance</li>
+                    <li>Apparel_SmokepopBelt</li>
+                    <li>OrbitalTargeterBombardment</li>
+                    <li>OrbitalTargeterPowerBeam</li>
+                    <li>TornadoGenerator</li>
+                    <li>Apparel_TacVest</li>
+                    <li>Apparel_Backpack</li>
+                    <li>Apparel_TribalBackpack</li>
+                    <li>BallisticShield</li>
+                    <li>ShieldTribal</li>
+                    <li>ShieldBone</li>
+                    <li>Buckler</li>
+                    <li>MedievalShield</li>
+                    <li>MiningHelmet</li>
+                    <li>Apparello_Ammobelt</li>
+                    <li>Apparel_PersonalNanoShield</li>
+                    <li>Apparello_Pilot</li>
+                    <li>Apparello_Shadess</li>
+                    <li>Apparello_Brimsk</li>
+                    <li>Apparello_Visoor</li>
+                    <li>Apparello_Clawboots</li>
+                    <li>Apparello_Shoes</li>
+                    <li>Apparello_MetalBoots</li>
+                    <li>MedievalTimes_Boots_Steel_Plated</li>
+                    <li>Apparello_Snowboots</li>
+                    <li>Apparello_NorbalMuffshoes</li>
+                    <li>Apparello_Boots</li>
+                    <li>MedievalTimes_Boots_Combat</li>
+                    <li>MedievalTimes_Boots_Techno</li>
+                    <li>Apparello_Spboots</li>
+                    <li>Apparello_chefglove</li>
+                    <li>Apparello_Workglove</li>
+                    <li>MedievalTimes_Gloves_Plated</li>
+                    <li>MedievalTimes_Gauntlets</li>
+                    <li>Apparello_ReinforcedGlove</li>
+                    <li>Apparello_Motorglove</li>
+                    <li>MedievalTimes_Gloves_Combat</li>
+                    <li>Apparello_Snipeglove</li>
+                    <li>Apparello_SoothingLove</li>
+                    <li>Apparello_docglove</li>
+                    <li>Apparello_docglovetwo</li>
+                    <li>Apparello_Snipeglovetwo</li>
+                    <li>Apparello_CalmingLove</li>
+                    <li>MedievalTimes_Gauntlets_Techno</li>
+                    <li>Apparello_Gamerglove</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackJump</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackBroadshield</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">OrbitalTargeterMechCluster</li>
+                </whiteApparelList>
+                <weaponList>
+                    <li>PN_Chainsword</li>
+                    <li>PN_Chainlongsword</li>
+                    <li>PN_TwinPistol</li>
+                    <li>PN_RoyalRifle</li>
+                    <li>PN_RoyalLSW</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">PN_RoyalSaber_Bladelink</li>
+                    <li MayRequire="Ludeon.RimWorld.Royalty">PN_Chainsword_Bladelink</li>
+                </weaponList>
+                <buildingList>
+                    <!--<li>PN_CryptosleepCasket</li>-->
+                </buildingList>
+                <foodList>
+                    <li>PN_AutomatonFuel</li>
+                    <li>PN_antibiotics</li>
+                </foodList>
+            </raceRestriction>
+            <!--관계설정-->
+            <relationSettings>
+                <relationChanceModifierChild>0</relationChanceModifierChild>
+                <relationChanceModifierExLover>0</relationChanceModifierExLover>
+                <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+                <relationChanceModifierFiance>0</relationChanceModifierFiance>
+                <relationChanceModifierLover>0</relationChanceModifierLover>
+                <relationChanceModifierParent>0</relationChanceModifierParent>
+                <relationChanceModifierSibling>0</relationChanceModifierSibling>
+                <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+            </relationSettings>
+        </alienRace>
+        <statBases>
+            <!--스펙설정(일반)-->
+            <MarketValue>3500</MarketValue>
+            <Mass>70</Mass>
+            <MoveSpeed>4.6</MoveSpeed>
+            <Flammability>0.3</Flammability>
+            <RoyalFavorValue>0</RoyalFavorValue>
+            <ComfyTemperatureMax>45</ComfyTemperatureMax>
+            <ComfyTemperatureMin>0</ComfyTemperatureMin>
+            <RestRateMultiplier>1.00</RestRateMultiplier>
+            <HungerRateMultiplier>1.00</HungerRateMultiplier>
+            <EatingSpeed>1</EatingSpeed>
+            <ImmunityGainSpeed>0</ImmunityGainSpeed>
+            <CarryingCapacity>100</CarryingCapacity>
+            <PainShockThreshold>0.99</PainShockThreshold>
+            <PsychicSensitivity>0.6</PsychicSensitivity>
+            <GlobalLearningFactor>0.00</GlobalLearningFactor>
+            <FoodPoisonChance>0.0</FoodPoisonChance>
+            <MeatAmount>0</MeatAmount>
+            <LeatherAmount>0</LeatherAmount>
+            <!-- 전투 -->
+            <MeleeDodgeChance>1.0</MeleeDodgeChance>
+            <MeleeHitChance>1.0</MeleeHitChance>
+            <AimingDelayFactor>1.0</AimingDelayFactor>
+            <ShootingAccuracyPawn>1.0</ShootingAccuracyPawn>
+            <ArmorRating_Sharp>0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0</ArmorRating_Blunt>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+            <!-- 사교 -->
+            <NegotiationAbility>0.8</NegotiationAbility>
+            <SellPriceFactor>1.0</SellPriceFactor>
+            <SocialImpact>1.0</SocialImpact>
+            <MentalBreakThreshold>0.30</MentalBreakThreshold>
+            <!-- 작업 -->
+            <WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+            <MedicalTendSpeed>1.0</MedicalTendSpeed>
+            <MedicalTendQuality>1.0</MedicalTendQuality>
+            <MedicalOperationSpeed>1.0</MedicalOperationSpeed>
+            <MedicalSurgerySuccessChance>1.0</MedicalSurgerySuccessChance>
+            <!-- 테크 -->
+            <ConstructionSpeed>1.0</ConstructionSpeed>
+            <ResearchSpeed>0.1</ResearchSpeed>
+            <MeleeCritChance>1</MeleeCritChance>
+            <MeleeParryChance>1</MeleeParryChance>
+            <Suppressability>0.5</Suppressability>
+            <SmokeSensitivity>0</SmokeSensitivity>
+            <ToxicSensitivity>0.2</ToxicSensitivity>
+			<Radiation>0</Radiation>
+        </statBases>
+        <!--맨손 전투-->
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>left fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>1</power>
+                <cooldownTime>1.26</cooldownTime>
+                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+                <armorPenetrationBlunt>0.125</armorPenetrationBlunt>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>right fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>1</power>
+                <cooldownTime>1.26</cooldownTime>
+                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+                <armorPenetrationBlunt>0.125</armorPenetrationBlunt>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>4.49</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.2</chanceFactor>
+                <armorPenetrationBlunt>0.625</armorPenetrationBlunt>
+            </li>
+        </tools>
+        <race>
+            <lifeExpectancy>50</lifeExpectancy>
+            <leatherDef>Leather_Automaton</leatherDef>
+            <useMeatFrom>Human</useMeatFrom>
+            <bloodDef>Paniel_Oil</bloodDef>
+            <fleshType>PN_Flesh</fleshType>
+            <meatMarketValue>0.8</meatMarketValue>
+            <meatColor>(255, 255, 255)</meatColor>
+            <body>PanielBody</body>
+            <baseHungerRate>1</baseHungerRate><!--배고픔-->
+            <baseBodySize>1</baseBodySize>
+            <baseHealthScale>1.0</baseHealthScale><!--몸빵-->
+            <nameGenerator>PN_NamerFemale</nameGenerator>
+            <nameGeneratorFemale>PN_NamerFemale</nameGeneratorFemale>
+            <litterSizeCurve Inherit="False">
+                <points>
+                    <li>(0, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges Inherit="False">
+                <li>
+                    <def>HumanlikeAdult</def>
+                    <minAge>0</minAge>
+                    <soundWounded>Pawn_Human_Wounded</soundWounded>
+                    <soundDeath>Pawn_Human_Death</soundDeath>
+                    <soundCall>Pawn_Human_Wounded</soundCall>
+                    <soundAngry>Pawn_Human_Wounded</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+            <specialShadowData>
+                <volume>(0.3, 0.8, 0.4)</volume>
+                <offset>(0,0,-0.3)</offset>
+            </specialShadowData>
+            <ageGenerationCurve>
+                <points>
+                    <li>(0,0)</li>
+                    <li>(1,100)</li>
+                    <li>(2,40)</li>
+                    <li>(3,0)</li>
+                </points>
+            </ageGenerationCurve>
+            <hediffGiverSets>
+                <li>PanielBasicHediffSet</li>
+            </hediffGiverSets>
+        </race>
+        <modExtensions>
+            <li Class="CombatExtended.RacePropertiesExtensionCE">
+                <bodyShape>Humanoid</bodyShape>
+            </li>
+        </modExtensions>
+        <butcherProducts>
+            <Plasteel>75</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <Leather_Automaton>25</Leather_Automaton>
+            <Microchips>1</Microchips>
+            <AdvMechanism>2</AdvMechanism>
+        </butcherProducts>
+        <recipes Inherit="False">
+            <li>Anesthetize</li>
+            <li>PN_Disassemble</li>
+            <li>PN_Repair</li>
+            <li>PN_Maintenance</li>
+        </recipes>
+        <comps>
+            <li Class="AutomataRace.CompPropeties_AutomataDataHolder"/>
+            <li>
+                <compClass>CombatExtended.CompPawnGizmo</compClass>
+            </li>
+            <li Class="CombatExtended.CompProperties_Suppressable"/>
+        </comps>
+    </AlienRace.ThingDef_AlienRace>
+</Defs>

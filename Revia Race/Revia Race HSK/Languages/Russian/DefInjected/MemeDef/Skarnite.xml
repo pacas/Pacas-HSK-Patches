@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<ReviaRaceSkarniteMeme.label>Скарнизм</ReviaRaceSkarniteMeme.label>
+	<ReviaRaceSkarniteMeme.description>Величайшее стремление - служить кровавой богине во всех её формах. Во славу Скарне!</ReviaRaceSkarniteMeme.description>
+
+	<ReviaRaceSkarniteMeme.generalRules.rulesStrings>
+
+		<li>memeAdjective->скарнитский</li>
+		<li>memeHyphenPrefix->скарн</li>
+		<li>memeConcept->кровожадность</li>
+		<li>memeConcept->жестокость</li>
+		<li>memeConcept->битва</li>
+		<li>memeConcept->смерть</li>
+		<li>memeLeaderNoun->архонт</li>
+		<li>memeLeaderNoun->вершитель</li>
+		<li>memeLeaderNoun->ревнитель</li>
+		<li>memeLeaderNoun->правитель</li>
+		<li>memeMoralist->воспеватель</li>
+		<li>memeMoralist->проводник</li>  
+	</ReviaRaceSkarniteMeme.generalRules.rulesStrings>
+	
+	<ReviaRaceSkarniteMeme.descriptionMaker.rules.rulesStrings>
+		<li>creation(tag=meme_revia)->[deity0_name] привела своих дочерей во вселенную из бесконечной Пустоты из запредельного.</li>
+		<li>episode(uses=1, tag=meme_revia)->[deity0_name] вручила дочерям полный кубок со своей кровью, но он оказался с трещиной и разбился, покрасив мир в алый цвет. Улыбаясь, она велела дочерям продолжать работу. Терзать и рвать, пока Вселенная не будет залита кровью имеющих изъяны.</li>
+		<li>intro(tag=meme_revia)->Дочери [deity0_name] помчались по миру, очищая его от недостойных разделить с ними воздух для дыхания.</li>
+		<li>conflict(tag=meme_revia)->Неверные стояли у них на пути, куда бы они ни пошли. Мечом, пулей или атомной бомбой они изо всех сил сопротивлялись дочерям [deity0_name].</li>
+		<li>victory(tag=meme_revia)->Но кровавые благословения матери заставляли их двигаться вперёд, сокрушая своей волей и яростью всех, кто был с трещиной.</li>
+	</ReviaRaceSkarniteMeme.descriptionMaker.rules.rulesStrings>
+	
+	<ReviaRaceSkarniteMeme.symbolPacks.0.ideoName>Скарнизм</ReviaRaceSkarniteMeme.symbolPacks.0.ideoName>
+	<ReviaRaceSkarniteMeme.symbolPacks.0.theme>Почитание Скарне</ReviaRaceSkarniteMeme.symbolPacks.0.theme>
+	<ReviaRaceSkarniteMeme.symbolPacks.0.adjective>Скарнитский</ReviaRaceSkarniteMeme.symbolPacks.0.adjective>
+	<ReviaRaceSkarniteMeme.symbolPacks.0.member>Скарнит</ReviaRaceSkarniteMeme.symbolPacks.0.member>
+
+</LanguageData>

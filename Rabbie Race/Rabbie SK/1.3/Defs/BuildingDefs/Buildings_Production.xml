@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- 재봉대 -->
+    <ThingDef ParentName="WorkTable">
+        <defName>RB_MoonTailoringBench</defName>
+        <label>Moon tailor bench</label>
+        <description>래비들의 의류 재봉대입니다. 즉석으로 원단을 제작하는, 투입구 달린 직조기가 포함되어 있습니다.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Production/Moontailorbench</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.05,1.3)</drawSize>
+            <shadowData>
+				<volume>(2.7, 1.0, 0.85)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<costList>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<Electronics>4</Electronics>
+			<Mechanism>5</Mechanism>
+		</costList>
+        <minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+        <statBases>
+            <WorkToBuild>2500</WorkToBuild>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Mass>500</Mass>
+        </statBases>
+        <size>(3,1)</size>
+        <designationCategory>Production</designationCategory>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <uninstallWork>1450</uninstallWork>
+			<unpoweredWorkTableWorkSpeedFactor>0.6</unpoweredWorkTableWorkSpeedFactor>
+        </building>
+        <tickerType>Normal</tickerType>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>400</basePowerConsumption>
+                <soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>Patterner</li>
+					<li>Small_ToolCabinet</li>
+					<li>PodChair</li>
+				</linkableFacilities>
+			</li>
+			<li Class="SK.CompProperties_LowIdleDraw">
+				<compClass>SK.CompPowerLowIdleDraw</compClass>
+				<idlePowerFactor>0.1</idlePowerFactor>
+			</li>
+			<li>
+				<compClass>CompReportWorkSpeed</compClass>
+			</li>
+        </comps>
+        <designationHotKey>Misc2</designationHotKey>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>Lunarsewing</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <!-- 기계가공대 -->
+    <ThingDef ParentName="WorkTable">
+        <defName>RB_MoonTableMachining</defName>
+        <label>Moon machining table</label>
+        <description>달의 도시에서 절삭, 금속가공과 기계조립에 다용도로 사용하는 가공대입니다.\n\n크기에 비해 많은 작업을 할수 있습니다.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Production/Moonmachiningtable</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.3,1.7)</drawSize>
+            <shadowData>
+				<volume>(3, 1.5, 0.85)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<SyntheticFibers>20</SyntheticFibers>
+			<Microchips>2</Microchips>
+			<AdvMechanism>5</AdvMechanism>
+		</costList>
+        <minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+        <statBases>
+            <WorkToBuild>3000</WorkToBuild>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-2</Cleanliness>
+            <Mass>500</Mass>
+        </statBases>
+        <size>(3,1)</size>
+        <designationCategory>Production</designationCategory>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <tickerType>Normal</tickerType>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <recipes>
+            <li>ButcherCorpseMechanoid</li>
+        </recipes>
+        <comps>
+            <li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>700</basePowerConsumption>
+				<soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+			</li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(73,123,138,0)</glowColor>
+            </li>
+            <li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>Patterner</li>
+					<li>Small_ToolCabinet</li>
+					<li>PodChair</li>
+				</linkableFacilities>
+			</li>
+			<li Class="SK.CompProperties_LowIdleDraw">
+				<compClass>SK.CompPowerLowIdleDraw</compClass>
+				<idlePowerFactor>0.1</idlePowerFactor>
+			</li>
+			<li>
+				<compClass>CompReportWorkSpeed</compClass>
+			</li>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <building>
+            <uninstallWork>1450</uninstallWork>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+        <researchPrerequisites>
+            <li>Lunarmachining</li>
+        </researchPrerequisites>
+        <designationHotKey>Misc3</designationHotKey>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+        </placeWorkers>
+    </ThingDef>
+</Defs>

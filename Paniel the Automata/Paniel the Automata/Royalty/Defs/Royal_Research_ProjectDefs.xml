@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ResearchProjectDef>
+        <defName>PNRP_PsychicAmplifier</defName>
+        <label>automaton psylink</label>
+        <description>Research how to modify psylink for use by the Automaton.</description>
+        <tab>Craft_SK</tab>
+        <baseCost>300</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>PNRP_Production</li>
+            <li>PNRP_ExperimentalModule</li>
+        </prerequisites>
+        <researchViewX>21.0</researchViewX>
+        <researchViewY>26.0</researchViewY>
+    </ResearchProjectDef>
+</Defs>

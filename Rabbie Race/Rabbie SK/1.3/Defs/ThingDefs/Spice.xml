@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef>
+        <defName>RefinedPlanetarium</defName>
+        <label>Planetarium</label>
+        <description>A mineral substance purified from the solids in the atmosphere dispersed by volcanic activity.
+  \n\nPlanetarium is vital to the survival of the Rabbies, for without it they eventually lapse into insanity. By stimulating brain activity, rabbits consuming this substance over a long period of time begin to see short-term prophetic visions, looking into the future for a few seconds.
+  \n\non-usually referred to as a spice, this substance is highly addictive to other races as well, but only Rabbis experience prophetic visions. Be that as it may, the use of this substance usually produces a pleasant, euphoric sensation.</description>
+        <graphicData>
+            <texPath>Things/Drugs/Planetarium</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <drawerType>MapMeshOnly</drawerType>
+        <useHitPoints>true</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <selectable>true</selectable>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>2.0</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <Beauty>0</Beauty>
+            <MarketValue>60</MarketValue>
+            <Mass>0.01</Mass>
+            <Bulk>0.01</Bulk>
+        </statBases>
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>100</stackLimit>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <alwaysHaulable>true</alwaysHaulable>
+        <thingCategories>
+            <li>Drugs</li>
+        </thingCategories>
+        <pathCost>15</pathCost>
+        <burnableByRecipe>true</burnableByRecipe>
+        <resourceReadoutPriority>Last</resourceReadoutPriority>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <storedConceptLearnOpportunity>DrugPolicies</storedConceptLearnOpportunity>
+        <orderedTakeGroup>Drug</orderedTakeGroup>
+        <rotatable>false</rotatable>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+            <foodType>Processed</foodType>
+            <preferability>NeverForNutrition</preferability>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <drugCategory>Medical</drugCategory>
+            <chairSearchRadius>4</chairSearchRadius>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>RefinedPlanetarium</hediffDef>
+                    <severity>1</severity>
+                    <toleranceChemical>Planetarium</toleranceChemical>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <chemical>Planetarium</chemical>
+                <addictiveness>1</addictiveness>
+                <needLevelOffset>1.00</needLevelOffset>
+                <listOrder>1027</listOrder>
+            </li>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <tradeTags>
+            <li>ExoticMisc</li>
+            <li>Drugs</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="VG_DrugBase">
+        <defName>RB_Braincrystal</defName>
+        <label>Braincrystal</label>
+        <description>A semi-solid crystalline substance found inside the Rabbi's heads.\n\nContains a small dose of planetarium and can satisfy an addiction to the substance, but eating it is disgusting and terrifying.</description>
+        <graphicData>
+            <texPath>Things/Drugs/Braincrystal</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>1</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <MarketValue>10</MarketValue>
+            <Mass>0.01</Mass>
+            <Bulk>0.01</Bulk>
+        </statBases>
+        <thingCategories>
+            <li>Drugs</li>
+        </thingCategories>
+        <techLevel>Industrial</techLevel>
+        <ingestible Inherit="false">
+            <foodType>Processed</foodType>
+            <preferability>NeverForNutrition</preferability>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <drugCategory>Medical</drugCategory>
+            <chairSearchRadius>4</chairSearchRadius>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>Braincrystal</hediffDef>
+                    <severity>1</severity>
+                    <toleranceChemical>Planetarium</toleranceChemical>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <chemical>Planetarium</chemical>
+                <addictiveness>1</addictiveness>
+                <needLevelOffset>1.00</needLevelOffset>
+                <listOrder>1027</listOrder>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>ExoticMisc</li>
+            <li>Drugs</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="MakeableDrugPillBase">
+        <defName>PlanetariumTea</defName>
+        <label>Planetarium Tea</label>
+        <description>Aromatic tea from brewed planetarium. The most common method of consuming planetarium, which provides more pleasure compared to consuming it raw.</description>
+        <graphicData>
+            <texPath>Things/Drugs/PLtea</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>0.8</Flammability>
+            <DeteriorationRate>2</DeteriorationRate>
+            <MarketValue>80</MarketValue>
+            <Mass>0.01</Mass>
+            <Bulk>0.01</Bulk>
+            <WorkToMake>400</WorkToMake>
+        </statBases>
+        <techLevel>Spacer</techLevel>
+        <ingestible>
+            <preferability>NeverForNutrition</preferability>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <chairSearchRadius>10</chairSearchRadius>
+            <foodType>Fluid, Processed</foodType>
+            <joyKind>Chemical</joyKind>
+            <joy>0.20</joy>
+            <baseIngestTicks>480</baseIngestTicks>
+            <nurseable>true</nurseable>
+            <drugCategory>Medical</drugCategory>
+            <ingestSound>Ingest_Drink</ingestSound>
+            <ingestHoldUsesTable>true</ingestHoldUsesTable>
+            <ingestCommandString>Drink {0}</ingestCommandString>
+            <ingestReportString>Drinking {0}.</ingestReportString>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>PlanetariumTea</hediffDef>
+                    <severity>1</severity>
+                    <toleranceChemical>Planetarium</toleranceChemical>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>Planettea</researchPrerequisite>
+            <recipeUsers>
+                <li>TableCoffee</li>
+            </recipeUsers>
+            <workSpeedStat>DrugCookingSpeed</workSpeedStat>
+            <workSkill>Cooking</workSkill>
+            <skillRequirements>
+                <Cooking>4</Cooking>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <RefinedPlanetarium>1</RefinedPlanetarium>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <chemical>Planetarium</chemical>
+                <addictiveness>1</addictiveness>
+                <needLevelOffset>1.00</needLevelOffset>
+                <listOrder>1027</listOrder>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>ExoticMisc</li>
+            <li>Drugs</li>
+        </tradeTags>
+    </ThingDef>
+
+    <HediffDef>
+        <defName>RefinedPlanetarium</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Ate Refined Planetarium</label>
+        <labelNoun>Ate Refined Planetarium</labelNoun>
+        <description>Recently consumed refined planetarium makes you feel more distinct and feel better for a day.</description>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.0</severityPerDay>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>RefinedPlanetarium</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>RefinedPlanetarium</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Ate Refined Planetarium</label>
+                <description>I feel a sense of oneness with the planet... But consuming this powdery substance was not very pleasant.</description>
+                <baseMoodEffect>6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <HediffDef>
+        <defName>Braincrystal</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Ate Braincrystal</label>
+        <labelNoun>Ate Braincrystal</labelNoun>
+        <description>Recently, I consumed Raby's brainstone. The smell of blood comes from me...</description>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.0</severityPerDay>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>Braincrystal</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>Braincrystal</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Ate Rabbies Braincrystal</label>
+                <description>This thing. It was in someone else's head. I'm a monster.</description>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <HediffDef>
+        <defName>PlanetariumTea</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Drank PlanetariumTea</label>
+        <labelNoun>Drank PlanetariumTea</labelNoun>
+        <description>Recently, I drank fragrant tea from the planetarium and has become more distinct and feel better for two days.</description>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.5</severityPerDay>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>PlanetariumTea</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>PlanetariumTea</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>Drank PlanetariumTea</label>
+                <description>Ahhhh... I feel so relaxed.</description>
+                <baseMoodEffect>12</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <HediffDef>
+        <defName>Whisperofplanet</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Whisper of planet</label>
+        <description>It is a peculiar phenomenon that appears only in the Rabbie race, and the Rabbies who have long consumed Planetarium have the color of the eyes and have the ability to see a short future for 2-3 seconds in tension. Combined with the shooting skills of the Rabbies, it is known to have a terrible hit rate on the battlefield.</description>
+        <defaultLabelColor>(0.79,0.66,1)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_Discoverable">
+                <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+                <discoverLetterLabel>{0}is awakened to Whisper of Planet</discoverLetterLabel>
+                <discoverLetterText>{0} hears the whispers of a planet. \n\nBecause the planetarium, your colonist rabbies will sometimes be able to see in blur the near future, increasing their vision.</discoverLetterText>
+                <letterType>PositiveEvent</letterType>
+                <messageType>PositiveEvent</messageType>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ChemicalDef>
+        <defName>Planetarium</defName>
+        <label>Planetarium</label>
+        <addictionHediff>PlanetariumAddiction</addictionHediff>
+        <canBinge>false</canBinge>
+    </ChemicalDef>
+
+    <NeedDef ParentName="DrugAddictionNeedBase">
+        <defName>Chemical_Planetarium</defName>
+        <needClass>Need_Chemical</needClass>
+        <label>Planetarium</label>
+        <description>Planetarium addiction. If not satisfied, the addict will go into a mental stupor or exhibit uncontrollable aggression. Cannot be treated with normal addictive behaviors.</description>
+        <listPriority>982</listPriority>
+        <fallPerDay>0.143</fallPerDay>
+    </NeedDef>
+
+    <HediffDef ParentName="AddictionBase">
+        <defName>PlanetariumAddiction</defName>
+        <hediffClass>Hediff_Addiction</hediffClass>
+        <label>Flow of Spice</label>
+        <description>The body flows in the body. If you lack Planetarium, your mind will be devastated and wandering. There is no way to escape.</description>
+        <defaultLabelColor>(0.63,0.79,1.0)</defaultLabelColor>
+        <causesNeed>Chemical_Planetarium</causesNeed>
+        <everCurableByItem>false</everCurableByItem>
+        <comps>
+            <li Class="HediffCompProperties_Discoverable">
+                <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+                <discoverLetterLabel>Flow of Spice</discoverLetterLabel>
+                <discoverLetterText>{0} is now dependent on the planetarium. The need for it will never go away, and ignoring it may drive your colonist mad.</discoverLetterText>
+                <letterType>NegativeEvent</letterType>
+                <messageType>NegativeEvent</messageType>
+            </li>
+        </comps>
+        <stages>
+            <li>
+      </li>
+            <li>
+                <label>Lunatic</label>
+                <painOffset>0.3</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.8</setMax>
+                    </li>
+                </capMods>
+                <mentalStateGivers>
+                    <li>
+                        <mentalState>Wander_Psychotic</mentalState>
+                        <mtbDays>0.3</mtbDays>
+                    </li>
+                </mentalStateGivers>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

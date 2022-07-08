@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ============================================================ -->
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_RaptorShrimp</defName>
+        <label>raptor shrimp</label>
+        <description>A large genetically modified creature, its origins unknown. They are known to make homes in tropical regions, instilling fear among the local inhabitants as those who pass through its territory are often reported to go missing; their bodies never found.\n\nThe few that survived an encounter with these monsters report bullets being shrugged off, limbs of their companions being torn apart, and the statement "The grass has eyes".\n\nRaptor shrimps have impressive regenerative capabilities, and shouldn't be considered dead until they absolutely, unmistakably, are.</description>
+        <statBases>
+            <MoveSpeed>4.70</MoveSpeed>
+            <ComfyTemperatureMin>10</ComfyTemperatureMin>
+            <MarketValue>750</MarketValue>
+            <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+        </statBases>
+        <tools>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.1</chanceFactor>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>25</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>AA_Mouth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>left blade</label>
+                <capacities>
+                    <li>AA_Pierce</li>
+                </capacities>
+                <power>17</power>
+                <cooldownTime>1.55</cooldownTime>
+                <linkedBodyPartsGroup>AA_BladeAttackTool</linkedBodyPartsGroup>
+                <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>20</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right blade</label>
+                <capacities>
+                    <li>AA_Pierce</li>
+                </capacities>
+                <power>17</power>
+                <cooldownTime>1.55</cooldownTime>
+                <linkedBodyPartsGroup>AA_BladeAttackTool</linkedBodyPartsGroup>
+                <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>20</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_Regeneration">
+                <rateInTicks>20</rateInTicks>
+            </li>
+        </comps>
+        <race>
+            <wildBiomes>
+                <TropicalRainforest>0.04</TropicalRainforest>
+                <TropicalSwamp>0.04</TropicalSwamp>
+                <TemperateSwamp>0.04</TemperateSwamp>
+                <ColdBog>0.02</ColdBog>
+            </wildBiomes>
+            <herdAnimal>false</herdAnimal>
+            <predator>true</predator>
+            <body>AA_SnakeWithTwoLimbs</body>
+            <baseBodySize>1.40</baseBodySize>
+            <baseHungerRate>0.4</baseHungerRate>
+            <baseHealthScale>3</baseHealthScale>
+            <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <leatherDef>Leather_RaptorPlates</leatherDef>
+            <wildness>0.9</wildness>
+            <trainability>Intermediate</trainability>
+            <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>.8</manhunterOnDamageChance>
+            <gestationPeriodDays>45</gestationPeriodDays>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(2, 1.7)</li>
+                    <li>(3, 0.7)</li>
+                    <li>(3.5, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>15</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.30</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>1.50</minAge>
+                    <soundWounded>Pawn_RaptorShrimp_Wounded</soundWounded>
+                    <soundDeath>Pawn_RaptorShrimp_Death</soundDeath>
+                    <soundCall>Pawn_RaptorShrimp_Call</soundCall>
+                    <soundAngry>Pawn_RaptorShrimp_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <butcherProducts>
+            <PoisonGland>1</PoisonGland>
+        </butcherProducts>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_RegeneratingShockTroop</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_RegeneratingShockTroopDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_RaptorShrimp</defName>
+        <race>AA_RaptorShrimp</race>
+        <label>raptor shrimp</label>
+        <combatPower>300</combatPower>
+        <ecoSystemWeight>0.9</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>3</max>
+        </wildGroupSize>
+        <alternateGraphicChance>1</alternateGraphicChance>
+        <alternateGraphics>
+            <li>
+                <texPath>Things/Pawn/Animal/AA_RaptorShrimp/AA_RaptorShrimp</texPath>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/AA_RaptorShrimp/AA_RaptorShrimp2</texPath>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/AA_RaptorShrimp/AA_RaptorShrimp3</texPath>
+            </li>
+        </alternateGraphics>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RaptorShrimp/AA_RaptorShrimp</texPath>
+                    <drawSize>1.3</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RaptorShrimp/AA_Dessicated_RaptorShrimp</texPath>
+                    <drawSize>1.3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RaptorShrimp/AA_RaptorShrimp</texPath>
+                    <drawSize>2.3</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RaptorShrimp/AA_Dessicated_RaptorShrimp</texPath>
+                    <drawSize>2.3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RaptorShrimp/AA_RaptorShrimp</texPath>
+                    <drawSize>3.0</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RaptorShrimp/AA_Dessicated_RaptorShrimp</texPath>
+                    <drawSize>3.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--==================== Firefly ThingDef ====================-->
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>FF_Firefly</defName>
+        <label>firefly</label>
+        <description>Fireflies are soft-bodied beetles with the power of flight and bioluminescence. They live incredibly short, yet vibrant, lives among the scattered planets of The Rim.\n\nThey are often found in small to large groups and are non-threatening.</description>
+        <thingClass>Fireflies.Firefly</thingClass>
+        <statBases>
+            <Mass>1</Mass>
+			<MoveSpeed>7.5</MoveSpeed>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<ComfyTemperatureMax>95</ComfyTemperatureMax>
+			<MarketValue>30</MarketValue>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+			<ImmunityGainSpeed>2.5</ImmunityGainSpeed>
+			<MeleeDodgeChance>0.75</MeleeDodgeChance>
+			<MeleeCritChance>0</MeleeCritChance>
+			<SmokeSensitivity>0.5</SmokeSensitivity>
+			<GermResistance>0.55</GermResistance>
+			<GermContainment>0.01</GermContainment>
+        </statBases>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_Floating">
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_EatWeirdFood">
+                <customThingToEat>
+                    <li>CorpsesHumanlike</li>
+                    <li>CorpsesAnimal</li>
+                    <li>CorpsesInsect</li>
+                </customThingToEat>
+                <nutrition>1</nutrition>
+                <digThingIfMapEmpty>false</digThingIfMapEmpty>
+                <fullyDestroyThing>false</fullyDestroyThing>
+                <percentageOfDestruction>0.05</percentageOfDestruction>
+                <advanceLifeStage>false</advanceLifeStage>
+                <needsWater>false</needsWater>
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_DropOnDeath">
+                <resourceAmount>1</resourceAmount>
+                <dropChance>0.85</dropChance>
+                <isRandom>true</isRandom>
+                <randomItems>
+                    <li>FF_Firefly_Essence</li>
+                </randomItems>
+            </li>
+            <li Class="Fireflies.CompProperties_Firefly">
+                <glowGraphicData>
+                    <texPath>Things/Pawn/Animal/Firefly/Base/Glow</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <shaderType>MoteGlow</shaderType>
+                </glowGraphicData>
+                <shortBlinkDuration>8</shortBlinkDuration>
+                <blinkIntervalRange>50~200</blinkIntervalRange>
+                <blinkDuration>250~550</blinkDuration>
+                <chanceToStayOn>0.05</chanceToStayOn>
+                <xMoveDuration>100</xMoveDuration>
+                <yMoveDuration>250</yMoveDuration>
+                <xPoints>
+                    <li>(0,   -0.1)</li>
+                    <li>(0.25, 0)</li>
+                    <li>(0.5,  0.1)</li>
+                    <li>(0.75, 0)</li>
+                    <li>(1,   -0.1)</li>
+                </xPoints>
+                <yPoints>
+                    <li>(0,   -0.5)</li>
+                    <li>(0.25, 0)</li>
+                    <li>(0.5,  0.5)</li>
+                    <li>(0.75, 0)</li>
+                    <li>(1,   -0.5)</li>
+                </yPoints>
+            </li>
+        </comps>
+        <race>
+            <thinkTreeMain>VEF_AnimalWeirdEater</thinkTreeMain>
+            <body>FF_FireflyBody</body>
+            <herdAnimal>true</herdAnimal>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <baseBodySize>0.01</baseBodySize>
+            <baseHealthScale>0.1</baseHealthScale>
+            <baseHungerRate>0.01</baseHungerRate>
+            <foodType>OmnivoreRoughAnimal</foodType>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <wildness>0.70</wildness>
+            <bloodDef>FF_FireflyBlood</bloodDef>
+            <canBePredatorPrey>false</canBePredatorPrey>
+            <trainability>None</trainability>
+            <nameOnTameChance>0.15</nameOnTameChance>
+            <mateMtbHours>100</mateMtbHours>
+            <gestationPeriodDays>5</gestationPeriodDays>
+            <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0</manhunterOnDamageChance>
+            <lifeExpectancy>2</lifeExpectancy>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.5, 1)</li>
+                    <li>(4.0, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0.00</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.05</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.2</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <deathActionWorkerClass>AnimalBehaviours.DeathActionWorker_DropOnDeath</deathActionWorkerClass>
+        </race>
+        <tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>1</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<armorPenetrationBlunt>0.005</armorPenetrationBlunt>
+			</li>
+		</tools>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>FF_PrimaryRole</li>
+                    <li>FF_SecondaryRole</li>
+                    <li>FF_FunFacts</li>
+                </statToAdd>
+                <statValues>
+                    <li>FF_Glower</li>
+                    <li>FF_Floater</li>
+                    <li>FF_FunFact_1</li>
+                </statValues>
+                <statDescriptions>
+                    <li>FF_GlowerDesc</li>
+                    <li>FF_FloaterDesc</li>
+                    <li>FF_FunFact_1Desc</li>
+                </statDescriptions>
+                <showImageInInfoCard>true</showImageInInfoCard>
+                <ImageToShowInInfoCard>Art/FF_FireflyArt</ImageToShowInInfoCard>
+            </li>
+            <li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>QuadrupedLow</bodyShape>
+			</li>
+        </modExtensions>
+    </ThingDef>
+    <!--==================== Firefly PawnKindDef ====================-->
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>FF_FireflyKind</defName>
+        <label>firefly</label>
+        <labelPlural>fireflies</labelPlural>
+        <race>FF_Firefly</race>
+        <combatPower>1</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <ecoSystemWeight>0.05</ecoSystemWeight>
+        <wildGroupSize>
+            <min>7</min>
+            <max>27</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Firefly/Base/Firefly</texPath>
+                    <drawSize>1</drawSize>
+                    <shaderType>Transparent</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Firefly/FF_Dessicated_Firefly</texPath>
+                    <drawSize>0.05</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Firefly/Base/Firefly</texPath>
+                    <drawSize>1</drawSize>
+                    <shaderType>Transparent</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Firefly/FF_Dessicated_Firefly</texPath>
+                    <drawSize>0.08</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Firefly/Base/Firefly</texPath>
+                    <drawSize>1</drawSize>
+                    <shaderType>Transparent</shaderType>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Firefly/FF_Dessicated_Firefly</texPath>
+                    <drawSize>1.00</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

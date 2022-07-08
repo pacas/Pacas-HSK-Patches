@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimUniverse - Biomes (Continued)</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> --> <!-- TESTING -->
+			<operations>
+
+				<!--==================== RimUniverse Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+					<value>
+
+						<Permafrost>1</Permafrost>
+						<Woodland>3</Woodland>
+						<Grassland>1</Grassland>
+						<MoistDeciduousForest>1</MoistDeciduousForest>
+						<Savanna>2</Savanna>	
+
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

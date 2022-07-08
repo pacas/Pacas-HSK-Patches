@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>More Vanilla Biomes</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> --> <!-- TESTING -->
+			<operations>
+
+				<!--==================== Firefly More Vanilla Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+					<value>
+
+						<ZBiome_AlpineMeadow>3</ZBiome_AlpineMeadow>
+						<ZBiome_CloudForest>3</ZBiome_CloudForest>
+						<ZBiome_CoastalDunes>1</ZBiome_CoastalDunes>
+						<ZBiome_DesertOasis>2</ZBiome_DesertOasis>
+						<ZBiome_Grasslands>3</ZBiome_Grasslands>
+						<ZBiome_Iceberg_NoBeach>3</ZBiome_Iceberg_NoBeach>
+                        <ZBiome_Marsh>3</ZBiome_Marsh>
+                        <ZBiome_Sandbar_NoBeach>2</ZBiome_Sandbar_NoBeach>
+
+					</value>
+				</li>
+
+            </operations>
+		</match>
+	</Operation>
+
+</Patch>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef ParentName="ReviaPawnBase">
+        <defName>ReviaRaceRaider</defName>
+        <label>revia raider</label>
+        <race>ReviaRaceAlien</race>
+        <defaultFactionType>ReviaMarauderFaction</defaultFactionType>
+        <combatPower>55</combatPower>
+        <baseRecruitDifficulty>0.65</baseRecruitDifficulty>
+        <itemQuality>Poor</itemQuality>
+        <apparelTags>
+            <li>Neolithic</li>
+            <li>Medieval</li>
+            <li>Apparel_TacVest</li>
+            <li>Apparel_Backpack</li>
+            <li>Apparel_TribalBackpack</li>
+        </apparelTags>
+        <apparelMoney>400~600</apparelMoney>
+        <gearHealthRange>0.5~0.8</gearHealthRange>
+        <weaponTags>
+            <li>NeolithicMeleeDecent</li>
+            <li>ReviaMeleeBasic</li>
+        </weaponTags>
+        <initialWillRange>0.0~0.4</initialWillRange>
+        <initialResistanceRange>7~12</initialResistanceRange>
+        <weaponMoney>300~400</weaponMoney>
+        <techHediffsChance>0</techHediffsChance>
+        <invNutrition>0</invNutrition>
+        <inventoryOptions>
+            <skipChance>0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>20</choiceChance>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>0~1</countRange>
+                </li>
+                <li>
+                    <choiceChance>60</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>0~10</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <sidearms>
+                    <li>
+                      <generateChance>0.2</generateChance>
+                      <sidearmMoney>
+                        <min>10</min>
+                        <max>40</max>
+                      </sidearmMoney>
+                      <weaponTags>
+                        <li>CE_Sidearm_Melee</li>
+                        <li>ReviaMeleeBasic</li>
+                      </weaponTags>
+                    </li>
+                  </sidearms>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+</Defs>

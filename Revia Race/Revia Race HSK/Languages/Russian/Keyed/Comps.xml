@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ReviaRaceSacrificePrisonerNone>Нет пленников для жертвоприношения.</ReviaRaceSacrificePrisonerNone>
+  <ReviaRaceSacrificePrisonerName>Жертва {0}</ReviaRaceSacrificePrisonerName>
+  <ReviaRaceSacrificeRejected>{0} подношение было принято, но сочтено недостаточным. Богиня крови требует больше крови.</ReviaRaceSacrificeRejected>
+  <ReviaRaceBloodStuffCountDemand>Дополнительно {0} {1} были востребованы </ReviaRaceBloodStuffCountDemand>
+  <ReviaRaceBloodStuffCountConsumed>{0} {1}(s) были употреблены в {2} подношении.</ReviaRaceBloodStuffCountConsumed>
+  <ReviaRaceSacrificeSuccess>Жертва была признана достойной, и {0} стала сильнее.</ReviaRaceSacrificeSuccess>
+  <ReviaRaceOfferingStart>{0} предлагает несколько {1} богине крови.</ReviaRaceOfferingStart>
+  <ReviaRaceOfferingInvalidPawn>Богиня крови отвергает мольбу.</ReviaRaceOfferingInvalidPawn>
+  <ReviaRaceOfferingMaxLevel>{0} уже на пике {1} могущества!</ReviaRaceOfferingMaxLevel>
+  <ReviaRaceModName>Revia Race</ReviaRaceModName>
+  <ReviaRaceSettingsSacrificeCostHeader>Настройки жертвоприношения</ReviaRaceSettingsSacrificeCostHeader>
+  <ReviaRaceSettingsSacrificeCostBase>Базовая стоимость Кровавого Камня</ReviaRaceSettingsSacrificeCostBase>
+  <ReviaRaceSettingsSacrificeCostGrowthFactor>Фактор роста затрат</ReviaRaceSettingsSacrificeCostGrowthFactor>
+  <ReviaRaceSettingsSacrificeCostGrowthStartTier>Уровень начала роста затрат</ReviaRaceSettingsSacrificeCostGrowthStartTier>
+  <ReviaRaceSettingsSacrificeCostGrowthMode>Режим роста затрат</ReviaRaceSettingsSacrificeCostGrowthMode>
+  <ReviaRaceSettingsEnableRandomSoulReapTier>Случайный уровень Жатвы Душ при спавне ревий</ReviaRaceSettingsEnableRandomSoulReapTier>
+  <ReviaRaceSettingsEnableStripOnSacrifice>Раздевать тела при жертвоприношении</ReviaRaceSettingsEnableStripOnSacrifice>
+  <ReviaRaceSettingsEnableBloodthirstNeed>Включить потребность в кровопролитии у ревий</ReviaRaceSettingsEnableBloodthirstNeed>
+  <ReviaRaceSettingsBloodthirstDaysToEmpty>Дней до исчерпания потребности</ReviaRaceSettingsBloodthirstDaysToEmpty>
+  <ReviaRaceSettingsSacrificeCostGreater>Стоимость Кровавого Камня с текущими настройками : {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}</ReviaRaceSettingsSacrificeCostGreater>
+  <ReviaRaceSettingsSacrificeCostLesser>Стоимость Бледного Камня с текущими настройками : {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}</ReviaRaceSettingsSacrificeCostLesser>
+  <ReviaRaceSettingsSoulReapSpawnFixed>Уровень Жатвы Душ при спавне ревий</ReviaRaceSettingsSoulReapSpawnFixed>
+  <ReviaRaceSettingsSoulReapSpawnRange>Случайные уровни Жатвы Душ</ReviaRaceSettingsSoulReapSpawnRange>
+  <ReviaRaceSanctifyNonMeleeWeapon>Можно освятить только оружие ближнего боя.</ReviaRaceSanctifyNonMeleeWeapon>
+  <ReviaRaceSanctifyNonReviaNonSkarnite>Руна не отзывается в руках неверных.</ReviaRaceSanctifyNonReviaNonSkarnite>
+  <ReviaRaceSanctifyAlreadySanctified>Это оружие уже наделено кровожадным духом.</ReviaRaceSanctifyAlreadySanctified>
+  <ReviaRaceSanctifyDescPart>Кровожадный дух обитает в этом оружии, даруя верным Скарне здоровье в обмен на пролитую кровь.</ReviaRaceSanctifyDescPart>
+  <Linear>Линейно</Linear>
+  <Quadratic>Квадратично</Quadratic>
+  <Exponential>Экспотенциально</Exponential>
+
+</LanguageData>

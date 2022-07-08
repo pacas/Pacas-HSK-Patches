@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>ReviaRaceThoughtSacrificedNegative</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>4</stackLimit>
+    <stackedEffectMultiplier>0.65</stackedEffectMultiplier>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+      <li>Cannibal</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>Sacrificed corpse</label>
+        <description>One of our colonists sacrificed a corpse to the blood god. This is disturbing.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

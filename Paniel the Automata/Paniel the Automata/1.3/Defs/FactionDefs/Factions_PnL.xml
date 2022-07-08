@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>PN_indistryFaction</defName>
+        <label>PnL Industry</label>
+        <pawnSingular>Automaton</pawnSingular>
+        <pawnsPlural>Automata</pawnsPlural>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <fixedName>PnL Industry</fixedName>
+        <factionIconPath>Icon/Paniel_PlayerIcon</factionIconPath>
+        <hidden>true</hidden>
+        <autoFlee>false</autoFlee>
+        <techLevel>Industrial</techLevel>
+        <rescueesCanJoin>false</rescueesCanJoin>
+        <backstoryCategories>
+            <li>Offworld</li>
+        </backstoryCategories>
+        <allowedCultures>
+            <li>Astropolitan</li>
+        </allowedCultures>
+        <allowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+        </allowedMemes>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+        </requiredMemes>
+        <disallowedPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+        </disallowedPrecepts>
+    </FactionDef>
+</Defs>

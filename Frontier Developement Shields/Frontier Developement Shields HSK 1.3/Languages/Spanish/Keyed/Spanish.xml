@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <!-- Settings ///////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- Power section -->
+    <fd.settings.shield.power.heading>Energía</fd.settings.shield.power.heading>
+
+    <fd.settings.shield.power.per_tile.label>Energía por baldosa</fd.settings.shield.power.per_tile.label>
+    <fd.settings.shield.power.minimum_online.label>Energía mínima para su encendido</fd.settings.shield.power.minimum_online.label>
+
+    <!-- Integrity section -->
+    <fd.settings.shield.integrity.heading>Integridad</fd.settings.shield.integrity.heading>
+
+    <fd.settings.shield.integrity.power_per_damage.label>Energía drenada por cada punto de daño</fd.settings.shield.integrity.power_per_damage.label>
+    <fd.settings.shield.integrity.drop_pod_damage.label>Daño por cada cápsula de transporte</fd.settings.shield.integrity.drop_pod_damage.label>
+    <fd.settings.shield.integrity.skyfaller_damage.label>Daño por cada meteorito</fd.settings.shield.integrity.skyfaller_damage.label>
+
+    <!-- Thermal section-->
+    <fd.settings.shield.thermal.heading>Térmicas</fd.settings.shield.thermal.heading>
+
+    <fd.settings.shield.thermal.per_power.label>Calor generado por cada punto de energía drenada</fd.settings.shield.thermal.per_power.label>
+
+    <fd.settings.shield.thermal.label>Habilitar el calentamiento de los escudos</fd.settings.shield.thermal.label>
+    <fd.settings.shield.thermal.description>Habilita el calentamiento de los escudos. Puede causar que los escudos funcionen mal y generar incidentes</fd.settings.shield.thermal.description>
+
+    <fd.settings.shield.minor_thermal_incidents.label>Habilitar incidentes térmicos menores</fd.settings.shield.minor_thermal_incidents.label>
+    <fd.settings.shield.minor_thermal_incidents.description>Los incidentes están limitados, afectando sólo a los escudos</fd.settings.shield.minor_thermal_incidents.description>
+
+    <fd.settings.shield.major_thermal_incidents.label>Habilitar incidentes térmicos mayores</fd.settings.shield.major_thermal_incidents.label>
+    <fd.settings.shield.major_thermal_incidents.description>Los incidentes pueden afectar a los escudos y la red eléctrica</fd.settings.shield.major_thermal_incidents.description>
+
+    <fd.settings.shield.critical_thermal_incidents.label>Habilitar incidentes térmicos críticos</fd.settings.shield.critical_thermal_incidents.label>
+    <fd.settings.shield.critical_thermal_incidents.description>Los incidentes pueden afectar a los escudos, red eléctrica y mapa</fd.settings.shield.critical_thermal_incidents.description>
+
+    <!-- Incidents //////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <fd.shields.incident.offline.body>Un generador de escudo se ha apagado</fd.shields.incident.offline.body>
+
+    <fd.shields.incident.skyfaller.blocked.body>Los escombros caídos han impactado en un escudo y han sido destruidos</fd.shields.incident.skyfaller.blocked.body>
+    <fd.shields.incident.droppod.blocked.body>Una cápsula de transporte ha impactado en un escudo y ha sido destruida</fd.shields.incident.droppod.blocked.body>
+    <fd.shields.incident.crashpod.blocked.body>Una pedazo de nave espacial ha impactado en un escudo y ha sido destruido</fd.shields.incident.crashpod.blocked.body>
+
+    <fd.shields.incident.minor.title>¡El escudo a Zzzt!</fd.shields.incident.minor.title>
+    <fd.shields.incident.minor.body>Una bobina emisora de escudo sobrecalentada sufrió un cortocircuito que drenó {0}Wd de energía en la red eléctrica.</fd.shields.incident.minor.body>
+
+    <fd.shields.incident.major.title>Avería en escudo</fd.shields.incident.major.title>
+    <fd.shields.incident.major.body>Una bobina emisora de escudo sobrecalentada se averió y denó {0}Wd de energía en la red eléctrica.</fd.shields.incident.major.body>
+
+    <fd.shields.incident.critical.title>Explosión en escudo</fd.shields.incident.critical.title>
+    <fd.shields.incident.critical.body>Una bobina emisora del escudo sobrecalentada explotó y drenó {0}Wd de energía en la red eléctrica.</fd.shields.incident.critical.body>
+
+    <!-- UI /////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- Text inspection -->
+    <fd.heatsink.temperature>Temperatura del disipador térmico</fd.heatsink.temperature>
+
+    <shield.status.offline>Escudo desconectado</shield.status.offline>
+    <shield.status.no_power>No conectado a la red eléctrica</shield.status.no_power>
+    <shield.status.unpowered>Apagado</shield.status.unpowered>
+    <shield.status.no_battieres>No hay baterías disponibles</shield.status.no_battieres>
+    <shield.status.battery_too_low>No hay suficiente energía en las baterías</shield.status.battery_too_low>
+    <shield.status.internal_battery_discharged>Batería interna descargada</shield.status.internal_battery_discharged>
+    <shield.status.thermal_safety>Interruptor térmico de seguridad activo</shield.status.thermal_safety>
+    <shield.status.online>Escudo activado</shield.status.online>
+    
+    <!-- Gizmos -->
+    <radius.label>Radio</radius.label>
+    <radius.description>Ajustar el radio de alcance del escudo</radius.description>
+    
+    <thermal_shutoff.label>Interruptor térmico</thermal_shutoff.label>
+    <thermal_shutoff.description>Evita que se dañe la bobina emisora del escudo por un exceso de calor</thermal_shutoff.description>
+    
+    <charge_internal_battery.label>Cargar la batería interna</charge_internal_battery.label>
+    <charge_internal_battery.description>Extrae la energía de cualquier red electrica adyacente para cargar la batería interna</charge_internal_battery.description>
+    
+    <fd.shield.render_field.label>Alternar visibilidad</fd.shield.render_field.label>
+    <fd.shield.render_field.description>Alternar la visibilidad del escudo (puramente cosmético)</fd.shield.render_field.description>
+
+    <fd.heatsink.climate.net.connect.label>Usar red de aire</fd.heatsink.climate.net.connect.label>
+    <fd.heatsink.climate.net.connect.description>Conectar escudo a red de aire</fd.heatsink.climate.net.connect.description>
+    
+</LanguageData>

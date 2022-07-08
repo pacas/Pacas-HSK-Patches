@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    
+    <!-- Settings ///////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- Integrations Section -->
+    <fd.settings.shield.integrations.heading>Integrationen</fd.settings.shield.integrations.heading>
+
+    <fd.settings.shield.climatecontrol.label>Erlaube die Unterstützung von Centralized Climate Control (Benötigt einen Spielneustart!)</fd.settings.shield.climatecontrol.label>
+    <fd.settings.shield.climatecontrol.description>Ermöglicht die Kühlung von Schutzschildern durch Verwendung von Gebäuden aus Centralized Climate Control.</fd.settings.shield.climatecontrol.description>
+
+    <fd.settings.shield.badhygiene.label>Erlaube die Unterstützung von Bad Hygiene (Benötigt einen Spielneustart!)</fd.settings.shield.badhygiene.label>
+    <fd.settings.shield.badhygiene.description>Ermöglicht die Kühlung von Schutzschildern durch Verwendung von Gebäuden aus Bad Hygiene.</fd.settings.shield.badhygiene.description>
+
+    <!-- General section -->
+    <fd.settings.shield.general.heading>Allgemein</fd.settings.shield.general.heading>
+
+    <fd.settings.shield.shootout.label>Aktiviere Herausschießen</fd.settings.shield.shootout.label>
+    <fd.settings.shield.shootout.description>Schüße können das Schild verlassen</fd.settings.shield.shootout.description>
+
+    <!-- Power section -->
+    <fd.settings.shield.power.heading>Energie</fd.settings.shield.power.heading>
+
+    <fd.settings.shield.power.per_tile.label>Energie pro Feld</fd.settings.shield.power.per_tile.label>
+    <fd.settings.shield.power.minimum_online.label>Benötigte Energie um Online zu gehen</fd.settings.shield.power.minimum_online.label>
+
+    <!-- Integrity section -->
+    <fd.settings.shield.integrity.heading>Intigrität</fd.settings.shield.integrity.heading>
+
+    <fd.settings.shield.integrity.power_per_damage.label>Schaden pro Energie</fd.settings.shield.integrity.power_per_damage.label>
+    <fd.settings.shield.integrity.drop_pod_damage.label>Landungskapsel-Schaden</fd.settings.shield.integrity.drop_pod_damage.label>
+    <fd.settings.shield.integrity.skyfaller_damage.label>Meteoriten-Schaden</fd.settings.shield.integrity.skyfaller_damage.label>
+
+    <!-- Thermal section-->
+    <fd.settings.shield.thermal.heading>Thermisch</fd.settings.shield.thermal.heading>
+
+    <fd.settings.shield.thermal.per_power.label>Hitze pro Energie</fd.settings.shield.thermal.per_power.label>
+
+    <fd.settings.shield.thermal.label>Aktiviere Schildtemperatur</fd.settings.shield.thermal.label>
+    <fd.settings.shield.thermal.description>Schilde können durch Hitze kaputt gehen und kleine Vorfälle verursachen</fd.settings.shield.thermal.description>
+
+    <fd.settings.shield.minor_thermal_incidents.label>Aktiviere kleine thermische Vorfälle</fd.settings.shield.minor_thermal_incidents.label>
+    <fd.settings.shield.minor_thermal_incidents.description>Vorfälle schaden nur dem Schild</fd.settings.shield.minor_thermal_incidents.description>
+
+    <fd.settings.shield.major_thermal_incidents.label>Aktiviere große thermische Vorfälle</fd.settings.shield.major_thermal_incidents.label>
+    <fd.settings.shield.major_thermal_incidents.description>Vorfälle schaden dem Schild und dem Stromnetz</fd.settings.shield.major_thermal_incidents.description>
+
+    <fd.settings.shield.critical_thermal_incidents.label>Aktiviere kritische thermische Vorfälle</fd.settings.shield.critical_thermal_incidents.label>
+    <fd.settings.shield.critical_thermal_incidents.description>Vorfälle schaden dem Schild, Stromnetz und der Karte</fd.settings.shield.critical_thermal_incidents.description>
+    
+    <!-- Incidents //////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+    <fd.shields.incident.offline.body>Ein Schildgenerator ist offline</fd.shields.incident.offline.body>
+
+    <fd.shields.incident.skyfaller.blocked.body>Herunterfallende Trümmer haben das Schild getroffen und es zerstört</fd.shields.incident.skyfaller.blocked.body>
+    <fd.shields.incident.droppod.blocked.body>Eine Landungskapsel hat das Schild getroffen und es zerstört</fd.shields.incident.droppod.blocked.body>
+    <fd.shields.incident.crashpod.blocked.body>Ein Schiff hat das Schild getroffen und es zerstört</fd.shields.incident.crashpod.blocked.body>
+
+    <fd.shields.incident.minor.title>Schild Zzzt!</fd.shields.incident.minor.title>
+    <fd.shields.incident.minor.body>Ein überhitztes Schild hatte einen Kurzschluss und hat {0}Wd Energie aus dem Stromnetz gezogen.</fd.shields.incident.minor.body>
+
+    <fd.shields.incident.major.title>Schild zerstört</fd.shields.incident.major.title>
+    <fd.shields.incident.major.body>Ein überhitztes Schild ist kaputt gegangen und hat {0}Wd Energie aus dem Stromnetz gezogen</fd.shields.incident.major.body>
+
+    <fd.shields.incident.critical.title>Schild explodiert</fd.shields.incident.critical.title>
+    <fd.shields.incident.critical.body>Ein überhitztes Schild ist explodiert und hat {0}Wd Energie aus dem Stromnetz gezogen</fd.shields.incident.critical.body>
+    
+    <!-- UI /////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- Text inspection -->
+    <fd.heatsink.temperature>Kühlkörper Temperatur</fd.heatsink.temperature>
+
+    <shield.status.offline>Schild offline</shield.status.offline>
+    <shield.status.no_power>Keine Energie verfügbar</shield.status.no_power>
+    <shield.status.unpowered>Abgeschalten</shield.status.unpowered>
+    <shield.status.no_battieres>Keine Batterien verfügbar</shield.status.no_battieres>
+    <shield.status.battery_too_low>Energielevel der Batterien zu niedrig</shield.status.battery_too_low>
+    <shield.status.internal_battery_discharged>Interne Batterie entladen</shield.status.internal_battery_discharged>
+    <shield.status.thermal_safety>Termische Sicherheitsabschaltung</shield.status.thermal_safety>
+    <shield.status.online>Schild online</shield.status.online>
+    
+    <!-- Gizmos -->
+    <radius.label>Radius</radius.label>
+    <radius.description>Setzt den Radius des Schildes</radius.description>
+    
+    <thermal_shutoff.label>Termische Abschaltung</thermal_shutoff.label>
+    <thermal_shutoff.description>Stellt sicher dass das Schild keinen Schaden durch Hitze erhält</thermal_shutoff.description>
+    
+    <charge_internal_battery.label>Interne Batterie aufladen</charge_internal_battery.label>
+    <charge_internal_battery.description>Nutzt die Energie aller verbunden Batterien um die interne Batterie zu laden</charge_internal_battery.description>
+    
+    <fd.shield.render_field.label>Ändere Sichtbarkeit</fd.shield.render_field.label>
+    <fd.shield.render_field.description>Ändert die Sichtbarkeit (nur kosmetisch)</fd.shield.render_field.description>
+
+    <fd.heatsink.climate.net.connect.label>Benutze Luftsystem</fd.heatsink.climate.net.connect.label>
+    <fd.heatsink.climate.net.connect.description>Verbinde Schild mit dem Luftsystem</fd.heatsink.climate.net.connect.description>
+    
+</LanguageData>

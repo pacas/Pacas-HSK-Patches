@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AutomataRace.AutomataSpecializationDef>
+        <defName>PN_Specialization_Combat</defName>
+        <uiIconPath>UI/Icons/Combat</uiIconPath>
+        <tooltip>make combat model.\n\nspecialized skills : shooting, melee, animals.</tooltip>
+        <recipeDefLabel>make combat automaton</recipeDefLabel>
+        <packagedDefLabel>packaged combat automaton</packagedDefLabel>
+    </AutomataRace.AutomataSpecializationDef>
+  
+    <AutomataRace.AutomataSpecializationDef>
+        <defName>PN_Specialization_Engineer</defName>
+        <uiIconPath>UI/Icons/Engineer</uiIconPath>
+        <tooltip>make engineer model.\n\nspecialized skills : construction, mining, crafting.</tooltip>
+        <recipeDefLabel>make engineer automaton</recipeDefLabel>
+        <packagedDefLabel>packaged engineer automaton</packagedDefLabel>
+    </AutomataRace.AutomataSpecializationDef>
+  
+    <AutomataRace.AutomataSpecializationDef>
+        <defName>PN_Specialization_Domestic</defName>
+        <tooltip>make domestic model.\n\nspecialized skills : cooking, plants, medical.</tooltip>
+        <uiIconPath>UI/Icons/Domestic</uiIconPath>
+        <recipeDefLabel>make domestic automaton</recipeDefLabel>
+        <packagedDefLabel>packaged domestic automaton</packagedDefLabel>
+    </AutomataRace.AutomataSpecializationDef>
+</Defs>

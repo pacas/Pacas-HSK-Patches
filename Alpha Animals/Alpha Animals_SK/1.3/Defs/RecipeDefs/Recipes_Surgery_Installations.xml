@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RecipeDef ParentName="SK_SurgeryFlesh">
+        <defName>AA_InstallMutantLeg</defName>
+        <label>install mutant leg</label>
+        <description>Install a mutant leg.</description>
+        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+        <jobString>Installing mutant leg.</jobString>
+        <workAmount>2000</workAmount>
+        <skillRequirements>
+            <Medicine>3</Medicine>
+        </skillRequirements>
+        <recipeUsers>
+            <li>Human</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AA_MutantLeg</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+                <li>AA_MutantLeg</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Leg</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>AA_MutantLeg</addsHediff>
+    </RecipeDef>
+    <RecipeDef ParentName="SK_SurgeryFlesh">
+        <defName>AA_InstallMutantArm</defName>
+        <label>install mutant arm</label>
+        <description>Install a mutant arm.</description>
+        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+        <jobString>Installing mutant arm.</jobString>
+        <workAmount>2000</workAmount>
+        <skillRequirements>
+            <Medicine>3</Medicine>
+        </skillRequirements>
+        <recipeUsers>
+            <li>Human</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AA_MutantArm</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+                <li>AA_MutantArm</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Arm</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>AA_MutantArm</addsHediff>
+    </RecipeDef>
+    <RecipeDef ParentName="SK_SurgeryFlesh">
+        <defName>AA_InstallMutantEye</defName>
+        <label>install mutant eye</label>
+        <description>Install a mutant eye.</description>
+        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+        <jobString>Installing mutant eye.</jobString>
+        <workAmount>2000</workAmount>
+        <skillRequirements>
+            <Medicine>3</Medicine>
+        </skillRequirements>
+        <recipeUsers>
+            <li>Human</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AA_MutantEye</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <thingDefs>
+                <li>AA_MutantEye</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Eye</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>AA_MutantEye</addsHediff>
+    </RecipeDef>
+    <RecipeDef>
+        <defName>AA_ShutDownMechanoid</defName>
+        <label>shut down</label>
+        <description>Shuts down a mechanoid.</description>
+        <workerClass>AlphaBehavioursAndEvents.Recipe_ShutDown</workerClass>
+        <jobString>Shutting down mechanoid.</jobString>
+        <workAmount>1</workAmount>
+        <effectWorking>Repair</effectWorking>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <isViolation>true</isViolation>
+        <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+        <anesthetize>false</anesthetize>
+    </RecipeDef>
+</Defs>

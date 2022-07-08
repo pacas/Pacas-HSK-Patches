@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <BodyPartDef>
+        <defName>RB_RabbitTail</defName>
+        <label>tail</label>
+        <hitPoints>15</hitPoints>
+        <frostbiteVulnerability>3</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <beautyRelated>true</beautyRelated>
+        <tags>
+            <li>MovingLimbCore</li>
+        </tags>
+    </BodyPartDef>
+	
+</Defs>

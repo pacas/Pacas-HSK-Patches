@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<SkinSet>
+  
+  <lifeStage>
+    <appliesToAll>true</appliesToAll>
+    <variants>
+	  <skin>
+	    <commonality>1</commonality>
+        <texName>AA_RoyalAve</texName>
+      </skin>
+	  <skin>
+	    <commonality>1</commonality>
+        <texName>AA_RoyalAveGreen</texName>
+      </skin>
+	  <skin>
+	    <commonality>1</commonality>
+        <texName>AA_RoyalAveOrange</texName>
+      </skin>
+	  <skin>
+	    <commonality>1</commonality>
+        <texName>AA_RoyalAveRed</texName>
+      </skin>
+	  <skin>
+	    <commonality>1</commonality>
+        <texName>AA_RoyalAveYellow</texName>
+      </skin>
+	  <skin>
+	    <commonality>0.1</commonality>
+        <texName>AA_RoyalAveRainbow</texName>
+      </skin>
+	  
+    </variants>
+    <winterCoat>
+      <useWinterCoat>false</useWinterCoat>
+    </winterCoat>
+  </lifeStage>
+  
+</SkinSet>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RulePackDef>
+        <defName>PN_NamerUtility</defName>
+        <rulePack>
+            <rulesFiles>
+                <li>PNSN->Names/Automaton/PNSN</li>
+                <li>PN09->Names/Automaton/PN09</li>
+                <li>PNAZ->Names/Automaton/PNAZ</li>
+                <li>PNNick->Names/Automaton/PNNick</li>
+                <li>PNDbPnL->Names/Automaton/PNDbPnL</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>PN_NamerFirst</defName>
+        <include>
+            <li>PN_NamerUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>PNFirstNamer->[PNSN][PN09][PN09][PN09][PNAZ][PNAZ]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>PN_NamerFemale</defName>
+        <include>
+            <li>PN_NamerUtility</li>
+            <li>PN_NamerFirst</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[PNFirstNamer] [PNDbPnL]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyDef>
+		<defName>AA_NautiloidBody</defName>
+		<label>nautiloid body</label>
+		<corePart>
+			<def>AA_BoatBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+
+
+			<parts>
+				<li>
+					<def>AA_BoatHead</def>
+					<coverage>0.2</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+
+						<li>
+							<def>AA_BoatEye</def>
+							<customLabel>left eye</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+						<li>
+							<def>AA_BoatEye</def>
+							<customLabel>right eye</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+						<li>
+							<def>AA_NautilusTentacles</def>
+							<coverage>0.5</coverage>
+						</li>
+
+					</parts>
+				</li>
+				<li>
+					<def>AA_Mast</def>
+					<customLabel>first mast</customLabel>
+					<coverage>0.25</coverage>
+				</li>
+				<li>
+					<def>AA_Mast</def>
+					<customLabel>second mast</customLabel>
+					<coverage>0.15</coverage>
+				</li>
+				<li>
+					<def>AA_Mast</def>
+					<customLabel>third mast</customLabel>
+					<coverage>0.1</coverage>
+				</li>
+				<li>
+					<def>AA_NautilusShell</def>
+					<coverage>0.25</coverage>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

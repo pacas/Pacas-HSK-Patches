@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>NamerSettlementReviaTemplar</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[ColorBadass] [Geography] [fortname]</li>
+        <li>r_name->[ColorBadass] [fortname]</li>
+        
+        <li>fortname->Citadel</li>
+        <li>fortname->Fortress</li>
+        <li>fortname->Fort</li>
+        <li>fortname->Castle</li>
+        <li>fortname->Stronghold</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

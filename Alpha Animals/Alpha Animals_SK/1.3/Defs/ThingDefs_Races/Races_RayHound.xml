@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_RayHound</defName>
+        <label>ray-hound</label>
+        <description>Ray-hounds (&lt;i&gt;Salvator Electricus&lt;/i&gt;), also called Reptile Hounds, are a genetically engineered species based on the Argentine black and white tegu, with several traits from the common electric eel. The pair of fleshy tentacles extending from a ray-hound's skull are electrogenic, and are used by the animal as a defense mechanism against predators. In practice, Ray-hounds were created as an easily trainable biological defense against mechanoids, since an electrical discharge from a ray-hound's tentacles can easily disable electronic circuits.\n\nRay-hounds make amenable pets, as they tend to become acclimated to their owners and are generally quite docile as adults.</description>
+        <statBases>
+            <MoveSpeed>3.00</MoveSpeed>
+            <ComfyTemperatureMin>0</ComfyTemperatureMin>
+            <ComfyTemperatureMax>60</ComfyTemperatureMax>
+            <MarketValue>450</MarketValue>
+            <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+            <MeatAmount>70</MeatAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>left tentacle</label>
+                <capacities>
+                    <li>AA_EMPBlunt</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>AA_TentacleAttackTool</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right tentacle</label>
+                <capacities>
+                    <li>AA_EMPBlunt</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>AA_TentacleAttackTool</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>2.0</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.4</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <wildBiomes>
+                <BorealForest>0.05</BorealForest>
+                <Tundra>0.03</Tundra>
+                <ColdBog>0.02</ColdBog>
+                <TemperateForest>0.07</TemperateForest>
+                <TemperateSwamp>0.07</TemperateSwamp>
+                <TropicalRainforest>0.07</TropicalRainforest>
+                <TropicalSwamp>0.07</TropicalSwamp>
+                <AridShrubland>0.05</AridShrubland>
+            </wildBiomes>
+            <body>AA_DualTentacledQuadrupedWithJowl</body>
+            <predator>false</predator>
+            <baseBodySize>1.5</baseBodySize>
+            <baseHungerRate>0.1</baseHungerRate>
+            <baseHealthScale>2</baseHealthScale>
+            <foodType>OmnivoreRoughAnimal, OvivoreAnimal</foodType>
+            <leatherDef>Leather_Lizard</leatherDef>
+            <useMeatFrom>Elephant</useMeatFrom>
+            <trainability>Advanced</trainability>
+            <gestationPeriodDays>40</gestationPeriodDays>
+            <nameOnTameChance>1</nameOnTameChance>
+            <wildness>0.3</wildness>
+            <petness>0.25</petness>
+            <manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+            <nuzzleMtbHours>48</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(2, 1.7)</li>
+                    <li>(2.5, 0.7)</li>
+                    <li>(3, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>20</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.4</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.65</minAge>
+                    <soundWounded>AA_DecayDrake_Wounded</soundWounded>
+                    <soundDeath>AA_DecayDrake_Death</soundDeath>
+                    <soundAngry>AA_DecayDrake_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalPet</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_EMPShockTroop</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_EMPShockTroopDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_RayHound</defName>
+        <label>ray-hound</label>
+        <race>AA_RayHound</race>
+        <combatPower>95</combatPower>
+        <lifeStages>
+            <li>
+                <label>ray-hound lizardling</label>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RayHound/AA_RayHound</texPath>
+                    <drawSize>1.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RayHound/AA_Dessicated_RayHound</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RayHound/AA_RayHound</texPath>
+                    <drawSize>2</drawSize>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RayHound/AA_Dessicated_RayHound</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RayHound/AA_RayHound</texPath>
+                    <drawSize>2.5</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RayHound/AA_Dessicated_RayHound</texPath>
+                    <drawSize>2.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+        <ecoSystemWeight>0.7</ecoSystemWeight>
+    </PawnKindDef>
+</Defs>

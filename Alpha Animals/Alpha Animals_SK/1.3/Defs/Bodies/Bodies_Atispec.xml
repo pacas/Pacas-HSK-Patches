@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======================== Bumbledrone ======================== -->
+
+	<BodyDef>
+		<defName>AA_Atispec</defName>
+		<label>atispec body</label>
+		<corePart>
+			<def>Body</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Tail</def>
+					<coverage>0.07</coverage>
+				</li>
+				<li>
+					<def>AA_Thorax</def>
+					<coverage>0.10</coverage>
+				</li>
+				<li>
+					<def>Heart</def>
+					<coverage>0.1</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>left lung</customLabel>
+
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>right lung</customLabel>
+
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Liver</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>left kidney</customLabel>
+
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>right kidney</customLabel>
+
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Pronotum</def>
+					<coverage>0.08</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>InsectHead</def>
+							<coverage>0.65</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Brain</def>
+									<coverage>0.2</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>AA_EcholocationOrgan</def>
+									
+									<coverage>0.1</coverage>
+								</li>
+								
+								<li>
+									<def>InsectNostril</def>
+									<coverage>0.1</coverage>
+								</li>
+								<li>
+									<def>AA_InsectMouth</def>
+									<coverage>0.05</coverage>
+									<groups>
+										<li>Mouth</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>AA_Abdomen</def>
+					<coverage>0.08</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>AA_InsectSting</def>
+							<coverage>0.3</coverage>
+							<depth>Outside</depth>
+							<groups>
+								<li>AA_Sting</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>AA_FrontClaw</def>
+					<customLabel>front left claw</customLabel>
+					<coverage>0.03</coverage>
+					<height>Top</height>
+					<groups>
+						<li>FrontLeftClaws</li>
+					</groups>
+				</li>
+				<li>
+					<def>AA_FrontClaw</def>
+					<customLabel>front right claw</customLabel>
+					<coverage>0.03</coverage>
+					<height>Top</height>
+					<groups>
+						<li>FrontRightClaws</li>
+					</groups>
+				</li>
+				
+				<li>
+					<def>AA_InsectWing</def>
+					<customLabel>right wing</customLabel>
+					<coverage>0.03</coverage>
+					<height>Middle</height>
+				</li>
+				<li>
+					<def>AA_InsectWing</def>
+					<customLabel>left wing</customLabel>
+					<coverage>0.03</coverage>
+					<height>Middle</height>
+				</li>
+				
+				
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

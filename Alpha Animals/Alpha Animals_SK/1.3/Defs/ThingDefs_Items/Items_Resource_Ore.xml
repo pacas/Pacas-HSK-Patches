@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>AA_SkySteel_Ore</defName>
+		<label>Skyiron Ore</label>
+		<description>A weird iron based compound found in a fallen asteroid. Stronger than normal iron, but a terrible insulator.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/SkyIron</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(36,84,150)</color>
+		</graphicData>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>600</stackLimit>
+		<statBases>
+			<MarketValue>4.0</MarketValue>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Flammability>0</Flammability>
+			<Mass>0.4</Mass>
+			<Bulk>0.4</Bulk>
+		</statBases>
+		<thingCategories>
+			<li>SLD</li>
+		</thingCategories>
+		<smeltable>true</smeltable>
+		<stuffProps>
+			<categories>
+				<li>Matty</li>
+			</categories>
+			<statFactors>
+				<Flammability>0.1</Flammability>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<deepCommonality>0.05</deepCommonality>
+		<deepCountPerCell>230</deepCountPerCell>
+		<deepCountPerPortion>11</deepCountPerPortion>
+		<deepLumpSizeRange>
+			<min>10</min>
+			<max>65</max>
+		</deepLumpSizeRange>
+	</ThingDef>
+</Defs>

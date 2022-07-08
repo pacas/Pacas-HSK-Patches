@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<AA_ToxicSting.label>ядовитое жало</AA_ToxicSting.label>
+<AA_ToxicSting.deathMessage>{0} {0_gender ? погиб : погибла} от ядовитого жала.</AA_ToxicSting.deathMessage>
+<AA_ToxicBite.label>ядовитый укус</AA_ToxicBite.label>
+<AA_ToxicBite.deathMessage>{0} {0_gender ? искусан : искусана} до смерти.</AA_ToxicBite.deathMessage>
+<AA_InfectedClaws.label>зараженные когти</AA_InfectedClaws.label>
+<AA_InfectedClaws.deathMessage>{0} {0_gender ? растерзан : растерзана}.</AA_InfectedClaws.deathMessage>
+<AA_ExtraDamageInsectoidsClaws.label>раздирающие когти</AA_ExtraDamageInsectoidsClaws.label>
+<AA_ExtraDamageInsectoidsClaws.deathMessage>{0} {0_gender ? растерзан : растерзана}.</AA_ExtraDamageInsectoidsClaws.deathMessage>
+<AA_EMPBlunt.label>электромагнитный импульс</AA_EMPBlunt.label>
+<AA_ToxicBolt.label>ядовитое жало</AA_ToxicBolt.label>
+<AA_ToxicBolt.deathMessage>{0} {0_gender ? погиб : погибла} от ядовитого жала.</AA_ToxicBolt.deathMessage>
+<AA_AcidSpit.label>кислотный плевок</AA_AcidSpit.label>
+<AA_AcidSpit.deathMessage>{0} {0_gender ? погиб : погибла} от кислоты.</AA_AcidSpit.deathMessage>
+<AA_AcidRainDamage.label>кислотный дождь</AA_AcidRainDamage.label>
+<AA_AcidRainDamage.deathMessage>{0} {0_gender ? погиб : погибла} от кислоты.</AA_AcidRainDamage.deathMessage>
+<AA_VeryToxicSting.label>очень ядовитое жало</AA_VeryToxicSting.label>
+<AA_VeryToxicSting.deathMessage>{0} {0_gender ? погиб : погибла} от ядовитого жала.</AA_VeryToxicSting.deathMessage>
+<AA_ParalysingBite.label>парализующий укус</AA_ParalysingBite.label>
+<AA_ParalysingBite.deathMessage>{0} {0_gender ? растерзан : растерзана}.</AA_ParalysingBite.deathMessage>
+<AA_Electric.label>электрошок</AA_Electric.label>
+<AA_Electric.deathMessage>{0} {0_gender ? убит : убита} током.</AA_Electric.deathMessage>
+<AA_FrostBomb.label>морозный взрыв</AA_FrostBomb.label>
+<AA_FrostBomb.deathMessage>{0} {0_gender ? погиб : погибла} от обморожения.</AA_FrostBomb.deathMessage>
+<Frostbite.label>морозный укус</Frostbite.label>
+<Frostbite.deathMessage>{0} {0_gender ? погиб : погибла} от обморожения.</Frostbite.deathMessage>
+<AA_FrostBite.label>морозный укус</AA_FrostBite.label>
+<AA_FrostBite.deathMessage>{0} {0_gender ? погиб : погибла} от обморожения.</AA_FrostBite.deathMessage>
+<AA_FrostClaws.label>морозные когти</AA_FrostClaws.label>
+<AA_FrostClaws.deathMessage>{0} {0_gender ? погиб : погибла} от обморожения.</AA_FrostClaws.deathMessage>
+<AA_SiegeBlunt.label>давка</AA_SiegeBlunt.label>
+<AA_SiegeBlunt.deathMessage>{0} {0_gender ? раздавлен : раздавлена}.</AA_SiegeBlunt.deathMessage>
+<AA_PermanentBurn.label>постоянное горение</AA_PermanentBurn.label>
+<AA_PermanentBurn.deathMessage>{0} {0_gender ? сгорел : сгорела} заживо.</AA_PermanentBurn.deathMessage>
+<AA_BoulderScratch.label>рваная рана</AA_BoulderScratch.label>
+<AA_BoulderScratch.deathMessage>{0} {0_gender ? раздавлен : раздавлена}.</AA_BoulderScratch.deathMessage>
+<AA_LockJawDamage.label>укус челюстяна</AA_LockJawDamage.label>
+<AA_LockJawDamage.deathMessage>{0} {0_gender ? растерзан : растерзана}.</AA_LockJawDamage.deathMessage>
+<AA_Pierce.label>колотая рана</AA_Pierce.label>
+<AA_Pierce.deathMessage>{0} {0_gender ? заколот : заколота}.</AA_Pierce.deathMessage>
+<AA_BurningBite.label>обжигающий укус</AA_BurningBite.label>
+<AA_BurningBite.deathMessage>{0} {0_gender ? растерзан : растерзана}.</AA_BurningBite.deathMessage>
+<AA_BurningAndFeedingBite.label>обжигающая атака</AA_BurningAndFeedingBite.label>
+<AA_BurningAndFeedingBite.deathMessage>{0} {0_gender ? заколот и сожжен : заколота и сожжена}.</AA_BurningAndFeedingBite.deathMessage>
+<AA_RegenerativePierce.label>вампирский укол</AA_RegenerativePierce.label>
+<AA_RegenerativePierce.deathMessage>{0} {0_gender ? заколот : заколота}.</AA_RegenerativePierce.deathMessage>
+<BodyCrush.label>давка</BodyCrush.label>
+<BodyCrush.deathMessage>{0} {0_gender ? раздавлен : раздавлена}.</BodyCrush.deathMessage>
+<AA_SwallowWhole.label>проглочен</AA_SwallowWhole.label>
+<AA_SwallowWhole.deathMessage>{0} {0_gender ? проглочен : проглочена}.</AA_SwallowWhole.deathMessage>
+<AA_SwarmlingClaws.label>когти свармлинга</AA_SwarmlingClaws.label>
+<AA_SwarmlingClaws.deathMessage>{0} {0_gender ? растерзан : растерзана}.</AA_SwarmlingClaws.deathMessage>
+<AA_FungalClaws.label>зараженные когти</AA_FungalClaws.label>
+<AA_LuciferiumExplosion.label>люцифериумный взрыв</AA_LuciferiumExplosion.label>
+<AA_LuciferiumExplosion.deathMessage>{0} {0_gender ? погиб : погибла} от передозировки.</AA_LuciferiumExplosion.deathMessage>
+
+</LanguageData>
+
+
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- Concepts taught through the learning readout, when opportunities arise -->
+
+    <FD_Shields.label>FD: Générateurs de champ</FD_Shields.label>
+    <FD_Shields.helpText>Les boucliers transforment en chaleur l'énergie des projectiles venant de l'extérieur en utilisant l'énergie stockée dans les batteries. Ils n'arrêtent cependant pas les personnes. Ils consomment très peu d'électricité au repos, la consommation augmente quand ils arrêtent les attaques. Il est recommandé d'utiliser des batteries, car les boucliers ont une consommation instantannée très élevée, en particulier lorsqu'ils absorbent des tirs nourris.
+    </FD_Shields.helpText>
+
+    <FD_CoilTemperature.label>FD: Température du circuit d'absorption</FD_CoilTemperature.label>
+    <FD_CoilTemperature.helpText>Le circuit d'absorption du bouclier chauffe lorsque le bouclier absorbe les attaques. Le générateur échangera lentement cette chaleur avec l'air ambiant jusqu'à égalisation des températures.\n\nAu-dessus de 100 C : Danger mineur, possibilité de court-circuits sur le réseau électrique.\n\n Au-dessus de 150 C : Danger modéré, le bouclier peut se rompre en plus de causer des court-circuits.\n\n Au-dessus de 200 C : Danger critique, le générateur entre en court-circuit et explose.
+    </FD_CoilTemperature.helpText>
+
+    <FD_ShieldsPortable.label>FD: Générateurs portables</FD_ShieldsPortable.label>
+    <FD_ShieldsPortable.helpText>Les générateurs de bouclier portables peuvent désinstallés et réinstaller en fonction de la situation. Ils sont équipés d'une batterie interne pour les rendre autonomes.\n\n Ils peuvent être connectés sur un réseau électrique et feront fonction de batterie. Le rayon ne peut être modifié sur cette version.
+    </FD_ShieldsPortable.helpText>
+
+
+</LanguageData>

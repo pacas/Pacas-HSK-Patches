@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Planetarium Intake Form Reaction: Refined Powder -->
+
+  <RefinedPlanetarium.label>Refined Planetarium</RefinedPlanetarium.label>
+  <RefinedPlanetarium.description>A mineral substance refined from particulate in the atmosphere scattered by volcanic activity.
+  \n\nPlanetarium is vital for rabbie survival, for without it they eventually descend into madness. While stimulating activity in the brain, rabbies that consume the substance for a long time begin to have brief prophetic visions; seeing seconds into the future.
+  \n\nCommonly refered to as spice, the substance is highly addictive to non-rabbies as well, but only rabbies have been found to experience prophetic visions. Regardless, consumption of the substance generally imparts an enjoyable euphoric sensation.</RefinedPlanetarium.description>
+  <RefinedPlanetarium.labelNoun>Refined Planetarium</RefinedPlanetarium.labelNoun>
+
+
+  <!-- Planetarium Intake Form Response: Brainstorm -->
+
+  <Braincrystal.label>Rabbie Braincrystal</Braincrystal.label>
+  <Braincrystal.description>A semisolid cystal substance found inside the heads of rabbies.
+  \n\nContains trace amounts of planetarium, which can soothe cravings for the substance, but is disgusting and disturbing to eat.</Braincrystal.description>
+  <Braincrystal.labelNoun>Rabbie Braincrystal</Braincrystal.labelNoun>
+
+
+  <!-- Planetarium Intake Form Response: Planetarium Tea -->
+
+  <PlanetariumTea.label>Planetarium Tea</PlanetariumTea.label>
+  <PlanetariumTea.description>A fragrant tea of boiled planetarium. The most common method of planetarium consumption, in provides more enjoyment compared to consuming raw planetarium.</PlanetariumTea.description>
+  <PlanetariumTea.labelNoun>Planetarium Tea</PlanetariumTea.labelNoun>
+
+
+  <!-- Labyrinth Planetarium In Bloom -->
+
+  <Whisperofplanet.label>Whisper of the Planet</Whisperofplanet.label>
+  <Whisperofplanet.description>A phenomenon that only appears in the Rabbie race. Rabbies who have consumed the planetarium for long periods of time have the ability to glimpse into the future a few seconds in tense situations. When active, the Rabbies' eyes will change colors. This alongisde the Rabbies' formidable shooting skills makes them a formidably dangerous race on the battlefield.</Whisperofplanet.description>
+  <Whisperofplanet.comps.HediffComp_Discoverable.discoverLetterLabel>Planetarium Visions</Whisperofplanet.comps.HediffComp_Discoverable.discoverLetterLabel>
+  <Whisperofplanet.comps.HediffComp_Discoverable.discoverLetterText>{0} hears the whisper of the planet. \n\nAs a result of prolonged planetarium intake, this Rabbie has gained the ability to glimpse into the future, although imperfectly.</Whisperofplanet.comps.HediffComp_Discoverable.discoverLetterText>
+
+  <!-- Planetarium poisoning -->
+
+  <PlanetariumAddiction.label>Planetarium Addiction</PlanetariumAddiction.label>
+  <PlanetariumAddiction.description>Trace amounts of planetarium exists in the body. When planetarium levels drop to dangerous levels, cognitive function declines. Recovery from planetarium addiction is impossible.</PlanetariumAddiction.description>  
+  <PlanetariumAddiction.comps.HediffComp_Discoverable.discoverLetterLabel>Planetarium Addiction</PlanetariumAddiction.comps.HediffComp_Discoverable.discoverLetterLabel>
+  <PlanetariumAddiction.comps.HediffComp_Discoverable.discoverLetterText>{0} has consumed planetarium and gained an addiction to the substance. Recovery from the addiction is impossible, but with sustained dosages they will not experience any downsides.</PlanetariumAddiction.comps.HediffComp_Discoverable.discoverLetterText>
+  <PlanetariumAddiction.stages.Lunatic.label>Madness</PlanetariumAddiction.stages.Lunatic.label>
+
+
+</LanguageData>

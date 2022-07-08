@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjAndroid"]</xpath>
+            </li>
+            <li Class="PatchOperationConditional">
+                <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjAndroid"]/comps</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjAndroid"]</xpath>
+                    <value>
+                        <comps>
+                            <li>
+                                <compClass>FacialAnimation.DrawFaceGraphicsComp</compClass>
+                            </li>
+                            <li>
+                                <compClass>FacialAnimation.HeadControllerComp</compClass>
+                            </li>
+                            <li>
+                                <compClass>FacialAnimation.EyeballControllerComp</compClass>
+                            </li>
+                            <li>
+                                <compClass>FacialAnimation.LidControllerComp</compClass>
+                            </li>
+                            <li>
+                                <compClass>FacialAnimation.BrowControllerComp</compClass>
+                            </li>
+                            <li>
+                                <compClass>FacialAnimation.MouthControllerComp</compClass>
+                            </li>
+                            <li>
+                                <compClass>FacialAnimation.FacialAnimationControllerComp</compClass>
+                            </li>
+                        </comps>
+                    </value>
+                </nomatch>
+                <match Class="PatchOperationAdd">
+                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="ChjAndroid"]/comps</xpath>
+                    <value>
+                        <li>
+                            <compClass>FacialAnimation.DrawFaceGraphicsComp</compClass>
+                        </li>
+                        <li>
+                            <compClass>FacialAnimation.HeadControllerComp</compClass>
+                        </li>
+                        <li>
+                            <compClass>FacialAnimation.EyeballControllerComp</compClass>
+                        </li>
+                        <li>
+                            <compClass>FacialAnimation.LidControllerComp</compClass>
+                        </li>
+                        <li>
+                            <compClass>FacialAnimation.BrowControllerComp</compClass>
+                        </li>
+                        <li>
+                            <compClass>FacialAnimation.MouthControllerComp</compClass>
+                        </li>
+                        <li>
+                            <compClass>FacialAnimation.FacialAnimationControllerComp</compClass>
+                        </li>
+                    </value>
+                </match>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

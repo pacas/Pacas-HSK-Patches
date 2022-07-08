@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--==================================== 오토마톤 제작대 ====================================-->
+    <ThingDef ParentName="BenchBase">
+        <defName>PN_AutomatonBench</defName>
+        <label>automaton fabrication bench</label>
+        <description>automaton fabrication bench</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>5000</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <minifiedDef/>
+        <thingCategories Inherit="false"/>
+        <size>(5,2)</size>
+        <stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		<costList>
+			<Titanium>20</Titanium>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<Mechanism>5</Mechanism>
+			<ElectronicComponents>6</ElectronicComponents>
+		</costList>
+        <comps>
+            <li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>Small_ToolCabinet</li>
+					<li>PodChair</li>
+				</linkableFacilities>
+			</li>
+            <li Class="SK.CompProperties_LowIdleDraw">
+				<compClass>SK.CompPowerLowIdleDraw</compClass>
+				<idlePowerFactor>0.1</idlePowerFactor>
+			</li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1500</basePowerConsumption>
+                <shortCircuitInRain>true</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li>
+				<compClass>CompReportWorkSpeed</compClass>
+			</li>
+        </comps>
+        <graphicData>
+            <texPath>Things/Building/PNAutomatonBench</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(7,4)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+        <fillPercent>0.5</fillPercent>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <hasInteractionCell>true</hasInteractionCell>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <designationCategory>Production</designationCategory>
+        <surfaceType>Item</surfaceType>
+        <designationHotKey>Misc12</designationHotKey>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+            <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>PNRP_Production</li>
+        </researchPrerequisites>
+    </ThingDef>
+</Defs>

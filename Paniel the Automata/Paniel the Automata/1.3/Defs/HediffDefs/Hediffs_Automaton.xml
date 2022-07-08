@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--==================================== 면역 ====================================-->
+    <HediffDef>
+        <defName>PN_Immune_System</defName>
+        <label>Automaton immune system</label>
+        <description>Automaton immune system</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+        <isBad>false</isBad>
+        <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+                <makeImmuneTo>
+                    <li>Malaria</li>
+                    <li>SleepingSickness</li>
+                    <li>Plague</li>
+                    <li>FibrousMechanites</li>
+                    <li>GutWorms</li>
+                    <li>Flu</li>
+                    <li>MuscleParasites</li>
+                </makeImmuneTo>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="YORHG.HediffDefModExtension">
+                <race>Paniel_Race</race>
+            </li>
+        </modExtensions>
+    </HediffDef>
+
+    <!--==================================== 학습 제한 ====================================-->
+    <HediffDef>
+        <defName>PN_Learning_Limit_System</defName>
+        <label>Automaton learning limit system</label>
+        <description>Automaton learning limit system</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.8, 0.8, 0.8)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+        <isBad>false</isBad>
+        <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+                <statFactors>
+                    <GlobalLearningFactor>0</GlobalLearningFactor>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_PostRemoveTrigger_HediffAdd">
+                <triggeredHediff>
+                    <li>PN_Ex_filterA</li>
+                </triggeredHediff>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <!--==================================== 오토마톤 기본 ====================================-->
+    <HediffDef>
+        <defName>PanielBaseHediff</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>Automaton base</label>
+        <description>This pawn is Automaton.</description>
+        <defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1</maxSeverity>
+        <initialSeverity>1</initialSeverity>
+        <isBad>false</isBad>
+        <countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+        <stages>
+            <li>
+                <becomeVisible>false</becomeVisible>
+                <painFactor>0</painFactor>
+                <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+                <naturalHealingFactor>0</naturalHealingFactor>
+                <statFactors>
+                    <InjuryHealingFactor>0</InjuryHealingFactor>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+                <hediffToNullify>
+                    <li>Plague</li>
+                    <li>CryptosleepSickness</li>
+                    <li>Carcinoma</li>
+                    <li>BadBack</li>
+                    <li>Frail</li>
+                    <li>Cataract</li>
+                    <li>Blindness</li>
+                    <li>HearingLoss</li>
+                    <li>Asthma</li>
+                    <li>HeartArteryBlockage</li>
+                    <li>GutWorms</li>
+                    <li>MuscleParasites</li>
+                    <li>FibrousMechanites</li>
+                    <li>Flu</li>
+                    <li>Malaria</li>
+                    <li>SleepingSickness</li>
+                    <li>TraumaSavant</li>
+                    <li>Cirrhosis</li>
+                    <li>ResurrectionPsychosis</li>
+                    <li>Scaria</li>
+                    <li>FoodPoisoning</li>
+                    <li>ResurrectionSickness</li>
+                    <li>PsychiteAddiction</li>
+                    <li>YayoHigh</li>
+                    <li>PsychiteTolerance</li>
+                    <li>PsychiteTeaHigh</li>
+                    <li>FlakeHigh</li>
+                    <li>GoJuiceHigh</li>
+                    <li>GoJuiceAddiction</li>
+                    <li>GoJuiceTolerance</li>
+                    <li>Pregnant</li>
+                </hediffToNullify>
+                <showMessage>true</showMessage>
+                <nullifyKey>PN_HediffNullifier</nullifyKey>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="YORHG.HediffDefModExtension">
+                <race>Paniel_Race</race>
+            </li>
+        </modExtensions>
+    </HediffDef>
+
+    <!--==================================== 오토마톤 출혈 ====================================-->
+    <HediffDef>
+        <defName>PN_OilLoss</defName>
+        <label>oil loss</label>
+        <description>A reduction in the normal oil volume. Minor oil loss has relatively mild effects, but when oil loss becomes severe, internal device becomes badly impaired and the victim loses the ability to move. Extreme oil loss leads to explosion.</description>
+        <lethalSeverity>1</lethalSeverity>
+        <stages>
+            <li>
+                <label>minor</label>
+                <becomeVisible>false</becomeVisible>
+            </li>
+            <li>
+                <minSeverity>0.15</minSeverity>
+                <label>minor</label>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.30</minSeverity>
+                <label>moderate</label>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.45</minSeverity>
+                <label>severe</label>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.4</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.60</minSeverity>
+                <label>extreme</label>
+                <lifeThreatening>true</lifeThreatening>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.7</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--==================================== 오토마톤 과열 ====================================-->
+    <HediffDef>
+        <defName>PN_Overheating</defName>
+        <label>overheating</label>
+        <description>A generalized disruption to body functioning caused by excessive exposure to heat and sun. The victim becomes dizzy, weak, and confused. Recovery is quick once in a cool area, but if heat exposure continues, overheating gets worse until death.</description>
+        <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+        <lethalSeverity>1</lethalSeverity>
+        <taleOnVisible>HeatstrokeRevealed</taleOnVisible>
+        <stages>
+            <li>
+                <label>initial</label>
+                <becomeVisible>false</becomeVisible>
+            </li>
+            <li>
+                <label>initial</label>
+                <minSeverity>0.04</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>minor</label>
+                <minSeverity>0.2</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>serious</label>
+                <minSeverity>0.35</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.4</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>extreme</label>
+                <minSeverity>0.62</minSeverity>
+                <lifeThreatening>true</lifeThreatening>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.6</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--==================================== 오토마톤 과냉 ====================================-->
+    <HediffDef>
+        <defName>PN_OverCooling</defName>
+        <label>overcooling</label>
+        <description>Dangerously low core body temperature. Unless re-warmed, overcooling gets worse and ends in death. Recovery is quick once the victim is re-warmed. Avoid overcooling by wearing warm clothes in cold environments.</description>
+        <defaultLabelColor>(0.8, 0.8, 1)</defaultLabelColor>
+        <lethalSeverity>1</lethalSeverity>
+        <taleOnVisible>HypothermiaRevealed</taleOnVisible>
+        <stages>
+            <li>
+                <label>initial</label>
+                <becomeVisible>false</becomeVisible>
+            </li>
+            <li>
+                <label>initial</label>
+                <minSeverity>0.04</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.1</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>minor</label>
+                <minSeverity>0.2</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>serious</label>
+                <minSeverity>0.35</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.4</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>extreme</label>
+                <minSeverity>0.62</minSeverity>
+                <lifeThreatening>true</lifeThreatening>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.6</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

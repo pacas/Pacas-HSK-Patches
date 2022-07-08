@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===================== Misc =====================-->
+
+
+	<!-- Jellyfish and amorphous parts -->
+
+	<BodyPartDef>
+		<defName>AA_JellyfishMainBody</defName>
+		<label>hood</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_HydrogenSac</defName>
+		<label>hydrogen sac</label>
+		<hitPoints>20</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>
+			<li>BreathingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_JellyfishTentacle</defName>
+		<label>tentacle</label>
+		<hitPoints>5</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_Protoplasm</defName>
+		<label>protoplasm</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>
+			<li>BreathingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_Nucleus</defName>
+		<label>nucleus</label>
+		<hitPoints>30</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>ConsciousnessSource</li>
+			<li>SightSource</li>
+			<li>EatingSource</li>
+
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>AA_EyeBody</defName>
+		<label>eye</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- Mantrap parts -->
+
+
+
+	<BodyPartDef>
+		<defName>AA_PlantPhloem</defName>
+		<label>plant phloem</label>
+		<hitPoints>20</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+			<li>MetabolismSource</li>
+			<li>BreathingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_PlantVibrationSensor</defName>
+		<label>plant vibration sensors</label>
+		<hitPoints>20</hitPoints>
+		<bleedRate>5</bleedRate>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>SightSource</li>
+
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_ManTrapTentacle</defName>
+		<label>plant tentacle</label>
+		<hitPoints>5</hitPoints>
+		<frostbiteVulnerability>1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- Scorpion parts -->
+
+	<BodyPartDef>
+		<defName>AA_Thorax</defName>
+		<label>thorax</label>
+		<hitPoints>60</hitPoints>
+		<frostbiteVulnerability>0.8</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_InsectTail</defName>
+		<label>tail</label>
+		<hitPoints>10</hitPoints>
+		<frostbiteVulnerability>0.8</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_InsectMouth</defName>
+		<label>mouth</label>
+		<hitPoints>10</hitPoints>
+		<frostbiteVulnerability>0.8</frostbiteVulnerability>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>EatingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_InsectSting</defName>
+		<label>stinger</label>
+		<hitPoints>3</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_LeftPincer</defName>
+		<label>left pincer</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_RightPincer</defName>
+		<label>right pincer</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+
+	</BodyPartDef>
+
+	<!-- Lockjaw parts -->
+
+	<BodyPartDef>
+		<defName>AA_CrocodileJaw</defName>
+		<label>huge jaws</label>
+		<hitPoints>20</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>EatingSource</li>
+			<li>TalkingSource</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- Mammoth Worm and Megalouse parts -->
+
+	<BodyPartDef>
+		<defName>AA_FirstWormSegment</defName>
+		<label>first body segment</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+
+			<li>ManipulationLimbCore</li>
+			<li>MovingLimbCore</li>
+
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_SecondWormSegment</defName>
+		<label>second body segment</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_ThirdWormSegment</defName>
+		<label>third body segment</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_FourthWormSegment</defName>
+		<label>fourth body segment</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+	</BodyPartDef>
+
+	<!-- NeedlePost parts -->
+
+	<BodyPartDef>
+		<defName>AA_SentientPlantBody</defName>
+		<label>sentient plant body</label>
+		<hitPoints>40</hitPoints>
+		<frostbiteVulnerability>1</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_SentientPlantHead</defName>
+		<label>sentient plant head</label>
+		<hitPoints>30</hitPoints>
+		<frostbiteVulnerability>1</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>HearingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_SentientPlantMouth</defName>
+		<label>sentient plant mouth</label>
+		<hitPoints>10</hitPoints>
+		<frostbiteVulnerability>0.8</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>EatingSource</li>
+			<li>TalkingSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- Raptor Shrimp parts -->
+
+
+	<BodyPartDef>
+		<defName>AA_LeftCreatureLimb</defName>
+		<label>left limb</label>
+		<hitPoints>30</hitPoints>
+		<frostbiteVulnerability>1</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_RightCreatureLimb</defName>
+		<label>right limb</label>
+		<hitPoints>30</hitPoints>
+		<frostbiteVulnerability>1</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_LeftCreatureBlade</defName>
+		<label>left blade</label>
+		<hitPoints>15</hitPoints>
+		<skinCovered>false</skinCovered>
+		<bleedRate>0</bleedRate>
+
+		<solid>true</solid>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_RightCreatureBlade</defName>
+		<label>right blade</label>
+		<hitPoints>15</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+
+	</BodyPartDef>
+
+	<!-- TetraSlug parts -->
+
+	<BodyPartDef>
+		<defName>AA_Carapace</defName>
+		<label>metallic carapace</label>
+		<hitPoints>100</hitPoints>
+		<skinCovered>false</skinCovered>
+
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>			
+	<BodyPartDef>
+		<defName>AA_SlugBody</defName>
+		<label>slug body</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- Squid parts -->
+
+	<BodyPartDef>
+		<defName>AA_ConicalShell</defName>
+		<label>conical shell</label>
+		<hitPoints>100</hitPoints>
+		<skinCovered>false</skinCovered>
+
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>			
+	<BodyPartDef>
+		<defName>AA_SquidBody</defName>
+		<label>squid body</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	<BodyPartDef>
+		<defName>AA_VibrationReceptor</defName>
+		<label>vibration receptor</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+		<delicate>true</delicate>
+		<skinCovered>true</skinCovered>
+		<socketed>false</socketed>
+		<beautyRelated>false</beautyRelated>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+		<hitChanceFactors>
+			<li>
+				<key>Blunt</key>
+				<value>0</value>
+			</li>
+		</hitChanceFactors>
+	</BodyPartDef>
+	<BodyPartDef>
+		<defName>AA_SquidTentacle</defName>
+		<label>tentacle</label>
+		<hitPoints>15</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<tags>
+
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- Bumbledrone parts -->
+
+	<BodyPartDef>
+		<defName>AA_Abdomen</defName>
+		<label>abdomen</label>
+		<hitPoints>25</hitPoints>
+		<skinCovered>true</skinCovered>
+
+	</BodyPartDef>
+	<BodyPartDef>
+		<defName>AA_InsectWing</defName>
+		<label>wing</label>
+		<hitPoints>25</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	<BodyPartDef>
+		<defName>AA_SmallInsectLeg</defName>
+		<label>small leg</label>
+		<hitPoints>5</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<!-- Great Devourer Parts -->
+
+	<BodyPartDef>
+		<defName>AA_EcholocationOrgan</defName>
+		<label>echolocation organ</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+		<delicate>true</delicate>
+		<skinCovered>true</skinCovered>
+		<socketed>false</socketed>
+		<beautyRelated>false</beautyRelated>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+		<hitChanceFactors>
+			<li>
+				<key>Blunt</key>
+				<value>0</value>
+			</li>
+		</hitChanceFactors>
+	</BodyPartDef>
+
+	<!-- Decay Drake Parts -->
+
+	<BodyPartDef>
+		<defName>AA_ReptileWing</defName>
+		<label>wing</label>
+		<hitPoints>25</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<alive>true</alive>
+
+
+	</BodyPartDef>
+
+
+	<!-- Boat Parts -->
+
+	<BodyPartDef>
+		<defName>AA_BoatBody</defName>
+		<label>body</label>
+		<hitPoints>250</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<frostbiteVulnerability>0.01</frostbiteVulnerability>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_BoatEye</defName>
+
+		<label>eye</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+		<delicate>true</delicate>
+		<skinCovered>true</skinCovered>
+		<socketed>false</socketed>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<beautyRelated>false</beautyRelated>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+		<hitChanceFactors>
+			<li>
+				<key>Blunt</key>
+				<value>0</value>
+			</li>
+		</hitChanceFactors>
+
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_BoatHead</defName>
+		<label>head</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+	<BodyPartDef>
+		<defName>AA_Mast</defName>
+		<label>mast</label>
+		<hitPoints>60</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_NautilusShell</defName>
+		<label>nautiloid shell</label>
+		<hitPoints>60</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_BoatHydrogenSac</defName>
+		<label>hydrogen sac</label>
+		<hitPoints>100</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_NautilusTentacles</defName>
+		<label>nautiloid tentacles</label>
+		<hitPoints>15</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_JellyfishTentacles</defName>
+		<label>jellyfish tentacles</label>
+		<hitPoints>15</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_SnailEyeStalk</defName>
+		<label>eyestalk</label>
+		<hitPoints>10</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+
+		<alive>true</alive>
+		<tags>
+
+			<li>ManipulationLimbCore</li>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="ClawBase">
+		<defName>AA_FrontClaw</defName>
+		<label>front claw</label>
+		<labelShort>claw</labelShort>
+		<tags>
+
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_MechanicalBodyCarapace</defName>
+		<label>metal carapace</label>
+		<hitPoints>45</hitPoints>
+		
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+	
+	<BodyPartDef>
+		<defName>AA_HoverEngineNozzle</defName>
+		<label>hover engine nozzle</label>
+		<hitPoints>25</hitPoints>
+		
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		
+		</tags>
+	</BodyPartDef>
+
+	
+
+
+</Defs>

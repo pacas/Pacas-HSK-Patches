@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<BodyDef>
+		<defName>AA_EyeBody</defName>
+		<label>eye</label>
+		<corePart>
+			<def>AA_EyeBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>Stomach</def>
+					<customLabel>stomach pouch</customLabel>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Heart</def>
+					<customLabel>gastrovascular cavity</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Head</def>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<parts>
+						<li>
+							<def>Eye</def>
+							<customLabel>eye</customLabel>
+							<coverage>.9</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>AA_JellyfishTentacle</def>
+					<customLabel>first tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>AA_JellyfishTentacle</def>
+					<customLabel>second tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>AA_JellyfishTentacle</def>
+					<customLabel>third tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+</Defs>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================================== 난사광 모듈 ====================================-->
+    <HediffDef ParentName="RoleStatBuff">
+        <defName>PN_RapidFire</defName>
+        <label>module active (rapid fire)</label>
+        <description>The hediff created by activating rapid fire ability.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+                </statOffsets>
+                <statFactors>
+                    <AimingDelayFactor>0.70</AimingDelayFactor>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="MoharHediffs.HediffCompProperties_PostRemoveTrigger_HediffAdd">
+                <triggeredHediff>
+                    <li>PN_RapidFireOverload</li>
+                </triggeredHediff>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>PN_RapidFireOverload</defName>
+        <label>module overloaded</label>
+        <labelNoun>module overloaded</labelNoun>
+        <description>module overloaded</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>5000</disappearsAfterTicks>
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
+                </statOffsets>
+                <statFactors>
+                    <AimingDelayFactor>1.3</AimingDelayFactor>
+                </statFactors>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--==================================== 근접전 모듈 ====================================-->
+    <HediffDef ParentName="RoleStatBuff">
+        <defName>PN_CQC</defName>
+        <label>module active (CQC)</label>
+        <description>The hediff created by activating close quarters combat ability.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <MeleeHitChance>4</MeleeHitChance>
+                    <MeleeDodgeChance>4</MeleeDodgeChance>
+                    <ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="MoharHediffs.HediffCompProperties_PostRemoveTrigger_HediffAdd">
+                <triggeredHediff>
+                    <li>PN_CQCOverload</li>
+                </triggeredHediff>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>PN_CQCOverload</defName>
+        <label>module overloaded</label>
+        <labelNoun>module overloaded</labelNoun>
+        <description>module overloaded</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>5000</disappearsAfterTicks>
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <MeleeHitChance>-3</MeleeHitChance>
+                    <MeleeDodgeChance>-3</MeleeDodgeChance>
+                    <ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

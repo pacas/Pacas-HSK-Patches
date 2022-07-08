@@ -1,0 +1,1638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BaseGun_ShortBarreled">
+        <defName>ARL_CombatHandgun</defName>
+        <label>Hammond P2020</label>
+        <description>The Hammond P2020 is a semi-automatic handgun with good accuracy and damage at range. Its integrated 'match trigger' allows it to be fired very rapidly, which is useful in close quarters.</description>
+        <graphicData>
+            <texPath>Things/A16/p2020</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Autopistol</soundInteract>
+        <weaponTags>
+            <li>PT2</li>
+            <li>Gun</li>
+            <li>TierTwoPistol</li>
+            <li>CE_Sidearm</li>
+            <li>CE_AI_Pistol</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>Pistols</li>
+        </thingCategories>
+        <statBases>
+            <MarketValue>330</MarketValue>
+            <Bulk>1.2</Bulk>
+            <Mass>1.2</Mass>
+            <SightsEfficiency>0.7</SightsEfficiency>
+            <ShotSpread>0.2</ShotSpread>
+            <SwayFactor>1</SwayFactor>
+            <RangedWeapon_Cooldown>0.3</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+                <warmupTime>0.3</warmupTime>
+                <range>24</range>
+                <soundCast>Shot_Autopistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>21</magazineSize>
+                <reloadTime>0.55</reloadTime>
+                <ammoSet>AmmoSet_45ACP</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Pistol_Component>1</Pistol_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierTwo</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_ShortBarreled">
+        <defName>ARL_ShotgunHandgun</defName>
+        <label>SA-3 Mozambique</label>
+        <description>Controlled spread triple barrel shotgun pistol.</description>
+        <graphicData>
+            <texPath>Things/A16/mozambique</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <statBases>
+            <MarketValue>600</MarketValue>
+            <Bulk>1.6</Bulk>
+            <Mass>0.82</Mass>
+            <SightsEfficiency>0.9</SightsEfficiency>
+            <ShotSpread>0.19</ShotSpread>
+            <SwayFactor>0.91</SwayFactor>
+            <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>ST1</li>
+            <li>Gun</li>
+            <li>TierOnePistol</li>
+            <li>CE_AI_AssaultWeapon</li>
+            <li>CE_Sidearm</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.76</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+                <warmupTime>1.8</warmupTime>
+                <range>14</range>
+                <soundCast>Shot_Revolver</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>6</magazineSize>
+                <reloadTime>1.16</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierTwo</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_ShortBarreled">
+        <defName>ARL_ChargePistol</defName>
+        <label>RE-45 Autopistol</label>
+        <description>The RE-45 is a fully automatic charge pistol, sacrificing damage and accuracy at longer distances for improved effectiveness at close range.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/A16/re-45</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <Bulk>1.75</Bulk>
+            <Mass>0.85</Mass>
+            <SightsEfficiency>0.7</SightsEfficiency>
+            <ShotSpread>0.18</ShotSpread>
+            <SwayFactor>0.87</SwayFactor>
+            <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponClasses>
+            <li>Ultratech</li>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>Futuristic</li>
+        </thingCategories>
+        <weaponTags>
+            <li>PT3</li>
+            <li>AdvancedGun</li>
+            <li>TierTwoPistol</li>
+            <li>CE_Sidearm</li>
+            <li>CE_AI_Pistol</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>2.10</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_6x24mmCharged</defaultProjectile>
+                <burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <warmupTime>0.6</warmupTime>
+                <range>14</range>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>TRUE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <noSingleShot>TRUE</noSingleShot>
+                <aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>24</magazineSize>
+                <reloadTime>0.74</reloadTime>
+                <ammoSet>AmmoSet_6x24mmCharged</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Charged_Component>1</Charged_Component>
+            <Pistol_Component>1</Pistol_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+            <ComponentSpacer>3</ComponentSpacer>
+            <Plastic>5</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierThree</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_HandCannon</defName>
+        <label>B3 Wingman</label>
+        <description>The B3 Wingman is an extremely powerful revolver with very high accuracy out to long ranges. Precision aim is required to mitigate the disadvantages of its very low rate of fire.</description>
+        <graphicData>
+            <texPath>Things/A16/wingman</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Revolver</soundInteract>
+        <statBases>
+            <MarketValue>900</MarketValue>
+            <Bulk>2.1</Bulk>
+            <Mass>0.82</Mass>
+            <SightsEfficiency>0.7</SightsEfficiency>
+            <ShotSpread>0.19</ShotSpread>
+            <SwayFactor>0.91</SwayFactor>
+            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>Pistols</li>
+        </thingCategories>
+        <weaponTags>
+            <li>PT3</li>
+            <li>Gun</li>
+            <li>AdvancedGun</li>
+            <li>TierTwoPistol</li>
+            <li>CE_Sidearm</li>
+            <li>CE_AI_Pistol</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>2.42</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>
+                <warmupTime>0.46</warmupTime>
+                <range>33</range>
+                <soundCast>Shot_Revolver</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>9</magazineSize>
+                <reloadTime>1.66</reloadTime>
+                <ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Pistol_Component>1</Pistol_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierTwo</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_LeverActionShotgun</defName>
+        <label>Peacepeeker</label>
+        <description>The Peacekeeper is an anti-personnel lever-action shotgun, with rail-operated barrel firing mechanism. Despite not possessing a stopping power of a pump action shotgun, Peacekeeper reload time is much faster.</description>
+        <graphicData>
+            <texPath>Things/A16/peacekeeper</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>ARL_Interact_LeverActionShotgun</soundInteract>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>3.2</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.87</AccuracyShort>
+            <AccuracyMedium>0.77</AccuracyMedium>
+            <AccuracyLong>0.64</AccuracyLong>
+            <RangedWeapon_Cooldown>0.91</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>ST2</li>
+            <li>Gun</li>
+            <li>TierTwoSMG</li>
+            <li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.56</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <warmupTime>0.9</warmupTime>
+                <range>20</range>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>6</magazineSize>
+                <reloadTime>2</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierTwo</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_SemiAutomaticShotgun</defName>
+        <label>EVA-8 Auto</label>
+        <description>The EVA-8 is a semi-automatic shotgun, originally designed for extra-vehicular activity, both in conventional and in exo-atmospheric conditions.</description>
+        <graphicData>
+            <texPath>Things/A16/eva-8</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Bulk>4.6</Bulk>
+            <Mass>4.6</Mass>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.15</ShotSpread>
+            <SwayFactor>1.26</SwayFactor>
+            <RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>ST2</li>
+            <li>Gun</li>
+            <li>TierTwoPistol</li>
+            <li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>2.12</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <warmupTime>1.2</warmupTime>
+                <burstShotCount>4</burstShotCount>
+                <range>13</range>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <noSingleShot>FALSE</noSingleShot>
+                <aimedBurstShotCount>2</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>8</magazineSize>
+                <reloadTime>1.75</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>6</Weapon_Parts>
+            <Plastic>3</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierTwo</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_ChargeShotgun</defName>
+        <label>M1901 Mastiff</label>
+        <description>Intended for low-zero gravity ship boarding and clearing operations, the Mastiff gained notoriety throughout The Rimworlds as a reliable and devastating combat shotgun.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/A16/mastiff</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <statBases>
+            <MarketValue>1600</MarketValue>
+            <Bulk>9</Bulk>
+            <Mass>3.5</Mass>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.14</ShotSpread>
+            <SwayFactor>1.25</SwayFactor>
+            <RangedWeapon_Cooldown>1.58</RangedWeapon_Cooldown>
+        </statBases>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <weaponTags>
+            <li>ST3</li>
+            <li>Gun</li>
+            <li>TierTwoSMG</li>
+            <li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.39</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Slug</defaultProjectile>
+                <warmupTime>1.36</warmupTime>
+                <range>18</range>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>6</magazineSize>
+                <reloadTime>1</reloadTime>
+                <reloadOneAtATime>true</reloadOneAtATime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>10</Weapon_Parts>
+            <Plastic>4</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierThree</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_LightSMG</defName>
+        <label>Alternator SMG</label>
+        <description>Twin Barrel SMG with the clip twice the size of a machine pistol. Lethal in close quarters.</description>
+        <graphicData>
+            <texPath>Things/A16/alternator</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_SMG</soundInteract>
+        <statBases>
+            <MarketValue>900</MarketValue>
+            <Bulk>2.5</Bulk>
+            <Mass>0.85</Mass>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.16</ShotSpread>
+            <SwayFactor>0.85</SwayFactor>
+            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>SMG1</li>
+            <li>Gun</li>
+            <li>TierOneSMG</li>
+            <li>CE_SMG</li>
+            <li>CE_AI_AssaultWeapon</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>SMGs</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.42</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>0.5</warmupTime>
+                <range>30</range>
+                <soundCast>Shot_MachinePistol</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>27</magazineSize>
+                <reloadTime>1.2</reloadTime>
+                <ammoSet>AmmoSet_45ACP</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <SMG_Component>1</SMG_Component>
+            <Weapon_Parts>3</Weapon_Parts>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierTwo</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_ChargeSMG</defName>
+        <label>Prowler Burst PDW</label>
+        <description>The Prowler Burst PDW is 3 round fast burst firing anti-personnel charge personal defense weapon (PDW). Lethal in close quarters, Prowler is known for terrible accuracy long range.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/A16/prowler</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <statBases>
+            <MarketValue>970</MarketValue>
+            <Bulk>3.68</Bulk>
+            <Mass>2.5</Mass>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.16</ShotSpread>
+            <SwayFactor>0.85</SwayFactor>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>SMGs</li>
+        </thingCategories>
+        <weaponTags>
+            <li>SMG3</li>
+            <li>AdvancedGun</li>
+            <li>TierTwoSMG</li>
+            <li>CE_SMG</li>
+            <li>CE_AI_AssaultWeapon</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.41</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+                <burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>0.9</warmupTime>
+                <range>26</range>
+                <soundCast>Shot_AssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>36</magazineSize>
+                <reloadTime>1.5</reloadTime>
+                <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <SMG_Component>1</SMG_Component>
+            <Weapon_Parts>3</Weapon_Parts>
+            <Plastic>3</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierThree</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_CompactSMG</defName>
+        <label>R-99 SMG</label>
+        <description>The R-99 is a compact submachine gun that excels at close-quarters combat, due to its extremely high rate of fire and minimal recoil.</description>
+        <graphicData>
+            <texPath>Things/A16/r-99</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_SMG</soundInteract>
+        <statBases>
+            <MarketValue>1120</MarketValue>
+            <Bulk>3.5</Bulk>
+            <Mass>3.5</Mass>
+            <SightsEfficiency>1.2</SightsEfficiency>
+            <ShotSpread>1.03</ShotSpread>
+            <SwayFactor>1.5</SwayFactor>
+            <RangedWeapon_Cooldown>1.33</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>SMG3</li>
+            <li>AdvancedGun</li>
+            <li>TierTwoSMG</li>
+            <li>CE_SMG</li>
+            <li>CE_AI_AssaultWeapon</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>SMGs</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.55</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+                <burstShotCount>9</burstShotCount>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <warmupTime>1</warmupTime>
+                <range>27</range>
+                <soundCast>Shot_HeavySMG</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>4</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>28</magazineSize>
+                <reloadTime>0.80</reloadTime>
+                <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <SMG_Component>1</SMG_Component>
+            <Weapon_Parts>3</Weapon_Parts>
+            <Plastic>3</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierTwo</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>ARL_ChargeLMG</defName>
+        <label>X-55 Devotion</label>
+        <description>The X-55 Devotion is a charge LMG capable of firing armour piercing projectiles at insane speed with almost no need to reload. The further away the target, the more accurate Devotion gets.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/A16/devotion</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>ARL_Interact_ChargeLMG</soundInteract>
+        <statBases>
+            <MarketValue>3050</MarketValue>
+            <Bulk>12.5</Bulk>
+            <Mass>12.5</Mass>
+            <SightsEfficiency>1.5</SightsEfficiency>
+            <ShotSpread>0.15</ShotSpread>
+            <SwayFactor>1.1</SwayFactor>
+            <RangedWeapon_Cooldown>1.80</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponClasses>
+            <li>Ultratech</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>Futuristic</li>
+        </thingCategories>
+        <weaponTags>
+            <li>ADS1</li>
+            <li>MachineGun</li>
+            <li>AdvancedGun</li>
+            <li>TierTwoNormal</li>
+            <li>Futuristic</li>
+            <li>CE_AI_AssaultWeapon</li>
+            <li>CE_AI_Suppressive</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>3.23</recoilAmount>
+                <recoilPattern>Mounted</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12x64mmCharged</defaultProjectile>
+                <burstShotCount>24</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>1.8</warmupTime>
+                <range>38</range>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>12</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>48</magazineSize>
+                <reloadTime>2.8</reloadTime>
+                <ammoSet>AmmoSet_12x64mmCharged</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Charged_Component>1</Charged_Component>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+            <ComponentSpacer>3</ComponentSpacer>
+            <Plastic>5</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>ARL_HMG</defName>
+        <label>M600 Spitfire</label>
+        <description>The Spitfire Heavy Machine Gun recoils heavily when first fired, but quickly settles into a tight firing pattern. The manufacturer strongly recommends sustained saturating fire, instead of short controlled bursts.</description>
+        <graphicData>
+            <texPath>Things/A16/m600-spitfire</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1900</MarketValue>
+            <Bulk>11.05</Bulk>
+            <Mass>9.5</Mass>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.06</ShotSpread>
+            <SwayFactor>1.51</SwayFactor>
+            <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+        </statBases>
+        <techLevel>Spacer</techLevel>
+        <thingCategories>
+            <li>MachineGun</li>
+        </thingCategories>
+        <weaponTags>
+            <li>MG2</li>
+            <li>GunHeavy</li>
+            <li>MachineGun</li>
+            <li>CE_MachineGun</li>
+            <li>CE_AI_Suppressive</li>
+        </weaponTags>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.25</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.33</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.25</warmupTime>
+                <range>48</range>
+                <soundCast>Shot_Minigun</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>5</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>60</magazineSize>
+                <reloadTime>2.33</reloadTime>
+                <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+            <Plastic>5</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+			<li>HSKCombatSuppliesTierThree</li>
+		</thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>ARL_MechanoidLMG</defName>
+        <label>L-Star</label>
+        <description>The L-STAR is a rapid fire particle accelerating charge light machine gun. It fires energy bolts at a moderate speed at the target. Perfect for area suppresion, this weapon uses salvaged mechanoid technology.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/A16/l-star</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <soundInteract>Interact_ChargeLance</soundInteract>
+        <statBases>
+            <MarketValue>3000</MarketValue>
+            <Bulk>14.7</Bulk>
+            <Mass>11.3</Mass>
+            <SightsEfficiency>1.2</SightsEfficiency>
+            <ShotSpread>0.13</ShotSpread>
+            <SwayFactor>1.16</SwayFactor>
+            <RangedWeapon_Cooldown>5.5</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponClasses>
+            <li>Ultratech</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>Futuristic</li>
+        </thingCategories>
+        <weaponTags>
+            <li>ADS1</li>
+            <li>MachineGun</li>
+            <li>AdvancedGun</li>
+            <li>TierTwoNormal</li>
+            <li>Futuristic</li>
+            <li>CE_AI_AssaultWeapon</li>
+            <li>CE_AI_Suppressive</li>
+        </weaponTags>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.25</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>2.43</recoilAmount>
+                <recoilPattern>Mounted</recoilPattern>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12x64mmCharged</defaultProjectile>
+                <burstShotCount>36</burstShotCount>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <warmupTime>1.25</warmupTime>
+                <range>33</range>
+                <soundCast>Shot_ChargeBlaster</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>9</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>36</magazineSize>
+                <reloadTime>2.7</reloadTime>
+                <ammoSet>AmmoSet_12x64mmCharged</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Charged_Component>1</Charged_Component>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+            <ComponentSpacer>3</ComponentSpacer>
+            <Plastic>5</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_MechanoidRifle</defName>
+        <label>Havoc</label>
+        <description>The Havoc Rifle fires two energy beam bursts that inflicts massive damage. Holding the trigger charges the weapon. Timing is critical to its use: this weapon will only fire when it reaches full charge and reloading takes a little while.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/A16/havoc-rifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <soundInteract>Interact_ChargeLance</soundInteract>
+        <statBases>
+            <MarketValue>2450</MarketValue>
+            <Bulk>12</Bulk>
+            <Mass>4.2</Mass>
+            <SightsEfficiency>2.1</SightsEfficiency>
+            <ShotSpread>0.5</ShotSpread>
+            <SwayFactor>1.7</SwayFactor>
+            <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponClasses>
+            <li>Ultratech</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>Futuristic</li>
+        </thingCategories>
+        <weaponTags>
+            <li>ADR2</li>
+            <li>AdvancedGun</li>
+            <li>SpacerGun</li>
+            <li>TierTwoNormal</li>
+            <li>Futuristic</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.96</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12x64mmCharged</defaultProjectile>
+                <burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <warmupTime>1</warmupTime>
+                <range>36</range>
+                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>36</magazineSize>
+                <reloadTime>2.7</reloadTime>
+                <ammoSet>AmmoSet_12x64mmCharged</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Charged_Component>1</Charged_Component>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+            <ComponentSpacer>3</ComponentSpacer>
+            <Plastic>5</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_BullpupRifle</defName>
+        <label>VK-47 Flatline</label>
+        <description>The VK-47 Flatline is an anti-personnel fully automatic bullpup assault rifle. It has negligible vertical recoil, instead involving an extreme degree of horizontal recoil, similar to the Alternator light SMG.</description>
+        <graphicData>
+            <texPath>Things/A16/vk-47-flatline</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1850</MarketValue>
+            <Bulk>8.8</Bulk>
+            <Mass>3.50</Mass>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.09</ShotSpread>
+            <SwayFactor>1.23</SwayFactor>
+            <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+        </statBases>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.72</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_762x39mmSoviet_FMJ</defaultProjectile>
+                <burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>1.1</warmupTime>
+                <range>44</range>
+                <soundCast>Shot_AssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>30</magazineSize>
+                <reloadTime>2</reloadTime>
+                <ammoSet>AmmoSet_762x39mmSoviet</ammoSet>
+            </li>
+        </comps>
+        <weaponTags>
+            <li>RF3</li>
+            <li>AdvancedGun</li>
+            <li>TierOneRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <smeltProducts>
+            <AdvRifle_Component>1</AdvRifle_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierTwo</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_AssaultCarbine</defName>
+        <label>R-301 Carbine</label>
+        <description>Full auto and high accuracy make this weapon desirable in the Rimworlds, however low damage and armor penetration makes it often unreliable against armored enemies.</description>
+        <graphicData>
+            <texPath>Things/A16/r-301</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1850</MarketValue>
+            <Bulk>3.5</Bulk>
+            <Mass>2.5</Mass>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>1.16</ShotSpread>
+            <SwayFactor>0.85</SwayFactor>
+            <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+        </statBases>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.30</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+                <burstShotCount>7</burstShotCount>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <warmupTime>1</warmupTime>
+                <range>44</range>
+                <soundCast>Shot_AssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>27</magazineSize>
+                <reloadTime>2</reloadTime>
+                <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+            </li>
+        </comps>
+        <weaponTags>
+            <li>RF3</li>
+            <li>AdvancedGun</li>
+            <li>TierOneRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <smeltProducts>
+            <AdvRifle_Component>1</AdvRifle_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierTwo</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_BattleRifle</defName>
+        <label>M1A3 Hemlok BF-R</label>
+        <description>The factory issue Hemlok fires a two-round burst. While this can be a liability at short range, this tradeoff allowed the glitterworld engineers to deliver a weapon with a good balance of long-range accuracy, damage, and fire rate.</description>
+        <graphicData>
+            <texPath>Things/A16/hemlok</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>2050</MarketValue>
+            <Bulk>4.5</Bulk>
+            <Mass>4.5</Mass>
+            <SightsEfficiency>1.2</SightsEfficiency>
+            <ShotSpread>0.13</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+        </statBases>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.65</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
+                <burstShotCount>6</burstShotCount>
+                <ticksBetweenBurstShots>5.66</ticksBetweenBurstShots>
+                <warmupTime>1.0</warmupTime>
+                <range>44</range>
+                <soundCast>Shot_AssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>TRUE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <noSingleShot>TRUE</noSingleShot>
+                <aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>30</magazineSize>
+                <reloadTime>2.1</reloadTime>
+                <ammoSet>AmmoSet_303British</ammoSet>
+            </li>
+        </comps>
+        <weaponTags>
+            <li>RF3</li>
+            <li>AdvancedGun</li>
+            <li>TierTwoRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <smeltProducts>
+            <AdvRifle_Component>1</AdvRifle_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>HSKCombatSuppliesTierThree</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_ChargeSniperRifle</defName>
+        <label>Triple Take</label>
+        <description>The Triple Take is a triple-barrel marksman rifle that consumes 3 bullets per shot. The shots are fired side by side, and the default sights have two chevrons, indicating where the shots will land.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/A16/triple-take</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <statBases>
+            <MarketValue>1950</MarketValue>
+            <Bulk>12.24</Bulk>
+            <Mass>4.3</Mass>
+            <SightsEfficiency>2</SightsEfficiency>
+            <ShotSpread>0.02</ShotSpread>
+            <SwayFactor>1.92</SwayFactor>
+            <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+        </statBases>
+        <thingCategories>
+            <li>SRifles</li>
+        </thingCategories>
+        <weaponTags>
+            <li>SNIP2</li>
+            <li>SniperRifle</li>
+            <li>TierTwoSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.8</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <warmupTime>2.5</warmupTime>
+                <range>60</range>
+                <soundCast>Shot_SniperRifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>15</magazineSize>
+                <reloadTime>2.7</reloadTime>
+                <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <AdvSniper_Component>1</AdvSniper_Component>
+            <Weapon_Parts>4</Weapon_Parts>
+            <Plastic>4</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+			<li>HSKCombatSuppliesTierThree</li>
+		</thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_SemiautomaticRifle</defName>
+        <label>G7 Scout</label>
+        <description>Despite recent advances in weapons technology, the older G7 Scout semi-automatic rifle remains a favorite of special forces units due to damage and extremely precise fire - a testament to its high level of craftsmanship.</description>
+        <graphicData>
+            <texPath>Things/A16/g7-scout</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1550</MarketValue>
+            <Bulk>9.8</Bulk>
+            <Mass>3.0</Mass>
+            <SightsEfficiency>1.66</SightsEfficiency>
+            <ShotSpread>0.07</ShotSpread>
+            <SwayFactor>1.31</SwayFactor>
+            <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>RF1</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+            <li>TierOneRifle</li>
+            <li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>SRifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>2.16</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_338LM_FMJ</defaultProjectile>
+                <warmupTime>1.40</warmupTime>
+                <range>48</range>
+                <soundCast>Shot_SniperRifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>10</magazineSize>
+                <reloadTime>2.0</reloadTime>
+                <ammoSet>AmmoSet_338LM</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Sniper_Component>1</Sniper_Component>
+            <Weapon_Parts>3</Weapon_Parts>
+            <Plastic>4</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+			<li>HSKCombatSuppliesTierThree</li>
+		</thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_MarksmanRifle</defName>
+        <label>D-101 Longbow DMR</label>
+        <description>The Longbow-DMR is a semi-automatic sniper rifle. Its hyper-velocity round completely eliminates the need to lead targets, and allows the shooter to fire multiple shots quickly in succession.</description>
+        <graphicData>
+            <texPath>Things/A16/longbow-dmr</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1950</MarketValue>
+            <Bulk>12.25</Bulk>
+            <Mass>4.3</Mass>
+            <SightsEfficiency>3.5</SightsEfficiency>
+            <ShotSpread>0.04</ShotSpread>
+            <SwayFactor>1.70</SwayFactor>
+            <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+        </statBases>
+        <thingCategories>
+            <li>SRifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>2.36</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+                <warmupTime>1.6</warmupTime>
+                <range>60</range>
+                <soundCast>Shot_SniperRifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>5</magazineSize>
+                <reloadTime>2.22</reloadTime>
+                <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+            </li>
+        </comps>
+        <weaponTags>
+            <li>SNIP2</li>
+            <li>SniperRifle</li>
+            <li>TierTwoSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <smeltProducts>
+            <Sniper_Component>1</Sniper_Component>
+            <Weapon_Parts>4</Weapon_Parts>
+            <Plastic>4</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+			<li>HSKCombatSuppliesTierThree</li>
+		</thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ARL_MechanoidSniperRifle</defName>
+        <label>Kraber AM-R</label>
+        <description>The Kraber fires a unique round that ensures 'one-shot,one-kill' results against human-scale targets. However, considerable judgement in leading is required, making this a difficult weapon to use against moving targets.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/A16/kraber</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.4</drawSize>
+        </graphicData>
+        <soundInteract>ARL_Interact_MechanoidSniperRifle</soundInteract>
+        <statBases>
+            <MarketValue>4300</MarketValue>
+            <Bulk>14.6</Bulk>
+            <Mass>13.53</Mass>
+            <SightsEfficiency>3</SightsEfficiency>
+            <ShotSpread>0.01</ShotSpread>
+            <SwayFactor>2.23</SwayFactor>
+            <RangedWeapon_Cooldown>3.13</RangedWeapon_Cooldown>
+        </statBases>
+        <thingCategories>
+            <li>SRifles</li>
+        </thingCategories>
+        <weaponTags>
+            <li>SNIP3</li>
+            <li>AdvancedGun</li>
+            <li>TierThreeSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.15</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>3.21</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+                <warmupTime>3.5</warmupTime>
+                <range>80</range>
+                <soundCast>ARL_Shot_MechanoidSniperRifle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>4</magazineSize>
+                <reloadTime>3.6</reloadTime>
+                <ammoSet>AmmoSet_50BMG</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <AdvSniper_Component>1</AdvSniper_Component>
+            <Weapon_Parts>4</Weapon_Parts>
+            <Plastic>7</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+            <li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>ARL_MechanoidRocketLauncher</defName>
+        <label>Quad Mechanoid Rocket Launcher</label>
+        <description>The Mechanoid Rocket launcher fires eight small rockets at once in its primary firing mode that are effective at temporarily denying territory to the enemy.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/A16/quad-rocket</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.6</drawSize>
+        </graphicData>
+        <soundInteract>Interact_ChargeLance</soundInteract>
+        <statBases>
+            <MarketValue>3800</MarketValue>
+            <Bulk>18</Bulk>
+            <Mass>12</Mass>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.15</ShotSpread>
+            <SwayFactor>1.8</SwayFactor>
+            <RangedWeapon_Cooldown>10</RangedWeapon_Cooldown>
+        </statBases>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Launchers</li>
+        </thingCategories>
+        <weaponTags>
+            <li>RKT3</li>
+            <li>Launchers</li>
+            <li>CE_AI_Rifle</li>
+            <li>CE_AI_Launcher</li>
+        </weaponTags>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.25</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>3.45</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_M72LAW</defaultProjectile>
+                <burstShotCount>8</burstShotCount>
+                <ticksBetweenBurstShots>16</ticksBetweenBurstShots>
+                <warmupTime>3.33</warmupTime>
+                <range>24</range>
+                <minRange>5</minRange>
+                <soundCast>InfernoCannon_Fire</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>8</magazineSize>
+                <reloadTime>6</reloadTime>
+                <ammoSet>AmmoSet_M72LAW</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Launcher_Component>1</Launcher_Component>
+            <Weapon_Parts>3</Weapon_Parts>
+            <Plastic>6</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+            <li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>ARL_GrenadeLauncher</defName>
+        <label>R-6P Softball</label>
+        <description>The R-6P Softball Anti-Armor Grenade Launcher (AAGL) is a rotary magazine grenade launcher. It is lightweight and stowable, which allows its operator to quickly fire and maneuver.</description>
+        <graphicData>
+            <texPath>Things/A16/softball</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <generateCommonality>0.2</generateCommonality>
+        <statBases>
+            <MarketValue>2700</MarketValue>
+            <Bulk>5.65</Bulk>
+            <Mass>5.3</Mass>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.18</ShotSpread>
+            <SwayFactor>1.31</SwayFactor>
+            <RangedWeapon_Cooldown>2.67</RangedWeapon_Cooldown>
+        </statBases>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <weaponTags>
+            <li>GLT1</li>
+            <li>Glaunchers</li>
+            <li>CE_AI_Rifle</li>
+            <li>CE_AI_Launcher</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Glaunchers</li>
+        </thingCategories>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.15</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>2.93</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
+                <burstShotCount>1</burstShotCount>
+                <warmupTime>2.5</warmupTime>
+                <range>40</range>
+                <minRange>4</minRange>
+                <soundCast>Shot_IncendiaryLauncher</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>6</magazineSize>
+                <reloadTime>3.1</reloadTime>
+                <ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+        <thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+            <li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    </ThingDef>
+    <!-- ============================================== -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>ARL_ChargeMinigun</defName>
+        <label>Charge Minigun</label>
+        <description>The 40mm Charge Minigun (Or "40 mil") is a multi-purpose/ anti-vehicle automatic cannon. It is a popular and versatile armament often fielded by glitterworld soldiers operating in medium to long-distance engagements. The 40mm cartridge can be lethal to both enemy personnel and vehicles due to explosive shells.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/A16/40mm-tracker-cannon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.8</drawSize>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <statBases>
+            <MarketValue>8500</MarketValue>
+            <Bulk>22.7</Bulk>
+            <Mass>16.12</Mass>
+            <SightsEfficiency>1</SightsEfficiency>
+            <ShotSpread>0.05</ShotSpread>
+            <SwayFactor>1.53</SwayFactor>
+            <RangedWeapon_Cooldown>0.90</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.35</MoveSpeed>
+        </equippedStatOffsets>
+        <weaponClasses>
+            <li>Ultratech</li>
+        </weaponClasses>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Futuristic</li>
+        </thingCategories>
+        <weaponTags>
+            <li>MG3</li>
+            <li>AdvancedGun</li>
+            <li>GunHeavy</li>
+            <li>TierTwoAdvanced</li>
+            <li>CE_AI_Suppressive</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.98</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12x64mmCharged</defaultProjectile>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>18</ticksBetweenBurstShots>
+                <warmupTime>1.75</warmupTime>
+                <range>40</range>
+                <minRange>2</minRange>
+                <soundCast>ARL_Shot_ChargeMinigun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <recoilPattern>Mounted</recoilPattern>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>30</magazineSize>
+                <reloadTime>4.9</reloadTime>
+                <ammoSet>AmmoSet_12x64mmCharged</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>8</Weapon_Parts>
+            <Plastic>20</Plastic>
+        </smeltProducts>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+    </ThingDef>
+</Defs>

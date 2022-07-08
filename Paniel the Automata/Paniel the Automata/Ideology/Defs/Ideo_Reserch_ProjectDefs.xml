@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>PNRP_TierB_Module</defName>
+        <label>spelcialization module</label>
+        <description>Research the ability modules available for (lged), (mast), (exc) model.</description>
+        <tab>Craft_SK</tab>
+        <baseCost>1000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>PNRP_TierB_Apparel</li>
+            <li>PNRP_Brain</li>
+        </prerequisites>
+        <researchViewX>21.0</researchViewX>
+        <researchViewY>27.0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>PNRP_TierC_Module</defName>
+        <label>royal module</label>
+        <description>Research the ability modules available for (lged) model.</description>
+        <tab>Craft_SK</tab>
+        <baseCost>3250</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>PNRP_TierC_Apparel</li>
+            <li>PNRP_TierB_Module</li>
+        </prerequisites>
+        <researchViewX>22.0</researchViewX>
+        <researchViewY>27.0</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>HMC Biomes</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+                    <value>
+                        <HmcIronWoodForest>2</HmcIronWoodForest>
+                        <HmcBambooGrove>3</HmcBambooGrove>
+                        <HmcSavanna>2</HmcSavanna>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

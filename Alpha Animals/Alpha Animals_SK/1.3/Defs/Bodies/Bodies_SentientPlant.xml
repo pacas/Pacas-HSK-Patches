@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======================== Needlepost ======================== -->
+
+	<BodyDef>
+		<defName>AA_SentientPlant</defName>
+		<label>sentientplant body</label>
+		<corePart>
+			<def>AA_SentientPlantBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<groups>
+				<li>AA_Body</li>
+			</groups>
+			<parts>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.08</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Heart</def>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>left lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>right lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>left kidney</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>right kidney</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Liver</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Neck</def>
+					<coverage>0.1</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>AA_SentientPlantHead</def>
+							<coverage>0.75</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Skull</def>
+									<coverage>0.15</coverage>
+									<depth>Inside</depth>
+									<parts>
+										<li>
+											<def>Brain</def>
+											<coverage>0.7</coverage>
+											<depth>Inside</depth>
+										</li>
+									</parts>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>left eye</customLabel>
+									<coverage>0.15</coverage>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>right eye</customLabel>
+									<coverage>0.15</coverage>
+								</li>
+								<li>
+									<def>AA_SentientPlantMouth</def>
+									<coverage>0.4</coverage>
+									<groups>
+										<li>AA_Mouth</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

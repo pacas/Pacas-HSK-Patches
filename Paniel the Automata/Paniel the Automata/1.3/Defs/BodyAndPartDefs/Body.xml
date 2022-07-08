@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <BodyDef>
+        <defName>PanielBody</defName>
+        <label>Automaton</label>
+        <corePart>
+            <!--몸통-->
+            <def>PNTorso</def>
+            <customLabel>torso case</customLabel>
+            <height>Middle</height>
+            <depth>Outside</depth>
+            <groups>
+                <li>Torso</li>
+            </groups>
+            <parts>
+                <li>
+                    <def>PNRibcage</def>
+                    <customLabel>ribcage frame</customLabel>
+                    <coverage>0.036</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>PNSternum</def>
+                    <customLabel>sternum frame</customLabel>
+                    <coverage>0.015</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>PNPelvis</def>
+                    <customLabel>pelvis frame</customLabel>
+                    <coverage>0.025</coverage>
+                    <height>Bottom</height>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>PNSpine</def>
+                    <customLabel>spine frame</customLabel>
+                    <coverage>0.025</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>PNTail</def>
+                    <customLabel>tail</customLabel>
+                    <coverage>0.017</coverage>
+                    <height>Bottom</height>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <!--장기-->
+                <li>
+                    <def>PNStomach</def>
+                    <customLabel>energy absorbing part</customLabel>
+                    <coverage>0.025</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>PNCore</def>
+                    <customLabel>engine core</customLabel>
+                    <coverage>0.020</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>PNLung</def>
+                    <customLabel>left breathing part</customLabel>
+                    <coverage>0.025</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>PNLung</def>
+                    <customLabel>right breathing part</customLabel>
+                    <coverage>0.025</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>PNKidney</def>
+                    <customLabel>left oil filter</customLabel>
+                    <coverage>0.017</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>PNKidney</def>
+                    <customLabel>right oil filter</customLabel>
+                    <coverage>0.017</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>PNLiver</def>
+                    <customLabel>water filter</customLabel>
+                    <coverage>0.025</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <!--머리-->
+                <li>
+                    <def>PNNeck</def>
+                    <customLabel>neck</customLabel>
+                    <coverage>0.075</coverage>
+                    <height>Top</height>
+                    <groups>
+                        <li>Neck</li>
+                    </groups>
+                    <parts>
+                        <li>
+                            <def>PNHead</def>
+                            <customLabel>head case</customLabel>
+                            <coverage>0.80</coverage>
+                            <groups>
+                                <li>UpperHead</li>
+                                <li>FullHead</li>
+                                <li>HeadAttackTool</li>
+                            </groups>
+                            <parts>
+                                <li>
+                                    <def>PNSkull</def>
+                                    <customLabel>skull frame</customLabel>
+                                    <coverage>0.18</coverage>
+                                    <depth>Inside</depth>
+                                    <groups>
+                                        <li>UpperHead</li>
+                                        <li>FullHead</li>
+                                    </groups>
+                                    <parts>
+                                        <li>
+                                            <def>PNBrain</def>
+                                            <customLabel>brain core</customLabel>
+                                            <coverage>0.8</coverage>
+                                            <groups>
+                                                <li>UpperHead</li>
+                                                <li>FullHead</li>
+                                            </groups>
+                                        </li>
+                                    </parts>
+                                </li>
+                                <li>
+                                    <def>PNEye</def>
+                                    <customLabel>left sight sensor</customLabel>
+                                    <coverage>0.07</coverage>
+                                    <groups>
+                                        <li>FullHead</li>
+                                        <li>Eyes</li>
+                                    </groups>
+                                    <woundAnchorTag>LeftEye</woundAnchorTag>
+                                </li>
+                                <li>
+                                    <def>PNEye</def>
+                                    <customLabel>right sight sensor</customLabel>
+                                    <coverage>0.07</coverage>
+                                    <groups>
+                                        <li>FullHead</li>
+                                        <li>Eyes</li>
+                                    </groups>
+                                    <woundAnchorTag>RightEye</woundAnchorTag>
+                                </li>
+                                <li>
+                                    <def>PNEar</def>
+                                    <customLabel>left hearing sensor</customLabel>
+                                    <coverage>0.07</coverage>
+                                    <groups>
+                                        <li>UpperHead</li>
+                                        <li>FullHead</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNEar</def>
+                                    <customLabel>right hearing sensor</customLabel>
+                                    <coverage>0.07</coverage>
+                                    <groups>
+                                        <li>UpperHead</li>
+                                        <li>FullHead</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNNose</def>
+                                    <customLabel>olfactory sensor</customLabel>
+                                    <coverage>0.10</coverage>
+                                    <groups>
+                                        <li>FullHead</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNJaw</def>
+                                    <customLabel>jaw</customLabel>
+                                    <coverage>0.15</coverage>
+                                    <groups>
+                                        <li>Teeth</li>
+                                        <li>FullHead</li>
+                                    </groups>
+                                </li>
+                            </parts>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <!--왼팔-->
+                    <def>PNShoulder</def>
+                    <customLabel>left shoulder</customLabel>
+                    <coverage>0.12</coverage>
+                    <groups>
+                        <li>Shoulders</li>
+                    </groups>
+                    <woundAnchorTag>LeftShoulder</woundAnchorTag>
+                    <parts>
+                        <li>
+                            <def>PNClavicle</def>
+                            <customLabel>left clavicle frame</customLabel>
+                            <coverage>0.09</coverage>
+                            <height>Top</height>
+                            <depth>Inside</depth>
+                            <groups>
+                                <li>Torso</li>
+                            </groups>
+                        </li>
+                        <li>
+                            <def>PNArm</def>
+                            <customLabel>left arm</customLabel>
+                            <coverage>0.77</coverage>
+                            <groups>
+                                <li>Arms</li>
+                            </groups>
+                            <parts>
+                                <li>
+                                    <def>PNHumerus</def>
+                                    <customLabel>left humerus frame</customLabel>
+                                    <coverage>0.1</coverage>
+                                    <depth>Inside</depth>
+                                    <groups>
+                                        <li>Arms</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNRadius</def>
+                                    <customLabel>left radius frame</customLabel>
+                                    <coverage>0.1</coverage>
+                                    <depth>Inside</depth>
+                                    <groups>
+                                        <li>Arms</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNHand</def>
+                                    <customLabel>left hand</customLabel>
+                                    <coverage>0.14</coverage>
+                                    <height>Bottom</height>
+                                    <groups>
+                                        <li>Hands</li>
+                                    </groups>
+                                    <parts>
+                                        <li>
+                                            <def>PNFinger</def>
+                                            <customLabel>left pinky</customLabel>
+                                            <coverage>0.06</coverage>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>LeftHand</li>
+                                            </groups>
+                                        </li>
+                                        <li>
+                                            <def>PNFinger</def>
+                                            <customLabel>left ring finger</customLabel>
+                                            <coverage>0.07</coverage>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>LeftHand</li>
+                                            </groups>
+                                        </li>
+                                        <li>
+                                            <def>PNFinger</def>
+                                            <customLabel>left middle finger</customLabel>
+                                            <coverage>0.08</coverage>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>LeftHand</li>
+                                                <li>MiddleFingers</li>
+                                            </groups>
+                                        </li>
+                                        <li>
+                                            <def>PNFinger</def>
+                                            <customLabel>left index finger</customLabel>
+                                            <coverage>0.07</coverage>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>LeftHand</li>
+                                            </groups>
+                                        </li>
+                                        <li>
+                                            <def>PNFinger</def>
+                                            <customLabel>left thumb</customLabel>
+                                            <coverage>0.08</coverage>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>LeftHand</li>
+                                            </groups>
+                                        </li>
+                                    </parts>
+                                </li>
+                            </parts>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <!--오른팔-->
+                    <def>PNShoulder</def>
+                    <customLabel>right shoulder</customLabel>
+                    <coverage>0.12</coverage>
+                    <groups>
+                        <li>Shoulders</li>
+                    </groups>
+                    <woundAnchorTag>RightShoulder</woundAnchorTag>
+                    <parts>
+                        <li>
+                            <def>PNClavicle</def>
+                            <customLabel>right clavicle frame</customLabel>
+                            <coverage>0.09</coverage>
+                            <height>Top</height>
+                            <depth>Inside</depth>
+                            <groups>
+                                <li>Torso</li>
+                            </groups>
+                        </li>
+                        <li>
+                            <def>PNArm</def>
+                            <customLabel>right arm</customLabel>
+                            <coverage>0.77</coverage>
+                            <groups>
+                                <li>Arms</li>
+                            </groups>
+                            <parts>
+                                <li>
+                                    <def>PNHumerus</def>
+                                    <customLabel>right humerus frame</customLabel>
+                                    <coverage>0.1</coverage>
+                                    <depth>Inside</depth>
+                                    <groups>
+                                        <li>Arms</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNRadius</def>
+                                    <customLabel>right radius frame</customLabel>
+                                    <coverage>0.1</coverage>
+                                    <depth>Inside</depth>
+                                    <groups>
+                                        <li>Arms</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNHand</def>
+                                    <customLabel>right hand</customLabel>
+                                    <coverage>0.14</coverage>
+                                    <height>Bottom</height>
+                                    <groups>
+                                        <li>Hands</li>
+                                    </groups>
+                                    <parts>
+                                        <li>
+                                            <def>PNFinger</def>
+                                            <customLabel>right pinky</customLabel>
+                                            <coverage>0.06</coverage>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>RightHand</li>
+                                            </groups>
+                                        </li>
+                                        <li>
+                                            <def>PNFinger</def>
+                                            <customLabel>right ring finger</customLabel>
+                                            <coverage>0.07</coverage>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>RightHand</li>
+                                            </groups>
+                                        </li>
+                                        <li>
+                                            <def>PNFinger</def>
+                                            <customLabel>right middle finger</customLabel>
+                                            <coverage>0.08</coverage>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>RightHand</li>
+                                                <li>MiddleFingers</li>
+                                            </groups>
+                                        </li>
+                                        <li>
+                                            <def>PNFinger</def>
+                                            <customLabel>right index finger</customLabel>
+                                            <coverage>0.07</coverage>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>RightHand</li>
+                                            </groups>
+                                        </li>
+                                        <li>
+                                            <def>PNFinger</def>
+                                            <customLabel>right thumb</customLabel>
+                                            <coverage>0.08</coverage>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>RightHand</li>
+                                            </groups>
+                                        </li>
+                                    </parts>
+                                </li>
+                            </parts>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <def>PNWaist</def>
+                    <customLabel>waist</customLabel>
+                    <coverage>0</coverage>
+                    <height>Bottom</height>
+                    <groups>
+                        <li>Waist</li>
+                    </groups>
+                </li>
+                <li>
+                    <!--왼다리-->
+                    <def>PNLeg</def>
+                    <customLabel>left leg</customLabel>
+                    <coverage>0.14</coverage>
+                    <height>Bottom</height>
+                    <groups>
+                        <li>Legs</li>
+                    </groups>
+                    <woundAnchorTag>LeftLeg</woundAnchorTag>
+                    <parts>
+                        <li>
+                            <def>PNFemur</def>
+                            <customLabel>left femur frame</customLabel>
+                            <coverage>0.1</coverage>
+                            <depth>Inside</depth>
+                            <groups>
+                                <li>Legs</li>
+                            </groups>
+                        </li>
+                        <li>
+                            <def>PNTibia</def>
+                            <customLabel>left tibia frame</customLabel>
+                            <coverage>0.1</coverage>
+                            <depth>Inside</depth>
+                            <groups>
+                                <li>Legs</li>
+                            </groups>
+                        </li>
+                        <li>
+                            <def>PNFoot</def>
+                            <customLabel>left foot</customLabel>
+                            <coverage>0.1</coverage>
+                            <groups>
+                                <li>Feet</li>
+                            </groups>
+                            <parts>
+                                <li>
+                                    <def>PNToe</def>
+                                    <customLabel>left little toe</customLabel>
+                                    <coverage>0.06</coverage>
+                                    <groups>
+                                        <li>Feet</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNToe</def>
+                                    <customLabel>left fourth toe</customLabel>
+                                    <coverage>0.07</coverage>
+                                    <groups>
+                                        <li>Feet</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNToe</def>
+                                    <customLabel>left middle toe</customLabel>
+                                    <coverage>0.08</coverage>
+                                    <groups>
+                                        <li>Feet</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNToe</def>
+                                    <customLabel>left second toe</customLabel>
+                                    <coverage>0.09</coverage>
+                                    <groups>
+                                        <li>Feet</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNToe</def>
+                                    <customLabel>left big toe</customLabel>
+                                    <coverage>0.09</coverage>
+                                    <groups>
+                                        <li>Feet</li>
+                                    </groups>
+                                </li>
+                            </parts>
+                        </li>
+                    </parts>
+                </li>
+                <!--오른다리-->
+                <li>
+                    <def>PNLeg</def>
+                    <customLabel>right leg</customLabel>
+                    <coverage>0.14</coverage>
+                    <height>Bottom</height>
+                    <groups>
+                        <li>Legs</li>
+                    </groups>
+                    <woundAnchorTag>RightLeg</woundAnchorTag>
+                    <parts>
+                        <li>
+                            <def>PNFemur</def>
+                            <customLabel>right femur frame</customLabel>
+                            <coverage>0.1</coverage>
+                            <depth>Inside</depth>
+                            <groups>
+                                <li>Legs</li>
+                            </groups>
+                        </li>
+                        <li>
+                            <def>PNTibia</def>
+                            <customLabel>right tibia frame</customLabel>
+                            <coverage>0.1</coverage>
+                            <depth>Inside</depth>
+                            <groups>
+                                <li>Legs</li>
+                            </groups>
+                        </li>
+                        <li>
+                            <def>PNFoot</def>
+                            <customLabel>right foot</customLabel>
+                            <coverage>0.1</coverage>
+                            <groups>
+                                <li>Feet</li>
+                            </groups>
+                            <parts>
+                                <li>
+                                    <def>PNToe</def>
+                                    <customLabel>right little toe</customLabel>
+                                    <coverage>0.06</coverage>
+                                    <groups>
+                                        <li>Feet</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNToe</def>
+                                    <customLabel>right fourth toe</customLabel>
+                                    <coverage>0.07</coverage>
+                                    <groups>
+                                        <li>Feet</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNToe</def>
+                                    <customLabel>right middle toe</customLabel>
+                                    <coverage>0.08</coverage>
+                                    <groups>
+                                        <li>Feet</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNToe</def>
+                                    <customLabel>right second toe</customLabel>
+                                    <coverage>0.09</coverage>
+                                    <groups>
+                                        <li>Feet</li>
+                                    </groups>
+                                </li>
+                                <li>
+                                    <def>PNToe</def>
+                                    <customLabel>right big toe</customLabel>
+                                    <coverage>0.09</coverage>
+                                    <groups>
+                                        <li>Feet</li>
+                                    </groups>
+                                </li>
+                            </parts>
+                        </li>
+                    </parts>
+                </li>
+            </parts>
+        </corePart>
+    </BodyDef>
+
+</Defs>

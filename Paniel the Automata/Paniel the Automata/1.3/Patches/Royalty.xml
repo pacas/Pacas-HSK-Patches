@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <!-- 오토마톤 면역 -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/HediffDef[defName = "PanielBaseHediff"]/comps/li[@Class = "MoharHediffs.HediffCompProperties_HediffNullifier"]/hediffToNullify</xpath>
+                    <value>
+                        <li>BloodRot</li>
+                        <li>Abasia</li>
+                        <li>PsychicLove</li>
+                        <li>Joyfuzz</li>
+                    </value>
+                </li>
+                <!-- 제국 우호도 -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
+                    <value>
+                        <li>Paniel_PlayerFaction</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

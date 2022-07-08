@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Concepts taught through the learning readout, when opportunities arise -->
+
+  <FD_Shields.label>FD: Schildgeneratoren</FD_Shields.label>
+  <FD_Shields.helpText>Schilde stoppen ankommende Projektile auf Kosten der Batterieleistung. Sie hindern die Menschen jedoch nicht daran, sich durch sie zu bewegen. Sie verbrauchen im Leerlauf nur wenig Strom verbrauchen dafür bei Beschuss deutlich mehr.\n\n Es wird empfohlen, Batterien zu verwenden, da Schilde einen sehr hohen sofortigen Stromverbrauch haben. Durch automatischen und anhaltenden Beschuss wird der Strom schneller entladen, daher werden mehrere Batterien empfohlen.</FD_Shields.helpText>
+
+  <FD_CoilTemperature.label>FD: Schildspulentemparatur</FD_CoilTemperature.label>
+  <FD_CoilTemperature.helpText>Schildspulen erwärmen sich, wenn der Schild ankommende Projektile absorbiert. Der Generator tauscht diese Wärme langsam mit dem Raum aus, in dem er sich befindet, bis die Umgebungstemperatur erreicht ist.\n\nÜber 100°C: Geringer Ausfall, Schilde könnten Kurzschlüsse im Stromnetz verursachen.\n\nÜber 150°C: Mäßiger Ausfall, Schilde können Kurzschlüsse verursachen und das Schild könnte ausfallen.\n\nÜber 200°C: Kritischer Fehler, Schild erzeugt einen Kurzschluss, fällt aus und wird bei einer Explosion Schaden erleiden.</FD_CoilTemperature.helpText>
+
+  <FD_ShieldsPortable.label>FD: Transprotabler Schildgenerator</FD_ShieldsPortable.label>
+  <FD_ShieldsPortable.helpText>Tragbare Schilde sind abbaubare Stellungen, mit denen man den Schilddenerator mitführen kann. Der Strom wird durch eine kleine interne Battiere bereitgestellt, die das Gerät als eigenständige Batterie mit Strom versorgen kann.\n\nEr kann an ein normales Stromnetz angeschlossen werden und fungiert als normale Batterie. Diese Schilde haben einen festen Radius.</FD_ShieldsPortable.helpText>
+
+
+</LanguageData>

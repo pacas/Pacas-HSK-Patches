@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- 드릴암 -->
+    <RecipeDef ParentName="PN_SurgeryInstallBodyPartProstheticBase">
+        <defName>PN_InstallDrillArm</defName>
+        <label>install drill arm</label>
+        <description>Install a drill arm.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DrillArm</ThingDef>
+            <HediffDef>DrillArm</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing drill arm.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DrillArm</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DrillArm</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PNArm</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DrillArm</addsHediff>
+    </RecipeDef>
+
+    <!-- 농업손 -->
+    <RecipeDef ParentName="PN_SurgeryInstallBodyPartProstheticBase">
+        <defName>PN_InstallFieldHand</defName>
+        <label>install field hand</label>
+        <description>Install a field hand.</description>
+        <descriptionHyperlinks>
+            <ThingDef>FieldHand</ThingDef>
+            <HediffDef>FieldHand</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing field hand.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>FieldHand</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>FieldHand</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PNHand</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>FieldHand</addsHediff>
+    </RecipeDef>
+
+    <!--파워클로-->
+    <RecipeDef ParentName="PN_SurgeryInstallBodyPartProstheticBase">
+        <defName>PN_InstallPowerClaw</defName>
+        <label>install power claw</label>
+        <description>Install a power claw.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PowerClaw</ThingDef>
+            <HediffDef>PowerClaw</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing power claw.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PowerClaw</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PowerClaw</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PNHand</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PowerClaw</addsHediff>
+    </RecipeDef>
+
+    <!-- 핸드 탈론 -->
+    <RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+        <defName>PN_InstallHandTalon</defName>
+        <label>install hand talon</label>
+        <description>Install a hand talon.</description>
+        <descriptionHyperlinks>
+            <ThingDef>HandTalon</ThingDef>
+            <HediffDef>HandTalon</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing hand talon.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>HandTalon</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>HandTalon</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PNHand</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>HandTalon</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_SurgeryRemoveImplantBase">
+        <defName>PN_RemoveHandTalon</defName>
+        <label>remove hand talon</label>
+        <description>Remove hand talon.</description>
+        <descriptionHyperlinks>
+            <ThingDef>HandTalon</ThingDef>
+            <HediffDef>HandTalon</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing hand talon.</jobString>
+        <removesHediff>HandTalon</removesHediff>
+    </RecipeDef>
+
+    <!-- 엘보 블레이드 -->
+    <RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+        <defName>PN_InstallElbowBlade</defName>
+        <label>install elbow blade</label>
+        <description>Install an elbow blade.</description>
+        <descriptionHyperlinks>
+            <ThingDef>ElbowBlade</ThingDef>
+            <HediffDef>ElbowBlade</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing elbow blade.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ElbowBlade</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ElbowBlade</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PNArm</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>ElbowBlade</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_SurgeryRemoveImplantBase">
+        <defName>PN_RemoveElbowBlade</defName>
+        <label>remove elbow blade</label>
+        <description>Remove elbow blade.</description>
+        <descriptionHyperlinks>
+            <ThingDef>ElbowBlade</ThingDef>
+            <HediffDef>ElbowBlade</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing elbow blade.</jobString>
+        <removesHediff>ElbowBlade</removesHediff>
+    </RecipeDef>
+
+    <!-- 무릎 스파이크 -->
+    <RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+        <defName>PN_InstallKneeSpike</defName>
+        <label>install knee spike</label>
+        <description>Install a knee spike.</description>
+        <descriptionHyperlinks>
+            <ThingDef>KneeSpike</ThingDef>
+            <HediffDef>KneeSpike</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing knee spike.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>KneeSpike</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>KneeSpike</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PNLeg</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>KneeSpike</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_SurgeryRemoveImplantBase">
+        <defName>PN_RemoveKneeSpike</defName>
+        <label>remove knee spike</label>
+        <description>Remove knee spike.</description>
+        <descriptionHyperlinks>
+            <ThingDef>KneeSpike</ThingDef>
+            <HediffDef>KneeSpike</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing knee spike.</jobString>
+        <removesHediff>KneeSpike</removesHediff>
+    </RecipeDef>
+
+    <!-- 독니 -->
+    <RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+        <defName>PN_InstallVenomFangs</defName>
+        <label>install venom fangs</label>
+        <description>Install venom fangs.</description>
+        <descriptionHyperlinks>
+            <ThingDef>VenomFangs</ThingDef>
+            <HediffDef>VenomFangs</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing venom fangs.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>VenomFangs</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>VenomFangs</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyPartGroups>
+            <li>Teeth</li>
+        </appliedOnFixedBodyPartGroups>
+        <addsHediff>VenomFangs</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_SurgeryRemoveImplantBase">
+        <defName>PN_RemoveVenomFangs</defName>
+        <label>remove venom fangs</label>
+        <description>Remove venom fangs.</description>
+        <descriptionHyperlinks>
+            <ThingDef>VenomFangs</ThingDef>
+            <HediffDef>VenomFangs</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing venom fangs.</jobString>
+        <removesHediff>VenomFangs</removesHediff>
+    </RecipeDef>
+
+    <!-- 베놈 탈론 -->
+    <RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+        <defName>PN_InstallVenomTalon</defName>
+        <label>install venom talon</label>
+        <description>Install a venom talon.</description>
+        <descriptionHyperlinks>
+            <ThingDef>VenomTalon</ThingDef>
+            <HediffDef>VenomTalon</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing venom talon.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>VenomTalon</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>VenomTalon</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyPartGroups>
+            <li>MiddleFingers</li>
+        </appliedOnFixedBodyPartGroups>
+        <addsHediff>VenomTalon</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_SurgeryRemoveImplantBase">
+        <defName>PN_RemoveVenomTalon</defName>
+        <label>remove venom talon</label>
+        <description>Remove venom talon.</description>
+        <descriptionHyperlinks>
+            <ThingDef>VenomTalon</ThingDef>
+            <HediffDef>VenomTalon</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing venom talon.</jobString>
+        <removesHediff>VenomTalon</removesHediff>
+    </RecipeDef>
+
+    <!-- neurocalculator -->
+    <RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+        <defName>PN_InstallNeurocalculator</defName>
+        <label>install neurocalculator</label>
+        <description>Install a neurocalculator.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Neurocalculator</ThingDef>
+            <HediffDef>Neurocalculator</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing neurocalculator.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neurocalculator</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Neurocalculator</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PNBrain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Neurocalculator</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_SurgeryRemoveImplantBase">
+        <defName>PN_RemoveNeurocalculator</defName>
+        <label>remove neurocalculator</label>
+        <description>Remove neurocalculator.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Neurocalculator</ThingDef>
+            <HediffDef>Neurocalculator</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing neurocalculator.</jobString>
+        <removesHediff>Neurocalculator</removesHediff>
+    </RecipeDef>
+
+    <!-- Circadian assistant -->
+    <RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+        <defName>PN_InstallCircadianAssistant</defName>
+        <label>install circadian assistant</label>
+        <description>Install a circadian assistant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>CircadianAssistant</ThingDef>
+            <HediffDef>CircadianAssistant</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing circadian assistant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CircadianAssistant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CircadianAssistant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PNBrain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>CircadianAssistant</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_SurgeryRemoveImplantBase">
+        <defName>PN_RemoveCircadianAssistant</defName>
+        <label>remove circadian assistant</label>
+        <description>Remove circadian assistant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>CircadianAssistant</ThingDef>
+            <HediffDef>CircadianAssistant</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing circadian assistant.</jobString>
+        <removesHediff>CircadianAssistant</removesHediff>
+    </RecipeDef>
+
+    <!-- Circadian half-cycler -->
+    <RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+        <defName>PN_InstallCircadianHalfCycler</defName>
+        <label>install circadian half-cycler</label>
+        <description>Install a circadian half-cycler.</description>
+        <descriptionHyperlinks>
+            <ThingDef>CircadianHalfCycler</ThingDef>
+            <HediffDef>CircadianHalfCycler</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing circadian half-cycler.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>CircadianHalfCycler</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>CircadianHalfCycler</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PNBrain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>CircadianHalfCycler</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_SurgeryRemoveImplantBase">
+        <defName>PN_RemoveCircadianHalfCycler</defName>
+        <label>remove circadian half-cycler</label>
+        <description>Remove circadian half-cycler.</description>
+        <descriptionHyperlinks>
+            <ThingDef>CircadianHalfCycler</ThingDef>
+            <HediffDef>CircadianHalfCycler</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing circadian half-cycler.</jobString>
+        <removesHediff>CircadianHalfCycler</removesHediff>
+    </RecipeDef>
+
+    <!-- Psychic sensitizer -->
+    <RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+        <defName>PN_InstallPsychicSensitizer</defName>
+        <label>install psychic sensitizer</label>
+        <description>Install a psychic sensitizer.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PsychicSensitizer</ThingDef>
+            <HediffDef>PsychicSensitizer</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing psychic sensitizer.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychicSensitizer</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PsychicSensitizer</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PNBrain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PsychicSensitizer</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_SurgeryRemoveImplantBase">
+        <defName>PN_RemovePsychicSensitizer</defName>
+        <label>remove psychic sensitizer</label>
+        <description>Remove psychic sensitizer.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PsychicSensitizer</ThingDef>
+            <HediffDef>PsychicSensitizer</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing psychic sensitizer.</jobString>
+        <removesHediff>PsychicSensitizer</removesHediff>
+    </RecipeDef>
+
+    <!-- Psychic reader -->
+    <RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+        <defName>PN_InstallPsychicReader</defName>
+        <label>install psychic reader</label>
+        <description>Install a psychic reader.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PsychicReader</ThingDef>
+            <HediffDef>PsychicReader</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing psychic reader.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PsychicReader</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PsychicReader</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>PNBrain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PsychicReader</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_SurgeryRemoveImplantBase">
+        <defName>PN_RemovePsychicReader</defName>
+        <label>remove psychic reader</label>
+        <description>Remove psychic reader.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PsychicReader</ThingDef>
+            <HediffDef>PsychicReader</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing psychic reader.</jobString>
+        <removesHediff>PsychicReader</removesHediff>
+    </RecipeDef>
+</Defs>

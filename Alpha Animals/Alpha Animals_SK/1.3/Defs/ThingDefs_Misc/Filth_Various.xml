@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--=================== Fluids etc =================-->
+    <ThingDef ParentName="BaseFilth">
+        <defName>AA_Filth_BlueBlood</defName>
+        <label>blue blood</label>
+        <statBases>
+            <Beauty>-30</Beauty>
+            <Cleanliness>-10</Cleanliness>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Filth/Spatter</texPath>
+            <color>(36,84,150, 180)</color>
+        </graphicData>
+        <filth>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+        </filth>
+    </ThingDef>
+</Defs>

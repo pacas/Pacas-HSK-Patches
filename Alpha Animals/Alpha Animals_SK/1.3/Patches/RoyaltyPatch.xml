@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "MechAssembler"]/comps/li[@Class = "CompProperties_SpawnerPawn"]/spawnablePawnKinds</xpath>
+			<value>
+				<li>AA_Goliath</li>
+				<li>AA_Aura</li>
+				<li>AA_Siegebreaker</li>
+				<li>AA_Daggersnout</li>
+				<li>AA_Fireworm</li>
+				<li>AA_Phalanx</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "MechCapsule"]/comps/li[@Class = "CompProperties_PawnSpawnOnWakeup"]/spawnablePawnKinds</xpath>
+			<value>
+				<li>AA_Goliath</li>
+				<li>AA_Aura</li>
+				<li>AA_Siegebreaker</li>
+				<li>AA_Daggersnout</li>
+				<li>AA_Fireworm</li>
+				<li>AA_Phalanx</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "AA_AnimaColossus"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Spawner">
+					<thingToSpawn>AA_HugeAnimaPearl</thingToSpawn>
+					<spawnForbidden>false</spawnForbidden>
+					<requiresPower>false</requiresPower>
+					<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+					<showMessageIfOwned>false</showMessageIfOwned>
+					<saveKeysPrefix>AA_</saveKeysPrefix>
+					<inheritFaction>false</inheritFaction>
+					<spawnIntervalRange>1800000~1800000</spawnIntervalRange>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName = "Mechanoid"]/pawnGroupMakers/li[1]/options</xpath>
+		<value>
+			<AA_Goliath>10</AA_Goliath>
+			<AA_Aura>10</AA_Aura>
+			<AA_Siegebreaker>10</AA_Siegebreaker>
+			<AA_Daggersnout>10</AA_Daggersnout>
+			<AA_Fireworm>10</AA_Fireworm>
+			<AA_Phalanx>10</AA_Phalanx>
+		</value>
+	</Operation> 
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/FactionDef[defName = "Mechanoid"]/pawnGroupMakers</xpath>
+		<value>
+			<li>
+				<!-- All types-->
+				<kindDef>Combat</kindDef>
+				<commonality>30</commonality>
+				<options>        
+					<AA_Goliath>5</AA_Goliath>
+					<AA_Daggersnout>10</AA_Daggersnout>
+					<AA_Aura>7</AA_Aura>
+					<Mech_Scyther>10</Mech_Scyther>
+					<Mech_Lancer>10</Mech_Lancer>
+					<Mech_Centipede>10</Mech_Centipede>
+					<AA_Phalanx>3</AA_Phalanx>
+				</options>
+			</li>
+
+		</value>
+	</Operation> 
+
+</Patch>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <PawnKindDef Abstract="True" Name="PanielPlayerBasePawnKind">
+        <race>Paniel_Race</race>
+        <combatPower>30</combatPower>
+        <isFighter>false</isFighter>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+        <apparelRequired>
+            <li>PN_ApparelBasic</li>
+        </apparelRequired>
+        <apparelMoney>
+            <min>130</min>
+            <max>130</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>PN_Apparel</li>
+        </apparelTags>
+        <defaultFactionType>Paniel_PlayerFaction</defaultFactionType>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <minGenerationAge>1</minGenerationAge>
+        <maxGenerationAge>1</maxGenerationAge>
+        <initialWillRange>10~13</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <!-- 정착민 -->
+    <PawnKindDef ParentName="PanielPlayerBasePawnKind">
+        <defName>Paniel_ColonistPawn</defName>
+        <label>Paniel colonist</label>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+        <apparelRequired>
+            <li>PN_ApparelBasicHat</li>
+            <li>PN_ApparelCape</li>
+        </apparelRequired>
+        <apparelMoney>
+            <min>330</min>
+            <max>2000</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>PN_Apparel</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Start</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <techHediffsChance>0</techHediffsChance>
+        <techHediffsMoney>0</techHediffsMoney>
+        <techHediffsTags>
+        </techHediffsTags>
+        <minGenerationAge>1</minGenerationAge>
+        <maxGenerationAge>2</maxGenerationAge>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielPlayerBasePawnKind">
+        <defName>Paniel_Testsubject</defName>
+        <label>Paniel test subject</label>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+        <apparelRequired>
+            <li>PN_ApparelBasicHat</li>
+            <li>PN_ApparelCape</li>
+        </apparelRequired>
+        <apparelMoney>
+            <min>330</min>
+            <max>2000</max>
+        </apparelMoney>
+        <apparelTags>
+            <li>PN_Apparel</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Testsubject</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <techHediffsChance>0</techHediffsChance>
+        <techHediffsMoney>0</techHediffsMoney>
+        <techHediffsTags>
+        </techHediffsTags>
+        <minGenerationAge>1</minGenerationAge>
+        <maxGenerationAge>2</maxGenerationAge>
+    </PawnKindDef>
+</Defs>

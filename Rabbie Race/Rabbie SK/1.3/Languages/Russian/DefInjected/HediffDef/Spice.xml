@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 플라네타리움 섭취형태 반응 : 정제 가루 -->
+  <RefinedPlanetarium.label>Очищенный планетариум</RefinedPlanetarium.label>
+  <RefinedPlanetarium.labelNoun>Очищенный планетариум</RefinedPlanetarium.labelNoun>
+  <RefinedPlanetarium.description>Недавно употребленный планетариум вызывает более отчетливые ощущения и улучшает самочувствие на целый день.</RefinedPlanetarium.description>
+
+  <!-- 플라네타리움 섭취형태 반응 : 뇌석 -->
+  <Braincrystal.label>Мозговой кристал рабби</Braincrystal.label>
+  <Braincrystal.labelNoun>Мозговой кристал рабби</Braincrystal.labelNoun>
+  <Braincrystal.description>Недавно я съел мозговой кристал рабби. От меня исходит запах крови...</Braincrystal.description>
+
+  <!-- 플라네타리움 섭취형태 반응: 플라네타리움 차 -->
+  <PlanetariumTea.label>Планетариумный чай</PlanetariumTea.label>
+  <PlanetariumTea.labelNoun>Планетариумный чай</PlanetariumTea.labelNoun>
+  <PlanetariumTea.description>Недавно я выпил ароматный чай из планетариума и стал более отчетливым и чувствую себя лучше в течение двух дней.</PlanetariumTea.description>
+
+  <!-- 래비전용 플라네타리움 개화 상태이상 -->
+  <Whisperofplanet.label>Шепот планеты</Whisperofplanet.label>
+  <Whisperofplanet.description>Это особый феномен, который проявляется только у расы рабби, а у рабби, которые долгое время употребляли планетариум, цвет глаз и способность видеть короткое будущее на 2-3 секунды в напряжении. В сочетании с навыками стрельбы рабби известны ужасающей меткостью на поле боя.</Whisperofplanet.description>
+  <Whisperofplanet.comps.0.discoverLetterLabel>Планетариумные видения</Whisperofplanet.comps.0.discoverLetterLabel>
+  <Whisperofplanet.comps.0.discoverLetterText>{0} слышит шепот планеты. \n\nИз за планетариума, ваши колонисты-рабби иногда будут способны расплывчато видеть ближайшее будущее, увеличивая их зрение.</Whisperofplanet.comps.0.discoverLetterText>
+
+  <!-- 플라네타리움 중독 -->
+  <PlanetariumAddiction.label>Планетариумная зависимость</PlanetariumAddiction.label>
+  <PlanetariumAddiction.description>Тело течет в теле. Если у вас нет планетария, ваш ум будет опустошен и блуждать. Нет способа спастись.</PlanetariumAddiction.description>
+  <PlanetariumAddiction.comps.0.discoverLetterLabel>Планетариумная зависимость</PlanetariumAddiction.comps.0.discoverLetterLabel>
+  <PlanetariumAddiction.comps.0.discoverLetterText>{0} теперь зависима от планетариума. Необходимость в нем никогда не исчезнет и игнорирование ее может свести вашего колониста с ума.</PlanetariumAddiction.comps.0.discoverLetterText>
+  <PlanetariumAddiction.stages.1.label>Постоянное</PlanetariumAddiction.stages.1.label>
+  
+  <RB_RabbitTail.label>Бионический хвост</RB_RabbitTail.label>
+  <RB_RabbitTail.labelNoun>Бионический хвост</RB_RabbitTail.labelNoun>
+  <RB_RabbitTail.description>Бионический хвост делает движение немного быстрее.</RB_RabbitTail.description>
+
+</LanguageData>

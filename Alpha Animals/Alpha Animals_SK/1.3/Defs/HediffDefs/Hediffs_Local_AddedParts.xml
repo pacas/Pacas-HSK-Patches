@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Added body parts -->
+
+  <HediffDef Name="AA_MutantAddedBodyPartBase" Abstract="True">
+    <hediffClass>Hediff_AddedPart</hediffClass>
+    <defaultLabelColor>(90, 138, 105)</defaultLabelColor>
+    <isBad>false</isBad>
+  </HediffDef>
+
+
+
+  <HediffDef ParentName="AA_MutantAddedBodyPartBase">
+    <defName>AA_MutantLeg</defName>
+	<description>This leg seems to be covered in a slick secretion that constantly drips from every pore. Something seems... off about it, as if it wasn't a completely natural creation.</description>
+    <label>mutant leg</label>
+    <labelNoun>a mutant leg</labelNoun>
+    <spawnThingOnRemoved>AA_MutantLeg</spawnThingOnRemoved>
+	<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<PsychicSensitivity>0.1</PsychicSensitivity>
+					<ToxicSensitivity>0.1</ToxicSensitivity>
+				</statOffsets>
+			</li>
+	</stages>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <HediffDef ParentName="AA_MutantAddedBodyPartBase">
+    <defName>AA_MutantArm</defName>
+    <label>mutant arm</label>
+	<description>This arm twitches and bends in strange unnatural ways, as if it had a mind of its own. Something seems... off about it, as if it wasn't a completely natural creation.</description>
+    <labelNoun>a mutant arm</labelNoun>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>fist</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>8.2</power> <!-- Same as natural fist -->
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </li>
+    </comps>
+	<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<PsychicSensitivity>0.15</PsychicSensitivity>
+					<ToxicSensitivity>0.15</ToxicSensitivity>
+				</statOffsets>
+			</li>
+	</stages>
+    <spawnThingOnRemoved>AA_MutantArm</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1</partEfficiency>
+      <betterThanNatural>false</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+
+
+  <HediffDef ParentName="AA_MutantAddedBodyPartBase">
+    <defName>AA_MutantEye</defName>
+    <label>mutant eye</label>
+    <labelNoun>a mutant eye</labelNoun>
+	<description>This eye constantly blinks on its own, like a nervous tic, and a second set of vertical eyelids seems to be present behind the normal, human ones. Something seems... off about it, as if it wasn't a completely natural creation.</description>
+    <spawnThingOnRemoved>AA_MutantEye</spawnThingOnRemoved>
+	<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+					<PsychicSensitivity>0.05</PsychicSensitivity>
+					<ToxicSensitivity>0.05</ToxicSensitivity>
+				</statOffsets>
+			</li>
+	</stages>
+    <addedPartProps>
+      <solid>false</solid>
+      <partEfficiency>1</partEfficiency>
+    </addedPartProps>
+  </HediffDef>
+
+ 
+  
+</Defs>

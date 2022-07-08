@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffGiverSetDef>
+        <defName>PanielBasicHediffSet</defName>
+        <hediffGivers>
+            <li Class="HediffGiver_Bleeding">
+                <hediff>PN_OilLoss</hediff>
+            </li>
+            <li Class="HediffGiver_Hypothermia">
+                <hediff>PN_OverCooling</hediff>
+            </li>
+            <li Class="HediffGiver_Heat">
+                <hediff>PN_Overheating</hediff>
+            </li>
+            <li Class="YORHG.YourOwnRace_HediffGiver">
+                <hediff>PanielBaseHediff</hediff>
+            </li>
+            <li Class="YORHG.YourOwnRace_HediffGiver">
+                <hediff>PN_AutomatonFuel_Addiction</hediff>
+            </li>
+            <li Class="AutomataRace.HediffGiver_Joy">
+                <hediff>Paniel_Joy</hediff>
+            </li>
+            <li Class="YORHG.YourOwnRace_HediffGiver">
+                <hediff>PN_Maintenance</hediff>
+            </li>
+            <li Class="YORHG.YourOwnRace_HediffGiver">
+                <hediff>PN_Immune_System</hediff>
+            </li>
+        </hediffGivers>
+    </HediffGiverSetDef>
+</Defs>

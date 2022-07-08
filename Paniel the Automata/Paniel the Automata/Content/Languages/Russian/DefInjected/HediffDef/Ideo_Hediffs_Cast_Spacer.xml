@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 전투 지휘 모듈 -->
+
+  <PN_OfficerCommand.label>Модуль активен (офицер)</PN_OfficerCommand.label>
+  <PN_OfficerCommand.description>Подбадривая и командуя ближайшими союзниками, этот персонаж может повысить их концентрацию в бою и, следовательно, их боевые характеристики.</PN_OfficerCommand.description>
+
+  <PN_OfficerCommandBuff.label>Приказ офицера</PN_OfficerCommandBuff.label>
+  <PN_OfficerCommandBuff.description>Боевые способности усиливаются, если вы находитесь рядом с союзником который использует спобоность "приказ офицера".</PN_OfficerCommandBuff.description>
+
+  <PN_OfficerCommandOverload.label>модуль перегружен</PN_OfficerCommandOverload.label>
+  <PN_OfficerCommandOverload.description>модуль перегружен</PN_OfficerCommandOverload.description>
+  <PN_OfficerCommandOverload.labelNoun>модуль перегружен</PN_OfficerCommandOverload.labelNoun>
+
+
+  <!-- 마이스터 모듈 -->
+
+  <PN_MeisterAdvice.label>Модуль активен (мейстер)</PN_MeisterAdvice.label>
+  <PN_MeisterAdvice.description>Ободряя и консультируя ближайших союзников, этот персонаж может повысить их производственные навыки.</PN_MeisterAdvice.description>
+
+  <PN_MeisterAdviceBuff.label>Совет мейстера</PN_MeisterAdviceBuff.label>
+  <PN_MeisterAdviceBuff.description>Рабочие навыки повышаются благодаря нахождению рядом с тем, кто использует спобоность "Совет Мейстера".</PN_MeisterAdviceBuff.description>
+
+
+  <!-- 집중 의료 모듈 -->
+
+  <PN_IntensiveMedical.label>Модуль активен (медик)</PN_IntensiveMedical.label>
+  <PN_IntensiveMedical.description>Состояние вызванное активацией способности "режим медика".</PN_IntensiveMedical.description>
+
+
+  <!-- 면역증진 -->
+
+  <PN_ImmunityDrive.label>Усилитель иммунитета</PN_ImmunityDrive.label>
+  <PN_ImmunityDrive.description>Усилитель иммунитета</PN_ImmunityDrive.description>
+
+
+  <!-- 야전 의료 모듈 -->
+
+  <PN_FieldMedic.label>Модуль активен (полевой медик)</PN_FieldMedic.label>
+  <PN_FieldMedic.description>Состояние вызванное активацией способности "режим полевого медика".</PN_FieldMedic.description>
+
+
+  <!-- 스팀팩 -->
+
+  <PN_StimPack.label>Введены стимуляторы</PN_StimPack.label>
+  <PN_StimPack.description>Введены стимуляторы</PN_StimPack.description>
+
+  <PN_StimPackSideEffect.label>Эффект стимуляторов</PN_StimPackSideEffect.label>
+  <PN_StimPackSideEffect.description>Эффект стимуляторов</PN_StimPackSideEffect.description>
+  <PN_StimPackSideEffect.stages.0.label>очень сильный</PN_StimPackSideEffect.stages.0.label>
+  <PN_StimPackSideEffect.stages.1.label>сильный</PN_StimPackSideEffect.stages.1.label>
+  <PN_StimPackSideEffect.stages.2.label>слабый</PN_StimPackSideEffect.stages.2.label>
+  <PN_StimPackSideEffect.labelNoun>эффект стимуляторов</PN_StimPackSideEffect.labelNoun>
+
+
+</LanguageData>

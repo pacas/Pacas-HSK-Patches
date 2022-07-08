@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AutomataRace.AutomataQualityProperty>
+        <defName>PN_AutomataQualityProperty_Awful</defName>
+        <quality>Awful</quality>
+        <pawnKindDefs>
+            <li>
+                <key>PN_Specialization_Combat</key>
+                <value>Paniel_Randombox_Awful</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Engineer</key>
+                <value>Paniel_Randombox_Awful</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Domestic</key>
+                <value>Paniel_Randombox_Awful</value>
+            </li>
+        </pawnKindDefs>
+        <scoreCurve>
+            <points>
+                <li>(0,0)</li>
+                <li>(256,13)</li>
+                <!--CS 0-->
+                <li>(424,2)</li>
+                <!--CS 1-->
+                <li>(592,1)</li>
+                <!--CS 2-->
+                <li>(760,0)</li>
+            </points>
+        </scoreCurve>
+    </AutomataRace.AutomataQualityProperty>
+    <AutomataRace.AutomataQualityProperty>
+        <defName>PN_AutomataQualityProperty_Poor</defName>
+        <quality>Poor</quality>
+        <pawnKindDefs>
+            <li>
+                <key>PN_Specialization_Combat</key>
+                <value>Paniel_Randombox_Poor</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Engineer</key>
+                <value>Paniel_Randombox_Poor</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Domestic</key>
+                <value>Paniel_Randombox_Poor</value>
+            </li>
+        </pawnKindDefs>
+        <scoreCurve>
+            <points>
+                <li>(0,0)</li>
+                <li>(256,902)</li>
+                <!--CS 0-->
+                <li>(424,333)</li>
+                <!--CS 1-->
+                <li>(592,186)</li>
+                <!--CS 2-->
+                <li>(760,99)</li>
+                <!--CS 3-->
+                <li>(928,39)</li>
+                <!--CS 4-->
+                <li>(1096,24)</li>
+                <!--CS 5-->
+                <li>(1264,0)</li>
+            </points>
+        </scoreCurve>
+    </AutomataRace.AutomataQualityProperty>
+    <AutomataRace.AutomataQualityProperty>
+        <defName>PN_AutomataQualityProperty_Normal</defName>
+        <quality>Normal</quality>
+        <pawnKindDefs>
+            <li>
+                <key>PN_Specialization_Combat</key>
+                <value>Paniel_Soldier_Normal</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Engineer</key>
+                <value>Paniel_Worker_Normal</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Domestic</key>
+                <value>Paniel_Maid_Normal</value>
+            </li>
+        </pawnKindDefs>
+        <scoreCurve>
+            <points>
+                <li>(0,0)</li>
+                <li>(256,5082)</li>
+                <!--CS 0-->
+                <li>(424,4023)</li>
+                <!--CS 1-->
+                <li>(592,3221)</li>
+                <!--CS 2-->
+                <li>(760,2455)</li>
+                <!--CS 3-->
+                <li>(928,1579)</li>
+                <!--CS 4-->
+                <li>(1096,1225)</li>
+                <!--CS 5-->
+                <li>(1264,942)</li>
+                <!--CS 6-->
+                <li>(1432,503)</li>
+                <!--CS 7-->
+                <li>(1600,246)</li>
+                <!--CS 8-->
+                <li>(2064,0)</li>
+            </points>
+        </scoreCurve>
+    </AutomataRace.AutomataQualityProperty>
+    <AutomataRace.AutomataQualityProperty>
+        <defName>PN_AutomataQualityProperty_Good</defName>
+        <quality>Good</quality>
+        <pawnKindDefs>
+            <li>
+                <key>PN_Specialization_Combat</key>
+                <value>Paniel_Soldier_Good</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Engineer</key>
+                <value>Paniel_Worker_Good</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Domestic</key>
+                <value>Paniel_Maid_Good</value>
+            </li>
+        </pawnKindDefs>
+        <scoreCurve>
+            <points>
+                <li>(0,0)</li>
+                <li>(256,3347)</li>
+                <!--CS 0-->
+                <li>(424,4375)</li>
+                <!--CS 1-->
+                <li>(592,4907)</li>
+                <!--CS 2-->
+                <li>(760,5262)</li>
+                <!--CS 3-->
+                <li>(928,5428)</li>
+                <!--CS 4-->
+                <li>(1096,5377)</li>
+                <!--CS 5-->
+                <li>(1264,5242)</li>
+                <!--CS 6-->
+                <li>(1432,4762)</li>
+                <!--CS 7-->
+                <li>(1600,3741)</li>
+                <!--CS 8-->
+                <li>(2064,335)</li>
+                <!--CS 6+AI-->
+                <li>(2232,187)</li>
+                <!--CS 7+AI-->
+                <li>(2400,99)</li>
+                <!--CS 8+AI-->
+            </points>
+        </scoreCurve>
+    </AutomataRace.AutomataQualityProperty>
+    <AutomataRace.AutomataQualityProperty>
+        <defName>PN_AutomataQualityProperty_Excellent</defName>
+        <quality>Excellent</quality>
+        <pawnKindDefs>
+            <li>
+                <key>PN_Specialization_Combat</key>
+                <value>Paniel_Soldier_Excellent</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Engineer</key>
+                <value>Paniel_Worker_Excellent</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Domestic</key>
+                <value>Paniel_Maid_Excellent</value>
+            </li>
+        </pawnKindDefs>
+        <scoreCurve>
+            <points>
+                <li>(0,0)</li>
+                <li>(256,640)</li>
+                <!--CS 0-->
+                <li>(424,1223)</li>
+                <!--CS 1-->
+                <li>(592,1612)</li>
+                <!--CS 2-->
+                <li>(760,2064)</li>
+                <!--CS 3-->
+                <li>(928,2740)</li>
+                <!--CS 4-->
+                <li>(1096,3091)</li>
+                <!--CS 5-->
+                <li>(1264,3448)</li>
+                <!--CS 6-->
+                <li>(1432,4129)</li>
+                <!--CS 7-->
+                <li>(1600,5062)</li>
+                <!--CS 8-->
+                <li>(2064,4023)</li>
+                <!--CS 6+AI-->
+                <li>(2232,3221)</li>
+                <!--CS 7+AI-->
+                <li>(2400,2455)</li>
+                <!--CS 8+AI-->
+            </points>
+        </scoreCurve>
+    </AutomataRace.AutomataQualityProperty>
+    <AutomataRace.AutomataQualityProperty>
+        <defName>PN_AutomataQualityProperty_Masterwork</defName>
+        <quality>Masterwork</quality>
+        <pawnKindDefs>
+            <li>
+                <key>PN_Specialization_Combat</key>
+                <value>Paniel_Soldier_Masterwork</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Engineer</key>
+                <value>Paniel_Worker_Masterwork</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Domestic</key>
+                <value>Paniel_Maid_Masterwork</value>
+            </li>
+        </pawnKindDefs>
+        <scoreCurve>
+            <points>
+                <li>(0,0)</li>
+                <li>(256,16)</li>
+                <!--CS 0-->
+                <li>(424,44)</li>
+                <!--CS 1-->
+                <li>(592,73)</li>
+                <!--CS 2-->
+                <li>(760,119)</li>
+                <!--CS 3-->
+                <li>(928,214)</li>
+                <!--CS 4-->
+                <li>(1096,283)</li>
+                <!--CS 5-->
+                <li>(1264,368)</li>
+                <!--CS 6-->
+                <li>(1432,606)</li>
+                <!--CS 7-->
+                <li>(1600,951)</li>
+                <!--CS 8-->
+                <li>(2064,4375)</li>
+                <!--CS 6+AI-->
+                <li>(2232,4907)</li>
+                <!--CS 7+AI-->
+                <li>(2400,5262)</li>
+                <!--CS 8+AI-->
+            </points>
+        </scoreCurve>
+    </AutomataRace.AutomataQualityProperty>
+    <AutomataRace.AutomataQualityProperty>
+        <defName>PN_AutomataQualityProperty_Legendary</defName>
+        <quality>Legendary</quality>
+        <pawnKindDefs>
+            <li>
+                <key>PN_Specialization_Combat</key>
+                <value>Paniel_Soldier_Legendary</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Engineer</key>
+                <value>Paniel_Worker_Legendary</value>
+            </li>
+            <li>
+                <key>PN_Specialization_Domestic</key>
+                <value>Paniel_Maid_Legendary</value>
+            </li>
+        </pawnKindDefs>
+        <scoreCurve>
+            <points>
+                <li>(1665,0)</li>
+                <li>(2064,1268)</li>
+                <!--CS 6+AI-->
+                <li>(2232,1686)</li>
+                <!--CS 7+AI-->
+                <li>(2400,2183)</li>
+                <!--CS 8+AI-->
+            </points>
+        </scoreCurve>
+    </AutomataRace.AutomataQualityProperty>
+</Defs>

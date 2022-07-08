@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--==================================== 수리 키트 업그레이드 ====================================-->
+    <RecipeDef>
+        <defName>PN_upgrade_SelfRepairKit</defName>
+        <label>upgrade automaton repair kit</label>
+        <description>upgrade automaton repair kit</description>
+        <jobString>Upgrading automaton repair kit.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>800</workAmount>
+        <recipeUsers>
+            <li>PN_AutomatonBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PN_RepairKit</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MechSerumHealer</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PN_RepairKit</li>
+                <li>MechSerumHealer</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <PN_SelfRepairKit>1</PN_SelfRepairKit>
+        </products>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisite>PNRP_SelfRepairKit</researchPrerequisite>
+    </RecipeDef>
+
+    <!--오토마톤 피부-->
+    <RecipeDef>
+        <defName>PN_Make_Leather_Automaton</defName>
+        <label>make automaton skin x10</label>
+        <description>make automaton skin x10</description>
+        <jobString>Making automaton skin.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>2000</workAmount>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>PN_AutomatonBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Leathers</li>
+                    </categories>
+                    <disallowedThingDefs>
+                        <li>Leather_Automaton</li>
+                    </disallowedThingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Leathers</li>
+            </categories>
+            <disallowedThingDefs>
+                <li>Leather_Automaton</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Leather_Automaton>10</Leather_Automaton>
+        </products>
+        <skillRequirements>
+            <Crafting>4</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisite>PNRP_Production</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>PN_Disassemble_AutomatonPackage</defName>
+        <label>disassemble automaton package</label>
+        <description>disassemble automaton package</description>
+        <jobString>disassembling package.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>8000</workAmount>
+        <recipeUsers>
+            <li>PN_AutomatonBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>PN_PackagedCatagory</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>PN_PackagedCatagory</li>
+            </categories>
+            <!--<disallowedThingDefs>
+        <li>Packaged_NormalAutomatonSoldier</li>
+        <li>Packaged_NormalAutomatonWorker</li>
+        <li>Packaged_NormalAutomatonMaid</li>
+      </disallowedThingDefs>-->
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <thingDefs>
+                <li>Packaged_NormalAutomaton</li>
+            </thingDefs>
+        </defaultIngredientFilter>
+        <products>
+            <Plasteel>75</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <Leather_Automaton>25</Leather_Automaton>
+        </products>
+        <skillRequirements>
+            <Crafting>6</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisite/>
+    </RecipeDef>
+</Defs>

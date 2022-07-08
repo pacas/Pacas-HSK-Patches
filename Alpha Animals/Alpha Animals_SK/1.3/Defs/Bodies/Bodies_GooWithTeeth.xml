@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyDef>
+		<defName>AA_GooWithTeethBody</defName>
+		<label>green goo</label>
+		<corePart>
+			<def>AA_Protoplasm</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<groups>
+				<li>AA_Body</li>
+			</groups>
+			<parts>
+				<li>
+					<def>AA_Nucleus</def>
+					<customLabel>nucleus</customLabel>
+					<coverage>0.01</coverage>
+					<depth>Inside</depth>
+				</li>
+				
+				<li>
+					<def>Head</def>
+					<customLabel>membrane</customLabel>
+					<coverage>0.2</coverage>
+					<depth>Inside</depth>
+				</li>
+				
+				<li>
+							<def>AnimalJaw</def>
+							<coverage>0.02</coverage>
+							<groups>
+								<li>Teeth</li>
+							</groups>
+						</li>
+				
+				
+				<li>
+					<def>AA_JellyfishTentacle</def>
+					<customLabel>first tentacle</customLabel>
+					<groups>
+						<li>AA_TentacleAttackTool</li>
+					</groups>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+
+				</li>
+				<li>
+					<def>AA_JellyfishTentacle</def>
+					<customLabel>second tentacle</customLabel>
+					<groups>
+						<li>AA_TentacleAttackTool</li>
+					</groups>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+
+				</li>
+				<li>
+					<def>AA_JellyfishTentacle</def>
+					<customLabel>third tentacle</customLabel>
+					<groups>
+						<li>AA_TentacleAttackTool</li>
+					</groups>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+
+				</li>
+				<li>
+					<def>AA_JellyfishTentacle</def>
+					<customLabel>fourth tentacle</customLabel>
+					<groups>
+						<li>AA_TentacleAttackTool</li>
+					</groups>
+					<coverage>0.1</coverage>
+					<height>Bottom</height>
+
+				</li>
+				
+
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

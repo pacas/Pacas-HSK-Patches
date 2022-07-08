@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="WorkTable">
+        <defName>ReviaSacrificeSpot</defName>
+        <label>sacrifice spot</label>
+        <description>A place to sacrifice humanlikes to the blood god.</description>
+        <graphicData>
+            <texPath>Things/Building/Production/CraftingSpot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <statBases>
+            <WorkToBuild>50</WorkToBuild>
+            <WorkTableWorkSpeedFactor>0.65</WorkTableWorkSpeedFactor>
+        </statBases>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <useHitPoints>false</useHitPoints>
+        <size>(1,1)</size>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <designationCategory>Misc</designationCategory>
+        <passability>Standable</passability>
+        <surfaceType>Item</surfaceType>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Bricks</li>
+        </stuffCategories>
+        <costStuffCount>5</costStuffCount>
+        <comps>
+            <li>
+                <compClass>CompReportWorkSpeed</compClass>
+            </li>
+        </comps>
+        <building>
+            <spawnedConceptLearnOpportunity>ReviaBloodstoneSacrifice</spawnedConceptLearnOpportunity>
+            <sowTag>SupportPlantsOnly</sowTag>
+            <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+            <ai_chillDestination>false</ai_chillDestination>
+            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+            <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+        </placeWorkers>
+    </ThingDef>
+</Defs>

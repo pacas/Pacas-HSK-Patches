@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<PawnKindDef Name="RBBasePawnKind" Abstract="True">
+		<race>Rabbie</race>
+		<combatPower>30</combatPower>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+	</PawnKindDef>
+
+
+	<!-- 래비 플레이어 정착민 -->
+	<PawnKindDef ParentName="RBBasePawnKind">
+		<defName>RB_Colonist</defName>
+		<label>Rabbie colonist</label>
+		<defaultFactionType>RB_PlayerFaction</defaultFactionType>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RBALL</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>		
+		<chemicalAddictionChance>0.02</chemicalAddictionChance>
+		<apparelTags>
+			<li>RBC_Colonist</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>550</min>
+			<max>900</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>RB_Camisole</li>
+		</apparelRequired>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+	<styleItemTags>
+		<li>
+			<tag>RBhair</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+	</styleItemTags>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <initialWillRange>0~0</initialWillRange>
+    <initialResistanceRange>8~15</initialResistanceRange>
+	</PawnKindDef>
+
+
+	<!-- 래비티시NPC 기본 -->
+
+	<PawnKindDef Name="RabbitishBasePawnKind" Abstract="True">
+		<race>Rabbie</race>
+		<defaultFactionType>Rabbitish</defaultFactionType>
+		<chemicalAddictionChance>0.02</chemicalAddictionChance>
+		<invNutrition>2.55</invNutrition>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<maxGenerationAge>65</maxGenerationAge>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>8~15</initialResistanceRange>
+		<styleItemTags>
+		<li>
+			<tag>RBhair</tag>
+			<baseWeight>1</baseWeight>
+			<weightFactor>1</weightFactor>
+		</li>
+	</styleItemTags>
+	</PawnKindDef>
+
+
+	<!-- 래비티시 전력관리국 -->
+
+	<PawnKindDef ParentName="RabbitishBasePawnKind">
+		<defName>RB_EnergySupply</defName>
+		<label>Dept.Energysupply Staff</label>
+		<combatPower>65</combatPower>
+		<isFighter>true</isFighter>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+		<trader>true</trader>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RBEnergy</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>				
+		<apparelTags>
+			<li>RBC_Energy</li>
+			<li>RBC_Warmhat</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>500</min>
+			<max>1800</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>RB_Camisole</li>
+			<li>RB_Energymanager</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>SMG1</li>
+            <li>TierOneSMG</li>
+            <li>CE_SMG</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>500</min>
+			<max>1000</max>
+		</weaponMoney>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>RefinedPlanetarium</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>3</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>14~23</initialResistanceRange>
+	</PawnKindDef>
+
+
+
+	<!-- 래비티시 기술자 -->
+
+	<PawnKindDef ParentName="RabbitishBasePawnKind">
+		<defName>RB_Technician</defName>
+		<label>Technician</label>
+		<combatPower>45</combatPower>
+		<isFighter>false</isFighter>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<trader>false</trader>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RBTech</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>			
+		<apparelTags>
+			<li>RBC_Technician</li>
+			<li>RBC_1tierouter</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>600</min>
+			<max>1200</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>RB_Camisole</li>
+			<li>RB_Technician</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>SMG1</li>
+            <li>TierOneSMG</li>
+            <li>CE_SMG</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>500</min>
+			<max>750</max>
+		</weaponMoney>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+
+	<!-- 노동자 -->
+
+	<PawnKindDef ParentName="RabbitishBasePawnKind">
+		<defName>RB_Worker</defName>
+		<label>Worker</label>
+		<combatPower>45</combatPower>
+		<isFighter>false</isFighter>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<trader>false</trader>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RBCivil</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>			
+		<apparelTags>
+			<li>RBC_Worker</li>
+			<li>RBC_Warmouter</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>400</min>
+			<max>1000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>RB_Camisole</li>
+			<li>RB_Handygirl</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>SMG1</li>
+            <li>TierOneSMG</li>
+            <li>CE_SMG</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>500</min>
+			<max>750</max>
+		</weaponMoney>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
+	</PawnKindDef>
+
+
+	<!-- 자유토끼 -->
+
+	<PawnKindDef ParentName="RabbitishBasePawnKind">
+		<defName>RB_Wanderer</defName>
+		<label>FreedomRabbit</label>
+		<combatPower>120</combatPower>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<isFighter>true</isFighter>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RBWanderer</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>			
+		<apparelMoney>
+			<min>1000</min>
+			<max>1500</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>500</min>
+			<max>1500</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>SMG1</li>
+            <li>TierOneSMG</li>
+            <li>CE_SMG</li>
+		</weaponTags>
+		<apparelTags>
+			<li>IndustrialMilitaryAdvanced</li>
+			<li>RBC_Colonist</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RB_Camisole</li>
+			<li>RB_Earjacket</li>
+			<li>Apparel_CowboyHat</li>
+		</apparelRequired>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>RefinedPlanetarium</thingDef>
+					<countRange>
+						<min>3</min>
+						<max>6</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+
+
+	<!-- 실무장교 -->
+
+	<PawnKindDef ParentName="RabbitishBasePawnKind">
+		<defName>RB_SubOfficer</defName>
+		<label>Sub Officer</label>
+		<combatPower>150</combatPower>
+		<isFighter>true</isFighter>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+		<trader>true</trader>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RBOfficer</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>					
+		<apparelTags>
+			<li>RBC_Officer</li>
+			<li>RBC_1tierouter</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>1000</min>
+			<max>2000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>RB_Camisole</li>
+			<li>RB_Subofficer</li>
+			<li>RB_Subofficerhat</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>AdvancedGun</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>1000</min>
+			<max>1500</max>
+		</weaponMoney>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<skipChance>0.5</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>
+						<min>200</min>
+						<max>600</max>
+					</countRange>
+				</li>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>
+						<min>1</min>
+						<max>1</max>
+					</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>14~23</initialResistanceRange>
+	</PawnKindDef>
+
+
+	<!-- 고위 장교 -->
+
+	<PawnKindDef ParentName="RabbitishBasePawnKind">
+		<defName>RB_EliteOfficer</defName>
+		<label>Commander</label>
+		<combatPower>150</combatPower>
+		<isFighter>true</isFighter>
+		<factionLeader>true</factionLeader>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<baseRecruitDifficulty>0.98</baseRecruitDifficulty>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RBElite</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>				
+		<apparelTags>
+			<li>RBC_Elite</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>1500</min>
+			<max>2000</max>
+		</apparelMoney>
+		<apparelRequired>
+			<li>RB_Camisole</li>
+			<li>RB_SeniorOfficer</li>
+			<li>RB_HighCloak</li>
+			<li>RB_SeniorOfficerhat</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>AdvancedGun</li>
+		</weaponTags>
+		<weaponMoney>
+			<min>1500</min>
+			<max>2000</max>
+		</weaponMoney>
+		<techHediffsChance>0.02</techHediffsChance>
+		<techHediffsMoney>
+			<min>50</min>
+			<max>800</max>
+		</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<apparelAllowHeadgearChance>0.85</apparelAllowHeadgearChance>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>15~23</initialResistanceRange>
+	</PawnKindDef>
+
+
+
+
+	<!-- 래비티시 야전군 - Rifleman, Sniper, Machinegunner, Sapper -->
+
+	<PawnKindDef Name="RabbitishFieldArmyBase" ParentName="RabbitishBasePawnKind" Abstract="True">
+		<forceNormalGearQuality>true</forceNormalGearQuality>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<maxGenerationAge>35</maxGenerationAge>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RBCivil</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>			
+		<apparelTags>
+			<li>RBC_Fieldarmy</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>2000</min>
+			<max>3500</max>
+		</apparelMoney>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RabbitishFieldArmyBase">
+		<defName>RB_FRifle</defName>
+		<label>Fieldarmy Rifleman</label>
+		<combatPower>150</combatPower>
+		<weaponMoney>
+			<min>500</min>
+			<max>750</max>
+		</weaponMoney>
+		<apparelRequired>
+			<li>RB_Camisole</li>
+			<li>RB_Infantryhelmet</li>
+			<li>RB_Infantryvest</li>
+			<li>RB_Infantryuniform</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>CE_AI_Rifle</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RabbitishFieldArmyBase">
+		<defName>RB_FSniper</defName>
+		<label>Fieldarmy Sniper</label>
+		<combatPower>190</combatPower>
+		<weaponMoney>
+			<min>750</min>
+			<max>1250</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>RB_Camisole</li>
+			<li>RB_Infantryhelmet</li>
+			<li>RB_Infantryvest</li>
+			<li>RB_Infantrynewuniform</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RabbitishFieldArmyBase">
+		<defName>RB_FMachinegunner</defName>
+		<label>Fieldarmy Machinegunner</label>
+		<combatPower>290</combatPower>
+		<weaponMoney>
+			<min>1860</min>
+			<max>2500</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>GunHeavy</li>
+		</weaponTags>
+		<apparelRequired>
+			<li>RB_Camisole</li>
+			<li>RB_Infantryhelmet</li>
+			<li>RB_Infantryvest</li>
+			<li>RB_Infantryuniform</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RabbitishFieldArmyBase">
+		<defName>RB_FSapper</defName>
+		<label>Fieldarmy Sapper</label>
+		<combatPower>150</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<weaponMoney>
+			<min>500</min>
+			<max>650</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>GrenadeDestructive</li>
+		</weaponTags>
+				<apparelRequired>
+			<li>RB_Camisole</li>
+			<li>RB_Infantryhelmet</li>
+			<li>RB_Infantryvest</li>
+			<li>RB_Infantrynewuniform</li>
+		</apparelRequired>
+	</PawnKindDef>
+
+	<!-- 래비티시 제국 정규군 -->
+
+
+	<PawnKindDef Name="RabbitishRegularPawnKind" ParentName="RabbitishBasePawnKind" Abstract="True">
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>35</maxGenerationAge>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RBRegular</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>			
+		<apparelTags>
+			<li>RBC_Regular</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RB_Camisole</li>
+			<li>RB_RegularInfantrySuit</li>
+			<li>RB_RegularInfantryhelmet</li>
+		</apparelRequired>
+		<apparelMoney>
+			<min>4000</min>
+			<max>5000</max>
+		</apparelMoney>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>17~27</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="RabbitishRegularPawnKind">
+		<defName>RB_RGunner</defName>
+		<label>Regulararmy Gunner</label>
+		<combatPower>380</combatPower>
+		<weaponMoney>
+			<min>1500</min>
+			<max>2300</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>CE_AI_Rifle</li>
+		</weaponTags>
+	</PawnKindDef>
+
+
+</Defs>

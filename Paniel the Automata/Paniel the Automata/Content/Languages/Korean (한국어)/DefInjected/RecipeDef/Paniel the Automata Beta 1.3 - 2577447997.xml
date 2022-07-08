@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PN_InstallExperimentalModule.label>커스텀 코어 임플란트 설치</PN_InstallExperimentalModule.label>
+  <PN_InstallExperimentalModule.description>커스텀 코어 임플란트 설치</PN_InstallExperimentalModule.description>
+  <PN_InstallExperimentalModule.jobString>커스텀 코어 임플란트 설치중.</PN_InstallExperimentalModule.jobString>
+  <PN_InstallResurrectModule.label>부활 임플란트 설치</PN_InstallResurrectModule.label>
+  <PN_InstallResurrectModule.description>부활 임플란트 설치</PN_InstallResurrectModule.description>
+  <PN_InstallResurrectModule.jobString>부활 임플란트 설치중.</PN_InstallResurrectModule.jobString>
+  <PN_RemoveResurrectModule.label>부활 임플란트 제거</PN_RemoveResurrectModule.label>
+  <PN_RemoveResurrectModule.description>부활 임플란트 제거</PN_RemoveResurrectModule.description>
+  <PN_RemoveResurrectModule.jobString>부활 임플란트 제거중.</PN_RemoveResurrectModule.jobString>
+  <PN_Make_AutomatonFuel.label>PnL 연료 만들기 x4</PN_Make_AutomatonFuel.label>
+  <PN_Make_AutomatonFuel.description>PnL 연료 만들기</PN_Make_AutomatonFuel.description>
+  <PN_Make_AutomatonFuel.jobString>PnL 연료 만들기</PN_Make_AutomatonFuel.jobString>
+  <PN_Make_AutomatonFuel_bulk.label>PnL 연료 만들기 x16</PN_Make_AutomatonFuel_bulk.label>
+  <PN_Make_AutomatonFuel_bulk.description>PnL 연료 만들기</PN_Make_AutomatonFuel_bulk.description>
+  <PN_Make_AutomatonFuel_bulk.jobString>PnL 연료 만들기</PN_Make_AutomatonFuel_bulk.jobString>
+  <PN_upgrade_SelfRepairKit.label>수리 키트 업그레이드</PN_upgrade_SelfRepairKit.label>
+  <PN_upgrade_SelfRepairKit.description>수리 키트 업그레이드</PN_upgrade_SelfRepairKit.description>
+  <PN_upgrade_SelfRepairKit.jobString>수리 키트 업그레이드중.</PN_upgrade_SelfRepairKit.jobString>
+  <PN_Make_Leather_Automaton.label>오토마톤 외피 만들기 x10</PN_Make_Leather_Automaton.label>
+  <PN_Make_Leather_Automaton.description>오토마톤 외피 만들기</PN_Make_Leather_Automaton.description>
+  <PN_Make_Leather_Automaton.jobString>오토마톤 외피 만드는 중.</PN_Make_Leather_Automaton.jobString>
+  <PN_Drum_Subdivision.label>연료 드럼 소분</PN_Drum_Subdivision.label>
+  <PN_Drum_Subdivision.description>연료 드럼 소분</PN_Drum_Subdivision.description>
+  <PN_Drum_Subdivision.jobString>연료 드럼 소분중.</PN_Drum_Subdivision.jobString>
+  <PN_Make_ComponentIndustrial.label>부품 만들기</PN_Make_ComponentIndustrial.label>
+  <PN_Make_ComponentIndustrial.description>부품 만들기</PN_Make_ComponentIndustrial.description>
+  <PN_Make_ComponentIndustrial.jobString>부품 만드는중.</PN_Make_ComponentIndustrial.jobString>
+  <PN_Disassemble_AutomatonPackage.label>포장된 오토마톤 분해</PN_Disassemble_AutomatonPackage.label>
+  <PN_Disassemble_AutomatonPackage.description>포장된 오토마톤 분해</PN_Disassemble_AutomatonPackage.description>
+  <PN_Disassemble_AutomatonPackage.jobString>포장된 오토마톤 분해중.</PN_Disassemble_AutomatonPackage.jobString>
+  <PN_Disassemble.label>분해</PN_Disassemble.label>
+  <PN_Disassemble.description>분해</PN_Disassemble.description>
+  <PN_Disassemble.jobString>분해중</PN_Disassemble.jobString>
+  <PN_Repair.label>수리</PN_Repair.label>
+  <PN_Repair.description>수리</PN_Repair.description>
+  <PN_Repair.jobString>수리중.</PN_Repair.jobString>
+  <PN_Maintenance.label>유지보수</PN_Maintenance.label>
+  <PN_Maintenance.description>유지보수</PN_Maintenance.description>
+  <PN_Maintenance.jobString>유지보수중.</PN_Maintenance.jobString>
+  <PN_ExtractBrain.label>중추신경계 추출</PN_ExtractBrain.label>
+  <PN_ExtractBrain.description>중추신경계 추출</PN_ExtractBrain.description>
+  <PN_ExtractBrain.jobString>중추신경계 추출중</PN_ExtractBrain.jobString>
+  <PN_AdministerSelfRepairKit.label>자가 수리 키트 사용</PN_AdministerSelfRepairKit.label>
+  <PN_AdministerSelfRepairKit.description>자가 수리 키트 사용</PN_AdministerSelfRepairKit.description>
+  <PN_AdministerSelfRepairKit.jobString>자가 수리 키트 사용중.</PN_AdministerSelfRepairKit.jobString>
+  <PN_InstallDrillArm.label>드릴 팔 설치</PN_InstallDrillArm.label>
+  <PN_InstallDrillArm.description>드릴 팔 설치</PN_InstallDrillArm.description>
+  <PN_InstallDrillArm.jobString>드릴 팔 설치중</PN_InstallDrillArm.jobString>
+  <PN_InstallFieldHand.label>농업용 팔 설치</PN_InstallFieldHand.label>
+  <PN_InstallFieldHand.description>농업용 팔 설치</PN_InstallFieldHand.description>
+  <PN_InstallFieldHand.jobString>동엽용 팔 설치중</PN_InstallFieldHand.jobString>
+  <PN_InstallPowerClaw.label>파워 클로 설치</PN_InstallPowerClaw.label>
+  <PN_InstallPowerClaw.description>파워 클로 설치</PN_InstallPowerClaw.description>
+  <PN_InstallPowerClaw.jobString>파워 클로 설치중</PN_InstallPowerClaw.jobString>
+  <PN_InstallHandTalon.label>발톱 손 설치</PN_InstallHandTalon.label>
+  <PN_InstallHandTalon.description>발톱 손 설치</PN_InstallHandTalon.description>
+  <PN_InstallHandTalon.jobString>발톱 손 설치중</PN_InstallHandTalon.jobString>
+  <PN_RemoveHandTalon.label>발톱 손 제거</PN_RemoveHandTalon.label>
+  <PN_RemoveHandTalon.description>발톱 손 제거</PN_RemoveHandTalon.description>
+  <PN_RemoveHandTalon.jobString>발톱 손 제거중</PN_RemoveHandTalon.jobString>
+  <PN_InstallElbowBlade.label>팔꿈치 칼날 설치</PN_InstallElbowBlade.label>
+  <PN_InstallElbowBlade.description>팔꿈치 칼날 설치</PN_InstallElbowBlade.description>
+  <PN_InstallElbowBlade.jobString>팔꿈치 칼날 설치중</PN_InstallElbowBlade.jobString>
+  <PN_RemoveElbowBlade.label>팔꿈치 칼날 제거</PN_RemoveElbowBlade.label>
+  <PN_RemoveElbowBlade.description>팔꿈치 칼날 제거</PN_RemoveElbowBlade.description>
+  <PN_RemoveElbowBlade.jobString>팔꿈치 칼날 제거중</PN_RemoveElbowBlade.jobString>
+  <PN_InstallKneeSpike.label>무릎 송곳 설치</PN_InstallKneeSpike.label>
+  <PN_InstallKneeSpike.description>무릎 송곳 설치</PN_InstallKneeSpike.description>
+  <PN_InstallKneeSpike.jobString>무릎 송곳 설치중</PN_InstallKneeSpike.jobString>
+  <PN_RemoveKneeSpike.label>무릎 송곳 제거</PN_RemoveKneeSpike.label>
+  <PN_RemoveKneeSpike.description>무릎 송곳 제거</PN_RemoveKneeSpike.description>
+  <PN_RemoveKneeSpike.jobString>무릎 송곳 제거중</PN_RemoveKneeSpike.jobString>
+  <PN_InstallVenomFangs.label>독니 설치</PN_InstallVenomFangs.label>
+  <PN_InstallVenomFangs.description>독니 설치</PN_InstallVenomFangs.description>
+  <PN_InstallVenomFangs.jobString>독니 설치중</PN_InstallVenomFangs.jobString>
+  <PN_RemoveVenomFangs.label>독니 제거</PN_RemoveVenomFangs.label>
+  <PN_RemoveVenomFangs.description>독니 제거</PN_RemoveVenomFangs.description>
+  <PN_RemoveVenomFangs.jobString>독니 제거중</PN_RemoveVenomFangs.jobString>
+  <PN_InstallVenomTalon.label>독 발톱 설치</PN_InstallVenomTalon.label>
+  <PN_InstallVenomTalon.description>독 발톱 설치</PN_InstallVenomTalon.description>
+  <PN_InstallVenomTalon.jobString>독 발톱 설치중</PN_InstallVenomTalon.jobString>
+  <PN_RemoveVenomTalon.label>독 발톱 제거</PN_RemoveVenomTalon.label>
+  <PN_RemoveVenomTalon.description>독 발톱 제거</PN_RemoveVenomTalon.description>
+  <PN_RemoveVenomTalon.jobString>독 발톱 제거중</PN_RemoveVenomTalon.jobString>
+  <PN_InstallNeurocalculator.label>신경 연산보조기 설치</PN_InstallNeurocalculator.label>
+  <PN_InstallNeurocalculator.description>신경 연산보조기 설치</PN_InstallNeurocalculator.description>
+  <PN_InstallNeurocalculator.jobString>신경 연산보조기 설치중</PN_InstallNeurocalculator.jobString>
+  <PN_RemoveNeurocalculator.label>신경 연산보조기 제거</PN_RemoveNeurocalculator.label>
+  <PN_RemoveNeurocalculator.description>신경 연산보조기 제거</PN_RemoveNeurocalculator.description>
+  <PN_RemoveNeurocalculator.jobString>신경 연산보조기 제거</PN_RemoveNeurocalculator.jobString>
+  <PN_InstallCircadianAssistant.label>생체리듬 보조기 설치</PN_InstallCircadianAssistant.label>
+  <PN_InstallCircadianAssistant.description>생체리듬 보조기 설치</PN_InstallCircadianAssistant.description>
+  <PN_InstallCircadianAssistant.jobString>생체리듬 보조기 설치중</PN_InstallCircadianAssistant.jobString>
+  <PN_RemoveCircadianAssistant.label>생체리듬 보조기 제거</PN_RemoveCircadianAssistant.label>
+  <PN_RemoveCircadianAssistant.description>생체리듬 보조기 제거</PN_RemoveCircadianAssistant.description>
+  <PN_RemoveCircadianAssistant.jobString>생체리듬 보조기 제거중</PN_RemoveCircadianAssistant.jobString>
+  <PN_InstallCircadianHalfCycler.label>생체리듬 반감기 설치</PN_InstallCircadianHalfCycler.label>
+  <PN_InstallCircadianHalfCycler.description>생체리듬 반감기 설치</PN_InstallCircadianHalfCycler.description>
+  <PN_InstallCircadianHalfCycler.jobString>생체리듬 반감기 설치중</PN_InstallCircadianHalfCycler.jobString>
+  <PN_RemoveCircadianHalfCycler.label>생체리듬 반감기 제거</PN_RemoveCircadianHalfCycler.label>
+  <PN_RemoveCircadianHalfCycler.description>생체리듬 반감기 제거</PN_RemoveCircadianHalfCycler.description>
+  <PN_RemoveCircadianHalfCycler.jobString>생체리듬 반감기 제거중</PN_RemoveCircadianHalfCycler.jobString>
+  <PN_InstallPsychicSensitizer.label>초능력 증진기 설치</PN_InstallPsychicSensitizer.label>
+  <PN_InstallPsychicSensitizer.description>초능력 증진기 설치</PN_InstallPsychicSensitizer.description>
+  <PN_InstallPsychicSensitizer.jobString>초능력 증진기 설치중</PN_InstallPsychicSensitizer.jobString>
+  <PN_RemovePsychicSensitizer.label>초능력 증진기 제거</PN_RemovePsychicSensitizer.label>
+  <PN_RemovePsychicSensitizer.description>초능력 증진기 제거</PN_RemovePsychicSensitizer.description>
+  <PN_RemovePsychicSensitizer.jobString>초능력 증진기 제거중</PN_RemovePsychicSensitizer.jobString>
+  <PN_InstallPsychicReader.label>감정 판독기 설치</PN_InstallPsychicReader.label>
+  <PN_InstallPsychicReader.description>감정 판독기 설치</PN_InstallPsychicReader.description>
+  <PN_InstallPsychicReader.jobString>감정 판독기 설치중</PN_InstallPsychicReader.jobString>
+  <PN_RemovePsychicReader.label>감정 판독기 제거</PN_RemovePsychicReader.label>
+  <PN_RemovePsychicReader.description>감정 판독기 제거</PN_RemovePsychicReader.description>
+  <PN_RemovePsychicReader.jobString>감정 판독기 제거중</PN_RemovePsychicReader.jobString>
+  <PN_Make_PsychicAmplifier_Automaton.label>오토마톤 정신력 증폭기 만들기</PN_Make_PsychicAmplifier_Automaton.label>
+  <PN_Make_PsychicAmplifier_Automaton.description>정신력 증폭기를 오토마톤이 사용할 수 있게 개조합니다.</PN_Make_PsychicAmplifier_Automaton.description>
+  <PN_Make_PsychicAmplifier_Automaton.jobString>오토마톤 정신력 증폭기 만드는 중.</PN_Make_PsychicAmplifier_Automaton.jobString>
+</LanguageData>

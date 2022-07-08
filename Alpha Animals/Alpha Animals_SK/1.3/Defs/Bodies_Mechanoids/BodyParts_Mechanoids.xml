@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--===================== Misc =====================-->
+
+
+	<BodyPartDef>
+		<defName>AA_MechanoidWing</defName>
+		<label>wing blade</label>
+		<hitPoints>20</hitPoints>
+		<frostbiteVulnerability>5</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_TankTurret</defName>
+		<label>turret</label>
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>AA_MechanicalClaw</defName>
+		<label>claw</label>
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef Abstract="True" Name="AA_TankPlateBase">
+		<labelShort>chassis</labelShort>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="AA_TankPlateBase">
+		<defName>AA_TankPlateFirst</defName>
+		<label>frontal metallic plating</label>
+		<hitPoints>45</hitPoints>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="AA_TankPlateBase">
+		<defName>AA_TankPlateSecond</defName>
+		<label>auxiliary frontal metallic plating</label>
+		<hitPoints>40</hitPoints>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="AA_TankPlateBase">
+		<defName>AA_TankPlateThird</defName>
+		<label>central metallic plating</label>
+		<hitPoints>35</hitPoints>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="AA_TankPlateBase">
+		<defName>AA_TankPlateFourth</defName>
+		<label>auxiliary central metallic plating</label>
+		<hitPoints>30</hitPoints>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="AA_TankPlateBase">
+		<defName>AA_TankPlateFifth</defName>
+		<label>rear metallic plating</label>
+		<hitPoints>25</hitPoints>
+	</BodyPartDef>
+
+	<BodyPartDef ParentName="AA_TankPlateBase">
+		<defName>AA_TankPlateSixth</defName>
+		<label>auxiliary rear metallic plating</label>
+		<hitPoints>20</hitPoints>
+	</BodyPartDef>
+
+</Defs>

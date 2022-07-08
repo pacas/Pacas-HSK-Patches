@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ============================================================ -->
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_Cactipine</defName>
+        <label>cactipine</label>
+        <description>In an effort to make deserts more viable for colonization, scientists introduced a variety of genetically modified creatures that are made to survive the melting heat and provide food to those who wished to live in such harsh conditions. One such creature is the Cactipine. Despite its name, it is actually a giant rat infused with the DNA of a cactus. It resulted in the specimen gaining sharp medical quills, hardened green skin, and a funny tasting "meat" that confused vegetarians and carnivores alike.</description>
+        <statBases>
+            <MoveSpeed>4.5</MoveSpeed>
+            <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+            <ComfyTemperatureMax>70</ComfyTemperatureMax>
+            <MarketValue>100</MarketValue>
+            <MeatAmount>20</MeatAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>7</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>7</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+                <resourceDef>AA_CactipineQuill</resourceDef>
+                <gatheringIntervalDays>1</gatheringIntervalDays>
+                <resourceAmount>1</resourceAmount>
+                <customResourceString>MedicinalQuillDesc</customResourceString>
+            </li>
+        </comps>
+        <race>
+            <wildBiomes>
+                <AridShrubland>0.5</AridShrubland>
+                <Desert>0.07</Desert>
+                <ExtremeDesert>0.07</ExtremeDesert>
+            </wildBiomes>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <baseBodySize>0.5</baseBodySize>
+            <baseHungerRate>0.2</baseHungerRate>
+            <baseHealthScale>1.5</baseHealthScale>
+            <leatherDef>Leather_Plain</leatherDef>
+            <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+            <useMeatFrom>Elephant</useMeatFrom>
+            <wildness>0.75</wildness>
+            <manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+            <trainability>Intermediate</trainability>
+            <gestationPeriodDays>6</gestationPeriodDays>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(2, 1.7)</li>
+                    <li>(3, 0.7)</li>
+                    <li>(3.5, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>4</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.07</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.3</minAge>
+                    <soundWounded>Pawn_Boomrat_Wounded</soundWounded>
+                    <soundDeath>Pawn_Boomrat_Death</soundDeath>
+                    <soundCall>Pawn_Boomrat_Call</soundCall>
+                    <soundAngry>Pawn_Boomrat_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <butcherProducts>
+            <AA_CactusMeat>2</AA_CactusMeat>
+        </butcherProducts>
+        <tradeTags>
+            <li>AnimalCommon</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Farm</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_FarmMedicineDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_Cactipine</defName>
+        <label>cactipine</label>
+        <race>AA_Cactipine</race>
+        <combatPower>30</combatPower>
+        <ecoSystemWeight>0.3</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>10</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>cactipine</label>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Cactipine/AA_Cactipine</texPath>
+                    <drawSize>0.8</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Cactipine/AA_Dessicated_Cactipine</texPath>
+                    <drawSize>.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <label>cactipine</label>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Cactipine/AA_Cactipine</texPath>
+                    <drawSize>1.0</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Cactipine/AA_Dessicated_Cactipine</texPath>
+                    <drawSize>1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Cactipine/AA_Cactipine</texPath>
+                    <drawSize>1.2</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Cactipine/AA_Dessicated_Cactipine</texPath>
+                    <drawSize>1.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

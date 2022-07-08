@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--  Bases  -->
+    <ThingDef Name="AA_RawMeatBase" Abstract="True" ParentName="OrganicProductBase">
+        <label>Base meat properties</label>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>2</daysToRotStart>
+                <rotDestroys>True</rotDestroys>
+            </li>
+        </comps>
+        <statBases>
+            <Nutrition>0.05</Nutrition>
+            <Flammability>0.5</Flammability>
+            <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <ingestible>
+            <foodType>Meat</foodType>
+            <preferability>DesperateOnly</preferability>
+            <ingestEffect>EatMeat</ingestEffect>
+            <ingestSound>RawMeat_Eat</ingestSound>
+        </ingestible>
+        <thingCategories>
+            <li>MeatRaw</li>
+        </thingCategories>
+    </ThingDef>
+    <ThingDef Abstract="True" Name="AA_PlantFoodRawBase" ParentName="OrganicProductBase">
+        <ingestible>
+            <preferability>RawBad</preferability>
+            <tasteThought>AteRawFood</tasteThought>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>RawVegetable_Eat</ingestSound>
+        </ingestible>
+        <statBases>
+            <Nutrition>0.05</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <thingCategories>
+            <li>FungusPlantRaw</li>
+        </thingCategories>
+    </ThingDef>
+    <!--  Aerofleet  -->
+    <ThingDef ParentName="AA_RawMeatBase">
+        <defName>AA_AerofleetMeat</defName>
+        <label>aerofleet meat</label>
+        <description>Raw meat from an aerofleet.\n\nChewy, gelatinous and insipid. Similar in texture to a jellyfish.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_AerofleetMeat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.03</Mass>
+            <MarketValue>2</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+    </ThingDef>
+    <!--  Ocular Jelly  -->
+    <ThingDef ParentName="AA_RawMeatBase">
+        <defName>AA_OcularJellyMeat</defName>
+        <label>ocular jelly meat</label>
+        <description>Raw meat from an ocular jelly.\n\nChewy, gelatinous and insipid. Similar in texture to a jellyfish.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_OcularJellyMeat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.03</Mass>
+            <MarketValue>2</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+    </ThingDef>
+    <!--  Red Goo  -->
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>AB_RawRedSlime</defName>
+        <label>raw red slime</label>
+        <description>Raw red slime. This thing is edible. Barely.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_RawRedSlime</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.5</MarketValue>
+            <Nutrition>0.01</Nutrition>
+        </statBases>
+        <ingestible>
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>60</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+    <!--  Cactipine  -->
+    <ThingDef ParentName="AA_PlantFoodRawBase">
+        <defName>AA_CactusMeat</defName>
+        <label>plant meat</label>
+        <description>This strange meat is part vegetable, part animal. Confusing, to say the least.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_Cactipine_Meat</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.1</MarketValue>
+        </statBases>
+        <ingestible>
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>30</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Black hive jelly -->
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>AA_BlackInsectJelly</defName>
+        <label>black hive insect jelly</label>
+        <description>Jelly stored and used as food by oversized insects. It is smooth, rich, and fulfills the recreation need of those who consume it. Because of its unique biological properties, it can nourish almost any creature and never rots. This particular insect jelly is pitch black in colour and seems to be more nutritive than usual.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_BlackInsectJelly</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+            <Mass>0.035</Mass>
+            <Nutrition>0.075</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <ingestible>
+            <foodType>AnimalProduct</foodType>
+            <preferability>MealFine</preferability>
+            <joy>0.09</joy>
+            <joyKind>Gluttonous</joyKind>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+        <thingCategories>
+            <li>AnimalProductRaw</li>
+        </thingCategories>
+    </ThingDef>
+</Defs>

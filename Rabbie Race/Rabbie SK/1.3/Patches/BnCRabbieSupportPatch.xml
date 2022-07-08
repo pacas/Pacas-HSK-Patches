@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Baby and Children</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+	                <xpath>*/RimWorldChildren.SupportAlienDef[defName="makeAlienChild"]/supportAlienRaces</xpath>
+					<value>
+		               <li>Rabbie</li>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

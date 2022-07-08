@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef>
+    <defName>MinifiedShieldGeneratorPortable</defName>
+    <label>minified thing</label>
+    <thingClass>MinifiedThing</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+	<thingCategories>
+	<li>Items</li>
+	</thingCategories>
+    <statBases>
+      <Mass>12</Mass>
+    </statBases>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <tickerType>Normal</tickerType>
+    <!-- for CompForbiddable -->
+    <drawerType>RealtimeOnly</drawerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+</Defs>

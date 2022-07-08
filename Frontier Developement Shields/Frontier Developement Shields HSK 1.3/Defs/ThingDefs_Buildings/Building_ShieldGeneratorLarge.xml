@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="StationaryElectricShieldBase">
+        <defName>Building_ShieldGeneratorLarge</defName>
+        <label>Large shield generator</label>
+        <description>Creates a larger shield capable of sustaining more heat before collapsing.</description>
+        <researchPrerequisites>
+            <li>ShieldGeneratorLarge</li>
+        </researchPrerequisites>
+        <graphicData>
+            <texPath>Things/Buildings/ShieldGeneratorLarge</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Buildings/ShieldGeneratorLarge</uiIconPath>
+        <size>(2,2)</size>
+        <fillPercent>0.5</fillPercent>
+        <specialDisplayRadius>25</specialDisplayRadius>
+        <passability>Impassable</passability>
+        <statBases>
+            <MaxHitPoints>1000</MaxHitPoints>
+            <WorkToBuild>3000</WorkToBuild>
+            <Mass>50</Mass>
+        </statBases>
+		<stuffCategories>
+			<li>RareMetallic</li>
+		</stuffCategories>
+		<costStuffCount>300</costStuffCount>
+		<costList>
+			<ComponentSpacer>40</ComponentSpacer>
+			<MagneticMaterial>30</MagneticMaterial>
+			<BiosyntheticMaterial>10</BiosyntheticMaterial>
+			<AdvMechanism>10</AdvMechanism>
+			<Microchips>10</Microchips>
+		</costList>
+        <comps>
+            <li Class="FrontierDevelopments.Shields.Comps.CompProperties_ShieldRadial">
+                <minRadius>5</minRadius>
+                <maxRadius>25</maxRadius>
+                <ticksPerExpansion>2</ticksPerExpansion>
+            </li>
+            <li Class="FrontierDevelopments.General.Comps.CompProperties_HeatSink">
+                <grams>2000</grams>
+                <specificHeat>.385</specificHeat>
+                <conductivity>100</conductivity>
+                <minorThreshold>100</minorThreshold>
+                <majorThreshold>200</majorThreshold>
+                <criticalThreshold>400</criticalThreshold>
+                <maximumTemperature>800</maximumTemperature>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>7</glowRadius>
+                <glowColor>(100,200,255,0)</glowColor>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="FrontierDevelopments.Shields.Deployment.ShieldDeploymentSizeExtension">
+                <deploymentSize>6.0</deploymentSize>
+            </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>
+

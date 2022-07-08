@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SK_AA_Insect">
+        <defName>AA_FireWasp</defName>
+        <label>fire wasp</label>
+        <description>Fire wasps are predatory creatures that feed on burning flesh and vegetation. The wasps themselves are not particularly dangerous for humans, though they may prey on small animals and pets. The danger comes from their eggs, whether fertilized or not: they constantly produce an intense heat, that might even cause fires in the vicinity. A single fire wasp egg unthinkingly placed in a refrigerator will be enough to spoil all the food inside.</description>
+        <statBases>
+            <MoveSpeed>1.5</MoveSpeed>
+            <ComfyTemperatureMin>10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>175</ComfyTemperatureMax>
+            <MarketValue>350</MarketValue>
+            <ArmorRating_Heat>5</ArmorRating_Heat>
+            <Flammability>0</Flammability>
+            <MeatAmount>40</MeatAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>AA_BurningAndFeedingBite</li>
+                </capacities>
+                <cooldownTime>1.5</cooldownTime>
+                <power>3</power>
+                <linkedBodyPartsGroup>AA_Sting</linkedBodyPartsGroup>
+                <chanceFactor>0.8</chanceFactor>
+            </li>
+            <li>
+                <label>claws</label>
+                <capacities>
+                    <li>AA_BurningAndFeedingBite</li>
+                </capacities>
+                <power>1</power>
+                <cooldownTime>1.55</cooldownTime>
+                <linkedBodyPartsGroup>LegAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.1</chanceFactor>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.85</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+                <chanceFactor>0.1</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_Floating">
+
+			</li>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>AA_FireWaspEggFertilized</eggFertilizedDef>
+                <eggUnfertilizedDef>AA_FireWaspEggUnfertilized</eggUnfertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>10</eggLayIntervalDays>
+                <eggCountRange>1~2</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>true</predator>
+            <body>AA_Wasp</body>
+            <maxPreyBodySize>0.5</maxPreyBodySize>
+            <baseBodySize>0.79</baseBodySize>
+            <baseHealthScale>2</baseHealthScale>
+            <baseHungerRate>0.3</baseHungerRate>
+            <foodType>OmnivoreAnimal</foodType>
+            <wildness>0.7</wildness>
+            <manhunterOnDamageChance>0.02</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>15</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.5</minAge>
+                    <soundWounded>AA_Wasp</soundWounded>
+                    <soundCall>AA_Wasp</soundCall>
+                    <soundAngry>AA_Wasp</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_FireyShockTroop</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_FireyShockTroopDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_FireWasp</defName>
+        <label>fire wasp</label>
+        <race>AA_FireWasp</race>
+        <ecoSystemWeight>0.5</ecoSystemWeight>
+        <combatPower>80</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <wildGroupSize>
+            <min>3</min>
+            <max>8</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_FireWasp/AA_FireWasp</texPath>
+                    <drawSize>1</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_FireWasp/AA_Dessicated_FireWasp</texPath>
+                    <drawSize>1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_FireWasp/AA_FireWasp</texPath>
+                    <drawSize>1.5</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_FireWasp/AA_Dessicated_FireWasp</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_FireWasp/AA_FireWasp</texPath>
+                    <drawSize>2</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.4, 0.4)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_FireWasp/AA_Dessicated_FireWasp</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

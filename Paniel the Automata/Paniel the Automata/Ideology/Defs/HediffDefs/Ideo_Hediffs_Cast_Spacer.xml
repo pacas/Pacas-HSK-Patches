@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================================== 전투 지휘 모듈 ====================================-->
+    <HediffDef ParentName="RoleStatBuff">
+        <defName>PN_OfficerCommand</defName>
+        <label>module active (officer)</label>
+        <description>By encouraging and commanding nearby allies, this person can enhance their focus in combat and thus their battle performance.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="HediffCompProperties_GiveHediffsInRange">
+                <range>9.9</range>
+                <mote>Mote_CombatCommand</mote>
+                <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetMechs>false</canTargetMechs>
+                    <onlyTargetColonists>true</onlyTargetColonists>
+                </targetingParameters>
+                <hediff>PN_OfficerCommandBuff</hediff>
+            </li>
+            <li Class="MoharHediffs.HediffCompProperties_PostRemoveTrigger_HediffAdd">
+                <triggeredHediff>
+                    <li>PN_OfficerCommandOverload</li>
+                </triggeredHediff>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+                </statOffsets>
+                <statFactors>
+                    <AimingDelayFactor>0.80</AimingDelayFactor>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <HediffDef ParentName="RoleStatBuff">
+        <defName>PN_OfficerCommandBuff</defName>
+        <label>officer command</label>
+        <description>Combat abilities are boosted thanks to being near someone who is using the officer command ability.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>false</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="HediffCompProperties_Link">
+                <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+                <maxDistance>10</maxDistance>
+                <customMote>Mote_CombatCommandLinkLine</customMote>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+                </statOffsets>
+                <statFactors>
+                    <AimingDelayFactor>0.80</AimingDelayFactor>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>PN_OfficerCommandThought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>PN_OfficerCommandBuff</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>command from automaton</label>
+                <description>I can't believe I have to follow the commands of an automaton.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>PN_OfficerCommandThoughtforPN</defName>
+        <workerClass>MoharThoughts.RaceBPHediff</workerClass>
+        <stages>
+            <li>
+                <label>command from officer</label>
+                <description>The officer is with us. We will be able to win this battle under the officer's command.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <MoharThoughts.MTWDef>
+        <defName>PNMTW_OfficerCommandThoughtforPN</defName>
+        <thought>PN_OfficerCommandThoughtforPN</thought>
+        <race>Paniel_Race</race>
+        <hediff>PN_OfficerCommandBuff</hediff>
+        <bodyPart>PNBrain</bodyPart>
+        <bpNum>1</bpNum>
+    </MoharThoughts.MTWDef>
+
+    <HediffDef>
+        <defName>PN_OfficerCommandOverload</defName>
+        <label>module overloaded</label>
+        <labelNoun>module overloaded</labelNoun>
+        <description>module overloaded</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>60000</disappearsAfterTicks>
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.50</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <!--==================================== 마이스터 모듈 ====================================-->
+    <HediffDef ParentName="RoleStatBuff">
+        <defName>PN_MeisterAdvice</defName>
+        <label>module active (meister)</label>
+        <description>By encouraging and advising nearby allies, this person can enhance their focus in engineer work performance.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="HediffCompProperties_GiveHediffsInRange">
+                <range>9.9</range>
+                <mote>Mote_WorkCommand</mote>
+                <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetMechs>false</canTargetMechs>
+                    <onlyTargetColonists>true</onlyTargetColonists>
+                </targetingParameters>
+                <hediff>PN_MeisterAdviceBuff</hediff>
+            </li>
+            <li Class="MoharHediffs.HediffCompProperties_PostRemoveTrigger_HediffAdd">
+                <triggeredHediff>
+                    <li>PN_OfficerCommandOverload</li>
+                </triggeredHediff>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <MiningSpeed>1.25</MiningSpeed>
+                    <SmithingSpeed>1.25</SmithingSpeed>
+                    <DeepDrillingSpeed>1.25</DeepDrillingSpeed>
+                    <GeneralLaborSpeed>1.25</GeneralLaborSpeed>
+                    <ConstructionSpeed>1.25</ConstructionSpeed>
+                    <DrugCookingSpeed>1.25</DrugCookingSpeed>
+                </statFactors>
+            </li>
+        </stages>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <HediffDef ParentName="RoleStatBuff">
+        <defName>PN_MeisterAdviceBuff</defName>
+        <label>meister's advice</label>
+        <description>work abilities are boosted thanks to being near someone who is using the meister's advice ability.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>false</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="HediffCompProperties_Link">
+                <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+                <maxDistance>10</maxDistance>
+                <customMote>Mote_WorkCommandLinkLine</customMote>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <statFactors>
+                    <MiningSpeed>1.25</MiningSpeed>
+                    <SmithingSpeed>1.25</SmithingSpeed>
+                    <DeepDrillingSpeed>1.25</DeepDrillingSpeed>
+                    <GeneralLaborSpeed>1.25</GeneralLaborSpeed>
+                    <ConstructionSpeed>1.25</ConstructionSpeed>
+                    <DrugCookingSpeed>1.25</DrugCookingSpeed>
+                </statFactors>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>PN_MeisterAdviceThought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>PN_MeisterAdviceBuff</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>advice from automaton</label>
+                <description>I can't believe I have to follow the advice of an automaton.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!--==================================== 집중 의료 모듈 ====================================-->
+    <HediffDef ParentName="RoleStatBuff">
+        <defName>PN_IntensiveMedical</defName>
+        <label>module active (intensive medical)</label>
+        <description>The hediff created by activating intensive medical ability.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>0.2</MoveSpeed>
+                </statOffsets>
+                <statFactors>
+                    <MedicalTendSpeed>1.20</MedicalTendSpeed>
+                    <MedicalTendQuality>1.20</MedicalTendQuality>
+                    <MedicalOperationSpeed>1.20</MedicalOperationSpeed>
+                    <MedicalSurgerySuccessChance>1.20</MedicalSurgerySuccessChance>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="MoharHediffs.HediffCompProperties_PostRemoveTrigger_HediffAdd">
+                <triggeredHediff>
+                    <li>PN_OfficerCommandOverload</li>
+                </triggeredHediff>
+            </li>
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDef>PN_ImmunityDriveAbility</abilityDef>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <!--면역증진-->
+    <HediffDef ParentName="RoleStatBuff">
+        <defName>PN_ImmunityDrive</defName>
+        <label>immunity drive</label>
+        <description>immunity drive</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <li>
+                <statFactors>
+                    <ImmunityGainSpeed>1.25</ImmunityGainSpeed>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <!--==================================== 야전 의료 모듈 ====================================-->
+    <HediffDef ParentName="RoleStatBuff">
+        <defName>PN_FieldMedic</defName>
+        <label>module active (field medic)</label>
+        <description>The hediff created by activating field medic ability.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MoveSpeed>0.4</MoveSpeed>
+                </statOffsets>
+                <statFactors>
+                    <MedicalTendSpeed>1.50</MedicalTendSpeed>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="MoharHediffs.HediffCompProperties_PostRemoveTrigger_HediffAdd">
+                <triggeredHediff>
+                    <li>PN_OfficerCommandOverload</li>
+                </triggeredHediff>
+            </li>
+            <li Class="HediffCompProperties_GiveAbility">
+                <abilityDef>PN_StimPackAbility</abilityDef>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <!--스팀팩-->
+    <HediffDef ParentName="RoleStatBuff">
+        <defName>PN_StimPack</defName>
+        <label>stim pack injected</label>
+        <description>stim pack injected</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <li>
+                <painFactor>0.5</painFactor>
+                <restFallFactor>0.5</restFallFactor>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.30</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <MentalBreakThreshold>-0.12</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="MoharHediffs.HediffCompProperties_PostRemoveTrigger_HediffAdd">
+                <triggeredHediff>
+                    <li>PN_StimPackSideEffect</li>
+                </triggeredHediff>
+            </li>
+            <li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+                <hediffToNullify>
+                    <li>PN_StimPackSideEffect</li>
+                </hediffToNullify>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>PN_StimPackThought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>PN_StimPack</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>high on stim pack</label>
+                <description>Feeling pumped! Let's do this!</description>
+                <baseMoodEffect>20</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <HediffDef>
+        <defName>PN_StimPackSideEffect</defName>
+        <label>stim pack side effect</label>
+        <labelNoun>stim pack side effect</labelNoun>
+        <description>stim pack side effect</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <maxSeverity>1.0</maxSeverity>
+        <initialSeverity>1.0</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1</severityPerDay>
+                <showDaysToRecover>true</showDaysToRecover>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+        <stages>
+            <li>
+                <label>extreme</label>
+                <minSeverity>0</minSeverity>
+                <painFactor>3</painFactor>
+                <restFallFactorOffset>0.3</restFallFactorOffset>
+                <hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>-0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>major</label>
+                <minSeverity>0.80</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>minor</label>
+                <minSeverity>0.90</minSeverity>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThoughtDef>
+        <defName>PN_StimPackSideEffectThought</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>PN_StimPackSideEffect</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>stim pack withdrawal</label>
+                <description>I'm all fuzzy and can't think straight. My limbs feel heavy, I'm tired and hungry, everything hurts. And why won't my eyes focus properly?</description>
+                <baseMoodEffect>-15</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

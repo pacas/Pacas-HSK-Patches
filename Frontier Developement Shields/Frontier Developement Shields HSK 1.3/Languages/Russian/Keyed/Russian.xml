@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    
+    <!-- Settings ///////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+    <!-- Integrations Section -->
+    <fd.settings.shield.integrations.heading>Интеграции</fd.settings.shield.integrations.heading>
+
+    <fd.settings.shield.climatecontrol.label>Включить поддержку Centralized Climate Control (требуется рестарт!)</fd.settings.shield.climatecontrol.label>
+    <fd.settings.shield.climatecontrol.description>Обеспечивает охлаждение щитов через трубы Centralized Climate Control</fd.settings.shield.climatecontrol.description>
+
+    <fd.settings.shield.badhygiene.label>Включить поддержку Dubs Bad Hygiene (требуется рестарт!)</fd.settings.shield.badhygiene.label>
+    <fd.settings.shield.badhygiene.description>Включает охлаждение щитов с использованием охлаждающих строений Dubs Bad Hygiene</fd.settings.shield.badhygiene.description>
+
+    <!-- General section -->
+    <fd.settings.shield.general.heading>Общие настройки</fd.settings.shield.general.heading>
+
+    <fd.settings.shield.shootout.label>Включить обстрел из щита</fd.settings.shield.shootout.label>
+    <fd.settings.shield.shootout.description>Позволяет выстрелам, исходящим из щита, выходить за пределы щита</fd.settings.shield.shootout.description>
+
+    <fd.settings.shield.shootin.label>Разрешить стрельбу по дружественным щитам</fd.settings.shield.shootin.label>
+    <fd.settings.shield.shootin.description>Разрешить колонистам пытаться стрелять в дружественные щиты (для тестирования, не рекомендуется для нормального игрового процесса!)</fd.settings.shield.shootin.description>
+
+    <fd.settings.shield.blockskyfallers.label>Блокировать воздушные цели</fd.settings.shield.blockskyfallers.label>
+    <fd.settings.shield.blockskyfallers.description>Включает блокировку воздушных целей. Отключение этой функции может быть полезно, чтобы позволить модам, которые не поддерживаются, приземляться в пределах щитов.</fd.settings.shield.blockskyfallers.description>
+
+    <fd.settings.shield.autosaveskyfallers.label>Автосохранение при воздушных событиях</fd.settings.shield.autosaveskyfallers.label>
+    <fd.settings.shield.autosaveskyfallers.description>Включает автосохранение в случаях, когда приземляющиеся объекты могут воздействовать на щиты. Это позволяет отменить события, когда вещи неожиданно ударяют по щиту (обычно из-за необходимости поддержки мода).</fd.settings.shield.autosaveskyfallers.description>
+
+    <!-- Performance Section -->
+    <fd.settings.shield.performance.heading>Производительность</fd.settings.shield.performance.heading>
+    <fd.settings.shield.performance.description>Настройки, относящиеся к производительности. Отключение любых из них повысит производительность игры за счет того, что ИИ не будет понимать, что экранировано щитом.</fd.settings.shield.performance.description>
+
+    <fd.settings.shield.performance.target.label>Включить предпочтение ИИ стрелять по неэкранированным целям (Влияние: низкое)</fd.settings.shield.performance.target.label>
+    <fd.settings.shield.performance.target.description>Включение позволяет ИИ предпочитать стрелять по неэкранированным целям</fd.settings.shield.performance.target.description>
+
+    <fd.settings.shield.performance.cast.label>Разрешить ИИ пытаться стрелять из экранированных областей (Влияние: высокое).</fd.settings.shield.performance.cast.label>
+    <fd.settings.shield.performance.cast.description>Включение позволяет ИИ находить экранированные области для стрельбы. Отключение приведет к тому, что ИИ не будет учитывать экранирование как часть расчета укрытия.</fd.settings.shield.performance.cast.description>
+
+    <fd.settings.shield.performance.verb.label>Разрешить ИИ проверять, попадет ли его выстрел в щит (Влияние: среднее).</fd.settings.shield.performance.verb.label>
+    <fd.settings.shield.performance.verb.description>Включение позволяет ИИ проверять свои линии выстрелов. Отключение заставит пешки стрелять в дружественные щиты в бою и может привести к тому, что охотники будут бесконечно стрелять в щиты во время охоты.</fd.settings.shield.performance.verb.description>
+    
+    <fd.settings.shield.performance.flee.label>Разрешить ИИ проверять, могут ли они прятаться под щитами (Влияние: среднее).</fd.settings.shield.performance.flee.label>
+    <fd.settings.shield.performance.flee.description>Включение позволяет ИИ проверить свое окружение. Отключение заставит пешки стрелять в радиусе метра от щита.</fd.settings.shield.performance.flee.description>
+
+    <!-- Power section -->
+    <fd.settings.shield.power.heading>Энергия</fd.settings.shield.power.heading>
+
+    <fd.settings.shield.power.per_tile.label>Мощность на тайл</fd.settings.shield.power.per_tile.label>
+    <fd.settings.shield.power.minimum_online.label>Минимальная мощность в сети</fd.settings.shield.power.minimum_online.label>
+
+    <!-- Integrity section -->
+    <fd.settings.shield.integrity.heading>Целостность</fd.settings.shield.integrity.heading>
+
+    <fd.settings.shield.integrity.power_per_damage.label>Мощность за каждый урон</fd.settings.shield.integrity.power_per_damage.label>
+    <fd.settings.shield.integrity.drop_pod_damage.label>Урон от падения капсулы</fd.settings.shield.integrity.drop_pod_damage.label>
+    <fd.settings.shield.integrity.skyfaller.label>Урон метеоритом</fd.settings.shield.integrity.skyfaller.label>
+
+    <!-- Thermal section-->
+    <fd.settings.shield.thermal.heading>Тепловые настройки</fd.settings.shield.thermal.heading>
+
+    <fd.settings.shield.thermal.per_power.label>Тепло / энергия</fd.settings.shield.thermal.per_power.label>
+
+    <fd.settings.shield.thermal.label>Включить тепло щита</fd.settings.shield.thermal.label>
+    <fd.settings.shield.thermal.description>Позволяет щиту греться. Может привести к сбоям в работе щитов и возникновению инцидентов.</fd.settings.shield.thermal.description>
+
+    <fd.settings.shield.minor_thermal_incidents.label>Включить незначительные тепловые инциденты</fd.settings.shield.minor_thermal_incidents.label>
+    <fd.settings.shield.minor_thermal_incidents.description>Инциденты ограничены воздействием только на щит</fd.settings.shield.minor_thermal_incidents.description>
+
+    <fd.settings.shield.major_thermal_incidents.label>Включить значительные тепловые инциденты</fd.settings.shield.major_thermal_incidents.label>
+    <fd.settings.shield.major_thermal_incidents.description>Инциденты ограничены воздействием только на щит и сеть электропитания</fd.settings.shield.major_thermal_incidents.description>
+
+    <fd.settings.shield.critical_thermal_incidents.label>Включить критические тепловые инциденты</fd.settings.shield.critical_thermal_incidents.label>
+    <fd.settings.shield.critical_thermal_incidents.description>Инциденты могут влиять на щит, сеть электропитания и карту</fd.settings.shield.critical_thermal_incidents.description>
+    
+    <!-- Alerts /////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <fd.shields.alert.lowpower.label>Щиты отключены из-за низкой мощности</fd.shields.alert.lowpower.label>
+    <fd.shields.alert.lowpower.description>{0} Щит(ы) отключен(ы) из-за низкой мощности. Щиты должны быть подключены к электросети с батареями, имеющими не менее {1} накопленной энергии для работы.</fd.shields.alert.lowpower.description>
+
+    <!-- Incidents //////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+    <fd.shields.incident.offline.body>Генератор щита отключен</fd.shields.incident.offline.body>
+
+    <fd.shields.incident.skyfaller.blocked.body>Падающие обломки ударились о щит и были разрушены</fd.shields.incident.skyfaller.blocked.body>
+    <fd.shields.incident.droppod.blocked.body>Капсула столкнулась со щитом и была уничтожена</fd.shields.incident.droppod.blocked.body>
+    <fd.shields.incident.shuttle.blocked.body>Шаттл столкнулся со щитом и был уничтожен</fd.shields.incident.shuttle.blocked.body>
+    <fd.shields.incident.ship.blocked.body>Корабль столкнулся со щитом и был уничтожен</fd.shields.incident.ship.blocked.body>
+    <fd.shields.incident.crashpod.blocked.body>Часть разбившегося корабля ударилась о щит и была уничтожена</fd.shields.incident.crashpod.blocked.body>
+
+    <fd.shields.incident.minor.title>Бззт щита!</fd.shields.incident.minor.title>
+    <fd.shields.incident.minor.body>Катушка эмиттер перегрелась и вызвала короткое замыкание, потеряно {0} Wd энергии их сети электропитания.</fd.shields.incident.minor.body>
+
+    <fd.shields.incident.major.title>Поломка щита!</fd.shields.incident.major.title>
+    <fd.shields.incident.major.body>Катушка эмиттер перегрелась и сломалась, потеряно {0} Wd энергии их сети электропитания.</fd.shields.incident.major.body>
+
+    <fd.shields.incident.critical.title>Щит взорвался</fd.shields.incident.critical.title>
+    <fd.shields.incident.critical.body>Катушка эмиттер перегрелась и взорвалась, потеряно {0} Wd энергии их сети электропитания.</fd.shields.incident.critical.body>
+
+    <!-- UI /////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- Text inspection -->
+    <fd.heatsink.temperature>Температура радиатора</fd.heatsink.temperature>
+
+    <shield.status.offline>Щит отключен</shield.status.offline>
+    <shield.status.no_power>Не подключен к источнику питания</shield.status.no_power>
+    <shield.status.unpowered>Питание отключено</shield.status.unpowered>
+    <shield.status.no_battieres>Нет батарей</shield.status.no_battieres>
+    <shield.status.battery_too_low>Доступная мощность аккумулятора низкая</shield.status.battery_too_low>
+    <shield.status.internal_battery_discharged>Внутренняя батарея разряжена</shield.status.internal_battery_discharged>
+    <shield.status.thermal_safety>Обеспечение безопасности теплового отключения</shield.status.thermal_safety>
+    <shield.status.online>Щит включен</shield.status.online>
+
+    <!-- Gizmos -->
+    <radius.label>Радиус</radius.label>
+    <radius.description>Устанавливает радиус щита</radius.description>
+    
+    <thermal_shutoff.label>Отключить при перегреве</thermal_shutoff.label>
+    <thermal_shutoff.description>Предотвращает повреждение катушки эмиттера щита от чрезмерного нагрева</thermal_shutoff.description>
+    
+    <charge_internal_battery.label>Внутренняя аккумуляторная батарея</charge_internal_battery.label>
+    <charge_internal_battery.description>Набирает энергию от любых подключенных аккумуляторов для зарядки внутренней батареи</charge_internal_battery.description>
+    
+    <fd.shield.render_field.label>Переключить видимость</fd.shield.render_field.label>
+    <fd.shield.render_field.description>Переключает видимость поля (только для косметических целей)</fd.shield.render_field.description>
+    
+    <fd.heatsink.climate.net.connect.label>Использовать вентялиционную сеть</fd.heatsink.climate.net.connect.label>
+    <fd.heatsink.climate.net.connect.description>Подключите щит к вентялиционной сети</fd.heatsink.climate.net.connect.description>
+
+    <fd.heatsink.dubs.net.connect.label>Используйте вентиляционные трубы</fd.heatsink.dubs.net.connect.label>
+    <fd.heatsink.dubs.net.connect.description>Подключите щит к трубам системы кондиционирования воздуха</fd.heatsink.dubs.net.connect.description>
+    
+    <FrontierDevelopments.Shields.ITab.Shield>Щит</FrontierDevelopments.Shields.ITab.Shield>
+    <FrontierDevelopments.General.CancelFlick>Сбросить</FrontierDevelopments.General.CancelFlick>
+    <FrontierDevelopments.Shields.ITab.CanBlock>Запас заряда аккумулятора</FrontierDevelopments.Shields.ITab.CanBlock>
+
+</LanguageData>

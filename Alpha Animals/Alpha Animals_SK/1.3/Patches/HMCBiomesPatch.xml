@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>HMC Biomes</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Aerofleet"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.4</HmcIronWoodForest>
+                        <HmcBambooGrove>0.4</HmcBambooGrove>
+                        <HmcSavanna>0.4</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_AnimusVox"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.05</HmcIronWoodForest>
+                        <HmcBambooGrove>0.05</HmcBambooGrove>
+                        <HmcSavanna>0.05</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_ArcticLion"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.01</HmcIronWoodForest>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_BedBug"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.05</HmcIronWoodForest>
+                        <HmcBambooGrove>0.03</HmcBambooGrove>
+                        <HmcSavanna>0.03</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_BloodShrimp"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcSavanna>0.01</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_BoulderMit"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.05</HmcIronWoodForest>
+                        <HmcBambooGrove>0.1</HmcBambooGrove>
+                        <HmcSavanna>0.1</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Bumbledrone"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.05</HmcIronWoodForest>
+                        <HmcBambooGrove>0.05</HmcBambooGrove>
+                        <HmcSavanna>0.05</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_DecayDrake"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.05</HmcIronWoodForest>
+                        <HmcBambooGrove>0.05</HmcBambooGrove>
+                        <HmcSavanna>0.01</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Feralisk"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.07</HmcIronWoodForest>
+                        <HmcBambooGrove>0.07</HmcBambooGrove>
+                        <HmcSavanna>0.07</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_FissionMouse"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.03</HmcIronWoodForest>
+                        <HmcBambooGrove>0.07</HmcBambooGrove>
+                        <HmcSavanna>0.03</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Frostmite"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.01</HmcIronWoodForest>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Groundrunner"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.05</HmcIronWoodForest>
+                        <HmcBambooGrove>0.2</HmcBambooGrove>
+                        <HmcSavanna>0.2</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Helixien"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.05</HmcIronWoodForest>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_MeadowAve"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.2</HmcIronWoodForest>
+                        <HmcBambooGrove>0.4</HmcBambooGrove>
+                        <HmcSavanna>0.4</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_MegaLouse"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.03</HmcIronWoodForest>
+                        <HmcBambooGrove>0.03</HmcBambooGrove>
+                        <HmcSavanna>0.03</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Needlepost"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcSavanna>0.01</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_OcularJelly"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.005</HmcIronWoodForest>
+                        <HmcBambooGrove>0.005</HmcBambooGrove>
+                        <HmcSavanna>0.005</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_OvergrownColossus"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.02</HmcIronWoodForest>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_PebbleMit"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.07</HmcIronWoodForest>
+                        <HmcBambooGrove>0.07</HmcBambooGrove>
+                        <HmcSavanna>0.07</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Razorjack"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.01</HmcIronWoodForest>
+                        <HmcSavanna>0.1</HmcSavanna>
+                        <HmcBambooGrove>0.01</HmcBambooGrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_RipperHound"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.01</HmcIronWoodForest>
+                        <HmcSavanna>0.01</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_ShockGoat"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.02</HmcIronWoodForest>
+                        <HmcBambooGrove>0.07</HmcBambooGrove>
+                        <HmcSavanna>0.1</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Slurrypede"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.01</HmcIronWoodForest>
+                        <HmcBambooGrove>0.01</HmcBambooGrove>
+                        <HmcSavanna>0.01</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Swarmling"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.01</HmcIronWoodForest>
+                        <HmcBambooGrove>0.01</HmcBambooGrove>
+                        <HmcSavanna>0.01</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_TetraSlug"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.001</HmcIronWoodForest>
+                        <HmcBambooGrove>0.001</HmcBambooGrove>
+                        <HmcSavanna>0.001</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Thermadon"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.01</HmcIronWoodForest>
+                        <HmcBambooGrove>0.01</HmcBambooGrove>
+                        <HmcSavanna>0.01</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Wildpod"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.1</HmcIronWoodForest>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Wildpawn"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.1</HmcIronWoodForest>
+                        <HmcBambooGrove>0.1</HmcBambooGrove>
+                        <HmcSavanna>0.1</HmcSavanna>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
+

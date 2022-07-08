@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <ThingSetMakerDef>
+    <defName>AA_Meteorite</defName>
+    <root Class="AlphaBehavioursAndEvents.ThingSetMaker_SpecialMeteorite" />
+  </ThingSetMakerDef>
+  
+    <ThingSetMakerDef>
+    <defName>AA_AlphaResourcePod</defName>
+    <root Class="AlphaBehavioursAndEvents.ThingSetMaker_AlphaResourcePod" />
+  </ThingSetMakerDef>
+
+ 
+  
+</Defs>

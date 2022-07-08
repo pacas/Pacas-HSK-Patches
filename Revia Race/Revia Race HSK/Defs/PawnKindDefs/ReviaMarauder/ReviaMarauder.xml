@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef ParentName="ReviaPawnBase">
+        <defName>ReviaRaceMarauder</defName>
+        <label>revia marauder</label>
+        <race>ReviaRaceAlien</race>
+        <defaultFactionType>ReviaMarauderFaction</defaultFactionType>
+        <combatPower>75</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.6~0.8</gearHealthRange>
+        <apparelTags>
+            <li>Neolithic</li>
+            <li>Medieval</li>
+            <li>Apparel_TacVest</li>
+            <li>Apparel_Backpack</li>
+            <li>Apparel_TribalBackpack</li>
+        </apparelTags>
+        <apparelMoney>1200~1800</apparelMoney>
+        <weaponTags>
+            <li>ReviaMeleeBasic</li>
+            <li>ReviaMeleeIntermediate</li>
+            <li>ReviaRangedBasic</li>
+            <li>ReviaRangedIntermediate</li>
+        </weaponTags>
+        <initialWillRange>0.5~0.8</initialWillRange>
+        <initialResistanceRange>8~14</initialResistanceRange>
+        <weaponMoney>1600~2400</weaponMoney>
+        <techHediffsChance>0</techHediffsChance>
+        <invNutrition>5</invNutrition>
+        <inventoryOptions>
+            <skipChance>0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>30</choiceChance>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>0~1</countRange>
+                </li>
+                <li>
+                    <choiceChance>30</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>10~50</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>5</min>
+                    <max>10</max>
+                  </primaryMagazineCount>
+                  <sidearms>
+                    <li>
+                      <generateChance>0.2</generateChance>
+                      <sidearmMoney>
+                        <min>40</min>
+                        <max>100</max>
+                      </sidearmMoney>
+                      <weaponTags>
+                        <li>ReviaMeleeBasic</li>
+                        <li>ReviaMeleeIntermediate</li>
+                      </weaponTags>
+                    </li>
+                  </sidearms>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+</Defs>

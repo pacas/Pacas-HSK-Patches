@@ -1,0 +1,4687 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+    <AlienRace.BackstoryDef Name="RabbieBackStory" Abstract="True">
+        <disallowedTraits>
+            <li>
+                <defName>Beauty</defName>
+                <degree>-2</degree>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>Nerves</defName>
+                <degree>-2</degree>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>DrugDesire</defName>
+                <degree>-1</degree>
+                <chance>100</chance>
+            </li>
+        </disallowedTraits>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <forcedHediffs>
+            <li>PlanetariumAddiction</li>
+        </forcedHediffs>
+    </AlienRace.BackstoryDef>
+
+    <!-- 유년기 래비-->
+
+    <!-- 래비 이주선 고아 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Shiporphan</defName>
+        <title>Rabbie Shiporphan</title>
+        <titleShort>Orphan</titleShort>
+        <baseDescription>[PAWN_nameDef]은 외우주로 이주하는 날에, 가족과 다른 이주선에 태워지고 말았습니다. 새로운 달에서 깨어난 [PAWN_pronoun]은 생존을 위해 주로 도시 건설에 참여하고 급여를 받았습니다. 일은 고되고 가족들은 영영 볼 수 없었지만 [PAWN_pronoun]은 적응하고 있었습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Construction</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+            <li>
+                <defName>Nerves</defName>
+                <degree>1</degree>
+            </li>
+        </forcedTraits>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 농장 아이 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Farmkid</defName>
+        <title>Rabbie Farmkid</title>
+        <titleShort>Farmkid</titleShort>
+        <baseDescription>[PAWN_nameDef]은 유리너머 깊은 우주가 올려다보이는 달의 온실 농장에서, 부모님의 일을 도우며 사랑받는 아이로 자랐습니다. \n\n[PAWN_pronoun]네 밭은 크지 않아서 넉넉한 살림은 아니었지만, 학교에서는 공부를 하고 집에서는 여러 채소와 풀, 그리고 당근을 기르는 지식을 알게 되었습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 레스토랑 견습생 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Dishwasher</defName>
+        <title>Rabbie Dishwasher</title>
+        <titleShort>dishwasher</titleShort>
+        <baseDescription>[PAWN_nameDef]은 식당에서 접시를 닦고 청소를 하며, 어깨 너머로 선배들의 요리를 배웠습니다. [PAWN_pronoun]가 만든 채소 요리는 좋은 평가를 받진 못했지만 동료들은 맛있게 먹어주었습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+ 
+    <!-- 래비 소년병 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Childsoldier</defName>
+        <title>Rabbie Childsoldier</title>
+        <titleShort>Childsoldier</titleShort>
+        <baseDescription>[PAWN_nameDef]은 전투가 벌어지는 달에서 태어났습니다. 부서진 대피소에까지 적들이 들이닥쳤을 때, [PAWN_pronoun]은 버려진 총을 집어들고 싸우는 길을 택했습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-4</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Artistic</li>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 도시 소매치기 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Pickpocket</defName>
+        <title>Rabbie Pickpocket</title>
+        <titleShort>Pickpocket</titleShort>
+        <baseDescription>아직 개발중인 달에서 태어난 [PAWN_nameDef]은 해진 옷을 입고 맨발로 돌아다니며, 래비들이 많이 모이는 시내와 지하철 역에서 특유의 손재주로 짐 속에 손을 집어넣어 물건을 훔치며 생계를 이었습니다. \n\n어느 날, 성격 나쁜 범죄자 래비에게 소매치기를 들킨 [PAWN_pronoun]은 흠씬 두들겨 맞고 다시는 그런 일을 하지 않았습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 학생 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Student</defName>
+        <title>Rabbie Student</title>
+        <titleShort>Student</titleShort>
+        <baseDescription>[PAWN_nameDef]은 평화로운 달에서 주택가의 집과 학교를 통학하는 학생이었습니다. 크리켓을 치는 걸 좋아하고, 성적과 진학을 걱정하는 평범한 학생입니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+        </forcedTraits>
+        <workDisables>
+        </workDisables>
+
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 은둔형 외톨이 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Hikikomori</defName>
+        <title>Rabbie Hikikomori</title>
+        <titleShort>Hikikomori</titleShort>
+        <baseDescription>래비 사회에 잘 적응하지 못한 [PAWN_nameDef]은 컴퓨터와 서버가 돌아가는 소음과 모니터의 빛만이 있는 작은 쪽방에서 자신만의 세계에 틀어박혀 영상이나 저작물을 만들곤 했습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-5</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 뒷골목 대장 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Bully</defName>
+        <title>Rabbie Bully</title>
+        <titleShort>Bully</titleShort>
+        <baseDescription>어린 시절, [PAWN_nameDef] 은 푸른 네온사인의 불빛이 비쳐 들어오는 도시의 뒷골목에서, 자신을 따르는 아이들과 함께 뭉친 두려움을 모르는 무법자였습니다. 누구든 [PAWN_pronoun]의 심기에 거슬리면 무자비한 주먹에 맞고 앞니에 깨물리는 걸 피할 수 없었습니다</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+            <li>
+                <defName>Brawler</defName>
+            </li>
+        </forcedTraits>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 저택의 양녀 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Adoptedchild</defName>
+        <title>Adopted child</title>
+        <titleShort>Adopted child</titleShort>
+        <baseDescription>[PAWN_nameDef]은 달도시 장교의 저택에서 어릴적 허드렛일을 하며 자랐습니다. \n\n다행히도 [PAWN_pronoun]의 주인은 좋은 사람이어서, [PAWN_nameDef]를 양녀로 받아들여 다른 자제와 함께 귀족 교육을 듣게 해 주었습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 사관학교 생도 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Academystudent</defName>
+        <title>Mil Academy student</title>
+        <titleShort>Academy student</titleShort>
+        <baseDescription>[PAWN_nameDef]은 대대로 군직에 종사한 집안에서 태어난 아이입니다. \n\n본인의 의사는 둘째였고, 가족들의 기대로 인해 정규 교육 대신 래비 사관학교에 들어가 군인 혹은 장교로 입대하기 위해 공부와 훈련에만 힘썼습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 날품팔이 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Daylaborer</defName>
+        <title>Rabbie Day laborer</title>
+        <titleShort>Day laborer</titleShort>
+        <baseDescription>누구도 [PAWN_nameDef]이 어디에서 왔는지 어디로 가는지 모릅니다. [PAWN_pronoun] 같은 아이는 어디에나 있고 어디에도 없는 그런 고아였고, 그날 그날 품팔이로 생계를 이었습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 사육당번 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Feeder</defName>
+        <title>Rabbie Feeder</title>
+        <titleShort>Feeder</titleShort>
+        <baseDescription>[PAWN_nameDef]은 학교에서 기르는 털 쥐와 족제비를 보살피고 사육하는 당번이었습니다. 양동이에 물을 받아 거북이의 등을 닦아 주는것도 잊지 않았습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 중산층 아이 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Child</defName>
+        <title>Rabbie Child</title>
+        <titleShort>Child</titleShort>
+        <baseDescription>[PAWN_nameDef]은 도심 한가운데 위치한 아파트에서 부모님의 따뜻한 사랑을 받으며 자라난 착한 토끼였습니다. 친구들에게도 항상 상냥했습니다. \n\n[PAWN_pronoun]은 높은 아파트 발코니에서 낮에는 따듯한 빛으로, 밤에는 푸른색과 네온사인에 감싸인 달의 도시 풍경을 그리곤 했습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>Kind</defName>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 학생 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Topstudent</defName>
+        <title>Rabbie Student</title>
+        <titleShort>Student</titleShort>
+        <baseDescription>[PAWN_nameDef]은 달의 도시 아파트에서 부모님과 떨어져 자취를 하는 학생이었습니다. 늦은 시간까지 공부하고 혼자 시내를 걸어 돌아오는것은 외롭기도 했지만 학업 성과는 뚜렷했습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>4</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 학생회 위원 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Studentunion</defName>
+        <title>Rabbie Student Union</title>
+        <titleShort>Student Union</titleShort>
+        <baseDescription>[PAWN_nameDef]은 많은 일을 합니다. 선생님의 서류를 옮겨 주기도 하고, 교칙을 지키지 않는 아이들을 잡기도 하고, 학생회의 예산을 집행하는 일도 말이지요.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>4</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 어린 음악가 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Singer</defName>
+        <title>Rabbie Small singer</title>
+        <titleShort>Small singer</titleShort>
+        <baseDescription>어린 [PAWN_nameDef]은 래비들이 좋아하는 노래를 만들기도 부르기도 하는 어린 스타였습니다. 많은 래비들이 [PAWN_pronoun]가 유명인이 될 거라 생각했습니다. 자신도 그렇게 생각했습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Plants</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 전력관리국 사환 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Clerk</defName>
+        <title>Clerk Energysupply</title>
+        <titleShort>Clerk</titleShort>
+        <baseDescription>[PAWN_nameDef]은 래비티시 제국의 전력관리국에서, 잔심부름을 하며 일을 배우는 아이였습니다. \n\n[PAWN_pronoun]가 태어난 달은 전쟁 중이었기 떄문에, 기초교육을 받는 대신 직원으로서의 교육을 받게 되었습니다</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 영재 책벌레 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Bookworm</defName>
+        <title>Rabbie Bookworm</title>
+        <titleShort>Bookworm</titleShort>
+        <baseDescription>[PAWN_nameDef]은 평범한 가정에서 태어났지만 책을 좋아하고 뭐든지 빠르게 배워서, 일찍 고등 교육기관에 입학한 촉망받는 아이였습니다. \n\n하지만 책에 묻혀 지냈던 시간이 너무 길어서였는지, 다른 래비들과 친밀한 관계를 쌓거나 외부 활동을 하는데엔 조금 미숙했던 것 같습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>5</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>FastLearner</defName>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 토끼굴 노예 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Rabbitholeslave</defName>
+        <title>Rabbithole Slave</title>
+        <titleShort>Slave</titleShort>
+        <baseDescription>이주선이 도착한지 얼마 안 되어, 한창 개발중인 달의 도시에서는 불법적인 일들이 일어나곤 합니다. \n\n[PAWN_nameDef]은 불행하게도, 어린 시절부터 래비 매매단에 유괴되어 야삽을 하나 들고 죽도록 토끼굴을 파며 광물을 채굴해야 했습니다. 토끼굴이 매몰되는 사고를 겪고 간신히 살아나기도 했고요. \n\n당연하게도 교육을 받을 기회는 없었지요.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Construction</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-5</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 빈민층 아이 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Poorchild</defName>
+        <title>Rabbie Poorchild</title>
+        <titleShort>Poorchild</titleShort>
+        <baseDescription>[PAWN_nameDef]은 달도시의 가난한 빈민굴에서 태어났습니다. [PAWN_pronoun]의 부모들은 궁핍한 삶으로 싸웠으며 세파에 찌든 삶을 비관했습니다. 상냥한 학교 친구들이 [PAWN_pronoun]의 유일한 버팀목이 되어 주었습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Construction</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 공순이 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Gearhead</defName>
+        <title>Rabbie Gearhead</title>
+        <titleShort>Gearhead</titleShort>
+        <baseDescription>[PAWN_nameDef]은 특이하게도 어릴 적부터 기계와 전자장비들의 작동에 관심을 가졌습니다. 작은 창고에서 자신의 작업장을 차린 [PAWN_pronoun]은 TV나 라디오를 수리해 주며 용돈을 벌고 그 돈으로 갖가지 기계를 만들었습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Construction</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 학교 보건위원 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Nursestudent</defName>
+        <title>Rabbie Nursestudent</title>
+        <titleShort>Nursestudent</titleShort>
+        <baseDescription>[PAWN_nameDef]은 보건위원으로서 아픈 학생들이 있는지 확인하고, 몸이 좋지 않은 친구들을 양호실로 데려가거나 간단한 붕대를 싸매 주곤 했습니다. \n\n양호실에서 많은 시간을 보낸 [PAWN_pronoun]은 양호 선생님과 깊게 친해져 여러 의학 지식을 쌓을 수 있었습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Medicine</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 실험토끼 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Subject</defName>
+        <title>Rabbie Subject</title>
+        <titleShort>Subject</titleShort>
+        <baseDescription>[PAWN_nameDef]은 아기 때 버려진 래비들이 모이는 시설에서 지내다 연구소로 보내졌고, 이후 엄격한 통제 하에서 길러져 유전자조작과 강화시술을 받아가며 자랐습니다. 과정을 견디지 못한 다른 아이들은 목숨을 잃었습니다만, [PAWN_pronoun]은 초인적인 감각을 얻고 군사시설로 보내질 예정이었습니다. [PAWN_pronoun]은 자신이 뭔가 잃어버린 것 같다는 생각을 했지만 그게 뭔지 잘 몰랐습니다. 아마 따뜻한 마음이었을 겁니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>4</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Animals</li>
+            <li>Social</li>
+            <li>Artistic</li>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>Psychopath</defName>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 채소 배달부 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Deliverygirl</defName>
+        <title>Rabbie Deliverygirl</title>
+        <titleShort>Delivery girl</titleShort>
+        <baseDescription>달의 도시에도 손하나 까닥하기 귀찮은 래비들이 있게 마련입니다. [PAWN_nameDef]은 특유의 빠른 발로 고층 빌딩의 신청한 집들을 찾아다니며 새벽에 일찍 신선한 식료품을 배달하는 일을 했습니다. 낮에 학교에선 자주 졸았지만요.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>SpeedOffset</defName>
+                <degree>1</degree>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 술집 종업원 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Pubwaitress</defName>
+        <title>Rabbie Pub waitress</title>
+        <titleShort>Waitress</titleShort>
+        <baseDescription>[PAWN_nameDef]은 도심의 술집에서 잔심부름을 하는 웨이트리스 였습니다. 플라네타륨을 섞은 갖가지 기호품들을 손님 래비들에게 갖다주기도 하고, 연초를 말기도 하며, 바텐더에게 간단한 칵테일을 직접 만드는 법을 배우기도 했습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 인테리어공 조수 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Builderassistant</defName>
+        <title>Rabbie Builder assistant</title>
+        <titleShort>Assistant</titleShort>
+        <baseDescription>[PAWN_nameDef]은 건물의 내부 인테리어 마감을 맡는 팀의 조수입니다. \n\n같은 팀의 래비들이 타일을 잘라 붙이고, 벽과 기둥과 천정 마감을 하는 동안 분주히 자재를 가져다 주고 청소를 했습니다. 보수도 짭짤했고, 기술도 배울 수 있어 [PAWN_nameDef]은 꿋꿋히 일했습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Construction</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 크리켓부 에이스 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_CricketMVP</defName>
+        <title>Rabbie Cricket MVP</title>
+        <titleShort>Cricket player</titleShort>
+        <baseDescription>래비티시 제국 속주에서 가장 인기있는 스포츠인 쇼트 크리켓의 선수는 학교에서도 대단한 스타이며, 빠른 발과 정확한 타격을 자랑하는 [PAWN_nameDef]가 바로 그 래비입니다. \n\n사물함이나 책상엔 항상 선물과 편지가 가득했습니다. 운동신경이 뛰어나고 사교성도 좋았지만 [PAWN_nameDef]은 점점 거만해졌습니다</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>Abrasive</defName>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 게임 스트리머 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Streamer</defName>
+        <title>Rabbie Streamer</title>
+        <titleShort>Streamer</titleShort>
+        <baseDescription>[PAWN_nameDef]은 특출난 실력으로 게임 플레이 방송을 하며 래비들 사이에서 인기를 얻어 스타가 되었습니다. \n\n어릴 적엔 달의 도시에서 [PAWN_nameDef]를 모르는 사람이 없었지만, 모종의 일로 은퇴를 한 후 유년기의 유명세는 빠르게 온 만큼 빠르게 잊혀졌습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 주둔군 아이 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Garrisonkid</defName>
+        <title>Rabbie Garrison kid</title>
+        <titleShort>Garrison kid</titleShort>
+        <baseDescription>[PAWN_nameDef]의 부모님은 행성에 내려온 군의 래비였습니다. 행성에서 태어나 어린 시절을 기지의 거주구에서 보내게 되었던 [PAWN_nameDef]은 똑같이 군인이 되고 싶은 꿈을 키워서, 최소 제한 나이에 사관학교에 들어가기로 했습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 총기 덕후 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Gunlover</defName>
+        <title>Rabbie Gun lover</title>
+        <titleShort>Gunlover</titleShort>
+        <baseDescription>달의 도시엔 총을 사용할 곳이 없지만 [PAWN_nameDef]은 총기의 정교함과 기계적 결합을 사랑해 여러 총기를 모았습니다. 그렇다고 군대에 지원하기에는, [PAWN_nameDef]는 군대의 구속과 빡빡한 훈련이 너무나 싫어서 사격장에서 답답함을 풀곤 했습니다.</baseDescription>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>-1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 낙제생 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Failedstudent</defName>
+        <title>Rabbie Failed student</title>
+        <titleShort>Student</titleShort>
+        <baseDescription>[PAWN_nameDef]은 게으른 학생이었습니다. 시험 전날까지도 게임을 하면서 밤을 새고, 자신과 비슷한 아이들과 어울려 다니곤 했습니다. 좋은 평가를 받을 턱이 없었지요.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>Industriousness</defName>
+                <degree>-1</degree>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 밴드부 아이 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Guitarist</defName>
+        <title>Rabbie Schoolband Guitar</title>
+        <titleShort>Guitarist</titleShort>
+        <baseDescription>[PAWN_nameDef]는 원래 하고싶은게 별로 없었지만, 좋은 선생님의 지도와 추천으로 학교의 밴드부에서 기타를 연주하는 기타리스트가 되었습니다. \n\n[PAWN_nameDef]은 축제나 공연도 성공적으로 해냈고 자신의 재능을 찾게 되었습니다.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 게임폐인 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Gamer</defName>
+        <title>Rabbie Gamer</title>
+        <titleShort>Gamer</titleShort>
+        <baseDescription>[PAWN_nameDef]은 게임을 하는게 취미가 아닌 일과였습니다. 뭔가를 짓고, 만들고, 생존하는 종류의 게임에 푹 빠진 [PAWN_nameDef]은 덕분에 잡다한 지식과 무언가를 꾸미는 것에 익숙했습니다. 가상에서지만.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 의사집안 아이 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Littledoc</defName>
+        <title>Rabbie Little Doctor</title>
+        <titleShort>Little Doc</titleShort>
+        <baseDescription>[PAWN_nameDef]은 의사 집안에서 태어났습니다. 아버지도, 어머니도 의사셨고 조부모님들도 의학계에 몸담고 있었습니다. \n\n[PAWN_nameDef]도 부모님의 기대를 받아 의학 공부를 하며 관련 학교로 진학했습니다. 자신이 훌륭한 의사가 될거라는 주변의 기대가 부담스럽기도 했습니다만.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Medicine</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 조직 심부름꾼 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Drugdealer</defName>
+        <title>Rabbie Drug dealer</title>
+        <titleShort>Drug Dealer</titleShort>
+        <baseDescription>[PAWN_nameDef]은 어릴 때 범죄조직의 심부름꾼으로 일했습니다. 학교 사물함에도 불법 밀수한 플라네타륨과 각종 약물들을 넣어두고 손님들에게 팔고, 상납금을 조직에 바치곤 했습니다. \n\n분명히 돈이 되는 일이었지만 몇번은 국가경찰에 덜미를 잡혀 끌려갈 뻔하고, 다른 조직에 의해 위험할 뻔한 적도 있었습니다.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>DrugDesire</defName>
+                <degree>1</degree>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 메트로놈 훈련생 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Metronometrainee</defName>
+        <title>Metronome trainee</title>
+        <titleShort>Trainee</titleShort>
+        <baseDescription>[PAWN_nameDef]은 살아있는 컴퓨터라 불리는, 메트로놈으로서 특수훈련을 받는 훈련생입니다. 일반인들과는 다른 특수한 논리 교육과 생각법을 배우고 보통보다 짙은 농도의 플라네타륨을 주입받습니다. \n\n[PAWN_nameDef]가 모든 과정을 끝까지 밟는다면 뭐든지 기억하고 복잡한 계산도 순식간에 해내는, 제국에 몇 안되는 특별한 비서가 될 예정입니다.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>6</amount>
+            </li>
+        </skillGains>
+        <linkedBackstory>Rabbie_Metronome</linkedBackstory>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 학생회 서기 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_StudentUnionclerk</defName>
+        <title>Student Clerk</title>
+        <titleShort>Clerk</titleShort>
+        <baseDescription>학생회의 회의내용을 기록하기도 하고 각종 문서화를 담당하는 [PAWN_nameDef]은 나서기를 꺼리고 조용한 토끼였습니다. 다들 집에 가고 조용해진 부실이나 도서실에 남아 자신의 책을 쓰기도 했습니다.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 의학협회 연구생 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Researchassistant</defName>
+        <title>Research assistant</title>
+        <titleShort>Research assistant</titleShort>
+        <baseDescription>[PAWN_nameDef]은 인간들의 행성을 여기저기 떠돌던 래비였지만 래비티시 제국의학원 연구자에게 거둬졌습니다. 낯선 달의 도시에서 자신과 같은 어린 래비들과의 사교를 어려워해서, 의학원의 연구보조로서 일하게 되었습니다.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>1</amount>
+            </li>
+
+            <li>
+                <defName>Plants</defName>
+                <amount>1</amount>
+            </li>
+
+            <li>
+                <defName>Intellectual</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 골목쟁이 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Alleylunatic</defName>
+        <title>Rabbie Alley lunatic</title>
+        <titleShort>Lunatic</titleShort>
+        <baseDescription>[PAWN_nameDef]은 인간 시골마을의 골목을 떠돌며 돌아다니는 래비였습니다. 마을 사람들에게 먹을 것을 얻어먹고 그들이 버린 옷을 입으면서 지냈습니다. 비싼 플라네타륨을 살 돈은 당연히 없었지요. \n\n인간들은 수군대며 손가락질을 했지만 플라네타륨을 섭취하지 못한 [PAWN_nameDef]의 뇌는 그게 무슨 뜻인지 잘 몰랐습니다. 그녀는 항상 헤실헤실 웃으며 방황했습니다.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 구멍가게 소녀 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Cornershopgirl</defName>
+        <title>Rabbie Cornershop girl</title>
+        <titleShort>Cornershop girl</titleShort>
+        <baseDescription>[PAWN_nameDef]은 달도시 정거장 인근의 벽에 칸막이를 치고, 겨우 래비 하나가 들어가는 크기의 가게를 차렸습니다. 판매 품목은 사탕과 초콜릿 그리고 연초 등이었습니다. \n\n간신히 자신과 가족들의 입에 풀칠할 정도였고 그나마도 불법이었지만, 동생이 여럿 딸린 고아라는 처지라는 사정에 제국 경찰들은 조금 눈 감아주기로 했습니다.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 동물샵 점주 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_PetshopKP</defName>
+        <title>Rabbie Petshop keeper</title>
+        <titleShort>Petshop Keeper</titleShort>
+        <baseDescription>[PAWN_nameDef]은 부모님이 전쟁에서 목숨을 잃어 펫샵을 물려받은 아이였습니다. 강아지나 고양이는 물론이고 파충류와 설치류들을 돌보는데 능숙했습니다. 영업도 잘하는 편이었지요.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 가문의 생존자 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Noblesurvivor</defName>
+        <title>Rabbie Noble survivor</title>
+        <titleShort>Noble</titleShort>
+        <baseDescription>[PAWN_nameDef]은 집안 대대로 장교인 명문가의 래비 아이였습니다. 적대하던 가문의 공작으로 집안이 몰락한 후, 가족은 뿔뿔히 흩어졌습니다. \n\n[PAWN_nameDef]은 생존을 위해 출신지인 달도시를 탈출했고, 신분을 숨긴 채 인간들의 도시와 행성, 위성을 전전했습니다. 여비를 벌기 위해 갖가지 고된 일도 하면서요.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 행성 토끼 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Planetrabbit</defName>
+        <title>Rabbie Planet rabbit</title>
+        <titleShort>Planet Rabbit</titleShort>
+        <baseDescription>[PAWN_nameDef]은 래비티시 제국이 없는 행성에서 태어난데다, 부모님과는 헤어져 버렸습니다. \n\n미개했던 행성이지만 촌락의 인간들은 아무것도 모르는 [PAWN_nameDef]을 데리고 살아주었고, 큰 돈을 들여 플라네타륨까지 구해 먹여 줬습니다. [PAWN_nameDef]도 그들을 부모처럼 여겨 열심히 농삿일을 도왔습니다</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 꽃집 아이 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Flowershopgirl</defName>
+        <title>Flowershop girl</title>
+        <titleShort>Flowershop girl</titleShort>
+        <baseDescription>[PAWN_nameDef]은 달도시 번화가 대로에 있는 비싼 꽃가게에서 일했습니다.\n\n말주변이 없는 [PAWN_nameDef]은 가게 뒤편에서 꽃을 재배하고, 습도를 맞추고 화환을 예쁘게 다듬는 일을 했습니다.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 상류층 아이 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Wealthychild</defName>
+        <title>Rabbie Wealthy child</title>
+        <titleShort>Wealthy child</titleShort>
+        <baseDescription>달의 도심 가운데에 밀집한 고층빌딩의 최상부층에는 돈 많은 토끼들이 살게 마련입니다. \n\n[PAWN_nameDef]은 부모님을 잘 만나 금수저를 물고 원하는 것은 모두 가지며 살고 있었습니다만, 어리석고 거만한 거북이같은 래비는 아니었습니다. 그녀는 유일하게 흥미를 가진 의학 지식을 꾸준히 쌓고 있었습니다.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Medicine</defName>
+                <amount>3</amount>
+            </li>
+
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+            <li>RBEnergy</li>
+            <li>RBTech</li>
+            <li>RBWorker</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 장교의 아이 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Officerchild</defName>
+        <title>Noble child</title>
+        <titleShort>Noble child</titleShort>
+        <baseDescription>[PAWN_nameDef]은 달의 도시에서 상급 장교의 아이로 태어났습니다. 가문의 예법에 따라 식사 때 당근을 자르는 법, 전투기 조종술, 총, 검을 다루는 법 등을 배우며 교양을 쌓았습니다만, 고된 일을 해본 경험은 없나 봅니다.</baseDescription>
+
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBRegular</li>
+            <li>RBElite</li>
+            <li>RBOfficer</li>
+        </spawnCategories>
+
+    </AlienRace.BackstoryDef>
+
+
+
+
+    <!-- 성년기 래비들 -->
+
+
+    <!-- RBEnergy -->
+
+    <!-- 래비 전력관리국 고위직 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_ExcutiveEnergy</defName>
+        <title>Excutive Energysupply</title>
+        <titleShort>Excutive</titleShort>
+        <baseDescription>[PAWN_nameDef]은 래비티시 제국의 핵심인 전력관리국의 고위 직원으로, 군의 보호를 받으며 달의 도시가 소모하는 막대한 전력을 수급하는 책무를 맡고 있습니다. \n\n[PAWN_nameDef]은 하나의 연구부서 혹은 기술자부서를 이끌며, 전력관리국 국장이 중요한 정책을 결정내릴수 있도록 보좌했습니다.</baseDescription>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>6</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <bioAgeRange>
+            <min>45</min>
+            <max>70</max>
+        </bioAgeRange>
+        <forcedHediffs>
+            <li>Whisperofplanet</li>
+        </forcedHediffs>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBEnergy</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 전력관리국 기술자 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_EngineerEnergy</defName>
+        <title>Engineer Energysupply</title>
+        <titleShort>Engineer</titleShort>
+        <baseDescription>[PAWN_nameDef]은 막대한 전력을 소모하는 아르콜로지인 달의 도시에 전력을 공급하는 책임기술자입니다. \n\n[PAWN_nameDef]은 공조기와 도시설비, 식량농장에 투입되는 전력량을 점검하고, 행성에서 보내지는 에너지를 수납하는 수납기를 점검하고 개선했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Cooking</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>6</amount>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBEnergy</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 전력관리국 과학자 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_ScientistEnergy</defName>
+        <title>Scientist Energysupply</title>
+        <titleShort>Scientist</titleShort>
+        <baseDescription>[PAWN_nameDef]은 래비티시 제국대학을 졸업하고 전력관리국에 들어온 엘리트 과학자입니다.\n\n최신 설비로 가득한 국립 연구실, 혹은 행성 현지에서, 효율적인 에너지 공급을 위해 [PAWN_nameDef]은 계속 연구에 힘썼습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Cooking</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>8</amount>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBEnergy</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 전력관리국 직원 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_StaffEnergy</defName>
+        <title>Staff Energysupply</title>
+        <titleShort>Staff</titleShort>
+        <baseDescription>[PAWN_nameDef]은 래비티시 전력관리국의 직원이자 요원입니다. \n\n발전소와 송전기를 관리하고 점검하는 것도, 새로 들어온 직원을 지도교육하는 것도, 각종 서류업무도 [PAWN_nameDef]의 일입니다. \n가끔은 군인들과 함께 총을 들고 행성민들에게서 시설을 지키기도 해야 했습니다. [PAWN_nameDef]는 제국의 젊은 중추입니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBEnergy</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 전력관리국 신입직원 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_JStaffEnergy</defName>
+        <title>Assistant Energysupply</title>
+        <titleShort>Assistant</titleShort>
+        <baseDescription>[PAWN_nameDef]은 대학을 졸업하고 관료로 발을 내딛은, 전력관리국의 신입 직원입니다. \n아직은 익숙지 않지만 곧 직책에 맞는 위치에 배속될 예정이었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBEnergy</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+
+
+
+
+
+
+    <!-- RBElite -->
+
+    <!-- 래비 엠프레스의 수행비서 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_EmpressSecretary</defName>
+        <title>Empress Secretary</title>
+        <titleShort>Secretary</titleShort>
+        <baseDescription>[PAWN_nameDef]는 래비 엠프레스에게 사랑받는 첩이면서 참모 혹은 개인비서의 역할을 함께 수행하는 영리한 래비였습니다. \n\n[PAWN_nameDef]의 조언으로 행성에 대한 제국의 정책이 결정된 때도 있는, 아주 중요한 위치였습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>8</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+            <li>
+                <defName>Beauty</defName>
+                <degree>1</degree>
+                <chance>100</chance>
+            </li>
+        </forcedTraits>
+        <workDisables>
+            <li>Cleaning</li>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBElite</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 이주선 감독자 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Starshipoverseer</defName>
+        <title>Starship Overseer</title>
+        <titleShort>Overseer</titleShort>
+        <baseDescription>[PAWN_nameDef]은 인공지능이 도저히 결정할 수 없는 중대한 기로에 놓였을 때에 가끔 동면에서 깨워져, 모두에게 최선이 될 정책을 결정하고 기술적인 문제도 해결하곤 했습니다. \n\n오랜 잠에 든 래비들을 다른 우주까지 안전히 데려가는 것이 [PAWN_pronoun]의 책무이지만, 기나긴 시간 동안 어둠속에 싸인 인공지능과의 단편적인 대면만이 기억 속에 켜켜이 쌓여갔고 정신은 피폐해져 갔습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>4</amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+            <li>
+                <defName>NightOwl</defName>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBElite</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 함대 제독 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Fleetadmiral</defName>
+        <title>Rabbie Fleet admiral</title>
+        <titleShort>Admiral</titleShort>
+        <baseDescription>[PAWN_nameDef]은 래비티시 제국의 함대를 운용하는 제독들 중 하나입니다. \n\n제독들은 거의 우주의 기함에서 지내지만, [PAWN_nameDef]은 직접 행성을 살피고 관리하는것이 중요하다고 생각하고 있습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>4</amount>
+            </li>
+        </skillGains>
+        <bioAgeRange>
+            <min>45</min>
+            <max>70</max>
+        </bioAgeRange>
+        <forcedHediffs>
+            <li>Whisperofplanet</li>
+        </forcedHediffs>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBElite</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 메트로놈 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Metronome</defName>
+        <title>Rabbie Metronome</title>
+        <titleShort>Metronome</titleShort>
+        <baseDescription>[PAWN_nameDef]은 메트로놈 훈련을 마친 래비입니다. [PAWN_nameDef]의 뇌에는 고용주가 필요로 하는 모든 정보가, 최적의 결론까지 몇가지 내린 채로 준비되어 있습니다. \n\n참모로서 메트로놈을 고용하기 위한 비용은 정말 막대해서 명문가의 가주나 래비 엠프레스, 혹은 행성의 주인 정도가 데리고 다닐 수 있습니다. \n\n그들은 절대 고용주를 배신하지 않는 것으로도 유명합니다. 감정이 없는 것으로도 말이지요.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>9</amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+            <li>
+                <defName>Psychopath</defName>
+            </li>
+        </forcedTraits>
+        <workDisables>
+            <li>ManualDumb</li>
+            <li>ManualSkilled</li>
+        </workDisables>
+        <linkedBackstory>Rabbie_Metronometrainee</linkedBackstory>
+
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBElite</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 승전 사령관 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Vcommander</defName>
+        <title>Victorious Commander</title>
+        <titleShort>Commander</titleShort>
+        <baseDescription>[PAWN_nameDef]은 정규군을 지휘하는 사령관입니다. \n\n[PAWN_nameDef]은 달토끼 연대 정규군을 이끌고 이 우주로 오기 전에, 강력한 기술과 군사력을 가진 적 문명을 상대로 총력전을 벌여 승리했습니다. \n그 외에도 여러 래비 제국을 수호했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>7</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <bioAgeRange>
+            <min>45</min>
+            <max>70</max>
+        </bioAgeRange>
+        <chronoAgeRange>
+            <min>352</min>
+        </chronoAgeRange>
+        <forcedHediffs>
+            <li>Whisperofplanet</li>
+        </forcedHediffs>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBElite</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+
+
+    <!-- RBOfficer -->
+
+    <!-- 래비 PMC 베테랑 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_PMCveteran</defName>
+        <title>Rabbie PMC veteran</title>
+        <titleShort>PMCveteran</titleShort>
+        <baseDescription>[PAWN_nameDef]은 PMC에서 수도 없이 많은 경험을 겪은 베테랑 용병 토끼입니다. \n\n매 교전 상황마다 적의 위치와 아군의 위치를 가늠해 최적의 결론을 도출했고, [PAWN_pronoun]의 선택은 전투를 승리로 이끌거나, 최소의 피해로 후퇴할 수 있게 했습니다. \n그 능력은 정규군 지휘자와 비견될 정도입니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>7</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <bioAgeRange>
+            <min>45</min>
+            <max>70</max>
+        </bioAgeRange>
+        <forcedHediffs>
+            <li>Whisperofplanet</li>
+        </forcedHediffs>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBOfficer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 전투기 조종사 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Fighterpilot</defName>
+        <title>Rabbie Pilot</title>
+        <titleShort>Pilot</titleShort>
+        <baseDescription>[PAWN_nameDef]은 함선에 실린 전투기를 조종하는 파일럿 래비였습니다. \n\n문제가 생겨 항법장치가 파괴되고 작전구역에서 튕겨져 나온 후, 동면장치를 가동한 전투기를 운행한지 알수없는 시일 후에 [PAWN_pronoun]은 간신히 변방계의 행성에 불시착했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBOfficer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 야전 의무관 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Fieldmedic</defName>
+        <title>Rabbie Field medic</title>
+        <titleShort>Medic</titleShort>
+        <baseDescription>[PAWN_nameDef]은 전쟁 중 래비들이 끔찍한 모습이 되는 꼴을 많이 봐 왔습니다. \n\n[PAWN_nameDef]은 자신의 앞주머니에 달린 붉은 십자 모양을 보고 희망을 찾은 전장의 부상토끼들을 치료하고, 이송하며 삶의 보람을 느낍니다. \n예전에 동료 의무관이 폭발에 휘말려 가루가 되는 걸 봤지만, 다른 이들을 구할 수 있다면 그렇게 죽어도 좋다 생각했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>5</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBOfficer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 생존한 장교 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Survivorofficer</defName>
+        <title>Survivor officer</title>
+        <titleShort>Officer</titleShort>
+        <baseDescription>어떤 달의 도시 외곽의 주택가에서, 젊은 장교인 [PAWN_nameDef]와 아내는 행복하게 살고 있었습니다. \n\n어느날 월면으로 빛줄기들이 떨어지고 도시가 파괴되기 전까지는요. 적 문명의 군사력은 강력했고 래비티시 제국은 피해가 큰 전쟁을 치렀습니다. \n\n[PAWN_nameDef]은 가족의 생사도 모른 채 방공호채로 우주로 튕겨졌습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBOfficer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 전술 지휘관 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_tacticalcommander</defName>
+        <title>Tactical commander</title>
+        <titleShort>Commander</titleShort>
+        <baseDescription>[PAWN_nameDef]은 처음엔 장교가 되는 것엔 관심도 없었습니다. \n\n그냥 평범한 보병 중 하나였던 [PAWN_nameDef]은 전쟁중에 분대원들과 고립되어 위기에 빠졌지만, 그들을 이끌고 적을 뚫어내 생환했고 전과를 인정받아 장교로 진급했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-2</amount>
+            </li>
+
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <bioAgeRange>
+            <min>30</min>
+            <max>70</max>
+        </bioAgeRange>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBOfficer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+
+
+    <!-- RBCivil -->
+
+    <!-- 래비 무기설계국 기술자 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Weaponarchitect</defName>
+        <title>Weapon architect</title>
+        <titleShort>Architect</titleShort>
+        <baseDescription>[PAWN_nameDef]은 래비티시 제국대학을 졸업한 엘리트 기술자입니다. \n\n이 우주의 래비용 무기체계와 강력한 장비들은 대부분 [PAWN_nameDef]의 팀인 콜리플라워 웍스에서 청사진을 그렸고, 테스트를 거쳐 생산 및 배치되었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Crafting</defName>
+                <amount>7</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>5</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBTech</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 내과 의사 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Internist</defName>
+        <title>Rabbie Internist</title>
+        <titleShort>Internist</titleShort>
+        <baseDescription>[PAWN_nameDef]은 달의 도시 한가운데에 개인병원을 차려 진료를 봤습니다. \n\n[PAWN_nameDef]은 여러 간호사들도, 환자 래비들에게도 존경받는 의사 선생님이었습니다. 병원 운영은 어려운 일이었으나 잘 해 나갔습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>-4</amount>
+            </li>
+
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 외과 의사 -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_surgeon</defName>
+        <title>Rabbie Surgeon</title>
+        <titleShort>Surgeon</titleShort>
+        <baseDescription>커다란 종합 병원의 외과부서에서 페이닥터로 월급을 받는 [PAWN_nameDef]는 응급환자가 발생할때마다 잠도 제대로 자지 못하고 달려와서 래비들을 치료하곤 했습니다. \n\가끔은 응급실에서 분란을 일으키는 술취한 래비들이나 폭력 래비들에게 혼쭐을 내 주기도 했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>-4</amount>
+            </li>
+
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 정신보건국 의료원  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_psychiatry</defName>
+        <title>Rabbie Psychiatry Doc</title>
+        <titleShort>Doctor</titleShort>
+        <baseDescription>[PAWN_nameDef]은 모종의 일로 래비 종족의 유전자에 각인된 정신적 불안정함을 치료하기 위해 보건의학에 평생을 바치기로 다짐했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>5</amount>
+            </li>
+
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 토끼굴 굴착공  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_excavator</defName>
+        <title>Rabbie Excavator</title>
+        <titleShort>Excavator</titleShort>
+        <baseDescription>토끼굴을 파는 것은 팔이 연약한 래비들은 기피하는 일이지만, 굴을 파는 본능이 강하게 남은 래비들이 있습니다. \n\n[PAWN_nameDef]은 바로 그러한 래비였고, [PAWN_pronoun]은 그동안 하던 일을 내려놓고서, 달의 갱도에서 드릴로 굴을 파고 보수를 받는 굴파기 전문가가 되었습니다. 어두운 굴에 있을때 뭐라 말할 수 없는 편안함을 느꼈습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>8</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-4</amount>
+            </li>
+
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>Undergrounder</defName>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 달농장 농부  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Moonfarmer</defName>
+        <title>Rabbie Moonfarmer</title>
+        <titleShort>Moonfarmer</titleShort>
+        <baseDescription>유리온실이 덮인 달의 토양에 쪼그려 앉아 감자와 당근, 브로콜리와 샐러리, 콜리플라워, 그리고 갖가지 곡물을 재배하는 것이 [PAWN_nameDef]의 일입니다.\n\n농부로서의 일에 편안함을 느낀 그녀는 복잡한 일을 생각하지 않고, 땀 흘리며 마음편히 살기로 했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>7</amount>
+            </li>
+
+        </skillGains>
+        <workDisables>
+            <li>Intellectual</li>
+        </workDisables>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 학교 교사  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Schoolteacher</defName>
+        <title>Rabbie School teacher</title>
+        <titleShort>Teacher</titleShort>
+        <baseDescription>[PAWN_nameDef] 은 래비 학생들을 사랑하고, 무한정 칭찬해주는 덕에 인기 많은 선생님이었습니다. \n\n졸업을 앞둔 학생들과 여행을 떠났을 때도 많은 래비 학생들이 [PAWN_pronoun]과 함께 앉길 원했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+            <li>
+                <defName>Kind</defName>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 사기업 영업요원  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Businessgirl</defName>
+        <title>Rabbie Businessgirl</title>
+        <titleShort>Businessgirl</titleShort>
+        <baseDescription>[PAWN_nameDef] 사기업의 영업요원입니다. 회사의 생산품을 수출하거나 수입해 이윤을 만듭니다. \n\n토착민과 분란이나 교섭이 일어나면 제국의 교섭권을 회사로 사들여 대상 종족과 접촉하고 협상하기도 했습니다.\n\n배가 고파지면 항상 해당 지역의 맛집을 찾는게 즐거움이었습니다. 덕분에 요리는 할 줄 몰랐어요.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>8</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>-4</amount>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 레스토랑 쉐프  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_chef</defName>
+        <title>Rabbie Chef</title>
+        <titleShort>Chef</titleShort>
+        <baseDescription>[PAWN_nameDef]이 만든 채소 요리는 소문이 널리 퍼져 먼 행성에서도 손님이 찾아오곤 했습니다. \n\n[PAWN_pronoun]은 자신의 요리가 종족을 넘어 통하리라 믿고 있습니다. 가게의 뒤에는 요리를 위해 텃밭에 신선한 채소를 기르기도 했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Cooking</defName>
+                <amount>7</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 보안국 요원  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_NatlAgent</defName>
+        <title>Nat'l Security Agent</title>
+        <titleShort>Agent</titleShort>
+        <baseDescription>어떤 래비는 이들은 존재하지 않는다고 말하곤 합니다. \n\n하지만 [PAWN_nameDef]은 분명히 존재했고, 음지에서 활동하며 래비티시 제국에 위협이 되는 사람, 음모, 단체 모두를 수단 방법을 가리지 않고 분쇄했습니다. \n\n공식적으로는, [PAWN_nameDef]은 덜떨어진 양복점 점원입니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>8</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>8</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Mining</li>
+            <li>Artistic</li>
+            <li>Cooking</li>
+            <li>Animals</li>
+            <li>PlantWork</li>
+            <li>Intellectual</li>
+        </workDisables>
+
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 니트족  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_neet</defName>
+        <title>Rabbie Neet</title>
+        <titleShort>Neet</titleShort>
+        <baseDescription>성격 때문이든 능력 때문이든, [PAWN_nameDef]은 자신에게 맞는 이렇다한 직업을 찾을 수 없었습니다. \n\n매일매일이 떠가는 구름처럼 무료하게 흘러갔고, 창 밖으로 다른 래비들이 바쁘게 살아가는 모습을 보며 마음 한구석이 약간은 조급해졌으나 또 다른 내일로 내일로 일을 미루고 말았습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 철근공  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Concreteworker</defName>
+        <title>R-Concrete worker</title>
+        <titleShort>Worker</titleShort>
+        <baseDescription>철근 콘크리트로 만들어진 건물을 짓는, 건설 노동자인 [PAWN_nameDef]은 달의 도시의 여러 건설현장에 투입되었습니다. \n\n일은 고되었으나 쉴 때엔 높은 고층건물의 골조 위에 앉아 도시를 내려보며, 달콤한 과자를 곁들인 플라네타륨 차를 마시고 기운을 차리곤 했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Construction</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 교통순경  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Trafficpolice</defName>
+        <title>Traffic policegirl</title>
+        <titleShort>Policegirl</titleShort>
+        <baseDescription>공식적으로 교차로에서 교통정리를 하는 게 [PAWN_nameDef]의 일이지만, 그런 풍경은 백수십년 전에나 있을 일입니다. \n\n자동화된 교통시스템들과 차량을 가지고 있어 [PAWN_pronoun]의 직책과 제복은 래비 경찰의 상징으로만 남았습니다. 실제로는 주택가를 자전거로 순찰합니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 바텐더   -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Bartender</defName>
+        <title>Rabbie Bartender</title>
+        <titleShort>Bartender</titleShort>
+        <baseDescription>깔끔한 넥타이와 정장 차림을 한 바텐더였던 [PAWN_nameDef]은 네온 사인이 번쩍이는 바에서 래비들의 칵테일 주문을 받았습니다. 고민거리를 상담하는 일도 했지요. \n\n[PAWN_pronoun]은 언젠가 자신의 가게를 운영하고 싶은 꿈을 키웠습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 연쇄살해범   -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Serialkiller</defName>
+        <title>Rabbie Serial killer</title>
+        <titleShort>killer</titleShort>
+        <baseDescription>의도치 않은 사고였습니다만, 다른 무고한 래비를 찔러 죽이고도 들키지 않은 [PAWN_nameDef]은 살해가 주는 두근거림에 깊이 빠져들었습니다. \n\n처음엔 불안감에 떨었으나 하루, 이틀 그리고 몇 달이 지나자 불안감은 안도감과 공허로 바뀌었고, 그 욕망을 계속해서 탐하기 시작했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+            <li>
+                <defName>Bloodlust</defName>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>Cannibal</defName>
+                <chance>50</chance>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 축사 주인   -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Stockfarmer</defName>
+        <title>Rabbie Stock farmer</title>
+        <titleShort>Farmer</titleShort>
+        <baseDescription>[PAWN_nameDef]은 보기드문 래비 가축농장의 주인이었습니다. \n\n달의 도시에 양질의 고기와 가죽 그리고 우유를 공급하는 [PAWN_pronoun]의 농장 덕에 가족들은 부를 쌓았습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 심우주의 조난자   -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Castaway</defName>
+        <title>Rabbie Castaway</title>
+        <titleShort>Castaway</titleShort>
+        <baseDescription>[PAWN_nameDef]은 인공지능조차 예측하지 못한 사고로 산산히 공중분해된 이주선에 실려 있던 래비 중 한 명입니다. \n\n[PAWN_nameDef]이 동면관 하나만 타고 언제부터 깊은 우주를 얼마나 떠돌았는지는 가늠조차 할 수 없지만, 어떤 행성에 닿은 [PAWN_pronoun]은 문득 동면관을 열게 되었고, 이곳저곳을 떠돌다 이 자리에 있게 되었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 저택 메이드   -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Maid</defName>
+        <title>Rabbie Maid</title>
+        <titleShort>Maid</titleShort>
+        <baseDescription>[PAWN_nameDef]은 래비티시 제국 명문가의 숙련된 메이드였습니다. 청소와 세탁, 다과와 차 준비 등 할 일은 수도 없이 많았지만 능숙하게 해냈습니다. \n\n피크닉을 나갈 때엔 언제나 아가씨들을 모셨으며, 기초적인 교육도 맡았습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Cooking</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 설비 유지보수원   -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_MMechanic</defName>
+        <title>Maintenance Mechanic</title>
+        <titleShort>Mechanic</titleShort>
+        <baseDescription>[PAWN_nameDef]은 달의 도시에 씌워진 거대한 풍경 스크린과 계절순환 시스템, 전력설비, 수도설비를 점검하고 보수하는 수많은 기술자 래비들 중 하나였습니다. \n\n어느 날, 실수로 안전사고를 일으켜 눈앞에서 동료를 죽게 만든 [PAWN_pronoun]은 귀를 감싸쥔 채로 직장에서 쫓겨나고 말았습니다. 피에 대한 공포도 함께 가진 채로요.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Construction</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>4</amount>
+            </li>
+
+        </skillGains>
+        <workDisables>
+            <li>Violent</li>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBTech</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 대기업 사원   -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Companyemployee</defName>
+        <title>Majorcompany employee</title>
+        <titleShort>Employee</titleShort>
+        <baseDescription>[PAWN_nameDef]은 학교를 졸업하고, 좋은 회사에 입사해 착실히 급여를 모으며 행복한 도심 속의 삶을 사는 소시민 래비였습니다. \n\n주말에 쇼핑을 하고, 맛있는 당근 요리를 먹으러 가는 것이 [PAWN_pronoun]의 행복이었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>2</amount>
+            </li>
+
+        </skillGains>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 술집 댄서   -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_BarDancer</defName>
+        <title>Rabbie Bar Dancer</title>
+        <titleShort>Dancer</titleShort>
+        <baseDescription>[PAWN_nameDef]은 래비들이 모이는 바에서 몸이 드러나는 옷을 입고, 무대 위에서 춤을 추며, 웃음을 팔았습니다. \n\n모두가 던져주는 돈은 급여보다도 큰 수입이 되었고, 벌이는 좋았지만 뭔가 허전한 마음은 돈으로도 채울 수 없었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+            <li>
+                <defName>Beauty</defName>
+                <degree>2</degree>
+                <chance>100</chance>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 풍속점 접객원   -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Prostitute</defName>
+        <title>Rabbie Prostitute</title>
+        <titleShort>Prostitute</titleShort>
+        <baseDescription>[PAWN_nameDef]은 풍속점에서 손님을 맞는 래비였습니다. 지명이 들어오면 손님과 마음과 몸을 겹쳐 음란한 일로 래비들을 위로했습니다. \n\n수많은 래비들과 몸을 겹쳤고, 일이 끝난 후의 뒷맛은 씁쓸했지만, 수입은 컸습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <forcedTraits>
+            <li>
+                <defName>Beauty</defName>
+                <degree>1</degree>
+                <chance>100</chance>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 아이돌   -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Staridol</defName>
+        <title>Rabbie Star Idol</title>
+        <titleShort>Idol</titleShort>
+        <baseDescription>[PAWN_nameDef]은 TV에서 청아한 목소리와 춤, 그리고 가녀리고 아름다운 소녀의 외모로 많은 인기를 얻은 아이돌이었습니다. \n\n[PAWN_nameDef]의 인기는 종족을 가리지 않았습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-1</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>8</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>5</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>Beauty</defName>
+                <degree>2</degree>
+                <chance>100</chance>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 가정주부   -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Housewife</defName>
+        <title>Rabbie housewife</title>
+        <titleShort>Housewife</titleShort>
+        <baseDescription>[PAWN_nameDef]은 도시에서 약간 벗어난 교외 주택에 살던 가정주부였습니다. \n\n가사와 빨래, 요리를 하며 잔디를 정돈하고 차 한잔을 하며 배우자가 돌아오길 기다리는 굴곡 없는 삶이 계속될 예정이었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Cooking</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 청소부   -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Streetcleaner</defName>
+        <title>Rabbie Streetcleaner</title>
+        <titleShort>Streetcleaner</titleShort>
+        <baseDescription>달의 도시에서도 누군가는 청소를 해야 했습니다. [PAWN_nameDef]이 바로 그 일을 맡은 래비였습니다. \n\n도시의 쓰레기통을 비우기를 반복하는 일이었지만 [PAWN_nameDef]는 행복했습니다. 사고로 다친 [PAWN_nameDef]의 머리로는 그보다 더 어려운 일은 할 수 없었으니까요. 그렇지만 마음만은 착했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Intellectual</li>
+            <li>ManualSkilled</li>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 빈민가 주민  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Poor</defName>
+        <title>Rabbie Poor</title>
+        <titleShort>Poor</titleShort>
+        <baseDescription>달의 도시의 외곽, 고층 건물들 밑엔 판자로 지은 빈민촌들이 있게 마련입니다. \n[PAWN_nameDef]은 빈민촌에서 궁핍함을 참고 견뎠지만 계속해서 얼마 안되는 급여를 받는 일밖에 얻을 수 없었습니다. \n\n[PAWN_nameDef]는 결국 도시를 떠나기로 결심했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Construction</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 PMC 중견  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_PMCmiddle</defName>
+        <title>Rabbie PMC middle</title>
+        <titleShort>PMCmiddle</titleShort>
+        <baseDescription>[PAWN_nameDef]은 군수회사 소속으로 인간 및 다른 종족과 다양한 교전을 겪었습니다. \n\n마음아프게도 같은 팀의 여러 동료들이 죽는 걸 봐 왔지만, [PAWN_pronoun]은 살아남았습니다. 전투 기술은 다듬어졌고, 미숙한 티는 숙련된 얼굴에 덮여 없어져 갑니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 PMC 신입  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_PMCrookie</defName>
+        <title>Rabbie PMC rookie</title>
+        <titleShort>PMCrookie</titleShort>
+        <baseDescription>[PAWN_nameDef]은 군직이 래비 사회에서 갖는 명예와 대우에도 불구하고, 입대보다는 급여를 훨씬 많이 받을수 있는 PMC에 들어가기를 택했습니다. \n\n[PAWN_nameDef]는 오직 큰 돈만이 필요한 사정이 있었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 스타포트 관제사  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Controller</defName>
+        <title>Starport Traffic con</title>
+        <titleShort>Controller</titleShort>
+        <baseDescription>[PAWN_nameDef]은 달의 도시의 우주공항으로 들어오는 여러 우주선들의 입출항을 관제하는 기술자였습니다. \n\n달의 도시와 거리가 꽤나 멀었기 떄문에 거의 우주공항의 숙소에서 생활했으며, 긴장을 놓으면 천문학적인 금액의 우주선들이나 화물선들이 파괴되거나 이탈할 수 있어 [PAWN_nameDef]은 신경질적으로 변했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>Nerves</defName>
+                <degree>-1</degree>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBTech</li>
+
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 약품 조제사  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_pharmacist</defName>
+        <title>Rabbie pharmacist</title>
+        <titleShort>pharmacist</titleShort>
+        <baseDescription>[PAWN_nameDef]은 달의 도시 번화가에 약국을 개업했습니다. \n\n감기약도, 발진에 듣는 약도, 복통에 먹는 약도 조제 가능했고 플라네타륨도 있었지만 안타깝게도 공부 때문에 침침해진 자신의 눈에 듣는 약은 없었습니다. \n\n장사는 잘 되었지만 비싼 가게 임대료로 인해 큰 돈은 벌지 못했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>5</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 파견 요리사  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Dispatchedcook</defName>
+        <title>Dispatched Cook</title>
+        <titleShort>Cook</titleShort>
+        <baseDescription>[PAWN_nameDef]은 출장을 다니는 고용 요리사입니다. \n\n제국의 행성 주둔지도, 용병 기지에도, 돈 많은 래비의 여행길에도 함께 다녔습니다. \n\n[PAWN_nameDef]은 갖은 재료와 식품을 다루고 이국적인 요리도 많이 접하게 되어 뛰어난 대체 요리법과 실력을 가지게 되었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 응급실 간호원  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Enurse</defName>
+        <title>Emergency Nurse</title>
+        <titleShort>Nurse</titleShort>
+        <baseDescription>[PAWN_nameDef]은 응급실에서 근무하는 간호사였습니다. \n\n응급실 특성 상 위험한 사고를 겪고 온 환자도, 급하게 대처해야하는 증세들도 많았습니다. 때문에 [PAWN_nameDef]은 스트레스 받는 업무를 빠르게, 빠르게 처리하길 원하는 래비가 되어갔습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Medicine</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>Neurotic</defName>
+                <degree>2</degree>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 공장 근로자  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Factoryworker</defName>
+        <title>Rabbie Factory Worker</title>
+        <titleShort>Worker</titleShort>
+        <baseDescription>[PAWN_nameDef]은 공장 컨베이어 벨트 앞에서 근무하는 근로자입니다. \n\n [PAWN_nameDef]는 자신이 만들고 있는 부품이 마지막에 무엇이 되는지 알 수 없었습니다. \n그녀의 일은 그저 복잡한 기계에 들어가는 부품들의 조립상태를 확인하고, 마무리가 덜 된 부품은 들어내서 조립하고 다시 벨트 위에 올려두는것의 반복이었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Intellectual</li>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 건설 목공  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Carpenter</defName>
+        <title>Rabbie Carpenter</title>
+        <titleShort>Carpenter</titleShort>
+        <baseDescription>[PAWN_nameDef]은 목재로 만들어진 집들을 짓는 목수입니다. \n\n커다란 건설현장에 다니지는 않았지만 작은 주택이나 예쁜 장식들이 달린 카페, 가게처럼 인테리어를 하는 곳으로 다니며 숙련된 기술을 발휘하고 보수를 받는 토끼였습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Construction</defName>
+                <amount>6</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 기업가  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Steve</defName>
+        <title>Rabbie Enterpriser</title>
+        <titleShort>Enterpriser</titleShort>
+        <baseDescription>[PAWN_nameDef]은 대부분의 래비들이 사용하는 통신기를 개발, 판매하는 기업을 창립했습니다. \n\n[PAWN_nameDef]가 혁신적이고 세련된 제품을 발표할 때마다 여러 래비들이 열광하며 [PAWN_nameDef]를 칭송했고 [PAWN_nameDef]는 큰 돈을 벌었습니다. 하지만 그의 창의성과 천재성 뒤에는 지독한 성격이 있었고 직원들은 고통받았습니다. \n\n그렇게 많은 적들을 만든 끝에 [PAWN_nameDef]은 회사에서 해고되고 말았습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Social</defName>
+                <amount>12</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>TooSmart</defName>
+            </li>
+        </forcedTraits>
+        <bioAgeRange>
+            <min>40</min>
+            <max>70</max>
+        </bioAgeRange>
+        <forcedHediffs>
+            <li>Whisperofplanet</li>
+        </forcedHediffs>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBTech</li>
+
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 제국대학교 학생  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Ustudent</defName>
+        <title>Nat'l University Student</title>
+        <titleShort>Student</titleShort>
+        <baseDescription>[PAWN_nameDef]은 래비티시 제국의 최고 고등 교육기관이며 기술과 문화의 산실인 제국대학의 촉망받는 인재입니다. \n\n대학의 선배들도, [PAWN_nameDef]도, 뒤이을 후배들도, 존경받는 외부의 군인들과 함께 자신들이 래비 제국을 이끌어 나가는 내부의 주축이 될 것이라 믿어 의심치 않습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Crafting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>4</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 제국대학원생  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_UUstudent</defName>
+        <title>Rabbie Graduate Student</title>
+        <titleShort>Student</titleShort>
+        <baseDescription>[PAWN_pronoun]는 잘못된 선택을 해서 비참한 생활을 하고 있었습니다. 후회해도 소용 없습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Construction</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>5</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 범죄조직 간부  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Mafia</defName>
+        <title>Rabbie Mafia Management</title>
+        <titleShort>Mafia</titleShort>
+        <baseDescription>[PAWN_nameDef]은 합법적인 사업을 하는 사기업의 부장입니다. \n\n적어도 겉으로는요. [PAWN_nameDef]은 스파이스 밀수, 도박게임장 운영, 클럽 운영 등 돈을 긁어모으는 온갖 사업에 손을 대고 있었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Intellectual</li>
+            <li>Caring</li>
+        </workDisables>
+        <bioAgeRange>
+            <min>30</min>
+        </bioAgeRange>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 지질학자  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_geologist</defName>
+        <title>Rabbie Geologist</title>
+        <titleShort>Geologist</titleShort>
+        <baseDescription>[PAWN_nameDef]은 보통 행성의 대기와 땅을 조사하고 자료를 만드는 일을 하지만, 가장 중요한 일은 플라네타륨의 함량을 측정하는 것입니다. \n\n제국의 이주선에서 가장 먼저 꺠어나서 본 행성에 내려오는것도 이들입니다. 플라네타륨 함량 미달인 행성의 달엔 래비티시 제국이 정착할 수 없으니까요.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Mining</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>5</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 광석 채굴가  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Minedigger</defName>
+        <title>Rabbie Minedigger</title>
+        <titleShort>Digger</titleShort>
+        <baseDescription>[PAWN_nameDef]은 어떤 정보를 얻어, 대출을 통해 행성의 작은 산을 사들였습니다. \n\n아는 래비들과 채굴팀을 꾸려 금이 나오리라는 기대로 꾸준히 파들어갔지만 산에서는 아무것도 나오지 않았고, 결국 채굴팀도 떠나갔습니다. \n\n[PAWN_nameDef]은 혼자서 계속 파들어갔으나 결국 파산하고 말았습니다. 남은건 어두운 곳에서 침침해진 눈 뿐이었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>7</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 별파편 수집가  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Stardebrisharvester</defName>
+        <title>Stardebris havester</title>
+        <titleShort>Havester</titleShort>
+        <baseDescription>작은 개인용 채굴우주선을 사들여 귀중한 별의 파편을 수집하러 다니던 [PAWN_nameDef]은 대처할 수 없는 속도로 돌진해온 운석 파편에 우주선이 궤뚫려 표류하고 말았습니다. \n\n긴 시간 끝에 다른 우주선에 의해 구조됐지만, 재산을 전부 처분해 구입한 우주선은 고철이 되고 말았습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Mining</defName>
+                <amount>5</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBTech</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 회사 디자이너  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Designer</defName>
+        <title>Rabbie Hired Designer</title>
+        <titleShort>Designer</titleShort>
+        <baseDescription>[PAWN_nameDef]은 달의 도시 외곽에 있는 작은 회사에 다닙니다. \n\n[PAWN_nameDef]는 물품을 기획하고 그리는 디자이너로 고용되었고, 빨리 경험을 쌓으려 했지만 아직까지는 큰 성과를 내지 못했습니다. \n하지만 긍정적인 마음은 잃지 않았지요.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Artistic</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBCivil</li>
+            <li>RBTech</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+
+
+
+    <!-- RBWanderer -->
+
+    <!-- 래비 도망친 노예  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Escapedslave</defName>
+        <title>Rabbie Escaped slave</title>
+        <titleShort>slave</titleShort>
+        <baseDescription>[PAWN_nameDef]은 행성의 나쁜 인간에게 납치되어 오래도록 노동과 불법적인 일까지 시켜지며 노예로 부려졌습니다. \n\n어느 날 [PAWN_pronoun]은 기회를 틈타 인간을 찌르고 도망쳤고 달의 도시로 돌아갈 방법을 찾고 있었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Plants</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Intellectual</li>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 탈영병  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Deserter</defName>
+        <title>Rabbie Deserter</title>
+        <titleShort>Deserter</titleShort>
+        <baseDescription>[PAWN_nameDef]은 마음이 심약해 군직에 어울리지 않는 래비였습니다. 총만 들면 두려움에 떨며 귀를 감싸쥐고 울상이 되었습니다. \n\n주변에서 의무병이나 군견병으로 복무하게 해 준 배려에도 불구하고, 결국 [PAWN_nameDef]은 도망을 치고 말았습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Medicine</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>6</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Violent</li>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 범죄조직 보스  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_MBoss</defName>
+        <title>Rabbie Mafia Boss</title>
+        <titleShort>Boss</titleShort>
+        <baseDescription>과거에 [PAWN_nameDef]은 래비 범죄 조직의 보스였습니다. \n\n경찰조직마저 장악하고 어떤 변방계의 달의 전체를 점령할 뻔했던 [PAWN_nameDef]의 폭력조직은, 엠프레스의 강압으로 나선 래비티시 제국의 정규군에 무자비하게 학살당하고 분쇄되고 말았습니다. \n\n하지만 [PAWN_nameDef]은 결국 막대한 보석금과 로비, 사법거래를 통해 풀려났습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>8</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>-4</amount>
+            </li>
+        </skillGains>
+        <bioAgeRange>
+            <min>50</min>
+            <max>70</max>
+        </bioAgeRange>
+        <forcedHediffs>
+            <li>Whisperofplanet</li>
+        </forcedHediffs>
+        <workDisables>
+            <li>Intellectual</li>
+            <li>Caring</li>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 정신나간 의사  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Maddoc</defName>
+        <title>Rabbie Mad doctor</title>
+        <titleShort>Doctor</titleShort>
+        <baseDescription>[PAWN_nameDef]은 달의 도시의 성형외과 의사였습니다. \n\n오랜 진료 끝에 자기가 생각하는 비뚤어진 아름다움을 고객에게 마음대로 시술했다가 달의 법정에 서게 됐습니다. 그 끔찍함에 달의 법관들도 고개를 젓고 [PAWN_nameDef]의 의사 면허를 취소시킨 후, 행성의 오지로 추방했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Animals</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>Psychopath</defName>
+            </li>
+            <li>
+                <defName>Bloodlust</defName>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 메크추적자  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Mechchaser</defName>
+        <title>Rabbie Mech chaser</title>
+        <titleShort>Chaser</titleShort>
+        <baseDescription>[PAWN_nameDef]은 가족들을 살해한 이 우주의 메카노이드를 전부 박멸하겠다는 복수의 일념으로 모든 것을 포기했습니다. \n\n개인 전투기를 타고 메카노이드를 추적하고 다닙니는 [PAWN_nameDef]는 벌써 혼자서 몇 건이나 메카노이드들의 자가생산 시설을 파괴했으며, 그런 [PAWN_nameDef]에게 제국의 보안국도 어느정도 지원을 하고 있습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>Nerves</defName>
+                <degree>2</degree>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 현상금 사냥꾼  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Bountyhunter</defName>
+        <title>Rabbie Bounty hunter</title>
+        <titleShort>Bountyhunter</titleShort>
+        <baseDescription>[PAWN_nameDef]은 인간들이 현상금을 건 대상을 죽이고 현상금을 수령하는 래비입니다. \n\n죽여서요. \n\n[PAWN_nameDef]는 살릴 수 있는 대상도 살려서 데려와 본 적이 없습니다. 심지어 생포하는 조건에 더 높은 금액이 걸려 있어도, 이미 생포한 대상의 뒤통수에 총알을 박아넣곤 했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>Bloodlust</defName>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 오지 의사  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_BackwardDoc</defName>
+        <title>Backward area Doc</title>
+        <titleShort>Doctor</titleShort>
+        <baseDescription>낙후하고 약품도 별로 없는 중세계 행성에서 [PAWN_nameDef]은 정체를 숨기고 의사로 활동했습니다. \n\n어느 날, 플라네타륨 차를 마시던 [PAWN_nameDef]를 엿보던 인간이 그것을 마녀의 약으로 고발하는 바람에 [PAWN_nameDef]는 재판대에 섰고, 그녀는 꼼짝없이 마녀로 몰렸습니다. \n\n[PAWN_nameDef]는 눈물을 머금고 감옥을 탈출해 우주선을 타고 다른 행성으로 향했습니다. 그녀가 정말 마녀인지 아닌지는 아무도 모릅니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Medicine</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Cooking</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>Bloodlust</defName>
+                <chance>50</chance>
+            </li>
+            <li>
+                <defName>Kind</defName>
+                <chance>50</chance>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 은퇴 지휘관  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_retiredcommander</defName>
+        <title>Retired commander</title>
+        <titleShort>Commander</titleShort>
+        <baseDescription>[PAWN_nameDef]은 은퇴한 래비티시 제국군의 지휘관입니다. 많은 군인들과 함께 작전을 수행하며 래비티시 제국을 지켜왔고, 명예롭게 퇴직했습니다. \n\n[PAWN_nameDef]은 이제 밭을 갈고, 맛있는 채소를 재배하며 평화롭게 살기를 바랍니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Mining</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <bioAgeRange>
+            <min>40</min>
+            <max>70</max>
+        </bioAgeRange>
+        <forcedHediffs>
+            <li>Whisperofplanet</li>
+        </forcedHediffs>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 참회하는 방랑자  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Penitentwanderer</defName>
+        <title>Penitent wanderer</title>
+        <titleShort>wanderer</titleShort>
+        <baseDescription>[PAWN_nameDef]은 래비티시 제국의 정규군이었으나 낙후된 변방계에서 원주민 마을에 정착했습니다. \n\n그들과 흙과 바람, 물 속을 다니며 자연으로 돌아간 해방감을 맛봤습니다. 그러나 자연 속에서라면 괜찮으리라는 기대에도 불구하고 플라네타륨이 고갈된 [PAWN_nameDef]은 의식이 없는 채로 마을 주민들을 쏘아 죽이고 말았습니다. \n\n비탄과 우울에 가득차 [PAWN_nameDef]은 참회하며 떠돌고 있습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>NaturalMood</defName>
+                <degree>-2</degree>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 생존한 보병  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Survivorinfantry</defName>
+        <title>Survivor Infantry</title>
+        <titleShort>Infantry</titleShort>
+        <baseDescription>[PAWN_nameDef]는 래비티시 제국의 정규군이며, 출신 달도시의 본행성은 이미 고도로 발달한 문명을 이룩한 곳이었습니다. \n\n본 행성과 래비티시 제국과의 미묘한 관계는 결국 전쟁으로 번졌고, [PAWN_nameDef]는 치열한 방어전을 치렀지만 아직 개발중이던 달의 도시는 버틸 수 없었습니다. 동면 탈출기에 몸을 싣고 떠난지 며칠만에, 지내던 달의 도시는 인간의 전쟁 기계들에 의해 철저히 파괴되었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 에뮤 잡이  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Emuhunter</defName>
+        <title>Rabbie Emu hunter</title>
+        <titleShort>Hunter</titleShort>
+        <baseDescription>[PAWN_nameDef]가 도착했던 행성은 전체가 실험장으로 쓰이는 바람에 생태계가 무너져 산과 들이 에뮤들로 들끓는 곳이었습니다. \n\n그녀는 이곳에서 인간들에게 돈을 받고, 에뮤를 제거하는 전문인력으로 고용됐었습니다. 그 한심하고 덜떨어진 생물체들은 쏴도 쏴도 끝이 없었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Medicine</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 마을 수호자  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_TGuardian</defName>
+        <title>Rabbie Town Guardian</title>
+        <titleShort>Guardian</titleShort>
+        <baseDescription>제국의 장교였던 [PAWN_nameDef]은 주둔하던 행성의 인간과 결혼했었습니다. 아이도 낳고, 가족을 위협하는 주변의 해적들은 라이플로 벌집을 만들어 버렸습니다. \n\n더 이상 그들의 행복을 위협하는 것은 없었습니다. 행성에 끝도 없는 빙하기가 오기 전까지는요. [PAWN_nameDef]는 가족들만 우주선에 태워 탈출을 시도했습니다만 배는 우주 한가운데에서 고장났고, 동면관에서 표류하게 되었습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Crafting</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 달의 항해자  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_MoonSailor</defName>
+        <title>Rabbie Moon Sailor</title>
+        <titleShort>Sailor</titleShort>
+        <baseDescription>[PAWN_nameDef]은 래비 동료들과 함께 우주선으로 달과 별 사이를 여행하며 모험하는 항해자였습니다. \n\n적은 행성 주민들을 괴롭히는 우주헤적들이었고, 전투와 승리의 나날이 계속되었습니다. 그러나 어느 날, 작정한 해적들의 매복에 걸려 [PAWN_nameDef]의 우주선은 격파되었고 어느 변방계에 떨어지고 말았습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>3</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBWanderer</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+
+
+    <!-- RBRegular -->
+
+    <!-- 래비 사막토끼 보병연대  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_DesertRegiment</defName>
+        <title>DesertRabbit Regiment</title>
+        <titleShort>Infantry</titleShort>
+        <baseDescription>[PAWN_nameDef]은 정규군 사막토끼 보병연대 출신입니다. \n\n사막에서의 작전은 적과의 먼 교전거리로 인해 정밀한 사격을 필요로 했고, 연대 병력들은 그러한 분야에 우위를 보이는 래비들을 우선으로 구성되었습니다. \n\n[PAWN_nameDef]도 마찬가지로 행성의 사막에서 작전을 몇 차례 치렀으며 원거리에 있는 적을 신중히 제압하는 능력을 키웠습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>7</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>5</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>ShootingAccuracy</defName>
+                <degree>1</degree>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBRegular</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 산토끼 레인저 연대  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_MountainRegiment</defName>
+        <title>HareRanger Regiment</title>
+        <titleShort>Ranger</titleShort>
+        <baseDescription>[PAWN_nameDef]은 정규군 산토끼 레인저 연대 출신입니다. \n\n산과 숲 등 험지에서의 작전은 기동력과 빠른 고지장악으로 낮은 지대에 화력을 퍼붓는 것이 가장 중요했고, 자연히 발이 빠른 래비들을 편성하게 되었습니다. \n\n[PAWN_nameDef]도 빠른 기동으로 적을 괴롭히고, 때로는 강력하게 부딪혀 섬멸하기도 했습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>7</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>SpeedOffset</defName>
+                <degree>1</degree>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBRegular</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 눈토끼 보병연대  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Snowrabbit</defName>
+        <title>Snowrabbit Regiment</title>
+        <titleShort>Ranger</titleShort>
+        <baseDescription>[PAWN_nameDef]은 정규군 눈토끼 보병연대 출신입니다. \n\n추운 극지에 주로 파견되는 이들은 극한의 상황에서도 인내하고 눈속에서 발걸음을 옮겨 적의 후방과 주요시설을 파괴했습니다. \n\n[PAWN_nameDef]도 여간한 상황에서는 눈 하나 까닥 않는 강인한 정신과 적응력을 가진 래비입니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>6</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>Nerves</defName>
+                <degree>2</degree>
+            </li>
+        </forcedTraits>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBRegular</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+    <!-- 래비 달토끼 우주해병  -->
+    <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+        <defName>Rabbie_Spacemarine</defName>
+        <title>Moonrabbit Spacemarine</title>
+        <titleShort>Spacemarine</titleShort>
+        <baseDescription>[PAWN_nameDef]은 달토끼 우주해병 연대 소속입니다. \n\n달의 도시를 방어하거나 적의 문명화된 도시에 투사되는 최정예 병력으로, 월면을 침략하러 내려온 인간이나 기계병기들은 달토끼 연대 특유의 폭풍같은 탄막에 걸려 분쇄되었습니다. \n\n이 우주에서 래비 제국의 적이 없어지면 달토끼 연대는 다른 개발중인 래비 제국으로 보내지는것이 전통이며, 제국의 영원한 수호자로 추앙받습니다. \n\n[PAWN_nameDef]도 마찬가지로 그렇게 몇번이고 미래의 래비 제국을 향해 작전을 다녔습니다만, 이젠 은퇴하고 가정을 꾸리고 싶은 마음도 있습니다.</baseDescription>
+
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <defName>Shooting</defName>
+                <amount>9</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>9</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-3</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Artistic</defName>
+                <amount>-3</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+        </workDisables>
+        <forcedTraits>
+            <li>
+                <defName>ShootingAccuracy</defName>
+                <degree>-1</degree>
+            </li>
+        </forcedTraits>
+        <chronoAgeRange>
+            <min>350</min>
+        </chronoAgeRange>
+        <spawnCategories>
+            <li>RBALL</li>
+            <li>RBRegular</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+
+
+    <!-- RBSardaukar -->
+
+    <!-- 래비 근위병  -->
+    <!--  <AlienRace.BackstoryDef ParentName="RabbieBackStory">
+    <defName>Rabbie_Sardaukar</defName>
+    <title>Empress Royal Guard</title>
+    <titleShort>Royalguard</titleShort>
+    <baseDescription>[PAWN_nameDef]은 제국이 아닌 래비 엠프레스에게 충성하는, 두려움을 모르는 병사들입니다. \n\n고도의 훈련으로 누구보다도 뛰어난 전투기술을 가지고, 추가된 유전자 조작과 생체실험으로 얻은 강한 육체는 발달된 래비들의 장비와 결합해 제국의 적들을 수도 없이 죽이며 [PAWN_nameDef]를 어떤 전장에서도 패배를 모르는 존재로 만들었습니다. \n\n하지만 [PAWN_pronoun]는 거대한 벌레가 들끓는 어떤 사막 행성의 원주민들에게 전투에서 패하고, 충격을 맛본 기억이 있습니다.</baseDescription>
+
+    <slot>Adulthood</slot>
+    <skillGains>
+      <li>
+        <defName>Shooting</defName>
+        <amount>12</amount>
+      </li>
+      <li>
+        <defName>Melee</defName>
+        <amount>12</amount>
+      </li>
+      <li>
+        <defName>Animals</defName>
+        <amount>-3</amount>
+      </li>
+      <li>
+        <defName>Plants</defName>
+        <amount>-4</amount>
+      </li>
+      <li>
+        <defName>Artistic</defName>
+        <amount>-3</amount>
+      </li>
+    </skillGains>
+    <workDisables>
+    </workDisables>
+    <forcedTraits>
+      <li>
+        <defName></defName>
+        <degree></degree>
+      </li>
+    </forcedTraits>
+    <chronoAgeRange>
+      <min>350</min>
+    </chronoAgeRange>
+    <spawnCategories>
+      <li>RBSardaukar</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef> -->
+
+
+
+
+
+
+
+</Defs>

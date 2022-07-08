@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Turret_TeslaStunner</defName>
+    <label>Tesla Stunner</label>
+    <description>A portable tesla coil based stunning device. May cause an electrical explosion when damaged. When a target enters its range, it will direct an arc of electricity to continuously stun them until disabled.</description>
+    <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Security/TurretMini_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>UI/TeslaIcon</uiIconPath>
+    <uiIconScale>2</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.1</Flammability>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>10</Mass>
+      <Bulk>15</Bulk>
+      <Beauty>-10</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>60</wickTicks>
+        <explosiveRadius>3</explosiveRadius>
+        <explosiveDamageType>Stun</explosiveDamageType>
+        <chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>1800</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.55</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <stuffCategories>
+      <li>RuggedMetallic</li>
+    </stuffCategories>
+    <costStuffCount>170</costStuffCount>
+    <costList>
+      <ComponentIndustrial>15</ComponentIndustrial>
+      <Mechanism>5</Mechanism>
+      <ElectronicComponents>10</ElectronicComponents>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+    <tradeTags>
+      <li>CE_Turret</li>
+    </tradeTags>
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+    <building>
+      <ai_combatDangerous>false</ai_combatDangerous>
+      <turretGunDef>Tesla_Coil</turretGunDef>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>GunTurrets</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef Class="CombatExtended.Lasers.LaserBeamDefCE" ParentName="LaserBulletWhite">
+    <defName>Electric_Arc</defName>
+    <label>electric arc</label>
+    <graphicData>
+      <texPath>TeslaBolt</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>2.2</drawSize>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Taser</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <speed>170</speed>
+      <dropsCasings>false</dropsCasings>
+      <armorPenetrationSharp>100</armorPenetrationSharp>
+      <armorPenetrationBlunt>200</armorPenetrationBlunt>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseAutoTurretGun">
+    <defName>Tesla_Coil</defName>
+    <label>Tesla Coil</label>
+    <description>A tesla coil made to be mounted on a turret.</description>
+    <graphicData>
+      <texPath>Buildings/TeslaCoil</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>.75</drawSize>
+    </graphicData>
+    <tradeability>None</tradeability>
+    <techLevel>Spacer</techLevel>
+    <generateCommonality>0</generateCommonality>
+    <statBases>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.02</ShotSpread>
+      <SwayFactor>0.80</SwayFactor>
+      <RangedWeapon_Cooldown>0.05</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilPattern>Mounted</recoilPattern>
+        <recoilAmount>0.01</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Electric_Arc</defaultProjectile>
+        <warmupTime>0.05</warmupTime>
+        <range>8</range>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+        <soundCast>ChargeLance_Fire</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>10</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>

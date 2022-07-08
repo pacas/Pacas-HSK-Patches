@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<SkinSet>
+  
+   <lifeStage>
+    <appliesToAll>true</appliesToAll>
+    <variants>
+      <skin>
+        <color>(192,255,248)</color>
+        <commonality>0.5</commonality>
+        <texName>AA_FrostMite</texName>
+      </skin>
+      <skin>
+        <color>(192,231,255)</color>
+        <commonality>0.5</commonality>
+        <texName>AA_FrostMite</texName>
+      </skin>
+      
+    </variants>  
+	
+    <winterCoat>
+      <useWinterCoat>false</useWinterCoat>
+    </winterCoat>
+  </lifeStage>
+  
+</SkinSet>

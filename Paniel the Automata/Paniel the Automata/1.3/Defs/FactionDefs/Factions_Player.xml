@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <FactionDef Abstract="True" Name="Paniel_PlayerBase" ParentName="FactionBase">
+        <settlementTexturePath>Icon/Paniel_PlayerIcon</settlementTexturePath>
+        <colorSpectrum>
+            <li>(255, 255, 255)</li>
+        </colorSpectrum>
+    </FactionDef>
+
+    <!--스타트 팩션-->
+    <FactionDef ParentName="Paniel_PlayerBase">
+        <defName>Paniel_PlayerFaction</defName>
+        <label>Test Subject</label>
+        <description>This is the settlement where PnL industry is experimenting.</description>
+        <isPlayer>true</isPlayer>
+        <basicMemberKind>Paniel_ColonistPawn</basicMemberKind>
+        <pawnSingular>colonist</pawnSingular>
+        <pawnsPlural>colonists</pawnsPlural>
+        <techLevel>Industrial</techLevel>
+        <backstoryCategories>
+            <li>Offworld</li>
+        </backstoryCategories>
+        <factionIconPath>Icon/Paniel_PlayerIcon</factionIconPath>
+        <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <geneticVariance>1</geneticVariance>
+        <startingResearchTags>
+            <li>ClassicStart</li>
+        </startingResearchTags>
+        <apparelStuffFilter>
+            <thingDefs>
+                <li>Cloth</li>
+            </thingDefs>
+        </apparelStuffFilter>
+    </FactionDef>
+</Defs>

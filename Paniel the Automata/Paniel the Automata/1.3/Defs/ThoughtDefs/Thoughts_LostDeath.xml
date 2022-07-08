@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--==================================== 파니엘 파괴 ====================================-->
+    <ThoughtDef>
+        <defName>PN_KnowColonyAutomatonDied</defName>
+        <durationDays>6</durationDays>
+        <stackLimit>5</stackLimit>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+            <li>Bloodlust</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>our automaton destroyed</label>
+                <description>One of our automaton destroyed. That automaton was our property.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>PN_AutomatonWithGoodOpinionDied</defName>
+        <durationDays>20</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>my friend {0} destroyed</label>
+                <description>Such a wonderful automaton, gone forever. The universe gets darker every day.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>PN_AutomatonWithBadOpinionDied</defName>
+        <durationDays>10</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+        <stages>
+            <li>
+                <label>my rival {0} destroyed</label>
+                <description>That scrap was finally destroyed.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>PN_WitnessedDestroyedAlly</defName>
+        <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+        <showBubble>true</showBubble>
+        <durationDays>2</durationDays>
+        <stackLimit>5</stackLimit>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+            <li>Bloodlust</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>witnessed ally's destroyed</label>
+                <description>I saw one of our automaton destroyed. That automaton was our property.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!--==================================== 파니엘 파괴 for 파니엘 ====================================-->
+    <ThoughtDef>
+        <defName>PN_KnowColonyAutomatonDiedforPN</defName>
+        <durationDays>6</durationDays>
+        <stackLimit>5</stackLimit>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+            <li>Bloodlust</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>our automaton destroyed</label>
+                <description>My colleague was destroyed. Did she fulfill her duties?</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>PN_AutomatonWithGoodOpinionDiedforPN</defName>
+        <durationDays>20</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>my friend {0} destroyed</label>
+                <description>My friend was destroyed. It's so sad that we can't carry out our duties with her.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>PN_AutomatonWithBadOpinionDiedforPN</defName>
+        <durationDays>10</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+        <stages>
+            <li>
+                <label>my rival {0} destroyed</label>
+                <description>That scrap was finally destroyed.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>PN_WitnessedDestroyedAllyforPN</defName>
+        <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+        <showBubble>true</showBubble>
+        <durationDays>2</durationDays>
+        <stackLimit>5</stackLimit>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+            <li>Bloodlust</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>witnessed ally's destroyed</label>
+                <description>I saw one of our colleague destroyed. Did she fulfill her duties?</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!--==================================== 파니엘 실종 ====================================-->
+    <ThoughtDef>
+        <defName>PN_ColonyAutomatonLost</defName>
+        <durationDays>6</durationDays>
+        <stackLimit>5</stackLimit>
+        <showBubble>true</showBubble>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>our automaton lost</label>
+                <description>One of our automaton lost. That automaton was our property.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef ParentName="LostMemory">
+        <defName>PN_AutomatonWithGoodOpinionLost</defName>
+        <durationDays>10</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>my friend {0} lost</label>
+                <description>Such a wonderful automaton, lost. The universe gets darker every day.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef ParentName="LostMemory">
+        <defName>PN_AutomatonWithBadOpinionLost</defName>
+        <durationDays>10</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+        <stages>
+            <li>
+                <label>my rival {0} lost</label>
+                <description>That scrap was finally disappeared.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!--==================================== 파니엘 실종 for 파니엘 ====================================-->
+    <ThoughtDef>
+        <defName>PN_ColonyAutomatonLostforPN</defName>
+        <durationDays>6</durationDays>
+        <stackLimit>5</stackLimit>
+        <showBubble>true</showBubble>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>our automaton lost</label>
+                <description>My colleague was lost. Did she do her duty?</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef ParentName="LostMemory">
+        <defName>PN_AutomatonWithGoodOpinionLostforPN</defName>
+        <durationDays>10</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>my friend {0} lost</label>
+                <description>My friend was lost. It's so sad that we can't carry out our duties with her.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef ParentName="LostMemory">
+        <defName>PN_AutomatonWithBadOpinionLostforPN</defName>
+        <durationDays>10</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+        <stages>
+            <li>
+                <label>my rival {0} lost</label>
+                <description>That scrap was finally disappeared.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!--==================================== 파니엘 분해 ====================================-->
+    <ThoughtDef>
+        <defName>PN_ColonyAutomatondisassemble</defName>
+        <durationDays>6</durationDays>
+        <stackLimit>5</stackLimit>
+        <showBubble>true</showBubble>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>our automaton disassembled</label>
+                <description>One of our automaton disassembled. it's a pity we won't be able to see it again.</description>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef ParentName="LostMemory">
+        <defName>PN_AutomatonWithGoodOpiniondisassemble</defName>
+        <durationDays>10</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>my friend {0} disassemble</label>
+                <description>Such a wonderful automaton, disassembled. It was a colony decision, but I can't stand the disappointment.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef ParentName="LostMemory">
+        <defName>PN_AutomatonWithBadOpiniondisassemble</defName>
+        <durationDays>10</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+        <stages>
+            <li>
+                <label>my rival {0} disassemble</label>
+                <description>That scrap was finally disassembled.</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!--==================================== 파니엘 분해 for 파니엘 ====================================-->
+    <ThoughtDef>
+        <defName>PN_ColonyAutomatondisassembleforPN</defName>
+        <durationDays>6</durationDays>
+        <stackLimit>5</stackLimit>
+        <showBubble>true</showBubble>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>our automaton disassembled</label>
+                <description>My colleague was disassembled. Did she do her duty?</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef ParentName="LostMemory">
+        <defName>PN_AutomatonWithGoodOpiniondisassembleforPN</defName>
+        <durationDays>10</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>my friend {0} disassemble</label>
+                <description>My friend was disassemble. It's so sad that we can't carry out our duties with her.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef ParentName="LostMemory">
+        <defName>PN_AutomatonWithBadOpiniondisassembleforPN</defName>
+        <durationDays>10</durationDays>
+        <stackLimit>5</stackLimit>
+        <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+        <stages>
+            <li>
+                <label>my rival {0} disassemble</label>
+                <description>That scrap was finally disassembled.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!--==================================== 파니엘 추방 ====================================-->
+
+    <ThoughtDef>
+        <defName>PN_AutomatonBanished</defName>
+        <durationDays>6</durationDays>
+        <stackLimit>5</stackLimit>
+        <showBubble>true</showBubble>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>automaton banished</label>
+                <description>We just banished automaton. I hope they can meet their new master.</description>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>PN_AutomatonBanishedToDie</defName>
+        <durationDays>6</durationDays>
+        <stackLimit>5</stackLimit>
+        <showBubble>true</showBubble>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>automaton banished to destroy</label>
+                <description>We banished automaton in such a way that there's almost no way they'll survive.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!--==================================== 파니엘 추방 for 파니엘 ====================================-->
+
+    <ThoughtDef>
+        <defName>PN_AutomatonBanishedforPN</defName>
+        <durationDays>6</durationDays>
+        <stackLimit>5</stackLimit>
+        <showBubble>true</showBubble>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>automaton banished</label>
+                <description>We just banished colleague. I hope they can meet their new master.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>PN_AutomatonBanishedToDieforPN</defName>
+        <durationDays>6</durationDays>
+        <stackLimit>5</stackLimit>
+        <showBubble>true</showBubble>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>automaton banished to destroy</label>
+                <description>We banished colleague in such a way that there's almost no way they'll survive.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

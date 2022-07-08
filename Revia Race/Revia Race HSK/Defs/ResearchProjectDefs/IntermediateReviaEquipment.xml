@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>ReviaRaceIntermediateEquipment</defName>
+    <label>Revian Equipment</label>
+    <description>Create intermediate Revian equipment.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>ReviaRaceResearchTab</tab>
+    <prerequisites>
+      <li>ReviaRaceBasicEquipment</li>
+      <li>RecurveBow</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+  </ResearchProjectDef>
+</Defs>

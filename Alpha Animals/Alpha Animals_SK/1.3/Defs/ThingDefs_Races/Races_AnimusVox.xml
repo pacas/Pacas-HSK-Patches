@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_AnimusVox</defName>
+        <label>animus vox</label>
+        <description>The Animus Vox is a small canine with latent psionic abilities. Like all canines, it is quite intelligent for an animal, but not intelligent enough to properly use psionics. It will however quickly bond with human beings and reach with its mind to make happy everyone that treats it well.\n\nAnimus Voxes can often be seen on the Rim as pets, though some wander the wilderness, looking for someone to bond to.\n\nArt by Feroxiious (check her Instagram at https://www.instagram.com/feroxiious/).</description>
+        <statBases>
+            <MoveSpeed>4.6</MoveSpeed>
+            <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+            <ComfyTemperatureMax>40</ComfyTemperatureMax>
+            <MarketValue>300</MarketValue>
+            <MeatAmount>40</MeatAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.9</chanceFactor>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <thinkTreeMain>AA_AnimalNuzzler</thinkTreeMain>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <predator>true</predator>
+            <maxPreyBodySize>0.80</maxPreyBodySize>
+            <petness>0.5</petness>
+            <baseBodySize>0.65</baseBodySize>
+            <baseHungerRate>0.2</baseHungerRate>
+            <baseHealthScale>0.9</baseHealthScale>
+            <foodType>CarnivoreAnimal</foodType>
+            <leatherDef>Leather_Fox</leatherDef>
+            <useMeatFrom>Muffalo</useMeatFrom>
+            <nameOnTameChance>1</nameOnTameChance>
+            <trainability>Advanced</trainability>
+            <wildness>0.5</wildness>
+            <nuzzleMtbHours>24</nuzzleMtbHours>
+            <gestationPeriodDays>21</gestationPeriodDays>
+            <wildBiomes>
+                <TemperateForest>0.05</TemperateForest>
+                <TemperateSwamp>0.02</TemperateSwamp>
+                <BorealForest>0.05</BorealForest>
+                <TropicalRainforest>0.05</TropicalRainforest>
+                <TropicalSwamp>0.02</TropicalSwamp>
+                <Tundra>0.01</Tundra>
+                <AridShrubland>0.01</AridShrubland>
+            </wildBiomes>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(2, 1.7)</li>
+                    <li>(2.5, 0.7)</li>
+                    <li>(3, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>9</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.15</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.35</minAge>
+                    <!-- no sounds -->
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalCommon</li>
+            <li>AnimalPet</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Utility</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_UtilityMoodDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+                <showImageInInfoCard>true</showImageInInfoCard>
+                <ImageToShowInInfoCard>Art/AA_VoxArt</ImageToShowInInfoCard>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBaseFox">
+        <defName>AA_AnimusVox</defName>
+        <label>animus vox</label>
+        <labelPlural>animus voxes</labelPlural>
+        <race>AA_AnimusVox</race>
+        <alternateGraphicChance>1</alternateGraphicChance>
+        <alternateGraphics>
+            <li>
+                <texPath>Things/Pawn/Animal/AA_AnimusVox/AA_AnimusVox</texPath>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/AA_AnimusVox/AA_AnimusVox2</texPath>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/AA_AnimusVox/AA_AnimusVox3</texPath>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/AA_AnimusVox/AA_AnimusVox4</texPath>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/AA_AnimusVox/AA_AnimusVox5</texPath>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/AA_AnimusVox/AA_AnimusVox6</texPath>
+            </li>
+        </alternateGraphics>
+        <lifeStages>
+            <li>
+                <label>animus vox puppy</label>
+                <labelPlural>animus vox puppies</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_AnimusVox/AA_AnimusVox</texPath>
+                    <drawSize>1.25</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Fox_Fennec/Dessicated_Fox_Fennec</texPath>
+                    <drawSize>1.25</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_AnimusVox/AA_AnimusVox</texPath>
+                    <drawSize>1.75</drawSize>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Fox_Fennec/Dessicated_Fox_Fennec</texPath>
+                    <drawSize>1.75</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_AnimusVox/AA_AnimusVox</texPath>
+                    <drawSize>2</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Fox_Fennec/Dessicated_Fox_Fennec</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

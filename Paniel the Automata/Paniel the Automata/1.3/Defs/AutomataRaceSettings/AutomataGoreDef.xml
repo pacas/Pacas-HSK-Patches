@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================================== 시체 설정 ====================================-->
+    <AutomataRace.ThingDefInjectDef>
+        <defName>Comp_CorpseSelfDestruct_Inject</defName>
+        <conditions>
+            <li Class="AutomataRace.ThingDefInject.IsDefNameEqual">
+                <defName>Corpse_Paniel_Race</defName>
+            </li>
+        </conditions>
+        <comps>
+            <li Class="AutomataRace.CompProperties_SelfResurrect">
+                <resurrectDelayTick>200</resurrectDelayTick>
+                <hediffCondition>PN_ResurrectModule</hediffCondition>
+                <removeHediffAfterResurrect>true</removeHediffAfterResurrect>
+            </li>
+
+            <li Class="AutomataRace.CompProperties_ExplosiveInstant">
+                <explosiveRadius>1.9</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+                <wickTicks>200~750</wickTicks>
+                <awfulExplosiveMultiplier>5.0</awfulExplosiveMultiplier>
+                <poorExplosiveMultiplier>2.0</poorExplosiveMultiplier>
+            </li>
+        </comps>
+    </AutomataRace.ThingDefInjectDef>
+
+    <!--==================================== 고어 설정 ====================================-->
+    <ThingDef ParentName="BaseFilth">
+        <defName>Paniel_Oil</defName>
+        <label>Oil</label>
+        <thingClass>LiquidFuel</thingClass>
+        <useHitPoints>true</useHitPoints>
+        <tickerType>Normal</tickerType>
+        <statBases>
+            <Beauty>-30</Beauty>
+            <Cleanliness>-15</Cleanliness>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Flammability>2.0</Flammability>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Filth/Spatter</texPath>
+            <color>(51, 51, 51, 180)</color>
+        </graphicData>
+        <filth>
+            <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+            <disappearsInDays>35~40</disappearsInDays>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+            <maxThickness>1</maxThickness>
+            <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+        </filth>
+    </ThingDef>
+
+    <ThingCategoryDef>
+        <defName>PN_CorpseCategory</defName>
+        <label>Automaton corpses</label>
+        <parent>Corpses</parent>
+    </ThingCategoryDef>
+
+    <FleshTypeDef>
+        <defName>PN_Flesh</defName>
+        <corpseCategory>PN_CorpseCategory</corpseCategory>
+        <damageEffecter>Damage_HitMechanoid</damageEffecter>
+    </FleshTypeDef>
+</Defs>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======================== RaptorShrimp ======================== -->
+
+	<BodyDef>
+		<defName>AA_SnakeWithTwoLimbs</defName>
+		<label>SnakeWithTwoLimbs</label>
+		<corePart>
+			<def>SnakeBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>AA_LeftCreatureLimb</def>
+					<coverage>0.08</coverage>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>AA_LeftCreatureBlade</def>
+							<coverage>0.2</coverage>
+							<depth>Outside</depth>
+							<groups>
+								<li>AA_BladeAttackTool</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>AA_RightCreatureLimb</def>
+					<coverage>0.08</coverage>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>AA_RightCreatureBlade</def>
+							<coverage>0.2</coverage>
+							<depth>Outside</depth>
+							<groups>
+								<li>AA_BladeAttackTool</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Heart</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>left lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Lung</def>
+					<customLabel>right lung</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>left kidney</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Kidney</def>
+					<customLabel>right kidney</customLabel>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Liver</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Neck</def>
+					<coverage>0.22</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>SnakeHead</def>
+							<coverage>0.75</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Skull</def>
+									<coverage>0.25</coverage>
+									<depth>Inside</depth>
+									<parts>
+										<li>
+											<def>Brain</def>
+											<coverage>0.7</coverage>
+											<depth>Inside</depth>
+										</li>
+									</parts>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>left eye</customLabel>
+									<coverage>0.12</coverage>
+								</li>
+								<li>
+									<def>Eye</def>
+									<customLabel>right eye</customLabel>
+									<coverage>0.12</coverage>
+								</li>
+								<li>
+									<def>Ear</def>
+																		<customLabel>left ear</customLabel>
+
+									<coverage>0.08</coverage>
+								</li>
+								<li>
+									<def>Ear</def>
+																		<customLabel>right ear</customLabel>
+
+									<coverage>0.08</coverage>
+								</li>
+								<li>
+									<def>Nose</def>
+									<coverage>0.1</coverage>
+								</li>
+								<li>
+									<def>SnakeMouth</def>
+									<coverage>0.1</coverage>
+									<groups>
+										<li>AA_Mouth</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

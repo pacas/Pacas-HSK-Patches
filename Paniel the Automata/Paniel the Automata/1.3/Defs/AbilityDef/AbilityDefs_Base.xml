@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================================== 쿨타임 설정====================================-->
+
+    <AbilityGroupDef>
+        <defName>PNModule_2day</defName>
+        <cooldownTicks>120000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>PNModule_1day</defName>
+        <cooldownTicks>60000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>PNModule_12hour</defName>
+        <cooldownTicks>30000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>PNModule_6hour</defName>
+        <cooldownTicks>15000</cooldownTicks>
+    </AbilityGroupDef>
+
+    <AbilityGroupDef>
+        <defName>PNModule_3hour</defName>
+        <cooldownTicks>7500</cooldownTicks>
+    </AbilityGroupDef>
+    <AbilityGroupDef>
+        <defName>PNModule_rightoff</defName>
+        <cooldownTicks>120</cooldownTicks>
+    </AbilityGroupDef>
+
+    <HediffDef Name="PN_ApparelIndustrialModuleHediffBase" Abstract="True">
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+            <li Class="MoharHediffs.HediffCompProperties_PostRemoveTrigger_HediffAdd">
+                <triggeredHediff>
+                    <li>PN_ModuleUnstable_Industrial</li>
+                </triggeredHediff>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <HediffDef Name="PN_ApparelSpacerModuleHediffBase" Abstract="True">
+        <hediffClass>HediffWithComps</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_RemoveIfApparelDropped"/>
+            <li Class="MoharHediffs.HediffCompProperties_PostRemoveTrigger_HediffAdd">
+                <triggeredHediff>
+                    <li>PN_ModuleUnstable_Spacer</li>
+                </triggeredHediff>
+            </li>
+        </comps>
+        <isBad>false</isBad>
+    </HediffDef>
+
+    <!--<HediffDef ParentName="PN_ApparelModuleHediffBase">
+    <defName></defName>
+    <label></label>
+    <description></description>
+    <stages>
+
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_GiveAbility">
+        <abilityDef></abilityDef>
+      </li>
+    </comps>
+  </HediffDef>-->
+
+    <!--불안정-->
+
+    <HediffDef>
+        <defName>PN_ModuleUnstable_Industrial</defName>
+        <label>module system (unstable)</label>
+        <labelNoun>module system (unstable)</labelNoun>
+        <description>The module system is unstable. The module cannot be mounted until the system is stable.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>20000</disappearsAfterTicks>
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+                <hediffToNullify>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_OfficerCommand</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_MeisterAdvice</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_IntensiveMedical</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_FieldMedic</li>
+
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_RapidFire</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_CQC</li>
+                </hediffToNullify>
+                <showMessage>false</showMessage>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.20</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef>
+        <defName>PN_ModuleUnstable_Spacer</defName>
+        <label>module system (unstable)</label>
+        <labelNoun>module system (unstable)</labelNoun>
+        <description>The module system is unstable. The module cannot be mounted until the system is stable.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>120000</disappearsAfterTicks>
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="MoharHediffs.HediffCompProperties_HediffNullifier">
+                <hediffToNullify>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_OfficerCommand</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_MeisterAdvice</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_IntensiveMedical</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_FieldMedic</li>
+
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_RapidFire</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">PN_CQC</li>
+                </hediffToNullify>
+                <showMessage>false</showMessage>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>-0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>-0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>-0.50</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>-0.50</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

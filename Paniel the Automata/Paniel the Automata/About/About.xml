@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModMetaData>
+	<name>Paniel the Automata</name>
+	<author>Demi, 어리연, Nemonian, gguake</author>
+	<packageId>AhnDemi.PanieltheAutomata.sk</packageId>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<description>
+Paniel the Automata
+
+Humanoid alien race mod
+
+[Created by]
+
+Demi : planning, management, xml, etc.
+gguake : assemblies
+어리연 : pawn textures, apparel textures
+Nemonian : building textures, weapon textures, item textures
+Latki : thumbnail illustration
+
+[Special Thanks]
+
+erdelf : make Humanoid Alien Races 2.0 mod.
+goudaquiche : make MoHAR framework.
+Roo : helped a lot in making this mod.
+NukaFrog : provides useful assemblies.
+SutSutMan : provides useful assembly.
+ChJees : this mod inspired by Androids mod.
+Madeline, Gloomylynx, Farmradish, horsefry, Space_Engineer, SR0752, 며루치, 곤약쟁이(sinnamon).
+
+and Rimworld Korea Discord members.
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>erdelf.HumanoidAlienRaces</packageId>
+			<displayName>Humanoid Alien Races 2.0</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>goudaquiche.MoharFramework</packageId>
+			<displayName>MoHAR framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2057001924</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>brrainz.harmony</li>
+		<li>erdelf.HumanoidAlienRaces</li>
+		<li>goudaquiche.MoharFramework</li>
+	</loadAfter>
+</ModMetaData>

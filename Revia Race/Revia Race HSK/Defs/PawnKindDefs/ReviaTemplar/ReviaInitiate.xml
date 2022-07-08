@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef ParentName="ReviaPawnBase">
+        <defName>ReviaRaceInitiate</defName>
+        <label>Revia Initiate</label>
+        <defaultFactionType>ReviaTemplarFaction</defaultFactionType>
+        <race>ReviaRaceAlien</race>
+        <combatPower>165</combatPower>
+        <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+        <itemQuality>Excellent</itemQuality>
+        <apparelTags>
+            <li>Outlander</li>
+            <li>PredatorsLight</li>
+			<li>OrionLight</li>
+            <li>Apparel_TacVest</li>
+            <li>Apparel_Backpack</li>
+            <li>Apparel_TribalBackpack</li>
+        </apparelTags>
+        <apparelMoney>800~1200</apparelMoney>
+        <weaponTags>
+            <li>ReviaMeleeAdvanced</li>
+            <li>TierOnePistol</li>
+			<li>TierOneSMG</li>
+        </weaponTags>
+        <weaponMoney>1500~2500</weaponMoney>
+        <initialWillRange>0.6~0.8</initialWillRange>
+        <initialResistanceRange>12~15</initialResistanceRange>
+        <isFighter>true</isFighter>
+        <invNutrition>2</invNutrition>
+        <inventoryOptions>
+            <skipChance>0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>20</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1~1</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <techHediffsRequired>
+            <li>DeathAcidifier</li>
+        </techHediffsRequired>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>2</min>
+                    <max>4</max>
+                </primaryMagazineCount>
+                <sidearms>
+                    <li>
+                        <magazineCount>
+                            <min>1</min>
+                            <max>3</max>
+                        </magazineCount>
+                        <generateChance>0.5</generateChance>
+                        <weaponTags>
+                            <li>ReviaRangedAdvanced</li>
+                            <li>CE_Sidearm</li>
+                        </weaponTags>
+                    </li>
+                </sidearms>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+</Defs>

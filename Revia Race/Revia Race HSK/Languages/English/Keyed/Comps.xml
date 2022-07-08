@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ReviaRaceSacrificePrisonerNone>No prisoners to be sacrificed.</ReviaRaceSacrificePrisonerNone>
+  <ReviaRaceSacrificePrisonerName>Sacrifice {0}</ReviaRaceSacrificePrisonerName>
+  <ReviaRaceSacrificeRejected>{0}'s offering was accepted, but deemed insufficient. The blood god demands more blood.</ReviaRaceSacrificeRejected>
+  <ReviaRaceBloodStuffCountDemand>An additional {0} {1}s were demanded</ReviaRaceBloodStuffCountDemand>
+  <ReviaRaceBloodStuffCountConsumed>{0} {1}(s) were consumed in {2}'s offering.</ReviaRaceBloodStuffCountConsumed>
+  <ReviaRaceSacrificeSuccess>The sacrifice was found worthy, and {0} has grown stronger.</ReviaRaceSacrificeSuccess>
+  <ReviaRaceOfferingStart>{0} offers some {1}s to the blood god.</ReviaRaceOfferingStart>
+  <ReviaRaceOfferingInvalidPawn>The blood god spurns the unitiated's plea.</ReviaRaceOfferingInvalidPawn>
+  <ReviaRaceOfferingMaxLevel>{0} is already at the height of {1} power!</ReviaRaceOfferingMaxLevel>
+  <ReviaRaceModName>Revia Race</ReviaRaceModName>
+  <ReviaRaceSettingsSacrificeCostHeader>Sacrifice Options</ReviaRaceSettingsSacrificeCostHeader>
+  <ReviaRaceSettingsSacrificeCostBase>Base bloodstone cost per level</ReviaRaceSettingsSacrificeCostBase>
+  <ReviaRaceSettingsSacrificeCostGrowthFactor>Cost growth factor</ReviaRaceSettingsSacrificeCostGrowthFactor>
+  <ReviaRaceSettingsSacrificeCostGrowthStartTier>Cost growth start tier</ReviaRaceSettingsSacrificeCostGrowthStartTier>
+  <ReviaRaceSettingsSacrificeCostGrowthMode>Cost growth mode</ReviaRaceSettingsSacrificeCostGrowthMode>
+  <ReviaRaceSettingsEnableRandomSoulReapTier>Assign random Soul Reap tier on spawn</ReviaRaceSettingsEnableRandomSoulReapTier>
+  <ReviaRaceSettingsEnableStripOnSacrifice>Strip corpses on sacrifice</ReviaRaceSettingsEnableStripOnSacrifice>
+  <ReviaRaceSettingsEnableBloodthirstNeed>Enable bloodthirst need</ReviaRaceSettingsEnableBloodthirstNeed>
+  <ReviaRaceSettingsBloodthirstDaysToEmpty>Number of days for bloodthirst to fully empty</ReviaRaceSettingsBloodthirstDaysToEmpty>
+  <ReviaRaceSettingsSacrificeCostGreater>Bloodstone costs with current settings: {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}</ReviaRaceSettingsSacrificeCostGreater>
+  <ReviaRaceSettingsSacrificeCostLesser>Palestone costs with current settings: {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}</ReviaRaceSettingsSacrificeCostLesser>
+  <ReviaRaceSettingsSoulReapSpawnFixed>Soul Reap level on spawn</ReviaRaceSettingsSoulReapSpawnFixed>
+  <ReviaRaceSettingsSoulReapSpawnAgeCurve>Randomise Soul Reap level based on pawn age</ReviaRaceSettingsSoulReapSpawnAgeCurve>
+  <ReviaRaceSettingsSoulReapSpawnRange>Possible Soul Reap levels on spawn</ReviaRaceSettingsSoulReapSpawnRange>
+  <ReviaRaceSanctifyNonMeleeWeapon>Can only sanctify melee weapons.</ReviaRaceSanctifyNonMeleeWeapon>
+  <ReviaRaceSanctifyNonReviaNonSkarnite>The rune does not respond in the hands of infidels.</ReviaRaceSanctifyNonReviaNonSkarnite>
+  <ReviaRaceSanctifyAlreadySanctified>The weapon is already blessed with a bloodthirsty spirit.</ReviaRaceSanctifyAlreadySanctified>
+  <ReviaRaceSanctifyDescPart>A bloodthirsty spirit inhabits this weapon, granting the faithful of Skarne health in exchange for spilled blood.</ReviaRaceSanctifyDescPart>
+  <Linear>Linear</Linear>
+  <Quadratic>Quadratic</Quadratic>
+  <Exponential>Exponential</Exponential>
+</LanguageData>

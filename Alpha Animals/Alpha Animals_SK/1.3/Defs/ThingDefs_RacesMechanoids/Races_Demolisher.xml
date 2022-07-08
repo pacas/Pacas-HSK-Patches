@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SK_MechanoidThingBase">
+        <defName>AA_Demolisher</defName>
+        <label>demolisher</label>
+        <description>The strange demolisher mechanoid looks like a weird amalgamation of a deep sea crab, a star-nosed mole and an armoured combat vehicle. Demolishers are armed with a very dangerous short range turret that fires demolisher charges, capable of blowing up even the strongest walls in two or three hits. Once they have ruptured a colony's outer defenses, their enormous plasteel reinforced claws can make short work of anyone foolish enough to stay in their way.\n\nNOTE: all Alpha Mechanoids can be disabled from raids, ships and clusters by Mod Options. This can be used even if they have already spawned. In any case, they have very similar stats to base game mechanoids, so don't let their appearance intimidate you into thinking they are much harder!</description>
+        <statBases>
+            <MoveSpeed>2.5</MoveSpeed>
+            <Mass>380</Mass>
+            <ArmorRating_Blunt>48</ArmorRating_Blunt>
+            <ArmorRating_Sharp>21</ArmorRating_Sharp>
+            <MeatAmount>0</MeatAmount>
+            <CarryWeight>400</CarryWeight>
+            <CarryBulk>120</CarryBulk>
+            <ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+            <AimingAccuracy>1.0</AimingAccuracy>
+            <MaxHitPoints>500</MaxHitPoints>
+            <PsychicSensitivity>0.75</PsychicSensitivity>
+            <MeleeDodgeChance>0.01</MeleeDodgeChance>
+            <MeleeCritChance>0.32</MeleeCritChance>
+            <MeleeParryChance>0.33</MeleeParryChance>
+        </statBases>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>mechanoid claws</label>
+                <capacities>
+                    <li>Cut</li>
+                    <li>AA_SiegeBlunt</li>
+                </capacities>
+                <power>46</power>
+                <cooldownTime>2.3</cooldownTime>
+                <linkedBodyPartsGroup>AA_MechaClaws</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <armorPenetrationSharp>20</armorPenetrationSharp>
+                <armorPenetrationBlunt>80</armorPenetrationBlunt>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AlphaBehavioursAndEvents.CompProperties_ChangeDef">
+                <!-- Change to this pawn if Allow Alpha mechanoids is disabled in options -->
+                <defToChangeTo>Mech_Centipede</defToChangeTo>
+            </li>
+        </comps>
+        <race>
+            <intelligence>ToolUser</intelligence>
+            <thinkTreeMain>Mechanoid</thinkTreeMain>
+            <body>AA_DemolisherBody</body>
+            <baseBodySize>4</baseBodySize>
+            <baseHealthScale>2</baseHealthScale>
+            <lifeStageAges>
+                <li>
+                    <def>MechanoidFullyFormed</def>
+                    <minAge>0</minAge>
+                    <soundWounded>AA_Siegebreaker_Wounded</soundWounded>
+                    <soundDeath>AA_Siegebreaker_Death</soundDeath>
+                    <soundCall>AA_Siegebreaker_Call</soundCall>
+                </li>
+            </lifeStageAges>
+            <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+            <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+        </race>
+        <butcherProducts>
+            <SyntheticFibers>8</SyntheticFibers>
+            <Biomatter>9</Biomatter>
+            <CarbonAlloy>6</CarbonAlloy>
+        </butcherProducts>
+    </ThingDef>
+
+    <PawnKindDef ParentName="SK_BaseMechanoidKind">
+        <defName>AA_Demolisher</defName>
+        <label>demolisher</label>
+        <race>AA_Demolisher</race>
+        <combatPower>400</combatPower>
+        <canBeSapper>false</canBeSapper>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Mechanoid/AA_Demolisher/AA_Demolisher</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>3.5</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.8, 0.6)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponMoney>9999~9999</weaponMoney>
+        <weaponTags>
+            <li>AA_MechanoidDemolisherCharges</li>
+        </weaponTags>
+    </PawnKindDef>
+</Defs>

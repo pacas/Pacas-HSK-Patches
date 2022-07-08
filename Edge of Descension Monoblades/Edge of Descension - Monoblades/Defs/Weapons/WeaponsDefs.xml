@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Abstract="True" Name="DescensionWeapons" ParentName="SK_BaseMeleeWeapon">
+        <techLevel>Ultra</techLevel>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+			<li Class="CompProperties_Styleable"/>
+        </comps>
+        <smeltable>true</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <weaponTags>
+            <li>Bladelink</li>
+            <li>UltratechMelee</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>AgileMelee</li>
+            <li>SharpMelee</li>
+        </thingCategories>
+        <thingSetMakerTags>
+            <li>RewardStandardMidFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+
+  
+    <ThingDef ParentName="DescensionWeapons">
+        <defName>MeleeWeapon_Monoblade</defName>
+        <label>monoblade</label>
+        <description>A crystal-metallic blade infused with mechanites that maintain a mono-molecular cutting edge. The blade permits fast swings combined with its high armor penetration, resulting in a fierce combination perfect in the battlefield.</description>
+        <soundInteract>Interact_MonoSword</soundInteract>
+        <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <relicChance>3</relicChance>
+        <statBases>
+            <MarketValue>2500</MarketValue>
+            <Mass>1.8</Mass>
+            <Bulk>5</Bulk>
+            <MeleeCounterParryBonus>0.40</MeleeCounterParryBonus>
+        </statBases>
+        <graphicData>
+            <texPath>Weapons/monoblade1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <equippedStatOffsets>
+            <MeleeCritChance>1.00</MeleeCritChance>
+            <MeleeParryChance>0.40</MeleeParryChance>
+            <MeleeDodgeChance>0.27</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>1.4</cooldownTime>
+                <chanceFactor>0.2</chanceFactor>
+                <armorPenetrationBlunt>4.5</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>0.8</cooldownTime>
+                <armorPenetrationBlunt>1.18</armorPenetrationBlunt>
+                <armorPenetrationSharp>22.25</armorPenetrationSharp>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>19</power>
+                <cooldownTime>0.71</cooldownTime>
+                <chanceFactor>1.33</chanceFactor>
+                <armorPenetrationBlunt>2.48</armorPenetrationBlunt>
+                <armorPenetrationSharp>21</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
+  
+    <ThingDef ParentName="DescensionWeapons">
+        <defName>MeleeWeapon_MonobladePrestige</defName>
+        <label>prestige monoblade</label>
+        <description>A crystal-metallic blade infused with mechanites that maintain a mono-molecular cutting edge. The blade permits fast swings combined with its high armor penetration, resulting in a fierce combination perfect in the battlefield.\nExpensive and beautiful, prestige weapon like this is usually made for those of high status, indirectly improving their social capabilities. The variant comes with enhanced psychic capabilities and improved swordplay.</description>
+        <soundInteract>Interact_MonoSword</soundInteract>
+        <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <equippedStatOffsets>
+            <PsychicSensitivityOffset>0.5</PsychicSensitivityOffset>
+            <PsychicEntropyRecoveryRate>0.08</PsychicEntropyRecoveryRate>
+            <SocialImpact>0.1</SocialImpact>
+            <MeleeCritChance>1.00</MeleeCritChance>
+            <MeleeParryChance>0.40</MeleeParryChance>
+            <MeleeDodgeChance>0.27</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <relicChance>3</relicChance>
+        <statBases>
+            <MarketValue>3500</MarketValue>
+            <Mass>1.8</Mass>
+            <Bulk>5</Bulk>
+            <MeleeCounterParryBonus>0.40</MeleeCounterParryBonus>
+        </statBases>
+        <graphicData>
+            <texPath>Weapons/monoblade2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>1.4</cooldownTime>
+                <chanceFactor>0.2</chanceFactor>
+                <armorPenetrationBlunt>4.5</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>13</power>
+                <cooldownTime>0.8</cooldownTime>
+                <armorPenetrationBlunt>1.18</armorPenetrationBlunt>
+                <armorPenetrationSharp>22.25</armorPenetrationSharp>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>0.71</cooldownTime>
+                <chanceFactor>1.33</chanceFactor>
+                <armorPenetrationBlunt>2.48</armorPenetrationBlunt>
+                <armorPenetrationSharp>23</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
+
+  
+    <ThingDef Abstract="True" Name="DescensionWeaponsUnique" ParentName="DescensionWeapons">
+        <techLevel>Archotech</techLevel>
+        <smeltable>false</smeltable>
+        <burnableByRecipe>false</burnableByRecipe>
+        <weaponTags>
+            <li>Bladelink</li>
+            <li>ArchotechhMelee</li>
+        </weaponTags>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+  
+    <ThingDef ParentName="DescensionWeaponsUnique">
+        <defName>MeleeWeapon_LuciBlade</defName>
+        <label>Luci's Edge</label>
+        <description>An exceptionally sharp katana with a luciferium-laced edge once wielded by a long-forgotten legend. The blade toughens the wielder's spirit and flesh to keep fighting on the battlefield. It slices in incredible speed and precision, burning everything in front of it to a crisp.</description>
+        <soundInteract>Interact_MonoSword</soundInteract>
+        <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <equippedStatOffsets>
+            <MentalBreakThreshold>-0.25</MentalBreakThreshold>
+            <PainShockThreshold>0.20</PainShockThreshold>
+            <MeleeCritChance>1.50</MeleeCritChance>
+            <MeleeParryChance>0.45</MeleeParryChance>
+            <MeleeDodgeChance>0.5</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <relicChance>1</relicChance>
+        <statBases>
+            <MarketValue>6000</MarketValue>
+            <Mass>1.7</Mass>
+            <Bulk>7</Bulk>
+            <MeleeCounterParryBonus>0.60</MeleeCounterParryBonus>
+        </statBases>
+        <graphicData>
+            <texPath>Weapons/monoblade4</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>1.4</cooldownTime>
+                <armorPenetrationBlunt>0.5</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>15</power>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Flame</def>
+                        <amount>5</amount>
+                        <chance>0.4</chance>
+                    </li>
+                </extraMeleeDamages>
+                <cooldownTime>0.65</cooldownTime>
+                <armorPenetrationBlunt>1.72</armorPenetrationBlunt>
+                <armorPenetrationSharp>33.75</armorPenetrationSharp>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>26</power>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Flame</def>
+                        <amount>5</amount>
+                        <chance>0.4</chance>
+                    </li>
+                </extraMeleeDamages>
+                <cooldownTime>0.57</cooldownTime>
+                <chanceFactor>1.33</chanceFactor>
+                <armorPenetrationBlunt>3.98</armorPenetrationBlunt>
+                <armorPenetrationSharp>24.3</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
+
+</Defs>

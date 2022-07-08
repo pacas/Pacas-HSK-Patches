@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="SK_AnimalThingBase">
+		<defName>AA_RipperHound</defName>
+		<label>ripper hound</label>
+		<description>Ripper Hounds were created as a purely biological defense against Insectoids, a genetically engineered species bred for hunting and defeating them. These hulking canines sport two viciously sharp claws specially designed to attach to chitinoid plates and rip them apart.\n\nDespite their fearsome appearance, Ripper Hounds can be extremely affectionate and loyal, and they love to be pet by those they trust.</description>
+		<statBases>
+			<MoveSpeed>5.00</MoveSpeed>
+			<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
+			<MarketValue>550</MarketValue>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+            <MeatAmount>70</MeatAmount>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>AA_ExtraDamageInsectoidsClaws</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>AA_ExtraDamageInsectoidsClaws</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+
+			</li>
+			<li>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2.0</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.4</chanceFactor>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power>
+				<cooldownTime>1.65</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+
+
+
+		<race>
+			<wildBiomes>
+				<BorealForest>0.01</BorealForest>
+				<Tundra>0.01</Tundra>
+				<ColdBog>0.005</ColdBog>
+				<TemperateForest>0.05</TemperateForest>
+				<TemperateSwamp>0.005</TemperateSwamp>
+				<TropicalRainforest>0.005</TropicalRainforest>
+				<TropicalSwamp>0.01</TropicalSwamp>
+				<AridShrubland>0.05</AridShrubland>
+
+
+			</wildBiomes>
+			<body>AA_ExtraClawedQuadruped</body>
+			<predator>true</predator>      
+			<baseBodySize>1.5</baseBodySize>
+			<baseHungerRate>0.1</baseHungerRate>
+			<baseHealthScale>2</baseHealthScale>
+			<foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+			<leatherDef>Leather_Heavy</leatherDef>
+            <useMeatFrom>Elephant</useMeatFrom>
+			<maxPreyBodySize>2</maxPreyBodySize>
+			<trainability>Advanced</trainability>
+			<gestationPeriodDays>40</gestationPeriodDays>
+			<nameOnTameChance>1</nameOnTameChance>
+			<wildness>0.7</wildness>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+			<nuzzleMtbHours>30</nuzzleMtbHours>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(2, 1.7)</li>
+					<li>(3, 0.7)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeExpectancy>12</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.4</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.9</minAge>
+					<soundWounded>Pawn_Warg_Wounded</soundWounded>
+					<soundDeath>Pawn_Warg_Death</soundDeath>
+					<soundCall>Pawn_Warg_Call</soundCall>
+					<soundAngry>Pawn_Warg_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+		</tradeTags>
+		<modExtensions>
+			<li Class="AnimalBehaviours.AnimalStatExtension">
+
+				<statToAdd>
+
+					<li>AA_PrimaryRole</li>
+					<li>AA_RangedAttacks</li>					
+				</statToAdd>
+				<statValues>
+
+					<li>AA_AntiInsectoidShockTroop</li>
+					<li>AA_No</li>					
+				</statValues>
+				<statDescriptions>
+
+					<li>AA_AntiInsectoidShockTroopDesc</li>
+					<li>AA_NoRanged</li>
+				</statDescriptions>
+
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>AA_RipperHound</defName>
+		<label>ripper hound</label>
+		<race>AA_RipperHound</race>
+		<combatPower>125</combatPower>
+		<lifeStages>
+			<li>
+				<label>ripper hound cub</label>
+				<labelPlural>ripper hound puppies</labelPlural>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_RipperHound/AA_RipperHound</texPath>
+					<drawSize>1.5</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_RipperHound/AA_Dessicated_RipperHound</texPath>
+					<drawSize>1.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_RipperHound/AA_RipperHound</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.25, 0.3, 0.25)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_RipperHound/AA_Dessicated_RipperHound</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_RipperHound/AA_RipperHound</texPath>
+					<drawSize>2.5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.4, 0.3)</volume>
+						<offset>(0,0,-0.15)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_RipperHound/AA_Dessicated_RipperHound</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+
+		<ecoSystemWeight>0.9</ecoSystemWeight>
+
+	</PawnKindDef>
+
+</Defs>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<ReviaHighIdeoNamer.rulePack.rulesStrings>
+		<li>r_ideoName->[creed] [colour]й [icon]</li>
+		<li>r_ideoName->[creed] [colour]го [icon1]</li>
+
+		<li>r_ideoAdjective->Скарнический</li>
+
+		<li>r_memberName->Скарнит</li>
+		<li>r_memberName->Скарнист</li>
+
+		<li>hyphenPrefix->[globalHyphenPrefix]</li>
+
+        <li>globalHyphenPrefix->неа</li>
+        <li>globalHyphenPrefix->архинео</li>
+
+		<li>creed->доктрина</li>
+		<li>creed->кредо</li>
+		<li>creed->истина</li>
+		<li>creed->путь</li>
+		<li>creed->тропа</li>
+		<li>creed->учение</li>
+		<li>creed->ортодоксия</li>
+		<li>creed->иерархия</li>
+		<li>creed->завет</li>
+
+		<li>colour->пурпурно</li>
+		<li>colour->киноварно</li>
+		<li>colour->обсидианово</li>
+		<li>colour->алеюще</li>
+		<li>colour->ало</li>
+		<li>colour->лунно</li>
+		<li>colour->солнечно</li>
+		<li>colour->звёздно</li>
+		<li>colour->небесно</li>
+
+		<li>icon->розы</li>
+		<li>icon->лисы</li>
+		<li>icon->матери</li>
+		<li>icon->власти</li>
+		<li>icon->пустоты</li>
+		<li>icon->крови</li>
+		<li>icon->святости</li>
+
+		<li>icon1->трона</li>
+		<li>icon1->пламени</li>
+		<li>icon1->черепа</li>
+		<li>icon1->блага</li>
+		<li>icon1->хвоста</li>
+		<li>icon1->ножа</li>
+		<li>icon1->кинжала</li>
+		<li>icon1->жертвенника</li>
+	</ReviaHighIdeoNamer.rulePack.rulesStrings>
+
+	<ReviaRaiderIdeoNamer.rulePack.rulesStrings>
+		<li>r_ideoName->[creed] [barbaricNoun]</li>
+		<li>r_ideoName->[creed1] [deity]</li>
+
+		<li>r_ideoAdjective->Скарнический</li>
+
+		<li>r_memberName->Скарнит</li>
+		<li>r_memberName->Скарнист</li>
+
+		<li>hyphenPrefix->[globalHyphenPrefix]</li>
+
+        <li>globalHyphenPrefix->неа</li>
+        <li>globalHyphenPrefix->архинео</li>		
+		<li>globalHyphenPrefix->анархо</li>
+
+		<li>barbaricNoun->крови</li>
+		<li>barbaricNoun->запёкшейся крови</li>
+		<li>barbaricNoun->опустошения</li>
+		<li>barbaricNoun->уничтожения</li>
+		<li>barbaricNoun->истребления</li>
+		<li>barbaricNoun->разрушения</li>
+		<li>barbaricNoun->апокалипсиса</li>
+		<li>barbaricNoun->кровопролития</li>
+		<li>barbaricNoun->ножа</li>
+		<li>barbaricNoun->кинжала</li>
+		<li>barbaricNoun->девяти Хвостов</li>
+		<li>barbaricNoun->десятого Хвоста</li>
+
+		<li>creed->путь</li>
+		<li>creed->тропа</li>
+		<li>creed->дорога</li>
+		
+		<li>creed1->служанки</li>
+		<li>creed1->рабыни</li>
+
+		<li>deity->Кровавой Госпожи</li>
+		<li>deity->Великой Пожирательницы</li>
+		<li>deity->Наказующей Слабых</li>
+		<li>deity->Приближающей Конец Времени</li>
+		<li>deity->Той Кто Жаждет</li>
+		<li>deity->Кровавых Богинь</li>
+		<li>deity->Пожирающей Миры</li>
+		<li>deity->Малиновой Луны</li>
+		<li>deity->Малиновой Девочки</li>
+		<li>deity->Десятихвостой Лисы</li>
+	</ReviaRaiderIdeoNamer.rulePack.rulesStrings>
+
+</LanguageData>

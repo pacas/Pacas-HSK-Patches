@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <TraderKindDef>
+        <defName>PN_Caravan_PnLindustry</defName>
+        <label>PnL salesman</label>
+        <stockGenerators>
+
+            <!-- Resources -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>750~1200</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>ComponentIndustrial</thingDef>
+                <countRange>8~16</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>ComponentSpacer</thingDef>
+                <countRange>0~2</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Plasteel</thingDef>
+                <countRange>75~150</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Chemfuel</thingDef>
+                <countRange>50~150</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Hyperweave</thingDef>
+                <countRange>10~15</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>DevilstrandCloth</thingDef>
+                <countRange>20~30</countRange>
+            </li>
+
+            <!-- Drugs -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>PN_AutomatonFuel</thingDef>
+                <countRange>50~150</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>PN_antibiotics</thingDef>
+                <countRange>1~2</countRange>
+            </li>
+
+            <!-- Automaton -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>PN_RepairKit</thingDef>
+                <countRange>2~6</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>PN_SelfRepairKit</thingDef>
+                <countRange>-8~1</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>PN_BrainCasing</thingDef>
+                <countRange>2~4</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Leather_Automaton</thingDef>
+                <countRange>20~60</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>PN_Component</thingDef>
+                <countRange>1~3</countRange>
+            </li>
+
+            <li Class="StockGenerator_Category">
+                <categoryDef>PN_TMPackagedCatagory</categoryDef>
+                <thingDefCountRange>-2~1</thingDefCountRange>
+                <totalPriceRange>3000~4000</totalPriceRange>
+            </li>
+
+            <!-- Weapons -->
+
+            <!-- Apparel -->
+
+            <!-- Implants -->
+
+            <!-- Buildings -->
+
+            <!-- Animals -->
+
+            <!-- Buying -->
+            <li Class="StockGenerator_BuyExpensiveSimple"/>
+
+        </stockGenerators>
+    </TraderKindDef>
+</Defs>

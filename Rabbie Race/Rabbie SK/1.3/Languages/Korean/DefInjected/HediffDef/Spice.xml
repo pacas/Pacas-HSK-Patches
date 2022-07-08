@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 플라네타리움 섭취형태 반응 : 정제 가루 -->
+
+  <RefinedPlanetarium.label>플라네타리움 가루 섭취</RefinedPlanetarium.label>
+  <RefinedPlanetarium.labelNoun>플라네타리움 가루 섭취</RefinedPlanetarium.labelNoun>
+
+
+  <!-- 플라네타리움 섭취형태 반응 : 뇌석 -->
+
+  <Braincrystal.label>래비 뇌석을 먹음</Braincrystal.label>
+  <Braincrystal.labelNoun>래비 뇌석을 먹음</Braincrystal.labelNoun>
+
+
+  <!-- 플라네타리움 섭취형태 반응: 플라네타리움 차 -->
+
+  <PlanetariumTea.label>플라네타리움 차 섭취</PlanetariumTea.label>
+  <PlanetariumTea.labelNoun>플라네타리움 차 섭취</PlanetariumTea.labelNoun>
+
+
+  <!-- 래비전용 플라네타리움 개화 상태이상 -->
+
+  <Whisperofplanet.label>행성의 속삭임</Whisperofplanet.label>
+  <Whisperofplanet.comps.0.discoverLetterLabel>{0}의 행성의 속삭임 개화</Whisperofplanet.comps.0.discoverLetterLabel>
+  <Whisperofplanet.comps.0.discoverLetterText>{0}에게 행성의 속삭임이 들려옵니다.\n\n오랜 플라네타리움 섭취의 결과로, 때떄로 흐릿하게나마 짧은 미래를 보는 능력을 가집니다.</Whisperofplanet.comps.0.discoverLetterText>
+
+
+  <!-- 플라네타리움 중독 -->
+
+  <PlanetariumAddiction.label>플라네타리움의 흐름</PlanetariumAddiction.label>
+  <PlanetariumAddiction.comps.0.discoverLetterLabel>플라네타리움 섭취</PlanetariumAddiction.comps.0.discoverLetterLabel>
+  <PlanetariumAddiction.comps.0.discoverLetterText>{0}의 몸에 미량의 플라네타리움이 흐르기 시작합니다.\n\n중독은 영영 제거할 수 없으며, 일생동안 기호품으로 즐길 수 있기를 바랄 뿐입니다.</PlanetariumAddiction.comps.0.discoverLetterText>
+  <PlanetariumAddiction.stages.1.label>광기</PlanetariumAddiction.stages.1.label>
+
+
+</LanguageData>

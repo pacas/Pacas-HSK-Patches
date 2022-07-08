@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>NewRatkinPlus</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>*/AlienRace.ThingDef_AlienRace[defName="Rabbie"]/alienRace/raceRestriction/apparelList</xpath>
+                    <value>
+                        <li>RK_ApronSkirt</li>
+                        <li>RK_SummerDress</li>
+                        <li>RK_StrawHat</li>
+                        <li>RK_Muffler</li>
+                        <li>RK_Cardigan</li>
+                        <li>RK_WoolenHat</li>
+                        <li>RK_WorkerWear</li>
+                        <li>RK_Coif</li>
+                        <li>RK_ResearchGown</li>
+                        <li>RK_ResearchGlasses</li>
+                        <li>RK_ExplorerWear</li>
+                        <li>RK_ExplorerHat</li>
+                        <li>RK_ChefSuit</li>
+                        <li>RK_ChefHat</li>
+                        <li>RK_GaurdenUniform</li>
+                        <li>RK_WinterRobe</li>
+                        <li>RK_OrderUniform</li>
+                        <li>RK_BulletProofHelmet</li>
+                        <li>RK_FlatColorCoat</li>
+                        <li>RK_FrillOnepiece</li>
+                        <li>RK_HairCorsage</li>
+                        <li>RK_RibbonHairBand</li>
+                        <li>RK_SistersDerss</li>
+                        <li>RK_SistersVeil</li>
+
+                        <li>RK_Sack</li>
+                        <li>RK_BattleSuit</li>
+                        <li>RK_Mask</li>
+                        <li>RK_HeadBand</li>
+
+                        <li>RK_Plate</li>
+                        <li>RK_PlateHelmA</li>
+                        <li>RK_PlateHelmB</li>
+                        <li>RK_PlateHelmC</li>
+
+                        <li>RK_SantaRobe</li>
+                        <li>RK_SantaHat</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

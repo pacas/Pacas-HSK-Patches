@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/CultureDef[defName = *]/styleItemTags</xpath>
+        <value>
+            <li>
+                <tag>RBhair</tag>
+                <baseWeight>0</baseWeight>
+                <weightFactor>0</weightFactor>
+            </li>
+        </value>
+    </Operation>
+</Patch>
+

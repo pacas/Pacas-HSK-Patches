@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <InteractionDef>
+    <defName>AA_PsionicNuzzleInteraction</defName>
+    <label>psionic nuzzle</label>
+    <interactionMote>Mote_Thought</interactionMote>
+    <symbol>Things/Mote/SpeechSymbols/Nuzzle</symbol>
+    <workerClass>AlphaBehavioursAndEvents.InteractionWorker_PsionicNuzzle</workerClass>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry(p=2)->[INITIATOR_nameDef] [nuzzleadverb] [nuzzled] [RECIPIENT_nameDef].</li>
+        <li>r_logentry->[INITIATOR_nameDef] [nuzzleadverb] rubbed [INITIATOR_possessive] nose against [RECIPIENT_nameDef]'s [rubbedpart].</li>
+
+        <li>nuzzled(p=2)->psionically nuzzled</li>
+        <li>nuzzled->psionically snuggled up to</li>
+
+        <li>nuzzleadverb(p=4)-></li>
+        <li>nuzzleadverb->gently</li>
+        <li>nuzzleadverb->encouragingly</li>
+        <li>nuzzleadverb->happily</li>
+        <li>nuzzleadverb->softly</li>
+        <li>nuzzleadverb->supportively</li>
+        <li>nuzzleadverb->lightly</li>
+        <li>nuzzleadverb->warmly</li>
+        <li>nuzzleadverb->plaintively</li>
+        <li>nuzzleadverb->lovingly</li>
+        <li>nuzzleadverb->affectionately</li>
+
+        <li>rubbedpart->leg</li>
+        <li>rubbedpart->knee</li>
+        <li>rubbedpart->foot</li>
+        <li>rubbedpart->elbow</li>
+        <li>rubbedpart->hip</li>
+        <li>rubbedpart->shoulder</li>
+        <li>rubbedpart->hand</li>
+        <li>rubbedpart->side</li>
+        <li>rubbedpart->arm</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+
+</Defs>

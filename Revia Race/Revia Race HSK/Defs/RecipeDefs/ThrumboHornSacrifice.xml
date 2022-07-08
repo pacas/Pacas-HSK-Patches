@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>ReviaRaceSacrificeThrumboHorn</defName>
+    <label>sacrifice thrumbo horn</label>
+    <description>Sacrifice a thrumbo horn to honour the bloody gods of the Revian pantheon.</description>
+    <jobString>Sacrificing to the gods.</jobString>
+    <workAmount>240</workAmount>
+    <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+    <workSkill>Cooking</workSkill>
+    <efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ThrumboHorn</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <ReviaRacePalestone>32</ReviaRacePalestone>
+    </products>
+    <recipeUsers>
+      <li>ReviaSacrificeSpot</li>
+      <li>ReviaBloodSigil</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

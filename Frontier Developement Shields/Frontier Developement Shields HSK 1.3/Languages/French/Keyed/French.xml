@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <!-- Settings ///////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- Integrations Section -->
+    <fd.settings.shield.integrations.heading>Integrations</fd.settings.shield.integrations.heading>
+
+    <fd.settings.shield.climatecontrol.label>Activer l'utilisation du mod Contrôle Centralisé du Climat (Nécessite de relancer le jeu)</fd.settings.shield.climatecontrol.label>
+    <fd.settings.shield.climatecontrol.description>Activer le refroidissement des boucliers avec les tuyaux de Contrôle Centralisé du Climat</fd.settings.shield.climatecontrol.description>
+
+    <!-- General section -->
+    <fd.settings.shield.general.heading>Général</fd.settings.shield.general.heading>
+
+    <fd.settings.shield.shootout.label>Autoriser tirs intérieurs</fd.settings.shield.shootout.label>
+    <fd.settings.shield.shootout.description>Autorise les tirs provenant de l'intérieur de traverser le bouclier</fd.settings.shield.shootout.description>
+
+    <!-- Power section -->
+    <fd.settings.shield.power.heading>Puissance</fd.settings.shield.power.heading>
+
+    <fd.settings.shield.power.per_tile.label>Puissance par carré</fd.settings.shield.power.per_tile.label>
+    <fd.settings.shield.power.minimum_online.label>Puissance minimale consommée</fd.settings.shield.power.minimum_online.label>
+
+    <!-- Integrity section -->
+    <fd.settings.shield.integrity.heading>Intégrité</fd.settings.shield.integrity.heading>
+
+    <fd.settings.shield.integrity.power_per_damage.label>Puissance par unité de dommage</fd.settings.shield.integrity.power_per_damage.label>
+    <fd.settings.shield.integrity.drop_pod_damage.label>Dommage par capsule de transport</fd.settings.shield.integrity.drop_pod_damage.label>
+
+    <!-- Thermal section-->
+    <fd.settings.shield.thermal.heading>Thermique</fd.settings.shield.thermal.heading>
+
+    <fd.settings.shield.thermal.per_power.label>Energie thermique par unité de puissance</fd.settings.shield.thermal.per_power.label>
+
+    <fd.settings.shield.thermal.label>Dissipation thermique</fd.settings.shield.thermal.label>
+    <fd.settings.shield.thermal.description>Active la fonction de dissipation thermique des boucliers. Peut créer des pannes de bouclier et des incidents</fd.settings.shield.thermal.description>
+
+    <fd.settings.shield.minor_thermal_incidents.label>Incidents de température mineurs</fd.settings.shield.minor_thermal_incidents.label>
+    <fd.settings.shield.minor_thermal_incidents.description>Les incidents ne concernent que le bouclier</fd.settings.shield.minor_thermal_incidents.description>
+
+    <fd.settings.shield.major_thermal_incidents.label>Incidents de température majeurs</fd.settings.shield.major_thermal_incidents.label>
+    <fd.settings.shield.major_thermal_incidents.description>Les incidents concernent le bouclier et le réseau électrique</fd.settings.shield.major_thermal_incidents.description>
+
+    <fd.settings.shield.critical_thermal_incidents.label>Incidents de température critiques</fd.settings.shield.critical_thermal_incidents.label>
+    <fd.settings.shield.critical_thermal_incidents.description>Les incidents concernent le bouclier et le réseau électrique et la map</fd.settings.shield.critical_thermal_incidents.description>
+    
+    <!-- Incidents //////////////////////////////////////////////////////////////////////////////////////////////////-->
+    
+    <fd.shields.incident.offline.body>Un générateur de champ est à court d'électricité et s'est éteint</fd.shields.incident.offline.body>
+
+    <fd.shields.incident.minor.title>Zzzt! (Bouclier)</fd.shields.incident.minor.title>
+    <fd.shields.incident.minor.body>Un circuit d'absorption de bouclier en surchauffe a court-ciruité {0}Wj stockés sur le réseau.</fd.shields.incident.minor.body>
+
+    <fd.shields.incident.major.title>Extinction du bouclier</fd.shields.incident.major.title>
+    <fd.shields.incident.major.body>Un circuit d'absorption de bouclier en surchauffe est tombé en panne et a court-ciruité {0}Wj stockés sur le réseau.</fd.shields.incident.major.body>
+
+    <fd.shields.incident.critical.title>Explosion du bouclier</fd.shields.incident.critical.title>
+    <fd.shields.incident.critical.body>Un circuit d'absorption de bouclier en surchauffe a explosé et court-ciruité {0}Wj stockés sur le réseau.</fd.shields.incident.critical.body>
+
+    <!-- UI /////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- Text inspection -->
+    <fd.heatsink.temperature>Temperature du radiateur</fd.heatsink.temperature>
+
+    <shield.status.offline>Bouclier hors-service</shield.status.offline>
+    <shield.status.no_power>Déconnecté du réseau électrique</shield.status.no_power>
+    <shield.status.unpowered>Eteint</shield.status.unpowered>
+    <shield.status.no_battieres>Pas de batterie disponible</shield.status.no_battieres>
+    <shield.status.battery_too_low>Pas assez d'énergie dans les batteries</shield.status.battery_too_low>
+    <shield.status.internal_battery_discharged>Batterie interne déchargée</shield.status.internal_battery_discharged>
+    <shield.status.thermal_safety>Mise en securité thermique</shield.status.thermal_safety>
+    <shield.status.online>Bouclier fonctionnel</shield.status.online>
+
+    <!-- Gizmos -->
+    <radius.label>Rayon</radius.label>
+    <radius.description>Spécifier le rayon du bouclier</radius.description>
+    
+    <thermal_shutoff.label>Mise en securité thermique</thermal_shutoff.label>
+    <thermal_shutoff.description>Autoriser la mise en sécurité en cas de surchauffe</thermal_shutoff.description>
+
+    <fd.shield.render_field.label>Visible</fd.shield.render_field.label>
+    <fd.shield.render_field.description>Active/Désactive la visibilité du bouclier (Cosmétique)</fd.shield.render_field.description>
+
+    <charge_internal_battery.label>Charger la batterie interne</charge_internal_battery.label>
+    <charge_internal_battery.description>Transfère l'énergie des batteries connectées dans la batterie interne</charge_internal_battery.description>
+    
+       <fd.heatsink.climate.net.connect.label>Utiliser le système d'aération</fd.heatsink.climate.net.connect.label>
+    <fd.heatsink.climate.net.connect.description>Connecte le bouclier au système d'aération</fd.heatsink.climate.net.connect.description>
+    
+
+</LanguageData>

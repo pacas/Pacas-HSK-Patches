@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 미완성 오토마톤 -->
+
+  <UnfinishedAutomaton.label>Незаконченный автоматон</UnfinishedAutomaton.label>
+  <UnfinishedAutomaton.description>Незаконченный автоматон.</UnfinishedAutomaton.description>
+
+
+  <!-- 오토마톤 가죽 -->
+
+  <Leather_Automaton.label>Кожа автоматона</Leather_Automaton.label>
+  <Leather_Automaton.description>Кожа автоматона. Выглядит будто человеческая.</Leather_Automaton.description>
+
+
+  <!-- 중추신경케이스 -->
+
+  <PN_BrainEmpty.label>Пустой корпус</PN_BrainEmpty.label>
+  <PN_BrainEmpty.description>Корпус, специально разработанный для центральной нервной системы.</PN_BrainEmpty.description>
+
+  <PN_Brain.label>Центральная нервная система</PN_Brain.label>
+  <PN_Brain.description>Биологическая центральная нервная система человека. Не похоже, что её можно хранить долго.</PN_Brain.description>
+
+  <PN_BrainCasing.label>Мозговое ядро автоматона</PN_BrainCasing.label>
+  <PN_BrainCasing.description>Мозговое ядро используемое для создания автоматона.</PN_BrainCasing.description>
+
+
+  <!-- 수리키트 -->
+
+  <PN_RepairKit.label>Ремонтный комплект для автоматона</PN_RepairKit.label>
+  <PN_RepairKit.description>Набор различных материалов для ремонта автоматона.</PN_RepairKit.description>
+
+
+  <!-- 자가 수리 키트 -->
+
+  <PN_SelfRepairKit.label>Комплект самообслуживания</PN_SelfRepairKit.label>
+  <PN_SelfRepairKit.description>Ремкомплект объединенный с сывороткой исцеления.Его можно использовать без оператора, так что пользователь сможет самостоятельно себя отремонтировать.</PN_SelfRepairKit.description>
+  <PN_SelfRepairKit.comps.0.useLabel>Использовать комплект самообслуживания</PN_SelfRepairKit.comps.0.useLabel>
+
+
+  <!-- 로열 부품 -->
+
+  <PN_Component.label>Компонент ПнЛ</PN_Component.label>
+  <PN_Component.description>Этот компонент используется в специальных продуктах ПнЛ Индастри. Он плотно запечатан, поэтому самостоятельное создание такого компонента выглядит затруднительным.</PN_Component.description>
+
+
+</LanguageData>

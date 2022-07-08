@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Settings ///////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <!-- Integrations Section -->
+  <fd.settings.shield.integrations.heading>其他mod设置</fd.settings.shield.integrations.heading>
+
+  <fd.settings.shield.climatecontrol.label>启用“Centralized Climate Control”支持（需要重新启动游戏！）</fd.settings.shield.climatecontrol.label>
+  <fd.settings.shield.climatecontrol.description>启用“Centralized Climate Control”的管道使屏障冷却。</fd.settings.shield.climatecontrol.description>
+
+  <fd.settings.shield.badhygiene.label>启用“Dubs Bad Hygiene”支持 (需要重新启动游戏，并新存档)</fd.settings.shield.badhygiene.label>
+  <fd.settings.shield.badhygiene.description>启用“Dubs Bad Hygiene”冷却单位使屏障冷却。</fd.settings.shield.badhygiene.description>
+
+  <!-- This mod has not been updated to 1.1 as far as I know -->
+  <!-- <fd.settings.shield.redistheat.label>Enable RedistHeat support (requires game restart!)</fd.settings.shield.redistheat.label> -->
+  <!-- <fd.settings.shield.redistheat.description>Enables cooling of shields with RedistHeat duct work</fd.settings.shield.redistheat.description> -->
+
+  <!-- General section -->
+  <fd.settings.shield.general.heading>常规设置</fd.settings.shield.general.heading>
+
+  <fd.settings.shield.shootout.label>启用屏障内射击</fd.settings.shield.shootout.label>
+  <fd.settings.shield.shootout.description>使来自屏障内的射击能够从屏障中射出</fd.settings.shield.shootout.description>
+
+  <fd.settings.shield.shootin.label>启用向友军屏障射击</fd.settings.shield.shootin.label>
+  <fd.settings.shield.shootin.description>允许殖民者尝试射击友军盾牌（用于测试，不建议用于正常游戏！）</fd.settings.shield.shootin.description>
+
+  <fd.settings.shield.overlap-passthrough.label>启用重叠通过</fd.settings.shield.overlap-passthrough.label>
+  <fd.settings.shield.overlap-passthrough.description>允许子弹和炮弹穿过重叠区域的屏障</fd.settings.shield.overlap-passthrough.description>
+
+  <!-- Color section -->
+  <fd.settings.shield.color>颜色</fd.settings.shield.color>
+  <fd.settings.shield.enable>启用花式护盾纹理</fd.settings.shield.enable>
+  <fd.settings.shield.secondarycolor>启用屏障二次着色</fd.settings.shield.secondarycolor>
+
+  <!-- Power section -->
+  <fd.settings.shield.power.heading>电力</fd.settings.shield.power.heading>
+
+  <fd.settings.shield.power.per_tile.label>平铺功率</fd.settings.shield.power.per_tile.label>
+  <fd.settings.shield.power.minimum_online.label>最小在线功率</fd.settings.shield.power.minimum_online.label>
+
+  <!-- Integrity section -->
+  <fd.settings.shield.integrity.heading>防御</fd.settings.shield.integrity.heading>
+
+  <fd.settings.shield.integrity.power_per_damage.label>每次受到伤害的消耗能量</fd.settings.shield.integrity.power_per_damage.label>
+  <fd.settings.shield.integrity.drop_pod_damage.label>运输舱的伤害</fd.settings.shield.integrity.drop_pod_damage.label>
+  <fd.settings.shield.integrity.skyfaller_damage.label>陨石伤害</fd.settings.shield.integrity.skyfaller_damage.label>
+
+  <!-- Thermal section-->
+  <fd.settings.shield.thermal.heading>上升的温度</fd.settings.shield.thermal.heading>
+
+  <fd.settings.shield.thermal.per_power.label>每功率产生温度</fd.settings.shield.thermal.per_power.label>
+
+  <fd.settings.shield.thermal.label>启用屏障热能</fd.settings.shield.thermal.label>
+  <fd.settings.shield.thermal.description>启用屏障加热。会导致护盾失灵并引发事故</fd.settings.shield.thermal.description>
+
+  <fd.settings.shield.minor_thermal_incidents.label>启用小型高温事故</fd.settings.shield.minor_thermal_incidents.label>
+  <fd.settings.shield.minor_thermal_incidents.description>仅对袭击护盾的事件发生</fd.settings.shield.minor_thermal_incidents.description>
+
+  <fd.settings.shield.major_thermal_incidents.label>启用严重高温事故</fd.settings.shield.major_thermal_incidents.label>
+  <fd.settings.shield.major_thermal_incidents.description>事故会影响防护罩和电网</fd.settings.shield.major_thermal_incidents.description>
+
+  <fd.settings.shield.critical_thermal_incidents.label>启用关键高温事故</fd.settings.shield.critical_thermal_incidents.label>
+  <fd.settings.shield.critical_thermal_incidents.description>事故会影响护盾、电网甚至地图</fd.settings.shield.critical_thermal_incidents.description>
+
+  <!-- Incidents //////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <fd.shields.incident.offline.body>一个屏障生成器断开电力</fd.shields.incident.offline.body>
+
+  <fd.shields.incident.skyfaller.blocked.body>坠落的碎片撞到了屏障并被摧毁</fd.shields.incident.skyfaller.blocked.body>
+  <fd.shields.incident.droppod.blocked.body>一个运输舱撞到了屏障并被摧毁</fd.shields.incident.droppod.blocked.body>
+  <fd.shields.incident.crashpod.blocked.body>一个坠毁的飞船碎片撞到了屏障上并被摧毁了</fd.shields.incident.crashpod.blocked.body>
+
+  <fd.shields.incident.minor.title>屏障温度线圈短路</fd.shields.incident.minor.title>
+  <fd.shields.incident.minor.body>一个过热的屏障温度线圈发生短路，从电网中消耗了{0}Wd的能量。</fd.shields.incident.minor.body>
+
+  <fd.shields.incident.major.title>屏障温度线圈故障</fd.shields.incident.major.title>
+  <fd.shields.incident.major.body>一个过热的屏障温度线圈发生故障，从电网中消耗了{0}Wd的能量。</fd.shields.incident.major.body>
+
+  <fd.shields.incident.critical.title>屏障温度线圈爆炸</fd.shields.incident.critical.title>
+  <fd.shields.incident.critical.body>一个过热的屏障温度线圈发生爆炸，从电网中消耗了{0}Wd的能量。</fd.shields.incident.critical.body>
+
+  <!-- UI /////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <!-- Text inspection -->
+  <fd.heatsink.temperature>散热器温度</fd.heatsink.temperature>
+
+  <shield.status.offline>屏障断开电力</shield.status.offline>
+  <shield.status.no_power>未连接电源</shield.status.no_power>
+  <shield.status.unpowered>断电</shield.status.unpowered>
+  <shield.status.no_battieres>没有可用的电池</shield.status.no_battieres>
+  <shield.status.battery_too_low>可用电池电量过低</shield.status.battery_too_low>
+  <shield.status.internal_battery_discharged>内部电池发电</shield.status.internal_battery_discharged>
+  <shield.status.thermal_safety>温度过载自动开关安全启动</shield.status.thermal_safety>
+  <shield.status.online>屏障连接电力</shield.status.online>
+
+  <!-- Gizmos -->
+  <radius.label>半径</radius.label>
+  <radius.description>设置护盾的半径</radius.description>
+
+  <thermal_shutoff.label>温度过载自动开关</thermal_shutoff.label>
+  <thermal_shutoff.description>防止屏障温度线圈因过热而损坏</thermal_shutoff.description>
+
+  <charge_internal_battery.label>内部充电电池</charge_internal_battery.label>
+  <charge_internal_battery.description>从任何连接的电池中获取能量，为内部电池充电</charge_internal_battery.description>
+
+  <fd.shield.render_field.label>切还可见性</fd.shield.render_field.label>
+  <fd.shield.render_field.description>切换屏障区域可见（仅用于示意）</fd.shield.render_field.description>
+
+  <fd.heatsink.climate.net.connect.label>使用空调管道</fd.heatsink.climate.net.connect.label>
+  <fd.heatsink.climate.net.connect.description>将屏障连接到空调管道</fd.heatsink.climate.net.connect.description>
+
+</LanguageData>

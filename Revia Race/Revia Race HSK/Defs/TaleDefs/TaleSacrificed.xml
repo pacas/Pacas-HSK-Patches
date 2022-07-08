@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TaleDef>
+    <defName>ReviaRaceTaleSacrificed</defName>
+    <label>humanlike corpse sacrificed</label>
+    <taleClass>Tale_DoublePawn</taleClass>
+    <type>Expirable</type>
+    <usableForArt>false</usableForArt>
+    <firstPawnSymbol>SACRIFICER</firstPawnSymbol>
+    <secondPawnSymbol>PRISONER</secondPawnSymbol>
+    <maxPerPawn>1</maxPerPawn>
+    <expireDays>20</expireDays>
+  </TaleDef>
+</Defs>

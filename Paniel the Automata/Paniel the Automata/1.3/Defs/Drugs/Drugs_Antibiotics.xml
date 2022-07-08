@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--==================================== 오토마톤 항생제 ====================================-->
+    <ThingDef ParentName="DrugPillBase">
+        <defName>PN_antibiotics</defName>
+        <label>PnL antibiotics</label>
+        <description>Warning: Do not use on humans.\nThis antibiotics is for automaton only.\n\nAutomaton antibiotics for unknown diseases.\n(Used for diseases added by mod.)</description>
+        <graphicData>
+            <texPath>Things/Item/PNAntibiotics</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <stackLimit>25</stackLimit>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>600</WorkToMake>
+            <MarketValue>18</MarketValue>
+            <Mass>0.005</Mass>
+            <Flammability>0.7</Flammability>
+        </statBases>
+        <costList>
+            <Chemfuel>5</Chemfuel>
+            <MedicalDrink>1</MedicalDrink>
+        </costList>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+            <foodType>Processed</foodType>
+            <baseIngestTicks>30</baseIngestTicks>
+            <ingestSound>Ingest_Inject</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.18,0,0)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestCommandString>Inject {0}</ingestCommandString>
+            <ingestReportString>Injecting {0}.</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <chairSearchRadius>0</chairSearchRadius>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>PN_AB_Bridge</hediffDef>
+                    <severity>1</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>1034</listOrder>
+                <overdoseSeverityOffset>0</overdoseSeverityOffset>
+            </li>
+        </comps>
+        <tradeTags Inherit="false">
+        </tradeTags>
+        <recipeMaker>
+            <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+            <workSkill>Intellectual</workSkill>
+            <effectWorking>Cook</effectWorking>
+            <researchPrerequisite>PNRP_Production</researchPrerequisite>
+            <recipeUsers Inherit="false">
+                <li>PN_AutomatonBench</li>
+            </recipeUsers>
+            <soundWorking>Recipe_Drug</soundWorking>
+        </recipeMaker>
+    </ThingDef>
+
+    <!--==================================== 항생제 효과 ====================================-->
+    <HediffDef>
+        <defName>PN_AB_Bridge</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>antibiotics Bridge</label>
+        <description>...</description>
+        <defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+                <hediffAndBodypart>
+                    <li>
+                        <hediff>PN_ateFuel</hediff>
+                    </li>
+                    <li>
+                        <hediff>PN_AB_EffectBridge</hediff>
+                    </li>
+                </hediffAndBodypart>
+                <debug>false</debug>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>PN_AB_EffectBridge</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>antibiotics Bridge</label>
+        <description>...</description>
+        <defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="MoharHediffs.HediffCompProperties_HediffExclusive">
+                <hediffToApply>PN_AB_Effect</hediffToApply>
+                <bodyDefWhiteList>
+                    <li>PanielBody</li>
+                </bodyDefWhiteList>
+                <debug>false</debug>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>PN_AB_Effect</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>PnL antibiotics</label>
+        <description>Antibiotics are working.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_antibiotics</ThingDef>
+        </descriptionHyperlinks>
+        <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.00</maxSeverity>
+        <initialSeverity>1.0</initialSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-0.5</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>fading</label>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>0.8</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>0.8</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <postFactor>0.8</postFactor>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ImmunityGainSpeed>1.5</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+            <li>
+                <label>active</label>
+                <minSeverity>0.25</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>0.6</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>0.6</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <postFactor>0.6</postFactor>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ImmunityGainSpeed>5</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+            <li>
+                <label>active</label>
+                <minSeverity>0.75</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>0.6</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>0.6</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <postFactor>0.6</postFactor>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ImmunityGainSpeed>3</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+            <li>
+                <label>injected</label>
+                <minSeverity>0.9</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <postFactor>0.8</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <postFactor>0.8</postFactor>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <postFactor>0.8</postFactor>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ImmunityGainSpeed>1</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

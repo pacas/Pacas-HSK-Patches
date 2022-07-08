@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PN_LowMaintenance>정비 필요</PN_LowMaintenance>
+  <PN_LowMaintenanceDesc>다음 파니엘의 정비 상태가 좋지 않아 고장날 수 있습니다.\n\n{0}</PN_LowMaintenanceDesc>
+  <PN_NeedFuel>PnL 연료 필요</PN_NeedFuel>
+	<PN_NeedFuelDesc>다음 파니엘이 연료가 다 떨어져 비상 동력 모드로 들어갔습니다.\n\n{0}</PN_NeedFuelDesc>
+  
+  <PN_HediffNullifier>{0}(은)는 {1}(을)를 면역했습니다. 사유 : {0}(은)는 오토마톤입니다</PN_HediffNullifier>
+
+  <PN_CantReason_orhediff>아이템 설명을 확인하세요.</PN_CantReason_orhediff>
+
+  <PN_AUTOMATA_MATERIAL>주 재료</PN_AUTOMATA_MATERIAL>
+
+  <PN_BILL_WINDOW_TAB_APPEARANCE_TITLE>외형</PN_BILL_WINDOW_TAB_APPEARANCE_TITLE>
+  <PN_BILL_WINDOW_TAB_APPEARANCE_TOOLTIP>외형은 조립시 4개의 외형중 하나로 랜덤하게 선택됩니다.</PN_BILL_WINDOW_TAB_APPEARANCE_TOOLTIP>
+
+  <PN_BILL_WINDOW_TAB_SPECIALIZATION_TITLE>특화</PN_BILL_WINDOW_TAB_SPECIALIZATION_TITLE>
+
+  <PN_BILL_WINDOW_TAB_MATERIAL_TITLE>세부 조정</PN_BILL_WINDOW_TAB_MATERIAL_TITLE>
+  <PN_BILL_WINDOW_TAB_MATERIAL_BASE_MATERIAL_TOOLTIP>몸체를 구성하는 재료. 제품의 내구성에 영향을 줍니다. 가공이 어려울수록 제작에 걸리는 시간이 늘어납니다.</PN_BILL_WINDOW_TAB_MATERIAL_BASE_MATERIAL_TOOLTIP>
+  <PN_BILL_WINDOW_TAB_MATERIAL_COMPONENT_TOOLTIP>좋은 부품을 더 많이 사용할 수록 더 좋은 성능의 제품이 나올 수 있지만, 제작 난이도가 더 어려워집니다.</PN_BILL_WINDOW_TAB_MATERIAL_COMPONENT_TOOLTIP>
+  <PN_BILL_WINDOW_TAB_MATERIAL_AICORE_TOOLTIP>인공 자아핵은 제품의 성능을 크게 끌어올릴 수 있습니다.</PN_BILL_WINDOW_TAB_MATERIAL_AICORE_TOOLTIP>
+
+  <PN_BILL_WINDOW_TAB_SUMMARY_TITLE>예상 결과</PN_BILL_WINDOW_TAB_SUMMARY_TITLE>
+
+  <PN_BILL_WINDOW_TAB_SUMMARY_REQUIRED_SKILL>요구되는 제작 레벨</PN_BILL_WINDOW_TAB_SUMMARY_REQUIRED_SKILL>
+
+  <PN_BILL_WINDOW_TAB_SUMMARY_BTN_CANCEL>취소</PN_BILL_WINDOW_TAB_SUMMARY_BTN_CANCEL>
+  <PN_BILL_WINDOW_TAB_SUMMARY_BTN_ADD_BILL>추가</PN_BILL_WINDOW_TAB_SUMMARY_BTN_ADD_BILL>
+  
+  <PN_AUTOMATACRYPTOSLEEPONLY>오토마톤만 사용 가능.</PN_AUTOMATACRYPTOSLEEPONLY>
+</LanguageData>

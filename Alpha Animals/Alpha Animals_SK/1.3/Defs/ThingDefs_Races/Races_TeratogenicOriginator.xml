@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ============================================================ -->
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_TeratogenicOriginator</defName>
+        <label>teratogenic originator</label>
+        <description>This amorphous, flesh coloured, translucent creature seems to lack everything but the most basic instincts, moving around slowly and sometimes devouring any plant it comes in contact with, incorporating it into its cytoplasm. There are some chunks of seemingly normal flesh floating inside it.\n\nTeratogenic Originators are basically an enormous clonal colony of pluripotent stem cells, capable of diferentiating into different tissues. They were engineered by a group of unethical scientists as a cheap way to create lab-grown limbs suitable for transplants, but the end results is less than ideal. These strange mutant limbs can be periodically excised from the creature and used at will.</description>
+        <statBases>
+            <MoveSpeed>0.6</MoveSpeed>
+            <ComfyTemperatureMin>-80</ComfyTemperatureMin>
+            <MarketValue>850</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>0</MeatAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>tentacles</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>1.2</cooldownTime>
+                <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_AsexualReproduction">
+                <reproductionIntervalDays>120</reproductionIntervalDays>
+                <customString>Cloning in: </customString>
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+                <gatheringIntervalDays>20</gatheringIntervalDays>
+                <resourceAmount>1</resourceAmount>
+                <customResourceString>AA_MutantImplantsDesc</customResourceString>
+                <isRandom>true</isRandom>
+                <randomItems>
+                    <li>AA_MutantLeg</li>
+                    <li>AA_MutantArm</li>
+                    <li>AA_MutantEye</li>
+                </randomItems>
+            </li>
+        </comps>
+        <race>
+            <wildBiomes>
+                <BorealForest>0.01</BorealForest>
+                <IceSheet>0.01</IceSheet>
+                <Tundra>0.01</Tundra>
+                <ColdBog>0.01</ColdBog>
+                <SeaIce>0.01</SeaIce>
+                <TemperateSwamp>0.01</TemperateSwamp>
+                <TropicalSwamp>0.01</TropicalSwamp>
+                <TemperateForest>0.01</TemperateForest>
+                <TropicalRainforest>0.01</TropicalRainforest>
+                <AridShrubland>0.01</AridShrubland>
+                <Desert>0.01</Desert>
+                <ExtremeDesert>0.01</ExtremeDesert>
+            </wildBiomes>
+            <herdAnimal>false</herdAnimal>
+            <predator>false</predator>
+            <body>AA_GooBody</body>
+            <baseBodySize>5.00</baseBodySize>
+            <baseHungerRate>0.1</baseHungerRate>
+            <baseHealthScale>7</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <useMeatFrom>ThingDefFishSduiggles</useMeatFrom>
+            <hasGenders>false</hasGenders>
+            <wildness>0.5</wildness>
+            <manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
+            <gestationPeriodDays>120</gestationPeriodDays>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>355</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.30</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.60</minAge>
+                    <soundCall>Pawn_TetraSlug_Call</soundCall>
+                    <soundAngry>Pawn_TetraSlug_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalExotic</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Farm</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_FarmImplantsDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_TeratogenicOriginator</defName>
+        <label>teratogenic originator</label>
+        <race>AA_TeratogenicOriginator</race>
+        <combatPower>650</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_TeratogenicOriginator/AA_TeratogenicOriginator</texPath>
+                    <drawSize>1.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_TeratogenicOriginator/AA_Dessicated_TeratogenicOriginator</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_TeratogenicOriginator/AA_TeratogenicOriginator</texPath>
+                    <drawSize>2</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_TeratogenicOriginator/AA_Dessicated_TeratogenicOriginator</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_TeratogenicOriginator/AA_TeratogenicOriginator</texPath>
+                    <drawSize>3</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_TeratogenicOriginator/AA_Dessicated_TeratogenicOriginator</texPath>
+                    <drawSize>3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

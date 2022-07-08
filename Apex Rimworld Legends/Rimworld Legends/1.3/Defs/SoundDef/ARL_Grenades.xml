@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>ARL_Interact_ChargeGrenade</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/ARL_Interact_ChargeGrenade</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>23.91304</min>
+          <max>23.91304</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9576087</min>
+          <max>1.084783</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ARL_Throw_ChargeGrenade</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Misc/Swish1</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>34.7826</min>
+          <max>34.7826</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.9576087</min>
+          <max>1.063587</max>
+        </pitchRange>
+        <sustainLoop>False</sustainLoop>
+        <sustainIntervalRange>
+          <min>0.1025641</min>
+          <max>0.1025641</max>
+        </sustainIntervalRange>
+      </li>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/ARL_Throw_ChargeGrenade</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>30</min>
+          <max>30</max>
+        </volumeRange>
+        <pitchRange>
+          <min>1</min>
+          <max>1.114706</max>
+        </pitchRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ARL_Explosion_ChargeGrenade</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/ARL_Explosion_ChargeGrenade</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>45</min>
+          <max>50</max>
+        </volumeRange>
+        <pitchRange>
+          <min>0.8516304</min>
+          <max>1.254348</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

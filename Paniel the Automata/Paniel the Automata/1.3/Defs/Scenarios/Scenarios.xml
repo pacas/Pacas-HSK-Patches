@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ScenarioDef>
+        <defName>Paniel_Scenarios</defName>
+        <label>Initial Testing Program: Automaton</label>
+        <description>PnL Industry has launched their newest product with superior intelligence capability. They scheduled initial testing program to measure its survivability under extreme(or harsh) conditions such as Rim World.\n\nParticipating test subject can perform researches and acquire skills identical to typical human beings. However, under harsh circumstances, these test subjects seem to be "mentally unstable."\n\nTip : Boomabear produces chemfuel.</description>
+        <scenario>
+            <summary>PnL Industry wants to test a new type of automaton.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>Paniel_PlayerFaction</factionDef>
+            </playerFaction>
+            <parts>
+
+                <!-- Config pages -->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>1</pawnCount>
+                    <pawnChoiceCount>1</pawnChoiceCount>
+                </li>
+
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_Naked">
+                    <def>Naked</def>
+                    <context>PlayerStarter</context>
+                </li>
+
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <visible>false</visible>
+                    <method>DropPods</method>
+                </li>
+
+                <!-- Starting research -->
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>PNRP_Production</project>
+                </li>
+
+                <!-- Game start dialog -->
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>
+to. Experiment Manager
+
+Hello Manager. Thank you for participating in the test program.
+Experimental automaton is a model that can study and acquire skills like humans. However, there have been a number of reports of mental instability.
+
+Only one test subject is provided. It cannot be resupplied in case of loss or destroy.
+
+As a spare, we provided one year's worth of fuel and three brain cores. It is up to the manager to decide how to use it.
+
+Please take part in the experiment diligently.
+
+from. PnL Industry Research Department.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+
+                <!-- Player starting things -->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>PN_BrainCasing</thingDef>
+                    <count>3</count>
+                </li>
+
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>PN_AutomatonFuel</thingDef>
+                    <count>60</count>
+                </li>
+
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>PN_SelfRepairKit</thingDef>
+                    <count>5</count>
+                </li>
+
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>PN_Shovel</thingDef>
+                    <stuff>Steel</stuff>
+                </li>
+
+                <!-- Disable Incident -->
+                <li Class="ScenPart_DisableIncident">
+                    <def>DisableIncident</def>
+                    <incident>WandererJoin</incident>
+                </li>
+
+                <li Class="ScenPart_DisableIncident">
+                    <def>DisableIncident</def>
+                    <incident>StrangerInBlackJoin</incident>
+                </li>
+
+                <li Class="ScenPart_DisableIncident" MayRequire="Ludeon.RimWorld.Royalty">
+                    <def>DisableIncident</def>
+                    <incident>WandererJoinAbasia</incident>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+</Defs>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Damage -->
+  <DamageDef>
+    <defName>ARL_ToxicGas</defName>
+    <label>ARL_ToxicGas</label>
+    <workerClass>OPToxic.DamageWorker_OPToxic</workerClass>
+    <canInterruptJobs>false</canInterruptJobs>
+    <makesBlood>false</makesBlood>
+    <defaultDamage>0</defaultDamage>
+    <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+    <explosionColorEdge>(134,144,22,0.05)</explosionColorEdge>
+    <soundExplosion>Explosion_Stun</soundExplosion>
+    <harmsHealth>false</harmsHealth>
+    <combatLogRules>Damage_Extinguish</combatLogRules>
+  </DamageDef>
+  <!-- Gas : Thing -->
+  <ThingDef ParentName="BaseGas">
+    <defName>ARL_ToxicGasCloud</defName>
+    <label>toxic gas</label>
+    <graphicData>
+      <texPath>Things/Gas/Puff</texPath>
+      <drawSize>2.6</drawSize>
+      <color>(0.52,0.56,0.08,0.9)</color>
+    </graphicData>
+    <gas>
+      <expireSeconds>
+        <min>15</min>
+        <max>20</max>
+      </expireSeconds>
+      <blockTurretTracking>false</blockTurretTracking>
+      <accuracyPenalty>0.2</accuracyPenalty>
+      <rotationSpeed>20</rotationSpeed>
+    </gas>
+    <thingClass>OPToxic.OPToxicGas</thingClass>
+    <modExtensions>
+      <li Class="OPToxic.OPToxicDefs">
+        <OPToxicHediff>ToxicBuildup</OPToxicHediff>
+        <!-- Name of HediffDef to apply, change to own HediffDef -->
+        <OPToxicSeverity>0.06</OPToxicSeverity>
+        <!-- Severity build up per Tick period -->
+        <OPSevUpTickPeriod>120</OPSevUpTickPeriod>
+        <!-- No of game ticks per each build up, recommend >= 120 -->
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

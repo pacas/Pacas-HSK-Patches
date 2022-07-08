@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>    
+    <ThingDef Abstract="True" ParentName="SK_InsectThingBase" Name="SK_AA_Insect">
+        <statBases>
+            <LeatherAmount>0</LeatherAmount>
+            <Flammability>1</Flammability>
+        </statBases>
+        <race>
+            <leatherDef>Chitin</leatherDef>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <manhunterOnDamageChance>0.1</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+        </race>
+        <butcherProducts>
+			<Chitin>10</Chitin>
+		</butcherProducts>
+    </ThingDef>
+    
+    <ThingDef Abstract="True" ParentName="SK_AA_Insect" Name="SK_AA_BlackHive">
+        <statBases>
+            <MeatAmount>60</MeatAmount>
+            <LeatherAmount>0</LeatherAmount>
+            <Flammability>0.3</Flammability>
+			<ToxicSensitivity>0</ToxicSensitivity>
+			<ImmunityGainSpeed>2.5</ImmunityGainSpeed>
+			<SmokeSensitivity>0.5</SmokeSensitivity>
+			<GermResistance>0.5</GermResistance>
+			<GermContainment>0.1</GermContainment>
+			<FilthRate>6</FilthRate>
+        </statBases>
+        <race>
+            <thinkTreeMain>Animal</thinkTreeMain>
+			<thinkTreeConstant>AnimalConstant</thinkTreeConstant>
+			<herdMigrationAllowed>false</herdMigrationAllowed>
+			<intelligence>ToolUser</intelligence>
+            <leatherDef>Leather_BlackChitin</leatherDef>
+            <hediffGiverSets>
+				<li>HardPassiveSet</li>
+			</hediffGiverSets>
+            <trainability>Intermediate</trainability>
+            <predator>true</predator>
+            <petness>0</petness>
+            <gestationPeriodDays>12</gestationPeriodDays>
+        </race>
+        <comps>
+			<li Class="CompProperties_Shearable">
+				<woolDef>Leather_BlackChitin</woolDef>
+				<shearIntervalDays>5</shearIntervalDays>
+				<woolAmount>30</woolAmount>
+			</li>
+		</comps>
+        <modExtensions>
+			<li Class="SK.InsectoidExtension"/>
+		</modExtensions>
+    </ThingDef>
+    
+    <ThingDef Abstract="True" ParentName="SK_AA_Insect" Name="SK_AA_Spiders">
+        <statBases>
+            <Mass>90</Mass>
+			<ArmorRating_Sharp>2.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>5</ArmorRating_Blunt>
+			<ImmunityGainSpeed>3</ImmunityGainSpeed>
+			<MeleeDodgeChance>0.13</MeleeDodgeChance>
+			<MeleeCritChance>0.15</MeleeCritChance>
+			<MeleeParryChance>0.2</MeleeParryChance>
+            <MarketValue>500</MarketValue>
+            <MeatAmount>60</MeatAmount>
+        </statBases>
+        <comps>
+			<li Class="SK.CompProperties_PawnJumper">
+				<maxCharges>5</maxCharges> <!-- Number of possible jumps -->
+				<minEnergy>0.45</minEnergy> <!-- Subtracts from the current rest(energy) level. 0.5 = 50% -->
+				<ammoCountPerCharge>10</ammoCountPerCharge> <!-- Rest(energy) consumption. 10 = 10% cost per jump. -->
+				<jumpCooldown>1250</jumpCooldown> <!-- Jump cooldown in ticks -->
+				<range>4</range>
+				<chargeNoun>jump</chargeNoun>
+				<hotKey>Misc4</hotKey>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+        <race>
+            <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.95</manhunterOnDamageChance>
+        </race>
+        <butcherProducts>
+			<Chitin>30</Chitin>
+			<PoisonGland>1</PoisonGland>
+		</butcherProducts>
+        <modExtensions>
+			<li Class="CombatExtended.RacePropertiesExtensionCE">
+				<bodyShape>Quadruped</bodyShape>
+			</li>
+			<li Class="SK.InsectoidExtension"/>
+		</modExtensions>
+    </ThingDef>
+</Defs>

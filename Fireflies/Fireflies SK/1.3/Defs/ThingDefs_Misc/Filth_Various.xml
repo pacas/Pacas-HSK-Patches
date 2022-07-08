@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+    <!--==================== Firefly Blood ====================-->
+
+    <ThingDef ParentName="BaseFilth">
+        <defName>FF_FireflyBlood</defName>
+        <label>firefly blood</label>
+        <statBases>
+            <Beauty>-5</Beauty>
+            <Cleanliness>-10</Cleanliness>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Filth/Spatter</texPath>
+            <color>(255, 235, 0)</color>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <filth>
+            <disappearsInDays>5~20</disappearsInDays>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>20</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+            <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+        </filth>
+    </ThingDef>
+
+</Defs>

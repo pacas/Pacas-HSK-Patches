@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<SkinSet>
+  
+  <lifeStage>
+    <appliesToAll>true</appliesToAll>
+    <variants>
+      <skin>
+      <color>(105,95,97)</color>
+        <commonality>1</commonality>
+        <texName>AA_PebbleMitW</texName>
+        <useComplexShader>true</useComplexShader>
+      </skin>
+      <skin>
+      <color>(158,153,135)</color>
+        <commonality>1</commonality>
+        <texName>AA_PebbleMitW</texName>
+        <useComplexShader>true</useComplexShader>
+      </skin>
+      <skin>
+      <color>(70,70,70)</color>
+        <commonality>1</commonality>
+        <texName>AA_PebbleMitW</texName>
+        <useComplexShader>true</useComplexShader>
+      </skin>
+      <skin>
+      <color>(132,135,132)</color>
+        <commonality>1</commonality>
+        <texName>AA_PebbleMitW</texName>
+        <useComplexShader>true</useComplexShader>
+      </skin>   
+     
+    </variants>  
+	
+    <winterCoat>
+      <useWinterCoat>false</useWinterCoat>
+    </winterCoat>
+  </lifeStage>
+  
+</SkinSet>

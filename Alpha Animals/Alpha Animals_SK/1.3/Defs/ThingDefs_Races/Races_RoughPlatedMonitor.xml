@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ====================================================== -->
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_RoughPlatedMonitor</defName>
+        <label>rough-plated monitor</label>
+        <description>The Rough-Plated Monitor, &lt;i&gt;Varanus Bracteatus&lt;/i&gt;, is a large monitor lizard adapted to life in extreme conditions. Their whole body and metabolism are adapted to environments of higher than normal acidity, thriving around acidic volcanic lakes with a water pH of 2 to 3. This immunity to acid allows them to prey on other creatures that use acid to deter predators.\n\nThe Rough-plated Monitor lays eggs that have a tendency to suddenly explode in a dangerous splash of acid when hatching.</description>
+        <statBases>
+            <MoveSpeed>3.00</MoveSpeed>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>60</ComfyTemperatureMax>
+            <MarketValue>350</MarketValue>
+            <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+            <ArmorRating_Heat>0.3</ArmorRating_Heat>
+            <Flammability>0</Flammability>
+            <MeatAmount>90</MeatAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>right claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>14</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <label>fangs</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.9</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_AcidImmunity">
+
+
+			</li>
+            <li Class="AnimalBehaviours.CompProperties_ExplodingEggLayer">
+                <eggFertilizedDef>AA_EggRoughPlatedMonitorFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <wildBiomes>
+                <Tundra>0.01</Tundra>
+                <ColdBog>0.01</ColdBog>
+                <TropicalSwamp>0.01</TropicalSwamp>
+                <AridShrubland>0.05</AridShrubland>
+                <Desert>0.07</Desert>
+                <ExtremeDesert>0.05</ExtremeDesert>
+            </wildBiomes>
+            <body>AA_EyelessQuadruped</body>
+            <baseBodySize>2</baseBodySize>
+            <baseHealthScale>2</baseHealthScale>
+            <baseHungerRate>0.4</baseHungerRate>
+            <foodType>CarnivoreAnimalStrict</foodType>
+            <predator>true</predator>
+            <maxPreyBodySize>1.5</maxPreyBodySize>
+            <wildness>0.70</wildness>
+            <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
+            <leatherDef>Leather_Lizard</leatherDef>
+            <useMeatFrom>Elephant</useMeatFrom>
+            <gestationPeriodDays>20</gestationPeriodDays>
+            <lifeExpectancy>37</lifeExpectancy>
+			<trainability>Intermediate</trainability>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.3</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.6</minAge>
+                    <soundWounded>AA_DecayDrake_Wounded</soundWounded>
+                    <soundDeath>AA_DecayDrake_Death</soundDeath>
+                    <soundAngry>AA_DecayDrake_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_ShockTroop</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_ShockTroopDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_RoughPlatedMonitor</defName>
+        <label>rough-plated monitor</label>
+        <race>AA_RoughPlatedMonitor</race>
+        <combatPower>175</combatPower>
+        <ecoSystemWeight>0.5</ecoSystemWeight>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RoughPlatedMonitor/AA_RoughPlatedMonitor</texPath>
+                    <drawSize>1.25</drawSize>
+                    <shadowData>
+                        <volume>(0.30, 0.25, 0.20)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RoughPlatedMonitor/AA_Dessicated_RoughPlatedMonitor</texPath>
+                    <drawSize>1.25</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RoughPlatedMonitor/AA_RoughPlatedMonitor</texPath>
+                    <drawSize>2</drawSize>
+                    <shadowData>
+                        <volume>(0.375, 0.375, 0.375)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RoughPlatedMonitor/AA_Dessicated_RoughPlatedMonitor</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RoughPlatedMonitor/AA_RoughPlatedMonitor</texPath>
+                    <drawSize>3.75</drawSize>
+                    <shadowData>
+                        <volume>(0.5, 0.5, 0.4)</volume>
+                        <offset>(0,0,-0.05)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_RoughPlatedMonitor/AA_Dessicated_RoughPlatedMonitor</texPath>
+                    <drawSize>3.75</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_DuskRat</defName>
+        <label>dusk rat</label>
+        <description>A widely-hated rodent known for soiling kitchens and spreading disease, rats have a way of following humans everywhere they go. It eats almost anything and lives almost anywhere.\n\nThis rat seems to be markedly different from other rats. It is a purely nocturnal animal, and it has four glowing eyes.</description>
+        <statBases>
+            <MoveSpeed>4.0</MoveSpeed>
+            <MarketValue>35</MarketValue>
+            <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+            <MeatAmount>40</MeatAmount>
+            <LeatherAmount>25</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>3.6</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>3.6</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.7</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <body>AA_FourEyedQuadruped</body>
+            <baseBodySize>0.15</baseBodySize>
+            <baseHungerRate>0.20</baseHungerRate>
+            <baseHealthScale>0.29</baseHealthScale>
+            <foodType>OmnivoreRoughAnimal</foodType>
+            <leatherDef>Leather_Light</leatherDef>
+            <useMeatFrom>Elephant</useMeatFrom>
+            <wildness>0.50</wildness>
+            <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0</manhunterOnDamageChance>
+            <mateMtbHours>8</mateMtbHours>
+            <gestationPeriodDays>12</gestationPeriodDays>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(2.2, 1)</li>
+                    <li>(2.8, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>8</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.07</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.3</minAge>
+                    <soundWounded>Pawn_Boomrat_Wounded</soundWounded>
+                    <soundDeath>Pawn_Boomrat_Death</soundDeath>
+                    <soundCall>Pawn_Boomrat_Call</soundCall>
+                    <soundAngry>Pawn_Boomrat_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalCommon</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Pest</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_PestDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_DuskRat</defName>
+        <label>dusk rat</label>
+        <race>AA_DuskRat</race>
+        <combatPower>20</combatPower>
+        <wildGroupSize>
+            <min>1</min>
+            <max>7</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DuskRat/AA_DuskRat</texPath>
+                    <drawSize>0.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DuskRat/AA_Dessicated_DuskRat</texPath>
+                    <drawSize>0.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DuskRat/AA_DuskRat</texPath>
+                    <drawSize>0.75</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DuskRat/AA_Dessicated_DuskRat</texPath>
+                    <drawSize>0.75</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DuskRat/AA_DuskRat</texPath>
+                    <drawSize>0.85</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DuskRat/AA_Dessicated_DuskRat</texPath>
+                    <drawSize>0.85</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

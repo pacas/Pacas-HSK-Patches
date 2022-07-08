@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+
+  <!-- mutant -->
+
+  <ThingDef Name="AA_BodyPartMutantBase" ParentName="BodyPartBase"  Abstract="True">
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItemNatural</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsNatural</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>4.0</DeteriorationRate>
+    </statBases>
+	<tickerType>Normal</tickerType>
+	<tradeability>Sellable</tradeability>
+	<comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>2</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="AA_BodyPartMutantBase">
+    <defName>AA_MutantLeg</defName>
+	<graphicData>
+      <texPath>Things/Item/Resource/AA_MutantLegImplant</texPath>
+    </graphicData>
+    <label>mutant leg</label>
+    <description>This leg seems to be covered in a slick secretion that constantly drips from every pore. Something seems... off about it, as if it wasn't a completely natural creation.</description>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="AA_BodyPartMutantBase">
+    <defName>AA_MutantArm</defName>
+    <label>mutant arm</label>
+		<graphicData>
+      <texPath>Things/Item/Resource/AA_MutantArmImplant</texPath>
+    </graphicData>
+    <description>This arm twitches and bends in strange unnatural ways, as if it had a mind of its own. Something seems... off about it, as if it wasn't a completely natural creation.</description>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="AA_BodyPartMutantBase">
+    <defName>AA_MutantEye</defName>
+    <label>mutant eye</label>
+		<graphicData>
+      <texPath>Things/Item/Resource/AA_MutantEyeImplant</texPath>
+    </graphicData>
+    <description>This eye constantly blinks on its own, like a nervous tic, and a second set of vertical eyelids seems to be present behind the normal, human ones. Something seems... off about it, as if it wasn't a completely natural creation.</description>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+  </ThingDef>
+
+ 
+  
+</Defs>

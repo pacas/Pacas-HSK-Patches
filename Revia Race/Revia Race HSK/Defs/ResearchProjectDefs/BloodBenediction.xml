@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>ReviaRaceBloodBenediction</defName>
+    <label>Blood benediction</label>
+    <description>Learn the rites to invoke the blood god's blessings for an upcoming battle.</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>ReviaRaceResearchTab</tab>
+    <prerequisites>
+      <li>ReviaRaceReligionBase</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>5.00</researchViewY>
+  </ResearchProjectDef>
+</Defs>

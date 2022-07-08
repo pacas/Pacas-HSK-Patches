@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ============================================================ -->
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_ShockGoat</defName>
+        <label>shock goat</label>
+        <description>Shock goats are domesticated alien animals, renowned for their capacity to store static electricity on their bony structures, and releasing it as a defensive measure. Interestingly enough, the shock goat has characteristics common to many alien species, such as three pairs of eyes, and characteristics typical of Earth goats, such as the horns. This points to the conclusion that shock goats are actually a fertile cross-bred of two different creatures, created in the past by some human colony, and released in the wild for unknown reason.\n\nWhatever the mystery behind their origins, nowadays they are commonly seen in farming communities in several Rim worlds, because they produce decent amounts of milk.</description>
+        <statBases>
+            <MoveSpeed>3.5</MoveSpeed>
+            <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+            <MarketValue>350</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>left hoof</label>
+                <capacities>
+                    <li>AA_Electric</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>7</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right hoof</label>
+                <capacities>
+                    <li>AA_Electric</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>7</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.85</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>horns</label>
+                <capacities>
+                    <li>AA_Electric</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_Milkable">
+                <milkDef>Milk</milkDef>
+                <milkIntervalDays>2</milkIntervalDays>
+                <milkAmount>12</milkAmount>
+            </li>
+        </comps>
+        <race>
+            <wildBiomes>
+                <TropicalRainforest>0.02</TropicalRainforest>
+                <TropicalSwamp>0.02</TropicalSwamp>
+                <TemperateSwamp>0.02</TemperateSwamp>
+                <ColdBog>0.02</ColdBog>
+                <TemperateForest>0.05</TemperateForest>
+            </wildBiomes>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+            <body>AA_SixEyedGoat</body>
+            <baseBodySize>0.65</baseBodySize>
+            <baseHungerRate>0.45</baseHungerRate>
+            <baseHealthScale>1.0</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <leatherDef>Leather_Plain</leatherDef>
+            <useMeatFrom>Muffalo</useMeatFrom>
+            <wildness>0.3</wildness>
+            <manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+            <roamMtbDays>7</roamMtbDays>
+			<trainability>None</trainability>
+            <gestationPeriodDays>15</gestationPeriodDays>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(3, 1)</li>
+                    <li>(3.5, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>12</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.30</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>1.50</minAge>
+                    <soundWounded>AA_ShockGoat_Wounded</soundWounded>
+                    <soundDeath>AA_ShockGoat_Death</soundDeath>
+                    <soundAngry>AA_ShockGoat_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalCommon</li>
+            <li>AnimalFarm</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_SecondaryRole</li>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Farm</li>
+                    <li>AA_ParalyzingShockTroop</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_FarmMilkDesc</li>
+                    <li>AA_ParalyzingShockTroopDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_ShockGoat</defName>
+        <label>shock goat</label>
+        <race>AA_ShockGoat</race>
+        <combatPower>30</combatPower>
+        <labelMale>shock goat ram</labelMale>
+        <labelFemale>shock goat ewe</labelFemale>
+        <lifeStages>
+            <li>
+                <label>shock goat lamb</label>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_ShockGoat/AA_ShockGoat</texPath>
+                    <drawSize>1.5</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_ShockGoat/AA_Dessicated_ShockGoat</texPath>
+                    <drawSize>1.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_ShockGoat/AA_ShockGoat</texPath>
+                    <drawSize>1.9</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_ShockGoat/AA_Dessicated_ShockGoat</texPath>
+                    <drawSize>1.6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_ShockGoat/AA_ShockGoat</texPath>
+                    <drawSize>2.5</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_ShockGoat/AA_Dessicated_ShockGoat</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

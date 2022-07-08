@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Concepts taught through the learning readout, when opportunities arise -->
+
+  <FD_Shields.label>FD: Generadores de escudos</FD_Shields.label>
+  <FD_Shields.helpText>Los escudos detienen los proyectiles entrantes a costa de la energía de las baterías. No obstante, no impiden el movimiento de las personas a través de ellos. Utilizan una pequeña cantidad de energía cuando están inactivos y consumen una gran cantidad de energía cuando detienen los impactos entrantes.\n\nSe recomienda el uso de baterías, ya que la activación de los escudos tiene un consumo de energía instantáneo muy alto. Los disparos automáticos y sostenidos agotan la energía más rápidamente, por lo que se recomiendan baterías múltiples.
+		</FD_Shields.helpText>
+
+  <FD_CoilTemperature.label>FD: Temperatura de la bobina del escudo</FD_CoilTemperature.label>
+  <FD_CoilTemperature.helpText>Las bobinas de escudo se calientan a medida que el escudo absorbe los proyectiles entrantes. El generador intercambiará lentamente ese calor con la habitación en la que se encuentra hasta que alcance la temperatura ambiente.\n\nPor encima de 100C: Fallos menores, los escudos pueden provocar cortocircuitos en la red eléctrica.\n\nPor encima de 150C: Fallos moderados, los escudos pueden causar cortocircuitos y romperse.\n\nPor encima de 200C: Fallos críticos, los escudos se encogen, colapsan y sufren destrozos en una explosión. 
+		</FD_CoilTemperature.helpText>
+
+  <FD_ShieldsPortable.label>FD: Generadores de Escudo Portátiles</FD_ShieldsPortable.label>
+  <FD_ShieldsPortable.helpText>Los escudos portátiles son emplazamientos miniaturizables que permiten mover el generador para sus propósitos. Incluyen una pequeña batería interna que puede alimentar el aparato de forma autónoma.\n\nSe puede conectar a una red eléctrica y actuará como una batería normal. Estos escudos tienen un radio de proyección de escudo fijo.
+		</FD_ShieldsPortable.helpText>
+
+</LanguageData>

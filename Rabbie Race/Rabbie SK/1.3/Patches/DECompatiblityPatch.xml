@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<success>Always</success>
+		<mods>
+			<li>[1.3] DE Surgeries</li>
+			<li>[1.3] DE Surgeries for RBSE only</li>
+			<li>[1.3] DE Surgeries for RBSE only Color</li>
+			<li>[1.3] DE Surgeries Hard</li>
+			<li>[1.3] DE Surgeries Color</li>
+			<li>1541722340</li>
+			<li>1541914821</li>
+			<li>1556888077</li>
+			<li>2002422428</li>
+			<li>1983507181</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/RecipeDef[@Name = "DESurgeries"]/recipeUsers</xpath>
+			<value>
+				<li>Rabbie</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

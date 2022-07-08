@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<SkinSet>
+  
+  <lifeStage>
+    <appliesToAll>true</appliesToAll>
+    <variants>
+
+	  <skin>
+	    <commonality>0.5</commonality>
+        <texName>AA_Dunealisk2</texName>
+      </skin>
+	  <skin>
+	    <commonality>0.2</commonality>
+        <texName>AA_Dunealisk3</texName>
+      </skin>
+	 
+    </variants>
+    <winterCoat>
+      <useWinterCoat>false</useWinterCoat>
+    </winterCoat>
+  </lifeStage>
+  
+</SkinSet>

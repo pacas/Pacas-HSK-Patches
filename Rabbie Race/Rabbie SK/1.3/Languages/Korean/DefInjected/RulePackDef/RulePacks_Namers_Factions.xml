@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Rabbitish Faction / Settlement namers -->
+
+  <NamerFactionRabbitish.rulePack.rulesStrings.0>r_name->헤이즐 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.0>
+  <NamerFactionRabbitish.rulePack.rulesStrings.1>r_name->빅윅 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.1>
+  <NamerFactionRabbitish.rulePack.rulesStrings.2>r_name->댄더라이언 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.2>
+  <NamerFactionRabbitish.rulePack.rulesStrings.3>r_name->파이버 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.3>
+  <NamerFactionRabbitish.rulePack.rulesStrings.4>r_name->블랙베리 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.4>
+  <NamerFactionRabbitish.rulePack.rulesStrings.5>r_name->에이콘 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.5>
+  <NamerFactionRabbitish.rulePack.rulesStrings.6>r_name->실버 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.6>
+  <NamerFactionRabbitish.rulePack.rulesStrings.7>r_name->핍킨 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.7>
+  <NamerFactionRabbitish.rulePack.rulesStrings.8>r_name->카우슬립 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.8>
+  <NamerFactionRabbitish.rulePack.rulesStrings.9>r_name->스트로베리 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.9>
+  <NamerFactionRabbitish.rulePack.rulesStrings.10>r_name->블루벨 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.10>
+  <NamerFactionRabbitish.rulePack.rulesStrings.11>r_name->홀리 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.11>
+  <NamerFactionRabbitish.rulePack.rulesStrings.12>r_name->클로버 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.12>
+  <NamerFactionRabbitish.rulePack.rulesStrings.13>r_name->하이젠슬라이 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.13>
+  <NamerFactionRabbitish.rulePack.rulesStrings.14>r_name->블랙카바르 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.14>
+  <NamerFactionRabbitish.rulePack.rulesStrings.15>r_name->운드워트 사령관 주둔군</NamerFactionRabbitish.rulePack.rulesStrings.15>
+  <NamerFactionRabbitish.rulePack.rulesStrings.16>r_name->잭래빗 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.16>
+  <NamerFactionRabbitish.rulePack.rulesStrings.17>r_name->이나바 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.17>
+  <NamerFactionRabbitish.rulePack.rulesStrings.18>r_name->츠키노 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.18>
+  <NamerFactionRabbitish.rulePack.rulesStrings.19>r_name->세이란 가문 속주</NamerFactionRabbitish.rulePack.rulesStrings.19>
+
+  <NamerSettlementRabbitish.rulePack.rulesStrings.0>r_name(p=12)->[townname_wordgen]</NamerSettlementRabbitish.rulePack.rulesStrings.0>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.1>r_name(p=4)->[townname_combo]</NamerSettlementRabbitish.rulePack.rulesStrings.1>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.2>r_name->[townname_near]</NamerSettlementRabbitish.rulePack.rulesStrings.2>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.3>topicalnoun->[Vegetable]</NamerSettlementRabbitish.rulePack.rulesStrings.3>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.4>topicalnoun->[Game]</NamerSettlementRabbitish.rulePack.rulesStrings.4>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.5>topicalnoun->[BodyPart]</NamerSettlementRabbitish.rulePack.rulesStrings.5>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.6>townname_combo->[topicalnoun] [TerrainFeature] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.6>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.7>townname_combo->[topicalnoun] [Community] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.7>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.8>townname_combo->[topicalnoun]'s [TerrainFeature] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.8>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.9>townname_combo->[topicalnoun]'s [Community] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.9>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.10>townname_combo(p=2)->[concept_positive]'s [TerrainFeature] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.10>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.11>townname_combo(p=2)->[concept_positive] [TerrainFeature] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.11>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.12>townname_combo(p=2)->[concept_positive] [Community] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.12>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.13>townname_combo(p=3)->[Character]'s [TerrainFeature] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.13>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.14>townname_combo(p=3)->[Character]'s [Community] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.14>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.15>townname_near->[nearnameinitial]-at-the-[TerrainFeature] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.15>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.16>townname_near->[nearnameinitial]-by-the-[TerrainFeature] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.16>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.17>townname_near->[nearnameinitial]-on-the-[TerrainFeature] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.17>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.18>nearnameinitial->[townname_wordgen]</NamerSettlementRabbitish.rulePack.rulesStrings.18>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.19>nearnameinitial->[Community]</NamerSettlementRabbitish.rulePack.rulesStrings.19>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.20>townname_wordgen(p=2)->[SylE][SylE] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.20>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.21>townname_wordgen(p=2)->[SylE][SylE][SylE] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.21>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.22>townname_wordgen(p=2)->[SylE] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.22>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.23>townname_wordgen(p=2)->[SylE][SylE] [RBTstownend]</NamerSettlementRabbitish.rulePack.rulesStrings.23>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.24>townname_wordgen->[TerrainFeature] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.24>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.25>townname_wordgen->[topicalnoun] [RBTStownend]</NamerSettlementRabbitish.rulePack.rulesStrings.25>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.26>RBTStownend->야전군 주둔지</NamerSettlementRabbitish.rulePack.rulesStrings.26>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.27>RBTStownend->송전기</NamerSettlementRabbitish.rulePack.rulesStrings.27>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.28>RBTStownend->발전소</NamerSettlementRabbitish.rulePack.rulesStrings.28>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.29>RBTStownend->연료 시추장</NamerSettlementRabbitish.rulePack.rulesStrings.29>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.30>RBTStownend->보급요새</NamerSettlementRabbitish.rulePack.rulesStrings.30>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.31>RBTStownend->플라네타륨 포집기</NamerSettlementRabbitish.rulePack.rulesStrings.31>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.32>RBTStownend->파견 연구소</NamerSettlementRabbitish.rulePack.rulesStrings.32>
+  <NamerSettlementRabbitish.rulePack.rulesStrings.33>RBTStownend->병력 편성지</NamerSettlementRabbitish.rulePack.rulesStrings.33>
+
+
+</LanguageData>

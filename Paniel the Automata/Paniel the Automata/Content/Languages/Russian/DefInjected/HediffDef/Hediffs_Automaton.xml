@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 면역 -->
+
+  <PN_Immune_System.label>Имунная система автоматона</PN_Immune_System.label>
+  <PN_Immune_System.description>Имунная система автоматона</PN_Immune_System.description>
+
+
+  <!-- 학습 제한 -->
+
+  <PN_Learning_Limit_System.label>Система лимитирования пределов обучения автоматона</PN_Learning_Limit_System.label>
+  <PN_Learning_Limit_System.description>Система лимитирования пределов обучения автоматона</PN_Learning_Limit_System.description>
+
+
+  <!-- 오토마톤 기본 -->
+
+  <PanielBaseHediff.label>Автоматон</PanielBaseHediff.label>
+  <PanielBaseHediff.description>Это автоматон.</PanielBaseHediff.description>
+
+
+  <!-- 오토마톤 출혈 -->
+
+  <PN_OilLoss.label>Потеря масла</PN_OilLoss.label>
+  <PN_OilLoss.description>Уменьшение нормального объема масла. Незначительная потеря масла имеет относительно мягкие последствия, но когда потеря масла становится серьезной, внутреннее устройство сильно разрушается, и пострадавший теряет способность двигаться. Сильная потеря масла приводит к взрыву.</PN_OilLoss.description>
+  <PN_OilLoss.stages.0.label>незначительная</PN_OilLoss.stages.0.label>
+  <PN_OilLoss.stages.1.label>незначительная</PN_OilLoss.stages.1.label>
+  <PN_OilLoss.stages.2.label>умеренная</PN_OilLoss.stages.2.label>
+  <PN_OilLoss.stages.3.label>сильная</PN_OilLoss.stages.3.label>
+  <PN_OilLoss.stages.4.label>очень сильная</PN_OilLoss.stages.4.label>
+
+
+  <!-- 오토마톤 과열 -->
+
+  <PN_Overheating.label>Перегрев</PN_Overheating.label>
+  <PN_Overheating.description>Общее нарушение функционирования механизмов, вызванное чрезмерным воздействием тепла и солнца. У жертвы кружится голова, у нее слабость и замешательство. Выздоровление происходит быстро в прохладном месте, но если воздействие тепла продолжается, то перегрев может привести к смерти.</PN_Overheating.description>
+  <PN_Overheating.stages.0.label>незначительный</PN_Overheating.stages.0.label>
+  <PN_Overheating.stages.1.label>незначительный</PN_Overheating.stages.1.label>
+  <PN_Overheating.stages.2.label>умеренный</PN_Overheating.stages.2.label>
+  <PN_Overheating.stages.3.label>сильный</PN_Overheating.stages.3.label>
+  <PN_Overheating.stages.4.label>очень сильный</PN_Overheating.stages.4.label>
+
+
+  <!-- 오토마톤 과냉 -->
+
+  <PN_OverCooling.label>Переохлаждение</PN_OverCooling.label>
+  <PN_OverCooling.description>Опасно низкая температура всех механизмов. Если не согреться, то переохлаждение усилится и всё закончится смертью. После согревания пострадавший быстро выздоравливает. Избегайте переохлаждения, надевая теплую одежду в холодную погоду.</PN_OverCooling.description>
+  <PN_OverCooling.stages.0.label>незначительное</PN_OverCooling.stages.0.label>
+  <PN_OverCooling.stages.1.label>незначительное</PN_OverCooling.stages.1.label>
+  <PN_OverCooling.stages.2.label>умеренное</PN_OverCooling.stages.2.label>
+  <PN_OverCooling.stages.3.label>сильное</PN_OverCooling.stages.3.label>
+  <PN_OverCooling.stages.4.label>очень сильное</PN_OverCooling.stages.4.label>
+
+
+</LanguageData>

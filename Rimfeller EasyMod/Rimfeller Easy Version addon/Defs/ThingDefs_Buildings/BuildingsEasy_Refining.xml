@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="RefineryBase">
+		<defName>PlasticRefiner</defName>
+		<label>Plastic Refiner</label>
+		<description>Processes chemfuel into plastic.</description>
+		<graphicData>
+			<texPath>Rimefeller/Things/Building/PlasticRefinery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>155</costStuffCount>
+		<costList>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<ElectronicComponents>5</ElectronicComponents>
+			<Mechanism>10</Mechanism>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1800</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>6</heatPerSecond>
+			</li>
+			<li Class="Rimefeller.CompProperties_Refinery">
+				<compClass>Rimefeller.CompRefineryNapalm</compClass>
+				<Product>Plastic</Product>
+				<StackSize>10</StackSize>
+				<BufferSize>50</BufferSize>
+				<ConsumeRate>3.4</ConsumeRate>
+			</li>
+		</comps>
+		<researchPrerequisites>
+            <li>Oil_Industry_C7</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="RefineryBase">
+		<defName>RubberRefiner</defName>
+		<label>Rubber Refiner</label>
+		<description>Processes chemfuel into rubber.</description>
+		<graphicData>
+			<texPath>Rimefeller/Things/Building/RubberRefinery</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>155</costStuffCount>
+		<costList>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<ElectronicComponents>5</ElectronicComponents>
+			<Mechanism>10</Mechanism>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1800</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>5</heatPerSecond>
+			</li>
+			<li Class="Rimefeller.CompProperties_Refinery">
+				<compClass>Rimefeller.CompRefineryNapalm</compClass>
+				<Product>Rubber</Product>
+				<StackSize>10</StackSize>
+				<BufferSize>50</BufferSize>
+				<ConsumeRate>3.4</ConsumeRate>
+			</li>
+		</comps>
+		<researchPrerequisites>
+            <li>Oil_Industry_C7</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

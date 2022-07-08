@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>ReviaRaceAdvancedEquipment</defName>
+    <label>Advanced Revian Equipment</label>
+    <description>Create advanced Revian equipment.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>ReviaRaceResearchTab</tab>
+    <prerequisites>
+      <li>ReviaRaceIntermediateEquipment</li>
+      <li>Machining</li>
+      <li>GasOperation</li>
+    </prerequisites>
+    <researchViewX>4.00</researchViewX>
+    <researchViewY>1.00</researchViewY>
+  </ResearchProjectDef>
+</Defs>

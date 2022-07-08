@@ -1,3 +1,5 @@
+Everything inside this repository belongs to the owners of these mods. I only made a HSK convertion.
+
 
 The MIT License (MIT)
 

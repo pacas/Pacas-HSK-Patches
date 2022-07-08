@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ManeuverDef>
+		<defName>AA_SiegeBlunt</defName>
+		<requiredCapacity>AA_SiegeBlunt</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_SiegeBlunt</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	
+	<ManeuverDef>
+		<defName>AA_EMPBlunt</defName>
+		<requiredCapacity>AA_EMPBlunt</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_EMPBlunt</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ManeuverDef>
+		<defName>AA_Pierce</defName>
+		<requiredCapacity>AA_Pierce</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_Pierce</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	
+	<ManeuverDef>
+		<defName>AA_BurningBite</defName>
+		<requiredCapacity>AA_BurningBite</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_BurningBite</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	
+	<ManeuverDef>
+		<defName>AA_SwallowWhole</defName>
+		<requiredCapacity>AA_SwallowWhole</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_SwallowWhole</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	
+	<ManeuverDef>
+		<defName>AA_BurningAndFeedingBite</defName>
+		<requiredCapacity>AA_BurningAndFeedingBite</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_BurningAndFeedingBite</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>	
+
+	<ManeuverDef>
+		<defName>AA_FrostBite</defName>
+		<requiredCapacity>AA_FrostBite</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_FrostBite</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	
+	<ManeuverDef>
+		<defName>AA_FrostClaws</defName>
+		<requiredCapacity>AA_FrostClaws</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_FrostClaws</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	
+	<ManeuverDef>
+		<defName>AA_RegenerativePierce</defName>
+		<requiredCapacity>AA_RegenerativePierce</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_RegenerativePierce</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ManeuverDef>
+		<defName>AA_InfectedClaws</defName>
+		<requiredCapacity>AA_InfectedClaws</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_InfectedClaws</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	
+	<ManeuverDef>
+		<defName>AA_FungalClaws</defName>
+		<requiredCapacity>AA_FungalClaws</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_FungalClaws</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	
+	<ManeuverDef>
+		<defName>AA_ExtraDamageInsectoidsClaws</defName>
+		<requiredCapacity>AA_ExtraDamageInsectoidsClaws</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_ExtraDamageInsectoidsClaws</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ManeuverDef>
+		<defName>AA_SwarmlingClaws</defName>
+		<requiredCapacity>AA_SwarmlingClaws</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_SwarmlingClaws</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ManeuverDef>
+		<defName>AA_LockJawDamage</defName>
+		<requiredCapacity>AA_LockJawDamage</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_LockJawDamage</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+
+	<ManeuverDef>
+		<defName>AA_ParalysingBite</defName>
+		<requiredCapacity>AA_ParalysingBite</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_ParalysingBite</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ManeuverDef>
+		<defName>AA_Electric</defName>
+		<requiredCapacity>AA_Electric</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_Electric</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ManeuverDef>
+		<defName>AA_Acid</defName>
+		<requiredCapacity>AA_Acid</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_AcidSpit</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ManeuverDef>
+		<defName>AA_ToxicSting</defName>
+		<requiredCapacity>AA_ToxicSting</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_ToxicSting</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+	
+	<ManeuverDef>
+		<defName>AA_ToxicBite</defName>
+		<requiredCapacity>AA_ToxicBite</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_ToxicBite</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+	<ManeuverDef>
+		<defName>AA_VeryToxicSting</defName>
+		<requiredCapacity>AA_VeryToxicSting</requiredCapacity>
+		<verb>
+			<verbClass>Verb_MeleeAttackDamage</verbClass>
+			<meleeDamageDef>AA_VeryToxicSting</meleeDamageDef>
+		</verb>
+		<logEntryDef>MeleeAttack</logEntryDef>
+		<combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+		<combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+		<combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+		<combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+	</ManeuverDef>
+
+
+
+</Defs>

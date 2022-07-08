@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Settings ///////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <!-- Integrations Section -->
+  <fd.settings.shield.integrations.heading>統合</fd.settings.shield.integrations.heading>
+
+  <fd.settings.shield.climatecontrol.label>「Centralized Climate Control」Modサポート有効（再稼働が必要!)</fd.settings.shield.climatecontrol.label>
+  <fd.settings.shield.climatecontrol.description>「Centralized Climate Control」の換気通風パイプによるシールド冷却を有効化します。</fd.settings.shield.climatecontrol.description>
+
+  <!-- General section -->
+  <fd.settings.shield.general.heading>一般設定</fd.settings.shield.general.heading>
+
+  <fd.settings.shield.shootout.label>有効：外への射撃</fd.settings.shield.shootout.label>
+  <fd.settings.shield.shootout.description>シールド内からの射撃をシールドの外に対して通すようにします。</fd.settings.shield.shootout.description>
+
+  <fd.settings.shield.shootin.label>有効：自分のシールドへ攻撃</fd.settings.shield.shootin.label>
+  <fd.settings.shield.shootin.description>入植者が自分達のシールドに発砲することを許可します(テスト用で通常のゲームではお勧めしません!)</fd.settings.shield.shootin.description>
+
+  <!-- Performance Section -->
+  <fd.settings.shield.performance.heading>パフォーマンス</fd.settings.shield.performance.heading>
+  <fd.settings.shield.performance.description>ゲームの重さに関連する設定です。どれかを無効にすると、シールド対象をAIが判定できなくなる代償を支払うことでゲームのパフォーマンスが向上します。</fd.settings.shield.performance.description>
+
+  <fd.settings.shield.performance.target.label>有効：AIは射撃可能な未シールド目標の攻撃を優先する（影響:低)</fd.settings.shield.performance.target.label>
+  <fd.settings.shield.performance.target.description>有効にすると、AIはシールドされていないターゲットを優先的に射撃することが可能です。</fd.settings.shield.performance.target.description>
+
+  <fd.settings.shield.performance.cast.label>有効：シールドエリアを遮蔽として使用する攻撃を考慮可能（影響:高)</fd.settings.shield.performance.cast.label>
+  <fd.settings.shield.performance.cast.description>有効にすると、AIは遮蔽物として利用できるシールドエリアを探すことが可能です。無効化すると、カバー計算の一要素としてシールドを考慮しなくなります。</fd.settings.shield.performance.cast.description>
+
+  <fd.settings.shield.performance.verb.label>有効：AIは攻撃がシールドに命中するか確認可能（影響：中）</fd.settings.shield.performance.verb.label>
+  <fd.settings.shield.performance.verb.description>有効にすると、AIは射線を確認可能です。これを無効化すると、戦闘時にポーンが友好的なシールドを無視して攻撃するようになり、動物の狩猟中にハンターがシールドを際限なく撃つようになります。</fd.settings.shield.performance.verb.description>
+
+  <!-- Power section -->
+  <fd.settings.shield.power.heading>電力</fd.settings.shield.power.heading>
+
+  <fd.settings.shield.power.per_tile.label>タイル毎の電力</fd.settings.shield.power.per_tile.label>
+  <fd.settings.shield.power.minimum_online.label>稼働最小電力</fd.settings.shield.power.minimum_online.label>
+
+  <!-- Integrity section -->
+  <fd.settings.shield.integrity.heading>安全性</fd.settings.shield.integrity.heading>
+
+  <fd.settings.shield.integrity.power_per_damage.label>ダメージ毎の電力</fd.settings.shield.integrity.power_per_damage.label>
+  <fd.settings.shield.integrity.drop_pod_damage.label>落下ポッドのダメージ</fd.settings.shield.integrity.drop_pod_damage.label>
+  <fd.settings.shield.integrity.skyfaller_damage.label>隕石のダメージ</fd.settings.shield.integrity.skyfaller_damage.label>
+
+  <!-- Thermal section-->
+  <fd.settings.shield.thermal.heading>放熱</fd.settings.shield.thermal.heading>
+
+  <fd.settings.shield.thermal.per_power.label>放熱毎の電力</fd.settings.shield.thermal.per_power.label>
+
+  <fd.settings.shield.thermal.label>シールド放熱を有効化</fd.settings.shield.thermal.label>
+  <fd.settings.shield.thermal.description>シールドの放熱を有効にします。シールドが熱で誤動作を起こして、事故が発生する可能性が生じます。</fd.settings.shield.thermal.description>
+
+  <fd.settings.shield.minor_thermal_incidents.label>限定的な放熱事故を有効化</fd.settings.shield.minor_thermal_incidents.label>
+  <fd.settings.shield.minor_thermal_incidents.description>シールドに影響するものに限定した、事故が発生する可能性を有効にします。</fd.settings.shield.minor_thermal_incidents.description>
+
+  <fd.settings.shield.major_thermal_incidents.label>通常な放熱事故を有効化</fd.settings.shield.major_thermal_incidents.label>
+  <fd.settings.shield.major_thermal_incidents.description>シールドと電力網に影響を与える、通常の事故が発生する可能性を有効にします。</fd.settings.shield.major_thermal_incidents.description>
+
+  <fd.settings.shield.critical_thermal_incidents.label>重大な放熱事故を有効化</fd.settings.shield.critical_thermal_incidents.label>
+  <fd.settings.shield.critical_thermal_incidents.description>シールドと電力網、およびマップ全体に影響する、重大な事故が発生する可能性を有効化します。</fd.settings.shield.critical_thermal_incidents.description>
+
+  <!-- Incidents //////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <fd.shields.incident.offline.body>シールド発生装置がオフラインになった</fd.shields.incident.offline.body>
+
+  <fd.shields.incident.skyfaller.blocked.body>空からの落下物がシールドに衝撃を与えましたが、破壊されました。</fd.shields.incident.skyfaller.blocked.body>
+  <fd.shields.incident.droppod.blocked.body>ドロップポッドがシールドに衝突して破壊されました。</fd.shields.incident.droppod.blocked.body>
+  <fd.shields.incident.crashpod.blocked.body>壊れた宇宙船の一部分がシールドに衝撃を与えましたが、破壊されました。</fd.shields.incident.crashpod.blocked.body>
+
+  <fd.shields.incident.minor.title>シールドがバチバチした!</fd.shields.incident.minor.title>
+  <fd.shields.incident.minor.body>シールド放熱コイルのオーバーヒートによってショート(短絡)が発生して、接続された電力網から{0} Wdの電力エネルギーが放電されました。</fd.shields.incident.minor.body>
+
+  <fd.shields.incident.major.title>シールドが故障</fd.shields.incident.major.title>
+  <fd.shields.incident.major.body>シールド放熱コイルのオーバーヒートによって故障して、接続された電力網から{0} Wdの電気エネルギーが放電されました。</fd.shields.incident.major.body>
+
+  <fd.shields.incident.critical.title>シールドが爆発した</fd.shields.incident.critical.title>
+  <fd.shields.incident.critical.body>シールド放熱コイルのオーバーヒートによって爆発して、接続された電力網から{0} Wdの電気エネルギーが放電されました。</fd.shields.incident.critical.body>
+
+  <!-- UI /////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+  <!-- Text inspection -->
+  <fd.heatsink.temperature>ヒートシンク温度</fd.heatsink.temperature>
+
+  <shield.status.offline>シールドは停止中</shield.status.offline>
+  <shield.status.no_power>電源に接続されていません</shield.status.no_power>
+  <shield.status.unpowered>電源オフ</shield.status.unpowered>
+  <shield.status.no_battieres>バッテリーがありません</shield.status.no_battieres>
+  <shield.status.battery_too_low>使用可能なバッテリーの電力が足りません</shield.status.battery_too_low>
+  <shield.status.internal_battery_discharged>内蔵バッテリーがショート(放電)しました</shield.status.internal_battery_discharged>
+  <shield.status.thermal_safety>熱遮断安全装置が稼働中です</shield.status.thermal_safety>
+  <shield.status.online>シールドは稼働中</shield.status.online>
+
+  <!-- Gizmos -->
+  <radius.label>防御範囲</radius.label>
+  <radius.description>シールドの半径(マス数)を設定します。</radius.description>
+
+  <thermal_shutoff.label>熱遮断</thermal_shutoff.label>
+  <thermal_shutoff.description>過熱によるシールド放熱コイルの損傷を防ぎます。</thermal_shutoff.description>
+
+  <charge_internal_battery.label>内蔵バッテリーを充電する</charge_internal_battery.label>
+  <charge_internal_battery.description>接続されているすべてのバッテリーの電力を消費して内蔵バッテリーを充電します。</charge_internal_battery.description>
+
+  <fd.shield.render_field.label>防御範囲表示</fd.shield.render_field.label>
+  <fd.shield.render_field.description>シールドが防御できる範囲を視覚的に表示します。 (シールド半径のみ)</fd.shield.render_field.description>
+
+  <fd.heatsink.climate.net.connect.label>換気システムを利用する</fd.heatsink.climate.net.connect.label>
+  <fd.heatsink.climate.net.connect.description>シールドを換気システムに接続します</fd.heatsink.climate.net.connect.description>
+
+</LanguageData>

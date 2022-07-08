@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Medieval Overhaul</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> --> <!-- TESTING -->
+			<operations>
+
+				<!--==================== Medieval Overhaul Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+					<value>
+
+						<DankPyon_AncientForest>3</DankPyon_AncientForest>
+                        <DankPyon_DarkForest>3</DankPyon_DarkForest>
+
+					</value>
+				</li>
+
+            </operations>
+		</match>
+	</Operation>
+
+</Patch>

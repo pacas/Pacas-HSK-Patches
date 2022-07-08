@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ============================================================ -->
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_SandSquid</defName>
+        <label>sand squid</label>
+        <description>Despite their common name, sand squids are actually genetically modified creatures that incorporate features from both cephalopods and cone snails. Sand squids were created as cattle adapted to extremely water deprived environments, such as very dry deserts.\n\nThe sand squid constantly produces a sticky secretion that acts as a powerful fertilizer when mixed with common sand, allowing growth of crops in the middle of the desert. The squid can be trained to properly distribute its slime around the fields to increase terrain fertility even more. (NOTE: due to balance concerns, the squid will only do this if tamed, I don't want them to mess up the whole map when wild...)</description>
+        <statBases>
+            <MoveSpeed>1.00</MoveSpeed>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>100</ComfyTemperatureMax>
+            <MarketValue>350</MarketValue>
+            <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>50</MeatAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>2.1</cooldownTime>
+                <linkedBodyPartsGroup>AA_Mouth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>tentacle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>AA_TentacleAttackTool</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_TerrainChanger">
+                <FirstStageTerrain>Sand</FirstStageTerrain>
+                <SecondStageTerrain>AA_FertilizedSand</SecondStageTerrain>
+                <doThirdStage>true</doThirdStage>
+                <ThirdStageTerrain>AA_SuperiorFertilizedSand</ThirdStageTerrain>
+            </li>
+        </comps>
+        <race>
+            <wildBiomes>
+                <TemperateForest>0.01</TemperateForest>
+                <AridShrubland>0.05</AridShrubland>
+                <Desert>0.05</Desert>
+                <ExtremeDesert>0.05</ExtremeDesert>
+            </wildBiomes>
+            <herdAnimal>false</herdAnimal>
+            <predator>false</predator>
+            <body>AA_Squid</body>
+            <baseBodySize>2.00</baseBodySize>
+            <baseHungerRate>0.05</baseHungerRate>
+            <baseHealthScale>1.0</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <useMeatFrom>ThingDefFishSduiggles</useMeatFrom>
+            <roamMtbDays>5</roamMtbDays>
+			<trainability>None</trainability>
+            <wildness>0.7</wildness>
+            <gestationPeriodDays>30</gestationPeriodDays>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>25</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>.4</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFarm</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Utility</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_UtilityWorkerDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_SandSquid</defName>
+        <label>sand squid</label>
+        <race>AA_SandSquid</race>
+        <combatPower>350</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <alternateGraphicChance>1</alternateGraphicChance>
+        <alternateGraphics>
+            <li>
+                <texPath>Things/Pawn/Animal/AA_SandSquid/AA_SandSquid</texPath>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/AA_SandSquid/AA_SandSquid2</texPath>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/AA_SandSquid/AA_SandSquid3</texPath>
+            </li>
+            <li>
+                <texPath>Things/Pawn/Animal/AA_SandSquid/AA_SandSquid4</texPath>
+            </li>
+        </alternateGraphics>
+        <ecoSystemWeight>0.2</ecoSystemWeight>
+        <lifeStages>
+            <li>
+                <label>sand tadpole</label>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_SandSquid/AA_SandSquid</texPath>
+                    <drawSize>1.5</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_SandSquid/AA_Dessicated_SandSquid</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <label>sand squid</label>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_SandSquid/AA_SandSquid</texPath>
+                    <drawSize>2.7</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_SandSquid/AA_Dessicated_SandSquid</texPath>
+                    <drawSize>2.7</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_SandSquid/AA_SandSquid</texPath>
+                    <drawSize>3.5</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_SandSquid/AA_Dessicated_SandSquid</texPath>
+                    <drawSize>3.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

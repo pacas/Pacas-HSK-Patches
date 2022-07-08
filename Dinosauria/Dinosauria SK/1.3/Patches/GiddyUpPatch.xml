@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Giddy-up! Battle Mounts</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName = "Gallimimus"]</xpath> 
+					<value>
+						<li Class="GiddyUpCore.CustomStatsPatch">
+							<!--Speed factor. -->
+							<speedModifier>1.5</speedModifier>
+							<!--Armor factor. -->
+							<armorModifier>1</armorModifier>
+							<!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount --> 
+							<useMetalArmor>false</useMetalArmor>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName = "Gigantoraptor"]</xpath> 
+					<value>
+						<li Class="GiddyUpCore.CustomStatsPatch">
+							<!--Speed factor. -->
+							<speedModifier>1.5</speedModifier>
+							<!--Armor factor. -->
+							<armorModifier>1</armorModifier>
+							<!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount --> 
+							<useMetalArmor>false</useMetalArmor>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName = "TyrannosaurusRex"]</xpath> 
+					<value>
+						<li Class="GiddyUpCore.CustomStatsPatch">
+							<!--Speed factor. -->
+							<speedModifier>1.5</speedModifier>
+							<!--Armor factor. -->
+							<armorModifier>1</armorModifier>
+							<!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount --> 
+							<useMetalArmor>true</useMetalArmor>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName = "Yutyrannus"]</xpath> 
+					<value>
+						<li Class="GiddyUpCore.CustomStatsPatch">
+							<!--Speed factor. -->
+							<speedModifier>1.5</speedModifier>
+							<!--Armor factor. -->
+							<armorModifier>1</armorModifier>
+							<!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount --> 
+							<useMetalArmor>true</useMetalArmor>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName = "Carnotaurus"]</xpath> 
+					<value>
+						<li Class="GiddyUpCore.CustomStatsPatch">
+							<!--Speed factor. -->
+							<speedModifier>1.5</speedModifier>
+							<!--Armor factor. -->
+							<armorModifier>1</armorModifier>
+							<!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount --> 
+							<useMetalArmor>true</useMetalArmor>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName = "Allosaurus"]</xpath> 
+					<value>
+						<li Class="GiddyUpCore.CustomStatsPatch">
+							<!--Speed factor. -->
+							<speedModifier>1.5</speedModifier>
+							<!--Armor factor. -->
+							<armorModifier>1</armorModifier>
+							<!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount --> 
+							<useMetalArmor>true</useMetalArmor>
+						</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAddModExtension">
+					<xpath>/Defs/ThingDef[defName = "Baryonyx"]</xpath> 
+					<value>
+						<li Class="GiddyUpCore.CustomStatsPatch">
+							<!--Speed factor. -->
+							<speedModifier>1.5</speedModifier>
+							<!--Armor factor. -->
+							<armorModifier>1</armorModifier>
+							<!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount --> 
+							<useMetalArmor>true</useMetalArmor>
+						</li>
+					</value>
+				</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

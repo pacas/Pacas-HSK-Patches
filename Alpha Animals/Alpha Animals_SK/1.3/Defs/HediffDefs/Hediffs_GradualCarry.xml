@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>AA_CarryWeight1</defName>
+		<description>This creature can carry extra weight both while hauling and on caravans.</description>
+
+		<label>extra carry weight (awful)</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+
+		<stages>
+			<li>
+
+				<statOffsets>
+					<CarryingCapacity>1</CarryingCapacity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>AA_CarryWeight2</defName>
+		<description>This creature can carry extra weight both while hauling and on caravans.</description>
+		<label>extra carry weight (poor)</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+
+		<stages>
+			<li>
+
+				<statOffsets>
+					<CarryingCapacity>5</CarryingCapacity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>AA_CarryWeight3</defName>
+		<description>This creature can carry extra weight both while hauling and on caravans.</description>
+		<label>extra carry weight (normal)</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+
+		<stages>
+			<li>
+
+				<statOffsets>
+					<CarryingCapacity>7</CarryingCapacity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>AA_CarryWeight4</defName>
+		<description>This creature can carry extra weight both while hauling and on caravans.</description>
+		<label>extra carry weight (good)</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+
+		<stages>
+			<li>
+
+				<statOffsets>
+					<CarryingCapacity>10</CarryingCapacity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>AA_CarryWeight5</defName>
+		<description>This creature can carry extra weight both while hauling and on caravans.</description>
+		<label>extra carry weight (excellent)</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+
+		<stages>
+			<li>
+
+				<statOffsets>
+					<CarryingCapacity>15</CarryingCapacity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>AA_CarryWeight6</defName>
+		<description>This creature can carry extra weight both while hauling and on caravans.</description>
+		<label>extra carry weight (masterwork)</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+
+		<stages>
+			<li>
+
+				<statOffsets>
+					<CarryingCapacity>20</CarryingCapacity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+		<defName>AA_CarryWeight7</defName>
+		<description>This creature can carry extra weight both while hauling and on caravans.</description>
+		<label>extra carry weight (legendary)</label>
+		<defaultLabelColor>(.8,0,0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+
+		<stages>
+			<li>
+
+				<statOffsets>
+					<CarryingCapacity>30</CarryingCapacity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>
