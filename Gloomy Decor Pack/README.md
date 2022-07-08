@@ -6,7 +6,8 @@ Convertion and compilation of these mods:<br>
 1) Gloomy Deco: https://steamcommunity.com/sharedfiles/filedetails/?id=1865654125<br>
 2) Gloomy Furniture: https://steamcommunity.com/sharedfiles/filedetails/?id=1558635181<br>
 3) Gloomy Deco PCP https://steamcommunity.com/sharedfiles/filedetails/?id=2609614076<br>
-4) LWM DS for Gloomy Furniture and Deco https://steamcommunity.com/sharedfiles/filedetails/?id=2037264293<br>
+4) LWM DS for Gloomy Furniture and Deco https://steamcommunity.com/sharedfiles/filedetails/?id=2037264293
+
 <br><br>
 <img src="https://i.imgur.com/svEwA2k.png"><br><br>
 **What is it?**<br><br>
