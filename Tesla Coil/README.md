@@ -11,4 +11,4 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2086426386
 and Mlie update
 https://steamcommunity.com/sharedfiles/filedetails/?id=2590690665
 <br>
-![Preview](/Tesla Coil/mod_preview.png?raw=true "Preview")
+![Preview](/__PREVIEW__/Tesla.png?raw=true "Preview")

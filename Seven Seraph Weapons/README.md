@@ -1,5 +1,5 @@
 # Seven Seraph Weapons
-![Preview](/Seven Seraph Weapons/mod_preview.png?raw=true "Preview")<br><br>
+![Preview](/__PREVIEW__/SSW.png?raw=true "Preview")<br><br>
 [Hardcore SK modpack only!](https://github.com/skyarkhangel/Hardcore-SK/tree/development)
 <br>
 Convertion of this mod:<br>

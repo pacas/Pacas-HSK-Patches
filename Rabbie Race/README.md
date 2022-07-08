@@ -1,5 +1,5 @@
 # Rabbie Race
-![Preview](/Rabbie Race/mod_preview.png?raw=true "Preview")<br><br>
+![Preview](/__PREVIEW__/Rabbie1.png?raw=true "Preview")<br><br>
 [Hardcore SK modpack only!](https://github.com/skyarkhangel/Hardcore-SK/tree/development)
 <br>
 Convertion of this mod:<br>
@@ -13,7 +13,7 @@ With a brilliant brain and close to Glitterworlds technology, they are prosperin
 Как вы можете видеть на ночном небе, в мирах Окраины существует луны. И на лунах есть свои жители.<br>
 Рабби - это раса, которая мигрирует с луны на луну за пределы вселенной.<br>
 Обладая блестящим мозгом и подобными самым развитым мирам галактики технологиями, они процветают во Вселенной, строя гигантские аркологии, называемые лунными городами.<br>
-![Preview2](/mod_preview_2.png?raw=true "Preview 2")<br><br>
+![Preview2](/__PREVIEW__/Rabbie2.png?raw=true "Preview 2")<br><br>
 <img src="https://i.imgur.com/5KVUmeE.png"><br>
 Q: Where can I get planetarium?<br>
 A: Planetarium refinery placed in "medical" category.<br>

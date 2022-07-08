@@ -1,5 +1,5 @@
 # Apex Rimworld Legends
-![Preview](/Apex Rimworld Legends/mod_preview.png?raw=true "Preview")<br><br>
+![Preview](/__PREVIEW__/Apex.png?raw=true "Preview")<br><br>
 [Hardcore SK modpack only!](https://github.com/skyarkhangel/Hardcore-SK/tree/development)
 <br>
 Convertion of this mod:<br>

@@ -5,4 +5,4 @@ Facial Animation patches for HSK races.
 <br>
 Патчи для мода Facial Animation под расы из ХСК.
 <br>
-![Preview](/Facial Animation for HSK/mod_preview.png?raw=true "Preview")
+![Preview](/__PREVIEW__/FAHSK.png?raw=true "Preview")

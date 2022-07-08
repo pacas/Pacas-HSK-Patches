@@ -1,7 +1,7 @@
 # RW-Rimfeller-HSK-EasyMod
 [Hardcore SK modpack only!](https://github.com/skyarkhangel/Hardcore-SK/tree/development)
 <br>
-![Preview](/Rimfeller EasyMod/mod_preview.png?raw=true "Preview")
+![Preview](/__PREVIEW__/Rimfeller.png?raw=true "Preview")
 <br>
 Now you can use refiners to craft plastic and rubber. If you want.
 <br>
