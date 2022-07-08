@@ -1,7 +1,7 @@
 # Dinosauria HSK
 [Hardcore SK modpack only!](https://github.com/skyarkhangel/Hardcore-SK/tree/development)
 <br>
-![Preview](/mod_preview.png?raw=true "Preview")<br>
+![Preview](/Dinosauria/mod_preview.png?raw=true "Preview")<br>
 Convertion spincrus mod for HSK<br>
 https://steamcommunity.com/sharedfiles/filedetails/?id=1136958577<br><br>
 What if we were to finally discover dinosaur DNA sequences, despite being incomplete, and fill the blanks with various genome sequences spliced from left and right, with a little bit of imagination to help guide us?<br><br>

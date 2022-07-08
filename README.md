@@ -1,7 +1,7 @@
 # Pacas HSK Patches
 ![Preview](/mod_preview.png?raw=true "Preview")<br><br>
 [Hardcore SK modpack only!](https://github.com/skyarkhangel/Hardcore-SK/tree/development)
-<br>
+<br><br>
 <img src="https://i.imgur.com/svEwA2k.png"><br><br>
 Use the "GitZip for github" extension to download only the mods you are interested in!<br>
 This repository contains all my own and patched HSK mods. Each folder inside this repository contains a folder of the mod itself, a description with an FAQ, a preview, and sometimes the author's license. Unpack the mods correctly!<br><br>
@@ -10,5 +10,4 @@ This repository contains all my own and patched HSK mods. Each folder inside thi
 <br>
 <img src="https://i.imgur.com/fdngbbh.png">
 Rimworld is owned by Tynan Sylvester.<br>
-Mod authors for these awesome mods. Check out their other mods!<br>
-And Pacas (me). Just for doing a HSK convertion.<br>
+Mod authors for these awesome mods. Check out their other mods!

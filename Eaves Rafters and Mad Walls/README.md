@@ -1,9 +1,9 @@
 # RW-Eaves-Rafters-and_Mad-Walls
 [Hardcore SK modpack only!](https://github.com/skyarkhangel/Hardcore-SK/tree/development)
 <br>
-![Preview1](/preview_1.png?raw=true "Preview")
+![Preview1](/Eaves Rafters and Mad Walls/preview_1.png?raw=true "Preview")
 <br>
-![Preview2](/preview_2.png?raw=true "Preview")
+![Preview2](/Eaves Rafters and Mad Walls/preview_2.png?raw=true "Preview")
 <br>
 I wanted my roof to be beautiful, but got this. And a bunch of extra walls too... Good.
 <br>
