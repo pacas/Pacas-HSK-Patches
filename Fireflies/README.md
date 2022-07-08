@@ -26,7 +26,7 @@ A: Report to the appropriate branch in the HSK discord or githab Issues.<br>
 Q: Я нашёл ошибку!<br>
 A: Репортить в соответствующую ветку в дисе ХСК или в Issues гитхаба.<br>
 <br>
-<img src="https://i.imgur.com/fdngbbh.png">
+<img src="https://i.imgur.com/fdngbbh.png"><br>
 Rimworld is owned by Tynan Sylvester. Obviously.<br>
 Scurvyez and Maxim for this awesome mod. Check out other mods!<br>
 Pacas (me) for doing a HSK convertion.<br>
