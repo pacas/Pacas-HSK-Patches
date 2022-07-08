@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>GloomyDeco_Stone</defName>
+        <label>cobblestone</label>
+        <description>A small and shapely cobblestone.</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <graphicData>
+            <texPath>GloomyDeco/Stone</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(0.8,0.8)</drawSize>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Standable</passability>
+        <pathCost>0</pathCost>
+        <canOverlapZones>true</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToBuild>400</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>2</Mass>
+            <Beauty>5</Beauty>
+        </statBases>
+        <size>(1,1)</size>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>6</costStuffCount>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Furniture</designationCategory>
+        <!-- custom -->
+        <resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsFurniture</li>
+        </thingCategories>
+    </ThingDef>
+</Defs>

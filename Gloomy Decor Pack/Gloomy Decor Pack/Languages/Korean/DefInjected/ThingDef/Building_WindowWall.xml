@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 벽 -->
+
+  <RGK_Wall.label>목재벽</RGK_Wall.label>
+  <RGK_Wall.description>통과 불가능한 벽입니다. 지붕을 지탱할 수 있습니다.</RGK_Wall.description>
+  <RGK_Wall_Blueprint.label>목재벽 (청사진)</RGK_Wall_Blueprint.label>
+  <RGK_Wall_Frame.label>목재벽 (건설 중)</RGK_Wall_Frame.label>
+  <RGK_Wall_Frame.description>통과 불가능한 벽입니다. 지붕을 지탱할 수 있습니다.</RGK_Wall_Frame.description>
+
+
+  <!-- 신규 벽 -->
+
+  <GL_Wall.label>벽</GL_Wall.label>
+  <GL_Wall.description>통과 불가능한 벽입니다. 지붕을 지탱할 수 있습니다.</GL_Wall.description>
+  <GL_Wall_Blueprint.label>벽(청사진)</GL_Wall_Blueprint.label>
+  <GL_Wall_Frame.label>벽(건설 중)</GL_Wall_Frame.label>
+  <GL_Wall_Frame.description>통과 불가능한 벽입니다. 지붕을 지탱할 수 있습니다.</GL_Wall_Frame.description>
+
+
+  <!-- 환풍벽 -->
+
+  <RGK_VentWall.label>환풍벽</RGK_VentWall.label>
+  <RGK_VentWall.description>공기가 통할 수 있는 벽입니다.</RGK_VentWall.description>
+  <RGK_VentWall_Blueprint.label>환풍벽 (청사진)</RGK_VentWall_Blueprint.label>
+  <RGK_VentWall_Frame.label>환풍벽 (건설 중)</RGK_VentWall_Frame.label>
+  <RGK_VentWall_Frame.description>공기가 통할 수 있는 벽입니다.</RGK_VentWall_Frame.description>
+
+
+  <!-- 신규 환풍벽 -->
+
+  <GL_VentWall.label>환풍벽</GL_VentWall.label>
+  <GL_VentWall.description>공기가 통할 수 있는 벽입니다.</GL_VentWall.description>
+  <GL_VentWall_Blueprint.label>환풍 벽(청사진)</GL_VentWall_Blueprint.label>
+  <GL_VentWall_Frame.label>환풍 벽(건설 중)</GL_VentWall_Frame.label>
+  <GL_VentWall_Frame.description>공기가 통할 수 있는 벽입니다.</GL_VentWall_Frame.description>
+
+
+  <!-- 창문 -->
+
+  <RGK_window.label>창문 (창문벽으로 교체하세요)</RGK_window.label>
+  <RGK_window.description>창문이 뚫려있는 벽입니다. 빛을 투과할 수 있습니다.</RGK_window.description>
+  <RGK_window_Blueprint_Install.label>창문 (창문벽으로 교체하세요)</RGK_window_Blueprint_Install.label>
+
+  <RGK_WindowWall.label>창문 벽</RGK_WindowWall.label>
+  <RGK_WindowWall.description>창문이 뚫려있는 벽입니다. 빛을 투과할 수 있습니다.</RGK_WindowWall.description>
+  <RGK_WindowWall_Blueprint.label>창문벽 (청사진)</RGK_WindowWall_Blueprint.label>
+  <RGK_WindowWall_Frame.label>창문 벽 (건설 중)</RGK_WindowWall_Frame.label>
+  <RGK_WindowWall_Frame.description>창문이 뚫려있는 벽입니다. 빛을 투과할 수 있습니다.</RGK_WindowWall_Frame.description>
+
+
+  <!-- 신규 창문 -->
+
+  <GL_WindowWall.label>창문 벽</GL_WindowWall.label>
+  <GL_WindowWall.description>창문이 뚫려있는 벽입니다. 빛을 투과할 수 있습니다.</GL_WindowWall.description>
+  <GL_WindowWall_Blueprint.label>창문 벽(청사진)</GL_WindowWall_Blueprint.label>
+  <GL_WindowWall_Frame.label>창문 벽(건설 중)</GL_WindowWall_Frame.label>
+  <GL_WindowWall_Frame.description>창문이 뚫려있는 벽입니다. 빛을 투과할 수 있습니다.</GL_WindowWall_Frame.description>
+
+
+  <!-- 울타리 -->
+
+  <RGK_WoodFence.label>울타리</RGK_WoodFence.label>
+  <RGK_WoodFence.description>바깥의 짐승들로부터 가축을 지키는 목재 울타리 입니다.</RGK_WoodFence.description>
+  <RGK_WoodFence_Blueprint.label>울타리 (청사진)</RGK_WoodFence_Blueprint.label>
+  <RGK_WoodFence_Frame.label>울타리 (건설 중)</RGK_WoodFence_Frame.label>
+  <RGK_WoodFence_Frame.description>바깥의 짐승들로부터 가축을 지키는 목재 울타리 입니다.</RGK_WoodFence_Frame.description>
+
+
+  <!-- 꽃벽 -->
+
+  <GL_FlowerWall.label>화단</GL_FlowerWall.label>
+  <GL_FlowerWall.description>가짜 꽃으로 꾸며진 화단입니다.</GL_FlowerWall.description>
+  <GL_FlowerWall_Blueprint.label>화단(청사진)</GL_FlowerWall_Blueprint.label>
+  <GL_FlowerWall_Frame.label>화단(건설 중)</GL_FlowerWall_Frame.label>
+  <GL_FlowerWall_Frame.description>가짜 꽃으로 꾸며진 화단입니다.</GL_FlowerWall_Frame.description>
+
+
+  <!-- 올드스타일 문 -->
+
+  <RGK_DoorOld.label>문</RGK_DoorOld.label>
+  <RGK_DoorOld.description>방을 나눕니다. 수동으로 열고 닫으며 문 통과시 이동속도가 느려집니다.</RGK_DoorOld.description>
+
+
+  <!-- 울타리문 -->
+
+  <RGK_Door.label>울타리 문</RGK_Door.label>
+  <RGK_Door.description>울타리 사이에 놓을 수 있는 울타리 문입니다.</RGK_Door.description>
+
+
+  <!-- 문틀 -->
+
+  <GL_DoorFrame.label>문틀</GL_DoorFrame.label>
+  <GL_DoorFrame.description>문주변을 꾸며주는 틀입니다.</GL_DoorFrame.description>
+
+
+  <!-- 19.03.17 바닥 경계석 -->
+
+  <GL_BoundaryWood.label>경계목</GL_BoundaryWood.label>
+  <GL_BoundaryWood.description>바닥의 경계를 구분짓기 위한 경계목입니다.</GL_BoundaryWood.description>
+  <GL_BoundaryWood_Blueprint.label>경계목 (청사진)</GL_BoundaryWood_Blueprint.label>
+  <GL_BoundaryWood_Frame.label>경계목 (건설중)</GL_BoundaryWood_Frame.label>
+  <GL_BoundaryWood_Frame.description>바닥의 경계를 구분짓기 위한 경계목입니다.</GL_BoundaryWood_Frame.description>
+
+  <GL_BoundaryStone.label>경계석</GL_BoundaryStone.label>
+  <GL_BoundaryStone.description>바닥의 경계를 구분짓기 위한 경계석입니다.</GL_BoundaryStone.description>
+  <GL_BoundaryStone_Blueprint.label>경계석 (청사진)</GL_BoundaryStone_Blueprint.label>
+  <GL_BoundaryStone_Frame.label>경계석 (건설중)</GL_BoundaryStone_Frame.label>
+  <GL_BoundaryStone_Frame.description>바닥의 경계를 구분짓기 위한 경계석입니다.</GL_BoundaryStone_Frame.description>
+
+  <GL_BoundaryWoodCorner.label>경계목 (모서리)</GL_BoundaryWoodCorner.label>
+  <GL_BoundaryWoodCorner.description>바닥의 경계를 구분짓기 위한 경계목입니다.</GL_BoundaryWoodCorner.description>
+  <GL_BoundaryWoodCorner_Blueprint.label>경계목 (모서리) (청사진)</GL_BoundaryWoodCorner_Blueprint.label>
+  <GL_BoundaryWoodCorner_Frame.label>경계목 (모서리) (건설중)</GL_BoundaryWoodCorner_Frame.label>
+  <GL_BoundaryWoodCorner_Frame.description>바닥의 경계를 구분짓기 위한 경계목입니다.</GL_BoundaryWoodCorner_Frame.description>
+
+  <GL_BoundaryStoneCorner.label>경계석 (모서리)</GL_BoundaryStoneCorner.label>
+  <GL_BoundaryStoneCorner.description>바닥의 경계를 구분짓기 위한 경계석입니다.</GL_BoundaryStoneCorner.description>
+  <GL_BoundaryStoneCorner_Blueprint.label>경계석 (모서리) (청사진)</GL_BoundaryStoneCorner_Blueprint.label>
+  <GL_BoundaryStoneCorner_Frame.label>경계석 (모서리) (건설중)</GL_BoundaryStoneCorner_Frame.label>
+  <GL_BoundaryStoneCorner_Frame.description>바닥의 경계를 구분짓기 위한 경계석입니다.</GL_BoundaryStoneCorner_Frame.description>
+
+</LanguageData>

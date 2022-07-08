@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>GloomyDeco_Tool</defName>
+        <label>tool</label>
+        <description>A multitool with many different purposes. Unfortunately, colonists do not seem to know how it is used.</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <graphicData>
+            <texPath>GloomyDeco/Tool</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>20</pathCost>
+        <canOverlapZones>true</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToBuild>400</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>2</Mass>
+            <Beauty>10</Beauty>
+        </statBases>
+        <size>(1,1)</size>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>10</costStuffCount>
+        <costList>
+            <Plasteel>10</Plasteel>
+        </costList>
+        <defaultPlacingRot>North</defaultPlacingRot>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Furniture</designationCategory>
+        <!-- custom -->
+        <resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsFurniture</li>
+        </thingCategories>
+    </ThingDef>
+</Defs>

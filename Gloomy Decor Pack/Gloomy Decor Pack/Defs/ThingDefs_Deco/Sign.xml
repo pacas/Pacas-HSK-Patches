@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>GloomyDeco_Sign</defName>
+        <label>crop sign</label>
+        <description>A signpost with endless possibilities.</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <graphicData>
+            <texPath>GloomyDeco/Sign</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.5,1.5)</drawSize>
+            <damageData>
+                <rect>(0.1,0.1,0.8,0.8)</rect>
+            </damageData>
+            <shadowData>
+                <volume>(0.1,0.5,0.1)</volume>
+                <offset>(0,0,-0.4)</offset>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>LowPlant</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>20</pathCost>
+        <canOverlapZones>true</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>600</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>6</Mass>
+            <Beauty>10</Beauty>
+        </statBases>
+        <size>(1,1)</size>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>30</costStuffCount>
+        <defaultPlacingRot>North</defaultPlacingRot>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Furniture</designationCategory>
+        <!-- custom -->
+        <resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
+        <rotatable>false</rotatable>
+    </ThingDef>
+</Defs>

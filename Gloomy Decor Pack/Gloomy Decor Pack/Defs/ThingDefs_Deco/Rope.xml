@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>GloomyDeco_Rope</defName>
+        <label>clothesline</label>
+        <description>An unremarkable clothesline that will do its job.</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <graphicData>
+            <texPath>GloomyDeco/Rope</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2.0,2.0)</drawSize>
+            <damageData>
+                <rect>(0.1,0.1,0.8,0.8)</rect>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Standable</passability>
+        <canOverlapZones>true</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>600</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>6</Mass>
+            <Beauty>15</Beauty>
+        </statBases>
+        <size>(2,1)</size>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>10</costStuffCount>
+        <costList>
+            <Cloth>30</Cloth>
+        </costList>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Furniture</designationCategory>
+        <!-- custom -->
+        <resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
+    </ThingDef>
+</Defs>

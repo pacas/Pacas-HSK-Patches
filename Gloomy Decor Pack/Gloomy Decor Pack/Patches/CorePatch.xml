@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Walls"]/defNames</xpath>
+                <value>
+                    <li>RGK_Wall</li>
+                    <li>GL_Wall</li>
+                    <li>RGK_VentWall</li>
+                    <li>GL_VentWall</li>
+                    <li>RGK_WindowWall</li>
+                    <li>GL_WindowWall</li>
+                    <li>GL_FlowerWall</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Doors"]/defNames</xpath>
+                <value>
+                    <li>RGK_DoorOld</li>
+                    <li>GL_DoorFrame</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[@Name = "SK_BedBase"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                <value>
+                    <li>RGK_Dresser</li>
+                    <li>RGK_EndTable</li>
+                    <li>RGK_EndTableWithLamp</li>
+                    <li>RGK_EndTableWithLampE</li>
+                    <li>WardrobeA</li>
+                    <li>WardrobeB</li>
+                    <li>GL_Teddy</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "TableGrill"
+                                    or defName = "ButcherSpot"
+                                    or defName = "TableButcher"
+                                    or defName = "TableKitchen"
+                                    or defName = "FueledStove"
+                                    or defName = "TableOven"
+                                    or defName = "ElectricOven"
+                                    or defName = "CandyTable"
+                                    or defName = "GrindStone"
+                                    or defName = "MillElectric"
+                                    or defName = "Brewery"
+                                    or defName = "ElectricBrewery"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities                </xpath>
+                <value>
+                        <li>GL_Cupboard</li>
+                        <li>GL_TablewareShelf</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "SimpleResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                <value>
+                        <li>GL_Bookshelf</li>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="Dresser"]/stuffCategories</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>Metallic</li>
+                        <li>Plastic</li>
+                    </stuffCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_ResearchBenches"]/defNames</xpath>
+                <value>
+                        <li>RGK_SimpleResearchBench</li>
+                        <li>GL_Bookshelf</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_ButcherTable"]/defNames</xpath>
+                <value>
+                        <li>GL_TableButcher</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Sewing"]/defNames</xpath>
+                <value>
+                        <li>GL_HandTailoringBench</li>
+                        <li>GL_ElectricTailoringBench</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Smithy"]/defNames</xpath>
+                <value>
+                        <li>GL_FueledSmithy</li>
+                        <li>GL_ElectricSmithy</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Stove"]/defNames</xpath>
+                <value>
+                        <li>RGK_FueledStove</li>
+                        <li>GL_ElectricStove</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_TV"]/defNames</xpath>
+                <value>
+                    <li>GL_TubeTelevision</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_TableGames"]/defNames</xpath>
+                <value>
+                    <li>GL_ChessTable</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Facilities"]/defNames</xpath>
+                <value>
+                    <li>GL_Cupboard</li>
+                    <li>GL_TablewareShelf</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_ClothLockers"]/defNames</xpath>
+                <value>
+                    <li>RGK_Dresser</li>
+                    <li>RGK_EndTable</li>
+                    <li>RGK_EndTableWithLamp</li>
+                    <li>RGK_EndTableWithLampE</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Shelfs"]/defNames</xpath>
+                <value>
+                        <li>RGK_DogBowl</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Lights"]/defNames</xpath>
+                <value>
+                    <li>GL_Wall_Lamp</li>
+                    <li>RGK_lamp</li>
+                    <li>RGK_LampM</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Lamps"]/defNames</xpath>
+                <value>
+                    <li>GL_Wall_LampE</li>
+                    <li>RGK_lampE</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

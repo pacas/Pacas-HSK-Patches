@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vile's Hardcore Renovations</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fences"]/defNames</xpath>
+            <value>
+                <li>RGK_WoodFence</li>
+                <li>RGK_Door</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+                <ArchitectSense.DesignationSubCategoryDef>
+                    <defName>SubCategory_Fences</defName>
+                    <label>Fences</label>
+                    <description>Various fences.</description>
+                    <defNames>
+                        <li>Fence</li>
+                        <li>FenceGate</li>
+                        <li MayRequire="skyarkhangel.FencesAndFloorsVileUpdate">WoodFenceGateB</li>
+                        <li>RGK_WoodFence</li>
+                        <li>RGK_Door</li>
+                        <li MayRequire="skyarkhangel.FencesAndFloorsVileUpdate">ChainFence</li>
+                        <li MayRequire="skyarkhangel.FencesAndFloorsVileUpdate">ChainFenceGate</li>
+                        <li MayRequire="skyarkhangel.FencesAndFloorsVileUpdate">ChainFenceGateB</li>
+                        <li MayRequire="skyarkhangel.FencesAndFloorsVileUpdate">TechFence</li>
+                        <li MayRequire="skyarkhangel.FencesAndFloorsVileUpdate">TechFenceGate</li>
+                        <li MayRequire="skyarkhangel.FencesAndFloorsVileUpdate">TechFenceGateB</li>
+                    </defNames>
+                    <designationCategory>Structure</designationCategory>
+                    <debug>false</debug>
+                </ArchitectSense.DesignationSubCategoryDef>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>

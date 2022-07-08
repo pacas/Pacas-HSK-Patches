@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="RGKFurnitureBase" ParentName="SK_BuildingBase" Abstract="True">
+		<designationCategory>Furniture</designationCategory>
+		<thingClass>Building</thingClass>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsFurniture</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Name="RGKFurnitureWithQualityBase" ParentName="RGKFurnitureBase" Abstract="True">
+		<thingClass>Building</thingClass>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="RGKArtableFurnitureBase" ParentName="RGKFurnitureWithQualityBase" Abstract="True">
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+	</ThingDef>
+
+	<ThingDef Abstract="True" ParentName="RGKFurnitureWithQualityBase" Name="RGKTableBase">
+		<thingClass>SK.Building_Table</thingClass>
+        <building>
+			<buildingTags>
+				<li>RitualFocus</li>
+			</buildingTags>
+		</building>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_RitualFocus</li>
+		</placeWorkers>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<pathCost>60</pathCost>
+		<fillPercent>0.3</fillPercent>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<canOverlapZones>false</canOverlapZones>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<surfaceType>Eat</surfaceType>
+		<tickerType>Normal</tickerType>
+        <researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef Abstract="True" ParentName="RGKTableBase" Name="RGKTableGatherSpotBase">
+		<comps>
+			<li>
+				<compClass>CompGatherSpot</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="RGKArtableBedBase" ParentName="BedWithQualityBase" Abstract="True">	
+		<designationCategory>Furniture</designationCategory>
+		<comps>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtFurniture</nameMaker>
+				<descriptionMaker>ArtDescription_Furniture</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Art</li>
+		</inspectorTabs>
+	</ThingDef>
+
+</Defs>

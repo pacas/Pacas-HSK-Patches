@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <playSong>播放</playSong>
+  <playSongDesc>播放自定義歌曲</playSongDesc>
+  <stopSong>停止</stopSong>
+  <stopSongDesc>停止播放自定義歌曲並恢復歌曲列表</stopSongDesc>
+  <nextSong>下一首</nextSong>
+  <nextSongDesc>選擇隨機下一首歌曲</nextSongDesc>
+  <Pause>暫停</Pause>
+  <synchronize>同步</synchronize>
+  <synchronizeDesc>將當前的歌曲列表與包含自定義歌曲的文件夾同步</synchronizeDesc>
+
+  <WallAttachment_WarningNeedWall>必須放在牆上。</WallAttachment_WarningNeedWall>
+  <WallAttachment_WarningBlocked>必須面對可通行的地磚。</WallAttachment_WarningBlocked>
+  <WallAttachment_Both>必須放在牆上，面向可通行的地磚。</WallAttachment_Both>
+
+  <WallLight_DestroyedBlocked>燈被建築毀壞了。</WallLight_DestroyedBlocked>
+  <WallLight_DestroyedWall>燈被建築毀壞了。</WallLight_DestroyedWall>
+
+  <DoorAttachment_WarningNeedWall>必須放在牆上。</DoorAttachment_WarningNeedWall>
+  <DoorAttachment_WarningBlocked>必須面對可通行的地磚。</DoorAttachment_WarningBlocked>
+  <DoorAttachment_Both>必須放在牆上，面向可通行的地磚。</DoorAttachment_Both>
+
+  <PassableObject_CantPass>Must be placed on Passable object</PassableObject_CantPass>
+
+  <StandableObject_CantPass>Must be placed on Standable</StandableObject_CantPass>
+
+  <!--[Core] <State>State</State>-->
+  <!--<State>State</State>-->
+
+</LanguageData>

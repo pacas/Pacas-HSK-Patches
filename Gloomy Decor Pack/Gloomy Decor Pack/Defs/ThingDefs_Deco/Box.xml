@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="LWM_DeepStorage">
+        <defName>GloomyDeco_Box</defName>
+        <label>simple box</label>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <tradeTags Inhert="false"/>
+        <!--and you cannot buy them -->
+        <drawGUIOverlay>false</drawGUIOverlay><!-- Good to show count of food when there can be a lot, eh? -->
+        <description>A container that is not only good for storing items, but also stopping bullets in an emergency.</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <graphicData>
+            <texPath>GloomyDeco/Box</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(1.6,1.6)</drawSize>
+            <damageData>
+                <rect>(0.1,0.1,0.8,0.8)</rect>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>20</pathCost>
+        <canOverlapZones>true</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToBuild>400</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>2</Mass>
+        </statBases>
+        <size>(1,1)</size>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>25</costStuffCount>
+        <costList>
+            <Plasteel>10</Plasteel>
+        </costList>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <designationCategory>LWM_DS_Storage</designationCategory>
+        <resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
+        <fillPercent>0.4</fillPercent>
+        <thingClass>Building_Storage</thingClass>
+        <building>
+            <preventDeteriorationInside>true</preventDeteriorationInside>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <priority>Normal</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Corpses</li>
+                        <li>Chunks</li>
+                        <li>StoneBlocks</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+        <comps>
+            <li Class="LWM.DeepStorage.Properties">
+                <minNumberStacks>1</minNumberStacks>
+                <maxNumberStacks>7</maxNumberStacks>
+                <timeStoringTakes>120</timeStoringTakes>
+                <showContents>false</showContents>
+                <overlayType>None</overlayType>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

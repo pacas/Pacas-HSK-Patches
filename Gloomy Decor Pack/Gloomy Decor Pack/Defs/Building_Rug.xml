@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="AreaRugBase">
+        <defName>RugA_Small</defName>
+        <label>Celtic Rug</label>
+        <graphicData>
+            <texPath>Things/Building/Rug/Rug1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <statBases>
+			<WorkToBuild>3300</WorkToBuild>
+			<Beauty>22</Beauty>
+			<Bulk>14</Bulk>
+			<Mass>8</Mass>
+		</statBases>
+        <costStuffCount>135</costStuffCount>
+		<size>(3,3)</size>
+		<researchPrerequisites>
+			<li>Carpets_A2</li>
+		</researchPrerequisites>
+        <description>It's a rug with Celtic designs.</description>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <saveCompressible>false</saveCompressible>
+    </ThingDef>
+
+    <ThingDef ParentName="AreaRugBase">
+        <defName>RugB_Small</defName>
+        <label>Celtic Rug</label>
+        <graphicData>
+            <texPath>Things/Building/Rug/Rug2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <statBases>
+			<WorkToBuild>3300</WorkToBuild>
+			<Beauty>22</Beauty>
+			<Bulk>14</Bulk>
+			<Mass>8</Mass>
+		</statBases>
+        <costStuffCount>135</costStuffCount>
+		<size>(3,3)</size>
+		<researchPrerequisites>
+			<li>Carpets_A2</li>
+		</researchPrerequisites>
+        <description>It's a rug with Celtic designs.</description>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <saveCompressible>false</saveCompressible>
+    </ThingDef>
+
+    <ThingDef ParentName="AreaRugBase">
+        <defName>RugC_Small</defName>
+        <label>Celtic Rug</label>
+        <graphicData>
+            <texPath>Things/Building/Rug/Rug3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <statBases>
+			<WorkToBuild>3300</WorkToBuild>
+			<Beauty>22</Beauty>
+			<Bulk>14</Bulk>
+			<Mass>8</Mass>
+		</statBases>
+        <costStuffCount>135</costStuffCount>
+		<size>(3,3)</size>
+		<researchPrerequisites>
+			<li>Carpets_A2</li>
+		</researchPrerequisites>
+        <description>It's a rug with Celtic designs.</description>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <saveCompressible>false</saveCompressible>
+    </ThingDef>
+
+    <ThingDef ParentName="AreaRugBase">
+        <defName>RugA</defName>
+        <label>Celtic Rug</label>
+        <graphicData>
+            <texPath>Things/Building/Rug/Rug1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4,4)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <statBases>
+			<WorkToBuild>7600</WorkToBuild>
+			<Beauty>24</Beauty>
+			<Bulk>21</Bulk>
+			<Mass>16</Mass>
+		</statBases>
+		<costStuffCount>240</costStuffCount>
+		<size>(4,4)</size>
+		<researchPrerequisites>
+			<li>Carpets_B1</li>
+		</researchPrerequisites>
+        <description>It's a rug with Celtic designs.</description>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <saveCompressible>false</saveCompressible>
+    </ThingDef>
+
+    <ThingDef ParentName="AreaRugBase">
+        <defName>RugB</defName>
+        <label>Celtic Rug</label>
+        <graphicData>
+            <texPath>Things/Building/Rug/Rug2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4,4)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <statBases>
+			<WorkToBuild>7600</WorkToBuild>
+			<Beauty>16</Beauty>
+			<Bulk>21</Bulk>
+			<Mass>16</Mass>
+		</statBases>
+		<costStuffCount>240</costStuffCount>
+		<size>(4,4)</size>
+		<researchPrerequisites>
+			<li>Carpets_B1</li>
+		</researchPrerequisites>
+        <description>It's a rug with Celtic designs.</description>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <saveCompressible>false</saveCompressible>
+    </ThingDef>
+
+    <ThingDef ParentName="AreaRugBase">
+        <defName>RugC</defName>
+        <label>Celtic Rug</label>
+        <graphicData>
+            <texPath>Things/Building/Rug/Rug3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4,4)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <statBases>
+			<WorkToBuild>7600</WorkToBuild>
+			<Beauty>16</Beauty>
+			<Bulk>21</Bulk>
+			<Mass>16</Mass>
+		</statBases>
+		<costStuffCount>240</costStuffCount>
+		<size>(4,4)</size>
+		<researchPrerequisites>
+			<li>Carpets_B1</li>
+		</researchPrerequisites>
+        <description>It's a rug with Celtic designs.</description>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <saveCompressible>false</saveCompressible>
+    </ThingDef>
+
+    <ThingDef ParentName="AreaRugBase">
+        <defName>RugA_Large</defName>
+        <label>Celtic Rug</label>
+        <graphicData>
+            <texPath>Things/Building/Rug/Rug1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(5,5)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <statBases>
+			<WorkToBuild>9000</WorkToBuild>
+			<Beauty>45</Beauty>
+			<Bulk>25</Bulk>
+			<Mass>18</Mass>
+		</statBases>
+		<costStuffCount>375</costStuffCount>
+		<size>(5,5)</size>
+		<researchPrerequisites>
+			<li>Carpets_B1</li>
+		</researchPrerequisites>
+        <description>It's a rug with Celtic designs.</description>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <saveCompressible>false</saveCompressible>
+    </ThingDef>
+
+    <ThingDef ParentName="AreaRugBase">
+        <defName>RugB_Large</defName>
+        <label>Celtic Rug</label>
+        <graphicData>
+            <texPath>Things/Building/Rug/Rug2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(5,5)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <statBases>
+			<WorkToBuild>9000</WorkToBuild>
+			<Beauty>45</Beauty>
+			<Bulk>25</Bulk>
+			<Mass>18</Mass>
+		</statBases>
+		<costStuffCount>375</costStuffCount>
+		<size>(5,5)</size>
+		<researchPrerequisites>
+			<li>Carpets_B1</li>
+		</researchPrerequisites>
+        <description>It's a rug with Celtic designs.</description>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <saveCompressible>false</saveCompressible>
+    </ThingDef>
+
+    <ThingDef ParentName="AreaRugBase">
+        <defName>RugC_Large</defName>
+        <label>Celtic Rug</label>
+        <graphicData>
+            <texPath>Things/Building/Rug/Rug3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4,4)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <statBases>
+			<WorkToBuild>9000</WorkToBuild>
+			<Beauty>45</Beauty>
+			<Bulk>25</Bulk>
+			<Mass>18</Mass>
+		</statBases>
+		<costStuffCount>375</costStuffCount>
+		<size>(5,5)</size>
+		<researchPrerequisites>
+			<li>Carpets_B1</li>
+		</researchPrerequisites>
+        <description>It's a rug with Celtic designs.</description>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <saveCompressible>false</saveCompressible>
+    </ThingDef>
+</Defs>

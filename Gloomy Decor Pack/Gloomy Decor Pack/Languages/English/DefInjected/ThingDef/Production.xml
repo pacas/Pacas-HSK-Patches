@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RGK_SimpleResearchBench.label>simple research bench</RGK_SimpleResearchBench.label>
+  <RGK_SimpleResearchBench.description>A simple bench with writing implements and simple measurement devices. Researchers work here to discover new things.</RGK_SimpleResearchBench.description>
+
+
+  <!-- 도축대 -->
+
+  <GL_TableButcher.label>butcher table</GL_TableButcher.label>
+  <GL_TableButcher.description>A heavy table for butchering dead creatures into pieces of raw meat.</GL_TableButcher.description>
+
+
+  <!-- 연료 조리대 -->
+
+  <RGK_FueledStove.label>fueled stove</RGK_FueledStove.label>
+  <RGK_FueledStove.description>A wood-fueled stove with an attached countertop for preparing meals.</RGK_FueledStove.description>
+
+
+  <!-- 전기 조리대 -->
+
+  <GL_ElectricStove.label>electric stove</GL_ElectricStove.label>
+  <GL_ElectricStove.description>A electric stove with an attached countertop for preparing meals.</GL_ElectricStove.description>
+
+
+  <!-- 화톳불 -->
+
+  <GL_Bonfire.label>bonfire</GL_Bonfire.label>
+  <GL_Bonfire.description>Cooks meals and produces heat, and burns out after a few days. As with all heat sources, it must be placed indoors so it has a closed space to heat. Refuelable.</GL_Bonfire.description>
+  <GL_Bonfire_Blueprint.label>bonfire (blueprint)</GL_Bonfire_Blueprint.label>
+  <GL_Bonfire_Blueprint_Install.label>bonfire (blueprint)</GL_Bonfire_Blueprint_Install.label>
+  <GL_Bonfire_Frame.label>bonfire (building)</GL_Bonfire_Frame.label>
+  <GL_Bonfire_Frame.description>Cooks meals and produces heat, and burns out after a few days. As with all heat sources, it must be placed indoors so it has a closed space to heat. Refuelable.</GL_Bonfire_Frame.description>
+
+
+  <!-- 재봉틀 -->
+
+  <GL_HandTailoringBench.label>hand tailor bench</GL_HandTailoringBench.label>
+  <GL_HandTailoringBench.description>A workbench for tailoring clothes by hand. Works at 50% of the speed of an electric tailoring bench.</GL_HandTailoringBench.description>
+
+  <GL_ElectricTailoringBench.label>electric tailor bench</GL_ElectricTailoringBench.label>
+  <GL_ElectricTailoringBench.description>A workbench with a sewing machine for rapid tailoring of clothes. Can work without electricity at 50% of normal speed.</GL_ElectricTailoringBench.description>
+
+
+  <!-- 단조대 -->
+
+  <GL_FueledSmithy.label>fueled smithy</GL_FueledSmithy.label>
+  <GL_FueledSmithy.description>A wood-fueled station for smithing non-mechanical weapons and tools.</GL_FueledSmithy.description>
+
+  <GL_ElectricSmithy.label>electric smithy</GL_ElectricSmithy.label>
+  <GL_ElectricSmithy.description>An electric-powered station for smithing non-mechanical weapons and tools.</GL_ElectricSmithy.description>
+
+</LanguageData>

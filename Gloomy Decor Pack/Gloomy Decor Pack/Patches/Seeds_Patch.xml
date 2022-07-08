@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>SeedsPlease</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+                <SeedsPlease.SeedDef ParentName="SeedBase">
+                    <defName>Seed_GloomyBlos</defName>
+                    <label>Blossom seeds</label>
+                    <sources>
+                        <li>GL_TreeA</li>
+                    </sources>
+                    <graphicData>
+                        <texPath>Things/Item/Seeds/BlossomGloomy/blos_b</texPath>
+                        <graphicClass>Graphic_Single</graphicClass>
+                    </graphicData>
+                </SeedsPlease.SeedDef>
+            </value>
+        </match>
+    </Operation>
+    
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>SeedsPlease</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+                <SeedsPlease.SeedDef ParentName="SeedBase">
+                    <defName>Seed_GloomyGlos</defName>
+                    <label>Glossom seeds</label>
+                    <sources>
+                        <li>GL_TreeB</li>
+                    </sources>
+                    <graphicData>
+                        <texPath>Things/Item/Seeds/GlowGloomy/Glow_b</texPath>
+                        <graphicClass>Graphic_Single</graphicClass>
+                    </graphicData>
+                </SeedsPlease.SeedDef>
+            </value>
+        </match>
+    </Operation>
+</Patch>

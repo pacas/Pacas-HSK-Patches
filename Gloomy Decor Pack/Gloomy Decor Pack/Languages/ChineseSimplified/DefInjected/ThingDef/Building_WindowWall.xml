@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- 벽 -->
+  <RGK_Wall.label>墙</RGK_Wall.label>
+  <RGK_Wall.description>无法通行的墙，能够支撑屋顶。</RGK_Wall.description>
+  <RGK_Wall_Blueprint.label>墙 (蓝图)</RGK_Wall_Blueprint.label>
+  <RGK_Wall_Frame.label>墙 (建造中)</RGK_Wall_Frame.label>
+  <RGK_Wall_Frame.description>无法通行的墙，能够支撑屋顶。</RGK_Wall_Frame.description>
+  <!-- 신규 벽 -->
+  <GL_Wall.label>墙</GL_Wall.label>
+  <GL_Wall.description>一面不可逾越的高墙。可以支撑起屋顶。</GL_Wall.description>
+  <GL_Wall_Blueprint.label>墙 (蓝图)</GL_Wall_Blueprint.label>
+  <GL_Wall_Frame.label>墙 (建造中)</GL_Wall_Frame.label>
+  <GL_Wall_Frame.description>一面不可逾越的高墙。可以支撑起屋顶。</GL_Wall_Frame.description>
+  <!-- 환풍벽 -->
+  <RGK_VentWall.label>通风墙</RGK_VentWall.label>
+  <RGK_VentWall.description>一面可以流通空气的墙。</RGK_VentWall.description>
+  <RGK_VentWall_Blueprint.label>通风墙 (蓝图)</RGK_VentWall_Blueprint.label>
+  <RGK_VentWall_Frame.label>通风墙 (建造中)</RGK_VentWall_Frame.label>
+  <RGK_VentWall_Frame.description>一面可以流通空气的墙。</RGK_VentWall_Frame.description>
+  <!-- 신규 환풍벽 -->
+  <GL_VentWall.label>通风墙</GL_VentWall.label>
+  <GL_VentWall.description>一面可以流通空气的墙。</GL_VentWall.description>
+  <GL_VentWall_Blueprint.label>通风墙 (蓝图)</GL_VentWall_Blueprint.label>
+  <GL_VentWall_Frame.label>通风墙 (蓝图)</GL_VentWall_Frame.label>
+  <GL_VentWall_Frame.description>一面可以流通空气的墙。</GL_VentWall_Frame.description>
+  <!-- 창문 -->
+  <RGK_window.label>窗户</RGK_window.label>
+  <RGK_window.description>一面可以由里向外看的窗户。</RGK_window.description>
+  <RGK_window_Blueprint_Install.label>窗户 (蓝图)</RGK_window_Blueprint_Install.label>
+  <RGK_WindowWall.label>带窗的墙</RGK_WindowWall.label>
+  <RGK_WindowWall.description>一面可以透光的墙。</RGK_WindowWall.description>
+  <RGK_WindowWall_Blueprint.label>带窗的墙 (蓝图)</RGK_WindowWall_Blueprint.label>
+  <RGK_WindowWall_Frame.label>带窗的墙 (建造中)</RGK_WindowWall_Frame.label>
+  <RGK_WindowWall_Frame.description>一面可以透光的墙。</RGK_WindowWall_Frame.description>
+  <!-- 신규 창문 -->
+  <GL_WindowWall.label>带窗的墙</GL_WindowWall.label>
+  <GL_WindowWall.description>一面可以透光的墙。</GL_WindowWall.description>
+  <GL_WindowWall_Blueprint.label>带窗的墙 (蓝图)</GL_WindowWall_Blueprint.label>
+  <GL_WindowWall_Frame.label>带窗的墙 (建造中)</GL_WindowWall_Frame.label>
+  <GL_WindowWall_Frame.description>一面可以透光的墙。</GL_WindowWall_Frame.description>
+  <!-- 울타리 -->
+  <RGK_WoodFence.label>栅栏</RGK_WoodFence.label>
+  <RGK_WoodFence.description>诱捕野兽或保护牲畜的栅栏。</RGK_WoodFence.description>
+  <RGK_WoodFence_Blueprint.label>栅栏 (蓝图)</RGK_WoodFence_Blueprint.label>
+  <RGK_WoodFence_Frame.label>栅栏 (建造中)</RGK_WoodFence_Frame.label>
+  <RGK_WoodFence_Frame.description>诱捕野兽或保护牲畜的栅栏。</RGK_WoodFence_Frame.description>
+  <!-- 꽃벽 -->
+  <GL_FlowerWall.label>花墙</GL_FlowerWall.label>
+  <GL_FlowerWall.description>鲜花装饰的墙。</GL_FlowerWall.description>
+  <GL_FlowerWall_Blueprint.label>花墙 (蓝图)</GL_FlowerWall_Blueprint.label>
+  <GL_FlowerWall_Frame.label>花墙 (建造中)</GL_FlowerWall_Frame.label>
+  <GL_FlowerWall_Frame.description>鲜花装饰的墙。</GL_FlowerWall_Frame.description>
+  <!-- 올드스타일 문 -->
+  <RGK_DoorOld.label>古典门</RGK_DoorOld.label>
+  <RGK_DoorOld.description>分隔房间。必须手动打开，这会减慢人们通过的速度。减速程度取决于门由什么材料构成。</RGK_DoorOld.description>
+  <RGK_DoorOld_Blueprint.label>古典门 (蓝图)</RGK_DoorOld_Blueprint.label>
+  <RGK_DoorOld_Frame.label>古典门 (建造中)</RGK_DoorOld_Frame.label>
+  <RGK_DoorOld_Frame.description>分隔房间。必须手动打开，这会减慢人们通过的速度。减速程度取决于门由什么材料构成。</RGK_DoorOld_Frame.description>
+  <!-- 울타리문 -->
+  <RGK_Door.label>栅门</RGK_Door.label>
+  <RGK_Door.description>分隔空间。必须手动打开，这会减慢人们通过的速度。减速程度取决于门由什么材料构成。</RGK_Door.description>
+  <RGK_Door_Blueprint.label>栅门 (蓝图)</RGK_Door_Blueprint.label>
+  <RGK_Door_Frame.label>栅门 (建造中)</RGK_Door_Frame.label>
+  <RGK_Door_Frame.description>分隔空间。必须手动打开，这会减慢人们通过的速度。减速程度取决于门由什么材料构成。</RGK_Door_Frame.description>
+  <!-- 문틀 -->
+  <GL_DoorFrame.label>门框</GL_DoorFrame.label>
+  <GL_DoorFrame.description>一个用来装饰门的框架。</GL_DoorFrame.description>
+  <GL_DoorFrame_Blueprint.label>门框 (蓝图)</GL_DoorFrame_Blueprint.label>
+  <GL_DoorFrame_Frame.label>门框 (建造中)</GL_DoorFrame_Frame.label>
+  <GL_DoorFrame_Frame.description>一个用来装饰门的框架。</GL_DoorFrame_Frame.description>
+  <!-- 19.03.17 바닥 경계석 -->
+  <GL_BoundaryWood.label>分界木板</GL_BoundaryWood.label>
+  <GL_BoundaryWood.description>区分地面边界的木板。</GL_BoundaryWood.description>
+  <GL_BoundaryWood_Blueprint.label>分界木板 (蓝图)</GL_BoundaryWood_Blueprint.label>
+  <GL_BoundaryWood_Frame.label>分界木板 (建造中)</GL_BoundaryWood_Frame.label>
+  <GL_BoundaryWood_Frame.description>区分地面边界的木板。</GL_BoundaryWood_Frame.description>
+  <GL_BoundaryStone.label>分界石板</GL_BoundaryStone.label>
+  <GL_BoundaryStone.description>区分地面边界的石板。</GL_BoundaryStone.description>
+  <GL_BoundaryStone_Blueprint.label>分界石板 (蓝图)</GL_BoundaryStone_Blueprint.label>
+  <GL_BoundaryStone_Frame.label>分界石板 (建造中)</GL_BoundaryStone_Frame.label>
+  <GL_BoundaryStone_Frame.description>区分地面边界的石板。</GL_BoundaryStone_Frame.description>
+  <GL_BoundaryWoodCorner.label>分界木板（边角）</GL_BoundaryWoodCorner.label>
+  <GL_BoundaryWoodCorner.description>区分地面边界的木板。</GL_BoundaryWoodCorner.description>
+  <GL_BoundaryWoodCorner_Blueprint.label>分界木板（边角） (蓝图)</GL_BoundaryWoodCorner_Blueprint.label>
+  <GL_BoundaryWoodCorner_Frame.label>分界木板（边角） (建造中)</GL_BoundaryWoodCorner_Frame.label>
+  <GL_BoundaryWoodCorner_Frame.description>区分地面边界的木板。</GL_BoundaryWoodCorner_Frame.description>
+  <GL_BoundaryStoneCorner.label>分界石板（边角）</GL_BoundaryStoneCorner.label>
+  <GL_BoundaryStoneCorner.description>区分地面边界的石板。</GL_BoundaryStoneCorner.description>
+  <GL_BoundaryStoneCorner_Blueprint.label>分界石板（边角） (蓝图)</GL_BoundaryStoneCorner_Blueprint.label>
+  <GL_BoundaryStoneCorner_Frame.label>分界石板（边角） (建造中)</GL_BoundaryStoneCorner_Frame.label>
+  <GL_BoundaryStoneCorner_Frame.description>区分地面边界的石板。</GL_BoundaryStoneCorner_Frame.description>
+  <!-- window -->
+  <!-- 2018 12 21 문짝 -->
+</LanguageData>

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 벽 -->
+
+  <RGK_Wall.label>wall</RGK_Wall.label>
+  <RGK_Wall.description>An impassable wall. Capable of holding up a roof.</RGK_Wall.description>
+  <RGK_Wall_Blueprint.label>wall (blueprint)</RGK_Wall_Blueprint.label>
+  <RGK_Wall_Frame.label>wall (building)</RGK_Wall_Frame.label>
+  <RGK_Wall_Frame.description>An impassable wall. Capable of holding up a roof.</RGK_Wall_Frame.description>
+
+
+  <!-- 신규 벽 -->
+
+  <GL_Wall.label>wall</GL_Wall.label>
+  <GL_Wall.description>An impassable wall. Capable of holding up a roof.</GL_Wall.description>
+  <GL_Wall_Blueprint.label>wall (blueprint)</GL_Wall_Blueprint.label>
+  <GL_Wall_Frame.label>wall (building)</GL_Wall_Frame.label>
+  <GL_Wall_Frame.description>An impassable wall. Capable of holding up a roof.</GL_Wall_Frame.description>
+
+
+  <!-- 환풍벽 -->
+
+  <RGK_VentWall.label>vent wall</RGK_VentWall.label>
+  <RGK_VentWall.description>It's a wall where air can come in and out.</RGK_VentWall.description>
+  <RGK_VentWall_Blueprint.label>vent wall (blueprint)</RGK_VentWall_Blueprint.label>
+  <RGK_VentWall_Frame.label>vent wall (building)</RGK_VentWall_Frame.label>
+  <RGK_VentWall_Frame.description>It's a wall where air can come in and out.</RGK_VentWall_Frame.description>
+
+
+  <!-- 신규 환풍벽 -->
+
+  <GL_VentWall.label>vent wall</GL_VentWall.label>
+  <GL_VentWall.description>It's a wall where air can come in and out.</GL_VentWall.description>
+  <GL_VentWall_Blueprint.label>vent wall (blueprint)</GL_VentWall_Blueprint.label>
+  <GL_VentWall_Frame.label>vent wall (building)</GL_VentWall_Frame.label>
+  <GL_VentWall_Frame.description>It's a wall where air can come in and out.</GL_VentWall_Frame.description>
+
+
+  <!-- 창문 -->
+
+  <RGK_window.label>window</RGK_window.label>
+  <RGK_window.description>It's a window where you can look outside.</RGK_window.description>
+  <RGK_window_Blueprint_Install.label>window (blueprint)</RGK_window_Blueprint_Install.label>
+
+  <RGK_WindowWall.label>window wall</RGK_WindowWall.label>
+  <RGK_WindowWall.description>A window through which light can pass through.</RGK_WindowWall.description>
+  <RGK_WindowWall_Blueprint.label>window wall (blueprint)</RGK_WindowWall_Blueprint.label>
+  <RGK_WindowWall_Frame.label>window wall (building)</RGK_WindowWall_Frame.label>
+  <RGK_WindowWall_Frame.description>A window through which light can pass through.</RGK_WindowWall_Frame.description>
+
+
+  <!-- 신규 창문 -->
+
+  <GL_WindowWall.label>window wall</GL_WindowWall.label>
+  <GL_WindowWall.description>A window through which light can pass through.</GL_WindowWall.description>
+  <GL_WindowWall_Blueprint.label>window wall (blueprint)</GL_WindowWall_Blueprint.label>
+  <GL_WindowWall_Frame.label>window wall (building)</GL_WindowWall_Frame.label>
+  <GL_WindowWall_Frame.description>A window through which light can pass through.</GL_WindowWall_Frame.description>
+
+
+  <!-- 울타리 -->
+
+  <RGK_WoodFence.label>fence</RGK_WoodFence.label>
+  <RGK_WoodFence.description>A fence to trap livestock or protect it from outside beasts.</RGK_WoodFence.description>
+  <RGK_WoodFence_Blueprint.label>fence (blueprint)</RGK_WoodFence_Blueprint.label>
+  <RGK_WoodFence_Frame.label>fence (building)</RGK_WoodFence_Frame.label>
+  <RGK_WoodFence_Frame.description>A fence to trap livestock or protect it from outside beasts.</RGK_WoodFence_Frame.description>
+
+
+  <!-- 꽃벽 -->
+
+  <GL_FlowerWall.label>flower wall</GL_FlowerWall.label>
+  <GL_FlowerWall.description>Wall decorated with flowers.</GL_FlowerWall.description>
+  <GL_FlowerWall_Blueprint.label>Flower wall (blueprint)</GL_FlowerWall_Blueprint.label>
+  <GL_FlowerWall_Frame.label>flower wall (building)</GL_FlowerWall_Frame.label>
+  <GL_FlowerWall_Frame.description>Wall decorated with flowers.</GL_FlowerWall_Frame.description>
+
+
+  <!-- 올드스타일 문 -->
+
+  <RGK_DoorOld.label>classic door</RGK_DoorOld.label>
+  <RGK_DoorOld.description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</RGK_DoorOld.description>
+
+
+  <!-- 울타리문 -->
+
+  <RGK_Door.label>door</RGK_Door.label>
+  <RGK_Door.description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</RGK_Door.description>
+
+
+  <!-- 문틀 -->
+
+  <GL_DoorFrame.label>door frame</GL_DoorFrame.label>
+  <GL_DoorFrame.description>It is a frame to decorate the door.</GL_DoorFrame.description>
+
+
+  <!-- 19.03.17 바닥 경계석 -->
+
+  <GL_BoundaryWood.label>boundary stone</GL_BoundaryWood.label>
+  <GL_BoundaryWood.description>It is the boundary tree for boundary division.</GL_BoundaryWood.description>
+  <GL_BoundaryWood_Blueprint.label>boundary stone (blueprint)</GL_BoundaryWood_Blueprint.label>
+  <GL_BoundaryWood_Frame.label>boundary stone (building)</GL_BoundaryWood_Frame.label>
+  <GL_BoundaryWood_Frame.description>It is the boundary tree for boundary division.</GL_BoundaryWood_Frame.description>
+
+  <GL_BoundaryStone.label>boundary stone</GL_BoundaryStone.label>
+  <GL_BoundaryStone.description>It is the boundary stone for boundary division.</GL_BoundaryStone.description>
+  <GL_BoundaryStone_Blueprint.label>boundary stone (blueprint)</GL_BoundaryStone_Blueprint.label>
+  <GL_BoundaryStone_Frame.label>boundary stone (building)</GL_BoundaryStone_Frame.label>
+  <GL_BoundaryStone_Frame.description>It is the boundary stone for boundary division.</GL_BoundaryStone_Frame.description>
+
+  <GL_BoundaryWoodCorner.label>boundary wood corner</GL_BoundaryWoodCorner.label>
+  <GL_BoundaryWoodCorner.description>It is the boundary tree for boundary division.</GL_BoundaryWoodCorner.description>
+  <GL_BoundaryWoodCorner_Blueprint.label>boundary wood corner (blueprint)</GL_BoundaryWoodCorner_Blueprint.label>
+  <GL_BoundaryWoodCorner_Frame.label>boundary wood corner (building)</GL_BoundaryWoodCorner_Frame.label>
+  <GL_BoundaryWoodCorner_Frame.description>It is the boundary tree for boundary division.</GL_BoundaryWoodCorner_Frame.description>
+
+  <GL_BoundaryStoneCorner.label>boundary stone corner</GL_BoundaryStoneCorner.label>
+  <GL_BoundaryStoneCorner.description>It is the boundary stone for boundary division.</GL_BoundaryStoneCorner.description>
+  <GL_BoundaryStoneCorner_Blueprint.label>boundary stone corner (blueprint)</GL_BoundaryStoneCorner_Blueprint.label>
+  <GL_BoundaryStoneCorner_Frame.label>boundary stone corner (building)</GL_BoundaryStoneCorner_Frame.label>
+  <GL_BoundaryStoneCorner_Frame.description>It is the boundary stone for boundary division.</GL_BoundaryStoneCorner_Frame.description>
+  <!-- window -->
+
+</LanguageData>

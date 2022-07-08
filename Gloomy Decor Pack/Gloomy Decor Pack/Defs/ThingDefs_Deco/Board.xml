@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>GloomyDeco_Board</defName>
+        <label>board</label>
+        <description>A message board filled with various news. A nearby settlement has burned down nearby? How sad.</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <graphicData>
+            <texPath>GloomyDeco/Board</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(4,3)</drawSize>
+            <damageData>
+                <rect>(0.4,0.2,1.4,1.4)</rect>
+            </damageData>
+            <shadowData>
+                <volume>(1.6,0.8,0.1)</volume>
+                <offset>(0,0,-0.4)</offset>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>40</pathCost>
+        <canOverlapZones>false</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <WorkToBuild>800</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>10</Mass>
+            <Beauty>15</Beauty>
+        </statBases>
+        <size>(2,1)</size>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>30</costStuffCount>
+        <costList>
+            <Plasteel>5</Plasteel>
+        </costList>
+        <defaultPlacingRot>North</defaultPlacingRot>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Furniture</designationCategory>
+        <!-- custom -->
+        <resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
+        <fillPercent>0.4</fillPercent>
+        <rotatable>false</rotatable>
+    </ThingDef>
+</Defs>

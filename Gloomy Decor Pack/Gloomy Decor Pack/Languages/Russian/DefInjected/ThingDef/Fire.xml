@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RGK_Fireplace.label>камин</RGK_Fireplace.label>
+  <RGK_Fireplace.description>Теплый камин, согревающий комнату.</RGK_Fireplace.description>
+  <RGK_Fireplace_Blueprint.label>камин (проект)</RGK_Fireplace_Blueprint.label>
+  <RGK_Fireplace_Blueprint_Install.label>камин (проект)</RGK_Fireplace_Blueprint_Install.label>
+  <RGK_Fireplace_Frame.label>камин (сборка)</RGK_Fireplace_Frame.label>
+  <RGK_Fireplace_Frame.description>Теплый камин, согревающий комнату.</RGK_Fireplace_Frame.description>
+
+  <RGK_FireplaceE.label>электрический камин</RGK_FireplaceE.label>
+  <RGK_FireplaceE.description>Теплый камин согревает комнату. Для работы требуется электричество.</RGK_FireplaceE.description>
+  <RGK_FireplaceE_Blueprint.label>электрический камин (проект)</RGK_FireplaceE_Blueprint.label>
+  <RGK_FireplaceE_Blueprint_Install.label>электрический камин (проект)</RGK_FireplaceE_Blueprint_Install.label>
+  <RGK_FireplaceE_Frame.label>электрический камин (сборка)</RGK_FireplaceE_Frame.label>
+  <RGK_FireplaceE_Frame.description>Теплый камин согревает комнату. Для работы требуется электричество.</RGK_FireplaceE_Frame.description>
+
+
+  <!-- светильник "Тип1" -->
+
+  <RGK_lamp.label>светильник 1</RGK_lamp.label>
+  <RGK_lamp.description>Небольшой светильник для освещения помещений. 
+  Отличается от светильника 2 расположением на тайле. Эту лампу можно разместить на большинстве столов, при этом она будет стоять на краю стола, либо в центре столика 1х1.</RGK_lamp.description>
+  <RGK_lamp_Blueprint.label>светильник 1 (проект)</RGK_lamp_Blueprint.label>
+  <RGK_lamp_Blueprint_Install.label>светильник 1 (проект)</RGK_lamp_Blueprint_Install.label>
+  <RGK_lamp_Frame.label>светильник 1 (сборка)</RGK_lamp_Frame.label>
+  <RGK_lamp_Frame.description>Такой лампой можно безопасно пользоваться даже во время дождя. 
+  Отличается от светильника 2 расположением на тайле. Эту лампу можно разместить на большинстве столов, при этом она будет стоять на краю стола, либо в центре столика 1х1.</RGK_lamp_Frame.description>
+
+
+  <!-- светильник "Тип2" -->
+
+  <RGK_LampM.label>светильник 2</RGK_LampM.label>
+  <RGK_LampM.description>Небольшой светильник для освещения помещений.
+  Отличается от светильника 1 расположением на тайле. Эту лампу невозможно красиво разместить на столике 1х1, а на столах 2х2 она отображается слева или справа посередине.</RGK_LampM.description>
+  <RGK_LampM_Blueprint.label>светильник 2 (проект)</RGK_LampM_Blueprint.label>
+  <RGK_LampM_Blueprint_Install.label>светильник 2 (проект)</RGK_LampM_Blueprint_Install.label>
+  <RGK_LampM_Frame.label>светильник 2 (сборка)</RGK_LampM_Frame.label>
+  <RGK_LampM_Frame.description>Небольшой светильник для освещения помещений.
+  Отличается от светильника 1 расположением на тайле. Эту лампу невозможно красиво разместить на столике 1х1, а на столах 2х2 она отображается слева или справа посередине.</RGK_LampM_Frame.description>
+
+
+  <!-- Lamp E -->
+
+  <RGK_lampE.label>светильник</RGK_lampE.label>
+  <RGK_lampE.description>Небольшой светильник для освещения помещений. Для работы требуется электричество.</RGK_lampE.description>
+  <RGK_lampE_Blueprint.label>светильник (проект)</RGK_lampE_Blueprint.label>
+  <RGK_lampE_Blueprint_Install.label>светильник (проект)</RGK_lampE_Blueprint_Install.label>
+  <RGK_lampE_Frame.label>светильник (сборка)</RGK_lampE_Frame.label>
+  <RGK_lampE_Frame.description>Небольшой светильник для освещения помещений. Для работы требуется электричество.</RGK_lampE_Frame.description>
+
+
+  <!-- уличный фонарь -->
+
+  <RGK_Street_Lamp_L.label>уличный фонарь</RGK_Street_Lamp_L.label>
+  <RGK_Street_Lamp_L.description>Обычный уличный фонарь, освещающий дорогу в темноте</RGK_Street_Lamp_L.description>
+  <RGK_Street_Lamp_L_Blueprint.label>уличный фонарь (проект)</RGK_Street_Lamp_L_Blueprint.label>
+  <RGK_Street_Lamp_L_Frame.label>уличный фонарь (сборка)</RGK_Street_Lamp_L_Frame.label>
+  <RGK_Street_Lamp_L_Frame.description>Обычный уличный фонарь, освещающий дорогу в темноте.</RGK_Street_Lamp_L_Frame.description>
+
+  <RGK_Street_Lamp.label>уличный фонарь</RGK_Street_Lamp.label>
+  <RGK_Street_Lamp.description>Обычный уличный фонарь, освещающий дорогу в темноте. Для работы требуется электричество.</RGK_Street_Lamp.description>
+  <RGK_Street_Lamp_Blueprint.label>уличный фонарь (проект)</RGK_Street_Lamp_Blueprint.label>
+  <RGK_Street_Lamp_Frame.label>уличный фонарь (сборка)</RGK_Street_Lamp_Frame.label>
+  <RGK_Street_Lamp_Frame.description>Обычный уличный фонарь, освещающий дорогу в темноте. Для работы требуется электричество.</RGK_Street_Lamp_Frame.description>
+
+
+  <!-- уличный фонарь Seven -->
+
+  <RGK_Street_Lamp_Seven.label>уличный фонарь</RGK_Street_Lamp_Seven.label>
+  <RGK_Street_Lamp_Seven.description>Обычный уличный фонарь, освещающий дорогу в темноте.</RGK_Street_Lamp_Seven.description>
+  <RGK_Street_Lamp_Seven_Blueprint.label>уличный фонарь (проект)</RGK_Street_Lamp_Seven_Blueprint.label>
+  <RGK_Street_Lamp_Seven_Frame.label>уличный фонарь (сборка)</RGK_Street_Lamp_Seven_Frame.label>
+  <RGK_Street_Lamp_Seven_Frame.description>Обычный уличный фонарь, освещающий дорогу в темноте.</RGK_Street_Lamp_Seven_Frame.description>
+
+  <RGK_Street_Lamp_SevenE.label>электрический уличный фонарь</RGK_Street_Lamp_SevenE.label>
+  <RGK_Street_Lamp_SevenE.description>Обычный уличный фонарь, освещающий дорогу в темноте. Для работы требуется электричество.</RGK_Street_Lamp_SevenE.description>
+  <RGK_Street_Lamp_SevenE_Blueprint.label>электрический уличный фонарь (проект)</RGK_Street_Lamp_SevenE_Blueprint.label>
+  <RGK_Street_Lamp_SevenE_Frame.label>электрический уличный фонарь (сборка)</RGK_Street_Lamp_SevenE_Frame.label>
+  <RGK_Street_Lamp_SevenE_Frame.description>Обычный уличный фонарь, освещающий дорогу в темноте. Для работы требуется электричество.</RGK_Street_Lamp_SevenE_Frame.description>
+
+
+  <!-- 랜턴 -->
+
+  <GL_Wall_Lamp.label>настенный светильник</GL_Wall_Lamp.label>
+  <GL_Wall_Lamp.description>Светильник, предназначенный для крепления на стене.</GL_Wall_Lamp.description>
+
+  <GL_Wall_LampE.label>настенный светильник</GL_Wall_LampE.label>
+  <GL_Wall_LampE.description>Светильник, предназначенный для крепления на стене. Для работы требуется электричество.</GL_Wall_LampE.description>
+
+  <GlowObject.label>настенный светильник</GlowObject.label>
+  <GlowObject_White.label>настенный светильник</GlowObject_White.label>
+
+</LanguageData>

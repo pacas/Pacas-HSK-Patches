@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_BoundaryDeco</defName>
+		<label>edging</label>
+		<description>Beautiful little additions.</description>
+		<defNames>
+			<li>GL_BoundaryWood</li>
+			<li>GL_BoundaryStone</li>
+			<li>GL_BoundaryWoodCorner</li>
+			<li>GL_BoundaryStoneCorner</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GloomyRugs</defName>
+		<label>ornate rugs</label>
+		<description>I don't want to wake up with stone under my feet anymore!</description>
+		<defNames>
+			<li>RugA_Small</li>
+			<li>RugB_Small</li>
+			<li>RugC_Small</li>
+            <li>RugA</li>
+			<li>RugB</li>
+            <li>RugC</li>
+			<li>RugA_Large</li>
+			<li>RugB_Large</li>
+            <li>RugC_Large</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_GloomyLamps</defName>
+		<label>street lamps</label>
+		<description>Comfy.</description>
+		<defNames>
+			<li>RGK_Street_Lamp_L</li>
+			<li>RGK_Street_Lamp</li>
+			<li>RGK_Street_Lamp_Seven</li>
+            <li>RGK_Street_Lamp_SevenE</li>
+		</defNames>
+		<designationCategory>Accessories</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_JoyTables</defName>
+		<label>Cooperative games tables</label>
+		<description>Billiard and poker.</description>
+		<defNames>
+			<li>BilliardsTable</li>
+			<li>GL_BilliardsTable</li>
+			<li>PokerTable</li>
+			<li>GL_PokerTable</li>
+		</defNames>
+		<designationCategory>Joy</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PropsandDecor1</defName>
+		<label>outdoors decorations</label>
+		<description>Boards and windmills.</description>
+		<defNames>
+			<li>GloomyDeco_Board</li>
+			<li>GloomyDeco_Kennel</li>
+            <li>GloomyDeco_Bucket</li>
+            <li>RGK_bucketr</li>
+            <li>RGK_orc</li>
+            <li>GloomyDeco_Cart</li>
+			<li>GloomyDeco_Lumberjack</li>
+            <li>GloomyDeco_MailBox</li>
+            <li>GloomyDeco_Rope</li>
+            <li>GloomyDeco_Boat</li>
+            <li>GloomyDeco_Scarecrow</li>
+			<li>GloomyDeco_Sign</li>
+			<li>GloomyDeco_Stone</li>
+			<li>GloomyDeco_Tree</li>
+            <li>GloomyDeco_Tool</li>
+            <li>GloomyDeco_Well</li>
+            <li>GloomyDeco_Windmill</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PropsandDecor2</defName>
+		<label>indoors decorations</label>
+		<description>Flowers and tea cups.</description>
+		<defNames>
+            <li>RGK_Flower</li>
+            <li>RGK_Teaset</li>
+            <li>GL_Teddy</li>
+            <li>GloomyDeco_TrashCan</li>
+            <li>RGK_Fireplace</li>
+            <li>RGK_FireplaceE</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PropsandDecor3</defName>
+		<label>storage furniture</label>
+		<description>Chests and boxes.</description>
+		<defNames>
+            <li>GloomyDeco_Box</li>
+            <li>RGK_Manger</li>
+            <li>GL_Shelf</li>
+            <li>GL_Locker</li>
+            <li>RKGWineRackB</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_WardrobesGloomy</defName>
+		<label>wardrobes</label>
+		<description>Wardrobes.</description>
+		<defNames>
+			<li>WardrobeA</li>
+			<li>WardrobeB</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PropsandDecor_Tables</defName>
+		<label>rustic tables</label>
+		<description>Metal tables? Why?</description>
+		<defNames>
+			<li>RGK_TableA</li>
+			<li>RGK_TableC</li>
+			<li>RGK_TableB</li>
+			<li>RGK_TableD</li>
+			<li>RGK_TableE</li>
+			<li>RGK_TableF</li>
+            <li>RGK_TableG</li>
+			<li>RGK_TableH</li>
+			<li>RGK_MiniTableA</li>
+			<li>RGK_MiniTableB</li>
+			<li>RGK_TableE</li>
+			<li>RGK_TableF</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_PropsandDecor_Stools</defName>
+		<label>rustic stools</label>
+		<description>I want nice looking stools!</description>
+		<defNames>
+			<li>RGK_SimpleChair</li>
+			<li>RGK_Chair</li>
+			<li>RGKDiningChair</li>
+			<li>GL_Bench</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>

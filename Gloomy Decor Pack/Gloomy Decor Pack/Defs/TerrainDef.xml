@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<TerrainDef Abstract="True" ParentName="WoodSK_FloorBase" Name="WoodFloorBase_Gloomy">
+		<renderPrecedence>250</renderPrecedence>
+		<description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+		<color>(108,78,55)</color>
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<costList>
+			<WoodPlank>2</WoodPlank>
+		</costList>
+		<designatorDropdown>Floor_Wood</designatorDropdown>
+        <researchPrerequisites><li>Wooden_floor_A1</li></researchPrerequisites>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="WoodFloorBase_Gloomy">
+		<defName>RGK_Terrain</defName>		
+		<texturePath>Things/Building/RGK_Terrain</texturePath>
+		<label>wood floor</label>
+		<color>(108,78,55)</color>
+	</TerrainDef>	
+	<TerrainDef ParentName="WoodFloorBase_Gloomy">
+		<defName>GL_Terrain</defName>		
+		<texturePath>Things/Building/GL_Terrain</texturePath>
+		<label>wood floor</label>
+		<color>(108,78,55)</color>
+	</TerrainDef>
+
+	<TerrainDef Abstract="True" ParentName="SK_FloorBase" Name="PebbleBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>The floor is made of gravel.</description>
+		<texturePath>Things/Building/GL_TerrainA</texturePath>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<statBases>
+			<Flammability>0.0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<designatorDropdown>Floor_Pebble</designatorDropdown>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<tags>
+			<li>Road</li>
+		</tags>
+        <designationCategory>NaturalFloors</designationCategory>
+	</TerrainDef>
+
+	<TerrainDef ParentName="PebbleBase">
+		<defName>PebbleSandstone</defName>
+		<label>sandstone Pebble</label>
+		<color>(126,104,94)</color>
+		<costList>
+			<BlocksSandstone>2</BlocksSandstone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="PebbleBase">
+		<defName>PebbleGranite</defName>
+		<label>granite Pebble</label>
+		<color>(125,115,117)</color>
+		<costList>
+			<BlocksGranite>2</BlocksGranite>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="PebbleBase">
+		<defName>PebbleLimestone</defName>
+		<label>limestone Pebble</label>
+		<color>(180,183,165)</color>
+		<costList>
+			<BlocksLimestone>2</BlocksLimestone>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="PebbleBase">
+		<defName>PebbleSlate</defName>
+		<label>slate Pebble</label>
+		<color>(105,105,105)</color>
+		<costList>
+			<BlocksSlate>2</BlocksSlate>
+		</costList>
+	</TerrainDef>
+
+	<TerrainDef ParentName="PebbleBase">
+		<defName>PebbleMarble</defName>
+		<label>marble Pebble</label>
+		<color>(142,145,142)</color>
+		<costList>
+			<BlocksMarble>2</BlocksMarble>
+		</costList>
+	</TerrainDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>Floor_Wood</defName>
+	</DesignatorDropdownGroupDef>
+	
+	<DesignatorDropdownGroupDef>
+		<defName>Floor_Pebble</defName>
+	</DesignatorDropdownGroupDef>
+
+</Defs>

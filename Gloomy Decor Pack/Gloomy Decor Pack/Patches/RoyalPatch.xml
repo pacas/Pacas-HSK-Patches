@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationTest">
+                    <xpath>Defs/RoyalTitleDef[defName="Freeholder"]</xpath>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_Thing"][thingDef="EndTable"]</xpath>
+                    <value>
+                        <li Class="RoomRequirement_ThingAnyOf">
+                            <things>
+                                <li>EndTable</li>
+                                <li>RGK_EndTable</li>
+                                <li>RGK_EndTableWithLamp</li>
+                                <li>RGK_EndTableWithLampE</li>
+                            </things>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/RoyalTitleDef/bedroomRequirements/li[@Class="RoomRequirement_Thing"][thingDef="Dresser"]</xpath>
+                    <value>
+                        <li Class="RoomRequirement_ThingAnyOf">
+                            <things>
+                                <li>Dresser</li>
+                                <li>RGK_Dresser</li>
+                            </things>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

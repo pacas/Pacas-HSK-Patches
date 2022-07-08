@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>GloomyDeco_Well</defName>
+        <label>well</label>
+        <description>A well that can be used to acquire groundwater when dug far down. There seems to be no use for this.</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <graphicData>
+            <texPath>GloomyDeco/Well</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2.4,2.4)</drawSize>
+            <shadowData>
+                <volume>(1.2,0.6,1.2)</volume>
+                <offset>(0,0,0.0)</offset>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>80</pathCost>
+        <canOverlapZones>true</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>140</MaxHitPoints>
+            <WorkToBuild>1200</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>20</Mass>
+            <Beauty>20</Beauty>
+        </statBases>
+        <size>(2,2)</size>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>80</costStuffCount>
+        <costList>
+            <Plasteel>20</Plasteel>
+        </costList>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Furniture</designationCategory>
+        <!-- custom -->
+        <resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
+        <fillPercent>0.5</fillPercent>
+    </ThingDef>
+</Defs>

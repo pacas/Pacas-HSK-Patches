@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <TerrainDef ParentName="FloorBase">
+        <defName>GloomyDeco_Grass</defName>
+        <label>grass</label>
+        <description>An oriental grass that has varying colours in different temperatures. It becomes a deep blue around summer, and forms a golden garden during autumn.</description>
+        <texturePath>GloomyDeco/Grass</texturePath>
+        <color>(97,111,37)</color>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>248</renderPrecedence>
+        <pathCost>6</pathCost>
+        <statBases>
+            <Beauty>1</Beauty>
+            <BeautyOutdoors>1</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+            <WorkToBuild>200</WorkToBuild>
+        </statBases>
+        <scatterType>Rocky</scatterType>
+        <costList>
+            <WoodLog>2</WoodLog>
+        </costList>
+		<fertility>0.5</fertility>
+		<takeFootprints>False</takeFootprints>
+        <designationCategory>Floors</designationCategory>
+        <layerable>true</layerable>
+        <affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+			<li>GrowSoil</li>
+		</affordances>
+    </TerrainDef>
+</Defs>

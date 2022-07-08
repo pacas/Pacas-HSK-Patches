@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>GloomyDeco_Cart</defName>
+        <label>simple cart</label>
+        <tradeTags Inhert="false"/><!--and you cannot buy them -->
+        <drawGUIOverlay>false</drawGUIOverlay><!-- Good to show count of food when there can be a lot, eh? -->
+        <description>A wheelbarrow that can store a lot of items. The wheels do not function.</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <graphicData>
+            <texPath>GloomyDeco/Cart</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+            <damageData>
+                <rect>(0.1,0.1,0.8,0.8)</rect>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>40</pathCost>
+        <canOverlapZones>true</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <WorkToBuild>800</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>10</Mass>
+            <Beauty>15</Beauty>
+        </statBases>
+        <size>(2,2)</size>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>80</costStuffCount>
+        <costList>
+            <Plasteel>20</Plasteel>
+        </costList>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Furniture</designationCategory>
+        <resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
+        <fillPercent>0.4</fillPercent>
+    </ThingDef>
+</Defs>

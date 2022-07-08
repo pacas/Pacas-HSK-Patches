@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>GloomyDeco_Tree</defName>
+        <label>tree</label>
+        <description>A wood made by tree. Made by tree, this wood is real tree or not?</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <graphicData>
+            <texPath>GloomyDeco/TreeIcon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Cutout</shaderType>
+            <drawSize>(2.4,2.4)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,1.6,1.6)</rect>
+            </damageData>
+            <shadowData>
+                <volume>(0.5,4.0,0.5)</volume>
+                <offset>(0,0,-0.7)</offset>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>80</pathCost>
+        <canOverlapZones>true</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>140</MaxHitPoints>
+            <WorkToBuild>1200</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>20</Mass>
+            <Beauty>30</Beauty>
+        </statBases>
+        <size>(2,2)</size>
+        <stuffCategories>
+            <li>WoodLogs</li>
+        </stuffCategories>
+        <costStuffCount>20</costStuffCount>
+        <defaultPlacingRot>North</defaultPlacingRot>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Furniture</designationCategory>
+        <!-- custom -->
+        <drawerType>RealtimeOnly</drawerType>
+        <thingClass>GloomyDeco.GloomyDeco_Tree</thingClass>
+        <tickerType>Normal</tickerType>
+        <resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
+        <fillPercent>0.4</fillPercent>
+    </ThingDef>
+
+    <ThingDef ParentName="MoteBase">
+        <defName>GloomyDeco_Mote_Tree1Leaf</defName>
+        <altitudeLayer>MetaOverlays</altitudeLayer>
+        <mote>
+            <solidTime>2.4</solidTime>
+            <fadeOutTime>0.6</fadeOutTime>
+        </mote>
+        <graphicData>
+            <texPath>GloomyDeco/Leaf1</texPath>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="MoteBase">
+        <defName>GloomyDeco_Mote_Tree2Leaf</defName>
+        <altitudeLayer>MetaOverlays</altitudeLayer>
+        <mote>
+            <solidTime>2.4</solidTime>
+            <fadeOutTime>0.6</fadeOutTime>
+        </mote>
+        <graphicData>
+            <texPath>GloomyDeco/Leaf2</texPath>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="MoteBase">
+        <defName>GloomyDeco_Mote_Tree3Leaf</defName>
+        <altitudeLayer>MetaOverlays</altitudeLayer>
+        <mote>
+            <solidTime>2.4</solidTime>
+            <fadeOutTime>0.6</fadeOutTime>
+        </mote>
+        <graphicData>
+            <texPath>GloomyDeco/Leaf3</texPath>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="MoteBase">
+        <defName>GloomyDeco_Mote_Tree4Leaf</defName>
+        <altitudeLayer>MetaOverlays</altitudeLayer>
+        <mote>
+            <solidTime>2.4</solidTime>
+            <fadeOutTime>0.6</fadeOutTime>
+        </mote>
+        <graphicData>
+            <texPath>GloomyDeco/Leaf4</texPath>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="MoteBase">
+        <defName>GloomyDeco_Mote_Tree5Leaf</defName>
+        <altitudeLayer>MetaOverlays</altitudeLayer>
+        <mote>
+            <solidTime>2.4</solidTime>
+            <fadeOutTime>0.6</fadeOutTime>
+        </mote>
+        <graphicData>
+            <texPath>GloomyDeco/Leaf5</texPath>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="MoteBase">
+        <defName>GloomyDeco_Mote_Tree6Leaf</defName>
+        <altitudeLayer>MetaOverlays</altitudeLayer>
+        <mote>
+            <solidTime>2.4</solidTime>
+            <fadeOutTime>0.6</fadeOutTime>
+        </mote>
+        <graphicData>
+            <texPath>GloomyDeco/Leaf6</texPath>
+        </graphicData>
+    </ThingDef>
+</Defs>

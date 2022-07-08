@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>GloomyDeco_Windmill</defName>
+        <label>windmill</label>
+        <description>A giant wheel that spins from the force of winds. This potential source of mechanical work is merely built for the colonists' amusement.</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>GloomyDeco/Windmill_Tower</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(5,5)</drawSize>
+            <damageData>
+                <rect>(0.2,0.0,2.6,3.0)</rect>
+            </damageData>
+            <shadowData>
+                <volume>(1.6,3.0,1.6)</volume>
+                <offset>(0,0,-0.6)</offset>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <canOverlapZones>false</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>240</MaxHitPoints>
+            <WorkToBuild>1600</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>400</Mass>
+            <Beauty>30</Beauty>
+        </statBases>
+        <size>(2,3)</size>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>200</costStuffCount>
+        <costList>
+            <Plasteel>50</Plasteel>
+            <ComponentMedieval>5</ComponentMedieval>
+            <ComponentIndustrial>5</ComponentIndustrial>
+			<Mechanism>3</Mechanism>
+        </costList>
+        <defaultPlacingRot>North</defaultPlacingRot>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Furniture</designationCategory>
+        <!-- custom -->
+        <resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
+        <fillPercent>0.5</fillPercent>
+        <tickerType>Normal</tickerType>
+        <rotatable>false</rotatable>
+    </ThingDef>
+</Defs>

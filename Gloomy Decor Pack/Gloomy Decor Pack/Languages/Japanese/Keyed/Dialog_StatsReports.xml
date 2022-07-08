@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <playSong>音楽再生</playSong>
+  <playSongDesc>カスタムした曲を再生します。</playSongDesc>
+  <stopSong>停止</stopSong>
+  <stopSongDesc>カスタムした曲の再生を停止して、オリジナルの曲リストに戻します。</stopSongDesc>
+  <nextSong>次</nextSong>
+  <nextSongDesc>次のランダムな曲を再生します。</nextSongDesc>
+  <Pause>一時停止</Pause>
+  <synchronize>同期</synchronize>
+  <synchronizeDesc>現在の曲リストをカスタム曲の入ったフォルダと同期させます。</synchronizeDesc>
+
+  <WallAttachment_WarningNeedWall>壁の上に設置する必要があります。</WallAttachment_WarningNeedWall>
+  <WallAttachment_WarningBlocked>通過できるタイルと面している必要があります。</WallAttachment_WarningBlocked>
+  <WallAttachment_Both>通過できるタイルと面して、壁の上に設置する必要があります。</WallAttachment_Both>
+
+  <WallLight_DestroyedBlocked>ランプが建設によって破壊されました。</WallLight_DestroyedBlocked>
+  <WallLight_DestroyedWall>ランプが壁の破壊によって破壊されました。</WallLight_DestroyedWall>
+
+  <DoorAttachment_WarningNeedWall>壁の上に設置する必要があります。</DoorAttachment_WarningNeedWall>
+  <DoorAttachment_WarningBlocked>通過できるタイルと面している必要があります。</DoorAttachment_WarningBlocked>
+  <DoorAttachment_Both>通過できるタイルと面して、壁の上に設置する必要があります。</DoorAttachment_Both>
+
+  <PassableObject_CantPass>通過可能な部分に設置する必要があります</PassableObject_CantPass>
+
+  <StandableObject_CantPass>建設可能な場所に設置する必要があります</StandableObject_CantPass>
+
+</LanguageData>

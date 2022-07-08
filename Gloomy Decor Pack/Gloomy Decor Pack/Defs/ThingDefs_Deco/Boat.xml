@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>GloomyDeco_Boat</defName>
+        <label>boat</label>
+        <description>A perfectly buoyant boat. Why not spend time meditating on calm waters, away from this world of pain and hopelessness?</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <graphicData>
+            <texPath>GloomyDeco/Boat</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(4,4)</drawSize>
+            <damageData>
+                <rect>(0.1,0.1,0.8,0.8)</rect>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Standable</passability>
+        <pathCost>10</pathCost>
+        <canOverlapZones>false</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>140</MaxHitPoints>
+            <WorkToBuild>1200</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>20</Mass>
+            <Beauty>20</Beauty>
+        </statBases>
+        <size>(1,2)</size>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>100</costStuffCount>
+        <costList>
+            <Plasteel>30</Plasteel>
+        </costList>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+        <designationCategory>Furniture</designationCategory>
+        <!-- custom -->
+        <resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
+        <drawerType>RealtimeOnly</drawerType>
+        <thingClass>GloomyDeco.GloomyDeco_Boat</thingClass>
+        <tickerType>Normal</tickerType>
+    </ThingDef>
+</Defs>

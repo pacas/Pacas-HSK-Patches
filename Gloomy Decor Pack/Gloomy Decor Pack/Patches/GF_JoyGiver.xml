@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/JoyGiverDef[defName="Play_Chess"]/thingDefs</xpath>
+        <value>
+            <li>GL_ChessTable</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/JoyGiverDef[defName="Play_Poker"]/thingDefs</xpath>
+        <value>
+            <li>GL_PokerTable</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/JoyGiverDef[defName="Play_Billiards"]/thingDefs</xpath>
+        <value>
+            <li>GL_BilliardsTable</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/JoyGiverDef[defName="WatchTelevision"]/thingDefs</xpath>
+        <value>
+            <li>GL_TubeTelevision</li>
+        </value>
+    </Operation>
+
+</Patch>

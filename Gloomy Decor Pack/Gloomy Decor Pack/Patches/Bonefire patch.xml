@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>RGK_FueledStove</li>
+			<li>GL_ElectricStove</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/WorkGiverDef[defName="DoBillsButcherFlesh"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>GL_TableButcher</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>GL_FueledSmithy</li>
+			<li>GL_ElectricSmithy</li>
+		</value>
+	</Operation>
+
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/WorkGiverDef[defName="DoBillsMakeApparel"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>GL_HandTailoringBench</li>
+			<li>GL_ElectricTailoringBench</li>
+		</value>
+	</Operation>
+
+</Patch>

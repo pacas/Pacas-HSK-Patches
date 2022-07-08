@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RGK_Fireplace.label>暖炉</RGK_Fireplace.label>
+  <RGK_Fireplace.description>これは部屋を暖かく温める暖炉です。</RGK_Fireplace.description>
+  <Blueprint_RGK_Fireplace.label>暖炉(設計)</Blueprint_RGK_Fireplace.label>
+  <Blueprint_Install_RGK_Fireplace.label>暖炉(移動先)</Blueprint_Install_RGK_Fireplace.label>
+  <Frame_RGK_Fireplace.label>暖炉(施工)</Frame_RGK_Fireplace.label>
+  <Frame_RGK_Fireplace.description>これは部屋を暖かく温める暖炉です。</Frame_RGK_Fireplace.description>
+
+  <RGK_FireplaceE.label>暖炉(電気)</RGK_FireplaceE.label>
+  <RGK_FireplaceE.description>これは部屋を暖かく温める暖炉です。電気が必要です。</RGK_FireplaceE.description>
+  <Blueprint_RGK_FireplaceE.label>暖炉(電気)(設計)</Blueprint_RGK_FireplaceE.label>
+  <Blueprint_Install_RGK_FireplaceE.label>暖炉(電気)(移動先)</Blueprint_Install_RGK_FireplaceE.label>
+  <Frame_RGK_FireplaceE.label>暖炉(電気)(施工)</Frame_RGK_FireplaceE.label>
+  <Frame_RGK_FireplaceE.description>これは部屋を暖かく温める暖炉です。電気が必要です。</Frame_RGK_FireplaceE.description>
+
+
+  <!-- Lamp -->
+
+  <RGK_lamp.label>ランプ</RGK_lamp.label>
+  <RGK_lamp.description>小さなランプです。雨が降っても安全に使うことができるでしょう。</RGK_lamp.description>
+  <Blueprint_RGK_lamp.label>ランプ(設計)</Blueprint_RGK_lamp.label>
+  <Blueprint_Install_RGK_lamp.label>ランプ(移動先)</Blueprint_Install_RGK_lamp.label>
+  <Frame_RGK_lamp.label>ランプ(施工)</Frame_RGK_lamp.label>
+  <Frame_RGK_lamp.description>小さなランプです。雨が降っても安全に使うことができるでしょう。</Frame_RGK_lamp.description>
+
+
+  <!-- Lamp M -->
+
+  <RGK_LampM.label>ランプ(床置)</RGK_LampM.label>
+  <RGK_LampM.description>床に直接置いて使う小さなランプです。雨が降っても安全に使うことができるでしょう。</RGK_LampM.description>
+  <Blueprint_RGK_LampM.label>ランプ(床置)(設計)</Blueprint_RGK_LampM.label>
+  <Blueprint_Install_RGK_LampM.label>ランプ(床置)(移動先)</Blueprint_Install_RGK_LampM.label>
+  <Frame_RGK_LampM.label>ランプ(床置)(施工)</Frame_RGK_LampM.label>
+  <Frame_RGK_LampM.description>床に直接置いて使う小さなランプです。雨が降っても安全に使うことができるでしょう。</Frame_RGK_LampM.description>
+
+
+  <!-- Lamp E -->
+
+  <RGK_lampE.label>ランプ(電気)</RGK_lampE.label>
+  <RGK_lampE.description>小さな電気式ランプです。雨が降っても安全に使うことができるでしょう。電気が必要です。</RGK_lampE.description>
+  <Blueprint_RGK_lampE.label>ランプ(電気)(設計)</Blueprint_RGK_lampE.label>
+  <Blueprint_Install_RGK_lampE.label>ランプ(電気)(移動先)</Blueprint_Install_RGK_lampE.label>
+  <Frame_RGK_lampE.label>ランプ(電気)(施工)</Frame_RGK_lampE.label>
+  <Frame_RGK_lampE.description>小さな電気式ランプです。雨が降っても安全に使うことができるでしょう。電気が必要です。</Frame_RGK_lampE.description>
+
+
+  <!-- Lamp White -->
+
+  <GL_lamp_White.label>ランプ(白色)</GL_lamp_White.label>
+  <GL_lamp_White.description>小さなランプです。雨が降っても安全に使うことができるでしょう。</GL_lamp_White.description>
+  <Blueprint_GL_lamp_White.label>ランプ(白色)(設計)</Blueprint_GL_lamp_White.label>
+  <Blueprint_Install_GL_lamp_White.label>ランプ(白色)(移動先)</Blueprint_Install_GL_lamp_White.label>
+  <Frame_GL_lamp_White.label>ランプ(白色)(施工)</Frame_GL_lamp_White.label>
+  <Frame_GL_lamp_White.description>小さなランプです。雨が降っても安全に使うことができるでしょう。</Frame_GL_lamp_White.description>
+
+
+  <!-- Lamp White M -->
+
+  <GL_LampM_White.label>ランプ(床置) (白色)</GL_LampM_White.label>
+  <GL_LampM_White.description>小さなランプです。雨が降っても安全に使うことができるでしょう。</GL_LampM_White.description>
+  <Blueprint_GL_LampM_White.label>ランプ(床置) (白色)(設計)</Blueprint_GL_LampM_White.label>
+  <Blueprint_Install_GL_LampM_White.label>ランプ(床置) (白色)(移動先)</Blueprint_Install_GL_LampM_White.label>
+  <Frame_GL_LampM_White.label>ランプ(床置) (白色)(施工)</Frame_GL_LampM_White.label>
+  <Frame_GL_LampM_White.description>小さなランプです。雨が降っても安全に使うことができるでしょう。</Frame_GL_LampM_White.description>
+
+
+  <!-- Lamp White E -->
+
+  <GL_lampE_White.label>ランプ(電気) (白色)</GL_lampE_White.label>
+  <GL_lampE_White.description>小さなランプです。雨が降っても安全に使うことができるでしょう。電気が必要です。</GL_lampE_White.description>
+  <Blueprint_GL_lampE_White.label>ランプ(電気) (白色)(設計)</Blueprint_GL_lampE_White.label>
+  <Blueprint_Install_GL_lampE_White.label>ランプ(電気) (白色)(移動先)</Blueprint_Install_GL_lampE_White.label>
+  <Frame_GL_lampE_White.label>ランプ(電気) (白色)(施工)</Frame_GL_lampE_White.label>
+  <Frame_GL_lampE_White.description>小さなランプです。雨が降っても安全に使うことができるでしょう。電気が必要です。</Frame_GL_lampE_White.description>
+
+
+
+  <!-- Street Lamp -->
+
+  <RGK_Street_Lamp_L.label>街路灯</RGK_Street_Lamp_L.label>
+  <RGK_Street_Lamp_L.description>屋外で使う街灯です。暗闇を照らします。木材かバイオ化学燃料が必要です。</RGK_Street_Lamp_L.description>
+  <Blueprint_RGK_Street_Lamp_L.label>街路灯(設計)</Blueprint_RGK_Street_Lamp_L.label>
+  <Frame_RGK_Street_Lamp_L.label>街路灯(施工)</Frame_RGK_Street_Lamp_L.label>
+  <Frame_RGK_Street_Lamp_L.description>屋外で使う街灯です。暗闇を照らします。木材かバイオ化学燃料が必要です。</Frame_RGK_Street_Lamp_L.description>
+
+  <RGK_Street_Lamp.label>街路灯(電気)</RGK_Street_Lamp.label>
+  <RGK_Street_Lamp.description>屋外で使う街灯です。暗闇の中で道を照らします。電気が必要です。</RGK_Street_Lamp.description>
+  <Blueprint_RGK_Street_Lamp.label>街路灯(電気)(設計)</Blueprint_RGK_Street_Lamp.label>
+  <Frame_RGK_Street_Lamp.label>街路灯(電気)(施工)</Frame_RGK_Street_Lamp.label>
+  <Frame_RGK_Street_Lamp.description>屋外で使う街灯です。暗闇の中で道を照らします。電気が必要です。</Frame_RGK_Street_Lamp.description>
+
+
+  <!-- Street Lamp Seven -->
+
+  <RGK_Street_Lamp_Seven.label>吊りランプ柱</RGK_Street_Lamp_Seven.label>
+  <RGK_Street_Lamp_Seven.description>屋外で使う街灯です。暗闇の中で道を照らします。</RGK_Street_Lamp_Seven.description>
+  <Blueprint_RGK_Street_Lamp_Seven.label>吊りランプ柱(設計)</Blueprint_RGK_Street_Lamp_Seven.label>
+  <Frame_RGK_Street_Lamp_Seven.label>吊りランプ柱(施工)</Frame_RGK_Street_Lamp_Seven.label>
+  <Frame_RGK_Street_Lamp_Seven.description>屋外で使う街灯です。暗闇の中で道を照らします。</Frame_RGK_Street_Lamp_Seven.description>
+
+  <RGK_Street_Lamp_SevenE.label>吊りランプ柱 (電気)</RGK_Street_Lamp_SevenE.label>
+  <RGK_Street_Lamp_SevenE.description>屋外で使う街灯です。暗闇の中で道を照らします。電気が必要です。</RGK_Street_Lamp_SevenE.description>
+  <Blueprint_RGK_Street_Lamp_SevenE.label>吊りランプ柱(電気)(設計)</Blueprint_RGK_Street_Lamp_SevenE.label>
+  <Frame_RGK_Street_Lamp_SevenE.label>吊りランプ柱(電気)(施工)</Frame_RGK_Street_Lamp_SevenE.label>
+  <Frame_RGK_Street_Lamp_SevenE.description>屋外で使う街灯です。暗闇の中で道を照らします。電気が必要です。</Frame_RGK_Street_Lamp_SevenE.description>
+
+
+  <!-- Street White Lamp -->
+
+  <GL_Street_Lamp_L_White.label>街路灯 (白色)</GL_Street_Lamp_L_White.label>
+  <GL_Street_Lamp_L_White.description>屋外で使う街灯です。暗闇の中で道を照らします。</GL_Street_Lamp_L_White.description>
+  <Blueprint_GL_Street_Lamp_L_White.label>街路灯 (白色)(設計)</Blueprint_GL_Street_Lamp_L_White.label>
+  <Frame_GL_Street_Lamp_L_White.label>街路灯 (白色)(施工)</Frame_GL_Street_Lamp_L_White.label>
+  <Frame_GL_Street_Lamp_L_White.description>屋外で使う街灯です。暗闇の中で道を照らします。</Frame_GL_Street_Lamp_L_White.description>
+
+  <GL_Street_Lamp_White.label>街路灯(電気) (白色)</GL_Street_Lamp_White.label>
+  <GL_Street_Lamp_White.description>屋外で使う街灯です。暗闇の中で道を照らします。電気が必要です。</GL_Street_Lamp_White.description>
+  <Blueprint_GL_Street_Lamp_White.label>街路灯(電気) (白色)(設計)</Blueprint_GL_Street_Lamp_White.label>
+  <Frame_GL_Street_Lamp_White.label>街路灯(電気) (白色)(施工)</Frame_GL_Street_Lamp_White.label>
+  <Frame_GL_Street_Lamp_White.description>屋外で使う街灯です。暗闇の中で道を照らします。電気が必要です。</Frame_GL_Street_Lamp_White.description>
+
+
+  <!-- Street White Lamp Seven -->
+
+  <GL_Street_Lamp_Seven_White.label>吊りランプ (白色)</GL_Street_Lamp_Seven_White.label>
+  <GL_Street_Lamp_Seven_White.description>屋外で使う街灯です。暗闇の中で道を照らします。</GL_Street_Lamp_Seven_White.description>
+  <Blueprint_GL_Street_Lamp_Seven_White.label>街路灯 (白色)(設計)</Blueprint_GL_Street_Lamp_Seven_White.label>
+  <Frame_GL_Street_Lamp_Seven_White.label>街路灯 (白色)(施工)</Frame_GL_Street_Lamp_Seven_White.label>
+  <Frame_GL_Street_Lamp_Seven_White.description>屋外で使う街灯です。暗闇の中で道を照らします。</Frame_GL_Street_Lamp_Seven_White.description>
+
+  <GL_Street_Lamp_SevenE_White.label>吊りランプ (電気)(白色)</GL_Street_Lamp_SevenE_White.label>
+  <GL_Street_Lamp_SevenE_White.description>屋外で使う街灯です。暗闇の中で道を照らします。電気が必要です。</GL_Street_Lamp_SevenE_White.description>
+  <Blueprint_GL_Street_Lamp_SevenE_White.label>吊りランプ (電気)(白色)(設計)</Blueprint_GL_Street_Lamp_SevenE_White.label>
+  <Frame_GL_Street_Lamp_SevenE_White.label>吊りランプ (電気)(白色)(施工)</Frame_GL_Street_Lamp_SevenE_White.label>
+  <Frame_GL_Street_Lamp_SevenE_White.description>屋外で使う街灯です。暗闇の中で道を照らします。電気が必要です。</Frame_GL_Street_Lamp_SevenE_White.description>
+
+
+  <!-- Lantern -->
+
+  <GL_Wall_Lamp.label>壁かけランプ</GL_Wall_Lamp.label>
+  <GL_Wall_Lamp.description>壁に取り付けるように設計された照明器具です。</GL_Wall_Lamp.description>
+  <Blueprint_GL_Wall_Lamp.label>壁かけランプ(設計)</Blueprint_GL_Wall_Lamp.label>
+  <Frame_GL_Wall_Lamp.label>壁かけランプ(施工)</Frame_GL_Wall_Lamp.label>
+  <Frame_GL_Wall_Lamp.description>壁に取り付けるように設計された照明器具です。</Frame_GL_Wall_Lamp.description>
+
+  <GL_Wall_LampE.label>壁かけランプ (電気)</GL_Wall_LampE.label>
+  <GL_Wall_LampE.description>壁に取り付けるように設計された照明器具です。</GL_Wall_LampE.description>
+  <Blueprint_GL_Wall_LampE.label>壁かけランプ(電気)(設計)</Blueprint_GL_Wall_LampE.label>
+  <Frame_GL_Wall_LampE.label>壁かけランプ(電気)(施工)</Frame_GL_Wall_LampE.label>
+  <Frame_GL_Wall_LampE.description>壁に取り付けるように設計された照明器具です。</Frame_GL_Wall_LampE.description>
+
+  <GL_Wall_Lamp_White.label>壁かけランプ (白色)</GL_Wall_Lamp_White.label>
+  <GL_Wall_Lamp_White.description>壁に取り付けるように設計された照明器具です。</GL_Wall_Lamp_White.description>
+  <Blueprint_GL_Wall_Lamp_White.label>壁かけランプ (白色)(設計)</Blueprint_GL_Wall_Lamp_White.label>
+  <Frame_GL_Wall_Lamp_White.label>壁かけランプ (白色)(施工)</Frame_GL_Wall_Lamp_White.label>
+  <Frame_GL_Wall_Lamp_White.description>壁に取り付けるように設計された照明器具です。</Frame_GL_Wall_Lamp_White.description>
+
+  <GL_Wall_LampE_White.label>壁かけランプ (電気)(白色)</GL_Wall_LampE_White.label>
+  <GL_Wall_LampE_White.description>壁に取り付けるように設計された照明器具です。</GL_Wall_LampE_White.description>
+  <Blueprint_GL_Wall_LampE_White.label>壁かけランプ (電気)(白色)(設計)</Blueprint_GL_Wall_LampE_White.label>
+  <Frame_GL_Wall_LampE_White.label>壁かけランプ (電気)(白色)(施工)</Frame_GL_Wall_LampE_White.label>
+  <Frame_GL_Wall_LampE_White.description>壁に取り付けるように設計された照明器具です。</Frame_GL_Wall_LampE_White.description>
+
+  <GlowObject.label>壁掛け照明</GlowObject.label>
+  <!--<GlowObject.description>壁に取り付けるように設計された照明器具です。</GlowObject.description>-->
+
+  <!-- white Type -->
+
+  <GlowObject_White.label>壁掛け照明 (白色)</GlowObject_White.label>
+
+</LanguageData>

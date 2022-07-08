@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 벽 -->
+
+  <RGK_Wall.label>牆</RGK_Wall.label>
+  <RGK_Wall.description>無法通行的牆。 能夠撐起屋頂。</RGK_Wall.description>
+  <RGK_Wall_Blueprint.label>牆（藍圖）</RGK_Wall_Blueprint.label>
+  <RGK_Wall_Frame.label>牆（建造中）</RGK_Wall_Frame.label>
+  <RGK_Wall_Frame.description>無法通行的牆。 能夠撐起屋頂。</RGK_Wall_Frame.description>
+
+
+  <!-- 신규 벽 -->
+
+  <GL_Wall.label>牆2</GL_Wall.label>
+  <GL_Wall.description>新的牆壁，可選材質，無法通行的牆。 能夠撐起屋頂。</GL_Wall.description>
+  <GL_Wall_Blueprint.label>牆2（藍圖）</GL_Wall_Blueprint.label>
+  <GL_Wall_Frame.label>牆2（建造中）</GL_Wall_Frame.label>
+  <GL_Wall_Frame.description>新的牆壁，可選材質，無法通行的牆。 能夠撐起屋頂。</GL_Wall_Frame.description>
+
+
+  <!-- 환풍벽 -->
+
+  <RGK_VentWall.label>通風牆</RGK_VentWall.label>
+  <RGK_VentWall.description>這是一個有通風口的牆，空氣可以進出。</RGK_VentWall.description>
+  <RGK_VentWall_Blueprint.label>通風牆（藍圖）</RGK_VentWall_Blueprint.label>
+  <RGK_VentWall_Frame.label>通風牆（建造中）</RGK_VentWall_Frame.label>
+  <RGK_VentWall_Frame.description>這是一個有通風口的牆，空氣可以進出。</RGK_VentWall_Frame.description>
+
+
+  <!-- 신규 환풍벽 -->
+
+  <GL_VentWall.label>通風牆2</GL_VentWall.label>
+  <GL_VentWall.description>新的通風口牆壁，可選材質，也可以讓空氣流動。</GL_VentWall.description>
+  <GL_VentWall_Blueprint.label>通風牆2（藍圖）</GL_VentWall_Blueprint.label>
+  <GL_VentWall_Frame.label>通風牆2（建造中）</GL_VentWall_Frame.label>
+  <GL_VentWall_Frame.description>新的通風口牆壁，可選材質，也可以讓空氣流動。</GL_VentWall_Frame.description>
+
+
+  <!-- 창문 -->
+
+  <RGK_window.label>窗戶</RGK_window.label>
+  <RGK_window.description>這是一個可以向外看的窗口，你可以透過它看到外面的景色。</RGK_window.description>
+  <RGK_window_Blueprint_Install.label>窗戶（藍圖）</RGK_window_Blueprint_Install.label>
+
+  <RGK_WindowWall.label>窗口牆</RGK_WindowWall.label>
+  <RGK_WindowWall.description>陽光可以透過窗口曬近來，也能通風的窗口。</RGK_WindowWall.description>
+  <RGK_WindowWall_Blueprint.label>窗口牆（藍圖）</RGK_WindowWall_Blueprint.label>
+  <RGK_WindowWall_Frame.label>窗口牆（建造中）</RGK_WindowWall_Frame.label>
+  <RGK_WindowWall_Frame.description>陽光可以透過窗口曬近來，也能通風的窗口。</RGK_WindowWall_Frame.description>
+
+
+  <!-- 신규 창문 -->
+
+  <GL_WindowWall.label>窗口牆2</GL_WindowWall.label>
+  <GL_WindowWall.description>新的帶窗戶的牆壁，可選材質，陽光可以透過窗口曬近來，也可以通風。</GL_WindowWall.description>
+  <GL_WindowWall_Blueprint.label>窗口牆2（藍圖）</GL_WindowWall_Blueprint.label>
+  <GL_WindowWall_Frame.label>窗口牆2（建造中）</GL_WindowWall_Frame.label>
+  <GL_WindowWall_Frame.description>新的帶窗戶的牆壁，可選材質，陽光可以透過窗口曬近來，也可以通風。</GL_WindowWall_Frame.description>
+
+
+  <!-- 울타리 -->
+
+  <RGK_WoodFence.label>柵欄</RGK_WoodFence.label>
+  <RGK_WoodFence.description>用柵欄來圈養家畜以保護它們免受外來野獸的襲擊。</RGK_WoodFence.description>
+  <RGK_WoodFence_Blueprint.label>柵欄（藍圖）</RGK_WoodFence_Blueprint.label>
+  <RGK_WoodFence_Frame.label>柵欄（建造中）</RGK_WoodFence_Frame.label>
+  <RGK_WoodFence_Frame.description>用柵欄來圈養家畜以保護它們免受外來野獸的襲擊。</RGK_WoodFence_Frame.description>
+
+
+  <!-- 꽃벽 -->
+
+  <GL_FlowerWall.label>花牆</GL_FlowerWall.label>
+  <GL_FlowerWall.description>牆上裝飾著鮮花。</GL_FlowerWall.description>
+  <GL_FlowerWall_Blueprint.label>花牆（藍圖）</GL_FlowerWall_Blueprint.label>
+  <GL_FlowerWall_Frame.label>花牆（建造中）</GL_FlowerWall_Frame.label>
+  <GL_FlowerWall_Frame.description>牆上裝飾著鮮花。</GL_FlowerWall_Frame.description>
+
+
+  <!-- 올드스타일 문 -->
+
+  <RGK_DoorOld.label>古董門</RGK_DoorOld.label>
+  <RGK_DoorOld.description>劃分房間。 必須手動打開簡單的門，這會減慢人們的速度。 減速量取決於門的製作方式。</RGK_DoorOld.description>
+  <RGK_DoorOld_Blueprint.label>古董門（藍圖）</RGK_DoorOld_Blueprint.label>
+  <RGK_DoorOld_Frame.label>古董門（建造中）</RGK_DoorOld_Frame.label>
+  <RGK_DoorOld_Frame.description>劃分房間。 必須手動打開簡單的門，這會減慢人們的速度。 減速量取決於門的製作方式。</RGK_DoorOld_Frame.description>
+
+
+  <!-- 울타리문 -->
+
+  <RGK_Door.label>柵欄門</RGK_Door.label>
+  <RGK_Door.description>劃分房間。 必須手動打開簡單的門，這會減慢人們的速度。 減速量取決於構成柵欄門的材料。</RGK_Door.description>
+  <RGK_Door_Blueprint.label>柵欄門（藍圖）</RGK_Door_Blueprint.label>
+  <RGK_Door_Frame.label>柵欄門（建造中）</RGK_Door_Frame.label>
+  <RGK_Door_Frame.description>劃分房間。 必須手動打開簡單的門，這會減慢人們的速度。 減速量取決於構成柵欄門的材料。</RGK_Door_Frame.description>
+
+
+  <!-- 문틀 -->
+
+  <GL_DoorFrame.label>門框</GL_DoorFrame.label>
+  <GL_DoorFrame.description>這是裝飾門的框架。</GL_DoorFrame.description>
+  <GL_DoorFrame_Blueprint.label>門框（藍圖）</GL_DoorFrame_Blueprint.label>
+  <GL_DoorFrame_Frame.label>門框（建造中）</GL_DoorFrame_Frame.label>
+  <GL_DoorFrame_Frame.description>這是裝飾門的框架。</GL_DoorFrame_Frame.description>
+
+
+  <!-- window -->
+  <!-- 2018 12 21 문짝 -->
+
+</LanguageData>

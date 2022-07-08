@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>JukeBox</defName>
+        <label>juke box</label>
+        <thingClass>Building</thingClass>
+        <description>It's a raggedy music player. It has several records.</description>
+        <graphicData>
+            <texPath>Things/Building/Joy/RGK_Jukebox</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shadowData>
+                <volume>(1.6, 0.6, 0.1)</volume>
+                <offset>(0, 0, 0.35)</offset>
+            </shadowData>
+            <drawSize>(2.5,2.5)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <rotatable>true</rotatable>
+        <tickerType>Normal</tickerType>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <fillPercent>0.35</fillPercent>
+        <thingCategories>
+            <li>BuildingsJoy</li>
+        </thingCategories>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>100</costStuffCount>
+        <costList>
+            <Plasteel>40</Plasteel>
+            <ComponentIndustrial>7</ComponentIndustrial>
+            <ElectronicComponents>4</ElectronicComponents>
+        </costList>
+        <statBases>
+            <Beauty>15</Beauty>
+            <WorkToBuild>40000</WorkToBuild>
+            <MaxHitPoints>80</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Mass>8</Mass>
+            <JoyGainFactor>1.4</JoyGainFactor>
+        </statBases>
+        <pathCost>70</pathCost>
+        <passability>PassThroughOnly</passability>
+        <size>(1,1)</size>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <researchPrerequisites>
+            <li>FlatscreenTelevision</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <building>
+            <joyKind>JoyKind_ListenSong</joyKind>
+            <spawnedConceptLearnOpportunity>MusicForSickPeople</spawnedConceptLearnOpportunity>
+            <boughtConceptLearnOpportunity>MusicForSickPeople</boughtConceptLearnOpportunity>
+            <watchBuildingStandDistanceRange>
+                <min>-8</min>
+                <max>8</max>
+            </watchBuildingStandDistanceRange>
+            <watchBuildingStandRectWidth>16</watchBuildingStandRectWidth>
+        </building>
+        <designationCategory>Joy</designationCategory>
+        <placeWorkers>
+            <li>PlaceWorker_WatchArea</li>
+        </placeWorkers>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>250</basePowerConsumption>
+                <shortCircuitInRain>true</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <!-- <li Class="CompProperties_RoomIdentifier"> -->
+            <!-- <roomStat>Impressiveness</roomStat> -->
+            <!-- </li> -->
+            <li Class="Gloomylynx.CompProperties_JukeBox">
+                <compClass>Gloomylynx.CompJukeBox</compClass>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
+
+    <JoyGiverDef>
+        <defName>JoyGiver_ListenSong</defName>
+        <giverClass>Gloomylynx.JoyGiver_ListenSong</giverClass>
+        <baseChance>3.5</baseChance>
+        <canDoWhileInBed>true</canDoWhileInBed>
+        <thingDefs>
+            <li>JukeBox</li>
+        </thingDefs>
+        <jobDef>JobDef_ListenSong</jobDef>
+        <joyKind>JoyKind_ListenSong</joyKind>
+    </JoyGiverDef>
+
+    <JoyKindDef>
+        <defName>JoyKind_ListenSong</defName>
+        <label>listen song</label>
+    </JoyKindDef>
+	
+    <JobDef>
+        <defName>JobDef_ListenSong</defName>
+        <driverClass>Gloomylynx.JobDriver_ListenSong</driverClass>
+        <reportString>listening song.</reportString>
+        <joyDuration>4000</joyDuration>
+        <joySkill>Artistic</joySkill>
+        <joyXpPerTick>0.1</joyXpPerTick>
+        <joyMaxParticipants>8</joyMaxParticipants>
+        <joyKind>JoyKind_ListenSong</joyKind>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+    <ConceptDef>
+        <defName>MusicForSickPeople</defName>
+        <label>music for sick people</label>
+        <priority>50</priority>
+        <needsOpportunity>true</needsOpportunity>
+        <helpText>Sick people can listen music while laying in bed.</helpText>
+    </ConceptDef>
+</Defs>

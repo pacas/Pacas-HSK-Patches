@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <playSong>재생</playSong>
+  <playSongDesc>커스텀 곡을 재생합니다.</playSongDesc>
+  <stopSong>정지</stopSong>
+  <stopSongDesc>재생중인 노래를 중지하고 림월드 기본 노래로 복구합니다.</stopSongDesc>
+  <nextSong>다음곡</nextSong>
+  <nextSongDesc>다음 랜덤곡을 선택합니다.</nextSongDesc>
+  <Pause>일시정지</Pause>
+  <synchronize>동기화</synchronize>
+  <synchronizeDesc>폴더로부터 음악 리스트를 동기화합니다.</synchronizeDesc>
+
+  <WallAttachment_WarningNeedWall>벽 위에 건설해야 합니다.</WallAttachment_WarningNeedWall>
+  <WallAttachment_WarningBlocked>벽등 앞에 아무것도 없어야 합니다.</WallAttachment_WarningBlocked>
+  <WallAttachment_Both>벽 위에 건설해야 하며 벽등 앞에 아무것도 없어야 합니다.</WallAttachment_Both>
+
+  <WallLight_DestroyedBlocked>벽등 앞에 무언가 건설되어 벽등이 파괴되었습니다.</WallLight_DestroyedBlocked>
+  <WallLight_DestroyedWall>벽이 파괴되어 벽등도 같이 파괴되었습니다.</WallLight_DestroyedWall>
+
+  <DoorAttachment_WarningNeedWall>반드시 문 위에 설치해야만 합니다..</DoorAttachment_WarningNeedWall>
+  <DoorAttachment_WarningBlocked>Must be facing a passable tile.</DoorAttachment_WarningBlocked>
+  <DoorAttachment_Both>Must be placed over a wall, facing a passable tile.</DoorAttachment_Both>
+
+  <PassableObject_CantPass>통과 가능한 지형에 설치해야 합니다.</PassableObject_CantPass>
+
+  <StandableObject_CantPass>서있을 수 있는 지형 위에 설치해야 합니다..</StandableObject_CantPass>
+</LanguageData>

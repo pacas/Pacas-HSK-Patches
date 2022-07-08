@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Wall -->
+
+  <RGK_Wall.label>壁</RGK_Wall.label>
+  <RGK_Wall.description>邪魔にならない壁です。屋根を支えることができます。</RGK_Wall.description>
+  <Blueprint_RGK_Wall.label>壁(設計)</Blueprint_RGK_Wall.label>
+  <Frame_RGK_Wall.label>壁(施工)</Frame_RGK_Wall.label>
+  <Frame_RGK_Wall.description>邪魔にならない壁です。屋根を支えることができます。</Frame_RGK_Wall.description>
+
+
+  <!-- New wall -->
+
+  <GL_Wall.label>壁</GL_Wall.label>
+  <GL_Wall.description>邪魔にならない壁です。屋根を支えることができます。</GL_Wall.description>
+  <Blueprint_GL_Wall.label>壁(設計)</Blueprint_GL_Wall.label>
+  <Frame_GL_Wall.label>壁(施工)</Frame_GL_Wall.label>
+  <Frame_GL_Wall.description>邪魔にならない壁です。屋根を支えることができます。</Frame_GL_Wall.description>
+
+
+  <!-- Vent wall -->
+
+  <RGK_VentWall.label>壁（換気口付)</RGK_VentWall.label>
+  <RGK_VentWall.description>空気を換気できる壁です。</RGK_VentWall.description>
+  <Blueprint_RGK_VentWall.label>壁（換気口付)(設計)</Blueprint_RGK_VentWall.label>
+  <Frame_RGK_VentWall.label>壁（換気口付)(施工)</Frame_RGK_VentWall.label>
+  <Frame_RGK_VentWall.description>空気を換気できる壁です。</Frame_RGK_VentWall.description>
+
+  <!-- New vent wall -->
+
+  <GL_VentWall.label>壁（換気口付)</GL_VentWall.label>
+  <GL_VentWall.description>空気を換気できる壁です。</GL_VentWall.description>
+  <Blueprint_GL_VentWall.label>壁（換気口付)(設計)</Blueprint_GL_VentWall.label>
+  <Frame_GL_VentWall.label>壁（換気口付)(施工)</Frame_GL_VentWall.label>
+  <Frame_GL_VentWall.description>空気を換気できる壁です。</Frame_GL_VentWall.description>
+
+
+  <!-- Window -->
+
+  <RGK_window.label>窓</RGK_window.label>
+  <RGK_window.description>外を見ることができる窓です。</RGK_window.description>
+  <Blueprint_Install_RGK_window.label>窓(設計)</Blueprint_Install_RGK_window.label>
+
+  <RGK_WindowWall.label>壁（窓付)</RGK_WindowWall.label>
+  <RGK_WindowWall.description>光を通す窓か付いた壁です。</RGK_WindowWall.description>
+  <Blueprint_RGK_WindowWall.label>壁（窓付)(設計)</Blueprint_RGK_WindowWall.label>
+  <Frame_RGK_WindowWall.label>壁（窓付)(施工)</Frame_RGK_WindowWall.label>
+  <Frame_RGK_WindowWall.description>光を通す窓か付いた壁です。</Frame_RGK_WindowWall.description>
+
+
+  <!-- New window -->
+
+  <GL_WindowWall.label>壁（窓付)</GL_WindowWall.label>
+  <GL_WindowWall.description>光を通す窓か付いた壁です。</GL_WindowWall.description>
+  <Blueprint_GL_WindowWall.label>壁（窓付)(設計)</Blueprint_GL_WindowWall.label>
+  <Frame_GL_WindowWall.label>壁（窓付)(施工)</Frame_GL_WindowWall.label>
+  <Frame_GL_WindowWall.description>光を通す窓か付いた壁です。</Frame_GL_WindowWall.description>
+
+
+  <!-- Fence -->
+
+  <RGK_WoodFence.label>フェンス</RGK_WoodFence.label>
+  <RGK_WoodFence.description>家畜を閉じ込めたり、野生の捕食動物から保護するためのフェンスです。</RGK_WoodFence.description>
+  <Blueprint_RGK_WoodFence.label>フェンス(設計)</Blueprint_RGK_WoodFence.label>
+  <Frame_RGK_WoodFence.label>フェンス(施工)</Frame_RGK_WoodFence.label>
+  <Frame_RGK_WoodFence.description>家畜を閉じ込めたり、野生の捕食動物から保護するためのフェンスです。</Frame_RGK_WoodFence.description>
+
+
+  <!-- Blossom -->
+
+  <GL_FlowerWall.label>壁（花の装飾付)</GL_FlowerWall.label>
+  <GL_FlowerWall.description>花で飾られている壁です。</GL_FlowerWall.description>
+  <Blueprint_GL_FlowerWall.label>壁（花の装飾付)(設計)</Blueprint_GL_FlowerWall.label>
+  <Frame_GL_FlowerWall.label>壁（花の装飾付)(施工)</Frame_GL_FlowerWall.label>
+  <Frame_GL_FlowerWall.description>花で飾られている壁です。</Frame_GL_FlowerWall.description>
+
+
+  <!-- Old Style Door -->
+
+  <RGK_DoorOld.label>アンティークドア</RGK_DoorOld.label>
+  <RGK_DoorOld.description>部屋を隔てる手動扉です。手動で開閉しなければならないので通過する速度が遅くなります。移動速度が遅くなる量は、ドアの材質によって決まります。</RGK_DoorOld.description>
+  <Blueprint_RGK_DoorOld.label>アンティークドア(設計)</Blueprint_RGK_DoorOld.label>
+  <Frame_RGK_DoorOld.label>アンティークドア(施工)</Frame_RGK_DoorOld.label>
+  <Frame_RGK_DoorOld.description>部屋を隔てる手動扉です。手動で開閉しなければならないので通過する速度が遅くなります。移動速度が遅くなる量は、ドアの材質によって決まります。</Frame_RGK_DoorOld.description>
+
+
+  <!-- Fence -->
+
+  <RGK_Door.label>フェンスドア</RGK_Door.label>
+  <RGK_Door.description>部屋を隔てる扉です。手で開け閉めしないといけない分だけ通過するのが遅くなります。低下する移動速度はドアの材質によって異なります。</RGK_Door.description>
+  <Blueprint_RGK_Door.label>フェンスドア(設計)</Blueprint_RGK_Door.label>
+  <Frame_RGK_Door.label>フェンスドア(施工)</Frame_RGK_Door.label>
+  <Frame_RGK_Door.description>部屋を隔てる扉です。手で開け閉めしないといけない分だけ通過するのが遅くなります。低下する移動速度はドアの材質によって異なります。</Frame_RGK_Door.description>
+
+
+  <!-- Door -->
+
+  <GL_DoorFrame.label>ドアフレーム</GL_DoorFrame.label>
+  <GL_DoorFrame.description>ドアを装飾するためのドア枠です。</GL_DoorFrame.description>
+  <Blueprint_GL_DoorFrame.label>ドアフレーム(設計)</Blueprint_GL_DoorFrame.label>
+  <Frame_GL_DoorFrame.label>ドアフレーム(施工)</Frame_GL_DoorFrame.label>
+  <Frame_GL_DoorFrame.description>ドアを装飾するためのドア枠です。</Frame_GL_DoorFrame.description>
+
+
+  <!-- 19.03.17 Bottom Boundary -->
+
+  <GL_BoundaryWood.label>縁石(木)</GL_BoundaryWood.label>
+  <GL_BoundaryWood.description>床同士の境界を区別するための木製の縁石です。</GL_BoundaryWood.description>
+  <Blueprint_GL_BoundaryWood.label>縁石(木)(設計)</Blueprint_GL_BoundaryWood.label>
+  <Frame_GL_BoundaryWood.label>縁石(木)(施行)</Frame_GL_BoundaryWood.label>
+  <Frame_GL_BoundaryWood.description>床同士の境界を区別するための木製の縁石です。</Frame_GL_BoundaryWood.description>
+
+  <GL_BoundaryStone.label>縁石(石)</GL_BoundaryStone.label>
+  <GL_BoundaryStone.description>床同士の境界を区別するための石材製の縁石です。</GL_BoundaryStone.description>
+  <Blueprint_GL_BoundaryStone.label>縁石(石)(設計)</Blueprint_GL_BoundaryStone.label>
+  <Frame_GL_BoundaryStone.label>縁石(石)(施行)</Frame_GL_BoundaryStone.label>
+  <Frame_GL_BoundaryStone.description>床同士の境界を区別するための石材製の縁石です。</Frame_GL_BoundaryStone.description>
+
+  <GL_BoundaryWoodCorner.label>縁石L字(木)</GL_BoundaryWoodCorner.label>
+  <GL_BoundaryWoodCorner.description>床同士の境界を区別するための木製の縁石です。コーナーで使うためにL字になっています。</GL_BoundaryWoodCorner.description>
+  <Blueprint_GL_BoundaryWoodCorner.label>縁石L字(木)(設計)</Blueprint_GL_BoundaryWoodCorner.label>
+  <Frame_GL_BoundaryWoodCorner.label>縁石L字(木)(施行)</Frame_GL_BoundaryWoodCorner.label>
+  <Frame_GL_BoundaryWoodCorner.description>床同士の境界を区別するための木製の縁石です。コーナーで使うためにL字になっています。</Frame_GL_BoundaryWoodCorner.description>
+
+  <GL_BoundaryStoneCorner.label>縁石L字(石)</GL_BoundaryStoneCorner.label>
+  <GL_BoundaryStoneCorner.description>床同士の境界を区別するための石材製の縁石です。コーナーで使うためにL字になっています。</GL_BoundaryStoneCorner.description>
+  <Blueprint_GL_BoundaryStoneCorner.label>縁石L字(石)(設計)</Blueprint_GL_BoundaryStoneCorner.label>
+  <Frame_GL_BoundaryStoneCorner.label>縁石L字(石)(施行)</Frame_GL_BoundaryStoneCorner.label>
+  <Frame_GL_BoundaryStoneCorner.description>床同士の境界を区別するための石材製の縁石です。コーナーで使うためにL字になっています。</Frame_GL_BoundaryStoneCorner.description>
+
+
+</LanguageData>

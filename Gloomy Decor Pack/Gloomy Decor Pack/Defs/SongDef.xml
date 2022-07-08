@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--
+		TimeOfDay = Night,Day,Any
+		Season = Undefined,	Spring,Summer,Fall,Winter,PermanentSummer,PermanentWinter		
+	-->
+	<SongDef>
+		<clipPath>JukeBoxStop/Stop</clipPath>
+		<volume>1</volume>
+		<playOnMap>true</playOnMap>
+		<commonality/>
+		<tense>true</tense>
+		<allowedTimeOfDay>Any</allowedTimeOfDay>
+	</SongDef>
+
+
+</Defs>

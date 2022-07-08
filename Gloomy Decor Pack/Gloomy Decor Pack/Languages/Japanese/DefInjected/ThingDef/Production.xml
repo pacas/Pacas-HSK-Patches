@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RGK_SimpleResearchBench.label>研究設備</RGK_SimpleResearchBench.label>
+  <RGK_SimpleResearchBench.description>筆記具と簡単な測定装置を備えたシンプルな作業台です。研究者はここで新しい研究をしています。</RGK_SimpleResearchBench.description>
+  <Blueprint_RGK_SimpleResearchBench.label>研究設備(設計)</Blueprint_RGK_SimpleResearchBench.label>
+  <Blueprint_Install_RGK_SimpleResearchBench.label>研究設備(移動先)</Blueprint_Install_RGK_SimpleResearchBench.label>
+  <Frame_RGK_SimpleResearchBench.label>研究設備(施工)</Frame_RGK_SimpleResearchBench.label>
+  <Frame_RGK_SimpleResearchBench.description>筆記具と簡単な測定装置を備えたシンプルな作業台です。研究者はここで新しい研究をしています。</Frame_RGK_SimpleResearchBench.description>
+
+
+  <!-- Butcher Table -->
+
+  <GL_TableButcher.label>食肉加工台</GL_TableButcher.label>
+  <GL_TableButcher.description>死んだ生物を、小さな生肉の塊に加工する大きな作業台です。</GL_TableButcher.description>
+  <GL_TableButcher_Blueprint.label>食肉加工台 (設計)</GL_TableButcher_Blueprint.label>
+  <GL_TableButcher_Blueprint_Install.label>食肉加工台 (移動先)</GL_TableButcher_Blueprint_Install.label>
+  <GL_TableButcher_Frame.label>食肉加工台 (施工)</GL_TableButcher_Frame.label>
+  <GL_TableButcher_Frame.description>死んだ生物を、小さな生肉の塊に加工する大きな作業台です。</GL_TableButcher_Frame.description>
+
+
+  <!-- Fueled Stove -->
+
+  <RGK_FueledStove.label>カマド</RGK_FueledStove.label>
+  <RGK_FueledStove.description>食事を準備するための調理台が付いた薪を燃料に使うコンロです。</RGK_FueledStove.description>
+  <Blueprint_RGK_FueledStove.label>カマド(設計)</Blueprint_RGK_FueledStove.label>
+  <Blueprint_Install_RGK_FueledStove.label>カマド(移動先)</Blueprint_Install_RGK_FueledStove.label>
+  <Frame_RGK_FueledStove.label>カマド(施工)</Frame_RGK_FueledStove.label>
+  <Frame_RGK_FueledStove.description>食事を準備するための調理台が付いた薪を燃料に使うコンロです。</Frame_RGK_FueledStove.description>
+
+
+  <!-- Electric Stove -->
+
+  <GL_ElectricStove.label>電気コンロ</GL_ElectricStove.label>
+  <GL_ElectricStove.description>食事を準備するための配膳台が付いている電動式のコンロです。</GL_ElectricStove.description>
+  <Blueprint_GL_ElectricStove.label>電気コンロ(設計)</Blueprint_GL_ElectricStove.label>
+  <Blueprint_Install_GL_ElectricStove.label>電気コンロ(移動先)</Blueprint_Install_GL_ElectricStove.label>
+  <Frame_GL_ElectricStove.label>電気コンロ(施工)</Frame_GL_ElectricStove.label>
+  <Frame_GL_ElectricStove.description>食事を準備するための配膳台が付いている電動式のコンロです。</Frame_GL_ElectricStove.description>
+
+
+  <!-- Bonfire -->
+
+  <GL_Bonfire.label>焚き火</GL_Bonfire.label>
+  <GL_Bonfire.description>料理が可能な焚き火です。</GL_Bonfire.description>
+  <Blueprint_GL_Bonfire.label>焚き火(設計)</Blueprint_GL_Bonfire.label>
+  <Blueprint_Install_GL_Bonfire.label>焚き火(移動先)</Blueprint_Install_GL_Bonfire.label>
+  <Frame_GL_Bonfire.label>焚き火(施工)</Frame_GL_Bonfire.label>
+  <Frame_GL_Bonfire.description>料理が可能な焚き火です。</Frame_GL_Bonfire.description>
+
+
+  <!-- Sewing Machine -->
+
+  <GL_HandTailoringBench.label>ミシン台</GL_HandTailoringBench.label>
+  <GL_HandTailoringBench.description>この足踏みミシン付きの作業台で衣服を作成できます。電動ミシン台の半分程度しか作成速度がありません。</GL_HandTailoringBench.description>
+  <Blueprint_GL_HandTailoringBench.label>ミシン台(設計)</Blueprint_GL_HandTailoringBench.label>
+  <Blueprint_Install_GL_HandTailoringBench.label>ミシン台(移動先)</Blueprint_Install_GL_HandTailoringBench.label>
+  <Frame_GL_HandTailoringBench.label>ミシン台(施工)</Frame_GL_HandTailoringBench.label>
+  <Frame_GL_HandTailoringBench.description>この足踏みミシン付きの作業台で衣服を作成できます。電動ミシン台の半分程度しか作成速度がありません。</Frame_GL_HandTailoringBench.description>
+
+  <GL_ElectricTailoringBench.label>電動ミシン台</GL_ElectricTailoringBench.label>
+  <GL_ElectricTailoringBench.description>この電動ミシン付きの作業台は、とても早く衣服を作成できます。電気がない場合、通常のミシン台と同じ作成速度になります。</GL_ElectricTailoringBench.description>
+  <Blueprint_GL_ElectricTailoringBench.label>電動ミシン台(設計)</Blueprint_GL_ElectricTailoringBench.label>
+  <Blueprint_Install_GL_ElectricTailoringBench.label>電動ミシン台(移動先)</Blueprint_Install_GL_ElectricTailoringBench.label>
+  <Frame_GL_ElectricTailoringBench.label>電動ミシン台(施工)</Frame_GL_ElectricTailoringBench.label>
+  <Frame_GL_ElectricTailoringBench.description>この電動ミシン付きの作業台は、とても早く衣服を作成できます。電気がない場合、通常のミシン台と同じ作成速度になります。</Frame_GL_ElectricTailoringBench.description>
+
+  <!-- Smithy Workbench -->
+
+  <GL_FueledSmithy.label>工作台</GL_FueledSmithy.label>
+  <GL_FueledSmithy.description>燃料に薪を使っています。機械的ではない武器や道具を作成できる工作台です。</GL_FueledSmithy.description>
+  <Blueprint_GL_FueledSmithy.label>工作台(設計)</Blueprint_GL_FueledSmithy.label>
+  <Blueprint_Install_GL_FueledSmithy.label>工作台(移動先)</Blueprint_Install_GL_FueledSmithy.label>
+  <Frame_GL_FueledSmithy.label>工作台(施工)</Frame_GL_FueledSmithy.label>
+  <Frame_GL_FueledSmithy.description>燃料に薪を使っています。機械的ではない武器や道具を作成できる工作台です。</Frame_GL_FueledSmithy.description>
+
+  <GL_ElectricSmithy.label>電動工作台</GL_ElectricSmithy.label>
+  <GL_ElectricSmithy.description>電気を動力としています。機械的ではない武器や道具を作成できる工作台です。</GL_ElectricSmithy.description>
+  <Blueprint_GL_ElectricSmithy.label>電動工作台(設計)</Blueprint_GL_ElectricSmithy.label>
+  <Blueprint_Install_GL_ElectricSmithy.label>電動工作台(移動先)</Blueprint_Install_GL_ElectricSmithy.label>
+  <Frame_GL_ElectricSmithy.label>電動工作台(施工)</Frame_GL_ElectricSmithy.label>
+  <Frame_GL_ElectricSmithy.description>電気を動力としています。機械的ではない武器や道具を作成できる工作台です。</Frame_GL_ElectricSmithy.description>
+
+</LanguageData>

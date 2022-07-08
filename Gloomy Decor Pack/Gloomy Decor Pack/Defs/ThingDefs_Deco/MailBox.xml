@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>GloomyDeco_MailBox</defName>
+        <label>mailbox</label>
+        <description>A small and charming mailbox. What could be in the mailbox in such a bright, cheerful morning? \n\n Uh oh, it's a message about incoming raiders.</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <graphicData>
+            <texPath>GloomyDeco/MailBox</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.8,1.8)</drawSize>
+            <damageData>
+                <rect>(0.1,0.1,0.8,0.8)</rect>
+            </damageData>
+            <shadowData>
+                <volume>(0.1,0.5,0.1)</volume>
+                <offset>(0,0,0.0)</offset>
+            </shadowData>
+        </graphicData>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>20</pathCost>
+        <canOverlapZones>true</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>600</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>6</Mass>
+            <Beauty>10</Beauty>
+        </statBases>
+        <size>(1,1)</size>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>20</costStuffCount>
+        <costList>
+            <Plasteel>10</Plasteel>
+        </costList>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Furniture</designationCategory>
+        <!-- custom -->
+        <comps>
+            <li>
+                <compClass>GloomyDeco.GloomyDeco_MailBoxComp</compClass>
+            </li>
+        </comps>
+        <resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
+    </ThingDef>
+</Defs>

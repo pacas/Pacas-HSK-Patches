@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="RKGFence" ParentName="WallBase" Abstract="True">
+        <category>Building</category>
+        <thingClass>Building</thingClass>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <selectable>true</selectable>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <repairEffect>Repair</repairEffect>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <designationCategory>Structure</designationCategory>
+    </ThingDef>
+
+    <ThingDef ParentName="WallBase">
+        <defName>RGK_Wall</defName>
+        <label>wall</label>
+        <description>An impassable wall. Capable of holding up a roof.</description>
+        <thingClass>Gloomylynx.GL_Building</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Linked/RGK_Wall</texPath>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/RGK_WallBricks_MenuIcon</uiIconPath>
+        <statBases>
+            <Beauty>1</Beauty>
+            <WorkToBuild>250</WorkToBuild>
+            <Flammability>1</Flammability>
+        </statBases>
+        <stuffCategories>
+			<li>WoodLogs</li>
+		</stuffCategories>
+		<costStuffCount>6</costStuffCount>
+        <building>
+            <relatedBuildCommands>
+				<li>Door</li>
+				<li>MDoor</li>
+				<li>Autodoor</li>
+				<li>CellDoor</li>
+			</relatedBuildCommands>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/RGK_Wall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+    </ThingDef>
+
+    <!-- 신규 벽 -->
+    <ThingDef ParentName="WallBase">
+        <defName>GL_Wall</defName>
+        <label>wall</label>
+        <description>An impassable wall. Capable of holding up a roof.</description>
+        <thingClass>Gloomylynx.GL_Building</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Linked/GL_Wall</texPath>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/GL_WallBricks_MenuIcon</uiIconPath>
+        <statBases>
+            <Beauty>1</Beauty>
+            <WorkToBuild>250</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <stuffCategories>
+            <li>Stony</li>
+			<li>Bricks</li>
+			<li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>6</costStuffCount>
+        <building>
+            <relatedBuildCommands>
+				<li>Door</li>
+				<li>MDoor</li>
+				<li>Autodoor</li>
+				<li>CellDoor</li>
+			</relatedBuildCommands>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/RGK_Wall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+    </ThingDef>
+
+    <!-- 환풍벽 -->
+    <ThingDef ParentName="RKGFence">
+        <defName>RGK_VentWall</defName>
+        <label>vent wall</label>
+        <thingClass>Building_Vent</thingClass>
+        <category>Building</category>
+        <description>It's a wall where air can come in and out.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RGK_VentWall</texPath>
+            <shaderType>CutoutComplex</shaderType>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/RGK_VentWall_MenuIcon</uiIconPath>
+        <statBases>
+            <Beauty>1</Beauty>
+            <WorkToBuild>250</WorkToBuild>
+            <Flammability>1</Flammability>
+        </statBases>
+        <stuffCategories>
+			<li>WoodLogs</li>
+		</stuffCategories>
+		<costStuffCount>6</costStuffCount>
+        <placeWorkers>
+            <li>PlaceWorker_Vent</li>
+        </placeWorkers>
+        <rotatable>true</rotatable>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <building>
+            <relatedBuildCommands>
+				<li>Door</li>
+				<li>MDoor</li>
+				<li>Autodoor</li>
+				<li>CellDoor</li>
+			</relatedBuildCommands>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/RGK_VentWall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+            <canPlaceOverWall>true</canPlaceOverWall>
+        </building>
+        <comps>
+            <li Class="Gloomylynx.CompProperties_FlickableVent">
+                <commandTexture>UI/Commands/Vent</commandTexture>
+                <commandLabelKey>CommandDesignateOpenCloseVentLabel</commandLabelKey>
+                <commandDescKey>CommandDesignateOpenCloseVentDesc</commandDescKey>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- 신규 환풍벽 -->
+    <ThingDef ParentName="RKGFence">
+        <defName>GL_VentWall</defName>
+        <label>vent wall</label>
+        <thingClass>Building_Vent</thingClass>
+        <category>Building</category>
+        <description>It's a wall where air can come in and out.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/GL_VentWall</texPath>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/GL_VentWall_MenuIcon</uiIconPath>
+        <statBases>
+            <Beauty>1</Beauty>
+            <WorkToBuild>250</WorkToBuild>
+            <Flammability>1</Flammability>
+        </statBases>
+        <stuffCategories>
+            <li>Stony</li>
+			<li>Bricks</li>
+			<li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>6</costStuffCount>
+        <placeWorkers>
+            <li>PlaceWorker_Vent</li>
+        </placeWorkers>
+        <rotatable>true</rotatable>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <building>
+            <relatedBuildCommands>
+				<li>Door</li>
+				<li>MDoor</li>
+				<li>Autodoor</li>
+				<li>CellDoor</li>
+			</relatedBuildCommands>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/RGK_VentWall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+            <canPlaceOverWall>true</canPlaceOverWall>
+        </building>
+        <comps>
+            <li Class="Gloomylynx.CompProperties_FlickableVent">
+                <commandTexture>UI/Commands/Vent</commandTexture>
+                <commandLabelKey>CommandDesignateOpenCloseVentLabel</commandLabelKey>
+                <commandDescKey>CommandDesignateOpenCloseVentDesc</commandDescKey>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="RKGFence">
+        <defName>RGK_WindowWall</defName>
+        <label>window wall</label>
+        <thingClass>Gloomylynx.GL_Building</thingClass>
+        <category>Building</category>
+        <description>A window through which light can pass through.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/WindowWall</texPath>
+            <!--<shaderType>CutoutComplex</shaderType>-->
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/WindowWall_MeunuIcon</uiIconPath>
+        <statBases>
+            <Beauty>3</Beauty>
+            <WorkToBuild>300</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <stuffCategories>
+            <li>WoodLogs</li>
+        </stuffCategories>
+        <costStuffCount>10</costStuffCount>
+        <placeWorkers>
+            <li>PlaceWorker_Vent</li>
+        </placeWorkers>
+        <blockLight>false</blockLight>
+        <rotatable>true</rotatable>
+        <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <building>
+            <relatedBuildCommands>
+				<li>Door</li>
+				<li>MDoor</li>
+				<li>Autodoor</li>
+				<li>CellDoor</li>
+			</relatedBuildCommands>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/RGK_Wall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+            <canPlaceOverWall>true</canPlaceOverWall>
+        </building>
+    </ThingDef>
+
+    <!-- 신규 창문 -->
+    <ThingDef ParentName="RKGFence">
+        <defName>GL_WindowWall</defName>
+        <label>window wall</label>
+        <thingClass>Gloomylynx.GL_Building</thingClass>
+        <category>Building</category>
+        <description>A window through which light can pass through.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/GL_WindowWall</texPath>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/GL_WindowWall_MeunuIcon</uiIconPath>
+        <statBases>
+            <Beauty>3</Beauty>
+            <WorkToBuild>300</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <stuffCategories>
+            <li>Bricks</li>
+            <li>Stony</li>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>10</costStuffCount>
+        <blockLight>false</blockLight>
+        <rotatable>true</rotatable>
+        <placeWorkers>
+            <li>PlaceWorker_Vent</li>
+        </placeWorkers>
+        <blockWind>true</blockWind>
+        <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <building>
+            <relatedBuildCommands>
+				<li>Door</li>
+				<li>MDoor</li>
+				<li>Autodoor</li>
+				<li>CellDoor</li>
+			</relatedBuildCommands>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/RGK_Wall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+            <canPlaceOverWall>true</canPlaceOverWall>
+        </building>
+    </ThingDef>
+
+    <!--울타리-->
+    <ThingDef ParentName="RKGFence">
+        <defName>RGK_WoodFence</defName>
+        <label>fence</label>
+        <thingClass>Gloomylynx.GL_Building</thingClass>
+        <category>Building</category>
+        <description>A fence to trap livestock or protect it from outside beasts.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RGK_WoodFence</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>Basic</linkType>
+            <linkFlags>
+                <li>Custom1</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/RGK_WoodFenceIco</uiIconPath>
+        <statBases>
+            <Beauty>3</Beauty>
+            <MaxHitPoints>75</MaxHitPoints>
+            <WorkToBuild>180</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>6</costStuffCount>
+        <fillPercent>0.1</fillPercent>
+        <coversFloor>false</coversFloor>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <holdsRoof>false</holdsRoof>
+        <blockLight>false</blockLight>
+        <blockWind>false</blockWind>
+        <building>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/RKG_WoodFence_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+            <isInert>true</isInert>
+            <canPlaceOverWall>true</canPlaceOverWall>
+        </building>
+    </ThingDef>
+	
+    <!-- 2018 12 10 -->
+    <!-- 꽃벽 -->
+    <ThingDef ParentName="WallBase">
+        <defName>GL_FlowerWall</defName>
+        <label>Flower wall</label>
+        <description>Wall decorated with flowers.</description>
+        <thingClass>Gloomylynx.GL_Building</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <texPath>Things/Building/Linked/GL_FlowerWall</texPath>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <linkType>Basic</linkType>
+            <linkFlags>
+                <li>Custom3</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/GL_FlowerWall_MenuIcon</uiIconPath>
+        <statBases>
+            <Beauty>4</Beauty>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToBuild>550</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <costList>
+            <WoodLog>12</WoodLog>
+        </costList>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>35</pathCost>
+        <blockWind>false</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <constructEffect>ConstructWood</constructEffect>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>false</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <building>
+            <isInert>true</isInert>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/RGK_Wall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+    </ThingDef>
+
+		
+    <!-- 올드스타일 문 -->
+    <ThingDef ParentName="SK_DoorBase">
+        <defName>RGK_DoorOld</defName>
+        <label>antique door</label>
+        <description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+        <statBases>
+            <WorkToBuild>800</WorkToBuild>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Building/Furniture/DoorOld_Mover</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <damageData>
+                <enabled>false</enabled>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Furniture/DoorOld_MenuIcon</uiIconPath>
+        <stuffCategories Inherit="False">
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>20</costStuffCount>
+        <costList>
+			<ComponentMedieval>1</ComponentMedieval>
+        </costList>
+        <building>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Furniture/DoorOld_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+    </ThingDef>
+
+    <!-- 울타리문 -->
+    <ThingDef ParentName="SK_DoorBase">
+        <defName>RGK_Door</defName>
+        <label>fence door</label>
+        <description>Divides rooms. Simple doors must be manually opened, which slows people down. The amount of slowdown depends on what the door is made of.</description>
+        <thingClass>Building_Door</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Furniture/WoodFenceGate_Mover</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <damageData>
+                <enabled>false</enabled>
+            </damageData>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>300</WorkToBuild>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <uiIconPath>Things/Building/Furniture/WoodFenceGate_icon</uiIconPath>
+        <stuffCategories Inherit="False">
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>10</costStuffCount>
+        <costList>
+			<ComponentMedieval>1</ComponentMedieval>
+        </costList>
+        <building>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Furniture/RKG_WoodGate_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+    </ThingDef>
+
+    <!-- 문틀 -->
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>GL_DoorFrame</defName>
+        <label>door frame</label>
+        <description>It is a frame to decorate the door.</description>
+        <thingClass>Building</thingClass>
+        <altitudeLayer>PawnUnused</altitudeLayer>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToBuild>600</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>10</Mass>
+            <Beauty>25</Beauty>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Building/Furniture/GL_DoorFrame</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <drawSize>(3.0,3.15)</drawSize>
+        </graphicData>
+        <uiIconScale>1.75</uiIconScale>
+        <uiIconOffset>(0,0.15)</uiIconOffset>
+        <uiIconPath>Things/Building/Furniture/GL_DoorFrame_south</uiIconPath>
+        <stuffCategories Inherit="False">
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>45</costStuffCount>
+        <placeWorkers>
+            <li>Gloomylynx.PlaceWorker_StandableObject</li>
+        </placeWorkers>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <clearBuildingArea>false</clearBuildingArea>
+        <designationCategory>Structure</designationCategory>
+        <tradeability>None</tradeability>
+        <building>
+            <isEdifice>false</isEdifice>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>GL_BoundaryWood</defName>
+        <label>boundary wood</label>
+        <description>It is a boundary for distinguishing the boundaries of the floor.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/GL_BoundaryWood</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <uiIconScale>1</uiIconScale>
+        <uiIconOffset>(0,-0.35)</uiIconOffset>
+        <rotatable>true</rotatable>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <passability>Standable</passability>
+        <fillPercent>0</fillPercent>
+        <statBases>
+            <MaxHitPoints>30</MaxHitPoints>
+            <WorkToBuild>40</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Mass>1</Mass>
+            <Beauty>1</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>2</costStuffCount>
+        <building>
+            <isEdifice>false</isEdifice>
+        </building>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <placeWorkers>
+            <li>Gloomylynx.PlaceWorker_PassableObject</li>
+        </placeWorkers>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <designationCategory>Structure</designationCategory>
+        <destroyable>true</destroyable>
+        <tradeability>None</tradeability>
+        <clearBuildingArea>false</clearBuildingArea>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>GL_BoundaryStone</defName>
+        <label>boundary stone</label>
+        <description>It is a boundary for distinguishing the boundaries of the floor.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/GL_BoundaryStone</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <uiIconScale>1</uiIconScale>
+        <uiIconOffset>(0,-0.35)</uiIconOffset>
+        <rotatable>true</rotatable>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <passability>Standable</passability>
+        <fillPercent>0</fillPercent>
+        <statBases>
+            <MaxHitPoints>40</MaxHitPoints>
+            <WorkToBuild>50</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Mass>1</Mass>
+            <Beauty>1</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Bricks</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>2</costStuffCount>
+        <building>
+            <isEdifice>false</isEdifice>
+        </building>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <placeWorkers>
+            <li>Gloomylynx.PlaceWorker_PassableObject</li>
+        </placeWorkers>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <designationCategory>Structure</designationCategory>
+        <destroyable>true</destroyable>
+        <tradeability>None</tradeability>
+        <clearBuildingArea>false</clearBuildingArea>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+    </ThingDef>
+	
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>GL_BoundaryWoodCorner</defName>
+        <label>boundary wood corner</label>
+        <description>It is a boundary for distinguishing the boundaries of the floor.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/GL_BoundaryWoodCorner</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <uiIconScale>1</uiIconScale>
+        <uiIconOffset>(0.3,-0.35)</uiIconOffset>
+        <rotatable>true</rotatable>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <passability>Standable</passability>
+        <fillPercent>0</fillPercent>
+        <statBases>
+            <MaxHitPoints>30</MaxHitPoints>
+            <WorkToBuild>20</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Mass>1</Mass>
+            <Beauty>1</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>2</costStuffCount>
+        <building>
+            <isEdifice>false</isEdifice>
+        </building>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <placeWorkers>
+            <li>Gloomylynx.PlaceWorker_PassableObject</li>
+        </placeWorkers>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <designationCategory>Structure</designationCategory>
+        <destroyable>true</destroyable>
+        <tradeability>None</tradeability>
+        <clearBuildingArea>false</clearBuildingArea>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    </ThingDef>
+	
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>GL_BoundaryStoneCorner</defName>
+        <label>boundary stone corner</label>
+        <description>It is a boundary for distinguishing the boundaries of the floor.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/GL_BoundaryStoneCorner</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <uiIconScale>1</uiIconScale>
+        <uiIconOffset>(0.3,-0.35)</uiIconOffset>
+        <rotatable>true</rotatable>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <passability>Standable</passability>
+        <fillPercent>0</fillPercent>
+        <statBases>
+            <MaxHitPoints>25</MaxHitPoints>
+            <WorkToBuild>30</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Mass>1</Mass>
+            <Beauty>1</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Bricks</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>2</costStuffCount>
+        <building>
+            <isEdifice>false</isEdifice>
+        </building>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <placeWorkers>
+            <li>Gloomylynx.PlaceWorker_PassableObject</li>
+        </placeWorkers>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <designationCategory>Structure</designationCategory>
+        <destroyable>true</destroyable>
+        <tradeability>None</tradeability>
+        <clearBuildingArea>false</clearBuildingArea>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    </ThingDef>
+
+</Defs>
+

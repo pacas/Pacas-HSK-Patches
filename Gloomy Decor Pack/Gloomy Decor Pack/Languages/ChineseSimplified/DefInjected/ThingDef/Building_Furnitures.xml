@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Bed -->
+  <RGK_bedSingle.label>单人床</RGK_bedSingle.label>
+  <RGK_bedSingle.description>一张适合休息的单人床，上有床垫和床单。</RGK_bedSingle.description>
+  <RGK_bedSingle_Blueprint.label>单人床 (蓝图)</RGK_bedSingle_Blueprint.label>
+  <RGK_bedSingle_Blueprint_Install.label>单人床 (蓝图)</RGK_bedSingle_Blueprint_Install.label>
+  <RGK_bedSingle_Frame.label>单人床 (建造中)</RGK_bedSingle_Frame.label>
+  <RGK_bedSingle_Frame.description>一张适合休息的单人床，上有床垫和床单。</RGK_bedSingle_Frame.description>
+  <RGK_bedSingleB.label>单人床B</RGK_bedSingleB.label>
+  <RGK_bedSingleB.description>一张适合休息的单人床，上有床垫和床单。</RGK_bedSingleB.description>
+  <RGK_bedSingleB_Blueprint.label>单人床B (蓝图)</RGK_bedSingleB_Blueprint.label>
+  <RGK_bedSingleB_Blueprint_Install.label>单人床B (蓝图)</RGK_bedSingleB_Blueprint_Install.label>
+  <RGK_bedSingleB_Frame.label>单人床B (建造中)</RGK_bedSingleB_Frame.label>
+  <RGK_bedSingleB_Frame.description>一张适合休息的单人床，上有床垫和床单。</RGK_bedSingleB_Frame.description>
+  <RGK_bedDouble.label>双人床</RGK_bedDouble.label>
+  <RGK_bedDouble.description>一张简单的双人床。栅格图案。</RGK_bedDouble.description>
+  <RGK_bedDouble_Blueprint.label>双人床 (蓝图)</RGK_bedDouble_Blueprint.label>
+  <RGK_bedDouble_Blueprint_Install.label>双人床 (蓝图)</RGK_bedDouble_Blueprint_Install.label>
+  <RGK_bedDouble_Frame.label>双人床 (建造中)</RGK_bedDouble_Frame.label>
+  <RGK_bedDouble_Frame.description>一张简单的双人床。栅格图案。</RGK_bedDouble_Frame.description>
+  <RGK_bedDoubleB.label>双人床B</RGK_bedDoubleB.label>
+  <RGK_bedDoubleB.description>一张简单的双人床。圆圈图案。</RGK_bedDoubleB.description>
+  <RGK_bedDoubleB_Blueprint.label>双人床B (蓝图)</RGK_bedDoubleB_Blueprint.label>
+  <RGK_bedDoubleB_Blueprint_Install.label>双人床B (蓝图)</RGK_bedDoubleB_Blueprint_Install.label>
+  <RGK_bedDoubleB_Frame.label>双人床B (建造中)</RGK_bedDoubleB_Frame.label>
+  <RGK_bedDoubleB_Frame.description>一张简单的双人床。圆圈图案。</RGK_bedDoubleB_Frame.description>
+ <!-- 레이스 더블 침대 -->
+  <GL_ClassyDoubleBed.label>古典双人床</GL_ClassyDoubleBed.label>
+  <GL_ClassyDoubleBed.description>带有蕾丝装饰的优美双人床。非常舒适，睡觉时不会受到打扰。</GL_ClassyDoubleBed.description>
+  <GL_ClassyDoubleBed_Blueprint.label>古典双人床 (蓝图)</GL_ClassyDoubleBed_Blueprint.label>
+  <GL_ClassyDoubleBed_Blueprint_Install.label>古典双人床 (蓝图)</GL_ClassyDoubleBed_Blueprint_Install.label>
+  <GL_ClassyDoubleBed_Frame.label>古典双人床 (建造中)</GL_ClassyDoubleBed_Frame.label>
+  <GL_ClassyDoubleBed_Frame.description>带有蕾丝装饰的优美双人床。非常舒适，睡觉时不会受到打扰。</GL_ClassyDoubleBed_Frame.description>
+
+ <!-- Table -->
+  <RGK_Dresser.label>梳妆台</RGK_Dresser.label>
+  <RGK_Dresser.description>梳妆台。让附近的床稍微舒服一点。把一个以上的梳妆台放在同一张床边没有叠加效果。</RGK_Dresser.description>
+  <RGK_Dresser_Blueprint.label>梳妆台 (蓝图)</RGK_Dresser_Blueprint.label>
+  <RGK_Dresser_Blueprint_Install.label>梳妆台 (蓝图)</RGK_Dresser_Blueprint_Install.label>
+  <RGK_Dresser_Frame.label>梳妆台 (建造中)</RGK_Dresser_Frame.label>
+  <RGK_Dresser_Frame.description>梳妆台。让附近的床稍微舒服一点。把一个以上的梳妆台放在同一张床边没有叠加效果。</RGK_Dresser_Frame.description>
+  <RGK_EndTable.label>床头柜</RGK_EndTable.label>
+  <RGK_EndTable.description>一张小床头柜，让附近的床稍微舒服一点。必须直接放置在床头附近。把一张以上的床头柜放在同一张床边上没有叠加效果。</RGK_EndTable.description>
+  <RGK_EndTable_Blueprint.label>床头柜 (蓝图)</RGK_EndTable_Blueprint.label>
+  <RGK_EndTable_Blueprint_Install.label>床头柜 (蓝图)</RGK_EndTable_Blueprint_Install.label>
+  <RGK_EndTable_Frame.label>床头柜 (建造中)</RGK_EndTable_Frame.label>
+  <RGK_EndTable_Frame.description>一张小床头柜，让附近的床稍微舒服一点。必须直接放置在床头附近。把一张以上的床头柜放在同一张床边没有叠加效果。</RGK_EndTable_Frame.description>
+  <RGK_EndTableWithLamp.label>带灯床头柜（燃料）</RGK_EndTableWithLamp.label>
+  <RGK_EndTableWithLamp.description>一张带灯小床头柜，让附近的床稍微舒服一点。必须直接放置在床头附近。把一张以上的床头柜放在同一张床边没有叠加效果。需要燃料。</RGK_EndTableWithLamp.description>
+  <RGK_EndTableWithLamp_Blueprint.label>带灯床头柜 (蓝图)</RGK_EndTableWithLamp_Blueprint.label>
+  <RGK_EndTableWithLamp_Blueprint_Install.label>带灯床头柜 (蓝图)</RGK_EndTableWithLamp_Blueprint_Install.label>
+  <RGK_EndTableWithLamp_Frame.label>带灯床头柜 (建造中)</RGK_EndTableWithLamp_Frame.label>
+  <RGK_EndTableWithLamp_Frame.description>一张带灯小床头柜，让附近的床稍微舒服一点。必须直接放置在床头附近。把一张以上的床头柜放在同一张床边没有叠加效果。需要燃料。</RGK_EndTableWithLamp_Frame.description>
+  <RGK_EndTableWithLampE.label>带灯床头柜（电）</RGK_EndTableWithLampE.label>
+  <RGK_EndTableWithLampE.description>一张小带灯床头柜，让附近的床稍微舒服一点。必须直接放置在床头附近。把一张以上的床头柜放在同一张床边没有叠加效果。</RGK_EndTableWithLampE.description>
+  <RGK_EndTableWithLampE_Blueprint.label>带灯床头柜E (蓝图)</RGK_EndTableWithLampE_Blueprint.label>
+  <RGK_EndTableWithLampE_Blueprint_Install.label>带灯床头柜E (蓝图)</RGK_EndTableWithLampE_Blueprint_Install.label>
+  <RGK_EndTableWithLampE_Frame.label>带灯床头柜E (建造中)</RGK_EndTableWithLampE_Frame.label>
+  <RGK_EndTableWithLampE_Frame.description>一张小带灯床头柜，让附近的床稍微舒服一点。必须直接放置在床头附近。把一张以上的床头柜放在同一张床边没有叠加效果。</RGK_EndTableWithLampE_Frame.description>
+  <!-- Chair -->
+  <RGK_bucketr.label>RGK水桶</RGK_bucketr.label>
+  <RGK_bucketr.description>一个普普通通的水桶。</RGK_bucketr.description>
+  <RGK_bucketr_Blueprint.label>RGK桶 (蓝图)</RGK_bucketr_Blueprint.label>
+  <RGK_bucketr_Blueprint_Install.label>RGK桶 (蓝图)</RGK_bucketr_Blueprint_Install.label>
+  <RGK_bucketr_Frame.label>RGK桶 (建造中)</RGK_bucketr_Frame.label>
+  <RGK_bucketr_Frame.description>一个普普通通的水桶。</RGK_bucketr_Frame.description>
+  <RGK_orc.label>ORC桶</RGK_orc.label>
+  <RGK_orc.description>就是个兽人桶？</RGK_orc.description>
+  <RGK_orc_Blueprint.label>ORC桶 (蓝图)</RGK_orc_Blueprint.label>
+  <RGK_orc_Blueprint_Install.label>ORC桶 (蓝图)</RGK_orc_Blueprint_Install.label>
+  <RGK_orc_Frame.label>ORC桶 (建造中)</RGK_orc_Frame.label>
+  <RGK_orc_Frame.description>就是个兽人桶？</RGK_orc_Frame.description>
+  <RGK_SimpleChair.label>简易座椅</RGK_SimpleChair.label>
+  <RGK_SimpleChair.description>坐在上面的简易板凳。不是很舒服，但总比没有好。可以在桌子、工作站和其他地方使用。</RGK_SimpleChair.description>
+  <RGK_SimpleChair_Blueprint.label>简易座椅 (蓝图)</RGK_SimpleChair_Blueprint.label>
+  <RGK_SimpleChair_Blueprint_Install.label>简易座椅 (蓝图)</RGK_SimpleChair_Blueprint_Install.label>
+  <RGK_SimpleChair_Frame.label>简易座椅 (建造中)</RGK_SimpleChair_Frame.label>
+  <RGK_SimpleChair_Frame.description>坐在上面的简易板凳。不是很舒服，但总比没有好。可以在桌子、工作站和其他地方使用。</RGK_SimpleChair_Frame.description>
+  <RGK_Chair.label>座椅</RGK_Chair.label>
+  <RGK_Chair.description>舒适的椅子。可以在桌子、工作站和其他地方使用。</RGK_Chair.description>
+  <RGK_Chair_Blueprint.label>座椅 (蓝图)</RGK_Chair_Blueprint.label>
+  <RGK_Chair_Blueprint_Install.label>座椅 (蓝图)</RGK_Chair_Blueprint_Install.label>
+  <RGK_Chair_Frame.label>座椅 (建造中)</RGK_Chair_Frame.label>
+  <RGK_Chair_Frame.description>舒适的椅子。可以在桌子、工作站和其他地方使用。</RGK_Chair_Frame.description>
+  <RGKDiningChair.label>餐椅</RGKDiningChair.label>
+  <RGKDiningChair.description>舒适而迷人的椅子。可以在桌子、工作站和其他地方使用。</RGKDiningChair.description>
+  <RGKDiningChair_Blueprint.label>餐椅 (蓝图)</RGKDiningChair_Blueprint.label>
+  <RGKDiningChair_Blueprint_Install.label>餐椅 (蓝图)</RGKDiningChair_Blueprint_Install.label>
+  <RGKDiningChair_Frame.label>餐椅 (建造中)</RGKDiningChair_Frame.label>
+  <RGKDiningChair_Frame.description>舒适而迷人的椅子。可以在桌子、工作站和其他地方使用。</RGKDiningChair_Frame.description>
+  <!-- 공원벤치 -->
+  <GL_Bench.label>长椅</GL_Bench.label>
+  <GL_Bench.description>这是一张公园长椅。 情侣退散。</GL_Bench.description>
+  <GL_Bench_Blueprint.label>长椅 (蓝图)</GL_Bench_Blueprint.label>
+  <GL_Bench_Blueprint_Install.label>长椅 (蓝图)</GL_Bench_Blueprint_Install.label>
+  <GL_Bench_Frame.label>长椅 (建造中)</GL_Bench_Frame.label>
+  <GL_Bench_Frame.description>这是一张公园长椅。 情侣退散。</GL_Bench_Frame.description>
+  <RGK_TableA.label>方桌 (2x2)</RGK_TableA.label>
+  <RGK_TableA.description>一张简易方桌，当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableA.description>
+  <RGK_TableA_Blueprint.label>方桌 (2x2) (蓝图)</RGK_TableA_Blueprint.label>
+  <RGK_TableA_Blueprint_Install.label>方桌 (2x2) (蓝图)</RGK_TableA_Blueprint_Install.label>
+  <RGK_TableA_Frame.label>方桌 (2x2) (建造中)</RGK_TableA_Frame.label>
+  <RGK_TableA_Frame.description>一张简易方桌，当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableA_Frame.description>
+  <RGK_TableC.label>雕刻方桌 (2x2)</RGK_TableC.label>
+  <RGK_TableC.description>一张经过雕饰的方桌，当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableC.description>
+  <RGK_TableC_Blueprint.label>雕刻方桌 (2x2) (蓝图)</RGK_TableC_Blueprint.label>
+  <RGK_TableC_Blueprint_Install.label>雕刻方桌 (2x2) (蓝图)</RGK_TableC_Blueprint_Install.label>
+  <RGK_TableC_Frame.label>雕刻方桌 (2x2) (建造中)</RGK_TableC_Frame.label>
+  <RGK_TableC_Frame.description>一张经过雕饰的方桌，当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableC_Frame.description>
+  <RGK_TableB.label>凯尔特桌 (2x2)</RGK_TableB.label>
+  <RGK_TableB.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableB.description>
+  <RGK_TableB_Blueprint.label>凯尔特桌 (2x2) (蓝图)</RGK_TableB_Blueprint.label>
+  <RGK_TableB_Blueprint_Install.label>凯尔特桌 (2x2) (蓝图)</RGK_TableB_Blueprint_Install.label>
+  <RGK_TableB_Frame.label>凯尔特桌 (2x2) (建造中)</RGK_TableB_Frame.label>
+  <RGK_TableB_Frame.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableB_Frame.description>
+  <RGK_TableD.label>凯尔特桌 (2x2)</RGK_TableD.label>
+  <RGK_TableD.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableD.description>
+  <RGK_TableD_Blueprint.label>凯尔特桌 (2x2) (蓝图)</RGK_TableD_Blueprint.label>
+  <RGK_TableD_Blueprint_Install.label>凯尔特桌 (2x2) (蓝图)</RGK_TableD_Blueprint_Install.label>
+  <RGK_TableD_Frame.label>凯尔特桌 (2x2) (建造中)</RGK_TableD_Frame.label>
+  <RGK_TableD_Frame.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableD_Frame.description>
+  <RGK_TableE.label>凯尔特桌 (2x1)</RGK_TableE.label>
+  <RGK_TableE.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableE.description>
+  <RGK_TableE_Blueprint.label>凯尔特桌 (2x1) (蓝图)</RGK_TableE_Blueprint.label>
+  <RGK_TableE_Blueprint_Install.label>凯尔特桌 (2x1) (蓝图)</RGK_TableE_Blueprint_Install.label>
+  <RGK_TableE_Frame.label>凯尔特桌 (2x1) (建造中)</RGK_TableE_Frame.label>
+  <RGK_TableE_Frame.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableE_Frame.description>
+  <RGK_TableF.label>凯尔特桌 (3x2)</RGK_TableF.label>
+  <RGK_TableF.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableF.description>
+  <RGK_TableF_Blueprint.label>凯尔特桌 (3x2) (蓝图)</RGK_TableF_Blueprint.label>
+  <RGK_TableF_Blueprint_Install.label>凯尔特桌 (3x2) (蓝图)</RGK_TableF_Blueprint_Install.label>
+  <RGK_TableF_Frame.label>凯尔特桌 (3x2) (建造中)</RGK_TableF_Frame.label>
+  <RGK_TableF_Frame.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableF_Frame.description>
+  <RGK_TableG.label>凯尔特桌 (2x2)</RGK_TableG.label>
+  <RGK_TableG.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableG.description>
+  <RGK_TableG_Blueprint.label>凯尔特桌 (2x2) (蓝图)</RGK_TableG_Blueprint.label>
+  <RGK_TableG_Blueprint_Install.label>凯尔特桌 (2x2) (蓝图)</RGK_TableG_Blueprint_Install.label>
+  <RGK_TableG_Frame.label>凯尔特桌 (2x2) (建造中)</RGK_TableG_Frame.label>
+  <RGK_TableG_Frame.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableG_Frame.description>
+  <RGK_TableH.label>凯尔特桌 (3x3)</RGK_TableH.label>
+  <RGK_TableH.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableH.description>
+  <RGK_TableH_Blueprint.label>凯尔特桌 (3x3) (蓝图)</RGK_TableH_Blueprint.label>
+  <RGK_TableH_Blueprint_Install.label>凯尔特桌 (3x3) (蓝图)</RGK_TableH_Blueprint_Install.label>
+  <RGK_TableH_Frame.label>凯尔特桌 (3x3) (建造中)</RGK_TableH_Frame.label>
+  <RGK_TableH_Frame.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_TableH_Frame.description>
+  <RGK_MiniTableA.label>迷你桌A</RGK_MiniTableA.label>
+  <RGK_MiniTableA.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_MiniTableA.description>
+  <RGK_MiniTableA_Blueprint.label>迷你桌A (蓝图)</RGK_MiniTableA_Blueprint.label>
+  <RGK_MiniTableA_Blueprint_Install.label>迷你桌A (蓝图)</RGK_MiniTableA_Blueprint_Install.label>
+  <RGK_MiniTableA_Frame.label>迷你桌A (建造中)</RGK_MiniTableA_Frame.label>
+  <RGK_MiniTableA_Frame.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_MiniTableA_Frame.description>
+  <RGK_MiniTableB.label>迷你桌B</RGK_MiniTableB.label>
+  <RGK_MiniTableB.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_MiniTableB.description>
+  <RGK_MiniTableB_Blueprint.label>迷你桌B (蓝图)</RGK_MiniTableB_Blueprint.label>
+  <RGK_MiniTableB_Blueprint_Install.label>迷你桌B (蓝图)</RGK_MiniTableB_Blueprint_Install.label>
+  <RGK_MiniTableB_Frame.label>迷你桌B (建造中)</RGK_MiniTableB_Frame.label>
+  <RGK_MiniTableB_Frame.description>当桌子边上有椅子的时候，人们可以在上面吃饭。</RGK_MiniTableB_Frame.description>
+  <!-- Storage -->
+  <RKGWineRackB.label>酒柜</RKGWineRackB.label>
+  <RKGWineRackB.description>储存葡萄酒或酒精的架子。</RKGWineRackB.description>
+  <RKGWineRackB_Blueprint.label>酒柜 (蓝图)</RKGWineRackB_Blueprint.label>
+  <RKGWineRackB_Blueprint_Install.label>酒柜 (蓝图)</RKGWineRackB_Blueprint_Install.label>
+  <RKGWineRackB_Frame.label>酒柜 (建造中)</RKGWineRackB_Frame.label>
+  <RKGWineRackB_Frame.description>储存葡萄酒或酒精的架子。</RKGWineRackB_Frame.description>
+  <WardrobeA.label>衣橱</WardrobeA.label>
+  <WardrobeA.description>用来存放衣服的架子和抽屉。</WardrobeA.description>
+  <WardrobeA_Blueprint.label>衣橱 (蓝图)</WardrobeA_Blueprint.label>
+  <WardrobeA_Blueprint_Install.label>衣橱 (蓝图)</WardrobeA_Blueprint_Install.label>
+  <WardrobeA_Frame.label>衣橱 (建造中)</WardrobeA_Frame.label>
+  <WardrobeA_Frame.description>用来存放衣服的架子和抽屉。</WardrobeA_Frame.description>
+  <WardrobeB.label>衣橱B</WardrobeB.label>
+  <WardrobeB.description>用来存放衣服的架子和抽屉。</WardrobeB.description>
+  <WardrobeB_Blueprint.label>衣橱B (蓝图)</WardrobeB_Blueprint.label>
+  <WardrobeB_Blueprint_Install.label>衣橱B (蓝图)</WardrobeB_Blueprint_Install.label>
+  <WardrobeB_Frame.label>衣橱B (建造中)</WardrobeB_Frame.label>
+  <WardrobeB_Frame.description>用来存放衣服的架子和抽屉。</WardrobeB_Frame.description>
+  <RGK_Manger.label>食槽</RGK_Manger.label>
+  <RGK_Manger.description>一个动物用的食槽。你可以在中储存食物和干草。</RGK_Manger.description>
+  <RGK_Manger_Blueprint.label>食槽 (蓝图)</RGK_Manger_Blueprint.label>
+  <RGK_Manger_Blueprint_Install.label>食槽 (蓝图)</RGK_Manger_Blueprint_Install.label>
+  <RGK_Manger_Frame.label>食槽 (建造中)</RGK_Manger_Frame.label>
+  <RGK_Manger_Frame.description>一个动物用的食槽。你可以在中储存食物和干草。</RGK_Manger_Frame.description>
+  <!-- 선반 -->
+  <GL_Shelf.label>置物架</GL_Shelf.label>
+  <GL_Shelf.description>存放杂物的架子。即使在户外，存储在其中的物品也不会老化。</GL_Shelf.description>
+  <GL_Shelf_Blueprint.label>置物架 (蓝图)</GL_Shelf_Blueprint.label>
+  <GL_Shelf_Blueprint_Install.label>置物架 (蓝图)</GL_Shelf_Blueprint_Install.label>
+  <GL_Shelf_Frame.label>置物架 (建造中)</GL_Shelf_Frame.label>
+  <GL_Shelf_Frame.description>存放杂物的架子。即使在户外，存储在其中的物品也不会老化。</GL_Shelf_Frame.description>
+  <!-- 개밥그릇 -->
+  <GL_Bookshelf.label>书架</GL_Bookshelf.label>
+  <GL_Bookshelf.description>提高研究速度，需要放置在研究台附近。一个研究台最多同时链接两个书架。</GL_Bookshelf.description>
+  <GL_Bookshelf_Blueprint.label>书架 (蓝图)</GL_Bookshelf_Blueprint.label>
+  <GL_Bookshelf_Blueprint_Install.label>书架 (蓝图)</GL_Bookshelf_Blueprint_Install.label>
+  <GL_Bookshelf_Frame.label>书架 (建造中)</GL_Bookshelf_Frame.label>
+  <GL_Bookshelf_Frame.description>提高研究速度，需要放置在研究台附近。一个研究台最多同时链接两个书架。</GL_Bookshelf_Frame.description>
+  <!-- 식기장 -->
+  <GL_Cupboard.label>橱柜</GL_Cupboard.label>
+  <GL_Cupboard.description>置放餐具的橱柜。放置在灶台附近时，加快烹饪速度。</GL_Cupboard.description>
+  <GL_Cupboard_Blueprint.label>橱柜 (蓝图)</GL_Cupboard_Blueprint.label>
+  <GL_Cupboard_Blueprint_Install.label>橱柜 (蓝图)</GL_Cupboard_Blueprint_Install.label>
+  <GL_Cupboard_Frame.label>橱柜 (建造中)</GL_Cupboard_Frame.label>
+  <GL_Cupboard_Frame.description>置放餐具的橱柜。放置在灶台附近时，加快烹饪速度。</GL_Cupboard_Frame.description>
+  <!-- 식기선반 -->
+  <GL_TablewareShelf.label>餐具台</GL_TablewareShelf.label>
+  <GL_TablewareShelf.description>置放餐具的台子。放置在灶台附近时，加快烹饪速度。</GL_TablewareShelf.description>
+  <GL_TablewareShelf_Blueprint.label>餐具台 (蓝图)</GL_TablewareShelf_Blueprint.label>
+  <GL_TablewareShelf_Blueprint_Install.label>餐具台 (蓝图)</GL_TablewareShelf_Blueprint_Install.label>
+  <GL_TablewareShelf_Frame.label>餐具台 (建造中)</GL_TablewareShelf_Frame.label>
+  <GL_TablewareShelf_Frame.description>置放餐具的台子。放置在灶台附近时，加快烹饪速度。</GL_TablewareShelf_Frame.description>
+  <RGK_DogBowl.label>食盆</RGK_DogBowl.label>
+  <RGK_DogBowl.description>一个动物的食碗。你可以在中储存食物和干草。</RGK_DogBowl.description>
+  <RGK_DogBowl_Blueprint.label>食盆 (蓝图)</RGK_DogBowl_Blueprint.label>
+  <RGK_DogBowl_Blueprint_Install.label>食盆 (蓝图)</RGK_DogBowl_Blueprint_Install.label>
+  <RGK_DogBowl_Frame.label>食盆 (建造中)</RGK_DogBowl_Frame.label>
+  <RGK_DogBowl_Frame.description>一个动物的食盆。你可以在中储存食物和干草。</RGK_DogBowl_Frame.description>
+  <!-- 보관함 -->
+  <GL_Locker.label>储物箱</GL_Locker.label>
+  <GL_Locker.description>存放杂物的储物柜。即使在户外，存储在其中的物品也不会老化。它还可以有效防止储存在其中物品被火损坏。</GL_Locker.description>
+  <GL_Locker_Blueprint.label>储物箱 (蓝图)</GL_Locker_Blueprint.label>
+  <GL_Locker_Blueprint_Install.label>储物箱 (蓝图)</GL_Locker_Blueprint_Install.label>
+  <GL_Locker_Frame.label>储物箱 (建造中)</GL_Locker_Frame.label>
+  <GL_Locker_Frame.description>存放杂物的储物柜。即使在户外，存储在其中的物品也不会老化。它还可以有效防止储存在其中物品被火损坏。</GL_Locker_Frame.description>
+  <!-- 모조 화분 -->
+  <RGK_Flower.label>仿真花盆</RGK_Flower.label>
+  <RGK_Flower.description>花盆复制品。永远盛开。</RGK_Flower.description>
+  <RGK_Flower_Blueprint.label>仿真花盆 (蓝图)</RGK_Flower_Blueprint.label>
+  <RGK_Flower_Blueprint_Install.label>仿真花盆 (蓝图)</RGK_Flower_Blueprint_Install.label>
+  <RGK_Flower_Frame.label>仿真花盆 (建造中)</RGK_Flower_Frame.label>
+  <RGK_Flower_Frame.description>花盆复制品。永远盛开。</RGK_Flower_Frame.description>
+  <RGK_Teaset.label>茶具</RGK_Teaset.label>
+  <RGK_Teaset.description>这是一套装饰性的茶具。它看起来很奢华，奢华到让人不舍得使用它。</RGK_Teaset.description>
+  <RGK_Teaset_Blueprint.label>茶具 (蓝图)</RGK_Teaset_Blueprint.label>
+  <RGK_Teaset_Blueprint_Install.label>茶具 (蓝图)</RGK_Teaset_Blueprint_Install.label>
+  <RGK_Teaset_Frame.label>茶具 (建造中)</RGK_Teaset_Frame.label>
+  <RGK_Teaset_Frame.description>这是一套装饰性的茶具。它看起来很奢华，奢华到让人不舍得使用它。</RGK_Teaset_Frame.description>
+  <!-- 곰인형 -->
+  <GL_Teddy.label>泰迪熊</GL_Teddy.label>
+  <GL_Teddy.description>一只毛茸茸的泰迪熊玩具。</GL_Teddy.description>
+  <GL_Teddy_Blueprint.label>泰迪熊 (蓝图)</GL_Teddy_Blueprint.label>
+  <GL_Teddy_Blueprint_Install.label>泰迪熊 (蓝图)</GL_Teddy_Blueprint_Install.label>
+  <GL_Teddy_Frame.label>泰迪熊 (建造中)</GL_Teddy_Frame.label>
+  <GL_Teddy_Frame.description>一只毛茸茸的泰迪熊玩具。</GL_Teddy_Frame.description>
+</LanguageData>

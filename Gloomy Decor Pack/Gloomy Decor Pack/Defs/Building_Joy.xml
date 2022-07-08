@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingJoyBase">
+        <defName>GL_ChessTable</defName>
+        <label>chess table</label>
+        <description>The ancient game of kings. Fun for a few hours here and there, even playing alone.</description>
+        <graphicData>
+            <texPath>Things/Building/Joy/RGK_ChessTable</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+            <shadowData>
+                <volume>(0.65, 0.25, 0.6)</volume>
+                <offset>(0, 0, -0.15)</offset>
+            </shadowData>
+            <damageData>
+                <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <rotatable>false</rotatable>
+		<fillPercent>0.40</fillPercent>
+		<statBases>
+			<Mass>5</Mass>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1600</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+			<JoyGainFactor>1.05</JoyGainFactor>
+		</statBases>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Woody</li>
+			<li>Precious</li>
+			<li>Plastic</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<ComponentMedieval>4</ComponentMedieval>
+		</costList>
+		<building>
+			<joyKind>Gaming_Cerebral</joyKind>
+		</building>
+		<researchPrerequisites>
+			<li>Harp</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+
+    <!--포커-->
+    <ThingDef ParentName="BuildingQualityJoyBase">
+        <defName>GL_PokerTable</defName>
+        <label>poker table</label>
+        <description>A table designed for playing gambling card games like poker. A great way to test your strategic skills and a bit of luck.</description>
+        <graphicData>
+            <texPath>Things/Building/Joy/GF_PokerTable</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(4,4)</drawSize>
+            <shadowData>
+                <volume>(1.6, 0.3, 1.6)</volume>
+                <offset>(0, 0, -0.15)</offset>
+            </shadowData>
+        </graphicData>
+        <fillPercent>0.40</fillPercent>
+        <statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>120</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>0</Beauty>
+			<JoyGainFactor>1</JoyGainFactor>
+		</statBases>
+		<size>(2,2)</size>
+		<stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Woody</li>
+			<li>Precious</li>
+			<li>Plastic</li>
+		</stuffCategories>
+		<costStuffCount>80</costStuffCount>
+		<costList>
+			<Cloth>60</Cloth>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<building>
+			<joyKind>Gaming_Cerebral</joyKind>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+		</building>
+        <canOverlapZones>false</canOverlapZones>
+		<researchPrerequisites>
+			<li>Piano</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+        <uiIconScale>0.9</uiIconScale>
+    </ThingDef>
+
+    <!--당구-->
+    <ThingDef ParentName="BuildingQualityJoyBase">
+        <defName>GL_BilliardsTable</defName>
+        <label>billiards table</label>
+        <description>A soft-topped bounded table for playing a variety of billiards-type games. It trains shooting ability.</description>
+        <graphicData>
+            <texPath>Things/Building/Joy/GF_BilliardsTable</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(4,4)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <staticSunShadowHeight>0.2</staticSunShadowHeight>
+        <fillPercent>0.40</fillPercent>
+        <statBases>
+			<Mass>120</Mass>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>4100</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>10</Beauty>
+			<JoyGainFactor>1.1</JoyGainFactor>
+		</statBases>
+        <size>(2,3)</size>
+        <stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Woody</li>
+			<li>Precious</li>
+			<li>Plastic</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+		<costList>
+			<Cloth>60</Cloth>
+		</costList>
+        <building>
+			<joyKind>Gaming_Dexterity</joyKind>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+		</building>
+		<canOverlapZones>false</canOverlapZones>
+		<placeWorkers>
+			<li>PlaceWorker_NeverAdjacentUnstandable</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>Piano</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <!--티비-->
+
+    <ThingDef ParentName="BuildingJoyBase">
+        <defName>GL_TubeTelevision</defName>
+        <label>tube television</label>
+        <description>A cathode ray tube display for showing moving pictures with sound. Even on the rimworlds, there is often an old transmitter running something at least marginally interesting.</description>
+        <graphicData>
+            <texPath>Things/Building/Joy/RGK_TV</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(3,3)</drawSize>
+            <shadowData>
+                <volume>(0.5, 0.3, 0.4)</volume>
+            </shadowData>
+        </graphicData>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <rotatable>true</rotatable>
+        <fillPercent>0.40</fillPercent>
+        <statBases>
+			<Mass>8</Mass>
+			<WorkToBuild>4000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<MarketValue>700</MarketValue>
+			<Beauty>10</Beauty>
+			<JoyGainFactor>1</JoyGainFactor>
+		</statBases>
+        <costList>
+			<Glass>15</Glass>
+			<Rubber>10</Rubber>
+			<Plastic>30</Plastic>
+			<Electronics>3</Electronics>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+        <building>
+            <joyKind>Television</joyKind>
+            <spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+            <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+            <watchBuildingStandDistanceRange>2~4</watchBuildingStandDistanceRange>
+            <watchBuildingStandRectWidth>5</watchBuildingStandRectWidth>
+            <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+            <effectWatching>WatchingTelevision</effectWatching>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_WatchArea</li>
+        </placeWorkers>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>200</basePowerConsumption>
+			</li>
+        </comps>
+        <tradeTags>
+            <li>Television</li>
+        </tradeTags>
+        <defaultPlacingRot>South</defaultPlacingRot>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>TubeTelevision</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <uiIconScale>0.9</uiIconScale>
+    </ThingDef>
+</Defs>

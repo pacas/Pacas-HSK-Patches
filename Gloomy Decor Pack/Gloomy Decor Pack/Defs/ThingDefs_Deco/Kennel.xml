@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>GloomyDeco_Kennel</defName>
+        <label>simple kennel</label>
+        <description>A comfy home for small animals. For some reason, the animals sleep in anywhere except for these houses.</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <graphicData>
+            <texPath>GloomyDeco/Kennel</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.5,1.5)</drawSize>
+            <damageData>
+                <rect>(0.1,0.1,0.8,0.8)</rect>
+            </damageData>
+            <shadowData>
+                <volume>(0.5,0.5,0.5)</volume>
+                <offset>(0,0,0.0)</offset>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>40</pathCost>
+        <canOverlapZones>true</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <WorkToBuild>800</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>10</Mass>
+            <BedRestEffectiveness>1.2</BedRestEffectiveness>
+            <Comfort>1.00</Comfort>
+            <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+            <SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+            <Beauty>10</Beauty>
+        </statBases>
+        <size>(1,1)</size>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>50</costStuffCount>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Accessories</designationCategory>
+        <!-- custom -->
+        <resourcesFractionWhenDeconstructed>0.2</resourcesFractionWhenDeconstructed>
+        <fillPercent>0.2</fillPercent>
+        <thingClass>Building_Bed</thingClass>
+        <building>
+            <bed_humanlike>false</bed_humanlike>
+            <bed_maxBodySize>0.55</bed_maxBodySize>
+            <bed_showSleeperBody>false</bed_showSleeperBody>
+            <bed_healPerDay>4</bed_healPerDay>
+        </building>
+        <comps>
+            <li Class="CompProperties_AssignableToPawn">
+                <drawAssignmentOverlay>false</drawAssignmentOverlay>
+                <compClass>CompAssignableToPawn_Bed</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

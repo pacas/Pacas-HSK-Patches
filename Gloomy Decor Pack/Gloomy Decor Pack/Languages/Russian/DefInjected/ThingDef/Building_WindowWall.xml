@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 벽 -->
+
+  <RGK_Wall.label>стена</RGK_Wall.label>
+  <RGK_Wall.description>Непроходимая стена. Достаточно прочная, чтобы поддерживать крышу.</RGK_Wall.description>
+  <RGK_Wall_Blueprint.label>wall (проект)</RGK_Wall_Blueprint.label>
+  <RGK_Wall_Frame.label>wall (сборка)</RGK_Wall_Frame.label>
+  <RGK_Wall_Frame.description>Непроходимая стена. Достаточно прочная, чтобы поддерживать крышу.</RGK_Wall_Frame.description>
+
+
+  <!-- 신규 벽 -->
+
+  <GL_Wall.label>стена</GL_Wall.label>
+  <GL_Wall.description>Непроходимая стена. Достаточно прочная, чтобы поддерживать крышу.</GL_Wall.description>
+  <GL_Wall_Blueprint.label>стена (проект)</GL_Wall_Blueprint.label>
+  <GL_Wall_Frame.label>стена (сборка)</GL_Wall_Frame.label>
+  <GL_Wall_Frame.description>Непроходимая стена. Достаточно прочная, чтобы поддерживать крышу.</GL_Wall_Frame.description>
+
+
+  <!-- 환풍벽 -->
+
+  <RGK_VentWall.label>вентиляционная стена</RGK_VentWall.label>
+  <RGK_VentWall.description>Стена, обеспечивающая циркуляцию воздуха в помещении.</RGK_VentWall.description>
+  <RGK_VentWall_Blueprint.label>вентиляционная стена (проект)</RGK_VentWall_Blueprint.label>
+  <RGK_VentWall_Frame.label>вентиляционная стена (сборка)</RGK_VentWall_Frame.label>
+  <RGK_VentWall_Frame.description>Стена, обеспечивающая циркуляцию воздуха в помещении.</RGK_VentWall_Frame.description>
+
+
+  <!-- 신규 환풍벽 -->
+
+  <GL_VentWall.label>вентиляционная стена</GL_VentWall.label>
+  <GL_VentWall.description>Стена, обеспечивающая циркуляцию воздуха в помещении.</GL_VentWall.description>
+  <GL_VentWall_Blueprint.label>вентиляционная стена (проект)</GL_VentWall_Blueprint.label>
+  <GL_VentWall_Frame.label>вентиляционная стена (сборка)</GL_VentWall_Frame.label>
+  <GL_VentWall_Frame.description>Стена, обеспечивающая циркуляцию воздуха в помещении.</GL_VentWall_Frame.description>
+
+
+  <!-- 창문 -->
+
+  <RGK_window.label>окно</RGK_window.label>
+  <RGK_window.description>Окно, через которое может проходить свет.</RGK_window.description>
+  <RGK_window_Blueprint_Install.label>окно (проект)</RGK_window_Blueprint_Install.label>
+
+  <RGK_WindowWall.label>оконная стена</RGK_WindowWall.label>
+  <RGK_WindowWall.description>Окно, через которое может проходить свет.</RGK_WindowWall.description>
+  <RGK_WindowWall_Blueprint.label>оконная стена (проект)</RGK_WindowWall_Blueprint.label>
+  <RGK_WindowWall_Frame.label>оконная стена (сборка)</RGK_WindowWall_Frame.label>
+  <RGK_WindowWall_Frame.description>Окно, через которое может проходить свет.</RGK_WindowWall_Frame.description>
+
+
+  <!-- 신규 창문 -->
+
+  <GL_WindowWall.label>оконная стена</GL_WindowWall.label>
+  <GL_WindowWall.description>Окно, через которое может проходить свет.</GL_WindowWall.description>
+  <GL_WindowWall_Blueprint.label>оконная стена (проект)</GL_WindowWall_Blueprint.label>
+  <GL_WindowWall_Frame.label>оконная стена (сборка)</GL_WindowWall_Frame.label>
+  <GL_WindowWall_Frame.description>Окно, через которое может проходить свет.</GL_WindowWall_Frame.description>
+
+
+  <!-- 울타리 -->
+
+  <RGK_WoodFence.label>забор</RGK_WoodFence.label>
+  <RGK_WoodFence.description>Забор, чтобы удерживать домашний скот или защищать его от диких зверей.</RGK_WoodFence.description>
+  <RGK_WoodFence_Blueprint.label>забор (проект)</RGK_WoodFence_Blueprint.label>
+  <RGK_WoodFence_Frame.label>забор (сборка)</RGK_WoodFence_Frame.label>
+  <RGK_WoodFence_Frame.description>Забор, чтобы удерживать домашний скот или защищать его от диких зверей.</RGK_WoodFence_Frame.description>
+
+
+  <!-- 꽃벽 -->
+
+  <GL_FlowerWall.label>цветочная стена</GL_FlowerWall.label>
+  <GL_FlowerWall.description>Стена, украшенная цветами.</GL_FlowerWall.description>
+  <GL_FlowerWall_Blueprint.label>цветочная стена (проект)</GL_FlowerWall_Blueprint.label>
+  <GL_FlowerWall_Frame.label>цветочная стена (сборка)</GL_FlowerWall_Frame.label>
+  <GL_FlowerWall_Frame.description>Стена, украшенная цветами.</GL_FlowerWall_Frame.description>
+
+
+  <!-- 올드스타일 문 -->
+
+  <RGK_DoorOld.label>резная дверь</RGK_DoorOld.label>
+  <RGK_DoorOld.description>Простая дверь, которую нужно открывать и закрывать вручную. Время открывания и закрывания зависит от материала изготовления.</RGK_DoorOld.description>
+
+
+  <!-- 울타리문 -->
+
+  <RGK_Door.label>дверь</RGK_Door.label>
+  <RGK_Door.description>Простая дверь, которую нужно открывать и закрывать вручную. Время открывания и закрывания зависит от материала изготовления.</RGK_Door.description>
+
+
+  <!-- 문틀 -->
+
+  <GL_DoorFrame.label>дверная арка</GL_DoorFrame.label>
+  <GL_DoorFrame.description>Дверная арка, которую можно использовать как дверной проем или для украшения двери.</GL_DoorFrame.description>
+
+
+  <!-- 19.03.17 바닥 경계석 -->
+
+  <GL_BoundaryWood.label>бордюр</GL_BoundaryWood.label>
+  <GL_BoundaryWood.description>Бордюр, предназначенный для украшения дорожек.</GL_BoundaryWood.description>
+  <GL_BoundaryWood_Blueprint.label>бордюр (проект)</GL_BoundaryWood_Blueprint.label>
+  <GL_BoundaryWood_Frame.label>бордюр (сборка)</GL_BoundaryWood_Frame.label>
+  <GL_BoundaryWood_Frame.description>Бордюр, предназначенный для украшения дорожек.</GL_BoundaryWood_Frame.description>
+
+  <GL_BoundaryStone.label>бордюр</GL_BoundaryStone.label>
+  <GL_BoundaryStone.description>Бордюр, предназначенный для украшения дорожек.</GL_BoundaryStone.description>
+  <GL_BoundaryStone_Blueprint.label>бордюр (проект)</GL_BoundaryStone_Blueprint.label>
+  <GL_BoundaryStone_Frame.label>бордюр (сборка)</GL_BoundaryStone_Frame.label>
+  <GL_BoundaryStone_Frame.description>Бордюр, предназначенный для украшения дорожек.</GL_BoundaryStone_Frame.description>
+
+  <GL_BoundaryWoodCorner.label>уголок</GL_BoundaryWoodCorner.label>
+  <GL_BoundaryWoodCorner.description>Уголок, предназначенный для украшения дорожек.</GL_BoundaryWoodCorner.description>
+  <GL_BoundaryWoodCorner_Blueprint.label>уголок (проект)</GL_BoundaryWoodCorner_Blueprint.label>
+  <GL_BoundaryWoodCorner_Frame.label>уголок (сборка)</GL_BoundaryWoodCorner_Frame.label>
+  <GL_BoundaryWoodCorner_Frame.description>Уголок, предназначенный для украшения дорожек.</GL_BoundaryWoodCorner_Frame.description>
+
+  <GL_BoundaryStoneCorner.label>каменный уголок</GL_BoundaryStoneCorner.label>
+  <GL_BoundaryStoneCorner.description>Уголок, предназначенный для украшения дорожек.</GL_BoundaryStoneCorner.description>
+  <GL_BoundaryStoneCorner_Blueprint.label>каменный уголок (проект)</GL_BoundaryStoneCorner_Blueprint.label>
+  <GL_BoundaryStoneCorner_Frame.label>каменный уголок (сборка)</GL_BoundaryStoneCorner_Frame.label>
+  <GL_BoundaryStoneCorner_Frame.description>Уголок, предназначенный для украшения дорожек.</GL_BoundaryStoneCorner_Frame.description>
+  <!-- window -->
+
+</LanguageData>

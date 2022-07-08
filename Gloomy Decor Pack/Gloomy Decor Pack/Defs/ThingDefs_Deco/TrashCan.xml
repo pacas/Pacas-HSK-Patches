@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>GloomyDeco_TrashCan</defName>
+        <label>trash can</label>
+        <description>It's a trash can that you can throw away trash.\n\nBlock up to 10 trash falling around. (same room)\nIf more than 8 trash, your colonist will clean.\nIf more than 10 trash, cleanliness and beauty will be reduced.</description>
+        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>GloomyDeco/TrashCan</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+            <damageData>
+                <rect>(0.1,0.1,0.8,0.8)</rect>
+            </damageData>
+            <shadowData>
+                <volume>(0.6,0.6,0.6)</volume>
+                <offset>(0,0,0.0)</offset>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>20</pathCost>
+        <canOverlapZones>true</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>600</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>6</Mass>
+            <Beauty>2</Beauty>
+        </statBases>
+        <size>(1,1)</size>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <costList>
+            <Plasteel>15</Plasteel>
+        </costList>
+        <defaultPlacingRot>North</defaultPlacingRot>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Furniture</designationCategory>
+        <!-- custom -->
+    </ThingDef>
+
+    <JobDef>
+        <defName>GloomyDeco_JobDriver_CleaningTrashCan</defName>
+        <driverClass>GloomyDeco.GloomyDeco_JobDriver_CleaningTrashCan</driverClass>
+        <reportString>cleaning TargetA.</reportString>
+    </JobDef>
+
+    <WorkGiverDef>
+        <defName>GloomyDeco_CleaningTrashCan</defName>
+        <label>cleaning trash can</label>
+        <giverClass>GloomyDeco.GloomyDeco_WorkGiver_CleaningTrashCan</giverClass>
+        <workType>Cleaning</workType>
+        <verb>clean</verb>
+        <gerund>cleaning</gerund>
+        <priorityInType>1</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+</Defs>
