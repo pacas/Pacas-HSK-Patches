@@ -5,12 +5,25 @@
         <mods>
             <li>Vile's Hardcore Renovations</li>
         </mods>
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fences"]/defNames</xpath>
-            <value>
-                <li>RGK_WoodFence</li>
-                <li>RGK_Door</li>
-            </value>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RGK_Wall" or defName="RGK_VentWall" or defName="RGK_WindowWall" or defName="GL_FlowerWall"]/stuffCategories</xpath>
+                <value>
+                    <stuffCategories>
+                        <li>SoftwoodLumber</li>
+                        <li>HardwoodLumber</li>
+                        <li>UltrahardwoodLumber</li>	
+                    </stuffCategories>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Fences"]/defNames</xpath>
+                <value>
+                    <li>RGK_WoodFence</li>
+                    <li>RGK_Door</li>
+                </value>
+            </li>
         </match>
         <nomatch Class="PatchOperationAdd">
             <xpath>Defs</xpath>
