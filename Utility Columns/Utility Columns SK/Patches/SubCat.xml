@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>[LTS]Furnishing</li>
-        </mods>
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Columns"]/defNames</xpath>
-            <value>
-                <li>LightColumnMod</li>
-                <li>OrbitalTradeColumnMod</li>
-                <li>SunColumnMod</li>
-                <li>IceColumnMod</li>
-                <li>GraveColumnMod</li>
-            </value>
-        </match>
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ArchitectSense.DesignationSubCategoryDef[defName="Columns"]</xpath>
         <nomatch Class="PatchOperationAdd">
             <xpath>Defs</xpath>
             <value>
                 <ArchitectSense.DesignationSubCategoryDef>
                     <defName>Columns</defName>
                     <label>Columns</label>
-                    <description>Various Columns.</description>
+                    <description>Various columns.</description>
                     <defNames>
                         <li>Column</li>
                         <li>LightColumnMod</li>
@@ -35,5 +22,15 @@
                 </ArchitectSense.DesignationSubCategoryDef>
             </value>
         </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Columns"]/defNames</xpath>
+            <value>
+                <li>LightColumnMod</li>
+                <li>OrbitalTradeColumnMod</li>
+                <li>SunColumnMod</li>
+                <li>IceColumnMod</li>
+                <li>GraveColumnMod</li>
+            </value>
+        </match>
     </Operation>
 </Patch>
