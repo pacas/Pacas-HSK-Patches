@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="BuildingBase">
+    <ThingDef ParentName="SK_BuildingBase">
         <defName>GloomyDeco_Well</defName>
         <label>well</label>
-        <description>A well that can be used to acquire groundwater when dug far down. There seems to be no use for this.</description>
+        <description>A well that can be used to acquire groundwater when dug far down. Fresh water!</description>
         <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
         <graphicData>
             <texPath>GloomyDeco/Well</texPath>
@@ -20,8 +20,8 @@
         <pathCost>80</pathCost>
         <canOverlapZones>true</canOverlapZones>
         <statBases>
-            <MaxHitPoints>140</MaxHitPoints>
-            <WorkToBuild>1200</WorkToBuild>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>12000</WorkToBuild>
             <Flammability>1.0</Flammability>
             <Mass>20</Mass>
             <Beauty>20</Beauty>
@@ -33,6 +33,8 @@
         <costStuffCount>80</costStuffCount>
         <costList>
             <Plasteel>20</Plasteel>
+            <ComponentIndustrial>6</ComponentIndustrial>	
+			<Mechanism>2</Mechanism>
         </costList>
         <defaultPlacingRot>South</defaultPlacingRot>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Dubs Bad Hygiene</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="GloomyDeco_Well"]</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li MayRequire="dbhlitemode">Hygiene_13</li>
+                        </researchPrerequisites>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="GloomyDeco_Well"]</xpath>
+                    <value>
+                        <placeWorkers>
+                            <li>DubsBadHygiene.PlaceWorker_WaterGrid</li>
+                            <li>DubsBadHygiene.PlaceWorker_SewageGrid</li>
+                        </placeWorkers>
+                        <comps>
+                            <li Class="DubsBadHygiene.CompProperties_WaterInlet">
+                                <compClass>DubsBadHygiene.CompBaseWell</compClass>
+                                <Radius>10.9</Radius>
+                            </li>
+                            <li Class="CompProperties_Forbiddable"/>
+                        </comps>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="GloomyDeco_Well"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Hygiene</designationCategory>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_PropsandDecor1"]/defNames</xpath>
+                    <value>
+                        <defNames>
+                            <li>GloomyDeco_Board</li>
+                            <li>GloomyDeco_Kennel</li>
+                            <li>GloomyDeco_Bucket</li>
+                            <li>RGK_bucketr</li>
+                            <li>RGK_orc</li>
+                            <li>GloomyDeco_Cart</li>
+                            <li>GloomyDeco_Lumberjack</li>
+                            <li>GloomyDeco_MailBox</li>
+                            <li>GloomyDeco_Rope</li>
+                            <li>GloomyDeco_Boat</li>
+                            <li>GloomyDeco_Scarecrow</li>
+                            <li>GloomyDeco_Sign</li>
+                            <li>GloomyDeco_Stone</li>
+                            <li>GloomyDeco_Tree</li>
+                            <li>GloomyDeco_Tool</li>
+                            <li>GloomyDeco_Windmill</li>
+                        </defNames>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_WaterWells"]/defNames</xpath>
+                    <value>
+                        <li>GloomyDeco_Well</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

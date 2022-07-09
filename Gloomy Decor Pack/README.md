@@ -11,7 +11,7 @@ Convertion and compilation of these mods:<br>
 <br><br>
 <img src="https://i.imgur.com/svEwA2k.png"><br><br>
 **What is it?**<br><br>
-In general, this is rustic style pack with furniture, storage, utlities and just props. Fixed and updated, reworked and sometimes removed.<br>
+In general, this is rustic style pack with furniture, storage, utilities and just props. Fixed and updated, reworked and sometimes removed.<br>
 I really recommend to look at the mods pages.<br><br><br>
 **Что это такое?**<br><br>
 В целом, это пак в деревенском стиле с мебелью, хранилищами, улучшениями и просто декором. Исправленные и обновленные, переработанные и иногда удаленные.<br>

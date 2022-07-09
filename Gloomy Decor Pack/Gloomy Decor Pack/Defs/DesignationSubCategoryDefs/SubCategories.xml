@@ -6,12 +6,25 @@
 		<label>edging</label>
 		<description>Beautiful little additions.</description>
 		<defNames>
-			<li>GL_BoundaryWood</li>
+            <li>GL_BoundaryWood</li>
 			<li>GL_BoundaryStone</li>
 			<li>GL_BoundaryWoodCorner</li>
 			<li>GL_BoundaryStoneCorner</li>
+			<li>RGK_Fireplace</li>
+            <li>RGK_FireplaceE</li>
 		</defNames>
 		<designationCategory>Structure</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_FireplacesGloomy</defName>
+		<label>fireplaces</label>
+		<description>Comfy main hall gather point.</description>
+		<defNames>
+			<li>RGK_Fireplace</li>
+            <li>RGK_FireplaceE</li>
+		</defNames>
+		<designationCategory>Temperature</designationCategory>
 	</ArchitectSense.DesignationSubCategoryDef>
     
     <ArchitectSense.DesignationSubCategoryDef>
@@ -96,8 +109,6 @@
             <li>RGK_Teaset</li>
             <li>GL_Teddy</li>
             <li>GloomyDeco_TrashCan</li>
-            <li>RGK_Fireplace</li>
-            <li>RGK_FireplaceE</li>
 		</defNames>
 		<designationCategory>Furniture</designationCategory>
 	</ArchitectSense.DesignationSubCategoryDef>
