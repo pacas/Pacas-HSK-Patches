@@ -13,7 +13,7 @@ All columns hold up the roof, beware of possible roof collapse when moving.<br>
 Для улучшения ваших залов и комнат! Добавляет несколько типов полезных колонн.<br>
 Все колонны поддерживают крышу, остерегайтесь возможного обрушения крыши при перемещении.<br><br>
 <img src="https://i.imgur.com/5KVUmeE.png"><br>
-Q: Where two columns?<br>
+Q: Where are two columns?<br>
 A: Deleted in 1.2 patch for a reason.<br>
 Q: Где две колонны?<br>
 A: Вырезаны ещё в патче для 1.2.<br>

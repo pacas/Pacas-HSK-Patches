@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ResearchProjectDef ParentName="HitechBase">
+        <defName>HeavyShieldBelts</defName>
+        <label>Heavy Shield Belts</label>
+        <description>Advances in repulsion field generators allow the use of stronger capacitors, granting increased maximum charge.</description>
+        <baseCost>1300</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>ShieldBelt</li>
+        </prerequisites>
+        <tab>Apparel_SK</tab>
+        <researchViewX>18.00</researchViewX>
+        <researchViewY>42.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechBase">
+        <defName>QRShieldBelts</defName>
+        <label>Quick-Recharge Shield Belts</label>
+        <description>Integration of nano-scale radioisotope generators into the repulsion field generator allows production of shields which recharge faster.</description>
+        <baseCost>1300</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>ShieldBelt</li>
+        </prerequisites>
+        <tab>Apparel_SK</tab>
+        <researchViewX>18.00</researchViewX>
+        <researchViewY>43.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechBase">
+        <defName>RangedShieldBelts</defName>
+        <label>Ranged Shield Belts</label>
+        <description>Usage of advanced microchips grants greater processing power, allowing belts to differentiate between incoming and outgoing projectiles.</description>
+        <baseCost>3200</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>HeavyShieldBelts</li>
+            <li>QRShieldBelts</li>
+        </prerequisites>
+        <tab>Apparel_SK</tab>
+        <researchViewX>19.00</researchViewX>
+        <researchViewY>42.00</researchViewY>
+    </ResearchProjectDef>
+</Defs>

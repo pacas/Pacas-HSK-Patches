@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- if Royalty installed (technically if the right PawnKind exists), give their combatants ranged shield belts -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]</xpath>
+		<success>Always</success>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/PawnKindDef[@Name="ImperialFighterBase"]/apparelTags</xpath>
+			<value><li>RangedShieldBelt</li></value>
+		</match>
+	</Operation>
+</Patch>
