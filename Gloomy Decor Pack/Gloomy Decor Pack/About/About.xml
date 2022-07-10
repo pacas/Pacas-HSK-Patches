@@ -26,13 +26,16 @@
             <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
         </li>
         <li>
-            <packageId>thelonetec.tsap</packageId>
+            <packageId>TheLoneTec.TSAP</packageId>
             <displayName>Tec's Assorted Patched</displayName>
+            <downloadUrl>https://github.com/TheLoneTec/Tecs-Assorted-Patches</downloadUrl>
         </li>
     </modDependencies>
     <loadAfter>
         <li>brrainz.harmony</li>
         <li>Ludeon.RimWorld</li>
         <li>skyarkhangel.HSK</li>
+        <li>limetreesnake.furnishing</li>
+        <li>vanillaexpanded.vfecore</li>
     </loadAfter>
 </ModMetaData>
