@@ -28,22 +28,24 @@
             <MaxHitPoints>200</MaxHitPoints>
             <WorkToBuild>2000</WorkToBuild>
             <Flammability>0.05</Flammability>
-            <Mass>10</Mass>
-            <Beauty>15</Beauty>
+            <Mass>25</Mass>
+            <Beauty>8</Beauty>
         </statBases>
         <drawerType>MapMeshAndRealTime</drawerType>
         <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
         <fillPercent>0.25</fillPercent>
         <stuffCategories>
-            <li>Metallic</li>
+            <li>StrongMetallic</li>
             <li>Stony</li>
+            <li>Bricks</li>
         </stuffCategories>
-        <costStuffCount>75</costStuffCount>
+        <costStuffCount>50</costStuffCount>
         <costList>
-            <Glass>7</Glass>
+            <Glass>12</Glass>
+            <Plastic>4</Plastic>
             <ReinforcedConcrete>10</ReinforcedConcrete>
-            <ElectronicComponents>3</ElectronicComponents>
-            <ComponentIndustrial>5</ComponentIndustrial>
+            <ElectronicComponents>4</ElectronicComponents>
+            <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <comps>
             <li Class="RimWorldColumns.CompProperties_Overlays">
@@ -63,8 +65,8 @@
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Forbiddable"/>
             <li Class="CompProperties_Glower">
-                <glowRadius>15</glowRadius>
-                <glowColor>(217,217,208,0)</glowColor>
+                <glowRadius>16</glowRadius>
+                <glowColor>(217,217,217,0)</glowColor>
             </li>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
@@ -72,10 +74,15 @@
                 <basePowerConsumption>100</basePowerConsumption>
             </li>
             <li Class="CompProperties_Breakdownable"/>
+            <li Class="SK.CompProperties_ColoredLight">
+				<compClass>SK.CompColoredLight</compClass>
+			</li>
         </comps>
         <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
         <killedLeavings>
             <ChunkSlagSteel>1</ChunkSlagSteel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+			<ElectronicComponents>1</ElectronicComponents>
         </killedLeavings>
         <pathCost>25</pathCost>
         <passability>PassThroughOnly</passability>
@@ -89,7 +96,7 @@
         <researchPrerequisites>
             <li>Light_C3</li>
         </researchPrerequisites>
-        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <holdsRoof>true</holdsRoof>
         <canOverlapZones>true</canOverlapZones>
         <fertility>0</fertility>
@@ -124,16 +131,17 @@
             <MaxHitPoints>200</MaxHitPoints>
             <WorkToBuild>3000</WorkToBuild>
             <Flammability>0.05</Flammability>
-            <Mass>15</Mass>
+            <Mass>25</Mass>
         </statBases>
         <drawerType>MapMeshAndRealTime</drawerType>
         <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
         <fillPercent>0.25</fillPercent>
         <stuffCategories>
-            <li>Metallic</li>
+            <li>StrongMetallic</li>
             <li>Stony</li>
+            <li>Bricks</li>
         </stuffCategories>
-        <costStuffCount>75</costStuffCount>
+        <costStuffCount>50</costStuffCount>
         <costList>
             <ReinforcedConcrete>10</ReinforcedConcrete>
             <ElectronicComponents>3</ElectronicComponents>
@@ -159,10 +167,10 @@
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
                 <shortCircuitInRain>true</shortCircuitInRain>
-                <basePowerConsumption>60</basePowerConsumption>
+                <basePowerConsumption>120</basePowerConsumption>
             </li>
             <li Class="CompProperties_Glower">
-                <glowRadius>10</glowRadius>
+                <glowRadius>12</glowRadius>
                 <glowColor>(217,217,208,0)</glowColor>
             </li>
             <li Class="CompProperties_Breakdownable"/>
@@ -187,7 +195,7 @@
         <researchPrerequisites>
             <li>Telecommunications_C1</li>
         </researchPrerequisites>
-        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>11</constructionSkillPrerequisite>
         <holdsRoof>true</holdsRoof>
         <canOverlapZones>true</canOverlapZones>
         <fertility>0</fertility>
@@ -220,26 +228,25 @@
             <li>BuildingsMisc</li>
         </thingCategories>
         <statBases>
-            <MaxHitPoints>200</MaxHitPoints>
-            <WorkToBuild>3000</WorkToBuild>
-            <Flammability>0.05</Flammability>
-            <Beauty>25</Beauty>
-            <Mass>15</Mass>
+            <MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>2000</WorkToBuild>
+			<Flammability>0.3</Flammability>
+			<Bulk>25</Bulk>
+			<Mass>15</Mass>
         </statBases>
         <drawerType>MapMeshAndRealTime</drawerType>
         <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-        <fillPercent>0.25</fillPercent>
+        <fillPercent>0.8</fillPercent>
         <stuffCategories>
-            <li>Metallic</li>
-            <li>Stony</li>
+            <li>StrongMetallic</li>
         </stuffCategories>
-        <costStuffCount>75</costStuffCount>
+        <costStuffCount>50</costStuffCount>
         <costList>
             <ReinforcedConcrete>10</ReinforcedConcrete>
-            <Glass>7</Glass>
-            <Electronics>5</Electronics>
-            <ElectronicComponents>3</ElectronicComponents>
-            <ComponentIndustrial>5</ComponentIndustrial>
+            <Glass>10</Glass>
+            <ElectronicComponents>10</ElectronicComponents>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <Mechanism>3</Mechanism>
         </costList>
         <comps>
             <li Class="RimWorldColumns.CompProperties_Overlays">
@@ -285,11 +292,12 @@
             </li>
             <li Class="CompProperties_Breakdownable"/>
         </comps>
-        <specialDisplayRadius>11.8</specialDisplayRadius>
+        <specialDisplayRadius>10.8</specialDisplayRadius>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <killedLeavings>
             <ChunkSlagSteel>1</ChunkSlagSteel>
-            <ComponentIndustrial>2</ComponentIndustrial>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <ElectronicComponents>2</ElectronicComponents>
         </killedLeavings>
         <pathCost>25</pathCost>
         <passability>PassThroughOnly</passability>
@@ -303,7 +311,7 @@
         <researchPrerequisites>
             <li>Cultivation_C1</li>
         </researchPrerequisites>
-        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
         <holdsRoof>true</holdsRoof>
         <canOverlapZones>true</canOverlapZones>
         <fertility>0</fertility>
@@ -347,10 +355,9 @@
         <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
         <fillPercent>0.25</fillPercent>
         <stuffCategories>
-            <li>Metallic</li>
-            <li>Stony</li>
+            <li>StrongMetallic</li>
         </stuffCategories>
-        <costStuffCount>75</costStuffCount>
+        <costStuffCount>50</costStuffCount>
         <costList>
             <ReinforcedConcrete>10</ReinforcedConcrete>
             <Coldstone>35</Coldstone>
@@ -374,7 +381,7 @@
             </li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Glower">
-                <glowRadius>11</glowRadius>
+                <glowRadius>16</glowRadius>
                 <glowColor>(125,125,225,0)</glowColor>
             </li>
             <li Class="CompProperties_Power">
@@ -450,7 +457,7 @@
             <fixedStorageSettings>
                 <filter>
                     <categories>
-                        <li>CorpsesHumanlike</li>
+                        <li>Corpses</li>
                     </categories>
                 </filter>
             </fixedStorageSettings>
@@ -465,17 +472,21 @@
                     </specialFiltersToDisallow>
                 </filter>
             </defaultStorageSettings>
+            <buildingTags>
+				<li>RitualFocus</li>
+			</buildingTags>
         </building>
         <statBases>
             <WorkToBuild>3000</WorkToBuild>
             <MaxHitPoints>300</MaxHitPoints>
             <Flammability>0</Flammability>
-            <Beauty>50</Beauty>
+            <Beauty>10</Beauty>
             <MeditationFocusStrength>0.15</MeditationFocusStrength>
         </statBases>
         <stuffCategories>
             <li>Stony</li>
-            <li>Metallic</li>
+            <li>Bricks</li>
+            <li>StrongMetallic</li>
         </stuffCategories>
         <inspectorTabs>
             <li>ITab_Storage</li>
@@ -523,6 +534,9 @@
                 </offsets>
             </li>
         </comps>
+        <placeWorkers>
+			<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+		</placeWorkers>
         <costStuffCount>150</costStuffCount>
         <pathCost>25</pathCost>
         <passability>PassThroughOnly</passability>
@@ -532,10 +546,14 @@
         <researchPrerequisites>
             <li>Construction_B1</li>
         </researchPrerequisites>
-        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>11</constructionSkillPrerequisite>
         <holdsRoof>true</holdsRoof>
         <canOverlapZones>true</canOverlapZones>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <ritualFocus>
+			<spectateDistance>1</spectateDistance>
+			<allowedSpectateSides>Vertical</allowedSpectateSides>
+		</ritualFocus>
     </ThingDef>
   
 </Defs>
