@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="BuildingBase">
+    <ThingDef ParentName="SK_BuildingBase">
         <defName>LightColumnMod</defName>
         <label>Light column</label>
         <description>A simple mobile column, just lights the area.</description>
@@ -87,7 +87,7 @@
             <ai_combatDangerous>false</ai_combatDangerous>
         </building>
         <researchPrerequisites>
-            <li>OrbitalTradeColumnRes</li>
+            <li>Light_C3</li>
         </researchPrerequisites>
         <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
         <holdsRoof>true</holdsRoof>
@@ -96,7 +96,7 @@
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     </ThingDef>
 
-    <ThingDef ParentName="BuildingBase">
+    <ThingDef ParentName="SK_BuildingBase">
         <defName>OrbitalTradeColumnMod</defName>
         <label>Orbital trade column</label>
         <description>A utility column, acts like an orbital trade beacon, and lights the area, perfect for warehouses.</description>
@@ -185,7 +185,7 @@
             <ai_combatDangerous>true</ai_combatDangerous>
         </building>
         <researchPrerequisites>
-            <li>OrbitalTradeColumnRes</li>
+            <li>Telecommunications_C1</li>
         </researchPrerequisites>
         <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
         <holdsRoof>true</holdsRoof>
@@ -194,7 +194,7 @@
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     </ThingDef>
 
-    <ThingDef ParentName="BuildingBase">
+    <ThingDef ParentName="SK_BuildingBase">
         <defName>SunColumnMod</defName>
         <label>Sun column</label>
         <description>A utility column, acts like a sun lamp and keeps your room warm, perfect for greenhouses. Automatically turns itself off at night.</description>
@@ -301,7 +301,7 @@
             <ai_combatDangerous>true</ai_combatDangerous>
         </building>
         <researchPrerequisites>
-            <li>OrbitalTradeColumnRes</li>
+            <li>Cultivation_C1</li>
         </researchPrerequisites>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <holdsRoof>true</holdsRoof>
@@ -311,7 +311,7 @@
     </ThingDef>
   
 
-    <ThingDef ParentName="BuildingBase">
+    <ThingDef ParentName="SK_BuildingBase">
         <defName>IceColumnMod</defName>
         <label>Frozen column</label>
         <description>A utility column, acts like a cooler, keeps the room at -15°C and emits blue light, perfect for fridges.</description>
@@ -403,7 +403,7 @@
             <ai_combatDangerous>true</ai_combatDangerous>
         </building>
         <researchPrerequisites>
-            <li>OrbitalTradeColumnRes</li>
+            <li>Temperature_control_B1</li>
         </researchPrerequisites>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <holdsRoof>true</holdsRoof>
@@ -412,7 +412,7 @@
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     </ThingDef>
 
-    <ThingDef ParentName="BuildingBase">
+    <ThingDef ParentName="SK_BuildingBase">
         <defName>GraveColumnMod</defName>
         <label>Sacred column</label>
         <description>An ornamented burial column for the honored dead. Designed to keep a dead person for many years.\n\nAltman be praised.</description>
@@ -483,11 +483,6 @@
             <li>ITab_ContentsCasket</li>
         </inspectorTabs>
         <comps>
-            <li Class="CompProperties_HeatPusher">
-                <compClass>CompHeatPusher</compClass>
-                <heatPerSecond>-5</heatPerSecond>
-                <heatPushMinTemperature>1</heatPushMinTemperature>
-            </li>
             <li>
                 <compClass>CompQuality</compClass>
             </li>
@@ -512,6 +507,19 @@
                     <li Class="FocusStrengthOffset_GraveCorpseRelationship">
                         <offset>0.10</offset>
                     </li>
+                    <li Class="FocusStrengthOffset_NearbyGraves">
+						<defs>
+							<li>Grave</li>
+							<li>Sarcophagus</li>
+                            <li>GraveColumnMod</li>
+						</defs>
+						<radius>9.9</radius>
+						<maxBuildings>4</maxBuildings>
+						<offsetPerBuilding>0.01</offsetPerBuilding>
+						<focusPerFullGrave>0.01</focusPerFullGrave>
+						<explanationKey>MeditationFocusPerGrave</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerGraveAbstract</explanationKeyAbstract>
+					</li>
                 </offsets>
             </li>
         </comps>
@@ -522,8 +530,7 @@
         <rotatable>false</rotatable>
         <stealable>false</stealable>
         <researchPrerequisites>
-            <li>ComplexFurniture</li>
-            <li>OrbitalTradeColumnRes</li>
+            <li>Construction_B1</li>
         </researchPrerequisites>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <holdsRoof>true</holdsRoof>
