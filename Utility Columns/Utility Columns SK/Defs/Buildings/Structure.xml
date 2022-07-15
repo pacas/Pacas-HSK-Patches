@@ -323,7 +323,7 @@
         <defName>IceColumnMod</defName>
         <label>Frozen column</label>
         <description>A utility column, acts like a cooler, keeps the room at -15°C and emits blue light, perfect for fridges.</description>
-        <thingClass>Building</thingClass>
+        <thingClass>SK.Building_ColdstoneBattery</thingClass>
         <graphicData>
             <drawSize>(1.25,1.25)</drawSize>
             <drawOffset>(0,0,0.2)</drawOffset>
@@ -360,7 +360,7 @@
         <costStuffCount>50</costStuffCount>
         <costList>
             <ReinforcedConcrete>10</ReinforcedConcrete>
-            <Coldstone>35</Coldstone>
+            <Coldstone>50</Coldstone>
             <ElectronicComponents>3</ElectronicComponents>
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
@@ -379,19 +379,31 @@
                     </li>
                 </overlays>
             </li>
+            <li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>0.5</fuelConsumptionRate>
+				<fuelCapacity>25.0</fuelCapacity>
+				<autoRefuelPercent>0.1</autoRefuelPercent>
+				<fuelFilter>
+					<thingDefs>
+						<li>Coldstone</li>
+					</thingDefs>
+				</fuelFilter>
+				<destroyOnNoFuel>false</destroyOnNoFuel>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Glower">
-                <glowRadius>16</glowRadius>
+                <glowRadius>15</glowRadius>
                 <glowColor>(125,125,225,0)</glowColor>
             </li>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
                 <shortCircuitInRain>true</shortCircuitInRain>
-                <basePowerConsumption>250</basePowerConsumption>
+                <basePowerConsumption>120</basePowerConsumption>
             </li>
             <li Class="SK.CompProperties_ColdPusher">
-                <ColdPerSecond>-30</ColdPerSecond>
-                <ColdPushMinTemperature>-3</ColdPushMinTemperature>
+                <ColdPerSecond>-40</ColdPerSecond>
+                <ColdPushMinTemperature>-10</ColdPushMinTemperature>
             </li>
             <li Class="CompProperties_Breakdownable"/>
         </comps>
@@ -410,7 +422,7 @@
             <ai_combatDangerous>true</ai_combatDangerous>
         </building>
         <researchPrerequisites>
-            <li>Temperature_control_B1</li>
+            <li>Temperature_control_C2</li>
         </researchPrerequisites>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <holdsRoof>true</holdsRoof>
