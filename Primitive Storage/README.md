@@ -7,8 +7,10 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2249071438
 <br><br>
 <img src="https://i.imgur.com/svEwA2k.png">
 <br>
-Primitive Storage adds several new structures for keeping your goods.<br><br>
+Primitive Storage adds several new structures for keeping your goods.<br>
+New containers are being added, underground storage facilities with reduced temperatures, and so on and so forth.<br><br>
 Primitive Storage добавляет несколько новых структур для хранения ваших предметов.<br>
+Добавляются новые контейнеры, подземные хранилища с пониженной температурой и прочее-прочее.<br>
 <img src="https://i.imgur.com/5KVUmeE.png"><br>
 Q: DISBALANCE!<br>
 A: Perhaps.<br>
