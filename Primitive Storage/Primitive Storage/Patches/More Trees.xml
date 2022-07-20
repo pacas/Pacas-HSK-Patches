@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+          <li>More Trees</li>
+        </mods>
+        <match Class="PatchOperationSequence">			
+            <operations>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="VBY_WoodPile"]/building/fixedStorageSettings/filter/thingDefs</xpath>
+		            <value>
+						  <li>MoreTrees_BlackEbonyLog</li>
+						  <li>MoreTrees_GreenEbonyLog</li>
+						  <li>MoreTrees_RoseWoodLog</li>
+						  <li>MoreTrees_MahoganyLog</li>
+						  <li>MoreTrees_GuatambuLog</li>
+						  <li>MoreTrees_ElvishTreeLog</li>
+						  <li>MoreTrees_SkyTreeLog</li>
+		            </value>
+				</li>
+                <li Class="PatchOperationAdd">					
+		          <xpath>Defs/ThingDef[defName="VBY_WoodPile"]/building/defaultStorageSettings/filter/thingDefs</xpath>
+		            <value>
+						  <li>MoreTrees_BlackEbonyLog</li>
+						  <li>MoreTrees_GreenEbonyLog</li>
+						  <li>MoreTrees_RoseWoodLog</li>
+						  <li>MoreTrees_MahoganyLog</li>
+						  <li>MoreTrees_GuatambuLog</li>
+						  <li>MoreTrees_ElvishTreeLog</li>
+						  <li>MoreTrees_SkyTreeLog</li>
+		            </value>
+				</li>
+			</operations>
+        </match>
+	</Operation>
+	
+</Patch>

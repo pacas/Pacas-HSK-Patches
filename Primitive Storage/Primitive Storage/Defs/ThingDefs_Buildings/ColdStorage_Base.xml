@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="SK_FurnitureBase" Name="VBY_ColdStorageBase" Abstract="True">
+		<thingClass>PrimitiveCooling.Building_StorageCold</thingClass>
+		<category>Building</category>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<repairEffect>ConstructDirt</repairEffect>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<castEdgeShadows>true</castEdgeShadows>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="PrimitiveCooling.CompProperties_ColdStorage"></li>
+		</comps>
+		<inspectorTabs>
+		  <li>ITab_Storage</li>
+		  <li>LWM.DeepStorage.ITab_DeepStorage_Inventory</li>
+		</inspectorTabs>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+		<surfaceType>Item</surfaceType> <!-- ??  -->
+		<drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>	
+		<researchPrerequisites Inherit="false">
+			<li>Storage_A1</li>
+		</researchPrerequisites>
+		<building>
+		  <defaultStorageSettings>
+			<filter>
+				<specialFiltersToDisallow>
+				  <li>AllowRotten</li>
+				</specialFiltersToDisallow>
+			</filter>
+		  </defaultStorageSettings>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="VBY_ColdStorageBase" Name="VBY_UndergroundStorageBase" Abstract="True">
+		<terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded> 
+		<coversFloor>true</coversFloor>
+		<minifiedDef Inherit="false" />
+		<thingCategories Inherit="false" />
+		<pathCost>5</pathCost>
+		<fillPercent>0.01</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		<defaultPlacingRot>South</defaultPlacingRot>
+	</ThingDef>
+</Defs>

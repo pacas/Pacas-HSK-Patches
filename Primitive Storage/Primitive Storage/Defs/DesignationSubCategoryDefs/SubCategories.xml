@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_UndergroundStoragePS</defName>
+		<label>Underground storage</label>
+		<description>Everything must be hidden from those pesky caravaners...</description>
+		<defNames>
+            <li>VBY_StoragePit</li>
+            <li>VBY_StoragePitWood</li>
+            <li>VBY_StoragePitStone</li>
+		</defNames>
+		<designationCategory>LWM_DS_Storage</designationCategory>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>
