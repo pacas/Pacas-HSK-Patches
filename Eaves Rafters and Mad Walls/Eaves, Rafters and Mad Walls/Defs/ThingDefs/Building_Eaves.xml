@@ -12,16 +12,16 @@
         <altitudeLayer>BuildingOnTop</altitudeLayer>
         <category>Building</category>
         <selectable>true</selectable>
-		<destroyable>true</destroyable>
-		<clearBuildingArea>false</clearBuildingArea>
-		<defaultPlacingRot>South</defaultPlacingRot>
+        <destroyable>true</destroyable>
+        <clearBuildingArea>false</clearBuildingArea>
+        <defaultPlacingRot>South</defaultPlacingRot>
         <passability>Standable</passability>
         <building>
-			<isEdifice>false</isEdifice>
-			<canPlaceOverWall>true</canPlaceOverWall>
+            <isEdifice>false</isEdifice>
+            <canPlaceOverWall>true</canPlaceOverWall>
             <isInert>true</isInert>
             <ai_chillDestination>false</ai_chillDestination>
-		</building>
+        </building>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <castEdgeShadows>false</castEdgeShadows>
         <blockWind>false</blockWind>
@@ -66,6 +66,7 @@
             <li>Woody</li>
         </stuffCategories>
     </ThingDef>
+    
     <ThingDef ParentName="BaseRoofBuilding">
         <defName>AR_EaveStony</defName>
         <label>Stone Eave</label>
@@ -88,6 +89,7 @@
             <li>Bricks</li>
         </stuffCategories>
     </ThingDef>
+    
     <ThingDef ParentName="BaseRoofBuilding">
         <defName>AR_Eave</defName>
         <label>Metal Eave</label>
@@ -131,6 +133,7 @@
             <li>Metallic</li>
         </stuffCategories>
     </ThingDef>
+    
     <ThingDef ParentName="BaseRoofBuilding">
         <defName>AR_RafterStony</defName>
         <label>Stone Rafter</label>
@@ -153,6 +156,7 @@
             <li>Bricks</li>
         </stuffCategories>
     </ThingDef>
+    
     <ThingDef ParentName="BaseRoofBuilding">
         <defName>AR_RafterWoody</defName>
         <label>Wood Rafter</label>
@@ -231,6 +235,7 @@
             </damageData>
         </graphicData>
     </ThingDef>
+    
     <ThingDef ParentName="SK_BuildingBase">
         <defName>FPBIWWWG</defName>
         <label>burrowing wall</label>
@@ -320,6 +325,7 @@
             <li>Autodoors</li>
         </researchPrerequisites>
     </ThingDef>
+    
     <ThingDef ParentName="SK_BuildingBase">
         <defName>FPBIWBombInWall</defName>
         <label>wall with bomb</label>
