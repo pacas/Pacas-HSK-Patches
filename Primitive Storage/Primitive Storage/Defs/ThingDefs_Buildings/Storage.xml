@@ -79,9 +79,6 @@
             </li>
             <li><compClass>CompQuality</compClass></li>
         </comps>
-        <recipeMaker>
-            <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
-        </recipeMaker>
     </ThingDef>
 
     <!-- ==================== 2 ==================== -->
@@ -146,9 +143,6 @@
             </li>
             <li><compClass>CompQuality</compClass></li>
         </comps>
-        <recipeMaker>
-            <unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
-        </recipeMaker>
     </ThingDef>
   
     <!-- ==================== Woven Baskets ==================== -->
@@ -211,12 +205,6 @@
             </li>
             <li><compClass>CompQuality</compClass></li>
         </comps>
-        <recipeMaker>
-            <unfinishedThingDef>VBY_UnfinishedBaskets</unfinishedThingDef>
-            <recipeUsers>
-                <li>CraftingSpot</li>
-            </recipeUsers>
-        </recipeMaker>
     </ThingDef>
 
     <!-- ==================== 2 ==================== -->
@@ -280,12 +268,6 @@
             </li>
             <li><compClass>CompQuality</compClass></li>
         </comps>
-        <recipeMaker>
-            <unfinishedThingDef>VBY_UnfinishedBaskets</unfinishedThingDef>
-            <recipeUsers>
-                <li>CraftingSpot</li>
-            </recipeUsers>
-        </recipeMaker>
     </ThingDef>
 
     <!-- ==================== Double Stack ==================== -->
@@ -351,12 +333,6 @@
             </li>
             <li><compClass>CompQuality</compClass></li>
         </comps>
-        <recipeMaker>
-            <unfinishedThingDef>VBY_UnfinishedBaskets</unfinishedThingDef>
-            <recipeUsers>
-                <li>CraftingSpot</li>
-            </recipeUsers>
-        </recipeMaker>
     </ThingDef>
 
     <!-- ==================== Triple Stack ==================== -->
@@ -422,12 +398,6 @@
             </li>
             <li><compClass>CompQuality</compClass></li>
         </comps>
-        <recipeMaker>
-            <unfinishedThingDef>VBY_UnfinishedBaskets</unfinishedThingDef>
-            <recipeUsers>
-                <li>CraftingSpot</li>
-            </recipeUsers>
-        </recipeMaker>
     </ThingDef>
    
     <!-- ==================== Wood Pile ==================== -->
