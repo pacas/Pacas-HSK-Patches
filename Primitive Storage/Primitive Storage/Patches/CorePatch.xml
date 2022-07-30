@@ -3,7 +3,7 @@
     <Operation Class="PatchOperationSequence">
         <success>Always</success>
         <operations>
-            <li Class="PatchOperationInsert">
+            <li Class="PatchOperationAdd">
                 <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_FoodContainers"]/defNames</xpath>
                 <value>
                     <li>VBY_Clay_Pot</li>
