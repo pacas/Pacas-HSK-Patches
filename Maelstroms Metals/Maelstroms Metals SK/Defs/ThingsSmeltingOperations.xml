@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--Main Abstracts-->
+    <RecipeDef Name="Soul_SmeltAbstract" Abstract="True">
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+    </RecipeDef>
+    
+    <RecipeDef Name="Soul_HandSmeltAbstract" ParentName="Soul_SmeltAbstract" Abstract="True">
+        <recipeUsers>
+            <li>TableFurnace</li>
+        </recipeUsers>
+        <researchPrerequisite>Craft_B1</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>3</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    
+    <RecipeDef Name="Soul_ElecSmeltAbstract" ParentName="Soul_SmeltAbstract" Abstract="True">
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <researchPrerequisite>Metals_C1</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    
+    <RecipeDef Name="Soul_ElecSmeltAbstractT2" ParentName="Soul_SmeltAbstract" Abstract="True">
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <researchPrerequisite>Metals_C2</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    
+    <RecipeDef Name="Soul_ElecSmeltAbstractT3" ParentName="Soul_SmeltAbstract" Abstract="True">
+        <recipeUsers>
+            <li>EAF</li>
+        </recipeUsers>
+        <researchPrerequisite>Metals_C3</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>12</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    
+    <RecipeDef Name="Soul_ElecSmeltAbstractT4" ParentName="Soul_SmeltAbstract" Abstract="True">
+        <recipeUsers>
+            <li>RobAssem</li>
+        </recipeUsers>
+        <researchPrerequisite>Components_D3</researchPrerequisite>
+        <skillRequirements>
+            <Crafting>19</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+
+    <!--T1-->
+    <RecipeDef ParentName="Soul_HandSmeltAbstract">
+        <defName>Make_ElectrumSmall</defName>
+        <label>Smelt electrum alloy</label>
+        <description>Smelts electrum by alloying silver and gold. Produces 15.</description>
+        <jobString>Smelting electrum alloy.</jobString>
+        <workAmount>700</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+				<filter>
+					<categories>
+						<li>HCM</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Silver</li>
+                <li>Gold</li>
+            </thingDefs>
+            <categories>
+                <li>HCM</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <Electrum>15</Electrum>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Soul_ElecSmeltAbstract">
+        <defName>Make_ElectrumBig</defName>
+        <label>Smelt electrum alloy</label>
+        <description>Smelts electrum by alloying silver and gold. Produces 15.</description>
+        <jobString>Smelting electrum alloy.</jobString>
+        <workAmount>600</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+				<filter>
+					<categories>
+						<li>HCM</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Silver</li>
+                <li>Gold</li>
+            </thingDefs>
+            <categories>
+                <li>HCM</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <Electrum>15</Electrum>
+        </products>
+    </RecipeDef>
+
+//Gritsteel
+
+    <RecipeDef ParentName="Soul_HandSmeltAbstract">
+        <defName>Make_GritsteelSmall</defName>
+        <label>Smelt gritsteel alloy</label>
+        <description>Smelts a batch of crude steel. Produces 30.</description>
+        <jobString>Smelting gritsteel.</jobString>
+        <workAmount>300</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+				<filter>
+					<categories>
+						<li>HCM</li>
+                        <li>HVY</li>
+                        <li>SLD</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+            <categories>
+                <li>HCM</li>
+                <li>HVY</li>
+                <li>SLD</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <Gritsteel>30</Gritsteel>
+        </products>
+        <skillRequirements>
+            <Crafting>1</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+    <RecipeDef ParentName="Soul_ElecSmeltAbstract">
+        <defName>Make_GritsteelBig</defName>
+        <label>Smelt gritsteel alloy</label>
+        <description>Smelts a batch of crude steel. Produces 30.</description>
+        <jobString>Smelting gritsteel.</jobString>
+        <workAmount>200</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+				<filter>
+					<categories>
+						<li>HCM</li>
+                        <li>HVY</li>
+                        <li>SLD</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+            </thingDefs>
+            <categories>
+                <li>HCM</li>
+                <li>HVY</li>
+                <li>SLD</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <Gritsteel>30</Gritsteel>
+        </products>
+        <skillRequirements>
+            <Crafting>2</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+
+
+    <RecipeDef ParentName="Soul_HandSmeltAbstract">
+        <defName>Refine_GritsteelSmall</defName>
+        <label>Smelt steel from gritsteel</label>
+        <description>Remove impurites from crude steel. Produces 15.</description>
+        <jobString>Purifying gritsteel.</jobString>
+        <workAmount>300</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gritsteel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Coal</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Gritsteel</li>
+            </thingDefs>
+            <categories>
+                <li>Coal</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <Plasteel>15</Plasteel>
+        </products>
+    </RecipeDef>
+    <RecipeDef ParentName="Soul_ElecSmeltAbstract">
+        <defName>Refine_GritsteelBig</defName>
+        <label>Smelt steel from gritsteel</label>
+        <description>Remove impurites from crude steel. Produces 15.</description>
+        <jobString>Purifying gritsteel.</jobString>
+        <workAmount>200</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gritsteel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Coal</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Gritsteel</li>
+            </thingDefs>
+            <categories>
+                <li>Coal</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <Plasteel>15</Plasteel>
+        </products>
+    </RecipeDef>
+
+//Silfoil
+
+    <RecipeDef ParentName="Soul_HandSmeltAbstract">
+        <defName>Make_SilfoilSmall</defName>
+        <label>Smelt silfoil</label>
+        <description>Smelt a batch of silfoil alloy. Produces 20.</description>
+        <jobString>Smelting silver foil.</jobString>
+        <workAmount>800</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+						<li>Copper</li>
+						<li>CopperBar</li>
+					</thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+						<li>TinBar</li>
+						<li>AluminiumBar</li>
+					</thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Silver</li>
+                <li>Neutroamine</li>
+                <li>Copper</li>
+				<li>CopperBar</li>
+                <li>TinBar</li>
+				<li>AluminiumBar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Silfoil>20</Silfoil>
+        </products>
+    </RecipeDef>
+    <RecipeDef ParentName="Soul_ElecSmeltAbstract">
+        <defName>Make_SilfoilBig</defName>
+        <label>Smelt silfoil</label>
+        <description>Smelt a batch of silfoil alloy. Produces 20.</description>
+        <jobString>Smelting silver foil.</jobString>
+        <workAmount>700</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+						<li>Copper</li>
+						<li>CopperBar</li>
+					</thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+						<li>TinBar</li>
+						<li>AluminiumBar</li>
+					</thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Silver</li>
+                <li>Neutroamine</li>
+                <li>Copper</li>
+				<li>CopperBar</li>
+                <li>TinBar</li>
+				<li>AluminiumBar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Silfoil>20</Silfoil>
+        </products>
+    </RecipeDef>
+	
+//Razorsteel
+
+    <RecipeDef ParentName="Soul_ElecSmeltAbstractT2">
+        <defName>Make_RazorsteelSmall</defName>
+        <label>Smelt razorsteel</label>
+        <description>Alloy a small amount of steel and silfoil to make razorsteel. Produces 20.</description>
+        <jobString>Smelting razorsteel.</jobString>
+        <workAmount>800</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silfoil</li>
+                    </thingDefs>
+                </filter>
+                <count>6</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>Silfoil</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Razorsteel>10</Razorsteel>
+        </products>
+    </RecipeDef>
+
+//Greenglow
+
+    <RecipeDef ParentName="Soul_ElecSmeltAbstractT3">
+        <defName>Make_GreenglowSmall</defName>
+        <label>Smelt greenglow</label>
+        <description>Infuse a small amount of uranium with tungsten and jade to make greenglow. Produces 10.</description>
+        <jobString>Smelting greenglow.</jobString>
+        <workAmount>700</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Tungsten</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Jade</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Uranium</li>
+                <li>Tungsten</li>
+                <li>Jade</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Greenglow>10</Greenglow>
+        </products>
+    </RecipeDef>
+
+//Prismallium
+
+    <RecipeDef ParentName="Soul_ElecSmeltAbstractT3">
+        <defName>Make_PrismalliumSmall</defName>
+        <label>Smelt prismallium</label>
+        <description>Alloy a small amount of steel, chromium and electrum to make prismallium. Produces 15.</description>
+        <jobString>Smelting pretty steel.</jobString>
+        <workAmount>600</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chromium</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Electrum</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Chromium</li>
+                <li>Electrum</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Prismallium>15</Prismallium>
+        </products>
+    </RecipeDef>
+
+//Shardplate
+
+    <RecipeDef ParentName="Soul_ElecSmeltAbstractT3">
+        <defName>Make_ShardplateSmall</defName>
+        <label>Alloy shardplate</label>
+        <description>Reinforce razorsteel with hyperweave, ferrotitanium and silver to create shardplate. Produces 25.</description>
+        <jobString>Alloying shardplate.</jobString>
+        <workAmount>900</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Razorsteel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Hyperweave</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SilverBar</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>TitaniumBar</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Razorsteel</li>
+                <li>Hyperweave</li>
+                <li>TitaniumBar</li>
+                <li>Silver</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Shardplate>25</Shardplate>
+        </products>
+    </RecipeDef>
+
+//Neutrite
+
+    <RecipeDef ParentName="Soul_ElecSmeltAbstractT3">
+        <defName>Make_NeutriteSmall</defName>
+        <label>Alloy neutrite</label>
+        <description>Further improve greenglow with more materials to create neutrite. Produces 20.</description>
+        <jobString>Alloying neutrite.</jobString>
+        <workAmount>900</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Greenglow</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Shardplate</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silfoil</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Titanium</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Greenglow</li>
+                <li>Shardplate</li>
+                <li>Silfoil</li>
+                <li>Titanium</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Neutrite>20</Neutrite>
+        </products>
+    </RecipeDef>
+
+  
+//Mechanical Hardlight
+  
+    <RecipeDef ParentName="Soul_ElecSmeltAbstractT4">
+        <defName>Make_MechHardlightSmall</defName>
+        <label>Make mechanical hardlight</label>
+        <description>Use neutroamine and components to coax luciferium into workable material. Produces 10.</description>
+        <jobString>Producing mechanical hardlight.</jobString>
+        <workAmount>1500</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Luciferium</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MagneticMaterial</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Matter</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SilverBar</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Luciferium</li>
+                <li>MagneticMaterial</li>
+                <li>Matter</li>
+                <li>SilverBar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <MechHardlight>10</MechHardlight>
+        </products>
+    </RecipeDef>
+
+//Avarisum 
+
+    <RecipeDef ParentName="Soul_ElecSmeltAbstractT3">
+        <defName>Make_AvarisumSmall</defName>
+        <label>Smelt avarisum</label>
+        <description>Further bedazzle prismallium with additional electrum, neutroamine and jade. Produces 20.</description>
+        <jobString>Smelting the shiniest metal.</jobString>
+        <workAmount>1200</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Prismallium</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Electrum</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Jade</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Prismallium</li>
+                <li>Electrum</li>
+                <li>Neutroamine</li>
+                <li>Jade</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Avarisum>20</Avarisum>
+        </products>
+    </RecipeDef>
+</Defs>
