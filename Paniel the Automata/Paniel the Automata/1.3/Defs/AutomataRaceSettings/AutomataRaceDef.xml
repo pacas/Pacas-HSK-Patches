@@ -533,33 +533,16 @@
                     <li>FlakeHigh</li>
                     <li>GoJuiceHigh</li>
                     <li>GoJuiceWithdrawal</li>
-
-                    <!--[Royalty]-->
-                    <!--<li MayRequire="Ludeon.RimWorld.Royalty"></li>-->
-
-                    <!--[Ideology]-->
-                    <!--<li MayRequire="Ludeon.RimWorld.Ideology"></li>-->
-
-                    <!--Thoughts_IdeoBuilding-->
-                    <!--Thoughts_IdeoRaiding-->
-                    <!--Thoughts_IdeoRole-->
                     <li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleLost</li>
                     <li MayRequire="Ludeon.RimWorld.Ideology">IdeoRoleEmpty</li>
                     <li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentStandard</li>
                     <li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentDisapproved</li>
                     <li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentHorrible</li>
                     <li MayRequire="Ludeon.RimWorld.Ideology">IdeoLeaderResentmentAbhorrent</li>
-                    <!--Thoughts_Memory_Social-->
-                    <!--Thoughts_Memory_Terror-->
                     <li MayRequire="Ludeon.RimWorld.Ideology">ObservedTerror</li>
                     <li MayRequire="Ludeon.RimWorld.Ideology">ObservedGibbetCage</li>
                     <li MayRequire="Ludeon.RimWorld.Ideology">ObservedSkullspike</li>
-                    <!--Thoughts_Ritual-->
-                    <!--Thoughts_Ritual_Quality-->
-                    <!--Thoughts_Situational-->
                     <li MayRequire="Ludeon.RimWorld.Ideology">LookChangeDesired</li>
-
-                    <!--Misc-->
                     <li MayRequire="Ludeon.RimWorld.Ideology">PN_OfficerCommandThought</li>
                     <li MayRequire="Ludeon.RimWorld.Ideology">PN_MeisterAdviceThought</li>
                 </cannotReceiveThoughts>
@@ -692,7 +675,7 @@
             <RestRateMultiplier>1.00</RestRateMultiplier>
             <HungerRateMultiplier>1.00</HungerRateMultiplier>
             <EatingSpeed>1</EatingSpeed>
-            <ImmunityGainSpeed>0</ImmunityGainSpeed>
+            <ImmunityGainSpeed>10000</ImmunityGainSpeed>
             <CarryingCapacity>100</CarryingCapacity>
             <PainShockThreshold>0.99</PainShockThreshold>
             <PsychicSensitivity>0.6</PsychicSensitivity>
