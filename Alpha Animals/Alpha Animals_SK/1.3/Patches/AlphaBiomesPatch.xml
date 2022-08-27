@@ -6,6 +6,7 @@
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
+            
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="AA_Aerofleet"]/race/wildBiomes</xpath>
                     <value>
@@ -705,4 +706,3 @@
         </match>
     </Operation>
 </Patch>
-

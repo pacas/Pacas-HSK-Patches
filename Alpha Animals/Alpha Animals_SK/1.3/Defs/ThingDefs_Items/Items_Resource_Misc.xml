@@ -285,6 +285,19 @@
             <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
         </stuffProps>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.StuffPropsTool">
+				<toolStatFactors>
+                    <TreeFellingSpeed>1.3</TreeFellingSpeed>
+                    <PlantHarvestingSpeed>1.3</PlantHarvestingSpeed>
+					<PlantSowingSpeed>1.3</PlantSowingSpeed>
+                    <DiggingSpeed>1.3</DiggingSpeed>
+                    <MiningYieldDigging>1.3</MiningYieldDigging>
+                    <ConstructionSpeed>1.3</ConstructionSpeed>
+					<SmithingSpeed>1.3</SmithingSpeed>
+                </toolStatFactors>
+			</li>
+		</modExtensions>
     </ThingDef>
     <ThingDef ParentName="ResourceBase">
         <defName>AA_UraniumCrystals</defName>
@@ -423,9 +436,6 @@
             <texPath>Things/Plants/AA_RottingMound</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <thingCategories>
-			<li>Foods</li>
-		</thingCategories>
         <ingestible>
             <foodType>Liquor</foodType>
             <preferability>NeverForNutrition</preferability>

@@ -75,7 +75,7 @@
         </ingestible>
     </ThingDef>
     <!--  Red Goo  -->
-    <ThingDef ParentName="PlantFoodRawBase">
+    <ThingDef ParentName="SK_PlantFoodRawBase">
         <defName>AB_RawRedSlime</defName>
         <label>raw red slime</label>
         <description>Raw red slime. This thing is edible. Barely.</description>
@@ -84,8 +84,11 @@
         </graphicData>
         <statBases>
             <MarketValue>0.5</MarketValue>
-            <Nutrition>0.01</Nutrition>
+            <Nutrition>0.02</Nutrition>
         </statBases>
+        <thingCategories>
+            <li>MeatSubRaw</li>
+        </thingCategories>
         <ingestible>
             <foodType>VegetableOrFruit</foodType>
         </ingestible>
