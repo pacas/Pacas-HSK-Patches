@@ -73,6 +73,19 @@
         </stuffProps>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
         <allowedArchonexusCount>100</allowedArchonexusCount>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.StuffPropsTool">
+				<toolStatFactors>
+					<TreeFellingSpeed>0.65</TreeFellingSpeed>
+					<PlantHarvestingSpeed>0.65</PlantHarvestingSpeed>
+					<PlantSowingSpeed>0.65</PlantSowingSpeed>
+					<DiggingSpeed>1.1</DiggingSpeed>
+					<MiningYieldDigging>1.1</MiningYieldDigging>
+					<ConstructionSpeed>1.1</ConstructionSpeed>
+					<SmithingSpeed>0.9</SmithingSpeed>
+				</toolStatFactors>
+			</li>
+		</modExtensions>
     </ThingDef>
   
         <!--Gritsteel-->
@@ -144,6 +157,19 @@
 			<canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
 		</stuffProps>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.StuffPropsTool">
+				<toolStatFactors>
+                    <TreeFellingSpeed>0.8</TreeFellingSpeed>
+                    <PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+					<PlantSowingSpeed>0.8</PlantSowingSpeed>
+                    <DiggingSpeed>0.8</DiggingSpeed>
+                    <MiningYieldDigging>0.8</MiningYieldDigging>
+                    <ConstructionSpeed>0.8</ConstructionSpeed>
+					<SmithingSpeed>0.8</SmithingSpeed>
+                </toolStatFactors>
+			</li>
+		</modExtensions>
     </ThingDef>
   
         <!--Silfoil-->
@@ -218,6 +244,19 @@
 			</statFactors>
 		</stuffProps>
         <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.StuffPropsTool">
+				<toolStatFactors>
+                    <TreeFellingSpeed>0.8</TreeFellingSpeed>
+                    <PlantHarvestingSpeed>1.2</PlantHarvestingSpeed>
+					<PlantSowingSpeed>0.8</PlantSowingSpeed>
+                    <DiggingSpeed>0.6</DiggingSpeed>
+                    <MiningYieldDigging>0.8</MiningYieldDigging>
+                    <ConstructionSpeed>0.8</ConstructionSpeed>
+					<SmithingSpeed>0.8</SmithingSpeed>
+                </toolStatFactors>
+			</li>
+		</modExtensions>
     </ThingDef>
 
 
@@ -285,6 +324,19 @@
 			</statFactors>
         </stuffProps>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.StuffPropsTool">
+				<toolStatFactors>
+                    <TreeFellingSpeed>1.3</TreeFellingSpeed>
+                    <PlantHarvestingSpeed>1.5</PlantHarvestingSpeed>
+					<PlantSowingSpeed>1.1</PlantSowingSpeed>
+                    <DiggingSpeed>1.4</DiggingSpeed>
+                    <MiningYieldDigging>1</MiningYieldDigging>
+                    <ConstructionSpeed>1</ConstructionSpeed>
+					<SmithingSpeed>1</SmithingSpeed>
+                </toolStatFactors>
+			</li>
+		</modExtensions>
     </ThingDef>
 	
         <!--Greenglow-->
@@ -303,7 +355,6 @@
         <statBases>
             <MarketValue>11</MarketValue>
             <Mass>0.7</Mass>
-            <Bulk>0.4</Bulk>
             <StuffPower_Armor_Sharp>1.10</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>0.7</StuffPower_Armor_Blunt>
             <StuffPower_Armor_Heat>0.8</StuffPower_Armor_Heat>
@@ -353,6 +404,19 @@
 			</statFactors>
         </stuffProps>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.StuffPropsTool">
+				<toolStatFactors>
+                    <TreeFellingSpeed>1.1</TreeFellingSpeed>
+                    <PlantHarvestingSpeed>1.1</PlantHarvestingSpeed>
+					<PlantSowingSpeed>1.2</PlantSowingSpeed>
+                    <DiggingSpeed>1.2</DiggingSpeed>
+                    <MiningYieldDigging>1.1</MiningYieldDigging>
+                    <ConstructionSpeed>1.1</ConstructionSpeed>
+					<SmithingSpeed>1</SmithingSpeed>
+                </toolStatFactors>
+			</li>
+		</modExtensions>
     </ThingDef>
   
         <!--Prismallium-->
@@ -422,6 +486,19 @@
             </statFactors>
         </stuffProps>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.StuffPropsTool">
+				<toolStatFactors>
+                    <TreeFellingSpeed>1.1</TreeFellingSpeed>
+                    <PlantHarvestingSpeed>1.1</PlantHarvestingSpeed>
+					<PlantSowingSpeed>1.1</PlantSowingSpeed>
+                    <DiggingSpeed>1.1</DiggingSpeed>
+                    <MiningYieldDigging>1.8</MiningYieldDigging>
+                    <ConstructionSpeed>1.1</ConstructionSpeed>
+					<SmithingSpeed>1.1</SmithingSpeed>
+                </toolStatFactors>
+			</li>
+		</modExtensions>
     </ThingDef>
 
         <!--T3 Metals-->
@@ -490,6 +567,19 @@
 			</statFactors>
         </stuffProps>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.StuffPropsTool">
+				<toolStatFactors>
+                    <TreeFellingSpeed>1.8</TreeFellingSpeed>
+                    <PlantHarvestingSpeed>1.8</PlantHarvestingSpeed>
+					<PlantSowingSpeed>1.11</PlantSowingSpeed>
+                    <DiggingSpeed>1.6</DiggingSpeed>
+                    <MiningYieldDigging>1.14</MiningYieldDigging>
+                    <ConstructionSpeed>1.2</ConstructionSpeed>
+					<SmithingSpeed>1.13</SmithingSpeed>
+                </toolStatFactors>
+			</li>
+		</modExtensions>
     </ThingDef>
   
         <!--Neutrite-->
@@ -558,6 +648,19 @@
 			</statFactors>
         </stuffProps>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.StuffPropsTool">
+				<toolStatFactors>
+                    <TreeFellingSpeed>0.8</TreeFellingSpeed>
+                    <PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
+					<PlantSowingSpeed>1.1</PlantSowingSpeed>
+                    <DiggingSpeed>0.9</DiggingSpeed>
+                    <MiningYieldDigging>1</MiningYieldDigging>
+                    <ConstructionSpeed>1.8</ConstructionSpeed>
+					<SmithingSpeed>1.4</SmithingSpeed>
+                </toolStatFactors>
+			</li>
+		</modExtensions>
     </ThingDef>
   
         <!--Mechanical Hardlight-->
@@ -631,6 +734,19 @@
 			</statFactors>
         </stuffProps>
         <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.StuffPropsTool">
+				<toolStatFactors>
+                    <TreeFellingSpeed>0.8</TreeFellingSpeed>
+                    <PlantHarvestingSpeed>0.9</PlantHarvestingSpeed>
+					<PlantSowingSpeed>1.9</PlantSowingSpeed>
+                    <DiggingSpeed>1.4</DiggingSpeed>
+                    <MiningYieldDigging>1.3</MiningYieldDigging>
+                    <ConstructionSpeed>2.3</ConstructionSpeed>
+					<SmithingSpeed>1.2</SmithingSpeed>
+                </toolStatFactors>
+			</li>
+		</modExtensions>
     </ThingDef>
 
         <!--Avarisum-->
@@ -699,5 +815,18 @@
             </statFactors>
         </stuffProps>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.StuffPropsTool">
+				<toolStatFactors>
+                    <TreeFellingSpeed>1.1</TreeFellingSpeed>
+                    <PlantHarvestingSpeed>1.1</PlantHarvestingSpeed>
+					<PlantSowingSpeed>1.1</PlantSowingSpeed>
+                    <DiggingSpeed>0.7</DiggingSpeed>
+                    <MiningYieldDigging>2</MiningYieldDigging>
+                    <ConstructionSpeed>1</ConstructionSpeed>
+					<SmithingSpeed>1</SmithingSpeed>
+                </toolStatFactors>
+			</li>
+		</modExtensions>
     </ThingDef>
 </Defs>
