@@ -68,8 +68,8 @@
 	<!-- 도축대  -->
 	<ThingDef ParentName="WorkTable">
 		<defName>GL_TableButcher</defName>
-        <label>butcher table</label>
-		<description>A heavy table for butchering dead creatures into pieces of raw meat.</description>
+        <label>Kitchen Table</label>
+		<description>A heavy table for meal prep.</description>
 		<graphicData>
 			<texPath>Things/Building/Production/GL_TableButcher</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -86,13 +86,13 @@
         <hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <stuffCategories>
+			<li>StrongMetallic</li>
 			<li>Woody</li>
-			<li>Stony</li>
-			<li>Bricks</li>
 		</stuffCategories>
-		<costStuffCount>60</costStuffCount>
+		<costStuffCount>115</costStuffCount>
 		<costList>
 			<ComponentMedieval>8</ComponentMedieval>
+			<Mechanism>2</Mechanism>
 		</costList>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
@@ -112,9 +112,14 @@
 		<recipes>
 			<li>ButcherCorpseFlesh</li>
 			<li>MakeHerbMedicine</li>
-			<li>Make_Kibble</li>
-			<li>HalfCoconut</li>
+			<li>MakeTofu</li>
+			<li>Makecheese</li>
 			<li>Makesoymilk</li>
+			<li>Make_Kibble</li>
+			<li>MakeFruitYogurt</li>
+			<li>MakeFruitDrink</li>
+			<li>HalfCoconut</li>
+			<li>SaltMeat</li>
 		</recipes>
 		<comps>
 			<li Class="CompProperties_AffectedByFacilities">
