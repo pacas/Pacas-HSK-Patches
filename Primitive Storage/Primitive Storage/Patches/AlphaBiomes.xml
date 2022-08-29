@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-
 <Patch>
-
     <Operation Class="PatchOperationFindMod">
-        <success>Always</success>
         <mods>
           <li>Alpha Biomes</li>
         </mods>
@@ -13,7 +10,7 @@
 		          <xpath>Defs/ThingDef[defName="VBY_WoodPile"]/building/fixedStorageSettings/filter/thingDefs</xpath>
 		            <value>
 						  <li>AB_CrystalWood</li>
-						  <li>GU_RedWood</li>  <!-- Might need to do a no match??  -->
+						  <li>GU_RedWood</li> 
 						  <li>AB_MushroomWoodLog</li>
 		            </value>
 				</li>
@@ -21,14 +18,11 @@
 		          <xpath>Defs/ThingDef[defName="VBY_WoodPile"]/building/defaultStorageSettings/filter/thingDefs</xpath>
 		            <value>
 						  <li>AB_CrystalWood</li>
-						  <li>GU_RedWood</li>  <!-- Might need to do a no match??  -->
+						  <li>GU_RedWood</li>
 						  <li>AB_MushroomWoodLog</li>
 		            </value>
 				</li>
 			</operations>
         </match>
 	</Operation>
-	
-	<!-- need to remove Vanilla LogDefs?  -->
-	
 </Patch>
