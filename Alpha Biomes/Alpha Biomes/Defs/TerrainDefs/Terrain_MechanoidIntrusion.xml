@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>GU_MetalFloor1</defName>
+        <label>polymer flooring</label>
+        <texturePath>Terrain/Surfaces/PavedTile</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <color>(100,100,100)</color>
+        <renderPrecedence>350</renderPrecedence>
+        <statBases>
+            <Beauty>-1</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+        </affordances>
+        <fertility>0</fertility>
+        <takeFootprints>false</takeFootprints>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>GU_MetalFloor2</defName>
+        <label>metallic floor</label>
+        <texturePath>Terrain/Surfaces/GU_MetalFloor2</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <color>(100,100,100)</color>
+        <renderPrecedence>350</renderPrecedence>
+        <statBases>
+            <Beauty>-1</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+        </affordances>
+        <fertility>0</fertility>
+        <takeFootprints>false</takeFootprints>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>GU_MetalFloor3</defName>
+        <label>seamless metallic floor</label>
+        <texturePath>Terrain/Surfaces/GU_MetalFloor1</texturePath>
+        <color>(100,100,100)</color>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>350</renderPrecedence>
+        <statBases>
+            <Beauty>-1</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+        </affordances>
+        <fertility>0</fertility>
+        <takeFootprints>false</takeFootprints>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_SoilOnCrackedMetal</defName>
+        <label>soil on cracked metal</label>
+        <texturePath>Terrain/Surfaces/AB_SoilOnCrackedMetal</texturePath>
+        <color>(100,100,100)</color>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>350</renderPrecedence>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <fertility>0.45</fertility>
+        <takeFootprints>false</takeFootprints>
+        <tags>
+            <li>Soil</li>
+        </tags>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>GU_Piping</defName>
+        <label>uncovered metallic pipes</label>
+        <texturePath>Terrain/Surfaces/GU_Piping</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>350</renderPrecedence>
+        <pathCost>8</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <affordances>
+            <li>Bridgeable</li>
+            <li>Light</li>
+            <li>AB_TarAffordance</li>
+        </affordances>
+        <fertility>0</fertility>
+        <takeFootprints>false</takeFootprints>
+    </TerrainDef>
+ 
+</Defs>

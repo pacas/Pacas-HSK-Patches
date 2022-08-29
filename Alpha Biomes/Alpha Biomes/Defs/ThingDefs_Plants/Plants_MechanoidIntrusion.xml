@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	
+	  <ThingDef ParentName="TreeBase">
+		<defName>AB_SessileMechanoid</defName>
+		<label>sessile mechanoid tree</label>
+		<description>This thing was once a tree. Mechanoids repurposed its cells into a half-tree, half-mechanoid abomination, serving an unknown purpose. Perhaps a bit of wood could be extracted from it.</description>
+		<graphicData>
+			<texPath>Things/Plants/AB_SessileMechanoid</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<plant>
+			<fertilityMin>0.1</fertilityMin>
+			<fertilitySensitivity>1.0</fertilitySensitivity>
+			<growDays>40</growDays>
+			
+			<harvestWork>1600</harvestWork>
+			<harvestYield>20</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			
+			<visualSizeRange>2~3.5</visualSizeRange>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>AB_HardyGrass</defName>
+		<label>hardy grass</label>
+		<description>Wild grass. Grows anywhere there is a little light and minimally fertile ground.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.15</Nutrition>
+    </statBases>
+		<graphicData>
+			<texPath>Things/Plant/Grass_Leafless</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.30</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+  
+
+</Defs>

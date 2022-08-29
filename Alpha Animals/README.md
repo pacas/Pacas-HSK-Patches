@@ -26,9 +26,9 @@ Q: Сломались окна настройки мода!<br>
 A: Удалить файлы конфига мода в папке настроек игры.<br>
 #-------------------------------------------------------------#<br>
 Q: Is this mod compatibile with Combat Extended?<br>
-A: This is HSK convertion man, of course.<br>
+A: This is HSK convertion, of course.<br>
 Q: Совместимо с Combat Extended?<br>
-A: Чел, это конвертация под ХСК, естественно.<br>
+A: Это конвертация под ХСК, естественно.<br>
 #-------------------------------------------------------------#<br>
 Q: Is this mod save game compatible?<br>
 A: Yes, you can add it and remove it whenever you like.<br>
@@ -42,5 +42,5 @@ A: Репортить в соответствующую ветку в дисе �
 <br>
 <img src="https://i.imgur.com/fdngbbh.png"><br>
 Rimworld is owned by Tynan Sylvester.<br>
-Oskar Potockis and Mlie for this awesome mod. Check out other mods!<br>
+Sarg Bjornson for this awesome mod. Check out other mods!<br>
 Pacas (me) for doing a HSK convertion.<br>

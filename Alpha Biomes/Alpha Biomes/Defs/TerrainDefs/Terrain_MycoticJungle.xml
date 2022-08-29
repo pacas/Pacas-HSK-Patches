@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_MycoticSoil</defName>
+        <label>mycotic soil</label>
+        <texturePath>Terrain/Surfaces/AB_MycoticDirt</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>340</renderPrecedence>
+        <pathCost>2</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <scatterType>Rocky</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0.9</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tools>
+            <li>
+                <label>dirt</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>DirtInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+        <tags>
+			<li>Soil</li>
+		</tags>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_MycoticSoilRich</defName>
+        <label>rich mycotic soil</label>
+        <texturePath>Terrain/Surfaces/AB_RichMycoticDirt</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>335</renderPrecedence>
+        <pathCost>2</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>1.2</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tools>
+            <li>
+                <label>dirt</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>DirtInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+        <tags>
+			<li>Soil</li>
+		</tags>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_MycoticGrass</defName>
+        <label>mycotic grass</label>
+        <texturePath>Terrain/Surfaces/AB_MycoticGrass</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>315</renderPrecedence>
+        <pathCost>3</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <fertility>1</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tags>
+			<li>Soil</li>
+		</tags>
+        <avoidWander>false</avoidWander>
+    </TerrainDef>
+</Defs>

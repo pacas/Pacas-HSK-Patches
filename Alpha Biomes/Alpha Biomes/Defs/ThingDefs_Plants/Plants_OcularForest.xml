@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AB_AlienGrass</defName>
+		<label>ocular grass</label>
+		<description>This grass is completely alien, probably not even 100% carbon based. Not very edible for terrestrial creatures.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/GU_AlienGrass</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AB_RedLeaves</defName>
+		<label>ocular plant</label>
+		<description>This grass is completely alien, probably not even 100% carbon based. Not very edible for terrestrial creatures.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/GU_RedLeaves</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.1</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>1</maxMeshCount>
+			<visualSizeRange>1~1.6</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AB_RedPlantsTall</defName>
+		<label>ocular plant</label>
+		<description>This grass is completely alien, probably not even 100% carbon based. Not very edible for terrestrial creatures.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.075</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/GU_RedLeaves2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.1</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>1</maxMeshCount>
+			<visualSizeRange>1~1.6</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+	<!--============================ Trees ============================-->
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AB_AlienTree</defName>
+		<label>ocular tree</label>
+		<description>This tree is completely alien, probably not even 100% carbon based, and it seems to be struggling to grow from exposure to a terrestrial environment. Strange fruits resembling eyeballs hang from the tree, but they are probably not edible. Its wood releases a powerful, sweet scent. Perhaps it can be somehow useful.\n\nPlant details: Ocular Trees are a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.05. Can be harvested for Red Wood. Tree lover ideologies don't much care about chopping down these weird trees.</description>
+		<descriptionHyperlinks>
+			<ThingDef>GU_RedWood</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<Nutrition>0.1</Nutrition>
+			<Mass>150</Mass>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/GU_AlienTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<fillPercent>0.35</fillPercent>
+		<minifiedDef>MinifiedTree</minifiedDef>
+		<passability>PassThroughOnly</passability>
+		<pathCost>130</pathCost>
+		
+		<rotatable>false</rotatable>
+		<blockWind>true</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+
+		</ingestible>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>5</growDays>
+<treeCategory>Full</treeCategory>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<harvestWork>300</harvestWork>
+			<harvestedThingDef>GU_RedWood</harvestedThingDef>
+			<harvestTag>Wood</harvestTag>
+			<harvestYield>10</harvestYield>
+			<harvestMinGrowth>0.2</harvestMinGrowth>
+			<harvestFailable>false</harvestFailable>
+			<visualSizeRange>2.3~3</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li>
+			</sowResearchPrerequisites>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<sowTags>
+				<li>Ground</li>
+
+			</sowTags>
+			<blockAdjacentSow>true</blockAdjacentSow>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AB_HalfAlienTree</defName>
+		<label>half transformed ocular tree</label>
+		<description>A strange infection seems to be transforming this regular oak into an ocular tree. It still retains its trunk and its leaves, though they are beginning to transform into pulsating red structures that don't seem to be able to survive in this universe. This tree might be useful to harvest a small amount of real wood.\n\nPlant details: Half transformed alien trees are a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.05. Can be harvested for normal wood.</description>
+		<descriptionHyperlinks>
+			<ThingDef>WoodLog</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<Nutrition>0.1</Nutrition>
+			<Mass>150</Mass>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_HalfAlienTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<fillPercent>0.35</fillPercent>
+		<minifiedDef>MinifiedTree</minifiedDef>
+		<passability>PassThroughOnly</passability>
+		<pathCost>130</pathCost>
+		
+		<blockWind>true</blockWind>
+		<rotatable>false</rotatable>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+
+		</ingestible>
+		<plant>
+		<treeCategory>Full</treeCategory>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>5</growDays>
+			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<harvestWork>300</harvestWork>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<harvestTag>Wood</harvestTag>
+			<harvestYield>25</harvestYield>
+			<harvestMinGrowth>0.2</harvestMinGrowth>
+			<harvestFailable>false</harvestFailable>
+			<visualSizeRange>2.3~3</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+		</plant>
+	</ThingDef>
+
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AB_TentacularPlant</defName>
+		<label>tentacular aberration</label>
+		<description>This plant is completely alien. The blue nodules at the end of each branch / tentacle produce an eerie rattling sound from time to time.\n\nPlant details: Tentacular aberrations are a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.05. Can be harvested for tentacular fruit.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AB_RawTentacularFruit</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_TentacularPlant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<fillPercent>0.35</fillPercent>
+		<passability>PassThroughOnly</passability>
+		<pathCost>130</pathCost>
+		<blockWind>true</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+
+		</ingestible>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>5</growDays>
+			<harvestYield>15</harvestYield>
+			<harvestWork>250</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestAfterGrowth>0.5</harvestAfterGrowth>
+			<harvestedThingDef>AB_RawTentacularFruit</harvestedThingDef>
+			<visualSizeRange>2.3~3</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AB_GlobularPlant</defName>
+		<label>globular aberration</label>
+		<description>A sickly pink orb supported by a network of gnarled branches. A reddish sap constantly drips from its wood, and seems to keep insects at bay.\n\nPlant details: Globular aberrations are a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.05. Can be harvested for red wood.</description>
+		<descriptionHyperlinks>
+			<ThingDef>GU_RedWood</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_GlobularPlant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<fillPercent>0.35</fillPercent>
+		<passability>PassThroughOnly</passability>
+		<pathCost>130</pathCost>
+		<blockWind>true</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+
+		</ingestible>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>5</growDays>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<harvestWork>300</harvestWork>
+			<harvestedThingDef>GU_RedWood</harvestedThingDef>
+			<harvestTag>Wood</harvestTag>
+			<harvestYield>10</harvestYield>
+			<harvestMinGrowth>0.2</harvestMinGrowth>
+			<harvestFailable>false</harvestFailable>
+			<visualSizeRange>2.3~3</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+		</plant>
+		<comps>
+
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AB_BloodBouquet</defName>
+		<label>blood bouquet</label>
+		<description>A spiny plant with some kind of fruit hanging from its top. The fruit seems to be as hard as the trunk itself, and equally covered in spines.\n\nPlant details: Blood bouquet is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.05. Can be harvested for raw blood bouquet.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AB_RawBloodBouquet</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_BloodBouquet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<fillPercent>0.35</fillPercent>
+		<passability>PassThroughOnly</passability>
+		<pathCost>130</pathCost>
+		<blockWind>true</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+
+		</ingestible>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>5</growDays>
+			<visualSizeRange>2~2.5</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			<harvestYield>10</harvestYield>
+			<harvestWork>250</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestAfterGrowth>0.5</harvestAfterGrowth>
+			<harvestedThingDef>AB_RawBloodBouquet</harvestedThingDef>
+		</plant>
+		<comps>
+
+		</comps>
+	</ThingDef>
+
+
+
+</Defs>

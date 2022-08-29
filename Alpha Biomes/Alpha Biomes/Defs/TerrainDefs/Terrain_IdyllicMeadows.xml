@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_GrassyFlowerySoil</defName>
+        <label>flowery soil</label>
+        <texturePath>Terrain/Surfaces/AB_FlowerySoil</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>340</renderPrecedence>
+        <pathCost>2</pathCost>
+        <statBases>
+            <Beauty>0</Beauty>
+            <BeautyOutdoors>2</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <scatterType>Rocky</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>1</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tools>
+            <li>
+                <label>dirt</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>DirtInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+        <tags>
+            <li>Soil</li>
+        </tags>
+    </TerrainDef>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_FertileGrassyFlowerySoil</defName>
+        <label>fertile flowery soil</label>
+        <texturePath>Terrain/Surfaces/AB_FertileFlowerySoil</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>350</renderPrecedence>
+        <pathCost>2</pathCost>
+        <statBases>
+            <Beauty>0</Beauty>
+            <BeautyOutdoors>2</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <scatterType>Rocky</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>1.3</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tools>
+            <li>
+                <label>dirt</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>DirtInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+        <tags>
+            <li>Soil</li>
+        </tags>
+    </TerrainDef>
+</Defs>

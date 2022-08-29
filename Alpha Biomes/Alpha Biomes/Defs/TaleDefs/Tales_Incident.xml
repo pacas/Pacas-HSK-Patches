@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <TaleDef>
+        <defName>AB_AcidRainTale</defName>
+        <label>acid rain</label>
+        <taleClass>Tale_SinglePawn</taleClass>
+        <type>Volatile</type>
+        <baseInterest>50</baseInterest>
+        <rulePack>
+            <rulesStrings>
+                <li>tale_noun->acid rain falling over [PAWN_nameDef]'s [Community]</li>
+                <li>tale_noun->acrid smelling clouds pouring acid water near [PAWN_nameDef]'s [Community]</li>
+                <li>image->an ominous sky, [circumstance_group]</li>
+                <li>image->the air smelling acrid and [circumstance_group]</li>
+                <li>image->the ground sizzling gently and [circumstance_group]</li>
+                <li>image->fields of dead plants, their leaves burned, [circumstance_group]</li>
+                <li>image->[Quantity_adjphrase] graves [circumstance_group]</li>
+                <li>circumstance_phrase->with no life in sight</li>
+                <li>circumstance_phrase->covered by a patina of acidic water</li>
+                <li>circumstance_phrase->arranged in a pattern that suggests corroded bones</li>
+                <li>circumstance_phrase->waiting for the acidic rain to stop</li>
+                <li>desc_sentence->[PAWN_nameDef] lies on the ground, [PAWN_possessive] half-melted body twisted at an unusual angle.</li>
+                <li>desc_sentence->[PAWN_nameDef] hides near a [TerrainFeature], gazing out with a [AdjectiveAngsty] look.</li>
+                <li>desc_sentence->[PAWN_nameDef] looks on in shock with partially melted eyes.</li>
+                <li>desc_sentence->[PAWN_nameDef] rests quietly with a layer of sweat upon [PAWN_possessive] face.</li>
+                <li>desc_sentence->[Quantity_adjphrase] dead [Animal]s lay on the ground, their flesh burned by the acid.</li>
+                <li>desc_sentence->[Quantity_adjphrase] dying [Animal]s lay on the ground, their flesh dissolved by the acid.</li>
+                <li>desc_sentence->[Quantity_adjphrase] [Animal]s mill around uncertainly, disoriented by the pain of the acid burns.</li>
+            </rulesStrings>
+        </rulePack>
+    </TaleDef>
+</Defs>

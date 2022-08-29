@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Ice -->
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_PackedSnow</defName>
+        <label>packed snow</label>
+        <texturePath>Terrain/Surfaces/AB_Snow</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>350</renderPrecedence>
+        <pathCost>12</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+        </statBases>
+        <scatterType>SoftGray</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+        </affordances>
+        <tags>
+			<li>Ice</li>
+		</tags>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0.05</fertility>
+        <takeFootprints>True</takeFootprints>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_PackedIce</defName>
+        <label>packed ice</label>
+        <texturePath>Terrain/Surfaces/AB_WhiteIce</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>352</renderPrecedence>
+        <pathCost>6</pathCost>
+        <holdSnow>false</holdSnow>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+        </statBases>
+        <scatterType>SoftGray</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+        </affordances>
+        <tags>
+			<li>Ice</li>
+            <li>Frozen</li>
+		</tags>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0.00</fertility>
+        <takeFootprints>True</takeFootprints>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_SolidPropane</defName>
+        <label>solid propane compounds</label>
+        <texturePath>Terrain/Surfaces/AB_Ice</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>352</renderPrecedence>
+        <pathCost>12</pathCost>
+        <holdSnow>false</holdSnow>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+        </statBases>
+        <scatterType>SoftGray</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0.00</fertility>
+        <takeFootprints>True</takeFootprints>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_SnowOverRocks</defName>
+        <label>snowed rocky terrain</label>
+        <texturePath>Terrain/Surfaces/AB_SnowOverRocks</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>353</renderPrecedence>
+        <pathCost>20</pathCost>
+        <holdSnow>false</holdSnow>
+        <statBases>
+            <Beauty>-5</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+        </statBases>
+        <scatterType>SoftGray</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0.7</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tags>
+			<li>Soil</li>
+		</tags>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="SK_WaterDeepBase">
+        <defName>AB_PropaneLake</defName>
+        <texturePath>Terrain/Surfaces/AB_Ice</texturePath>
+        <label>liquid propane lake</label>
+        <renderPrecedence>395</renderPrecedence>
+    </TerrainDef>
+
+</Defs>

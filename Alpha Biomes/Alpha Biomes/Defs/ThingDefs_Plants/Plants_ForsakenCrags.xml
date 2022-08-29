@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef ParentName="AB_CavePlantBase">
+		<defName>AB_GiantStikehr</defName>
+		<label>giant stikehr</label>
+		<description>A giant alien mushroom that glows in the strange darkening mist. Contrary to the smaller domesticated strands, the giant Stikehr can grow in light environments, as long as it is protected by the Forsaken mists. Its stalk is so hardened that it can be considered wood for all intents and purposes. \n\nPlant details: Giant Stikehr is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.7. It needs no light, and produces 50% light on its own, not enough to grow other plants around it. Can be harvested for normal wood.</description>
+		<descriptionHyperlinks>
+			<ThingDef>WoodLog</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Beauty>4</Beauty>
+			<Nutrition>0.5</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_GiantStikehr</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>25</pathCost>
+		<ingestible />
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<fertilityMin>0.7</fertilityMin>
+			<fertilitySensitivity>0.15</fertilitySensitivity>
+			<growDays>15</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestYield>25</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>2~4</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li>
+			</sowResearchPrerequisites>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<sowTags>
+				<li>Ground</li>
+
+			</sowTags>
+			<purpose>Food</purpose>
+			<blockAdjacentSow>true</blockAdjacentSow>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+
+				<glowRadius>10</glowRadius>
+				<glowColor>(242,221,37,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TreeBase">
+		<defName>AB_GiantSeptimum</defName>
+		<label>giant septimum</label>
+		<description>This Septimum plant has grown to an enormous size, with a flowering top as large as a person. Domesticated septimum plants are used as a source of Ultima fibers, but this exemplar is way too old and its fibers are too hard to be used in a practical way.\n\nPlant details: Giant Septimum is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.7. It needs no light.</description>
+		<graphicData>
+			<texPath>Things/Plants/AB_GiantSeptimum</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.18, 0.3, 0.15)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+
+		<statBases>
+			<Beauty>-5</Beauty>
+			<Nutrition>2.5</Nutrition>
+		</statBases>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<growDays>14</growDays>
+			<harvestWork>1200</harvestWork>
+			<harvestYield>10</harvestYield>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>11</wildClusterWeight>
+			<visualSizeRange>1.3~3</visualSizeRange>
+		</plant>
+		<ingestible />
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AB_GlowingGrass</defName>
+		<label>grass</label>
+		<description>Wild grass. Grows anywhere there is a little light and minimally fertile ground.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_GlowingGrass</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0.3</fertilitySensitivity>
+			<growDays>2.5</growDays>
+			<leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="BushBase">
+		<defName>AB_WildRadagast</defName>
+		<label>wild radagast</label>
+		<description>This twisting alien plant grows small glowing berries. Although not edible, they can be used to manufacture some interesting chemical compounds. (This plant only yields its fruit if you are using the Forsakens mod).\n\nPlant details: Wild Radagast is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.7. It needs no light, and produces 50% light on its own, not enough to grow other plants around it.</description>
+		<pathCost>10</pathCost>
+		<graphicData>
+			<texPath>Things/Plants/AB_WildRadagast</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+
+			<shadowData>
+				<volume>(0.55, 0.17, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>7.5</wildClusterWeight>
+			<visualSizeRange>2~2.5</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li>
+			</sowResearchPrerequisites>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<sowTags>
+				<li>Ground</li>
+
+			</sowTags>
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+
+				<glowRadius>4</glowRadius>
+				<glowColor>(242,221,37,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BushBase">
+		<defName>AB_GiantGamma</defName>
+		<label>giant gamma</label>
+		<description>Like many other flora from the Forsakens native planet, this huge globular plant is bioluminescent. Smaller specimens can be used as a decorative light source, whereas this wild exemplar emits so much light that it can be used as a natural sunlamp to grow regular plants. Note that light-sensitive plants such as domesticated Stikehr and mushrooms should be kept far away from them.\n\nPlant details: Giant Gamma is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.7. It needs no light, and produces 100% light on its own, which is enough to grow other plants around it.</description>
+		<pathCost>10</pathCost>
+		<graphicData>
+			<texPath>Things/Plants/AB_GiantGamma</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+
+
+			<shadowData>
+				<volume>(0.55, 0.17, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>7.5</wildClusterWeight>
+			<visualSizeRange>1.5~2</visualSizeRange>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li>
+			</sowResearchPrerequisites>
+			<blockAdjacentSow>true</blockAdjacentSow>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<sowTags>
+				<li>Ground</li>
+
+			</sowTags>
+		</plant>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<overlightRadius>7</overlightRadius>
+				<glowRadius>10</glowRadius>
+				<glowColor>(242,221,37,0)</glowColor>
+			</li>
+		</comps>
+		<placeWorkers><li>AlphaBiomes.PlaceWorker_ShowGammaRadius</li></placeWorkers>
+	</ThingDef>
+
+
+
+</Defs>

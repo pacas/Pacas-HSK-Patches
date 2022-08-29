@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Animals Expanded — Arid Shrubland</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AEXP_Coyote"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_GallatrossGraveyard>0.03</AB_GallatrossGraveyard>
+                        <AB_TarPits>0.07</AB_TarPits>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AEXP_Giraffe"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_GallatrossGraveyard>0.01</AB_GallatrossGraveyard>
+                        <AB_TarPits>0.07</AB_TarPits>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AEXP_Hippopotamus"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_GallatrossGraveyard>0.01</AB_GallatrossGraveyard>
+                        <AB_GelatinousSuperorganism>0.05</AB_GelatinousSuperorganism>
+                        <AB_FeraliskInfestedJungle>0.07</AB_FeraliskInfestedJungle>
+                        <AB_TarPits>0.01</AB_TarPits>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AEXP_Zebra"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_GallatrossGraveyard>0.01</AB_GallatrossGraveyard>
+                        <AB_TarPits>0.07</AB_TarPits>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AEXP_Wildebeest"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_GallatrossGraveyard>0.01</AB_GallatrossGraveyard>
+                        <AB_FeraliskInfestedJungle>0.005</AB_FeraliskInfestedJungle>
+                        <AB_TarPits>0.02</AB_TarPits>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AEXP_Crocodile"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.05</AB_FeraliskInfestedJungle>
+                        <AB_GelatinousSuperorganism>0.1</AB_GelatinousSuperorganism>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

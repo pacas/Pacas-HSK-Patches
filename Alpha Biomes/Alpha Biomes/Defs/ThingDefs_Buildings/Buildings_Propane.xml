@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="SK_BuildingBase">
+		<defName>AB_PropanePump</defName>
+		<label>propane pump</label>
+		<description>Extracts propane from a liquid propane lake and refines it into usable fuel. This obviously won't work in most biomes.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/AB_PropanePump</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<shadowData>
+				<volume>(2.6,1,2.16)</volume>
+				<offset>(-0.20,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<rectN>(0.1,1.2,4.75,3.25)</rectN>
+				<rectE>(1.25,0.2,3.5,4.7)</rectE>
+				<rectS>(0.2,1.2,4.7,3.25)</rectS>
+				<rectW>(1.25,0.2,3.5,4.7)</rectW>
+			</damageData>
+		</graphicData>
+		<castEdgeShadows>false</castEdgeShadows>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<fillPercent>1</fillPercent>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<defaultPlacingRot>East</defaultPlacingRot>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>1200</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-18</Beauty>
+			<Bulk>90</Bulk>
+			<Mass>42</Mass> 
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<size>(2,2)</size>
+        <stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>70</costStuffCount>
+        <costList>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<Rubber>35</Rubber>
+            <AB_CrystallineMatrix>5</AB_CrystallineMatrix>
+			<ElectronicComponents>2</ElectronicComponents>
+			<Mechanism>2</Mechanism>
+		</costList>
+		<uiIconScale>0.75</uiIconScale>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>650</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Spawner">
+				<requiresPower>true</requiresPower>
+				<thingToSpawn>AB_Propane</thingToSpawn>
+				<spawnCount>25</spawnCount>
+				<spawnIntervalRange>
+					<min>200000</min>
+					<max>300000</max>
+				</spawnIntervalRange>
+				<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+				<showMessageIfOwned>true</showMessageIfOwned>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<rotatable>true</rotatable>
+		<terrainAffordanceNeeded/>
+		<!-- handled by the placeworker -->
+		<designationCategory>Misc</designationCategory>
+		<placeWorkers>
+			<li>AlphaBiomes.PlaceWorker_PropanePump</li>
+		</placeWorkers>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<researchPrerequisites>
+			<li>BiofuelRefining</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="WorkTableFueled">
+		<defName>AB_PropaneStove</defName>
+		<label>propane stove</label>
+		<description>A propane-fueled stove with an attached countertop for preparing meals.</description>
+        <drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Building/AB_PropaneStove</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,1.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+        <stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+        <thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<designationCategory>Production</designationCategory>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<ComponentMedieval>10</ComponentMedieval>
+			<Mechanism>2</Mechanism>
+            <AB_CrystallineMatrix>3</AB_CrystallineMatrix>
+		</costList>
+		<fillPercent>0.5</fillPercent>
+		<statBases>
+			<WorkToBuild>1200</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(3,1)</size>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>80.0</fuelConsumptionRate>
+				<fuelCapacity>50.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>AB_Propane</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+            <li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>CookingTools</li>
+				</linkableFacilities>
+			</li>
+			<li Class="SK.CompProperties_HeatPusherAdvanced">
+				<compClass>SK.CompHeatPusherAdvanced</compClass>
+				<heatPerSecond>17</heatPerSecond>
+				<heatPushMaxTemperature>25</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(217,112,33,0)</glowColor>
+			</li>
+            <li Class="SK.CompFueled_Properties">
+				<operatingTemp>300</operatingTemp>
+				<fireDrawOffset>(0,0,0)</fireDrawOffset>
+				<smokeDrawOffset>(0,0,0.1)</smokeDrawOffset>
+				<fuelDrawOffset>(0,0,0.01)</fuelDrawOffset>
+				<fuelDrawScale>0.7</fuelDrawScale>
+				<fuelCapacity>50</fuelCapacity>
+				<burnFuelMultiplier>1.2</burnFuelMultiplier>
+				<effectOnWeather>true</effectOnWeather>
+				<smokeEnabled>false</smokeEnabled>
+				<smokeDensity>0</smokeDensity>
+				<fuelFilter>
+					<thingDefs>
+						<li>AB_Propane</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+			<li>
+				<compClass>CompReportWorkSpeed</compClass>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>Craft_B1</li>
+		</researchPrerequisites>
+        <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<modExtensions>
+			<li Class="AlphaBiomes.ThingDefExtension">
+				<inheritRecipesFrom>
+					<li>FueledStove</li>
+				</inheritRecipesFrom>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="BurnerFueled">
+		<defName>AB_PropaneHeater</defName>
+		<label>propane heater</label>
+		<description>A device that burns propane fuel and turns it into heat. The propane heater wastes a lot of fuel when attempting to reach temperatures too different from ambient ones, but it's quite fuel conservative if configured carefully.</description>
+		<thingClass>AlphaBiomes.Building_PropaneHeater</thingClass>
+		<graphicData>
+			<texPath>Things/Building/AB_PropaneHeater</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.5,0.3,0.7)</volume>
+				<offset>(0,0,-0.15)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.234375,0,0.515625,0.984375)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>40</pathCost>
+		<rotatable>false</rotatable>
+		<fillPercent>0.4</fillPercent>
+		<thingCategories>
+			<li>BuildingsTemperature</li>
+		</thingCategories>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>6</Mass>
+            <Bulk>10</Bulk>
+			<Flammability>1</Flammability>
+		</statBases>
+		<tickerType>Normal</tickerType>
+        <stuffCategories>
+			<li>StrongMetallic</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ElectronicComponents>3</ElectronicComponents>
+            <AB_CrystallineMatrix>2</AB_CrystallineMatrix>
+			<Mechanism>1</Mechanism>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+        <building>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		</building>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+            <li Class="SK.CompFueled_Properties">
+				<operatingTemp>1000</operatingTemp>
+				<drawfirefuel>false</drawfirefuel>
+				<canAutoBurn>true</canAutoBurn>
+				<smokeDrawOffset>(0,-0.1,0.85)</smokeDrawOffset>
+				<smokesize>0.5</smokesize>
+				<fuelCapacity>25</fuelCapacity>
+				<burnFuelMultiplier>1.4</burnFuelMultiplier>
+				<effectOnWeather>true</effectOnWeather>
+				<smokeEnabled>true</smokeEnabled>
+				<smokeDensity>0.2</smokeDensity>
+				<fuelFilter>
+					<thingDefs>
+						<li>AB_Propane</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+            <li Class="SK.CompProperties_HeatPusherAdvanced">
+				<compClass>SK.CompHeatPusherAdvanced</compClass>
+				<heatPerSecond>60</heatPerSecond>
+				<heatPushMaxTemperature>70</heatPushMaxTemperature>
+			</li>
+			<li Class="CompProperties_Flickable"/>		
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(255,150,100,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<designationCategory>Temperature</designationCategory>
+		<researchPrerequisites>
+			<li>AirConditioning</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef>
+</Defs>

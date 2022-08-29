@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+
+	<ThingDef ParentName="BushBase">
+		<defName>AB_BrownBarrelCactus</defName>
+		<label>brown barrel cactus</label>
+		<thingClass>AlphaBiomes.Plant_Heat</thingClass>
+		<description>The brown barrel cactus, Ferocactus Brunetus, is an extremophile plant that thrives in low-water and poor sunlight conditions. Its strange brown colour is derived from an almost complete lack of chlorophyll. Instead, the plant extracts much of its sustenance from mineral deposits.\n\nPlant details: brown barrel cactus is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.05. It needs no light. It is non-flammable. Can be harvested for raw brown barrel cactus, edible but almost tasteless.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AB_RawBrownBarrelCactus</ThingDef>
+		</descriptionHyperlinks>
+		
+		<graphicData>
+			<texPath>Things/Plants/AB_BrownBarrelCactus</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.17, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Beauty>-1</Beauty>
+						<Flammability>0</Flammability>
+
+			<Nutrition>0.35</Nutrition>
+		</statBases>
+		<plant>
+			<neverBlightable>true</neverBlightable>
+			<growMinGlow>0</growMinGlow>
+			<growOptimalGlow>0</growOptimalGlow>
+			<fertilityMin>0.05</fertilityMin>
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>7.5</wildClusterWeight>
+			<visualSizeRange>0.8~1.2</visualSizeRange>
+			<harvestYield>25</harvestYield>
+			<harvestWork>250</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestAfterGrowth>0.5</harvestAfterGrowth>
+			<harvestedThingDef>AB_RawBrownBarrelCactus</harvestedThingDef>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>AB_TinkleGrass</defName>
+		<label>tinkle grass</label>
+		<thingClass>AlphaBiomes.Plant_Heat</thingClass>
+		<description>Wild grass. Grows anywhere there is a little light and minimally fertile ground.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.15</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_TinkleGrass</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible />
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>1</growDays>
+			<leaflessGraphicPath>Things/Plants/AB_TinkleGrass</leaflessGraphicPath>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.6~0.9</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+
+
+
+	<!--============================ Wild - Trees ============================-->
+
+	
+
+	<ThingDef ParentName="TreeBase">
+		<defName>AB_FirevineTree</defName>
+		<label>firevine tree</label>
+		<thingClass>AlphaBiomes.Plant_Heat</thingClass>
+		<description>Firevine trees are pyrophitic plants that are able to survive wildfires due to a clever layer of thermal insulation provided by their fire retardant bark. They can be directly burned without sustaining damage to their vital tissues. In fact, their seeds require fire to sprout, so they are only found in fire-prone areas, such as active volcanic zones.\n\nPlant details: Firevine trees are a cultivated plant that also appear in the wild, and they need minimum terrain fertility of 0.05. They are non-flammable. Can be harvested for normal wood.</description>
+		<descriptionHyperlinks>
+			<ThingDef>WoodLog</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Plants/AB_FirevineTree</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.18, 0.3, 0.15)</volume>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+
+		<statBases>
+			<Flammability>0</Flammability>
+			<Nutrition>2.5</Nutrition>
+		</statBases>
+		<plant>
+			<sowResearchPrerequisites>
+				<li>TreeSowing</li>
+			</sowResearchPrerequisites>
+			<mustBeWildToSow>true</mustBeWildToSow>
+			<sowTags>
+				<li>Ground</li>
+			
+
+			</sowTags>
+			<fertilityMin>0.05</fertilityMin>
+			<neverBlightable>true</neverBlightable>
+			<growDays>14</growDays>
+			<leaflessGraphicPath>Things/Plants/AB_FirevineTree_Leafless</leaflessGraphicPath>
+			<harvestWork>1200</harvestWork>
+			<harvestYield>35</harvestYield>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>11</wildClusterWeight>
+			<visualSizeRange>3~4</visualSizeRange>
+		</plant>
+		<ingestible />
+	</ThingDef>
+
+	
+
+</Defs>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+
+	<!--============================ Bushes =============================-->
+
+	<ThingDef ParentName="BushBase">
+		<defName>AB_TangleTea</defName>
+		<label>tangle tea</label>
+		<description>This strange plant seems to be of alien origins. It doesn't seem to be fit for human consumption. Its common name alludes to the tea-bag shape of its flowers, and the fact that its sap is a very sticky substance.</description>
+		<pathCost>50</pathCost>
+		<graphicData>
+			<texPath>Things/Plants/AB_TangleTea</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+
+			
+			<shadowData>
+				<volume>(0.55, 0.17, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>7.5</wildClusterWeight>
+			<visualSizeRange>1~1.5</visualSizeRange>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="BushBase">
+		<defName>AB_EuphorbiaRimworldia</defName>
+		<label>euphorbia rimworldia</label>
+		<description>A plant of the euphorbia genus, commonly called spurges. This plant has adapted to arid climates and stores a lot of water inside their spine-covered leaves.</description>
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_EuphorbiaRimworldia</texPath>
+									<graphicClass>Graphic_Random</graphicClass>
+
+			
+			<shadowData>
+				<volume>(0.3, 0.2, 0.15)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>4</wildClusterWeight>
+			<visualSizeRange>3~4</visualSizeRange>
+		</plant>
+	</ThingDef>
+
+
+
+	<!--============================ Wild - Trees ============================-->
+
+	
+
+	<ThingDef ParentName="TreeBase">
+		<defName>AB_DeadBowerTree</defName>
+		<label>dead bower tree</label>
+		<description>Despite its common name, the dead bower tree is not truly dead, just exceptionally adapted to survival in arid weather. The tree produces huge leaves every few decades. These leaves harness energy via photosynthesis, and this chemical energy is stored in brown coloured chemical postules that act as natural batteries. The tree then uses that energy slowly over the following years, only producing more leaves when it is depleted.</description>
+		<graphicData>
+			<texPath>Things/Plants/AB_DeadBowerTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.18, 0.3, 0.15)</volume>
+			</shadowData>
+		</graphicData>
+				<altitudeLayer>BuildingOnTop</altitudeLayer>
+
+		<statBases>
+			<Beauty>-5</Beauty>
+			<Nutrition>2.5</Nutrition>
+		</statBases>
+		<plant>
+			<growDays>14</growDays>
+			<harvestWork>1200</harvestWork>
+			<harvestYield>35</harvestYield>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>11</wildClusterWeight>
+			<visualSizeRange>3.8~5</visualSizeRange>
+		</plant>
+		<ingestible />
+	</ThingDef>
+
+	
+
+</Defs>

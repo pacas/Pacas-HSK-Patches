@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<!--============================ Bushes =============================-->
+
+	<ThingDef ParentName="BushBase">
+		<defName>AB_RedBugloss</defName>
+		<label>red bugloss</label>
+		<description>One of the weirdest plants from Earth, genetically modified to thrive in wet, warm environments.</description>
+		<graphicData>
+			<texPath>Things/Plants/AB_RedBugloss</texPath>
+									<graphicClass>Graphic_Random</graphicClass>
+
+			
+			<shadowData>
+				<volume>(0.55, 0.17, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			
+			<wildClusterRadius>4</wildClusterRadius>
+			<wildClusterWeight>7.5</wildClusterWeight>
+			<visualSizeRange>2~2.5</visualSizeRange>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="BushBase">
+		<defName>AB_Gomphoeria</defName>
+		<label>gomphoeria</label>
+		<description>An unusually tall plant with bright, pink nodules. Its nodules are slightly toxic for humans, and it produces a strange, rotten fruit smell, so it is considered absolutely inedible.</description>
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_Gomphoeria</texPath>
+									<graphicClass>Graphic_Single</graphicClass>
+
+			
+			<shadowData>
+				<volume>(0.3, 0.2, 0.15)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<wildClusterRadius>3</wildClusterRadius>
+			<wildClusterWeight>4</wildClusterWeight>
+			<visualSizeRange>2~3</visualSizeRange>
+		</plant>
+	</ThingDef>
+
+	<ThingDef ParentName="BushBase">
+		<defName>AB_Aaklac</defName>
+		<label>aaklac</label>
+		<description>A rare, huge flower which can be found in the deepest jungles. Its quite striking colour and nice smell makes it popular in gardening, if it can be extracted from the deep jungle, of course.</description>
+		<statBases>
+			<Beauty>10</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_Aaklac</texPath>
+						<graphicClass>Graphic_Random</graphicClass>
+
+			<drawSize>1.7</drawSize>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.1)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<topWindExposure>0.07</topWindExposure>
+			<wildClusterRadius>-1</wildClusterRadius>
+		</plant>
+	</ThingDef>
+
+	<!--============================ Wild - Trees ============================-->
+
+	
+
+	<ThingDef ParentName="TreeBase">
+		<defName>AB_JungleTree</defName>
+		<label>deep jungle tree</label>
+		<description>This jungle tree is not of terrestrial origins, originating from the deepest crevices of an alien jungle.</description>
+		<graphicData>
+			<texPath>Things/Plants/AB_JungleTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.18, 0.3, 0.15)</volume>
+			</shadowData>
+		</graphicData>
+				<altitudeLayer>BuildingOnTop</altitudeLayer>
+
+		<statBases>
+			<Beauty>2</Beauty>
+			<Nutrition>1.2</Nutrition>
+		</statBases>
+		<plant>
+			<growDays>14</growDays>
+			<harvestWork>550</harvestWork>
+			<harvestYield>18</harvestYield>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>11</wildClusterWeight>
+			<visualSizeRange>3.8~5</visualSizeRange>
+		</plant>
+		<ingestible />
+	</ThingDef>
+
+	
+
+</Defs>

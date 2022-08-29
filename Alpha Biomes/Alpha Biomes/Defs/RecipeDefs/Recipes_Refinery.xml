@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RecipeDef Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>AB_PropaneToChemfuel</defName>
+        <label>make chemfuel from propane</label>
+        <description>Make a batch of chemfuel from propane. This is a very inefficient method of getting chemfuel, but useful to get rid of unwanted propane.</description>
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AB_Propane</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>AB_Propane</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Chemfuel>15</Chemfuel>
+        </products>
+        <ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>1</ruinedIfNoPowerOrNoFuelOrFlickedOffPerHour>
+		<usesTemperature>false</usesTemperature>
+		<processDays>1</processDays>
+    </RecipeDef>
+    
+    <RecipeDef>
+		<defName>MakeSugarAB</defName>
+		<label>grind sugar famewort</label>
+		<description>Beat and grind famewort to get at that sugar! Produces 12.</description>
+		<jobString>Grinding famewort into sugar.</jobString>
+		<workAmount>500</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AB_RawSugarFamewort</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AB_RawSugarFamewort</li>
+			</thingDefs>
+			<specialFiltersToDisallow>
+				<li>AllowRotten</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<products>
+			<Sugar>12</Sugar>
+		</products>
+        <recipeUsers>
+            <li>GrindStone</li>
+            <li>MillElectric</li>
+        </recipeUsers>
+		<skillRequirements>
+			<Cooking>2</Cooking>
+		</skillRequirements>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>Bakery_B2</researchPrerequisite>
+	</RecipeDef>
+</Defs>

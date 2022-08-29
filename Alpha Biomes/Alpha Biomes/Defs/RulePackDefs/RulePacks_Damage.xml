@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+
+  <RulePackDef>
+    <defName>AB_Damage_Tar</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>damaged_past->tarred</li>
+        <li>damaged_past->stickied</li>
+        <li>damaged_past->begrimed</li>
+
+        <li>destroyed_past->damaged_past</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ScatterableDef Abstract="True" Name="AB_DarkScatter">
+        <minSize>0.4</minSize>
+        <maxSize>1.0</maxSize>
+        <selectionWeight>100</selectionWeight>
+        <scatterType>AB_DarkScatter</scatterType>
+    </ScatterableDef>
+
+    <ScatterableDef ParentName="AB_DarkScatter">
+        <defName>DebrisStoneA</defName>
+        <texturePath>Terrain/Scatter/AB_DarkScatterA</texturePath>
+    </ScatterableDef>
+
+    <ScatterableDef ParentName="AB_DarkScatter">
+        <defName>DebrisStoneB</defName>
+        <texturePath>Terrain/Scatter/AB_DarkScatterA</texturePath>
+    </ScatterableDef>
+</Defs>

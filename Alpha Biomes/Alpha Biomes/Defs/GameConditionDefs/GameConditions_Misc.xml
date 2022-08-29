@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GameConditionDef>
+        <defName>AB_AcidRainCondition</defName>
+        <conditionClass>AlphaBiomes.GameCondition_AcidRain</conditionClass>
+        <label>acid rain</label>
+        <description>Toxic gas emissions from nearby volcanically active calderas are precipitating in the form of dangerous acid rain. Acid rain has an adverse impact on flora and fauna, killing insect and aquatic life-forms as well as having impacts on human health.</description>
+        <descriptionFuture>acid rain will fall all over the area around [map_definite] for [gameConditionDuration_duration], killing outdoor plant and animal life</descriptionFuture>
+        <endMessage>The worst of the acid rain has passed.</endMessage>
+        <letterText>Toxic gas emissions from nearby volcanically active calderas are precipitating in the form of dangerous acid rain. Acid rain has an adverse impact on flora and fauna, killing insect and aquatic life-forms as well as having impacts on human health.\n\nColonists and animals that aren't resistant to acid burns should stay inside for the duration of the rain.</letterText>
+        <letterDef>NegativeEvent</letterDef>
+        <canBePermanent>true</canBePermanent>
+    </GameConditionDef>
+
+    <GameConditionDef>
+        <defName>AB_VolcanicHeatWave</defName>
+        <conditionClass>AlphaBiomes.GameCondition_VolcanicHeatWave</conditionClass>
+        <label>volcanic heat wave</label>
+        <description>The extreme heat produced by the magma lakes bakes this region. Large plumes of superheated air rise from the lava, heating their surroundings and making them barely inhabitable.</description>
+        <exclusiveConditions>
+            <li>ColdSnap</li>
+            <li>VolcanicWinter</li>
+        </exclusiveConditions>
+        <canBePermanent>true</canBePermanent>
+    </GameConditionDef>
+</Defs>

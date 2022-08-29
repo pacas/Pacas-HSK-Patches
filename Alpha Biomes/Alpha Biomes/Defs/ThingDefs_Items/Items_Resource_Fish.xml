@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--=====================================================================-->
+    <!--=============================== Fish ================================-->
+    <!--=====================================================================-->
+
+
+    <ThingDef Name="AB_RawFishBase" Abstract="True" ParentName="OrganicProductBase">
+        <label>Base raw fish properties</label>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>2</daysToRotStart>
+                <rotDestroys>True</rotDestroys>
+            </li>
+        </comps>
+        <statBases>
+            <Nutrition>0.05</Nutrition>
+            <Flammability>0.5</Flammability>
+            <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <ingestible>
+            <foodType>Meat</foodType>
+            <preferability>DesperateOnly</preferability>
+            <ingestEffect>EatMeat</ingestEffect>
+            <ingestSound>RawMeat_Eat</ingestSound>
+        </ingestible>
+        <thingCategories>
+            <li>FoodFreshFish</li>
+        </thingCategories>
+    </ThingDef>
+	
+    <!-- Abyssal Eel -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_AbyssalEel</defName>
+        <label>abyssal eel</label>
+        <description>Raw abyssal eel. This elongated fish has adapted to life at very low temperatures. Abyssal eel have an incredibly slow metabolism, only needing to feed every few weeks.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_AbyssalEel</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.03</Mass>
+            <Nutrition>0.05</Nutrition>
+            <MarketValue>1.1</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!-- Blood Leech -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_BloodLeech</defName>
+        <label>blood leech</label>
+        <description>Raw blood leech. This bright red lamprey-like creature feeds almost exclusively on the blood of larger aquatic organisms, although it is not adverse to taking a bite from some terrestrial ones that come near the water. It tastes metallic and unappealing.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_BloodLeech</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.01</Mass>
+            <Nutrition>0.01</Nutrition>
+            <MarketValue>0.22</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!-- Boreal Sardine -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_BorealSardine</defName>
+        <label>boreal sardine</label>
+        <description>Raw boreal sardine. This small, oily forage fish in the herring family is well adapted to very cold climates.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_BorealSardine</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.01</Mass>
+            <Nutrition>0.01</Nutrition>
+            <MarketValue>0.22</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!-- Dusky Sprat -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_DuskySprat</defName>
+        <label>dusky sprat</label>
+        <description>Raw dusky sprat. The dusky sprat is a nocturnal marine forage fish, although they can also be found in freshwater estuaries. Like most forage fishes, dusky sprats are highly active, small, oily fish. They travel in large schools with other fish and swim continuously throughout the night.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_DuskySprat</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.01</Mass>
+            <Nutrition>0.01</Nutrition>
+            <MarketValue>0.22</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!-- Forsaken Anglerfish -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_ForsakenAnglerfish</defName>
+        <label>forsaken anglerfish</label>
+        <description>Raw forsaken anglerfish. Anglerfish are bony fish named for their characteristic mode of predation, a bioluminiscent lure that attracts and guides prey into its mouth. This anglerfish has a dark scale tone that allows it to camouflage perfectly in the dark brackish waters.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_ForsakenAnglerfish</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.03</Mass>
+            <Nutrition>0.05</Nutrition>
+            <MarketValue>1.1</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!-- Frigid Swimmer -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_FrigidSwimmer</defName>
+        <label>frigid swimmer</label>
+        <description>Raw frigid swimmer. A large species of fish with a voracious appetite. It has adapted to low temperatures, and feeds mainly on other small fish like boreal sardines.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_FrigidSwimmer</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.15</Mass>
+            <Nutrition>0.08</Nutrition>
+            <MarketValue>1.76</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!--  Giant Polar Prawn -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_GiantPolarPrawn</defName>
+        <label>giant polar prawn</label>
+        <description>Raw giant polar prawn. A medium sized aquatic crustacean with an exoskeleton and ten legs.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_GiantPolarPrawn</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.03</Mass>
+            <MarketValue>1.1</MarketValue>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!-- Habdak Longfin -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_HabdakLongfin</defName>
+        <label>habdak longfin</label>
+        <description>Raw habdak longfin. A large species of pelagic fish. They are found mostly in tropical seas.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_HabdakLongfin</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.10</Mass>
+            <Nutrition>0.25</Nutrition>
+            <MarketValue>5.5</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!-- Jellyfungus -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_Jellyfungus</defName>
+        <label>jellyfungus</label>
+        <description>Raw jellyfungus. This strange organism seems to be part jellyfish and part fungus. Its taste has been described as "mushroom sprinkled with salty water".</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_Jellyfungus</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.03</Mass>
+            <Nutrition>0.05</Nutrition>
+            <MarketValue>1.1</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!--  Mud Splasher Carp -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_MudSplasherCarp</defName>
+        <label>mud splasher carp</label>
+        <description>Raw mud splasher carp. A species of oily freshwater fish from the family Cyprinidae. These carps are fond of mud-saturated waters, where they remain motionless, buried in the mud, and wait for prey to come within ambush distance before pouncing.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_MudSplasherCarp</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.03</Mass>
+            <Nutrition>0.05</Nutrition>
+            <MarketValue>1.1</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!--  Mutant Flatfish -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_MutantFlatfish</defName>
+        <label>mutant flatfish</label>
+        <description>Raw mutant flatfish. A relative of the oceanic sole, this three-eyed flatfish is a bottom-dwelling species feeding on small crustaceans and other invertebrates. It inhabits both saltwater and brackish waters.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_MutantFlatfish</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.02</Mass>
+            <Nutrition>0.03</Nutrition>
+            <MarketValue>0.66</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!--  Ocular Fish -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_OcularFish</defName>
+        <label>ocular fish</label>
+        <description>Raw ocular fish. A completely alien breed of fish. Its single, huge yellowed eye seems to be looking in all directions simultaneously.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_OcularFish</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.03</Mass>
+            <Nutrition>0.07</Nutrition>
+            <MarketValue>1.54</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!--  Pink Blobfish -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_PinkBlobfish</defName>
+        <label>pink blobfish</label>
+        <description>Raw pink blobfish. Usually considered one of the ugliest fish in the Rim, the pink blobfish's quasi-humanoid features give it a very strange tragicomical visage.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_PinkBlobfish</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.03</Mass>
+            <Nutrition>0.05</Nutrition>
+            <MarketValue>1.1</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+
+    <!--  Propane Bag -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_PropaneBag</defName>
+        <label>propane bag</label>
+        <description>Raw propane bag. These jellyfish have a propane-based metabolism, and are able to survive, and even thrive, in unbelievably extreme conditions. They are not very edible, though, and consuming them could lead to experiencing some painful stomach cramps.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_PropaneBag</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.01</Mass>
+            <Nutrition>0.01</Nutrition>
+            <MarketValue>0.22</MarketValue>
+            <FoodPoisonChanceFixedHuman>0.75</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!--  Shadow Fry -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_ShadowFry</defName>
+        <label>shadow fry</label>
+        <description>Raw shadow fry. Small river fish that move in large schools around fishing banks and near riverbanks, tending to hide from sunlight in darkened crevices.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_ShadowFry</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.02</Mass>
+            <Nutrition>0.02</Nutrition>
+            <MarketValue>0.44</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!--  Slimefish -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_Slimefish</defName>
+        <label>slimefish</label>
+        <description>Raw slimefish. A bottom-dwelling species that feeds by filtering the organic residue found in slimy ponds. Chewy, gelatinous and insipid. Similar in texture to gelatin.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_Slimefish</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.25</Mass>
+            <Nutrition>0.25</Nutrition>
+            <MarketValue>5.5</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!--  Spiderfish -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_Spiderfish</defName>
+        <label>spiderfish</label>
+        <description>Raw spiderfish. This strange mutant creature seems to be part fish, part spider. It weaves intricate spider webs underwater, trapping its prey and weaving cocoons around it.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_Spiderfish</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.03</Mass>
+            <Nutrition>0.05</Nutrition>
+            <MarketValue>1.1</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!--  Spinyfish -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_Spinyfish</defName>
+        <label>spinyfish</label>
+        <description>Raw spinyfish. This fish has protruding spines that it uses as a defensive measure. It doesn't have much meat, but what it does have is quite tasty.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_Spinyfish</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.04</Mass>
+            <Nutrition>0.06</Nutrition>
+            <MarketValue>1.32</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+	
+    <!--  Sturgeon -->
+
+    <ThingDef ParentName="AB_RawFishBase">
+        <defName>VCEF_Sturgeon</defName>
+        <label>sturgeon</label>
+        <description>Raw sturgeon. Sturgeons are huge ,long-lived fishes with distinctive characteristics, such as a caudal fin similar to those of sharks, and an elongated, spindle-like body that is smooth-skinned, scaleless, and armored with five lateral rows of bony plates called scutes.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Fish/VCEF_Sturgeon</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.5</Mass>
+            <Nutrition>0.2</Nutrition>
+            <MarketValue>4.4</MarketValue>
+        </statBases>
+        <ingestible>
+            <specialThoughtDirect>AteRawFood</specialThoughtDirect>
+        </ingestible>
+        <uiIconForStackCount>1</uiIconForStackCount>
+    </ThingDef>
+</Defs>

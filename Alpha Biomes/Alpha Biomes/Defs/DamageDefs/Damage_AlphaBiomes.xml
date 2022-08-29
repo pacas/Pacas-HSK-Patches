@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <DamageDef>
+        <defName>AB_Tar</defName>
+        <label>tar</label>
+        <canInterruptJobs>false</canInterruptJobs>
+        <makesBlood>false</makesBlood>
+        <defaultDamage>0</defaultDamage>
+        <explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+        <explosionColorEdge>(0, 0, 0, 0.05)</explosionColorEdge>
+        <harmsHealth>false</harmsHealth>
+        <soundExplosion>Explosion_Smoke</soundExplosion>
+        <combatLogRules>AB_Damage_Tar</combatLogRules>
+    </DamageDef>
+
+    <DamageDef>
+        <defName>AB_Gangrene</defName>
+        <label>gangrene</label>
+        <workerClass>DamageWorker_Frostbite</workerClass>
+        <externalViolence>false</externalViolence>
+        <deathMessage>{0} has succumbed to gangrene.</deathMessage>
+        <hediff>AB_Gangrene</hediff>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+    </DamageDef>
+</Defs>

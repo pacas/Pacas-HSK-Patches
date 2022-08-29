@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TerrainDef Name="AB_FloorBase" Abstract="True">
+        <layerable>true</layerable>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+        </affordances>
+        <tags>
+            <li>Floor</li>
+        </tags>
+        <designationCategory>Floors</designationCategory>
+        <fertility>0</fertility>
+        <constructEffect>ConstructDirt</constructEffect>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    </TerrainDef>
+
+
+    <!-- Exotic Tilestones -->
+
+    <!--<TerrainDef Abstract="True" ParentName="AB_FloorBase" Name="AB_ExoticTileStoneBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at, but they take a long time to lay. These were built using exotic materials.</description>
+		<texturePath>Terrain/Surfaces/TileStone</texturePath>
+		<statBases>
+			<WorkToBuild>1100</WorkToBuild>
+			<Beauty>1</Beauty>
+		</statBases>
+		<designatorDropdown>AB_Floor_Tilestone</designatorDropdown>
+		<researchPrerequisites>
+			<li>Stonecutting</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+	</TerrainDef>-->
+
+
+    <TerrainDef ParentName="TileStoneBase">
+        <defName>AB_TileRoseQuartz</defName>
+        <label>rose quartz tile</label>
+        <color>(120,50,50)</color>
+        <costList>
+            <GU_BlocksRoseQuartz>4</GU_BlocksRoseQuartz>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="TileStoneBase">
+        <defName>AB_TileMudstone</defName>
+        <label>mudstone tile</label>
+        <color>(49,31,15)</color>
+        <costList>
+            <AB_BlocksMudstone>4</AB_BlocksMudstone>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="TileStoneBase">
+        <defName>AB_TileCragstone</defName>
+        <label>cragstone tile</label>
+        <color>(36,35,40)</color>
+        <costList>
+            <AB_BlocksCragstone>4</AB_BlocksCragstone>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="TileStoneBase">
+        <defName>AB_TileObsidian</defName>
+        <label>obsidian tile</label>
+        <color>(50,50,50)</color>
+        <costList>
+            <AB_BlocksObsidian>4</AB_BlocksObsidian>
+        </costList>
+    </TerrainDef>
+
+    <!-- Exotic Flagstones -->
+
+    <!--<TerrainDef Abstract="True" ParentName="AB_FloorBase" Name="AB_ExoticFlagstoneBase">
+		<renderPrecedence>220</renderPrecedence>
+		<description>Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. These were built using exotic materials.</description>
+		<texturePath>Terrain/Surfaces/Flagstone</texturePath>
+		<resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+		<statBases>
+			<WorkToBuild>500</WorkToBuild>
+			<Beauty>0</Beauty>
+		</statBases>
+		<designatorDropdown>AB_Floor_Flagstone</designatorDropdown>
+		<tags>
+			<li>Road</li>
+		</tags>
+	</TerrainDef> -->
+
+    <TerrainDef ParentName="FlagstoneBase">
+        <defName>AB_FlagstoneRoseQuartz</defName>
+        <label>rose quartz flagstone</label>
+        <color>(120,50,50)</color>
+        <costList>
+            <GU_BlocksRoseQuartz>4</GU_BlocksRoseQuartz>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="FlagstoneBase">
+        <defName>AB_FlagstoneMudstone</defName>
+        <label>mudstone flagstone</label>
+        <color>(49,31,15)</color>
+        <costList>
+            <AB_BlocksMudstone>4</AB_BlocksMudstone>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="FlagstoneBase">
+        <defName>AB_FlagstoneCragstone</defName>
+        <label>cragstone flagstone</label>
+        <color>(36,35,40)</color>
+        <costList>
+            <AB_BlocksCragstone>4</AB_BlocksCragstone>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="FlagstoneBase">
+        <defName>AB_FlagstoneObsidian</defName>
+        <label>obsidian flagstone</label>
+        <color>(50,50,50)</color>
+        <costList>
+            <AB_BlocksObsidian>4</AB_BlocksObsidian>
+        </costList>
+    </TerrainDef>
+
+
+
+    <!-- Exotic Woods -->
+    <TerrainDef Abstract="True" ParentName="FloorBase" Name="AB_AlienWoodFloorsBase">
+        <renderPrecedence>249</renderPrecedence>
+        <description>Wood floors crafted with exotic, alien wood or other unusual materials.</description>
+        <statBases>
+            <WorkToBuild>130</WorkToBuild>
+            <Flammability>0.3</Flammability>
+        </statBases>
+        <designatorDropdown>AB_Floor_AlienWoods</designatorDropdown>
+        <constructEffect>ConstructWood</constructEffect>
+        <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    </TerrainDef>
+
+    <TerrainDef ParentName="AB_AlienWoodFloorsBase">
+        <defName>AB_AlienWoodFloors_MushroomStalks</defName>
+        <label>mushroom stalk planks</label>
+        <texturePath>Terrain/Surfaces/AB_MushroomPlanksFloor</texturePath>
+        <costList>
+            <AB_MushroomWoodLog>3</AB_MushroomWoodLog>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="AB_AlienWoodFloorsBase">
+        <defName>AB_AlienWoodFloors_RedWood</defName>
+        <label>red wood planks</label>
+        <texturePath>Terrain/Surfaces/AB_RedWoodPlanksFloor</texturePath>
+        <costList>
+            <GU_RedWood>3</GU_RedWood>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef ParentName="AB_AlienWoodFloorsBase">
+        <defName>AB_CrystalWoodFloors_RedWood</defName>
+        <label>crystalline wood planks</label>
+        <texturePath>Terrain/Surfaces/AB_CrystalWoodPlanks</texturePath>
+        <costList>
+            <AB_CrystalWood>3</AB_CrystalWood>
+        </costList>
+    </TerrainDef>
+	
+    <TerrainDef ParentName="AB_AlienWoodFloorsBase">
+        <defName>AB_TarmacFloor</defName>
+        <label>tarmac road</label>
+        <statBases>
+            <WorkToBuild>80</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <texturePath>Terrain/Surfaces/AB_Tarmac</texturePath>
+        <pathCost>1</pathCost>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <edgeType>FadeRough</edgeType>
+        <costList>
+            <AB_AsphaltBucket>3</AB_AsphaltBucket>
+        </costList>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    </TerrainDef>
+
+</Defs>

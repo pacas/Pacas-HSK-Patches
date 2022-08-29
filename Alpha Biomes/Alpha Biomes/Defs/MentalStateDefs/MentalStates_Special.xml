@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Special mental states not from mental breaks -->
+    <MentalStateDef ParentName="BaseMentalState">
+        <defName>AB_LavaPanicFlee</defName>
+        <label>covered in lava</label>
+        <stateClass>AlphaBiomes.MentalState_CoveredInLava</stateClass>
+        <category>Misc</category>
+        <minTicksBeforeRecovery>500</minTicksBeforeRecovery>
+        <recoveryMtbDays>0.1</recoveryMtbDays>
+        <nameColor>(0.65, 0.9, 0.93)</nameColor>
+        <beginLetterLabel>covered in lava</beginLetterLabel>
+        <beginLetter>{0} was splashed by lava and is fleeing in panic.</beginLetter>
+        <recoveryMessage>{0} is no longer fleeing in panic.</recoveryMessage>
+        <baseInspectLine>Mental state: Fleeing in panic due to contact with lava</baseInspectLine>
+        <blockNormalThoughts>true</blockNormalThoughts>
+        <unspawnedCanDo>false</unspawnedCanDo>
+    </MentalStateDef>
+</Defs>

@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--============================ Flowers =============================-->
+    <ThingDef ParentName="BushBase">
+        <defName>AB_CrystalHorn</defName>
+        <label>crystal horn</label>
+        <thingClass>AlphaBiomes.Plant_Cold</thingClass>
+        <description>This strange flower seems to be only partially organic. Part of its structure is clearly crystalline, and it appears to be unaffected, or even bolstered, by the extremely cold climate. It might even be edible.\n\nPlant details: Crystal horn is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.25. It grows in low temperatures (above -70ºC) and needs no light. Can be harvested for raw crystal horn.</description>
+        <descriptionHyperlinks>
+            <ThingDef>AB_RawCrystalHorn</ThingDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Plants/AB_CrystalHorn</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.55, 0.17, 0.15)</volume>
+                <offset>(0,0,-0.2)</offset>
+            </shadowData>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Beauty>2</Beauty>
+            <Nutrition>0.35</Nutrition>
+        </statBases>
+        <plant>
+            <neverBlightable>true</neverBlightable>
+            <growMinGlow>0</growMinGlow>
+            <growOptimalGlow>0</growOptimalGlow>
+            <fertilityMin>0.25</fertilityMin>
+            <wildClusterRadius>4</wildClusterRadius>
+            <wildClusterWeight>7.5</wildClusterWeight>
+            <visualSizeRange>0.8~1.2</visualSizeRange>
+            <harvestYield>10</harvestYield>
+            <harvestWork>250</harvestWork>
+            <harvestTag>Standard</harvestTag>
+            <harvestAfterGrowth>0.30</harvestAfterGrowth>
+            <harvestedThingDef>AB_RawCrystalHorn</harvestedThingDef>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="BushBase">
+        <defName>AB_FrostLeaf</defName>
+        <label>frost leaf</label>
+        <thingClass>AlphaBiomes.Plant_Cold</thingClass>
+        <description>These translucent plants seem to be able to grow almost anywhere, even in some snow covered areas. They can be dried in a fire and used to feed herbivore animals efficiently. \n\nPlant details: Frost leaf is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0. It grows in low temperatures (above -70ºC) and needs no light. Can be harvested for raw frost leaf.</description>
+        <descriptionHyperlinks>
+            <ThingDef>AB_RawFrostLeaf</ThingDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Plants/AB_FrostLeaf</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.55, 0.17, 0.15)</volume>
+                <offset>(0,0,-0.2)</offset>
+            </shadowData>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Beauty>2</Beauty>
+            <Nutrition>0.35</Nutrition>
+        </statBases>
+        <plant>
+            <neverBlightable>true</neverBlightable>
+            <growMinGlow>0</growMinGlow>
+            <growOptimalGlow>0</growOptimalGlow>
+            <fertilityMin>0</fertilityMin>
+            <wildClusterRadius>4</wildClusterRadius>
+            <wildClusterWeight>7.5</wildClusterWeight>
+            <visualSizeRange>0.8~1.2</visualSizeRange>
+            <harvestYield>20</harvestYield>
+            <harvestWork>250</harvestWork>
+            <harvestTag>Standard</harvestTag>
+            <harvestAfterGrowth>0.5</harvestAfterGrowth>
+            <harvestedThingDef>AB_RawFrostLeaf</harvestedThingDef>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="BushBase">
+        <defName>AB_RimeNodules</defName>
+        <label>rime nodules</label>
+        <thingClass>AlphaBiomes.Plant_Cold</thingClass>
+        <description>A very strange plant, partly inorganic, that seems to extract propane from the surrounding landscape and store it as an energy source in rime-bound chemical sacs. These sacs can be consumed as a very mild euphoric.\n\nPlant details: Rime nodules is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0. It grows in low temperatures (above -70ºC) and needs no light. Can be harvested for raw rime nodules.</description>
+        <descriptionHyperlinks>
+            <ThingDef>AB_RawRimeNodules</ThingDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Plants/AB_RimeNodules</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.55, 0.17, 0.15)</volume>
+                <offset>(0,0,-0.2)</offset>
+            </shadowData>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Beauty>2</Beauty>
+            <Nutrition>0.15</Nutrition>
+        </statBases>
+        <plant>
+            <neverBlightable>true</neverBlightable>
+            <growMinGlow>0</growMinGlow>
+            <growOptimalGlow>0</growOptimalGlow>
+            <fertilityMin>0</fertilityMin>
+            <wildClusterRadius>4</wildClusterRadius>
+            <wildClusterWeight>7.5</wildClusterWeight>
+            <visualSizeRange>0.8~1.2</visualSizeRange>
+            <harvestYield>5</harvestYield>
+            <harvestWork>250</harvestWork>
+            <harvestTag>Standard</harvestTag>
+            <harvestAfterGrowth>0.5</harvestAfterGrowth>
+            <harvestedThingDef>AB_RawRimeNodules</harvestedThingDef>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="BushBase">
+        <defName>AB_CrystalFlower</defName>
+        <label>crystal flower</label>
+        <thingClass>AlphaBiomes.Plant_Cold</thingClass>
+        <description>A tall, translucent flower that seems to be partially inorganic.\n\nPlant details: Crystal flowers are a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.25. It grows in low temperatures (above -70ºC) and needs no light. Can be harvested for crystalline wood.</description>
+        <descriptionHyperlinks>
+            <ThingDef>AB_CrystalWood</ThingDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Plants/AB_CrystalFlower</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.55, 0.17, 0.15)</volume>
+                <offset>(0,0,-0.2)</offset>
+            </shadowData>
+        </graphicData>
+        <ingestible>
+            <foodType>Tree</foodType>
+            <preferability>RawBad</preferability>
+        </ingestible>
+        <statBases>
+            <MaxHitPoints>650</MaxHitPoints>
+            <Beauty>5</Beauty>
+            <Nutrition>1.7</Nutrition>
+        </statBases>
+        <plant>
+            <neverBlightable>true</neverBlightable>
+            <growMinGlow>0</growMinGlow>
+            <growOptimalGlow>0</growOptimalGlow>
+            <fertilityMin>0.25</fertilityMin>
+            <wildClusterRadius>7</wildClusterRadius>
+            <wildClusterWeight>7.5</wildClusterWeight>
+            <visualSizeRange>2~2.5</visualSizeRange>
+            <harvestYield>25</harvestYield>
+            <harvestWork>800</harvestWork>
+            <harvestFailable>false</harvestFailable>
+            <harvestTag>Wood</harvestTag>
+            <harvestAfterGrowth>0.50</harvestAfterGrowth>
+            <soundHarvesting>Harvest_Tree</soundHarvesting>
+            <soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+            <harvestedThingDef>AB_CrystalWood</harvestedThingDef>
+            <blockAdjacentSow>true</blockAdjacentSow>
+        </plant>
+    </ThingDef>
+    <ThingDef>
+        <defName>AB_FlashFrozenTree</defName>
+        <label>flash frozen tree</label>
+        <description>This tree, which probably started growing in a rare period of summer heat, has been frozen in place by the extreme temperatures, its leaves crystallized by the toxic propane compounds. A small amount of wood can be extracted from it, but it is likely that more of them won't appear as time passes.\n\nPlant details: Flash frozen trees appear in the wild but they don't regrow, ever. They need minimum terrain fertility of 0. Can be harvested for normal wood.</description>
+        <descriptionHyperlinks>
+            <ThingDef>WoodLog</ThingDef>
+        </descriptionHyperlinks>
+        <category>Plant</category>
+        <thingClass>AlphaBiomes.Plant_Cold</thingClass>
+        <altitudeLayer>Building</altitudeLayer>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Flammability>0.7</Flammability>
+            <Beauty>-8</Beauty>
+        </statBases>
+        <tickerType>Long</tickerType>
+        <selectable>true</selectable>
+        <fillPercent>0.20</fillPercent>
+        <neverMultiSelect>True</neverMultiSelect>
+        <drawerType>MapMeshOnly</drawerType>
+        <pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+        <startingHpRange>
+            <min>0.5</min>
+            <max>1</max>
+        </startingHpRange>
+        <passability>PassThroughOnly</passability>
+        <pathCost>90</pathCost>
+        <graphicData>
+            <texPath>Things/Plants/AB_FlashFrozenTree</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutPlant</shaderType>
+            <shadowData>
+                <volume>(0.2, 0.15, 0.13)</volume>
+                <offset>(-0.03,0,-0.44)</offset>
+            </shadowData>
+        </graphicData>
+        <plant>
+            <harvestWork>800</harvestWork>
+            <harvestedThingDef>WoodLog</harvestedThingDef>
+            <harvestYield>25</harvestYield>
+            <harvestTag>Wood</harvestTag>
+            <fertilityMin>0</fertilityMin>
+            <fertilitySensitivity>0</fertilitySensitivity>
+            <soundHarvesting>Harvest_Tree</soundHarvesting>
+            <soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+            <topWindExposure>0.05</topWindExposure>
+            <blockAdjacentSow>true</blockAdjacentSow>
+            <harvestFailable>false</harvestFailable>
+            <growDays>0.0001</growDays>
+            <growMinGlow>0</growMinGlow>
+            <lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+            <visualSizeRange>1.5~2.2</visualSizeRange>
+        </plant>
+    </ThingDef>
+</Defs>

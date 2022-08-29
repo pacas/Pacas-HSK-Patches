@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <WorkGiverDef>
+        <defName>AB_DoBillsSmelter</defName>
+        <label>works at exotic smelter</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Crafting</workType>
+        <priorityInType>100</priorityInType>
+        <fixedBillGiverDefs>
+            <li>AB_ExoticSmelterOcular</li>
+        </fixedBillGiverDefs>
+        <verb>work at</verb>
+        <gerund>working at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>AB_DoBillsCook</defName>
+        <label>cook meals at propane stove</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Cooking</workType>
+        <priorityInType>100</priorityInType>
+        <fixedBillGiverDefs>
+            <li>AB_PropaneStove</li>
+        </fixedBillGiverDefs>
+        <verb>cook</verb>
+        <gerund>cooking at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>AB_CoreDrill</defName>
+        <label>drill at core sample drill</label>
+        <giverClass>AlphaBiomes.WorkGiver_CoreSampleDrill</giverClass>
+        <workType>Mining</workType>
+        <priorityInType>50</priorityInType>
+        <verb>drill</verb>
+        <gerund>drilling</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+</Defs>

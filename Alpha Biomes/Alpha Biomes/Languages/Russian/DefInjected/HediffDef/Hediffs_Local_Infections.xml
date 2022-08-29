@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+<AB_SporesAllergy.label>аллергия на споры</AB_SporesAllergy.label>
+<AB_SporesAllergy.description>Сильная аллергия на споры, присутствующие в воздухе грибных джунглей. Эта аллергия затрудняет дыхание, но проходит (на время), если должным образом вылечена.</AB_SporesAllergy.description>
+<AB_SporesAllergy.stages.0.label>лёгкая</AB_SporesAllergy.stages.0.label>
+<AB_SporesAllergy.stages.1.label>тяжёлая</AB_SporesAllergy.stages.1.label>
+<AB_SporesAllergy.stages.2.label>смертельная</AB_SporesAllergy.stages.2.label>
+
+<AB_AnimalSporesAllergy.label>аллергия на споры (животные)</AB_AnimalSporesAllergy.label>
+<AB_AnimalSporesAllergy.description>Сильная аллергия на споры, присутствующие в воздухе грибных джунглей. Эта аллергия затрудняет дыхание, но проходит (на время), если должным образом вылечена.</AB_AnimalSporesAllergy.description>
+<AB_AnimalSporesAllergy.stages.0.label>лёгкая</AB_AnimalSporesAllergy.stages.0.label>
+<AB_AnimalSporesAllergy.stages.1.label>тяжёлая</AB_AnimalSporesAllergy.stages.1.label>
+<AB_AnimalSporesAllergy.stages.2.label>смертельная</AB_AnimalSporesAllergy.stages.2.label>
+
+<AB_Paralysis.label>нейротоксический паралич</AB_Paralysis.label>
+<AB_Paralysis.description>Быстродействующий токсин течет по венам этого существа, парализуя его мускулы. Пройдёт через какое-то время.</AB_Paralysis.description>
+<AB_Paralysis.stages.0.label>начальный</AB_Paralysis.stages.0.label>
+<AB_Paralysis.stages.1.label>ошеломлён</AB_Paralysis.stages.1.label>
+<AB_Paralysis.stages.2.label>сильно ошеломлён</AB_Paralysis.stages.2.label>
+<AB_Paralysis.stages.3.label>парализован</AB_Paralysis.stages.3.label>
+
+<AB_RavagingIntestinalParasites.label>опустошающие кишечные паразиты</AB_RavagingIntestinalParasites.label>
+<AB_RavagingIntestinalParasites.description>Этого человека заразил опустошающий генно-инженерный ленточный червь. Если его должным образом не вылечить, со временем червь убьёт своего хозяина.\n\n&lt;color=#E5E54C&gt;Геймплейный эффект:&lt;/color&gt; Тяжесть заболевания будет расти, если не лечить. Червь исчезнет после того, как совокупное качество лечения станет равным 3.</AB_RavagingIntestinalParasites.description>
+<AB_RavagingIntestinalParasites.stages.0.label>лёгкая</AB_RavagingIntestinalParasites.stages.0.label>
+<AB_RavagingIntestinalParasites.stages.1.label>тяжёлая</AB_RavagingIntestinalParasites.stages.1.label>
+<AB_RavagingIntestinalParasites.stages.2.label>смертельная</AB_RavagingIntestinalParasites.stages.2.label>
+
+<AB_ViralAbasia.label>вирусная абазия</AB_ViralAbasia.label>
+<AB_ViralAbasia.description>Скорее всего, искусственно созданный в качестве биологического оружия, этот извращённый вирус атакует моторную кору жертвы, в конечном итоге оставляя человека обездвиженным.\n\n&lt;color=#E5E54C&gt;Геймплейный эффект:&lt;/color&gt; Излечимое, иммунизируемое заболевание.</AB_ViralAbasia.description>
+<AB_ViralAbasia.stages.0.label>начальная</AB_ViralAbasia.stages.0.label>
+<AB_ViralAbasia.stages.1.label>лёгкая</AB_ViralAbasia.stages.1.label>
+<AB_ViralAbasia.stages.2.label>средняя</AB_ViralAbasia.stages.2.label>
+<AB_ViralAbasia.stages.3.label>тяжёлая</AB_ViralAbasia.stages.3.label>
+
+<AB_BacterialGangrene.label>бактериальная гангрена</AB_BacterialGangrene.label>
+<AB_BacterialGangrene.description>Быстроразвивающееся бактериальное заболевание, вызывающее гангрену, при которой кожа постепенно чернеет и отваливается. При правильном лечении излечивается за 3-4 дня. Даже при правильном лечении колонист может потерять палец или два.</AB_BacterialGangrene.description>
+<AB_BacterialGangrene.stages.0.label>лёгкая</AB_BacterialGangrene.stages.0.label>
+<AB_BacterialGangrene.stages.1.label>тяжёлая</AB_BacterialGangrene.stages.1.label>
+<AB_BacterialGangrene.stages.2.label>смертельная</AB_BacterialGangrene.stages.2.label>
+
+<AB_BacterialGangrene.label>гангрена</AB_BacterialGangrene.label>
+<AB_BacterialGangrene.description>Отмирание тканей тела из-за недостатка кровотока или серьезной бактериальной инфекции.</AB_BacterialGangrene.description>
+<AB_BacterialGangrene.comps.HediffComp_TendDuration.labelTendedWell>перевязано</AB_BacterialGangrene.comps.HediffComp_TendDuration.labelTendedWell>
+<AB_BacterialGangrene.comps.HediffComp_TendDuration.labelTendedWellInner>обработано</AB_BacterialGangrene.comps.HediffComp_TendDuration.labelTendedWellInner>
+<AB_BacterialGangrene.comps.HediffComp_TendDuration.labelSolidTendedWell>обработано</AB_BacterialGangrene.comps.HediffComp_TendDuration.labelSolidTendedWell>
+<AB_BacterialGangrene.comps.HediffComp_GetsPermanent.permanentLabel>шрам от гангрены</AB_BacterialGangrene.comps.HediffComp_GetsPermanent.permanentLabel>
+<AB_BacterialGangrene.injuryProps.destroyedLabel>уничтожено гангреной</AB_BacterialGangrene.injuryProps.destroyedLabel>
+
+</LanguageData>
+
+
