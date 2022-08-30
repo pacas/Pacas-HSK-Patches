@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="AB_GelatinousSuperorganism" or defName="AB_IdyllicMeadows" or
+					defName="AB_MycoticJungle"]/wildAnimals
+				</xpath>
+				<value>
+					<ERN_Opossum>0.1</ERN_Opossum>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

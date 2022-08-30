@@ -47,10 +47,8 @@
             <purpose>Food</purpose>
             <sowTags>
                 <li>Ground</li>
-
             </sowTags>
         </plant>
-
     </ThingDef>
 
     <ThingDef ParentName="AB_CavePlantBase">
@@ -81,7 +79,6 @@
             <harvestYield>10</harvestYield>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>AB_PurpleRawFungus</harvestedThingDef>
-
             <neverBlightable>true</neverBlightable>
             <visualSizeRange>1~2</visualSizeRange>
             <topWindExposure>0.05</topWindExposure>
@@ -94,10 +91,8 @@
             </sowResearchPrerequisites>
             <sowTags>
                 <li>Ground</li>
-
             </sowTags>
         </plant>
-
     </ThingDef>
 
     <ThingDef ParentName="AB_CavePlantBase">
@@ -128,7 +123,6 @@
             <harvestYield>10</harvestYield>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>AB_PinkRawFungus</harvestedThingDef>
-
             <neverBlightable>true</neverBlightable>
             <visualSizeRange>1~2</visualSizeRange>
             <topWindExposure>0.05</topWindExposure>
@@ -141,10 +135,8 @@
             </sowResearchPrerequisites>
             <sowTags>
                 <li>Ground</li>
-
             </sowTags>
         </plant>
-
     </ThingDef>
 
     <ThingDef ParentName="AB_CavePlantBase">
@@ -176,7 +168,6 @@
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>AB_PsychotropicFungus</harvestedThingDef>
             <blockAdjacentSow>true</blockAdjacentSow>
-
             <neverBlightable>true</neverBlightable>
             <visualSizeRange>1.5~2</visualSizeRange>
             <topWindExposure>0.05</topWindExposure>
@@ -189,10 +180,8 @@
             </sowResearchPrerequisites>
             <sowTags>
                 <li>Ground</li>
-
             </sowTags>
         </plant>
-
     </ThingDef>
 
     <ThingDef ParentName="AB_CavePlantBase">
@@ -216,7 +205,6 @@
             </shadowData>
         </graphicData>
         <altitudeLayer>Building</altitudeLayer>
-
         <selectable>true</selectable>
         <neverMultiSelect>false</neverMultiSelect>
         <pathCost>25</pathCost>
@@ -240,10 +228,8 @@
             <purpose>Food</purpose>
             <sowTags>
                 <li>Ground</li>
-
             </sowTags>
         </plant>
-
     </ThingDef>
 
     <ThingDef ParentName="AB_CavePlantBase">
@@ -268,7 +254,6 @@
         </graphicData>
         <altitudeLayer>BuildingOnTop</altitudeLayer>
         <blockLight>true</blockLight>
-
         <selectable>true</selectable>
         <neverMultiSelect>false</neverMultiSelect>
         <pathCost>25</pathCost>
@@ -289,14 +274,11 @@
                 <li>TreeSowing</li>
             </sowResearchPrerequisites>
             <mustBeWildToSow>true</mustBeWildToSow>
-			 
             <purpose>Food</purpose>
             <sowTags>
                 <li>Ground</li>
-
             </sowTags>
         </plant>
-
     </ThingDef>
 
     <ThingDef ParentName="AB_CavePlantBase">
@@ -337,7 +319,6 @@
             <neverBlightable>true</neverBlightable>
             <visualSizeRange>2~3.5</visualSizeRange>
             <topWindExposure>0.1</topWindExposure>
-		
             <sowResearchPrerequisites>
                 <li>TreeSowing</li>
             </sowResearchPrerequisites>
@@ -352,9 +333,9 @@
     <ThingDef ParentName="AB_CavePlantBase">
         <defName>AB_DribblingCap</defName>
         <label>dribbling cap</label>
-        <description>A huge pink mushroom, constantly dribbling a pungent, resin-like substance. This substance is a potent neurotoxin that could potentially be extracted and used.\n\nPlant details: Dribbling cap is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.95. Can be harvested for poison gland like entities.</description>
+        <description>A huge pink mushroom, constantly dribbling a pungent, resin-like substance. This substance is a potent neurotoxin that could potentially be extracted and used.\n\nPlant details: Dribbling cap is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.95. Can be harvested for poison darts.</description>
         <descriptionHyperlinks>
-            <ThingDef>PoisonGland</ThingDef>
+            <ThingDef>PoisonDart</ThingDef>
         </descriptionHyperlinks>
         <statBases>
             <MaxHitPoints>250</MaxHitPoints>
@@ -380,9 +361,9 @@
             <fertilitySensitivity>0.15</fertilitySensitivity>
             <growDays>25</growDays>
             <dieIfLeafless>true</dieIfLeafless>
-            <harvestYield>5</harvestYield>
+            <harvestYield>100</harvestYield>
             <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>PoisonGland</harvestedThingDef>
+            <harvestedThingDef>PoisonDart</harvestedThingDef>
             <neverBlightable>true</neverBlightable>
             <blockAdjacentSow>true</blockAdjacentSow>
             <mustBeWildToSow>true</mustBeWildToSow>
