@@ -61,9 +61,6 @@
 				<compClass>CompReportWorkSpeed</compClass>
 			</li>
 		</comps>
-        <placeWorkers>
-            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-        </placeWorkers>
         <researchPrerequisites>
             <li>Metals_C1</li>
         </researchPrerequisites>
@@ -86,5 +83,4 @@
 			<Mechanism>8</Mechanism>
 		</costList>
     </ThingDef>
-
 </Defs>
