@@ -106,7 +106,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="AA_Cinderlisk"]/race/wildBiomes</xpath>
                     <value>
-                        <AB_FeraliskInfestedJungle>0.07</AB_FeraliskInfestedJungle>
+                        <AB_FeraliskInfestedJungle>0.1</AB_FeraliskInfestedJungle>
                         <AB_MycoticJungle>0.07</AB_MycoticJungle>
                         <AB_OcularForest>0.01</AB_OcularForest>
                         <AB_GelatinousSuperorganism>0.07</AB_GelatinousSuperorganism>
@@ -164,7 +164,7 @@
                     <xpath>/Defs/ThingDef[defName="AA_Dunealisk"]/race/wildBiomes</xpath>
                     <value>
                         <AB_GallatrossGraveyard>0.05</AB_GallatrossGraveyard>
-                        <AB_FeraliskInfestedJungle>0.07</AB_FeraliskInfestedJungle>
+                        <AB_FeraliskInfestedJungle>0.1</AB_FeraliskInfestedJungle>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
@@ -185,7 +185,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="AA_Feralisk"]/race/wildBiomes</xpath>
                     <value>
-                        <AB_FeraliskInfestedJungle>0.45</AB_FeraliskInfestedJungle>
+                        <AB_FeraliskInfestedJungle>0.1</AB_FeraliskInfestedJungle>
                         <AB_GelatinousSuperorganism>0.02</AB_GelatinousSuperorganism>
                     </value>
                 </li>
@@ -289,7 +289,7 @@
                     <xpath>/Defs/ThingDef[defName="AA_Junglelisk"]/race</xpath>
                     <value>
                         <wildBiomes>
-                            <AB_FeraliskInfestedJungle>0.5</AB_FeraliskInfestedJungle>
+                            <AB_FeraliskInfestedJungle>1.0</AB_FeraliskInfestedJungle>
                         </wildBiomes>
                     </value>
                 </li>
