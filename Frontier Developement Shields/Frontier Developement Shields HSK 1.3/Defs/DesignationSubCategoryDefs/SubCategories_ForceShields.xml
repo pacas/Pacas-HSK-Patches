@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ShieldGenerators</defName>
+		<label>Shield Generators</label>
+		<description>Shield generators that can save your pawns from bullets, but not from lasers.</description>
+		<defNames>
+			<li>Building_ShieldGenerator</li>
+            <li>Building_ShieldGeneratorLarge</li>
+            <li>Building_ShieldGeneratorPortable</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+</Defs>	

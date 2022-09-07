@@ -1,188 +1,188 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<!--============================ Grasses =============================-->
-	<ThingDef ParentName="PlantBase">
-		<defName>AB_Flowers</defName>
-		<label>flowers</label>
-		<description>A bunch of colourful flowers.</description>
-		<statBases>
-			<MaxHitPoints>85</MaxHitPoints>
-			<Flammability>1.3</Flammability>
-			<Nutrition>0.05</Nutrition>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plants/AB_Flowers</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
-		<ingestible/>
-		<plant>
-			<fertilityMin>0.05</fertilityMin>
-			<fertilitySensitivity>0.3</fertilitySensitivity>
-			<growDays>2.5</growDays>
-			<harvestWork>40</harvestWork>
-			<maxMeshCount>9</maxMeshCount>
-			<visualSizeRange>0.4~0.6</visualSizeRange>
-			<topWindExposure>0.05</topWindExposure>
-			<wildOrder>1</wildOrder>
-		</plant>
-	</ThingDef>
-	<!--============================ Bushes =============================-->
-	<ThingDef ParentName="BushBase">
-		<defName>AB_GargantuanLithops</defName>
-		<label>gargantuan lithops</label>
-		<description>Lithops is a genus of succulent plants often known as pebble plants or living stones, due to their stone-like appearance that allows them to avoid being eaten by blending in with surrounding rocks. This gigantic lithops has been genetically modified to actually gather small amounts of metals and stone and incorporate them into its structure. Who said geneticists lack a sense of humour?\n\nPlant details: Gargantuan lithops is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.7. Can be harvested for steel and a stone chunk.</description>
-		<descriptionHyperlinks>
-			<ThingDef>Steel</ThingDef>
-		</descriptionHyperlinks>
-		<statBases>
-			<Beauty>2</Beauty>
-		</statBases>
-		<graphicData>
-			<texPath>Things/Plants/AB_Lithops</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shadowData>
-				<volume>(0.3, 0.2, 0.15)</volume>
-				<offset>(0,0,-0.1)</offset>
-			</shadowData>
-		</graphicData>
-		<plant>
-			<wildClusterRadius>3</wildClusterRadius>
-			<wildClusterWeight>4</wildClusterWeight>
-			<visualSizeRange>1~1.5</visualSizeRange>
-			<harvestYield>10</harvestYield>
-			<harvestWork>250</harvestWork>
-			<harvestTag>Standard</harvestTag>
-			<harvestAfterGrowth>0.30</harvestAfterGrowth>
-			<harvestedThingDef>Steel</harvestedThingDef>
-		</plant>
-		<modExtensions>
-			<li Class="VanillaPlantsExpanded.DualCropExtension">
-				<randomOutput>true</randomOutput>
-				<outPutAmount>1</outPutAmount>
-				<randomSecondaryOutput>
-					<li>ChunkSandstone</li>
-					<li>ChunkGranite</li>
-					<li>ChunkLimestone</li>
-					<li>ChunkSlate</li>
-					<li>ChunkMarble</li>
-				</randomSecondaryOutput>
-			</li>
-		</modExtensions>
-	</ThingDef>
-	<!--============================ Wild - Trees ============================-->
-	<ThingDef ParentName="PlantBase">
-		<defName>AB_GiantFlower</defName>
-		<label>giant mutant hibiscus</label>
-		<description>Giant flowers genetically modified by a long-forgotten genetics company using the genome of a hibiscus plant. These seem to be blooming almost continuously. Their stalks are not strong enough to be used as a wood substitute, but they are incredibly pretty.\n\nPlant details: Giant mutant hibiscus is a wild plant that cannot be cultivated. Very beautiful.</description>
-		<graphicData>
-			<texPath>Things/Plants/AB_GiantFlower</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-			<shadowData>
-				<volume>(0.18, 0.3, 0.15)</volume>
-			</shadowData>
-		</graphicData>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
-		<minifiedDef>MinifiedTree</minifiedDef>
-		<rotatable>false</rotatable>
-		<statBases>
-			<Beauty>5</Beauty>
-			<BeautyOutdoors>5</BeautyOutdoors>
-			<MaxHitPoints>200</MaxHitPoints>
-			<Flammability>0.8</Flammability>
-			<Nutrition>2.0</Nutrition>
-			<Mass>150</Mass>
-		</statBases>
-		<plant>
-			<growDays>14</growDays>
-			<wildClusterRadius>10</wildClusterRadius>
-			<wildClusterWeight>11</wildClusterWeight>
-			<visualSizeRange>3.8~5</visualSizeRange>
-			<sowTags Inherit="false">				
+    <!--============================ Grasses =============================-->
+    <ThingDef ParentName="SK_PlantBase">
+        <defName>AB_Flowers</defName>
+        <label>flowers</label>
+        <description>A bunch of colourful flowers.</description>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <Flammability>1.3</Flammability>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plants/AB_Flowers</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <hideAtSnowDepth>0.5</hideAtSnowDepth>
+        <ingestible/>
+        <plant>
+            <fertilityMin>0.05</fertilityMin>
+            <fertilitySensitivity>0.3</fertilitySensitivity>
+            <growDays>2.5</growDays>
+            <harvestWork>40</harvestWork>
+            <maxMeshCount>9</maxMeshCount>
+            <visualSizeRange>0.4~0.6</visualSizeRange>
+            <topWindExposure>0.05</topWindExposure>
+            <wildOrder>1</wildOrder>
+        </plant>
+    </ThingDef>
+    <!--============================ Bushes =============================-->
+    <ThingDef ParentName="SK_BushBase">
+        <defName>AB_GargantuanLithops</defName>
+        <label>gargantuan lithops</label>
+        <description>Lithops is a genus of succulent plants often known as pebble plants or living stones, due to their stone-like appearance that allows them to avoid being eaten by blending in with surrounding rocks. This gigantic lithops has been genetically modified to actually gather small amounts of metals and stone and incorporate them into its structure. Who said geneticists lack a sense of humour?\n\nPlant details: Gargantuan lithops is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.7. Can be harvested for steel and a stone chunk.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Steel</ThingDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <Beauty>2</Beauty>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plants/AB_Lithops</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.3, 0.2, 0.15)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+        </graphicData>
+        <plant>
+            <wildClusterRadius>3</wildClusterRadius>
+            <wildClusterWeight>4</wildClusterWeight>
+            <visualSizeRange>1~1.5</visualSizeRange>
+            <harvestYield>10</harvestYield>
+            <harvestWork>250</harvestWork>
+            <harvestTag>Standard</harvestTag>
+            <harvestAfterGrowth>0.30</harvestAfterGrowth>
+            <harvestedThingDef>Steel</harvestedThingDef>
+        </plant>
+        <modExtensions>
+            <li Class="VanillaPlantsExpanded.DualCropExtension">
+                <randomOutput>true</randomOutput>
+                <outPutAmount>1</outPutAmount>
+                <randomSecondaryOutput>
+                    <li>ChunkSandstone</li>
+                    <li>ChunkGranite</li>
+                    <li>ChunkLimestone</li>
+                    <li>ChunkSlate</li>
+                    <li>ChunkMarble</li>
+                </randomSecondaryOutput>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--============================ Wild - Trees ============================-->
+    <ThingDef ParentName="SK_PlantBase">
+        <defName>AB_GiantFlower</defName>
+        <label>giant mutant hibiscus</label>
+        <description>Giant flowers genetically modified by a long-forgotten genetics company using the genome of a hibiscus plant. These seem to be blooming almost continuously. Their stalks are not strong enough to be used as a wood substitute, but they are incredibly pretty.\n\nPlant details: Giant mutant hibiscus is a wild plant that cannot be cultivated. Very beautiful.</description>
+        <graphicData>
+            <texPath>Things/Plants/AB_GiantFlower</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.18, 0.3, 0.15)</volume>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <minifiedDef>MinifiedTree</minifiedDef>
+        <rotatable>false</rotatable>
+        <statBases>
+            <Beauty>5</Beauty>
+            <BeautyOutdoors>5</BeautyOutdoors>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Flammability>0.8</Flammability>
+            <Nutrition>2.0</Nutrition>
+            <Mass>150</Mass>
+        </statBases>
+        <plant>
+            <growDays>14</growDays>
+            <wildClusterRadius>10</wildClusterRadius>
+            <wildClusterWeight>11</wildClusterWeight>
+            <visualSizeRange>3.8~5</visualSizeRange>
+            <sowTags Inherit="false">				
 			</sowTags>
-			<sowResearchPrerequisites Inherit="false">      
+            <sowResearchPrerequisites Inherit="false">      
 			</sowResearchPrerequisites>
-			<lifespanDaysPerGrowDays>9</lifespanDaysPerGrowDays>
-			<fertilitySensitivity>0.5</fertilitySensitivity>						
-			<treeLoversCareIfChopped>true</treeLoversCareIfChopped>
-			<burnedThingDef>BurnedTree</burnedThingDef>
-			<treeCategory>Full</treeCategory>
-			<topWindExposure>0.25</topWindExposure>
-			<wildOrder>3</wildOrder>
-			<interferesWithRoof>true</interferesWithRoof>
-		</plant>
-		<ingestible>
-			<foodType>Tree</foodType>
-			<preferability>RawBad</preferability>
-		</ingestible>
-	</ThingDef>
-	<ThingDef ParentName="TreeBase">
-		<defName>AB_GiantSunflower</defName>
-		<label>giant sunflower.</label>
-		<description>Giant flowers genetically modified by a long-forgotten genetics company using the genome of the common sunflower plant. These seem to be blooming almost continuously. Their stalks are very strong and durable, so they can be cut and used as a wood substitute, while the flower itself also produces sunflower seeds that can be consumed by both animals and colonists.\n\nPlant details: Giant sunflower is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.7. Can be harvested for wood and giant sunflower seeds.</description>
-		<descriptionHyperlinks>
-			<ThingDef>WoodLog</ThingDef>
-			<ThingDef>AB_GiantSeeds</ThingDef>
-		</descriptionHyperlinks>
-		<graphicData>
-			<texPath>Things/Plants/AB_GiantSunflower</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-			<shadowData>
-				<volume>(0.18, 0.3, 0.15)</volume>
-			</shadowData>
-		</graphicData>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
-		<statBases>
-			<Beauty>2</Beauty>
-			<BeautyOutdoors>2</BeautyOutdoors>
-			<Nutrition>1.2</Nutrition>
-		</statBases>
-		<plant>
-			<mustBeWildToSow>true</mustBeWildToSow>
-			<growDays>14</growDays>
-			<harvestWork>550</harvestWork>
-			<harvestYield>25</harvestYield>
-			<wildClusterRadius>10</wildClusterRadius>
-			<wildClusterWeight>11</wildClusterWeight>
-			<visualSizeRange>3.8~5</visualSizeRange>
-		</plant>
-		<ingestible/>
-		<modExtensions>
-			<li Class="VanillaPlantsExpanded.DualCropExtension">
-				<secondaryOutput>AB_GiantSeeds</secondaryOutput>
-				<outPutAmount>25</outPutAmount>
-			</li>
-		</modExtensions>
-	</ThingDef>
-	<ThingDef ParentName="TreeBase">
-		<defName>AB_GiantTulip</defName>
-		<label>giant tulips</label>
-		<description>Giant flowers genetically modified by a long-forgotten genetics company using the genome of a tulip plant. These seem to be blooming almost continuously. Their stalks are very strong and durable, so they can be cut and used as a wood substitute.\n\nPlant details: Giant tulip is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.7. Can be harvested for wood.</description>
-		<descriptionHyperlinks>
-			<ThingDef>WoodLog</ThingDef>
-		</descriptionHyperlinks>
-		<graphicData>
-			<texPath>Things/Plants/AB_GiantTulip</texPath>
-			<graphicClass>Graphic_Random</graphicClass>
-			<shadowData>
-				<volume>(0.18, 0.3, 0.15)</volume>
-			</shadowData>
-		</graphicData>
-		<altitudeLayer>BuildingOnTop</altitudeLayer>
-		<statBases>
-			<Beauty>2</Beauty>
-			<BeautyOutdoors>2</BeautyOutdoors>
-			<Nutrition>1.2</Nutrition>
-		</statBases>
-		<plant>
-			<mustBeWildToSow>true</mustBeWildToSow>
-			<growDays>14</growDays>
-			<harvestWork>1800</harvestWork>
-			<harvestYield>60</harvestYield>
-			<wildClusterRadius>10</wildClusterRadius>
-			<wildClusterWeight>11</wildClusterWeight>
-			<visualSizeRange>3.8~5</visualSizeRange>
-		</plant>
-		<ingestible/>
-	</ThingDef>
+            <lifespanDaysPerGrowDays>9</lifespanDaysPerGrowDays>
+            <fertilitySensitivity>0.5</fertilitySensitivity>
+            <treeLoversCareIfChopped>true</treeLoversCareIfChopped>
+            <burnedThingDef>BurnedTree</burnedThingDef>
+            <treeCategory>Full</treeCategory>
+            <topWindExposure>0.25</topWindExposure>
+            <wildOrder>3</wildOrder>
+            <interferesWithRoof>true</interferesWithRoof>
+        </plant>
+        <ingestible>
+            <foodType>Tree</foodType>
+            <preferability>RawBad</preferability>
+        </ingestible>
+    </ThingDef>
+    <ThingDef ParentName="SK_TreeBase">
+        <defName>AB_GiantSunflower</defName>
+        <label>giant sunflower.</label>
+        <description>Giant flowers genetically modified by a long-forgotten genetics company using the genome of the common sunflower plant. These seem to be blooming almost continuously. Their stalks are very strong and durable, so they can be cut and used as a wood substitute, while the flower itself also produces sunflower seeds that can be consumed by both animals and colonists.\n\nPlant details: Giant sunflower is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.7. Can be harvested for wood and giant sunflower seeds.</description>
+        <descriptionHyperlinks>
+            <ThingDef>WoodLog</ThingDef>
+            <ThingDef>AB_GiantSeeds</ThingDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Plants/AB_GiantSunflower</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.18, 0.3, 0.15)</volume>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <statBases>
+            <Beauty>2</Beauty>
+            <BeautyOutdoors>2</BeautyOutdoors>
+            <Nutrition>1.2</Nutrition>
+        </statBases>
+        <plant>
+            <mustBeWildToSow>true</mustBeWildToSow>
+            <growDays>14</growDays>
+            <harvestWork>550</harvestWork>
+            <harvestYield>25</harvestYield>
+            <wildClusterRadius>10</wildClusterRadius>
+            <wildClusterWeight>11</wildClusterWeight>
+            <visualSizeRange>3.8~5</visualSizeRange>
+        </plant>
+        <ingestible/>
+        <modExtensions>
+            <li Class="VanillaPlantsExpanded.DualCropExtension">
+                <secondaryOutput>AB_GiantSeeds</secondaryOutput>
+                <outPutAmount>25</outPutAmount>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="SK_TreeBase">
+        <defName>AB_GiantTulip</defName>
+        <label>giant tulips</label>
+        <description>Giant flowers genetically modified by a long-forgotten genetics company using the genome of a tulip plant. These seem to be blooming almost continuously. Their stalks are very strong and durable, so they can be cut and used as a wood substitute.\n\nPlant details: Giant tulip is a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 0.7. Can be harvested for wood.</description>
+        <descriptionHyperlinks>
+            <ThingDef>WoodLog</ThingDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Plants/AB_GiantTulip</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.18, 0.3, 0.15)</volume>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <statBases>
+            <Beauty>2</Beauty>
+            <BeautyOutdoors>2</BeautyOutdoors>
+            <Nutrition>1.2</Nutrition>
+        </statBases>
+        <plant>
+            <mustBeWildToSow>true</mustBeWildToSow>
+            <growDays>14</growDays>
+            <harvestWork>1800</harvestWork>
+            <harvestYield>60</harvestYield>
+            <wildClusterRadius>10</wildClusterRadius>
+            <wildClusterWeight>11</wildClusterWeight>
+            <visualSizeRange>3.8~5</visualSizeRange>
+        </plant>
+        <ingestible/>
+    </ThingDef>
 </Defs>

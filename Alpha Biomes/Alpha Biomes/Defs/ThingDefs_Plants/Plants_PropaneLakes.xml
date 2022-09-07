@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <!--============================ Flowers =============================-->
-    <ThingDef ParentName="BushBase">
+    <ThingDef ParentName="SK_BushBase">
         <defName>AB_CrystalHorn</defName>
         <label>crystal horn</label>
         <thingClass>AlphaBiomes.Plant_Cold</thingClass>
@@ -37,7 +37,7 @@
             <harvestedThingDef>AB_RawCrystalHorn</harvestedThingDef>
         </plant>
     </ThingDef>
-    <ThingDef ParentName="BushBase">
+    <ThingDef ParentName="SK_BushBase">
         <defName>AB_FrostLeaf</defName>
         <label>frost leaf</label>
         <thingClass>AlphaBiomes.Plant_Cold</thingClass>
@@ -73,7 +73,7 @@
             <harvestedThingDef>AB_RawFrostLeaf</harvestedThingDef>
         </plant>
     </ThingDef>
-    <ThingDef ParentName="BushBase">
+    <ThingDef ParentName="SK_BushBase">
         <defName>AB_RimeNodules</defName>
         <label>rime nodules</label>
         <thingClass>AlphaBiomes.Plant_Cold</thingClass>
@@ -109,7 +109,7 @@
             <harvestedThingDef>AB_RawRimeNodules</harvestedThingDef>
         </plant>
     </ThingDef>
-    <ThingDef ParentName="BushBase">
+    <ThingDef ParentName="SK_BushBase">
         <defName>AB_CrystalFlower</defName>
         <label>crystal flower</label>
         <thingClass>AlphaBiomes.Plant_Cold</thingClass>

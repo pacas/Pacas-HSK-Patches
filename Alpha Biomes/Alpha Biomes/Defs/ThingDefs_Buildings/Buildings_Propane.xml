@@ -106,6 +106,7 @@
         <stuffCategories>
 			<li>StrongMetallic</li>
 		</stuffCategories>
+        <minifiedDef>MinifiedThing</minifiedDef>
         <thingCategories>
 			<li>BuildingsProduction</li>
 		</thingCategories>
@@ -121,6 +122,8 @@
 			<WorkToBuild>1200</WorkToBuild>
 			<MaxHitPoints>180</MaxHitPoints>
 			<Flammability>1.0</Flammability>
+            <Mass>80</Mass>
+            <Bulk>200</Bulk>
 		</statBases>
 		<size>(3,1)</size>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -178,6 +181,9 @@
 		<researchPrerequisites>
 			<li>Craft_B1</li>
 		</researchPrerequisites>
+        <building>
+            <uninstallWork>1250</uninstallWork>
+        </building>
         <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
 		<modExtensions>
 			<li Class="AlphaBiomes.ThingDefExtension">

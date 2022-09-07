@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <!--============================ Wild - Trees ============================-->
-    <ThingDef ParentName="TreeBase">
+    <ThingDef ParentName="SK_TreeBase">
         <defName>AB_MangroveTree</defName>
         <label>mangrove tree</label>
         <description>A tree that grows in saline or brackish water. They contain a complex salt filtration system and a complex root system to cope with saltwater immersion, and they are adapted to the low-oxygen conditions of waterlogged mud.\n\nPlant details: Mangrove trees are a cultivated plant that also appears in the wild, and it needs minimum terrain fertility of 1. Can be harvested for wood.</description>
@@ -38,8 +38,7 @@
             </li>
         </modExtensions>
     </ThingDef>
-
-    <ThingDef ParentName="BushBase">
+    <ThingDef ParentName="SK_BushBase">
         <defName>AB_ParasiticMangrove</defName>
         <label>parasitic mangrove</label>
         <description>A weird, colourful plant adapted to extract nutrients from mangrove trees. Its own roots are covered in barbs capable of puncturing and integrating into the root systems of mangrove trees, acting as a parasitic organism. Its sap is slightly poisonous to many animals, but primates seem to be unaffected by it, and it can be used in fact as a crude herbal medicine.\n\nPlant details: Parasitic mangrove is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 1. Can be harvested for herbal medicine.</description>
@@ -74,8 +73,7 @@
             </li>
         </modExtensions>
     </ThingDef>
-
-    <ThingDef ParentName="TreeBase">
+    <ThingDef ParentName="SK_TreeBase">
         <defName>AB_MangrovePalm</defName>
         <label>mangrove palm</label>
         <description>A palm tree adapted to the mangrove conditions.</description>
