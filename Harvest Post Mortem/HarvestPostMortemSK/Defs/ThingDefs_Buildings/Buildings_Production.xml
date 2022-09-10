@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BenchBase">
+        <defName>TableAutopsy</defName>
+        <label>autopsy table</label>
+        <description>A table specially designed for deceased people. Allows for surgical removal of organs.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <interactionCellIcon/>
+        <graphicData>
+            <texPath>Things/Building/Production/Autopsy/autopsy</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1,2)</drawSize>
+            <shadowData>
+				<volume>(0.8, 0.2, 1.8)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0,0.05,2,1.95)</rect>
+			</damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToBuild>2850</WorkToBuild>
+            <Mass>45</Mass>
+            <Flammability>0.3</Flammability>
+        </statBases>
+        <size>(1,2)</size>
+        <designationCategory>Production</designationCategory>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+            <li>RuggedMetallic</li>
+        </stuffCategories>
+        <costStuffCount>90</costStuffCount>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <recipes>
+            <li>AutopsyBasic</li>
+            <li>AutopsyAdvanced</li>
+            <li>AutopsyGlitterworld</li>
+            <li>AutopsyAnimal</li>
+        </recipes>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <bed_showSleeperBody>True</bed_showSleeperBody>
+            <bed_healPerDay>0</bed_healPerDay>
+            <bed_defaultMedical>true</bed_defaultMedical>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+        <fillPercent>0.4</fillPercent>
+        <pathCost>60</pathCost>
+        <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+        <staticSunShadowHeight>0.17</staticSunShadowHeight>
+        <castEdgeShadows>True</castEdgeShadows>
+        <designationHotKey>Misc5</designationHotKey>
+        <passability>PassThroughOnly</passability>
+        <drawGUIOverlay>True</drawGUIOverlay>
+        <canOverlapZones>false</canOverlapZones>
+        <researchPrerequisites>
+            <li>BasicAutopsy</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_Medicine</defName>
+        <label>medicine</label>
+        <description>Tables that is used to craft various medicine and other devices.</description>
+        <defNames>
+            <li>meditable</li>
+            <li>TableOrganvat</li>
+            <li>TableAutopsy</li>
+        </defNames>
+        <designationCategory>Production</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+</Defs>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+    <name>Harvest Organs Post Mortem SK</name>
+    <author>Smuffle</author>
+    <supportedVersions>
+        <li>1.3</li>
+    </supportedVersions>
+    <packageId>Smuffle.HarvestOrgansPostMortem</packageId>
+    <description>This mod allow organ harvest on dead bodies. This a new version which allows the player to harvest pawn-spesific organs. Happy harvest!</description>
+    <modDependencies>
+        <li>
+            <packageId>UnlimitedHugs.HugsLib</packageId>
+            <displayName>HugsLib</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>UnlimitedHugs.HugsLib</li>
+        <li>sarg.alphaanimals</li>
+        <li>arpomo6.hmc.project</li>
+    </loadAfter>
+</ModMetaData>

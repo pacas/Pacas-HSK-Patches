@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThoughtDef>
+        <defName>HarvestedHumanlikeCorpse</defName>
+        <durationDays>3.0</durationDays>
+        <stackLimit>3</stackLimit>
+        <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+            <li>Bloodlust</li>
+            <li>Cannibal</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>I harvested organs</label>
+                <description>I butchered someone up like an animal for their organs.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>KnowHarvestedHumanlikeCorpse</defName>
+        <durationDays>2.0</durationDays>
+        <stackLimit>1</stackLimit>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+            <li>Bloodlust</li>
+            <li>Cannibal</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>We harvested organs</label>
+                <description>We butchered someone for their organs. It's for the greater good, but still terrifying.</description>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/RecipeDef[defName = "ButcherCorpseFlesh"]/defaultIngredientFilter</xpath>
+        <value>
+            <specialFiltersToDisallow>
+                <li>PossibleToHarvest</li>
+                <li>PossibleToHarvestAnimal</li>
+            </specialFiltersToDisallow>
+        </value>
+    </Operation>
+  
+    <Operation Class="PatchOperationAdd">
+        <xpath>*/RecipeDef[defName = "CremateCorpse"]/defaultIngredientFilter</xpath>
+        <value>
+            <specialFiltersToDisallow>
+                <li>PossibleToHarvest</li>
+                <li>PossibleToHarvestAnimal</li>
+            </specialFiltersToDisallow>
+        </value>
+    </Operation>
+</Patch>

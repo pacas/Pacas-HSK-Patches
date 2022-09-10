@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+  <autopsyBasicTab>Базовая аутопсия</autopsyBasicTab>
+  <autopsyAdvancedTab>Продвинутая аутопсия</autopsyAdvancedTab>
+  <autopsyGlitterTab>Современная аутопсия</autopsyGlitterTab>
+  <autopsyAnimalTab>Аутопсия животных</autopsyAnimalTab>
+  <organChanceTitle>Шанс извлечения органов</organChanceTitle>
+  <organChanceDescription>Максиамльный шанс на извлечение каждого конкретного органа. Фактическое значение равно шансу успеха операции поселенца.</organChanceDescription>
+  <bionicChanceTitle>Шанс извлечения импланта</bionicChanceTitle>
+  <bionicChanceDescription>Максимальный шанс на извлечение каждого конкретного импланта.  Фактическое значение равно шансу успеха операции поселенца.</bionicChanceDescription>
+  <corpseAgeTitle>Действительный возраст трупа</corpseAgeTitle>
+  <corpseAgeDescription>Время после смерти, в течении которого еще можно извлечь органы.</corpseAgeDescription>
+  <numberPartsTitle>Максимальное количество извлекаемых органов</numberPartsTitle>
+  <numberPartsDescription>Максимальное количество органов и имплантов, которые можно извлечь из одного трупа.</numberPartsDescription>
+  <skillScalingTitle>Значение навыка медицины</skillScalingTitle>
+  <skillScalingDescription>Определяет как шанс на успех операции поселенца влияет на аутопсию.</skillScalingDescription>
+  <frozenDecayTitle>Разложение при заморозке</frozenDecayTitle>
+  <frozenDecayDescription>Устанавливает, насколько быстро органы разлагаются при замороженном теле по сравнению с теплым.</frozenDecayDescription>
+
+</LanguageData>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ResearchProjectDef ParentName="PrimitiveBase">
+        <defName>BasicAutopsy</defName>
+        <label>Basic Autopsy</label>
+        <description>The primal butchering for organs, often used in rituals. However quite barbaric. This research unlocks the autopsy table.</description>
+        <baseCost>500</baseCost>
+        <prerequisites>
+            <li>Medicine_A1</li>
+        </prerequisites>
+        <techLevel>Neolithic</techLevel>
+        <tab>Medicine_SK</tab>
+        <researchViewX>2.00</researchViewX>
+		<researchViewY>60.00</researchViewY>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef ParentName="IndustrialBase">
+        <defName>AdvancedAutopsy</defName>
+        <label>Advanced Autopsy</label>
+        <description>Advanced procedures allows for a more humane and precise organ extraction.</description>
+        <baseCost>2000</baseCost>
+        <tab>Medicine_SK</tab>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>BasicAutopsy</li>
+            <li>Clinical_C1</li>
+            <li>MedicineProduction</li>
+        </prerequisites>
+        <researchViewX>8.00</researchViewX>
+		<researchViewY>60.00</researchViewY>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <defName>GlitterworldAutopsy</defName>
+        <label>Glitterworld Autopsy</label>
+        <description>With the right tools, training and technology, you can perserve human organs with the same success chance as in the core planets.</description>
+        <baseCost>4000</baseCost>
+        <tab>Medicine_SK</tab>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>AdvancedAutopsy</li>
+            <li>Clinical_D1</li>
+            <li>Medicine_D1</li>
+        </prerequisites>
+        <researchViewX>19.00</researchViewX>
+		<researchViewY>60.00</researchViewY>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef ParentName="IndustrialBase">
+        <defName>AnimalAutopsy</defName>
+        <label>Animal Autopsy</label>
+        <description>Allows for medical extraction of bionic body parts from deceased animals.</description>
+        <baseCost>1500</baseCost>
+        <tab>Medicine_SK</tab>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>AdvancedAutopsy</li>
+        </prerequisites>
+        <researchViewX>9.00</researchViewX>
+		<researchViewY>60.00</researchViewY>
+    </ResearchProjectDef>
+</Defs>

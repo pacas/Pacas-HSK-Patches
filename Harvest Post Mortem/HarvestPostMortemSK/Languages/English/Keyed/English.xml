@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+  <autopsyBasicTab>Basic Autopsy</autopsyBasicTab>
+  <autopsyAdvancedTab>Advanced Autopsy</autopsyAdvancedTab>
+  <autopsyGlitterTab>Glitterworld Autopsy</autopsyGlitterTab>
+  <autopsyAnimalTab>Animal Autopsy</autopsyAnimalTab>
+  <organChanceTitle>Organ harvest chance</organChanceTitle>
+  <organChanceDescription>Maximum chance to harvest each individual organ when using specified recipe. Actual value is equal to pawns surgery success chance.</organChanceDescription>
+  <bionicChanceTitle>Bionic harvest chance</bionicChanceTitle>
+  <bionicChanceDescription>Maximum chance to harvest each individual bionic component when using specified recipe.  Actual value is equal to pawns surgery success chance.</bionicChanceDescription>
+  <corpseAgeTitle>Valid corpse age</corpseAgeTitle>
+  <corpseAgeDescription>Number of hours during which natural organs can be harvested</corpseAgeDescription>
+  <numberPartsTitle>Max number of parts</numberPartsTitle>
+  <numberPartsDescription>Maximum number of organs and bionics that can be harvested from a single corpse</numberPartsDescription>
+  <skillScalingTitle>Medical skill scaling</skillScalingTitle>
+  <skillScalingDescription>Dictates how much does pawn medical surgery success chance scales when performing autopsy</skillScalingDescription>
+  <frozenDecayTitle>Decay while frozen</frozenDecayTitle>
+  <frozenDecayDescription>Sets how fast natural organs decay while body is frozen compared to warm</frozenDecayDescription>
+
+</LanguageData>

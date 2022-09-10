@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <SpecialThingFilterDef>
+        <defName>ImpossibleToHarvest</defName>
+        <label>Impossible to harvest</label>
+        <description>Allow corpses with no harvestable organs or implants.</description>
+        <parentCategory>CorpsesHumanlike</parentCategory>
+        <allowedByDefault>true</allowedByDefault>
+        <saveKey>allowAutopsyNonharvestable</saveKey>
+        <workerClass>Autopsy.Filters.ImpossibleToHarvest</workerClass>
+    </SpecialThingFilterDef>
+
+    <SpecialThingFilterDef>
+        <defName>PossibleToHarvest</defName>
+        <label>Possible to harvest</label>
+        <description>Allow corpses with remaining harvestable organs or implants.</description>
+        <parentCategory>CorpsesHumanlike</parentCategory>
+        <allowedByDefault>true</allowedByDefault>
+        <saveKey>allowAutopsyHarvestable</saveKey>
+        <workerClass>Autopsy.Filters.PossibleToHarvest</workerClass>
+    </SpecialThingFilterDef>
+  
+    <SpecialThingFilterDef>
+        <defName>HasBionics</defName>
+        <label>Human corpses with bionics</label>
+        <description>Allow corpses only with implants.</description>
+        <parentCategory>CorpsesHumanlike</parentCategory>
+        <allowedByDefault>true</allowedByDefault>
+        <saveKey>allowAutopsyBionics</saveKey>
+        <workerClass>Autopsy.Filters.HasBionics</workerClass>
+    </SpecialThingFilterDef>
+
+    <SpecialThingFilterDef>
+        <defName>DoesntHaveBionics</defName>
+        <label>Human corpses without bionics</label>
+        <description>Allow corpses only without implants.</description>
+        <parentCategory>CorpsesHumanlike</parentCategory>
+        <allowedByDefault>true</allowedByDefault>
+        <saveKey>allowAutopsyNoBionics</saveKey>
+        <workerClass>Autopsy.Filters.DoesntHaveBionics</workerClass>
+    </SpecialThingFilterDef>
+
+    <SpecialThingFilterDef>
+        <defName>ImpossibleToHarvestAnimal</defName>
+        <label>Impossible to harvest(Animal)</label>
+        <description>Allow animal corpses with no harvestable implants.</description>
+        <parentCategory>CorpsesAnimal</parentCategory>
+        <allowedByDefault>true</allowedByDefault>
+        <saveKey>allowAutopsyNonharvestable</saveKey>
+        <workerClass>Autopsy.Filters.ImpossibleToHarvestAnimal</workerClass>
+    </SpecialThingFilterDef>
+
+    <SpecialThingFilterDef>
+        <defName>PossibleToHarvestAnimal</defName>
+        <label>Possible to harvest(Animal)</label>
+        <description>Allow animal corpses with remaining harvestable implants.</description>
+        <parentCategory>CorpsesAnimal</parentCategory>
+        <allowedByDefault>true</allowedByDefault>
+        <saveKey>allowAutopsyHarvestable</saveKey>
+        <workerClass>Autopsy.Filters.PossibleToHarvestAnimal</workerClass>
+    </SpecialThingFilterDef>
+
+</Defs>
