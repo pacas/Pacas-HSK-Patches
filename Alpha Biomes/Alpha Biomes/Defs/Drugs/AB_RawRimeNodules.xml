@@ -21,7 +21,9 @@
         <techLevel>Industrial</techLevel>
         <ingestible>
             <joy>0.1</joy>
+            <foodType>VegetableOrFruit</foodType>
             <drugCategory>Social</drugCategory>
+            <joyKind>Chemical</joyKind>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
                     <hediffDef>AB_RawRimeNodulesHigh</hediffDef>
