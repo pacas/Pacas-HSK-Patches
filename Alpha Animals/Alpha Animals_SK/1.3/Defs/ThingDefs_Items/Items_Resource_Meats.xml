@@ -24,22 +24,6 @@
             <li>MeatRaw</li>
         </thingCategories>
     </ThingDef>
-    <ThingDef Abstract="True" Name="AA_PlantFoodRawBase" ParentName="OrganicProductBase">
-        <ingestible>
-            <preferability>RawBad</preferability>
-            <tasteThought>AteRawFood</tasteThought>
-            <ingestEffect>EatVegetarian</ingestEffect>
-            <ingestSound>RawVegetable_Eat</ingestSound>
-        </ingestible>
-        <statBases>
-            <Nutrition>0.05</Nutrition>
-            <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
-        </statBases>
-        <socialPropernessMatters>true</socialPropernessMatters>
-        <thingCategories>
-            <li>FungusPlantRaw</li>
-        </thingCategories>
-    </ThingDef>
     <!--  Aerofleet  -->
     <ThingDef ParentName="AA_RawMeatBase">
         <defName>AA_AerofleetMeat</defName>
@@ -100,16 +84,22 @@
         </comps>
     </ThingDef>
     <!--  Cactipine  -->
-    <ThingDef ParentName="AA_PlantFoodRawBase">
+    <ThingDef ParentName="SK_PlantFoodRawBase">
         <defName>AA_CactusMeat</defName>
         <label>plant meat</label>
         <description>This strange meat is part vegetable, part animal. Confusing, to say the least.</description>
         <graphicData>
             <texPath>Things/Item/Resource/AA_Cactipine_Meat</texPath>
         </graphicData>
+        <thingCategories>
+            <li>MeatSubRaw</li>
+        </thingCategories>
         <statBases>
             <MarketValue>1.1</MarketValue>
+            <Nutrition>0.05</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
         </statBases>
+        <socialPropernessMatters>true</socialPropernessMatters>
         <ingestible>
             <foodType>VegetableOrFruit</foodType>
         </ingestible>
