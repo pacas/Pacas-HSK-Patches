@@ -218,6 +218,36 @@
             <li Class="PatchOperationAdd">
                 <xpath>Defs/RecipeDef/recipeUsers[li="ElectricStove"]</xpath>
                 <value>
+                    <li>RGK_FueledStove</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="FueledStove"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="FueledStove"]</xpath>
+                <value>
+                    <li>GL_ElectricStove</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/RecipeDef/recipeUsers[li="ElectricStove"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef/recipeUsers[li="ElectricStove"]</xpath>
+                <value>
                     <li>GL_ElectricStove</li>
                 </value>
             </li>
