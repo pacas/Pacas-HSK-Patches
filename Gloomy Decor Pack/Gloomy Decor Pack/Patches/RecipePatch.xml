@@ -1,207 +1,227 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<!-- 아이템 호환성 추가 -->
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="ElectricSmithy"]</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="ElectricSmithy"]</xpath>
-				<value>
-					<li>GL_ElectricSmithy</li>					
-				</value>
-			</li>
-		</operations>
-	</Operation>
-    
+    <!-- 아이템 호환성 추가 -->
     <Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="FueledSmithy"]</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="FueledSmithy"]</xpath>
-				<value>
-					<li>GL_FueledSmithy</li>					
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="ElectricTailoringBench"]</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="ElectricTailoringBench"]</xpath>
-				<value>
-					<li>GL_ElectricTailoringBench</li>					
-				</value>
-			</li>
-		</operations>
-	</Operation>
-    
-    <Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="HandTailoringBench"]</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="HandTailoringBench"]</xpath>
-				<value>
-					<li>GL_HandTailoringBench</li>			
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	
-	<!-- 레시피 호환성 추가 -->
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/RecipeDef/recipeUsers[li="ElectricSmithy"]</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef/recipeUsers[li="ElectricSmithy"]</xpath>
-				<value>
-					<li>GL_ElectricSmithy</li>					
-				</value>
-			</li>
-		</operations>
-	</Operation>
-    
-    <Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/RecipeDef/recipeUsers[li="FueledSmithy"]</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef/recipeUsers[li="FueledSmithy"]</xpath>
-				<value>
-					<li>GL_FueledSmithy</li>				
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/RecipeDef/recipeUsers[li="ElectricTailoringBench"]</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef/recipeUsers[li="ElectricTailoringBench"]</xpath>
-				<value>
-					<li>GL_ElectricTailoringBench</li>					
-				</value>
-			</li>
-		</operations>
-	</Operation>
-    
-    <Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/RecipeDef/recipeUsers[li="HandTailoringBench"]</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef/recipeUsers[li="HandTailoringBench"]</xpath>
-				<value>
-					<li>GL_HandTailoringBench</li>				
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
-				<value>
-					<li>GL_FueledSmithy</li>
-					<li>GL_ElectricSmithy</li>					
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>Defs/WorkGiverDef[defName="DoBillsMakeApparel"]/fixedBillGiverDefs</xpath>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/WorkGiverDef[defName="DoBillsMakeApparel"]/fixedBillGiverDefs</xpath>
-				<value>
-					<li>GL_HandTailoringBench</li>
-					<li>GL_ElectricTailoringBench</li>				
-				</value>
-			</li>
-		</operations>
-	</Operation>
-	
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/WorkGiverDef[defName="DoBillsButcherFlesh"]/fixedBillGiverDefs</xpath>
-				<value>
-					<li>GL_TableButcher</li>				
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="TableButcher"]</xpath>
-				<value>
-					<li>GL_TableButcher</li>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef/recipeUsers[li="TableButcher"]</xpath>
-				<value>
-					<li>GL_TableButcher</li>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-    
-
-	<Operation Class="PatchOperationSequence">
-		<operations>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="ElectricSmithy"]</xpath>
+            </li>
             <li Class="PatchOperationAdd">
-				<xpath>Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs</xpath>
-				<value>
-					<li>RGK_FueledStove</li>
-                    <li>GL_ElectricStove</li>                    
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="FueledStove"]</xpath>
-				<value>
-					<li>RGK_FueledStove</li>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef/recipeUsers[li="FueledStove"]</xpath>
-				<value>
-					<li>RGK_FueledStove</li>
-				</value>
-			</li>
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="ElectricSmithy"]</xpath>
+                <value>
+                    <li>GL_ElectricSmithy</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="FueledSmithy"]</xpath>
+            </li>
             <li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="ElectricStove"]</xpath>
-				<value>
-					<li>GL_ElectricStove</li>
-				</value>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/RecipeDef/recipeUsers[li="ElectricStove"]</xpath>
-				<value>
-					<li>GL_ElectricStove</li>
-				</value>
-			</li>
-		</operations>
-	</Operation>
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="FueledSmithy"]</xpath>
+                <value>
+                    <li>GL_FueledSmithy</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+	
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="ElectricTailoringBench"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="ElectricTailoringBench"]</xpath>
+                <value>
+                    <li>GL_ElectricTailoringBench</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="HandTailoringBench"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="HandTailoringBench"]</xpath>
+                <value>
+                    <li>GL_HandTailoringBench</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+	
+    <!-- 레시피 호환성 추가 -->
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/RecipeDef/recipeUsers[li="ElectricSmithy"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef/recipeUsers[li="ElectricSmithy"]</xpath>
+                <value>
+                    <li>GL_ElectricSmithy</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/RecipeDef/recipeUsers[li="FueledSmithy"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef/recipeUsers[li="FueledSmithy"]</xpath>
+                <value>
+                    <li>GL_FueledSmithy</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+	
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/RecipeDef/recipeUsers[li="ElectricTailoringBench"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef/recipeUsers[li="ElectricTailoringBench"]</xpath>
+                <value>
+                    <li>GL_ElectricTailoringBench</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/RecipeDef/recipeUsers[li="HandTailoringBench"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef/recipeUsers[li="HandTailoringBench"]</xpath>
+                <value>
+                    <li>GL_HandTailoringBench</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+	
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
+                <value>
+                    <li>GL_FueledSmithy</li>
+                    <li>GL_ElectricSmithy</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/WorkGiverDef[defName="DoBillsMakeApparel"]/fixedBillGiverDefs</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/WorkGiverDef[defName="DoBillsMakeApparel"]/fixedBillGiverDefs</xpath>
+                <value>
+                    <li>GL_HandTailoringBench</li>
+                    <li>GL_ElectricTailoringBench</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+	
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/WorkGiverDef[defName="DoBillsButcherFlesh"]/fixedBillGiverDefs</xpath>
+        <value>
+            <li>GL_TableButcher</li>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="TableButcher"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="TableButcher"]</xpath>
+                <value>
+                    <li>GL_TableButcher</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/RecipeDef/recipeUsers[li="TableButcher"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef/recipeUsers[li="TableButcher"]</xpath>
+                <value>
+                    <li>GL_TableButcher</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/WorkGiverDef[defName="DoBillsCook"]/fixedBillGiverDefs</xpath>
+                <value>
+                    <li>RGK_FueledStove</li>
+                    <li>GL_ElectricStove</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="FueledStove"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef/recipeMaker/recipeUsers[li="FueledStove"]</xpath>
+                <value>
+                    <li>RGK_FueledStove</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/RecipeDef/recipeUsers[li="ElectricStove"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RecipeDef/recipeUsers[li="ElectricStove"]</xpath>
+                <value>
+                    <li>GL_ElectricStove</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
 
 </Patch>
