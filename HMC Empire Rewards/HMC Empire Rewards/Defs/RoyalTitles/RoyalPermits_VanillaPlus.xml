@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RoyalTitlePermitDef>
+    <defName>CallMilitaryAidSmallPlus</defName>
+    <label>call bigger trooper squad</label>
+    <description>Call a group of 6 light troopers to aid you in battle.\n\nPermit points cost - 3 points.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>Knight</minTitle>
+    <faction>Empire</faction>
+    <prerequisite>CallMilitaryAidSmall</prerequisite>
+    <permitPointCost>2</permitPointCost>
+    <uiPosition>(1,5)</uiPosition>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <pawnKindDef>Empire_Fighter_Trooper</pawnKindDef>
+      <pawnCount>6</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <cooldownDays>40</cooldownDays>
+  </RoyalTitlePermitDef>
+</Defs>

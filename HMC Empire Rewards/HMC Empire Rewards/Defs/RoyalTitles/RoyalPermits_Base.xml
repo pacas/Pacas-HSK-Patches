@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RoyalTitlePermitDef Name="MainRTPDBase" Abstract="True">
+        <faction>Empire</faction>
+        <permitPointCost>1</permitPointCost>
+        <cooldownDays>45</cooldownDays>
+        <usableOnWorldMap>true</usableOnWorldMap>
+        <royalAid>
+            <targetingRange>39.9</targetingRange>
+        </royalAid>
+    </RoyalTitlePermitDef>
+
+    <RoyalTitlePermitDef ParentName="MainRTPDBase" Name="DropResourcesWithStuffBase" Abstract="True">
+        <workerClass>RoyalTitlePermitWorker_DropResourcesWithStuff</workerClass>
+    </RoyalTitlePermitDef>
+    
+    <RoyalTitlePermitDef ParentName="MainRTPDBase" Name="DropRandomWeaponWithStuffBase" Abstract="True">
+        <workerClass>RoyalTitlePermitWorker_DropRandomWeaponWithStuff</workerClass>
+    </RoyalTitlePermitDef>
+    
+    <RoyalTitlePermitDef ParentName="MainRTPDBase" Name="DropRandomWeaponBase" Abstract="True">
+        <workerClass>RoyalTitlePermitWorker_DropRandomWeapon</workerClass>
+    </RoyalTitlePermitDef>
+</Defs>
+

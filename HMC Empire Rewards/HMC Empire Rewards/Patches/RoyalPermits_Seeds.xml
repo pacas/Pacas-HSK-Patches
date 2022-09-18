@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>SeedsPlease</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <RoyalTitlePermitDef ParentName="DropResourcesBase">
+                            <defName>SeedsPotatoDrop</defName>
+                            <label>potato seeds drop</label>
+                            <description>Call for a drop of 100 potato seeds.\n\nPermit points cost - 1 point.</description>
+                            <minTitle>Acolyte</minTitle>
+                            <uiPosition>(0,25)</uiPosition>
+                            <royalAid>
+                                <itemsToDrop>
+                                    <Seed_Potato>100</Seed_Potato>
+                                </itemsToDrop>
+                                <favorCost>4</favorCost>
+                            </royalAid>
+                        </RoyalTitlePermitDef>
+                        
+                        <RoyalTitlePermitDef ParentName="DropResourcesBase">
+                            <defName>SeedsRiceDrop</defName>
+                            <label>rice seeds drop</label>
+                            <description>Call for a drop of 100 rice seeds.\n\nPermit points cost - 1 point.</description>
+                            <minTitle>Acolyte</minTitle>
+                            <uiPosition>(1,25)</uiPosition>
+                            <royalAid>
+                                <itemsToDrop>
+                                    <Seed_Rice>100</Seed_Rice>
+                                </itemsToDrop>
+                                <favorCost>4</favorCost>
+                            </royalAid>
+                        </RoyalTitlePermitDef>
+                        
+                        <RoyalTitlePermitDef ParentName="DropResourcesBase">
+                            <defName>SeedsOakDrop</defName>
+                            <label>oak tree seeds drop</label>
+                            <description>Call for a drop of 30 oak tree seeds.\n\nPermit points cost - 1 point.</description>
+                            <minTitle>Acolyte</minTitle>
+                            <uiPosition>(0,26)</uiPosition>
+                            <royalAid>
+                                <itemsToDrop>
+                                    <Seed_TreeOak>30</Seed_TreeOak>
+                                </itemsToDrop>
+                                <favorCost>4</favorCost>
+                            </royalAid>
+                        </RoyalTitlePermitDef>
+                        
+                        <RoyalTitlePermitDef ParentName="DropResourcesBase">
+                            <defName>SeedsAppleDrop</defName>
+                            <label>apple tree seeds drop</label>
+                            <description>Call for a drop of 15 apple tree seeds.\n\nPermit points cost - 1 point.</description>
+                            <minTitle>Acolyte</minTitle>
+                            <uiPosition>(1,26)</uiPosition>
+                            <royalAid>
+                                <itemsToDrop>
+                                    <SeedAppletree>15</SeedAppletree>
+                                </itemsToDrop>
+                                <favorCost>4</favorCost>
+                            </royalAid>
+                        </RoyalTitlePermitDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

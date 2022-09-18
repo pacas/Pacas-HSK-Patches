@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Agile -->
+  
+    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+        <defName>AgileMeleeDrop</defName>
+        <label>Agile melee weapon drop</label>
+        <description>Call for a drop of random agile melee weapon (daggers and shortswords).\n - Material: Steel\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>15</cooldownDays>
+        <uiPosition>(0,18)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>2</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef>
+        <defName>AgileMeleeDropStuff</defName>
+        <quality>Normal</quality>
+        <stuffList>
+            <li>Plasteel</li>
+        </stuffList>
+        <thingsToChoose>
+            <li>NorbalMeleeWeapon_ShortSwordtwo</li>
+            <li>MeleeWeapon_Knife</li>
+            <li>MeleeWeapon_Tanto</li>
+        </thingsToChoose>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+        <defName>AgileMeleeDropPlus</defName>
+        <label>better agile melee weapon drop</label>
+        <description>Call for a drop of random agile melee weapon (daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
+        <minTitle>Praetor</minTitle>
+        <uiPosition>(1,18)</uiPosition>
+        <prerequisite>AgileMeleeDrop</prerequisite>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>12</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef>
+        <defName>AgileMeleeDropPlusStuff</defName>
+        <quality>Excellent</quality>
+        <stuffList>
+            <li>Titanium</li>
+        </stuffList>
+        <thingsToChoose>
+            <li>MeleeWeapon_Knife</li>
+            <li>NorbalMeleeWeapon_ShortSwordtwo</li>
+            <li>MeleeWeapon_Tanto</li>
+            <li>MeleeWeapon_Dagger</li>
+        </thingsToChoose>
+    </OrderedStuffDef>
+    
+    <!-- Sharp -->
+    
+    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+        <defName>SharpMeleeDrop</defName>
+        <label>Sharp melee weapon drop</label>
+        <description>Call for a drop of random sharp melee weapon (exclude daggers and shortswords).\n - Material: Steel\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>15</cooldownDays>
+        <uiPosition>(0,19)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>2</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef>
+        <defName>SharpMeleeDropStuff</defName>
+        <quality>Normal</quality>
+        <stuffList>
+            <li>Plasteel</li>
+        </stuffList>
+        <thingsToChoose>
+            <li>MeleeWeapon_Gladius</li>
+            <li>MeleeWeapon_LongSword</li>
+            <li>MeleeWeapon_GreatSword</li>
+            <li>MeleeWeapon_Scimitar</li>
+            <li>MeleeWeapon_Glaive</li>
+            <li>MeleeWeapon_Partisan</li>
+            <li>NorbalMeleeWeapon_ShortSword</li>
+            <li>NorbalMeleeWeapon_Ax</li>
+            <li>NorbalMeleeWeapon_Bigax</li>
+            <li>MeleeWeapon_Machete</li>
+            <li>MeleeWeapon_Katana</li>
+            <li>MeleeWeapon_Tsurugi</li>
+        </thingsToChoose>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+        <defName>SharpMeleeDropPlus</defName>
+        <label>better sharp melee weapon drop</label>
+        <description>Call for a drop of random sharp melee weapon (exclude daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
+        <minTitle>Praetor</minTitle>
+        <uiPosition>(1,19)</uiPosition>
+        <prerequisite>SharpMeleeDrop</prerequisite>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>12</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef>
+        <defName>SharpMeleeDropPlusStuff</defName>
+        <quality>Excellent</quality>
+        <stuffList>
+            <li>Titanium</li>
+        </stuffList>
+        <thingsToChoose>
+            <li>MeleeWeapon_Gladius</li>
+            <li>MeleeWeapon_LongSword</li>
+            <li>MeleeWeapon_GreatSword</li>
+            <li>MeleeWeapon_Scimitar</li>
+            <li>MeleeWeapon_Glaive</li>
+            <li>MeleeWeapon_Partisan</li>
+            <li>NorbalMeleeWeapon_ShortSword</li>
+            <li>NorbalMeleeWeapon_Ax</li>
+            <li>NorbalMeleeWeapon_Bigax</li>
+            <li>MeleeWeapon_Machete</li>
+            <li>MeleeWeapon_Katana</li>
+            <li>MeleeWeapon_Tsurugi</li>
+        </thingsToChoose>
+    </OrderedStuffDef>
+    
+    <!-- Blunt -->
+    
+    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+        <defName>BluntMeleeDrop</defName>
+        <label>Blunt melee weapon drop</label>
+        <description>Call for a drop of random blunt melee weapon (exclude daggers and shortswords).\n - Material: Steel\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>15</cooldownDays>
+        <uiPosition>(0,20)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>2</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef>
+        <defName>BluntMeleeDropStuff</defName>
+        <quality>Normal</quality>
+        <stuffList>
+            <li>Plasteel</li>
+        </stuffList>
+        <thingsToChoose>
+            <li>MeleeWeapon_Morningstar</li>
+            <li>MeleeWeapon_Sledgehammer</li>
+            <li>MeleeWeapon_Monkeywrench</li>
+            <li>MeleeWeapon_Mace</li>
+        </thingsToChoose>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+        <defName>BluntMeleeDropPlus</defName>
+        <label>better blunt melee weapon drop</label>
+        <description>Call for a drop of random blunt melee weapon (exclude daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
+        <minTitle>Praetor</minTitle>
+        <uiPosition>(1,20)</uiPosition>
+        <prerequisite>BluntMeleeDrop</prerequisite>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>12</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef>
+        <defName>BluntMeleeDropPlusStuff</defName>
+        <quality>Excellent</quality>
+        <stuffList>
+            <li>Titanium</li>
+        </stuffList>
+        <thingsToChoose>
+            <li>MeleeWeapon_Morningstar</li>
+            <li>MeleeWeapon_Sledgehammer</li>
+            <li>MeleeWeapon_Monkeywrench</li>
+            <li>MeleeWeapon_Mace</li>
+        </thingsToChoose>
+    </OrderedStuffDef>
+    
+    <!-- Heavy -->
+    
+    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+        <defName>HeavyMeleeDrop</defName>
+        <label>Heavy melee weapon drop</label>
+        <description>Call for a drop of random heavy melee weapon.\n - Material: Steel\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>15</cooldownDays>
+        <uiPosition>(0,21)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>2</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef>
+        <defName>HeavyMeleeDropStuff</defName>
+        <quality>Normal</quality>
+        <stuffList>
+            <li>Plasteel</li>
+        </stuffList>
+        <thingsToChoose>
+            <li>MeleeWeapon_GreatSword</li>
+            <li>MeleeWeapon_Glaive</li>
+            <li>MeleeWeapon_Partisan</li>
+            <li>MeleeWeapon_Tsurugi</li>
+            <li>MeleeWeapon_Sledgehammer</li>
+            <li>MeleeWeapon_Tsurugi</li>
+        </thingsToChoose>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+        <defName>HeavyMeleeDropPlus</defName>
+        <label>better heavy melee weapon drop</label>
+        <description>Call for a drop of random heavy melee weapon.\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
+        <minTitle>Praetor</minTitle>
+        <uiPosition>(1,21)</uiPosition>
+        <prerequisite>HeavyMeleeDrop</prerequisite>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>12</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef>
+        <defName>HeavyMeleeDropPlusStuff</defName>
+        <quality>Excellent</quality>
+        <stuffList>
+            <li>Titanium</li>
+        </stuffList>
+        <thingsToChoose>
+            <li>MeleeWeapon_GreatSword</li>
+            <li>MeleeWeapon_Glaive</li>
+            <li>MeleeWeapon_Partisan</li>
+            <li>MeleeWeapon_Tsurugi</li>
+            <li>MeleeWeapon_Sledgehammer</li>
+            <li>MeleeWeapon_Tsurugi</li>
+        </thingsToChoose>
+    </OrderedStuffDef>
+</Defs>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <!-- Vanilla -->
+
+    <CallLaborerGang.description>Вызов группы из 8 рабочих на срок в 4 дня. Они будут выполнять только трудовые задачи, но вы сможете управлять ими, как своими поселенцами. Вы будете обязаны обеспечить их безопасность.\n\nТребуемое количество очков привилегий - 2.</CallLaborerGang.description>
+    <CallLaborerTeam.description>Вызов группы из 4 рабочих на срок в 4 дня. Они будут выполнять только трудовые задачи, но вы сможете управлять ими, как своими поселенцами. Вы будете обязаны обеспечить их безопасность.\n\nТребуемое количество очков привилегий - 3.</CallLaborerTeam.description>
+
+    <CallMilitaryAidGrand.description>Вызов группы из 4 тяжеловооружённых катафрактариев для помощи в бою.\n\nТребуемое количество очков привилегий - 3.</CallMilitaryAidGrand.description>
+    <CallMilitaryAidLarge.description>Вызов группы из 4 профессиональных янычар для помощи в бою.\n\nТребуемое количество очков привилегий - 2.</CallMilitaryAidLarge.description>
+    <CallMilitaryAidSmall.description>Вызов группы из 2 легковооружённых пехотинцев для помощи в бою.\n\nТребуемое количество очков привилегий - 1.</CallMilitaryAidSmall.description>
+    <CallMilitaryAidSmallPlus.label>вызов большого отряда пехотинцев</CallMilitaryAidSmallPlus.label>
+    <CallMilitaryAidSmallPlus.description>Вызов группы из 6 легковооружённых пехотинцев для помощи в бою.\n\nТребуемое количество очков привилегий - 2.</CallMilitaryAidSmallPlus.description>
+
+    <CallOrbitalSalvo.description>Запрос серии ударов по области вокруг указанных координат с беспилотника.\n\nТребуемое количество очков привилегий - 3.</CallOrbitalSalvo.description>
+    <CallOrbitalStrike.description>Запрос одиночного воздушного удара по указанным координатам с беспилотника.\n\nТребуемое количество очков привилегий - 2.</CallOrbitalStrike.description>
+
+    <CallTransportShuttle.description>Запрос челнока для собственных нужд. Челнок может перевозить людей, животных и грузы в любую точку в радиусе 70 клеток на карте мира. Одноразовый.\n\nТребуемое количество очков привилегий - 2.</CallTransportShuttle.description>
+
+    <FoodDrop.description>Запрос доставки 30 сухих пайков.\n\nТребуемое количество очков привилегий - 1.</FoodDrop.description>
+    <GlitterMedDrop.description>Запрос доставки 5 передовых медикаментов.\n\nТребуемое количество очков привилегий - 2.</GlitterMedDrop.description>
+    <SilverDrop.description>Запрос доставки 1000 единиц серебра.\n\nТребуемое количество очков привилегий - 1.</SilverDrop.description>
+    <SteelDrop.label>Запрос железной руды</SteelDrop.label>
+    <SteelDrop.description>Запрос доставки 150 единиц железной руды.\n\nТребуемое количество очков привилегий - 1.</SteelDrop.description>
+  
+    <!-- Tools -->
+  
+    <ToolDrop.label>запрос инструментов</ToolDrop.label>
+    <ToolDrop.description>Запрос доставки ящика с ручным топором, молотком, киркой, мотыгой, серпом, ножом и метлой.\n - Материал: сталь\n - Качество: обычное\n\nТребуемое количество очков привилегий - 1.</ToolDrop.description>
+  
+    <ToolDropPlus.label>запрос улучшенных инструментов</ToolDropPlus.label>
+    <ToolDropPlus.description>Запрос доставки ящика с ручным топором, молотком, киркой, мотыгой, серпом и метлой.\n - Материал: титан\n - Качество: отличное\n\nТребуемое количество очков привилегий - 2.</ToolDropPlus.description>
+  
+    <AdvToolDrop.label>запрос мультитула</AdvToolDrop.label>
+    <AdvToolDrop.description>Запрос доставки одного мультитула.\n - Материал: альнико\n - Качество: обычное\n\nТребуемое количество очков привилегий - 2.</AdvToolDrop.description>
+  
+    <AdvToolDropPlus.label>запрос улучшенного мультитула</AdvToolDropPlus.label>
+    <AdvToolDropPlus.description>Запрос доставки одного мультитула.\n - Материал: титан\n - Качество: отличное\n\nТребуемое количество очков привилегий - 3.</AdvToolDropPlus.description>
+  
+    <!-- Armor -->
+
+    <ArmorDrop.label>запрос средневековой брони</ArmorDrop.label>
+    <ArmorDrop.description>Запрос доставки набора средневековых доспехов.\n - Материал: сталь\n - Качество: обычное\n\nТребуемое количество очков привилегий - 1.</ArmorDrop.description>
+  
+    <ArmorDropPlus.label>запрос улучшенной средневековой брони</ArmorDropPlus.label>
+    <ArmorDropPlus.description>Запрос доставки набора улучшенных средневековых доспехов.\n - Материал: ферротитан\n - Качество: отличное\n\nТребуемое количество очков привилегий - 2.</ArmorDropPlus.description>
+  
+    <IndustrialArmorDrop.label>запрос индустриальной брони</IndustrialArmorDrop.label>
+    <IndustrialArmorDrop.description>Запрос доставки набора индустриальной брони.\n - Материал: сталь\n - Качество: обычное\n\nТребуемое количество очков привилегий - 1.</IndustrialArmorDrop.description>
+  
+    <IndustrialArmorDropPlus.label>запрос улучшенной индустриальной брони</IndustrialArmorDropPlus.label>
+    <IndustrialArmorDropPlus.description>Запрос доставки набора улучшенной индустриальной брони.\n - Материал: ферротитан\n - Качество: отличное\n\nТребуемое количество очков привилегий - 2.</IndustrialArmorDropPlus.description>
+    
+    <SpacerArmorDrop.label>запрос продвинутой брони</SpacerArmorDrop.label>
+    <SpacerArmorDrop.description>Запрос доставки набора продвинутого снаряжения.\n - Материал: альнико\n - Качество: обычное\n\nТребуемое количество очков привилегий - 2.</SpacerArmorDrop.description>
+  
+    <SpacerArmorDropPlus.label>запрос улучшенной продвинутой брони</SpacerArmorDropPlus.label>
+    <SpacerArmorDropPlus.description>Запрос доставки набора улучшенного продвинутого снаряжения.\n - Материал: победит\n - Качество: отличное\n\nТребуемое количество очков привилегий - 3.</SpacerArmorDropPlus.description>
+    
+    <UltraArmorDrop.label>запрос ультра брони</UltraArmorDrop.label>
+    <UltraArmorDrop.description>Запрос доставки набора лучшей доступной вашему титулу брони.\n - Материал: ферротитан\n - Качество: обычное\n\nТребуемое количество очков привилегий - 4.</UltraArmorDrop.description>
+  
+    <UltraArmorDropPlus.label>запрос улучшенной ультра брони</UltraArmorDropPlus.label>
+    <UltraArmorDropPlus.description>Запрос доставки набора лучшей доступной вашему титулу брони.\n - Материал: альфа и бета поли\n - Качество: отличное\n\nТребуемое количество очков привилегий - 5.</UltraArmorDropPlus.description>
+    
+    <!-- Melee -->
+  
+    <AgileMeleeDrop.label>запрос манёвренного оружия ближнего боя</AgileMeleeDrop.label>
+    <AgileMeleeDrop.description>Запрос доставки случайного маневренного оружия ближнего боя (кинжалы и короткие мечи).\n - Материал: сталь\n - Качество: обычное\n\nТребуемое количество очков привилегий - 1.</AgileMeleeDrop.description>
+  
+    <AgileMeleeDropPlus.label>запрос улучшенного манёвренного оружия ближнего боя</AgileMeleeDropPlus.label>
+    <AgileMeleeDropPlus.description>Запрос доставки случайного улучшенного маневренного оружия ближнего боя (кинжалы и короткие мечи).\n - Материал: титан\n - Качество: хорошее-шедевр\n\nТребуемое количество очков привилегий - 3.</AgileMeleeDropPlus.description>
+  
+    <SharpMeleeDrop.label>запрос режущего оружия ближнего боя</SharpMeleeDrop.label>
+    <SharpMeleeDrop.description>Запрос доставки случайного режущего оружия ближнего боя (исключая кинжалы и короткие мечи).\n - Материал: сталь\n - Качество: обычное\n\nТребуемое количество очков привилегий - 1.</SharpMeleeDrop.description>
+  
+    <SharpMeleeDropPlus.label>запрос улучшенного режущего оружия ближнего боя</SharpMeleeDropPlus.label>
+    <SharpMeleeDropPlus.description>Запрос доставки случайного улучшенного режущего оружия ближнего боя (исключая кинжалы и короткие мечи).\n - Материал: титан\n - Качество: хорошее-шедевр\n\nТребуемое количество очков привилегий - 3.</SharpMeleeDropPlus.description>
+    
+    <BluntMeleeDrop.label>запрос ударного оружия ближнего боя</BluntMeleeDrop.label>
+    <BluntMeleeDrop.description>Запрос доставки случайного ударного оружия ближнего боя.\n - Материал: сталь\n - Качество: обычное\n\nТребуемое количество очков привилегий - 1.</BluntMeleeDrop.description>
+  
+    <BluntMeleeDropPlus.label>запрос улучшенного ударного оружия ближнего боя</BluntMeleeDropPlus.label>
+    <BluntMeleeDropPlus.description>Запрос доставки случайного улучшенного ударного оружия ближнего боя.\n - Материал: титан\n - Качество: хорошее-шедевр\n\nТребуемое количество очков привилегий - 3.</BluntMeleeDropPlus.description>
+  
+    <HeavyMeleeDrop.label>запрос тяжёлого оружия ближнего боя</HeavyMeleeDrop.label>
+    <HeavyMeleeDrop.description>Запрос доставки случайного тяжёлого оружия ближнего боя.\n - Материал: сталь\n - Качество: обычное\n\nТребуемое количество очков привилегий - 1.</HeavyMeleeDrop.description>
+  
+    <HeavyMeleeDropPlus.label>запрос улучшенного тяжёлого оружия ближнего боя</HeavyMeleeDropPlus.label>
+    <HeavyMeleeDropPlus.description>Запрос доставки случайного улучшенного тяжёлого оружия ближнего боя.\n - Материал: титан\n - Качество: хорошее-шедевр\n\nТребуемое количество очков привилегий - 3.</HeavyMeleeDropPlus.description>
+    
+    <!-- Seeds -->
+    
+    <SeedsPotatoDrop.label>запрос семян картофеля</SeedsPotatoDrop.label>
+    <SeedsPotatoDrop.description>Запрос доставки 100 семян картофеля.\n\nТребуемое количество очков привилегий - 1.</SeedsPotatoDrop.description>
+    
+    <SeedsRiceDrop.label>запрос семян риса</SeedsRiceDrop.label>
+    <SeedsRiceDrop.description>Запрос доставки 100 семян риса.\n\nТребуемое количество очков привилегий - 1.</SeedsRiceDrop.description>
+    
+    <SeedsOakDrop.label>запрос семян дуба</SeedsOakDrop.label>
+    <SeedsOakDrop.description>Запрос доставки 30 жёлудей.\n\nТребуемое количество очков привилегий - 1.</SeedsOakDrop.description>
+    
+    <SeedsAppleDrop.label>запрос семян яблони</SeedsAppleDrop.label>
+    <SeedsAppleDrop.description>Запрос доставки 15 семян яблони.\n\nТребуемое количество очков привилегий - 1.</SeedsAppleDrop.description>
+
+</LanguageData>
