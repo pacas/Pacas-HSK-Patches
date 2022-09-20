@@ -2,7 +2,7 @@
 <Defs>
     <!-- Tools -->
   
-    <RoyalTitlePermitDef ParentName="DropResourcesWithStuffBase">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ToolDrop</defName>
         <label>tools drop</label>
         <description>Call for a drop of tool box with handaxe, hammer, pickaxe, hoe, sickle, knife and broom.\n - Material: Steel\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
@@ -22,9 +22,8 @@
             <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>ToolDropStuff</defName>
-        <quality>Normal</quality>
         <stuffList>
             <li>Plasteel</li>
             <li>Plasteel</li>
@@ -37,12 +36,12 @@
     </OrderedStuffDef>
     
     
-    <RoyalTitlePermitDef ParentName="DropResourcesWithStuffBase">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ToolDropPlus</defName>
         <label>better tools drop</label>
         <description>Call for a drop of tool box with handaxe, hammer, pickaxe, hoe, sickle, knife and broom with better base materials.\n - Material: Titanium\n - Quality: Excellent\n\nPermit points cost - 2 points.</description>
         <minTitle>Knight</minTitle>
-        <cooldownDays>35</cooldownDays>
+        <cooldownDays>50</cooldownDays>
         <uiPosition>(1,10)</uiPosition>
         <prerequisite>ToolDrop</prerequisite>
         <permitPointCost>2</permitPointCost>
@@ -59,7 +58,7 @@
             <favorCost>4</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>ToolDropPlusStuff</defName>
         <quality>Excellent</quality>
         <stuffList>
@@ -74,12 +73,11 @@
     </OrderedStuffDef>
 
 
-    <RoyalTitlePermitDef ParentName="DropResourcesWithStuffBase">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AdvToolDrop</defName>
         <label>multitool drop</label>
         <description>Call for a drop of one multitool.\n - Material: Alnico alloy\n - Quality: Normal\n\nPermit points cost - 2 points.</description>
         <minTitle>Baron</minTitle>
-        <cooldownDays>40</cooldownDays>
         <uiPosition>(0,11)</uiPosition>
         <permitPointCost>2</permitPointCost>
         <royalAid>
@@ -89,20 +87,19 @@
             <favorCost>6</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>AdvToolDropStuff</defName>
-        <quality>Normal</quality>
         <stuffList>
             <li>AlnicoAlloy</li>
         </stuffList>
     </OrderedStuffDef>
     
-    <RoyalTitlePermitDef ParentName="DropResourcesWithStuffBase">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AdvToolDropPlus</defName>
         <label>better multitool drop</label>
         <description>Call for a drop of one multitool.\n - Material: Titanium\n - Quality: Excellent\n\nPermit points cost - 3 points.</description>
         <minTitle>Count</minTitle>
-        <cooldownDays>60</cooldownDays>
+        <cooldownDays>80</cooldownDays>
         <prerequisite>AdvToolDrop</prerequisite>
         <uiPosition>(1,11)</uiPosition>
         <permitPointCost>3</permitPointCost>
@@ -113,7 +110,7 @@
             <favorCost>8</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>AdvToolDropPlusStuff</defName>
         <quality>Excellent</quality>
         <stuffList>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <RoyalTitlePermitDef Name="MainRTPDBase" Abstract="True">
+    <RoyalTitlePermitDef Name="DropResourcesPlus" Abstract="True">
+        <workerClass>RoyalTitlePermitWorker_DropResourcesPlus</workerClass>
         <faction>Empire</faction>
         <permitPointCost>1</permitPointCost>
         <cooldownDays>45</cooldownDays>
@@ -10,17 +11,25 @@
             <targetingRange>39.9</targetingRange>
         </royalAid>
     </RoyalTitlePermitDef>
+    
+    <OrderedStuffDef Name="OrderedStuffBase" Abstract="True">
+        <typeOfDrop>StuffQuality</typeOfDrop>
+        <typeOfQuality>Specific</typeOfQuality>
+        <typeOfItem>Specific</typeOfItem>
+        <quality>Normal</quality>
+    </OrderedStuffDef>
+    
+    <OrderedStuffDef Name="OrderedGunBase" Abstract="True">
+        <typeOfDrop>Quality</typeOfDrop>
+        <typeOfItem>Random</typeOfItem>
+        <typeOfQuality>Specific</typeOfQuality>
+        <quality>Normal</quality>
+    </OrderedStuffDef>
+    
+    <OrderedStuffDef Name="OrderedSeedsBase" Abstract="True">
+        <typeOfDrop>Pure</typeOfDrop>
+        <typeOfItem>Random</typeOfItem>
+    </OrderedStuffDef>
 
-    <RoyalTitlePermitDef ParentName="MainRTPDBase" Name="DropResourcesWithStuffBase" Abstract="True">
-        <workerClass>RoyalTitlePermitWorker_DropResourcesWithStuff</workerClass>
-    </RoyalTitlePermitDef>
-    
-    <RoyalTitlePermitDef ParentName="MainRTPDBase" Name="DropRandomWeaponWithStuffBase" Abstract="True">
-        <workerClass>RoyalTitlePermitWorker_DropRandomWeaponWithStuff</workerClass>
-    </RoyalTitlePermitDef>
-    
-    <RoyalTitlePermitDef ParentName="MainRTPDBase" Name="DropRandomWeaponBase" Abstract="True">
-        <workerClass>RoyalTitlePermitWorker_DropRandomWeapon</workerClass>
-    </RoyalTitlePermitDef>
 </Defs>
 

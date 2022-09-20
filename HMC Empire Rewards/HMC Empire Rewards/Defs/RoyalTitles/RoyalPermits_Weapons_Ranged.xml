@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Pistol -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>PistolDrop</defName>
+        <label>pistol drop</label>
+        <description>Call for a drop of random pistol.\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
+        <minTitle>Acolyte</minTitle>
+        <cooldownDays>15</cooldownDays>
+        <uiPosition>(0,23)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>PistolDropStuff</defName>
+        <thingsToChoose>
+            <li>Gun_Revolver</li>
+            <li>RF_Gun_Deringer</li>
+            <li>RF_Gun_AT2K</li>
+            <li>RF_Gun_93R</li>
+            <li>RF_Gun_VektorCP</li>
+            <li>Gun_Autopistol</li>
+        </thingsToChoose>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>PistolDropPlus</defName>
+        <label>better pistol drop</label>
+        <description>Call for a drop of random pistol.\n - Quality: Good - Masterwork\n\nPermit points cost - 2 points.</description>
+        <minTitle>Praetor</minTitle>
+        <uiPosition>(1,23)</uiPosition>
+        <cooldownDays>40</cooldownDays>
+        <prerequisite>PistolDrop</prerequisite>
+        <permitPointCost>2</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>10</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>PistolDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <thingsToChoose>
+            <li>Gun_Revolver</li>
+            <li>RF_Gun_Deringer</li>
+            <li>RF_Gun_AT2K</li>
+            <li>RF_Gun_93R</li>
+            <li>RF_Gun_VektorCP</li>
+            <li>Gun_Autopistol</li>
+        </thingsToChoose>
+    </OrderedStuffDef>
+    
+    
+    <!-- SMG -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>SMGDrop</defName>
+        <label>SMG drop</label>
+        <description>Call for a drop of random SMG.\n - Quality: Normal\n\nPermit points cost - 2 point.</description>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>15</cooldownDays>
+        <permitPointCost>2</permitPointCost>
+        <uiPosition>(0,24)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>4</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>SMGDropStuff</defName>
+        <thingsToChoose>
+            <li>RF_Gun_Tecnine</li>
+            <li>RF_Gun_GreaseGun</li>
+            <li>Gun_MachinePistol</li>
+            <li>RF_Gun_TMP</li>
+            <li>RF_Gun_Skorpion</li>
+            <li>RF_Gun_Vector</li>
+            <li>Gun_MP5Gun</li>
+            <li>Gun_UMP45Gun</li>
+            <li>Gun_HeavySMG</li>
+        </thingsToChoose>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>SMGDropPlus</defName>
+        <label>better SMG drop</label>
+        <description>Call for a drop of random SMG.\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
+        <minTitle>Praetor</minTitle>
+        <uiPosition>(1,24)</uiPosition>
+        <cooldownDays>40</cooldownDays>
+        <prerequisite>SMGDrop</prerequisite>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>10</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>SMGDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <thingsToChoose>
+            <li>RF_Gun_Tecnine</li>
+            <li>RF_Gun_GreaseGun</li>
+            <li>Gun_MachinePistol</li>
+            <li>RF_Gun_TMP</li>
+            <li>RF_Gun_Skorpion</li>
+            <li>RF_Gun_Vector</li>
+            <li>Gun_MP5Gun</li>
+            <li>Gun_UMP45Gun</li>
+            <li>Gun_HeavySMG</li>
+        </thingsToChoose>
+    </OrderedStuffDef>
+</Defs>

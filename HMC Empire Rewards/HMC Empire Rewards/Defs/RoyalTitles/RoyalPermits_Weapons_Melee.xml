@@ -2,12 +2,12 @@
 <Defs>
     <!-- Agile -->
   
-    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AgileMeleeDrop</defName>
         <label>Agile melee weapon drop</label>
         <description>Call for a drop of random agile melee weapon (daggers and shortswords).\n - Material: Steel\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>15</cooldownDays>
+        <cooldownDays>21</cooldownDays>
         <uiPosition>(0,18)</uiPosition>
         <royalAid>
             <itemsToDrop>
@@ -16,9 +16,9 @@
             <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>AgileMeleeDropStuff</defName>
-        <quality>Normal</quality>
+        <typeOfItem>Random</typeOfItem>
         <stuffList>
             <li>Plasteel</li>
         </stuffList>
@@ -29,12 +29,13 @@
         </thingsToChoose>
     </OrderedStuffDef>
     
-    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AgileMeleeDropPlus</defName>
         <label>better agile melee weapon drop</label>
         <description>Call for a drop of random agile melee weapon (daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Praetor</minTitle>
         <uiPosition>(1,18)</uiPosition>
+        <cooldownDays>60</cooldownDays>
         <prerequisite>AgileMeleeDrop</prerequisite>
         <permitPointCost>3</permitPointCost>
         <royalAid>
@@ -44,8 +45,10 @@
             <favorCost>12</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>AgileMeleeDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <typeOfItem>Random</typeOfItem>
         <quality>Excellent</quality>
         <stuffList>
             <li>Titanium</li>
@@ -60,12 +63,12 @@
     
     <!-- Sharp -->
     
-    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SharpMeleeDrop</defName>
         <label>Sharp melee weapon drop</label>
         <description>Call for a drop of random sharp melee weapon (exclude daggers and shortswords).\n - Material: Steel\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>15</cooldownDays>
+        <cooldownDays>21</cooldownDays>
         <uiPosition>(0,19)</uiPosition>
         <royalAid>
             <itemsToDrop>
@@ -74,9 +77,9 @@
             <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>SharpMeleeDropStuff</defName>
-        <quality>Normal</quality>
+        <typeOfItem>Random</typeOfItem>
         <stuffList>
             <li>Plasteel</li>
         </stuffList>
@@ -96,12 +99,13 @@
         </thingsToChoose>
     </OrderedStuffDef>
     
-    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SharpMeleeDropPlus</defName>
         <label>better sharp melee weapon drop</label>
         <description>Call for a drop of random sharp melee weapon (exclude daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Praetor</minTitle>
         <uiPosition>(1,19)</uiPosition>
+        <cooldownDays>60</cooldownDays>
         <prerequisite>SharpMeleeDrop</prerequisite>
         <permitPointCost>3</permitPointCost>
         <royalAid>
@@ -111,8 +115,10 @@
             <favorCost>12</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>SharpMeleeDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <typeOfItem>Random</typeOfItem>
         <quality>Excellent</quality>
         <stuffList>
             <li>Titanium</li>
@@ -135,12 +141,12 @@
     
     <!-- Blunt -->
     
-    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BluntMeleeDrop</defName>
         <label>Blunt melee weapon drop</label>
         <description>Call for a drop of random blunt melee weapon (exclude daggers and shortswords).\n - Material: Steel\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>15</cooldownDays>
+        <cooldownDays>21</cooldownDays>
         <uiPosition>(0,20)</uiPosition>
         <royalAid>
             <itemsToDrop>
@@ -149,9 +155,9 @@
             <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>BluntMeleeDropStuff</defName>
-        <quality>Normal</quality>
+        <typeOfItem>Random</typeOfItem>
         <stuffList>
             <li>Plasteel</li>
         </stuffList>
@@ -163,12 +169,13 @@
         </thingsToChoose>
     </OrderedStuffDef>
     
-    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BluntMeleeDropPlus</defName>
         <label>better blunt melee weapon drop</label>
         <description>Call for a drop of random blunt melee weapon (exclude daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Praetor</minTitle>
         <uiPosition>(1,20)</uiPosition>
+        <cooldownDays>60</cooldownDays>
         <prerequisite>BluntMeleeDrop</prerequisite>
         <permitPointCost>3</permitPointCost>
         <royalAid>
@@ -178,8 +185,10 @@
             <favorCost>12</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>BluntMeleeDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <typeOfItem>Random</typeOfItem>
         <quality>Excellent</quality>
         <stuffList>
             <li>Titanium</li>
@@ -194,12 +203,12 @@
     
     <!-- Heavy -->
     
-    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>HeavyMeleeDrop</defName>
         <label>Heavy melee weapon drop</label>
         <description>Call for a drop of random heavy melee weapon.\n - Material: Steel\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
         <minTitle>Acolyte</minTitle>
-        <cooldownDays>15</cooldownDays>
+        <cooldownDays>21</cooldownDays>
         <uiPosition>(0,21)</uiPosition>
         <royalAid>
             <itemsToDrop>
@@ -208,9 +217,9 @@
             <favorCost>2</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>HeavyMeleeDropStuff</defName>
-        <quality>Normal</quality>
+        <typeOfItem>Random</typeOfItem>
         <stuffList>
             <li>Plasteel</li>
         </stuffList>
@@ -224,11 +233,12 @@
         </thingsToChoose>
     </OrderedStuffDef>
     
-    <RoyalTitlePermitDef ParentName="DropRandomWeaponWithStuffBase">
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>HeavyMeleeDropPlus</defName>
         <label>better heavy melee weapon drop</label>
         <description>Call for a drop of random heavy melee weapon.\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Praetor</minTitle>
+        <cooldownDays>60</cooldownDays>
         <uiPosition>(1,21)</uiPosition>
         <prerequisite>HeavyMeleeDrop</prerequisite>
         <permitPointCost>3</permitPointCost>
@@ -239,8 +249,10 @@
             <favorCost>12</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
-    <OrderedStuffDef>
+    <OrderedStuffDef ParentName="OrderedStuffBase">
         <defName>HeavyMeleeDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <typeOfItem>Random</typeOfItem>
         <quality>Excellent</quality>
         <stuffList>
             <li>Titanium</li>
