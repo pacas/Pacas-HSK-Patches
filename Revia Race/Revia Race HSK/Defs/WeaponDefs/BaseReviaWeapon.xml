@@ -1,43 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Name="ReviaBaseRangedWeapon" Abstract="True" ParentName="SK_BaseGun">
-    <techLevel>Medieval</techLevel>
-    <thingCategories>
-      <li>WeaponsRanged</li>
-    </thingCategories>
-    <burnableByRecipe>true</burnableByRecipe>
-    <recipeMaker>
-      <workSpeedStat>SmithingSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <recipeUsers>
-        <li>ElectricSmithy</li>
-        <li>FueledSmithy</li>
-      </recipeUsers>
-      <effectWorking>Smith</effectWorking>
-      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-    </recipeMaker>
-  </ThingDef>
-
-  <ThingDef Name="ReviaBaseAdvancedRangedWeapon" Abstract="True" ParentName="SK_BaseGun">
-    <techLevel>Industrial</techLevel>
-    <thingCategories>
-      <li>WeaponsRanged</li>
-    </thingCategories>
-    <smeltable>true</smeltable>
-    <comps>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-    </comps>
-    <recipeMaker>
-      <workSpeedStat>SmithingSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Smith</effectWorking>
-      <soundWorking>Recipe_Smith</soundWorking>
-      <recipeUsers>
-        <li>WeaponCraftingWorkTable</li>
-      </recipeUsers>
-      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
-    </recipeMaker>
-  </ThingDef>
+    <ThingDef Name="ReviaBaseRangedWeapon" Abstract="True" ParentName="SK_BaseGun">
+        <techLevel>Medieval</techLevel>
+        <thingCategories>
+            <li>WeaponsRanged</li>
+        </thingCategories>
+        <burnableByRecipe>true</burnableByRecipe>
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+            </recipeUsers>
+            <effectWorking>Smith</effectWorking>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
 </Defs>

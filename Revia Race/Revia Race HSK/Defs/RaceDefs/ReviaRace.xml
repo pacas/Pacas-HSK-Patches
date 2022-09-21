@@ -14,7 +14,7 @@
                     <li>
                         <defName>Beauty</defName>
                         <degree>1</degree>
-                        <chance>40</chance>
+                        <chance>30</chance>
                     </li>
                     <li>
                         <defName>Beauty</defName>
@@ -22,15 +22,15 @@
                         <chance>20</chance>
                     </li>
                     <li>
-						<defName>Xenophobia</defName>
-						<degree>1</degree>
-						<chance>5</chance>
-					</li>
-					<li>
-						<defName>Xenophobia</defName>
-						<degree>-1</degree>
-						<chance>15</chance>
-					</li>
+                        <defName>Xenophobia</defName>
+                        <degree>1</degree>
+                        <chance>10</chance>
+                    </li>
+                    <li>
+                        <defName>Xenophobia</defName>
+                        <degree>-1</degree>
+                        <chance>20</chance>
+                    </li>
                     <li>
                         <defName>Bravery</defName>
                         <degree>-1</degree>
@@ -131,6 +131,7 @@
                         </li>
                     </colorChannels>
                     <alienbodytypes Inherit="False">
+                        <li>Thin</li>
                         <li>Female</li>
                     </alienbodytypes>
                     <bodyAddons Inherit="False">
@@ -317,42 +318,42 @@
                 </researchList>
             </raceRestriction>
             <thoughtSettings>
-				<cannotReceiveThoughts>
-					<li>EnvironmentDark</li>
-					<li>Naked</li>
-					<li>AteRawFood</li>
-					<li>WrongApparelGender</li>
-				</cannotReceiveThoughts>
-				<ateThoughtSpecific>
-					<li>
-						<raceList>
-							<li>Human</li>
-							<li>Alien_Nova</li>
-							<li>Alien_Dova</li>
-							<li>Norbal</li>
-							<li>Alien_Orassan</li>
-						</raceList>
-						<thought>AteHumanlikeMeatDirect</thought>
-						<ingredientThought>AteHumanlikeMeatAsIngredient</ingredientThought>
-					</li>
-					<li>
-						<raceList>
-							<li>Human</li>
-							<li>Alien_Nova</li>
-							<li>Alien_Dova</li>
-							<li>Norbal</li>
-							<li>Alien_Orassan</li>
-						</raceList>
-						<thought>AteHumanlikeMeatDirectCannibal</thought>
-						<ingredientThought>AteHumanlikeMeatAsIngredientCannibal</ingredientThought>
-					</li>
-				</ateThoughtSpecific>
-			</thoughtSettings>
+                <cannotReceiveThoughts>
+                    <li>EnvironmentDark</li>
+                    <li>Naked</li>
+                    <li>AteRawFood</li>
+                    <li>WrongApparelGender</li>
+                </cannotReceiveThoughts>
+                <ateThoughtSpecific>
+                    <li>
+                        <raceList>
+                            <li>Human</li>
+                            <li>Alien_Nova</li>
+                            <li>Alien_Dova</li>
+                            <li>Norbal</li>
+                            <li>Alien_Orassan</li>
+                        </raceList>
+                        <thought>AteHumanlikeMeatDirect</thought>
+                        <ingredientThought>AteHumanlikeMeatAsIngredient</ingredientThought>
+                    </li>
+                    <li>
+                        <raceList>
+                            <li>Human</li>
+                            <li>Alien_Nova</li>
+                            <li>Alien_Dova</li>
+                            <li>Norbal</li>
+                            <li>Alien_Orassan</li>
+                        </raceList>
+                        <thought>AteHumanlikeMeatDirectCannibal</thought>
+                        <ingredientThought>AteHumanlikeMeatAsIngredientCannibal</ingredientThought>
+                    </li>
+                </ateThoughtSpecific>
+            </thoughtSettings>
         </alienRace>
         <statBases>
             <Mass>70</Mass>
-            <MarketValue>3500</MarketValue>
-            <MoveSpeed>5.25</MoveSpeed>
+            <MarketValue>2700</MarketValue>
+            <MoveSpeed>5.45</MoveSpeed>
             <Flammability>1.0</Flammability>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <ComfyTemperatureMax>36</ComfyTemperatureMax>
@@ -364,7 +365,7 @@
             <MeleeCritChance>1.1</MeleeCritChance>
             <MeleeParryChance>1.15</MeleeParryChance>
             <Suppressability>1</Suppressability>
-            <SmokeSensitivity>0.85</SmokeSensitivity>
+            <SmokeSensitivity>0.9</SmokeSensitivity>
             <CarryBulk>25</CarryBulk>
             <CarryWeight>40</CarryWeight>
         </statBases>
@@ -374,22 +375,22 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>4</power>
-                <cooldownTime>1.26</cooldownTime>
+                <power>6</power>
+                <cooldownTime>1.2</cooldownTime>
                 <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
-                <armorPenetrationSharp>0.50</armorPenetrationSharp>
-				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+                <armorPenetrationSharp>0.4</armorPenetrationSharp>
+                <armorPenetrationBlunt>1.13</armorPenetrationBlunt>
             </li>
             <li Class="CombatExtended.ToolCE">
                 <label>right fist</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>4</power>
-                <cooldownTime>1.26</cooldownTime>
+                <power>6</power>
+                <cooldownTime>1.2</cooldownTime>
                 <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
-                <armorPenetrationSharp>0.50</armorPenetrationSharp>
-				<armorPenetrationBlunt>1</armorPenetrationBlunt>
+                <armorPenetrationSharp>0.4</armorPenetrationSharp>
+                <armorPenetrationBlunt>1.13</armorPenetrationBlunt>
             </li>
             <li Class="CombatExtended.ToolCE">
                 <label>teeth</label>
@@ -401,14 +402,14 @@
                 <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
                 <chanceFactor>0.2</chanceFactor>
                 <surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>20</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-				<armorPenetrationSharp>0.5</armorPenetrationSharp>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>20</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+                <armorPenetrationSharp>0.5</armorPenetrationSharp>
                 <armorPenetrationBlunt>0.15</armorPenetrationBlunt>
             </li>
             <li Class="CombatExtended.ToolCE">
@@ -416,12 +417,12 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>5</power>
+                <power>7</power>
                 <cooldownTime>4.49</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <chanceFactor>0.2</chanceFactor>
                 <armorPenetrationBlunt>1.4</armorPenetrationBlunt>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
             </li>
         </tools>
         <race>
@@ -445,20 +446,20 @@
             <ageGenerationCurve Inherit="false">
                 <points>
                     <li>(10,0)</li>
-                    <li>(11,15)</li>
-                    <li>(12,20)</li>
-                    <li>(14,85)</li>
+                    <li>(11,10)</li>
+                    <li>(12,15)</li>
+                    <li>(14,65)</li>
                     <li>(16,100)</li>
                     <li>(20,100)</li>
                     <li>(30,40)</li>
                     <li>(35,30)</li>
-                    <li>(40,20)</li>
-                    <li>(50,10)</li>
-                    <li>(60,5)</li>
-                    <li>(70,5)</li>
-                    <li>(80,3)</li>
-                    <li>(90,2)</li>
-                    <li>(100,1)</li>
+                    <li>(40,25)</li>
+                    <li>(50,15)</li>
+                    <li>(60,10)</li>
+                    <li>(70,8)</li>
+                    <li>(80,5)</li>
+                    <li>(90,3)</li>
+                    <li>(100,2)</li>
                     <li>(110,0)</li>
                 </points>
             </ageGenerationCurve>
@@ -467,8 +468,8 @@
             </hediffGiverSets>
         </race>
         <recipes>
-			<li>InstallPlasteelClaws</li>
-		</recipes>
+            <li>InstallPlasteelClaws</li>
+        </recipes>
         <modExtensions>
             <li Class="CombatExtended.RacePropertiesExtensionCE">
                 <bodyShape>Humanoid</bodyShape>

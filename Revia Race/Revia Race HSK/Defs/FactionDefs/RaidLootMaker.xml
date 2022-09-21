@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingSetMakerDef>
-    <defName>ReviaRaiderLootMaker</defName>
-    <root Class="ThingSetMaker_MarketValue">
-      <fixedParams>
-        <filter>
-          <thingDefs>
-            <li>Silver</li>
-            <li>Gold</li>
-            <li>MedicineHerbal</li>
-            <li>Pemmican</li>
-          </thingDefs>
-        </filter>
-      </fixedParams>
-    </root>
-  </ThingSetMakerDef>
+    <ThingSetMakerDef>
+        <defName>ReviaRaiderLootMaker</defName>
+        <root Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                        <li>Gold</li>
+                        <li>MedicineHerbal</li>
+                        <li>Pemmican</li>
+                    </thingDefs>
+                </filter>
+            </fixedParams>
+        </root>
+    </ThingSetMakerDef>
 
-  <ThingSetMakerDef>
-    <defName>ReviaTemplarLootMaker</defName>
-    <root Class="ThingSetMaker_MarketValue">
-      <fixedParams>
-        <filter>
-          <thingDefs>
-            <li>Silver</li>
-            <li>Gold</li>
-            <li>MedicineIndustrial</li>
-            <li>MealSurvivalPack</li>
-          </thingDefs>
-        </filter>
-      </fixedParams>
-    </root>
-  </ThingSetMakerDef>
+    <ThingSetMakerDef>
+        <defName>ReviaTemplarLootMaker</defName>
+        <root Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                        <li>Gold</li>
+                        <li>MedicineIndustrial</li>
+                        <li>MealSurvivalPack</li>
+                    </thingDefs>
+                </filter>
+            </fixedParams>
+        </root>
+    </ThingSetMakerDef>
 </Defs>

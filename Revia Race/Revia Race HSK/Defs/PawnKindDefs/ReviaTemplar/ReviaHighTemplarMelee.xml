@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef ParentName="ReviaPawnBase">
+        <defName>ReviaRaceHighTemplarMelee</defName>
+        <label>Revia Ascended Templar</label>
+        <defaultFactionType>ReviaTemplarFaction</defaultFactionType>
+        <race>ReviaRaceAlien</race>
+        <combatPower>700</combatPower>
+        <factionLeader>true</factionLeader>
+        <minGenerationAge>30</minGenerationAge>
+        <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+        <gearHealthRange>1~1</gearHealthRange>
+        <itemQuality>Excellent</itemQuality>
+        <apparelTags>
+            <li>OrionMedium</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>CCArmor</li>
+            <li>CCArmorHelmet</li>
+        </apparelRequired>
+        <apparelMoney>9999~9999</apparelMoney>
+        <weaponTags>
+            <li>ReviaMeleeLegendary</li>
+        </weaponTags>
+        <biocodeWeaponChance>1.0</biocodeWeaponChance>
+        <weaponMoney>9999~9999</weaponMoney>
+        <initialWillRange>1.0~1.0</initialWillRange>
+        <initialResistanceRange>60~80</initialResistanceRange>
+        <techHediffsChance>1.0</techHediffsChance>
+        <techHediffsMoney>9999~9999</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <techHediffsRequired>
+            <li>DeathAcidifier</li>
+        </techHediffsRequired>
+        <invNutrition>5</invNutrition>
+        <inventoryOptions>
+            <skipChance>0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>20</choiceChance>
+                    <thingDef>MedicineUltratech</thingDef>
+                    <countRange>2~4</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+</Defs>

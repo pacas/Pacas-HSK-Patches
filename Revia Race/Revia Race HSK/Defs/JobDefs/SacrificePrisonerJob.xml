@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <JobDef>
-    <defName>ReviaRaceSacrificingPrisoner</defName>
-    <driverClass>ReviaRace.JobDrivers.SacrificePrisonerJobDriver</driverClass>
-    <reportString>sacrificing prisoner.</reportString>
-    <casualInterruptible>false</casualInterruptible>
-  </JobDef>
+    <JobDef>
+        <defName>ReviaRaceSacrificingPrisoner</defName>
+        <driverClass>ReviaRace.JobDrivers.SacrificePrisonerJobDriver</driverClass>
+        <reportString>sacrificing prisoner.</reportString>
+        <casualInterruptible>false</casualInterruptible>
+    </JobDef>
 
-  <JobDef>
-    <defName>ReviaRaceSacrificedPrisonerWait</defName>
-    <driverClass>ReviaRace.JobDrivers.WaitPrisonerJobDriver</driverClass>
-    <reportString>awaiting sacrifice.</reportString>
-    <casualInterruptible>false</casualInterruptible>
-  </JobDef>
+    <JobDef>
+        <defName>ReviaRaceSacrificedPrisonerWait</defName>
+        <driverClass>ReviaRace.JobDrivers.WaitPrisonerJobDriver</driverClass>
+        <reportString>awaiting sacrifice.</reportString>
+        <casualInterruptible>false</casualInterruptible>
+    </JobDef>
 </Defs>

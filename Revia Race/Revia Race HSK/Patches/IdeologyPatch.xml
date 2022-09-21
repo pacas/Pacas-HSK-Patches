@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Ideology</li>
-    </mods>
-    <match Class="PatchOperationAdd">
-      <xpath>/Defs/PreceptDef[defName="IdeoBuilding"]/buildingDefChances</xpath>
-      <value>
-        <ReviaBloodSigil>0</ReviaBloodSigil>
-      </value>
-    </match>
-    <success>Always</success>
-  </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/PreceptDef[defName="IdeoBuilding"]/buildingDefChances</xpath>
+            <value>
+                <ReviaBloodSigil>0</ReviaBloodSigil>
+            </value>
+        </match>
+        <success>Always</success>
+    </Operation>
 </Patch>

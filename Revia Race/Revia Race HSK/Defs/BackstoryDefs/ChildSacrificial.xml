@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <AlienRace.BackstoryDef>
-    <defName>ReviaRaceBackstoryChildSacrificial</defName>
-    <title>Revian Sacrificial Child</title>
-    <titleShort>Sacrifice</titleShort>
-    <baseDescription>[PAWN_nameDef] was considered to be inferior in physical prowess. [PAWN_pronoun] was slated to be sacrificed on the altar of the moon, but [PAWN_pronoun] managed to escape [PAWN_possessive] holding cell. Living in the wilderness has improved [PAWN_possessive] survival skills, but the terror of having nearly been killed like an animal has left [PAWN_possessive] unwilling to communicate with other humanlikes.</baseDescription>
-    <bodyTypeGlobal>Thin</bodyTypeGlobal>
-    <bodyTypeMale>Thin</bodyTypeMale>
-    <bodyTypeFemale>Thin</bodyTypeFemale>
-    <slot>Childhood</slot>
-    <spawnCategories>
-      <li>ReviaRaceBackstory</li>
-      <li>ReviaMarauder</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Crafting</defName>
-        <amount>2</amount>
-      </li>
-      <li>
-        <defName>Animals</defName>
-        <amount>2</amount>
-      </li>
-      <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
-      </li>
-    </skillGains>
-    <workDisables>
-      <li>Social</li>
-    </workDisables>
-    <linkedBackstory>ReviaRaceBackstoryAdultWayfarer</linkedBackstory>
-  </AlienRace.BackstoryDef>
+    <AlienRace.BackstoryDef>
+        <defName>ReviaRaceBackstoryChildSacrificial</defName>
+        <title>Revian Sacrificial Child</title>
+        <titleShort>Sacrifice</titleShort>
+        <baseDescription>[PAWN_nameDef] was considered to be inferior in physical prowess. [PAWN_pronoun] was slated to be sacrificed on the altar of the moon, but [PAWN_pronoun] managed to escape [PAWN_possessive] holding cell. Living in the wilderness has improved [PAWN_possessive] survival skills, but the terror of having nearly been killed like an animal has left [PAWN_possessive] unwilling to communicate with other humanlikes.</baseDescription>
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaMarauder</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+                <defName>Crafting</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Social</li>
+        </workDisables>
+        <linkedBackstory>ReviaRaceBackstoryAdultWayfarer</linkedBackstory>
+    </AlienRace.BackstoryDef>
 </Defs>

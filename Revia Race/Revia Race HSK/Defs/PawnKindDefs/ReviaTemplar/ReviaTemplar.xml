@@ -5,33 +5,26 @@
         <label>Revia Templar</label>
         <defaultFactionType>ReviaTemplarFaction</defaultFactionType>
         <race>ReviaRaceAlien</race>
-        <combatPower>320</combatPower>
+        <combatPower>430</combatPower>
         <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
         <itemQuality>Excellent</itemQuality>
         <apparelTags>
-            <li>Outlander</li>
-            <li>PredatorsLight</li>
-			<li>BanditsLight</li>
-            <li>BrotherhoodMedium</li>
             <li>OrionLight</li>
-            <li>Apparel_TacVest</li>
-            <li>Apparel_Backpack</li>
         </apparelTags>
         <apparelRequired>
-            <li>Apparel_PlateArmor</li>
             <li>Apparel_TacVest</li>
-            <li>Apparel_Backpack</li>
+            <li>Tactical_Helmet</li>
+            <li>Marine_Armor</li>
         </apparelRequired>
-        <apparelMoney>2400~3200</apparelMoney>
+        <apparelMoney>1400~2200</apparelMoney>
         <weaponTags>
-            <li>ReviaMeleeAdvanced</li>
-            <li>RF2</li>
-            <li>MG2</li>
-			<li>SNIP3</li>
+            <li>TierTwoRifle</li>
+            <li>ReviaRangedAdvanced</li>
+			<li>SniperRifle</li>
         </weaponTags>
         <initialWillRange>0.8~1.0</initialWillRange>
         <initialResistanceRange>25~40</initialResistanceRange>
-        <weaponMoney>2400~3000</weaponMoney>
+        <weaponMoney>1500~2600</weaponMoney>
         <techHediffsChance>0.5</techHediffsChance>
         <techHediffsMoney>3000~5000</techHediffsMoney>
         <techHediffsTags>
@@ -51,14 +44,9 @@
                     <countRange>4~5</countRange>
                 </li>
                 <li>
-                    <choiceChance>20</choiceChance>
-                    <thingDef>MedicineUltratech</thingDef>
-                    <countRange>2~3</countRange>
-                </li>
-                <li>
                     <choiceChance>40</choiceChance>
                     <thingDef>ReviaRaceRedHaze</thingDef>
-                    <countRange>5~10</countRange>
+                    <countRange>3~5</countRange>
                 </li>
             </subOptionsChooseOne>
         </inventoryOptions>
@@ -70,15 +58,10 @@
                 </primaryMagazineCount>
                 <sidearms>
                     <li>
-                        <magazineCount>
-                            <min>1</min>
-                            <max>3</max>
-                        </magazineCount>
-                        <generateChance>0.5</generateChance>
+                        <generateChance>1</generateChance>
                         <weaponTags>
                             <li>ReviaMeleeAdvanced</li>
                             <li>ReviaMeleeLegendary</li>
-                            <li>CE_Sidearm</li>
                         </weaponTags>
                     </li>
                 </sidearms>

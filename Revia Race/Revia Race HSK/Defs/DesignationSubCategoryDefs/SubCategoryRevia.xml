@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_ReviaStuff</defName>
-		<label>revia altars</label>
-		<description>Places for the sacrifice of living and not-so-living beings for blood goddess.</description>
-		<defNames>
+    <ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_ReviaStuff</defName>
+        <label>revia altars</label>
+        <description>Places for the sacrifice of living and not-so-living beings for blood goddess.</description>
+        <defNames>
             <li>ReviaBloodSigil</li>
-			<li>ReviaSacrificeSpot</li>
-		</defNames>
-		<designationCategory>Misc</designationCategory>
-	</ArchitectSense.DesignationSubCategoryDef>
-
+            <li>ReviaSacrificeSpot</li>
+        </defNames>
+        <designationCategory>Misc</designationCategory>
+    </ArchitectSense.DesignationSubCategoryDef>
 </Defs>
 
 

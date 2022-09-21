@@ -1,52 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <FactionDef Parent="ReviaRaceFactionBase">
-    <defName>ReviaPlayerColony</defName>
-    <label>Revia Exclave</label>
-    <description>Your faction!</description>
-    <isPlayer>true</isPlayer>
-    <basicMemberKind>ReviaRaceColonist</basicMemberKind>
-    <pawnSingular>frontiersman</pawnSingular>
-    <pawnsPlural>frontiersmen</pawnsPlural>
-    <techLevel>Medieval</techLevel>
-    <backstoryCategories>
-      <li>ReviaRaceBackstory</li>
-    </backstoryCategories>
-    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-    <factionIconPath>World/ReviaEmblem</factionIconPath>
-    <colorSpectrum>
-      <li>(0, 0.75, 0.85)</li>
-      <li>(0, 0.70, 0.85</li>
-    </colorSpectrum>
-    <playerInitialSettlementNameMaker>NamerSettlementReviaTemplar</playerInitialSettlementNameMaker>
-    <factionNameMaker>NamerFactionReviaTemplar</factionNameMaker>
-    <settlementNameMaker>NamerSettlementReviaTemplar</settlementNameMaker>
-    <allowedCultures>
-      <li>ReviaRaceHighCulture</li>
-    </allowedCultures>
-    <disallowedMemes>
-    </disallowedMemes>
-    <structureMemeWeights>
-      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
-      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
-    </structureMemeWeights>
-    <raidLootValueFromPointsCurve>
-      <points>
-        <li>(35,     15)</li>
-        <li>(100,   120)</li>
-        <li>(1000,  500)</li>
-        <li>(2000,  800)</li>
-        <li>(4000, 1000)</li>
-      </points>
-    </raidLootValueFromPointsCurve>
-    <raidLootMaker>ReviaRaiderLootMaker</raidLootMaker>
-    <geneticVariance>1</geneticVariance>
-    <startingResearchTags>
-      <li>TribalStart</li>
-    </startingResearchTags>
-    <startingTechprintsResearchTags>
-      <li>TribalStart</li>
-      <li>TribalStartTechprints</li>
-    </startingTechprintsResearchTags>
-  </FactionDef>
+    <FactionDef Parent="ReviaRaceFactionBase">
+        <defName>ReviaPlayerColony</defName>
+        <label>Revia Exclave</label>
+        <description>Your faction!</description>
+        <isPlayer>true</isPlayer>
+        <basicMemberKind>ReviaRaceColonist</basicMemberKind>
+        <pawnSingular>frontiersman</pawnSingular>
+        <pawnsPlural>frontiersmen</pawnsPlural>
+        <techLevel>Medieval</techLevel>
+        <backstoryCategories>
+            <li>ReviaRaceBackstory</li>
+        </backstoryCategories>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <factionIconPath>World/ReviaEmblem</factionIconPath>
+        <colorSpectrum>
+            <li>(0, 0.75, 0.85)</li>
+            <li>(0, 0.70, 0.85</li>
+        </colorSpectrum>
+        <playerInitialSettlementNameMaker>NamerSettlementReviaTemplar</playerInitialSettlementNameMaker>
+        <factionNameMaker>NamerFactionReviaTemplar</factionNameMaker>
+        <settlementNameMaker>NamerSettlementReviaTemplar</settlementNameMaker>
+        <allowedCultures>
+            <li>ReviaRaceHighCulture</li>
+        </allowedCultures>
+        <disallowedMemes>
+        </disallowedMemes>
+        <structureMemeWeights>
+            <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+            <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+        </structureMemeWeights>
+        <raidLootValueFromPointsCurve>
+            <points>
+                <li>(35,     15)</li>
+                <li>(100,   120)</li>
+                <li>(1000,  500)</li>
+                <li>(2000,  800)</li>
+                <li>(4000, 1000)</li>
+            </points>
+        </raidLootValueFromPointsCurve>
+        <raidLootMaker>ReviaRaiderLootMaker</raidLootMaker>
+        <geneticVariance>1</geneticVariance>
+        <startingResearchTags>
+            <li>TribalStart</li>
+        </startingResearchTags>
+        <startingTechprintsResearchTags>
+            <li>TribalStart</li>
+            <li>TribalStartTechprints</li>
+        </startingTechprintsResearchTags>
+    </FactionDef>
 </Defs>

@@ -1,33 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <HediffDef>
-    <defName>ReviaRaceSoulreapTier7</defName>
-    <label>Soul Reap (7)</label>
-    <description>An indication of how many lives this Revia has taken. Revia grow stronger with the more lives that they take.</description>
-    <isBad>false</isBad>
-    <defaultLabelColor>(0.8, 0.4, 0.4)</defaultLabelColor>
-    <causesNeed>ReviaRaceBloodthirstNeed</causesNeed>
-    <stages>
-      <li>
-        <capMods>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>0.25</offset>
-          </li>
-          <li>
-            <capacity>Manipulation</capacity>
-            <offset>0.25</offset>
-          </li>
-        </capMods>
-        <statFactors>
-          <IncomingDamageFactor>0.70</IncomingDamageFactor>
-        </statFactors>
-        <statOffsets>
-          <PainShockThreshold>0.20</PainShockThreshold>
-          <MarketValue>800</MarketValue>
-          <Suppressability>-0.5</Suppressability>
-        </statOffsets>
-      </li>
-    </stages>
-  </HediffDef>
+    <HediffDef>
+        <defName>ReviaRaceSoulreapTier7</defName>
+        <label>Soul Reap (7)</label>
+        <description>An indication of how many lives this Revia has taken. Revia grow stronger with the more lives that they take.</description>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.8, 0.4, 0.4)</defaultLabelColor>
+        <causesNeed>ReviaRaceBloodthirstNeed</causesNeed>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>0.04</offset>
+                    </li>
+                </capMods>
+                <statFactors>
+                    <IncomingDamageFactor>0.66</IncomingDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <ComfyTemperatureMax>5</ComfyTemperatureMax>
+                    <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+                    <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+                    <MentalBreakThreshold>0.10</MentalBreakThreshold>
+                    <ImmunityGainSpeed>0.6</ImmunityGainSpeed>
+                    <CarryingCapacity>6</CarryingCapacity>
+                    <SmokeSensitivity>-0.24</SmokeSensitivity>
+                    <ToxicSensitivity>-0.24</ToxicSensitivity>
+                    <HungerRateMultiplier>-0.10</HungerRateMultiplier>
+                    <PainShockThreshold>0.20</PainShockThreshold>
+                    <MarketValue>800</MarketValue>
+                    <Suppressability>-0.5</Suppressability>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
 </Defs>

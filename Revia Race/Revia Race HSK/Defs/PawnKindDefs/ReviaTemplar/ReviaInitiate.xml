@@ -5,24 +5,17 @@
         <label>Revia Initiate</label>
         <defaultFactionType>ReviaTemplarFaction</defaultFactionType>
         <race>ReviaRaceAlien</race>
-        <combatPower>165</combatPower>
+        <combatPower>170</combatPower>
         <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
-        <itemQuality>Excellent</itemQuality>
+        <itemQuality>Good</itemQuality>
         <apparelTags>
-            <li>Outlander</li>
-            <li>PredatorsLight</li>
-			<li>OrionLight</li>
-            <li>Apparel_TacVest</li>
-            <li>Apparel_Backpack</li>
-            <li>Apparel_TribalBackpack</li>
+			<li>Outlander</li>
         </apparelTags>
-        <apparelMoney>800~1200</apparelMoney>
+        <apparelMoney>800~2000</apparelMoney>
         <weaponTags>
             <li>ReviaMeleeAdvanced</li>
-            <li>TierOnePistol</li>
-			<li>TierOneSMG</li>
         </weaponTags>
-        <weaponMoney>1500~2500</weaponMoney>
+        <weaponMoney>1700~2500</weaponMoney>
         <initialWillRange>0.6~0.8</initialWillRange>
         <initialResistanceRange>12~15</initialResistanceRange>
         <isFighter>true</isFighter>
@@ -42,20 +35,17 @@
         </techHediffsRequired>
         <modExtensions>
             <li Class="CombatExtended.LoadoutPropertiesExtension">
-                <primaryMagazineCount>
-                    <min>2</min>
-                    <max>4</max>
-                </primaryMagazineCount>
                 <sidearms>
                     <li>
                         <magazineCount>
-                            <min>1</min>
-                            <max>3</max>
-                        </magazineCount>
+							<min>2</min>
+							<max>4</max>
+						</magazineCount>
                         <generateChance>0.5</generateChance>
                         <weaponTags>
                             <li>ReviaRangedAdvanced</li>
-                            <li>CE_Sidearm</li>
+                            <li>TierOnePistol</li>
+                            <li>TierOneSMG</li>
                         </weaponTags>
                     </li>
                 </sidearms>

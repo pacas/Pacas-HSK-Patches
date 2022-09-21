@@ -1,37 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <HediffDef ParentName="AddictionBase">
-    <defName>ReviaRaceRedHazeAddiction</defName>
-    <label>Red Haze need</label>
-    <description>An almost rabid bloodthirst grips this person. A constant supply of powdered bloodstone appears to be the only way to keep it under control. Without a supply of it, this person will frequently enter a state of berserk rage, slaking his or her bloodthirst on anyone nearby.</description>
-    <hediffClass>Hediff_Addiction</hediffClass>
-    <causesNeed>ReviaRaceRedHazeNeed</causesNeed>
-    <everCurableByItem>false</everCurableByItem>
-    <stages>
-      <li></li>
-      <li>
-        <label>unmet</label>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <offset>0.1</offset>
-          </li>
-          <li>
-            <capacity>Manipulation</capacity>
-            <offset>0.1</offset>
-          </li>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>0.1</offset>
-          </li>
-        </capMods>
-        <mentalStateGivers>
-          <li>
-            <mentalState>Berserk</mentalState>
-            <mtbDays>0.3</mtbDays>
-          </li>
-        </mentalStateGivers>
-      </li>
-    </stages>
-  </HediffDef>
+    <HediffDef ParentName="AddictionBase">
+        <defName>ReviaRaceRedHazeAddiction</defName>
+        <label>Red Haze need</label>
+        <description>An almost rabid bloodthirst grips this person. A constant supply of powdered bloodstone appears to be the only way to keep it under control. Without a supply of it, this person will frequently enter a state of berserk rage, slaking his or her bloodthirst on anyone nearby.</description>
+        <hediffClass>Hediff_Addiction</hediffClass>
+        <causesNeed>ReviaRaceRedHazeNeed</causesNeed>
+        <everCurableByItem>false</everCurableByItem>
+        <stages>
+            <li/>
+            <li>
+                <label>unmet</label>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                </capMods>
+                <mentalStateGivers>
+                    <li>
+                        <mentalState>Berserk</mentalState>
+                        <mtbDays>0.3</mtbDays>
+                    </li>
+                </mentalStateGivers>
+            </li>
+        </stages>
+    </HediffDef>
 </Defs>

@@ -1,39 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <AlienRace.BackstoryDef>
-    <defName>ReviaRaceBackstoryChildPatricianScion</defName>
-    <title>Revian Noble Scion</title>
-    <titleShort>Scion</titleShort>
-    <baseDescription>[PAWN_nameDef] was a child of prominent Revian priestesses. [PAWN_pronoun] was afforded the best education possible, in both martial and intellectual spheres.</baseDescription>
-    <bodyTypeMale>Thin</bodyTypeMale>
-    <bodyTypeFemale>Female</bodyTypeFemale>
-    <slot>Childhood</slot>
-    <spawnCategories>
-      <li>ReviaRaceBackstory</li>
-      <li>ReviaTemplar</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Melee</defName>
-        <amount>4</amount>
-      </li>
-      <li>
-        <defName>Intellectual</defName>
-        <amount>4</amount>
-      </li>
-      <li>
-        <defName>Plants</defName>
-        <amount>-4</amount>
-      </li>
-      <li>
-        <defName>Animals</defName>
-        <amount>-4</amount>
-      </li>
-      <li>
-        <defName>Social</defName>
-        <amount>4</amount>
-      </li>
-    </skillGains>
-    <linkedBackstory>ReviaRaceBackstoryAdultDarkTemplar</linkedBackstory>
-  </AlienRace.BackstoryDef>
+    <AlienRace.BackstoryDef>
+        <defName>ReviaRaceBackstoryChildPatricianScion</defName>
+        <title>Revian Noble Scion</title>
+        <titleShort>Scion</titleShort>
+        <baseDescription>[PAWN_nameDef] was a child of prominent Revian priestesses. [PAWN_pronoun] was afforded the best education possible, in both martial and intellectual spheres.</baseDescription>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaTemplar</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Animals</defName>
+                <amount>-4</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>4</amount>
+            </li>
+        </skillGains>
+        <linkedBackstory>ReviaRaceBackstoryAdultDarkTemplar</linkedBackstory>
+    </AlienRace.BackstoryDef>
 </Defs>

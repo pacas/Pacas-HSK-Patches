@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThoughtDef>
-    <defName>ReviaRaceThoughtSacrificedOpinion</defName>
-    <thoughtClass>Thought_Tale</thoughtClass>
-    <workerClass>ThoughtWorker_Tale</workerClass>
-    <taleDef>ReviaRaceTaleSacrificed</taleDef>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>desecrated humanlike corpse</label>
-        <baseOpinionOffset>-15</baseOpinionOffset>
-      </li>
-    </stages>
-    <nullifyingTraits>
-      <li>Cannibal</li>
-      <li>Bloodlust</li>
-      <li>Psychopath</li>
-    </nullifyingTraits>
-    <nullifyingOwnTales>
-      <li>ButcheredHumanlikeCorpse</li>
-      <li>AteRawHumanlikeMeat</li>
-    </nullifyingOwnTales>
-  </ThoughtDef>
+    <ThoughtDef>
+        <defName>ReviaRaceThoughtSacrificedOpinion</defName>
+        <thoughtClass>Thought_Tale</thoughtClass>
+        <workerClass>ThoughtWorker_Tale</workerClass>
+        <taleDef>ReviaRaceTaleSacrificed</taleDef>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <li>
+                <label>desecrated humanlike corpse</label>
+                <baseOpinionOffset>-15</baseOpinionOffset>
+            </li>
+        </stages>
+        <nullifyingTraits>
+            <li>Cannibal</li>
+            <li>Bloodlust</li>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <nullifyingOwnTales>
+            <li>ButcheredHumanlikeCorpse</li>
+            <li>AteRawHumanlikeMeat</li>
+        </nullifyingOwnTales>
+    </ThoughtDef>
 </Defs>

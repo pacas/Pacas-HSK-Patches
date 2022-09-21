@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <NeedDef ParentName="DrugAddictionNeedBase">
-    <defName>ReviaRaceRedHazeNeed</defName>
-    <needClass>Need_Chemical</needClass>
-    <label>Red Haze</label>
-    <description>A strange, almost rabid bloodthirst grips this person. \n\nBloodstone powder appears to keep this almost uncontrollable fury away. Without it, however, this person degenerates into a berserk fury, attacking anyone and everyone around.</description>
-    <listPriority>44</listPriority>
-    <fallPerDay>0.240</fallPerDay>
-  </NeedDef>
+    <NeedDef ParentName="DrugAddictionNeedBase">
+        <defName>ReviaRaceRedHazeNeed</defName>
+        <needClass>Need_Chemical</needClass>
+        <label>Red Haze</label>
+        <description>A strange, almost rabid bloodthirst grips this person. \n\nBloodstone powder appears to keep this almost uncontrollable fury away. Without it, however, this person degenerates into a berserk fury, attacking anyone and everyone around.</description>
+        <listPriority>44</listPriority>
+        <fallPerDay>0.25</fallPerDay>
+    </NeedDef>
 </Defs>

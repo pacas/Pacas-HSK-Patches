@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <AlienRace.BackstoryDef>
-    <defName>ReviaRaceBackstoryChildHerbSniffer</defName>
-    <title>Revian Herb Sniffer</title>
-    <titleShort>Sniffer</titleShort>
-    <baseDescription>[PAWN_nameDef] was blessed with an exceptional sense of smell. [PAWN_pronoun] was often used to find medicinal herbs for use in apothecaries, as well as small prey for the dinner table.</baseDescription>
-    <bodyTypeMale>Thin</bodyTypeMale>
-    <bodyTypeFemale>Female</bodyTypeFemale>
-    <slot>Childhood</slot>
-    <spawnCategories>
-      <li>ReviaRaceBackstory</li>
-      <li>ReviaRaceTemplar</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Intellectual</defName>
-        <amount>2</amount>
-      </li>
-      <li>
-        <defName>Plants</defName>
-        <amount>4</amount>
-      </li>
-      <li>
-        <defName>Shooting</defName>
-        <amount>-2</amount>
-      </li>
-      <li>
-        <defName>Melee</defName>
-        <amount>-2</amount>
-      </li>
-    </skillGains>
-    <linkedBackstory>ReviaRaceBackstoryAdultFleshBinder</linkedBackstory>
-  </AlienRace.BackstoryDef>
+    <AlienRace.BackstoryDef>
+        <defName>ReviaRaceBackstoryChildHerbSniffer</defName>
+        <title>Revian Herb Sniffer</title>
+        <titleShort>Sniffer</titleShort>
+        <baseDescription>[PAWN_nameDef] was blessed with an exceptional sense of smell. [PAWN_pronoun] was often used to find medicinal herbs for use in apothecaries, as well as small prey for the dinner table.</baseDescription>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaRaceTemplar</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Plants</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <linkedBackstory>ReviaRaceBackstoryAdultFleshBinder</linkedBackstory>
+    </AlienRace.BackstoryDef>
 </Defs>

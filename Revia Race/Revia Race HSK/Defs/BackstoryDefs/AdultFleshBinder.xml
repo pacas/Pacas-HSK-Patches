@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <AlienRace.BackstoryDef>
-    <defName>ReviaRaceBackstoryAdultFleshBinder</defName>
-    <title>Revian Fleshbinder</title>
-    <titleShort>Healer</titleShort>
-    <baseDescription>There are few healers in Revian society, but those that are healers earn the begrudging trust of the others. [PAWN_nameDef] apprenticed under other acolytes, learning the functions of various body parts as [PAWN_pronoun] sees them extracted from sacrifices. [PAWN_possessive] bedside manners may be lacking, but [PAWN_pronoun] certainly does not lack for practical knowledge of bodily functions.</baseDescription>
-    <bodyTypeMale>Thin</bodyTypeMale>
-    <bodyTypeFemale>Female</bodyTypeFemale>
-    <slot>Adulthood</slot>
-    <spawnCategories>
-      <li>ReviaRaceBackstory</li>
-      <li>ReviaMarauder</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Medicine</defName>
-        <amount>4</amount>
-      </li>
-      <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
-      </li>
-      <li>
-        <defName>Social</defName>
-        <amount>-4</amount>
-      </li>
-    </skillGains>
-  </AlienRace.BackstoryDef>
+    <AlienRace.BackstoryDef>
+        <defName>ReviaRaceBackstoryAdultFleshBinder</defName>
+        <title>Revian Fleshbinder</title>
+        <titleShort>Healer</titleShort>
+        <baseDescription>There are few healers in Revian society, but those that are healers earn the begrudging trust of the others. [PAWN_nameDef] apprenticed under other acolytes, learning the functions of various body parts as [PAWN_pronoun] sees them extracted from sacrifices. [PAWN_possessive] bedside manners may be lacking, but [PAWN_pronoun] certainly does not lack for practical knowledge of bodily functions.</baseDescription>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaMarauder</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+                <defName>Medicine</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Social</defName>
+                <amount>-4</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
 </Defs>

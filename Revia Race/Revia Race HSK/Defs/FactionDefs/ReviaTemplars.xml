@@ -1,131 +1,157 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <FactionDef>
-    <defName>ReviaTemplarFaction</defName>
-    <label>Revian Templars</label>
-    <description>An order of oathsworn warriors. They will not hesitate to crush any who stand in their way.</description>
-    <pawnSingular>revia</pawnSingular>
-    <pawnsPlural>revia</pawnsPlural>
-    <settlementGenerationWeight>0.5</settlementGenerationWeight>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <canMakeRandomly>true</canMakeRandomly>
-    <canSiege>true</canSiege>
-    <canStageAttacks>true</canStageAttacks>
-    <leaderTitle>High Templar</leaderTitle>
-    <factionIconPath>World/ReviaEmblem</factionIconPath>
-    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
-    <requiredMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">ReviaRaceSkarniteMeme</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
-    </requiredMemes>
-    <allowedMemes>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-    </allowedMemes>
-    <allowedCultures>
-      <li MayRequire="Ludeon.RimWorld.Ideology">ReviaRaceHighCulture</li>
-    </allowedCultures>
-    <colorSpectrum>
-      <li>(0.20, 0.20, 0.85)</li>
-      <li>(0.15, 0.15, 0.40)</li>
-    </colorSpectrum>
-    <factionNameMaker>NamerFactionReviaTemplar</factionNameMaker>
-    <settlementNameMaker>NamerSettlementReviaTemplar</settlementNameMaker>
-    <techLevel>Industrial</techLevel>
-    <backstoryCategories>
-      <li>ReviaRaceTemplar</li>
-    </backstoryCategories>
-    <listOrderPriority>10</listOrderPriority>
-    <geneticVariance>0.8</geneticVariance>
-    <raidLootMaker>ReviaTemplarLootMaker</raidLootMaker>
-    <caravanTraderKinds>
-      <li>Caravan_Outlander_BulkGoods</li>
-      <li>Caravan_Outlander_CombatSupplier</li>
-      <li>Caravan_Outlander_Exotic</li>
-      <li>Caravan_Outlander_PirateMerchant</li>
-    </caravanTraderKinds>
-    <visitorTraderKinds>
-      <li>Visitor_Outlander_Standard</li>
-    </visitorTraderKinds>
-    <baseTraderKinds>
-      <li>Base_Outlander_Standard</li>
-    </baseTraderKinds>
-    <allowedArrivalTemperatureRange>-40~55</allowedArrivalTemperatureRange>
-    <maxPawnCostPerTotalPointsCurve>
-      <points>
-        <li>(0,1500)</li>
-        <li>(70, 4000)</li>
-        <li>(700, 10000)</li>
-        <li>(1300, 20000)</li>
-        <li>(100000, 50000)</li>
-        <li>(500000, 100000)</li>
-      </points>
-    </maxPawnCostPerTotalPointsCurve>
-    <raidLootValueFromPointsCurve>
-      <points>
-        <li>(35,     15)</li>
-        <li>(100,   120)</li>
-        <li>(2000,  2500)</li>
-        <li>(4000,  5000)</li>
-        <li>(16000, 20000)</li>
-      </points>
-    </raidLootValueFromPointsCurve>
-    <pawnGroupMakers>
-      <li>
-        <!--You done goofed-->
-        <kindDef>Combat</kindDef>
-        <commonality>15</commonality>
-        <options>
-          <ReviaRaceTemplar>7</ReviaRaceTemplar>
-          <ReviaRaceHighTemplar>1</ReviaRaceHighTemplar>
-        </options>
-      </li>
-      <li>
-        <!--Scouting party-->
-        <kindDef>Combat</kindDef>
-        <commonality>60</commonality>
-        <options>
-          <ReviaRaceInitiate>5</ReviaRaceInitiate>
-          <ReviaRaceTemplar>2</ReviaRaceTemplar>
-        </options>
-      </li>
-      <li>
-        <!--A show of force?-->
-        <kindDef>Peaceful</kindDef>
-        <options>
-          <ReviaRaceInitiate>20</ReviaRaceInitiate>
-          <ReviaRaceTemplar>10</ReviaRaceTemplar>
-          <ReviaRaceHighTemplar>1</ReviaRaceHighTemplar>
-        </options>
-      </li>
-      <li>
-        <!--Hand over your silver for some goods-->
-        <kindDef>Trader</kindDef>
-        <traders>
-          <ReviaRaceQuartermaster>1</ReviaRaceQuartermaster>
-        </traders>
-        <carriers>
-          <Muffalo>6</Muffalo>
-          <Dromedary>5</Dromedary>
-          <Alpaca>2</Alpaca>
-          <Elephant>1</Elephant>
-        </carriers>
-        <guards>
-          <ReviaRaceInitiate>20</ReviaRaceInitiate>
-          <ReviaRaceTemplar>10</ReviaRaceTemplar>
-          <ReviaRaceHighTemplar>2</ReviaRaceHighTemplar>
-        </guards>
-      </li>
-      <li>
-        <kindDef>Settlement</kindDef>
-        <options>
-          <ReviaRaceInitiate>20</ReviaRaceInitiate>
-          <ReviaRaceTemplar>20</ReviaRaceTemplar>
-          <ReviaRaceHighTemplar>3</ReviaRaceHighTemplar>
-        </options>
-      </li>
-    </pawnGroupMakers>
-  </FactionDef>
+    <FactionDef>
+        <defName>ReviaTemplarFaction</defName>
+        <label>Revian Templars</label>
+        <description>An order of oathsworn warriors. They will not hesitate to crush any who stand in their way.</description>
+        <pawnSingular>revia</pawnSingular>
+        <pawnsPlural>revia</pawnsPlural>
+        <settlementGenerationWeight>0.5</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>High Templar</leaderTitle>
+        <factionIconPath>World/ReviaEmblem</factionIconPath>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <maxConfigurableAtWorldCreation>10</maxConfigurableAtWorldCreation>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">ReviaRaceSkarniteMeme</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+        </requiredMemes>
+        <allowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+        </allowedMemes>
+        <allowedCultures>
+            <li MayRequire="Ludeon.RimWorld.Ideology">ReviaRaceHighCulture</li>
+        </allowedCultures>
+        <colorSpectrum>
+            <li>(0.20, 0.20, 0.85)</li>
+            <li>(0.15, 0.15, 0.40)</li>
+        </colorSpectrum>
+        <factionNameMaker>NamerFactionReviaTemplar</factionNameMaker>
+        <settlementNameMaker>NamerSettlementReviaTemplar</settlementNameMaker>
+        <techLevel>Spacer</techLevel>
+        <backstoryCategories>
+            <li>ReviaRaceTemplar</li>
+        </backstoryCategories>
+        <listOrderPriority>10</listOrderPriority>
+        <geneticVariance>0.8</geneticVariance>
+        <raidLootMaker>ReviaTemplarLootMaker</raidLootMaker>
+        <caravanTraderKinds>
+            <li>Caravan_Outlander_BulkGoods</li>
+            <li>Caravan_Outlander_CombatSupplier</li>
+            <li>Caravan_Outlander_Exotic</li>
+            <li>Caravan_Outlander_PirateMerchant</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_Outlander_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_Outlander_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>-40~55</allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,1500)</li>
+                <li>(70,4000)</li>
+                <li>(700,10000)</li>
+                <li>(1300,20000)</li>
+                <li>(100000,50000)</li>
+                <li>(500000,100000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <raidLootValueFromPointsCurve>
+            <points>
+                <li>(35,15)</li>
+                <li>(100,100)</li>
+                <li>(2000,2500)</li>
+                <li>(4000,5000)</li>
+                <li>(16000,20000)</li>
+            </points>
+        </raidLootValueFromPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <!--You done goofed-->
+                <kindDef>Combat</kindDef>
+                <commonality>15</commonality>
+                <options>
+                    <ReviaRaceTemplar>7</ReviaRaceTemplar>
+                    <ReviaRaceHighTemplar>1</ReviaRaceHighTemplar>
+                </options>
+            </li>
+            <li>
+                <!--Scouting party-->
+                <kindDef>Combat</kindDef>
+                <commonality>60</commonality>
+                <options>
+                    <ReviaRaceInitiate>5</ReviaRaceInitiate>
+                    <ReviaRaceTemplar>2</ReviaRaceTemplar>
+                </options>
+            </li>
+            <li>
+                <!--Say goodbye-->
+                <kindDef>Combat</kindDef>
+                <commonality>15</commonality>
+                <options>
+                    <ReviaRaceInitiate>10</ReviaRaceInitiate>
+                    <ReviaRaceTemplar>7</ReviaRaceTemplar>
+                    <ReviaRaceHighTemplar>1</ReviaRaceHighTemplar>
+                    <ReviaRaceHighTemplarMelee>1</ReviaRaceHighTemplarMelee>
+                </options>
+            </li>
+            <li>
+                <!--Death waiting-->
+                <kindDef>Combat</kindDef>
+                <commonality>3</commonality>
+                <options>
+                    <ReviaRaceInitiate>5</ReviaRaceInitiate>
+                    <ReviaRaceTemplar>15</ReviaRaceTemplar>
+                    <ReviaRaceHighTemplar>1</ReviaRaceHighTemplar>
+                    <ReviaRaceHighTemplarMelee>2</ReviaRaceHighTemplarMelee>
+                </options>
+            </li>
+            <li>
+                <!--A show of force?-->
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <ReviaRaceInitiate>16</ReviaRaceInitiate>
+                    <ReviaRaceTemplar>8</ReviaRaceTemplar>
+                    <ReviaRaceHighTemplar>1</ReviaRaceHighTemplar>
+                    <ReviaRaceHighTemplarMelee>1</ReviaRaceHighTemplarMelee>
+                </options>
+            </li>
+            <li>
+                <!--Hand over your silver for some goods-->
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <ReviaRaceQuartermaster>1</ReviaRaceQuartermaster>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <ReviaRaceInitiate>15</ReviaRaceInitiate>
+                    <ReviaRaceTemplar>7</ReviaRaceTemplar>
+                    <ReviaRaceHighTemplar>1</ReviaRaceHighTemplar>
+                    <ReviaRaceHighTemplarMelee>1</ReviaRaceHighTemplarMelee>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <ReviaRaceInitiate>20</ReviaRaceInitiate>
+                    <ReviaRaceTemplar>20</ReviaRaceTemplar>
+                    <ReviaRaceHighTemplar>1</ReviaRaceHighTemplar>
+                    <ReviaRaceHighTemplarMelee>2</ReviaRaceHighTemplarMelee>
+                    <ReviaRaceQuartermaster>1</ReviaRaceQuartermaster>
+                </options>
+            </li>
+        </pawnGroupMakers>
+    </FactionDef>
 </Defs>

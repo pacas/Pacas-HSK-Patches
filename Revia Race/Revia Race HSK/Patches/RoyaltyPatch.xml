@@ -5,39 +5,25 @@
         <mods>
             <li>Royalty</li>
         </mods>
-        <match Class="PatchOperationAdd">
-            <xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
-            <value>
-                <li>ReviaPlayerColony</li>
-            </value>
-        </match>
-        <success>Always</success>
-    </Operation>
-  
-    <!--Revians can meditate natural foci-->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Royalty</li>
-        </mods>
-        <match Class="PatchOperationAdd">
-            <xpath>/Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
-            <value>
-                <li>
-                    <categoryName>ReviaRaceBackstory</categoryName>
-                    <slot>Childhood</slot>
-                </li>
-            </value>
-        </match>
-        <success>Always</success>
-    </Operation>
-  
-    <!--Revians should correctly appear in faction quests-->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Royalty</li>
-        </mods>
         <match Class="PatchOperationSequence">
             <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+                    <value>
+                        <li>ReviaPlayerColony</li>
+                    </value>
+                </li>
+                <!--Revians can meditate natural foci-->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
+                    <value>
+                        <li>
+                            <categoryName>ReviaRaceBackstory</categoryName>
+                            <slot>Childhood</slot>
+                        </li>
+                    </value>
+                </li>
+                <!--Revians should correctly appear in faction quests-->
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/QuestScriptDef/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
                     <value>

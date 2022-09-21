@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef ParentName="SK_ResourceBase">
-    <defName>ReviaLesserBloodRune</defName>
-    <label>Lesser Blood Rune</label>
-    <description>A symbol of Skarne, carefully carved on a simple disc. Pulsing with inner aggression.</description>
-    <techLevel>Neolithic</techLevel>
-    <graphicData>
-      <texPath>Things/Item/Health/HealthItem</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>0.80</drawSize>
-      <color>(190, 20, 20)</color>
-    </graphicData>
-    <stackLimit>75</stackLimit>
-    <thingCategories>
-      <li>ReviaCategoryArtifact</li>
-    </thingCategories>
-    <tradeTags>
-        <li>Artifact</li>
-    </tradeTags>
-    <tradeability>Sellable</tradeability>
-    <comps>
-      <li Class="CompProperties_Usable">
-        <useJob>UseArtifact</useJob>
-        <useLabel>Sanctify equipped weapon</useLabel>
-      </li>
-      <li Class="CompProperties_UseEffect">
-        <compClass>ReviaRace.Comps.InvokeLesserSanctify</compClass>
-      </li>
-    </comps>
-    <statBases>
-      <Mass>0.01</Mass>
-      <Bulk>0.01</Bulk>
-      <MarketValue>100</MarketValue>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>0.0</Flammability>
-      <DeteriorationRate>0.0</DeteriorationRate>
-      <Beauty>4</Beauty>
-    </statBases>
-    <tickerType>Never</tickerType>
-  </ThingDef>
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>ReviaLesserBloodRune</defName>
+        <label>Lesser Blood Rune</label>
+        <description>A symbol of Skarne, carefully carved on a simple disc. Pulsing with inner aggression.</description>
+        <techLevel>Neolithic</techLevel>
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItem</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+            <color>(190, 20, 20)</color>
+        </graphicData>
+        <stackLimit>75</stackLimit>
+        <thingCategories>
+            <li>ReviaCategoryArtifact</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Artifact</li>
+        </tradeTags>
+        <tradeability>Sellable</tradeability>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseArtifact</useJob>
+                <useLabel>Sanctify equipped weapon</useLabel>
+            </li>
+            <li Class="CompProperties_UseEffect">
+                <compClass>ReviaRace.Comps.InvokeLesserSanctify</compClass>
+            </li>
+        </comps>
+        <statBases>
+            <Mass>0.01</Mass>
+            <Bulk>0.01</Bulk>
+            <MarketValue>100</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>0.0</Flammability>
+            <DeteriorationRate>0.0</DeteriorationRate>
+            <Beauty>4</Beauty>
+        </statBases>
+        <tickerType>Never</tickerType>
+    </ThingDef>
 </Defs>

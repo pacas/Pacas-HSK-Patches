@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <AlienRace.BackstoryDef>
-    <defName>ReviaRaceBackstoryChildExpunged</defName>
-    <title>Revian Expunged Child</title>
-    <titleShort>Exile</titleShort>
-    <baseDescription>Revian priests inspect newborn children for infirmities, and those that were found weak are exposed to weather until they die. [PAWN_nameDef] was one such case, though [PAWN_pronoun] was rescued by other such exiles from a slow death.</baseDescription>
-    <bodyTypeMale>Thin</bodyTypeMale>
-    <bodyTypeFemale>Thin</bodyTypeFemale>
-    <slot>Childhood</slot>
-    <spawnCategories>
-      <li>ReviaRaceBackstory</li>
-      <li>ReviaMarauder</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Melee</defName>
-        <amount>1</amount>
-      </li>
-      <li>
-        <defName>Shooting</defName>
-        <amount>1</amount>
-      </li>
-    </skillGains>
-    <linkedBackstory>ReviaRaceBackstoryAdultReaver</linkedBackstory>
-  </AlienRace.BackstoryDef>
+    <AlienRace.BackstoryDef>
+        <defName>ReviaRaceBackstoryChildExpunged</defName>
+        <title>Revian Expunged Child</title>
+        <titleShort>Exile</titleShort>
+        <baseDescription>Revian priests inspect newborn children for infirmities, and those that were found weak are exposed to weather until they die. [PAWN_nameDef] was one such case, though [PAWN_pronoun] was rescued by other such exiles from a slow death.</baseDescription>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaMarauder</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>1</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>1</amount>
+            </li>
+        </skillGains>
+        <linkedBackstory>ReviaRaceBackstoryAdultReaver</linkedBackstory>
+    </AlienRace.BackstoryDef>
 </Defs>

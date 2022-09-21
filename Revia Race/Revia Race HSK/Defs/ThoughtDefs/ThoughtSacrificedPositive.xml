@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThoughtDef>
-    <defName>ReviaRaceThoughtSacrificedPositive</defName>
-    <durationDays>6</durationDays>
-    <stackLimit>4</stackLimit>
-    <stackedEffectMultiplier>0.65</stackedEffectMultiplier>
-    <stages>
-      <li>
-        <label>Sacrificed corpse</label>
-        <description>For the glory of Skarne! Blood for the blood god! Skulls for the skull throne!</description>
-        <baseMoodEffect>6</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
+    <ThoughtDef>
+        <defName>ReviaRaceThoughtSacrificedPositive</defName>
+        <durationDays>6</durationDays>
+        <stackLimit>4</stackLimit>
+        <stackedEffectMultiplier>0.65</stackedEffectMultiplier>
+        <stages>
+            <li>
+                <label>Sacrificed corpse</label>
+                <description>For the glory of Skarne! Blood for the blood god! Skulls for the skull throne!</description>
+                <baseMoodEffect>6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
 </Defs>

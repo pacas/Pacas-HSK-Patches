@@ -5,21 +5,16 @@
         <label>revia berserker</label>
         <race>ReviaRaceAlien</race>
         <defaultFactionType>ReviaMarauderFaction</defaultFactionType>
-        <combatPower>95</combatPower>
-        <baseRecruitDifficulty>1.00</baseRecruitDifficulty>
+        <combatPower>140</combatPower>
+        <baseRecruitDifficulty>0.95</baseRecruitDifficulty>
         <itemQuality>Good</itemQuality>
         <gearHealthRange>0.8~1.0</gearHealthRange>
         <apparelTags>
-            <li>Neolithic</li>
             <li>Medieval</li>
-            <li>Apparel_TacVest</li>
             <li>Apparel_Backpack</li>
             <li>Apparel_TribalBackpack</li>
         </apparelTags>
-        <apparelRequired>
-            <li>Apparel_Parka</li>
-        </apparelRequired>
-        <apparelMoney>600~1000</apparelMoney>
+        <apparelMoney>600~1200</apparelMoney>
         <weaponTags>
             <li>ReviaMeleeAdvanced</li>
         </weaponTags>
@@ -43,17 +38,5 @@
                 </li>
             </subOptionsChooseOne>
         </inventoryOptions>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension">
-                <sidearms>
-                    <li>
-                        <weaponTags>
-                            <li>ReviaMeleeAdvanced</li>
-                            <li>ReviaMeleeLegendary</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 </Defs>

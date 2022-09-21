@@ -5,35 +5,30 @@
         <label>Revia High Templar</label>
         <defaultFactionType>ReviaTemplarFaction</defaultFactionType>
         <race>ReviaRaceAlien</race>
-        <combatPower>580</combatPower>
+        <combatPower>700</combatPower>
         <factionLeader>true</factionLeader>
         <minGenerationAge>30</minGenerationAge>
         <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
         <gearHealthRange>1~1</gearHealthRange>
-        <itemQuality>Masterwork</itemQuality>
+        <itemQuality>Excellent</itemQuality>
         <apparelTags>
             <li>OrionMedium</li>
-            <li>Apparel_TacVest</li>
-            <li>Apparel_Backpack</li>
         </apparelTags>
         <apparelRequired>
-            <li>Apparello_XcomOne</li>
-            <li>Apparel_TacVest</li>
-            <li>Apparel_Backpack</li>
+            <li>Apparello_LPow</li>
+            <li>Apparello_GShell</li>
         </apparelRequired>
         <apparelMoney>9999~9999</apparelMoney>
         <weaponTags>
-            <li>ReviaMeleeLegendary</li>
-            <li>ReviaRangedAdvanced</li>
-            <li>MachineGun</li>
             <li>SNIP4</li>
+            <li>RF4</li>
 			<li>ADR3</li>
             <li>MG2</li>
         </weaponTags>
         <biocodeWeaponChance>1.0</biocodeWeaponChance>
         <weaponMoney>9999~9999</weaponMoney>
         <initialWillRange>1.0~1.0</initialWillRange>
-        <initialResistanceRange>50~75</initialResistanceRange>
+        <initialResistanceRange>60~80</initialResistanceRange>
         <techHediffsChance>1.0</techHediffsChance>
         <techHediffsMoney>9999~9999</techHediffsMoney>
         <techHediffsTags>
@@ -49,27 +44,21 @@
                 <li>
                     <choiceChance>20</choiceChance>
                     <thingDef>MedicineUltratech</thingDef>
-                    <countRange>5~10</countRange>
+                    <countRange>2~4</countRange>
                 </li>
             </subOptionsChooseOne>
         </inventoryOptions>
         <modExtensions>
             <li Class="CombatExtended.LoadoutPropertiesExtension">
                 <primaryMagazineCount>
-                    <min>2</min>
-                    <max>5</max>
+                    <min>3</min>
+                    <max>7</max>
                 </primaryMagazineCount>
                 <sidearms>
                     <li>
-                        <magazineCount>
-                            <min>1</min>
-                            <max>3</max>
-                        </magazineCount>
-                        <generateChance>0.6</generateChance>
+                        <generateChance>0.7</generateChance>
                         <weaponTags>
                             <li>ReviaMeleeLegendary</li>
-                            <li>ReviaRangedAdvanced</li>
-                            <li>CE_Sidearm</li>
                         </weaponTags>
                     </li>
                 </sidearms>

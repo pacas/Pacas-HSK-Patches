@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <AlienRace.BackstoryDef>
-    <defName>ReviaRaceBackstoryAdultReaver</defName>
-    <title>Revian Reaver</title>
-    <titleShort>Reaver</titleShort>
-    <baseDescription>[PAWN_nameDef] was once an abandoned child. Now grown, [PAWN_pronoun] wishes to see the world burn for its perceived sins.</baseDescription>
-    <bodyTypeMale>Thin</bodyTypeMale>
-    <bodyTypeFemale>Female</bodyTypeFemale>
-    <slot>Adulthood</slot>
-    <spawnCategories>
-      <li>ReviaRaceBackstory</li>
-      <li>ReviaMarauder</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Melee</defName>
-        <amount>2</amount>
-      </li>
-      <li>
-        <defName>Shooting</defName>
-        <amount>2</amount>
-      </li>
-    </skillGains>
-  </AlienRace.BackstoryDef>
+    <AlienRace.BackstoryDef>
+        <defName>ReviaRaceBackstoryAdultReaver</defName>
+        <title>Revian Reaver</title>
+        <titleShort>Reaver</titleShort>
+        <baseDescription>[PAWN_nameDef] was once an abandoned child. Now grown, [PAWN_pronoun] wishes to see the world burn for its perceived sins.</baseDescription>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaMarauder</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+                <defName>Melee</defName>
+                <amount>2</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>2</amount>
+            </li>
+        </skillGains>
+    </AlienRace.BackstoryDef>
 </Defs>

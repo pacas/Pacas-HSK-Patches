@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <ThingDef ParentName="BaseWeaponAndAmmoNeolithic" Class="CombatExtended.AmmoDef">
+    <ThingDef ParentName="AmmoBase" Class="CombatExtended.AmmoDef">
         <defName>ReviaThrowingKnife</defName>
         <label>throwing knife</label>
         <description>A balanced throwing knife.</description>
@@ -17,9 +17,11 @@
         <graphicData>
             <texPath>Things/Item/Weapons/ThrowingKnife</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
         </graphicData>
         <weaponTags>
             <li>ReviaRangedBasic</li>
+            <li>Neolithic</li>
         </weaponTags>
         <statBases>
             <SightsEfficiency>0.6</SightsEfficiency>
@@ -28,7 +30,23 @@
             <Bulk>0.35</Bulk>
             <Mass>0.15</Mass>
             <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+            <MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<SellPriceFactor>0.70</SellPriceFactor>
         </statBases>
+        <equipmentType>Primary</equipmentType>
+		<pathCost>10</pathCost>
+        <!-- <menuHidden>false</menuHidden> -->
+		<destroyOnDrop>False</destroyOnDrop>
+		<weaponClasses>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <label>throw knife</label>

@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <AlienRace.BackstoryDef>
-    <defName>ReviaRaceBackstoryChildNeophyte</defName>
-    <title>Revian Neophyte</title>
-    <titleShort>Neophyte</titleShort>
-    <baseDescription>The lucky few who are taken in by the priesthood in Revian society are well cared for, and typically want for nothing. However, their days are filled with memorisation of litanies and chanting of prayers, as well as researching matters of the mundane and the occult. [PAWN_nameDef] was one such child. [PAWN_possessive] physical prowess lagged behind, yet [PAWN_possessive] mind grew by leaps and bounds.</baseDescription>
-    <bodyTypeMale>Thin</bodyTypeMale>
-    <bodyTypeFemale>Female</bodyTypeFemale>
-    <slot>Childhood</slot>
-    <spawnCategories>
-      <li>ReviaRaceBackstory</li>
-      <li>ReviaRaceTemplar</li>
-    </spawnCategories>
-    <skillGains>
-      <li>
-        <defName>Intellectual</defName>
-        <amount>4</amount>
-      </li>
-      <li>
-        <defName>Melee</defName>
-        <amount>-2</amount>
-      </li>
-      <li>
-        <defName>Shooting</defName>
-        <amount>-2</amount>
-      </li>
-    </skillGains>
-    <linkedBackstory>ReviaRaceBackstoryAdultAcolyte</linkedBackstory>
-  </AlienRace.BackstoryDef>
+    <AlienRace.BackstoryDef>
+        <defName>ReviaRaceBackstoryChildNeophyte</defName>
+        <title>Revian Neophyte</title>
+        <titleShort>Neophyte</titleShort>
+        <baseDescription>The lucky few who are taken in by the priesthood in Revian society are well cared for, and typically want for nothing. However, their days are filled with memorisation of litanies and chanting of prayers, as well as researching matters of the mundane and the occult. [PAWN_nameDef] was one such child. [PAWN_possessive] physical prowess lagged behind, yet [PAWN_possessive] mind grew by leaps and bounds.</baseDescription>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaRaceTemplar</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+                <defName>Intellectual</defName>
+                <amount>4</amount>
+            </li>
+            <li>
+                <defName>Melee</defName>
+                <amount>-2</amount>
+            </li>
+            <li>
+                <defName>Shooting</defName>
+                <amount>-2</amount>
+            </li>
+        </skillGains>
+        <linkedBackstory>ReviaRaceBackstoryAdultAcolyte</linkedBackstory>
+    </AlienRace.BackstoryDef>
 </Defs>
