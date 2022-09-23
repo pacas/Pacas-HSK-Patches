@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RH_SmallCooler" or defName="Cooler" or defName="Vent" or defName="RH_MediumHeater"]/comps/li[@Class="SK.CompProperties_RestrictedPlacement"]/thingDefs</xpath>
+                <value>
+                    <li>RGK_Wall</li>
+                    <li>GL_Wall</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

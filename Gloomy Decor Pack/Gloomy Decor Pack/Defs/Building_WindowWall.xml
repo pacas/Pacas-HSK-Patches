@@ -56,6 +56,7 @@
             <blueprintGraphicData>
                 <texPath>Things/Building/Linked/RGK_Wall_Blueprint_Atlas</texPath>
             </blueprintGraphicData>
+            <canPlaceOverWall>true</canPlaceOverWall>
         </building>
     </ThingDef>
 
@@ -106,6 +107,7 @@
             <blueprintGraphicData>
                 <texPath>Things/Building/Linked/RGK_Wall_Blueprint_Atlas</texPath>
             </blueprintGraphicData>
+            <canPlaceOverWall>true</canPlaceOverWall>
         </building>
     </ThingDef>
 
@@ -338,11 +340,14 @@
         </stuffCategories>
         <costStuffCount>10</costStuffCount>
         <blockLight>false</blockLight>
+		<blockWind>true</blockWind>
+		<coversFloor>true</coversFloor>
+		<castEdgeShadows>true</castEdgeShadows>
+		<canOverlapZones>false</canOverlapZones>
         <rotatable>true</rotatable>
         <placeWorkers>
             <li>PlaceWorker_Vent</li>
         </placeWorkers>
-        <blockWind>true</blockWind>
         <filthLeaving>Filth_RubbleBuilding</filthLeaving>
         <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
         <building>
@@ -417,7 +422,7 @@
     <ThingDef ParentName="WallBase">
         <defName>GL_FlowerWall</defName>
         <label>Flower wall</label>
-        <description>Wall decorated with flowers.</description>
+        <description>Meter tall wall decorated with flowers. Beautiful cover!</description>
         <thingClass>Gloomylynx.GL_Building</thingClass>
         <category>Building</category>
         <graphicData>
@@ -460,10 +465,10 @@
         <tickerType>Never</tickerType>
         <rotatable>false</rotatable>
         <selectable>true</selectable>
-        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
-        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
         <designationCategory>Structure</designationCategory>
-        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <staticSunShadowHeight>0.5</staticSunShadowHeight>
         <blockLight>false</blockLight>
         <canOverlapZones>false</canOverlapZones>
         <building>
