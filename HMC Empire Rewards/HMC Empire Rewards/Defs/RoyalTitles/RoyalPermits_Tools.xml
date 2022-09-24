@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <!-- Tools -->
-  
+    
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ToolDrop</defName>
         <label>tools drop</label>
@@ -35,10 +35,11 @@
         </stuffList>
     </OrderedStuffDef>
     
+    <!-- xxxxx -->
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ToolDropPlus</defName>
-        <label>better tools drop</label>
+        <label>tools drop +</label>
         <description>Call for a drop of tool box with handaxe, hammer, pickaxe, hoe, sickle, knife and broom with better base materials.\n - Material: Titanium\n - Quality: Excellent\n\nPermit points cost - 2 points.</description>
         <minTitle>Knight</minTitle>
         <cooldownDays>50</cooldownDays>
@@ -72,6 +73,7 @@
         </stuffList>
     </OrderedStuffDef>
 
+    <!-- xxxxx -->
 
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AdvToolDrop</defName>
@@ -94,9 +96,11 @@
         </stuffList>
     </OrderedStuffDef>
     
+    <!-- xxxxx -->
+    
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AdvToolDropPlus</defName>
-        <label>better multitool drop</label>
+        <label>multitool drop +</label>
         <description>Call for a drop of one multitool.\n - Material: Titanium\n - Quality: Excellent\n\nPermit points cost - 3 points.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>80</cooldownDays>

@@ -5,7 +5,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>PistolDrop</defName>
         <label>pistol drop</label>
-        <description>Call for a drop of random pistol.\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
+        <description>Call for a drop of random pistol with ammo.\n - Quality: Normal\n\nPermit points cost - 1 point.</description>
         <minTitle>Acolyte</minTitle>
         <cooldownDays>15</cooldownDays>
         <uiPosition>(0,23)</uiPosition>
@@ -26,13 +26,21 @@
             <li>RF_Gun_VektorCP</li>
             <li>Gun_Autopistol</li>
         </thingsToChoose>
+        <ammunition>
+            <Ammo_45ACP_FMJ>60</Ammo_45ACP_FMJ>
+            <Ammo_45ACP_FMJ>60</Ammo_45ACP_FMJ>
+            <Ammo_9x19mmPara_FMJ>60</Ammo_9x19mmPara_FMJ>
+            <Ammo_9x19mmPara_FMJ>100</Ammo_9x19mmPara_FMJ>
+            <Ammo_9x19mmPara_FMJ>60</Ammo_9x19mmPara_FMJ>
+            <Ammo_9x19mmPara_FMJ>60</Ammo_9x19mmPara_FMJ>
+        </ammunition>
     </OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>PistolDropPlus</defName>
-        <label>better pistol drop</label>
-        <description>Call for a drop of random pistol.\n - Quality: Good - Masterwork\n\nPermit points cost - 2 points.</description>
-        <minTitle>Praetor</minTitle>
+        <label>pistol drop +</label>
+        <description>Call for a drop of random pistol with ammo. Better guns in the selection.\n - Quality: Good - Masterwork\n\nPermit points cost - 2 points.</description>
+        <minTitle>Knight</minTitle>
         <uiPosition>(1,23)</uiPosition>
         <cooldownDays>40</cooldownDays>
         <prerequisite>PistolDrop</prerequisite>
@@ -49,24 +57,27 @@
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
         <thingsToChoose>
-            <li>Gun_Revolver</li>
-            <li>RF_Gun_Deringer</li>
             <li>RF_Gun_AT2K</li>
             <li>RF_Gun_93R</li>
             <li>RF_Gun_VektorCP</li>
             <li>Gun_Autopistol</li>
         </thingsToChoose>
+        <ammunition>
+            <Ammo_9x19mmPara_FMJ>60</Ammo_9x19mmPara_FMJ>
+            <Ammo_9x19mmPara_FMJ>90</Ammo_9x19mmPara_FMJ>
+            <Ammo_9x19mmPara_FMJ>60</Ammo_9x19mmPara_FMJ>
+            <Ammo_9x19mmPara_FMJ>60</Ammo_9x19mmPara_FMJ>
+        </ammunition>
     </OrderedStuffDef>
-    
     
     <!-- SMG -->
   
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SMGDrop</defName>
         <label>SMG drop</label>
-        <description>Call for a drop of random SMG.\n - Quality: Normal\n\nPermit points cost - 2 point.</description>
+        <description>Call for a drop of random SMG with ammo.\n - Quality: Normal\n\nPermit points cost - 2 point.</description>
         <minTitle>Knight</minTitle>
-        <cooldownDays>15</cooldownDays>
+        <cooldownDays>22</cooldownDays>
         <permitPointCost>2</permitPointCost>
         <uiPosition>(0,24)</uiPosition>
         <royalAid>
@@ -89,12 +100,23 @@
             <li>Gun_UMP45Gun</li>
             <li>Gun_HeavySMG</li>
         </thingsToChoose>
+        <ammunition>
+            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
+            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
+            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
+            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
+            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
+            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
+            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
+            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
+            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
+        </ammunition>
     </OrderedStuffDef>
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SMGDropPlus</defName>
-        <label>better SMG drop</label>
-        <description>Call for a drop of random SMG.\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
+        <label>SMG drop +</label>
+        <description>Call for a drop of random SMG with ammo. Better guns in the selection.\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Praetor</minTitle>
         <uiPosition>(1,24)</uiPosition>
         <cooldownDays>40</cooldownDays>
@@ -104,7 +126,7 @@
             <itemsToDrop>
                 <Steel>1</Steel>
             </itemsToDrop>
-            <favorCost>10</favorCost>
+            <favorCost>12</favorCost>
         </royalAid>
     </RoyalTitlePermitDef>
     <OrderedStuffDef ParentName="OrderedGunBase">
@@ -112,15 +134,387 @@
         <typeOfQuality>Range</typeOfQuality>
         <quality>Excellent</quality>
         <thingsToChoose>
-            <li>RF_Gun_Tecnine</li>
-            <li>RF_Gun_GreaseGun</li>
-            <li>Gun_MachinePistol</li>
-            <li>RF_Gun_TMP</li>
             <li>RF_Gun_Skorpion</li>
             <li>RF_Gun_Vector</li>
             <li>Gun_MP5Gun</li>
             <li>Gun_UMP45Gun</li>
             <li>Gun_HeavySMG</li>
         </thingsToChoose>
+        <ammunition>
+            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
+            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
+            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
+            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
+            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <!-- Shotgun -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>ShotgunDrop</defName>
+        <label>shotgun drop</label>
+        <description>Call for a drop of random shotgun with ammo. Only basic ones.\n - Quality: Normal\n\nPermit points cost - 2 point.</description>
+        <minTitle>Knight</minTitle>
+        <cooldownDays>25</cooldownDays>
+        <permitPointCost>2</permitPointCost>
+        <uiPosition>(0,25)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>6</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>ShotgunDropStuff</defName>
+        <thingsToChoose>
+            <li>Gun_M37A2_USCM</li>
+            <li>Gun_PumpShotgun</li>
+            <li>Gun_ChainShotgun</li>
+            <li>Gun_TacticalShotgun</li>
+        </thingsToChoose>
+        <ammunition>
+            <Ammo_12Gauge_Buck>60</Ammo_12Gauge_Buck>
+            <Ammo_12Gauge_Buck>60</Ammo_12Gauge_Buck>
+            <Ammo_12Gauge_Buck>60</Ammo_12Gauge_Buck>
+            <Ammo_12Gauge_Buck>60</Ammo_12Gauge_Buck>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>ShotgunDropPlus</defName>
+        <label>shotgun drop +</label>
+        <description>Call for a drop of random shotgun with ammo. Better guns in the selection.\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
+        <minTitle>Praetor</minTitle>
+        <uiPosition>(1,25)</uiPosition>
+        <cooldownDays>50</cooldownDays>
+        <prerequisite>ShotgunDrop</prerequisite>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>14</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>ShotgunDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <thingsToChoose>
+            <li>Gun_ChainShotgun</li>
+            <li>Gun_TacticalShotgun</li>
+            <li>Gun_AssaultShotgun</li>
+            <li>Gun_TacticalAutoShotgun</li>
+        </thingsToChoose>
+        <ammunition>
+            <Ammo_12Gauge_Buck>75</Ammo_12Gauge_Buck>
+            <Ammo_12Gauge_Buck>60</Ammo_12Gauge_Buck>
+            <Ammo_12Gauge_Buck>100</Ammo_12Gauge_Buck>
+            <Ammo_12Gauge_Buck>100</Ammo_12Gauge_Buck>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <!-- Rifle -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>RifleDrop</defName>
+        <label>rifle drop</label>
+        <description>Call for a drop of random rifle with ammo. Only basic ones.\n - Quality: Normal\n\nPermit points cost - 3 point.</description>
+        <minTitle>Praetor</minTitle>
+        <cooldownDays>40</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <uiPosition>(0,26)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>8</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>RifleDropStuff</defName>
+        <thingsToChoose>
+            <li>Gun_BoltActionRifle</li>
+            <li>RF_Gun_CXfour</li>
+            <li>RF_Gun_USC</li>
+            <li>Gun_M4A1Gun</li>
+            <li>Gun_AssaultRifle</li>
+            <li>RF_Gun_XMeight</li>
+            <li>Gun_FAMAS</li>
+            <li>Gun_AK47Gun</li>
+        </thingsToChoose>
+        <ammunition>
+            <Ammo_303British_FMJ>80</Ammo_303British_FMJ>
+            <Ammo_9x19mmPara_FMJ>210</Ammo_9x19mmPara_FMJ>
+            <Ammo_45ACP_FMJ>210</Ammo_45ACP_FMJ>
+            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
+            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
+            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
+            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
+            <Ammo_762x39mmSoviet_FMJ>210</Ammo_762x39mmSoviet_FMJ>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>RifleDropPlus</defName>
+        <label>rifle drop +</label>
+        <description>Call for a drop of random rifle with ammo. Better guns in the selection, advanced rifles included.\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
+        <minTitle>Count</minTitle>
+        <uiPosition>(1,26)</uiPosition>
+        <cooldownDays>90</cooldownDays>
+        <prerequisite>RifleDrop</prerequisite>
+        <permitPointCost>3</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>19</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>RifleDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <thingsToChoose>
+            <li>Gun_M4A1Gun</li>
+            <li>Gun_AssaultRifle</li>
+            <li>RF_Gun_XMeight</li>
+            <li>Gun_FAMAS</li>
+            <li>Gun_AK47Gun</li>
+            <li>Gun_MarineSturmRifle</li>
+            <li>Gun_TacticalCombatRifle</li>
+            <li>Gun_SG553Gun</li>
+            <li>Gun_AUG</li>
+            <li>Gun_SCAR_H</li>
+        </thingsToChoose>
+        <ammunition>
+            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
+            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
+            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
+            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
+            <Ammo_762x39mmSoviet_FMJ>210</Ammo_762x39mmSoviet_FMJ>
+            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
+            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
+            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
+            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
+            <Ammo_762x51mmNATO_FMJ>210</Ammo_762x51mmNATO_FMJ>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <!-- Sniper -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>SniperRifleDrop</defName>
+        <label>sniper rifle drop</label>
+        <description>Call for a drop of random sniper rifle with ammo. Only basic ones.\n - Quality: Normal\n\nPermit points cost - 3 point.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>60</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <uiPosition>(0,27)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>10</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>SniperRifleDropStuff</defName>
+        <thingsToChoose>
+            <li>Gun_SniperRifle</li>
+            <li>Gun_M42A_USCM</li>
+            <li>RF_Gun_WA2K</li>
+        </thingsToChoose>
+        <ammunition>
+            <Ammo_762x51mmNATO_FMJ>40</Ammo_762x51mmNATO_FMJ>
+            <Ammo_762x51mmNATO_FMJ>40</Ammo_762x51mmNATO_FMJ>
+            <Ammo_762x51mmNATO_FMJ>60</Ammo_762x51mmNATO_FMJ>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>SniperRifleDropPlus</defName>
+        <label>sniper rifle drop +</label>
+        <description>Call for a drop of random sniper rifle with ammo. Advanced rifles included.\n - Quality: Good - Masterwork\n\nPermit points cost - 5 points.</description>
+        <minTitle>Count</minTitle>
+        <uiPosition>(1,27)</uiPosition>
+        <cooldownDays>120</cooldownDays>
+        <prerequisite>SniperRifleDrop</prerequisite>
+        <permitPointCost>5</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>25</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>SniperRifleDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <thingsToChoose>
+            <li>Gun_SniperRifle</li>
+            <li>Gun_M42A_USCM</li>
+            <li>RF_Gun_WA2K</li>
+            <li>RF_Gun_ARFifty</li>
+            <li>RF_Gun_HecateII</li>
+            <li>Gun_ATR</li>
+            <li>Gun_TAMSR</li>
+            <li>Gun_M82Gun</li>
+        </thingsToChoose>
+        <ammunition>
+            <Ammo_762x51mmNATO_FMJ>40</Ammo_762x51mmNATO_FMJ>
+            <Ammo_762x51mmNATO_FMJ>40</Ammo_762x51mmNATO_FMJ>
+            <Ammo_762x51mmNATO_FMJ>60</Ammo_762x51mmNATO_FMJ>
+            <Ammo_50BMG_FMJ>40</Ammo_50BMG_FMJ>
+            <Ammo_50BMG_FMJ>40</Ammo_50BMG_FMJ>
+            <Ammo_145x114mm_FMJ>40</Ammo_145x114mm_FMJ>
+            <Ammo_145x114mm_FMJ>40</Ammo_145x114mm_FMJ>
+            <Ammo_50BMG_FMJ>40</Ammo_50BMG_FMJ>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <!-- Machine Guns -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>MGDrop</defName>
+        <label>machine gun drop</label>
+        <description>Call for a drop of random machine gun with ammo. Only basic ones.\n - Quality: Normal\n\nPermit points cost - 3 point.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>55</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <uiPosition>(0,28)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>9</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>MGDropStuff</defName>
+        <thingsToChoose>
+            <li>RF_Gun_Galil</li>
+            <li>Gun_LMG</li>
+            <li>Gun_HeavyCombatRifle</li>
+            <li>Gun_HHMG</li>
+        </thingsToChoose>
+        <ammunition>
+            <Ammo_762x39mmSoviet_FMJ>300</Ammo_762x39mmSoviet_FMJ>
+            <Ammo_556x45mmNATO_FMJ>300</Ammo_556x45mmNATO_FMJ>
+            <Ammo_556x45mmNATO_FMJ>300</Ammo_556x45mmNATO_FMJ>
+            <Ammo_556x45mmNATO_FMJ>300</Ammo_556x45mmNATO_FMJ>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>MGDropPlus</defName>
+        <label>machine gun drop +</label>
+        <description>Call for a drop of random machine gun with ammo. Better guns in the selection, advanced machine guns included.\n - Quality: Good - Masterwork\n\nPermit points cost - 5 points.</description>
+        <minTitle>Count</minTitle>
+        <uiPosition>(1,28)</uiPosition>
+        <cooldownDays>105</cooldownDays>
+        <prerequisite>MGDrop</prerequisite>
+        <permitPointCost>5</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>22</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>MGDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <thingsToChoose>
+            <li>Gun_HeavyCombatRifle</li>
+            <li>Gun_HHMG</li>
+            <li>Gun_M56_USCM</li>
+            <li>Gun_M60GPMG</li>
+        </thingsToChoose>
+        <ammunition>
+            <Ammo_556x45mmNATO_FMJ>300</Ammo_556x45mmNATO_FMJ>
+            <Ammo_556x45mmNATO_FMJ>300</Ammo_556x45mmNATO_FMJ>
+            <Ammo_50BMG_FMJ>60</Ammo_50BMG_FMJ>
+            <Ammo_762x51mmNATO_FMJ>300</Ammo_762x51mmNATO_FMJ>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <!-- Launchers -->
+  
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>LauncherDrop</defName>
+        <label>grenade launcher drop</label>
+        <description>Call for a drop of random grenade launcher, rocket launcher or flamethrower with ammo. Only basic ones. Single-use excluded.\n - Quality: Normal\n\nPermit points cost - 3 point.</description>
+        <minTitle>Baron</minTitle>
+        <cooldownDays>65</cooldownDays>
+        <permitPointCost>3</permitPointCost>
+        <uiPosition>(0,29)</uiPosition>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>14</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>LauncherDropStuff</defName>
+        <thingsToChoose>
+            <li>Gun_IncendiaryLauncher</li>
+            <li>FlamethrowerRM</li>
+            <li>Gun_M79GL</li>
+            <li>Gun_MilkorMGL</li>
+            <li>Gun_RPG</li>
+            <li>Gun_M5_USCM</li>
+            <li>Gun_LAW</li>
+        </thingsToChoose>
+        <ammunition>
+            <Ammo_30x64mmFuel_Incendiary>20</Ammo_30x64mmFuel_Incendiary>
+            <Ammo_Flamethrower_Napalm>160</Ammo_Flamethrower_Napalm>
+            <Ammo_40x46mmGrenade_HE>20</Ammo_40x46mmGrenade_HE>
+            <Ammo_40x46mmGrenade_HE>20</Ammo_40x46mmGrenade_HE>
+            <Ammo_RPG7Grenade_HEAT>7</Ammo_RPG7Grenade_HEAT>
+            <Ammo_RPG7Grenade_HEAT>7</Ammo_RPG7Grenade_HEAT>
+            <Ammo_M72LAW>7</Ammo_M72LAW>
+        </ammunition>
+    </OrderedStuffDef>
+    
+    <RoyalTitlePermitDef ParentName="DropResourcesPlus">
+        <defName>LauncherDropPlus</defName>
+        <label>grenade launcher drop +</label>
+        <description>Call for a drop of random grenade launcher, rocket launcher or flamethrower with ammo. Better guns in the selection, advanced machine guns included. Single-use excluded.\n - Quality: Good - Masterwork\n\nPermit points cost - 5 points.</description>
+        <minTitle>Count</minTitle>
+        <uiPosition>(1,29)</uiPosition>
+        <cooldownDays>130</cooldownDays>
+        <prerequisite>LauncherDrop</prerequisite>
+        <permitPointCost>5</permitPointCost>
+        <royalAid>
+            <itemsToDrop>
+                <Steel>1</Steel>
+            </itemsToDrop>
+            <favorCost>30</favorCost>
+        </royalAid>
+    </RoyalTitlePermitDef>
+    <OrderedStuffDef ParentName="OrderedGunBase">
+        <defName>LauncherDropPlusStuff</defName>
+        <typeOfQuality>Range</typeOfQuality>
+        <quality>Excellent</quality>
+        <thingsToChoose>
+            <li>Gun_IncendiaryLauncher</li>
+            <li>FlamethrowerRM</li>
+            <li>Gun_MilkorMGL</li>
+            <li>Gun_RPG</li>
+            <li>Gun_M5_USCM</li>
+        </thingsToChoose>
+        <ammunition>
+            <Ammo_30x64mmFuel_Incendiary>20</Ammo_30x64mmFuel_Incendiary>
+            <Ammo_Flamethrower_Napalm>160</Ammo_Flamethrower_Napalm>
+            <Ammo_40x46mmGrenade_HE>20</Ammo_40x46mmGrenade_HE>
+            <Ammo_RPG7Grenade_HEAT>7</Ammo_RPG7Grenade_HEAT>
+            <Ammo_RPG7Grenade_HEAT>7</Ammo_RPG7Grenade_HEAT>
+        </ammunition>
     </OrderedStuffDef>
 </Defs>

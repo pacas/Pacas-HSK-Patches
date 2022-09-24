@@ -9,11 +9,6 @@ This mod changes the system of rewards from the Empire to a more universal and a
 Этот мод изменяет систему вознаграждений от Империи на более универсальную и в то же время вариативную. Больше нет универсального выбора что брать, теперь перед выбором нужно подумать и решить, стоит ли оставить очки напоследок, или же взять что-то сейчас. При этом у большинства привилегий были изменены сроки повторного вызова и стоимость, потому внимательно читайте что вы выбираете.<br>Будет больше, всё ещё WIP.<br><br>
 <img src="https://i.imgur.com/5KVUmeE.png">
 <br>
-Q: I want?<br>
-A: Because, ask me in Discord if.<br>
-Q: Где я могу получить эти сплавы?<br>
-A: Найти у рейдеров, в строениях при генерации карты или путём выплавления.<br>
-#-------------------------------------------------------------#<br>
 Q: Is this mod save game compatible?<br>
 A: Yes, but I don't recommend adding this if you already have a pawn with Acolyte title or better, as you will get lesser options in sum.<br>
 Q: Совместимо с идущей игрой?<br>

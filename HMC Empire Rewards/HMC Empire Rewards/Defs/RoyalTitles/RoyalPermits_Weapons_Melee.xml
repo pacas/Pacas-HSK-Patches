@@ -31,7 +31,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AgileMeleeDropPlus</defName>
-        <label>better agile melee weapon drop</label>
+        <label>agile melee weapon drop +</label>
         <description>Call for a drop of random agile melee weapon (daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Praetor</minTitle>
         <uiPosition>(1,18)</uiPosition>
@@ -101,7 +101,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>SharpMeleeDropPlus</defName>
-        <label>better sharp melee weapon drop</label>
+        <label>sharp melee weapon drop +</label>
         <description>Call for a drop of random sharp melee weapon (exclude daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Praetor</minTitle>
         <uiPosition>(1,19)</uiPosition>
@@ -171,7 +171,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>BluntMeleeDropPlus</defName>
-        <label>better blunt melee weapon drop</label>
+        <label>blunt melee weapon drop +</label>
         <description>Call for a drop of random blunt melee weapon (exclude daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Praetor</minTitle>
         <uiPosition>(1,20)</uiPosition>
@@ -235,7 +235,7 @@
     
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>HeavyMeleeDropPlus</defName>
-        <label>better heavy melee weapon drop</label>
+        <label>heavy melee weapon drop +</label>
         <description>Call for a drop of random heavy melee weapon.\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
         <minTitle>Praetor</minTitle>
         <cooldownDays>60</cooldownDays>

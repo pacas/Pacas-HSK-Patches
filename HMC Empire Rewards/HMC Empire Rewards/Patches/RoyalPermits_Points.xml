@@ -6,9 +6,30 @@
             <!-- Points awarded -->
             
             <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight" or defName="Praetor" or defName="Baron" or defName="Count"]/permitPointsAwarded</xpath>
+                <xpath>Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight"]/permitPointsAwarded</xpath>
+                <value>
+                    <permitPointsAwarded>2</permitPointsAwarded>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitleDef[defName="Praetor"]/permitPointsAwarded</xpath>
                 <value>
                     <permitPointsAwarded>3</permitPointsAwarded>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitleDef[defName="Baron"]/permitPointsAwarded</xpath>
+                <value>
+                    <permitPointsAwarded>4</permitPointsAwarded>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitleDef[defName="Count"]/permitPointsAwarded</xpath>
+                <value>
+                    <permitPointsAwarded>5</permitPointsAwarded>
                 </value>
             </li>
             

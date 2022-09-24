@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
     <RoyalTitlePermitDef Name="DropResourcesPlus" Abstract="True">
         <workerClass>RoyalTitlePermitWorker_DropResourcesPlus</workerClass>
         <faction>Empire</faction>
@@ -21,7 +20,7 @@
     
     <OrderedStuffDef Name="OrderedGunBase" Abstract="True">
         <typeOfDrop>Quality</typeOfDrop>
-        <typeOfItem>Random</typeOfItem>
+        <typeOfItem>GunWithAmmo</typeOfItem>
         <typeOfQuality>Specific</typeOfQuality>
         <quality>Normal</quality>
     </OrderedStuffDef>
@@ -30,6 +29,12 @@
         <typeOfDrop>Pure</typeOfDrop>
         <typeOfItem>Random</typeOfItem>
     </OrderedStuffDef>
-
+    
+    <!-- Планы -->
+    <!-- патроны -->
+    <!-- турели? -->
+    <!-- броня знати -->
+    <!-- животные? -->
+    <!-- srts -->
 </Defs>
 

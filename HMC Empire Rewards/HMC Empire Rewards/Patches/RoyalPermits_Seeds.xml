@@ -14,7 +14,7 @@
                             <label>random grains seeds drop</label>
                             <description>Call for a drop of 100 random grains seeds.\n - Contains: rice, wheat, corn, beans.\n\nPermit points cost - 1 point.</description>
                             <minTitle>Acolyte</minTitle>
-                            <uiPosition>(0,28)</uiPosition>
+                            <uiPosition>(0,33)</uiPosition>
                             <royalAid>
                                 <itemsToDrop>
                                     <Seed_Potato>100</Seed_Potato>
@@ -32,12 +32,14 @@
                             </thingsToChoose>
                         </OrderedStuffDef>
                         
+                        <!-- xxxxx -->
+                        
                         <RoyalTitlePermitDef ParentName="DropResourcesPlus">
                             <defName>SeedsRiceDrop</defName>
                             <label>random vegetables seeds drop</label>
                             <description>Call for a drop of 100 random vegetables seeds.\n - Contains: potato, carrot, tomato.\n\nPermit points cost - 1 point.</description>
                             <minTitle>Acolyte</minTitle>
-                            <uiPosition>(1,28)</uiPosition>
+                            <uiPosition>(1,33)</uiPosition>
                             <royalAid>
                                 <itemsToDrop>
                                     <Seed_Rice>100</Seed_Rice>
@@ -54,12 +56,14 @@
                             </thingsToChoose>
                         </OrderedStuffDef>
                         
+                        <!-- xxxxx -->
+                        
                         <RoyalTitlePermitDef ParentName="DropResourcesPlus">
                             <defName>SeedsOakDrop</defName>
                             <label>random tree seeds drop</label>
                             <description>Call for a drop of 30 random tree seeds.\n\nPermit points cost - 2 point.</description>
                             <minTitle>Acolyte</minTitle>
-                            <uiPosition>(0,29)</uiPosition>
+                            <uiPosition>(0,34)</uiPosition>
                             <permitPointCost>2</permitPointCost>
                             <royalAid>
                                 <itemsToDrop>
@@ -88,12 +92,14 @@
                             </thingsToChoose>
                         </OrderedStuffDef>
                         
+                        <!-- xxxxx -->
+                        
                         <RoyalTitlePermitDef ParentName="DropResourcesPlus">
                             <defName>SeedsAppleDrop</defName>
                             <label>random fruit tree seeds drop</label>
                             <description>Call for a drop of 15 random fruit tree seeds.\n - Contains: apple, banana, orange and peach trees.\n\nPermit points cost - 2 point.</description>
                             <minTitle>Acolyte</minTitle>
-                            <uiPosition>(1,29)</uiPosition>
+                            <uiPosition>(1,34)</uiPosition>
                             <permitPointCost>2</permitPointCost>
                             <royalAid>
                                 <itemsToDrop>
