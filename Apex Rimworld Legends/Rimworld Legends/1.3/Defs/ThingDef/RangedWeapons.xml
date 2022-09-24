@@ -1114,7 +1114,7 @@
                 <recoilAmount>1.65</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
+                <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
                 <burstShotCount>6</burstShotCount>
                 <ticksBetweenBurstShots>5.66</ticksBetweenBurstShots>
                 <warmupTime>1.0</warmupTime>
@@ -1134,7 +1134,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>30</magazineSize>
                 <reloadTime>2.1</reloadTime>
-                <ammoSet>AmmoSet_303British</ammoSet>
+                <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
             </li>
         </comps>
         <weaponTags>
@@ -1247,12 +1247,12 @@
         </thingCategories>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
-                <recoilAmount>2.16</recoilAmount>
+                <recoilAmount>2.0</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_338LM_FMJ</defaultProjectile>
-                <warmupTime>1.40</warmupTime>
-                <range>48</range>
+                <defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
+                <warmupTime>1.00</warmupTime>
+                <range>52</range>
                 <soundCast>Shot_SniperRifle</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>10</muzzleFlashScale>
@@ -1266,7 +1266,7 @@
             <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>10</magazineSize>
                 <reloadTime>2.0</reloadTime>
-                <ammoSet>AmmoSet_338LM</ammoSet>
+                <ammoSet>AmmoSet_303British</ammoSet>
             </li>
         </comps>
         <smeltProducts>
