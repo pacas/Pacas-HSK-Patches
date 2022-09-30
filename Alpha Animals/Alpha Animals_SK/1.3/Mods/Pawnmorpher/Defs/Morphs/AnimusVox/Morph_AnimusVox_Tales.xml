@@ -1,0 +1,45 @@
+﻿<Defs>
+	<!--<TaleDef ParentName="MutationTaleBase">
+		<defName>StartsOozingSlime</defName>
+		<label>started oozing slime</label>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->[PAWN_nameDef] skin leaking mucus</li>
+				<li>tale_noun->sticky slime beginning to cover [PAWN_nameDef]'s body</li>
+				<li>image->[PAWN_nameFull] begins trying to wipe off the spreading slime [circumstance_group]</li>
+				<li>image->[PAWN_nameFull] begins to feel very moist [circumstance_group]</li>
+				<li>circumstance_phrase->as someone begins poking [PAWN_possessive] slimy skin</li>
+				<li>circumstance_phrase->as someone reaches for a washcloth</li>
+				<li>desc_sentence->[PAWN_pronoun] begins wiping at [PAWN_possessive] slime.</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+	
+	<TaleDef ParentName="MuzzleTaleBase">
+		<defName>AA_GrewHelixienFace</defName>
+		<label>grew helixien face</label>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->[PAWN_nameDef] grew a helixien face</li>
+				<li>tale_noun->[PAWN_nameDef]'s face becoming like that of a giant slug</li>
+				<li>image->[PAWN_nameDef] eyes begin popping out of their skull on stalks[circumstance_group]</li>
+				<li>desc_sentence->[PAWN_nameDef] oozes menacingly at their foe [PAWN_pronoun].</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+
+	<TaleDef ParentName="GrowTailBase">
+		<defName>AA_GrewSlugTail</defName>
+		<label>grew a slug tail</label>
+		<rulePack>
+			<rulesStrings>
+				<li>circumstance_phrase->as [PAWN_possessive] tail flicks, idly</li>
+				<li>circumstance_phrase->as [PAWN_possessive] tail oozes, unexpectedly</li>
+				<li>circumstance_phrase->as [PAWN_possessive] tail slithers, quickly</li>
+				<li>circumstance_phrase->as people count the spots on [PAWN_nameDef]'s new tail</li>
+				<li>circumstance_phrase->while someone pokes at [PAWN_possessive] new tail</li>
+				<li>desc_sentence->[PAWN_pronoun] is poking the slime on it.</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>-->
+</Defs>

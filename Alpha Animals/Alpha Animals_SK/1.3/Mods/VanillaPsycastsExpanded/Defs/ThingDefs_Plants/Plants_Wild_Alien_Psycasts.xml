@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<!--============================ Trees ============================-->
+
+	<ThingDef ParentName="PlantBase">
+		<defName>AA_ElderAlienTree</defName>
+		<label>elder ocular tree</label>
+		<description>This tree is completely alien, probably not even 100% carbon based, and it seems to be struggling to grow from exposure to a terrestrial environment. Strange fruits resembling eyeballs hang from the tree, but they are probably not edible. Its wood releases a powerful, sweet scent. This particular tree seems to be bigger than others, and emanates an aura of confusion and despair. The very fabric of reality seems to be unraveling around it.\n\n&lt;color=#b51509&gt;Warning:&lt;/color&gt; This is a cool but laggy thing, as much as defoliator ship parts in the base game.</description>
+		<statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>0.8</Flammability>
+			<Nutrition>0</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AAVPE_MatureOcularTree</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<fillPercent>0.5</fillPercent>
+		<passability>PassThroughOnly</passability>
+		<pathCost>130</pathCost>
+		<blockWind>true</blockWind>
+
+		<plant>
+			<fertilityMin>0</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>15</growDays>
+
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<harvestWork>300</harvestWork>
+			<harvestedThingDef>GU_RedWood</harvestedThingDef>
+			<harvestTag>Wood</harvestTag>
+			<harvestYield>300</harvestYield>
+			<harvestMinGrowth>0.9</harvestMinGrowth>
+			<harvestFailable>false</harvestFailable>
+			<visualSizeRange>7~7</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+
+		</plant>
+		<ingestible>
+		
+			<preferability>NeverForNutrition</preferability>
+
+		</ingestible>
+		<comps>
+			<li Class="AlphaBehavioursAndEvents.CompProperties_CreateOcularPlants">
+				<radiusPerDayCurve>
+					<points>
+						<li>0  , 5</li>
+						<li>1.5, 18</li>
+						<li>6  , 40</li>
+						<li>20 , 100</li>
+					</points>
+				</radiusPerDayCurve>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+
+
+</Defs>

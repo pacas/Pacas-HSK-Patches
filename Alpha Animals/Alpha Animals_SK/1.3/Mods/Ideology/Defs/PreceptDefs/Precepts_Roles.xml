@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <PreceptDef ParentName="PreceptRoleSingleBase">
+    <defName>AA_IdeoRole_OcularPriest</defName>
+    <label>ocular priest</label>
+    <description>A moral/spiritual leader who heads rituals and personally counsels believers.</description>
+    <iconPath>UI/Roles/AA_OcularPriestRole</iconPath>
+    <nameMaker>NamerRoleMoralist</nameMaker>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <restrictToSupremeGenderChance>0.5</restrictToSupremeGenderChance>
+    <convertPowerFactor>2</convertPowerFactor>
+    <expectationsOffset>2</expectationsOffset>
+    <roleApparelRequirements>
+      <li MayRequire="Ludeon.RimWorld.Royalty">
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>Torso</li>
+          </bodyPartGroupsMatchAny>
+          <requiredTags>
+            <li>Cape</li>
+          </requiredTags>
+        </requirement>
+      </li>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>FullHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_WarVeil</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+            <li>FullHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_HatHood</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+            <li>FullHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_Headwrap</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+            <li>Neck</li>
+            <li>Shoulders</li>
+            <li>FullHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_Broadwrap</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>Torso</li>
+            <li>FullHead</li>
+            <li>UpperHead</li>
+            <li>Legs</li>
+            <li>Arms</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_Burka</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <allowedFactionCategoryTags><li>Tribal</li></allowedFactionCategoryTags>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+            <li>FullHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_TribalHeaddress</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <allowedFactionCategoryTags><li>Tribal</li></allowedFactionCategoryTags>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>FullHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_WarMask</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <disallowedFactionCategoryTags><li>Tribal</li></disallowedFactionCategoryTags>
+        <anyMemeRequired><li>Transhumanist</li></anyMemeRequired>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>UpperHead</li>
+            <li>FullHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_Slicecap</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+      <li>
+        <disallowedFactionCategoryTags><li>Tribal</li></disallowedFactionCategoryTags>
+        <requirement>
+          <bodyPartGroupsMatchAny>
+            <li>FullHead</li>
+          </bodyPartGroupsMatchAny>
+          <requiredDefs>
+            <li>Apparel_VisageMask</li>
+          </requiredDefs>
+        </requirement>
+      </li>
+    </roleApparelRequirements>
+	<requiredMemes>
+      <li>AA_BiologicalCorruptors</li>
+      
+    </requiredMemes>
+    <roleApparelRequirementCountCurve>
+      <points>
+        <li>(0.5, 1)</li>
+        <li>(1.0, 2)</li>
+      </points>
+    </roleApparelRequirementCountCurve>
+    <grantedAbilities>
+      <li>AA_OcularConversion</li>
+      
+    </grantedAbilities>
+    <roleRequiredWorkTags><li>Social</li></roleRequiredWorkTags>
+    <roleTags><li>AA_IdeoRole_OcularPriest</li></roleTags>
+  </PreceptDef>
+
+ 
+  
+</Defs>

@@ -267,6 +267,26 @@
             <speed>15</speed>
         </projectile>
     </ThingDef>
+
+	
+	<ThingDef ParentName="SK_BaseBullet">
+		<defName>AA_PsyWeb</defName>
+		<label>psyweb</label>
+		<thingClass>AlphaBehavioursAndEvents.Web_Projectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectiles/AA_PsyWeb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Stun</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<speed>15</speed>
+		</projectile>
+	</ThingDef>
+
+
     <ThingDef ParentName="SK_BaseBullet">
         <defName>AA_IncendiaryMote</defName>
         <label>thermal detonating spit</label>

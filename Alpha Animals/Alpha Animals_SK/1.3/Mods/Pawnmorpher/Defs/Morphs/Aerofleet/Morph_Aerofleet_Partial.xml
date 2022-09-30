@@ -1,0 +1,34 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Tachyonite/Pawnmorpher/dev/Schemas/ComposableHediffs.xsd">
+	<HediffDef ParentName="NewPartialAspectedMorphParent">
+		<defName>AA_PawnmorphAerofleetTFPartial</defName>
+		<label>aerofleet partial</label>
+		<description>This person has mechanites in their blood that are providing them with aerofleet-esque mutations.</description>
+		<stages>
+			<li Class="Pawnmorph.Hediffs.HediffStage_Mutation">
+				<painOffset>0.1</painOffset>
+				<vomitMtbDays>1</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+				<mutationTypes Class="Pawnmorph.Hediffs.Composable.MutTypes_Morph">
+					<morphDef>AA_AerofleetMorph</morphDef>
+				</mutationTypes>
+				<mutationRate Class="Pawnmorph.Hediffs.Composable.MutRate_MutationsPerDay">
+					<meanMutationsPerDay>7.7</meanMutationsPerDay>
+				</mutationRate>
+				<spreadOrder Class="Pawnmorph.Hediffs.Composable.MutSpreadOrder_RandomSpread" />
+			</li>
+		</stages>	
+	</HediffDef>
+</Defs>

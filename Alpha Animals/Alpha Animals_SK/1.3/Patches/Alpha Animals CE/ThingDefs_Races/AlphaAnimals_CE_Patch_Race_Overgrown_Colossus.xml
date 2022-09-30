@@ -24,9 +24,6 @@
 						<MeleeDodgeChance>0.00</MeleeDodgeChance>
 						<MeleeCritChance>0.45</MeleeCritChance>
 						<MeleeParryChance>0.40</MeleeParryChance>
-                        <ArmorRating_Blunt>10</ArmorRating_Blunt>
-                        <ArmorRating_Heat>-0.3</ArmorRating_Heat>
-                        <ArmorRating_Sharp>20</ArmorRating_Sharp>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
@@ -45,7 +42,7 @@
 						<tools>
 							<li Class="CombatExtended.ToolCE">
 								<capacities>
-									<li>BiteBlunt</li>
+									<li>Bite</li>
 								</capacities>
 								<power>28</power>
 								<cooldownTime>2.4</cooldownTime>

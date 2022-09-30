@@ -1,0 +1,18 @@
+﻿<Defs>
+	
+	
+	<TaleDef ParentName="MuzzleTaleBase">
+		<defName>AA_GrewAerofleetEyes</defName>
+		<label>grew aerofleet hood</label>
+		<rulePack>
+			<rulesStrings>
+				<li>tale_noun->[PAWN_nameDef] grew an aerofleet hood</li>
+				<li>tale_noun->[PAWN_nameDef]'s face is becoming like that of a gelatinous creature</li>
+				<li>image->[PAWN_nameDef] eyes split into four and a squishy gelatinous hood forms around [PAWN_possessive] head [circumstance_group]</li>
+				<li>desc_sentence->[PAWN_nameDef] bubbles menacingly at their foe [PAWN_pronoun].</li>
+			</rulesStrings>
+		</rulePack>
+	</TaleDef>
+
+	
+</Defs>

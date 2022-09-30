@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Ranged spinneret -->
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>AA_RangedSpinneretImplant</defName>
+		<label>ranged spinneret implant</label>
+		<labelNoun>a ranged spinneret implant</labelNoun>
+		<description>An installed ranged spinneret implant. This implant will allow this creature to use a ranged stunning web attack.\n\nNote that installing this on a creature that already has a ranged spinneret will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_RangedSpinneretImplant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AA_RangedSpinneretImplant</spawnThingOnRemoved>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>0.9</accuracyShort>
+						<accuracyMedium>0.8</accuracyMedium>
+						<accuracyLong>0.3</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>AA_Web</defaultProjectile>
+						<warmupTime>3</warmupTime>
+						<burstShotCount>3</burstShotCount>
+						<minRange>1</minRange>
+						<range>20</range>
+						<soundCast>AA_Throw</soundCast>
+						<muzzleFlashScale>0</muzzleFlashScale>
+						<label>web</label>
+						<commonality>.8</commonality>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>web</label>
+						<draw>false</draw>
+						<canBeToggled>true</canBeToggled>											
+						<canFireIndependently>false</canFireIndependently>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>								
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<!-- Venomous Spitter -->
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>AA_VenomousSpitterImplant</defName>
+		<label>venomous spitter implant</label>
+		<labelNoun>a venomous spitter implant</labelNoun>
+		<description>An installed venomous spitter implant. This implant will allow this creature to use a ranged venomous spit attack.\n\nNote that installing this on a creature that already has a venomous spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_VenomousSpitterImplant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AA_VenomousSpitterImplant</spawnThingOnRemoved>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>1</accuracyShort>
+						<accuracyMedium>1</accuracyMedium>
+						<accuracyLong>1</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>AA_PoisonBolt</defaultProjectile>
+						<warmupTime>2</warmupTime>
+						<burstShotCount>1</burstShotCount>
+						<minRange>2</minRange>
+						<range>30</range>
+						<soundCast>AA_PoisonBolt</soundCast>
+						<muzzleFlashScale>0</muzzleFlashScale>
+						<label>venomous spit</label>
+						<commonality>.8</commonality>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>venomous spit</label>
+						<draw>false</draw>
+						<canBeToggled>true</canBeToggled>											
+						<canFireIndependently>false</canFireIndependently>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>		
+			<partEfficiency>0.75</partEfficiency>								
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<!-- Acidic Spitter -->
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>AA_AcidicSpitterImplant</defName>
+		<label>acidic spitter implant</label>
+		<labelNoun>an acidic spitter implant</labelNoun>
+		<description>An installed acidic spitter implant. This implant will allow this creature to use a ranged acidic spit attack that causes additional damage over time.\n\nNote that installing this on a creature that already has an acidic spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_AcidicSpitterImplant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AA_AcidicSpitterImplant</spawnThingOnRemoved>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>1</accuracyShort>
+						<accuracyMedium>1</accuracyMedium>
+						<accuracyLong>1</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>AA_AcidBolt</defaultProjectile>
+						<warmupTime>2</warmupTime>
+						<burstShotCount>1</burstShotCount>
+						<minRange>2</minRange>
+						<range>20</range>
+						<soundCast>AA_PoisonBolt</soundCast>
+						<muzzleFlashScale>0</muzzleFlashScale>
+						<label>acidic spit</label>
+						<commonality>.8</commonality>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>acidic spit</label>
+						<draw>false</draw>
+						<canBeToggled>true</canBeToggled>											
+						<canFireIndependently>false</canFireIndependently>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>		
+			<partEfficiency>0.75</partEfficiency>								
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<!-- Barbed Quill Thrower -->
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>AA_BarbedQuillThrowerImplant</defName>
+		<label>barbed quill thrower implant</label>
+		<labelNoun>a barbed quill thrower implant</labelNoun>
+		<description>An installed barbed quill thrower implant. This implant will allow this creature to use a ranged venomous quill attack that causes toxic buildup.\n\nNote that installing this on a creature that already has a barbed quill thrower will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_BarbedQuillThrowerImplant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AA_BarbedQuillThrowerImplant</spawnThingOnRemoved>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>1</accuracyShort>
+						<accuracyMedium>1</accuracyMedium>
+						<accuracyLong>1</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>AA_Quill</defaultProjectile>
+						<warmupTime>3</warmupTime>
+						<burstShotCount>1</burstShotCount>
+						<minRange>2</minRange>
+						<range>20</range>
+						<soundCast>AA_DartSound</soundCast>
+						<muzzleFlashScale>0</muzzleFlashScale>
+						<label>barbed quills</label> 
+						<commonality>.8</commonality>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>barbed quills</label> 
+						<draw>false</draw>
+						<canBeToggled>true</canBeToggled>											
+						<canFireIndependently>false</canFireIndependently>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>								
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<!-- Quad Tesla Cannon -->
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>AA_QuadTeslaCannonImplant</defName>
+		<label>quad tesla cannon implant</label>
+		<labelNoun>a quad tesla cannon implant</labelNoun>
+		<description>An installed quad tesla cannon implant. This implant will allow this creature to use a powerful ranged plasma attack.\n\nNote that installing this on a creature that already has a quad tesla cannon will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_QuadTeslaCannonImplant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AA_QuadTeslaCannonImplant</spawnThingOnRemoved>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>1</accuracyShort>
+						<accuracyMedium>1</accuracyMedium>
+						<accuracyLong>1</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>AA_Plasma</defaultProjectile>
+						<warmupTime>7</warmupTime>
+						<burstShotCount>4</burstShotCount>
+						<minRange>2</minRange>
+						<range>20</range>
+						<soundCast>AA_Plasma</soundCast>
+						<muzzleFlashScale>0</muzzleFlashScale>
+						<label>quad tesla cannon</label>
+						<commonality>1</commonality>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>quad tesla cannon</label> 
+						<draw>false</draw>
+						<canBeToggled>true</canBeToggled>											
+						<canFireIndependently>false</canFireIndependently>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>								
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<!-- Bioelectric Organ -->
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>AA_BioelectricOrganImplant</defName>
+		<label>bioelectric organ implant</label>
+		<labelNoun>a bioelectric organ implant</labelNoun>
+		<description>An installed bioelectric organ implant. This implant will allow this creature to use a powerful ranged electric attack that may paralyze and cause heart attacks.\n\nNote that installing this on a creature that already has a bioelectric organ will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_BioelectricOrganImplant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AA_BioelectricOrganImplant</spawnThingOnRemoved>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>1</accuracyShort>
+						<accuracyMedium>1</accuracyMedium>
+						<accuracyLong>1</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>AA_ElectricBolt</defaultProjectile>
+						<warmupTime>5</warmupTime>
+						<burstShotCount>1</burstShotCount>
+						<minRange>2</minRange>
+						<range>15</range>
+						<soundCast>AA_ElectricBolt</soundCast>
+						<muzzleFlashScale>0</muzzleFlashScale>
+						<label>electric bolt</label>
+						<commonality>.8</commonality>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>electric bolt</label> 
+						<draw>false</draw>
+						<canBeToggled>true</canBeToggled>											
+						<canFireIndependently>false</canFireIndependently>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>								
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<!-- Light Focusing Lens -->
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>AA_LightFocusingLensImplant</defName>
+		<label>light focusing lens implant</label>
+		<labelNoun>a light focusing lens implant</labelNoun>
+		<description>An installed light focusing lens implant. This implant will allow this creature to use a powerful ranged laser attack that sets enemies on fire.\n\nNote that installing this on a creature that already has a light focusing lens will have no effect. This implant takes the space of one of the creature's eyes, so it can't be installed in eyeless animals.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_LightFocusingLensImplant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AA_LightFocusingLensImplant</spawnThingOnRemoved>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>1</accuracyShort>
+						<accuracyMedium>1</accuracyMedium>
+						<accuracyLong>.75</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>AA_LaserBullet</defaultProjectile>
+						<warmupTime>5</warmupTime>
+						<burstShotCount>1</burstShotCount>
+						<minRange>1</minRange>
+						<range>10</range>
+						<soundCast>AA_LaserBullet</soundCast>
+						<muzzleFlashScale>0</muzzleFlashScale>
+						<label>laser</label>
+						<commonality>.8</commonality>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>laser</label> 
+						<draw>false</draw>
+						<canBeToggled>true</canBeToggled>											
+						<canFireIndependently>false</canFireIndependently>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>		
+			<partEfficiency>0.75</partEfficiency>								
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<!-- Hyper Acidic Stomach -->
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>AA_HyperAcidicStomachImplant</defName>
+		<label>hyper acidic stomach implant</label>
+		<labelNoun>a hyper acidic stomach implant</labelNoun>
+		<description>An installed hyper acidic stomach implant. This implant will allow this creature to use a ranged acid attack that causes damage over time.\n\nNote that installing this on a creature that already has a hyper acidic stomach will have no effect. This implant takes the space of the creature's stomach, so it can't be installed in animals that lack one.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_HyperAcidicStomachImplant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>AA_HyperAcidicStomachImplant</spawnThingOnRemoved>
+		<comps>
+			<li Class="MVCF.Comps.HediffCompProperties_ExtendedVerbGiver">
+				<verbs>
+					<li>
+						<verbClass>Verb_Shoot</verbClass>
+						<accuracyTouch>1</accuracyTouch>
+						<accuracyShort>1</accuracyShort>
+						<accuracyMedium>0.8</accuracyMedium>
+						<accuracyLong>0.75</accuracyLong>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>AA_AcidicVomit</defaultProjectile>
+						<warmupTime>5</warmupTime>
+						<burstShotCount>1</burstShotCount>
+						<minRange>1</minRange>
+						<range>7</range>
+						<soundCast>AA_PoisonBolt</soundCast>
+						<muzzleFlashScale>0</muzzleFlashScale>
+						<label>acidic vomit</label>
+						<commonality>.8</commonality>
+					</li>
+				</verbs>
+				<verbProps>
+					<li>
+						<label>acidic vomit</label> 
+						<draw>false</draw>
+						<canBeToggled>true</canBeToggled>											
+						<canFireIndependently>false</canFireIndependently>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>		
+			<partEfficiency>0.75</partEfficiency>								
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+</Defs>

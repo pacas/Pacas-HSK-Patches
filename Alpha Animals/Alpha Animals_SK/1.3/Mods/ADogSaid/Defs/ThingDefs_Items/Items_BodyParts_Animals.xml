@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--=============== Bases ====================-->
+
+	<ThingDef Name="VEF_BodyPartProstheticBaseADS" ParentName="BodyPartProstheticBaseADS" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>VEF_ExoticProsthetics</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+
+	<ThingDef Name="VEF_BodyPartBionicBaseADS" ParentName="BodyPartBionicBaseADS" Abstract="True">
+		<recipeMaker>
+			<researchPrerequisite>VEF_ExoticBionics</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="VEF_AdvancedBaseADS" ParentName="BodyPartArtificialBaseADS" Abstract="True">
+		<graphicData>
+			<texPath>Things/Item/VEF_AnimalBodyPart_ranged</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+	</ThingDef>
+
+
+	<!--=============== Implants ====================-->
+
+
+	<!--=============== Tentacles ====================-->
+
+
+	<ThingDef ParentName="VEF_BodyPartProstheticBaseADS">
+		<defName>AA_ProstheticTentacle</defName>
+		<label>simple prosthetic tentacle</label>
+		<description>Simple prosthetic tentacle. Should be able to replace almost any tentacle.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Plastic>10</Plastic>
+			<Mechanism>2</Mechanism>
+			<Rubber>9</Rubber>
+		</costList>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="VEF_BodyPartBionicBaseADS">
+		<defName>AA_BionicTentacle</defName>
+		<label>bionic tentacle</label>
+		<description>Improved bionic tentacle for animals. Should be able to replace almost any tentacle.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<ComponentAdvanced>3</ComponentAdvanced>
+			<Biomatter>20</Biomatter>
+			<SyntheticFibers>10</SyntheticFibers>
+			<Microchips>1</Microchips>
+		</costList>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>8</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--=============== Beaks ====================-->
+
+	<ThingDef ParentName="VEF_BodyPartProstheticBaseADS">
+		<defName>AA_ProstheticBeak</defName>
+		<label>simple prosthetic beak</label>
+		<description>Simple prosthetic beak. Should be able to replace almost any avian-like beak.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Plastic>7</Plastic>
+		</costList>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="VEF_BodyPartBionicBaseADS">
+		<defName>AA_BionicBeak</defName>
+		<label>bionic beak</label>
+		<description>Improved bionic beak for animals. Should be able to replace almost any avian-like beak.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<ComponentAdvanced>6</ComponentAdvanced>
+			<Biomatter>25</Biomatter>
+			<SyntheticFibers>6</SyntheticFibers>
+			<Microchips>1</Microchips>
+		</costList>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>8</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--=============== Motion Detector ====================-->
+
+	<ThingDef ParentName="VEF_BodyPartBionicBaseADS">
+		<defName>AA_BionicMotionDetector</defName>
+		<label>bionic motion detector</label>
+		<description>Improved bionic motion detector for animals. This motion detector replaces echolocation organs and vibration sensors.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Biomatter>20</Biomatter>
+			<SyntheticFibers>6</SyntheticFibers>
+			<Paraffins>15</Paraffins>
+			<Microchips>1</Microchips>
+		</costList>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>0.3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--=============== Buoyancy Mechanism ====================-->
+
+	<ThingDef ParentName="VEF_BodyPartProstheticBaseADS">
+		<defName>AA_ProstheticBuoyancyMechanism</defName>
+		<label>simple prosthetic buoyancy mechanism</label>
+		<description>Simple prosthetic buoyancy mechanism. Should be able to replace hydrogen sacs and other exotic organs keeping hovering creatures in the air.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Cloth>100</Cloth>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Plastic>20</Plastic>
+		</costList>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="VEF_BodyPartBionicBaseADS">
+		<defName>AA_BionicBuoyancyMechanism</defName>
+		<label>bionic buoyancy mechanism</label>
+		<description>Improved bionic buoyancy mechanism for animals. Should be able to replace hydrogen sacs and other exotic organs keeping hovering creatures in the air.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Cloth>200</Cloth>
+			<Biomatter>25</Biomatter>
+			<SyntheticFibers>7</SyntheticFibers>
+			<Paraffins>13</Paraffins>
+			<Microchips>1</Microchips>
+		</costList>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>8</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--=============== Shells ====================-->
+
+	<ThingDef ParentName="VEF_BodyPartProstheticBaseADS">
+		<defName>AA_ProstheticShell</defName>
+		<label>simple prosthetic shell</label>
+		<description>Simple prosthetic shell. Should be able to replace carapaces and shells.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentMedieval>3</ComponentMedieval>
+			<Mechanism>4</Mechanism>
+		</costList>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>10</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="VEF_BodyPartBionicBaseADS">
+		<defName>AA_BionicShell</defName>
+		<label>bionic shell</label>
+		<description>Improved bionic shell for animals. Should be able to replace carapaces and shells.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Plasteel>100</Plasteel>
+			<ComponentAdvanced>4</ComponentAdvanced>
+			<Biomatter>45</Biomatter>
+			<SyntheticFibers>25</SyntheticFibers>
+			<Microchips>1</Microchips>
+		</costList>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>8</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--=============== Wings ====================-->
+
+	<ThingDef ParentName="VEF_BodyPartProstheticBaseADS">
+		<defName>AA_ProstheticWing</defName>
+		<label>simple prosthetic wing</label>
+		<description>Simple prosthetic wing. Should be able to replace any type of wing.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Cloth>50</Cloth>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ComponentMedieval>3</ComponentMedieval>
+			<Mechanism>4</Mechanism>
+		</costList>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="VEF_BodyPartBionicBaseADS">
+		<defName>AA_BionicWing</defName>
+		<label>bionic wing</label>
+		<description>Improved bionic wing for animals. Should be able to replace any type of wing.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Cloth>100</Cloth>
+			<ComponentAdvanced>6</ComponentAdvanced>
+			<Biomatter>45</Biomatter>
+			<SyntheticFibers>25</SyntheticFibers>
+			<ArtificialBone>4</ArtificialBone>
+			<Microchips>1</Microchips>
+		</costList>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>8</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--=============== Claws ====================-->
+
+	<ThingDef ParentName="VEF_BodyPartProstheticBaseADS">
+		<defName>AB_SimpleProstheticClaw</defName>
+		<label>simple prosthetic claw</label>
+		<description>Simple prosthetic claw. Fits animals with sharpened claws.</description>
+		<techLevel>Industrial</techLevel>
+		<costList>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<ThingDef ParentName="VEF_BodyPartBionicBaseADS">
+		<defName>AB_BionicClaw</defName>
+		<label>bionic claw</label>
+		<description>Improved bionic claw. Fits animals with sharpened claws.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<Plasteel>30</Plasteel>
+			<ComponentAdvanced>6</ComponentAdvanced>
+			<Biomatter>25</Biomatter>
+			<SyntheticFibers>6</SyntheticFibers>
+			<Microchips>1</Microchips>
+		</costList>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>8</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+	</ThingDef>
+
+	<!--=============== Goo Acidifier ====================-->
+
+	<ThingDef ParentName="VEF_BodyPartProstheticBaseADS">
+		<defName>AA_GooAcidifier</defName>
+		<label>goo acidifier</label>
+		<description>A goo acidifier increases the acidity of a goo's internal organs, making it explode as soon as it is downed. Basically transforms goos into biological suicide bombers.</description>
+		<techLevel>Spacer</techLevel>
+		<costList>
+			<FSX>15</FSX>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Plastic>5</Plastic>
+		</costList>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+	</ThingDef>
+
+</Defs>

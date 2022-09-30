@@ -1,0 +1,105 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Tachyonite/Pawnmorpher/dev/Schemas/ThoughtDef.xsd">
+	<ThoughtDef ParentName="OutlookMemoryBase">
+		<defName>AA_AerofleetTransformationMemory</defName>
+        <stages>
+            <li>
+                <label>morphed</label>
+                <description>I feel bloated, as if my whole body had been suddenly filled with gas.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>morphed</label>
+                <description>Squish, squish!</description>
+                <baseMoodEffect>+3</baseMoodEffect>
+            </li>
+            <li>
+                <label>morphed</label>
+                <description>I am a disgusting, exploding ball of gas!</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+            <li>
+                <label>morphed</label>
+                <description>I can float above obstacles, but I still feel as if my whole body was bloated.</description>
+                <baseMoodEffect>+1</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	
+    <ThoughtDef ParentName="OutlookMemoryBase">
+		<defName>AA_AerofleetRevertedMemory</defName>
+        <stages>
+            <li>
+                <label>reverted</label>
+                <description>Oh, I can feel my internal organs again...</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>reverted</label>
+                <description>I miss being able to float all over!</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>reverted</label>
+                <description>Gods, I don't miss being a ball of explosive gas...</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+            <li>
+                <label>reverted</label>
+                <description>I'm human again? I think I wanted the opposite of this.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>AA_AerofleetEyes</defName>
+        <stages>
+            <li>
+                <label>Gasbag face</label>
+                <description>Eugh, I can't get used to having four eyes.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Gasbag face</label>
+                <description>I can see forever!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Gasbag face</label>
+                <description>Nobody is gonna want to kiss this face! And the constant squishing sound is disgusting!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	
+	 <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>AA_AerofleetFuzz</defName>
+        <stages>
+            <li>
+                <label>Fuzz everywhere</label>
+                <description>A disgusting blue fuzz is growing all over my body!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Fuzz everywhere</label>
+                <description>With this blue fuzz I suddenly feel very protected.</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Fuzz everywhere</label>
+                <description>This thin blue fuzz is horribly disgusting! It itches!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+   
+</Defs>

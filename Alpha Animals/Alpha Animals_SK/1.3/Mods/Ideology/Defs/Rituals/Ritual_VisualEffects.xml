@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <RitualVisualEffectDef>
+    <defName>AA_Ocular</defName>
+    <tintColor>(160, 20, 25)</tintColor>
+    <comps>
+      <li>
+        <compClass>CompRitualEffect_ConstantCenter</compClass>
+        <moteDef>Mote_RitualSmokeThick</moteDef>
+        <scaleWithRoom>true</scaleWithRoom>
+      </li>
+      <li Class="CompProperties_RitualEffectIntervalSpawnCircle">
+        <fleckDef>AA_Ocular</fleckDef>
+        <area>(27, 28)</area>
+        <radius>6</radius>
+        <concentration>3</concentration>
+        <spawnIntervalTicks>9</spawnIntervalTicks>
+        <spawnCount>1</spawnCount>
+        <rotation>-15~15</rotation>
+        <scalePositionWithRoom>true</scalePositionWithRoom>
+        <onlySpawnInSameRoom>true</onlySpawnInSameRoom>
+      </li>
+    </comps>
+  </RitualVisualEffectDef>
+
+  
+  
+</Defs>

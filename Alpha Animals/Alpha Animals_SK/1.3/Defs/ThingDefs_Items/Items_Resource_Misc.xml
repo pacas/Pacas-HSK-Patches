@@ -220,6 +220,71 @@
             <li>AnimalPart</li>
         </thingSetMakerTags>
     </ThingDef>
+	
+	<ThingDef ParentName="ResourceVerbBase">
+		<defName>GU_RedWood</defName>
+		<label>red wood</label>
+		<description>This red tinged wood is oddly strong, and a sweet scent emanates from it. Less flammable than terrestrial wood, but quite ugly.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/GU_RedWood</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<tradeability>Sellable</tradeability>
+		<equippedAngleOffset>-20</equippedAngleOffset>
+		<soundInteract>Wood_Drop</soundInteract>
+		<soundDrop>Wood_Drop</soundDrop>
+		<statBases>
+			<MarketValue>1.2</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>0.4</Mass>
+			<Flammability>0.6</Flammability>
+			<DeteriorationRate>1</DeteriorationRate>
+			<SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+		</statBases>
+		<stuffProps>
+			<stuffAdjective>red wooden</stuffAdjective>
+
+			<categories>
+				<li>Woody</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(193,97,67)</color>
+			<constructEffect>ConstructWood</constructEffect>
+			<appearance>Planks</appearance>
+			<soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
+			<soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+			<statFactors>
+				<Beauty>0.45</Beauty>
+				<MaxHitPoints>0.75</MaxHitPoints>    
+				<Flammability>0.75</Flammability>
+				<WorkToMake>0.6</WorkToMake>
+				<WorkToBuild>0.8</WorkToBuild>
+				<DoorOpenSpeed>1.0</DoorOpenSpeed>
+				<MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
+
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>Wooden</li>
+		</thingCategories>
+		<techHediffsTags>
+			<li>Poor</li>
+		</techHediffsTags>
+		<tools>
+			<li>
+				<label>alien wood log</label>
+
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
     <ThingDef ParentName="SK_ResourceBase">
         <defName>AA_SkySteel</defName>
         <label>skysteel alloy</label>
@@ -421,6 +486,31 @@
             <li>ExoticMisc</li>
         </tradeTags>
     </ThingDef>
+
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>AA_AgariluxRawFungus</defName>
+		<label>agarilux raw fungus</label>
+		<description>Raw Agarilux from a living Agaripod, they are very nice to eat, even when raw.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AA_RawAgarilux</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>1.45</MarketValue>
+			<Mass>0.027</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>40</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<tasteThought/>
+			<foodType>VegetableOrFruit</foodType>
+		</ingestible>
+	</ThingDef>
+	
     <ThingDef ParentName="PlantFoodRawBase">
         <defName>AA_RottingMoundItem</defName>
         <label>fermented rotting mound</label>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityGroupDef>
+    <defName>AA_Ocular</defName>
+    <cooldownTicks>60000</cooldownTicks>
+  </AbilityGroupDef>
+
+	<AbilityDef>
+		<defName>AA_OcularConversion</defName>
+		<label>ocular conversion</label>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<groupDef>AA_Ocular</groupDef>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<description>Converts trees.</description>
+		<targetRequired>True</targetRequired>
+		<gizmoClass>Command_Ability</gizmoClass>
+		<iconPath>UI/Abilities/AA_OcularConversion</iconPath>
+		<uiOrder>1</uiOrder>
+		<statBases>
+			<Ability_EffectRadius>3.9</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>5</warmupTime>
+			<range>10</range>
+			<targetParams>
+				<canTargetPlants>true</canTargetPlants>
+			
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "AlphaBehavioursAndEvents.CompProperties_AbilityOcularConversion">
+				<compClass>AlphaBehavioursAndEvents.CompAbilityOcularConversion</compClass>
+			</li>
+			
+		</comps>
+		<requiredMemes>
+			<li>AA_BiologicalCorruptors</li>
+		</requiredMemes>
+	</AbilityDef>
+
+
+
+
+</Defs>

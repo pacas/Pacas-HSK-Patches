@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GauranlenTreeModeDef>
+    <defName>AA_Ocular</defName>
+    <label>ocular</label>
+    <description>A corrupted dryad afflicted by a bizarre extradimensional disease that causes gaping wounds to appear all over its body, from which ocular orbs slowly emerge. Ocular dryads can be further mutated into grotesque beasts by an Ocular Priest.</description>
+    <pawnKindDef>AA_Dryad_Ocular</pawnKindDef>
+    <drawPosition>(0.833, 0)</drawPosition>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+      <li>ArmorRating_Blunt</li>
+      <li>ArmorRating_Sharp</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>AA_Dryad_Ocular</ThingDef>
+    </hyperlinks>
+	 <requiredMemes>
+      <li>AA_BiologicalCorruptors</li>
+    </requiredMemes>
+  </GauranlenTreeModeDef>
+  
+  <GauranlenTreeModeDef>
+    <defName>AA_Spitter</defName>
+    <label>spitter</label>
+    <description>A dryad caste specialized in venomous ranged attacks. Their ranged attacks can be commanded directly, or ordered to attack on their own by their trainer.</description>
+    <pawnKindDef>AA_Dryad_Spitter</pawnKindDef>
+    <drawPosition>(0.833, 0.1665)</drawPosition>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+      <li>ArmorRating_Blunt</li>
+      <li>ArmorRating_Sharp</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>AA_Dryad_Spitter</ThingDef>
+    </hyperlinks>
+	 <requiredMemes>
+      <li>AA_BiologicalCorruptors</li>
+    </requiredMemes>
+  </GauranlenTreeModeDef>
+  
+    <GauranlenTreeModeDef>
+    <defName>AA_Unstable</defName>
+    <label>unstable</label>
+    <description>A dangerous dryad caste that will ecplode with acid when dead. They can be commanded to explode... for the good of the tree.</description>
+    <pawnKindDef>AA_Dryad_Unstable</pawnKindDef>
+    <drawPosition>(0.833, 0.333)</drawPosition>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+      <li>ArmorRating_Blunt</li>
+      <li>ArmorRating_Sharp</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>AA_Dryad_Unstable</ThingDef>
+    </hyperlinks>
+	 <requiredMemes>
+      <li>AA_BiologicalCorruptors</li>
+    </requiredMemes>
+  </GauranlenTreeModeDef>
+  
+  <GauranlenTreeModeDef>
+    <defName>AA_Tumorous</defName>
+    <label>tumorous</label>
+    <description>A dryad caste specialized in creating meat. Together with its Gauranlen tree, this dryad can generate harvestable meat on an ongoing basis. However, it is slow and ineffective at work or combat.</description>
+    <drawPosition>(0.833, 0.5)</drawPosition>
+    <pawnKindDef>AA_Dryad_Tumorous</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+    </displayedStats>
+	<requiredMemes>
+      <li>AA_BiologicalCorruptors</li>
+    </requiredMemes>
+  </GauranlenTreeModeDef>
+  
+  <GauranlenTreeModeDef>
+    <defName>AA_Corruptor</defName>
+    <label>corruptor dryad</label>
+    <description>A dryad caste with the unique ability to produce corrupted Gauranlen pods and reproduce the Gauranlen tree along with its symbiote, the dryad queen. To do this, three corruptor dryads must slowly merge.</description>
+    <drawPosition>(0.833, 0.665)</drawPosition>
+    <pawnKindDef>AA_Dryad_Corruptor</pawnKindDef>
+    <displayedStats>
+      <li>MaxHitPoints</li>
+      <li>MoveSpeed</li>
+    </displayedStats>
+    <hyperlinks>
+      <ThingDef>AA_Dryad_Corruptor</ThingDef>
+      <ThingDef>Plant_PodGauranlen</ThingDef>
+    </hyperlinks>
+    <requiredMemes>
+      <li>AA_BiologicalCorruptors</li>
+    </requiredMemes>
+  </GauranlenTreeModeDef>
+  
+
+
+
+ 
+
+</Defs>
