@@ -179,6 +179,84 @@
 				</value>
 			</li>
 
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName="Scorpion"]/combatPower</xpath>
+				<value>
+					<combatPower>400</combatPower>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName="Scorpion"]/ecoSystemWeight</xpath>
+				<value>
+					<ecoSystemWeight>0.5</ecoSystemWeight>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/PawnKindDef[defName="Scorpion"]/ecoSystemWeight</xpath>
+				<value>
+					<alternateGraphicChance>1</alternateGraphicChance>
+					<alternateGraphics>
+						<li>
+							<texPath>Things/Pawn/Animal/AA_BarbSlinger/AA_BarbSlinger</texPath>
+						</li>
+						<li>
+							<texPath>Things/Pawn/Animal/AA_BarbSlinger/AA_BarbSlinger2</texPath>
+						</li>
+						<li>
+							<texPath>Things/Pawn/Animal/AA_BarbSlinger/AA_BarbSlinger3</texPath>
+						</li>
+						<li>
+							<texPath>Things/Pawn/Animal/AA_BarbSlinger/AA_BarbSlinger4</texPath>
+						</li>
+
+					</alternateGraphics>
+					<wildGroupSize>
+						<min>1</min>
+						<max>3</max>
+					</wildGroupSize>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/PawnKindDef[defName="Scorpion"]/lifeStages</xpath>
+				<value>
+					<lifeStages>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/AA_BarbSlinger/AA_BarbSlinger</texPath>
+								<drawSize>1.2</drawSize>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/AA_BarbSlinger/AA_Dessicated_BarbSlinger</texPath>
+								<drawSize>1.1</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/AA_BarbSlinger/AA_BarbSlinger</texPath>
+								<drawSize>1.6</drawSize>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/AA_BarbSlinger/AA_Dessicated_BarbSlinger</texPath>
+								<drawSize>1.5</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+						<li>
+							<bodyGraphicData>
+								<texPath>Things/Pawn/Animal/AA_BarbSlinger/AA_BarbSlinger</texPath>
+								<drawSize>2.2</drawSize>
+							</bodyGraphicData>
+							<dessicatedBodyGraphicData>
+								<texPath>Things/Pawn/Animal/AA_BarbSlinger/AA_Dessicated_BarbSlinger</texPath>
+								<drawSize>2.1</drawSize>
+							</dessicatedBodyGraphicData>
+						</li>
+					</lifeStages>
+				</value>
+			</li>
+
 			</operations>
 		</match>
 	</Operation>
