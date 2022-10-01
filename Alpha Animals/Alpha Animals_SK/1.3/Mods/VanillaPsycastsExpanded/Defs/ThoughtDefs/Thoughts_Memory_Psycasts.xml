@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
- 
-  <ThoughtDef>
-    <defName>AAVPE_SeenBlackQueen</defName>
-    <durationDays>3</durationDays>
-    <stages>
-      <li>
-        <label>seen a black queen</label>
-        <description>The black hive insectoid queen is terrifying. It's shivering my body and soul.</description>
-        <baseMoodEffect>-10</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
-
- 
+    <ThoughtDef>
+        <defName>AAVPE_SeenBlackQueen</defName>
+        <durationDays>3</durationDays>
+        <stages>
+            <li>
+                <label>seen a black queen</label>
+                <description>The black hive insectoid queen is terrifying. It's shivering my body and soul.</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
 </Defs>

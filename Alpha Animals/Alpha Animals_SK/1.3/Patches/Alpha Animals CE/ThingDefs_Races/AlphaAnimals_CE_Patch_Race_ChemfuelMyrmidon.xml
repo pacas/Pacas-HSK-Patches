@@ -17,35 +17,12 @@
 				</value>
 			</li>
 			
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="AA_ChemfuelMyrmidon"]/statBases/ArmorRating_Blunt</xpath>
-				<value>
-					<ArmorRating_Blunt>2</ArmorRating_Blunt>
-				</value>
-			</li>
-
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="AA_ChemfuelMyrmidon"]/statBases/ArmorRating_Sharp</xpath>
-				<value>
-					<ArmorRating_Sharp>1</ArmorRating_Sharp>
-				</value>
-			</li>
-			
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName="AA_ChemfuelMyrmidon"]/statBases</xpath>
 				<value>
 					<MeleeDodgeChance>0.01</MeleeDodgeChance>
 					<MeleeCritChance>0.24</MeleeCritChance>
 					<MeleeParryChance>0.35</MeleeParryChance>
-				</value>
-			</li>
-
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="AA_ChemfuelMyrmidon"]</xpath>
-				<value>
-					<butcherProducts>
-						<FSX>13</FSX>
-					</butcherProducts>
 				</value>
 			</li>
 

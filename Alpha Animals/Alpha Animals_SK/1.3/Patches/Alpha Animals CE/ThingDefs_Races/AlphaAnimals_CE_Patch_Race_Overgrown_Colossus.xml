@@ -24,6 +24,9 @@
 						<MeleeDodgeChance>0.00</MeleeDodgeChance>
 						<MeleeCritChance>0.45</MeleeCritChance>
 						<MeleeParryChance>0.40</MeleeParryChance>
+                        <ArmorRating_Blunt>8</ArmorRating_Blunt>
+                        <ArmorRating_Heat>-0.3</ArmorRating_Heat>
+                        <ArmorRating_Sharp>16</ArmorRating_Sharp>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">

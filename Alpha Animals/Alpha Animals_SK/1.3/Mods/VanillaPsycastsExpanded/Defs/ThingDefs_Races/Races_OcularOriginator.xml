@@ -1,143 +1,114 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<!-- ============================================================ -->
-
-	<ThingDef ParentName="SK_AnimalThingBase">
-		<defName>AA_OcularOriginator</defName>
-		<label>ocular originator</label>
-		<description>This amorphous translucent creature seems to lack everything but the most basic instincts, moving around slowly and sometimes devouring any plant it comes in contact with, incorporating it into its cytoplasm. To make its appearance even more unsettling, bloodshot eyes of various sizes float inside it, blinking spasmodically at random intervals.\n\nOcular originators are warped versions of the teratogenic originator, twisted by the strange energies of a perverse extra-dimensional realm of pure madness. The strange mutant eyes can be periodically excised from the creature and used at will. Ocular originators can't reproduce and only one will be present on a map at a given time.</description>
-		<statBases>
-			<MoveSpeed>0.6</MoveSpeed>
-			<ComfyTemperatureMin>-80</ComfyTemperatureMin>
-			<MarketValue>850</MarketValue>
-			<LeatherAmount>0</LeatherAmount>
-			<MeatAmount>0</MeatAmount>
-			<FilthRate>16</FilthRate>
-
-
-		</statBases>
-		<tools>
-
-			<li>
-				<label>tentacles</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>20</power>
-				<cooldownTime>1.2</cooldownTime>
-				<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
-
-			</li>
-		</tools>
-
-
-		<comps>
-
-			<li Class="AnimalBehaviours.CompProperties_ChangeDefIfNotUnique">
-				<defToChangeTo>Rat</defToChangeTo>
-
-			</li>
-			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
-
-				<gatheringIntervalDays>40</gatheringIntervalDays>
-				<resourceAmount>1</resourceAmount>
-				<customResourceString>AA_MutantImplantsDesc</customResourceString>
-				<isRandom>true</isRandom>
-				<randomItems>
-					<li>AA_TheOmniscientEye</li>
-					<li>AA_TheRecalcitrantEye</li>
-					<li>AA_TheQuiescentEye</li>
-					<li>AA_TheNumbingEye</li>
-					<li>AA_TheSpasmodicEye</li>
-					<li>AA_TheMeretriciousEye</li>
-					<li>AA_TheHeuristicEye</li>
-				</randomItems>
-
-			</li>
-
-		</comps>
-		<race>
-			
-			<herdAnimal>false</herdAnimal>
-			<predator>false</predator>
-			<body>AA_GooBody</body>
-			<baseBodySize>5.00</baseBodySize>
-			<baseHungerRate>0.1</baseHungerRate>
-			<baseHealthScale>7</baseHealthScale>
-			<foodType>VegetarianRoughAnimal</foodType>
-			<hasGenders>false</hasGenders>
-			<useMeatFrom>Pig</useMeatFrom>
-			<wildness>0.5</wildness>
-			<manhunterOnDamageChance>0.2</manhunterOnDamageChance>
-			<manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
-			<trainability>None</trainability>
-			<roamMtbDays>10</roamMtbDays>
-		
-			
-			<lifeExpectancy>355</lifeExpectancy>
-			<lifeStageAges>
-				
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0</minAge>
-
-					<soundCall>Pawn_TetraSlug_Call</soundCall>
-					<soundAngry>Pawn_TetraSlug_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-		</race>
-		<tradeTags>
-			<li>AnimalAlpha</li>
-
-		</tradeTags>
-		<modExtensions>
-			<li Class="AnimalBehaviours.AnimalStatExtension">
-
-				<statToAdd>
-
-					<li>AA_PrimaryRole</li>
-					<li>AA_RangedAttacks</li>					
-				</statToAdd>
-				<statValues>
-
-					<li>AA_Farm</li>
-					<li>AA_No</li>					
-				</statValues>
-				<statDescriptions>
-
-					<li>AA_FarmImplantsDesc</li>
-					<li>AA_NoRanged</li>
-				</statDescriptions>
-
-			</li>
-		</modExtensions>
-	</ThingDef>
-
-	<PawnKindDef ParentName="SK_AnimalKindBase">
-		<defName>AA_OcularOriginator</defName>
-		<label>ocular originator</label>
-		<race>AA_OcularOriginator</race>
-		<combatPower>650</combatPower>
-		<canArriveManhunter>false</canArriveManhunter>
-
-		<lifeStages>
-			
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/AA_OcularOriginator/AA_OcularOriginator</texPath>
-					<drawSize>3</drawSize>
-
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/AA_OcularOriginator/AA_Dessicated_OcularOriginator</texPath>
-					<drawSize>3</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>
-
+    <!-- ============================================================ -->
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_OcularOriginator</defName>
+        <label>ocular originator</label>
+        <description>This amorphous translucent creature seems to lack everything but the most basic instincts, moving around slowly and sometimes devouring any plant it comes in contact with, incorporating it into its cytoplasm. To make its appearance even more unsettling, bloodshot eyes of various sizes float inside it, blinking spasmodically at random intervals.\n\nOcular originators are warped versions of the teratogenic originator, twisted by the strange energies of a perverse extra-dimensional realm of pure madness. The strange mutant eyes can be periodically excised from the creature and used at will. Ocular originators can't reproduce and only one will be present on a map at a given time.</description>
+        <statBases>
+            <MoveSpeed>0.6</MoveSpeed>
+            <ComfyTemperatureMin>-80</ComfyTemperatureMin>
+            <MarketValue>850</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <MeatAmount>0</MeatAmount>
+            <FilthRate>16</FilthRate>
+        </statBases>
+        <tools>
+            <li>
+                <label>tentacles</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>1.2</cooldownTime>
+                <linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_ChangeDefIfNotUnique">
+                <defToChangeTo>Rat</defToChangeTo>
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+                <gatheringIntervalDays>40</gatheringIntervalDays>
+                <resourceAmount>1</resourceAmount>
+                <customResourceString>AA_MutantImplantsDesc</customResourceString>
+                <isRandom>true</isRandom>
+                <randomItems>
+                    <li>AA_TheOmniscientEye</li>
+                    <li>AA_TheRecalcitrantEye</li>
+                    <li>AA_TheQuiescentEye</li>
+                    <li>AA_TheNumbingEye</li>
+                    <li>AA_TheSpasmodicEye</li>
+                    <li>AA_TheMeretriciousEye</li>
+                    <li>AA_TheHeuristicEye</li>
+                </randomItems>
+            </li>
+        </comps>
+        <race>
+            <herdAnimal>false</herdAnimal>
+            <predator>false</predator>
+            <body>AA_GooBody</body>
+            <baseBodySize>5.00</baseBodySize>
+            <baseHungerRate>0.1</baseHungerRate>
+            <baseHealthScale>7</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <hasGenders>false</hasGenders>
+            <useMeatFrom>Pig</useMeatFrom>
+            <wildness>0.5</wildness>
+            <manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.018</manhunterOnTameFailChance>
+            <trainability>None</trainability>
+            <roamMtbDays>10</roamMtbDays>
+            <lifeExpectancy>355</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0</minAge>
+                    <soundCall>Pawn_TetraSlug_Call</soundCall>
+                    <soundAngry>Pawn_TetraSlug_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalAlpha</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Farm</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_FarmImplantsDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="SK_AnimalKindBase">
+        <defName>AA_OcularOriginator</defName>
+        <label>ocular originator</label>
+        <race>AA_OcularOriginator</race>
+        <combatPower>650</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_OcularOriginator/AA_OcularOriginator</texPath>
+                    <drawSize>3</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_OcularOriginator/AA_Dessicated_OcularOriginator</texPath>
+                    <drawSize>3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
 </Defs>

@@ -8,36 +8,6 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-			<li Class="PatchOperationAddModExtension">
-				<xpath>/Defs/ThingDef[defName="AA_MammothWorm"]</xpath>
-				<value>
-					<li Class="CombatExtended.RacePropertiesExtensionCE">
-						<bodyShape>Quadruped</bodyShape>
-					</li>
-				</value>
-			</li>
-
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/PawnKindDef[defName="AA_MammothWorm"]/combatPower</xpath>
-				<value>
-					<combatPower>250</combatPower>
-				</value>
-			</li>
-			
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="AA_MammothWorm"]/statBases/ArmorRating_Blunt</xpath>
-				<value>
-					<ArmorRating_Blunt>24</ArmorRating_Blunt>
-				</value>
-			</li>
-
-			<li Class="PatchOperationReplace">
-				<xpath>/Defs/ThingDef[defName="AA_MammothWorm"]/statBases/ArmorRating_Sharp</xpath>
-				<value>
-					<ArmorRating_Sharp>10</ArmorRating_Sharp>
-				</value>
-			</li>
-
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName="AA_MammothWorm"]/statBases/MoveSpeed</xpath>
 				<value>
@@ -57,7 +27,7 @@
 							<capacities>
 								<li>AA_SiegeBlunt</li>
 							</capacities>
-							<power>43</power>
+							<power>35</power>
 							<cooldownTime>2.48</cooldownTime>
 							<surpriseAttack>
 								<extraMeleeDamages>
@@ -67,17 +37,17 @@
 									</li>
 								</extraMeleeDamages>
 							</surpriseAttack>
-							<armorPenetrationBlunt>50</armorPenetrationBlunt>
+							<armorPenetrationBlunt>30</armorPenetrationBlunt>
 						</li>
 						<li Class="CombatExtended.ToolCE">
 							<capacities>
 								<li>Stab</li>
 							</capacities>
-							<power>48</power>
+							<power>41</power>
 							<cooldownTime>2.68</cooldownTime>
 							<linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
-							<armorPenetrationSharp>20</armorPenetrationSharp>
-							<armorPenetrationBlunt>50</armorPenetrationBlunt>
+							<armorPenetrationSharp>8.6</armorPenetrationSharp>
+							<armorPenetrationBlunt>30</armorPenetrationBlunt>
 						</li>
 					</tools>
 				</value>

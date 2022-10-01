@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BenchBaseADS">
+	<ThingDef ParentName="WorkTable">
 		<defName>VEF_AdvancedAnimalImplantsTable</defName>
 		<label>advanced animal prosthetics table</label>
 		<thingClass>Building_WorkTable</thingClass>
@@ -26,6 +26,7 @@
 		</costList>
 		<stuffCategories>
 			<li>StrongMetallic</li>
+            <li>RuggedMetallic</li>
 		</stuffCategories>
 		<costStuffCount>200</costStuffCount>
 		<altitudeLayer>Building</altitudeLayer>
@@ -43,14 +44,9 @@
 		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
-		<inspectorTabs>
-			<li>ITab_Bills</li>
-		</inspectorTabs>
-		<building>
-			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
-		</building>
+        <tickerType>Normal</tickerType>
 		<researchPrerequisites>
-			<li>Electricity</li>
+			<li>Prosthesis_making_D1</li>
 			<li>VEF_AdvancedAnimalImplants</li>
 		</researchPrerequisites>
 		<comps>
@@ -73,11 +69,15 @@
 			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
+            <li>
+				<compClass>CompReportWorkSpeed</compClass>
+			</li>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_ReportWorkSpeedPenalties</li>
 		</placeWorkers>
-		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<constructionSkillPrerequisite>15</constructionSkillPrerequisite>
 	</ThingDef>
 
 </Defs>

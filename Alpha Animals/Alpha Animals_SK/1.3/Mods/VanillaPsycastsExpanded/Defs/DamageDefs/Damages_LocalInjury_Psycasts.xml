@@ -1,21 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-
-
-
-
-
-	<DamageDef ParentName="Bite">
-		<defName>AAVPE_InfectedMandibles</defName>
-		<label>infected mandibles</label>
-		<workerClass>AnimalBehaviours.DamageWorker_ExtraInfecter</workerClass>
-
-	</DamageDef>
-
-
-
-
+    <DamageDef ParentName="Bite">
+        <defName>AAVPE_InfectedMandibles</defName>
+        <label>infected mandibles</label>
+        <workerClass>AnimalBehaviours.DamageWorker_ExtraInfecter</workerClass>
+    </DamageDef>
 </Defs>

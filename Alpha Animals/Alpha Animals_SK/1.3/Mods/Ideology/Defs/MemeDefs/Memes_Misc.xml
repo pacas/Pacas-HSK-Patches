@@ -1,70 +1,63 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<MemeGroupDef>
-		<defName>AA_Biological</defName>
-		<drawOffset>(0.65, 0.23)</drawOffset>
-		<maxRows>1</maxRows>
-		<renderOrder>2000</renderOrder>
-	</MemeGroupDef>
-	<MemeDef>
-		<defName>AA_BiologicalCorruptors</defName>
-		<label>biological corruptors</label>
-		<exclusionTags>
-			<li>AA_Biological</li>
-			<li>AnimalTreatment</li>
-			<li>TreeConnectionExclusion</li>
-		</exclusionTags>
-		<description>Life is a tool that should be twisted and turned until it does what we want. There is no sanctity of life, and it is our right to do with it as we see fit, harnessing powerful extradimensional energies to do our bidding.\n\n&lt;color=#33d733&gt;This meme revolves around "corrupting" the Gauranlen trees, getting access to new Dryad varieties, and using the Ocular Warping ritual to summon powerful mutated creatures to help the colony.&lt;/color&gt;</description>
-		<iconPath>UI/Memes/AA_Corruptors</iconPath>
-		<groupDef>AA_Biological</groupDef>
-		<impact>2</impact>
-		<generalRules>
-			<rulesStrings>
-				<li>memeAdjective->corrupted</li>
-				<li>memeAdjective->twisted</li>		
-				<li>memeAdjective->ocular</li>	
-				<li>memeAdjective->extradimensional</li>	
-				<li>memeLeaderAdjective->warped</li>					
-				<li>memeConcept->corruption</li>
-				<li>memeConcept->mutation</li>
-				<li>memeLeaderNoun->oculist</li>
-				<li>memeMoralist->ocular zealot</li>
-
-			</rulesStrings>
-		</generalRules>
-		<descriptionMaker>
-			<rules>
-				<rulesStrings>
-
-					<!-- alienist -->
-					<li>alienistProphecy(tag=meme_BiologicalCorruptors)->We shall pervert and corrupt these creations to fit our goals. Only by twisting them according to our needs will we succeed.</li>
-				</rulesStrings>
-			</rules>
-		</descriptionMaker>
-
-		<symbolPacks>
-			<li>
-				<ideoName>Corruption</ideoName>
-				<theme>corruption</theme>
-				<adjective>corrupt</adjective>
-				<member>corruptor</member>
-			</li>
-
-		</symbolPacks>
-		<requiredRituals>
-			<li>
-				<precept>AA_OcularWarping</precept>
-				<pattern>AA_OcularWarping</pattern>
-			</li>
-		</requiredRituals>
-		<thingStyleCategories>
-			<li>
-				<category>AA_Ocular</category>
-				<priority>4</priority>
-			</li>
-		</thingStyleCategories>
-		
-	</MemeDef>
-	
-
+    <MemeGroupDef>
+        <defName>AA_Biological</defName>
+        <drawOffset>(0.65, 0.23)</drawOffset>
+        <maxRows>1</maxRows>
+        <renderOrder>2000</renderOrder>
+    </MemeGroupDef>
+    <MemeDef>
+        <defName>AA_BiologicalCorruptors</defName>
+        <label>biological corruptors</label>
+        <exclusionTags>
+            <li>AA_Biological</li>
+            <li>AnimalTreatment</li>
+            <li>TreeConnectionExclusion</li>
+        </exclusionTags>
+        <description>Life is a tool that should be twisted and turned until it does what we want. There is no sanctity of life, and it is our right to do with it as we see fit, harnessing powerful extradimensional energies to do our bidding.\n\n&lt;color=#33d733&gt;This meme revolves around "corrupting" the Gauranlen trees, getting access to new Dryad varieties, and using the Ocular Warping ritual to summon powerful mutated creatures to help the colony.&lt;/color&gt;</description>
+        <iconPath>UI/Memes/AA_Corruptors</iconPath>
+        <groupDef>AA_Biological</groupDef>
+        <impact>2</impact>
+        <generalRules>
+            <rulesStrings>
+                <li>memeAdjective->corrupted</li>
+                <li>memeAdjective->twisted</li>
+                <li>memeAdjective->ocular</li>
+                <li>memeAdjective->extradimensional</li>
+                <li>memeLeaderAdjective->warped</li>
+                <li>memeConcept->corruption</li>
+                <li>memeConcept->mutation</li>
+                <li>memeLeaderNoun->oculist</li>
+                <li>memeMoralist->ocular zealot</li>
+            </rulesStrings>
+        </generalRules>
+        <descriptionMaker>
+            <rules>
+                <rulesStrings>
+                    <!-- alienist -->
+                    <li>alienistProphecy(tag=meme_BiologicalCorruptors)->We shall pervert and corrupt these creations to fit our goals. Only by twisting them according to our needs will we succeed.</li>
+                </rulesStrings>
+            </rules>
+        </descriptionMaker>
+        <symbolPacks>
+            <li>
+                <ideoName>Corruption</ideoName>
+                <theme>corruption</theme>
+                <adjective>corrupt</adjective>
+                <member>corruptor</member>
+            </li>
+        </symbolPacks>
+        <requiredRituals>
+            <li>
+                <precept>AA_OcularWarping</precept>
+                <pattern>AA_OcularWarping</pattern>
+            </li>
+        </requiredRituals>
+        <thingStyleCategories>
+            <li>
+                <category>AA_Ocular</category>
+                <priority>4</priority>
+            </li>
+        </thingStyleCategories>
+    </MemeDef>
 </Defs>

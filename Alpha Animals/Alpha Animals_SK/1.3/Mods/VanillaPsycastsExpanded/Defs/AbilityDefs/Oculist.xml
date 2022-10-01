@@ -1,296 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_SummonEyeling</defName>
+        <label>summon eyeling</label>
+        <description>Uses psychic potential to rend a gaping hole between our reality and a trans-dimensional realm of pure madness, skipping one of its inhabitants into our universe. This eyeling will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
+        <iconPath>UI/Abilities/Oculist/AAVPE_SummonEyeling</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <range>20</range>
+        <distanceToTarget>2.9</distanceToTarget>
+        <targetMode>Location</targetMode>
+        <castTime>360</castTime>
+        <needsTicking>true</needsTicking>
+        <showUndrafted>true</showUndrafted>
+        <targetingParameters>
+            <canTargetLocations>true</canTargetLocations>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Oculist</path>
+                <level>1</level>
+                <order>1</order>
+                <psyfocusCost>0.1</psyfocusCost>
+                <entropyGain>10</entropyGain>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
+                <fleckDefs>
+                    <li>PsycastSkipInnerExit</li>
+                    <li>PsycastSkipOuterRingExit</li>
+                </fleckDefs>
+                <scale>0.42</scale>
+                <sound>Psycast_Skip_Exit</sound>
+                <preCastTicks>10</preCastTicks>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>Skip_Exit</effecterDef>
+                <maintainForTicks>60</maintainForTicks>
+                <scale>0.42</scale>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
+                <pawnToSpawn>AA_Summoned_Eyeling</pawnToSpawn>
+                <enrage>true</enrage>
+                <playerFaction>true</playerFaction>
+                <numberCreated>1</numberCreated>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_SummonEyeling</defName>
-		<label>summon eyeling</label>
-		<description>Uses psychic potential to rend a gaping hole between our reality and a trans-dimensional realm of pure madness, skipping one of its inhabitants into our universe. This eyeling will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
-		<iconPath>UI/Abilities/Oculist/AAVPE_SummonEyeling</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_OcularSprout</defName>
+        <label>ocular sprout</label>
+        <description>Creates a wound in reality to skip several trees from a trans-dimensional realm of pure madness.</description>
+        <iconPath>UI/Abilities/Oculist/AAVPE_OcularSprout</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_SpawnOnRadius</abilityClass>
+        <castTime>180</castTime>
+        <range>36.9</range>
+        <targetMode>Location</targetMode>
+        <radius>3</radius>
+        <showUndrafted>true</showUndrafted>
+        <radiusStatFactors>
+            <PsychicSensitivity>1</PsychicSensitivity>
+        </radiusStatFactors>
+        <hasAoE>true</hasAoE>
+        <targetingParametersForAoE>
+            <canTargetLocations>true</canTargetLocations>
+        </targetingParametersForAoE>
+        <castSound>VPE_TreeSprout_Cast</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Oculist</path>
+                <level>2</level>
+                <order>1</order>
+                <psyfocusCost>0.22</psyfocusCost>
+                <entropyGain>10</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_SummonEyeling</li>
+                </prerequisites>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.Ability_SpawnOnRadius_Extension">
+                <thingToSpawn>AA_AlienTree</thingToSpawn>
+                <probability>0.25</probability>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-		<requireLineOfSight>false</requireLineOfSight>
-		<range>20</range>
-		<distanceToTarget>2.9</distanceToTarget>
-		<targetMode>Location</targetMode>
-		<castTime>360</castTime>
-		<needsTicking>true</needsTicking>
-		<showUndrafted>true</showUndrafted>
-		<targetingParameters>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_StrikeEyes</defName>
+        <label>destroy eyes</label>
+        <description>Psychically causes the vitreous humour inside the target's eyes to heat to a boiling point, destroying them and leaving the poor victim forever blind.</description>
+        <iconPath>UI/Abilities/Oculist/AAVPE_StrikeEyes</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_DestroyEyes</abilityClass>
+        <targetingParameters>
+            <canTargetPawns>true</canTargetPawns>
+            <canTargetBuildings>false</canTargetBuildings>
+            <canTargetSelf>true</canTargetSelf>
+        </targetingParameters>
+        <range>9.9</range>
+        <castTime>50</castTime>
+        <castSound>AA_DestroyEyesPsycast</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Oculist</path>
+                <level>1</level>
+                <order>2</order>
+                <psyfocusCost>0.25</psyfocusCost>
+                <entropyGain>25</entropyGain>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-			<canTargetLocations>true</canTargetLocations>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_EyeEruption</defName>
+        <label>ocular eruption</label>
+        <description>Channels a wave of psychic power to rip the flesh of the target and connect it to an extra-dimensional realm of pure madness. Bloated, malevolent looking eyes will tear through the skin in random places, causing an extreme amount of pain and suffering.\nThese eyes will however provide the afflicted with extra sight, making using this psycast on a friendly target a risky, but potentially very useful strategy, assuming they can be treated and removed afterwards.</description>
+        <iconPath>UI/Abilities/Oculist/AAVPE_EyeEruption</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_OcularEruption</abilityClass>
+        <targetingParameters>
+            <canTargetPawns>true</canTargetPawns>
+            <canTargetBuildings>false</canTargetBuildings>
+            <canTargetSelf>true</canTargetSelf>
+        </targetingParameters>
+        <goodwillImpact>-15</goodwillImpact>
+        <range>9.9</range>
+        <castTime>50</castTime>
+        <castSound>AA_DestroyEyesPsycast</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Oculist</path>
+                <level>2</level>
+                <order>2</order>
+                <psyfocusCost>0.25</psyfocusCost>
+                <entropyGain>25</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_StrikeEyes</li>
+                </prerequisites>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-		</targetingParameters>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Oculist</path>
-				<level>1</level>
-				<order>1</order>
-				<psyfocusCost>0.1</psyfocusCost>
-				<entropyGain>10</entropyGain>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_SummonOcularOriginator</defName>
+        <label>summon ocular originator</label>
+        <description>Uses psychic potential to rend a gaping hole between our reality and a trans-dimensional realm of pure madness, skipping a terrifying ocular originator into our universe. The originator is not hostile, and will need to be penned by the colonists. Only one ocular originator can be on a single map. It will produce helpful eye implants every 40 days.</description>
+        <iconPath>UI/Abilities/Oculist/AAVPE_SummonOcularOriginator</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <range>20</range>
+        <distanceToTarget>2.9</distanceToTarget>
+        <targetMode>Location</targetMode>
+        <castTime>360</castTime>
+        <needsTicking>true</needsTicking>
+        <showUndrafted>true</showUndrafted>
+        <targetingParameters>
+            <canTargetLocations>true</canTargetLocations>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Oculist</path>
+                <level>3</level>
+                <order>1</order>
+                <psyfocusCost>0.6</psyfocusCost>
+                <entropyGain>10</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_OcularSprout</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
+                <fleckDefs>
+                    <li>PsycastSkipInnerExit</li>
+                    <li>PsycastSkipOuterRingExit</li>
+                </fleckDefs>
+                <scale>0.42</scale>
+                <sound>Psycast_Skip_Exit</sound>
+                <preCastTicks>10</preCastTicks>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>Skip_Exit</effecterDef>
+                <maintainForTicks>60</maintainForTicks>
+                <scale>0.42</scale>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
+                <pawnToSpawn>AA_OcularOriginator</pawnToSpawn>
+                <enrage>false</enrage>
+                <playerFaction>true</playerFaction>
+                <numberCreated>1</numberCreated>
+                <allowAnAmount>true</allowAnAmount>
+                <allowedAmount>1</allowedAmount>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
-				<fleckDefs>
-					<li>PsycastSkipInnerExit</li>
-					<li>PsycastSkipOuterRingExit</li>
-				</fleckDefs>
-				<scale>0.42</scale>
-				<sound>Psycast_Skip_Exit</sound>
-				<preCastTicks>10</preCastTicks>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
-				<effecterDef>Skip_Exit</effecterDef>
-				<maintainForTicks>60</maintainForTicks>
-				<scale>0.42</scale>
-			</li>
-			<li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
-				<pawnToSpawn>AA_Summoned_Eyeling</pawnToSpawn>
-				<enrage>true</enrage>
-				<playerFaction>true</playerFaction>
-				<numberCreated>1</numberCreated>
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_SummonEyelingHorde</defName>
+        <label>summon eyeling horde</label>
+        <description>Uses psychic potential to rend a gaping hole between our reality and a trans-dimensional realm of pure madness, skipping several of its inhabitants into our universe. These eyelings will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
+        <iconPath>UI/Abilities/Oculist/AAVPE_SummonEyelingHorde</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <range>20</range>
+        <distanceToTarget>2.9</distanceToTarget>
+        <targetMode>Location</targetMode>
+        <castTime>360</castTime>
+        <needsTicking>true</needsTicking>
+        <showUndrafted>true</showUndrafted>
+        <targetingParameters>
+            <canTargetLocations>true</canTargetLocations>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Oculist</path>
+                <level>4</level>
+                <order>1</order>
+                <psyfocusCost>0.8</psyfocusCost>
+                <entropyGain>50</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_SummonOcularOriginator</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
+                <fleckDefs>
+                    <li>PsycastSkipInnerExit</li>
+                    <li>PsycastSkipOuterRingExit</li>
+                </fleckDefs>
+                <scale>0.42</scale>
+                <sound>Psycast_Skip_Exit</sound>
+                <preCastTicks>10</preCastTicks>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>Skip_Exit</effecterDef>
+                <maintainForTicks>60</maintainForTicks>
+                <scale>0.42</scale>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
+                <pawnToSpawn>AA_Summoned_Eyeling</pawnToSpawn>
+                <enrage>true</enrage>
+                <playerFaction>true</playerFaction>
+                <numberCreated>8</numberCreated>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_OcularSprout</defName>
-		<label>ocular sprout</label>
-		<description>Creates a wound in reality to skip several trees from a trans-dimensional realm of pure madness.</description>
-		<iconPath>UI/Abilities/Oculist/AAVPE_OcularSprout</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_SpawnOnRadius</abilityClass>
-		<castTime>180</castTime>
-		<range>36.9</range>
-		<targetMode>Location</targetMode>
-		<radius>3</radius>
-		<showUndrafted>true</showUndrafted>
-		<radiusStatFactors>
-			<PsychicSensitivity>1</PsychicSensitivity>
-		</radiusStatFactors>
-		<hasAoE>true</hasAoE>
-		<targetingParametersForAoE>
-			<canTargetLocations>true</canTargetLocations>
-		</targetingParametersForAoE>
-		<castSound>VPE_TreeSprout_Cast</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Oculist</path>
-				<level>2</level>
-				<order>1</order>
-				<psyfocusCost>0.22</psyfocusCost>
-				<entropyGain>10</entropyGain>
-				<prerequisites>
-					<li>AAVPE_SummonEyeling</li>
-				</prerequisites>
-			</li>
-			
-			<li Class="AlphaBehavioursAndEvents.Ability_SpawnOnRadius_Extension">
-				<thingToSpawn>AA_AlienTree</thingToSpawn>
-				<probability>0.25</probability>
-				
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_StrikeEyes</defName>
-		<label>destroy eyes</label>
-		<description>Psychically causes the vitreous humour inside the target's eyes to heat to a boiling point, destroying them and leaving the poor victim forever blind.</description>
-		<iconPath>UI/Abilities/Oculist/AAVPE_StrikeEyes</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_DestroyEyes</abilityClass>
-		<targetingParameters>
-			<canTargetPawns>true</canTargetPawns>
-			<canTargetBuildings>false</canTargetBuildings>
-			<canTargetSelf>true</canTargetSelf>
-		</targetingParameters>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_GreaterOcularSprout</defName>
+        <label>greater ocular sprout</label>
+        <description>Creates a wound in reality to skip an elder ocular tree from a trans-dimensional realm of pure madness. This tree will convert the land into an ocular nightmare (if Alpha Biomes is installed, it will convert terrain, as well as flora, and 30% each day it will cause red fog weather).\n\n&lt;color=#b51509&gt;Warning:&lt;/color&gt; This is a cool but laggy thing, as much as defoliator ship parts in the base game.</description>
+        <iconPath>UI/Abilities/Oculist/AAVPE_SummonElderOcularTree</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_SpawnOnRadius</abilityClass>
+        <castTime>180</castTime>
+        <range>36.9</range>
+        <targetMode>Location</targetMode>
+        <showUndrafted>true</showUndrafted>
+        <targetingParametersForAoE>
+            <canTargetLocations>true</canTargetLocations>
+        </targetingParametersForAoE>
+        <castSound>VPE_TreeSprout_Cast</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Oculist</path>
+                <level>4</level>
+                <order>2</order>
+                <psyfocusCost>0.8</psyfocusCost>
+                <entropyGain>30</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_SummonOcularOriginator</li>
+                </prerequisites>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.Ability_SpawnOnRadius_Extension">
+                <thingToSpawn>AA_ElderAlienTree</thingToSpawn>
+                <probability>1</probability>
+                <allowAnAmount>true</allowAnAmount>
+                <allowedAmount>1</allowedAmount>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-		<range>9.9</range>
-		<castTime>50</castTime>
-		<castSound>AA_DestroyEyesPsycast</castSound>
-
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Oculist</path>
-				<level>1</level>
-				<order>2</order>
-
-				<psyfocusCost>0.25</psyfocusCost>
-				<entropyGain>25</entropyGain>
-			</li>
-
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_EyeEruption</defName>
-		<label>ocular eruption</label>
-		<description>Channels a wave of psychic power to rip the flesh of the target and connect it to an extra-dimensional realm of pure madness. Bloated, malevolent looking eyes will tear through the skin in random places, causing an extreme amount of pain and suffering.\nThese eyes will however provide the afflicted with extra sight, making using this psycast on a friendly target a risky, but potentially very useful strategy, assuming they can be treated and removed afterwards.</description>
-		<iconPath>UI/Abilities/Oculist/AAVPE_EyeEruption</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_OcularEruption</abilityClass>
-		<targetingParameters>
-			<canTargetPawns>true</canTargetPawns>
-			<canTargetBuildings>false</canTargetBuildings>
-			<canTargetSelf>true</canTargetSelf>
-		</targetingParameters>
-		<goodwillImpact>-15</goodwillImpact>
-		<range>9.9</range>
-		<castTime>50</castTime>
-		<castSound>AA_DestroyEyesPsycast</castSound>
-
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Oculist</path>
-				<level>2</level>
-				<order>2</order>
-
-				<psyfocusCost>0.25</psyfocusCost>
-				<entropyGain>25</entropyGain>
-				<prerequisites>
-					<li>AAVPE_StrikeEyes</li>
-				</prerequisites>
-			</li>
-
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_SummonOcularOriginator</defName>
-		<label>summon ocular originator</label>
-		<description>Uses psychic potential to rend a gaping hole between our reality and a trans-dimensional realm of pure madness, skipping a terrifying ocular originator into our universe. The originator is not hostile, and will need to be penned by the colonists. Only one ocular originator can be on a single map. It will produce helpful eye implants every 40 days.</description>
-		<iconPath>UI/Abilities/Oculist/AAVPE_SummonOcularOriginator</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
-
-		<requireLineOfSight>false</requireLineOfSight>
-		<range>20</range>
-		<distanceToTarget>2.9</distanceToTarget>
-		<targetMode>Location</targetMode>
-		<castTime>360</castTime>
-		<needsTicking>true</needsTicking>
-		<showUndrafted>true</showUndrafted>
-		<targetingParameters>
-
-			<canTargetLocations>true</canTargetLocations>
-
-		</targetingParameters>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Oculist</path>
-				<level>3</level>
-				<order>1</order>
-				<psyfocusCost>0.6</psyfocusCost>
-				<entropyGain>10</entropyGain>
-				<prerequisites>
-					<li>AAVPE_OcularSprout</li>
-				</prerequisites>
-
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
-				<fleckDefs>
-					<li>PsycastSkipInnerExit</li>
-					<li>PsycastSkipOuterRingExit</li>
-				</fleckDefs>
-				<scale>0.42</scale>
-				<sound>Psycast_Skip_Exit</sound>
-				<preCastTicks>10</preCastTicks>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
-				<effecterDef>Skip_Exit</effecterDef>
-				<maintainForTicks>60</maintainForTicks>
-				<scale>0.42</scale>
-			</li>
-			<li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
-				<pawnToSpawn>AA_OcularOriginator</pawnToSpawn>
-				<enrage>false</enrage>
-				<playerFaction>true</playerFaction>
-				<numberCreated>1</numberCreated>
-				<allowAnAmount>true</allowAnAmount>
-				<allowedAmount>1</allowedAmount>
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_SummonEyelingHorde</defName>
-		<label>summon eyeling horde</label>
-		<description>Uses psychic potential to rend a gaping hole between our reality and a trans-dimensional realm of pure madness, skipping several of its inhabitants into our universe. These eyelings will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
-		<iconPath>UI/Abilities/Oculist/AAVPE_SummonEyelingHorde</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
-
-		<requireLineOfSight>false</requireLineOfSight>
-		<range>20</range>
-		<distanceToTarget>2.9</distanceToTarget>
-		<targetMode>Location</targetMode>
-		<castTime>360</castTime>
-		<needsTicking>true</needsTicking>
-		<showUndrafted>true</showUndrafted>
-		<targetingParameters>
-
-			<canTargetLocations>true</canTargetLocations>
-
-		</targetingParameters>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Oculist</path>
-				<level>4</level>
-				<order>1</order>
-				<psyfocusCost>0.8</psyfocusCost>
-				<entropyGain>50</entropyGain>
-				<prerequisites>
-					<li>AAVPE_SummonOcularOriginator</li>
-				</prerequisites>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
-				<fleckDefs>
-					<li>PsycastSkipInnerExit</li>
-					<li>PsycastSkipOuterRingExit</li>
-				</fleckDefs>
-				<scale>0.42</scale>
-				<sound>Psycast_Skip_Exit</sound>
-				<preCastTicks>10</preCastTicks>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
-				<effecterDef>Skip_Exit</effecterDef>
-				<maintainForTicks>60</maintainForTicks>
-				<scale>0.42</scale>
-			</li>
-			<li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
-				<pawnToSpawn>AA_Summoned_Eyeling</pawnToSpawn>
-				<enrage>true</enrage>
-				<playerFaction>true</playerFaction>
-				<numberCreated>8</numberCreated>
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_GreaterOcularSprout</defName>
-		<label>greater ocular sprout</label>
-		<description>Creates a wound in reality to skip an elder ocular tree from a trans-dimensional realm of pure madness. This tree will convert the land into an ocular nightmare (if Alpha Biomes is installed, it will convert terrain, as well as flora, and 30% each day it will cause red fog weather).\n\n&lt;color=#b51509&gt;Warning:&lt;/color&gt; This is a cool but laggy thing, as much as defoliator ship parts in the base game.</description>
-		<iconPath>UI/Abilities/Oculist/AAVPE_SummonElderOcularTree</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_SpawnOnRadius</abilityClass>
-		<castTime>180</castTime>
-		<range>36.9</range>
-		<targetMode>Location</targetMode>
-		<showUndrafted>true</showUndrafted>
-		<targetingParametersForAoE>
-			<canTargetLocations>true</canTargetLocations>
-		</targetingParametersForAoE>
-		<castSound>VPE_TreeSprout_Cast</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Oculist</path>
-				<level>4</level>
-				<order>2</order>
-				<psyfocusCost>0.8</psyfocusCost>
-				<entropyGain>30</entropyGain>
-				<prerequisites>
-					<li>AAVPE_SummonOcularOriginator</li>
-				</prerequisites>
-			</li>
-			
-			<li Class="AlphaBehavioursAndEvents.Ability_SpawnOnRadius_Extension">
-				<thingToSpawn>AA_ElderAlienTree</thingToSpawn>
-				<probability>1</probability>
-				<allowAnAmount>true</allowAnAmount>
-				<allowedAmount>1</allowedAmount>
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	
 </Defs>

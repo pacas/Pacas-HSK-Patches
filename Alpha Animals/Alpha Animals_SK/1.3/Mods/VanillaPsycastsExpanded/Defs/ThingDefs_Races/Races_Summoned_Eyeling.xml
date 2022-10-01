@@ -1,106 +1,100 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="SK_AnimalThingBase">
-		<defName>AA_Summoned_Eyeling</defName>
-		<label>summoned eyeling</label>
-		<description>A grotesquely enlarged eye, crawling around with the help of a few fleshy tentacles. Not very useful at all. Created by infusing an animal with the strange energies from an extradimensional corruption.</description>
-		<statBases>
-			<MoveSpeed>3.0</MoveSpeed>
-			<MarketValue>100</MarketValue>
-			<ComfyTemperatureMin>0</ComfyTemperatureMin>
-			<ComfyTemperatureMax>60</ComfyTemperatureMax>
-			<MeatAmount>0</MeatAmount>
-		</statBases>
-		<comps>
-			
-			<li Class="AnimalBehaviours.CompProperties_DieAfterPeriod">
-				<timeToDieInTicks>60000</timeToDieInTicks>
-				<effect>false</effect>
-				<justVanish>true</justVanish>
-			
-			</li>
-			
-		
-		</comps>
-		<tools>
-			<li>
-				<label>eye</label>
-				<capacities>
-					<li>AA_ToxicSting</li>
-				</capacities>
-				<power>8</power>
-				<cooldownTime>2</cooldownTime>
-				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-				<chanceFactor>0.2</chanceFactor>
-			</li>
-		</tools>
-		<race>
-			<body>AA_EyeBody</body>
-			<baseBodySize>0.4</baseBodySize>
-			<baseHealthScale>0.5</baseHealthScale>
-			<baseHungerRate>0.1</baseHungerRate>
-			<foodType>OmnivoreRoughAnimal</foodType>
-			<leatherDef>Leather_Light</leatherDef>
-			<wildness>0.46</wildness>
-			<useMeatFrom>Pig</useMeatFrom>
-			<herdMigrationAllowed>false</herdMigrationAllowed>
-			<trainability>Intermediate</trainability>
-			<lifeExpectancy>12</lifeExpectancy>
-			<lifeStageAges>
-				
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0</minAge>
-					<soundWounded>Pawn_Iguana_Wounded</soundWounded>
-					<soundDeath>Pawn_Iguana_Death</soundDeath>
-					<soundCall>Pawn_Iguana_Call</soundCall>
-					<soundAngry>Pawn_Iguana_Angry</soundAngry>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
-		</race>
-		<tradeTags>
-			<li>AnimalAlpha</li>
-		</tradeTags>
-		<modExtensions>
-			<li Class="AnimalBehaviours.AnimalStatExtension">
-				<statToAdd>
-					<li>AA_PrimaryRole</li>
-					<li>AA_RangedAttacks</li>
-				</statToAdd>
-				<statValues>
-					<li>AA_Pest</li>
-					<li>AA_No</li>
-				</statValues>
-				<statDescriptions>
-					<li>AA_PestDesc</li>
-					<li>AA_NoRanged</li>
-				</statDescriptions>
-			</li>
-		</modExtensions>
-	</ThingDef>
-	<PawnKindDef ParentName="SK_AnimalKindBase">
-		<defName>AA_Summoned_Eyeling</defName>
-		<label>summoned eyeling</label>
-		<race>AA_Summoned_Eyeling</race>
-		<combatPower>10</combatPower>
-		<ecoSystemWeight>0.30</ecoSystemWeight>
-		<canArriveManhunter>false</canArriveManhunter>
-		<lifeStages>
-			
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Pawn/Animal/AA_Eyeling/AA_Eyeling</texPath>
-					<drawSize>1.5</drawSize>
-					<shadowData>
-						<volume>(0.25, 0.3, 0.25)</volume>
-						<offset>(0,0,0)</offset>
-					</shadowData>
-				</bodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_Summoned_Eyeling</defName>
+        <label>summoned eyeling</label>
+        <description>A grotesquely enlarged eye, crawling around with the help of a few fleshy tentacles. Not very useful at all. Created by infusing an animal with the strange energies from an extradimensional corruption.</description>
+        <statBases>
+            <MoveSpeed>3.0</MoveSpeed>
+            <MarketValue>100</MarketValue>
+            <ComfyTemperatureMin>0</ComfyTemperatureMin>
+            <ComfyTemperatureMax>60</ComfyTemperatureMax>
+            <MeatAmount>0</MeatAmount>
+        </statBases>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_DieAfterPeriod">
+                <timeToDieInTicks>60000</timeToDieInTicks>
+                <effect>false</effect>
+                <justVanish>true</justVanish>
+            </li>
+        </comps>
+        <tools>
+            <li>
+                <label>eye</label>
+                <capacities>
+                    <li>AA_ToxicSting</li>
+                </capacities>
+                <power>8</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <body>AA_EyeBody</body>
+            <baseBodySize>0.4</baseBodySize>
+            <baseHealthScale>0.5</baseHealthScale>
+            <baseHungerRate>0.1</baseHungerRate>
+            <foodType>OmnivoreRoughAnimal</foodType>
+            <leatherDef>Leather_Light</leatherDef>
+            <wildness>0.46</wildness>
+            <useMeatFrom>Pig</useMeatFrom>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <trainability>Intermediate</trainability>
+            <lifeExpectancy>12</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0</minAge>
+                    <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+                    <soundDeath>Pawn_Iguana_Death</soundDeath>
+                    <soundCall>Pawn_Iguana_Call</soundCall>
+                    <soundAngry>Pawn_Iguana_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalAlpha</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Pest</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_PestDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="SK_AnimalKindBase">
+        <defName>AA_Summoned_Eyeling</defName>
+        <label>summoned eyeling</label>
+        <race>AA_Summoned_Eyeling</race>
+        <combatPower>10</combatPower>
+        <ecoSystemWeight>0.30</ecoSystemWeight>
+        <canArriveManhunter>false</canArriveManhunter>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Eyeling/AA_Eyeling</texPath>
+                    <drawSize>1.5</drawSize>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,0)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
 </Defs>

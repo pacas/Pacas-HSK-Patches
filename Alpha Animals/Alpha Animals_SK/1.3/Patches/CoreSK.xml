@@ -57,29 +57,6 @@
                                 <shearIntervalDays>5</shearIntervalDays>
                                 <woolAmount>60</woolAmount>
                             </li>
-                            <li Class="AnimalBehaviours.CompProperties_EatWeirdFood">
-                                <customThingToEat>
-                                    <li>Steel</li>
-                                    <li>Plasteel</li>
-                                    <li>ChunkSlagSteel</li>
-                                </customThingToEat>
-                                <nutrition>1</nutrition>
-                                <digThingIfMapEmpty>true</digThingIfMapEmpty>
-                                <thingToDigIfMapEmpty>ChunkSlagSteel</thingToDigIfMapEmpty>
-                                <fullyDestroyThing>false</fullyDestroyThing>
-                                <percentageOfDestruction>0.2</percentageOfDestruction>
-                                <needsWater>false</needsWater>
-                            </li>
-                            <li Class="AnimalBehaviours.CompProperties_NearbyEffecter">
-                                <ticksConversionRate>40000</ticksConversionRate>
-                                <radius>6</radius>
-                                <thingsToAffect>
-                                    <li>Steel</li>
-                                </thingsToAffect>
-                                <thingsToConvertTo>
-                                    <li>AA_SkySteel_Ore</li>
-                                </thingsToConvertTo>
-                            </li>
                         </comps>
                     </value>
                 </li>
@@ -101,7 +78,6 @@
                             </statDescriptions>
                             <showImageInInfoCard>true</showImageInInfoCard>
                             <ImageToShowInInfoCard>Art/AA_NightlingArt</ImageToShowInInfoCard>
-
                         </li>
                     </value>
                 </li>

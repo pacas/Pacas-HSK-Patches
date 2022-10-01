@@ -1,329 +1,312 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_ChemfuelNodules</defName>
+        <label>chemfuel nodules</label>
+        <description>Skips small amounts of chemfuel inside the target's skin, carefully covering with a psychic barrier to avoid the target suffering from pain and organ rejection. When the target dies, the chemfuel nodules will explode. This change in the target is permanent.</description>
+        <iconPath>UI/Abilities/Xenoseer/AAVPE_ChemfuelNodules</iconPath>
+        <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
+        <targetingParameters>
+            <canTargetHumans>True</canTargetHumans>
+            <canTargetSelf>True</canTargetSelf>
+            <canTargetAnimals>True</canTargetAnimals>
+        </targetingParameters>
+        <targetMode>Pawn</targetMode>
+        <castTime>15</castTime>
+        <range>25</range>
+        <fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
+        <showUndrafted>true</showUndrafted>
+        <castSound>AA_ChemfuelNodulesPsycast</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Xenoseer</path>
+                <level>1</level>
+                <order>1</order>
+                <psyfocusCost>0.1</psyfocusCost>
+                <entropyGain>10</entropyGain>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_Hediff">
+                <hediff>AAVPE_Exploder</hediff>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_ChemfuelNodules</defName>
-		<label>chemfuel nodules</label>
-		<description>Skips small amounts of chemfuel inside the target's skin, carefully covering with a psychic barrier to avoid the target suffering from pain and organ rejection. When the target dies, the chemfuel nodules will explode. This change in the target is permanent.</description>
-		<iconPath>UI/Abilities/Xenoseer/AAVPE_ChemfuelNodules</iconPath>
-		<abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
-		<targetingParameters>
-			<canTargetHumans>True</canTargetHumans>
-			<canTargetSelf>True</canTargetSelf>
-			<canTargetAnimals>True</canTargetAnimals>
-		</targetingParameters>
-		<targetMode>Pawn</targetMode>
-		<castTime>15</castTime>
-		<range>25</range>
-		<fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
-		<showUndrafted>true</showUndrafted>
-		<castSound>AA_ChemfuelNodulesPsycast</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Xenoseer</path>
-				<level>1</level>
-				<order>1</order>
-				<psyfocusCost>0.1</psyfocusCost>
-				<entropyGain>10</entropyGain>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_Hover</defName>
+        <label>hover</label>
+        <description>Confers the ability of limited psychic flight, allowing the target to hop and glide small distances over terrain. The target will ignore terrain movement costs for the duration of the ability.</description>
+        <iconPath>UI/Abilities/Xenoseer/AAVPE_Hover</iconPath>
+        <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
+        <targetingParameters>
+            <canTargetHumans>True</canTargetHumans>
+            <canTargetSelf>True</canTargetSelf>
+            <canTargetAnimals>True</canTargetAnimals>
+        </targetingParameters>
+        <durationTime>7200</durationTime>
+        <targetMode>Pawn</targetMode>
+        <castTime>15</castTime>
+        <range>20</range>
+        <fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
+        <showUndrafted>true</showUndrafted>
+        <castSound>AA_HoverPsycast</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Xenoseer</path>
+                <level>1</level>
+                <order>2</order>
+                <psyfocusCost>0.1</psyfocusCost>
+                <entropyGain>20</entropyGain>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_Hediff">
+                <hediff>AAVPE_Hover</hediff>
+                <durationMultiplier>PsychicSensitivity</durationMultiplier>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-			</li>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_FungalSkin</defName>
+        <label>fungal skin</label>
+        <description>Causes several giant fungi to sprout from the target's skin. These fungi cause no pain to the target and provide a considerable amount of natural armor, at the cost of making the target VERY vulnerable to fire.</description>
+        <iconPath>UI/Abilities/Xenoseer/AAVPE_FungalSkin</iconPath>
+        <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
+        <targetingParameters>
+            <canTargetHumans>True</canTargetHumans>
+            <canTargetSelf>True</canTargetSelf>
+            <canTargetAnimals>True</canTargetAnimals>
+        </targetingParameters>
+        <durationTime>14400</durationTime>
+        <targetMode>Pawn</targetMode>
+        <castTime>15</castTime>
+        <range>20</range>
+        <fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
+        <showUndrafted>true</showUndrafted>
+        <castSound>AA_FungalSkinPsycast</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Xenoseer</path>
+                <level>2</level>
+                <order>1</order>
+                <psyfocusCost>0.15</psyfocusCost>
+                <entropyGain>30</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_ChemfuelNodules</li>
+                    <li>AAVPE_Hover</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_Hediff">
+                <hediff>AAVPE_FungalSkin</hediff>
+                <durationMultiplier>PsychicSensitivity</durationMultiplier>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-			<li Class="VFECore.Abilities.AbilityExtension_Hediff">
-				<hediff>AAVPE_Exploder</hediff>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_WebSlinging</defName>
+        <label>web slinging</label>
+        <description>Psychically generates strands of pure mental energy in the form of a glowing psy web. These webs will stun and burn the target.</description>
+        <iconPath>UI/Abilities/Xenoseer/AAVPE_WebSlinging</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_ShootMultipleProjectile</abilityClass>
+        <castTime>60</castTime>
+        <range>16.9</range>
+        <needsTicking>true</needsTicking>
+        <targetMode>Pawn</targetMode>
+        <targetingParameters>
+            <canTargetPawns>true</canTargetPawns>
+            <canTargetBuildings>false</canTargetBuildings>
+            <canTargetSelf>false</canTargetSelf>
+        </targetingParameters>
+        <castSound>AA_Throw</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Xenoseer</path>
+                <level>2</level>
+                <order>2</order>
+                <psyfocusCost>0.01</psyfocusCost>
+                <entropyGain>5</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_ChemfuelNodules</li>
+                    <li>AAVPE_Hover</li>
+                </prerequisites>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.Ability_MultipleProjectile_Extension">
+                <projectile>AA_PsyWeb</projectile>
+                <numberOfProjectiles>3</numberOfProjectiles>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_Hover</defName>
-		<label>hover</label>
-		<description>Confers the ability of limited psychic flight, allowing the target to hop and glide small distances over terrain. The target will ignore terrain movement costs for the duration of the ability.</description>
-		<iconPath>UI/Abilities/Xenoseer/AAVPE_Hover</iconPath>
-		<abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
-		<targetingParameters>
-			<canTargetHumans>True</canTargetHumans>
-			<canTargetSelf>True</canTargetSelf>
-			<canTargetAnimals>True</canTargetAnimals>
-		</targetingParameters>
-		<durationTime>7200</durationTime>
-		<targetMode>Pawn</targetMode>
-		<castTime>15</castTime>
-		<range>20</range>
-		<fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
-		<showUndrafted>true</showUndrafted>
-		<castSound>AA_HoverPsycast</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Xenoseer</path>
-				<level>1</level>
-				<order>2</order>
-				<psyfocusCost>0.1</psyfocusCost>
-				<entropyGain>20</entropyGain>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_LightSustenance</defName>
+        <label>light sustenance</label>
+        <description>Psychically changes the target's skin to be part plant, eliminating almost entirely their need to eat, but requiring them to be constantly exposed to light for sustenance. This change in the target is permanent, and quite traumatic.</description>
+        <iconPath>UI/Abilities/Xenoseer/AAVPE_LightSustenance</iconPath>
+        <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
+        <targetingParameters>
+            <canTargetHumans>True</canTargetHumans>
+            <canTargetSelf>True</canTargetSelf>
+            <canTargetAnimals>True</canTargetAnimals>
+        </targetingParameters>
+        <targetMode>Pawn</targetMode>
+        <castTime>15</castTime>
+        <range>25</range>
+        <fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
+        <showUndrafted>true</showUndrafted>
+        <castSound>AA_LightSustenancePsycast</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Xenoseer</path>
+                <level>3</level>
+                <order>1</order>
+                <psyfocusCost>0.8</psyfocusCost>
+                <entropyGain>50</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_FungalSkin</li>
+                    <li>AAVPE_WebSlinging</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_Hediff">
+                <hediff>AAVPE_LightSustenance</hediff>
+                <bodyPartToApply>Brain</bodyPartToApply>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-			</li>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_AcidSpit</defName>
+        <label>acid spit</label>
+        <description>Creates a very powerful stream of acidic liquid that doesn't hurt the caster. This acid will cause burns on its target, as well as residual damage afterwards.</description>
+        <iconPath>UI/Abilities/Xenoseer/AAVPE_AcidSpit</iconPath>
+        <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
+        <castTime>60</castTime>
+        <range>10</range>
+        <needsTicking>true</needsTicking>
+        <targetMode>Pawn</targetMode>
+        <targetingParameters>
+            <canTargetPawns>true</canTargetPawns>
+            <canTargetBuildings>false</canTargetBuildings>
+            <canTargetSelf>false</canTargetSelf>
+        </targetingParameters>
+        <castSound>AA_PoisonBolt</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Xenoseer</path>
+                <level>3</level>
+                <order>2</order>
+                <psyfocusCost>0.10</psyfocusCost>
+                <entropyGain>10</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_FungalSkin</li>
+                    <li>AAVPE_WebSlinging</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_Projectile">
+                <projectile>AA_AcidicVomit</projectile>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-			<li Class="VFECore.Abilities.AbilityExtension_Hediff">
-				<hediff>AAVPE_Hover</hediff>
-				<durationMultiplier>PsychicSensitivity</durationMultiplier>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_Laser</defName>
+        <label>concentrated light</label>
+        <description>Psychically redirects sunlight and concentrates it in a brutal laser blast.</description>
+        <iconPath>UI/Abilities/Xenoseer/AAVPE_Laser</iconPath>
+        <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
+        <castTime>60</castTime>
+        <range>15</range>
+        <needsTicking>true</needsTicking>
+        <targetMode>Pawn</targetMode>
+        <targetingParameters>
+            <canTargetPawns>true</canTargetPawns>
+            <canTargetBuildings>false</canTargetBuildings>
+            <canTargetSelf>false</canTargetSelf>
+        </targetingParameters>
+        <castSound>AA_LaserBullet</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Xenoseer</path>
+                <level>3</level>
+                <order>3</order>
+                <psyfocusCost>0.10</psyfocusCost>
+                <entropyGain>10</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_FungalSkin</li>
+                    <li>AAVPE_WebSlinging</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_Projectile">
+                <projectile>AA_LaserBullet</projectile>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_FungalSkin</defName>
-		<label>fungal skin</label>
-		<description>Causes several giant fungi to sprout from the target's skin. These fungi cause no pain to the target and provide a considerable amount of natural armor, at the cost of making the target VERY vulnerable to fire.</description>
-		<iconPath>UI/Abilities/Xenoseer/AAVPE_FungalSkin</iconPath>
-		<abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
-		<targetingParameters>
-			<canTargetHumans>True</canTargetHumans>
-			<canTargetSelf>True</canTargetSelf>
-			<canTargetAnimals>True</canTargetAnimals>
-		</targetingParameters>
-		<durationTime>14400</durationTime>
-		<targetMode>Pawn</targetMode>
-		<castTime>15</castTime>
-		<range>20</range>
-		<fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
-		<showUndrafted>true</showUndrafted>
-		<castSound>AA_FungalSkinPsycast</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Xenoseer</path>
-				<level>2</level>
-				<order>1</order>
-				<psyfocusCost>0.15</psyfocusCost>
-				<entropyGain>30</entropyGain>
-				<prerequisites>
-					<li>AAVPE_ChemfuelNodules</li>
-					<li>AAVPE_Hover</li>
-				</prerequisites>
-			</li>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_Electrify</defName>
+        <label>electrify</label>
+        <description>Creates an intense psychic discharge that fills the target's blood with reverse entropy potential, allowing them to recharge electrical batteries merely by being close to them. This change in the target is permanent, and quite traumatic.</description>
+        <iconPath>UI/Abilities/Xenoseer/AAVPE_Electrified</iconPath>
+        <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
+        <targetingParameters>
+            <canTargetHumans>True</canTargetHumans>
+            <canTargetSelf>True</canTargetSelf>
+            <canTargetAnimals>True</canTargetAnimals>
+        </targetingParameters>
+        <targetMode>Pawn</targetMode>
+        <castTime>15</castTime>
+        <range>25</range>
+        <fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
+        <showUndrafted>true</showUndrafted>
+        <castSound>AA_ElectrifyPsycast</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Xenoseer</path>
+                <level>4</level>
+                <order>3</order>
+                <psyfocusCost>0.6</psyfocusCost>
+                <entropyGain>40</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_Laser</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_Hediff">
+                <hediff>AAVPE_Electrified</hediff>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
-			<li Class="VFECore.Abilities.AbilityExtension_Hediff">
-				<hediff>AAVPE_FungalSkin</hediff>
-				<durationMultiplier>PsychicSensitivity</durationMultiplier>
-
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_WebSlinging</defName>
-		<label>web slinging</label>
-		<description>Psychically generates strands of pure mental energy in the form of a glowing psy web. These webs will stun and burn the target.</description>
-		<iconPath>UI/Abilities/Xenoseer/AAVPE_WebSlinging</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_ShootMultipleProjectile</abilityClass>
-		<castTime>60</castTime>
-		<range>16.9</range>
-		<needsTicking>true</needsTicking>
-		<targetMode>Pawn</targetMode>
-		<targetingParameters>
-			<canTargetPawns>true</canTargetPawns>
-			<canTargetBuildings>false</canTargetBuildings>
-			<canTargetSelf>false</canTargetSelf>
-		</targetingParameters>
-		<castSound>AA_Throw</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Xenoseer</path>
-				<level>2</level>
-				<order>2</order>
-				<psyfocusCost>0.01</psyfocusCost>
-				<entropyGain>5</entropyGain>
-				<prerequisites>
-					<li>AAVPE_ChemfuelNodules</li>
-					<li>AAVPE_Hover</li>
-				</prerequisites>
-			</li>
-			<li Class="AlphaBehavioursAndEvents.Ability_MultipleProjectile_Extension">
-				<projectile>AA_PsyWeb</projectile>
-				<numberOfProjectiles>3</numberOfProjectiles>
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_LightSustenance</defName>
-		<label>light sustenance</label>
-		<description>Psychically changes the target's skin to be part plant, eliminating almost entirely their need to eat, but requiring them to be constantly exposed to light for sustenance. This change in the target is permanent, and quite traumatic.</description>
-		<iconPath>UI/Abilities/Xenoseer/AAVPE_LightSustenance</iconPath>
-		<abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
-		<targetingParameters>
-			<canTargetHumans>True</canTargetHumans>
-			<canTargetSelf>True</canTargetSelf>
-			<canTargetAnimals>True</canTargetAnimals>
-		</targetingParameters>
-		<targetMode>Pawn</targetMode>
-		<castTime>15</castTime>
-		<range>25</range>
-		<fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
-		<showUndrafted>true</showUndrafted>
-		<castSound>AA_LightSustenancePsycast</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Xenoseer</path>
-				<level>3</level>
-				<order>1</order>
-				<psyfocusCost>0.8</psyfocusCost>
-				<entropyGain>50</entropyGain>
-				<prerequisites>
-					<li>AAVPE_FungalSkin</li>
-					<li>AAVPE_WebSlinging</li>
-				</prerequisites>
-			</li>
-
-			<li Class="VFECore.Abilities.AbilityExtension_Hediff">
-				<hediff>AAVPE_LightSustenance</hediff>
-				<bodyPartToApply>Brain</bodyPartToApply>
-
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_AcidSpit</defName>
-		<label>acid spit</label>
-		<description>Creates a very powerful stream of acidic liquid that doesn't hurt the caster. This acid will cause burns on its target, as well as residual damage afterwards.</description>
-		<iconPath>UI/Abilities/Xenoseer/AAVPE_AcidSpit</iconPath>
-		<abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
-		<castTime>60</castTime>
-		<range>10</range>
-		<needsTicking>true</needsTicking>
-		<targetMode>Pawn</targetMode>
-		<targetingParameters>
-			<canTargetPawns>true</canTargetPawns>
-			<canTargetBuildings>false</canTargetBuildings>
-			<canTargetSelf>false</canTargetSelf>
-		</targetingParameters>
-		<castSound>AA_PoisonBolt</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Xenoseer</path>
-				<level>3</level>
-				<order>2</order>
-				<psyfocusCost>0.10</psyfocusCost>
-				<entropyGain>10</entropyGain>
-				<prerequisites>
-					<li>AAVPE_FungalSkin</li>
-					<li>AAVPE_WebSlinging</li>
-				</prerequisites>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_Projectile">
-				<projectile>AA_AcidicVomit</projectile>
-				
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_Laser</defName>
-		<label>concentrated light</label>
-		<description>Psychically redirects sunlight and concentrates it in a brutal laser blast.</description>
-		<iconPath>UI/Abilities/Xenoseer/AAVPE_Laser</iconPath>
-		<abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
-		<castTime>60</castTime>
-		<range>15</range>
-		<needsTicking>true</needsTicking>
-		<targetMode>Pawn</targetMode>
-		<targetingParameters>
-			<canTargetPawns>true</canTargetPawns>
-			<canTargetBuildings>false</canTargetBuildings>
-			<canTargetSelf>false</canTargetSelf>
-		</targetingParameters>
-		<castSound>AA_LaserBullet</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Xenoseer</path>
-				<level>3</level>
-				<order>3</order>
-				<psyfocusCost>0.10</psyfocusCost>
-				<entropyGain>10</entropyGain>
-				<prerequisites>
-					<li>AAVPE_FungalSkin</li>
-					<li>AAVPE_WebSlinging</li>
-				</prerequisites>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_Projectile">
-				<projectile>AA_LaserBullet</projectile>
-				
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_Electrify</defName>
-		<label>electrify</label>
-		<description>Creates an intense psychic discharge that fills the target's blood with reverse entropy potential, allowing them to recharge electrical batteries merely by being close to them. This change in the target is permanent, and quite traumatic.</description>
-		<iconPath>UI/Abilities/Xenoseer/AAVPE_Electrified</iconPath>
-		<abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
-		<targetingParameters>
-			<canTargetHumans>True</canTargetHumans>
-			<canTargetSelf>True</canTargetSelf>
-			<canTargetAnimals>True</canTargetAnimals>
-		</targetingParameters>
-		<targetMode>Pawn</targetMode>
-		<castTime>15</castTime>
-		<range>25</range>
-		<fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
-		<showUndrafted>true</showUndrafted>
-		<castSound>AA_ElectrifyPsycast</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Xenoseer</path>
-				<level>4</level>
-				<order>3</order>
-				<psyfocusCost>0.6</psyfocusCost>
-				<entropyGain>40</entropyGain>
-				<prerequisites>					
-					<li>AAVPE_Laser</li>
-				</prerequisites>
-			</li>
-
-			<li Class="VFECore.Abilities.AbilityExtension_Hediff">
-				<hediff>AAVPE_Electrified</hediff>
-				
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_Regeneration</defName>
-		<label>regeneration</label>
-		<description>Imbues the target with a psychically active field of regeneration, allowing them to heal their wounds much faster than usual.</description>
-		<iconPath>UI/Abilities/Xenoseer/AAVPE_Regeneration</iconPath>
-		<abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
-		<targetingParameters>
-			<canTargetHumans>True</canTargetHumans>
-			<canTargetSelf>True</canTargetSelf>
-			<canTargetAnimals>True</canTargetAnimals>
-		</targetingParameters>
-		<durationTime>14400</durationTime>
-		<targetMode>Pawn</targetMode>
-		<castTime>15</castTime>
-		<range>10</range>
-		<fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
-		<showUndrafted>true</showUndrafted>
-		<castSound>AA_RegenerationPsycast</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_Xenoseer</path>
-				<level>4</level>
-				<order>1</order>
-				<psyfocusCost>0.8</psyfocusCost>
-				<entropyGain>50</entropyGain>
-				<prerequisites>					
-					<li>AAVPE_LightSustenance</li>
-				</prerequisites>
-			</li>
-
-			<li Class="VFECore.Abilities.AbilityExtension_Hediff">
-				<hediff>AAVPE_Regeneration</hediff>
-				
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_Regeneration</defName>
+        <label>regeneration</label>
+        <description>Imbues the target with a psychically active field of regeneration, allowing them to heal their wounds much faster than usual.</description>
+        <iconPath>UI/Abilities/Xenoseer/AAVPE_Regeneration</iconPath>
+        <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
+        <targetingParameters>
+            <canTargetHumans>True</canTargetHumans>
+            <canTargetSelf>True</canTargetSelf>
+            <canTargetAnimals>True</canTargetAnimals>
+        </targetingParameters>
+        <durationTime>14400</durationTime>
+        <targetMode>Pawn</targetMode>
+        <castTime>15</castTime>
+        <range>10</range>
+        <fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
+        <showUndrafted>true</showUndrafted>
+        <castSound>AA_RegenerationPsycast</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_Xenoseer</path>
+                <level>4</level>
+                <order>1</order>
+                <psyfocusCost>0.8</psyfocusCost>
+                <entropyGain>50</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_LightSustenance</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_Hediff">
+                <hediff>AAVPE_Regeneration</hediff>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 
 </Defs>

@@ -1,358 +1,342 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_VenomSpit</defName>
-		<label>venom spit</label>
-		<description>Generates a small blob of caustic liquid by linking a microscopic skipgate to an underground reservoir of acid. This blob is then psychically charged and accelerated in the desired direction.</description>
-		<iconPath>UI/Abilities/Herald/AAVPE_Spit</iconPath>
-		<abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
-		<castTime>60</castTime>
-		<range>16.9</range>
-		<targetMode>Pawn</targetMode>
-		<targetingParameters>
-			<canTargetPawns>true</canTargetPawns>
-			<canTargetBuildings>false</canTargetBuildings>
-			<canTargetSelf>false</canTargetSelf>
-		</targetingParameters>
-		<castSound>AA_PoisonBolt</castSound>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_HeraldOfTheBlackHive</path>
-				<level>1</level>
-				<order>1</order>
-				<psyfocusCost>0.01</psyfocusCost>
-				<entropyGain>2</entropyGain>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_Projectile">
-				<projectile>AA_PoisonBolt</projectile>
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_SummonBlackScarab</defName>
-		<label>summon black scarab</label>
-		<description>Psychically skips a black scarab to help defend the colony. The black scarab will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
-		<iconPath>UI/Abilities/Herald/AAVPE_SummonBlackScarab</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
-
-		<requireLineOfSight>false</requireLineOfSight>
-		<range>20</range>
-		<distanceToTarget>2.9</distanceToTarget>
-		<targetMode>Location</targetMode>
-		<castTime>360</castTime>
-		<needsTicking>true</needsTicking>
-		<showUndrafted>true</showUndrafted>
-		<targetingParameters>
-
-			<canTargetLocations>true</canTargetLocations>
-
-		</targetingParameters>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_HeraldOfTheBlackHive</path>
-				<level>2</level>
-				<order>1</order>
-				<psyfocusCost>0.1</psyfocusCost>
-				<entropyGain>10</entropyGain>
-				<prerequisites>
-					<li>AAVPE_VenomSpit</li>
-				</prerequisites>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
-				<fleckDefs>
-					<li>PsycastSkipInnerExit</li>
-					<li>PsycastSkipOuterRingExit</li>
-				</fleckDefs>
-				<scale>0.42</scale>
-				<sound>Psycast_Skip_Exit</sound>
-				<preCastTicks>10</preCastTicks>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
-				<effecterDef>Skip_Exit</effecterDef>
-				<maintainForTicks>60</maintainForTicks>
-				<scale>0.42</scale>
-			</li>
-			<li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
-				<pawnToSpawn>AA_BlackScarab_Temporary</pawnToSpawn>
-				<enrage>true</enrage>
-				<playerFaction>true</playerFaction>
-				<numberCreated>1</numberCreated>
-			</li>
-
-
-		</modExtensions>
-
-	</VFECore.Abilities.AbilityDef>
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_SummonBlackSpelopede</defName>
-		<label>summon black spelopede</label>
-		<description>Psychically skips a black spelopede to help defend the colony. The black spelopede will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
-		<iconPath>UI/Abilities/Herald/AAVPE_SummonBlackSpelopede</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
-
-		<requireLineOfSight>false</requireLineOfSight>
-		<range>20</range>
-		<distanceToTarget>2.9</distanceToTarget>
-		<targetMode>Location</targetMode>
-		<castTime>500</castTime>
-		<needsTicking>true</needsTicking>
-		<showUndrafted>true</showUndrafted>
-		<targetingParameters>
-
-			<canTargetLocations>true</canTargetLocations>
-
-		</targetingParameters>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_HeraldOfTheBlackHive</path>
-				<level>3</level>
-				<order>1</order>
-				<psyfocusCost>0.2</psyfocusCost>
-				<entropyGain>20</entropyGain>
-				<prerequisites>
-					<li>AAVPE_SummonBlackScarab</li>
-				</prerequisites>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
-				<fleckDefs>
-					<li>PsycastSkipInnerExit</li>
-					<li>PsycastSkipOuterRingExit</li>
-				</fleckDefs>
-				<scale>0.42</scale>
-				<sound>Psycast_Skip_Exit</sound>
-				<preCastTicks>10</preCastTicks>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
-				<effecterDef>Skip_Exit</effecterDef>
-				<maintainForTicks>60</maintainForTicks>
-				<scale>0.42</scale>
-			</li>
-			<li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
-				<pawnToSpawn>AA_BlackSpelopede_Temporary</pawnToSpawn>
-				<enrage>true</enrage>
-				<playerFaction>true</playerFaction>
-				<numberCreated>1</numberCreated>
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_StrengthenInsect</defName>
-		<label>strengthen insect</label>
-		<description>Creates an aura of psychic power around a Black Hive insect, making it more proficient in combat.</description>
-		<iconPath>UI/Abilities/Herald/AAVPE_StrengthenInsect</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_OnlyBlackHive</abilityClass>
-		<targetingParameters>
-			<canTargetPawns>true</canTargetPawns>
-			<canTargetBuildings>false</canTargetBuildings>
-			<canTargetSelf>false</canTargetSelf>
-		</targetingParameters>
-		<durationTime>1800</durationTime>
-		<range>9.9</range>
-		<castTime>50</castTime>
-		<castSound>VPE_IceShield_Cast</castSound>
-
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_HeraldOfTheBlackHive</path>
-				<level>3</level>
-				<order>2</order>
-				<prerequisites>
-					<li>AAVPE_SummonBlackScarab</li>
-				</prerequisites>
-				<psyfocusCost>0.1</psyfocusCost>
-				<entropyGain>25</entropyGain>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_Hediff">
-				<hediff>AAVPE_StrengthenBlackHive</hediff>
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_SummonBlackSpider</defName>
-		<label>summon black spider</label>
-		<description>Psychically skips a black spider to help defend the colony. The black spider will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
-		<iconPath>UI/Abilities/Herald/AAVPE_SummonBlackSpider</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
-
-		<requireLineOfSight>false</requireLineOfSight>
-		<range>20</range>
-		<distanceToTarget>2.9</distanceToTarget>
-		<targetMode>Location</targetMode>
-		<castTime>500</castTime>
-		<needsTicking>true</needsTicking>
-		<showUndrafted>true</showUndrafted>
-		<targetingParameters>
-
-			<canTargetLocations>true</canTargetLocations>
-
-		</targetingParameters>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_HeraldOfTheBlackHive</path>
-				<level>4</level>
-				<order>1</order>
-				<psyfocusCost>0.3</psyfocusCost>
-				<entropyGain>30</entropyGain>
-				<prerequisites>
-					<li>AAVPE_SummonBlackSpelopede</li>
-				</prerequisites>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
-				<fleckDefs>
-					<li>PsycastSkipInnerExit</li>
-					<li>PsycastSkipOuterRingExit</li>
-				</fleckDefs>
-				<scale>0.42</scale>
-				<sound>Psycast_Skip_Exit</sound>
-				<preCastTicks>10</preCastTicks>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
-				<effecterDef>Skip_Exit</effecterDef>
-				<maintainForTicks>60</maintainForTicks>
-				<scale>0.42</scale>
-			</li>
-			<li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
-				<pawnToSpawn>AA_BlackSpider_Temporary</pawnToSpawn>
-				<enrage>true</enrage>
-				<playerFaction>true</playerFaction>
-				<numberCreated>1</numberCreated>
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_SummonMammothWorm</defName>
-		<label>summon mammoth worm</label>
-		<description>Psychically skips a mammoth worm to help defend the colony. The mammoth worm will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
-		<iconPath>UI/Abilities/Herald/AAVPE_SummonMammothWorm</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
-
-		<requireLineOfSight>false</requireLineOfSight>
-		<range>20</range>
-		<distanceToTarget>2.9</distanceToTarget>
-		<targetMode>Location</targetMode>
-		<castTime>500</castTime>
-		<needsTicking>true</needsTicking>
-		<showUndrafted>true</showUndrafted>
-		<targetingParameters>
-
-			<canTargetLocations>true</canTargetLocations>
-
-		</targetingParameters>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_HeraldOfTheBlackHive</path>
-				<level>4</level>
-				<order>2</order>
-				<psyfocusCost>0.4</psyfocusCost>
-				<entropyGain>30</entropyGain>
-				<prerequisites>
-					<li>AAVPE_SummonBlackSpelopede</li>
-				</prerequisites>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
-				<fleckDefs>
-					<li>PsycastSkipInnerExit</li>
-					<li>PsycastSkipOuterRingExit</li>
-				</fleckDefs>
-				<scale>0.42</scale>
-				<sound>Psycast_Skip_Exit</sound>
-				<preCastTicks>10</preCastTicks>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
-				<effecterDef>Skip_Exit</effecterDef>
-				<maintainForTicks>60</maintainForTicks>
-				<scale>0.42</scale>
-			</li>
-			<li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
-				<pawnToSpawn>AA_MammothWorm_Temporary</pawnToSpawn>
-				<enrage>true</enrage>
-				<playerFaction>true</playerFaction>
-				<numberCreated>1</numberCreated>
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_SummonBlackQueen</defName>
-		<label>summon black queen</label>
-		<description>Psychically skips a black queen to help defend the colony. The black queen will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
-		<iconPath>UI/Abilities/Herald/AAVPE_SummonBlackQueen</iconPath>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
-
-		<requireLineOfSight>false</requireLineOfSight>
-		<range>20</range>
-		<distanceToTarget>2.9</distanceToTarget>
-		<targetMode>Location</targetMode>
-		<castTime>750</castTime>
-		<needsTicking>true</needsTicking>
-		<showUndrafted>true</showUndrafted>
-		<targetingParameters>
-
-			<canTargetLocations>true</canTargetLocations>
-
-		</targetingParameters>
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_HeraldOfTheBlackHive</path>
-				<level>5</level>
-				<order>1</order>
-				<psyfocusCost>0.8</psyfocusCost>
-				<entropyGain>50</entropyGain>
-				<prerequisites>
-					<li>AAVPE_SummonMammothWorm</li>
-					<li>AAVPE_SummonBlackSpider</li>
-				</prerequisites>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
-				<fleckDefs>
-					<li>PsycastSkipInnerExit</li>
-					<li>PsycastSkipOuterRingExit</li>
-				</fleckDefs>
-				<scale>0.42</scale>
-				<sound>Psycast_Skip_Exit</sound>
-				<preCastTicks>10</preCastTicks>
-			</li>
-			<li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
-				<effecterDef>Skip_Exit</effecterDef>
-				<maintainForTicks>60</maintainForTicks>
-				<scale>0.42</scale>
-			</li>
-			<li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
-				<pawnToSpawn>AAVPE_BlackQueen</pawnToSpawn>
-				<enrage>true</enrage>
-				<playerFaction>true</playerFaction>
-				<numberCreated>1</numberCreated>
-			</li>
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
-
-	<VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
-		<defName>AAVPE_SummonHive</defName>
-		<label>summon entrance to the hive</label>
-		<description>Psychically forces a black hive insect to open a connection to the deep underground tunnels of the black hive. This hive entrance will produce black larva periodically, which will mature into random black hive insects. These are not temporary and the colonists can tame them as normal animals. Your colony can only have one hive entrance, and no more than four insects will be present at the same time.</description>
-		<iconPath>UI/Abilities/Herald/AAVPE_SummonHive</iconPath>
-		<range>12.9</range>
-		<castTime>100</castTime>
-		<showUndrafted>true</showUndrafted>
-		<abilityClass>AlphaBehavioursAndEvents.Ability_Summon_Hive</abilityClass>
-		<targetingParameters>
-			<canTargetLocations>true</canTargetLocations>
-			<canTargetPawns>true</canTargetPawns>
-			<canTargetBuildings>true</canTargetBuildings>
-		</targetingParameters>
-
-		<modExtensions>
-			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
-				<path>AAVPE_HeraldOfTheBlackHive</path>
-				<level>5</level>
-				<order>2</order>
-				<psyfocusCost>0.9</psyfocusCost>
-				<entropyGain>75</entropyGain>
-				<prerequisites>
-					<li>AAVPE_SummonBlackQueen</li>
-
-				</prerequisites>
-			</li>
-
-		</modExtensions>
-	</VFECore.Abilities.AbilityDef>
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_VenomSpit</defName>
+        <label>venom spit</label>
+        <description>Generates a small blob of caustic liquid by linking a microscopic skipgate to an underground reservoir of acid. This blob is then psychically charged and accelerated in the desired direction.</description>
+        <iconPath>UI/Abilities/Herald/AAVPE_Spit</iconPath>
+        <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
+        <castTime>60</castTime>
+        <range>16.9</range>
+        <targetMode>Pawn</targetMode>
+        <targetingParameters>
+            <canTargetPawns>true</canTargetPawns>
+            <canTargetBuildings>false</canTargetBuildings>
+            <canTargetSelf>false</canTargetSelf>
+        </targetingParameters>
+        <castSound>AA_PoisonBolt</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_HeraldOfTheBlackHive</path>
+                <level>1</level>
+                <order>1</order>
+                <psyfocusCost>0.01</psyfocusCost>
+                <entropyGain>2</entropyGain>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_Projectile">
+                <projectile>AA_PoisonBolt</projectile>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_SummonBlackScarab</defName>
+        <label>summon black scarab</label>
+        <description>Psychically skips a black scarab to help defend the colony. The black scarab will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
+        <iconPath>UI/Abilities/Herald/AAVPE_SummonBlackScarab</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <range>20</range>
+        <distanceToTarget>2.9</distanceToTarget>
+        <targetMode>Location</targetMode>
+        <castTime>360</castTime>
+        <needsTicking>true</needsTicking>
+        <showUndrafted>true</showUndrafted>
+        <targetingParameters>
+            <canTargetLocations>true</canTargetLocations>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_HeraldOfTheBlackHive</path>
+                <level>2</level>
+                <order>1</order>
+                <psyfocusCost>0.1</psyfocusCost>
+                <entropyGain>10</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_VenomSpit</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
+                <fleckDefs>
+                    <li>PsycastSkipInnerExit</li>
+                    <li>PsycastSkipOuterRingExit</li>
+                </fleckDefs>
+                <scale>0.42</scale>
+                <sound>Psycast_Skip_Exit</sound>
+                <preCastTicks>10</preCastTicks>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>Skip_Exit</effecterDef>
+                <maintainForTicks>60</maintainForTicks>
+                <scale>0.42</scale>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
+                <pawnToSpawn>AA_BlackScarab_Temporary</pawnToSpawn>
+                <enrage>true</enrage>
+                <playerFaction>true</playerFaction>
+                <numberCreated>1</numberCreated>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_SummonBlackSpelopede</defName>
+        <label>summon black spelopede</label>
+        <description>Psychically skips a black spelopede to help defend the colony. The black spelopede will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
+        <iconPath>UI/Abilities/Herald/AAVPE_SummonBlackSpelopede</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <range>20</range>
+        <distanceToTarget>2.9</distanceToTarget>
+        <targetMode>Location</targetMode>
+        <castTime>500</castTime>
+        <needsTicking>true</needsTicking>
+        <showUndrafted>true</showUndrafted>
+        <targetingParameters>
+            <canTargetLocations>true</canTargetLocations>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_HeraldOfTheBlackHive</path>
+                <level>3</level>
+                <order>1</order>
+                <psyfocusCost>0.2</psyfocusCost>
+                <entropyGain>20</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_SummonBlackScarab</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
+                <fleckDefs>
+                    <li>PsycastSkipInnerExit</li>
+                    <li>PsycastSkipOuterRingExit</li>
+                </fleckDefs>
+                <scale>0.42</scale>
+                <sound>Psycast_Skip_Exit</sound>
+                <preCastTicks>10</preCastTicks>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>Skip_Exit</effecterDef>
+                <maintainForTicks>60</maintainForTicks>
+                <scale>0.42</scale>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
+                <pawnToSpawn>AA_BlackSpelopede_Temporary</pawnToSpawn>
+                <enrage>true</enrage>
+                <playerFaction>true</playerFaction>
+                <numberCreated>1</numberCreated>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_StrengthenInsect</defName>
+        <label>strengthen insect</label>
+        <description>Creates an aura of psychic power around a Black Hive insect, making it more proficient in combat.</description>
+        <iconPath>UI/Abilities/Herald/AAVPE_StrengthenInsect</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_OnlyBlackHive</abilityClass>
+        <targetingParameters>
+            <canTargetPawns>true</canTargetPawns>
+            <canTargetBuildings>false</canTargetBuildings>
+            <canTargetSelf>false</canTargetSelf>
+        </targetingParameters>
+        <durationTime>1800</durationTime>
+        <range>9.9</range>
+        <castTime>50</castTime>
+        <castSound>VPE_IceShield_Cast</castSound>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_HeraldOfTheBlackHive</path>
+                <level>3</level>
+                <order>2</order>
+                <prerequisites>
+                    <li>AAVPE_SummonBlackScarab</li>
+                </prerequisites>
+                <psyfocusCost>0.1</psyfocusCost>
+                <entropyGain>25</entropyGain>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_Hediff">
+                <hediff>AAVPE_StrengthenBlackHive</hediff>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_SummonBlackSpider</defName>
+        <label>summon black spider</label>
+        <description>Psychically skips a black spider to help defend the colony. The black spider will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
+        <iconPath>UI/Abilities/Herald/AAVPE_SummonBlackSpider</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <range>20</range>
+        <distanceToTarget>2.9</distanceToTarget>
+        <targetMode>Location</targetMode>
+        <castTime>500</castTime>
+        <needsTicking>true</needsTicking>
+        <showUndrafted>true</showUndrafted>
+        <targetingParameters>
+            <canTargetLocations>true</canTargetLocations>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_HeraldOfTheBlackHive</path>
+                <level>4</level>
+                <order>1</order>
+                <psyfocusCost>0.3</psyfocusCost>
+                <entropyGain>30</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_SummonBlackSpelopede</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
+                <fleckDefs>
+                    <li>PsycastSkipInnerExit</li>
+                    <li>PsycastSkipOuterRingExit</li>
+                </fleckDefs>
+                <scale>0.42</scale>
+                <sound>Psycast_Skip_Exit</sound>
+                <preCastTicks>10</preCastTicks>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>Skip_Exit</effecterDef>
+                <maintainForTicks>60</maintainForTicks>
+                <scale>0.42</scale>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
+                <pawnToSpawn>AA_BlackSpider_Temporary</pawnToSpawn>
+                <enrage>true</enrage>
+                <playerFaction>true</playerFaction>
+                <numberCreated>1</numberCreated>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_SummonMammothWorm</defName>
+        <label>summon mammoth worm</label>
+        <description>Psychically skips a mammoth worm to help defend the colony. The mammoth worm will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
+        <iconPath>UI/Abilities/Herald/AAVPE_SummonMammothWorm</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <range>20</range>
+        <distanceToTarget>2.9</distanceToTarget>
+        <targetMode>Location</targetMode>
+        <castTime>500</castTime>
+        <needsTicking>true</needsTicking>
+        <showUndrafted>true</showUndrafted>
+        <targetingParameters>
+            <canTargetLocations>true</canTargetLocations>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_HeraldOfTheBlackHive</path>
+                <level>4</level>
+                <order>2</order>
+                <psyfocusCost>0.4</psyfocusCost>
+                <entropyGain>30</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_SummonBlackSpelopede</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
+                <fleckDefs>
+                    <li>PsycastSkipInnerExit</li>
+                    <li>PsycastSkipOuterRingExit</li>
+                </fleckDefs>
+                <scale>0.42</scale>
+                <sound>Psycast_Skip_Exit</sound>
+                <preCastTicks>10</preCastTicks>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>Skip_Exit</effecterDef>
+                <maintainForTicks>60</maintainForTicks>
+                <scale>0.42</scale>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
+                <pawnToSpawn>AA_MammothWorm_Temporary</pawnToSpawn>
+                <enrage>true</enrage>
+                <playerFaction>true</playerFaction>
+                <numberCreated>1</numberCreated>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_SummonBlackQueen</defName>
+        <label>summon black queen</label>
+        <description>Psychically skips a black queen to help defend the colony. The black queen will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</description>
+        <iconPath>UI/Abilities/Herald/AAVPE_SummonBlackQueen</iconPath>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_Summon</abilityClass>
+        <requireLineOfSight>false</requireLineOfSight>
+        <range>20</range>
+        <distanceToTarget>2.9</distanceToTarget>
+        <targetMode>Location</targetMode>
+        <castTime>750</castTime>
+        <needsTicking>true</needsTicking>
+        <showUndrafted>true</showUndrafted>
+        <targetingParameters>
+            <canTargetLocations>true</canTargetLocations>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_HeraldOfTheBlackHive</path>
+                <level>5</level>
+                <order>1</order>
+                <psyfocusCost>0.8</psyfocusCost>
+                <entropyGain>50</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_SummonMammothWorm</li>
+                    <li>AAVPE_SummonBlackSpider</li>
+                </prerequisites>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_FleckOnTarget">
+                <fleckDefs>
+                    <li>PsycastSkipInnerExit</li>
+                    <li>PsycastSkipOuterRingExit</li>
+                </fleckDefs>
+                <scale>0.42</scale>
+                <sound>Psycast_Skip_Exit</sound>
+                <preCastTicks>10</preCastTicks>
+            </li>
+            <li Class="VFECore.Abilities.AbilityExtension_EffecterOnTarget">
+                <effecterDef>Skip_Exit</effecterDef>
+                <maintainForTicks>60</maintainForTicks>
+                <scale>0.42</scale>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.Ability_Summon_Extension">
+                <pawnToSpawn>AAVPE_BlackQueen</pawnToSpawn>
+                <enrage>true</enrage>
+                <playerFaction>true</playerFaction>
+                <numberCreated>1</numberCreated>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
+    
+    <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+        <defName>AAVPE_SummonHive</defName>
+        <label>summon entrance to the hive</label>
+        <description>Psychically forces a black hive insect to open a connection to the deep underground tunnels of the black hive. This hive entrance will produce black larva periodically, which will mature into random black hive insects. These are not temporary and the colonists can tame them as normal animals. Your colony can only have one hive entrance, and no more than four insects will be present at the same time.</description>
+        <iconPath>UI/Abilities/Herald/AAVPE_SummonHive</iconPath>
+        <range>12.9</range>
+        <castTime>100</castTime>
+        <showUndrafted>true</showUndrafted>
+        <abilityClass>AlphaBehavioursAndEvents.Ability_Summon_Hive</abilityClass>
+        <targetingParameters>
+            <canTargetLocations>true</canTargetLocations>
+            <canTargetPawns>true</canTargetPawns>
+            <canTargetBuildings>true</canTargetBuildings>
+        </targetingParameters>
+        <modExtensions>
+            <li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+                <path>AAVPE_HeraldOfTheBlackHive</path>
+                <level>5</level>
+                <order>2</order>
+                <psyfocusCost>0.9</psyfocusCost>
+                <entropyGain>75</entropyGain>
+                <prerequisites>
+                    <li>AAVPE_SummonBlackQueen</li>
+                </prerequisites>
+            </li>
+        </modExtensions>
+    </VFECore.Abilities.AbilityDef>
 </Defs>

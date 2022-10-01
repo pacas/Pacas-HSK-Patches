@@ -1,60 +1,54 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<MemeDef>
-		<defName>AA_Structure_Alienism</defName>
-		<label>alienism</label>
-		<description>"True" alien life might not have been encountered by humanity, but we have warped life so much that the distinction is moot. Only by embracing this can we reach the truth.</description>
-		<category>Structure</category>
-		<iconPath>UI/Structures/AA_StructureAlienist</iconPath>
-		<impact>0</impact>
-		<worshipRoomLabel>ever-seeing chamber</worshipRoomLabel>
-		<randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
-		<deityCount>0</deityCount>
-		
-		<generalRules>
-			<rulesStrings>
-				<li>memeAdjective->alien</li>
-				<li>memeAdjective->extraterrestrial</li>
-				<li>memeAdjective->strange</li>
-				<li>memeAdjective->peculiar</li>
-				<li>memeAdjective->exotic</li>
-				
-				<li>memeLeaderNoun->high alienist</li>				
-				<li>memeLeaderAdjective->foreign</li>
-						
-				<li>memeMoralist->aspirant</li>
-				<li>memeMoralist->inquirer</li>
-				<li>memeMoralist->zealot</li>
-			</rulesStrings>
-		</generalRules>
-		<descriptionMaker>
-			<patterns>
-				<li>
-					<def>AA_AlienismDescription</def>
-				</li>
-			</patterns>
-			<constants>
-				<li>
-					<key>structure_alienism</key>
-					<value>true</value>
-				</li>
-			</constants>
-		</descriptionMaker>
-		<symbolPacks>
-			<li>
-				<theme>alienism</theme>
-				<adjective>alienist</adjective>
-				<member>alienist</member>
-			</li>
-		</symbolPacks>
-		<thingStyleCategories>
-			<li>
-				<category>AA_Ocular</category>
-				<priority>4</priority>
-			</li>
-		</thingStyleCategories>
-		
-		
-	</MemeDef>
-	
+    <MemeDef>
+        <defName>AA_Structure_Alienism</defName>
+        <label>alienism</label>
+        <description>"True" alien life might not have been encountered by humanity, but we have warped life so much that the distinction is moot. Only by embracing this can we reach the truth.</description>
+        <category>Structure</category>
+        <iconPath>UI/Structures/AA_StructureAlienist</iconPath>
+        <impact>0</impact>
+        <worshipRoomLabel>ever-seeing chamber</worshipRoomLabel>
+        <randomizationSelectionWeightFactor>3</randomizationSelectionWeightFactor>
+        <deityCount>0</deityCount>
+        <generalRules>
+            <rulesStrings>
+                <li>memeAdjective->alien</li>
+                <li>memeAdjective->extraterrestrial</li>
+                <li>memeAdjective->strange</li>
+                <li>memeAdjective->peculiar</li>
+                <li>memeAdjective->exotic</li>
+                <li>memeLeaderNoun->high alienist</li>
+                <li>memeLeaderAdjective->foreign</li>
+                <li>memeMoralist->aspirant</li>
+                <li>memeMoralist->inquirer</li>
+                <li>memeMoralist->zealot</li>
+            </rulesStrings>
+        </generalRules>
+        <descriptionMaker>
+            <patterns>
+                <li>
+                    <def>AA_AlienismDescription</def>
+                </li>
+            </patterns>
+            <constants>
+                <li>
+                    <key>structure_alienism</key>
+                    <value>true</value>
+                </li>
+            </constants>
+        </descriptionMaker>
+        <symbolPacks>
+            <li>
+                <theme>alienism</theme>
+                <adjective>alienist</adjective>
+                <member>alienist</member>
+            </li>
+        </symbolPacks>
+        <thingStyleCategories>
+            <li>
+                <category>AA_Ocular</category>
+                <priority>4</priority>
+            </li>
+        </thingStyleCategories>
+    </MemeDef>
 </Defs>

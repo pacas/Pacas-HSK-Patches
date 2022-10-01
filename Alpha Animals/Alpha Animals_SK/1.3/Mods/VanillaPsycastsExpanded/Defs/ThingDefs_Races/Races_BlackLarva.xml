@@ -1,74 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  
-  <ThingDef ParentName="SK_AA_BlackHive">
-    <defName>AA_BlackLarvae</defName>
-    <label>black larvae</label>
-    <description>The juvenile form of a black hive insectoid, larva are harmless, slow and easy to kill. After some time has passed, it undergoes a metamorphosis, turning into an adult black hive insectoid. There is no way to tell what kind of insect will crawl out of its cocoon.</description>
-    <statBases>
-      <MoveSpeed>1.50</MoveSpeed>
-      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
-      <MarketValue>1000</MarketValue>
-      <LeatherAmount>0</LeatherAmount>
-      <ArmorRating_Blunt>0</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0</ArmorRating_Sharp>
-    </statBases>
-    <comps>
-      <li Class="AlphaBehavioursAndEvents.CompProperties_LarvaeToCocoon">
-        <ticksBeforeBecomingCocoon>30000</ticksBeforeBecomingCocoon>
-      </li>
-     
-    </comps>
-    <tools>
-      <li>
-        <label>head claw</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>1</power>
-        <cooldownTime>8</cooldownTime>
-        <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
-      </li>
-    </tools>
-    <race>
-      <body>BeetleLikeWithClaw</body>
-      <baseHungerRate>0.35</baseHungerRate>
-      <baseBodySize>0.6</baseBodySize>
-      <baseHealthScale>0.5</baseHealthScale>
-      <hasGenders>false</hasGenders>
-      <useMeatFrom>Megaspider</useMeatFrom>
-
-      <wildness>0.95</wildness>
-      <lifeExpectancy>2</lifeExpectancy>
-      <lifeStageAges>
-        <li>
-          <def>EusocialInsectLarva</def>
-          <minAge>0</minAge>
-        </li>
-      </lifeStageAges>
-      <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-      <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-    </race>
-  </ThingDef>
-
-  <PawnKindDef ParentName="SK_AnimalKindBase">
-    <defName>AA_BlackLarvae</defName>
-    <label>black larvae</label>
-    <race>AA_BlackLarvae</race>
-    <combatPower>10</combatPower>
-    <canArriveManhunter>false</canArriveManhunter>
-    <ecoSystemWeight>0.50</ecoSystemWeight>
-    <lifeStages>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/AA_BlackLarva/AA_BlackLarva</texPath>
-          <drawSize>1</drawSize>
-        </bodyGraphicData>
-       
-      </li>
-    </lifeStages>
-  </PawnKindDef>
-
+    <ThingDef ParentName="SK_AA_BlackHive">
+        <defName>AA_BlackLarvae</defName>
+        <label>black larvae</label>
+        <description>The juvenile form of a black hive insectoid, larva are harmless, slow and easy to kill. After some time has passed, it undergoes a metamorphosis, turning into an adult black hive insectoid. There is no way to tell what kind of insect will crawl out of its cocoon.</description>
+        <statBases>
+            <MoveSpeed>1.50</MoveSpeed>
+            <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+            <MarketValue>1000</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <ArmorRating_Blunt>0</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0</ArmorRating_Sharp>
+        </statBases>
+        <comps>
+            <li Class="AlphaBehavioursAndEvents.CompProperties_LarvaeToCocoon">
+                <ticksBeforeBecomingCocoon>30000</ticksBeforeBecomingCocoon>
+            </li>
+        </comps>
+        <tools>
+            <li>
+                <label>head claw</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>1</power>
+                <cooldownTime>8</cooldownTime>
+                <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <race>
+            <body>BeetleLikeWithClaw</body>
+            <baseHungerRate>0.35</baseHungerRate>
+            <baseBodySize>0.6</baseBodySize>
+            <baseHealthScale>0.5</baseHealthScale>
+            <hasGenders>false</hasGenders>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <wildness>0.95</wildness>
+            <lifeExpectancy>2</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>EusocialInsectLarva</def>
+                    <minAge>0</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+    </ThingDef>
+    <PawnKindDef ParentName="SK_AnimalKindBase">
+        <defName>AA_BlackLarvae</defName>
+        <label>black larvae</label>
+        <race>AA_BlackLarvae</race>
+        <combatPower>10</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <ecoSystemWeight>0.50</ecoSystemWeight>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_BlackLarva/AA_BlackLarva</texPath>
+                    <drawSize>1</drawSize>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
 </Defs>

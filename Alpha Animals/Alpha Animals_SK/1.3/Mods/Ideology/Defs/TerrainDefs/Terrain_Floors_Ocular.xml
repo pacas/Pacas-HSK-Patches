@@ -1,69 +1,53 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-
-
-  <!-- Ocular -->
-
-  <DesignatorDropdownGroupDef>
-    <defName>AA_Floor_Ocular_Stone</defName>
-    <label>ocular stone</label>
-  </DesignatorDropdownGroupDef>
-
-
-
-  <TerrainDef ParentName="IdeoStoneTileBase" Name="AA_OcularStone" Abstract="True">
-    <description>Fine stone slabs in an ocular style.</description>
-    <texturePath>Terrain/AA_OcularStoneFloor</texturePath>
-    <designatorDropdown>AA_Floor_Ocular_Stone</designatorDropdown>
-    <dominantStyleCategory>AA_Ocular</dominantStyleCategory>
-  </TerrainDef>
-
-  <TerrainDef ParentName="AA_OcularStone">
-    <defName>AA_Tile_OcularSandstone</defName>
-    <label>ocular sandstone floor</label>
-    <color>(147,127,118)</color>
-    <costList>
-      <BlocksSandstone>20</BlocksSandstone>
-    </costList>
-  </TerrainDef>
-
-  <TerrainDef ParentName="AA_OcularStone">
-    <defName>AA_Tile_OcularGranite</defName>
-    <label>ocular granite floor</label>
-    <color>(105,95,97)</color>
-    <costList>
-      <BlocksGranite>20</BlocksGranite>
-    </costList>
-  </TerrainDef>
-
-  <TerrainDef ParentName="AA_OcularStone">
-    <defName>AA_Tile_OcularLimestone</defName>
-    <label>ocular limestone floor</label>
-    <color>(158,153,135)</color>
-    <costList>
-      <BlocksLimestone>20</BlocksLimestone>
-    </costList>
-  </TerrainDef>
-
-  <TerrainDef ParentName="AA_OcularStone">
-    <defName>AA_Tile_OcularSlate</defName>
-    <label>ocular slate floor</label>
-    <color>(70,70,70)</color>
-    <costList>
-      <BlocksSlate>20</BlocksSlate>
-    </costList>
-  </TerrainDef>
-
-  <TerrainDef ParentName="AA_OcularStone">
-    <defName>AA_Tile_MorbidMarble</defName>
-    <label>ocular marble floor</label>
-  
-    <costList>
-      <BlocksMarble>20</BlocksMarble>
-    </costList>
-  </TerrainDef>
-
- 
-
+    <!-- Ocular -->
+    <DesignatorDropdownGroupDef>
+        <defName>AA_Floor_Ocular_Stone</defName>
+        <label>ocular stone</label>
+    </DesignatorDropdownGroupDef>
+    <TerrainDef ParentName="IdeoStoneTileBase" Name="AA_OcularStone" Abstract="True">
+        <description>Fine stone slabs in an ocular style.</description>
+        <texturePath>Terrain/AA_OcularStoneFloor</texturePath>
+        <designatorDropdown>AA_Floor_Ocular_Stone</designatorDropdown>
+        <dominantStyleCategory>AA_Ocular</dominantStyleCategory>
+    </TerrainDef>
+    <TerrainDef ParentName="AA_OcularStone">
+        <defName>AA_Tile_OcularSandstone</defName>
+        <label>ocular sandstone floor</label>
+        <color>(147,127,118)</color>
+        <costList>
+            <BlocksSandstone>20</BlocksSandstone>
+        </costList>
+    </TerrainDef>
+    <TerrainDef ParentName="AA_OcularStone">
+        <defName>AA_Tile_OcularGranite</defName>
+        <label>ocular granite floor</label>
+        <color>(105,95,97)</color>
+        <costList>
+            <BlocksGranite>20</BlocksGranite>
+        </costList>
+    </TerrainDef>
+    <TerrainDef ParentName="AA_OcularStone">
+        <defName>AA_Tile_OcularLimestone</defName>
+        <label>ocular limestone floor</label>
+        <color>(158,153,135)</color>
+        <costList>
+            <BlocksLimestone>20</BlocksLimestone>
+        </costList>
+    </TerrainDef>
+    <TerrainDef ParentName="AA_OcularStone">
+        <defName>AA_Tile_OcularSlate</defName>
+        <label>ocular slate floor</label>
+        <color>(70,70,70)</color>
+        <costList>
+            <BlocksSlate>20</BlocksSlate>
+        </costList>
+    </TerrainDef>
+    <TerrainDef ParentName="AA_OcularStone">
+        <defName>AA_Tile_MorbidMarble</defName>
+        <label>ocular marble floor</label>
+        <costList>
+            <BlocksMarble>20</BlocksMarble>
+        </costList>
+    </TerrainDef>
 </Defs>

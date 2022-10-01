@@ -1,41 +1,34 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  
- <IdeoStoryPatternDef>
-		<defName>AA_AlienismDescription</defName>
-		<segments>
-			<li>alienistBasis</li>
-			<li>alienistFact</li>
-			<li>alienistProphecy</li>
-			
-		</segments>
-		<rules>
-			<include>
-				<li>IdeoDescriptionGlobal</li>
-			</include>
-			<rulesStrings>
-			
-				<!-- generic basis -->
-				<li>alienistBasis   ->When Humanity left its home planet, it found no alien life. A lonely Universe filled with nothing but unthinking matter.</li>
-				<li>alienistBasis   ->If we are not alone in the Universe, our neighbours are certainly too far away to affect us. We have found no new life beyond the one we carried from Old Earth.</li>
-				<li>alienistBasis   ->Humanity has found no "true" alien life in the Universe. No strange new creatures beyond simple, unicellular bacteria in the deepest oceanic trenches and a few self-replicating aminoacids in some remote asteroid belt.</li>
-				<li>alienistBasis   ->Upon leaving Earth, we stumbled upon a hostile Universe devoid of all life but our own.</li>
-				<!-- generic fact -->
-				<li>alienistFact    ->This didn't stop our ancestors from creating new beings. Exotic, alien life derived from terrestrial genomes to populate the miriad worlds of human space.</li>
-				<li>alienistFact    ->Our ingenuity, however, was far greater. We twisted and tangled the genetic strains carried by our forefathers from Earth, turning ancient breeds into new, wondrous creatures.</li>
-				<li>alienistFact    ->Human creativity was not to be shackled by this unfortunate constraint, and we warped the ancient genomes of Earth creatures into all sorts of new animals. Amazing creations.</li>
-				<li>alienistFact    ->However, playing God is what humans excel at. Like versatile clay we molded the ancient genelines into astonishing new creatures. Genetic marvels to populate an empty Universe.</li>
-				<!-- generic prophecy -->
-				<li>alienistProphecy->[itIsSaid] we will learn more about these creatures, and we will unlock secrets that will allow us to prosper on the Rim.</li>
-				<!-- pieces -->
-				<li>itIsSaid->With careful experimentation,</li>			
-				<li>itIsSaid->Either through technology or more arcane means</li>
-				<li>itIsSaid->Many techniques behind their creation have been lost with time, but in time</li>
-				
-			</rulesStrings>
-		</rules>
-	</IdeoStoryPatternDef>
-  
- 
+    <IdeoStoryPatternDef>
+        <defName>AA_AlienismDescription</defName>
+        <segments>
+            <li>alienistBasis</li>
+            <li>alienistFact</li>
+            <li>alienistProphecy</li>
+        </segments>
+        <rules>
+            <include>
+                <li>IdeoDescriptionGlobal</li>
+            </include>
+            <rulesStrings>
+                <!-- generic basis -->
+                <li>alienistBasis   ->When Humanity left its home planet, it found no alien life. A lonely Universe filled with nothing but unthinking matter.</li>
+                <li>alienistBasis   ->If we are not alone in the Universe, our neighbours are certainly too far away to affect us. We have found no new life beyond the one we carried from Old Earth.</li>
+                <li>alienistBasis   ->Humanity has found no "true" alien life in the Universe. No strange new creatures beyond simple, unicellular bacteria in the deepest oceanic trenches and a few self-replicating aminoacids in some remote asteroid belt.</li>
+                <li>alienistBasis   ->Upon leaving Earth, we stumbled upon a hostile Universe devoid of all life but our own.</li>
+                <!-- generic fact -->
+                <li>alienistFact    ->This didn't stop our ancestors from creating new beings. Exotic, alien life derived from terrestrial genomes to populate the miriad worlds of human space.</li>
+                <li>alienistFact    ->Our ingenuity, however, was far greater. We twisted and tangled the genetic strains carried by our forefathers from Earth, turning ancient breeds into new, wondrous creatures.</li>
+                <li>alienistFact    ->Human creativity was not to be shackled by this unfortunate constraint, and we warped the ancient genomes of Earth creatures into all sorts of new animals. Amazing creations.</li>
+                <li>alienistFact    ->However, playing God is what humans excel at. Like versatile clay we molded the ancient genelines into astonishing new creatures. Genetic marvels to populate an empty Universe.</li>
+                <!-- generic prophecy -->
+                <li>alienistProphecy->[itIsSaid] we will learn more about these creatures, and we will unlock secrets that will allow us to prosper on the Rim.</li>
+                <!-- pieces -->
+                <li>itIsSaid->With careful experimentation,</li>
+                <li>itIsSaid->Either through technology or more arcane means</li>
+                <li>itIsSaid->Many techniques behind their creation have been lost with time, but in time</li>
+            </rulesStrings>
+        </rules>
+    </IdeoStoryPatternDef>
 </Defs>

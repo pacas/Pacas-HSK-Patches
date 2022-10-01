@@ -1,309 +1,287 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <HediffDef>
+        <defName>AAVPE_StrengthenBlackHive</defName>
+        <hediffClass>HediffWithComps</hediffClass>
+        <label>insectoid strengthened</label>
+        <description>This Black Hive insect has been strengthened and will be more proficient in combat.</description>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+                    <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+                    <InjuryHealingFactor>0.25</InjuryHealingFactor>
+                </statOffsets>
+                <painFactor>0.25</painFactor>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.5</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.5</offset>
+                    </li>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.4</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
 
+    <HediffDef ParentName="InfectionBase">
+        <defName>AA_MalevolentEye</defName>
+        <label>malevolent eye</label>
+        <labelNoun>a malevolent eye</labelNoun>
+        <description>A malevolent looking, bloodshot eye is emerging from this wound, blinking and peering wildly around it. Without treatment, it will cause rotting of the local tissue, eventually causing blood poisoning and death. They will however allow the afflicted to see through them.</description>
+        <makesSickThought>true</makesSickThought>
+        <lethalSeverity>1</lethalSeverity>
+        <woundAnchorRange>0</woundAnchorRange>
+        <displayWound>true</displayWound>
+        <tendable>true</tendable>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <baseTendDurationHours>12</baseTendDurationHours>
+                <severityPerDayTended>-0.53</severityPerDayTended>
+            </li>
+            <li Class="HediffCompProperties_Immunizable">
+                <severityPerDayNotImmune>0.84</severityPerDayNotImmune>
+                <immunityPerDaySick>0.6441</immunityPerDaySick>
+                <severityPerDayImmune>-0.70</severityPerDayImmune>
+                <immunityPerDayNotSick>-0.40</immunityPerDayNotSick>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>minor</label>
+                <painOffset>0.1</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.33</minSeverity>
+                <label>major</label>
+                <painOffset>0.15</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.78</minSeverity>
+                <label>extreme</label>
+                <lifeThreatening>true</lifeThreatening>
+                <painOffset>0.3</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>0.87</minSeverity>
+                <label>extreme</label>
+                <lifeThreatening>true</lifeThreatening>
+                <painOffset>0.85</painOffset>
+                <capMods>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
 
+    <HediffDef>
+        <defName>AAVPE_KO</defName>
+        <label>knocked out</label>
+        <labelNoun>knocked out</labelNoun>
+        <description>This person was struck by such psychic energy that they are unable to move.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <stages>
+            <li>
+                <minSeverity>.5</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <minSeverity>.75</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>.01</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-4</severityPerDay>
+                <showDaysToRecover>true</showDaysToRecover>
+            </li>
+        </comps>
+    </HediffDef>
 
-	<HediffDef>
-		<defName>AAVPE_StrengthenBlackHive</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		<label>insectoid strengthened</label>
-		<description>This Black Hive insect has been strengthened and will be more proficient in combat.</description>
+    <HediffDef>
+        <defName>AAVPE_Exploder</defName>
+        <label>chemfuel nodules</label>
+        <description>Psychically implanted nodules of chemfuel will cause this person or animal to blow up when killed.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="AnimalBehaviours.HediffCompProperties_Exploder">
+                <explosionForce>2</explosionForce>
+                <damageDef>Flame</damageDef>
+            </li>
+        </comps>
+    </HediffDef>
 
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<maxSeverity>1.0</maxSeverity>
-		<isBad>false</isBad>		
-		<stages>
-			<li>
-				<statOffsets>
-					<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>					
-					<InjuryHealingFactor>0.25</InjuryHealingFactor>					
-
-				</statOffsets>
-				<painFactor>0.25</painFactor>
-				<capMods>
-
-					<li>
-						<capacity>Manipulation</capacity>
-						<offset>0.5</offset>
-					</li>
-					<li>
-						<capacity>Sight</capacity>
-						<offset>0.5</offset>
-					</li>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>0.4</offset>
-					</li>
-
-				</capMods>
-			</li>
-		</stages>
-	</HediffDef>
-
-	<HediffDef ParentName="InfectionBase">
-		<defName>AA_MalevolentEye</defName>
-		<label>malevolent eye</label>
-		<labelNoun>a malevolent eye</labelNoun>
-		<description>A malevolent looking, bloodshot eye is emerging from this wound, blinking and peering wildly around it. Without treatment, it will cause rotting of the local tissue, eventually causing blood poisoning and death. They will however allow the afflicted to see through them.</description>
-		<makesSickThought>true</makesSickThought>
-		<lethalSeverity>1</lethalSeverity>
-		<woundAnchorRange>0</woundAnchorRange>
-		<displayWound>true</displayWound>
-		<tendable>true</tendable>
-		<comps>
-			<li Class="HediffCompProperties_TendDuration">
-				<baseTendDurationHours>12</baseTendDurationHours>
-				<severityPerDayTended>-0.53</severityPerDayTended>
-			</li>
-			<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>0.84</severityPerDayNotImmune>
-				<immunityPerDaySick>0.6441</immunityPerDaySick>
-				<severityPerDayImmune>-0.70</severityPerDayImmune>
-				<immunityPerDayNotSick>-0.40</immunityPerDayNotSick>
-			</li>
-
-		</comps>
-		<stages>
-			<li>
-				<label>minor</label>
-				<painOffset>0.1</painOffset>
-				<capMods>
-
-					<li>
-						<capacity>Sight</capacity>
-						<offset>0.15</offset>
-					</li>
-				</capMods>
-			</li> 
-			<li>
-				<minSeverity>0.33</minSeverity>
-				<label>major</label>
-				<painOffset>0.15</painOffset>
-				<capMods>
-
-					<li>
-						<capacity>Sight</capacity>
-						<offset>0.2</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<minSeverity>0.78</minSeverity>
-				<label>extreme</label>
-				<lifeThreatening>true</lifeThreatening>
-				<painOffset>0.3</painOffset>
-				<capMods>
-
-					<li>
-						<capacity>Sight</capacity>
-						<offset>0.25</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<minSeverity>0.87</minSeverity>
-				<label>extreme</label>
-				<lifeThreatening>true</lifeThreatening>
-				<painOffset>0.85</painOffset>
-				<capMods>
-
-					<li>
-						<capacity>Sight</capacity>
-						<offset>0.25</offset>
-					</li>
-				</capMods>
-			</li>
-		</stages>
-	</HediffDef>
-
-	<HediffDef>
-		<defName>AAVPE_KO</defName>
-		<label>knocked out</label>
-		<labelNoun>knocked out</labelNoun>
-		<description>This person was struck by such psychic energy that they are unable to move.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<stages>
-			<li>
-				<minSeverity>.5</minSeverity>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<setMax>.1</setMax>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<minSeverity>.75</minSeverity>
-				<capMods>
-					<li>
-						<capacity>Consciousness</capacity>
-						<setMax>.01</setMax>
-					</li>
-				</capMods>
-			</li>
-		</stages>
-		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-4</severityPerDay>
-				<showDaysToRecover>true</showDaysToRecover>
-			</li>
-		</comps>
-	</HediffDef>
-
-	<HediffDef>
-		<defName>AAVPE_Exploder</defName>
-		<label>chemfuel nodules</label>
-		<description>Psychically implanted nodules of chemfuel will cause this person or animal to blow up when killed.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<maxSeverity>1.0</maxSeverity>
-		<isBad>false</isBad>		
-		<comps>
-			<li Class="AnimalBehaviours.HediffCompProperties_Exploder">
-				<explosionForce>2</explosionForce>
-				<damageDef>Flame</damageDef>
-			</li>
-		</comps>
-	</HediffDef>
-
-	<HediffDef ParentName="PsycastHediffBase">
-		<defName>AAVPE_Hover</defName>
-		<label>hover</label>
-		<description>Limited psychic flight that allows this colonist or animal to hop and glide small distances over terrain. They will ignore terrain movement costs for the duration of the ability.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<maxSeverity>1.0</maxSeverity>
-		<isBad>false</isBad>		
-		<comps>
-			<li Class="AnimalBehaviours.HediffCompProperties_Floating">
+    <HediffDef ParentName="PsycastHediffBase">
+        <defName>AAVPE_Hover</defName>
+        <label>hover</label>
+        <description>Limited psychic flight that allows this colonist or animal to hop and glide small distances over terrain. They will ignore terrain movement costs for the duration of the ability.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="AnimalBehaviours.HediffCompProperties_Floating">
 
 			</li>
-		</comps>
-	</HediffDef>
+        </comps>
+    </HediffDef>
 
-	<HediffDef ParentName="PsycastHediffBase">
-		<defName>AAVPE_FungalSkin</defName>
-		<label>fungal skin</label>
-		<description>Several giant fungi are sprouting from this person or animal's skin. These fungi cause them no pain and provide a considerable amount of natural armor, at the cost of making them VERY vulnerable to fire.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<maxSeverity>1.0</maxSeverity>
-		<isBad>false</isBad>	
-		<stages>
-			<li>
-				<minSeverity>0</minSeverity>
-				<statOffsets>
-					<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-					<ArmorRating_Sharp>0.5</ArmorRating_Sharp>					
-					<InjuryHealingFactor>0.25</InjuryHealingFactor>					
+    <HediffDef ParentName="PsycastHediffBase">
+        <defName>AAVPE_FungalSkin</defName>
+        <label>fungal skin</label>
+        <description>Several giant fungi are sprouting from this person or animal's skin. These fungi cause them no pain and provide a considerable amount of natural armor, at the cost of making them VERY vulnerable to fire.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <statOffsets>
+                    <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+                    <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+                    <InjuryHealingFactor>0.25</InjuryHealingFactor>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="AnimalBehaviours.HediffCompProperties_HighlyFlammable">
+                <damageToInflict>AA_PermanentBurn</damageToInflict>
+            </li>
+        </comps>
+    </HediffDef>
 
-				</statOffsets>
-			</li>
-
-		</stages>		
-		<comps>
-			<li Class="AnimalBehaviours.HediffCompProperties_HighlyFlammable">
-				<damageToInflict>AA_PermanentBurn</damageToInflict>
-			</li>
-		</comps>
-	</HediffDef>
-
-	<HediffDef>
-		<defName>AAVPE_LightSustenance</defName>
-		<label>reduced need to eat</label>
-		<description>This colonist or animal has had part of its skin replaced with plant material, eliminating almost entirely their need to eat, but requiring them to be constantly exposed to light for sustenance. This change is permanent, and quite traumatic.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<maxSeverity>1.0</maxSeverity>
-
-		<isBad>false</isBad>	
-		<stages>
-			<li>
-				<minSeverity>0</minSeverity>
-				<statOffsets>
-					<HungerRateMultiplier>-1000</HungerRateMultiplier>			
-					<MentalBreakThreshold>0.2</MentalBreakThreshold>
-				</statOffsets>
-			</li>
-
-		</stages>				
-		<comps>
-			<li Class="AnimalBehaviours.HediffCompProperties_LightSustenance">
+    <HediffDef>
+        <defName>AAVPE_LightSustenance</defName>
+        <label>reduced need to eat</label>
+        <description>This colonist or animal has had part of its skin replaced with plant material, eliminating almost entirely their need to eat, but requiring them to be constantly exposed to light for sustenance. This change is permanent, and quite traumatic.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <statOffsets>
+                    <HungerRateMultiplier>-1000</HungerRateMultiplier>
+                    <MentalBreakThreshold>0.2</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="AnimalBehaviours.HediffCompProperties_LightSustenance">
 
 			</li>
-		</comps>
-	</HediffDef>
+        </comps>
+    </HediffDef>
 
-	<HediffDef>
-		<defName>AAVPE_Electrified</defName>
-		<label>electrified</label>
-		<description>This colonist or animal had its blood charged with reverse entropy potential, allowing them to recharge electrical batteries merely by being close to them. This change is permanent, and quite traumatic.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<maxSeverity>1.0</maxSeverity>
+    <HediffDef>
+        <defName>AAVPE_Electrified</defName>
+        <label>electrified</label>
+        <description>This colonist or animal had its blood charged with reverse entropy potential, allowing them to recharge electrical batteries merely by being close to them. This change is permanent, and quite traumatic.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+                <minSeverity>0</minSeverity>
+                <statOffsets>
+                    <MentalBreakThreshold>0.2</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="AnimalBehaviours.HediffCompProperties_Electrified">
+                <electroRate>40</electroRate>
+                <electroRadius>5</electroRadius>
+                <batteriesToAffect>
+                    <li>Battery</li>
+                    <li>Battery_Silver</li>
+                    <li>Battery_Gold</li>
+                    <li>Battery_Plasteel</li>
+                    <li>Battery_Uranium</li>
+                    <li>Battery_Advanced</li>
+                    <li>Battery_Vanometric</li>
+                    <li>Battery4k</li>
+                    <li>Battery16k</li>
+                    <li>Battery64k</li>
+                    <li>Battery256k</li>
+                    <li>ChargeBack_Battery_Prototype</li>
+                    <li>ChargeBack_Battery</li>
+                    <li>SpeedCharge_Battery</li>
+                    <li>ResonanceCell_Battery</li>
+                    <li>VoidCell_Battery</li>
+                    <li>VFE_LargeBattery</li>
+                    <li>VFE_SmallBattery</li>
+                    <li>VFE_AdvancedBattery</li>
+                    <li>VFE_LargeAdvancedBattery</li>
+                    <li>AA_BlueGelBattery</li>
+                    <li>AA_HexaGelBattery</li>
+                    <li>ShipCapacitor</li>
+                    <li>ShipCapacitorSmall</li>
+                </batteriesToAffect>
+            </li>
+        </comps>
+    </HediffDef>
 
-		<isBad>false</isBad>	
-		<stages>
-			<li>
-				<minSeverity>0</minSeverity>
-				<statOffsets>
-
-					<MentalBreakThreshold>0.2</MentalBreakThreshold>
-				</statOffsets>
-			</li>
-
-		</stages>				
-		<comps>
-			<li Class="AnimalBehaviours.HediffCompProperties_Electrified">
-				<electroRate>40</electroRate>
-				<electroRadius>5</electroRadius>
-				<batteriesToAffect>
-					<li>Battery</li>
-					<li>Battery_Silver</li>
-					<li>Battery_Gold</li>
-					<li>Battery_Plasteel</li>
-					<li>Battery_Uranium</li>
-					<li>Battery_Advanced</li>
-					<li>Battery_Vanometric</li>
-					<li>Battery4k</li>
-					<li>Battery16k</li>
-					<li>Battery64k</li>
-					<li>Battery256k</li>
-					<li>ChargeBack_Battery_Prototype</li>
-					<li>ChargeBack_Battery</li>
-					<li>SpeedCharge_Battery</li>
-					<li>ResonanceCell_Battery</li>
-					<li>VoidCell_Battery</li>
-					<li>VFE_LargeBattery</li>
-					<li>VFE_SmallBattery</li>
-					<li>VFE_AdvancedBattery</li>
-					<li>VFE_LargeAdvancedBattery</li>
-					<li>AA_BlueGelBattery</li>
-					<li>AA_HexaGelBattery</li>
-					<li>ShipCapacitor</li>
-					<li>ShipCapacitorSmall</li>
-				</batteriesToAffect>
-			</li>
-		</comps>
-	</HediffDef>
-	
-	<HediffDef ParentName="PsycastHediffBase">
-		<defName>AAVPE_Regeneration</defName>
-		<label>regeneration</label>
-		<description>This colonist or animal has a psychically active field of regeneration, allowing them to heal their wounds much faster than usual.</description>
-		<hediffClass>HediffWithComps</hediffClass>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<maxSeverity>1.0</maxSeverity>
-
-		<isBad>false</isBad>	
-			
-		<comps>
-			<li Class="AnimalBehaviours.HediffCompProperties_Regeneration">
-				<rateInTicks>10</rateInTicks>
-			</li>
-		</comps>
-	</HediffDef>
-
+    <HediffDef ParentName="PsycastHediffBase">
+        <defName>AAVPE_Regeneration</defName>
+        <label>regeneration</label>
+        <description>This colonist or animal has a psychically active field of regeneration, allowing them to heal their wounds much faster than usual.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <scenarioCanAdd>false</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="AnimalBehaviours.HediffCompProperties_Regeneration">
+                <rateInTicks>10</rateInTicks>
+            </li>
+        </comps>
+    </HediffDef>
 
 </Defs>

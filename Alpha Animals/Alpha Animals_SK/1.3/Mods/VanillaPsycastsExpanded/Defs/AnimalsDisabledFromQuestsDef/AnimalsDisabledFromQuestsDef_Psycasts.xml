@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
-
-
-
-	<AnimalBehaviours.AnimalsDisabledFromQuestsDef>
-		<defName>AA_DisabledAnimalToggles_psycasts</defName>
-		<disabledFromQuestsPawns>			
-			
-			<li>AA_BlackScarab_Temporary</li>
-			<li>AA_BlackSpider_Temporary</li>
-			<li>AA_BlackSpelopede_Temporary</li>
-			<li>AA_MammothWorm_Temporary</li>
-			<li>AAVPE_BlackQueen</li>
-			<li>AA_BlackLarvae</li>
-			<li>AA_Summoned_Eyeling</li>
-			
-			
-		</disabledFromQuestsPawns>							
-	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
-
-
-
-
-
+    <AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+        <defName>AA_DisabledAnimalToggles_psycasts</defName>
+        <disabledFromQuestsPawns>
+            <li>AA_BlackScarab_Temporary</li>
+            <li>AA_BlackSpider_Temporary</li>
+            <li>AA_BlackSpelopede_Temporary</li>
+            <li>AA_MammothWorm_Temporary</li>
+            <li>AAVPE_BlackQueen</li>
+            <li>AA_BlackLarvae</li>
+            <li>AA_Summoned_Eyeling</li>
+        </disabledFromQuestsPawns>
+    </AnimalBehaviours.AnimalsDisabledFromQuestsDef>
 </Defs>

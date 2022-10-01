@@ -1,134 +1,107 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<!-- Ranged spinneret -->
-
-	<ThingDef ParentName="VEF_AdvancedBaseADS">
-		<defName>AA_RangedSpinneretImplant</defName>
-		<label>ranged spinneret implant</label>							
-		<description>An installed ranged spinneret implant. This implant will allow this creature to use a ranged stunning web attack.\n\nNote that installing this on a creature that already has a ranged spinneret will have no effect.</description>
-		<descriptionHyperlinks>
-			<RecipeDef>AA_InstallRangedSpinneretImplant</RecipeDef>
-		</descriptionHyperlinks>
-		<statBases>
-			<MarketValue>800</MarketValue>
-			<Mass>2</Mass>
-		</statBases>
-
-	</ThingDef>
-
-	<!-- Venomous Spitter -->
-
-	<ThingDef ParentName="VEF_AdvancedBaseADS">
-		<defName>AA_VenomousSpitterImplant</defName>
-		<label>venomous spitter implant</label>							
-		<description>An installed venomous spitter implant. This implant will allow this creature to use a ranged venomous spit attack.\n\nNote that installing this on a creature that already has a venomous spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
-		<descriptionHyperlinks>
-			<RecipeDef>AA_InstallVenomousSpitterImplant</RecipeDef>
-		</descriptionHyperlinks>
-		<statBases>
-			<MarketValue>800</MarketValue>
-			<Mass>2</Mass>
-		</statBases>
-
-	</ThingDef>
-
-	<!-- Acidic Spitter -->
-
-	<ThingDef ParentName="VEF_AdvancedBaseADS">
-		<defName>AA_AcidicSpitterImplant</defName>
-		<label>acidic spitter implant</label>							
-		<description>An installed acidic spitter implant. This implant will allow this creature to use a ranged acidic spit attack that causes additional damage over time.\n\nNote that installing this on a creature that already has an acidic spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
-		<descriptionHyperlinks>
-			<RecipeDef>AA_InstallVenomousSpitterImplant</RecipeDef>
-		</descriptionHyperlinks>
-		<statBases>
-			<MarketValue>800</MarketValue>
-			<Mass>2</Mass>
-		</statBases>
-
-	</ThingDef>
-
-	<!-- Barbed Quill Thrower -->
-
-
-	<ThingDef ParentName="VEF_AdvancedBaseADS">
-		<defName>AA_BarbedQuillThrowerImplant</defName>
-		<label>barbed quill thrower implant</label>							
-		<description>An installed barbed quill thrower implant. This implant will allow this creature to use a ranged venomous quill attack that causes toxic buildup.\n\nNote that installing this on a creature that already has a barbed quill thrower will have no effect.</description>
-		<descriptionHyperlinks>
-			<RecipeDef>AA_InstallBarbedQuillThrowerImplant</RecipeDef>
-		</descriptionHyperlinks>
-		<statBases>
-			<MarketValue>800</MarketValue>
-			<Mass>2</Mass>
-		</statBases>
-
-	</ThingDef>
-
-	<!-- Quad Tesla Cannon -->
-
-	<ThingDef ParentName="VEF_AdvancedBaseADS">
-		<defName>AA_QuadTeslaCannonImplant</defName>
-		<label>quad tesla cannon implant</label>							
-		<description>An installed quad tesla cannon implant. This implant will allow this creature to use a powerful ranged plasma attack.\n\nNote that installing this on a creature that already has a quad tesla cannon will have no effect.</description>
-		<descriptionHyperlinks>
-			<RecipeDef>AA_InstallQuadTeslaCannonImplant</RecipeDef>
-		</descriptionHyperlinks>
-		<statBases>
-			<MarketValue>800</MarketValue>
-			<Mass>2</Mass>
-		</statBases>
-
-	</ThingDef>
-
-	<!-- Bioelectric Organ -->
-
-	<ThingDef ParentName="VEF_AdvancedBaseADS">
-		<defName>AA_BioelectricOrganImplant</defName>
-		<label>bioelectric organ implant</label>							
-		<description>An installed bioelectric organ implant. This implant will allow this creature to use a powerful ranged electric attack that may paralyze and cause heart attacks.\n\nNote that installing this on a creature that already has a bioelectric organ will have no effect.</description>
-		<descriptionHyperlinks>
-			<RecipeDef>AA_InstallBioelectricOrganImplant</RecipeDef>
-		</descriptionHyperlinks>
-		<statBases>
-			<MarketValue>800</MarketValue>
-			<Mass>2</Mass>
-		</statBases>
-
-	</ThingDef>
-
-	<!-- Light Focusing Lens -->
-
-	<ThingDef ParentName="VEF_AdvancedBaseADS">
-		<defName>AA_LightFocusingLensImplant</defName>
-		<label>light focusing lens implant</label>							
-		<description>An installed light focusing lens implant. This implant will allow this creature to use a powerful ranged laser attack that sets enemies on fire.\n\nNote that installing this on a creature that already has a light focusing lens will have no effect. This implant takes the space of one of the creature's eyes, so it can't be installed in eyeless animals.</description>
-		<descriptionHyperlinks>
-			<RecipeDef>AA_InstallLightFocusingLensImplant</RecipeDef>
-		</descriptionHyperlinks>
-		<statBases>
-			<MarketValue>800</MarketValue>
-			<Mass>2</Mass>
-		</statBases>
-
-	</ThingDef>
-
-	<!-- Hyper Acidic Stomach -->
-
-
-	<ThingDef ParentName="VEF_AdvancedBaseADS">
-		<defName>AA_HyperAcidicStomachImplant</defName>
-		<label>hyper acidic stomach implant</label>							
-		<description>An installed hyper acidic stomach implant. This implant will allow this creature to use a ranged acid attack that causes damage over time.\n\nNote that installing this on a creature that already has a hyper acidic stomach will have no effect. This implant takes the space of the creature's stomach, so it can't be installed in animals that lack one.</description>
-		<descriptionHyperlinks>
-			<RecipeDef>AA_InstallHyperAcidicStomachImplant</RecipeDef>
-		</descriptionHyperlinks>
-		<statBases>
-			<MarketValue>800</MarketValue>
-			<Mass>2</Mass>
-		</statBases>
-
-	</ThingDef>
-
+    <!-- Ranged spinneret -->
+    <ThingDef ParentName="VEF_AdvancedBaseADS">
+        <defName>AA_RangedSpinneretImplant</defName>
+        <label>ranged spinneret implant</label>
+        <description>An installed ranged spinneret implant. This implant will allow this creature to use a ranged stunning web attack.\n\nNote that installing this on a creature that already has a ranged spinneret will have no effect.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>AA_InstallRangedSpinneretImplant</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+    <!-- Venomous Spitter -->
+    <ThingDef ParentName="VEF_AdvancedBaseADS">
+        <defName>AA_VenomousSpitterImplant</defName>
+        <label>venomous spitter implant</label>
+        <description>An installed venomous spitter implant. This implant will allow this creature to use a ranged venomous spit attack.\n\nNote that installing this on a creature that already has a venomous spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+        <descriptionHyperlinks>
+            <RecipeDef>AA_InstallVenomousSpitterImplant</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+    <!-- Acidic Spitter -->
+    <ThingDef ParentName="VEF_AdvancedBaseADS">
+        <defName>AA_AcidicSpitterImplant</defName>
+        <label>acidic spitter implant</label>
+        <description>An installed acidic spitter implant. This implant will allow this creature to use a ranged acidic spit attack that causes additional damage over time.\n\nNote that installing this on a creature that already has an acidic spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+        <descriptionHyperlinks>
+            <RecipeDef>AA_InstallVenomousSpitterImplant</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+    <!-- Barbed Quill Thrower -->
+    <ThingDef ParentName="VEF_AdvancedBaseADS">
+        <defName>AA_BarbedQuillThrowerImplant</defName>
+        <label>barbed quill thrower implant</label>
+        <description>An installed barbed quill thrower implant. This implant will allow this creature to use a ranged venomous quill attack that causes toxic buildup.\n\nNote that installing this on a creature that already has a barbed quill thrower will have no effect.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>AA_InstallBarbedQuillThrowerImplant</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+    <!-- Quad Tesla Cannon -->
+    <ThingDef ParentName="VEF_AdvancedBaseADS">
+        <defName>AA_QuadTeslaCannonImplant</defName>
+        <label>quad tesla cannon implant</label>
+        <description>An installed quad tesla cannon implant. This implant will allow this creature to use a powerful ranged plasma attack.\n\nNote that installing this on a creature that already has a quad tesla cannon will have no effect.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>AA_InstallQuadTeslaCannonImplant</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+    <!-- Bioelectric Organ -->
+    <ThingDef ParentName="VEF_AdvancedBaseADS">
+        <defName>AA_BioelectricOrganImplant</defName>
+        <label>bioelectric organ implant</label>
+        <description>An installed bioelectric organ implant. This implant will allow this creature to use a powerful ranged electric attack that may paralyze and cause heart attacks.\n\nNote that installing this on a creature that already has a bioelectric organ will have no effect.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>AA_InstallBioelectricOrganImplant</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+    <!-- Light Focusing Lens -->
+    <ThingDef ParentName="VEF_AdvancedBaseADS">
+        <defName>AA_LightFocusingLensImplant</defName>
+        <label>light focusing lens implant</label>
+        <description>An installed light focusing lens implant. This implant will allow this creature to use a powerful ranged laser attack that sets enemies on fire.\n\nNote that installing this on a creature that already has a light focusing lens will have no effect. This implant takes the space of one of the creature's eyes, so it can't be installed in eyeless animals.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>AA_InstallLightFocusingLensImplant</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+    <!-- Hyper Acidic Stomach -->
+    <ThingDef ParentName="VEF_AdvancedBaseADS">
+        <defName>AA_HyperAcidicStomachImplant</defName>
+        <label>hyper acidic stomach implant</label>
+        <description>An installed hyper acidic stomach implant. This implant will allow this creature to use a ranged acid attack that causes damage over time.\n\nNote that installing this on a creature that already has a hyper acidic stomach will have no effect. This implant takes the space of the creature's stomach, so it can't be installed in animals that lack one.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>AA_InstallHyperAcidicStomachImplant</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
 </Defs>
