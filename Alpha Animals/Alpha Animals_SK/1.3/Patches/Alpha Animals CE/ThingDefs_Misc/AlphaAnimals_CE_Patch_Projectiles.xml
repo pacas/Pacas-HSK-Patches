@@ -57,7 +57,7 @@
 				<!-- ============== Adding 'Standard' AimingAccuracy node to creatures' that use ranged attack statBases. =============== -->
 				<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[
-				defName="AA_Barbslinger" or
+				defName="Scorpion" or
 				defName="AA_Blizzarisk" or
 				defName="AA_BlizzariskClutchMother" or
 				defName="AA_Cinderlisk" or
@@ -72,7 +72,7 @@
 				defName="AA_Junglelisk" or
 				defName="AA_Mantrap" or
 				defName="AA_NightAve" or
-				defName="AA_Nightling" or
+				defName="Nightling" or
 				defName="AA_OcularJelly" or
 				defName="AA_Plasmorph" or
 				defName="AA_RedGoo" or

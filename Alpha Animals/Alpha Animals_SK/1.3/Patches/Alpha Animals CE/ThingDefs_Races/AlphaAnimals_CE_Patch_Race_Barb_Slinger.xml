@@ -153,6 +153,13 @@
                 </li>
 
                 <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="Scorpion"]/race/body</xpath>
+                    <value>
+                        <body>AA_ScorpionLike</body>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
                     <xpath>/Defs/PawnKindDef[defName="Scorpion"]/combatPower</xpath>
                     <value>
                         <combatPower>400</combatPower>
