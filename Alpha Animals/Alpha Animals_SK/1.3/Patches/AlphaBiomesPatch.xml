@@ -714,7 +714,7 @@
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[defName="AA_AlienTree"]/plant/harvestedThingDef</xpath>
                     <value>
-                        <harvestedThingDef>RedWoodLog</harvestedThingDef>
+                        <harvestedThingDef>GU_RedWood</harvestedThingDef>
                     </value>
                 </li>
             </operations>
