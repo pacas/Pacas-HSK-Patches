@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+   
+    <ThingDef ParentName="PawnFlyerBase">
+        <defName>AAVPE_JumpingPawn</defName>
+        <thingClass>AlphaBehavioursAndEvents.JumpingPawn</thingClass>
+        <pawnFlyer>
+            <flightDurationMin>0.1</flightDurationMin>
+            <flightSpeed>20</flightSpeed>
+        </pawnFlyer>
+    </ThingDef>
+    
+</Defs>

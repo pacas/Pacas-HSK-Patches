@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+	<!-- Insectoid Queen -->
+	<ThingDef ParentName="SK_AA_BlackHive">
+		<defName>AAVPE_BlackQueen</defName>
+		<label>summoned black queen</label>
+		<description>A giant, genetically-engineered insectoid responsible for creating new spawn. A mother to the insects of the black hive, the black queen is incredibly aggressive and doesn't shy away from brutal combat. As massive as an adult thrumbo, the queen instills fear in most opponents. Her thick chitinous armor makes her hard to kill, whilst long, deadly blades can tear through plasteel shielding in seconds and cause grievous, infected wounds.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; The Black Queen regenerates health and her physical attacks have a 95% chance to cause infections.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<MarketValue>1500</MarketValue>
+			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+		</statBases>
+		<tools>
+			<li>
+				<label>infected mandibles</label>
+				<capacities>
+					<li>AAVPE_InfectedMandibles</li>
+				</capacities>
+				<power>28</power>
+				<cooldownTime>1</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+
+			<li Class="AnimalBehaviours.CompProperties_ThoughtEffecter">
+				<radius>7</radius>
+				<thoughtDef>AAVPE_SeenBlackQueen</thoughtDef>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_FixedGender">
+				<gender>Female</gender>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_DieAfterPeriod">
+				<timeToDieInTicks>60000</timeToDieInTicks>
+				<effect>false</effect>
+				<justVanish>true</justVanish>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Infecter">
+				<infectionChance>95</infectionChance>
+				<worsenExistingInfection>true</worsenExistingInfection>
+				
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
+				<rateInTicks>60</rateInTicks>
+
+			</li>
+		</comps>
+		<race>
+			<body>BeetleLikeWithClaw</body>
+			
+			<baseHungerRate>0.70</baseHungerRate>
+			<baseBodySize>4</baseBodySize>
+			<baseHealthScale>8</baseHealthScale>
+			<gestationPeriodDays>12</gestationPeriodDays>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<wildness>0.95</wildness>
+			<lifeExpectancy>6</lifeExpectancy>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectLarva</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectJuvenile</def>
+					<minAge>0.03</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0.2</minAge>
+					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
+					<soundDeath>Pawn_BigInsect_Death</soundDeath>
+					<soundCall>Pawn_BigInsect_Call</soundCall>
+					<soundAngry>Pawn_BigInsect_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		
+	</ThingDef>
+
+	<PawnKindDef ParentName="SK_AnimalKindBase">
+		<defName>AAVPE_BlackQueen</defName>
+		<label>summoned black queen</label>
+		<race>AAVPE_BlackQueen</race>
+		<combatPower>300</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.50</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_BlackQueen/AA_BlackQueen</texPath>
+					<drawSize>3.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_BlackQueen/AA_Dessicated_BlackQueen</texPath>
+					<drawSize>3.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_BlackQueen/AA_BlackQueen</texPath>
+					<drawSize>4.0</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_BlackQueen/AA_Dessicated_BlackQueen</texPath>
+					<drawSize>4.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_BlackQueen/AA_BlackQueen</texPath>
+					<drawSize>4.8</drawSize>
+					<shadowData>
+						<volume>(0.5, 0.7, 0.43)</volume>
+						<offset>(0,0,-0.1)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_BlackQueen/AA_Dessicated_BlackQueen</texPath>
+					<drawSize>4.8</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+	
+
+</Defs>

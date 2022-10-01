@@ -1,0 +1,673 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef Name="VEF_AdvancedSurgeryInstallImplantBase" ParentName="SurgeryFlesh" Abstract="True">
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+	<!--=============== Tentacles ====================-->
+
+	<RecipeDef Abstract="True" Name="AA_TentacleBaseAnimal" ParentName="SurgeryFleshAnimal">
+		<appliedOnFixedBodyParts>
+			<li>AA_JellyfishTentacle</li>
+			<li>AA_ManTrapTentacle</li>
+			<li>AA_SquidTentacle</li>
+			<li>AA_NautilusTentacles</li>
+			<li>AA_JellyfishTentacles</li>
+
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AA_TentacleBaseAnimal">
+		<defName>AB_InstallSimpleTentacle</defName>
+		<label>install simple prosthetic tentacle</label>
+		<description>Installs simple prosthetic tentacle.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing simple prosthetic tentacle.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_ProstheticTentacle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AA_ProstheticTentacle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AA_ProstheticTentacle</addsHediff>
+
+	</RecipeDef>
+
+	<RecipeDef ParentName="AA_TentacleBaseAnimal">
+		<defName>AB_InstallBionicTentacle</defName>
+		<label>install bionic tentacle</label>
+		<description>Installs bionic tentacle.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic tentacle.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_BionicTentacle</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AA_BionicTentacle</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AA_BionicTentacle</addsHediff>
+
+	</RecipeDef>
+
+	<!--=============== Beaks ====================-->
+
+	<RecipeDef Abstract="True" Name="AA_BeakBaseAnimal" ParentName="SurgeryFleshAnimal">
+		<appliedOnFixedBodyParts>
+			<li>Beak</li>
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AA_BeakBaseAnimal">
+		<defName>AA_InstallSimpleBeak</defName>
+		<label>install simple prosthetic beak</label>
+		<description>Installs simple prosthetic beak.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing simple prosthetic beak.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_ProstheticBeak</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AA_ProstheticBeak</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AA_ProstheticBeak</addsHediff>
+
+	</RecipeDef>
+
+	<RecipeDef ParentName="AA_BeakBaseAnimal">
+		<defName>AA_InstallBionicBeak</defName>
+		<label>install bionic beak</label>
+		<description>Installs bionic beak.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic beak.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_BionicBeak</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AA_BionicBeak</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AA_BionicBeak</addsHediff>
+
+	</RecipeDef>
+
+	<!--=============== Motion Detector ====================-->
+
+	<RecipeDef Abstract="True" Name="AA_MotionDetectorBaseAnimal" ParentName="SurgeryFleshAnimal">
+		<appliedOnFixedBodyParts>
+			<li>AA_PlantVibrationSensor</li>
+			<li>AA_VibrationReceptor</li>
+			<li>AA_EcholocationOrgan</li>
+
+
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AA_MotionDetectorBaseAnimal">
+		<defName>AA_InstallBionicMotionDetector</defName>
+		<label>install bionic motion detector</label>
+		<description>Installs bionic motion detector. Requires a min skill in medicine of 8.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic motion detector.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_BionicMotionDetector</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AA_BionicMotionDetector</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+
+		<addsHediff>AA_BionicMotionDetector</addsHediff>
+
+	</RecipeDef>
+
+	<!--=============== Buoyancy Mechanism ====================-->
+
+	<RecipeDef Abstract="True" Name="AA_BuoyancyBaseAnimal" ParentName="SurgeryFleshAnimal">
+		<appliedOnFixedBodyParts>
+			<li>AA_HydrogenSac</li>
+			<li>AA_BoatHydrogenSac</li>
+
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AA_BuoyancyBaseAnimal">
+		<defName>AB_InstallSimpleBuoyancy</defName>
+		<label>install simple buoyancy mechanism</label>
+		<description>Installs simple buoyancy mechanism.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing simple buoyancy mechanism.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_ProstheticBuoyancyMechanism</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AA_ProstheticBuoyancyMechanism</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AA_ProstheticBuoyancyMechanism</addsHediff>
+
+	</RecipeDef>
+
+	<RecipeDef ParentName="AA_BuoyancyBaseAnimal">
+		<defName>AA_InstallBionicBuoyancy</defName>
+		<label>install bionic buoyancy mechanism</label>
+		<description>Installs bionic buoyancy mechanism. Requires a min skill in medicine of 8.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic buoyancy mechanism.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_BionicBuoyancyMechanism</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AA_BionicBuoyancyMechanism</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+
+		<addsHediff>AA_BionicBuoyancyMechanism</addsHediff>
+
+	</RecipeDef>
+
+	<!--=============== Shells ====================-->
+
+	<RecipeDef Abstract="True" Name="AA_ShellBaseAnimal" ParentName="SurgeryFleshAnimal">
+		<appliedOnFixedBodyParts>
+			<li>AA_FirstWormSegment</li>
+			<li>AA_SecondWormSegment</li>
+			<li>AA_ThirdWormSegment</li>
+			<li>AA_FourthWormSegment</li>
+			<li>AA_Carapace</li>
+			<li>AA_ConicalShell</li>
+			<li>AA_NautilusShell</li>
+
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AA_ShellBaseAnimal">
+		<defName>AB_InstallSimpleShell</defName>
+		<label>install simple prosthetic shell</label>
+		<description>Installs simple prosthetic shell.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing simple prosthetic shell.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_ProstheticShell</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AA_ProstheticShell</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AA_ProstheticShell</addsHediff>
+
+	</RecipeDef>
+
+	<RecipeDef ParentName="AA_ShellBaseAnimal">
+		<defName>AA_InstallBionicShell</defName>
+		<label>install bionic shell</label>
+		<description>Installs bionic shell. Requires a min skill in medicine of 8.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic shell.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_BionicShell</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AA_BionicShell</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+
+		<addsHediff>AA_BionicShell</addsHediff>
+
+	</RecipeDef>
+
+	<!--=============== Wings ====================-->
+
+	<RecipeDef Abstract="True" Name="AA_WingBaseAnimal" ParentName="SurgeryFleshAnimal">
+		<appliedOnFixedBodyParts>
+			<li>AA_InsectWing</li>
+			<li>AA_ReptileWing</li>
+
+
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AA_WingBaseAnimal">
+		<defName>AB_InstallSimpleWing</defName>
+		<label>install simple prosthetic wing</label>
+		<description>Installs simple prosthetic wing.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing simple prosthetic wing.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_ProstheticWing</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AA_ProstheticWing</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AA_ProstheticWing</addsHediff>
+
+	</RecipeDef>
+
+	<RecipeDef ParentName="AA_WingBaseAnimal">
+		<defName>AA_InstallBionicWing</defName>
+		<label>install bionic wing</label>
+		<description>Installs bionic wing. Requires a min skill in medicine of 8.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic wing.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_BionicWing</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AA_BionicWing</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+
+		<addsHediff>AA_BionicWing</addsHediff>
+
+	</RecipeDef>
+
+	<!--=============== Claws ====================-->
+
+	<RecipeDef Abstract="True" Name="AA_ClawBaseAnimal" ParentName="SurgeryFleshAnimal">
+		<appliedOnFixedBodyParts>
+			<li>AA_LeftPincer</li>
+			<li>AA_RightPincer</li>
+			<li>AA_LeftCreatureBlade</li>
+			<li>AA_RightCreatureBlade</li>
+			<li>AA_FrontClaw</li>
+
+		</appliedOnFixedBodyParts>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AA_ClawBaseAnimal">
+		<defName>AB_InstallSimpleClaw</defName>
+		<label>install simple prosthetic claw</label>
+		<description>Installs simple prosthetic claw.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing simple prosthetic claw.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>4</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AB_SimpleProstheticClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AB_SimpleProstheticClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>AB_SimpleProstheticClaw</addsHediff>
+
+	</RecipeDef>
+
+	<RecipeDef ParentName="AA_ClawBaseAnimal">
+		<defName>AA_InstallBionicClaw</defName>
+		<label>install bionic claw</label>
+		<description>Installs bionic claw. Requires a min skill in medicine of 8.</description>
+		<workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+		<jobString>Installing bionic claw.</jobString>
+		<workAmount>2000</workAmount>
+		<skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>Medicine</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AB_BionicClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>Medicine</li>
+			</categories>
+			<thingDefs>
+				<li>AB_BionicClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+
+		<addsHediff>AB_BionicClaw</addsHediff>
+
+	</RecipeDef>
+
+	<!--=============== Goo Acidifier ====================-->
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>AA_InstallGooAcidifier</defName>
+		<label>install goo acidifier</label>
+		<description>Install a goo acidifier.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_GooAcidifier</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing goo acidifier.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_GooAcidifier</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<recipeUsers inherit="false">
+			<li>AA_GreenGoo</li>
+			<li>AA_RedGoo</li>
+		</recipeUsers>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AA_GooAcidifier</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>AA_Nucleus</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AA_GooAcidifier</addsHediff>
+	</RecipeDef>
+
+
+
+
+</Defs>

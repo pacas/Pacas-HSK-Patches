@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+
+
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "Plant_TreeGauranlen"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Plant_TreeGauranlen"]</xpath>
+			<value>
+				<comps>
+					<li Class="AlphaBehavioursAndEvents.CompProperties_GauranlenGraphicChanger">
+
+						<newGraphics>
+							<li>Things/Plants/AA_CorruptedGauranlenTree</li>
+						</newGraphics>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Plant_TreeGauranlen"]/comps</xpath>
+			<value>
+				<li Class="AlphaBehavioursAndEvents.CompProperties_GauranlenGraphicChanger">
+
+					<newGraphics>
+						<li>Things/Plants/AA_CorruptedGauranlenTree</li>
+					</newGraphics>
+				</li>
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThingDef[defName = "Plant_MossGauranlen"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Plant_MossGauranlen"]</xpath>
+			<value>
+				<comps>
+					<li Class="AlphaBehavioursAndEvents.CompProperties_GauranlenGrassGraphicChanger">
+
+						<newGraphics>
+							<li>Things/Plants/AA_CorruptedGauranlenMoss</li>
+						</newGraphics>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName = "Plant_MossGauranlen"]/comps</xpath>
+			<value>
+				<li Class="AlphaBehavioursAndEvents.CompProperties_GauranlenGrassGraphicChanger">
+
+					<newGraphics>
+						<li>Things/Plants/AA_CorruptedGauranlenMoss</li>
+					</newGraphics>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+
+
+
+</Patch>

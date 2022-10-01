@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <VSEWW.RewardDef>
+    <defName>AA_GoodFleetDrop</defName>
+    <texPath>UI/Rewards/Reward_TheFleet_Good</texPath>
+    <label>Call fleet support</label>
+    <description>Cargo pod summons 10 tamed Aerofleet</description>
+    <category>Good</category>
+    <pawns>
+      <li>
+        <pawnkind>AA_Aerofleet</pawnkind>
+        <count>10</count>
+      </li>
+    </pawns>
+  </VSEWW.RewardDef>
+  
+   <VSEWW.RewardDef>
+    <defName>AA_GoodLiskSquad</defName>
+    <texPath>UI/Rewards/Reward_LiskSquad_Good</texPath>
+    <label>Call lisk squad</label>
+    <description>Cargo pod summons 5 tamed 'lisks</description>
+    <category>Good</category>
+    <randomPawns>
+      <li>
+        <tradeTag>AA_AlphaAnimalsLisk</tradeTag>
+        <intelligence>Animal</intelligence>
+        <count>5</count>
+      </li>
+    </randomPawns>
+  </VSEWW.RewardDef>
+</Defs>

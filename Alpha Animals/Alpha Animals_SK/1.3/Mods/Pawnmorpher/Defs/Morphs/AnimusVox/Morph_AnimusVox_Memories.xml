@@ -1,0 +1,127 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Tachyonite/Pawnmorpher/dev/Schemas/ThoughtDef.xsd">
+	<!-- <ThoughtDef ParentName="OutlookMemoryBase">
+		<defName>AA_HelixienTransformationMemory</defName>
+        <stages>
+            <li>
+                <label>morphed</label>
+                <description>I'm slimy, and my mouth waters upsettingly every time I see a dead thing.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>morphed</label>
+                <description>It's slime time, baby!</description>
+                <baseMoodEffect>+3</baseMoodEffect>
+            </li>
+            <li>
+                <label>morphed</label>
+                <description>Helixiens are disgusting enough as it is, now I have to see one every time I look in the mirror!</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+            <li>
+                <label>morphed</label>
+                <description>I'm kind of digging the wild field of vision, but people keep making salt jokes around me.</description>
+                <baseMoodEffect>+1</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	
+    <ThoughtDef ParentName="OutlookMemoryBase">
+		<defName>AA_HelixienRevertedMemory</defName>
+        <stages>
+            <li>
+                <label>reverted</label>
+                <description>I'm dry again, and my eyes are back where nature intended.</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>reverted</label>
+                <description>Eugh, corpses smell so bad now, and my skin feels so dry!</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>reverted</label>
+                <description>No more wool! Oh, skin, how I missed seeing you...</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+            <li>
+                <label>reverted</label>
+                <description>I'm human again? I think I wanted the opposite of this.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>AA_HelixienFace</defName>
+        <stages>
+            <li>
+                <label>Slug face</label>
+                <description>Eugh, the way these eyestalks swing around makes me feel queasy.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Slug face</label>
+                <description>I can see forever!</description>
+                <visible>true</visible>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>Slug face</label>
+                <description>Nobody is gonna want to kiss this face! And with this rasping tongue I don't blame them!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>AA_HelixienTail</defName>
+        <stages>
+            <li>
+                <label>Slug tail</label>
+                <description>Do you have any idea how much lint gets stuck to this thing?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Slug tail</label>
+                <description>Scientifically speaking it's actually a large foot, but either way I can surf around on slime with it. Kowabunga!</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Slug tail</label>
+                <description>There's a loathesome bag of goo growing out of me, how do you think I feel?</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef ParentName="OutlookMemoryBase">
+        <durationDays>1</durationDays>
+        <defName>AA_HelixienSkin</defName>
+        <stages>
+            <li>
+                <label>Slimy skin</label>
+                <description>The leopard spots are kinda nice, but the slime? Not so much.</description>
+                <visible>true</visible>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Slimy skin</label>
+                <description>It's awesome how the slight shines through the translucent surface, like slimy stained glass!</description>
+                <visible>true</visible>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>Slimy skin</label>
+                <description>Oh god, this is one worse than leprosy!</description>
+                <visible>true</visible>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>-->
+</Defs>

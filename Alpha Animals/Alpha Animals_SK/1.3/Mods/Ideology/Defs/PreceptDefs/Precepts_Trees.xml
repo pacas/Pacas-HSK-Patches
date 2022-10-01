@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Issues -->
+
+  <IssueDef>
+    <defName>AA_OcularTrees</defName>
+    <label>ocular trees</label>
+    <iconPath>UI/Issues/AA_OcularTreesIssue</iconPath>
+  </IssueDef>
+
+
+
+  <!-- Precept -->
+
+  <PreceptDef>
+    <defName>AA_OcularTrees_Desired</defName>
+    <issue>AA_OcularTrees</issue>
+    <label>desired</label>
+    <description>The strange alien gaze of the ocular trees is soothing.</description>
+    <impact>Medium</impact>
+    <displayOrderInImpact>100</displayOrderInImpact>
+    <associatedMemes>
+      <li>AA_BiologicalCorruptors</li>
+    </associatedMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>AA_OcularTrees_TreesDesired</thought>
+      </li>
+     
+    </comps>
+  </PreceptDef>
+  
+  <PreceptDef>
+    <defName>AA_OcularTrees_Indifferent</defName>
+    <issue>AA_OcularTrees</issue>
+    <label>indifferent</label>
+    <description>What a weird tree. Yuck.</description>
+    <impact>Low</impact>
+    <classic>true</classic>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <defaultSelectionWeight>1</defaultSelectionWeight>
+    
+  </PreceptDef>
+
+ 
+
+  <ThoughtDef>
+    <defName>AA_OcularTrees_TreesDesired</defName>
+    <thoughtClass>Thought_Situational</thoughtClass>
+    <workerClass>AlphaBehavioursAndEvents.ThoughtWorker_OcularTrees</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+		<li>
+        <label>no ocular trees</label>
+        <description>There are no ocular trees around, and I feel nervous being outside of their soothing gaze</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+	  <li>
+        <label>scarce ocular trees</label>
+        <description>There are very few ocular trees around.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+	  <li>
+        <label>adequate ocular trees</label>
+        <description>I recently saw a wide variety of ocular trees.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>amazing ocular trees</label>
+        <description>I am surrounded by several beautiful, massive ocular trees. Their unblinking gaze is glorious!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>sublime ocular forest</label>
+        <description>The whole region is covered in the sublime gaze of the ocular trees - a physical seat of morality!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      
+    </stages>
+  </ThoughtDef>
+
+  
+
+</Defs>

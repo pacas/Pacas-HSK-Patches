@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Lord of the Rims - Elves (Continued)</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_Aerofleet"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.4</LotRE_MallornForest>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_AnimusVox"]/race/wildBiomes</xpath>
+					<value>					
+						<LotRE_MallornForest>0.05</LotRE_MallornForest>
+
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_BedBug"]/race/wildBiomes</xpath>
+					<value>					
+						<LotRE_MallornForest>0.05</LotRE_MallornForest>
+
+					</value>
+				</li>		
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_BoulderMit"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.05</LotRE_MallornForest>
+
+					</value>
+				</li>			
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_Bumbledrone"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.05</LotRE_MallornForest>
+					</value>
+				</li>	
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_Feralisk"]/race/wildBiomes</xpath>
+					<value>					
+						<LotRE_MallornForest>0.1</LotRE_MallornForest>
+					</value>
+				</li>				
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_Groundrunner"]/race/wildBiomes</xpath>
+					<value>					
+						<LotRE_MallornForest>0.05</LotRE_MallornForest>
+					</value>
+				</li>	
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_MeadowAve"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.2</LotRE_MallornForest>
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_MegaLouse"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.03</LotRE_MallornForest>
+					</value>
+				</li>				
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_Nightling"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.1</LotRE_MallornForest>
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_OvergrownColossus"]/race/wildBiomes</xpath>
+					<value>
+
+						<LotRE_MallornForest>0.02</LotRE_MallornForest>
+
+					</value>
+				</li>	
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_PebbleMit"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.07</LotRE_MallornForest>
+					</value>
+				</li>	
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_Slurrypede"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.01</LotRE_MallornForest>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_Swarmling"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.01</LotRE_MallornForest>		
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_TetraSlug"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.001</LotRE_MallornForest>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_Thermadon"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.01</LotRE_MallornForest>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_Wildpod"]/race/wildBiomes</xpath>
+					<value>
+
+						<LotRE_MallornForest>0.1</LotRE_MallornForest>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_Wildpawn"]/race/wildBiomes</xpath>
+					<value>
+
+						<LotRE_MallornForest>0.1</LotRE_MallornForest>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_FissionMouse"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.03</LotRE_MallornForest>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_DecayDrake"]/race/wildBiomes</xpath>
+					<value>					
+						<LotRE_MallornForest>0.05</LotRE_MallornForest>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_ShockGoat"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.02</LotRE_MallornForest>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/ThingDef[defName="AA_OcularJelly"]/race/wildBiomes</xpath>
+					<value>
+						<LotRE_MallornForest>0.005</LotRE_MallornForest>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+
