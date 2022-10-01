@@ -90,13 +90,13 @@
 					</tools>
 				</value>
 			</li>
-
+<!--
 			<li Class="PatchOperationAttributeSet">
 				<xpath>/Defs/ThingDef[defName="Scorpion"]</xpath>
 				<attribute>ParentName</attribute>
 				<value>SK_AA_Insect</value>
 			</li>
-
+-->
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/ThingDef[defName="Scorpion"]/statBases</xpath>
 				<value>
@@ -138,8 +138,6 @@
 						<AridShrubland>0.5</AridShrubland>
 					</wildBiomes>
 					<herdAnimal>false</herdAnimal>
-					<predator>true</predator>
-					<baseHungerRate>1.0</baseHungerRate>
 					<litterSizeCurve>
 						<points>
 							<li>(0.5, 0)</li>
@@ -194,7 +192,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/PawnKindDef[defName="Scorpion"]/ecoSystemWeight</xpath>
+				<xpath>/Defs/PawnKindDef[defName="Scorpion"]</xpath>
 				<value>
 					<alternateGraphicChance>1</alternateGraphicChance>
 					<alternateGraphics>
