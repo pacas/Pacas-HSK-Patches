@@ -10,8 +10,7 @@
 		<researchViewX>6.00</researchViewX>
 		<researchViewY>51.00</researchViewY>
 		<prerequisites>
-			<li>Animal_A2</li>
-            <li>SimpleAnimalProsthetics</li>
+			<li>Animal_B1</li>
 		</prerequisites>
 		<tab>Animal_SK</tab>
 	</ResearchProjectDef>
@@ -25,8 +24,7 @@
 		<researchViewX>9.00</researchViewX>
 		<researchViewY>51.00</researchViewY>
 		<prerequisites>
-			<li>Animal_C1</li>
-            <li>AnimalBionics</li>
+			<li>Animal_C2</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<tab>Animal_SK</tab>
@@ -41,8 +39,7 @@
 		<researchViewX>18.00</researchViewX>
 		<researchViewY>51.00</researchViewY>
 		<prerequisites>
-			<li>AnimalBionics</li>
-			<li>Prosthesis_install_D4</li>
+			<li>Animal_D1</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<tab>Animal_SK</tab>
