@@ -115,7 +115,7 @@
 						</value>
 					</nomatch>
 					<match Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName="GU_RedWood"]/stuffProps/Mass</xpath>
+					<xpath>/Defs/ThingDef[defName="GU_RedWood"]/stuffProps/statFactors/Mass</xpath>
 						<value>
 							<Mass>0.3</Mass>
 						</value>
