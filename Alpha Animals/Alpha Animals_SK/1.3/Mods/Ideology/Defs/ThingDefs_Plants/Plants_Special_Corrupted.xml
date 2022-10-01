@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="PlantBaseNonEdible">
+        <defName>AA_Plant_CorruptedPodGauranlen</defName>
+        <label>corrupted Gauranlen pod</label>
+        <description>A small pod that protects a single corrupted Gauranlen seed. This seed can be harvested and used to plant a Gauranlen tree.</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plants/AA_CorruptedGaumakerPod</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <descriptionHyperlinks>
+            <ThingDef>Plant_TreeGauranlen</ThingDef>
+            <ThingDef>AA_CorruptedGauranlenSeed</ThingDef>
+        </descriptionHyperlinks>
+        <selectable>true</selectable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <pathCost>14</pathCost>
+        <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+        <plant>
+            <fertilitySensitivity>0.15</fertilitySensitivity>
+            <growDays>6</growDays>
+            <harvestYield>1</harvestYield>
+            <harvestTag>Standard</harvestTag>
+            <harvestAfterGrowth>0</harvestAfterGrowth>
+            <harvestedThingDef>AA_CorruptedGauranlenSeed</harvestedThingDef>
+            <harvestFailable>false</harvestFailable>
+            <visualSizeRange>0.6~1.1</visualSizeRange>
+            <topWindExposure>0.1</topWindExposure>
+            <wildClusterWeight>0</wildClusterWeight>
+            <purpose>Misc</purpose>
+            <allowAutoCut>false</allowAutoCut>
+            <dieFromToxicFallout>False</dieFromToxicFallout>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="ResourceBase">
+        <defName>AA_CorruptedGauranlenSeed</defName>
+        <label>corrupted Gauranlen seed</label>
+        <description>The corrupted seed of a Gauranlan tree. It can be planted to create a new Gauranlen tree.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Plant_TreeGauranlen</ThingDef>
+            <ThingDef>AA_Plant_CorruptedPodGauranlen</ThingDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>0.3</Mass>
+            <Beauty>0</Beauty>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_CorruptedGauranlenSeed</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>(0.6, 0.6)</drawSize>
+        </graphicData>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_Plantable">
+                <plantDefToSpawn>Plant_TreeGauranlen</plantDefToSpawn>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

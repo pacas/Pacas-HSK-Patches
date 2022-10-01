@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+  <VSEWW.RewardDef>
+    <defName>AA_NormalFleetDrop</defName>
+    <texPath>UI/Rewards/Reward_TheFleet_Normal</texPath>
+    <label>Call fleet support</label>
+    <description>Cargo pod summons 5 tamed Aerofleet</description>
+    <category>Normal</category>
+    <pawns>
+      <li>
+        <pawnkind>AA_Aerofleet</pawnkind>
+        <count>5</count>
+      </li>
+    </pawns>
+  </VSEWW.RewardDef>
+  
+   <VSEWW.RewardDef>
+    <defName>AA_NormalLiskSquad</defName>
+    <texPath>UI/Rewards/Reward_LiskSquad_Normal</texPath>
+    <label>Call lisk squad</label>
+    <description>Cargo pod summons 2 tamed 'lisks</description>
+    <category>Normal</category>
+    <randomPawns>
+      <li>
+        <tradeTag>AA_AlphaAnimalsLisk</tradeTag>
+        <intelligence>Animal</intelligence>
+        <count>2</count>
+      </li>
+    </randomPawns>
+  </VSEWW.RewardDef>
+
+
+</Defs>

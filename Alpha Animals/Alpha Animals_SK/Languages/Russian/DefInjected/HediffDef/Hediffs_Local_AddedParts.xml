@@ -1,19 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-<AA_MutantLeg.label>мутированная нога</AA_MutantLeg.label>
-<AA_MutantLeg.description>это нога похоже покрыта скользкой секрецией, которая постоянно капает из каждой поры. Кажется, что с ней что-то не так, как будто это не совсем естесственное творение.</AA_MutantLeg.description>
-<AA_MutantLeg.labelNoun>мутированная нога</AA_MutantLeg.labelNoun>
+    <AA_MutantLeg.label>мутированная нога</AA_MutantLeg.label>
+    <AA_MutantLeg.description>это нога похоже покрыта скользкой секрецией, которая постоянно капает из каждой поры. Кажется, что с ней что-то не так, как будто это не совсем естесственное творение.</AA_MutantLeg.description>
+    <AA_MutantLeg.labelNoun>мутированная нога</AA_MutantLeg.labelNoun>
 
-<AA_MutantArm.label>мутированная рука</AA_MutantArm.label>
-<AA_MutantArm.description>эта рука дергается и сгибается странным неестесственным образом, будто обладает собственным разумом. Кажется, что с ней что-то не так, как будто это не совсем естесственное творение.</AA_MutantArm.description>
-<AA_MutantArm.comps.0.tools.0.label>кулак</AA_MutantArm.comps.0.tools.0.label>
-<AA_MutantArm.labelNoun>мутированная рука</AA_MutantArm.labelNoun>
+    <AA_MutantArm.label>мутированная рука</AA_MutantArm.label>
+    <AA_MutantArm.description>эта рука дергается и сгибается странным неестесственным образом, будто обладает собственным разумом. Кажется, что с ней что-то не так, как будто это не совсем естесственное творение.</AA_MutantArm.description>
+    <AA_MutantArm.comps.0.tools.0.label>кулак</AA_MutantArm.comps.0.tools.0.label>
+    <AA_MutantArm.labelNoun>мутированная рука</AA_MutantArm.labelNoun>
 
-<AA_MutantEye.label>мутированный глаз</AA_MutantEye.label>
-<AA_MutantEye.description>этот глаз постоянно мигает сам по себе, сродни нервному тику, и, кажется, позади нормальных, человеческих век присутствуют еще одни, вертикальные веки. Кажется, что с ним что-то не так, как будто это не совсем естесственное творение.</AA_MutantEye.description>
-<AA_MutantEye.labelNoun>мутированный глаз</AA_MutantEye.labelNoun>
+    <AA_MutantEye.label>мутированный глаз</AA_MutantEye.label>
+    <AA_MutantEye.description>этот глаз постоянно мигает сам по себе, сродни нервному тику, и, кажется, позади нормальных, человеческих век присутствуют еще одни, вертикальные веки. Кажется, что с ним что-то не так, как будто это не совсем естесственное творение.</AA_MutantEye.description>
+    <AA_MutantEye.labelNoun>мутированный глаз</AA_MutantEye.labelNoun>
+
+    <AA_TheOmniscientEye.label>всезнающий глаз</AA_TheOmniscientEye.label>
+    <AA_TheOmniscientEye.description>Налитый кровью глаз с треугольным зрачком. Этот ужасный мутированный глаз дарует улучшенное псионическое зрение.</AA_TheOmniscientEye.description>
+    <AA_TheOmniscientEye.labelNoun>всезнающий глаз</AA_TheOmniscientEye.labelNoun>
+
+    <AA_TheRecalcitrantEye.label>непокорный глаз</AA_TheRecalcitrantEye.label>
+    <AA_TheRecalcitrantEye.description>Странный мутированный глаз, который никогда не открывается полностью, большую часть времени частично прикрыт болезненно выглядящим веком. Как ни странно, он обеспечивает нормальное зрение и в то же время защищает своего носителя от психических атак.</AA_TheRecalcitrantEye.description>
+    <AA_TheRecalcitrantEye.labelNoun>непокорный глаз</AA_TheRecalcitrantEye.labelNoun>
+
+    <AA_TheQuiescentEye.label>спокойный глаз</AA_TheQuiescentEye.label>
+    <AA_TheQuiescentEye.description>Глаз, который никогда не моргает, сохраняя влажность неизвестными способами. Он пронизывает своего хозяина чувством сверхъестественного спокойствия.</AA_TheQuiescentEye.description>
+    <AA_TheQuiescentEye.labelNoun>спокойный глаз</AA_TheQuiescentEye.labelNoun>
+
+    <AA_TheNumbingEye.label>обезболивающий глаз</AA_TheNumbingEye.label>
+    <AA_TheNumbingEye.description>Этот странный мутированный глаз вместо нормального мясистого века покрыт плотными костяными пластинами и кажется почти невосприимчивым к боли.</AA_TheNumbingEye.description>
+    <AA_TheNumbingEye.labelNoun>обезболивающий глаз</AA_TheNumbingEye.labelNoun>
+
+    <AA_TheSpasmodicEye.label>спазматический глаз</AA_TheSpasmodicEye.label>
+    <AA_TheSpasmodicEye.description>Глаз, который не может перестать бесконтрольно моргать. Хотя это чрезвычайно отвлекает и сбивает с толку, этот глаз позволяет своему хозяину использовать больше пси-способностей до нейроперегрева.</AA_TheSpasmodicEye.description>
+    <AA_TheSpasmodicEye.labelNoun>спазматический глаз</AA_TheSpasmodicEye.labelNoun>
+
+    <AA_TheMeretriciousEye.label>распутный глаз</AA_TheMeretriciousEye.label>
+    <AA_TheMeretriciousEye.description>Этот цветастый глаз, кажется, живет своей собственной жизнью, пытаясь привлечь внимание других людей тщательно направленными подмигиваниями и тайными знойными взглядами, которые манят фальшивым очарованием. Позволяет своему хозяину быстрее восстановиться после нейроперегрева.</AA_TheMeretriciousEye.description>
+    <AA_TheMeretriciousEye.labelNoun>распутный глаз</AA_TheMeretriciousEye.labelNoun>
+
+    <AA_TheHeuristicEye.label>эвристический глаз</AA_TheHeuristicEye.label>
+    <AA_TheHeuristicEye.description>Этот глаз анализирует окружение тщательно и планомерно, не упуская ни одной детали.</AA_TheHeuristicEye.description>
+    <AA_TheHeuristicEye.labelNoun>эвристический глаз</AA_TheHeuristicEye.labelNoun>
 
 </LanguageData>
-
-

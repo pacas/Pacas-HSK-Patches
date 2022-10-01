@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Ranged spinneret -->
+
+	<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
+		<defName>AA_InstallRangedSpinneretImplant</defName>
+		<label>install ranged spinneret implant</label>
+		<description>Install a ranged spinneret. This implant will allow this creature to use a ranged stunning web attack.\n\nNote that installing this on a creature that already has a ranged spinneret will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_RangedSpinneretImplant</ThingDef>
+			<HediffDef>AA_RangedSpinneretImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing ranged spinneret implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_RangedSpinneretImplant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AA_RangedSpinneretImplant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Body</li>								
+			<li>SnakeBody</li>
+			<li>AA_JellyfishMainBody</li>
+			<li>AA_Protoplasm</li>
+			<li>AA_Thorax</li>
+			<li>AA_SentientPlantBody</li>
+			<li>AA_SlugBody</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AA_RangedSpinneretImplant</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>AA_RemoveRangedSpinneretImplant</defName>
+		<label>remove ranged spinneret implant</label>
+		<description>Remove ranged spinneret implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_RangedSpinneretImplant</ThingDef>
+			<HediffDef>AA_RangedSpinneretImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing ranged spinneret implant.</jobString>
+		<removesHediff>AA_RangedSpinneretImplant</removesHediff>
+	</RecipeDef>
+
+	<!-- Venomous Spitter -->
+
+	<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
+		<defName>AA_InstallVenomousSpitterImplant</defName>
+		<label>install venomous spitter implant</label>
+		<description>Install a venomous spitter. This implant will allow this creature to use a ranged venomous spit attack.\n\nNote that installing this on a creature that already has a venomous spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_VenomousSpitterImplant</ThingDef>
+			<HediffDef>AA_VenomousSpitterImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing venomous spitter implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_VenomousSpitterImplant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AA_VenomousSpitterImplant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>AnimalJaw</li>								
+			<li>AA_InsectMouth</li>
+			<li>AA_CrocodileJaw</li>
+			<li>AA_SentientPlantMouth</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AA_VenomousSpitterImplant</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>AA_RemoveVenomousSpitterImplant</defName>
+		<label>remove venomous spitter implant</label>
+		<description>Remove venomous spitter implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_VenomousSpitterImplant</ThingDef>
+			<HediffDef>AA_VenomousSpitterImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing venomous spitter implant.</jobString>
+		<removesHediff>AA_VenomousSpitterImplant</removesHediff>
+	</RecipeDef>
+
+	<!-- Acidic Spitter -->
+
+	<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
+		<defName>AA_InstallAcidicSpitterImplant</defName>
+		<label>install acidic spitter implant</label>
+		<description>Install an acidic spitter. This implant will allow this creature to use a ranged acidic spit attack that causes additional damage over time.\n\nNote that installing this on a creature that already has an acidic spitter will have no effect. This implant can only be used by animals that have a mouth (and not, for example, a beak or proboscis).</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_AcidicSpitterImplant</ThingDef>
+			<HediffDef>AA_AcidicSpitterImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing acidic spitter implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_AcidicSpitterImplant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AA_AcidicSpitterImplant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>AnimalJaw</li>								
+			<li>AA_InsectMouth</li>
+			<li>AA_CrocodileJaw</li>
+			<li>AA_SentientPlantMouth</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AA_AcidicSpitterImplant</addsHediff>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>AA_RemoveAcidicSpitterImplant</defName>
+		<label>remove acidic spitter implant</label>
+		<description>Remove acidic spitter implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_AcidicSpitterImplant</ThingDef>
+			<HediffDef>AA_AcidicSpitterImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing acidic spitter implant.</jobString>
+		<removesHediff>AA_AcidicSpitterImplant</removesHediff>
+	</RecipeDef>
+
+	<!-- Barbed Quill Thrower -->
+
+	<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
+		<defName>AA_InstallBarbedQuillThrowerImplant</defName>
+		<label>install barbed quill thrower implant</label>
+		<description>Install a barbed quill thrower. This implant will allow this creature to use a ranged venomous quill attack that causes toxic buildup.\n\nNote that installing this on a creature that already has a barbed quill thrower will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_BarbedQuillThrowerImplant</ThingDef>
+			<HediffDef>AA_BarbedQuillThrowerImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing barbed quill thrower implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_BarbedQuillThrowerImplant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AA_BarbedQuillThrowerImplant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Body</li>								
+			<li>SnakeBody</li>
+			<li>AA_JellyfishMainBody</li>
+			<li>AA_Protoplasm</li>
+			<li>AA_Thorax</li>
+			<li>AA_SentientPlantBody</li>
+			<li>AA_SlugBody</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AA_BarbedQuillThrowerImplant</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>AA_RemoveBarbedQuillThrowerImplant</defName>
+		<label>remove barbed quill thrower implant</label>
+		<description>Remove barbed quill thrower implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_BarbedQuillThrowerImplant</ThingDef>
+			<HediffDef>AA_BarbedQuillThrowerImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing barbed quill thrower implant.</jobString>
+		<removesHediff>AA_BarbedQuillThrowerImplant</removesHediff>
+	</RecipeDef>
+
+	<!-- Quad Tesla Cannon -->
+
+	<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
+		<defName>AA_InstallQuadTeslaCannonImplant</defName>
+		<label>install quad tesla cannon implant</label>
+		<description>Install a quad tesla cannon. This implant will allow this creature to use a powerful ranged plasma attack.\n\nNote that installing this on a creature that already has a quad tesla cannon will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_QuadTeslaCannonImplant</ThingDef>
+			<HediffDef>AA_QuadTeslaCannonImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing quad tesla cannon implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_QuadTeslaCannonImplant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AA_QuadTeslaCannonImplant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Body</li>								
+			<li>SnakeBody</li>
+			<li>AA_JellyfishMainBody</li>
+			<li>AA_Protoplasm</li>
+			<li>AA_Thorax</li>
+			<li>AA_SentientPlantBody</li>
+			<li>AA_SlugBody</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AA_QuadTeslaCannonImplant</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>AA_RemoveQuadTeslaCannonImplant</defName>
+		<label>remove quad tesla cannon implant</label>
+		<description>Remove quad tesla cannon implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_QuadTeslaCannonImplant</ThingDef>
+			<HediffDef>AA_QuadTeslaCannonImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing quad tesla cannon implant.</jobString>
+		<removesHediff>AA_QuadTeslaCannonImplant</removesHediff>
+	</RecipeDef>
+
+	<!-- Bioelectric Organ -->
+
+	<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
+		<defName>AA_InstallBioelectricOrganImplant</defName>
+		<label>install bioelectric organ implant</label>
+		<description>Install a bioelectric organ. This implant will allow this creature to use a powerful ranged electric attack that may paralyze and cause heart attacks.\n\nNote that installing this on a creature that already has a bioelectric organ will have no effect.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_BioelectricOrganImplant</ThingDef>
+			<HediffDef>AA_BioelectricOrganImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing bioelectric organ implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_BioelectricOrganImplant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AA_BioelectricOrganImplant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Body</li>								
+			<li>SnakeBody</li>
+			<li>AA_JellyfishMainBody</li>
+			<li>AA_Protoplasm</li>
+			<li>AA_Thorax</li>
+			<li>AA_SentientPlantBody</li>
+			<li>AA_SlugBody</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AA_BioelectricOrganImplant</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>AA_RemoveBioelectricOrganImplant</defName>
+		<label>remove bioelectric organ implant</label>
+		<description>Remove bioelectric organ implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_BioelectricOrganImplant</ThingDef>
+			<HediffDef>AA_BioelectricOrganImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing bioelectric organ implant.</jobString>
+		<removesHediff>AA_BioelectricOrganImplant</removesHediff>
+	</RecipeDef>
+
+	<!-- Light Focusing Lens -->
+
+	<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
+		<defName>AA_InstallLightFocusingLensImplant</defName>
+		<label>install light focusing lens implant</label>
+		<description>Install a light focusing lens. This implant will allow this creature to use a powerful ranged laser attack that sets enemies on fire.\n\nNote that installing this on a creature that already has a light focusing lens will have no effect. This implant takes the space of one of the creature's eyes, so it can't be installed in eyeless animals.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_LightFocusingLensImplant</ThingDef>
+			<HediffDef>AA_LightFocusingLensImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing light focusing lens implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_LightFocusingLensImplant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AA_LightFocusingLensImplant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AA_LightFocusingLensImplant</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>AA_RemoveLightFocusingLensImplant</defName>
+		<label>remove light focusing lens implant</label>
+		<description>Remove light focusing lens implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_LightFocusingLensImplant</ThingDef>
+			<HediffDef>AA_LightFocusingLensImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing light focusing lens implant.</jobString>
+		<removesHediff>AA_LightFocusingLensImplant</removesHediff>
+	</RecipeDef>
+
+	<!-- Hyper Acidic Stomach -->
+
+	<RecipeDef ParentName="VEF_AdvancedSurgeryInstallImplantBase">
+		<defName>AA_InstallHyperAcidicStomachImplant</defName>
+		<label>install hyper acidic stomach implant</label>
+		<description>Install a hyper acidic stomach. This implant will allow this creature to use a ranged acid attack that causes damage over time.\n\nNote that installing this on a creature that already has a hyper acidic stomach will have no effect. This implant takes the space of the creature's stomach, so it can't be installed in animals that lack one.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_HyperAcidicStomachImplant</ThingDef>
+			<HediffDef>AA_HyperAcidicStomachImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing hyper acidic stomach implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AA_HyperAcidicStomachImplant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AA_HyperAcidicStomachImplant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Stomach</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>AA_HyperAcidicStomachImplant</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="SurgeryRemoveImplantBase">
+		<defName>AA_RemoveHyperAcidicStomachImplant</defName>
+		<label>remove hyper acidic stomach implant</label>
+		<description>Remove hyper acidic stomach implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AA_HyperAcidicStomachImplant</ThingDef>
+			<HediffDef>AA_HyperAcidicStomachImplant</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Removing hyper acidic stomach implant.</jobString>
+		<removesHediff>AA_HyperAcidicStomachImplant</removesHediff>
+	</RecipeDef>
+
+</Defs>

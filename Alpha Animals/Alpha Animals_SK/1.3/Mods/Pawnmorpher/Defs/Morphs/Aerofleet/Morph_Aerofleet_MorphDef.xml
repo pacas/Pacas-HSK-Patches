@@ -1,0 +1,27 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Tachyonite/Pawnmorpher/dev/Schemas/MorphDef.xsd">
+	
+	<Pawnmorph.MorphDef ParentName="AA_AnimalMorph" Name="AA_AerofleetMorph">
+		<defName>AA_AerofleetMorph</defName>
+		<label>aerofleetmorph</label>
+		<description>A hybrid animal / humanoid with Aerofleet characteristics.\n\nAs a floating creature, Aerofleetmorphs ignore terrain movement costs. Aerofleetmorphs slowly produce a thick, gelatinous substance known as Blue Gel. This syrupy residue can be collected and refined into an energy-dense compound, and potentially used to build powerful batteries and generators, with the appropiate research (Biofuel refining, Batteries and Advanced Fabrication).</description>
+		<race>AA_Aerofleet</race>
+		<categories>
+			<li>Domestic</li>
+		</categories>
+		<injectorProperties></injectorProperties>
+		<fullTransformation>AA_PawnmorphAerofleetTF</fullTransformation>
+		<partialTransformation>AA_PawnmorphAerofleetTFPartial</partialTransformation>
+		<raceSettings>
+			<explicitHybridRace>AA_AerofleetMorph</explicitHybridRace>
+			<transferHumanBodyAddons>true</transferHumanBodyAddons>
+			<requiredMutations>
+				<li>AA_AerofleetEyes</li>
+				<li>AA_AerofleetVacuoles</li>
+			</requiredMutations>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>AA_AerofleetTransformationMemory</transformationMemory>
+			<revertedMemory>AA_AerofleetRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

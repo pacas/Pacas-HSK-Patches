@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- Ammo defs-->
+
+    <CombatExtended.AmmoCategoryDef>
+        <defName>Shell_NerveGas_Ammo</defName>
+        <label>nerve gas</label>
+        <labelShort>nerve gas</labelShort>
+        <description>This shell contains a nerve agent, harmful to most complex forms of organic life.</description>
+    </CombatExtended.AmmoCategoryDef>
+    
+    <CombatExtended.AmmoCategoryDef>
+        <defName>Shell_SleepingGas_Ammo</defName>
+        <label>sleep gas</label>
+        <labelShort>Sleep gas</labelShort>
+        <description>This shell contains a sleep agent, harmful to most complex forms of organic life.</description>
+    </CombatExtended.AmmoCategoryDef>
+    
+    <!-- Shells -->
+
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="81mmMortarShellBaseCraftableBase">
+        <defName>Shell_NerveGas</defName>
+        <label>81mm mortar shell (NG)</label>
+        <description>A shell filled with poisonous toxins. Can be fired from mortars.</description>
+        <ammoClass>Shell_NerveGas_Ammo</ammoClass>
+        <graphicData>
+            <texPath>Things/Item/Resource/Shell/NerveShell</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>75.61</MarketValue>
+            <Mass>4.2</Mass>
+            <Bulk>11.1</Bulk>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>5.9</explosiveRadius>
+                <explosiveDamageType>Smoke</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+                <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+                <postExplosionSpawnThingDef>NGS_NerveGas</postExplosionSpawnThingDef>
+                <postExplosionSpawnChance>1.0</postExplosionSpawnChance>
+                <wickTicks>
+                    <min>10</min>
+                    <max>30</max>
+                </wickTicks>
+            </li>
+        </comps>
+        <generateAllowChance>0.3</generateAllowChance>
+        <detonateProjectile>Bullet_81mmMortarShell_NerveGas</detonateProjectile>
+    </ThingDef>
+    
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="81mmMortarShellBaseCraftableBase">
+        <defName>Shell_SleepingGas</defName>
+        <label>81mm mortar shell (SG)</label>
+        <description>A shell filled with sleep-inducing toxins. Can be fired from mortars.</description>
+        <ammoClass>Shell_SleepingGas_Ammo</ammoClass>
+        <graphicData>
+            <texPath>Things/Item/Resource/Shell/SleepShell</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>77.01</MarketValue>
+            <Mass>4</Mass>
+            <Bulk>12.2</Bulk>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>5.9</explosiveRadius>
+                <explosiveDamageType>Smoke</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+                <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+                <postExplosionSpawnThingDef>NGS_SleepGas</postExplosionSpawnThingDef>
+                <postExplosionSpawnChance>1.0</postExplosionSpawnChance>
+                <wickTicks>
+                    <min>10</min>
+                    <max>30</max>
+                </wickTicks>
+            </li>
+        </comps>
+        <generateAllowChance>0</generateAllowChance>
+        <detonateProjectile>Bullet_81mmMortarShell_SleepingGas</detonateProjectile>
+    </ThingDef>
+    
+    <!-- Projectiles -->
+
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base81mmMortarShell">
+        <defName>Bullet_81mmMortarShell_NerveGas</defName>
+        <label>Nerve gas shell</label>
+        <graphicData>
+            <texPath>Things/Item/Projectile/Shell/NerveShell</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageDef>Smoke</damageDef>
+            <speed>41</speed>
+            <explosionRadius>4.2</explosionRadius>
+            <flyOverhead>true</flyOverhead>
+            <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+            <soundExplode>Explosion_Smoke</soundExplode>
+            <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+            <soundAmbient>MortarRound_Ambient</soundAmbient>
+            <postExplosionSpawnThingDef>NGS_NerveGas</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        </projectile>
+    </ThingDef>
+    
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base81mmMortarShell">
+        <defName>Bullet_81mmMortarShell_SleepingGas</defName>
+        <label>Sleeping gas shell</label>
+        <graphicData>
+            <texPath>Things/Item/Projectile/Shell/SleepShell</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageDef>Smoke</damageDef>
+            <speed>41</speed>
+            <explosionRadius>4.2</explosionRadius>
+            <flyOverhead>true</flyOverhead>
+            <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+            <soundExplode>Explosion_Smoke</soundExplode>
+            <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+            <soundAmbient>MortarRound_Ambient</soundAmbient>
+            <postExplosionSpawnThingDef>NGS_SleepGas</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        </projectile>
+    </ThingDef>
+    
+    <!-- Gases -->
+
+    <ThingDef ParentName="BaseGas">
+        <defName>NGS_NerveGas</defName>
+        <label>nerve gas</label>
+        <thingClass>NerveSleepingGas.Gas_Nerve</thingClass>
+        <passability>PassThroughOnly</passability>
+        <graphicData>
+            <texPath>Things/Gas/Puff</texPath>
+            <drawSize>6</drawSize>
+            <color>(0.52,0.56,0.08,1)</color>
+        </graphicData>
+        <size>(6, 6)</size>
+        <pathCost>100</pathCost>
+        <gas>
+            <expireSeconds>300~400</expireSeconds>
+            <blockTurretTracking>true</blockTurretTracking>
+            <accuracyPenalty>0.7</accuracyPenalty>
+            <rotationSpeed>10</rotationSpeed>
+        </gas>
+    </ThingDef>
+    
+    <ThingDef ParentName="BaseGas">
+        <defName>NGS_SleepGas</defName>
+        <label>sleep gas</label>
+        <thingClass>NerveSleepingGas.Gas_Sleep</thingClass>
+        <passability>PassThroughOnly</passability>
+        <graphicData>
+            <texPath>Things/Gas/Puff</texPath>
+            <drawSize>6</drawSize>
+            <color>(100,149,237, 255)</color>
+        </graphicData>
+        <size>(6, 6)</size>
+        <pathCost>100</pathCost>
+        <gas>
+            <expireSeconds>300~400</expireSeconds>
+            <blockTurretTracking>true</blockTurretTracking>
+            <accuracyPenalty>0.7</accuracyPenalty>
+            <rotationSpeed>10</rotationSpeed>
+        </gas>
+    </ThingDef>
+    
+    <!-- Hediffs -->
+	
+    <HediffDef ParentName="DiseaseBase">
+        <defName>NGS_NerveGas</defName>
+        <label>nerve gas</label>
+        <labelNoun>nerve gas</labelNoun>
+        <description>Toxins that enter a person's blood torrent and reach their respiratory system. As a consequence, that person will suffer from burn damage very often.</description>
+        <maxSeverity>1</maxSeverity>
+        <hediffClass>NerveSleepingGas.Hediff_NerveGas</hediffClass>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-20</severityPerDay>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="DiseaseBase">
+        <defName>NGS_SleepGas</defName>
+        <label>sleep gas</label>
+        <labelNoun>sleep gas</labelNoun>
+        <description>Toxins that enter a person's blood torrent and reach their respiratory system. People affected by this will have their consciousness crippled. The condition can get worse.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <maxSeverity>5</maxSeverity>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-5</severityPerDay>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>initial</label>
+            </li>
+            <li>
+                <label>stunned</label>
+                <minSeverity>0.20</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0.8</setMax>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.8</setMax>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>woozy</label>
+                <minSeverity>0.50</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0.5</setMax>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.5</setMax>
+                    </li>
+                </capMods>
+            </li>
+            <li>
+                <label>without consciousness</label>
+                <minSeverity>0.85</minSeverity>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

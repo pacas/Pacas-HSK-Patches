@@ -61,6 +61,14 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="AA_Bobeene"]/race</xpath>
+					<value>
+                        <wildBiomes>
+                            <AB_IdyllicMeadows>4</AB_IdyllicMeadows>
+						</wildBiomes>
+					</value>
+				</li>
+                <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="AA_Blizzarisk"]/race/wildBiomes</xpath>
                     <value>
                         <AB_PropaneLakes>0.05</AB_PropaneLakes>
@@ -700,6 +708,13 @@
                         <AA_NightMule>10</AA_NightMule>
                         <AA_CrepuscularBeetle>10</AA_CrepuscularBeetle>
                         <AA_SpinedGow>10</AA_SpinedGow>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="AA_AlienTree"]/plant/harvestedThingDef</xpath>
+                    <value>
+                        <harvestedThingDef>GU_RedWood</harvestedThingDef>
                     </value>
                 </li>
             </operations>

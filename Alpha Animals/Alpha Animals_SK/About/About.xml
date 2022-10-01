@@ -1,41 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Alpha Animals</name>
-	<supportedVersions>
+    <name>Alpha Animals</name>
+    <supportedVersions>
         <li>1.3</li>
-	</supportedVersions>
-	<modDependencies>
-		<li>
-			<packageId>brrainz.harmony</packageId>
-			<displayName>Harmony</displayName>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
-			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
-		</li>
-		<li>
-			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
-			<displayName>Vanilla Expanded Framework</displayName>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
-		</li>
-	</modDependencies>
-
-	<loadAfter>
-		<li>Ludeon.RimWorld</li>
-		<li>Ludeon.RimWorld.Royalty</li>
-		<li>brrainz.harmony</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+        <li>
+            <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+            <displayName>Vanilla Expanded Framework</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
+        <li>brrainz.harmony</li>
         <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
-		<li>vanillaexpanded.achievements</li>
-		<li>skyarkhangel.hsk</li>
-		<li>ceteam.combatextended</li>
+        <li>vanillaexpanded.achievements</li>
+        <li>skyarkhangel.hsk</li>
+        <li>ceteam.combatextended</li>
         <li>spoonshortage.adogsaidanimalprosthetics</li>
         <li>sarg.alphabiomes</li>
         <li>roolo.giddyupcore</li>
         <li>arpomo6.hmc.biomes</li>
-	</loadAfter>
-	<author>Sarg, AFriend, milon, Skullywag, kaptain_kavern and Pacas</author>
-
-	<packageId>sarg.alphaanimals</packageId>
-
-	<description>Adds multiple unique new animals to Rimworld.
+        <li>smashphil.boats</li>
+        <li>tachyonite.pawnmorpherpublic</li>
+        <li>tachyonite.pawnmorpher</li>
+        <li>Kompadt.Warhammer.Dryad</li>
+        <li>VanillaExpanded.VPsycastsE</li>
+    </loadAfter>
+    <author>Sarg, AFriend, milon, Skullywag, kaptain_kavern and Pacas</author>
+    <packageId>sarg.alphaanimals</packageId>
+    <description>Adds multiple unique new animals to Rimworld.
 
 &lt;size=24&gt;Features&lt;/size&gt;
 
@@ -56,14 +59,11 @@ Obviously, more animals!
 
 &lt;size=24&gt;Compatibility&lt;/size&gt;
 Compatible with A Dog Said... 
-Compatible with the implants from Genetic Rim
-Compatible with cloth production in Vegetable Garden Project (VGP)
+Compatible with the implants from Vanilla Genetics Expanded
 Compatible with Alpha Biomes (duh)
-Compatible with Nature's Pretty Sweet
 Compatible with Advanced Biomes
 Compatible with Rainbeau Realistic Planets
 Compatible with Lords of the Rims - Elves (mallorn biome)
-Compatible with Boats
 
 &lt;size=24&gt;Credit&lt;/size&gt;
 Original creature graphics: A_Friend, aka SentientLine
@@ -72,20 +72,16 @@ Some sounds by Mike Koenig at http://soundbible.com
 Some sounds by PsychoBird at http://soundbible.com
 Some sounds by Stephan Schutze at http://soundbible.com
 Some animal sounds by LiamG_SFX, wisslgisse, M4D3R0 and roubignolle at https://freesound.org
+Ritual loop sounds by THXRTX  https://www.instagram.com/thxrtx/?hl=en
 Fireball Graphic created by StarsteelGaming at OpenGameArt.org (2018)
-Using NocturnalAnimals DLL by XeoNovaDan
+
+Based on 07/09/22 version
 
 &lt;size=24&gt;Changelog&lt;/size&gt;
-v3.34: Added 4 new animals. Added fanart to the animal info cards (04/05/21)
-v3.31: bugfixing and added Royal Ave colours (31/03/21)
-v3.3: Added 6 new animals (02/03/21)
-v3.2: Complete overhaul of the ranged animal system (04/02/21)
-v3.1: Added 5 new animals (11/01/21) 
-v3.0: Added 6 new Alpha mechanoid variants for Vanilla Factions Expanded - Mechanoids (21/12/20)
-v2.10: Added 1 new animal and Aerofleet energy system (02/12/20)
-Full changelog on GitHub
-
-
-
-	</description>
+v3.9: Added Vanilla Psycasts Expanded compatibility (07/09/22)
+v3.8: Added 5 new animals (01/11/21)
+v3.7: Added 4 new animals (08/08/21)
+v3.6: Added new Ideology, 8 new animals (22/07/21)
+v3.4: RimWorld 1.3 update. (05/07/21)
+Full changelog on GitHub</description>
 </ModMetaData>

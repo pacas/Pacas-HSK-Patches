@@ -21,6 +21,7 @@
 	<AA_NotTameable>This creature is untameable</AA_NotTameable>
 	<AA_GallatrossNotTameable>The Moribund Gallatross is untameable and quickly returns into the wild, awaiting to die</AA_GallatrossNotTameable>
 	<AA_MimeNotTameable>The Mime refuses to be tamed</AA_MimeNotTameable>
+	<AA_ClutchmotherNotTameable>The clutchmother is too wild to be kept tamed!</AA_ClutchmotherNotTameable>
 	<AA_StomachContents>{0} creatures swallowed whole. </AA_StomachContents>
 	<AA_DigestionTime>Will be consumed in {0}</AA_DigestionTime>
 	
@@ -30,6 +31,13 @@
 	<AA_CancelDestroyFlamingoEggsDesc>Cancel a work order to smash this egg as soon as possible</AA_CancelDestroyFlamingoEggsDesc>
 
 	<AA_HuskNotTameable>The Fungal Husk only exists to spread its fungal infection, it can't be tamed</AA_HuskNotTameable>
+	
+	<AA_Detonate>Detonate</AA_Detonate>
+	<AA_DetonateDesc>Force this animal to detonate. This will kill the animal and cause an explosion.</AA_DetonateDesc>
+	<AA_MessageRitualRoleNeedsDryad>Your colony needs to have an ocular dryad from a corrupted Gauranlen tree to start this ritual.</AA_MessageRitualRoleNeedsDryad>
+	<AA_DryadUnlinked>The ocular dryad needs to be linked to a Gauranlen tree.</AA_DryadUnlinked>
+	<AA_AnimalDoingWeirdJob>Animal is busy doing a job.</AA_AnimalDoingWeirdJob>
+
 
 	<!-- Incidents -->
 	<LetterLabelColossalAerofleetPasses>Colossal Aerofleet</LetterLabelColossalAerofleetPasses>
@@ -77,6 +85,9 @@
 	
 	<AA_LetterLabelFungalHusk>Fungal Husks</AA_LetterLabelFungalHusk>
 	<AA_LetterFungalHusk>Bloating, shambling corpses animated by a terrible weaponized fungus have entered this territory!\n\nDon't let them attack your colonists, or they will be afflicted by a fast acting fungal infection that can kill quickly if untreated.</AA_LetterFungalHusk>
+	
+	<AA_LetterLabelMime>Mime revealed</AA_LetterLabelMime>
+	<AA_LetterMime>{0} was a Mime all along! {0_possessive} extreme hunger was too much for {0_objective}, and {0_pronoun} will attack the rest of the colonists to try to satiate it.</AA_LetterMime>
 
 	<!-- Animal Products -->
 
@@ -206,6 +217,7 @@
 	<AA_FarmWoolDesc>This is a farm animal that produces wool / textiles.</AA_FarmWoolDesc>
 	<AA_FarmChemfuelDesc>This is a farm animal that produces chemfuel.</AA_FarmChemfuelDesc>
 	<AA_FarmWoolAndMilkDesc>This is a farm animal that produces wool / textiles and milk.</AA_FarmWoolAndMilkDesc>
+	<AA_FarmWoolAndEggsDesc>This is a farm animal that produces wool / textiles and eggs.</AA_FarmWoolAndEggsDesc>
 	<AA_FarmBuildingAndMilkDesc>This is a farm animal that produces building materials and milk.</AA_FarmBuildingAndMilkDesc>
 	<AA_FarmBuildingDesc>This is a farm animal that produces building materials.</AA_FarmBuildingDesc>
 	<AA_FarmMedicineDesc>This is a farm animal that produces medicines.</AA_FarmMedicineDesc>
@@ -231,8 +243,38 @@
 	<AA_PestDesc>This animal is generally considered a pest, and not useful at all to have around the colony. It either has effects that are purely detrimental, or needs that outweight its usefulness. You may find a niche use for them, though!</AA_PestDesc>
 	<AA_PetDesc>This animal is a pet. Isn't he cute?</AA_PetDesc>
 
+	<!-- Psycasts -->
 
-
+	<AA_OnlyBlackHive>This ability must target a Black Hive insect</AA_OnlyBlackHive>
+	<AA_OnlyOneHivePerMap>Only one hive entrance can be built</AA_OnlyOneHivePerMap>
+	<AA_NoMoreLarvaeAllowed>No more larvae can spawn, as the colony already has 4 Black Hive insectoids or more</AA_NoMoreLarvaeAllowed>
+	<AA_LarvaeTimeSpawn>Time to spawn new black larvae: {0}</AA_LarvaeTimeSpawn>
+	<AA_HiveInvalidPosition>A hive entrance can't be built here</AA_HiveInvalidPosition>
+	<AA_CocoonInsectSpawnIn>Insect emerging in: {0}</AA_CocoonInsectSpawnIn>
+	<AA_PlantConversionRadius>Plant conversion radius</AA_PlantConversionRadius>
+	<AA_RadiusExpandRate>Expansion rate</AA_RadiusExpandRate>
+	<AA_OnlyNumberAllowed>Only {0} allowed per map</AA_OnlyNumberAllowed>
+	<AA_MeleeWeaponNeeded>Caster requires a melee weapon</AA_MeleeWeaponNeeded>
+	<AA_PsychicSlice>Psychic slice!</AA_PsychicSlice>
+	<AA_PsychicSliceFailed>Failed psychic slice</AA_PsychicSliceFailed>
+	<AA_ClawFrenzy>Claw frenzy!</AA_ClawFrenzy>
+	<AA_ClawFrenzyFailed>Failed claw frenzy</AA_ClawFrenzyFailed>
+	<AA_DisablingStrike>Disabling strike!</AA_DisablingStrike>
+	<AA_DisablingStrikeFailed>Failed disabling strike</AA_DisablingStrikeFailed>
+	<AA_Skewer>Skewer!</AA_Skewer>
+	<AA_SkewerFailed>Failed skewer</AA_SkewerFailed>
+	<AA_Charge>Charge!</AA_Charge>
+	<AA_ChargeFailed>Failed charge</AA_ChargeFailed>
+	<AA_ChargeAndSkewer>Charge and skewer!</AA_ChargeAndSkewer>
+	<AA_ChargeAndSkewerFailed>Failed charge and skewer</AA_ChargeAndSkewerFailed>
+	<AA_EMPBlow>EMP blow!</AA_EMPBlow>
+	<AA_EMPBlowFailed>EMP blow failed</AA_EMPBlowFailed>
+	<AA_SpinCut>Spin cut!</AA_SpinCut>
+	<AA_SpinCutFailed>Spin cut failed</AA_SpinCutFailed>
+	<AA_LegSkip>Leg skip!</AA_LegSkip>
+	<AA_LegSkipFailed>Leg skip failed</AA_LegSkipFailed>
+	<AA_KO>KO!</AA_KO>
+	<AA_KOFailed>KO faileed</AA_KOFailed>
 
 
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!-- Add Shells to AmmoSet -->
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_81mmMortarShell"]/ammoTypes</xpath>
+                <value>
+                    <Shell_NerveGas>Bullet_81mmMortarShell_NerveGas</Shell_NerveGas>
+                    <Shell_SleepingGas>Bullet_81mmMortarShell_SleepingGas</Shell_SleepingGas>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

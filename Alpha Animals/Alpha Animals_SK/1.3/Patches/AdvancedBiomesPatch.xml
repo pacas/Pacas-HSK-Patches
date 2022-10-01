@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Advanced Biomes (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Aerofleet"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.05</PoisonForest>
+                        <Savanna>0.1</Savanna>
+                        <Volcano>0.05</Volcano>
+                        <Wasteland>0.05</Wasteland>
+                        <Wetland>0.1</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_AnimusVox"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.05</PoisonForest>
+                        <Savanna>0.05</Savanna>
+                        <Volcano>0.05</Volcano>
+                        <Wasteland>0.01</Wasteland>
+                        <Wetland>0.05</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Scorpion"]/race/wildBiomes</xpath>
+                    <value>
+                        <Savanna>0.05</Savanna>
+                        <Wasteland>0.05</Wasteland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_BedBug"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.01</PoisonForest>
+                        <Savanna>0.05</Savanna>
+                        <Wetland>0.1</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_BloodShrimp"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.01</PoisonForest>
+                        <Savanna>0.01</Savanna>
+                        <Volcano>0.01</Volcano>
+                        <Wasteland>0.05</Wasteland>
+                        <Wetland>0.001</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_BoulderMit"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.1</PoisonForest>
+                        <Savanna>0.1</Savanna>
+                        <Volcano>0.1</Volcano>
+                        <Wasteland>0.05</Wasteland>
+                        <Wetland>0.1</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Bumbledrone"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.05</PoisonForest>
+                        <Savanna>0.05</Savanna>
+                        <Volcano>0.01</Volcano>
+                        <Wasteland>0.01</Wasteland>
+                        <Wetland>0.07</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Cinderlisk"]/race/wildBiomes</xpath>
+                    <value>
+                        <Volcano>0.1</Volcano>
+                        <Wasteland>0.05</Wasteland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_CrystalMit"]/race/wildBiomes</xpath>
+                    <value>
+                        <Volcano>0.5</Volcano>
+                        <Wasteland>0.07</Wasteland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_DecayDrake"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.05</PoisonForest>
+                        <Savanna>0.01</Savanna>
+                        <Wetland>0.05</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Feralisk"]/race/wildBiomes</xpath>
+                    <value>
+                        <Savanna>0.05</Savanna>
+                        <Wasteland>0.1</Wasteland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_FissionMouse"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.05</PoisonForest>
+                        <Savanna>0.03</Savanna>
+                        <Volcano>0.01</Volcano>
+                        <Wasteland>0.01</Wasteland>
+                        <Wetland>0.07</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_GreatDevourer"]/race/wildBiomes</xpath>
+                    <value>
+                        <Volcano>0.02</Volcano>
+                        <Wasteland>0.05</Wasteland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Groundrunner"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.01</PoisonForest>
+                        <Savanna>0.2</Savanna>
+                        <Wetland>0.05</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Helixien"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.15</PoisonForest>
+                        <Savanna>0.05</Savanna>
+                        <Wetland>0.07</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_MammothWorm"]/race/wildBiomes</xpath>
+                    <value>
+                        <Volcano>0.01</Volcano>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_MeadowAve"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.05</PoisonForest>
+                        <Savanna>0.2</Savanna>
+                        <Wetland>0.4</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_MegaLouse"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.03</PoisonForest>
+                        <Savanna>0.03</Savanna>
+                        <Volcano>0.03</Volcano>
+                        <Wasteland>0.03</Wasteland>
+                        <Wetland>0.03</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Needlepost"]/race/wildBiomes</xpath>
+                    <value>
+                        <Savanna>0.01</Savanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Needleroll"]/race/wildBiomes</xpath>
+                    <value>
+                        <Savanna>0.01</Savanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="Nightling"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.1</PoisonForest>
+                        <Savanna>0.1</Savanna>
+                        <Volcano>0.03</Volcano>
+                        <Wasteland>0.03</Wasteland>
+                        <Wetland>0.1</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_OvergrownColossus"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.05</PoisonForest>
+                        <Savanna>0.01</Savanna>
+                        <Wetland>0.1</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_OcularJelly"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.005</PoisonForest>
+                        <Savanna>0.005</Savanna>
+                        <Volcano>0.005</Volcano>
+                        <Wasteland>0.01</Wasteland>
+                        <Wetland>0.005</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_PebbleMit"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.07</PoisonForest>
+                        <Savanna>0.07</Savanna>
+                        <Volcano>0.1</Volcano>
+                        <Wasteland>0.03</Wasteland>
+                        <Wetland>0.03</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Razorjack"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.01</PoisonForest>
+                        <Savanna>0.1</Savanna>
+                        <Volcano>0.05</Volcano>
+                        <Wasteland>0.01</Wasteland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_RipperHound"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.01</PoisonForest>
+                        <Savanna>0.01</Savanna>
+                        <Volcano>0.07</Volcano>
+                        <Wasteland>0.01</Wasteland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_RoughPlatedMonitor"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.10</PoisonForest>
+                        <Volcano>0.07</Volcano>
+                        <Wasteland>0.10</Wasteland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_SandSquid"]/race/wildBiomes</xpath>
+                    <value>
+                        <Savanna>0.01</Savanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_ShockGoat"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.1</PoisonForest>
+                        <Savanna>0.1</Savanna>
+                        <Wetland>0.1</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Slurrypede"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.01</PoisonForest>
+                        <Savanna>0.01</Savanna>
+                        <Volcano>0.01</Volcano>
+                        <Wasteland>0.01</Wasteland>
+                        <Wetland>0.01</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Swarmling"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.05</PoisonForest>
+                        <Savanna>0.01</Savanna>
+                        <Volcano>0.01</Volcano>
+                        <Wasteland>0.01</Wasteland>
+                        <Wetland>0.01</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_TetraSlug"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.001</PoisonForest>
+                        <Savanna>0.001</Savanna>
+                        <Volcano>0.001</Volcano>
+                        <Wasteland>0.001</Wasteland>
+                        <Wetland>0.001</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Thermadon"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.01</PoisonForest>
+                        <Savanna>0.01</Savanna>
+                        <Volcano>0.01</Volcano>
+                        <Wasteland>0.01</Wasteland>
+                        <Wetland>0.01</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Wildpod"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.05</PoisonForest>
+                        <Wetland>0.1</Wetland>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AA_Wildpawn"]/race/wildBiomes</xpath>
+                    <value>
+                        <PoisonForest>0.05</PoisonForest>
+                        <Wetland>0.1</Wetland>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
+

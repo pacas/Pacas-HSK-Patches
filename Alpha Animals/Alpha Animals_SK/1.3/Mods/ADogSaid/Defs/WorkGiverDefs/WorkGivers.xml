@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <WorkGiverDef>
+        <defName>VEF_DoBillsAdvancedAnimalImplantsTable</defName>
+        <label>make advanced animal implants</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Crafting</workType>
+        <priorityInType>85</priorityInType>
+        <fixedBillGiverDefs>
+            <li>VEF_AdvancedAnimalImplantsTable</li>
+        </fixedBillGiverDefs>
+        <verb>make advanced animal implants</verb>
+        <gerund>making advanced animal implants at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+</Defs>

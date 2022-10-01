@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef ParentName="GrenadeRecipeBase">
+        <defName>MakeShell_SleepingGas</defName>
+        <label>make 81mm sleep gas mortar shells x1</label>
+        <description>Craft 81mm sleep gas mortar shells.</description>
+        <jobString>Making 81mm sleep gas mortar shells.</jobString>
+        <workAmount>1000</workAmount>
+		<targetCountAdjustment>10</targetCountAdjustment>
+        <ingredients>
+            <li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+            <li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+            <Shell_SleepingGas>1</Shell_SleepingGas>
+        </products>
+        <researchPrerequisite>Range_C2</researchPrerequisite>
+    </RecipeDef>
+
+
+    <RecipeDef ParentName="GrenadeRecipeBase">
+        <defName>MakeShell_NerveGas</defName>
+        <label>make 81mm nerve gas mortar shells x1</label>
+        <description>Craft 81mm nerve gas mortar shells.</description>
+        <jobString>Making 81mm nerve gas mortar shells.</jobString>
+        <ingredients>
+            <li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+            <li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PoisonGland</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>PoisonGland</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+        <products>
+            <Shell_NerveGas>1</Shell_NerveGas>
+        </products>
+        <researchPrerequisite>Range_C2</researchPrerequisite>
+    </RecipeDef>
+
+</Defs>
