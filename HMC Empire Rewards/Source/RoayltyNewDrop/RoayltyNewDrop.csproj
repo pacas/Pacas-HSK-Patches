@@ -41,6 +41,9 @@
         <Reference Include="com.rlabrecque.steamworks.net">
           <HintPath>J:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
         </Reference>
+        <Reference Include="CombatExtended">
+          <HintPath>J:\Steam\steamapps\common\RimWorld\Mods\CombatExtended\Assemblies\CombatExtended.dll</HintPath>
+        </Reference>
         <Reference Include="ISharpZipLib">
           <HintPath>J:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\ISharpZipLib.dll</HintPath>
         </Reference>

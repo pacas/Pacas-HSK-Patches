@@ -1,6 +1,7 @@
 ﻿using System;
 using System.CodeDom.Compiler;
 using System.Collections.Generic;
+using CombatExtended;
 using RimWorld.Planet;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -148,22 +149,14 @@ namespace RimWorld
             List<Thing> things = new List<Thing>();
             Thing thing;
             ThingDef item;
-            int randomIndex;
+            int randomIndex = random.Next(stuffDefOrdered.thingsToChoose.Count);
             switch (stuffDefOrdered.typeOfItem)
             {
                 case "Specific":
                     item = def.royalAid.itemsToDrop[index].thingDef;
                     break;
                 case "Random":
-                    randomIndex = random.Next(stuffDefOrdered.thingsToChoose.Count);
                     item = stuffDefOrdered.thingsToChoose[randomIndex];
-                    break;
-                case "GunWithAmmo":
-                    randomIndex = random.Next(stuffDefOrdered.thingsToChoose.Count);
-                    item = stuffDefOrdered.thingsToChoose[randomIndex];
-                    Thing ammo = ThingMaker.MakeThing(stuffDefOrdered.ammunition[randomIndex].thingDef);
-                    ammo.stackCount = stuffDefOrdered.ammunition[randomIndex].count;
-                    things.Add(ammo);
                     break;
                 default:
                     item = def.royalAid.itemsToDrop[index].thingDef;
@@ -188,6 +181,17 @@ namespace RimWorld
                     break;
             }
             thing.stackCount = def.royalAid.itemsToDrop[index].count;
+            if (stuffDefOrdered.ammoUsage == "True")
+            {
+                AmmoSetDef ammoUser = thing.TryGetComp<CompAmmoUser>().Props.ammoSet;
+                if (!ammoUser.ammoTypes.NullOrEmpty<AmmoLink>())
+                {
+                    AmmoDef ammo = ammoUser.ammoTypes[0].ammo;
+                    Thing ammoThing = ThingMaker.MakeThing(ammo);
+                    ammoThing.stackCount = stuffDefOrdered.ammunition[randomIndex];
+                    things.Add(ammoThing);
+                }
+            }
             things.Add(thing);
             return things;
         }

@@ -15,13 +15,15 @@
         <typeOfDrop>StuffQuality</typeOfDrop>
         <typeOfQuality>Specific</typeOfQuality>
         <typeOfItem>Specific</typeOfItem>
+        <ammoUsage>False</ammoUsage>
         <quality>Normal</quality>
     </OrderedStuffDef>
     
     <OrderedStuffDef Name="OrderedGunBase" Abstract="True">
         <typeOfDrop>Quality</typeOfDrop>
-        <typeOfItem>GunWithAmmo</typeOfItem>
+        <typeOfItem>Random</typeOfItem>
         <typeOfQuality>Specific</typeOfQuality>
+        <ammoUsage>True</ammoUsage>
         <quality>Normal</quality>
     </OrderedStuffDef>
     
