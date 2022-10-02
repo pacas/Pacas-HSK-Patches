@@ -8,9 +8,10 @@ namespace RimWorld
         public string typeOfDrop;
         public string typeOfItem;
         public string typeOfQuality;
+        public string ammoUsage;
         public string quality;
         public List<ThingDef> stuffList;
         public List<ThingDef> thingsToChoose;
-        public List<ThingDefCountClass> ammunition;
+        public List<int> ammunition;
     }
 }

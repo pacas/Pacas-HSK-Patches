@@ -27,12 +27,12 @@
             <li>Gun_Autopistol</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_45ACP_FMJ>60</Ammo_45ACP_FMJ>
-            <Ammo_45ACP_FMJ>60</Ammo_45ACP_FMJ>
-            <Ammo_9x19mmPara_FMJ>60</Ammo_9x19mmPara_FMJ>
-            <Ammo_9x19mmPara_FMJ>100</Ammo_9x19mmPara_FMJ>
-            <Ammo_9x19mmPara_FMJ>60</Ammo_9x19mmPara_FMJ>
-            <Ammo_9x19mmPara_FMJ>60</Ammo_9x19mmPara_FMJ>
+            <li>60</li>
+            <li>60</li>
+            <li>60</li>
+            <li>100</li>
+            <li>60</li>
+            <li>60</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -63,10 +63,10 @@
             <li>Gun_Autopistol</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_9x19mmPara_FMJ>60</Ammo_9x19mmPara_FMJ>
-            <Ammo_9x19mmPara_FMJ>90</Ammo_9x19mmPara_FMJ>
-            <Ammo_9x19mmPara_FMJ>60</Ammo_9x19mmPara_FMJ>
-            <Ammo_9x19mmPara_FMJ>60</Ammo_9x19mmPara_FMJ>
+            <li>60</li>
+            <li>90</li>
+            <li>60</li>
+            <li>60</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -101,15 +101,15 @@
             <li>Gun_HeavySMG</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
-            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
-            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
-            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
-            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
-            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
-            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
-            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
-            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -141,11 +141,11 @@
             <li>Gun_HeavySMG</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
-            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
-            <Ammo_9x19mmPara_FMJ>300</Ammo_9x19mmPara_FMJ>
-            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
-            <Ammo_45ACP_FMJ>300</Ammo_45ACP_FMJ>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -175,10 +175,10 @@
             <li>Gun_TacticalShotgun</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_12Gauge_Buck>60</Ammo_12Gauge_Buck>
-            <Ammo_12Gauge_Buck>60</Ammo_12Gauge_Buck>
-            <Ammo_12Gauge_Buck>60</Ammo_12Gauge_Buck>
-            <Ammo_12Gauge_Buck>60</Ammo_12Gauge_Buck>
+            <li>60</li>
+            <li>60</li>
+            <li>60</li>
+            <li>60</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -209,10 +209,10 @@
             <li>Gun_TacticalAutoShotgun</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_12Gauge_Buck>75</Ammo_12Gauge_Buck>
-            <Ammo_12Gauge_Buck>60</Ammo_12Gauge_Buck>
-            <Ammo_12Gauge_Buck>100</Ammo_12Gauge_Buck>
-            <Ammo_12Gauge_Buck>100</Ammo_12Gauge_Buck>
+            <li>75</li>
+            <li>60</li>
+            <li>100</li>
+            <li>100</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -246,14 +246,14 @@
             <li>Gun_AK47Gun</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_303British_FMJ>80</Ammo_303British_FMJ>
-            <Ammo_9x19mmPara_FMJ>210</Ammo_9x19mmPara_FMJ>
-            <Ammo_45ACP_FMJ>210</Ammo_45ACP_FMJ>
-            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
-            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
-            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
-            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
-            <Ammo_762x39mmSoviet_FMJ>210</Ammo_762x39mmSoviet_FMJ>
+            <li>80</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -290,16 +290,16 @@
             <li>Gun_SCAR_H</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
-            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
-            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
-            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
-            <Ammo_762x39mmSoviet_FMJ>210</Ammo_762x39mmSoviet_FMJ>
-            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
-            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
-            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
-            <Ammo_556x45mmNATO_FMJ>210</Ammo_556x45mmNATO_FMJ>
-            <Ammo_762x51mmNATO_FMJ>210</Ammo_762x51mmNATO_FMJ>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
+            <li>210</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -328,9 +328,9 @@
             <li>RF_Gun_WA2K</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_762x51mmNATO_FMJ>40</Ammo_762x51mmNATO_FMJ>
-            <Ammo_762x51mmNATO_FMJ>40</Ammo_762x51mmNATO_FMJ>
-            <Ammo_762x51mmNATO_FMJ>60</Ammo_762x51mmNATO_FMJ>
+            <li>40</li>
+            <li>40</li>
+            <li>60</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -365,14 +365,14 @@
             <li>Gun_M82Gun</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_762x51mmNATO_FMJ>40</Ammo_762x51mmNATO_FMJ>
-            <Ammo_762x51mmNATO_FMJ>40</Ammo_762x51mmNATO_FMJ>
-            <Ammo_762x51mmNATO_FMJ>60</Ammo_762x51mmNATO_FMJ>
-            <Ammo_50BMG_FMJ>40</Ammo_50BMG_FMJ>
-            <Ammo_50BMG_FMJ>40</Ammo_50BMG_FMJ>
-            <Ammo_145x114mm_FMJ>40</Ammo_145x114mm_FMJ>
-            <Ammo_145x114mm_FMJ>40</Ammo_145x114mm_FMJ>
-            <Ammo_50BMG_FMJ>40</Ammo_50BMG_FMJ>
+            <li>40</li>
+            <li>40</li>
+            <li>60</li>
+            <li>40</li>
+            <li>40</li>
+            <li>40</li>
+            <li>40</li>
+            <li>40</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -402,10 +402,10 @@
             <li>Gun_HHMG</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_762x39mmSoviet_FMJ>300</Ammo_762x39mmSoviet_FMJ>
-            <Ammo_556x45mmNATO_FMJ>300</Ammo_556x45mmNATO_FMJ>
-            <Ammo_556x45mmNATO_FMJ>300</Ammo_556x45mmNATO_FMJ>
-            <Ammo_556x45mmNATO_FMJ>300</Ammo_556x45mmNATO_FMJ>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
+            <li>300</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -436,10 +436,10 @@
             <li>Gun_M60GPMG</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_556x45mmNATO_FMJ>300</Ammo_556x45mmNATO_FMJ>
-            <Ammo_556x45mmNATO_FMJ>300</Ammo_556x45mmNATO_FMJ>
-            <Ammo_50BMG_FMJ>60</Ammo_50BMG_FMJ>
-            <Ammo_762x51mmNATO_FMJ>300</Ammo_762x51mmNATO_FMJ>
+            <li>300</li>
+            <li>300</li>
+            <li>60</li>
+            <li>300</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -472,13 +472,13 @@
             <li>Gun_LAW</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_30x64mmFuel_Incendiary>20</Ammo_30x64mmFuel_Incendiary>
-            <Ammo_Flamethrower_Napalm>160</Ammo_Flamethrower_Napalm>
-            <Ammo_40x46mmGrenade_HE>20</Ammo_40x46mmGrenade_HE>
-            <Ammo_40x46mmGrenade_HE>20</Ammo_40x46mmGrenade_HE>
-            <Ammo_RPG7Grenade_HEAT>7</Ammo_RPG7Grenade_HEAT>
-            <Ammo_RPG7Grenade_HEAT>7</Ammo_RPG7Grenade_HEAT>
-            <Ammo_M72LAW>7</Ammo_M72LAW>
+            <li>20</li>
+            <li>160</li>
+            <li>20</li>
+            <li>20</li>
+            <li>7</li>
+            <li>7</li>
+            <li>7</li>
         </ammunition>
     </OrderedStuffDef>
     
@@ -510,11 +510,11 @@
             <li>Gun_M5_USCM</li>
         </thingsToChoose>
         <ammunition>
-            <Ammo_30x64mmFuel_Incendiary>20</Ammo_30x64mmFuel_Incendiary>
-            <Ammo_Flamethrower_Napalm>160</Ammo_Flamethrower_Napalm>
-            <Ammo_40x46mmGrenade_HE>20</Ammo_40x46mmGrenade_HE>
-            <Ammo_RPG7Grenade_HEAT>7</Ammo_RPG7Grenade_HEAT>
-            <Ammo_RPG7Grenade_HEAT>7</Ammo_RPG7Grenade_HEAT>
+            <li>20</li>
+            <li>150</li>
+            <li>20</li>
+            <li>7</li>
+            <li>7</li>
         </ammunition>
     </OrderedStuffDef>
 </Defs>
