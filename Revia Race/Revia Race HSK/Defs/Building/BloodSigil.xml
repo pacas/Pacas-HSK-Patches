@@ -65,7 +65,6 @@
             <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
             <ai_chillDestination>false</ai_chillDestination>
             <buildingTags>
-				<li>Production</li>
                 <li>RitualFocus</li>
 			</buildingTags>
         </building>
@@ -75,5 +74,6 @@
             <li>PlaceWorker_RitualFocus</li>
         </placeWorkers>
         <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
     </ThingDef>
 </Defs>
