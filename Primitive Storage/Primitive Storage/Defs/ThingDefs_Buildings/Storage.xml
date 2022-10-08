@@ -407,14 +407,13 @@
         <label>wood pile</label>
         <description>A wood pile for stacking wood. Costs 75 wood logs to build. Deconstructing returns 100% of wood logs used to build.</description>
         <graphicData>
-            <texPath>Things/HMC_WoodPile/HMC_WoodPile</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(3.4,1)</drawSize>
-            <drawRotated>false</drawRotated>
+			<texPath>Things/HMC_pileoflogs/HMC_pileoflogs</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3,1)</drawSize>
+            <drawRotated>true</drawRotated>
         </graphicData>
-        <uiIconPath>Things/HMC_WoodPile/HMC_WoodPile</uiIconPath>
+		<uiIconPath>Things/HMC_pileoflogs/HMC_pileoflogs_color</uiIconPath>
         <castEdgeShadows>true</castEdgeShadows>
-        <rotatable>false</rotatable>
         <fillPercent>0.7</fillPercent>
         <pathCost>140</pathCost>
         <size>(3,1)</size>
