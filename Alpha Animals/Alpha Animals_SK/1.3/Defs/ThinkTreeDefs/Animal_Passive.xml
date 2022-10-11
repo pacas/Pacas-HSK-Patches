@@ -1,216 +1,184 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <ThinkTreeDef>
-    <defName>AA_AnimalPassive</defName>
-    <thinkRoot Class="ThinkNode_Priority">
-      <subNodes>
-        
-        <li Class="ThinkNode_Subtree">
-          <treeDef>Downed</treeDef>
-        </li>
-        
-        
-        <!-- Do a queued job -->
-        <li Class="ThinkNode_QueuedJob" />
-
-        <!-- Wild animals dig out if no path to map edge and starving -->
-        <li Class="ThinkNode_ConditionalHasFaction">
-          <invert>true</invert>
-          <subNodes>
-            <li Class="ThinkNode_ConditionalStarving">
-              <subNodes>
-                <li Class="ThinkNode_ConditionalBodySize">
-                  <min>0.7</min>
-                  <subNodes>
-                    <li Class="ThinkNode_Subtree">
-                      <treeDef>DigOutIfCannotReachMapEdge</treeDef>
-                    </li>
-                  </subNodes>
+    <ThinkTreeDef>
+        <defName>AA_AnimalPassive</defName>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>Downed</treeDef>
                 </li>
-              </subNodes>
-            </li>
-          </subNodes>
-        </li>
-        
-        <!-- Leave if timed out -->
-        <li Class="ThinkNode_ConditionalExitTimedOut">
-          <subNodes>
-            <li Class="ThinkNode_Tagger">
-              <tagToGive>Misc</tagToGive>
-              <subNodes>
-                <li Class="JobGiver_ExitMapRandom">
-                  <defaultLocomotion>Walk</defaultLocomotion>     
+                <!-- Do a queued job -->
+                <li Class="ThinkNode_QueuedJob"/>
+                <!-- Wild animals dig out if no path to map edge and starving -->
+                <li Class="ThinkNode_ConditionalHasFaction">
+                    <invert>true</invert>
+                    <subNodes>
+                        <li Class="ThinkNode_ConditionalStarving">
+                            <subNodes>
+                                <li Class="ThinkNode_ConditionalBodySize">
+                                    <min>0.7</min>
+                                    <subNodes>
+                                        <li Class="ThinkNode_Subtree">
+                                            <treeDef>DigOutIfCannotReachMapEdge</treeDef>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
                 </li>
-              </subNodes>
-            </li>
-          </subNodes>
-        </li>
-
-        <!-- Mental state non critical -->
-        <li Class="ThinkNode_Subtree">
-          <treeDef>MentalStateNonCritical</treeDef>
-        </li>
-
-        <!-- Forced goto -->
-        <li Class="ThinkNode_ConditionalForcedGoto">
-          <subNodes>
-            <li Class="ThinkNode_Tagger">
-              <tagToGive>Misc</tagToGive>
-              <subNodes>
-                <li Class="JobGiver_ForcedGoto" />
-              </subNodes>
-            </li>
-          </subNodes>
-        </li>
-        
-        <!-- Lord directives -->
-        <li Class="ThinkNode_Subtree">
-          <treeDef>LordDuty</treeDef>
-        </li>
-        
-        <!-- Insertion hook for modders -->
-        <li Class="ThinkNode_SubtreesByTag">
-          <insertTag>Animal_PreMain</insertTag>
-        </li>
-
-        <!-- Wild animals leave map in some conditions -->
-        <li Class="ThinkNode_ConditionalHasFaction">
-          <invert>true</invert>
-          <subNodes>
-            
-
-            <!-- Wild animals randomly leave map -->
-            <li Class="ThinkNode_ChancePerHour_Constant">
-              <mtbDays>60</mtbDays>
-              <subNodes>
+                <!-- Leave if timed out -->
+                <li Class="ThinkNode_ConditionalExitTimedOut">
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Misc</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_ExitMapRandom">
+                                    <defaultLocomotion>Walk</defaultLocomotion>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+                <!-- Mental state non critical -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>MentalStateNonCritical</treeDef>
+                </li>
+                <!-- Forced goto -->
+                <li Class="ThinkNode_ConditionalForcedGoto">
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Misc</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_ForcedGoto"/>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+                <!-- Lord directives -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>LordDuty</treeDef>
+                </li>
+                <!-- Insertion hook for modders -->
+                <li Class="ThinkNode_SubtreesByTag">
+                    <insertTag>Animal_PreMain</insertTag>
+                </li>
+                <!-- Wild animals leave map in some conditions -->
+                <li Class="ThinkNode_ConditionalHasFaction">
+                    <invert>true</invert>
+                    <subNodes>
+                        <!-- Wild animals randomly leave map -->
+                        <li Class="ThinkNode_ChancePerHour_Constant">
+                            <mtbDays>60</mtbDays>
+                            <subNodes>
+                                <li Class="ThinkNode_Tagger">
+                                    <tagToGive>Misc</tagToGive>
+                                    <subNodes>
+                                        <li Class="JobGiver_ExitMapRandom">
+                                            <defaultLocomotion>Walk</defaultLocomotion>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+                <!-- Eat random things out of curiosity -->
+                <li Class="ThinkNode_ChancePerHour_Constant">
+                    <mtbDays>60</mtbDays>
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>SatisfyingNeeds</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_EatRandom"/>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+                <!-- Satisfy basic needs -->
+                <li Class="ThinkNode_Subtree">
+                    <treeDef>SatisfyBasicNeeds</treeDef>
+                </li>
+                <!-- Insertion hook for modders -->
+                <li Class="ThinkNode_SubtreesByTag">
+                    <insertTag>Animal_PreWander</insertTag>
+                </li>
+                <!-- Tame animal: wander near colony if possible -->
+                <li Class="ThinkNode_ConditionalOfPlayerFaction">
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Idle</tagToGive>
+                            <subNodes>
+                                <!-- Wander near your current position if in hostile map -->
+                                <li Class="ThinkNode_ConditionalAnyEnemyInHostileMap">
+                                    <subNodes>
+                                        <li Class="JobGiver_WanderAnywhere">
+                                            <maxDanger>None</maxDanger>
+                                            <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                                        </li>
+                                    </subNodes>
+                                </li>
+                                <!-- Wander near colony -->
+                                <li Class="JobGiver_WanderColony">
+                                    <maxDanger>None</maxDanger>
+                                    <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+                <!-- Of neutral faction: rest and then exit the map -->
+                <li Class="ThinkNode_ConditionalNonPlayerNonHostileFaction">
+                    <subNodes>
+                        <li Class="ThinkNode_Tagger">
+                            <tagToGive>Misc</tagToGive>
+                            <subNodes>
+                                <li Class="JobGiver_ExitMapBest">
+                                    <defaultLocomotion>Walk</defaultLocomotion>
+                                </li>
+                            </subNodes>
+                        </li>
+                    </subNodes>
+                </li>
+                <!-- Wander -->
                 <li Class="ThinkNode_Tagger">
-                  <tagToGive>Misc</tagToGive>
-                  <subNodes>
-                    <li Class="JobGiver_ExitMapRandom">
-                      <defaultLocomotion>Walk</defaultLocomotion>
-                    </li>
-                  </subNodes>
+                    <tagToGive>Idle</tagToGive>
+                    <subNodes>
+                        <li Class="ThinkNode_ConditionalHerdAnimal">
+                            <subNodes>
+                                <li Class="JobGiver_WanderHerd">
+                                    <maxDanger>Deadly</maxDanger>
+                                    <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                                </li>
+                            </subNodes>
+                        </li>
+                        <li Class="JobGiver_WanderAnywhere">
+                            <maxDanger>Deadly</maxDanger>
+                            <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
+                        </li>
+                    </subNodes>
                 </li>
-              </subNodes>
-            </li>
-          </subNodes>
-        </li>
-
-      
-       
-        
-        <!-- Eat random things out of curiosity -->
-        <li Class="ThinkNode_ChancePerHour_Constant">
-          <mtbDays>60</mtbDays>
-          <subNodes>
-            <li Class="ThinkNode_Tagger">
-              <tagToGive>SatisfyingNeeds</tagToGive>
-              <subNodes>
-                <li Class="JobGiver_EatRandom"/>
-              </subNodes>
-            </li>
-          </subNodes>
-        </li>
-        
-        <!-- Satisfy basic needs -->
-        <li Class="ThinkNode_Subtree">
-          <treeDef>SatisfyBasicNeeds</treeDef>
-        </li>
-
-       
-        <!-- Insertion hook for modders -->
-        <li Class="ThinkNode_SubtreesByTag">
-          <insertTag>Animal_PreWander</insertTag>
-        </li>
-        
-        <!-- Tame animal: wander near colony if possible -->
-        <li Class="ThinkNode_ConditionalOfPlayerFaction">
-          <subNodes>
-            <li Class="ThinkNode_Tagger">
-              <tagToGive>Idle</tagToGive>
-              <subNodes>
-                <!-- Wander near your current position if in hostile map -->
-                <li Class="ThinkNode_ConditionalAnyEnemyInHostileMap">
-                  <subNodes>
-                    <li Class="JobGiver_WanderAnywhere">
-                      <maxDanger>None</maxDanger>
-                      <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
-                    </li>
-                  </subNodes>
+                <li Class="JobGiver_IdleError"/>
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
+    <ThinkTreeDef>
+        <defName>AA_AnimalConstantPassive</defName>
+        <thinkRoot Class="ThinkNode_Priority">
+            <subNodes>
+                <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
+                    <subNodes>
+                        <!-- Join auto joinable caravan -->
+                        <li Class="ThinkNode_Subtree">
+                            <treeDef>JoinAutoJoinableCaravan</treeDef>
+                        </li>
+                        <!-- Lord directives -->
+                        <li Class="ThinkNode_Subtree">
+                            <treeDef>LordDutyConstant</treeDef>
+                        </li>
+                    </subNodes>
                 </li>
-
-                <!-- Wander near colony -->
-                <li Class="JobGiver_WanderColony">
-                  <maxDanger>None</maxDanger>
-                  <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
-                </li>
-              </subNodes>
-            </li>
-          </subNodes>
-        </li>
-        
-        <!-- Of neutral faction: rest and then exit the map -->
-        <li Class="ThinkNode_ConditionalNonPlayerNonHostileFaction">
-          <subNodes>
-           
-            
-            <li Class="ThinkNode_Tagger">
-              <tagToGive>Misc</tagToGive>
-              <subNodes>
-                <li Class="JobGiver_ExitMapBest">
-                  <defaultLocomotion>Walk</defaultLocomotion>
-                </li>
-              </subNodes>
-            </li>
-          </subNodes>
-        </li>
-        
-        <!-- Wander -->
-        <li Class="ThinkNode_Tagger">
-          <tagToGive>Idle</tagToGive>
-          <subNodes>
-            <li Class="ThinkNode_ConditionalHerdAnimal">
-              <subNodes>
-                <li Class="JobGiver_WanderHerd">
-                  <maxDanger>Deadly</maxDanger>
-                  <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>
-                </li>
-              </subNodes>
-            </li>
-            
-            <li Class="JobGiver_WanderAnywhere">
-              <maxDanger>Deadly</maxDanger>
-              <ticksBetweenWandersRange>120~240</ticksBetweenWandersRange>    
-            </li>
-          </subNodes>
-        </li>
-
-        <li Class="JobGiver_IdleError"/>
-      </subNodes>
-    </thinkRoot>
-  </ThinkTreeDef>
-
-  <ThinkTreeDef>
-    <defName>AA_AnimalConstantPassive</defName>
-    <thinkRoot Class="ThinkNode_Priority">
-      <subNodes>
-        <li Class="ThinkNode_ConditionalCanDoConstantThinkTreeJobNow">
-          <subNodes>
-           
-            <!-- Join auto joinable caravan -->
-            <li Class="ThinkNode_Subtree">
-              <treeDef>JoinAutoJoinableCaravan</treeDef>
-            </li>
-            
-            <!-- Lord directives -->
-            <li Class="ThinkNode_Subtree">
-              <treeDef>LordDutyConstant</treeDef>
-            </li>
-          </subNodes>
-        </li>
-      </subNodes>
-    </thinkRoot>
-  </ThinkTreeDef>
-
+            </subNodes>
+        </thinkRoot>
+    </ThinkTreeDef>
 </Defs>
