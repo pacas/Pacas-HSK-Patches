@@ -149,13 +149,14 @@ namespace RimWorld
             List<Thing> things = new List<Thing>();
             Thing thing;
             ThingDef item;
-            int randomIndex = random.Next(stuffDefOrdered.thingsToChoose.Count);
+            var randomIndex = 0;
             switch (stuffDefOrdered.typeOfItem)
             {
                 case "Specific":
                     item = def.royalAid.itemsToDrop[index].thingDef;
                     break;
                 case "Random":
+                    randomIndex = random.Next(stuffDefOrdered.thingsToChoose.Count);
                     item = stuffDefOrdered.thingsToChoose[randomIndex];
                     break;
                 default:
@@ -184,7 +185,7 @@ namespace RimWorld
             if (stuffDefOrdered.ammoUsage == "True")
             {
                 AmmoSetDef ammoUser = thing.TryGetComp<CompAmmoUser>().Props.ammoSet;
-                if (!ammoUser.ammoTypes.NullOrEmpty<AmmoLink>())
+                if (!ammoUser.ammoTypes.NullOrEmpty())
                 {
                     AmmoDef ammo = ammoUser.ammoTypes[0].ammo;
                     Thing ammoThing = ThingMaker.MakeThing(ammo);
