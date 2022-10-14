@@ -1,5 +1,5 @@
 # Code: Valkyrie
-![Preview](/__PREVIEW__/CVHSK.png?raw=true "Preview")<br><br>
+![Preview](/__PREVIEW__/CVHSK.jpg?raw=true "Preview")<br><br>
 [Hardcore SK modpack only!](https://github.com/skyarkhangel/Hardcore-SK/tree/development)
 <br>
 Convertion of this mod:<br>
