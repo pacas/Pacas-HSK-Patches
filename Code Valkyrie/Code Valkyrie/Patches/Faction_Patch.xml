@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/FactionDef[defName="Mechanoid"]/pawnGroupMakers/li[1]/options</xpath>
+                <value>
+                    <Mech_RangedValkyrie>23</Mech_RangedValkyrie>
+                    <Mech_MeleeValkyrie>23</Mech_MeleeValkyrie>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/FactionDef[defName="Mechanoid"]/pawnGroupMakers/li[2]/options</xpath>
+                <value>
+                    <Mech_RangedValkyrie>15</Mech_RangedValkyrie>
+                    <Mech_MeleeValkyrie>15</Mech_MeleeValkyrie>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/FactionDef[defName="Mechanoid"]/pawnGroupMakers/li[3]/options</xpath>
+                <value>
+                    <Mech_RangedValkyrie>35</Mech_RangedValkyrie>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/FactionDef[defName="Mechanoid"]/pawnGroupMakers/li[5]/options</xpath>
+                <value>
+                    <Mech_RangedValkyrie>8</Mech_RangedValkyrie>
+                    <Mech_MeleeValkyrie>8</Mech_MeleeValkyrie>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
+

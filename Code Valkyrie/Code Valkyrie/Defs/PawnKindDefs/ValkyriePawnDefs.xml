@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <PawnKindDef ParentName="SK_BaseMechanoidKind">
+        <defName>Mech_MeleeValkyrie</defName>
+        <label>valkyrie</label>
+        <race>Mech_ValkyrieMelee</race>
+        <combatPower>730</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Valkyrie/Valkyrie</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.8</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.8, 0.4)</volume>
+                    </shadowData>
+                    <shaderType>Transparent</shaderType>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponMoney>9999~9999</weaponMoney>
+        <defendPointRadius>0</defendPointRadius>
+        <weaponTags>
+            <li>MeleeValkyrieWeapon</li>
+        </weaponTags>
+    </PawnKindDef>
+    
+    <PawnKindDef ParentName="SK_BaseMechanoidKind">
+        <defName>Mech_RangedValkyrie</defName>
+        <label>valkyrie</label>
+        <race>Mech_Valkyrie</race>
+        <combatPower>730</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>ValkyrieRanged/ValkyrieRanged</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>1.8</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.8, 0.4)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        <weaponMoney>9999~9999</weaponMoney>
+        <weaponTags>
+            <li>ValkyrieGun</li>
+        </weaponTags>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>9</min>
+                    <max>12</max>
+                </primaryMagazineCount>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+</Defs>

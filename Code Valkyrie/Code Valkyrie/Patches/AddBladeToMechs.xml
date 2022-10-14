@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[@ParentName="BaseMechanoidKind"][not(defName="Mech_MeleeValkyrie" or defName="Mech_RangedValkyrie")]/weaponTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/PawnKindDef[@ParentName="BaseMechanoidKind"]/weaponTags</xpath>
+            <value>
+                <li>MeleeValkyrieWeapon_Leapless</li>
+            </value>
+        </match>
+    </Operation>
+    -->
+</Patch>
+
