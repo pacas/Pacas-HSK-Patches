@@ -22,8 +22,8 @@
             <li>PN_Melee</li>
         </weaponTags>
         <comps>
-			<li Class="CompProperties_Styleable"/>
-		</comps>
+            <li Class="CompProperties_Styleable"/>
+        </comps>
     </ThingDef>
 
     <ThingDef Name="PN_BaseMeleeWeapon_Sharp" ParentName="PN_BaseMeleeWeapon" Abstract="True">
@@ -136,11 +136,11 @@
             <li>SolidMetallic</li>
         </stuffCategories>
         <costStuffCount>60</costStuffCount>
-		<costList>
-			<ComponentSpacer>4</ComponentSpacer>
-			<AdvMechanism>2</AdvMechanism>
-			<Microchips>1</Microchips>
-		</costList>
+        <costList>
+            <ComponentSpacer>4</ComponentSpacer>
+            <AdvMechanism>2</AdvMechanism>
+            <Microchips>1</Microchips>
+        </costList>
         <tools>
             <li>
                 <label>handle</label>
@@ -203,11 +203,11 @@
             <li>SolidMetallic</li>
         </stuffCategories>
         <costStuffCount>100</costStuffCount>
-		<costList>
-			<ComponentSpacer>10</ComponentSpacer>
-			<AdvMechanism>5</AdvMechanism>
-			<Microchips>2</Microchips>
-		</costList>
+        <costList>
+            <ComponentSpacer>10</ComponentSpacer>
+            <AdvMechanism>5</AdvMechanism>
+            <Microchips>2</Microchips>
+        </costList>
         <tools>
             <li>
                 <label>handle</label>
@@ -291,8 +291,8 @@
             <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
         </statBases>
         <equippedStatOffsets>
-			<Suppressability>-0.25</Suppressability>
-		</equippedStatOffsets>
+            <Suppressability>-0.25</Suppressability>
+        </equippedStatOffsets>
         <weaponTags>
             <li>PN_Revolver</li>
         </weaponTags>
@@ -334,9 +334,9 @@
             <li>RangedLight</li>
         </weaponClasses>
         <smeltProducts>
-			<Pistol_Component>1</Pistol_Component>
-			<Weapon_Parts>1</Weapon_Parts>
-		</smeltProducts>
+            <Pistol_Component>1</Pistol_Component>
+            <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
     </ThingDef>
 
     <!--==================================== 레버액션 ====================================-->
@@ -362,8 +362,8 @@
             <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
         </statBases>
         <equippedStatOffsets>
-			<Suppressability>-0.35</Suppressability>
-		</equippedStatOffsets>
+            <Suppressability>-0.35</Suppressability>
+        </equippedStatOffsets>
         <comps>
             <li>
                 <compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
@@ -489,9 +489,9 @@
             <RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
         </statBases>
         <equippedStatOffsets>
-			<Suppressability>-0.45</Suppressability>
+            <Suppressability>-0.45</Suppressability>
             <MoveSpeed>-0.65</MoveSpeed>
-		</equippedStatOffsets>
+        </equippedStatOffsets>
         <comps>
             <li Class="SYS.CompProperties_Sheath">
                 <sheathOnlyGraphicData>
@@ -584,9 +584,9 @@
             <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
         </statBases>
         <equippedStatOffsets>
-			<Suppressability>-0.45</Suppressability>
+            <Suppressability>-0.45</Suppressability>
             <MoveSpeed>-0.65</MoveSpeed>
-		</equippedStatOffsets>
+        </equippedStatOffsets>
         <comps>
             <li>
                 <compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
@@ -681,7 +681,7 @@
         <smeltProducts>
             <Heavy_Component>1</Heavy_Component>
             <Weapon_Parts>5</Weapon_Parts>
-			<Plastic>4</Plastic>
+            <Plastic>4</Plastic>
         </smeltProducts>
     </ThingDef>
 
@@ -717,8 +717,8 @@
             <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
         </statBases>
         <equippedStatOffsets>
-			<Suppressability>-0.25</Suppressability>
-		</equippedStatOffsets>
+            <Suppressability>-0.25</Suppressability>
+        </equippedStatOffsets>
         <comps>
             <li Class="CompProperties_Styleable"/>
         </comps>
@@ -772,9 +772,9 @@
             <li>RangedLight</li>
         </weaponClasses>
         <smeltProducts>
-			<Pistol_Component>1</Pistol_Component>
-			<Weapon_Parts>2</Weapon_Parts>
-		</smeltProducts>
+            <Pistol_Component>1</Pistol_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
     </ThingDef>
 
     <!--==================================== 로열 라이플 ====================================-->
@@ -1092,7 +1092,7 @@
         <smeltProducts>
             <Heavy_Component>1</Heavy_Component>
             <Weapon_Parts>5</Weapon_Parts>
-			<Plastic>4</Plastic>
+            <Plastic>4</Plastic>
         </smeltProducts>
     </ThingDef>
 
@@ -1124,8 +1124,8 @@
         </tradeTags>
         <thingSetMakerTags>
             <li>RewardStandardLowFreq</li>
-			<li>RewardStandardQualitySuper</li>
-		</thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
         <verbs>
             <li>
                 <verbClass>Verb_ShootOneUse</verbClass>
@@ -1204,11 +1204,11 @@
         <smeltProducts>
             <Laser_Component>1</Laser_Component>
             <Weapon_Parts>12</Weapon_Parts>
-			<Plastic>9</Plastic>
+            <Plastic>9</Plastic>
         </smeltProducts>
         <weaponClasses>
-			<li>Ultratech</li>
-		</weaponClasses>
+            <li>Ultratech</li>
+        </weaponClasses>
     </ThingDef>
 
 </Defs>
