@@ -153,7 +153,7 @@
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ResearchProjectDef[@Name = "PrimitiveBase" or @Name = "MedievalBase" or @Name = "IndustrialBase"]/modExtensions/li[@Class="SK.AdvancedResearchExtension"]/requiredResearchBuildings</xpath>
                 <value>
-                    <li>SimpleResearchBench</li>
+                    <li>RGK_SimpleResearchBench</li>
                 </value>
             </li>
         </operations>
