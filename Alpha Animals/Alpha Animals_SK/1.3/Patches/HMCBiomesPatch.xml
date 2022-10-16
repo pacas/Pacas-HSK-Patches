@@ -29,14 +29,12 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="AA_Bobeene"]/race</xpath>
-					<value>
-                        <wildBiomes>
-                            <HmcIronWoodForest>0.01</HmcIronWoodForest>
-                            <HmcBambooGrove>0.03</HmcBambooGrove>
-						</wildBiomes>
-					</value>
-				</li>
+                    <xpath>/Defs/ThingDef[defName="AA_Bobeene"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.01</HmcIronWoodForest>
+                        <HmcBambooGrove>0.03</HmcBambooGrove>
+                    </value>
+                </li>
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="AA_BedBug"]/race/wildBiomes</xpath>
                     <value>
