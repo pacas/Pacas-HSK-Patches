@@ -40,8 +40,8 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>ToolDropPlus</defName>
         <label>tools drop +</label>
-        <description>Call for a drop of tool box with handaxe, hammer, pickaxe, hoe, sickle, knife and broom with better base materials.\n - Material: Titanium\n - Quality: Excellent\n\nPermit points cost - 2 points.</description>
-        <minTitle>Knight</minTitle>
+        <description>Call for a drop of tool box with handaxe, hammer, pickaxe, hoe, sickle, knife and broom with better base materials.\n - Material: Titanium\n - Quality: Excellent\n\nPermit points cost - 3 points.</description>
+        <minTitle>Praetor</minTitle>
         <cooldownDays>50</cooldownDays>
         <uiPosition>(1,10)</uiPosition>
         <prerequisite>ToolDrop</prerequisite>
@@ -78,7 +78,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AdvToolDrop</defName>
         <label>multitool drop</label>
-        <description>Call for a drop of one multitool.\n - Material: Alnico alloy\n - Quality: Normal\n\nPermit points cost - 2 points.</description>
+        <description>Call for a drop of one multitool.\n - Material: Alnico alloy\n - Quality: Normal\n\nPermit points cost - 3 points.</description>
         <minTitle>Baron</minTitle>
         <uiPosition>(0,11)</uiPosition>
         <permitPointCost>2</permitPointCost>
@@ -101,7 +101,7 @@
     <RoyalTitlePermitDef ParentName="DropResourcesPlus">
         <defName>AdvToolDropPlus</defName>
         <label>multitool drop +</label>
-        <description>Call for a drop of one multitool.\n - Material: Titanium\n - Quality: Excellent\n\nPermit points cost - 3 points.</description>
+        <description>Call for a drop of one multitool.\n - Material: Titanium\n - Quality: Excellent\n\nPermit points cost - 4 points.</description>
         <minTitle>Count</minTitle>
         <cooldownDays>80</cooldownDays>
         <prerequisite>AdvToolDrop</prerequisite>

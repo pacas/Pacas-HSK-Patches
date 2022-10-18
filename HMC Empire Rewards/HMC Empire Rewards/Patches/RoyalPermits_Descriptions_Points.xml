@@ -2,20 +2,18 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
-        
-            <!-- 1 point -->
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="SteelDrop"]/description</xpath>
                 <value>
-                    <description>Call for a drop of 150 iron ore.\n\nPermit points cost - 1 point.</description>
+                    <description>Call for a drop of 100 iron ore.\n\nPermit points cost - 1 point.</description>
                 </value>
             </li>
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="SilverDrop"]/description</xpath>
                 <value>
-                    <description>Call for a drop of 1000 silver.\n\nPermit points cost - 1 point.</description>
+                    <description>Call for a drop of 1000 silver.\n\nPermit points cost - 2 point.</description>
                 </value>
             </li>
             
@@ -25,9 +23,7 @@
                     <description>Call for a drop of 30 packaged survival meals.\n\nPermit points cost - 1 point.</description>
                 </value>
             </li>
-            
-            <!-- 2 points -->
-            
+
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="GlitterMedDrop"]/description</xpath>
                 <value>
@@ -45,14 +41,14 @@
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidSmall"]/description</xpath>
                 <value>
-                    <description>Call a group of 2 light troopers to aid you in battle.\n\nPermit points cost - 1 points.</description>
+                    <description>Call a group of 2 light troopers to aid you in battle.\n\nPermit points cost - 2 points.</description>
                 </value>
             </li>
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge"]/description</xpath>
                 <value>
-                    <description>Call a group of 4 professional janissaries to aid you in battle.\n\nPermit points cost - 2 points.</description>
+                    <description>Call a group of 4 professional janissaries to aid you in battle.\n\nPermit points cost - 3 points.</description>
                 </value>
             </li>
             
@@ -69,21 +65,18 @@
                     <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.\n\nPermit points cost - 2 points.</description>
                 </value>
             </li>
-            
-            <!-- 3 points -->
-            
+
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallLaborerGang"]/description</xpath>
                 <value>
                     <description>Call a group of 8 laborers to assist you for 4 days. These workers can only do general labor tasks. You can control them as though they were your own colonists. You are required to keep them safe.\n\nPermit points cost - 3 points.</description>
                 </value>
             </li>
-
             
             <li Class="PatchOperationReplace">
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/description</xpath>
                 <value>
-                    <description>Call a group of 4 heavy cataphracts to aid you in battle.\n\nPermit points cost - 3 points.</description>
+                    <description>Call a group of 4 heavy cataphracts to aid you in battle.\n\nPermit points cost - 4 points.</description>
                 </value>
             </li>
             
@@ -91,44 +84,6 @@
                 <xpath>Defs/RoyalTitlePermitDef[defName="CallOrbitalSalvo"]/description</xpath>
                 <value>
                     <description>Call a salvo of aerodrone strikes around a target position.\n\nPermit points cost - 3 points.</description>
-                </value>
-            </li>
-            
-            <!-- titles -->
-            
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitleDef[defName="Acolyte"]/description</xpath>
-                <value>
-                    <description>The title of acolyte is the first title of noble duty, and encompasses a wide range of practical positions. Some acolytes are purely students, learning to lead troops, manage societies, or use psycasts in specialized schools. Others come from wealthy families and might own city buildings or farm complexes.\n\nDuring wartime, an acolyte might lead a platoon of troops, captain a small frigate, or serve their lord as an advisor.\n\nTheir low rank within the nobility makes them paradoxically less useful as diplomats than yeomen. Sending a low-ranked acolyte to a negotiation can itself be seen as an insult, whereas a non-noble yeoman negotiator is seen only as the mouthpiece of his lord.\n\nPermit points given - 2 points.</description>
-                </value>
-            </li>
-
-            
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitleDef[defName="Knight"]/description</xpath>
-                <value>
-                    <description>The title of knight is held by nobles who have largely passed their training, but who have not ascended to higher leadership roles. Many knights never advance further, and spend their lives as respected managers, advisors, or warriors.\n\nMost knights have some wealth, but a few remain quite poor while others may be very rich.\n\nIn peacetime, a knight may manage a factory complex, commercial district, or small farming region. In war, some knights lead troop companies and assault squadrons, while psychic-focused knights engage in espionage, sabotage, and battlefield psychic combat.\n\nPermit points given - 2 points.</description>
-                </value>
-            </li>
-            
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitleDef[defName="Praetor"]/description</xpath>
-                <value>
-                    <description>The title of praetor is a bridge between the service-oriented lower titles below and the power-holding nobility above.\n\nDuring peacetime, a prateor will usually manage a city district, asteroid sector, or agricultural region. During war, they take authority over the smallest combat units that fight independently - terrestrial troop cohorts, or space-borne destroyers or combat groups.\n\nPermit points given - 3 points.</description>
-                </value>
-            </li>
-
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitleDef[defName="Baron"]/description</xpath>
-                <value>
-                    <description>The title of baron is the lowest of the middle nobility. While lower titles focus on personal service at war or commerce under a lord, barons hold title as semi-independent rulers. Each baron is subordinate to his liege lord, but his obligations are mostly in supplying wealth and troops, and not in personal service.\n\nIn the Empire, a baron will typically own a city sector, mining colony, or similar outfit. At wartime, a baron may captain a capital ship in name, or control a regiment of troops.\n\nPermit points given - 4 points.</description>
-                </value>
-            </li>
-            
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitleDef[defName="Consul"]/description</xpath>
-                <value>
-                    <description>The title of count is the middle rank of middle nobility.\n\nIn peacetime, counts hold title to a city or colony, and might have a small personal fleet, possibly including capital ships.\n\nPermit points given - 5 points.</description>
                 </value>
             </li>
             

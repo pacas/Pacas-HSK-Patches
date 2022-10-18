@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+    <!-- огнестрел -->
+    <!-- пистолет -->
+    <PistolDrop.label>запрос пистолета</PistolDrop.label>
+    <PistolDrop.description>Запрос доставки случайного пистолета и патронов к нему.\n - Качество: обычное\n\nТребуемое количество очков привилегий - 1.</PistolDrop.description>
+    <PistolDropPlus.label>запрос пистолета +</PistolDropPlus.label>
+    <PistolDropPlus.description>Запрос доставки случайного пистолета и патронов к нему. Более качественные пистолеты в выборке.\n - Качество: хорошее-шедевр\n\nТребуемое количество очков привилегий - 2.</PistolDropPlus.description>
+
+    <!-- ПП -->
+    <SMGDrop.label>запрос пистолета-пулемёта</SMGDrop.label>
+    <SMGDrop.description>Запрос доставки случайного пистолета-пулемёта и патронов к нему.\n - Качество: обычное\n\nТребуемое количество очков привилегий - 2.</SMGDrop.description>
+    <SMGDropPlus.label>запрос пистолета-пулемёта +</SMGDropPlus.label>
+    <SMGDropPlus.description>Запрос доставки случайного пистолета-пулемёта и патронов к нему. Более качественные ПП в выборке.\n - Качество: хорошее-шедевр\n\nТребуемое количество очков привилегий - 3.</SMGDropPlus.description>
+
+    <!-- дробовик -->
+    <ShotgunDrop.label>запрос дробовика</ShotgunDrop.label>
+    <ShotgunDrop.description>Запрос доставки случайного дробовика и патронов к нему.\n - Качество: обычное\n\nТребуемое количество очков привилегий - 2.</ShotgunDrop.description>
+    <ShotgunDropPlus.label>запрос дробовика +</ShotgunDropPlus.label>
+    <ShotgunDropPlus.description>Запрос доставки случайного дробовика и патронов к нему. Более качественные дробовики в выборке.\n - Качество: хорошее-шедевр\n\nТребуемое количество очков привилегий - 3.</ShotgunDropPlus.description>
+
+    <!-- винтовка -->
+    <RifleDrop.label>запрос винтовки</RifleDrop.label>
+    <RifleDrop.description>Запрос доставки случайной винтовки и патронов к ней. Только базовые.\n - Качество: обычное\n\nТребуемое количество очков привилегий - 2.</RifleDrop.description>
+    <RifleDropPlus.label>запрос винтовки +</RifleDropPlus.label>
+    <RifleDropPlus.description>Запрос доставки случайной винтовки и патронов к ней. Более качественные винтовки в выборке, в том числе продвинутые.\n - Качество: хорошее-шедевр\n\nТребуемое количество очков привилегий - 3.</RifleDropPlus.description>
+
+    <!-- снайпа -->
+    <SniperRifleDrop.label>запрос снайперской винтовки</SniperRifleDrop.label>
+    <SniperRifleDrop.description>Запрос доставки случайной снайперской винтовки и патронов к ней. Только базовые.\n - Качество: обычное\n\nТребуемое количество очков привилегий - 3.</SniperRifleDrop.description>
+    <SniperRifleDropPlus.label>запрос снайперской винтовки +</SniperRifleDropPlus.label>
+    <SniperRifleDropPlus.description>Запрос доставки случайной снайперской винтовки и патронов к ней. Более качественные винтовки в выборке.\n - Качество: хорошее-шедевр\n\nТребуемое количество очков привилегий - 5.</SniperRifleDropPlus.description>
+
+    <!-- пулемёт -->
+    <MGDrop.label>запрос пулемёта</MGDrop.label>
+    <MGDrop.description>Запрос доставки случайного пулемёта и патронов к нему. Только базовые.\n - Качество: обычное\n\nТребуемое количество очков привилегий - 3.</MGDrop.description>
+    <MGDropPlus.label>запрос пулемёта +</MGDropPlus.label>
+    <MGDropPlus.description>Запрос доставки случайного пулемёта и патронов к нему. Более качественные пулемёты в выборке, в том числе продвинутые.\n - Качество: хорошее-шедевр\n\nТребуемое количество очков привилегий - 5.</MGDropPlus.description>
+
+    <!-- гранатомёт -->
+    <LauncherDrop.label>запрос гранатомёта</LauncherDrop.label>
+    <LauncherDrop.description>Запрос доставки случайного гранатомёта, ракетницы или огнемёта и патронов к ним. Только базовые. Одноразовые не включены.\n - Качество: обычное\n\nТребуемое количество очков привилегий - 3.</LauncherDrop.description>
+    <LauncherDropPlus.label>запрос гранатомёта +</LauncherDropPlus.label>
+    <LauncherDropPlus.description>Запрос доставки случайного гранатомёта, ракетницы или огнемёта и патронов к ним. Более качественные гранатомёта в выборке, в том числе продвинутые. Одноразовые не включены.\n - Качество: хорошее-шедевр\n\nТребуемое количество очков привилегий - 5.</LauncherDropPlus.description>
+
+</LanguageData>

@@ -2,50 +2,27 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
-        
-            <!-- Points awarded -->
-            
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitleDef[defName="Acolyte" or defName="Knight"]/permitPointsAwarded</xpath>
-                <value>
-                    <permitPointsAwarded>2</permitPointsAwarded>
-                </value>
-            </li>
-            
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitleDef[defName="Praetor"]/permitPointsAwarded</xpath>
-                <value>
-                    <permitPointsAwarded>3</permitPointsAwarded>
-                </value>
-            </li>
-            
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitleDef[defName="Baron"]/permitPointsAwarded</xpath>
-                <value>
-                    <permitPointsAwarded>4</permitPointsAwarded>
-                </value>
-            </li>
-            
-            <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitleDef[defName="Count"]/permitPointsAwarded</xpath>
-                <value>
-                    <permitPointsAwarded>5</permitPointsAwarded>
-                </value>
-            </li>
-            
+
             <!-- Points costs -->
             
             <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidLarge" or defName="CallLaborerTeam" or defName="CallOrbitalStrike" or defName="CallTransportShuttle"]/permitPointCost</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidSmall" or defName="CallLaborerTeam" or defName="CallOrbitalStrike" or defName="CallTransportShuttle"]/permitPointCost</xpath>
                 <value>
                     <permitPointCost>2</permitPointCost>
                 </value>
             </li>
             
             <li Class="PatchOperationReplace">
-                <xpath>Defs/RoyalTitlePermitDef[defName="CallLaborerGang" or defName="CallMilitaryAidGrand" or defName="CallOrbitalSalvo"]/permitPointCost</xpath>
+                <xpath>Defs/RoyalTitlePermitDef[defName="CallLaborerGang" or defName="CallOrbitalSalvo" or defName="CallMilitaryAidLarge"]/permitPointCost</xpath>
                 <value>
                     <permitPointCost>3</permitPointCost>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/RoyalTitlePermitDef[defName="CallMilitaryAidGrand"]/permitPointCost</xpath>
+                <value>
+                    <permitPointCost>4</permitPointCost>
                 </value>
             </li>
             
@@ -64,8 +41,15 @@
                 <xpath>Defs/RoyalTitlePermitDef[defName="SteelDrop"]/royalAid/itemsToDrop</xpath>
                 <value>
                     <itemsToDrop>
-                        <Steel>150</Steel>
+                        <Steel>100</Steel>
                     </itemsToDrop>
+                </value>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/RoyalTitlePermitDef[defName="SteelDrop"]</xpath>
+                <value>
+                    <cooldownDays>25</cooldownDays>
                 </value>
             </li>
             

@@ -117,7 +117,7 @@
         <defName>SMGDropPlus</defName>
         <label>SMG drop +</label>
         <description>Call for a drop of random SMG with ammo. Better guns in the selection.\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
-        <minTitle>Praetor</minTitle>
+        <minTitle>Legatus</minTitle>
         <uiPosition>(1,24)</uiPosition>
         <cooldownDays>40</cooldownDays>
         <prerequisite>SMGDrop</prerequisite>
@@ -186,7 +186,7 @@
         <defName>ShotgunDropPlus</defName>
         <label>shotgun drop +</label>
         <description>Call for a drop of random shotgun with ammo. Better guns in the selection.\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
-        <minTitle>Praetor</minTitle>
+        <minTitle>Legatus</minTitle>
         <uiPosition>(1,25)</uiPosition>
         <cooldownDays>50</cooldownDays>
         <prerequisite>ShotgunDrop</prerequisite>
@@ -261,7 +261,7 @@
         <defName>RifleDropPlus</defName>
         <label>rifle drop +</label>
         <description>Call for a drop of random rifle with ammo. Better guns in the selection, advanced rifles included.\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
-        <minTitle>Count</minTitle>
+        <minTitle>Baron</minTitle>
         <uiPosition>(1,26)</uiPosition>
         <cooldownDays>90</cooldownDays>
         <prerequisite>RifleDrop</prerequisite>
@@ -449,7 +449,7 @@
         <defName>LauncherDrop</defName>
         <label>grenade launcher drop</label>
         <description>Call for a drop of random grenade launcher, rocket launcher or flamethrower with ammo. Only basic ones. Single-use excluded.\n - Quality: Normal\n\nPermit points cost - 3 point.</description>
-        <minTitle>Baron</minTitle>
+        <minTitle>Viscount</minTitle>
         <cooldownDays>65</cooldownDays>
         <permitPointCost>3</permitPointCost>
         <uiPosition>(0,29)</uiPosition>

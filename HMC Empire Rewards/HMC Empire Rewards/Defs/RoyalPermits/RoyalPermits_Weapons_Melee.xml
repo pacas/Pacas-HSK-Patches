@@ -33,7 +33,7 @@
         <defName>AgileMeleeDropPlus</defName>
         <label>agile melee weapon drop +</label>
         <description>Call for a drop of random agile melee weapon (daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
-        <minTitle>Praetor</minTitle>
+        <minTitle>Legatus</minTitle>
         <uiPosition>(1,18)</uiPosition>
         <cooldownDays>60</cooldownDays>
         <prerequisite>AgileMeleeDrop</prerequisite>
@@ -103,7 +103,7 @@
         <defName>SharpMeleeDropPlus</defName>
         <label>sharp melee weapon drop +</label>
         <description>Call for a drop of random sharp melee weapon (exclude daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
-        <minTitle>Praetor</minTitle>
+        <minTitle>Legatus</minTitle>
         <uiPosition>(1,19)</uiPosition>
         <cooldownDays>60</cooldownDays>
         <prerequisite>SharpMeleeDrop</prerequisite>
@@ -173,7 +173,7 @@
         <defName>BluntMeleeDropPlus</defName>
         <label>blunt melee weapon drop +</label>
         <description>Call for a drop of random blunt melee weapon (exclude daggers and shortswords).\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
-        <minTitle>Praetor</minTitle>
+        <minTitle>Legatus</minTitle>
         <uiPosition>(1,20)</uiPosition>
         <cooldownDays>60</cooldownDays>
         <prerequisite>BluntMeleeDrop</prerequisite>
@@ -237,7 +237,7 @@
         <defName>HeavyMeleeDropPlus</defName>
         <label>heavy melee weapon drop +</label>
         <description>Call for a drop of random heavy melee weapon.\n - Material: Titanium\n - Quality: Good - Masterwork\n\nPermit points cost - 3 points.</description>
-        <minTitle>Praetor</minTitle>
+        <minTitle>Legatus</minTitle>
         <cooldownDays>60</cooldownDays>
         <uiPosition>(1,21)</uiPosition>
         <prerequisite>HeavyMeleeDrop</prerequisite>

@@ -61,10 +61,10 @@
                         <RoyalTitlePermitDef ParentName="DropResourcesPlus">
                             <defName>SeedsOakDrop</defName>
                             <label>random tree seeds drop</label>
-                            <description>Call for a drop of 30 random tree seeds.\n\nPermit points cost - 2 point.</description>
+                            <description>Call for a drop of 30 random tree seeds.\n\nPermit points cost - 1 point.</description>
                             <minTitle>Acolyte</minTitle>
                             <uiPosition>(0,34)</uiPosition>
-                            <permitPointCost>2</permitPointCost>
+                            <permitPointCost>1</permitPointCost>
                             <royalAid>
                                 <itemsToDrop>
                                     <Seed_TreeOak>30</Seed_TreeOak>
@@ -97,8 +97,8 @@
                         <RoyalTitlePermitDef ParentName="DropResourcesPlus">
                             <defName>SeedsAppleDrop</defName>
                             <label>random fruit tree seeds drop</label>
-                            <description>Call for a drop of 15 random fruit tree seeds.\n - Contains: apple, banana, orange and peach trees.\n\nPermit points cost - 2 point.</description>
-                            <minTitle>Acolyte</minTitle>
+                            <description>Call for a drop of 15 random fruit tree seeds.\n - Contains: apple, banana, orange and peach trees.\n\nPermit points cost - 2 points.</description>
+                            <minTitle>Knight</minTitle>
                             <uiPosition>(1,34)</uiPosition>
                             <permitPointCost>2</permitPointCost>
                             <royalAid>
