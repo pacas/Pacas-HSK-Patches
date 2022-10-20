@@ -4,12 +4,12 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>/Defs/ThingDef[@Name="BasePawnSkynet"]</xpath>
+				<xpath>/Defs/ThingDef[defName="SkynetCovert"]</xpath>
 			</li>
 			<li Class="PatchOperationConditional">
-				<xpath>/Defs/ThingDef[@Name="BasePawnSkynet"]/comps</xpath>
+				<xpath>/Defs/ThingDef[defName="SkynetCovert"]/comps</xpath>
 				<nomatch Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[@Name="BasePawnSkynet"]</xpath>
+					<xpath>/Defs/ThingDef[defName="SkynetCovert"]</xpath>
 					<value>
 						<comps>
 							<li>
