@@ -80,7 +80,7 @@
 		<isAutoAttackableMapObject>false</isAutoAttackableMapObject>
 	</ThingDef>
 
-	<ThingDef ParentName="SK_BuildingBase">
+	<ThingDef ParentName="PowerFueled">
 		<defName>RGK_Fireplace</defName>
 		<label>fire place</label>
 		<description>It's a warm fireplace that warms the room.</description>    
