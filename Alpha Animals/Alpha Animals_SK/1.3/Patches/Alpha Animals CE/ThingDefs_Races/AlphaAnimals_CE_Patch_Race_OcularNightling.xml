@@ -28,17 +28,7 @@
                             <NightVisionEfficiency>0.8</NightVisionEfficiency>
                             <AimingAccuracy>0.8</AimingAccuracy>
                             <MeleeParryChance>0.12</MeleeParryChance>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="AA_OcularNightling"]/statBases/MeleeDodgeChance</xpath>
-                        <value>
                             <MeleeDodgeChance>0.3</MeleeDodgeChance>
-                        </value>
-                    </li>
-                    <li Class="PatchOperationReplace">
-                        <xpath>/Defs/ThingDef[defName="AA_OcularNightling"]/statBases/MeleeCritChance</xpath>
-                        <value>
                             <MeleeCritChance>0.1</MeleeCritChance>
                         </value>
                     </li>
