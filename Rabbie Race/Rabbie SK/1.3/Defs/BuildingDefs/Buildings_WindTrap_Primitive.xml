@@ -29,21 +29,20 @@
             <WorkToBuild>2500</WorkToBuild>
             <Flammability>1.0</Flammability>
             <Beauty>-10</Beauty>
+            <Mass>35</Mass>
         </statBases>
         <tickerType>Normal</tickerType>
         <canOverlapZones>false</canOverlapZones>
         <size>(4,3)</size>
         <costList>
             <Cloth>80</Cloth>
+            <ComponentMedieval>4</ComponentMedieval>
         </costList>
         <stuffCategories>
 			<li>Metallic</li>
 			<li>Woody</li>
 		</stuffCategories>
 		<costStuffCount>20</costStuffCount>
-		<costList>
-			<ComponentMedieval>4</ComponentMedieval>
-		</costList>
         <comps>
             <li Class="CompProperties_Spawner">
                 <thingToSpawn>RefinedPlanetarium</thingToSpawn>
