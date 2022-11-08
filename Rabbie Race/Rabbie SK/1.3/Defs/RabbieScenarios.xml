@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ScenarioDef>
+        <defName>RB_Scenario</defName>
+        <label>The Three Rabbit Has Landed</label>
+        <description>When the lunar cities could no longer accomodate the growing number of rabbies, the Rabbitish Empire launched huge migration ships to moons in other galaxies.\n\nHowever, this expansion came at a cost, and distance meant that the new colonies swiftly lost contact with their original masters.\nThough perhaps not an empire in the traditional sense, it's a stable way to preserve rabbiekind.\n\nThe darkening of the hibernation hall and a word of farewell from the speakers are the last things you remember before the giant hatch of your migration ship closed. With luck, it would ferry you safely to your new home.\n...\nBut something went wrong.\n\nYou've been emergency ejected onto the surface of a nearby planet. You look up to the sky and see the remnants of your ship gradually burn away - the ship that contained shelter, supplies and equipment needed for survival.\n\nThere is already another Lunar Settlement on this planet's moon, and being wary that you serve another empress, they shot you down.\n\nYou're alone on a hostile rimworld and low on supplies, especially planetarium, the spice that keeps you from going insane. But you'll fight tooth and nail for your survival, and if all goes well, you'll find your way to your original destination: the moon.</description>
+        <scenario>
+            <summary>Three crashlanded rabbie survivors - the classic RimWorld experience but with bunny girls.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>RB_PlayerFaction</factionDef>
+            </playerFaction>
+            <parts>
+                <!-- Config pages -->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>3</pawnCount>
+                    <pawnChoiceCount>8</pawnChoiceCount>
+                </li>
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>DropPods</method>
+                    <visible>false</visible>
+                </li>
+                <!-- Player starting things -->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>RefinedPlanetarium</thingDef>
+                    <count>28</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>800</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>50</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <count>30</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>30</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>RB_F_PDW</thingDef>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gun_BoltActionRifle</thingDef>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gun_Revolver</thingDef>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Apparel_FlakVest</thingDef>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Apparel_AdvancedHelmet</thingDef>
+                    <stuff>Plasteel</stuff>
+                </li>
+                <li Class="ScenPart_StartingAnimal">
+                    <def>StartingAnimal</def>
+                    <count>1</count>
+                    <bondToRandomPlayerPawnChance>1.0</bondToRandomPlayerPawnChance>
+                </li>
+                <!-- Scatter some things near player start -->
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>Plasteel</thingDef>
+                    <count>250</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>300</count>
+                </li>
+                <!-- Scatter some things anywhere -->
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>ShipChunk</thingDef>
+                    <count>3</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>Plasteel</thingDef>
+                    <count>320</count>
+                </li>
+                <li Class="ScenPart_ScatterThingsAnywhere">
+                    <def>ScatterThingsAnywhere</def>
+                    <thingDef>MealSurvivalPack</thingDef>
+                    <count>7</count>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+</Defs>
