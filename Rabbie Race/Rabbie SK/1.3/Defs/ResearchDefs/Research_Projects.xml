@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
     <defName>Lunarsewing</defName>
     <label>Lunar Sewing</label>
     <description>You can create a sewing table and learn how to make a stylish clothing worn by Rabbies. It includes various daily clothes.</description>
@@ -9,13 +9,12 @@
     <prerequisites>
       <li>Fabrication</li>
     </prerequisites>
-    <techLevel>Industrial</techLevel>
     <researchViewX>8.00</researchViewX>
     <researchViewY>40.00</researchViewY>
     <tab>Apparel_SK</tab>
   </ResearchProjectDef>
 
-  <ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
     <defName>Lunarmachining</defName>
     <label>Lunar machining</label>
     <description>You can create a table that produces the weapons and equipment of the moon rabbits.</description>
@@ -25,13 +24,12 @@
         <li>Melee_C1</li>
         <li>Apparel_C2</li>
     </prerequisites>
-    <techLevel>Industrial</techLevel>
     <researchViewX>9.00</researchViewX>
     <researchViewY>44.00</researchViewY>
     <tab>Apparel_SK</tab>
   </ResearchProjectDef>
 
-  <ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
     <defName>Moonthread</defName>
     <label>Weave Moonthread</label>
     <description>Learn to weave the synthesis fabric of the moon widely used in the Rabbie Empire.</description>
@@ -40,13 +38,12 @@
       <li>Lunarsewing</li>
       <li>AdvancedFabrication</li>
     </prerequisites>
-    <techLevel>Industrial</techLevel>
     <researchViewX>12.00</researchViewX>
     <researchViewY>41.00</researchViewY>
     <tab>Apparel_SK</tab>
   </ResearchProjectDef>
 
-  <ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
     <defName>RBFieldGear</defName>
     <label>Composite Gear</label>
     <description>Studies how to produce combat suits and bulletproof armor worn by the Rabbie Imperial Army.</description>
@@ -56,13 +53,12 @@
       <li>Lunarmachining</li>
       <li>Moonthread</li>
     </prerequisites>
-    <techLevel>Industrial</techLevel>
     <researchViewX>13.00</researchViewX>
     <researchViewY>43.00</researchViewY>
     <tab>Apparel_SK</tab>
   </ResearchProjectDef>
 
-  <ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
     <defName>EFClothing</defName>
     <label>Efficient clothing</label>
     <description>Learn how to make clothing that raises work efficiency with the moon synthesis fabric. Rabbie citizens job clothing, summer-winter clothes, and various hats are included.</description>
@@ -70,13 +66,26 @@
     <prerequisites>
       <li>Moonthread</li>
     </prerequisites>
-    <techLevel>Industrial</techLevel>
     <researchViewX>13.00</researchViewX>
     <researchViewY>44.00</researchViewY>
     <tab>Apparel_SK</tab>
   </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="PrimitiveBase">
+    <defName>Primitivewindfarm</defName>
+    <label>Primitive Wind Farm</label>
+    <description>Refine Planetarium using basic condensation</description>
+    <tab>Medicine_SK</tab>
+    <baseCost>400</baseCost>
+    <prerequisites>
+        <li>Drug_plants_A1</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>60</researchViewY>
+    <tags />
+  </ResearchProjectDef>
 
-  <ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
     <defName>RefinePlanetarium</defName>
     <label>Refine Planetarium</label>
     <description>Learn how to collect and purify the Planetarium in the air, mainly called 'spice'. It is a technology that is directly related to the survival of the Rabbies.</description>
@@ -84,14 +93,14 @@
     <baseCost>1200</baseCost>
     <prerequisites>
       <li>DrugProduction</li>
+      <li>Drug_plants_A1</li>
       <li>Electricity</li>
     </prerequisites>
-    <techLevel>Industrial</techLevel>
     <researchViewX>12.00</researchViewX>
     <researchViewY>59.00</researchViewY>
   </ResearchProjectDef>
 
-  <ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
     <defName>Planettea</defName>
     <label>Planetarim tea</label>
     <description>Learn how to boil tea with Planetarium.</description>
@@ -101,12 +110,11 @@
       <li>RefinePlanetarium</li>
       <li>Food_C3</li>
     </prerequisites>
-    <techLevel>Industrial</techLevel>
     <researchViewX>13.00</researchViewX>
     <researchViewY>58.00</researchViewY>
   </ResearchProjectDef>
 
-  <ResearchProjectDef>
+  <ResearchProjectDef ParentName="IndustrialBase">
     <defName>officiaryclothing</defName>
     <label>Officiary clothing</label>
     <description>Learn how to produces clothing worn by public officials in the Rabbie Empire. Including the Power Management Bureau, Working Officer Uniform, and High Officer Command.</description>
@@ -115,12 +123,11 @@
     <prerequisites>
       <li>EFClothing</li>
     </prerequisites>
-    <techLevel>Industrial</techLevel>
     <researchViewX>14.00</researchViewX>
     <researchViewY>45.00</researchViewY>
   </ResearchProjectDef>
 
-  <ResearchProjectDef>
+  <ResearchProjectDef ParentName="HitechMultiBase">
     <defName>RBMoonsilk</defName>
     <label>Nano-tied fabric</label>
     <description>Now we can produce Moonsilk, an spacer product of the Rabbie Empire. It is a powerful and beautiful fiber that is squeezed with nanomachines using fabrics and plasma.</description>
@@ -130,12 +137,11 @@
       <li>Moonthread</li>
       <li>Components_D3</li>
     </prerequisites>
-    <techLevel>Spacer</techLevel>
     <researchViewX>22</researchViewX>
     <researchViewY>37</researchViewY>
   </ResearchProjectDef>
 
-  <ResearchProjectDef>
+  <ResearchProjectDef ParentName="HitechMultiBase">
     <defName>RBpowerarmor</defName>
     <label>Advanced power armor</label>
     <description>Learn how to produces advanced power armor worn by the Rabbie Imperial Army.</description>
@@ -145,7 +151,6 @@
       <li>RBMoonsilk</li>
       <li>PoweredArmor</li>
     </prerequisites>
-    <techLevel>Spacer</techLevel>
     <researchViewX>24</researchViewX>
     <researchViewY>37</researchViewY>
   </ResearchProjectDef>

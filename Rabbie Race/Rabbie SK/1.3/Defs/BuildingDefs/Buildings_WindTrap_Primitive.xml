@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- 윈드 트랩 -->
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>Planetariumrefineryprimitive</defName>
+        <label>Primitive Wind Trap</label>
+        <description>A device that collects and refines planetarium particles in the air through natural condensation. It is much simpler to make and requires no power.</description>
+        <graphicData>
+            <texPath>Things/Building/CantMinified/windtrap1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4.5,4.5)</drawSize>
+            <shadowData>
+                <volume>(1,1,1)</volume>
+                <offset>(-0.5,0,-0.5)</offset>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsProduction</li>
+        </thingCategories>
+        <pathCost>150</pathCost>
+        <blockWind>false</blockWind>
+        <fillPercent>0</fillPercent>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>2500</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>-10</Beauty>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <canOverlapZones>false</canOverlapZones>
+        <size>(4,3)</size>
+        <costList>
+            <Cloth>80</Cloth>
+        </costList>
+        <stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<ComponentMedieval>4</ComponentMedieval>
+		</costList>
+        <comps>
+            <li Class="CompProperties_Spawner">
+                <thingToSpawn>RefinedPlanetarium</thingToSpawn>
+                <spawnCount>1</spawnCount>
+                <spawnIntervalRange>
+                    <min>391741</min>
+                    <max>391741</max>
+                </spawnIntervalRange>
+                <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+                <showMessageIfOwned>true</showMessageIfOwned>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+        </placeWorkers>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <designationCategory>Production</designationCategory>
+        <building>
+            <allowAutoroof>false</allowAutoroof>
+            <uninstallWork>650</uninstallWork>
+        </building>
+        <researchPrerequisites>
+            <li>Primitivewindfarm</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    </ThingDef>
+</Defs>

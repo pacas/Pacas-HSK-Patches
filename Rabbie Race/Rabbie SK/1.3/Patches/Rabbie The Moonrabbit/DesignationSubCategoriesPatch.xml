@@ -1,4 +1,5 @@
-﻿<Patch>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
 
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Sewing"]/defNames</xpath>
@@ -17,8 +18,10 @@
     <Operation Class="PatchOperationAdd">
 		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Medicine"]/defNames</xpath>
 		<value>
+			<li>Planetariumrefineryprimitive</li>
 			<li>Planetariumrefinery</li>
 		</value>
 	</Operation>
+    
 
 </Patch>

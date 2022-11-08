@@ -56,17 +56,16 @@
             <li Class="CompProperties_Spawner">
                 <requiresPower>true</requiresPower>
                 <thingToSpawn>RefinedPlanetarium</thingToSpawn>
-                <spawnCount>3</spawnCount>
+                <spawnCount>4</spawnCount>
                 <spawnIntervalRange>
                     <min>391741</min>
                     <max>391741</max>
                 </spawnIntervalRange>
-                <!--6.6일에 3개-->
                 <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
                 <showMessageIfOwned>true</showMessageIfOwned>
             </li>
             <li Class="CompProperties_Explosive">
-                <explosiveRadius>8</explosiveRadius>
+                <explosiveRadius>4</explosiveRadius>
                 <explosiveDamageType>Flame</explosiveDamageType>
             </li>
         </comps>
@@ -83,6 +82,6 @@
         <researchPrerequisites>
             <li>RefinePlanetarium</li>
         </researchPrerequisites>
-        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     </ThingDef>
 </Defs>
