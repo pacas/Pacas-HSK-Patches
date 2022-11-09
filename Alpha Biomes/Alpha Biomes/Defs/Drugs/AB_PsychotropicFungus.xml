@@ -19,6 +19,9 @@
             <Nutrition>0.05</Nutrition>
             <FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
         </statBases>
+        <thingCategories Inherit="false">
+            <li>Drugs</li>
+        </thingCategories>
         <techLevel>Neolithic</techLevel>
         <ingestible>
             <baseIngestTicks>60</baseIngestTicks>

@@ -19,6 +19,9 @@
             <Flammability>0.7</Flammability>
         </statBases>
         <techLevel>Industrial</techLevel>
+        <thingCategories Inherit="false">
+            <li>Drugs</li>
+        </thingCategories>
         <ingestible>
             <joy>0.1</joy>
             <foodType>VegetableOrFruit</foodType>

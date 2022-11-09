@@ -86,6 +86,9 @@
             <Mass>0.01</Mass>
             <Bulk>0.01</Bulk>
         </statBases>
+        <thingCategories Inherit="false">
+            <li>Drugs</li>
+        </thingCategories>
         <techLevel>Industrial</techLevel>
         <ingestible Inherit="false">
             <foodType>Processed</foodType>
