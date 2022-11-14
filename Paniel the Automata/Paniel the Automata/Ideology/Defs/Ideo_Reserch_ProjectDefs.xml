@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechLabStationBase">
         <defName>PNRP_TierB_Module</defName>
         <label>spelcialization module</label>
         <description>Research the ability modules available for (lged), (mast), (exc) model.</description>
@@ -16,7 +16,7 @@
         <researchViewY>27.0</researchViewY>
     </ResearchProjectDef>
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechLabStationBase">
         <defName>PNRP_TierC_Module</defName>
         <label>royal module</label>
         <description>Research the ability modules available for (lged) model.</description>

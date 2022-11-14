@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechLabStationBase">
         <defName>PNRP_PsychicAmplifier</defName>
         <label>automaton psylink</label>
         <description>Research how to modify psylink for use by the Automaton.</description>
@@ -8,7 +8,6 @@
         <baseCost>300</baseCost>
         <techLevel>Ultra</techLevel>
         <prerequisites>
-            <li>PNRP_Production</li>
             <li>PNRP_ExperimentalModule</li>
         </prerequisites>
         <researchViewX>21.0</researchViewX>

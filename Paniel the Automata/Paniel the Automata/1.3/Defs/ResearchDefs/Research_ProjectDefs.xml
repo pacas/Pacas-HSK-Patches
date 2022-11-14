@@ -6,7 +6,7 @@
 
     <!--==================================== 기본 ====================================-->
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechBase">
         <defName>PNRP_Production</defName>
         <label>PnL automaton production</label>
         <description>Research how to craft an automaton.</description>
@@ -25,7 +25,7 @@
         </tags>
     </ResearchProjectDef>
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechMultiBase">
         <defName>PNRP_Brain</defName>
         <label>PnL core analysis</label>
         <description>Researching methods of extracting the central nervous system to make automata.</description>
@@ -40,7 +40,7 @@
 		<researchViewY>25.00</researchViewY>
     </ResearchProjectDef>
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechMultiBase">
         <defName>PNRP_ExperimentalModule</defName>
         <label>PnL custom core implant</label>
         <description>Research how to make custom core implants. This implant makes the automaton learn like a human, but makes it mentally unstable.\n\nWarning: This implant is not a PnL licensed implant. When installed, the performance of the Automaton will decrease.</description>
@@ -54,7 +54,7 @@
 		<researchViewY>25.00</researchViewY>
     </ResearchProjectDef>
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechMultiBase">
         <defName>PNRP_BrainCasing</defName>
         <label>PnL core casing</label>
         <description>Researching methods of long-term storage of the central nervous system.</description>
@@ -72,7 +72,7 @@
 
     <!--==================================== 수리 키트 ====================================-->
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechMultiBase">
         <defName>PNRP_SelfRepairKit</defName>
         <label>PnL self repair kit</label>
         <description>Research how to combine healer mech serum with repair kits.</description>
@@ -81,13 +81,12 @@
         <techLevel>Spacer</techLevel>
         <prerequisites>
             <li>PNRP_Production</li>
-            <li>MicroelectronicsBasics</li>
         </prerequisites>
         <researchViewX>19.00</researchViewX>
 		<researchViewY>26.00</researchViewY>
     </ResearchProjectDef>
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechMultiBase">
         <defName>PNRP_ResurrectModule</defName>
         <label>PnL resurrect implant</label>
         <description>Research how to embed the resurrector mech serum into the Automaton.</description>
@@ -103,7 +102,7 @@
 
     <!--==================================== 의상 ====================================-->
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechMultiBase">
         <defName>PNRP_TierA_Apparel</defName>
         <label>PnL militia apparel</label>
         <description>Research how to craft a militia uniform.</description>
@@ -118,7 +117,7 @@
         <researchViewY>40.0</researchViewY>
     </ResearchProjectDef>
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechMultiBase">
         <defName>PNRP_TierB_Apparel</defName>
         <label>PnL special apparel</label>
         <description>Research how to make specialized uniforms.</description>
@@ -132,7 +131,7 @@
         <researchViewY>40.0</researchViewY>
     </ResearchProjectDef>
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechLabStationBase">
         <defName>PNRP_TierC_Apparel</defName>
         <label>PnL royal apparel</label>
         <description>Research how to craft royal uniforms.</description>
@@ -149,7 +148,7 @@
 
     <!--==================================== 무기 ====================================-->
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechMultiBase">
         <defName>PNRP_AutomatonWeapons</defName>
         <label>PnL weapons</label>
         <description>Research how to craft basic PnL weapons.</description>
@@ -161,10 +160,10 @@
             <li>Rifles_C3</li>
         </prerequisites>
         <researchViewX>19.0</researchViewX>
-        <researchViewY>32.0</researchViewY>
+        <researchViewY>30.0</researchViewY>
     </ResearchProjectDef>
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechMultiBase">
         <defName>PNRP_MachineGun</defName>
         <label>PnL heavy weapons</label>
         <description>Research how to craft basic PnL machine gun.</description>
@@ -176,10 +175,10 @@
             <li>Heavy_C3</li>
         </prerequisites>
         <researchViewX>20.0</researchViewX>
-        <researchViewY>32.0</researchViewY>
+        <researchViewY>30.0</researchViewY>
     </ResearchProjectDef>
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechMultiBase">
         <defName>PNRP_AutoArtillery</defName>
         <label>PnL Howitzer</label>
         <description>Research how to craft PnL Howitzer mortar.</description>
@@ -191,10 +190,10 @@
             <li>Artillery_C2</li>
         </prerequisites>
         <researchViewX>20.0</researchViewX>
-        <researchViewY>33.0</researchViewY>
+        <researchViewY>35.0</researchViewY>
     </ResearchProjectDef>
 
-    <ResearchProjectDef>
+    <ResearchProjectDef ParentName="HitechLabStationBase">
         <defName>PNRP_RoyalWeapons</defName>
         <label>Royal weapons</label>
         <description>Research how to craft Royal PnL weapons.\n\n[caution] : Royal weapons are exclusively for Paniel.</description>
@@ -206,6 +205,6 @@
             <li>ChargedShot</li>
         </prerequisites>
         <researchViewX>21.0</researchViewX>
-        <researchViewY>32.0</researchViewY>
+        <researchViewY>30.0</researchViewY>
     </ResearchProjectDef>
 </Defs>
