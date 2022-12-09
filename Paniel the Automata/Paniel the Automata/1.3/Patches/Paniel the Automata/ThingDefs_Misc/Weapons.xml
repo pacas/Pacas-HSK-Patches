@@ -469,29 +469,30 @@
                         <aiAimMode>AimedShot</aiAimMode>
                     </FireModes>
                 </li>
+                
+                <!-- ========== Prototype RailGun =========== -->
 		
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
                     <defName>PN_PrototypeRailGun</defName>
                     <statBases>
-                        <Mass>12.00</Mass>
+                        <Mass>11.00</Mass>
                         <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-                        <SightsEfficiency>1.00</SightsEfficiency>
-                        <ShotSpread>0.2</ShotSpread>
-                        <SwayFactor>2.80</SwayFactor>
+                        <SightsEfficiency>1.20</SightsEfficiency>
+                        <ShotSpread>0.05</ShotSpread>
+                        <SwayFactor>1.80</SwayFactor>
                         <Bulk>16.0</Bulk>
                     </statBases>
                     <Properties>
-                        <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+                        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                         <hasStandardCommand>true</hasStandardCommand>
                         <defaultProjectile>Bullet_ChargeLance</defaultProjectile>
-                        <warmupTime>2.1</warmupTime>
-                        <range>57</range>
+                        <warmupTime>1.7</warmupTime>
+                        <range>66</range>
                         <burstShotCount>1</burstShotCount>
                         <soundAiming>PN_PrototypeRailGun_Warmup_Sound</soundAiming>
                         <soundCast>PN_PrototypeRailGun_Fire_Sound</soundCast>
                         <soundCastTail>GunTail_Heavy</soundCastTail>
-                        <onlyManualCast>true</onlyManualCast>
-                        <muzzleFlashScale>14</muzzleFlashScale>
+                        <muzzleFlashScale>9</muzzleFlashScale>
                     </Properties>
                     <AmmoUser>
                         <magazineSize>3</magazineSize>
@@ -499,6 +500,7 @@
                         <ammoSet>AmmoSet_RailRay</ammoSet>
                     </AmmoUser>
                     <FireModes>
+                        <aiUseBurstMode>FALSE</aiUseBurstMode>
                         <aiAimMode>AimedShot</aiAimMode>
                     </FireModes>
                     <AllowWithRunAndGun>false</AllowWithRunAndGun>
