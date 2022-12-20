@@ -2,9 +2,9 @@
 <Patch>
     <Operation Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName = "Plant_TreeGauranlen"]/comps</xpath>
+        <xpath>Defs/ThingDef[defName = "Plant_TreeGauranlen"]/comps</xpath>
         <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "Plant_TreeGauranlen"]</xpath>
+            <xpath>Defs/ThingDef[defName = "Plant_TreeGauranlen"]</xpath>
             <value>
                 <comps>
                     <li Class="AlphaBehavioursAndEvents.CompProperties_GauranlenGraphicChanger">
@@ -16,7 +16,7 @@
             </value>
         </nomatch>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "Plant_TreeGauranlen"]/comps</xpath>
+            <xpath>Defs/ThingDef[defName = "Plant_TreeGauranlen"]/comps</xpath>
             <value>
                 <li Class="AlphaBehavioursAndEvents.CompProperties_GauranlenGraphicChanger">
                     <newGraphics>
@@ -28,9 +28,9 @@
     </Operation>
     <Operation Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName = "Plant_MossGauranlen"]/comps</xpath>
+        <xpath>Defs/ThingDef[defName = "Plant_MossGauranlen"]/comps</xpath>
         <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "Plant_MossGauranlen"]</xpath>
+            <xpath>Defs/ThingDef[defName = "Plant_MossGauranlen"]</xpath>
             <value>
                 <comps>
                     <li Class="AlphaBehavioursAndEvents.CompProperties_GauranlenGrassGraphicChanger">
@@ -42,7 +42,7 @@
             </value>
         </nomatch>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName = "Plant_MossGauranlen"]/comps</xpath>
+            <xpath>Defs/ThingDef[defName = "Plant_MossGauranlen"]/comps</xpath>
             <value>
                 <li Class="AlphaBehavioursAndEvents.CompProperties_GauranlenGrassGraphicChanger">
                     <newGraphics>

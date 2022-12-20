@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/CultureDef[defName = *]/styleItemTags</xpath>
+        <xpath>Defs/CultureDef[defName = *]/styleItemTags</xpath>
         <value>
             <li>
                 <tag>RBhair</tag>

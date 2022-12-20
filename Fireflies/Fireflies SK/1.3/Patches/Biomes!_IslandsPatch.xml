@@ -14,7 +14,7 @@
 				<!--==================== Firefly Biomes! Islands Spawning ====================-->
 
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+					<xpath>Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
 					<value>
 
 						<BiomesIslands_Atoll>3</BiomesIslands_Atoll>

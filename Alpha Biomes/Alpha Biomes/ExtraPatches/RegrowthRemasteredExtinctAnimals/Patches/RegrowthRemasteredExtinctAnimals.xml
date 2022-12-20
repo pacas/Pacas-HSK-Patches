@@ -3,14 +3,14 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_FeraliskInfestedJungle"]/wildAnimals
+				<xpath>Defs/BiomeDef[defName="AB_FeraliskInfestedJungle"]/wildAnimals
 				</xpath>
 				<value>
 					<RG_TerrorBird>0.1</RG_TerrorBird>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_GallatrossGraveyard"]/wildAnimals
+				<xpath>Defs/BiomeDef[defName="AB_GallatrossGraveyard"]/wildAnimals
 				</xpath>
 				<value>
 					<RG_TerrorBird>0.2</RG_TerrorBird>
@@ -18,7 +18,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_GelatinousSuperorganism"]/wildAnimals
+				<xpath>Defs/BiomeDef[defName="AB_GelatinousSuperorganism"]/wildAnimals
 				</xpath>
 				<value>
 					<RG_TerrorBird>0.05</RG_TerrorBird>
@@ -27,28 +27,28 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_IdyllicMeadows"]/wildAnimals
+				<xpath>Defs/BiomeDef[defName="AB_IdyllicMeadows"]/wildAnimals
 				</xpath>
 				<value>
 					<RG_Protoceratidae>0.1</RG_Protoceratidae>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_MechanoidIntrusion"]/wildAnimals
+				<xpath>Defs/BiomeDef[defName="AB_MechanoidIntrusion"]/wildAnimals
 				</xpath>
 				<value>
 					<RG_SabertoothSquirrel>0.05</RG_SabertoothSquirrel>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_MiasmicMangrove"]/wildAnimals
+				<xpath>Defs/BiomeDef[defName="AB_MiasmicMangrove"]/wildAnimals
 				</xpath>
 				<value>
 					<RG_TerrorBird>0.1</RG_TerrorBird>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_MycoticJungle"]/wildAnimals
+				<xpath>Defs/BiomeDef[defName="AB_MycoticJungle"]/wildAnimals
 				</xpath>
 				<value>
 					<RG_Protoceratidae>0.1</RG_Protoceratidae>
@@ -58,7 +58,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_PropaneLakes"]/wildAnimals
+				<xpath>Defs/BiomeDef[defName="AB_PropaneLakes"]/wildAnimals
 				</xpath>
 				<value>
 					<RG_WoollyMammoth>0.1</RG_WoollyMammoth>
@@ -70,7 +70,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_TarPits"]/wildAnimals
+				<xpath>Defs/BiomeDef[defName="AB_TarPits"]/wildAnimals
 				</xpath>
 				<value>
 					<RG_Protoceratidae>0.2</RG_Protoceratidae>

@@ -3,7 +3,7 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_IdyllicMeadows" or defName="AB_MycoticJungle"]/wildAnimals
+				<xpath>Defs/BiomeDef[defName="AB_IdyllicMeadows" or defName="AB_MycoticJungle"]/wildAnimals
 				</xpath>
 				<value>
 					<ERN_Ferret>0.2</ERN_Ferret>

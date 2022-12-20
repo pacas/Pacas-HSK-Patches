@@ -6,7 +6,9 @@
             <li>Outdoors</li>
             <li>DrugDesire</li>
             <li>RoomSize</li>
-        </needBlacklists>
+		    <li>Comfort</li>
+		    <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+	    </needBlacklists>
         <socialActivated>true</socialActivated>
         <skillDecayActivated>false</skillDecayActivated>
         <infectionActivated>false</infectionActivated>

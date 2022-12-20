@@ -8,7 +8,7 @@
             <operations>
                 <!-- Arctic Desert Jungle Stone Urban Woodland -->
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="GU_MetalFloor1"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="GU_MetalFloor1"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Urban</CamoType>
@@ -16,7 +16,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="GU_MetalFloor2"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="GU_MetalFloor2"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Urban</CamoType>
@@ -24,7 +24,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="GU_MetalFloor3"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="GU_MetalFloor3"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Urban</CamoType>
@@ -32,7 +32,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_SoilOnCrackedMetal"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_SoilOnCrackedMetal"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Urban</CamoType>
@@ -40,7 +40,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="GU_Piping"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="GU_Piping"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Urban</CamoType>
@@ -48,7 +48,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_TileRoseQuartz"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_TileRoseQuartz"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Stone</CamoType>
@@ -56,7 +56,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_FlagstoneRoseQuartz"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_FlagstoneRoseQuartz"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Stone</CamoType>
@@ -64,7 +64,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_TileMudstone"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_TileMudstone"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Stone</CamoType>
@@ -72,7 +72,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_FlagstoneMudstone"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_FlagstoneMudstone"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Stone</CamoType>
@@ -80,7 +80,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_TileCragstone"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_TileCragstone"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Stone</CamoType>
@@ -88,7 +88,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_FlagstoneCragstone"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_FlagstoneCragstone"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Stone</CamoType>
@@ -96,7 +96,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_MycoticSoil"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_MycoticSoil"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Jungle</CamoType>
@@ -104,7 +104,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_MycoticSoilRich"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_MycoticSoilRich"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Jungle</CamoType>
@@ -112,7 +112,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_MycoticGrass"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_MycoticGrass"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Jungle</CamoType>
@@ -120,7 +120,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_ForsakenSand"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_ForsakenSand"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -128,7 +128,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_FineForsakenSand"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_FineForsakenSand"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -136,7 +136,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_ForsakenRock"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_ForsakenRock"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -144,7 +144,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_DarkMud"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_DarkMud"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -152,7 +152,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_CrackedMud"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_CrackedMud"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -160,7 +160,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_RichCrackedMud"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_RichCrackedMud"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -168,7 +168,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_FineSand"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_FineSand"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -176,7 +176,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_Slime"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_Slime"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Jungle</CamoType>
@@ -184,7 +184,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_RichSlime"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_RichSlime"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Jungle</CamoType>
@@ -192,7 +192,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_SlimeGrass"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_SlimeGrass"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Jungle</CamoType>
@@ -200,7 +200,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_SlimyMud"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_SlimyMud"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Jungle</CamoType>
@@ -208,7 +208,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_LiquidSlime"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_LiquidSlime"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Jungle</CamoType>
@@ -216,7 +216,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_DenseMud"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_DenseMud"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Jungle</CamoType>
@@ -224,7 +224,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_DenseGrass"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_DenseGrass"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Jungle</CamoType>
@@ -232,7 +232,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_WebbedMarshyTerrain"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_WebbedMarshyTerrain"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Jungle</CamoType>
@@ -240,7 +240,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="GU_AlienSand"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="GU_AlienSand"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -248,7 +248,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="GU_RichAlienSand"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="GU_RichAlienSand"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -256,7 +256,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="GU_AlienSandFine"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="GU_AlienSandFine"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -264,7 +264,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="GU_MossyRed"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="GU_MossyRed"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -272,7 +272,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_PackedSnow"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_PackedSnow"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Arctic</CamoType>
@@ -280,7 +280,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_PackedIce"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_PackedIce"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Arctic</CamoType>
@@ -288,7 +288,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_SolidPropane"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_SolidPropane"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Arctic</CamoType>
@@ -296,7 +296,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_SnowOverRocks"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_SnowOverRocks"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Arctic</CamoType>
@@ -304,7 +304,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_LushGrass"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_LushGrass"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -312,7 +312,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_GrassySand"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_GrassySand"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -320,7 +320,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_ParchedEarth"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_ParchedEarth"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>
@@ -328,7 +328,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/TerrainDef[defName="AB_TarMud"]</xpath>
+                    <xpath>Defs/TerrainDef[defName="AB_TarMud"]</xpath>
                     <value>
                         <li Class="CompCamo.CompCamoDefs">
                             <CamoType>Desert</CamoType>

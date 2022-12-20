@@ -14,7 +14,7 @@
 				<!--==================== Firefly Adv. Biomes Spawning ====================-->
 
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+					<xpath>Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
 					<value>
 
 						<PoisonForest>2</PoisonForest>

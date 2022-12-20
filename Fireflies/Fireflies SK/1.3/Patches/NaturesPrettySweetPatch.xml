@@ -14,7 +14,7 @@
 				<!--==================== Nature's Pretty Sweet Biomes Spawning ====================-->
 
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+					<xpath>Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
 					<value>
 
 						<TKKN_VolcanicFlow>1</TKKN_VolcanicFlow>

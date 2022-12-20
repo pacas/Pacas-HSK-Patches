@@ -14,7 +14,7 @@
 				<!--==================== ReGrowth: Aspen Forests Biomes Spawning ====================-->
 
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+					<xpath>Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
 					<value>
 
 						<RG-AF_AspenForest>1</RG-AF_AspenForest>

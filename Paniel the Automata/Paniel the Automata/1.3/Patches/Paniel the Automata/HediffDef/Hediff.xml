@@ -22,7 +22,7 @@
             </li>
             <!-- ==========  Abilities  =========== -->
             <li Class="PatchOperationConditional">
-                <xpath>/Defs/HediffDef[defName="PN_OfficerCommand"]</xpath>
+                <xpath>Defs/HediffDef[defName="PN_OfficerCommand"]</xpath>
                 <match Class="PatchOperationSequence">
                     <operations>
                         <li Class="PatchOperationReplace">

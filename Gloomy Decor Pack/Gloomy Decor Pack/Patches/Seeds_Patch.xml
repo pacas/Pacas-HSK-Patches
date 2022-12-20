@@ -5,7 +5,7 @@
             <li>SeedsPlease</li>
         </mods>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs</xpath>
+            <xpath>Defs</xpath>
             <value>
                 <SeedsPlease.SeedDef ParentName="SeedBase">
                     <defName>Seed_GloomyBlos</defName>
@@ -27,7 +27,7 @@
             <li>SeedsPlease</li>
         </mods>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs</xpath>
+            <xpath>Defs</xpath>
             <value>
                 <SeedsPlease.SeedDef ParentName="SeedBase">
                     <defName>Seed_GloomyGlos</defName>

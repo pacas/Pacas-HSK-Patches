@@ -202,7 +202,7 @@
                 <!-- ========== Rifle =========== -->
 		
                 <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[defName="PN_Rifle"]/verbs</xpath>
+                    <xpath>Defs/ThingDef[defName="PN_Rifle"]/verbs</xpath>
                 </li>
 		
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -241,7 +241,7 @@
                 <!-- ========== Revolver =========== -->
 		
                 <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[defName="PN_Revolver"]/verbs</xpath>
+                    <xpath>Defs/ThingDef[defName="PN_Revolver"]/verbs</xpath>
                 </li>
 		
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">

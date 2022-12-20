@@ -7,25 +7,25 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_RedPanda"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_RedPanda"]/race/wildBiomes</xpath>
                     <value>
                         <AB_IdyllicMeadows>0.6</AB_IdyllicMeadows>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_Badger"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_Badger"]/race/wildBiomes</xpath>
                     <value>
                         <AB_IdyllicMeadows>0.2</AB_IdyllicMeadows>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_WildGoose"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_WildGoose"]/race/wildBiomes</xpath>
                     <value>
                         <AB_IdyllicMeadows>0.5</AB_IdyllicMeadows>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_Hedgehog"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_Hedgehog"]/race/wildBiomes</xpath>
                     <value>
                         <AB_IdyllicMeadows>1</AB_IdyllicMeadows>
                     </value>

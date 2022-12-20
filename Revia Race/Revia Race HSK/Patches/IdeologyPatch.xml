@@ -5,7 +5,7 @@
             <li>Ideology</li>
         </mods>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs/PreceptDef[defName="IdeoBuilding"]/buildingDefChances</xpath>
+            <xpath>Defs/PreceptDef[defName="IdeoBuilding"]/buildingDefChances</xpath>
             <value>
                 <ReviaBloodSigil>0</ReviaBloodSigil>
             </value>

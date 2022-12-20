@@ -3,7 +3,7 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_GelatinousSuperorganism" or defName="AB_IdyllicMeadows" or
+				<xpath>Defs/BiomeDef[defName="AB_GelatinousSuperorganism" or defName="AB_IdyllicMeadows" or
 					defName="AB_MycoticJungle"]/wildAnimals
 				</xpath>
 				<value>

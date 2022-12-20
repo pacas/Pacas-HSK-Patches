@@ -14,7 +14,7 @@
 				<!--==================== Firefly Biomes! Oasis Spawning ====================-->
 
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+					<xpath>Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
 					<value>
 
 						<BMT_ChromaticOasis>3</BMT_ChromaticOasis>

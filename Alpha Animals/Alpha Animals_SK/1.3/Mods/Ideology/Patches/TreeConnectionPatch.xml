@@ -2,9 +2,9 @@
 <Patch>
     <Operation Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/MemeDef[defName = "TreeConnection"]/exclusionTags</xpath>
+        <xpath>Defs/MemeDef[defName = "TreeConnection"]/exclusionTags</xpath>
         <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/MemeDef[defName = "TreeConnection"]</xpath>
+            <xpath>Defs/MemeDef[defName = "TreeConnection"]</xpath>
             <value>
                 <exclusionTags>
                     <li>TreeConnectionExclusion</li>
@@ -12,7 +12,7 @@
             </value>
         </nomatch>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs/MemeDef[defName = "TreeConnection"]/exclusionTags</xpath>
+            <xpath>Defs/MemeDef[defName = "TreeConnection"]/exclusionTags</xpath>
             <value>
                 <li>TreeConnectionExclusion</li>
             </value>

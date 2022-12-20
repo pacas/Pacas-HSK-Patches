@@ -7,7 +7,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_Gorilla"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_Gorilla"]/race/wildBiomes</xpath>
                     <value>
                         <AB_FeraliskInfestedJungle>0.10</AB_FeraliskInfestedJungle>
                         <AB_MycoticJungle>0.05</AB_MycoticJungle>
@@ -16,7 +16,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_Jaguar"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_Jaguar"]/race/wildBiomes</xpath>
                     <value>
                         <AB_FeraliskInfestedJungle>0.07</AB_FeraliskInfestedJungle>
                         <AB_MycoticJungle>0.01</AB_MycoticJungle>
@@ -26,7 +26,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_Lemur"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_Lemur"]/race/wildBiomes</xpath>
                     <value>
                         <AB_GelatinousSuperorganism>0.04</AB_GelatinousSuperorganism>
                         <AB_MechanoidIntrusion>0.01</AB_MechanoidIntrusion>
@@ -35,7 +35,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_Mandrill"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_Mandrill"]/race/wildBiomes</xpath>
                     <value>
                         <AB_FeraliskInfestedJungle>0.07</AB_FeraliskInfestedJungle>
                         <AB_MycoticJungle>0.05</AB_MycoticJungle>
@@ -45,7 +45,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_Tapir"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_Tapir"]/race/wildBiomes</xpath>
                     <value>
                         <AB_FeraliskInfestedJungle>0.15</AB_FeraliskInfestedJungle>
                         <AB_MycoticJungle>0.05</AB_MycoticJungle>
@@ -55,7 +55,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_Tiger"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_Tiger"]/race/wildBiomes</xpath>
                     <value>
                         <AB_FeraliskInfestedJungle>0.10</AB_FeraliskInfestedJungle>
                         <AB_MycoticJungle>0.05</AB_MycoticJungle>

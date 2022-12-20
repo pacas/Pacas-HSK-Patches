@@ -3,7 +3,7 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_FeraliskInfestedJungle"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_FeraliskInfestedJungle"]/wildAnimals</xpath>
 				<value>
 					<BB_Cockatoo>0.05</BB_Cockatoo>
 					<BB_Hornbill>0.05</BB_Hornbill>
@@ -11,7 +11,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_MiasmicMangrove"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_MiasmicMangrove"]/wildAnimals</xpath>
 				<value>
 					<BB_Cockatoo>0.3</BB_Cockatoo>
 					<BB_Hornbill>0.15</BB_Hornbill>
@@ -19,13 +19,13 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_MycoticJungle"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_MycoticJungle"]/wildAnimals</xpath>
 				<value>
 					<BB_Parrot>0.1</BB_Parrot>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_OcularForest"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_OcularForest"]/wildAnimals</xpath>
 				<value>
 					<BB_Parrot>0.1</BB_Parrot>
 				</value>

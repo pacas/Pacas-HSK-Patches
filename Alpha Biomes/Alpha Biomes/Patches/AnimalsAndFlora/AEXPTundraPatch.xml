@@ -7,7 +7,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_Muskox"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_Muskox"]/race/wildBiomes</xpath>
                     <value>
                         <AB_OcularForest>0.05</AB_OcularForest>
                         <AB_GelatinousSuperorganism>0.10</AB_GelatinousSuperorganism>
@@ -15,20 +15,20 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_Moose"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_Moose"]/race/wildBiomes</xpath>
                     <value>
                         <AB_MycoticJungle>0.07</AB_MycoticJungle>
                         <AB_OcularForest>0.01</AB_OcularForest>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_MegaWolverine"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_MegaWolverine"]/race/wildBiomes</xpath>
                     <value>
                         <AB_GelatinousSuperorganism>0.04</AB_GelatinousSuperorganism>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AEXP_Porcupine"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AEXP_Porcupine"]/race/wildBiomes</xpath>
                     <value>
                         <AB_MycoticJungle>0.01</AB_MycoticJungle>
                         <AB_OcularForest>0.07</AB_OcularForest>

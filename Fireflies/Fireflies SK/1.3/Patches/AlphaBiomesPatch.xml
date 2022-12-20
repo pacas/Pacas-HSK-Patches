@@ -14,7 +14,7 @@
 				<!--==================== Firefly Alpha Biomes Spawning ====================-->
 
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+					<xpath>Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
 					<value>
 
 						<AB_FeraliskInfestedJungle>2</AB_FeraliskInfestedJungle>

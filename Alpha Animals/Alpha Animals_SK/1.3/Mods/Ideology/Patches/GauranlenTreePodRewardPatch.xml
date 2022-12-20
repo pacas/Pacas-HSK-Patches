@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>/Defs/RitualAttachableOutcomeEffectDef[defName = "GauranlenTreePod"]/requiredMemeAny</xpath>
+		<xpath>Defs/RitualAttachableOutcomeEffectDef[defName = "GauranlenTreePod"]/requiredMemeAny</xpath>
 		<value>
 			<li>AA_BiologicalCorruptors</li>
 		</value>

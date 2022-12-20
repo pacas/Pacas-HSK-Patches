@@ -7,25 +7,25 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPBison"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPBison"]/race/wildBiomes</xpath>
                     <value>
                         <AB_GallatrossGraveyard>0.1</AB_GallatrossGraveyard>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPBlackRhinoceros"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPBlackRhinoceros"]/race/wildBiomes</xpath>
                     <value>
                         <AB_GallatrossGraveyard>0.005</AB_GallatrossGraveyard>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPLion"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPLion"]/race/wildBiomes</xpath>
                     <value>
                         <AB_GallatrossGraveyard>0.05</AB_GallatrossGraveyard>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPTiger"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPTiger"]/race/wildBiomes</xpath>
                     <value>
                         <AB_FeraliskInfestedJungle>0.07</AB_FeraliskInfestedJungle>
                         <AB_MycoticJungle>0.07</AB_MycoticJungle>
@@ -33,7 +33,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPChipmunk"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPChipmunk"]/race/wildBiomes</xpath>
                     <value>
                         <AB_MycoticJungle>0.01</AB_MycoticJungle>
                         <AB_OcularForest>0.01</AB_OcularForest>
@@ -43,7 +43,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPFerret"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPFerret"]/race/wildBiomes</xpath>
                     <value>
                         <AB_FeraliskInfestedJungle>0.01</AB_FeraliskInfestedJungle>
                         <AB_MycoticJungle>0.01</AB_MycoticJungle>
@@ -54,20 +54,20 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPGiraffe"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPGiraffe"]/race/wildBiomes</xpath>
                     <value>
                         <AB_GallatrossGraveyard>0.05</AB_GallatrossGraveyard>
                         <AB_TarPits>0.07</AB_TarPits>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPGreatBustard"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPGreatBustard"]/race/wildBiomes</xpath>
                     <value>
                         <AB_FeraliskInfestedJungle>0.025</AB_FeraliskInfestedJungle>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPGuineaPig"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPGuineaPig"]/race/wildBiomes</xpath>
                     <value>
                         <AB_MycoticJungle>0.01</AB_MycoticJungle>
                         <AB_OcularForest>0.01</AB_OcularForest>
@@ -76,14 +76,14 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPHippopotamus"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPHippopotamus"]/race/wildBiomes</xpath>
                     <value>
                         <AB_FeraliskInfestedJungle>0.05</AB_FeraliskInfestedJungle>
                         <AB_GelatinousSuperorganism>0.01</AB_GelatinousSuperorganism>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPSilkspider"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPSilkspider"]/race/wildBiomes</xpath>
                     <value>
                         <AB_FeraliskInfestedJungle>0.01</AB_FeraliskInfestedJungle>
                         <AB_MycoticJungle>0.01</AB_MycoticJungle>
@@ -93,20 +93,20 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPLlama"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPLlama"]/race/wildBiomes</xpath>
                     <value>
                         <AB_GallatrossGraveyard>0.01</AB_GallatrossGraveyard>
                         <AB_TarPits>0.03</AB_TarPits>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPPanda"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPPanda"]/race/wildBiomes</xpath>
                     <value>
                         <AB_GelatinousSuperorganism>0.01</AB_GelatinousSuperorganism>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPMegascorpion"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPMegascorpion"]/race/wildBiomes</xpath>
                     <value>
                         <AB_GallatrossGraveyard>0.005</AB_GallatrossGraveyard>
                         <AB_MechanoidIntrusion>0.01</AB_MechanoidIntrusion>
@@ -115,7 +115,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ACPTapir"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="ACPTapir"]/race/wildBiomes</xpath>
                     <value>
                         <AB_FeraliskInfestedJungle>0.01</AB_FeraliskInfestedJungle>
                         <AB_GelatinousSuperorganism>0.02</AB_GelatinousSuperorganism>

@@ -3,49 +3,49 @@
     <Operation Class="PatchOperationSequence">
         <operations>
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/RecipeDef[defName="CookRoastedMeat"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+                <xpath>Defs/RecipeDef[defName="CookRoastedMeat"]/defaultIngredientFilter/disallowedThingDefs</xpath>
                 <value>
                     <li>AB_BumbledroneFood</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/RecipeDef[defName="CookRoastedMeatBulk"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+                <xpath>Defs/RecipeDef[defName="CookRoastedMeatBulk"]/defaultIngredientFilter/disallowedThingDefs</xpath>
                 <value>
                     <li>AB_BumbledroneFood</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/RecipeDef[defName="CookMealLavish"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+                <xpath>Defs/RecipeDef[defName="CookMealLavish"]/defaultIngredientFilter/disallowedThingDefs</xpath>
                 <value>
                     <li>AB_BumbledroneFood</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/RecipeDef[defName="CookMealLavishBulk"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+                <xpath>Defs/RecipeDef[defName="CookMealLavishBulk"]/defaultIngredientFilter/disallowedThingDefs</xpath>
                 <value>
                     <li>AB_BumbledroneFood</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/RecipeDef[defName="CookMealSurvival"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+                <xpath>Defs/RecipeDef[defName="CookMealSurvival"]/defaultIngredientFilter/disallowedThingDefs</xpath>
                 <value>
                     <li>AB_BumbledroneFood</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/RecipeDef[defName="CookMealSurvivalBulk"]/defaultIngredientFilter/disallowedThingDefs</xpath>
+                <xpath>Defs/RecipeDef[defName="CookMealSurvivalBulk"]/defaultIngredientFilter/disallowedThingDefs</xpath>
                 <value>
                     <li>AB_BumbledroneFood</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/RecipeDef[defName="MeltSugar"]/ingredients/li/filter/thingDefs</xpath>
+                <xpath>Defs/RecipeDef[defName="MeltSugar"]/ingredients/li/filter/thingDefs</xpath>
                 <value>
                     <li>AB_BumbledroneFood</li>
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/RecipeDef[defName="MeltSugar"]/fixedIngredientFilter/thingDefs</xpath>
+                <xpath>Defs/RecipeDef[defName="MeltSugar"]/fixedIngredientFilter/thingDefs</xpath>
                 <value>
                     <li>AB_BumbledroneFood</li>
                 </value>

@@ -3,13 +3,13 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_GallatrossGraveyard"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_GallatrossGraveyard"]/wildAnimals</xpath>
 				<value>
 					<BB_Kestrel>0.1</BB_Kestrel>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_GelatinousSuperorganism"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_GelatinousSuperorganism"]/wildAnimals</xpath>
 				<value>
 					<BB_BarnOwl>0.05</BB_BarnOwl>
 					<BB_Crow>0.1</BB_Crow>
@@ -18,7 +18,7 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_IdyllicMeadows"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_IdyllicMeadows"]/wildAnimals</xpath>
 				<value>
 					<BB_BarnOwl>0.1</BB_BarnOwl>
 					<BB_Crow>0.3</BB_Crow>
@@ -27,13 +27,13 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_MechanoidIntrusion"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_MechanoidIntrusion"]/wildAnimals</xpath>
 				<value>
 					<BB_Crow>0.05</BB_Crow>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_MycoticJungle"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_MycoticJungle"]/wildAnimals</xpath>
 				<value>
 					<BB_BarnOwl>0.1</BB_BarnOwl>
 					<BB_Crow>0.2</BB_Crow>
@@ -42,21 +42,21 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_OcularForest"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_OcularForest"]/wildAnimals</xpath>
 				<value>
 					<BB_BarnOwl>0.2</BB_BarnOwl>
 					<BB_Crow>0.2</BB_Crow>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_RockyCrags"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_RockyCrags"]/wildAnimals</xpath>
 				<value>
 					<BB_BarnOwl>0.2</BB_BarnOwl>
 					<BB_EagleOwl>0.2</BB_EagleOwl>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_TarPits"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_TarPits"]/wildAnimals</xpath>
 				<value>
 					<BB_Kestrel>0.05</BB_Kestrel>
 				</value>

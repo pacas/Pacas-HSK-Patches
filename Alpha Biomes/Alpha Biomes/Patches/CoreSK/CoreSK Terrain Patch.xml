@@ -3,21 +3,21 @@
     <Operation Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/TerrainDef[@Name="SK_WaterShallowBase"]/affordances</xpath>
+                    <xpath>Defs/TerrainDef[@Name="SK_WaterShallowBase"]/affordances</xpath>
                     <value>
                         <li>AB_TarAffordance</li>
                     </value>
                 </li>
                 
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/TerrainDef[defName="Mud"]/affordances</xpath>
+                    <xpath>Defs/TerrainDef[defName="Mud"]/affordances</xpath>
                     <value>
                         <li>AB_TarAffordance</li>
                     </value>
                 </li>
                 
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/TerrainDef[defName="Marsh"]/affordances</xpath>
+                    <xpath>Defs/TerrainDef[defName="Marsh"]/affordances</xpath>
                     <value>
                         <li>AB_TarAffordance</li>
                     </value>

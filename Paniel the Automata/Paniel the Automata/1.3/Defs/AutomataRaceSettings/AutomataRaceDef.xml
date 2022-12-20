@@ -5,6 +5,7 @@
         <label>Paniel</label>
         <description>This pawn is automaton designed by PnL Industry.</description>
         <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <tradeability>None</tradeability>
         <alienRace>
             <generalSettings>
                 <maleGenderProbability>0</maleGenderProbability>
@@ -29,6 +30,9 @@
                 <disallowedTraits>
                     <li>
                         <defName>DrugDesire</defName>
+                    </li>
+                    <li>
+                        <defName>Tough</defName>
                     </li>
                     <li>
                         <defName>Cannibal</defName>
@@ -116,6 +120,15 @@
                     <li>
                         <defName>TooSmart</defName>
                     </li>
+                    <li>
+                        <defName>Gay</defName>
+                    </li>
+                    <li>
+                        <defName>Bisexual</defName>
+                    </li>
+                    <li>
+                        <defName>Asexual</defName>
+                    </li>
                 </disallowedTraits>
                 <additionalTraits>0</additionalTraits>
                 <immuneToXenophobia>true</immuneToXenophobia>
@@ -159,7 +172,6 @@
                         </li>
                     </colorChannels>
                     <bodyAddons>
-
                         <li>
                             <drawSize>1</drawSize>
                             <path>Paniel/Hairs/Addon/Hair</path>
@@ -194,7 +206,6 @@
                                 <li MayRequire="Ludeon.RimWorld.Ideology">PN_Burka</li>
                             </hiddenUnderApparelTag>
                         </li>
-
                         <li Class="MoharCustomHAR.MoharBodyAddon">
                             <drawSize>1</drawSize>
                             <path>Paniel/Heads/Face/Face</path>
@@ -257,8 +268,50 @@
                             <hiddenUnderApparelTag>
                                 <li MayRequire="Ludeon.RimWorld.Ideology">PN_Burka</li>
                             </hiddenUnderApparelTag>
+                            <hediffGraphics>
+                                <PN_SyncAwful_Failure>Paniel/Heads/Face/RareFace/AwflFace</PN_SyncAwful_Failure>
+                            </hediffGraphics>
                         </li>
-
+                        <li Class="MoharCustomHAR.MoharBodyAddon">
+                            <drawSize>1</drawSize>
+                            <path>Paniel/Heads/Face/RareFace/RareFaceBase</path>
+                            <bodyPart>PNHead</bodyPart>
+                            <shaderType>CutoutComplex</shaderType>
+                            <inFrontOfBody>false</inFrontOfBody>
+                            <layerInvert>false</layerInvert>
+                            <colorChannel>skin</colorChannel>
+                            <drawnInBed>true</drawnInBed>
+                            <drawIfDead>true</drawIfDead>
+                            <drawnDesiccated>false</drawnDesiccated>
+                            <alignWithHead>true</alignWithHead>
+                            <angle>0</angle>
+                            <offsets>
+                                <north>
+                                    <layerOffset>-0.279</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </north>
+                                <south>
+                                    <layerOffset>-0.3245</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </south>
+                                <east>
+                                    <layerOffset>-0.3245</layerOffset>
+                                    <bodyTypes>
+                                        <Female>(0,0)</Female>
+                                    </bodyTypes>
+                                </east>
+                            </offsets>
+                            <hiddenUnderApparelTag>
+                                <li MayRequire="Ludeon.RimWorld.Ideology">PN_Burka</li>
+                            </hiddenUnderApparelTag>
+                            <hediffGraphics>
+                                <PN_SyncAwful_Failure>Paniel/Heads/Face/RareFace/AwflSleep</PN_SyncAwful_Failure>
+                            </hediffGraphics>
+                        </li>
                         <li>
                             <drawSize>1</drawSize>
                             <path>Paniel/Ear/PanielLeftEar</path>
@@ -294,7 +347,6 @@
                                 <li MayRequire="Ludeon.RimWorld.Ideology">PN_Burka</li>
                             </hiddenUnderApparelTag>
                         </li>
-
                         <li>
                             <drawSize>1</drawSize>
                             <path>Paniel/Ear/PanielRightEar</path>
@@ -330,7 +382,6 @@
                                 <li MayRequire="Ludeon.RimWorld.Ideology">PN_Burka</li>
                             </hiddenUnderApparelTag>
                         </li>
-
                         <li>
                             <drawSize>1</drawSize>
                             <path>Paniel/Tail/PanielTail</path>
@@ -365,7 +416,6 @@
                                 <li MayRequire="Ludeon.RimWorld.Ideology">PN_Burka</li>
                             </hiddenUnderApparelTag>
                         </li>
-
                     </bodyAddons>
                 </alienPartGenerator>
             </generalSettings>
@@ -376,7 +426,16 @@
                     <skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
                 </li>
             </graphicPaths>
-            <styleSettings Inherit="False">
+            <styleSettings>
+                <!--<li>
+          <key>HairDef</key>
+          <value>
+            <hasStyle>true</hasStyle>
+            <styleTagsOverride>
+              <li>PanielHair</li>
+            </styleTagsOverride>
+          </value>
+        </li>-->
                 <li>
                     <key>HairDef</key>
                     <value>
@@ -435,7 +494,20 @@
                         <original>PN_AutomatonBanishedToDie</original>
                         <replacer>PN_AutomatonBanishedToDieforPN</replacer>
                     </li>
-
+                    <!--음식-->
+                    <li>
+                        <original>AteLavishMeal</original>
+                        <replacer>PN_AteLavishMeal</replacer>
+                    </li>
+                    <li>
+                        <original>AteFineMeal</original>
+                        <replacer>PN_AteFineMeal</replacer>
+                    </li>
+                    <!--메카클러스터-->
+                    <li>
+                        <original>DefeatedMechCluster</original>
+                        <replacer>PN_DefeatedMechCluster</replacer>
+                    </li>
                     <!--이데올로기-->
                     <li MayRequire="Ludeon.RimWorld.Ideology">
                         <original>PN_OfficerCommandThought</original>
@@ -547,7 +619,8 @@
                     <li MayRequire="Ludeon.RimWorld.Ideology">PN_MeisterAdviceThought</li>
                 </cannotReceiveThoughts>
             </thoughtSettings>
-            <raceRestriction><!--착용 장비 관련-->
+            <raceRestriction>
+                <!--착용 장비 관련-->
                 <onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
                 <onlyUseRaceRestrictedWeapons>false</onlyUseRaceRestrictedWeapons>
                 <onlyBuildRaceRestrictedBuildings>false</onlyBuildRaceRestrictedBuildings>
@@ -633,6 +706,10 @@
                     <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackJump</li>
                     <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PackBroadshield</li>
                     <li MayRequire="Ludeon.RimWorld.Royalty">OrbitalTargeterMechCluster</li>
+                    <!--eccentric-->
+                    <li MayRequire="Aelanna.EccentricTech.AdvancedShields">Eccentric_PhasedShieldBelt</li>
+                    <li MayRequire="Aelanna.EccentricTech.AdvancedShields">Eccentric_ModulatedShieldBelt</li>
+                    <li MayRequire="Aelanna.EccentricTech.AdvancedShields">Eccentric_LayeredShieldBelt</li>
                 </whiteApparelList>
                 <weaponList>
                     <li>PN_Chainsword</li>
@@ -673,7 +750,7 @@
             <ComfyTemperatureMax>45</ComfyTemperatureMax>
             <ComfyTemperatureMin>0</ComfyTemperatureMin>
             <RestRateMultiplier>1.00</RestRateMultiplier>
-            <HungerRateMultiplier>1.00</HungerRateMultiplier>
+            <HungerRateMultiplier>0.50</HungerRateMultiplier>
             <EatingSpeed>1</EatingSpeed>
             <ImmunityGainSpeed>10000</ImmunityGainSpeed>
             <CarryingCapacity>100</CarryingCapacity>
@@ -710,7 +787,7 @@
             <Suppressability>0.5</Suppressability>
             <SmokeSensitivity>0</SmokeSensitivity>
             <ToxicSensitivity>0.2</ToxicSensitivity>
-			<Radiation>0</Radiation>
+            <Radiation>0</Radiation>
         </statBases>
         <!--맨손 전투-->
         <tools>
@@ -755,9 +832,11 @@
             <meatMarketValue>0.8</meatMarketValue>
             <meatColor>(255, 255, 255)</meatColor>
             <body>PanielBody</body>
-            <baseHungerRate>1</baseHungerRate><!--배고픔-->
+            <baseHungerRate>1</baseHungerRate>
+            <!--배고픔-->
             <baseBodySize>1</baseBodySize>
-            <baseHealthScale>1.0</baseHealthScale><!--몸빵-->
+            <baseHealthScale>1.0</baseHealthScale>
+            <!--몸빵-->
             <nameGenerator>PN_NamerFemale</nameGenerator>
             <nameGeneratorFemale>PN_NamerFemale</nameGeneratorFemale>
             <litterSizeCurve Inherit="False">

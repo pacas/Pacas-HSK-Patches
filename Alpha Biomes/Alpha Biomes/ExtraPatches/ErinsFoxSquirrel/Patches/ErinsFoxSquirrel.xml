@@ -3,20 +3,20 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_FeraliskInfestedJungle" or defName="AB_MycoticJungle"]/wildAnimals
+				<xpath>Defs/BiomeDef[defName="AB_FeraliskInfestedJungle" or defName="AB_MycoticJungle"]/wildAnimals
 				</xpath>
 				<value>
 					<FoxSquirrel>0.05</FoxSquirrel>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_IdyllicMeadows" or defName="AB_OcularForest"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_IdyllicMeadows" or defName="AB_OcularForest"]/wildAnimals</xpath>
 				<value>
 					<FoxSquirrel>0.1</FoxSquirrel>
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/BiomeDef[defName="AB_MiasmicMangrove"]/wildAnimals</xpath>
+				<xpath>Defs/BiomeDef[defName="AB_MiasmicMangrove"]/wildAnimals</xpath>
 				<value>
 					<FoxSquirrel>0.5</FoxSquirrel>
 				</value>

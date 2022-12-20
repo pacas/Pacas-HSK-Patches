@@ -8,7 +8,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="GloomyDeco_Well"]</xpath>
+                    <xpath>Defs/ThingDef[defName="GloomyDeco_Well"]</xpath>
                     <value>
                         <researchPrerequisites>
                             <li MayRequire="dbhlitemode">Hygiene_13</li>
@@ -16,7 +16,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="GloomyDeco_Well"]</xpath>
+                    <xpath>Defs/ThingDef[defName="GloomyDeco_Well"]</xpath>
                     <value>
                         <placeWorkers>
                             <li>DubsBadHygiene.PlaceWorker_WaterGrid</li>
@@ -32,13 +32,13 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="GloomyDeco_Well"]/designationCategory</xpath>
+                    <xpath>Defs/ThingDef[defName="GloomyDeco_Well"]/designationCategory</xpath>
                     <value>
                         <designationCategory>Hygiene</designationCategory>
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_PropsandDecor1"]/defNames</xpath>
+                    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_PropsandDecor1"]/defNames</xpath>
                     <value>
                         <defNames>
                             <li>GloomyDeco_Board</li>
@@ -61,7 +61,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_WaterWells"]/defNames</xpath>
+                    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_WaterWells"]/defNames</xpath>
                     <value>
                         <li>GloomyDeco_Well</li>
                     </value>

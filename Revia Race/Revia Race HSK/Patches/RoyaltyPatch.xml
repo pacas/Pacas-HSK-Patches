@@ -8,14 +8,14 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+                    <xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
                     <value>
                         <li>ReviaPlayerColony</li>
                     </value>
                 </li>
                 <!--Revians can meditate natural foci-->
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
+                    <xpath>Defs/MeditationFocusDef[defName="Natural"]/requiredBackstoriesAny</xpath>
                     <value>
                         <li>
                             <categoryName>ReviaRaceBackstory</categoryName>

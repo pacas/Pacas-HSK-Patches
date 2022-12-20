@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Patch>
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/FleshTypeDef[defName = "Normal"]/hediffWounds</xpath>
+        <xpath>Defs/FleshTypeDef[defName = "Normal"]/hediffWounds</xpath>
         <value>
             <li>
                 <hediff>AA_MalevolentEye</hediff>

@@ -7,7 +7,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AB_WildRadagast"]/plant</xpath>
+                    <xpath>Defs/ThingDef[defName="AB_WildRadagast"]/plant</xpath>
                     <value>
                         <harvestYield>10</harvestYield>
                         <harvestWork>250</harvestWork>

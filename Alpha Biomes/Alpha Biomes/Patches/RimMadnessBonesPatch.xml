@@ -7,7 +7,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AB_GallatrossBones"]</xpath>
+                    <xpath>Defs/ThingDef[defName="AB_GallatrossBones"]</xpath>
                     <value>
                         <costList>
                             <BoneItem>150</BoneItem>
@@ -15,7 +15,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AB_AncientGallatrossSkull"]</xpath>
+                    <xpath>Defs/ThingDef[defName="AB_AncientGallatrossSkull"]</xpath>
                     <value>
                         <costList>
                             <BoneItem>55</BoneItem>
@@ -23,7 +23,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AB_AncientBone"]</xpath>
+                    <xpath>Defs/ThingDef[defName="AB_AncientBone"]</xpath>
                     <value>
                         <costList>
                             <BoneItem>25</BoneItem>
@@ -31,7 +31,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AB_AncientBrokenBone"]</xpath>
+                    <xpath>Defs/ThingDef[defName="AB_AncientBrokenBone"]</xpath>
                     <value>
                         <costList>
                             <BoneItem>10</BoneItem>
@@ -39,7 +39,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AB_AncientVerticalBone"]</xpath>
+                    <xpath>Defs/ThingDef[defName="AB_AncientVerticalBone"]</xpath>
                     <value>
                         <costList>
                             <BoneItem>40</BoneItem>
@@ -47,7 +47,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AB_HugeGallatrossSkeleton"]</xpath>
+                    <xpath>Defs/ThingDef[defName="AB_HugeGallatrossSkeleton"]</xpath>
                     <value>
                         <costList>
                             <BoneItem>250</BoneItem>

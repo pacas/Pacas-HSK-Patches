@@ -7,7 +7,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs</xpath>
+                    <xpath>Defs</xpath>
                     <value>
                         <VCE_Fishing.BiomeTempDef>
                             <defName>VCEF_BiomeAlienJungly</defName>
@@ -23,7 +23,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs</xpath>
+                    <xpath>Defs</xpath>
                     <value>
                         <VCE_Fishing.BiomeTempDef>
                             <defName>VCEF_BiomeAlienHot</defName>
@@ -38,7 +38,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs</xpath>
+                    <xpath>Defs</xpath>
                     <value>
                         <VCE_Fishing.BiomeTempDef>
                             <defName>VCEF_BiomeAlienCold</defName>
@@ -50,13 +50,13 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeWarm"]/biomes</xpath>
+                    <xpath>Defs/VCE_Fishing.BiomeTempDef[defName="VCEF_BiomeWarm"]/biomes</xpath>
                     <value>
                         <li>AB_IdyllicMeadows</li>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs</xpath>
+                    <xpath>Defs</xpath>
                     <value>
                         <VCE_Fishing.FishableTerrainDef>
                             <defName>VCEF_VanillaFishableTerrainsAlien</defName>
