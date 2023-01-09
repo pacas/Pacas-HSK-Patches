@@ -12,7 +12,7 @@
             <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
             <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
             <LeatherAmount>0</LeatherAmount>
-            <MeatAmount>0</MeatAmount>
+            <MeatAmount>95</MeatAmount>
         </statBases>
         <tools>
             <li>
@@ -76,7 +76,8 @@
             <thinkTreeMain>VEF_AnimalWeirdEater</thinkTreeMain>
             <herdAnimal>false</herdAnimal>
             <predator>false</predator>
-            <useMeatFrom>Elephant</useMeatFrom>
+            <leatherDef>Chitin</leatherDef>
+            <useMeatFrom>Megaspider</useMeatFrom>
             <body>TurtleLike</body>
             <baseBodySize>1.5</baseBodySize>
             <baseHungerRate>0.1</baseHungerRate>
@@ -111,6 +112,10 @@
         <tradeTags>
             <li>AnimalUncommon</li>
         </tradeTags>
+        <butcherProducts>
+			<Chitin>45</Chitin>
+			<PoisonGland>1</PoisonGland>
+		</butcherProducts>
         <modExtensions>
             <li Class="AnimalBehaviours.AnimalStatExtension">
                 <statToAdd>
