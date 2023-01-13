@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <LightColumnMod.label>조명 기둥</LightColumnMod.label>
+  <LightColumnMod.description>조명등이 달린 단순한 설치형 기둥입니다.</LightColumnMod.description>
+
+  <DarkColumnMod.label>크리스탈 조명 기둥</DarkColumnMod.label>
+  <DarkColumnMod.description>조명등이 달린 설치형 기둥입니다. 기본 사양보다 조금 더 비싸고, 조금 더 아름답습니다.</DarkColumnMod.description>
+
+  <OrbitalTradeColumnMod.label>무역 송신 기둥</OrbitalTradeColumnMod.label>
+  <OrbitalTradeColumnMod.description>창고 관리에 유용한 기계 기둥입니다. 지붕을 지탱하고, 주변 물품들을 궤도로 전송할 수 있으며, 조명등이 달려 있습니다.</OrbitalTradeColumnMod.description>
+
+  <SunColumnMod.label>태양 기둥</SunColumnMod.label>
+  <SunColumnMod.description>실내 농장 관리에 유용한 기계 기둥입니다. 지붕을 지탱하고, 주변 온도를 높게 유지하며, 작물이 자랄 수 있는 빛을 내뿜습니다. 밤에는 자동으로 꺼집니다.</SunColumnMod.description>
+  <SunColumnMod.comps.CompSchedule.offMessage>작물 휴식기에 꺼짐</SunColumnMod.comps.CompSchedule.offMessage>
+
+  <IceColumnMod.label>냉동 기둥</IceColumnMod.label>
+  <IceColumnMod.description>냉동실 관리에 유용한 기계 기둥입니다. 지붕을 지탱하고, 주변 온도를 낮게 유지하며, 조명등이 달려 있습니다.</IceColumnMod.description>
+
+  <DetColumnMod.label>파편 기둥</DetColumnMod.label>
+  <DetColumnMod.description>기지 방어를 위해 설계된 기계 기둥입니다. 지붕을 지탱하고, 주변에 접근한 적에게 일회성 파편 폭발 공격을 가합니다.</DetColumnMod.description>
+  
+  <FlameColumnMod.label>화염 기둥</FlameColumnMod.label>
+  <FlameColumnMod.description>기지 방어를 위해 설계된 기계 기둥입니다. 지붕을 지탱하고, 주변에 접근한 적에게 일회성화염 폭발 공격을 가합니다.</FlameColumnMod.description>
+  
+  <EMPColumnMod.label>섬광 기둥</EMPColumnMod.label>
+  <EMPColumnMod.description>기지 방어를 위해 설계된 기계 기둥입니다. 지붕을 지탱하고, 주변에 접근한 적에게 일회성 섬광과 전자파를 내뿜습니다.</EMPColumnMod.description>
+
+  <ArchotechDroneColumn.label>초월 기둥</ArchotechDroneColumn.label>
+  <ArchotechDroneColumn.description>초월기술의 유산으로 만들어진 기계 기둥입니다. 지붕을 지탱하고, 플라스틸을 소모하여 주변 저장 공간에 보관된 모든 장착 가능한 장비들을 천천히 새것처럼 복원합니다.</ArchotechDroneColumn.description>
+
+  <DetColumnMod.comps.CompRefuelable.fuelGizmoLabel>장전된 파편</DetColumnMod.comps.CompRefuelable.fuelGizmoLabel>
+  <DetColumnMod.comps.CompRefuelable.fuelLabel>장전된 파편</DetColumnMod.comps.CompRefuelable.fuelLabel>
+  <DetColumnMod.comps.CompRefuelable.outOfFuelMessage>재장전 필요</DetColumnMod.comps.CompRefuelable.outOfFuelMessage>
+  
+  <FlameColumnMod.comps.CompRefuelable.fuelGizmoLabel>장전된 연료</FlameColumnMod.comps.CompRefuelable.fuelGizmoLabel>
+  <FlameColumnMod.comps.CompRefuelable.fuelLabel>장전된 연료</FlameColumnMod.comps.CompRefuelable.fuelLabel>
+  <FlameColumnMod.comps.CompRefuelable.outOfFuelMessage>재장전 필요</FlameColumnMod.comps.CompRefuelable.outOfFuelMessage>
+
+  <EMPColumnMod.comps.CompRefuelable.fuelGizmoLabel>퓨즈 내구도</EMPColumnMod.comps.CompRefuelable.fuelGizmoLabel>
+  <EMPColumnMod.comps.CompRefuelable.fuelLabel>퓨즈 내구도</EMPColumnMod.comps.CompRefuelable.fuelLabel>
+  <EMPColumnMod.comps.CompRefuelable.outOfFuelMessage>퓨즈 부품 필요</EMPColumnMod.comps.CompRefuelable.outOfFuelMessage>
+
+
+  <ArchotechDroneColumn.comps.CompRefuelable.fuelGizmoLabel>복원 용량</ArchotechDroneColumn.comps.CompRefuelable.fuelGizmoLabel>
+  <ArchotechDroneColumn.comps.CompRefuelable.fuelLabel>복원 용량</ArchotechDroneColumn.comps.CompRefuelable.fuelLabel>
+  <ArchotechDroneColumn.comps.CompRefuelable.outOfFuelMessage>복원 불가: 플라스틸 충전 필요</ArchotechDroneColumn.comps.CompRefuelable.outOfFuelMessage>
+
+  <GraveColumnMod.label>성소 기둥</GraveColumnMod.label>
+  <GraveColumnMod.description>영예롭게 죽은 자들을 기리기 위한 장식 기둥입니다. 지붕을 지탱하고, 시신을 썩지 않는 상태로 보존할 수 있습니다.</GraveColumnMod.description>
+
+
+</LanguageData>

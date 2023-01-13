@@ -103,6 +103,107 @@
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     </ThingDef>
 
+
+	<ThingDef ParentName="SK_BuildingBase">
+		<defName>DarkColumnMod</defName>
+		<label>crystal column</label>
+		<description>A simple mobile column, more beautiful and luxurious than light column.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+		  <drawSize>(1.25,1.25)</drawSize>
+		  <drawOffset>(0,0,0.2)</drawOffset>
+		  <texPath>Buildings/LLColumn2_Base</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shadowData>
+			<volume>(0.3, 0.5, 0.3)</volume>
+			<offset>(0,0,-0.23)</offset>
+		  </shadowData>
+		  <damageData>
+			<rect>(0.2,0.2,0.6,0.6)</rect>
+		  </damageData>
+		</graphicData>
+		<uiIconPath>Buildings/LLColumn2</uiIconPath>
+		<altitudeLayer>Building</altitudeLayer>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+		  <li>BuildingsMisc</li>
+		</thingCategories>
+		<statBases>
+		  <MaxHitPoints>200</MaxHitPoints>
+		  <WorkToBuild>2500</WorkToBuild>
+		  <Flammability>0.05</Flammability>
+		  <Mass>10</Mass>
+		  <Beauty>20</Beauty>
+		</statBases>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<fillPercent>0.25</fillPercent>
+		 <stuffCategories>
+			<li>StrongMetallic</li>
+			<li>Stony</li>
+			<li>Bricks</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<Glass>12</Glass>
+			<Plastic>4</Plastic>
+			<ReinforcedConcrete>10</ReinforcedConcrete>
+			<ElectronicComponents>4</ElectronicComponents>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<comps>
+			<li Class="RimWorldColumns.CompProperties_Overlays">
+				<overlays>
+					<li>
+						<data>
+							<drawSize>(1.25,1.25)</drawSize>
+							<drawOffset>(0,0,0.2)</drawOffset>
+							<texPath>Buildings/LLColumn2_Overlay</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<shaderType>MoteGlow</shaderType>
+						</data>
+						<needsPower>true</needsPower>
+					</li>
+				</overlays>
+			</li>
+		  <li Class="CompProperties_Flickable"/>
+		  <li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Glower">
+				<glowRadius>12</glowRadius>
+				<glowColor>(200,140,160,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>45</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</killedLeavings>
+		<pathCost>25</pathCost>
+		<passability>PassThroughOnly</passability>
+		<designationCategory>Furniture</designationCategory>
+		<rotatable>false</rotatable>
+		<stealable>false</stealable>
+		<building>
+		  <expandHomeArea>false</expandHomeArea>
+		  <ai_combatDangerous>false</ai_combatDangerous>
+		</building>
+		<researchPrerequisites>
+		  <li>Light_C3</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>true</canOverlapZones>
+		<fertility>0</fertility>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+	</ThingDef>
+
     <ThingDef ParentName="SK_BuildingBase">
         <defName>OrbitalTradeColumnMod</defName>
         <label>Orbital trade column</label>
@@ -360,7 +461,7 @@
         <costStuffCount>50</costStuffCount>
         <costList>
             <ReinforcedConcrete>10</ReinforcedConcrete>
-            <Coldstone>50</Coldstone>
+            <Coldstone>35</Coldstone>
             <ElectronicComponents>3</ElectronicComponents>
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
@@ -567,5 +668,136 @@
 			<allowedSpectateSides>Vertical</allowedSpectateSides>
 		</ritualFocus>
     </ThingDef>
-  
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>EMPColumnMod</defName>
+		<label>pulse column</label>
+		<description>An advanced column for base defense. Upon detecting an enemy in any direction, it will emits a strong pulse and flash into the same direction. Can be reloaded.</description>
+		<thingClass>RimWorldColumns.Building_ClaymoreColumn</thingClass>
+		<graphicData>
+			<drawSize>(1.25,1.25)</drawSize>
+			<drawOffset>(0,0,0.2)</drawOffset>
+			<texPath>Buildings/DetColumn_Base</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+				<offset>(0,0,-0.23)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Buildings/EColumn</uiIconPath>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Mass>25</Mass>
+			<Beauty>-25</Beauty>
+		</statBases>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<fillPercent>0.25</fillPercent>
+		<stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <costStuffCount>70</costStuffCount>
+        <costList>
+            <ReinforcedConcrete>10</ReinforcedConcrete>
+            <ElectronicComponents>10</ElectronicComponents>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <Mechanism>2</Mechanism>
+        </costList>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(90, 150, 226, 0)</glowColor>
+			</li>
+			<li Class="RimWorldColumns.CompProperties_Overlays">
+				<overlays>
+					<li>
+						<data>
+							<drawSize>(1.25,1.25)</drawSize>
+							<drawOffset>(0,0,0.2)</drawOffset>
+							<texPath>Buildings/EColumn_Overlay</texPath>
+							<graphicClass>Graphic_Single</graphicClass>
+							<shaderType>CutoutComplex</shaderType>
+						</data>
+						<altitude>BuildingOnTop</altitude>
+						<needsPower>false</needsPower>
+					</li>
+				</overlays>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>45</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>fuse</fuelLabel>
+				<fuelGizmoLabel>fuse</fuelGizmoLabel>
+				<fuelFilter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>1</fuelCapacity>
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.99</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>0</minimumFueledThreshold>
+				<fuelMultiplier>1</fuelMultiplier>
+				<factorByDifficulty>false</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<outOfFuelMessage>Cannot detonate: Needs fuse component</outOfFuelMessage>
+				<fuelIconPath>Misc/Blank</fuelIconPath>
+			</li>
+		</comps>
+		<specialDisplayRadius>7.9</specialDisplayRadius>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</killedLeavings>
+		<pathCost>25</pathCost>
+		<passability>PassThroughOnly</passability>
+		<designationCategory>Security</designationCategory>
+		<rotatable>false</rotatable>
+		<stealable>false</stealable>
+		<building>
+			<expandHomeArea>false</expandHomeArea>
+			<ai_combatDangerous>true</ai_combatDangerous>
+		</building>
+		<placeWorkers>
+			<li>PlaceWorker_NeverAdjacentTrap</li>
+			<li>RimWorldColumns.PlaceWorker_MinimumDistance</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>MicroelectronicsBasics</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>true</canOverlapZones>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<modExtensions>
+			<li Class="RimWorldColumns.ColumnExtension">
+				<radius>7.9</radius>
+				<consumptionPercent>1</consumptionPercent>
+				<explosionDamage>75</explosionDamage>
+				<detonationDelay>120</detonationDelay>
+				<damageType>Stun</damageType>
+				<preExplosionSpawnThingDef></preExplosionSpawnThingDef>
+				<preSpawnChance>0</preSpawnChance>
+				<chanceToStartFire>0.1</chanceToStartFire>
+				<!--<screenShakeFactor>0.1</screenShakeFactor>-->
+			</li>
+		</modExtensions>
+	</ThingDef>
+
 </Defs>

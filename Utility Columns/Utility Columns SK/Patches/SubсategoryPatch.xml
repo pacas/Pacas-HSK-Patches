@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
     <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Columns"]</xpath>
+        <xpath>/Defs/ArchitectSense.DesignationSubCategoryDef[defName="Columns"]</xpath>
         <nomatch Class="PatchOperationAdd">
             <xpath>Defs</xpath>
             <value>
@@ -12,7 +12,9 @@
                     <defNames>
                         <li>Column</li>
                         <li>LightColumnMod</li>
+						<li>DarkColumnMod</li>
                         <li>OrbitalTradeColumnMod</li>
+						<li>EMPColumnMod</li>
                         <li>SunColumnMod</li>
                         <li>IceColumnMod</li>
                         <li>GraveColumnMod</li>
@@ -26,7 +28,9 @@
             <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Columns"]/defNames</xpath>
             <value>
                 <li>LightColumnMod</li>
+				<li>DarkColumnMod</li>
                 <li>OrbitalTradeColumnMod</li>
+				<li>EMPColumnMod</li>
                 <li>SunColumnMod</li>
                 <li>IceColumnMod</li>
                 <li>GraveColumnMod</li>

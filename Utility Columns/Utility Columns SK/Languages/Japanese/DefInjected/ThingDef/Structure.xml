@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: light column -->
+  <LightColumnMod.label>照明支柱</LightColumnMod.label>
+  <!-- EN: A simple mobile column, just lights the area. -->
+  <LightColumnMod.description>周囲を照らすだけの,シンプルな可動性の支柱です.</LightColumnMod.description>
+
+  <!-- EN: dark column -->
+  <DarkColumnMod.label>仄暗い支柱</DarkColumnMod.label>
+  <!-- EN: 　A simple mobile column, just dim lights the area. People who prefer to work in darklight are happy with this light source. -->
+  <DarkColumnMod.description>周囲をぼんやりとした光で照らす,シンプルな可動性の支柱です.暗闇での作業を好む人には,この程度の明かりで十分です.</DarkColumnMod.description>
+
+  <!-- EN: orbital trade column -->
+  <OrbitalTradeColumnMod.label>貿易用の支柱</OrbitalTradeColumnMod.label>
+  <!-- EN: A utility column, acts like an orbital trade beacon, and lights the area, perfect for warehouses. -->
+  <OrbitalTradeColumnMod.description>貿易用ビーコンのように動作し,周囲を明るく照らすユーティリティ支柱です.倉庫にうってつけです.</OrbitalTradeColumnMod.description>
+
+  <!-- EN: sun column -->
+  <SunColumnMod.label>太陽灯の柱</SunColumnMod.label>
+  <!-- EN: A utility column, acts like a sun lamp and keeps your room warm, perfect for greenhouses. Automatically turns itself off at night. -->
+  <SunColumnMod.description>太陽灯のように動作し,部屋を暖かく維持するユーティリティ支柱です.温室にうってつけです.夜になると自動的に消灯します.</SunColumnMod.description>
+  <!-- EN: Off for plant resting period -->
+  <SunColumnMod.comps.CompSchedule.offMessage>植物が眠っている間はOFF</SunColumnMod.comps.CompSchedule.offMessage>
+
+  <!-- EN: frozen column -->
+  <IceColumnMod.label>冷凍機の柱</IceColumnMod.label>
+  <!-- EN: A utility column, acts like a cooler, keeps the room at -15°C and emits blue light, perfect for fridges. -->
+  <IceColumnMod.description>クーラーのように動作し,部屋の温度を-15°Cに維持する,青い光を放つユーティリティ支柱です.冷蔵庫にうってつけです.</IceColumnMod.description>
+
+  <!-- EN: cluster column -->
+  <DetColumnMod.label>榴弾支柱</DetColumnMod.label>
+  <!-- EN: An advanced column for base defense. Upon detecting an enemy in any direction, it will detonate a highly explosive cluster charge into the same direction. Can be reloaded. -->
+  <DetColumnMod.description>拠点防衛のための拡張的な支柱です.いずれかの方位に敵を発見すると,その方向に破片を飛び散らせる爆発を起こします.リロード可能です.</DetColumnMod.description>
+  
+  <!-- EN: flame column -->
+  <FlameColumnMod.label>火炎支柱</FlameColumnMod.label>
+  <!-- EN: An advanced column for base defense. Upon detecting an enemy in any direction, it will detonate an incendiary bomb charge into the same direction. Can be reloaded. -->
+  <FlameColumnMod.description>拠点防衛のための拡張的な支柱です.いずれかの方位に敵を発見すると,その方向に焼夷爆撃を放ちます.リロード可能です.</FlameColumnMod.description>
+
+  <!-- EN: cluster fragments -->
+  <DetColumnMod.comps.CompRefuelable.fuelGizmoLabel>破片</DetColumnMod.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: cluster fragments -->
+  <DetColumnMod.comps.CompRefuelable.fuelLabel>破片</DetColumnMod.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot detonate: Needs ammo -->
+  <DetColumnMod.comps.CompRefuelable.outOfFuelMessage>起動できません: 破片の補充が必要</DetColumnMod.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: incendiary fuel -->
+  <FlameColumnMod.comps.CompRefuelable.fuelGizmoLabel>燃料</FlameColumnMod.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: incendiary fuel -->
+  <FlameColumnMod.comps.CompRefuelable.fuelLabel>燃料</FlameColumnMod.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot detonate: Needs ammo -->
+  <FlameColumnMod.comps.CompRefuelable.outOfFuelMessage>起動できません: 燃料が必要</FlameColumnMod.comps.CompRefuelable.outOfFuelMessage>
+
+  <!-- EN: sacred column -->
+  <GraveColumnMod.label>死者の柱</GraveColumnMod.label>
+  <!-- EN: An ornamented burial column for the honored dead. Designed to keep a dead person for many years.\n\nAltman be praised. -->
+  <GraveColumnMod.description>死を尊ぶために設置される埋葬用の柱です.死者を何年も保持できるよう設計されています.\n\nその人を讃えます.</GraveColumnMod.description>
+
+</LanguageData>

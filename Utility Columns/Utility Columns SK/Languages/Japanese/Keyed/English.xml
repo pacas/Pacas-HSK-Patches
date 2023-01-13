@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Too close to other structures! Some directions may be obstructed. -->
+  <RWC_TooClose>他の建築物が近すぎます! それによって塞がれている方位があります.</RWC_TooClose>
+  <!-- EN: \nDirections obstructed: {0} -->
+  <RWC_Obstructed>\塞がれている方位: {0}</RWC_Obstructed>
+	
+  <!-- EN: Direction -->
+  <RWC_Direction>方位</RWC_Direction>
+  <!-- EN: Sets whether the side is active and ready to detonate. -->
+  <RWC_ActiveDesc>どの方位の爆発を有効にするか設定します.</RWC_ActiveDesc>
+  <!-- EN: Toggle the safety. When on, it will not detonate if any player structure is in the radius.\nWhen off, it will detonate no matter what. -->
+  <RWC_SafetyDesc>安全装置を切り替えます. ONの場合,射程内にプレイヤーの構造物があるときに爆発しなくなります. OFFの場合,無視して爆破します.</RWC_SafetyDesc>
+  <!-- EN: Toggle the obstruction overlay. When on, it will display red X's on any structure within the direction's radius. Otherwise it will be hidden. -->
+  <RWC_ObstructedDesc>障害物表示を切り替えます. ONの場合,赤いXマークがその方向の射程内にある障害物に重ねて表示されます.</RWC_ObstructedDesc>
+</LanguageData>
