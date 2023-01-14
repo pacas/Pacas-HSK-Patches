@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PollutionTreeWithStumpBase">
+		<defName>AB_JungleTree_Polluted</defName>
+		<label>deep jungle polux</label>
+		<description>This jungle polux tree has adapted so perfectly to polluted soil and airborne toxins that it doesn't even need to remove pollution from its environment.\n\nPlant details: Deep jungle polux trees are a wild plant, and they need minimum terrain fertility of 0.05. Can only grow in polluted terrains. Can be harvested for small amounts of Red Wood. Tree lover ideologies don't much care about chopping down these weird trees.\n\nBased on art by Corndoggy and Motones, https://www.deviantart.com/motones/art/Xeno-Plants-503932885</description>
+		<descriptionHyperlinks>
+			<ThingDef>GU_RedWood</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<Beauty>-5</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_JunglePolux</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<ingestible/>
+		<plant>
+			<growDays>22</growDays>
+			<harvestWork>800</harvestWork>
+			<harvestYield>8</harvestYield>
+			<wildClusterRadius>10</wildClusterRadius>
+			<wildClusterWeight>11</wildClusterWeight>
+			<visualSizeRange>3.8~5</visualSizeRange>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PollutionPlantBase">
+		<defName>AB_WeepingToxberry</defName>
+		<label>weeping toxberry</label>
+		<description>A short toxin-adapted shrub with berries so unbelievably toxic that no animal would ever dare consume them.\n\nPlant details:Difficult to move through, it slows down anyone moving over it. It can only grow in polluted areas.\n\nBased on artwork by Rob Smyth, https://robsmythart.com/projects</description>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Nutrition>0</Nutrition>
+		</statBases>
+		<pathCost>14</pathCost>
+		<graphicData>
+			<texPath>Things/Plants/AB_WeepingToxberry</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<ingestible><preferability>NeverForNutrition</preferability></ingestible>
+		<plant>
+			<growDays>3</growDays>
+			<harvestWork>60</harvestWork>
+			<maxMeshCount>4</maxMeshCount>
+			<visualSizeRange>1.5~2</visualSizeRange>
+			<topWindExposure>0.15</topWindExposure>
+		
+			<wildOrder>2</wildOrder>
+			
+		</plant>
+	</ThingDef>
+</Defs>

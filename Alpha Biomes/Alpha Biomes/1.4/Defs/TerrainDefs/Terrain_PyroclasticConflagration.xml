@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Lava -->
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_BlackPebbles</defName>
+        <label>black volcanic sand</label>
+        <texturePath>Terrain/Surfaces/AB_BlackPebbles</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>350</renderPrecedence>
+        <pathCost>12</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+        </statBases>
+        <scatterType>SoftGray</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0</fertility>
+        <tags>
+            <li>Sand</li>
+		</tags>
+        <takeFootprints>True</takeFootprints>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_Obsidian</defName>
+        <label>obsidian</label>
+        <texturePath>Terrain/Surfaces/AB_Obsidian</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>352</renderPrecedence>
+        <pathCost>6</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+        </statBases>
+        <scatterType>SoftGray</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0.00</fertility>
+        <takeFootprints>True</takeFootprints>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_SolidifiedLava</defName>
+        <label>solidifying lava</label>
+        <texturePath>Terrain/Surfaces/AB_LavaTexture</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>352</renderPrecedence>
+        <pathCost>100</pathCost>
+        <holdSnow>false</holdSnow>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+        </statBases>
+        <scatterType>SoftGray</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+        </affordances>
+        <avoidWander>true</avoidWander>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0.00</fertility>
+        <takeFootprints>True</takeFootprints>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_HardenedGrass</defName>
+        <label>hardened grass</label>
+        <texturePath>Terrain/Surfaces/AB_HardenedGrass</texturePath>
+	<pollutedTexturePath>Terrain/Surfaces/AB_HardenedGrass_Polluted</pollutedTexturePath>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+	 <pollutionColor>(214, 140, 234, 0.15)</pollutionColor>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>353</renderPrecedence>
+        <pathCost>20</pathCost>
+        <statBases>
+            <Beauty>-5</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <scatterType>SoftGray</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0.7</fertility>
+        <tags>
+			<li>Soil</li>
+		</tags>
+        <takeFootprints>True</takeFootprints>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_HardenedGrassFertile</defName>
+        <label>fertile volcanic soil</label>
+        <color>(160,140,140)</color>
+        <texturePath>Terrain/Surfaces/AB_HardenedGrass</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>352</renderPrecedence>
+        <pathCost>20</pathCost>
+        <statBases>
+            <Beauty>-5</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <scatterType>SoftGray</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>1.5</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tags>
+			<li>Soil</li>
+		</tags>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="SK_WaterDeepBase">
+        <defName>AB_LiquidLava</defName>
+        <texturePath>Terrain/Surfaces/AB_HotLava</texturePath>
+        <label>lava lake</label>
+        <renderPrecedence>395</renderPrecedence>
+    </TerrainDef>
+</Defs>

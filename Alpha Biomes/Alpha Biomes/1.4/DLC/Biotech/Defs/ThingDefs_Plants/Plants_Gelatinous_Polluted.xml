@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PollutionTreeBase">
+		<defName>AB_ToxiBulb</defName>
+		<label>toxibulb</label>
+		<description>This slimy bulb seems to be feeding on the polluted terrain like a parasite.</description>
+		<statBases>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_ToxiBulb</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		
+			
+		</graphicData>
+		<plant>
+			
+			<visualSizeRange>2~3</visualSizeRange>
+		</plant>
+	</ThingDef>
+</Defs>

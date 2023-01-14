@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>AB_FrostleafToHay</defName>
+        <label>dry frost leaf into hay</label>
+        <description>Dry frost leaf into hay.</description>
+        <jobString>drying frost leaf into hay.</jobString>
+        <slotsRequired>5</slotsRequired>
+        <recipeUsers>
+            <li>DryingRack</li>
+        </recipeUsers>
+        <temperatureSafe>
+            <min>0</min>
+            <max>65</max>
+        </temperatureSafe>
+        <temperatureIdeal>
+            <min>30</min>
+            <max>50</max>
+        </temperatureIdeal>
+        <processDays>4</processDays>
+        <speedBelowSafe>0.05</speedBelowSafe>
+        <speedAboveSafe>0.8</speedAboveSafe>
+        <sunFactor>
+            <min>0.75</min>
+            <max>1.2</max>
+        </sunFactor>
+        <rainFactor>
+            <min>1</min>
+            <max>0</max>
+        </rainFactor>
+        <snowFactor>
+            <min>1</min>
+            <max>0</max>
+        </snowFactor>
+        <windFactor>
+            <min>1</min>
+            <max>1.2</max>
+        </windFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AB_RawFrostLeaf</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <products>
+            <Hay>50</Hay>
+        </products>
+    </RecipeDef>
+</Defs>

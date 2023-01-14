@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef>
+		<defName>AB_RedQuartzToAlcyonite</defName>
+		<label>extract alcyonite from rose quartz</label>
+		<description>Extract usable alcyonite chunks from rose quartz.</description>
+		<jobString>extracting alcyonite from rose quartz.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>1600</workAmount>
+		<recipeUsers>
+			<li>AB_ExoticSmelterOcular</li>	  
+		</recipeUsers>	
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GU_ChunkRoseQuartz</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GU_ChunkRoseQuartz</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AB_AlcyoniteChunk>10</AB_AlcyoniteChunk>
+		</products>
+        <skillRequirements>
+			<Crafting>3</Crafting>
+		</skillRequirements>
+        <workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+        <researchPrerequisite>Craft_B1</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>AB_CrystalWoodToMatrix</defName>
+		<label>refine crystal wood into matrix</label>
+		<description>Refines crystal wood into a very resistant crystalline matrix that stores and maintains temperature.</description>
+		<jobString>refining crystal wood into matrix.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>1600</workAmount>
+		<recipeUsers>
+			<li>AB_ExoticSmelterOcular</li>	  
+		</recipeUsers>	
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AB_CrystalWood</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AB_CrystalWood</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<AB_CrystallineMatrix>1</AB_CrystallineMatrix>
+		</products>
+        <skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+        <workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+        <researchPrerequisite>Craft_B1</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>AB_ResinToProcessed</defName>
+		<label>refine cordax resin into processed resin</label>
+		<description>Refines raw cordax resin into a thick paste that can be used as a sealant to build tar-related buildings.</description>
+		<jobString>refining cordax resin into processed resin.</jobString>
+		<effectWorking>Cremate</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>1600</workAmount>
+		<recipeUsers>
+			<li>AB_ExoticSmelterOcular</li>	  
+		</recipeUsers>	
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AB_CordaxResin</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AB_CordaxResin</li>
+				<li>WoodLog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Rubber>20</Rubber>
+		</products>
+        <skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+        <workSkill>Crafting</workSkill>
+    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+        <researchPrerequisite>Craft_B1</researchPrerequisite>
+	</RecipeDef>
+</Defs>

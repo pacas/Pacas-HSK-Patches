@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>SeedsPlease</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="ExtractSeed_AB_DribblingCap"]/ingredients</xpath>
+                    <value>
+                        <ingredients>
+                            <li>
+                                <filter>
+                                    <thingDefs>
+                                        <li>AB_PinkRawFungus</li>
+                                    </thingDefs>
+                                </filter>
+                                <count>4</count>
+                            </li>
+                        </ingredients>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/RecipeDef[defName="ExtractSeed_AB_DribblingCap"]/fixedIngredientFilter/thingDefs</xpath>
+                    <value>
+                        <thingDefs>
+                            <li>AB_PinkRawFungus</li>
+                        </thingDefs>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <SeedsPlease.SeedDef ParentName="SeedBase">
+                            <defName>Seed_AB_GiantTulip</defName>
+                            <label>giant tulip seeds</label>
+                            <sources>
+                                <li>AB_GiantTulip</li>
+                            </sources>
+                        </SeedsPlease.SeedDef>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <SeedsPlease.SeedDef ParentName="SeedBase">
+                            <defName>Seed_AB_GiantSunflower</defName>
+                            <label>giant sunflower seeds</label>
+                            <sources>
+                                <li>AB_GiantSunflower</li>
+                            </sources>
+                        </SeedsPlease.SeedDef>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <SeedsPlease.SeedDef ParentName="SeedBase">
+                            <defName>Seed_AB_MangrovePalm</defName>
+                            <label>mangrove palm seeds</label>
+                            <sources>
+                                <li>AB_MangrovePalm</li>
+                            </sources>
+                        </SeedsPlease.SeedDef>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <SeedsPlease.SeedDef ParentName="SeedBase">
+                            <defName>Seed_AB_Mangrove</defName>
+                            <label>mangrove tree seeds</label>
+                            <sources>
+                                <li>AB_MangroveTree</li>
+                            </sources>
+                        </SeedsPlease.SeedDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

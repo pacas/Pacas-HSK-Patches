@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="AB_IdyllicMeadows" or defName="AB_MycoticJungle"]/wildAnimals
+				</xpath>
+				<value>
+					<ERN_Ferret>0.2</ERN_Ferret>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

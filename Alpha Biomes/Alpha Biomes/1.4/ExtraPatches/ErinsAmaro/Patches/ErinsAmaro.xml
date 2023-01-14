@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/BiomeDef[defName="AB_GelatinousSuperorganism" or defName="AB_MiasmicMangrove" or
+                    defName="AB_PyroclasticConflagration" or defName="AB_TarPits"]/wildAnimals
+                </xpath>
+                <value>
+                    <ERN_Amaro>0.05</ERN_Amaro>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/BiomeDef[defName="AB_IdyllicMeadows" or defName="AB_MycoticJungle"]/wildAnimals</xpath>
+                <value>
+                    <ERN_Amaro>0.1</ERN_Amaro>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThoughtDef>
+        <defName>AB_ForsakenNight</defName>
+        <durationDays>0.1</durationDays>
+        <stackLimit>1</stackLimit>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+            <li>NightOwl</li>
+        </nullifyingTraits>
+        <nullifyingPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Darklight_Preferred</li>
+        </nullifyingPrecepts>
+        <stages>
+            <li>
+                <label>preternatural darkness</label>
+                <description>It is as if the sun itself was being drowned in despair. I hate it.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>AB_ForsakenRain</defName>
+        <durationDays>0.1</durationDays>
+        <stackLimit>1</stackLimit>
+        <nullifyingTraits>
+            <li>NightOwl</li>
+        </nullifyingTraits>
+        <nullifyingPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Darklight_Preferred</li>
+        </nullifyingPrecepts>
+        <stages>
+            <li>
+                <label>soaking wet and dark</label>
+                <description>I'm soaking wet, and I can't see anything.</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>AB_ForsakenThunderstorm</defName>
+        <durationDays>0.1</durationDays>
+        <stackLimit>1</stackLimit>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+            <li>NightOwl</li>
+        </nullifyingTraits>
+        <nullifyingPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Darklight_Preferred</li>
+        </nullifyingPrecepts>
+        <stages>
+            <li>
+                <label>preternatural storm</label>
+                <description>It is dark as the void, and now lightning is falling everywhere. We are doomed.</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>AB_RedFogThought</defName>
+        <durationDays>0.1</durationDays>
+        <stackLimit>1</stackLimit>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>unnatural weather</label>
+                <description>This fog tastes weird. It looks weird. It FEELS wrong, as if it wasn't of this world.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>AB_VolcanicAshThought</defName>
+        <durationDays>0.1</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>can't breathe</label>
+                <description>It is SO hard to breathe through this ash!</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>AB_RedFogThoughtPositive</defName>
+        <durationDays>0.1</durationDays>
+        <stackLimit>1</stackLimit>
+        <nullifyingTraits>
+            <li>Psychopath</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>i love unnatural weather</label>
+                <description>Actually... I love this fog. This fog is my friend. I would kiss the fog if I could. Obey. Consume. Caress an ocular jelly. Wait, what?</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="MushroomBase">
+        <defName>AB_PinkRawFungus</defName>
+        <label>pink fungus</label>
+        <description>Raw fungus. This variety lasts a longer time without rotting, making it more valuable.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AB_PinkRawFungus</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.5</MarketValue>
+        </statBases>
+        <ingestible>
+            <foodType>Fungus</foodType>
+        </ingestible>
+        <ingredient>
+            <mergeCompatibilityTags>
+                <li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+            </mergeCompatibilityTags>
+        </ingredient>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>60</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="MushroomBase">
+        <defName>AB_BlueRawFungus</defName>
+        <label>blue fungus</label>
+        <description>Even though these mushrooms look weird, they are very nice to eat, even when raw.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AB_BlueRawFungus</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.45</MarketValue>
+            <Mass>0.027</Mass>
+        </statBases>
+        <ingredient>
+            <mergeCompatibilityTags>
+                <li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+            </mergeCompatibilityTags>
+        </ingredient>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>30</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <tasteThought/>
+            <foodType>Fungus</foodType>
+        </ingestible>
+    </ThingDef>
+
+    <ThingDef ParentName="MushroomBase">
+        <defName>AB_PurpleRawFungus</defName>
+        <label>purple fungus</label>
+        <description>Raw fungus. These particular fungi are more nutritive than usual, but there is a greater chance for them to cause food poisoning.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AB_PurpleRawFungus</texPath>
+        </graphicData>
+        <statBases>
+            <Nutrition>0.075</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.05</FoodPoisonChanceFixedHuman>
+            <MarketValue>1.5</MarketValue>
+        </statBases>
+        <ingredient>
+            <mergeCompatibilityTags>
+                <li MayRequire="Ludeon.RimWorld.Ideology">Fungus</li>
+            </mergeCompatibilityTags>
+        </ingredient>
+        <ingestible>
+            <foodType>Fungus</foodType>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>30</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_PlantFoodRawBase">
+        <defName>AB_RawSlime</defName>
+        <label>slime</label>
+        <description>Raw slime. This thing is edible. Barely.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AB_RawSlime</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.5</MarketValue>
+            <Nutrition>0.02</Nutrition>
+        </statBases>
+        <thingCategories>
+			<li>MeatSubRaw</li>
+		</thingCategories>
+        <ingestible>
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>60</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_PlantFoodRawBase">
+        <defName>AB_RawCrystalHorn</defName>
+        <label>crystal horn</label>
+        <description>Raw Crystal Horn. Only partially organic: part of its structure is clearly crystalline. Edible, but uncomfortably crunchy.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AB_RawCrystalHorn</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.1</MarketValue>
+            <Nutrition>0.07</Nutrition>
+        </statBases>
+        <ingestible>
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>45</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_RoughPlantBase">
+        <defName>AB_RawFrostLeaf</defName>
+        <label>frost leaf</label>
+        <description>These translucent plants seem to be able to grow almost anywhere, even in some snow covered areas. They can be dried in a fire and used to feed herbivore animals efficiently.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AB_RawFrostLeaf</texPath>
+        </graphicData>
+        <stackLimit>300</stackLimit>
+        <statBases>
+            <MarketValue>0.1</MarketValue>
+            <Mass>0.01</Mass>
+            <Flammability>1.5</Flammability>
+            <DeteriorationRate>.5</DeteriorationRate>
+            <Nutrition>0.03</Nutrition>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>60</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <thingCategories>
+            <li>Animalfood</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="FruitFoodRawBase">
+        <defName>AB_RawTentacularFruit</defName>
+        <label>tentacular fruit</label>
+        <description>The blue nodules grow at the end of each branch / tentacle of a tentacular plant, and they produce an eerie rattling sound from time to time.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AB_RawTentacularFruit</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>3</MarketValue>
+            <Mass>0.05</Mass>
+            <Flammability>1.5</Flammability>
+            <Nutrition>0.12</Nutrition>
+        </statBases>
+        <ingestible>
+            <joy>0.03</joy>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+				<daysToRotStart>12</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+        </comps>
+        <thingCategories>
+			<li>FruitFoodRaw</li>
+		</thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="FruitFoodRawBase">
+        <defName>AB_RawIashiphus</defName>
+        <label>iashiphus fruit</label>
+        <description>The fleshy bright red fruit of an iashiphus plant.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AB_RawIashiphus</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue>
+        </statBases>
+        <ingestible>
+            <joy>0.06</joy>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>12</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <thingCategories>
+			<li>FruitFoodRaw</li>
+		</thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_PlantFoodRawBase">
+        <defName>AB_RawBrownBarrelCactus</defName>
+        <label>brown barrel cactus</label>
+        <description>The water-filled bulbs of a brown barrel cactus. Quite tasteless.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AB_RawBrownBarrelCactus</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1</MarketValue>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <thingCategories>
+			<li>BasicPlantFoodRaw</li>
+		</thingCategories>
+        <ingestible>
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>20</daysToRotStart>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_RoughPlantBase">
+        <defName>AB_RawSugarFamewort</defName>
+        <label>sugar famewort</label>
+        <description>These soft bulbs are exceptionally sweet, an ideal condiment for any dish.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AB_RawSugarFamewort</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.5</MarketValue>
+        </statBases>
+        <ingestible>
+            <foodType>VegetableOrFruit</foodType>
+            <joy>0.05</joy>
+            <joyKind>Gluttonous</joyKind>
+        </ingestible>
+        <thingCategories>
+			<li>CookingSupplies</li>
+		</thingCategories>
+        <stuffProps>
+			<categories>
+				<li>Stuff</li>
+			</categories>
+		</stuffProps>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>20</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>AB_RawBloodBouquet</defName>
+        <label>blood bouquet</label>
+        <description>These fruit seem to be as hard as the trunk of the plant they are harvested from, and equally covered in spines. The inner flesh of the fruit tastes like blood-drenched meat, and herbivore animals will refuse to consume it.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AB_RawBloodBouquet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>0.1</Mass>
+            <Bulk>0.15</Bulk>
+            <MarketValue>2</MarketValue>
+            <Nutrition>0.05</Nutrition>
+            <Flammability>0.5</Flammability>
+            <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>4</daysToRotStart>
+                <rotDestroys>True</rotDestroys>
+            </li>
+        </comps>
+        <tickerType>Rare</tickerType>
+        <ingestible>
+            <tasteThought>AteRawFood</tasteThought>
+            <foodType>Meat</foodType>
+            <preferability>DesperateOnly</preferability>
+            <ingestEffect>EatMeat</ingestEffect>
+            <ingestSound>RawMeat_Eat</ingestSound>
+        </ingestible>
+        <thingCategories>
+            <li>MeatSubRaw</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_OrganicProductBase">
+        <defName>AB_BumbledroneFood</defName>
+        <label>bumbledrone jelly</label>
+        <description>This blob of organic matter is produced by bumbledrone caretakers, a caste of bumbledrones that never leaves the subterranean part of the hives. It provides sustenance for bumbledrones who need to leave the hive for any reason, such as foraging or hunting.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/InsectJelly</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+			<MarketValue>8.0</MarketValue>
+			<Mass>0.025</Mass>
+			<Nutrition>0.07</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+        <ingestible>
+			<foodType>AnimalProduct</foodType>
+			<preferability>MealFine</preferability>
+			<joy>0.08</joy>
+			<joyKind>Gluttonous</joyKind>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+			<canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+		</ingestible>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>AB_GiantSeeds</defName>
+        <label>giant sunflower seeds</label>
+        <description>The seeds of the sunflower plant are more commonly eaten as a snack than as part of a meal. They can also be used as garnishes or ingredients in various recipes. These seeds are gigantic!</description>
+        <soundInteract>Grain_Drop</soundInteract>
+        <soundDrop>Grain_Drop</soundDrop>
+        <graphicData>
+            <texPath>Things/Item/Resource/AB_GiantSeeds</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.1</MarketValue>
+        </statBases>
+        <thingCategories Inherit="False">
+			<li>BasicPlantFoodRaw</li>
+		</thingCategories>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>30</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <foodType>VegetableOrFruit</foodType>
+        </ingestible>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--========= General ============-->
+    <JobDef>
+        <defName>AB_OperateCoreSampleDrill</defName>
+        <driverClass>AlphaBiomes.JobDriver_OperateCoreSampleDrill</driverClass>
+        <reportString>drilling at TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+</Defs>

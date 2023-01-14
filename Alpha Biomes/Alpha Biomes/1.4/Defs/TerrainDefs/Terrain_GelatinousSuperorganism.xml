@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_Slime</defName>
+        <label>hardened slime ground</label>
+        <texturePath>Terrain/Surfaces/AB_Slime</texturePath>
+	<pollutedTexturePath>Terrain/Surfaces/AB_Slime_Polluted</pollutedTexturePath>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>340</renderPrecedence>
+        <pathCost>2</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <scatterType>Rocky</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Slime</generatedFilth>
+        <fertility>0.1</fertility>
+        <takeFootprints>True</takeFootprints>
+   
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_RichSlime</defName>
+        <label>rich hardened slime ground</label>
+        <texturePath>Terrain/Surfaces/AB_RichSlime</texturePath>
+	<pollutedTexturePath>Terrain/Surfaces/AB_RichSlime_Polluted</pollutedTexturePath>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>335</renderPrecedence>
+        <pathCost>2</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Slime</generatedFilth>
+        <fertility>0.4</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tags>
+			<li>Soil</li>
+		</tags>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_SlimeGrass</defName>
+        <label>slime grass</label>
+        <texturePath>Terrain/Surfaces/AB_SlimeGrass</texturePath>
+	<pollutedTexturePath>Terrain/Surfaces/AB_SlimeGrass_Polluted</pollutedTexturePath>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>315</renderPrecedence>
+        <pathCost>3</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <generatedFilth>Filth_Slime</generatedFilth>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <fertility>1</fertility>
+        <takeFootprints>True</takeFootprints>
+        <avoidWander>false</avoidWander>
+        <tags>
+			<li>Soil</li>
+		</tags>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_SlimyMud</defName>
+        <label>slimy mud</label>
+        <texturePath>Terrain/Surfaces/AB_SlimyMud</texturePath>
+	<pollutedTexturePath>Terrain/Surfaces/AB_SlimyMud_Polluted</pollutedTexturePath>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>330</renderPrecedence>
+        <pathCost>12</pathCost>
+        <statBases>
+            <Beauty>-4</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-2</Cleanliness>
+        </statBases>
+        <affordances>
+            <li>Light</li>
+			<li>Diggable</li>
+			<li>Bridgeable</li>
+            <li>AB_TarAffordance</li>
+        </affordances>
+        <generatedFilth>Filth_Slime</generatedFilth>
+        <fertility>0</fertility>
+        <takeFootprints>True</takeFootprints>
+        <avoidWander>true</avoidWander>
+        <driesTo>AB_SlimeGrass</driesTo>
+        <tools>
+            <li>
+                <label>slime</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>AB_SlimeInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="SK_WaterShallowBase">
+        <defName>AB_LiquidSlime</defName>
+        <label>shallow liquid slime</label>
+    <texturePath>Terrain/Surfaces/AB_SlimeRamp</texturePath>
+	<pollutedTexturePath>Terrain/Surfaces/AB_SlimeRamp_Polluted</pollutedTexturePath>
+		
+        <waterDepthShader>Map/WaterDepth</waterDepthShader>
+        <renderPrecedence>394</renderPrecedence>
+        <driesTo>AB_SlimeGrass</driesTo>
+    </TerrainDef>
+</Defs>

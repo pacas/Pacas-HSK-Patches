@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <thingClass>AlphaBiomes.Building_CoreSampleDrill</thingClass>
+        <defName>AB_CoreSampleDrill</defName>
+        <label>core sample drill</label>
+        <description>The core sample drill allows you to acquire standard rock types not usually present in a particular biome. It needs to drill pretty deep to do so, and thus it costs quite a lot to build.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/AB_CoreSampleDrill</texPath>
+            <drawSize>(1.3,1.3)</drawSize>
+            <drawRotated>false</drawRotated>
+            <shadowData>
+                <volume>(0.52, 0.53, 0.09)</volume>
+                <offset>(0,0,-0.43)</offset>
+            </shadowData>
+        </graphicData>
+        <size>(1,1)</size>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>70</pathCost>
+        <fillPercent>0.5</fillPercent>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <designationCategory>Production</designationCategory>
+        <specialDisplayRadius>1.5</specialDisplayRadius>
+        <rotatable>true</rotatable>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <uiIconOffset>(0, 0.03)</uiIconOffset>
+        <uiIconScale>0.85</uiIconScale>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <building>
+            <uninstallWork>1800</uninstallWork>
+        </building>
+        <thingCategories>
+            <li>BuildingsProduction</li>
+        </thingCategories>
+        <stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>110</costStuffCount>
+		<costList>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<Mechanism>4</Mechanism>
+		</costList>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <researchPrerequisites>
+            <li>Mining_C1</li>
+        </researchPrerequisites>
+        <statBases>
+			<MaxHitPoints>350</MaxHitPoints>
+			<WorkToBuild>7000</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>-25</Beauty>
+			<Mass>35</Mass>
+			<Cleanliness>-15</Cleanliness>
+		</statBases>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>400</basePowerConsumption>
+			</li>
+            <li Class="AlphaBiomes.CompProperties_CoreSampleDrill"/>
+            <li Class="CompProperties_CreatesInfestations" />
+        </comps>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PollutionTreeBase">
+		<defName>AB_GiantAgariTox</defName>
+		<label>agaritox</label>
+		<description>A giant mushroom that has adapted to growing in extremely polluted environments.\n\nPlant details: Agaritox is a wild plant that can only grow in poilluted soil. Can be harvested for meager amounts of mushroom stalks.</description>
+		<descriptionHyperlinks>
+			<ThingDef>AB_MushroomWoodLog</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>-2</Beauty>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_GiantAgariTox</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.4, 0.6, 0.26)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<blockLight>true</blockLight>
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>25</pathCost>
+		<ingestible/>
+		<plant>
+			<growDays>15</growDays>
+			<harvestYield>15</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>AB_MushroomWoodLog</harvestedThingDef>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>3~5</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PollutionPlantBase">
+		<defName>AB_LandCoral</defName>
+		<label>amethyst land coral fungus</label>
+		<description>A very strange purple coloured fungus that resembles a coral. Grows only in polluted soil.</description>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.2</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_LandCoral</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<ingestible/>
+		<plant>
+			<growDays>2.5</growDays>
+			<harvestWork>40</harvestWork>
+			<visualSizeRange>2~2.5</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+</Defs>

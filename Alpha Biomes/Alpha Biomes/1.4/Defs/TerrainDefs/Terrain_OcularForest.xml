@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>GU_AlienSand</defName>
+        <label>red-tinged ground</label>
+        <texturePath>Terrain/Surfaces/GU_AlienSand</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/GU_AlienSand_Polluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSand</pollutionOverlayTexturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>350</renderPrecedence>
+        <pathCost>4</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <scatterType>SoftDry</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+            <li>GrowSoil</li>
+        </affordances>
+        <generatedFilth>Filth_Sand</generatedFilth>
+        <fertility>0.9</fertility>
+        <tags>
+			<li>Soil</li>
+            <li>Sand</li>
+		</tags>
+        <takeFootprints>True</takeFootprints>
+    </TerrainDef>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>GU_RichAlienSand</defName>
+        <label>rich red-tinged ground</label>
+        <texturePath>Terrain/Surfaces/GU_AlienSand</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/GU_AlienSand_Polluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSand</pollutionOverlayTexturePath>
+        <color>(160,140,140)</color>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>335</renderPrecedence>
+        <pathCost>4</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <scatterType>SoftDry</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+            <li>GrowSoil</li>
+        </affordances>
+        <tags>
+			<li>Soil</li>
+            <li>Sand</li>
+		</tags>
+        <generatedFilth>Filth_Sand</generatedFilth>
+        <fertility>1.2</fertility>
+        <takeFootprints>True</takeFootprints>
+    </TerrainDef>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>GU_AlienSandFine</defName>
+        <label>fine red sand</label>
+        <texturePath>Terrain/Surfaces/GU_AlienSandFine</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/GU_AlienSandFine_Polluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSand</pollutionOverlayTexturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>335</renderPrecedence>
+        <pathCost>2</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <driesTo>GU_AlienSand</driesTo>
+        <affordances>
+            <li>Light</li>
+            <li>Diggable</li>
+        </affordances>
+        <tags>
+            <li>Sand</li>
+		</tags>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0</fertility>
+        <takeFootprints>True</takeFootprints>
+    </TerrainDef>
+
+    <TerrainDef ParentName="SK_WaterShallowBase">
+        <defName>GU_RedWaterShallow</defName>
+        <label>red shallow water</label>
+		
+		<pollutionCloudColor>(90, 87, 80, 0.66)</pollutionCloudColor>
+		<texturePath>Terrain/Surfaces/AB_WaterShallowRamp_Red</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/AB_WaterShallowRamp_Polluted</pollutedTexturePath>
+        <waterDepthShader>Map/WaterDepth</waterDepthShader>
+        <renderPrecedence>394</renderPrecedence>
+        <driesTo>GU_AlienSandFine</driesTo>
+    </TerrainDef>
+
+    <TerrainDef ParentName="SK_WaterDeepBase">
+        <defName>GU_RedWaterDeep</defName>
+        <label>red deep water</label>
+		<texturePath>Terrain/Surfaces/AB_WaterDeepRamp_Red</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/AB_WaterDeepRamp_Polluted</pollutedTexturePath>
+
+
+        <renderPrecedence>395</renderPrecedence>
+    </TerrainDef>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>GU_MossyRed</defName>
+        <label>parched sand</label>
+        <texturePath>Terrain/Surfaces/AB_MossyRed2</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/AB_MossyRed2_Polluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSand</pollutionOverlayTexturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>315</renderPrecedence>
+        <pathCost>3</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+        </affordances>
+        <fertility>0</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tags>
+            <li>Sand</li>
+		</tags>
+        <avoidWander>false</avoidWander>
+    </TerrainDef>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>GU_RedQuartzBase</defName>
+        <label>rough red quartz</label>
+        <texturePath>Terrain/Surfaces/RoughStone</texturePath>
+        <color>(120,50,50)</color>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>315</renderPrecedence>
+        <pathCost>3</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+        </affordances>
+        <fertility>0</fertility>
+        <takeFootprints>false</takeFootprints>
+        <avoidWander>false</avoidWander>
+    </TerrainDef>
+</Defs>

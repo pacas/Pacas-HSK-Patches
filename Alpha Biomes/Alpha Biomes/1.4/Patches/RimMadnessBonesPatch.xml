@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Rim of Madness - Bones</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AB_GallatrossBones"]</xpath>
+                    <value>
+                        <costList>
+                            <BoneItem>150</BoneItem>
+                        </costList>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AB_AncientGallatrossSkull"]</xpath>
+                    <value>
+                        <costList>
+                            <BoneItem>55</BoneItem>
+                        </costList>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AB_AncientBone"]</xpath>
+                    <value>
+                        <costList>
+                            <BoneItem>25</BoneItem>
+                        </costList>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AB_AncientBrokenBone"]</xpath>
+                    <value>
+                        <costList>
+                            <BoneItem>10</BoneItem>
+                        </costList>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AB_AncientVerticalBone"]</xpath>
+                    <value>
+                        <costList>
+                            <BoneItem>40</BoneItem>
+                        </costList>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AB_HugeGallatrossSkeleton"]</xpath>
+                    <value>
+                        <costList>
+                            <BoneItem>250</BoneItem>
+                        </costList>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

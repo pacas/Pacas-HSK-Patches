@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_DenseMud</defName>
+        <label>dense mud</label>
+        <texturePath>Terrain/Surfaces/AB_DenseMud</texturePath>
+	<pollutedTexturePath>Terrain/Surfaces/AB_DenseMud_Polluted</pollutedTexturePath>
+	<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionColor>(1, 1, 1, 1)</pollutionColor>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>340</renderPrecedence>
+        <pathCost>20</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <scatterType>Rocky</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0.8</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tools>
+            <li>
+                <label>mud</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>MudInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+        <tags>
+			<li>Soil</li>
+		</tags>
+    </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_DenseGrass</defName>
+        <label>dense grass</label>
+        <texturePath>Terrain/Surfaces/AB_DenseGrass</texturePath>
+	<pollutedTexturePath>Terrain/Surfaces/AB_DenseGrass_Polluted</pollutedTexturePath>
+	 <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMarsh</pollutionOverlayTexturePath>
+    <pollutionColor>(1, 1, 1, 0.15)</pollutionColor>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>315</renderPrecedence>
+        <pathCost>15</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <fertility>1</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tags>
+			<li>Soil</li>
+		</tags>
+        <avoidWander>false</avoidWander>
+    </TerrainDef>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_WebbedMarshyTerrain</defName>
+        <label>webbed marshy soil</label>
+        <texturePath>Terrain/Surfaces/AB_WebCoveredMarsh</texturePath>
+	<pollutedTexturePath>Terrain/Surfaces/AB_WebCoveredMarsh_Polluted</pollutedTexturePath>
+	 <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMarsh</pollutionOverlayTexturePath>
+    <pollutionColor>(1, 1, 1, 0.15)</pollutionColor>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>337</renderPrecedence>
+        <pathCost>25</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-2</Cleanliness>
+            <Flammability>0.05</Flammability>
+        </statBases>
+        <scatterType>Rocky</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+            <li>Bridgeable</li>
+            <li>AB_TarAffordance</li>
+        </affordances>
+        <burnedDef>MarshyTerrain</burnedDef>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0.75</fertility>
+        <takeFootprints>True</takeFootprints>
+        <driesTo>Soil</driesTo>
+        <tools>
+            <li>
+                <label>mud</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>MudInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+        <tags>
+			<li>Soil</li>
+		</tags>
+    </TerrainDef>
+</Defs>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Animals Expanded — Tropical Rainforest</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AEXP_Gorilla"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.10</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.05</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.01</AB_GelatinousSuperorganism>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AEXP_Jaguar"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.07</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.01</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.01</AB_GelatinousSuperorganism>
+                        <AB_MiasmicMangrove>0.05</AB_MiasmicMangrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AEXP_Lemur"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_GelatinousSuperorganism>0.04</AB_GelatinousSuperorganism>
+                        <AB_MechanoidIntrusion>0.01</AB_MechanoidIntrusion>
+                        <AB_RockyCrags>0.07</AB_RockyCrags>
+                        <AB_MiasmicMangrove>0.01</AB_MiasmicMangrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AEXP_Mandrill"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.07</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.05</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.03</AB_GelatinousSuperorganism>
+                        <AB_MiasmicMangrove>0.01</AB_MiasmicMangrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AEXP_Tapir"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.15</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.05</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.03</AB_GelatinousSuperorganism>
+                        <AB_MiasmicMangrove>0.01</AB_MiasmicMangrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="AEXP_Tiger"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.10</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.05</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.03</AB_GelatinousSuperorganism>
+                        <AB_MiasmicMangrove>0.01</AB_MiasmicMangrove>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
