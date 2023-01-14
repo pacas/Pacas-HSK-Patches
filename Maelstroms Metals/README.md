@@ -14,6 +14,11 @@ This mod adds ten new metals to the game, all of which are craftable either from
 Этот мод добавляет в игру десять новых металлов, все из которых можно получить либо из других металлов, либо из базовых ресурсов, уже включенных в ванильную игру и HSK.<br><br>
 <img src="https://i.imgur.com/5KVUmeE.png">
 <br>
+Q: For which version of the HSK?<br>
+A: 1.3 and 1.4.<br>
+Q: Для какой версии ХСК?<br>
+A: 1.3 и 1.4.<br>
+#-------------------------------------------------------------#<br>
 Q: Where can I get these alloys?<br>
 A: Find from raiders, in buildings at map generation or by smelting.<br>
 Q: Где я могу получить эти сплавы?<br>

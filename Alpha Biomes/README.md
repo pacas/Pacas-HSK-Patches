@@ -41,6 +41,11 @@ These animals will spawn in certain biomes, some others will only be available v
 - Миазматические мангровые заросли: опасный тропический биом, полный изнуряющих болезней.<br><br>
 Биомы настроены так, чтобы не занимать много места на карте мира, вы можете сгенерировать планету заново, если какой-либо биом не появился на карте, поскольку они обладают различными показателями влажности и температуры.<br><br>
 <img src="https://i.imgur.com/5KVUmeE.png"><br>
+Q: For which version of the HSK?<br>
+A: 1.3 and 1.4.<br>
+Q: Для какой версии ХСК?<br>
+A: 1.3 и 1.4.<br>
+#-------------------------------------------------------------#<br>
 Q: Is this mod compatibile with Combat Extended?<br>
 A: This is HSK convertion, of course.<br>
 Q: Совместимо с Combat Extended?<br>

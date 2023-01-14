@@ -669,7 +669,7 @@
 		</ritualFocus>
     </ThingDef>
 	
-	<ThingDef ParentName="BuildingBase">
+	<ThingDef ParentName="SK_BuildingBase">
 		<defName>EMPColumnMod</defName>
 		<label>pulse column</label>
 		<description>An advanced column for base defense. Upon detecting an enemy in any direction, it will emits a strong pulse and flash into the same direction. Can be reloaded.</description>
@@ -690,6 +690,7 @@
 		<uiIconPath>Buildings/EColumn</uiIconPath>
 		<tickerType>Normal</tickerType>
 		<altitudeLayer>Building</altitudeLayer>
+        <minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>
 			<li>BuildingsSecurity</li>
 		</thingCategories>
