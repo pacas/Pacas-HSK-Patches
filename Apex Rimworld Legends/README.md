@@ -24,6 +24,11 @@ Following weapons have been added to the game. Bear in mind that the statistics 
 <br>
 <img src="https://i.imgur.com/5KVUmeE.png">
 <br>
+Q: For which version of the HSK?<br>
+A: 1.3 and 1.4.<br>
+Q: Для какой версии ХСК?<br>
+A: 1.3 и 1.4.<br>
+#-------------------------------------------------------------#<br>
 Q: Do the Apex: Rimworld Legends weapons spawn randomly on pawns?<br>
 A: Yes, they should be added to the available item pool when spawning raids.<br>
 Q: Появляется ли случайно оружие Apex: Rimworld Legends у пешек?<br>
