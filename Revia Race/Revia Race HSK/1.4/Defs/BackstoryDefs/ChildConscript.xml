@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <AlienRace.AlienBackstoryDef>
+        <defName>ReviaRaceBackstoryChildConscript</defName>
+        <title>Revian Conscript</title>
+        <titleShort>Conscript</titleShort>
+    <baseDesc>[PAWN_nameDef] was conscripted at a young age to be toughened up to be a part of the Revian war machine.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaRaceTemplar</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+        <key>Melee</key>
+        <value>4</value>
+            </li>
+            <li>
+        <key>Shooting</key>
+        <value>4</value>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+        <linkedBackstory>ReviaRaceBackstoryAdultShadowGuard</linkedBackstory>
+    </AlienRace.AlienBackstoryDef>
+</Defs>

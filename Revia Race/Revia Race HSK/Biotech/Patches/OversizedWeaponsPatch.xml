@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationRemove">
+            <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="ReviaRaceAlien"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+    </Operation>
+</Patch>

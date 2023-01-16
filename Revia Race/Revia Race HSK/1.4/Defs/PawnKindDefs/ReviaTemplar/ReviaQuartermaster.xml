@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef ParentName="ReviaPawnBase">
+        <defName>ReviaRaceQuartermaster</defName>
+        <label>Revia quartermaster</label>
+        <defaultFactionType>ReviaTemplarFaction</defaultFactionType>
+        <race>ReviaRaceAlien</race>
+        <combatPower>220</combatPower>
+        <itemQuality>Excellent</itemQuality>
+        <apparelTags>
+            <li>Outlander</li>
+            <li>Apparel_TacVest</li>
+        </apparelTags>
+        <isFighter>false</isFighter>
+        <trader>true</trader>
+        <apparelRequired>
+            <li>CE_Apparel_Backpack</li>
+            <li>Marine_Armor</li>
+        </apparelRequired>
+        <apparelMoney>1600~2800</apparelMoney>
+        <weaponTags>
+            <li>ReviaRangedAdvanced</li>
+        </weaponTags>
+        <weaponMoney>1800~2500</weaponMoney>
+        <initialWillRange>0.8~1.0</initialWillRange>
+        <initialResistanceRange>20~25</initialResistanceRange>
+        <techHediffsChance>0.5</techHediffsChance>
+        <techHediffsMoney>3000~5000</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <techHediffsRequired>
+            <li>DeathAcidifier</li>
+        </techHediffsRequired>
+        <invNutrition>5</invNutrition>
+        <inventoryOptions>
+            <skipChance>0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>100</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>2000~3250</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <xenotypeSet Inherit="False">
+	      <xenotypeChances>
+	        <RevianXenotype MayRequire="Ludeon.Rimworld.Biotech">999</RevianXenotype>
+	      </xenotypeChances>
+	      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+	    </xenotypeSet>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                  <primaryMagazineCount>
+                    <min>2</min>
+                    <max>5</max>
+                  </primaryMagazineCount>
+                  <sidearms>
+                    <li>
+                      <generateChance>1</generateChance>
+                      <weaponTags>
+                        <li>ReviaMeleeAdvanced</li>
+                      </weaponTags>
+                    </li>
+                  </sidearms>
+                </li>
+        </modExtensions>
+    </PawnKindDef>
+</Defs>

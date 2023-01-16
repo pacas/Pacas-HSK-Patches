@@ -29,6 +29,11 @@ A: Yes.<br>
 Q: Можно ли скрафтить оружие Ревий?<br>
 A: Да.<br>
 #-------------------------------------------------------------#<br>
+Q: Do I need Biotech DLC?<br>
+A: No! It works with or without it in full functionality.<br>
+Q: Нужно ли ДЛС Биотех?<br>
+A: Нет! Работает с ним и без него в полном функционале.<br>
+#-------------------------------------------------------------#<br>
 Q: HSK races balance and compatibily?<br>
 A: Revias are balanced for the HSK races and interact correctly.<br>
 Q: Совместимость и баланс с расами ХСК?<br>

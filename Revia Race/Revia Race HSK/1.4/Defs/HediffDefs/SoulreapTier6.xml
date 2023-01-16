@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef>
+        <defName>ReviaRaceSoulreapTier6</defName>
+        <label>Soul Reap (6)</label>
+        <description>An indication of how many lives this Revia has taken. Revia grow stronger with the more lives that they take.</description>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.8, 0.4, 0.4)</defaultLabelColor>
+        <causesNeed>ReviaRaceBloodthirstNeed</causesNeed>
+        <stages>
+            <li>
+                <hungerRateFactor>0.95</hungerRateFactor>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.20</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statFactors>
+                    <IncomingDamageFactor>0.77</IncomingDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <MentalBreakThreshold>0.05</MentalBreakThreshold>
+                    <ImmunityGainSpeed>0.4</ImmunityGainSpeed>
+                    <CarryingCapacity>3</CarryingCapacity>
+                    <SmokeSensitivity>-0.16</SmokeSensitivity>
+                    <ToxicResistance>0.16</ToxicResistance>
+                    <MarketValue>400</MarketValue>
+                    <Suppressability>-0.4</Suppressability>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

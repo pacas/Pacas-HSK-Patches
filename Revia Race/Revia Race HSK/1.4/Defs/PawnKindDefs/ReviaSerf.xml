@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef ParentName="ReviaPawnBase">
+        <defName>ReviaRaceSerf</defName>
+        <label>revian serf</label>
+        <race>ReviaRaceAlien</race>
+        <chemicalAddictionChance>0.00</chemicalAddictionChance>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelTags>
+            <li>Medieval</li>
+            <li>Apparel_TribalBackpack</li>
+        </apparelTags>
+        <apparelMoney>100~250</apparelMoney>
+        <initialWillRange>0.8~1.0</initialWillRange>
+        <initialResistanceRange>12~15</initialResistanceRange>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <techHediffsChance>0</techHediffsChance>
+        <combatPower>25</combatPower>
+        <backstoryCategories>
+            <li>ReviaRaceBackstory</li>
+        </backstoryCategories>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <RevianXenotype MayRequire="Ludeon.RimWorld.Biotech">999</RevianXenotype>
+      </xenotypeChances>
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+    </xenotypeSet>
+    </PawnKindDef>
+</Defs>

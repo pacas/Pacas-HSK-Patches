@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef ParentName="ReviaPawnBase">
+        <defName>ReviaRaceInitiate</defName>
+        <label>Revia Initiate</label>
+        <defaultFactionType>ReviaTemplarFaction</defaultFactionType>
+        <race>ReviaRaceAlien</race>
+        <combatPower>170</combatPower>
+        <itemQuality>Good</itemQuality>
+        <apparelTags>
+			<li>Outlander</li>
+        </apparelTags>
+        <apparelMoney>800~2000</apparelMoney>
+        <weaponTags>
+            <li>ReviaMeleeAdvanced</li>
+        </weaponTags>
+        <weaponMoney>1700~2500</weaponMoney>
+        <initialWillRange>0.6~0.8</initialWillRange>
+        <initialResistanceRange>12~15</initialResistanceRange>
+        <isFighter>true</isFighter>
+        <invNutrition>2</invNutrition>
+        <inventoryOptions>
+            <skipChance>0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>20</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1~1</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <techHediffsRequired>
+            <li>DeathAcidifier</li>
+        </techHediffsRequired>
+        <xenotypeSet Inherit="False">
+	      <xenotypeChances>
+	        <RevianXenotype MayRequire="Ludeon.Rimworld.Biotech">999</RevianXenotype>
+	      </xenotypeChances>
+	      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+	    </xenotypeSet>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <sidearms>
+                    <li>
+                        <magazineCount>
+							<min>2</min>
+							<max>4</max>
+						</magazineCount>
+                        <generateChance>0.5</generateChance>
+                        <weaponTags>
+                            <li>ReviaRangedAdvanced</li>
+                            <li>TierOnePistol</li>
+                            <li>TierOneSMG</li>
+                        </weaponTags>
+                    </li>
+                </sidearms>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+</Defs>

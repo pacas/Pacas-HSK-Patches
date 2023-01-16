@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef ParentName="GeneTailBase">
+        <defName>ReviaTail</defName>
+        <label>Revian tail</label>
+        <description>Revian tail. People say that Skarne blesses their carriers.</description>
+        <geneClass>ReviaRace.Genes.ReviaTailGene</geneClass>
+        <iconPath>UI/icons/ReviaTail_icon</iconPath>
+        <iconColor>(0.75, 0.75, 0.75)</iconColor>
+        <displayOrderInCategory>1000</displayOrderInCategory>
+        <statOffsets>
+            <MeleeDodgeChance>0.12</MeleeDodgeChance>
+            <MoveSpeed>0.3</MoveSpeed>
+            <LifespanFactor>1.7</LifespanFactor>
+        </statOffsets>
+        <biostatMet>-2</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <minAgeActive>3</minAgeActive>
+        <graphicData>
+            <graphicPath>Things/Tails/Tail1</graphicPath>
+            <colorType>Hair</colorType>
+            <drawLoc>Tailbone</drawLoc>
+            <drawScale>1.70</drawScale>
+            <drawOffsetNorth>(0, 0, 0)</drawOffsetNorth>
+            <drawOffsetSouth>(0, 0, 0)</drawOffsetSouth>
+            <drawOffsetEast>(0, 0, 0)</drawOffsetEast>
+        </graphicData>
+        <causesNeed>ReviaRaceBloodthirstNeed</causesNeed>
+        <modExtensions>
+            <li Class="BetterGeneGraphicsFramework.GraphicsWithAge">
+                <ages>
+                    <li>0</li>
+                </ages>
+                <bodyPartExpressions>
+                    <li>Global -- ReviaRaceSoulreapTier1</li>
+                    <li>Global -- ReviaRaceSoulreapTier2</li>
+                    <li>Global -- ReviaRaceSoulreapTier3</li>
+                    <li>Global -- ReviaRaceSoulreapTier4</li>
+                    <li>Global -- ReviaRaceSoulreapTier5</li>
+                    <li>Global -- ReviaRaceSoulreapTier6</li>
+                    <li>Global -- ReviaRaceSoulreapTier7</li>
+                    <li>Global -- ReviaRaceSoulreapTier8</li>
+                    <li>Global -- ReviaRaceSoulreapTier9</li>
+                    <!--etc-->
+                </bodyPartExpressions>
+                <graphicPaths>
+                    <li>Things/Tails/Tail1</li>
+                    <li>Things/Tails/Tail2</li>
+                    <li>Things/Tails/Tail3</li>
+                    <li>Things/Tails/Tail4</li>
+                    <li>Things/Tails/Tail5</li>
+                    <li>Things/Tails/Tail6</li>
+                    <li>Things/Tails/Tail7</li>
+                    <li>Things/Tails/Tail8</li>
+                    <li>Things/Tails/Tail9</li>
+                    <!--etc-->
+                </graphicPaths>
+            </li>
+            <li Class="BetterGeneGraphicsFramework.ShaderSupport">
+                <shaderType>CutoutComplex</shaderType>
+                <colorType>Hair</colorType>
+            </li>
+            <li Class="BetterGeneGraphicsFramework.BetterTailRendering">
+                <disableBodyTypeScaleForAdult>true</disableBodyTypeScaleForAdult>
+                <disableBodyTypeScaleForChildren>false</disableBodyTypeScaleForChildren>
+                <bodyTypeOffsetNorth>
+                    <female>(-0.09, 0.9, -0.44)</female>
+                    <thin>(-0.15, 0.2, -0.45)</thin>
+                    <baby>(-0.007, 0.83, 0)</baby>
+                    <child>(-0.09, 0.92, -0.37)</child>
+                    <hulk>(-0.09, 0.9, -0.52)</hulk>
+                    <fat>(-0.06, 0.9, -0.51)</fat>
+                    <male>(-0.09, 0.9, -0.59)</male>
+                    <femaleBB MayRequire="ssulunge.BBBodySupport">(-0.09, 0.9, -0.44)</femaleBB>
+                </bodyTypeOffsetNorth>
+                <bodyTypeOffsetSouth>
+                    <female>(-0.08, -0.4, 0)</female>
+                    <thin>(-0.12, -0.4, 0)</thin>
+                    <baby>(-0.40, -0.4, 0)</baby>
+                    <child>(-0.08, -0.1, 0.17)</child>
+                    <hulk>(-0.08, -0.4, 0)</hulk>
+                    <fat>(-0.02, -0.4, -0.13)</fat>
+                    <male>(-0.08, -0.4, 0)</male>
+                    <femaleBB MayRequire="ssulunge.BBBodySupport">(-0.08, -0.4, 0)</femaleBB>
+                </bodyTypeOffsetSouth>
+                <bodyTypeOffsetEast>
+                    <female>(-0.375, -0.4, -0.5)</female>
+                    <thin>(-0.52, -0.4, -0.5)</thin>
+                    <baby>(-0.4, -0.4, 0)</baby>
+                    <child>(-0.31, -0.4, -0.32)</child>
+                    <fat>(-0.375, -0.4, -0.41)</fat>
+                    <hulk>(-0.5, -0.4, -0.52)</hulk>
+                    <male>(-0.387, -0.4, -0.58)</male>
+                    <femaleBB MayRequire="ssulunge.BBBodySupport">(-0.375, -0.4, -0.5)</femaleBB>
+                </bodyTypeOffsetEast>
+            </li>
+        </modExtensions>
+        <forcedTraits>
+            <li>
+                <def>Bloodlust</def>
+            </li>
+        </forcedTraits>
+    </GeneDef>
+    <GeneDef>
+        <defName>ReviaClaws</defName>
+        <label>Revian claws</label>
+        <iconPath>UI/icons/ReviaClaw_icon</iconPath>
+        <description>Sharp revian claws. Makes enemy bleeding</description>
+        <geneClass>ReviaRace.Genes.ReviaClawsGene</geneClass>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>0</biostatMet>
+    </GeneDef>
+    <GeneDef ParentName="GeneEarsBase">
+        <defName>ReviaEars</defName>
+        <label>Revian ears</label>
+        <iconPath>UI/icons/ReviaEar_icon</iconPath>
+        <description>Revian ear. Helps them hear better than the average person. And looks nice.</description>
+        <geneClass>ReviaRace.Genes.ReviaEarGene</geneClass>
+        <graphicData>
+            <drawScale>1.00</drawScale>
+            <drawOffsetNorth>(0, -0.3, 0)</drawOffsetNorth>
+            <graphicPath>Things/Ears/Adult/EarMerged/EarMerged</graphicPath>
+            <colorType>Hair</colorType>
+            <useSkinShader>False</useSkinShader>
+        </graphicData>
+        <capMods>
+            <li>
+                <capacity>Hearing</capacity>
+                <postFactor>1.15</postFactor>
+            </li>
+        </capMods>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <modExtensions>
+            <li Class="BetterGeneGraphicsFramework.GraphicsWithAge">
+                <ages>
+                    <li>-1</li>
+                </ages>
+                <bodyPartExpressions>
+                    <li>Left ear|Right ear</li>
+                    <li>!Left ear|Right ear</li>
+                    <li>Left ear|!Right ear</li>
+                    <li>!Left ear|!Right ear</li>
+                </bodyPartExpressions>
+                <graphicPaths>
+                    <!--adult-->
+                    <li>Things/Ears/Adult/EarMerged/EarMerged</li>
+                    <li>Things/Ears/Adult/EarRight/EarRight</li>
+                    <li>Things/Ears/Adult/EarLeft/EarLeft</li>
+                    <li>Things/Ears/EarNone/EarNone</li>
+                </graphicPaths>
+            </li>
+            <li Class="BetterGeneGraphicsFramework.ShaderSupport">
+                <shaderType>CutoutComplex</shaderType>
+                <colorType>Hair</colorType>
+            </li>
+        </modExtensions>
+    </GeneDef>
+    <GeneDef>
+        <defName>ReviaTeeth</defName>
+        <label>Revian teeth</label>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <iconPath>UI/icons/ReviaTooth_icon</iconPath>
+        <description>Sharp teeth that cause the victim to bleed.</description>
+        <geneClass>ReviaRace.Genes.ReviaTeethGene</geneClass>
+    </GeneDef>
+</Defs>

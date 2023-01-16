@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>jecrell.jecstools</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="ReviaBaseMeleeWeapon"]/comps</xpath>
+            <value>
+                <li>CompOversizedWeapon.CompProperties_OversizedWeapon</li>
+            </value>
+        </match>
+    </Operation>
+</Patch>

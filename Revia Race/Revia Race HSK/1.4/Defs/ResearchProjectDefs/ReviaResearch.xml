@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ResearchProjectDef ParentName="PrimitiveBase">
+        <defName>ReviaRaceBasicEquipment</defName>
+        <label>Makeshift Revian Equipment</label>
+        <description>Create basic Revian equipment.</description>
+        <techLevel>Medieval</techLevel>
+        <baseCost>500</baseCost>
+        <prerequisites>
+            <li>Craft_B1</li>
+        </prerequisites>
+        <tab>Weapon_SK</tab>
+        <researchViewX>4.00</researchViewX>
+		<researchViewY>28.00</researchViewY>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef ParentName="PrimitiveBase">
+        <defName>ReviaRaceReligionBase</defName>
+        <label>Revian religious ceremonies</label>
+        <description>Learn the fundamentals of giving proper offerings to the Revian gods.</description>
+        <baseCost>500</baseCost>
+        <techLevel>Neolithic</techLevel>
+        <tab>Buildings_SK</tab>
+        <researchViewX>2.00</researchViewX>
+		<researchViewY>17.00</researchViewY>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef ParentName="PrimitiveBase">
+        <defName>ReviaRaceBloodBenediction</defName>
+        <label>Blood benediction</label>
+        <description>Learn the rites to invoke the blood god's blessings for an upcoming battle.</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Medieval</techLevel>
+        <prerequisites>
+            <li>ReviaRaceReligionBase</li>
+        </prerequisites>
+        <tab>Buildings_SK</tab>
+        <researchViewX>3.00</researchViewX>
+		<researchViewY>17.00</researchViewY>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef ParentName="MedievalBase">
+        <defName>ReviaRaceIntermediateEquipment</defName>
+        <label>Revian Equipment</label>
+        <description>Create intermediate Revian equipment.</description>
+        <baseCost>600</baseCost>
+        <techLevel>Medieval</techLevel>
+        <tab>Weapon_SK</tab>
+        <prerequisites>
+            <li>ReviaRaceBasicEquipment</li>
+            <li>RecurveBow</li>
+        </prerequisites>
+        <researchViewX>5.00</researchViewX>
+		<researchViewY>28.00</researchViewY>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef ParentName="MedievalBase">
+        <defName>ReviaRaceConsecratedWeaponry</defName>
+        <label>Revian consecrated weaponry</label>
+        <description>Invoking the blessings of the blood god to imbue weapons with greater capacity for carnage.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Medieval</techLevel>
+        <tab>Buildings_SK</tab>
+        <prerequisites>
+            <li>ReviaRaceReligionBase</li>
+            <li>ReviaRaceIntermediateEquipment</li>
+        </prerequisites>
+        <researchViewX>7.00</researchViewX>
+        <researchViewY>17.00</researchViewY>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef ParentName="IndustrialBase">
+        <defName>ReviaRaceAdvancedEquipment</defName>
+        <label>Advanced Revian Equipment</label>
+        <description>Create advanced Revian equipment.</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>Weapon_SK</tab>
+        <prerequisites>
+            <li>ReviaRaceIntermediateEquipment</li>
+            <li>GasOperation</li>
+        </prerequisites>
+        <researchViewX>10.00</researchViewX>
+		<researchViewY>28.00</researchViewY>
+    </ResearchProjectDef>
+    
+    
+</Defs>

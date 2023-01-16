@@ -1,0 +1,16 @@
+<Defs>
+    <ThoughtDef>
+        <defName>ReviaGeneSetIncomplete</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>ReviaGeneSetIncompled</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>Something missing</label>
+                <description>Something makes me feel imperfect.</description>
+                <baseMoodEffect>-12</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

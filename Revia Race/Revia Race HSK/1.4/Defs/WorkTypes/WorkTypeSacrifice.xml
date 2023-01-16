@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <WorkTypeDef>
+        <defName>ReviaSacrifice</defName>
+        <labelShort>Sacrifice</labelShort>
+        <pawnLabel>Petitioner</pawnLabel>
+        <gerundLabel>sacrificing</gerundLabel>
+        <description>Sacrifice things to honour the gods.</description>
+        <verb>Sacrifice</verb>
+        <naturalPriority>102</naturalPriority>
+        <alwaysStartActive>false</alwaysStartActive>
+        <requireCapableColonist>true</requireCapableColonist>
+        <workTags>
+            <li>AllWork</li>
+        </workTags>
+    </WorkTypeDef>
+</Defs>

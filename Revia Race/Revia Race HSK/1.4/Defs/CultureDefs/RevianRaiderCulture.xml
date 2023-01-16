@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <CultureDef>
+        <defName>ReviaRaceRaiderCulture</defName>
+        <label>Barbarian Revian</label>
+        <description>A loosely structured barbaric culture revolving around bloodshed and ritual sacrifice.</description>
+        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">ReviaRaiderIdeoNamer</ideoNameMaker>
+        <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">ReviaRaiderNamerDeity</deityNameMaker>
+        <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">ReviaRaiderNamerDeityType</deityTypeMaker>
+        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">ReviaRaiderNamerLeader</leaderTitleMaker>
+        <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">ReviaNamerFestival</festivalNameMaker>
+        <allowedPlaceTags>
+            <li>OriginTribal</li>
+        </allowedPlaceTags>
+        <iconPath>World/ReviaEmblem</iconPath>
+        <iconColor>(0.3, 0.3, 0.3)</iconColor>
+        <preferredWeaponClasses>
+            <noble>Melee</noble>
+            <despised>Ranged</despised>
+        </preferredWeaponClasses>
+        <thingStyleCategories>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <category>Totemic</category>
+                <priority>2</priority>
+            </li>
+        </thingStyleCategories>
+        <styleItemTags>
+            <li>
+                <tag>Tribal</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+      
+            <li>
+                <tag>Rural</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoBeard</tag>
+                <baseWeight>10</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoTattoo</tag>
+                <baseWeight>10</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+    </CultureDef>
+</Defs>

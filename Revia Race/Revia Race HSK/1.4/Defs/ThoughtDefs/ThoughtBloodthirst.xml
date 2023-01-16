@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThoughtDef>
+        <defName>NeedBloodthirst</defName>
+        <workerClass>ReviaRace.Workers.ThoughtWorkerBloodthirst</workerClass>
+        <stages>
+            <li>
+                <label>bloodrage</label>
+                <description>I need to bury a blade in something. Skarne demands an offering!</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+            <li>
+                <label>unbridled bloodthirst</label>
+                <description>It's been some time since I last spilled some blood. The gods need their sustenance!</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+            <li>
+                <label>unslaked bloodthirst</label>
+                <description>This period of idleness is unbecoming...</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>itching for a fight</label>
+                <description>I should be looking for my next offering.</description>
+                <baseMoodEffect>0</baseMoodEffect>
+            </li>
+            <li>
+                <label>bloodthirst sated</label>
+                <description>Skarne must be pleased with my latest offerings!</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

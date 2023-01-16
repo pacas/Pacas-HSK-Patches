@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="WeaponIndustrialBase">
+        <defName>ReviaChainSword</defName>
+        <label>shredder</label>
+        <description>A weaponised chainsaw with hardened titanium teeth. The teeth are angled outwards to maximise wound size.</description>
+        <weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<thingCategories>
+			<li>ReviaCategoryMelee</li>
+		</thingCategories>
+        <graphicData>
+            <texPath>Things/Item/Weapons/Chainsword</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <costList>
+            <TitaniumBar>35</TitaniumBar>
+            <ComponentIndustrial>6</ComponentIndustrial>
+            <Chemfuel>50</Chemfuel>
+        </costList>
+        <costStuffCount>100</costStuffCount>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <weaponTags>
+            <li>ReviaMeleeAdvanced</li>
+        </weaponTags>
+        <statBases>
+            <WorkToMake>18200</WorkToMake>
+            <Mass>4.00</Mass>
+            <Bulk>8</Bulk>
+            <MeleeCounterParryBonus>1.05</MeleeCounterParryBonus>
+        </statBases>
+        <equippedStatOffsets>
+            <ButcheryFleshSpeed>0.35</ButcheryFleshSpeed>
+            <MeleeCritChance>0.85</MeleeCritChance>
+            <MeleeParryChance>0.25</MeleeParryChance>
+            <MeleeDodgeChance>0.5</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>ReviaRaceAdvancedEquipment</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+                <Intellectual>6</Intellectual>
+            </skillRequirements>
+        </recipeMaker>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>2.65</cooldownTime>
+                <chanceFactor>0.05</chanceFactor>
+                <armorPenetrationBlunt>1.28</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>teeth</label>
+                <capacities>
+                    <li>Gash</li>
+                </capacities>
+                <power>37</power>
+                <cooldownTime>1.76</cooldownTime>
+                <chanceFactor>1.2</chanceFactor>
+                <armorPenetrationBlunt>5.48</armorPenetrationBlunt>
+                <armorPenetrationSharp>11.44</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>

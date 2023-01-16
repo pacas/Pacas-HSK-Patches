@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <AlienRace.AlienBackstoryDef>
+        <defName>ReviaRaceBackstoryChildOrphan</defName>
+        <title>Revian Orphan Child</title>
+        <titleShort>Orphan</titleShort>
+    <baseDesc>[PAWN_nameDef] was a street rat. [PAWN_possessive] parents were killed in the constant blood wars of Revia society, and [PAWN_pronoun] was taken in by an order of assassins. [PAWN_pronoun] learned much about how to wield blades as a result - and had plenty of practice.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaMarauder</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+        <key>Melee</key>
+        <value>6</value>
+            </li>
+        </skillGains>
+        <linkedBackstory>ReviaRaceBackstoryAdultAssassin</linkedBackstory>
+    </AlienRace.AlienBackstoryDef>
+</Defs>

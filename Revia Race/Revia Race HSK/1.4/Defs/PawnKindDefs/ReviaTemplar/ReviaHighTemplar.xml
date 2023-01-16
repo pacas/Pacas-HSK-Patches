@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef ParentName="ReviaPawnBase">
+        <defName>ReviaRaceHighTemplar</defName>
+        <label>Revia High Templar</label>
+        <defaultFactionType>ReviaTemplarFaction</defaultFactionType>
+        <race>ReviaRaceAlien</race>
+        <combatPower>700</combatPower>
+        <factionLeader>true</factionLeader>
+        <minGenerationAge>30</minGenerationAge>
+        <gearHealthRange>1~1</gearHealthRange>
+        <itemQuality>Excellent</itemQuality>
+        <apparelTags>
+            <li>OrionMedium</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>Apparello_LPow</li>
+            <li>Apparello_GShell</li>
+        </apparelRequired>
+        <apparelMoney>9999~9999</apparelMoney>
+        <weaponTags>
+            <li>SNIP4</li>
+            <li>RF4</li>
+			<li>ADR3</li>
+            <li>MG2</li>
+        </weaponTags>
+        <biocodeWeaponChance>1.0</biocodeWeaponChance>
+        <weaponMoney>9999~9999</weaponMoney>
+        <initialWillRange>1.0~1.0</initialWillRange>
+        <initialResistanceRange>60~80</initialResistanceRange>
+        <techHediffsChance>1.0</techHediffsChance>
+        <techHediffsMoney>9999~9999</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <techHediffsRequired>
+            <li>DeathAcidifier</li>
+        </techHediffsRequired>
+        <invNutrition>5</invNutrition>
+        <inventoryOptions>
+            <skipChance>0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>20</choiceChance>
+                    <thingDef>MedicineUltratech</thingDef>
+                    <countRange>2~4</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <xenotypeSet Inherit="False">
+	      <xenotypeChances>
+	        <RevianXenotype MayRequire="Ludeon.Rimworld.Biotech">999</RevianXenotype>
+	      </xenotypeChances>
+	      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+	    </xenotypeSet>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>3</min>
+                    <max>7</max>
+                </primaryMagazineCount>
+                <sidearms>
+                    <li>
+                        <generateChance>0.7</generateChance>
+                        <weaponTags>
+                            <li>ReviaMeleeLegendary</li>
+                        </weaponTags>
+                    </li>
+                </sidearms>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+</Defs>

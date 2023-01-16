@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef ParentName="ReviaPawnBase">
+        <defName>ReviaRaceTemplar</defName>
+        <label>Revia Templar</label>
+        <defaultFactionType>ReviaTemplarFaction</defaultFactionType>
+        <race>ReviaRaceAlien</race>
+        <combatPower>430</combatPower>
+        <itemQuality>Excellent</itemQuality>
+        <apparelTags>
+            <li>OrionLight</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>Apparel_TacVest</li>
+            <li>Tactical_Helmet</li>
+            <li>Marine_Armor</li>
+        </apparelRequired>
+        <apparelMoney>1400~2200</apparelMoney>
+        <weaponTags>
+            <li>TierTwoRifle</li>
+            <li>ReviaRangedAdvanced</li>
+			<li>SniperRifle</li>
+        </weaponTags>
+        <initialWillRange>0.8~1.0</initialWillRange>
+        <initialResistanceRange>25~40</initialResistanceRange>
+        <weaponMoney>1500~2600</weaponMoney>
+        <techHediffsChance>0.5</techHediffsChance>
+        <techHediffsMoney>3000~5000</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <techHediffsRequired>
+            <li>DeathAcidifier</li>
+        </techHediffsRequired>
+        <isFighter>true</isFighter>
+        <invNutrition>5</invNutrition>
+        <inventoryOptions>
+            <skipChance>0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>20</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>4~5</countRange>
+                </li>
+                <li>
+                    <choiceChance>40</choiceChance>
+                    <thingDef>ReviaRaceRedHaze</thingDef>
+                    <countRange>3~5</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <xenotypeSet Inherit="False">
+	      <xenotypeChances>
+	        <RevianXenotype MayRequire="Ludeon.Rimworld.Biotech">999</RevianXenotype>
+	      </xenotypeChances>
+	      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+	    </xenotypeSet>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension">
+                <primaryMagazineCount>
+                    <min>2</min>
+                    <max>5</max>
+                </primaryMagazineCount>
+                <sidearms>
+                    <li>
+                        <generateChance>1</generateChance>
+                        <weaponTags>
+                            <li>ReviaMeleeAdvanced</li>
+                            <li>ReviaMeleeLegendary</li>
+                        </weaponTags>
+                    </li>
+                </sidearms>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+</Defs>

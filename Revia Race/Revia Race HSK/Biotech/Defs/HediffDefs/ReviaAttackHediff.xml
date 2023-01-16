@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef>
+        <defName>ReviaClaws</defName>
+        <label>claws</label>
+        <hediffClass>Hediff_Implant</hediffClass>
+        <description>Revia attack</description>
+        <stages>
+            <li>
+                <becomeVisible>False</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>claw</label>
+                        <capacities>
+                            <li>Scratch</li>
+                        </capacities>
+                        <power>6</power>
+                        <cooldownTime>1</cooldownTime>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <addedPartProps>
+            <isGoodWeapon>true</isGoodWeapon>
+            <solid>true</solid>
+            <partEfficiency>1.00</partEfficiency>
+            <betterThanNatural>False</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+    <HediffDef>
+        <defName>ReviaTeeth</defName>
+        <label>teeth</label>
+        <description>Revia attack</description>
+        <hediffClass>Hediff_Implant</hediffClass>
+        <stages>
+            <li>
+                <becomeVisible>False</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>teeth</label>
+                        <capacities>
+                            <li>Bite</li>
+                        </capacities>
+                        <power>11</power>
+                        <cooldownTime>1.8</cooldownTime>
+                        <chanceFactor>0.4</chanceFactor>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <addedPartProps>
+            <isGoodWeapon>true</isGoodWeapon>
+            <solid>true</solid>
+            <partEfficiency>1.00</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+</Defs>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RulePackDef>
+        <defName>NamerPersonRevia</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>name->[firstName] [tribeName]</li>
+
+                <li>tribeName->[animal]</li>
+                <li>tribeName->[animal]-[interactionLiving]</li>
+                <li>tribeName->[object]-[interactionNonLiving]</li>
+        
+                <li>firstName->Red</li>
+                <li>firstName->Crimson</li>
+                <li>firstName->Carmine</li>
+                <li>firstName->Vermillion</li>
+                <li>firstName->Scarlet</li>
+                <li>firstName->Orange</li>
+                <li>firstName->Sunset</li>
+                <li>firstName->Blood</li>
+                <li>firstName->Yellow</li>
+                <li>firstName->Solstice</li>
+                <li>firstName->Eclipse</li>
+                <li>firstName->Green</li>
+                <li>firstName->Grass</li>
+                <li>firstName->Verdant</li>
+                <li>firstName->Emerald</li>
+                <li>firstName->Obsidian</li>
+                <li>firstName->Blue</li>
+                <li>firstName->Ocean</li>
+                <li>firstName->Stream</li>
+                <li>firstName->Sapphire</li>
+
+                <li>animal->Leopard</li>
+                <li>animal->Jaguar</li>
+                <li>animal->Serpent</li>
+                <li>animal->Snake</li>
+                <li>animal->Fox</li>
+                <li>animal->Anaconda</li>
+                <li>animal->Eagle</li>
+                <li>animal->Tiger</li>
+                <li>animal->Wolf</li>
+                <li>animal->Coyote</li>
+                <li>animal->Badger</li>
+                <li>animal->Alligator</li>
+                <li>animal->Crocodile</li>
+                <li>animal->Piranha</li>
+
+                <li>object->Stone</li>
+                <li>object->Obsidian</li>
+                <li>object->Sapphire</li>
+                <li>object->Emerald</li>
+                <li>object->Gold</li>
+                <li>object->Iron</li>
+                <li>object->Steel</li>
+                <li>object->Skull</li>
+                <li>object->Bone</li>
+
+                <li>interactionLiving->tamer</li>
+                <li>interactionLiving->beater</li>
+                <li>interactionLiving->bearer</li>
+                <li>interactionLiving->destroyer</li>
+                <li>interactionLiving->slayer</li>
+                <li>interactionLiving->flayer</li>
+                <li>interactionLiving->scourge</li>
+        
+                <li>interactionNonLiving->breaker</li>
+                <li>interactionNonLiving->carver</li>
+                <li>interactionNonLiving->shatterer</li>
+                <li>interactionNonLiving->crusher</li>
+                <li>interactionNonLiving->smasher</li>
+                <li>interactionNonLiving->shaper</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

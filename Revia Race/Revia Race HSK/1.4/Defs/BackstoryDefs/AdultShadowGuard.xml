@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <AlienRace.AlienBackstoryDef>
+        <defName>ReviaRaceBackstoryAdultShadowGuard</defName>
+        <title>Revian Shadow Guard</title>
+        <titleShort>Guard</titleShort>
+    <baseDesc>There is one law in Revian worlds, and that is the rule of the strong. Defending one's property is typically undertaken in person. However, occasionally the elites might see the defence of their lands as being too tedious to do oneself. [PAWN_nameDef] is a Shadow Guard, a private military contractor tasked to guard a secure compound.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaRaceTemplar</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+        <key>Melee</key>
+        <value>4</value>
+            </li>
+            <li>
+        <key>Shooting</key>
+        <value>4</value>
+            </li>
+            <li>
+        <key>Social</key>
+        <value>-4</value>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Intellectual</li>
+            <li>Caring</li>
+        </workDisables>
+    </AlienRace.AlienBackstoryDef>
+</Defs>

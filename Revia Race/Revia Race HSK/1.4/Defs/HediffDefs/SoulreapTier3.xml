@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef>
+        <defName>ReviaRaceSoulreapTier3</defName>
+        <label>Soul Reap (3)</label>
+        <description>An indication of how many lives this Revia has taken. Revia grow stronger with the more lives that they take.</description>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.8, 0.4, 0.4)</defaultLabelColor>
+        <causesNeed>ReviaRaceBloodthirstNeed</causesNeed>
+        <stages>
+            <li>
+                <statOffsets>
+                    <Suppressability>-0.1</Suppressability>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

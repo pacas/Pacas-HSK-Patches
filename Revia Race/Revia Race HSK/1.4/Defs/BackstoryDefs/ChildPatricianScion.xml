@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <AlienRace.AlienBackstoryDef>
+        <defName>ReviaRaceBackstoryChildPatricianScion</defName>
+        <title>Revian Noble Scion</title>
+        <titleShort>Scion</titleShort>
+    <baseDesc>[PAWN_nameDef] was a child of prominent Revian priestesses. [PAWN_pronoun] was afforded the best education possible, in both martial and intellectual spheres.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaTemplar</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+        <key>Melee</key>
+        <value>4</value>
+            </li>
+            <li>
+        <key>Intellectual</key>
+        <value>4</value>
+            </li>
+            <li>
+        <key>Plants</key>
+        <value>-4</value>
+            </li>
+            <li>
+        <key>Animals</key>
+        <value>-4</value>
+            </li>
+            <li>
+        <key>Social</key>
+        <value>4</value>
+            </li>
+        </skillGains>
+        <linkedBackstory>ReviaRaceBackstoryAdultDarkTemplar</linkedBackstory>
+    </AlienRace.AlienBackstoryDef>
+</Defs>

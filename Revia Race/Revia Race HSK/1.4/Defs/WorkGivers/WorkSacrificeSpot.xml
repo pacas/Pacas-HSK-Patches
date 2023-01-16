@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <WorkGiverDef>
+        <defName>ReviaDoBillsUseSacrificeSpot</defName>
+        <label>sacrifice things at sacrifice spot</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>ReviaSacrifice</workType>
+        <priorityInType>100</priorityInType>
+        <fixedBillGiverDefs>
+            <li>ReviaSacrificeSpot</li>
+        </fixedBillGiverDefs>
+        <verb>sacrifice</verb>
+        <gerund>sacrificing at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+</Defs>

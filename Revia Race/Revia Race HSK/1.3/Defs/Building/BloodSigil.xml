@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="WorkTable">
+        <defName>ReviaBloodSigil</defName>
+        <label>blood sigil</label>
+        <ideoBuildingNamerBase>ReviaRaceNamerBloodSigil</ideoBuildingNamerBase>
+        <description>A place to dedicate offerings to the blood god.</description>
+        <graphicData>
+            <texPath>Things/Building/BloodSigil</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <isAltar>True</isAltar>
+        <ritualFocus>
+          <spectateDistance>2</spectateDistance>
+          <allowedSpectateSides>All</allowedSpectateSides>
+        </ritualFocus>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <statBases>
+            <WorkToBuild>600</WorkToBuild>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
+            <MeditationFocusStrength>0.25</MeditationFocusStrength>
+            <Flammability>0</Flammability>
+			<Mass>500</Mass>
+        </statBases>
+        <costList>
+            <ReviaRaceBloodstone>4</ReviaRaceBloodstone>
+        </costList>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Bricks</li>
+        </stuffCategories>
+        <researchPrerequisites>
+            <li>ReviaRaceReligionBase</li>
+        </researchPrerequisites>
+        <costStuffCount>150</costStuffCount>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <size>(3,3)</size>
+        <designationCategory>Misc</designationCategory>
+        <rotatable>true</rotatable>
+        <pathCost>20</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,0)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <comps>
+            <li Class="CompProperties_Styleable"/>
+            <li>
+                <compClass>ReviaRace.Comps.SacrificeSpotComp</compClass>
+            </li>
+            <li>
+                <compClass>CompReportWorkSpeed</compClass>
+            </li>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Morbid</li>
+                </focusTypes>
+            </li>
+        </comps>
+        <building>
+            <spawnedConceptLearnOpportunity>ReviaBloodstoneSacrifice</spawnedConceptLearnOpportunity>
+            <sowTag>SupportPlantsOnly</sowTag>
+            <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+            <ai_chillDestination>false</ai_chillDestination>
+            <buildingTags>
+                <li>RitualFocus</li>
+			</buildingTags>
+        </building>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <placeWorkers>
+            <li>PlaceWorker_ReportWorkSpeedPenalties</li>
+            <li>PlaceWorker_RitualFocus</li>
+        </placeWorkers>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    </ThingDef>
+</Defs>

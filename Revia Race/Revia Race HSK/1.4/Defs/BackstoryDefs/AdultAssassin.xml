@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <AlienRace.AlienBackstoryDef>
+        <defName>ReviaRaceBackstoryAdultAssassin</defName>
+        <title>Revian Assassin</title>
+        <titleShort>Assassin</titleShort>
+        <baseDesc>[PAWN_nameDef] was a weapon to silence whoever they were pointed at. [PAWN_pronoun] is utterly lethal with a blade, but cares little for what it actually cuts into. As long as it hits something fleshy, [PAWN_pronoun] is satisfied.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaMarauder</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+                <key>Melee</key>
+                <value>10</value>
+            </li>
+            <li>
+                <key>Shooting</key>
+                <value>6</value>
+            </li>
+        </skillGains>
+        <forcedTraitsChance>
+            <li>
+                <defName>Nimble</defName>
+            </li>
+        </forcedTraitsChance>
+        <workDisables>
+            <li>Social</li>
+            <li>Caring</li>
+            <li>Intellectual</li>
+            <li>Artistic</li>
+        </workDisables>
+    </AlienRace.AlienBackstoryDef>
+</Defs>

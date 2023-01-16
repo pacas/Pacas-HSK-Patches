@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <PawnKindDef ParentName="ReviaPawnBase">
+        <defName>ReviaRaceMarauder</defName>
+        <label>revia marauder</label>
+        <race>ReviaRaceAlien</race>
+        <defaultFactionType>ReviaMarauderFaction</defaultFactionType>
+        <combatPower>130</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.6~0.8</gearHealthRange>
+        <apparelTags>
+            <li>Medieval</li>
+            <li>CE_Apparel_Backpack</li>
+            <li>Apparel_TribalBackpack</li>
+        </apparelTags>
+        <apparelMoney>400~800</apparelMoney>
+        <weaponTags>
+            <li>ReviaMeleeBasic</li>
+        </weaponTags>
+        <initialWillRange>0.5~0.8</initialWillRange>
+        <initialResistanceRange>8~14</initialResistanceRange>
+        <weaponMoney>800~1800</weaponMoney>
+        <techHediffsChance>0</techHediffsChance>
+        <invNutrition>5</invNutrition>
+        <inventoryOptions>
+            <skipChance>0</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>30</choiceChance>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <countRange>0~3</countRange>
+                </li>
+                <li>
+                    <choiceChance>30</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>10~30</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <xenotypeSet Inherit="False">
+	      <xenotypeChances>
+	        <RevianXenotype MayRequire="Ludeon.Rimworld.Biotech">999</RevianXenotype>
+	      </xenotypeChances>
+	      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+	    </xenotypeSet>
+    </PawnKindDef>
+</Defs>

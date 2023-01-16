@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="WeaponMedievalBase">
+        <defName>ReviaSerratedDagger</defName>
+        <label>eviscerator</label>
+        <description>A cruel dagger with razor-sharp palestone shards lining its blade. Designed to tear tissue and cause grievous bleeding wounds.</description>
+        <weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<thingCategories>
+			<li>ReviaCategoryMelee</li>
+			<li>SurvivalToolsNeolithic</li>
+		</thingCategories>
+        <graphicData>
+            <texPath>Things/Item/Weapons/SerratedDagger</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.6</drawSize>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <costStuffCount>25</costStuffCount>
+        <costList>
+            <ReviaRacePalestone>20</ReviaRacePalestone>
+            <ComponentMedieval>3</ComponentMedieval>
+        </costList>
+        <statBases>
+            <WorkToMake>6500</WorkToMake>
+            <Mass>1.00</Mass>
+            <Bulk>1.5</Bulk>
+            <MeleeCounterParryBonus>0.36</MeleeCounterParryBonus>
+        </statBases>
+        <equippedStatOffsets>
+            <CookSpeed>0.3</CookSpeed>
+			<ButcheryFleshSpeed>0.3</ButcheryFleshSpeed>
+			<MeleeCritChance>0.8</MeleeCritChance>
+			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<MeleeParryChance>0.5</MeleeParryChance>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>ReviaRaceBasicEquipment</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <weaponTags>
+            <li>ReviaMeleeBasic</li>
+        </weaponTags>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.25</cooldownTime>
+				<chanceFactor>0.1</chanceFactor>
+				<armorPenetrationBlunt>3</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>1.38</cooldownTime>
+                <chanceFactor>1.165</chanceFactor>
+                <armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+				<armorPenetrationSharp>4.4</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>edge</label>
+                <capacities>
+                    <li>Gash</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>1.3</cooldownTime>
+                <chanceFactor>1.243</chanceFactor>
+                <armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+				<armorPenetrationSharp>4.4</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>

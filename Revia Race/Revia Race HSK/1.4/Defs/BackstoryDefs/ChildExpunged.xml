@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <AlienRace.AlienBackstoryDef>
+        <defName>ReviaRaceBackstoryChildExpunged</defName>
+        <title>Revian Expunged Child</title>
+        <titleShort>Exile</titleShort>
+    <baseDesc>Revian priests inspect newborn children for infirmities, and those that were found weak are exposed to weather until they die. [PAWN_nameDef] was one such case, though [PAWN_pronoun] was rescued by other such exiles from a slow death.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaMarauder</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+        <key>Melee</key>
+        <value>1</value>
+            </li>
+            <li>
+        <key>Shooting</key>
+        <value>1</value>
+            </li>
+        </skillGains>
+        <linkedBackstory>ReviaRaceBackstoryAdultReaver</linkedBackstory>
+    </AlienRace.AlienBackstoryDef>
+</Defs>

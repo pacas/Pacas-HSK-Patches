@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <AlienRace.AlienBackstoryDef>
+        <defName>ReviaRaceBackstoryAdultWayfarer</defName>
+        <title>Revian Wayfarer</title>
+        <titleShort>Wayfarer</titleShort>
+    <baseDesc>[PAWN_nameDef] wanders the forests, hills and deserts. The wilderness is [PAWN_possessive] home.</baseDesc>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+        <key>Shooting</key>
+        <value>3</value>
+            </li>
+        </skillGains>
+    </AlienRace.AlienBackstoryDef>
+</Defs>

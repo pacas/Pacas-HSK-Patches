@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_12Gauge_Revia</defName>
+		<label>12 Gauge for flechette cannon</label>
+		<ammoTypes>
+			<Ammo_12Gauge_Slug>Bullet_12Gauge_Slug</Ammo_12Gauge_Slug>
+			<Ammo_12Gauge_ElectroSlug>Bullet_12Gauge_ElectroSlug</Ammo_12Gauge_ElectroSlug>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>ReviaFlechetteCannon</defName>
+        <label>flechette cannon</label>
+        <description>A large-bore shotgun that fires plasteel-coated uranium shards at the enemy. Highly dangerous at close range, and is also equipped with a heavy-duty bayonet.</description>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <graphicData>
+            <texPath>Things/Item/Weapons/FlechetteCannon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Shotgun</soundInteract>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <weaponTags>
+            <li>ReviaRangedAdvanced</li>
+        </weaponTags>
+        <statBases>
+            <WorkToMake>10000</WorkToMake>
+            <SightsEfficiency>1.0</SightsEfficiency>
+            <Bulk>10.0</Bulk>
+            <Mass>8.0</Mass>
+            <ShotSpread>0.18</ShotSpread>
+            <SwayFactor>1.45</SwayFactor>
+            <RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
+        </statBases>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Slug</defaultProjectile>
+                <warmupTime>0.6</warmupTime>
+                <range>21</range>
+                <recoilAmount>1.95</recoilAmount>
+                <burstShotCount>3</burstShotCount>
+                <soundCast>Shot_Shotgun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
+                <aiAimMode>Snapshot</aiAimMode>
+                <aimedBurstShotCount>2</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>6</magazineSize>
+				<reloadOneAtATime>false</reloadOneAtATime>
+                <reloadTime>2.1</reloadTime>
+                <ammoSet>AmmoSet_12Gauge_Revia</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>3</Weapon_Parts>
+        </smeltProducts>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>1.6</cooldownTime>
+                <armorPenetrationBlunt>3.24</armorPenetrationBlunt>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <capacities>
+                    <li>Gash</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>1.9</cooldownTime>
+                <armorPenetrationBlunt>1.85</armorPenetrationBlunt>
+                <armorPenetrationSharp>3.74</armorPenetrationSharp>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>

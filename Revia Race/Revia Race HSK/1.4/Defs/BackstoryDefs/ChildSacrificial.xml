@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <AlienRace.AlienBackstoryDef>
+        <defName>ReviaRaceBackstoryChildSacrificial</defName>
+        <title>Revian Sacrificial Child</title>
+        <titleShort>Sacrifice</titleShort>
+    <baseDesc>[PAWN_nameDef] was considered to be inferior in physical prowess. [PAWN_pronoun] was slated to be sacrificed on the altar of the moon, but [PAWN_pronoun] managed to escape [PAWN_possessive] holding cell. Living in the wilderness has improved [PAWN_possessive] survival skills, but the terror of having nearly been killed like an animal has left [PAWN_possessive] unwilling to communicate with other humanlikes.</baseDesc>
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>ReviaRaceBackstory</li>
+            <li>ReviaMarauder</li>
+        </spawnCategories>
+        <skillGains>
+            <li>
+        <key>Crafting</key>
+        <value>2</value>
+            </li>
+            <li>
+        <key>Animals</key>
+        <value>2</value>
+            </li>
+            <li>
+        <key>Shooting</key>
+        <value>2</value>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Social</li>
+        </workDisables>
+        <linkedBackstory>ReviaRaceBackstoryAdultWayfarer</linkedBackstory>
+    </AlienRace.AlienBackstoryDef>
+</Defs>

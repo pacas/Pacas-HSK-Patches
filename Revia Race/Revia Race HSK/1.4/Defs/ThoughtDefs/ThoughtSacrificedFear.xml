@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThoughtDef>
+        <defName>ReviaRaceThoughtSacrificedFear</defName>
+        <durationDays>6</durationDays>
+        <stackLimit>4</stackLimit>
+        <stackedEffectMultiplier>0.85</stackedEffectMultiplier>
+        <nullifyingTraits>
+            <li>Masochist</li>
+        </nullifyingTraits>
+        <stages>
+            <li>
+                <label>other prisoner sacrificed</label>
+                <description>One of the other prisoners were sacrificed. I could hear their screams from my cell...</description>
+                <baseMoodEffect>-15</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>
