@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>HMC Biomes</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "Spinosaurus" 
+                    or defName = "Baryonyx"
+                    or defName = "Minmi"
+                    or defName = "Brachiosaurus"
+                    or defName = "Brontosaurus"
+                    or defName = "Dakotaraptor"
+                    or defName = "Parasaur"
+                    or defName = "Corythosaurus"
+                    or defName = "Deinocheirus"
+                    or defName = "Therizinosaurus"
+                    or defName = "Pachycephalosaurus"
+                    or defName = "Dryosaurus"
+                    or defName = "Triceratops"
+                    or defName = "Quetzalcoatlus"
+                    or defName = "Pteranodon"
+                    or defName = "Stygimoloch"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.01</HmcIronWoodForest>
+                        <HmcBambooGrove>0.01</HmcBambooGrove>
+                        <HmcSavanna>0.01</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "TyrannosaurusRex" 
+                    or defName = "Yutyrannus"
+                    or defName = "Carnotaurus"
+                    or defName = "Ankylosaurus"
+                    or defName = "Diplodocus"
+                    or defName = "Magyarosaurus"
+                    or defName = "Dilophosaurus"
+                    or defName = "Stegosaurus"
+                    or defName = "Protoceratops"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.01</HmcIronWoodForest>
+                        <HmcBambooGrove>0.005</HmcBambooGrove>
+                        <HmcSavanna>0</HmcSavanna>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "Allosaurus" 
+                    or defName = "Utahraptor"
+                    or defName = "Velociraptor"
+                    or defName = "Compsognathus"
+                    or defName = "Gallimimus"
+                    or defName = "Gigantoraptor"
+                    or defName = "Iguanodon"]/race/wildBiomes</xpath>
+                    <value>
+                        <HmcIronWoodForest>0.005</HmcIronWoodForest>
+                        <HmcBambooGrove>0.01</HmcBambooGrove>
+                        <HmcSavanna>0.01</HmcSavanna>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
