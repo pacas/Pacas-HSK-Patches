@@ -502,6 +502,10 @@
             <visualSizeRange>1.3~2</visualSizeRange>
             <topWindExposure>0.1</topWindExposure>
             <purpose>Food</purpose>
+            <mustBeWildToSow>true</mustBeWildToSow>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
         </plant>
         <comps>
             <li Class="CompProperties_Glower">

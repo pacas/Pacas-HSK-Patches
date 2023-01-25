@@ -29,58 +29,6 @@
                         </thingDefs>
                     </value>
                 </li>
-                
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs</xpath>
-                    <value>
-                        <SeedsPlease.SeedDef ParentName="SeedBase">
-                            <defName>Seed_AB_GiantTulip</defName>
-                            <label>giant tulip seeds</label>
-                            <sources>
-                                <li>AB_GiantTulip</li>
-                            </sources>
-                        </SeedsPlease.SeedDef>
-                    </value>
-                </li>
-                
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs</xpath>
-                    <value>
-                        <SeedsPlease.SeedDef ParentName="SeedBase">
-                            <defName>Seed_AB_GiantSunflower</defName>
-                            <label>giant sunflower seeds</label>
-                            <sources>
-                                <li>AB_GiantSunflower</li>
-                            </sources>
-                        </SeedsPlease.SeedDef>
-                    </value>
-                </li>
-                
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs</xpath>
-                    <value>
-                        <SeedsPlease.SeedDef ParentName="SeedBase">
-                            <defName>Seed_AB_MangrovePalm</defName>
-                            <label>mangrove palm seeds</label>
-                            <sources>
-                                <li>AB_MangrovePalm</li>
-                            </sources>
-                        </SeedsPlease.SeedDef>
-                    </value>
-                </li>
-                
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs</xpath>
-                    <value>
-                        <SeedsPlease.SeedDef ParentName="SeedBase">
-                            <defName>Seed_AB_Mangrove</defName>
-                            <label>mangrove tree seeds</label>
-                            <sources>
-                                <li>AB_MangroveTree</li>
-                            </sources>
-                        </SeedsPlease.SeedDef>
-                    </value>
-                </li>
             </operations>
         </match>
     </Operation>

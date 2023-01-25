@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>SeedsPlease</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <SeedsPlease.SeedDef ParentName="SeedBase">
+                            <defName>Seed_AB_ToxicGamma</defName>
+                            <label>toxic gamma seeds</label>
+                            <sources>
+                                <li>AB_ToxicGamma</li>
+                            </sources>
+                        </SeedsPlease.SeedDef>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <SeedsPlease.SeedDef ParentName="SeedBase">
+                            <defName>Seed_AB_PollutedStikehr</defName>
+                            <label>polluted stikehr seeds</label>
+                            <sources>
+                                <li>AB_PollutedStikehr</li>
+                            </sources>
+                        </SeedsPlease.SeedDef>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <SeedsPlease.SeedDef ParentName="SeedBase">
+                            <defName>Seed_AB_Jungle_Polluted</defName>
+                            <label>deep jungle polux seeds</label>
+                            <sources>
+                                <li>AB_JungleTree_Polluted</li>
+                            </sources>
+                        </SeedsPlease.SeedDef>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <SeedsPlease.SeedDef ParentName="SeedBase">
+                            <defName>Seed_AB_ToxiBulb</defName>
+                            <label>toxibulb seeds</label>
+                            <sources>
+                                <li>AB_ToxiBulb</li>
+                            </sources>
+                        </SeedsPlease.SeedDef>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <SeedsPlease.SeedDef ParentName="SeedBase">
+                            <defName>Seed_AB_EuphorbiaDesiccata</defName>
+                            <label>euphorbia desiccata seeds</label>
+                            <sources>
+                                <li>AB_EuphorbiaDesiccata</li>
+                            </sources>
+                        </SeedsPlease.SeedDef>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <SeedsPlease.SeedDef ParentName="SeedBase">
+                            <defName>Seed_AB_GiantToxicFlower</defName>
+                            <label>giant toxic flower seeds</label>
+                            <sources>
+                                <li>AB_GiantToxicFlower</li>
+                            </sources>
+                        </SeedsPlease.SeedDef>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <SeedsPlease.SeedDef ParentName="SeedBase">
+                            <defName>Seed_AB_GiantAgariTox</defName>
+                            <label>agaritox seeds</label>
+                            <sources>
+                                <li>AB_GiantAgariTox</li>
+                            </sources>
+                        </SeedsPlease.SeedDef>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <SeedsPlease.SeedDef ParentName="SeedBase">
+                            <defName>Seed_AB_Alien_Polluted</defName>
+                            <label>mutated ocular tree seeds</label>
+                            <sources>
+                                <li>AB_AlienTree_Polluted</li>
+                            </sources>
+                        </SeedsPlease.SeedDef>
+                    </value>
+                </li>
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+                        <SeedsPlease.SeedDef ParentName="SeedBase">
+                            <defName>Seed_AB_GlobularPolluted</defName>
+                            <label>polluted globular aberration seeds</label>
+                            <sources>
+                                <li>AB_GlobularPlant_Polluted</li>
+                            </sources>
+                        </SeedsPlease.SeedDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

@@ -151,6 +151,10 @@
             <soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
             <harvestedThingDef>AB_CrystalWood</harvestedThingDef>
             <blockAdjacentSow>true</blockAdjacentSow>
+            <mustBeWildToSow>true</mustBeWildToSow>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
         </plant>
     </ThingDef>
     <ThingDef>
