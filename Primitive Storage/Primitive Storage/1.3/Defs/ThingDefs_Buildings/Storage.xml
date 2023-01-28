@@ -38,7 +38,8 @@
         <statBases>
             <Beauty>3</Beauty>
             <MaxHitPoints>30</MaxHitPoints>
-            <WorkToBuild>200</WorkToBuild>
+            <WorkToMake>6000</WorkToMake>
+            <!--<WorkToBuild>600</WorkToBuild>-->
             <Flammability>0.5</Flammability>
             <Mass>8</Mass>
         </statBases>
@@ -101,7 +102,8 @@
         <statBases>
             <Beauty>3</Beauty>
             <MaxHitPoints>30</MaxHitPoints>
-            <WorkToBuild>200</WorkToBuild>
+            <WorkToMake>6000</WorkToMake>
+            <!--<WorkToBuild>600</WorkToBuild>-->
             <Flammability>0.5</Flammability>
             <Mass>8</Mass>
         </statBases>
@@ -164,7 +166,7 @@
         <statBases>
             <Beauty>1</Beauty>
             <MaxHitPoints>30</MaxHitPoints>
-            <WorkToBuild>300</WorkToBuild>
+            <WorkToMake>600</WorkToMake>
             <Flammability>2</Flammability>
             <Mass>5</Mass>
         </statBases>
@@ -226,7 +228,8 @@
         <statBases>
             <Beauty>1</Beauty>
             <MaxHitPoints>30</MaxHitPoints>
-            <WorkToBuild>300</WorkToBuild>
+            <WorkToMake>600</WorkToMake>
+            <!-- <WorkToBuild>600</WorkToBuild> -->
             <Flammability>2</Flammability>
             <Mass>5</Mass>
         </statBases>
@@ -290,7 +293,8 @@
         <statBases>
             <Beauty>1</Beauty>
             <MaxHitPoints>40</MaxHitPoints>
-            <WorkToBuild>600</WorkToBuild>
+            <WorkToMake>1200</WorkToMake>
+            <!--  <WorkToBuild>1200</WorkToBuild> -->
             <Flammability>2</Flammability>
             <Mass>10</Mass>
         </statBases>
@@ -354,7 +358,8 @@
         <statBases>
             <Beauty>1</Beauty>
             <MaxHitPoints>50</MaxHitPoints>
-            <WorkToBuild>900</WorkToBuild>
+            <WorkToMake>1800</WorkToMake>
+            <!--  <WorkToBuild>1800</WorkToBuild> -->
             <Flammability>2</Flammability>
             <Mass>15</Mass>
         </statBases>
@@ -402,13 +407,14 @@
         <label>wood pile</label>
         <description>A wood pile for stacking wood. Costs 75 wood logs to build. Deconstructing returns 100% of wood logs used to build.</description>
         <graphicData>
-			<texPath>Things/HMC_pileoflogs/HMC_pileoflogs</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(3,1)</drawSize>
-            <drawRotated>true</drawRotated>
+            <texPath>Things/HMC_WoodPile/HMC_WoodPile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3.4,1)</drawSize>
+            <drawRotated>false</drawRotated>
         </graphicData>
-		<uiIconPath>Things/HMC_pileoflogs/HMC_pileoflogs_color</uiIconPath>
+        <uiIconPath>Things/HMC_WoodPile/HMC_WoodPile</uiIconPath>
         <castEdgeShadows>true</castEdgeShadows>
+        <rotatable>false</rotatable>
         <fillPercent>0.7</fillPercent>
         <pathCost>140</pathCost>
         <size>(3,1)</size>
@@ -417,7 +423,7 @@
         <statBases>
             <Beauty>-4</Beauty>
             <MaxHitPoints>300</MaxHitPoints>
-            <WorkToBuild>600</WorkToBuild>
+            <WorkToBuild>1000</WorkToBuild>
             <Flammability>5</Flammability>
             <Mass>75</Mass>
         </statBases>
@@ -444,7 +450,6 @@
                         <li MayRequire="ViTech.HCSKWood">PoplarLog</li>
                         <li MayRequire="ViTech.HCSKWood">MapleLog</li>
                         <li MayRequire="ViTech.HCSKWood">TeakLog</li>
-                        <li MayRequire="ViTech.HCSKWood">BirchLog</li>
                         <li MayRequire="ViTech.HCSKWood">OakLog</li>
                         <li MayRequire="ViTech.HCSKWood">AcaciaLog</li>
                         <li MayRequire="ViTech.HCSKWood">DragonwoodLog</li>
@@ -466,7 +471,6 @@
                         <li MayRequire="ViTech.HCSKWood">PoplarLog</li>
                         <li MayRequire="ViTech.HCSKWood">MapleLog</li>
                         <li MayRequire="ViTech.HCSKWood">TeakLog</li>
-                        <li MayRequire="ViTech.HCSKWood">BirchLog</li>
                         <li MayRequire="ViTech.HCSKWood">OakLog</li>
                         <li MayRequire="ViTech.HCSKWood">AcaciaLog</li>
                         <li MayRequire="ViTech.HCSKWood">DragonwoodLog</li>
@@ -510,7 +514,7 @@
         <statBases>
             <Beauty>0</Beauty>
             <MaxHitPoints>300</MaxHitPoints>
-            <WorkToBuild>4000</WorkToBuild>
+            <WorkToBuild>10000</WorkToBuild>
             <Flammability>1</Flammability>
             <Mass>13</Mass>
         </statBases>
@@ -583,7 +587,7 @@
         <statBases>
             <Beauty>0</Beauty>
             <MaxHitPoints>600</MaxHitPoints>
-            <WorkToBuild>7000</WorkToBuild>
+            <WorkToBuild>15000</WorkToBuild>
             <Flammability>0.75</Flammability>
             <Mass>140</Mass>
         </statBases>
@@ -658,7 +662,7 @@
         <statBases>
             <Beauty>1</Beauty>
             <MaxHitPoints>85</MaxHitPoints>
-            <WorkToBuild>300</WorkToBuild>
+            <WorkToBuild>600</WorkToBuild>
             <Flammability>1.0</Flammability>
             <Mass>8</Mass>
         </statBases>
@@ -728,7 +732,7 @@
         <pathCost>50</pathCost>
         <statBases>
             <MaxHitPoints>50</MaxHitPoints>
-            <WorkToBuild>300</WorkToBuild>
+            <WorkToBuild>400</WorkToBuild>
             <Flammability>1</Flammability>
             <Beauty>-2</Beauty><!--Creeeepy-->
             <Mass>10</Mass>
@@ -777,4 +781,5 @@
             <li><compClass>CompQuality</compClass></li>
         </comps>
     </ThingDef>
+  
 </Defs>

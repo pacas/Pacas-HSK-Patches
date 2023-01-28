@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_FoodContainers"]/defNames</xpath>
+                <value>
+                    <li>VBY_Clay_Pot</li>
+                    <li>VBY_Clay_Pot_Two</li>
+                    <li>VBY_PrimitiveMeatRack</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_FoodContainers"]/defNames</xpath>
+                <value>
+                    <li>VBY_Granary</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_AmmoContainers"]/defNames</xpath>
+                <value>
+                    <li>VBY_NeoWeaponRack</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_OutdoorStorage"]/defNames</xpath>
+                <value>
+                    <li>VBY_StorageTent</li>
+                    <li>VBY_Woven_Basket</li>
+                    <li>VBY_WovenBasket_Two</li>
+                    <li>VBY_WovenBasket_Double</li>
+                    <li>VBY_WovenBasket_Triple</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

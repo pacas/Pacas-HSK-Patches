@@ -35,26 +35,4 @@
             </li>
         </operations>
     </Operation>
-    
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-          <li>HMC Biomes</li>
-        </mods>
-        <match Class="PatchOperationSequence">			
-            <operations>
-                <li Class="PatchOperationAdd">					
-		          <xpath>Defs/ThingDef[defName="VBY_WoodPile"]/building/fixedStorageSettings/filter/thingDefs</xpath>
-		            <value>
-						  <li>IronWoodLogHMC</li>
-		            </value>
-				</li>
-                <li Class="PatchOperationAdd">					
-		          <xpath>Defs/ThingDef[defName="VBY_WoodPile"]/building/defaultStorageSettings/filter/thingDefs</xpath>
-		            <value>
-						  <li>IronWoodLogHMC</li>
-		            </value>
-				</li>
-			</operations>
-        </match>
-	</Operation>
 </Patch>

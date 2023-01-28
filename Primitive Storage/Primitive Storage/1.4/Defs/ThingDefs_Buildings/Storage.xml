@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="LWM_DeepStorage" Name="VBY_NeolithicStorageBase" Abstract="true">
+        <researchPrerequisites Inherit="false">
+            <li>Storage_A1</li>
+        </researchPrerequisites>
+        <building Inherit="false">
+            <preventDeteriorationOnTop>false</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <defaultStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                </filter>
+            </defaultStorageSettings>
+        </building>
+    </ThingDef>
+
+    <!-- ==================== Clay Pots ==================== -->
+
+    <ThingDef ParentName="VBY_NeolithicStorageBase">
+        <defName>VBY_Clay_Pot</defName>
+        <label>stone pot</label>
+        <description>A stone pot for storage.</description>
+        <graphicData>
+            <texPath>Things/HMC_Clay_Pot/HMC_Clay_Pot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <uiIconPath>Things/HMC_Clay_Pot/HMC_Clay_Pot</uiIconPath>
+        <castEdgeShadows>false</castEdgeShadows>
+        <pathCost>40</pathCost>
+        <fillPercent>0.3</fillPercent>
+        <size>(1,1)</size>
+        <statBases>
+            <Beauty>3</Beauty>
+            <MaxHitPoints>30</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <!--<WorkToBuild>600</WorkToBuild>-->
+            <Flammability>0.5</Flammability>
+            <Mass>8</Mass>
+        </statBases>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>30</costStuffCount>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                        <li>Drugs</li>
+                        <li>PlantMatter</li>
+                        <li>FoodRaw</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Preserves</li>
+                        <li>Alcohol</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+            <isInert>true</isInert>
+            <paintable>true</paintable>
+        </building>
+        <comps>
+            <li Class="LWM.DeepStorage.Properties">
+                <maxNumberStacks>3</maxNumberStacks>
+                <minTimeStoringTakes>45</minTimeStoringTakes>
+                <additionalTimeEachStack>10</additionalTimeEachStack>
+                <additionalTimeEachDef>120</additionalTimeEachDef>
+                <showContents>false</showContents>
+                <overlayType>SumOfItemsPerCell</overlayType>
+                <maxTotalMass>25</maxTotalMass>
+            </li>
+            <li><compClass>CompQuality</compClass></li>
+        </comps>
+    </ThingDef>
+
+    <!-- ==================== 2 ==================== -->
+  
+    <ThingDef ParentName="VBY_NeolithicStorageBase">
+        <defName>VBY_Clay_Pot_Two</defName>
+        <label>stone pot</label>
+        <description>A stone pot for storage.</description>
+        <graphicData>
+            <texPath>Things/HMC_Clay_PotTwo/HMC_Clay_PotTwo</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <uiIconPath>Things/HMC_Clay_PotTwo/HMC_Clay_PotTwo</uiIconPath>
+        <castEdgeShadows>false</castEdgeShadows>
+        <pathCost>40</pathCost>
+        <fillPercent>0.3</fillPercent>
+        <size>(1,1)</size>
+        <statBases>
+            <Beauty>3</Beauty>
+            <MaxHitPoints>30</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <!--<WorkToBuild>600</WorkToBuild>-->
+            <Flammability>0.5</Flammability>
+            <Mass>8</Mass>
+        </statBases>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>30</costStuffCount>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                        <li>Drugs</li>
+                        <li>PlantMatter</li>
+                        <li>FoodRaw</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Preserves</li>
+                        <li>Alcohol</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+            <isInert>true</isInert>
+            <paintable>true</paintable>
+        </building>
+        <comps>
+            <li Class="LWM.DeepStorage.Properties">
+                <maxNumberStacks>3</maxNumberStacks>
+                <minTimeStoringTakes>45</minTimeStoringTakes>
+                <additionalTimeEachStack>10</additionalTimeEachStack>
+                <additionalTimeEachDef>120</additionalTimeEachDef>
+                <showContents>false</showContents>
+                <overlayType>SumOfItemsPerCell</overlayType>
+                <maxTotalMass>25</maxTotalMass>
+            </li>
+            <li><compClass>CompQuality</compClass></li>
+        </comps>
+    </ThingDef>
+  
+    <!-- ==================== Woven Baskets ==================== -->
+  
+    <ThingDef ParentName="VBY_NeolithicStorageBase">
+        <defName>VBY_Woven_Basket</defName>
+        <label>woven basket</label>
+        <description>A woven basket for storage.</description>
+        <graphicData>
+            <texPath>Things/HMC_Woven_Basket/HMC_Woven_Basket</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <uiIconPath>Things/HMC_Woven_Basket/HMC_Woven_Basket</uiIconPath>
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>10</pathCost>
+        <fillPercent>0.15</fillPercent>
+        <size>(1,1)</size>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MaxHitPoints>30</MaxHitPoints>
+            <WorkToMake>600</WorkToMake>
+            <Flammability>2</Flammability>
+            <Mass>5</Mass>
+        </statBases>
+        <costList>
+            <Hay>25</Hay>
+        </costList>
+        <resourcesFractionWhenDeconstructed>0.6</resourcesFractionWhenDeconstructed>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Corpses</li>
+                        <li>Chunks</li>
+                        <li>StoneBlocks</li>
+                        <li>Buildings</li>
+                        <li>MeatRaw</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+            <isInert>true</isInert>
+        </building>
+        <comps>
+            <li Class="LWM.DeepStorage.Properties">
+                <maxNumberStacks>3</maxNumberStacks>
+                <timeStoringTakes>10</timeStoringTakes>
+                <additionalTimeEachStack>40</additionalTimeEachStack>
+                <overlayType>SumOfItemsPerCell</overlayType>
+                <maxMassOfStoredItem>5</maxMassOfStoredItem>
+                <maxTotalMass>15</maxTotalMass>
+            </li>
+            <li><compClass>CompQuality</compClass></li>
+        </comps>
+    </ThingDef>
+
+    <!-- ==================== 2 ==================== -->
+  
+    <ThingDef ParentName="VBY_NeolithicStorageBase">
+        <defName>VBY_WovenBasket_Two</defName>
+        <label>woven basket</label>
+        <description>A woven basket for storage.</description>
+        <graphicData>
+            <texPath>Things/HMC_WovenBasket_Two/HMC_WovenBasket_Two</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <uiIconPath>Things/HMC_WovenBasket_Two/HMC_WovenBasket_Two</uiIconPath>
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>10</pathCost>
+        <fillPercent>0.15</fillPercent>
+        <size>(1,1)</size>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MaxHitPoints>30</MaxHitPoints>
+            <WorkToMake>600</WorkToMake>
+            <!-- <WorkToBuild>600</WorkToBuild> -->
+            <Flammability>2</Flammability>
+            <Mass>5</Mass>
+        </statBases>
+        <costList>
+            <Hay>25</Hay>
+        </costList>
+        <resourcesFractionWhenDeconstructed>0.6</resourcesFractionWhenDeconstructed>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Corpses</li>
+                        <li>Chunks</li>
+                        <li>StoneBlocks</li>
+                        <li>Buildings</li>
+                        <li>MeatRaw</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+        <comps>
+            <li Class="LWM.DeepStorage.Properties">
+                <maxNumberStacks>5</maxNumberStacks>
+                <timeStoringTakes>30</timeStoringTakes>
+                <additionalTimeEachStack>40</additionalTimeEachStack>
+                <overlayType>SumOfItemsPerCell</overlayType>
+                <showContents>false</showContents>
+                <maxMassOfStoredItem>5</maxMassOfStoredItem>
+                <maxTotalMass>15</maxTotalMass>
+            </li>
+            <li><compClass>CompQuality</compClass></li>
+        </comps>
+    </ThingDef>
+
+    <!-- ==================== Double Stack ==================== -->
+  
+    <ThingDef ParentName="VBY_NeolithicStorageBase">
+        <defName>VBY_WovenBasket_Double</defName>
+        <label>woven basket double stack</label>
+        <description>A stack of two woven baskets for storage.</description>
+        <graphicData>
+            <texPath>Things/HDM_BasketDouble/HDM_Basket3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <drawOffset>(0,0,0.5)</drawOffset>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <uiIconPath>Things/HDM_BasketDouble/HDM_Basket3</uiIconPath>
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>20</pathCost>
+        <fillPercent>0.30</fillPercent>
+        <size>(1,1)</size>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MaxHitPoints>40</MaxHitPoints>
+            <WorkToMake>1200</WorkToMake>
+            <!--  <WorkToBuild>1200</WorkToBuild> -->
+            <Flammability>2</Flammability>
+            <Mass>10</Mass>
+        </statBases>
+        <costList>
+            <Hay>60</Hay>
+        </costList>
+        <resourcesFractionWhenDeconstructed>0.6</resourcesFractionWhenDeconstructed>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Corpses</li>
+                        <li>Chunks</li>
+                        <li>StoneBlocks</li>
+                        <li>Buildings</li>
+                        <li>MeatRaw</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+        <comps>
+            <li Class="LWM.DeepStorage.Properties">
+                <maxNumberStacks>6</maxNumberStacks>
+                <timeStoringTakes>160</timeStoringTakes>
+                <additionalTimeEachStack>40</additionalTimeEachStack>
+                <overlayType>SumOfItemsPerCell</overlayType>
+                <showContents>false</showContents>
+                <maxMassOfStoredItem>10</maxMassOfStoredItem>
+                <maxTotalMass>30</maxTotalMass>
+            </li>
+            <li><compClass>CompQuality</compClass></li>
+        </comps>
+    </ThingDef>
+
+    <!-- ==================== Triple Stack ==================== -->
+  
+    <ThingDef ParentName="VBY_NeolithicStorageBase">
+        <defName>VBY_WovenBasket_Triple</defName>
+        <label>woven basket triple stack</label>
+        <description>A stack of three woven baskets for storage.</description>
+        <graphicData>
+            <texPath>Things/HDM_BasketTriple/HDM_Basket4</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <drawOffset>(0,0,0.5)</drawOffset>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <uiIconPath>Things/HDM_BasketTriple/HDM_Basket4</uiIconPath>
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>30</pathCost>
+        <fillPercent>0.45</fillPercent>
+        <size>(1,1)</size>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MaxHitPoints>50</MaxHitPoints>
+            <WorkToMake>1800</WorkToMake>
+            <!--  <WorkToBuild>1800</WorkToBuild> -->
+            <Flammability>2</Flammability>
+            <Mass>15</Mass>
+        </statBases>
+        <costList>
+            <Hay>120</Hay>
+        </costList>
+        <resourcesFractionWhenDeconstructed>0.6</resourcesFractionWhenDeconstructed>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <priority>Preferred</priority>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Corpses</li>
+                        <li>Chunks</li>
+                        <li>StoneBlocks</li>
+                        <li>Buildings</li>
+                        <li>MeatRaw</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+        <comps>
+            <li Class="LWM.DeepStorage.Properties">
+                <maxNumberStacks>9</maxNumberStacks>
+                <timeStoringTakes>360</timeStoringTakes>
+                <additionalTimeEachStack>40</additionalTimeEachStack>
+                <overlayType>SumOfItemsPerCell</overlayType>
+                <showContents>false</showContents>
+                <maxMassOfStoredItem>15</maxMassOfStoredItem>
+                <maxTotalMass>45</maxTotalMass>
+            </li>
+            <li><compClass>CompQuality</compClass></li>
+        </comps>
+    </ThingDef>
+   
+    <!-- ==================== Wood Pile ==================== -->
+  
+    <ThingDef ParentName="LWM_DeepStorage">
+        <defName>VBY_WoodPile</defName>
+        <label>wood pile</label>
+        <description>A wood pile for stacking wood. Costs 75 wood logs to build. Deconstructing returns 100% of wood logs used to build.</description>
+        <graphicData>
+            <texPath>Things/HMC_pileoflogs/HMC_pileoflogs</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.4,1)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <uiIconPath>Things/HMC_pileoflogs/HMC_pileoflogs_south</uiIconPath>
+        <castEdgeShadows>true</castEdgeShadows>
+        <rotatable>true</rotatable>
+        <fillPercent>0.7</fillPercent>
+        <pathCost>140</pathCost>
+        <size>(3,1)</size>
+        <minifiedDef Inherit="false"/>
+        <thingCategories Inherit="false"/>
+        <statBases>
+            <Beauty>-4</Beauty>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>1000</WorkToBuild>
+            <Flammability>5</Flammability>
+            <Mass>75</Mass>
+        </statBases>
+        <stuffCategories>
+            <li>WoodLogs</li>
+        </stuffCategories>
+        <costStuffCount>75</costStuffCount>
+        <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <defaultStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                        <li>Bamboo</li>
+                        <li>RedWoodLog</li>
+                        <li MayRequire="arpomo6.hmc.biomes">IronWoodLogHMC</li>
+                        <li MayRequire="ViTech.HCSKWood">CecropiaLog</li>
+                        <li MayRequire="ViTech.HCSKWood">PineLog</li>
+                        <li MayRequire="ViTech.HCSKWood">WillowLog</li>
+                        <li MayRequire="ViTech.HCSKWood">CypressLog</li>
+                        <li MayRequire="ViTech.HCSKWood">PoplarLog</li>
+                        <li MayRequire="ViTech.HCSKWood">MapleLog</li>
+                        <li MayRequire="ViTech.HCSKWood">TeakLog</li>
+                        <li MayRequire="ViTech.HCSKWood">OakLog</li>
+                        <li MayRequire="ViTech.HCSKWood">AcaciaLog</li>
+                        <li MayRequire="ViTech.HCSKWood">DragonwoodLog</li>
+                        <li MayRequire="ViTech.HCSKWood">MangroveLog</li>
+                        <li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+                        <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
+                        <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+                        <li MayRequire="elkyelky.KindlingAndWildHay">WoodTwig</li>
+                        <li MayRequire="elkyelky.WoodTwigBundle">WoodTwig</li>
+                        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_DarkWoodLog</li>
+                        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_ElvenWoodLog</li>
+                        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_DryadWoodLog</li>
+                        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_AncientWoodLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_BlackEbonyLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_GreenEbonyLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_RoseWoodLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_MahoganyLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_GuatambuLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_ElvishTreeLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_SkyTreeLog</li>
+                        <li MayRequire="RimWorldsoudanzyo.ResourcePackCore">RPC_Firewood</li>
+                        <li MayRequire="Incense.velcroboy333">VBY_SandalWoodLog</li>
+                        <li MayRequire="Incense.velcroboy333">VBY_FrankincenseWoodLog</li>
+                        <li MayRequire="Incense.velcroboy333">VBY_TragacanthWoodLog</li>
+                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_BlackCapLog</li>
+                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_BloodThornLog</li>
+                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_FungiWoodLog</li>
+                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_TowerCapLog</li>
+                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_TunnelTubeLog</li>
+                        <li MayRequire="RimNature.velcroboy333">FlexiLog</li>
+                        <li MayRequire="RimNature.velcroboy333">DimenLog</li>
+                        <li MayRequire="Owlchemist.SimpleChains.Lumber">Owl_Firewood</li>
+                        <li MayRequire="Owlchemist.SimpleChains.Lumber">Owl_WoodLog</li>
+                        <li MayRequire="Owlchemist.SimpleChains.Lumber">Owl_GreenLumber</li>
+                        <li MayRequire="syrchalis.thrumkin">WoodLog_GhostAsh</li>
+                        <li MayRequire="dismarzero.VGP.VGPVegetableGarden">Bamboo</li>
+                        <li MayRequire="Luneyl.Bamboo">Bamboo</li>
+                        <li MayRequire="dismarzero.VGP.VGPVegetableGarden">VG_IronWoodLog</li>
+                        <li MayRequire="walkingproblem.woodplanks">WoodPlank</li>
+                        <li MayRequire="Mlie.ZenGarden">ZEN_CherryWood</li>
+                        <li MayRequire="Mlie.ZenGarden">ZEN_EbonyWood</li>
+                        <li MayRequire="Ripmorld.AnimaWood">AnimaWood</li>
+                    </thingDefs>
+                    <categories>
+                        <li MayRequire="Adventurer.ExpandWoodwork">WoodTypes</li>
+                        <li MayRequire="Adventurer.ExpandWoodwork">WoodLumber</li>
+                        <li MayRequire="teflonjim.extendedwoodworking">WoodTypes</li>
+                        <li MayRequire="teflonjim.extendedwoodworking">WoodLumber</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+            <fixedStorageSettings>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                        <li>Bamboo</li>
+                        <li>RedWoodLog</li>
+                        <li MayRequire="arpomo6.hmc.biomes">IronWoodLogHMC</li>
+                        <li MayRequire="ViTech.HCSKWood">CecropiaLog</li>
+                        <li MayRequire="ViTech.HCSKWood">PineLog</li>
+                        <li MayRequire="ViTech.HCSKWood">WillowLog</li>
+                        <li MayRequire="ViTech.HCSKWood">CypressLog</li>
+                        <li MayRequire="ViTech.HCSKWood">PoplarLog</li>
+                        <li MayRequire="ViTech.HCSKWood">MapleLog</li>
+                        <li MayRequire="ViTech.HCSKWood">TeakLog</li>
+                        <li MayRequire="ViTech.HCSKWood">OakLog</li>
+                        <li MayRequire="ViTech.HCSKWood">AcaciaLog</li>
+                        <li MayRequire="ViTech.HCSKWood">DragonwoodLog</li>
+                        <li MayRequire="ViTech.HCSKWood">MangroveLog</li>
+                        <li MayRequire="sarg.alphabiomes">GU_RedWood</li>
+                        <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
+                        <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
+                        <li MayRequire="elkyelky.KindlingAndWildHay">WoodTwig</li>
+                        <li MayRequire="elkyelky.WoodTwigBundle">WoodTwig</li>
+                        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_DarkWoodLog</li>
+                        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_ElvenWoodLog</li>
+                        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_DryadWoodLog</li>
+                        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_AncientWoodLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_BlackEbonyLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_GreenEbonyLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_RoseWoodLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_MahoganyLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_GuatambuLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_ElvishTreeLog</li>
+                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_SkyTreeLog</li>
+                        <li MayRequire="RimWorldsoudanzyo.ResourcePackCore">RPC_Firewood</li>
+                        <li MayRequire="Incense.velcroboy333">VBY_SandalWoodLog</li>
+                        <li MayRequire="Incense.velcroboy333">VBY_FrankincenseWoodLog</li>
+                        <li MayRequire="Incense.velcroboy333">VBY_TragacanthWoodLog</li>
+                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_BlackCapLog</li>
+                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_BloodThornLog</li>
+                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_FungiWoodLog</li>
+                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_TowerCapLog</li>
+                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_TunnelTubeLog</li>
+                        <li MayRequire="RimNature.velcroboy333">FlexiLog</li>
+                        <li MayRequire="RimNature.velcroboy333">DimenLog</li>
+                        <li MayRequire="Owlchemist.SimpleChains.Lumber">Owl_Firewood</li>
+                        <li MayRequire="Owlchemist.SimpleChains.Lumber">Owl_WoodLog</li>
+                        <li MayRequire="Owlchemist.SimpleChains.Lumber">Owl_GreenLumber</li>
+                        <li MayRequire="syrchalis.thrumkin">WoodLog_GhostAsh</li>
+                        <li MayRequire="dismarzero.VGP.VGPVegetableGarden">Bamboo</li>
+                        <li MayRequire="Luneyl.Bamboo">Bamboo</li>
+                        <li MayRequire="dismarzero.VGP.VGPVegetableGarden">VG_IronWoodLog</li>
+                        <li MayRequire="walkingproblem.woodplanks">WoodPlank</li>
+                        <li MayRequire="Mlie.ZenGarden">ZEN_CherryWood</li>
+                        <li MayRequire="Mlie.ZenGarden">ZEN_EbonyWood</li>
+                        <li MayRequire="Ripmorld.AnimaWood">AnimaWood</li>
+                    </thingDefs>
+                    <categories>
+                        <li MayRequire="Adventurer.ExpandWoodwork">WoodTypes</li>
+                        <li MayRequire="Adventurer.ExpandWoodwork">WoodLumber</li>
+                        <li MayRequire="teflonjim.extendedwoodworking">WoodTypes</li>
+                        <li MayRequire="teflonjim.extendedwoodworking">WoodLumber</li>
+                    </categories>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+        <comps>
+            <li Class="LWM.DeepStorage.Properties">
+                <minNumberStacks>1</minNumberStacks>
+                <maxNumberStacks>3</maxNumberStacks>
+                <timeStoringTakes>50</timeStoringTakes>
+                <showContents>false</showContents>
+                <overlayType>None</overlayType>
+            </li>
+        </comps>
+        <researchPrerequisites Inherit="false"/>
+    </ThingDef>
+  
+    <!-- ==================== Storage Tent ==================== -->
+  
+    <ThingDef ParentName="VBY_NeolithicStorageBase">
+        <defName>VBY_StorageTent</defName>
+        <label>storage tent</label>
+        <description>A storage tent for....storing things.</description>
+        <graphicData>
+            <texPath>Things/HMC_StorageTent/HMC_StorageTent</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <drawRotated>false</drawRotated>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <uiIconPath>Things/HMC_StorageTent/HMC_StorageTent</uiIconPath>
+        <castEdgeShadows>true</castEdgeShadows>
+        <pathCost>250</pathCost>
+        <size>(3,3)</size>
+        <fillPercent>0.6</fillPercent>
+        <statBases>
+            <Beauty>0</Beauty>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>10000</WorkToBuild>
+            <Flammability>1</Flammability>
+            <Mass>13</Mass>
+        </statBases>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costList>
+            <WoodLog>25</WoodLog>
+        </costList>
+        <costStuffCount>100</costStuffCount>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <uninstallWork>800</uninstallWork>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>Root</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Corpses</li>
+                        <li>Chunks</li>
+                        <li>StoneBlocks</li>
+                        <li>Buildings</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+            <paintable>true</paintable>
+        </building>
+        <comps>
+            <li Class="LWM.DeepStorage.Properties">
+                <minNumberStacks>1</minNumberStacks>
+                <maxNumberStacks>3</maxNumberStacks>
+                <minTimeStoringTakes>15</minTimeStoringTakes>
+                <additionalTimeEachStack>15</additionalTimeEachStack>
+                <additionalTimeStackSize>1</additionalTimeStackSize>
+                <showContents>false</showContents>
+                <overlayType>None</overlayType>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+        </placeWorkers>
+    </ThingDef>
+
+    <!-- ==================== Granary ==================== -->
+  
+    <ThingDef ParentName="VBY_ColdStorageBase">
+        <defName>VBY_Granary</defName>
+        <label>granary</label>
+        <description>A granary for keeping food dry.</description>
+        <graphicData>
+            <texPath>Things/HMC_Granary/HMC_Granary</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4,4)</drawSize>
+            <drawOffset>(0,0,1)</drawOffset>
+            <drawRotated>false</drawRotated>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+        <minifiedDef Inherit="false"/>
+        <thingCategories Inherit="false"/>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <uiIconPath>Things/HMC_Granary/HMC_Granary</uiIconPath>
+        <castEdgeShadows>false</castEdgeShadows>
+        <pathCost>250</pathCost>
+        <fillPercent>1</fillPercent>
+        <size>(3,2)</size>
+        <statBases>
+            <Beauty>0</Beauty>
+            <MaxHitPoints>600</MaxHitPoints>
+            <WorkToBuild>15000</WorkToBuild>
+            <Flammability>0.75</Flammability>
+            <Mass>140</Mass>
+        </statBases>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costList>
+            <Hay>50</Hay>
+            <WoodLog>25</WoodLog>
+        </costList>
+        <costStuffCount>75</costStuffCount>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <defaultStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                        <li>PlantMatter</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>PlantFoodRaw</li>
+                        <li>PlantMatter</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>Preserves</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+        <comps>
+            <li Class="LWM.DeepStorage.Properties">
+                <minNumberStacks>1</minNumberStacks>
+                <maxNumberStacks>2</maxNumberStacks>
+                <minTimeStoringTakes>180</minTimeStoringTakes>
+                <additionalTimeEachStack>45</additionalTimeEachStack>
+                <additionalTimeStackSize>2</additionalTimeStackSize>
+                <additionalTimeEachDef>2</additionalTimeEachDef>
+                <showContents>false</showContents>
+                <overlayType>None</overlayType>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>Storage_B1</li>
+        </researchPrerequisites>
+    </ThingDef>
+    
+    <!-- =============================== Weapon Rack ================================  -->
+
+
+    <ThingDef ParentName="VBY_NeolithicStorageBase">
+        <defName>VBY_NeoWeaponRack</defName>
+        <label>weapon rack</label>
+        <description>Sturdy pieces of wood lashed together with leather or fabric for organized weapon storage.</description>
+        <graphicData>
+            <texPath>Things/HDM_weaponRack/HDM_weaponRack</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <uiIconPath>Things/HDM_weaponRack/HDM_weaponRack_south</uiIconPath>
+        <castEdgeShadows>true</castEdgeShadows>
+        <size>(2,1)</size>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MaxHitPoints>85</MaxHitPoints>
+            <WorkToBuild>600</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Mass>8</Mass>
+        </statBases>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>10</costStuffCount>
+        <costList>
+            <WoodLog>15</WoodLog>
+        </costList>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <categories>
+                        <li>WeaponsMelee</li>
+                        <li>WeaponsRanged</li>
+                    </categories>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <categories>
+                        <li>WeaponsMelee</li>
+                        <li>WeaponsRanged</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+            <paintable>true</paintable>
+        </building>
+        <comps>
+            <li Class="LWM.DeepStorage.Properties">
+                <minNumberStacks>1</minNumberStacks>
+                <maxNumberStacks>3</maxNumberStacks>
+                <maxTotalMass>32</maxTotalMass>
+                <maxMassOfStoredItem>8</maxMassOfStoredItem>
+                <timeStoringTakes>20</timeStoringTakes><!-- easy grab and go -->
+                <showContents>true</showContents>
+                <overlayType>None</overlayType>
+            </li>
+            <li><compClass>CompQuality</compClass></li>
+        </comps>
+    </ThingDef>
+
+    <!-- =============================  Meat Rack  ==========================  -->
+
+
+    <ThingDef ParentName="VBY_NeolithicStorageBase"><!--LWM creation-->
+        <defName>VBY_PrimitiveMeatRack</defName>
+        <label>Meat Rack</label>
+        <description>Sturdy pieces of wood lashed together with leather or fabric for storing meat off the ground.</description>
+        <graphicData>
+            <texPath>Things/HDM_MeatRack/HDM_MeatRack</texPath><!-- here  -->
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+            <shadowData>
+                <volume>(0,0,0)</volume>
+            </shadowData>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <castEdgeShadows>true</castEdgeShadows>
+        <size>(1,1)</size>
+        <pathCost>50</pathCost>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <WorkToBuild>400</WorkToBuild>
+            <Flammability>1</Flammability>
+            <Beauty>-2</Beauty><!--Creeeepy-->
+            <Mass>10</Mass>
+        </statBases>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>10</costStuffCount>
+        <costList>
+            <WoodLog>25</WoodLog>
+        </costList>
+        <building>
+            <preventDeteriorationOnTop>false</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>CorpsesMechanoid</li>
+                    </disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings>
+                <filter>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                    <specialFiltersToDisallow>
+                        <li>AllowRotten</li><!-- We allow player to hang rotten corpses if they want...?  Eew -->
+                    </specialFiltersToDisallow>
+                </filter>
+            </defaultStorageSettings>
+            <paintable>true</paintable>
+        </building>
+        <comps>
+            <li Class="LWM.DeepStorage.Properties">
+                <minNumberStacks>2</minNumberStacks><!-- minimum one in the air, one on the ground -->
+                <maxNumberStacks>2</maxNumberStacks><!-- todo? -->
+                <minTimeStoringTakes>15</minTimeStoringTakes>
+                <additionalTimeEachStack>20</additionalTimeEachStack><!-- More things on the hooks means more effort to get an empty hook -->
+                <maxTotalMass>100</maxTotalMass>
+                <overlayType>None</overlayType>
+            </li>
+            <li><compClass>CompQuality</compClass></li>
+        </comps>
+    </ThingDef>
+  
+</Defs>

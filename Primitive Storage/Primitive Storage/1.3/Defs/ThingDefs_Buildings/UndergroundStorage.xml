@@ -19,7 +19,7 @@
         <statBases>
             <Beauty>-6</Beauty>
             <MaxHitPoints>1000</MaxHitPoints>
-            <WorkToBuild>3000</WorkToBuild>
+            <WorkToBuild>5000</WorkToBuild>
             <Flammability>0.0</Flammability>
             <Mass>4000</Mass>
         </statBases>
@@ -48,7 +48,7 @@
         <comps>
             <li Class="SK.CompProperties_RotModified">
 				<compClass>SK.CompRotModified</compClass>
-				<rotmodifier>0.7</rotmodifier>
+				<rotmodifier>0.6</rotmodifier>
 			</li>
             <li Class="LWM.DeepStorage.Properties">
                 <minNumberStacks>1</minNumberStacks>
@@ -63,14 +63,8 @@
         </comps>
         <researchPrerequisites Inherit="false"/>
         <placeWorkers>
-            <li>PrimitiveCooling.PlaceWorker_UndergroundSpacing</li><!-- ??  -->
+            <li>PrimitiveCooling.PlaceWorker_UndergroundSpacing</li>
         </placeWorkers>
-        <modExtensions Inherit="false">
-            <li Class="PrimitiveCooling.UnderGroundExtension">
-                <isUnderground Inherit="false">true</isUnderground>
-                <range>1</range>
-            </li>
-        </modExtensions>
     </ThingDef>
 
     <!-- =============================  Wood Storage Pit =============================== -->
@@ -90,7 +84,7 @@
         <statBases>
             <Beauty>0</Beauty>
             <MaxHitPoints>1500</MaxHitPoints>
-            <WorkToBuild>6500</WorkToBuild>
+            <WorkToBuild>9500</WorkToBuild>
             <Flammability>0.0</Flammability>
             <Mass>6000</Mass>
         </statBases>
@@ -117,7 +111,7 @@
         <comps>
             <li Class="SK.CompProperties_RotModified">
 				<compClass>SK.CompRotModified</compClass>
-				<rotmodifier>0.7</rotmodifier>
+				<rotmodifier>0.5</rotmodifier>
 			</li>
             <li Class="LWM.DeepStorage.Properties">
                 <minNumberStacks>1</minNumberStacks>
@@ -129,16 +123,12 @@
                 <overlayType>None</overlayType>
             </li>
         </comps>
-        <researchPrerequisites Inherit="false"/>
+        <researchPrerequisites>
+            <li>Construction_B1</li>
+        </researchPrerequisites>
         <placeWorkers>
-            <li>PrimitiveCooling.PlaceWorker_UndergroundSpacing</li><!-- ??  -->
+            <li>PrimitiveCooling.PlaceWorker_UndergroundSpacing</li>
         </placeWorkers>
-        <modExtensions Inherit="false">
-            <li Class="PrimitiveCooling.UnderGroundExtension">
-                <isUnderground Inherit="false">true</isUnderground>
-                <range>2</range>
-            </li>
-        </modExtensions>
     </ThingDef>
 
     <!-- ==========================  Stone Storage Pit =============================  -->
@@ -158,7 +148,7 @@
         <statBases>
             <Beauty>0</Beauty>
             <MaxHitPoints>3000</MaxHitPoints>
-            <WorkToBuild>10000</WorkToBuild>
+            <WorkToBuild>20000</WorkToBuild>
             <Flammability>0.0</Flammability>
             <Mass>8000</Mass>
         </statBases>
@@ -185,11 +175,13 @@
                 </filter>
             </fixedStorageSettings>
         </building>
-        <researchPrerequisites Inherit="false"/>
+        <researchPrerequisites>
+            <li>Stonecutting</li>
+        </researchPrerequisites>
         <comps>
             <li Class="SK.CompProperties_RotModified">
 				<compClass>SK.CompRotModified</compClass>
-				<rotmodifier>0.7</rotmodifier>
+				<rotmodifier>0.4</rotmodifier>
 			</li>
             <li Class="LWM.DeepStorage.Properties">
                 <minNumberStacks>1</minNumberStacks>
@@ -202,14 +194,7 @@
             </li>
         </comps>
         <placeWorkers>
-            <li>PrimitiveCooling.PlaceWorker_UndergroundSpacing</li><!-- ??  -->
+            <li>PrimitiveCooling.PlaceWorker_UndergroundSpacing</li>
         </placeWorkers>
-        <modExtensions Inherit="false">
-            <li Class="PrimitiveCooling.UnderGroundExtension">
-                <isUnderground Inherit="false">true</isUnderground>
-                <range>4</range>
-            </li>
-        </modExtensions>
     </ThingDef>
-
 </Defs>
