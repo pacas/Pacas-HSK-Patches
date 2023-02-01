@@ -3,6 +3,15 @@
 [Hardcore SK modpack only!](https://github.com/skyarkhangel/Hardcore-SK/tree/development)
 <br><br>
 <img src="https://i.imgur.com/svEwA2k.png"><br><br>
+Donate / Order a patch:<br>
+You can thank me for the work done and donate:<br>
+https://steamcommunity.com/tradeoffer/new/?partner=93729960&token=dgWxX8tO Donate items on steam (preferably TF2 keys)<br><br>
+Вы можете поблагодарить меня за проделанную работу и пожертвовать:<br>
+Для пользователей из России:<br>
+Чашку кофе на Сбер 2202 2010 7950 3500<br>
+Кружку чая на QIWI qiwi.com/n/PACAS<br>
+Для пользователей из других стран:<br>
+https://steamcommunity.com/tradeoffer/new/?partner=93729960&token=dgWxX8tO Подарить предметы в стиме (желательно ключики тф2)<br><br>
 How to download only the mods you are interested in / Как загрузить только те моды, которые вас интересуют:<br>
 1) Use the "GitZip for github" extension<br>
 2) Use the "Refined GitHub" extension<br>
