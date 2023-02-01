@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="AA_MeatMealBase" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Beauty>0</Beauty>
+            <Mass>0.44</Mass>
+            <DeteriorationRate>10</DeteriorationRate>
+        </statBases>
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>10</stackLimit>
+        <tickerType>Rare</tickerType>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <thingCategories>
+            <li>FoodMeals</li>
+        </thingCategories>
+        <alwaysHaulable>true</alwaysHaulable>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Ingredients"/>
+            <li Class="CompProperties_FoodPoisonable"/>
+        </comps>
+        <pathCost>15</pathCost>
+        <resourceReadoutPriority>Last</resourceReadoutPriority>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <uiIconForStackCount>1</uiIconForStackCount>
+        <ingestible>
+            <foodType>Meat</foodType>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+        </ingestible>
+    </ThingDef>
+    <ThingDef ParentName="AA_MeatMealBase" Name="AA_MeatMealRottable" Abstract="True">
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>4</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <tradeability>Sellable</tradeability>
+    </ThingDef>
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>AA_RandomStones</defName>
+        <label>random stone</label>
+        <description>This should never appear ingame. If it does, it's a bug</description>
+        <graphicData>
+            <texPath>Things/Item/Chunk/ChunkStone</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <flipExtraRotation>80</flipExtraRotation>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>AA_RandomBricks</defName>
+        <label>random bricks</label>
+        <description>This should never appear ingame. If it does, it's a bug</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/StoneBlocks</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="MedicineBase">
+        <defName>AA_CactipineQuill</defName>
+        <label>medicinal cactipine quill</label>
+        <description>These quills are coated with a powerful anesthetic, and can be used as an alternative to herbal medicines. Not as powerful as industrial medicine, but useful in an emergency situation.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_CactipineQuill</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.85</drawSize>
+        </graphicData>
+        <techLevel>Neolithic</techLevel>
+        <statBases>
+            <MarketValue>10</MarketValue>
+            <Mass>0.35</Mass>
+            <Flammability>1.3</Flammability>
+            <MedicalPotency>0.55</MedicalPotency>
+            <MedicalQualityMax>0.70</MedicalQualityMax>
+            <DeteriorationRate>6</DeteriorationRate>
+        </statBases>
+        <tickerType>Rare</tickerType>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>150</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>AA_BlueMilk</defName>
+        <label>blue milk</label>
+        <description>"Milk" from a frostbound behemoth. Very nutritive but the colour is more than a little unsettling.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_BlueMilk</texPath>
+        </graphicData>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <MarketValue>4.5</MarketValue>
+            <Mass>0.045</Mass>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Flammability>0.2</Flammability>
+            <Nutrition>0.065</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>14</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>MealAwful</preferability>
+            <tasteThought/>
+            <foodType>AnimalProduct, Fluid</foodType>
+            <maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
+        </ingestible>
+        <thingCategories>
+            <li>CookingSupplies</li>
+        </thingCategories>
+    </ThingDef>
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>AA_GowMilk</defName>
+        <label>gow milk</label>
+        <description>Milk from a spined gow. Very nutritive but the reddish colour is a little unsettling.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_GowMilk</texPath>
+        </graphicData>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <MarketValue>4.1</MarketValue>
+            <Mass>0.045</Mass>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Flammability>0.2</Flammability>
+            <Nutrition>0.06</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>14</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>MealAwful</preferability>
+            <tasteThought/>
+            <foodType>AnimalProduct, Fluid</foodType>
+            <maxNumToIngestAtOnce>10</maxNumToIngestAtOnce>
+        </ingestible>
+        <thingCategories>
+            <li>CookingSupplies</li>
+        </thingCategories>
+    </ThingDef>
+    <ThingDef ParentName="AA_MeatMealRottable">
+        <defName>AA_DisgustingMealNutrientPaste</defName>
+        <label>disgusting nutrient paste meal</label>
+        <description>A synthetic mixture of protein, carbohydrates, and vitamins, amino acids and minerals. Everything the body needs, and absolutely disgusting. This paste is EVEN more disgusting than the paste produced by a nutrient paste dispenser, and people will just outright hate eating it. It was cheap, though!\n\nThis slurry is edible for carnivore and omnivore animals, but barely, and completely indigestible for herbivores.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_NutrientPasteDisgusting</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1</MarketValue>
+            <Nutrition>0.8</Nutrition>
+        </statBases>
+        <tradeability>Sellable</tradeability>
+        <ingestible>
+            <preferability>MealAwful</preferability>
+            <tasteThought>AA_AteSuperAwfulMeal</tasteThought>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+    </ThingDef>
+    <ThingDef ParentName="ResourceVerbBase">
+        <defName>AA_GallatrossHorn</defName>
+        <label>gallatross horn</label>
+        <description>A Gallatross' horn. This rock-hard horn is very valuable, and given the dangers inherent in hunting a Gallatross, a scarce commodity.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_GallatrossHorn</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <statBases>
+            <MarketValue>1200</MarketValue>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>5</Mass>
+            <Flammability>0.4</Flammability>
+            <DeteriorationRate>0.5</DeteriorationRate>
+        </statBases>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>10</stackLimit>
+        <tools>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Scratch</li>
+                    <li>Stab</li>
+                </capacities>
+                <power>32</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+            <li>
+                <label>base</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>AA_SkySteel</defName>
+        <label>skysteel alloy</label>
+        <description>Alloy from a weird iron based compound found in a fallen asteroid. Stronger than normal steel, but a terrible insulator.</description>
+        <graphicData>
+            <texPath>Things/Item/Ingot</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(57,93,187)</color>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>600</stackLimit>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <MarketValue>5</MarketValue>
+            <StuffPower_Armor_Blunt>1.3</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Heat>0.01</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>-4</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>-2</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>1.15</SharpDamageMultiplier>
+            <BluntDamageMultiplier>1.15</BluntDamageMultiplier>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Flammability>0</Flammability>
+            <Mass>0.45</Mass>
+            <Bulk>0.45</Bulk>
+        </statBases>
+        <useHitPoints>false</useHitPoints>
+        <thingCategories>
+            <li>SLDBar</li>
+        </thingCategories>
+        <smeltable>true</smeltable>
+        <stuffProps>
+            <stuffAdjective>Skysteel</stuffAdjective>
+            <appearance>Metal</appearance>
+            <categories>
+                <li>Metallic</li>
+                <li>StrongMetallic</li>
+                <li>RuggedMetallic</li>
+            </categories>
+            <constructEffect>ConstructMetal</constructEffect>
+            <color>(36,84,150)</color>
+            <commonality>0.04</commonality>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <statFactors>
+                <MaxHitPoints>2</MaxHitPoints>
+                <Beauty>1.5</Beauty>
+                <Flammability>0</Flammability>
+                <WorkToMake>1.1</WorkToMake>
+                <WorkToBuild>1.1</WorkToBuild>
+                <DoorOpenSpeed>0.8</DoorOpenSpeed>
+                <MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
+                <MoveSpeed>0.75</MoveSpeed>
+                <MarketValue>0.9</MarketValue>
+                <BedRestEffectiveness>0.85</BedRestEffectiveness>
+                <ImmunityGainSpeedFactor>0.95</ImmunityGainSpeedFactor>
+                <WorkTableWorkSpeedFactor>1.05</WorkTableWorkSpeedFactor>
+                <MeleePenetrationFactor>1.1</MeleePenetrationFactor>
+                <Mass>1.3</Mass>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <modExtensions>
+            <li Class="SurvivalToolsLite.StuffPropsTool">
+                <toolStatFactors>
+                    <TreeFellingSpeed>1.3</TreeFellingSpeed>
+                    <PlantHarvestingSpeed>1.3</PlantHarvestingSpeed>
+                    <PlantSowingSpeed>1.3</PlantSowingSpeed>
+                    <DiggingSpeed>1.3</DiggingSpeed>
+                    <MiningYieldDigging>1.3</MiningYieldDigging>
+                    <ConstructionSpeed>1.3</ConstructionSpeed>
+                    <SmithingSpeed>1.3</SmithingSpeed>
+                </toolStatFactors>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>AA_UraniumCrystals</defName>
+        <label>unrefined uranium crystals</label>
+        <description>This crystal can be refined in a chemfuel refinery into uranium.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_UraniumCrystals</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>75</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>65</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>1.8</Mass>
+        </statBases>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+    </ThingDef>
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>AA_BlueGel</defName>
+        <label>blue gel</label>
+        <description>A syrupy residue extracted from Aerofleets, which can be refined into an energy-dense compound, and potentially used to build powerful batteries and generators, with the appropiate research (Biofuel refining to process it further, and Batteries).</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_BlueGel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>75</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>1</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.05</Mass>
+        </statBases>
+        <thingCategories>
+            <li>FuelCat</li>
+        </thingCategories>
+        <stuffProps>
+            <stuffAdjective>fuel</stuffAdjective>
+        </stuffProps>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+    </ThingDef>
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>AA_Hexagel</defName>
+        <label>hexagel</label>
+        <description>A crystallized and condensed variety of blue gel. Hexagel is capable of storing much more energy than its non-refined cousin, but it also seems to be quite unstable. Hexagel can be used to build powerful batteries and generators, with the appropiate research (Batteries and Advanced Fabrication).</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_HexaGel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>75</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>6</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>0.3</Mass>
+        </statBases>
+        <thingCategories>
+            <li>FuelCat</li>
+        </thingCategories>
+        <stuffProps>
+            <stuffAdjective>fuel</stuffAdjective>
+        </stuffProps>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.1</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+                <startWickOnDamageTaken>
+                    <li>Flame</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <wickTicks>
+                    <min>70</min>
+                    <max>150</max>
+                </wickTicks>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>AA_HexagelCore</defName>
+        <label>hexagel core</label>
+        <description>A hexagonal shaped energy core composed of -in itself highly unstable- hydrogen-rich blue gel stabilized within an uranium shell.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_HexagelEnergyCore</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <stackLimit>75</stackLimit>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <MarketValue>42</MarketValue>
+            <Mass>0.95</Mass>
+            <Flammability>1.1</Flammability>
+            <DeteriorationRate>1.5</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>FuelCat</li>
+        </thingCategories>
+        <stuffProps>
+            <stuffAdjective>fuel</stuffAdjective>
+        </stuffProps>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
+    <ThingDef ParentName="PlantFoodRawBase">
+        <defName>AA_RottingMoundItem</defName>
+        <label>fermented rotting mound</label>
+        <description>This is a clump of rotting organic matter. It has begun fermenting and reeks of rot and alcohol.</description>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <Flammability>1.3</Flammability>
+            <Nutrition>0.2</Nutrition>
+            <MarketValue>1.45</MarketValue>
+            <Mass>0.027</Mass>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plants/AA_RottingMound</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <ingestible>
+            <foodType>Liquor</foodType>
+            <preferability>NeverForNutrition</preferability>
+            <tasteThought>AA_AteHorribleRot</tasteThought>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>AlcoholHigh</hediffDef>
+                    <severity>0.1</severity>
+                    <toleranceChemical>Alcohol</toleranceChemical>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+    </ThingDef>
+    
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>AA_HugeAnimaPearl</defName>
+        <label>huge anima pearl</label>
+        <description>This huge anima pearl seems to be bursting with barely contained living energy. It can be planted and an anima tree will grow from it.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_HugeAnimaPearl</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <stackLimit>75</stackLimit>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <MarketValue>50</MarketValue>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Plant huge anima pearl</useLabel>
+                <useDuration>0</useDuration>
+            </li>
+            <li Class="CompProperties_Targetable">
+                <compClass>AlphaBehavioursAndEvents.CompTargetable_Ground</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="OrganicProductBase">
+		<defName>AA_NightMilk</defName>
+		<label>night milk</label>
+		<description>Very nutritive but the colour is more than a little unsettling.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/FO_NightMilk</texPath>
+		</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>4.5</MarketValue>
+			<Mass>0.045</Mass>
+			<MaxHitPoints>60</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+			<Nutrition>0.065</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<ingestible>
+			<preferability>RawTasty</preferability>
+			<foodType>AnimalProduct, Fluid</foodType>
+		</ingestible>
+		<thingCategories Inherit="False">
+            <li>CookingSupplies</li>
+        </thingCategories>
+	</ThingDef>
+    
+	<ThingDef ParentName="PlantFoodRawBase">
+		<defName>AA_BlackTruffles</defName>
+		<label>black truffles</label>
+		<description>Raw black truffles. A delicious and valuable variety of fungus.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/FO_BlackTruffles</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>5.5</MarketValue>
+		</statBases>
+		<ingestible>
+			<foodType>VegetableOrFruit</foodType>
+			<specialThoughtAsIngredient>AA_AteBlackTruffleIngredient</specialThoughtAsIngredient>
+		</ingestible>
+        <thingCategories Inherit="False">
+            <li>FungusPlantRaw</li>
+        </thingCategories>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

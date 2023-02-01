@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--=============== Tentacles ====================-->
+    <HediffDef ParentName="addedPartAnimal">
+        <defName>AA_ProstheticTentacle</defName>
+        <label>simple prosthetic tentacle</label>
+        <description>A simple prosthetic tentacle.</description>
+        <defaultLabelColor>(233,129,69)</defaultLabelColor>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>prosthetic tentacle</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>8</power>
+                        <cooldownTime>1.8</cooldownTime>
+                        <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <spawnThingOnRemoved>AA_ProstheticTentacle</spawnThingOnRemoved>
+        <addedPartProps>
+            <partEfficiency>0.85</partEfficiency>
+            <betterThanNatural>false</betterThanNatural>
+            <solid>true</solid>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.01</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef ParentName="addedPartAnimal">
+        <defName>AA_BionicTentacle</defName>
+        <label>bionic tentacle</label>
+        <description>A bionic tentacle.</description>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>bionic tentacle</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>20</power>
+                        <cooldownTime>1.4</cooldownTime>
+                        <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <spawnThingOnRemoved>AA_BionicTentacle</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.025</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.03</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <!--=============== Beaks ====================-->
+    <HediffDef ParentName="addedPartAnimal">
+        <defName>AA_ProstheticBeak</defName>
+        <label>simple prosthetic beak</label>
+        <description>A simple prosthetic beak.</description>
+        <defaultLabelColor>(233,129,69)</defaultLabelColor>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>prosthetic beak</label>
+                        <capacities>
+                            <li>Bite</li>
+                        </capacities>
+                        <power>8</power>
+                        <cooldownTime>1.8</cooldownTime>
+                        <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <spawnThingOnRemoved>AA_ProstheticBeak</spawnThingOnRemoved>
+        <addedPartProps>
+            <partEfficiency>0.85</partEfficiency>
+            <betterThanNatural>false</betterThanNatural>
+            <solid>true</solid>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.01</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef ParentName="addedPartAnimal">
+        <defName>AA_BionicBeak</defName>
+        <label>bionic beak</label>
+        <description>A bionic beak.</description>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>bionic beak</label>
+                        <capacities>
+                            <li>Bite</li>
+                        </capacities>
+                        <power>20</power>
+                        <cooldownTime>1.4</cooldownTime>
+                        <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <spawnThingOnRemoved>AA_BionicBeak</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.025</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.03</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <!--=============== Motion Detector ====================-->
+    <HediffDef ParentName="addedPartAnimal">
+        <defName>AA_BionicMotionDetector</defName>
+        <label>bionic motion detector</label>
+        <description>Improved bionic motion detector for animals. This motion detector replaces echolocation organs and vibration sensors.</description>
+        <spawnThingOnRemoved>AA_BionicMotionDetector</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.01</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.015</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.015</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.015</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <!--=============== Buoyancy Mechanism ====================-->
+    <HediffDef ParentName="addedPartAnimal">
+        <defName>AA_ProstheticBuoyancyMechanism</defName>
+        <label>simple prosthetic buoyancy mechanism</label>
+        <description>Simple prosthetic buoyancy mechanism. Should be able to replace hydrogen sacs and other exotic organs keeping hovering creatures in the air.</description>
+        <spawnThingOnRemoved>AA_ProstheticBuoyancyMechanism</spawnThingOnRemoved>
+        <addedPartProps>
+            <partEfficiency>0.85</partEfficiency>
+            <betterThanNatural>false</betterThanNatural>
+            <solid>true</solid>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.005</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.005</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.005</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef ParentName="addedPartAnimal">
+        <defName>AA_BionicBuoyancyMechanism</defName>
+        <label>bionic buoyancy mechanism</label>
+        <description>Improved bionic buoyancy mechanism for animals. Should be able to replace hydrogen sacs and other exotic organs keeping hovering creatures in the air.</description>
+        <spawnThingOnRemoved>AA_BionicBuoyancyMechanism</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.01</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.01</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <!--=============== Shells ====================-->
+    <HediffDef ParentName="addedPartAnimal">
+        <defName>AA_ProstheticShell</defName>
+        <hediffClass>Hediff_Implant</hediffClass>
+        <label>simple prosthetic shell</label>
+        <description>Simple prosthetic shell. Should be able to replace carapaces and shells.</description>
+        <defaultLabelColor>(233,129,69)</defaultLabelColor>
+        <spawnThingOnRemoved>AA_ProstheticShell</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>0.85</partEfficiency>
+            <betterThanNatural>false</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.02</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef ParentName="addedPartAnimal">
+        <defName>AA_BionicShell</defName>
+        <label>bionic shell</label>
+        <hediffClass>Hediff_Implant</hediffClass>
+        <description>Improved bionic shell for animals. Should be able to replace carapaces and shells.</description>
+        <spawnThingOnRemoved>AA_BionicShell</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.01</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.1</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <!--=============== Wings ====================-->
+    <HediffDef ParentName="addedPartAnimal">
+        <defName>AA_ProstheticWing</defName>
+        <label>simple prosthetic wing</label>
+        <description>Simple prosthetic wing. Should be able to replace any type of wing.</description>
+        <defaultLabelColor>(233,129,69)</defaultLabelColor>
+        <spawnThingOnRemoved>AA_ProstheticWing</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>0.85</partEfficiency>
+            <betterThanNatural>false</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.02</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef ParentName="addedPartAnimal">
+        <defName>AA_BionicWing</defName>
+        <label>bionic wing</label>
+        <description>Improved bionic wing for animals. Should be able to replace any type of wing.</description>
+        <spawnThingOnRemoved>AA_BionicWing</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.01</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.03</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.03</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <!--=============== Claws ====================-->
+    <HediffDef ParentName="addedPartAnimal">
+        <defName>AB_SimpleProstheticClaw</defName>
+        <label>simple prosthetic claw</label>
+        <description>Simple prosthetic claw. Fits animals with sharpened claws.</description>
+        <defaultLabelColor>(233,129,69)</defaultLabelColor>
+        <spawnThingOnRemoved>AB_SimpleProstheticClaw</spawnThingOnRemoved>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>simple prosthetic claw</label>
+                        <capacities>
+                            <li>Cut</li>
+                        </capacities>
+                        <power>6</power>
+                        <cooldownTime>1.8</cooldownTime>
+                        <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>0.50</partEfficiency>
+            <betterThanNatural>false</betterThanNatural>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.01</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <HediffDef ParentName="addedPartAnimal">
+        <defName>AB_BionicClaw</defName>
+        <label>bionic claw</label>
+        <description>Improved bionic claw. Fits animals with sharpened claws.</description>
+        <spawnThingOnRemoved>AB_BionicClaw</spawnThingOnRemoved>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>bionic claw</label>
+                        <capacities>
+                            <li>Cut</li>
+                        </capacities>
+                        <power>15</power>
+                        <cooldownTime>1.4</cooldownTime>
+                        <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.05</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+    <!--=============== Goo Acidifier ====================-->
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>AA_GooAcidifier</defName>
+        <label>goo acidifier</label>
+        <labelNoun>a goo acidifier</labelNoun>
+        <description>A goo acidifier increases the acidity of a goo's internal organs, making it explode as soon as it is downed. Basically transforms goos into biological suicide bombers.</description>
+        <descriptionHyperlinks>
+            <ThingDef>AA_GooAcidifier</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>AA_GooAcidifier</spawnThingOnRemoved>
+        <comps>
+            <li Class="AlphaBehavioursAndEvents.HediffCompProperties_ExplodeOnDowned">
+
+			</li>
+        </comps>
+    </HediffDef>
+</Defs>

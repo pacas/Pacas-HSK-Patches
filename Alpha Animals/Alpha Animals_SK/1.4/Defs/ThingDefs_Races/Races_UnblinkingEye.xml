@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ============================================================ -->
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_UnblinkingEye</defName>
+        <label>unblinking eye</label>
+        <description>A floating chitinous creature covered in spikes and unblinking eyes. Created by infusing a very large animal with the strange energies from an extradimensional corruption.</description>
+        <statBases>
+            <MoveSpeed>2</MoveSpeed>
+            <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+            <MarketValue>1200</MarketValue>
+            <ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+            <MeatAmount>0</MeatAmount>
+            <LeatherAmount>20</LeatherAmount>
+            <FilthRate>2</FilthRate>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>25</power>
+                <cooldownTime>1.85</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.1</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_Floating">
+
+			</li>
+            <li Class="AnimalBehaviours.CompProperties_Regeneration">
+                <rateInTicks>100</rateInTicks>
+            </li>
+        </comps>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <accuracyTouch>1</accuracyTouch>
+                <accuracyShort>1</accuracyShort>
+                <accuracyMedium>1</accuracyMedium>
+                <accuracyLong>1</accuracyLong>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>AA_GazeAttack</defaultProjectile>
+                <warmupTime>1</warmupTime>
+                <burstShotCount>1</burstShotCount>
+                <minRange>1</minRange>
+                <range>20</range>
+                <label>melting gaze</label>
+                <muzzleFlashScale>0</muzzleFlashScale>
+                <commonality>1</commonality>
+            </li>
+        </verbs>
+        <race>
+            <herdAnimal>false</herdAnimal>
+            <predator>true</predator>
+            <body>AA_EyeBody</body>
+            <baseBodySize>7.00</baseBodySize>
+            <baseHungerRate>1.0</baseHungerRate>
+            <baseHealthScale>20</baseHealthScale>
+            <foodType>CarnivoreAnimal</foodType>
+            <wildness>0.8</wildness>
+            <leatherDef>Leather_Plain</leatherDef>
+            <useMeatFrom>Elephant</useMeatFrom>
+            <hasGenders>false</hasGenders>
+            <manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.5</manhunterOnTameFailChance>
+            <trainability>Advanced</trainability>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>550</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0</minAge>
+                    <soundCall>AA_Atispec_Call</soundCall>
+                    <soundAngry>AA_Atispec_Angry</soundAngry>
+                    <soundWounded>AA_Atispec_Wounded</soundWounded>
+                    <soundDeath>AA_Atispec_Death</soundDeath>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <butcherProducts>
+            <Chitin>5</Chitin>
+        </butcherProducts>
+        <tradeTags>
+            <li>AnimalExotic</li>
+            <li>AnimalAlpha</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Tank</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_VenomousTankDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_UnblinkingEye</defName>
+        <label>unblinking eye</label>
+        <race>AA_UnblinkingEye</race>
+        <combatPower>1000</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_UnblinkingEye/AA_UnblinkingEye</texPath>
+                    <drawSize>4.5</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

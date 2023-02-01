@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ============================================================ -->
+    <ThingDef ParentName="SK_AA_Insect">
+        <defName>AA_AuroraSylph</defName>
+        <label>Aurora sylph</label>
+        <description>A wispy-looking creature that is the only known example of plasma-based life in the Rim: the Aurora Sylph is of artificial origins, and its biology is so strange that only the most advanced glitterworld technology could have been responsible for its creation. It is believed that the sylphs were created as a lifeform capable of surviving in the atmosphere of Red Dwarf stars, for utterly inscrutable purposes. They don't seem to be affected by gravity much, so they can also be found stranded in the gravity well of a planet.\n\nSylphs are immune to temperature extremes, though very fragile and easy to damage. They don't need to eat, as they will replenish their energy simply by absorbing light. If they are content, they will periodically influence the magnetic fields of a planet, and cause beautiful auroras, hence their name.\n\nBased on concept art by Maugryph, https://maugryph.com.\n\nArt by AetherealVanguard (check Instagram at https://www.instagram.com/aethereaii/).</description>
+        <statBases>
+            <MoveSpeed>2</MoveSpeed>
+            <ComfyTemperatureMin>-300</ComfyTemperatureMin>
+            <ComfyTemperatureMax>50000</ComfyTemperatureMax>
+            <MarketValue>250</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>1</power>
+                <cooldownTime>1.2</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_Floating">
+			</li>
+            <li Class="AnimalBehaviours.CompProperties_CauseIncident">
+                <checkingInterval>450000</checkingInterval>
+                <requiresTamed>true</requiresTamed>
+                <incidentToCause>Aurora</incidentToCause>
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_AutoNutrition">
+                <consumingFoodReportString>Absorbing sunlight</consumingFoodReportString>
+            </li>
+        </comps>
+        <race>
+            <wildBiomes>
+                <BorealForest>0.05</BorealForest>
+                <TemperateForest>0.03</TemperateForest>
+                <TemperateSwamp>0.03</TemperateSwamp>
+                <TropicalRainforest>0.04</TropicalRainforest>
+                <TropicalSwamp>0.04</TropicalSwamp>
+                <AridShrubland>0.01</AridShrubland>
+                <Desert>0.01</Desert>
+            </wildBiomes>
+            <canBePredatorPrey>false</canBePredatorPrey>
+            <herdAnimal>true</herdAnimal>
+            <body>AA_Butterfly</body>
+            <baseBodySize>0.5</baseBodySize>
+            <baseHungerRate>0.1</baseHungerRate>
+            <baseHealthScale>0.7</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <wildness>0.8</wildness>
+            <hasGenders>false</hasGenders>
+            <manhunterOnDamageChance>0.1</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+            <roamMtbDays>2</roamMtbDays>
+            <trainability>None</trainability>
+            <lifeExpectancy>6</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0</minAge>
+                    <soundWounded>Pawn_Megascarab_Wounded</soundWounded>
+                    <soundDeath>Pawn_Megascarab_Death</soundDeath>
+                    <soundCall>Pawn_Megascarab_Call</soundCall>
+                    <soundAngry>Pawn_Megascarab_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Utility</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_UtilityMoodDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+                <showImageInInfoCard>true</showImageInInfoCard>
+                <ImageToShowInInfoCard>Art/AA_AuroraSylphArt</ImageToShowInInfoCard>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_AuroraSylph</defName>
+        <label>aurora sylph</label>
+        <race>AA_AuroraSylph</race>
+        <combatPower>45</combatPower>
+        <ecoSystemWeight>0.25</ecoSystemWeight>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_AuroraSylph/AA_AuroraSylph</texPath>
+                    <drawSize>3</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_AuroraSylph/AA_Dessicated_AuroraSylph</texPath>
+                    <drawSize>3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

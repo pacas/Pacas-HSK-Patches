@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======================== Needlepost ======================== -->
+
+	<BodyDef>
+		<defName>AA_FlyTrap</defName>
+		<label>flytrap body</label>
+		<corePart>
+			<def>Body</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<groups>
+				<li>AA_Body</li>
+			</groups>
+			<parts>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.08</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Heart</def>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>AA_PlantPhloem</def>
+					<coverage>0.5</coverage>
+					<depth>Inside</depth>
+				</li>
+				
+				<li>
+					<def>Neck</def>
+					<coverage>0.1</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>AA_SentientPlantHead</def>
+							<coverage>0.75</coverage>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<parts>
+								<li>
+									<def>Skull</def>
+									<coverage>0.15</coverage>
+									<depth>Inside</depth>
+									<parts>
+										<li>
+											<def>Brain</def>
+											<coverage>0.7</coverage>
+											<depth>Inside</depth>
+										</li>
+									</parts>
+								</li>
+								<li>
+									<def>AA_PlantVibrationSensor</def>
+									
+									<coverage>0.3</coverage>
+								</li>
+								
+								<li>
+									<def>AA_SentientPlantMouth</def>
+									<coverage>0.4</coverage>
+									<groups>
+										<li>AA_Mouth</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>AA_ManTrapTentacle</def>
+					<customLabel>first tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+
+				</li>
+				<li>
+					<def>AA_ManTrapTentacle</def>
+					<customLabel>second tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+
+				</li>
+				<li>
+					<def>AA_ManTrapTentacle</def>
+					<customLabel>third tentacle</customLabel>
+					<groups>
+						<li>Arms</li>
+					</groups>
+					<coverage>0.05</coverage>
+					<height>Bottom</height>
+
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

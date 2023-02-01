@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RecipeDef Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>AA_ExtractUranium</defName>
+        <label>process uranium crystals</label>
+        <description>Extract uranium from .</description>
+        <jobString>Extracting useful materials from unrefined uranium crystals.</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>2000</workAmount>
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AA_UraniumCrystals</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>AA_UraniumCrystals</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Uranium>15</Uranium>
+        </products>
+    </RecipeDef>
+    <RecipeDef Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>AA_BlueGel_To_Hexagel</defName>
+        <label>Compress blue gel to hexagel.</label>
+        <description>Make a crystallized cube of hexagel by compressing blue gel under high pressure.</description>
+        <jobString>Compressing blue gel.</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>2000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AA_BlueGel</li>
+                    </thingDefs>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>AA_BlueGel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <AA_Hexagel>20</AA_Hexagel>
+        </products>
+    </RecipeDef>
+    <RecipeDef Class="UniversalFermenterSK.RecipeDef_UF">
+        <defName>AA_Make_HexagelCore</defName>
+        <label>Make hexagel cores.</label>
+        <description>Craft hexagel cores using hexagel and uranium as a stabalizer.</description>
+        <jobString>Crafting hexagel cores.</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>1000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AA_Hexagel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DepletedUranium</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>AA_Hexagel</li>
+                <li>DepletedUranium</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <AA_HexagelCore>5</AA_HexagelCore>
+        </products>
+        <skillRequirements>
+            <Crafting>9</Crafting>
+            <Intellectual>10</Intellectual>
+        </skillRequirements>
+    </RecipeDef>
+</Defs>

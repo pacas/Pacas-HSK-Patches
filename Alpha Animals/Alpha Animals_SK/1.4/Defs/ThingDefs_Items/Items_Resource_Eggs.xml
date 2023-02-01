@@ -1,0 +1,1073 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Abstract="True" Name="AA_EggBase" ParentName="OrganicProductBase">
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggBirdSmall</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <Mass>0.15</Mass>
+            <MaxHitPoints>20</MaxHitPoints>
+            <DeteriorationRate>0.1</DeteriorationRate>
+            <Flammability>0.7</Flammability>
+        </statBases>
+    </ThingDef>
+    <ThingDef Abstract="True" Name="AA_EggFertBaseCold" ParentName="AA_EggBase">
+        <tickerType>Normal</tickerType>
+        <thingCategories>
+            <li>EggsFertilized</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_TemperatureRuinable">
+                <minSafeTemperature>-50</minSafeTemperature>
+                <maxSafeTemperature>15</maxSafeTemperature>
+                <progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef Abstract="True" Name="AA_EggFertBaseHot" ParentName="AA_EggBase">
+        <tickerType>Normal</tickerType>
+        <thingCategories>
+            <li>EggsFertilized</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_TemperatureRuinable">
+                <minSafeTemperature>10</minSafeTemperature>
+                <maxSafeTemperature>180</maxSafeTemperature>
+                <progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef Abstract="True" Name="AA_EggFertBaseResistant" ParentName="AA_EggBase">
+        <tickerType>Normal</tickerType>
+        <thingCategories>
+            <li>EggsFertilized</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_TemperatureRuinable">
+                <minSafeTemperature>-35</minSafeTemperature>
+                <maxSafeTemperature>80</maxSafeTemperature>
+                <progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Bumbledrone Egg -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_BumbledroneQueenEggFertilized</defName>
+        <label>bumbledrone egg (fert.)</label>
+        <description>Fertilized bumbledrone eggs. I... I wouldn't eat this. Yuck. If all goes well, it should hatch into a bumbledrone.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>6.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(255,241,107)</color>
+        </graphicData>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>15</hatcherDaystoHatch>
+                <hatcherPawn>AA_Bumbledrone</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Wildpod Egg -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_WildpodSpores</defName>
+        <label>wildpod spore clump (fert.)</label>
+        <description>Fertilized wildpod spores. I... I wouldn't eat this. Yuck. If all goes well, it should hatch into a wildpod.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_SporeClump</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>5</hatcherDaystoHatch>
+                <hatcherPawn>AA_Wildpod</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_AgaripodSpores</defName>
+        <label>agaripod spore clump (fert.)</label>
+        <description>Fertilized agaripod spores. I... I wouldn't eat this. Yuck. If all goes well, it should hatch into an agaripod.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_SporeClumpPurple</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>5</hatcherDaystoHatch>
+                <hatcherPawn>AA_Agaripod</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_MycoidColossusSpores</defName>
+        <label>mycoid colossus spore clump (fert.)</label>
+        <description>Fertilized mycoid colossus spores. I... I wouldn't eat this. Yuck. If all goes well, it should hatch into a mycoid colossus.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_SporeClumpPurple</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>5</hatcherDaystoHatch>
+                <hatcherPawn>AA_MycoidColossus</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_WildpawnSpores</defName>
+        <label>wildpawn spore clump (fert.)</label>
+        <description>Fertilized wildpawn spores. I... I wouldn't eat this. Yuck. If all goes well, it should hatch into a wildpawn.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_SporeClump</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>.85</drawSize>
+        </graphicData>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>5</hatcherDaystoHatch>
+                <hatcherPawn>AA_Wildpawn</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_AgaripawnSpores</defName>
+        <label>agaripawn spore clump (fert.)</label>
+        <description>Fertilized agaripawn spores. I... I wouldn't eat this. Yuck. If all goes well, it should hatch into an agaripawn.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_SporeClumpPurple</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>.85</drawSize>
+        </graphicData>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>5</hatcherDaystoHatch>
+                <hatcherPawn>AA_Agaripawn</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Ironhusk Beetle Egg -->
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>AA_IronhuskEggUnfertilized</defName>
+        <label>ironhusk beetle egg (unfert.)</label>
+        <description>Unfertilized ironhusk beetle egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a beetle egg, it is disgusting either way...</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <color>(183,95,71)</color>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_IronhuskEggFertilized</defName>
+        <label>ironhusk beetle egg (fert.)</label>
+        <description>Fertilized ironhusk beetle egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a beetle egg, it is disgusting either way... If all goes well, it should hatch into an ironhusk beetle.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <color>(183,95,71)</color>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>25</hatcherDaystoHatch>
+                <hatcherPawn>AA_IronhuskBeetle</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Mammoth Worm Egg -->
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>AA_MammothWormEggUnfertilized</defName>
+        <label>mammoth worm egg (unfert.)</label>
+        <description>Unfertilized mammoth worm egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a worm egg, it is disgusting either way...</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <color>(126,113,117)</color>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_MammothWormEggFertilized</defName>
+        <label>mammoth worm egg (fert.)</label>
+        <description>Fertilized mammoth worm egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a worm egg, it is disgusting either way... If all goes well, it should hatch into a mammoth worm.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <color>(126,113,117)</color>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>45</hatcherDaystoHatch>
+                <hatcherPawn>AA_MammothWorm</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Crepuscular Beetle Egg -->
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>AA_CrepuscularBeetleEggUnfertilized</defName>
+        <label>crepuscular beetle egg (unfert.)</label>
+        <description>Unfertilized crepuscular beetle egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a beetle egg, it is disgusting either way...</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <color>(45,45,58)</color>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_CrepuscularBeetleEggFertilized</defName>
+        <label>crepuscular beetle egg (fert.)</label>
+        <description>Fertilized crepuscular beetle egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a beetle egg, it is disgusting either way... If all goes well, it should hatch into a crepuscular beetle.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <color>(45,45,58)</color>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>25</hatcherDaystoHatch>
+                <hatcherPawn>AA_CrepuscularBeetle</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Great Devourer Egg -->
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>AA_GreatDevourerEggUnfertilized</defName>
+        <label>great devourer egg (unfert.)</label>
+        <description>Unfertilized great devourer egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a worm egg, it is disgusting either way...</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <color>(163,81,36)</color>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_GreatDevourerEggFertilized</defName>
+        <label>great devourer egg (fert.)</label>
+        <description>Fertilized great devourer egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a worm egg, it is disgusting either way... If all goes well, it should hatch into a great devourer.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <color>(163,81,36)</color>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>8</hatcherDaystoHatch>
+                <hatcherPawn>AA_GreatDevourer</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Megalouse Egg -->
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>AA_MegalouseEggUnfertilized</defName>
+        <label>megalouse egg (unfert.)</label>
+        <description>Unfertilized megalouse egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a louse egg, it is disgusting either way...</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <color>(126,113,117)</color>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_MegalouseEggFertilized</defName>
+        <label>megalouse egg (fert.)</label>
+        <description>Fertilized megalouse egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a louse egg, it is disgusting either way... If all goes well, it should hatch into a megalouse.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <color>(126,113,117)</color>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>15</hatcherDaystoHatch>
+                <hatcherPawn>AA_MegaLouse</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Bedbug Egg -->
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>AA_BedBugEggUnfertilized</defName>
+        <label>bedbug egg (unfert.)</label>
+        <description>Unfertilized bedbug egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a beetle egg, it is disgusting either way...</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <color>(99,45,40)</color>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_BedBugEggFertilized</defName>
+        <label>bedbug egg (fert.)</label>
+        <description>Fertilized bedbug egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a beetle egg, it is disgusting either way... If all goes well, it should hatch into a bedbug.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <color>(99,45,40)</color>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>10</hatcherDaystoHatch>
+                <hatcherPawn>AA_BedBug</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Animalisk Egg =============== -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_AnimaliskEggFertilized</defName>
+        <label>animalisk egg (fert.)</label>
+        <description>Fertilized animalisk egg. If all goes well, it should hatch into an animalisk. It can be eaten raw, but it's much better cooked. Actually, it's a spider egg, it is disgusting either way...</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(80,68,54)</color>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>9</MarketValue>
+        </statBases>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>18</hatcherDaystoHatch>
+                <hatcherPawn>AA_Animalisk</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Feralisk Egg -->
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>AA_FeraliskEggUnfertilized</defName>
+        <label>feralisk egg (unfert.)</label>
+        <description>Unfertilized feralisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way...</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(79,67,61)</color>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_FeraliskEggFertilized</defName>
+        <label>feralisk egg (fert.)</label>
+        <description>Fertilized feralisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way... If all goes well, it should hatch into a feralisk.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(79,67,61)</color>
+        </graphicData>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>18</hatcherDaystoHatch>
+                <hatcherPawn>AA_Feralisk</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>AA_FeraliskSuperEggFertilized</defName>
+        <label>charged feralisk egg (fert.)</label>
+        <description>Fertilized feralisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way... If all goes well, it should hatch into a feralisk. This egg seems to be developing at an alarmingly accelerated rate!</description>
+        <tickerType>Normal</tickerType>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+            <Mass>0.15</Mass>
+            <MaxHitPoints>20</MaxHitPoints>
+            <DeteriorationRate>2</DeteriorationRate>
+            <Flammability>0.7</Flammability>
+        </statBases>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <thingCategories>
+            <li>EggsFertilized</li>
+        </thingCategories>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(79,67,61)</color>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>1</hatcherDaystoHatch>
+                <hatcherPawn>AA_Feralisk</hatcherPawn>
+            </li>
+            <li Class="CompProperties_TemperatureRuinable">
+                <minSafeTemperature>0</minSafeTemperature>
+                <maxSafeTemperature>50</maxSafeTemperature>
+                <progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Dunealisk Egg -->
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>AA_DunealiskEggUnfertilized</defName>
+        <label>dunealisk egg (unfert.)</label>
+        <description>Unfertilized dunealisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way...</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(186,170,112)</color>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="AA_EggFertBaseHot">
+        <defName>AA_DunealiskEggFertilized</defName>
+        <label>dunealisk egg (fert.)</label>
+        <description>Fertilized dunealisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way... If all goes well, it should hatch into a dunealisk.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(186,170,112)</color>
+        </graphicData>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>18</hatcherDaystoHatch>
+                <hatcherPawn>AA_Dunealisk</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>AA_DunealiskSuperEggFertilized</defName>
+        <label>charged dunealisk egg (fert.)</label>
+        <description>Fertilized dunealisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way... If all goes well, it should hatch into a dunealisk. This egg seems to be developing at an alarmingly accelerated rate!</description>
+        <tickerType>Normal</tickerType>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+            <Mass>0.15</Mass>
+            <MaxHitPoints>20</MaxHitPoints>
+            <DeteriorationRate>2</DeteriorationRate>
+            <Flammability>0.7</Flammability>
+        </statBases>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <thingCategories>
+            <li>EggsFertilized</li>
+        </thingCategories>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(186,170,112)</color>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>1</hatcherDaystoHatch>
+                <hatcherPawn>AA_Dunealisk</hatcherPawn>
+            </li>
+            <li Class="CompProperties_TemperatureRuinable">
+                <minSafeTemperature>10</minSafeTemperature>
+                <maxSafeTemperature>100</maxSafeTemperature>
+                <progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Blizzarisk Egg -->
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>AA_BlizzariskEggUnfertilized</defName>
+        <label>blizzarisk egg (unfert.)</label>
+        <description>Unfertilized blizzarisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way...</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(179,178,190)</color>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="AA_EggFertBaseCold">
+        <defName>AA_BlizzariskEggFertilized</defName>
+        <label>blizzarisk egg (fert.)</label>
+        <description>Fertilized blizzarisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way... If all goes well, it should hatch into a blizzarisk.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(179,178,190)</color>
+        </graphicData>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>18</hatcherDaystoHatch>
+                <hatcherPawn>AA_Blizzarisk</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>AA_BlizzariskSuperEggFertilized</defName>
+        <label>charged blizzarisk egg (fert.)</label>
+        <description>Fertilized blizzarisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way... If all goes well, it should hatch into a blizzarisk. This egg seems to be developing at an alarmingly accelerated rate!</description>
+        <tickerType>Normal</tickerType>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+            <Mass>0.15</Mass>
+            <MaxHitPoints>20</MaxHitPoints>
+            <DeteriorationRate>2</DeteriorationRate>
+            <Flammability>0.7</Flammability>
+        </statBases>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <thingCategories>
+            <li>EggsFertilized</li>
+        </thingCategories>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(179,178,190)</color>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>1</hatcherDaystoHatch>
+                <hatcherPawn>AA_Blizzarisk</hatcherPawn>
+            </li>
+            <li Class="CompProperties_TemperatureRuinable">
+                <minSafeTemperature>-50</minSafeTemperature>
+                <maxSafeTemperature>15</maxSafeTemperature>
+                <progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Junglelisk Egg -->
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>AA_JungleliskEggUnfertilized</defName>
+        <label>junglelisk egg (unfert.)</label>
+        <description>Unfertilized junglelisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way...</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(110,117,65)</color>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="AA_EggFertBaseResistant">
+        <defName>AA_JungleliskEggFertilized</defName>
+        <label>junglelisk egg (fert.)</label>
+        <description>Fertilized junglelisk egg. Non-edible. If all goes well, it should hatch into a junglelisk.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(110,117,65)</color>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>12</hatcherDaystoHatch>
+                <hatcherPawn>AA_Junglelisk</hatcherPawn>
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_DestroyThisItem">
+                <buttonLabel>AA_DestroyFlamingoEggsLabel</buttonLabel>
+                <buttonDesc>AA_DestroyFlamingoEggsDesc</buttonDesc>
+                <buttonIcon>UI/AA_DestroyJungleliskEgg</buttonIcon>
+                <buttonCancelLabel>AA_CancelDestroyFlamingoEggsLabel</buttonCancelLabel>
+                <buttonCancelDesc>AA_CancelDestroyFlamingoEggsDesc</buttonCancelDesc>
+                <buttonCancelIcon>UI/AA_CancelDestroyJungleliskEgg</buttonCancelIcon>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Cinderlisk Egg -->
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>AA_CinderliskEggUnfertilized</defName>
+        <label>cinderlisk egg (unfert.)</label>
+        <description>Unfertilized cinderlisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way...</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(109,109,109)</color>
+        </graphicData>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="AA_EggFertBaseResistant">
+        <defName>AA_CinderliskEggFertilized</defName>
+        <label>cinderlisk egg (fert.)</label>
+        <description>Fertilized cinderlisk egg. It can be eaten raw, but it's much, much better cooked. Actually, it's a spider egg, it is disgusting either way... If all goes well, it should hatch into a cinderlisk.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <color>(109,109,109)</color>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>12</hatcherDaystoHatch>
+                <hatcherPawn>AA_Cinderlisk</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Meadow Ave Egg =============== -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_EggMeadowAveFertilized</defName>
+        <label>meadow ave egg (fert.)</label>
+        <description>Fertilized meadow ave egg. If all goes well, it should hatch into a baby meadow ave. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <color>(125,138,97)</color>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>19.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>7</hatcherDaystoHatch>
+                <hatcherPawn>AA_MeadowAve</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Desert Ave Egg =============== -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_EggDesertAveFertilized</defName>
+        <label>desert ave egg (fert.)</label>
+        <description>Fertilized desert ave egg. If all goes well, it should hatch into a baby desert ave. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <color>(125,138,97)</color>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>19.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>7</hatcherDaystoHatch>
+                <hatcherPawn>AA_DesertAve</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Night Ave Egg =============== -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_EggNightAveFertilized</defName>
+        <label>night ave egg (fert.)</label>
+        <description>Fertilized night ave egg. If all goes well, it should hatch into a baby night ave. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/AA_EggNightling</texPath>
+            <drawSize>0.5</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>35.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>7</hatcherDaystoHatch>
+                <hatcherPawn>AA_NightAve</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Royal Ave Egg =============== -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_EggRoyalAveFertilized</defName>
+        <label>royal ave egg (fert.)</label>
+        <description>Fertilized royal ave egg. If all goes well, it should hatch into a baby royal ave. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/AA_EggRoyalAve</texPath>
+            <drawSize>0.5</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>135.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>7</hatcherDaystoHatch>
+                <hatcherPawn>AA_RoyalAve</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Rough Plated Monitor Egg =============== -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_EggRoughPlatedMonitorFertilized</defName>
+        <label>rough-plated monitor egg (fert.)</label>
+        <description>Fertilized rough-plated monitor egg. If all goes well, it should hatch into a baby rough-plated monitor. It can be eaten raw, but it's much better cooked. BE WARNED: Rough-plated Monitor eggs are violently unstable, and they explode when they hatch!</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/AA_EggRoyalAve</texPath>
+            <drawSize>0.5</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>10.0</MarketValue>
+            <MaxHitPoints>200</MaxHitPoints>
+        </statBases>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_ExplodingHatcher">
+                <hatcherDaystoHatch>2</hatcherDaystoHatch>
+                <hatcherPawn>AA_RoughPlatedMonitor</hatcherPawn>
+                <range>3</range>
+                <damageDef>AA_AcidSpit</damageDef>
+                <damage>20</damage>
+                <soundDef>AA_GooPop</soundDef>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Atispec Egg =============== -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_AtispecEggFertilized</defName>
+        <label>atispec egg (fert.)</label>
+        <description>Fertilized atispec egg. If all goes well, it should hatch into a larval atispec. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_AtispecEgg</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.5</MarketValue>
+        </statBases>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>7</hatcherDaystoHatch>
+                <hatcherPawn>AA_LarvalAtispec</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Angel Moth Egg =============== -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_AngelMothEggFertilized</defName>
+        <label>angel moth egg (fert.)</label>
+        <description>Fertilized angel moth egg. If all goes well, it should hatch into an angel moth larva. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.5</MarketValue>
+        </statBases>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>5</hatcherDaystoHatch>
+                <hatcherPawn>AA_AngelMothLarva</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Drainer Egg =============== -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_DrainerEggFertilized</defName>
+        <label>drainer egg (fert.)</label>
+        <description>Fertilized drainer egg. If all goes well, it should hatch into a drainer larva. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <color>(212,243,241)</color>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.5</MarketValue>
+        </statBases>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>3</hatcherDaystoHatch>
+                <hatcherPawn>AA_DrainerLarva</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Fire Wasp Egg =============== -->
+    <ThingDef ParentName="AA_EggFertBaseHot">
+        <defName>AA_FireWaspEggFertilized</defName>
+        <label>fire wasp egg (fert.)</label>
+        <description>Fertilized fire wasp egg. If all goes well, it should hatch into a fire wasp. Fire Wasp Eggs radiate an incredible amount of heat, and they can be dangerous if left unchecked, and extremely uncomfortable to eat.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>7</MarketValue>
+            <Flammability>0</Flammability>
+            <Nutrition>0.25</Nutrition>
+        </statBases>
+        <ingestible>
+            <foodType>AnimalProduct</foodType>
+            <ingestEffect>EatMeat</ingestEffect>
+            <ingestSound>RawMeat_Eat</ingestSound>
+            <preferability>RawBad</preferability>
+            <tasteThought>AA_UncomfortablyHot</tasteThought>
+            <specialThoughtAsIngredient>AA_UncomfortablyHot</specialThoughtAsIngredient>
+        </ingestible>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>7</hatcherDaystoHatch>
+                <hatcherPawn>AA_FireWasp</hatcherPawn>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusher</compClass>
+                <heatPerSecond>30</heatPerSecond>
+                <heatPushMaxTemperature>150</heatPushMaxTemperature>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>AA_FireWaspEggUnfertilized</defName>
+        <label>fire wasp egg (unfert.)</label>
+        <description>Unfertilized fire wasp egg. Fire Wasp Eggs radiate an incredible amount of heat, and they can be dangerous if left unchecked, and extremely uncomfortable to eat.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/EggRound</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>7</MarketValue>
+            <Flammability>0</Flammability>
+            <Nutrition>0.25</Nutrition>
+        </statBases>
+        <ingestible>
+            <foodType>AnimalProduct</foodType>
+            <ingestEffect>EatMeat</ingestEffect>
+            <ingestSound>RawMeat_Eat</ingestSound>
+            <preferability>RawBad</preferability>
+            <tasteThought>AA_UncomfortablyHot</tasteThought>
+            <specialThoughtAsIngredient>AA_UncomfortablyHot</specialThoughtAsIngredient>
+        </ingestible>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusher</compClass>
+                <heatPerSecond>30</heatPerSecond>
+                <heatPushMaxTemperature>150</heatPushMaxTemperature>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Flamingo Phoenix Egg =============== -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_EggFlamingoPhoenixFertilized</defName>
+        <label>flamingo phoenix egg (fert.)</label>
+        <description>Fertilized flamingo phoenix egg. If all goes well, it should hatch into a flamingo phoenix chick. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <color>(223,93,131)</color>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>10.0</MarketValue>
+            <Flammability>0</Flammability>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>2</hatcherDaystoHatch>
+                <hatcherPawn>AA_FlamingoPhoenix</hatcherPawn>
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_DestroyThisItem">
+                <buttonLabel>AA_DestroyFlamingoEggsLabel</buttonLabel>
+                <buttonDesc>AA_DestroyFlamingoEggsDesc</buttonDesc>
+                <buttonIcon>UI/AA_DestroyFlamingoEgg</buttonIcon>
+                <buttonCancelLabel>AA_CancelDestroyFlamingoEggsLabel</buttonCancelLabel>
+                <buttonCancelDesc>AA_CancelDestroyFlamingoEggsDesc</buttonCancelDesc>
+                <buttonCancelIcon>UI/AA_CancelDestroyFlamingoEgg</buttonCancelIcon>
+            </li>
+        </comps>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+    </ThingDef>
+    <!-- =============== Crescendo Anole Egg =============== -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_EggCrescendoAnoleFertilized</defName>
+        <label>crescendo anole egg (fert.)</label>
+        <description>Fertilized crescendo anole egg. If all goes well, it should hatch into a crescendo anole. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggCrescendoAnole</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>9</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>4</hatcherDaystoHatch>
+                <hatcherPawn>AA_CrescendoAnole</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Pedigreed Raptor Egg =============== -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_EggPedigreedRaptorFertilized</defName>
+        <label>pedigreed raptor egg (fert.)</label>
+        <description>Fertilized pedigreed raptor egg. If all goes well, it should hatch into a pedigreed raptor. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_PedigreedRaptorEgg</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>45</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>10</hatcherDaystoHatch>
+                <hatcherPawn>AA_PedigreedRaptor</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Empress Butterfly Egg =============== -->
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_EmpressButterflyEggFertilized</defName>
+        <label>empress butterfly egg (fert.)</label>
+        <description>Fertilized empress butterfly egg. If all goes well, it should hatch into an empress butterfly larva. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AA_EggBeetle</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(21,28,94)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.5</MarketValue>
+        </statBases>
+        <thingSetMakerTags>
+            <li>NotForGuests</li>
+        </thingSetMakerTags>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>5</hatcherDaystoHatch>
+                <hatcherPawn>AA_EmpressButterflyLarva</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- =============== Giant Crowned Silkie Egg =============== -->
+    <ThingDef ParentName="EggUnfertBase">
+        <defName>AA_EggGiantCrownedSilkieUnfertilized</defName>
+        <label>giant crowned silkie egg (unfert.)</label>
+        <description>An unfertilized giant crowned silkie egg. It can be eaten raw, but it's much, much better cooked.</description>
+        <graphicData>
+            <color>(230,230,230)</color>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+    </ThingDef>
+    <ThingDef ParentName="EggFertBase">
+        <defName>AA_EggGiantCrownedSilkieFertilized</defName>
+        <label>giant crowned silkie egg (fert.)</label>
+        <description>A fertilized giant crowned silkie egg. If all goes well, it should hatch into a giant crowned silkie. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <color>(230,230,230)</color>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <statBases>
+            <Nutrition>0.3</Nutrition>
+            <MarketValue>9.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>6</hatcherDaystoHatch>
+                <hatcherPawn>AA_GiantCrownedSilkie</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>VEF_ExoticProsthetics</defName>
+		<label>Exotic Animal Prosthetics</label>
+		<description>Learn to use and craft exotic animal prosthetics to replace such things as tentacles, wings, echolocation organs and so on</description>
+		<baseCost>200</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>51.00</researchViewY>
+		<prerequisites>
+			<li>Animal_B1</li>
+		</prerequisites>
+		<tab>Animal_SK</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>VEF_ExoticBionics</defName>
+		<label>Exotic Animal Bionics</label>
+		<description>Learn to use and craft exotic bionics to create bionic tentacles, wings, echolocation organs, etc</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>9.00</researchViewX>
+		<researchViewY>51.00</researchViewY>
+		<prerequisites>
+			<li>Animal_C2</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<tab>Animal_SK</tab>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>VEF_AdvancedAnimalImplants</defName>
+		<label>Advanced Animal Implants</label>
+		<description>Learn to extract certain abilities from animals and implant them in others. Ranged animal attacks can also be implanted in a different animal</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>18.00</researchViewX>
+		<researchViewY>51.00</researchViewY>
+		<prerequisites>
+			<li>Animal_D1</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<tab>Animal_SK</tab>
+	</ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <FleckDef ParentName="FleckBase">
+        <defName>AA_Ocular</defName>
+        <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+        <graphicData>
+            <graphicClass>Graphic_Fleck</graphicClass>
+            <shaderType>MoteDistorted</shaderType>
+            <texPath>Things/Mote/AA_Eye</texPath>
+            <drawSize>(1, 1)</drawSize>
+            <shaderParameters>
+                <_DistortionTex>/Things/Mote/SmokeTiled</_DistortionTex>
+                <_distortionScrollSpeed>0.15</_distortionScrollSpeed>
+            </shaderParameters>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <solidTime>0.42</solidTime>
+        <fadeInTime>0.6</fadeInTime>
+        <fadeOutTime>1.3</fadeOutTime>
+        <acceleration>(0, 0.0, 0.4)</acceleration>
+    </FleckDef>
+</Defs>

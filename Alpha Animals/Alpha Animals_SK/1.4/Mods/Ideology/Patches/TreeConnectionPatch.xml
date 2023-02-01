@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/MemeDef[defName = "TreeConnection"]/exclusionTags</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/MemeDef[defName = "TreeConnection"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>TreeConnectionExclusion</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/MemeDef[defName = "TreeConnection"]/exclusionTags</xpath>
+            <value>
+                <li>TreeConnectionExclusion</li>
+            </value>
+        </match>
+    </Operation>
+</Patch>

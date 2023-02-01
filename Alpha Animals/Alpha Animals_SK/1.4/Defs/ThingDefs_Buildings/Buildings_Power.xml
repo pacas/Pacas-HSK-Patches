@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>AA_BlueGelBattery</defName>
+        <label>blue gel battery</label>
+        <thingClass>SK.Building_Battery</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <description>Can store more electricity than regular batteries thanks to the energetic make up of blue gel. As a downside, they are highly flammable. Charged blue gel batteries explode when exposed to rain or fire.</description>
+        <graphicData>
+            <texPath>Things/Building/AA_BlueGelBattery</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,3)</drawSize>
+            <shadowData>
+				<volume>(0.8, 0.4, 1.8)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <canOverlapZones>false</canOverlapZones>
+        <fillPercent>0.7</fillPercent>
+        <tickerType>Normal</tickerType>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsPower</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>1600</WorkToBuild>
+            <Mass>150</Mass>
+            <Flammability>1.5</Flammability>
+            <Beauty>-12</Beauty>
+        </statBases>
+        <size>(1,2)</size>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+            <uninstallWork>450</uninstallWork>
+        </building>
+        <stuffCategories>
+			<li>HeavyMetallic</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+        <costList>
+            <AA_SkySteel>25</AA_SkySteel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+			<ElectronicComponents>3</ElectronicComponents>
+            <AA_BlueGel>200</AA_BlueGel>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Battery">
+                <storedEnergyMax>1000</storedEnergyMax>
+                <efficiency>0.6</efficiency>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>4</glowRadius>
+                <glowColor>(2,246,255,0)</glowColor>
+            </li>
+        </comps>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <designationCategory>Power</designationCategory>
+        <designationHotKey>Misc4</designationHotKey>
+        <researchPrerequisites>
+            <li>Batteries</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>AA_HexaGelBattery</defName>
+        <label>hexagel battery</label>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <description>Can store more electricity than blue gel batteries. As a downside, they are highly flammable, and they will violently explode if destroyed. Charged hexagel batteries explode when exposed to rain or fire.</description>
+        <thingClass>SK.Building_Battery</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AA_HexaGelBattery</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,3)</drawSize>
+            <shadowData>
+				<volume>(0.8, 0.4, 1.8)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <fillPercent>0.7</fillPercent>
+        <tickerType>Normal</tickerType>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsPower</li>
+        </thingCategories>
+        <canOverlapZones>false</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>1900</WorkToBuild>
+            <Mass>150</Mass>
+            <Flammability>2.0</Flammability>
+            <Beauty>-8</Beauty>
+        </statBases>
+        <size>(1,2)</size>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+            <uninstallWork>450</uninstallWork>
+        </building>
+        <stuffCategories>
+			<li>HeavyMetallic</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+        <costList>
+            <AA_SkySteel>60</AA_SkySteel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+			<ElectronicComponents>3</ElectronicComponents>
+            <AA_Hexagel>100</AA_Hexagel>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Battery">
+                <storedEnergyMax>2000</storedEnergyMax>
+                <efficiency>0.8</efficiency>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>5</glowRadius>
+                <glowColor>(2,246,255,0)</glowColor>
+            </li>
+            <li Class="CompProperties_Explosive">
+                <wickTicks>240</wickTicks>
+                <explosiveRadius>9.9</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <explodeOnKilled>true</explodeOnKilled>
+                <startWickHitPointsPercent>0.25</startWickHitPointsPercent>
+                <extraInspectStringKey>ExplosionOnDamageWarning</extraInspectStringKey>
+            </li>
+        </comps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Power</designationCategory>
+        <designationHotKey>Misc4</designationHotKey>
+        <researchPrerequisites>
+            <li>Batteries</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="PowerFueled">
+        <defName>AA_HexagelCoreReactor</defName>
+        <label>hexagel core reactor</label>
+        <description>Produces electricity from energy stored inside hexagel cores.</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AA_HexaGelPowerPlant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(6,6)</drawSize>
+            <shadowData>
+                <volume>(6.03,1.0,5.25)</volume>
+                <offset>(0,0,-0.25)</offset>
+            </shadowData>
+            <damageData>
+                <rect>(0.3,0,5.4,6)</rect>
+            </damageData>
+        </graphicData>
+        <passability>PassThroughOnly</passability>
+        <blockWind>true</blockWind>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <fillPercent>1</fillPercent>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <WorkToBuild>20000</WorkToBuild>
+            <Flammability>1</Flammability>
+            <Beauty>-20</Beauty>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <size>(6,6)</size>
+        <stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>250</costStuffCount>
+        <costList>
+            <AA_SkySteel>200</AA_SkySteel>
+            <ComponentIndustrial>20</ComponentIndustrial>
+			<Mechanism>10</Mechanism>
+            <ComponentSpacer>5</ComponentSpacer>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+				<compClass>SK.CompPowerPlantFueled</compClass>
+				<basePowerConsumption>-25000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+			</li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="SK.CompFueled_Properties">
+				<canAutoBurn>true</canAutoBurn>
+				<operatingTemp>300</operatingTemp>
+				<drawfirefuel>false</drawfirefuel>
+                <smokeDrawOffset>(0,0,0.1)</smokeDrawOffset>
+				<smokesize>0.7</smokesize>
+				<smokespeeddelay>100</smokespeeddelay>
+				<fuelCapacity>50</fuelCapacity>
+				<burnFuelMultiplier>10</burnFuelMultiplier>
+				<smokeDensity>1</smokeDensity>
+				<fuelFilter>
+					<thingDefs>
+						<li>AA_HexagelCore</li>
+					</thingDefs>
+				</fuelFilter>
+			</li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>8</glowRadius>
+                <glowColor>(98,218,242,0)</glowColor>
+            </li>
+            <li Class="SK.CompProperties_HeatPusherAdvanced">
+				<compClass>SK.CompHeatPusherAdvanced</compClass>
+				<heatPerSecond>6</heatPerSecond>
+				<heatPushMaxTemperature>40</heatPushMaxTemperature>
+			</li>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <rotatable>false</rotatable>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <designationCategory>Power</designationCategory>
+        <building>
+            <ai_chillDestination>false</ai_chillDestination>
+            <soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+            <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+        </building>
+        <designationHotKey>Misc6</designationHotKey>
+        <researchPrerequisites>
+            <li>Generators_C3</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+    </ThingDef>
+</Defs>

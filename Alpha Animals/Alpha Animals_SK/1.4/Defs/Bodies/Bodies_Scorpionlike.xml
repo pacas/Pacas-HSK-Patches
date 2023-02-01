@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyDef>
+		<defName>AA_ScorpionLike</defName>
+		<label>scorpionlike body</label>
+		<corePart>
+			<def>Shell</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>AA_Thorax</def>
+					<coverage>0.10</coverage>
+				</li>
+				<li>
+					<def>Stomach</def>
+					<coverage>0.05</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>InsectHeart</def>
+					<coverage>0.03</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>Pronotum</def>
+					<coverage>0.08</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>InsectHead</def>
+							<groups>
+								<li>HeadAttackTool</li>
+							</groups>
+							<coverage>0.65</coverage>
+							<parts>
+								<li>
+									<def>Brain</def>
+									<coverage>0.2</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									 <def>Eye</def>
+									<customLabel>left eye</customLabel>
+									<coverage>0.15</coverage>
+								</li>
+								<li>
+									<def>Eye</def>
+                  <customLabel>right eye</customLabel>
+									<coverage>0.15</coverage>
+								</li>
+								<li>
+									<def>Antenna</def>
+                  <coverage>0.05</coverage>
+                  <customLabel>left antenna</customLabel>
+								</li>
+								<li>
+									<def>Antenna</def>
+                  <coverage>0.05</coverage>
+                  <customLabel>right antenna</customLabel>
+								</li>
+								<li>
+									<def>InsectNostril</def>
+									<coverage>0.1</coverage>
+								</li>
+								<li>
+									<def>AA_InsectMouth</def>
+									<coverage>0.05</coverage>
+									<groups>
+										<li>AA_Mouth</li>
+									</groups>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>InsectLeg</def>
+          <customLabel>front left leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>AA_LeftPincer</def>
+							<coverage>0.3</coverage>
+							<depth>Outside</depth>
+							<groups>
+								<li>AA_PincerAttackTool</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>InsectLeg</def>
+          <customLabel>front right leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+					<parts>
+						<li>
+							<def>AA_RightPincer</def>
+							<coverage>0.3</coverage>
+							<depth>Outside</depth>
+							<groups>
+								<li>AA_PincerAttackTool</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					 <def>InsectLeg</def>
+          <customLabel>middle left leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>InsectLeg</def>
+          <customLabel>middle right leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					 <def>InsectLeg</def>
+          <customLabel>rear left leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>InsectLeg</def>
+          <customLabel>rear right leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+				</li>
+				<li>
+					<def>AA_InsectTail</def>
+					<coverage>0.10</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>AA_InsectSting</def>
+							<coverage>0.3</coverage>
+							<depth>Outside</depth>
+							<groups>
+								<li>AA_Sting</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

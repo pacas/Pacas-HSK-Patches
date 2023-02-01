@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ====================================================== -->
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_MatureFleshbeast</defName>
+        <label>mature fleshbeast</label>
+        <thingClass>AlphaBehavioursAndEvents.Pawn_SwallowWhole</thingClass>
+        <description>The unwanted result of a genetic experiment gone wrong, fleshbeasts are usually miserable, weak creatures that ooze pus and struggle to keep breathing for longer than a few days. Sometimes, however, a fleshbeast manages to survive, and even thrive. Perhaps it was foolishly released into the wild, where it managed to stabilize and grow. Or perhaps it was stronger than average, and managed to subdue and devour its imprudent creators. In any case, it has now turned into a pulsating, fleshy behemoth with a ravenous appetite.\n\nMature fleshbeasts swallow their prey whole, storing up to 5 creatures on its huge stomach for later consumption. Prey may survive for up to one day, but they'll later be consumed and expelled as skeletized remains.</description>
+        <statBases>
+            <MoveSpeed>2.00</MoveSpeed>
+            <ComfyTemperatureMin>-70</ComfyTemperatureMin>
+            <MarketValue>550</MarketValue>
+            <MeatAmount>30</MeatAmount>
+            <LeatherAmount>20</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>AA_SwallowWhole</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>1.85</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.6</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.4</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <wildBiomes>
+                <BorealForest>0.01</BorealForest>
+                <IceSheet>0.01</IceSheet>
+                <Tundra>0.01</Tundra>
+                <ColdBog>0.01</ColdBog>
+                <TemperateSwamp>0.01</TemperateSwamp>
+                <TropicalSwamp>0.01</TropicalSwamp>
+                <TemperateForest>0.01</TemperateForest>
+                <TropicalRainforest>0.01</TropicalRainforest>
+                <AridShrubland>0.01</AridShrubland>
+                <Desert>0.01</Desert>
+            </wildBiomes>
+            <body>AA_TentacledQuadrupedEyeless</body>
+            <baseBodySize>6</baseBodySize>
+            <baseHealthScale>2.7</baseHealthScale>
+            <baseHungerRate>1.5</baseHungerRate>
+            <foodType>CarnivoreAnimalStrict</foodType>
+            <predator>true</predator>
+            <maxPreyBodySize>4</maxPreyBodySize>
+            <wildness>0.8</wildness>
+            <trainability>Intermediate</trainability>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <leatherDef>Leather_Light</leatherDef>
+            <useMeatFrom>Elephant</useMeatFrom>
+            <hasGenders>false</hasGenders>
+            <lifeExpectancy>75</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0</minAge>
+                    <soundWounded>AA_TarGuzzler_Wounded</soundWounded>
+                    <soundDeath>AA_TarGuzzler_Death</soundDeath>
+                    <soundAngry>AA_TarGuzzler_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Tank</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_ArmouredTankDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_MatureFleshbeast</defName>
+        <label>mature fleshbeast</label>
+        <race>AA_MatureFleshbeast</race>
+        <combatPower>500</combatPower>
+        <ecoSystemWeight>1</ecoSystemWeight>
+        <canArriveManhunter>false</canArriveManhunter>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_MatureFleshbeast/AA_MatureFleshbeast</texPath>
+                    <drawSize>6</drawSize>
+                    <shadowData>
+                        <volume>(0.30, 0.25, 0.20)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_MatureFleshbeast/AA_Dessicated_MatureFleshbeast</texPath>
+                    <drawSize>6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

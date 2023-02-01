@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingNaturalBase">
+        <defName>AA_HiveEntrance</defName>
+        <label>black hive entrance</label>
+        <description>A hive of giant insects. This mound was used by the Black Hive to tunnel to this territory. This hive entrance will produce black larva periodically, which will mature into random black hive insects. These are not temporary and the colonists can tame them as normal animals. Your colony can only have one hive entrance, and no more than four insects will be present at the same time.</description>
+        <thingClass>ThingWithComps</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AA_BlackHive</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.6</drawSize>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <fillPercent>0.5</fillPercent>
+        <statBases>
+            <MaxHitPoints>130</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <pathCost>50</pathCost>
+        <blockWind>true</blockWind>
+        <tickerType>Normal</tickerType>
+        <passability>PassThroughOnly</passability>
+        <killedLeavings>
+            <AA_BlackInsectJelly>30</AA_BlackInsectJelly>
+        </killedLeavings>
+        <comps>
+            <li Class="AlphaBehavioursAndEvents.CompProperties_SpawnLarvae">
+                <ticksBetweenSpawn>60000</ticksBetweenSpawn>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <heatPerSecond>6</heatPerSecond>
+                <heatPushMaxTemperature>38</heatPushMaxTemperature>
+            </li>
+            <li Class="CompProperties_SpawnerFilth">
+                <filthDef>Filth_Slime</filthDef>
+                <spawnCountOnSpawn>10</spawnCountOnSpawn>
+                <spawnMtbHours>20000</spawnMtbHours>
+                <spawnRadius>5</spawnRadius>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingNaturalBase">
+        <defName>AA_BlackCocoon</defName>
+        <label>black cocoon</label>
+        <description>A larve cocoon of the Black Hive.</description>
+        <thingClass>ThingWithComps</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AA_BlackCoccoon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <fillPercent>0.5</fillPercent>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <pathCost>50</pathCost>
+        <blockWind>false</blockWind>
+        <tickerType>Normal</tickerType>
+        <passability>PassThroughOnly</passability>
+        <comps>
+            <li Class="AlphaBehavioursAndEvents.CompProperties_Cocoon">
+                <ticksToSpawn>5000</ticksToSpawn>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

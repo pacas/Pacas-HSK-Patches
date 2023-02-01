@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <FleshTypeDef>
+    <defName>AA_HumanMeat</defName>
+    <damageEffecter>Damage_HitFlesh</damageEffecter>
+	<ateDirect>AteHumanlikeMeatDirect</ateDirect>
+    <ateAsIngredient>AteHumanlikeMeatAsIngredient</ateAsIngredient>
+    <corpseCategory>CorpsesHumanlike</corpseCategory>
+    <genericWounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundFleshC</texture>
+      </li>
+    </genericWounds>
+  </FleshTypeDef>
+
+ 
+</Defs>

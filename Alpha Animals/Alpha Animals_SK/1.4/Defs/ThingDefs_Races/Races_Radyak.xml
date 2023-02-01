@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- ============================================================ -->
+
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_Radyak</defName>
+        <label>radyak</label>
+        <description>The radyak is a peaceful herbivore bred to thrive in high radiation environments. Its ruminant digestive tract is composed of six bionic stomachs, reinforced with a lead-lined biolattice designed to extract residual radioactive material from grass cells. This radioactive material is then deposited in crystal-like formations that pierce the hard skin of the creature. This crystals can be harvested periodically, and refined into uranium in a standard chemfuel refinery.\n\nThe technology behind creating such carefully engineered creatures is completely out of reach of most Rim societies, so a radyak is a valued acquisition indeed.</description>
+        <statBases>
+            <MoveSpeed>4.5</MoveSpeed>
+            <ComfyTemperatureMin>-65</ComfyTemperatureMin>
+            <MarketValue>2500</MarketValue>
+            <MeatAmount>100</MeatAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>13</power>
+                <cooldownTime>2.6</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+            </li>
+            <li>
+                <label>left hoof</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right hoof</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.5</chanceFactor>
+            </li>
+        </tools>
+
+        <comps>
+            <li Class="CompProperties_Milkable">
+                <milkDef>Milk</milkDef>
+                <milkIntervalDays>6</milkIntervalDays>
+                <milkAmount>15</milkAmount>
+            </li>
+            <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+                <resourceDef>AA_UraniumCrystals</resourceDef>
+                <gatheringIntervalDays>10</gatheringIntervalDays>
+                <resourceAmount>1</resourceAmount>
+                <customResourceString>AA_UraniumCrystalsDesc</customResourceString>
+            </li>
+        </comps>
+        <race>
+            <wildBiomes>
+                <BorealForest>0.001</BorealForest>
+                <IceSheet>0.01</IceSheet>
+                <Tundra>0.005</Tundra>
+                <ColdBog>0.005</ColdBog>
+                <SeaIce>0.01</SeaIce>
+                <TemperateSwamp>0.001</TemperateSwamp>
+                <TropicalSwamp>0.001</TropicalSwamp>
+                <TemperateForest>0.001</TemperateForest>
+                <TropicalRainforest>0.001</TropicalRainforest>
+                <AridShrubland>0.001</AridShrubland>
+            </wildBiomes>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+            <body>QuadrupedAnimalWithHooves</body>
+            <baseBodySize>2.5</baseBodySize>
+            <baseHungerRate>0.65</baseHungerRate>
+            <baseHealthScale>1.75</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <leatherDef>Leather_Heavy</leatherDef>
+            <useMeatFrom>Elephant</useMeatFrom>
+            <wildness>0.4</wildness>
+            <roamMtbDays>3</roamMtbDays>
+			<trainability>None</trainability>
+            <manhunterOnDamageChance>0.2</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+            <packAnimal>false</packAnimal>
+            <gestationPeriodDays>45</gestationPeriodDays>
+			
+            <lifeExpectancy>46</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.25</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.50</minAge>
+                    <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+                    <soundDeath>Pawn_Muffalo_Death</soundDeath>
+                    <soundCall>Pawn_Muffalo_Call</soundCall>
+                    <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFarm</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Farm</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_FarmBuildingAndMilkDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_Radyak</defName>
+        <label>radyak</label>
+        <race>AA_Radyak</race>
+        <combatPower>100</combatPower>
+        <ecoSystemWeight>1.1</ecoSystemWeight>
+        <wildGroupSize>
+            <min>2</min>
+            <max>5</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>radyak calf</label>
+                <labelPlural>radyak calves</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Radyak/AA_Radyak</texPath>
+                    <drawSize>1.5</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Radyak/AA_Dessicated_Radyak</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Radyak/AA_Radyak</texPath>
+                    <drawSize>2.25</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Radyak/AA_Dessicated_Radyak</texPath>
+                    <drawSize>2.25</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Radyak/AA_Radyak</texPath>
+                    <drawSize>3</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Radyak/AA_Dessicated_Radyak</texPath>
+                    <drawSize>3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+
+</Defs>

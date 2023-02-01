@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SK_AA_Insect">
+        <defName>AA_IronhuskBeetle</defName>
+        <label>ironhusk beetle</label>
+        <description>Ironhusk beetles were genetically engineered by one of the myriad mining companies operating on the Rim. It's a peaceful farm animal that occasionally sheds metallic husks that can be used as steel, thus negating the need for heavy machinery in mining operations. As a downside, the beetle consumes a huge amount of wood from live trees.\n\nSadly, the mining company that created the Ironhusk beetles didn't account for this, and several planets on the Rim are now a barren ecological disaster.</description>
+        <statBases>
+            <MoveSpeed>2.8</MoveSpeed>
+            <ComfyTemperatureMin>-8</ComfyTemperatureMin>
+            <MarketValue>3000</MarketValue>
+            <ArmorRating_Blunt>20</ArmorRating_Blunt>
+            <ArmorRating_Sharp>10</ArmorRating_Sharp>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>27</power>
+                <cooldownTime>2.6</cooldownTime>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>21</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+                <chanceFactor>0.5</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+                <resourceDef>Steel</resourceDef>
+                <gatheringIntervalDays>3</gatheringIntervalDays>
+                <resourceAmount>40</resourceAmount>
+                <customResourceString>ChunkSlagSteelDesc</customResourceString>
+            </li>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>AA_IronhuskEggUnfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>AA_IronhuskEggFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>25</eggLayIntervalDays>
+            </li>
+        </comps>
+        <race>
+            <body>BeetleLike</body>
+            <baseBodySize>2.5</baseBodySize>
+            <baseHealthScale>1.5</baseHealthScale>
+            <baseHungerRate>0.95</baseHungerRate>
+            <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
+            <willNeverEat>
+                <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+                <li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
+            </willNeverEat>
+            <leatherDef>Leather_IronChitin</leatherDef>
+            <wildness>0.2</wildness>
+            <roamMtbDays>10</roamMtbDays>
+			<trainability>None</trainability>
+            <lifeExpectancy>10</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.45</minAge>
+                    <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+                    <soundDeath>Pawn_BigInsect_Death</soundDeath>
+                    <soundCall>Pawn_BigInsect_Call</soundCall>
+                    <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <butcherProducts>
+            <Leather_IronChitin>50</Leather_IronChitin>
+            <Steel>20</Steel>
+        </butcherProducts>
+        <tradeTags>
+            <li>AnimalCommon</li>
+            <li>AnimalFarm</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Farm</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_FarmBuildingDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_IronhuskBeetle</defName>
+        <label>ironhusk beetle</label>
+        <race>AA_IronhuskBeetle</race>
+        <combatPower>200</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_IronhuskBeetle/AA_IronhuskBeetle</texPath>
+                    <drawSize>2</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_IronhuskBeetle/AA_Dessicated_IronhuskBeetle</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_IronhuskBeetle/AA_IronhuskBeetle</texPath>
+                    <drawSize>2.5</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_IronhuskBeetle/AA_Dessicated_IronhuskBeetle</texPath>
+                    <drawSize>2.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_IronhuskBeetle/AA_IronhuskBeetle</texPath>
+                    <drawSize>3.5</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.4, 0.4)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_IronhuskBeetle/AA_Dessicated_IronhuskBeetle</texPath>
+                    <drawSize>3.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

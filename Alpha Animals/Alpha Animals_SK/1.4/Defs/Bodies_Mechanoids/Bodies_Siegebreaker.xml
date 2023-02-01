@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	  <BodyDef>
+    <defName>AA_SiegebreakerBody</defName>
+    <label>siegebreaker</label>
+    <corePart>
+      <def>AA_TankPlateFirst</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>AA_TankTurret</def>
+          <coverage>0.15</coverage>
+          <height>Top</height>
+          <groups>
+            <li>HeadAttackTool</li>
+          </groups>
+          <parts>
+            <li>
+              <def>ArtificialBrain</def>
+              <coverage>0.05</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>SightSensor</def>
+              <customLabel>left sight sensor</customLabel>
+              <coverage>0.08</coverage>
+            </li>
+            <li>
+              <def>SightSensor</def>
+              <customLabel>right sight sensor</customLabel>
+              <coverage>0.08</coverage>
+            </li>
+            <li>
+              <def>HearingSensor</def>
+              <customLabel>left hearing sensor</customLabel>
+              <coverage>0.08</coverage>
+            </li>
+            <li>
+              <def>HearingSensor</def>
+              <customLabel>right hearing sensor</customLabel>
+              <coverage>0.08</coverage>
+            </li>
+            <li>
+              <def>SmellSensor</def>
+              <coverage>0.08</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>AA_TankPlateSecond</def>
+          <coverage>0.71</coverage>
+          <parts>
+            <li>
+              <def>Reactor</def>
+              <coverage>0.05</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>AA_TankPlateThird</def>
+              <coverage>0.8</coverage>
+              <parts>
+                <li>
+                  <def>FluidReprocessor</def>
+                  <coverage>0.05</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>AA_TankPlateFourth</def>
+                  <coverage>0.75</coverage>
+                  <parts>
+                    <li>
+                      <def>FluidReprocessor</def>
+                      <coverage>0.06</coverage>
+                      <depth>Inside</depth>
+                    </li>
+                    <li>
+                      <def>AA_TankPlateFifth</def>
+                      <coverage>0.66</coverage>
+                      <parts>
+                        <li>
+                          <def>AA_TankPlateSixth</def>
+                          <coverage>0.5</coverage>
+                        </li>
+                      </parts>
+                    </li>
+                  </parts>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+
+</Defs>

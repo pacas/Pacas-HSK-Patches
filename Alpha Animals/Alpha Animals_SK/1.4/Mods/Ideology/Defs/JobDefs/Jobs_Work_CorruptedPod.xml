@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <JobDef>
+        <defName>AA_MergeIntoCorruptedPod</defName>
+        <driverClass>AlphaBehavioursAndEvents.JobDriver_MergeIntoCorruptedPod</driverClass>
+        <reportString>merging into TargetB.</reportString>
+    </JobDef>
+</Defs>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RitualBehaviorDef ParentName="SacrificeBehaviorBase">
+        <defName>AA_OcularWarping</defName>
+        <durationTicks>7500</durationTicks>
+        <preceptRequirements>
+            <li Class="PreceptRequirement_Altar"/>
+        </preceptRequirements>
+        <useVisualEffectsFromRoleIdIdeo>executioner</useVisualEffectsFromRoleIdIdeo>
+        <roles Inherit="False">
+            <li Class="RitualRoleTag">
+                <label>ocular priest</label>
+                <tag>AA_IdeoRole_OcularPriest</tag>
+                <id>ocularpriest</id>
+                <precept>AA_IdeoRole_OcularPriest</precept>
+                <required>True</required>
+                <maxCount>1</maxCount>
+                <countsAsParticipant>False</countsAsParticipant>
+            </li>
+            <li Class="RitualRoleAnimal">
+                <label>sacrifice</label>
+                <id>animal</id>
+                <maxCount>1</maxCount>
+                <minBodySize>0</minBodySize>
+                <required>True</required>
+                <missingDesc>a tamed animal, the bigger the better</missingDesc>
+                <countsAsParticipant>False</countsAsParticipant>
+                <ignoreBleeding>true</ignoreBleeding>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.RitualRoleDryad">
+                <label>channel</label>
+                <id>dryad</id>
+                <maxCount>1</maxCount>
+                <required>True</required>
+                <missingDesc>an ocular dryad from a corrupted gauranlen tree</missingDesc>
+                <countsAsParticipant>False</countsAsParticipant>
+                <ignoreBleeding>true</ignoreBleeding>
+            </li>
+        </roles>
+        <spectatorsLabel>Participants</spectatorsLabel>
+        <spectatorGerund>participate</spectatorGerund>
+        <stages Inherit="False">
+            <li Class="AlphaBehavioursAndEvents.RitualStage_InteractWithAnimalNotDryad">
+                <defaultDuty>Spectate</defaultDuty>
+                <essential>True</essential>
+                <endTriggers>
+                    <li Class="StageEndTrigger_PawnDeliveredOrNotValid"/>
+                </endTriggers>
+                <failTriggers>
+                    <li Class="StageFailTrigger_TargetPawnUnreachable">
+                        <takerId>ocularpriest</takerId>
+                        <takeeId>animal</takeeId>
+                        <desc>Animal is not reachable.</desc>
+                    </li>
+                </failTriggers>
+                <roleBehaviors>
+                    <li>
+                        <roleId>ocularpriest</roleId>
+                        <dutyDef>DeliverPawnToAltar</dutyDef>
+                    </li>
+                    <li>
+                        <roleId>animal</roleId>
+                        <dutyDef>Idle</dutyDef>
+                    </li>
+                    <li>
+                        <roleId>dryad</roleId>
+                        <dutyDef>Idle</dutyDef>
+                    </li>
+                </roleBehaviors>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.RitualStage_InteractWithDryad">
+                <defaultDuty>Spectate</defaultDuty>
+                <essential>True</essential>
+                <endTriggers>
+                    <li Class="StageEndTrigger_PawnDeliveredOrNotValid"/>
+                </endTriggers>
+                <failTriggers>
+                    <li Class="StageFailTrigger_TargetPawnUnreachable">
+                        <takerId>ocularpriest</takerId>
+                        <takeeId>dryad</takeeId>
+                        <desc>Dryad is not reachable.</desc>
+                    </li>
+                </failTriggers>
+                <roleBehaviors>
+                    <li>
+                        <roleId>ocularpriest</roleId>
+                        <dutyDef>DeliverPawnToAltar</dutyDef>
+                    </li>
+                    <li>
+                        <roleId>animal</roleId>
+                        <dutyDef>Idle</dutyDef>
+                    </li>
+                    <li>
+                        <roleId>dryad</roleId>
+                        <dutyDef>Idle</dutyDef>
+                    </li>
+                </roleBehaviors>
+            </li>
+            <li>
+                <defaultDuty>Spectate</defaultDuty>
+                <essential>True</essential>
+                <endTriggers>
+                    <li Class="StageEndTrigger_DurationPercentage">
+                        <percentage>0.3</percentage>
+                    </li>
+                </endTriggers>
+                <roleBehaviors>
+                    <li>
+                        <roleId>ocularpriest</roleId>
+                        <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+                        <speakerInteraction>Speech_Sacrifice</speakerInteraction>
+                        <customPositions>
+                            <li Class="RitualPosition_Lectern">
+                                <maxDistanceToFocus>5</maxDistanceToFocus>
+                            </li>
+                            <li Class="RitualPosition_OnInteractionCell"/>
+                        </customPositions>
+                    </li>
+                    <li>
+                        <roleId>animal</roleId>
+                        <dutyDef>LayDownAwake</dutyDef>
+                    </li>
+                    <li>
+                        <roleId>dryad</roleId>
+                        <dutyDef>LayDownAwake</dutyDef>
+                    </li>
+                </roleBehaviors>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.RitualStage_InteractWithAnimalNotDryad">
+                <defaultDuty>Spectate</defaultDuty>
+                <essential>True</essential>
+                <endTriggers>
+                    <li Class="StageEndTrigger_PawnDead">
+                        <roleId>animal</roleId>
+                    </li>
+                </endTriggers>
+                <roleBehaviors>
+                    <li>
+                        <roleId>ocularpriest</roleId>
+                        <dutyDef>Sacrifice</dutyDef>
+                        <customPositions>
+                            <li Class="RitualPosition_OnInteractionCell"/>
+                        </customPositions>
+                    </li>
+                    <li>
+                        <roleId>animal</roleId>
+                        <dutyDef>LayDownAwake</dutyDef>
+                    </li>
+                    <li>
+                        <roleId>dryad</roleId>
+                        <dutyDef>LayDownAwake</dutyDef>
+                    </li>
+                </roleBehaviors>
+                <visualEffectDef>SacrificeAnimal</visualEffectDef>
+            </li>
+            <li Class="AlphaBehavioursAndEvents.RitualStage_InteractWithDryad">
+                <defaultDuty>Spectate</defaultDuty>
+                <essential>True</essential>
+                <endTriggers>
+                    <li Class="StageEndTrigger_PawnDead">
+                        <roleId>dryad</roleId>
+                    </li>
+                </endTriggers>
+                <roleBehaviors>
+                    <li>
+                        <roleId>ocularpriest</roleId>
+                        <dutyDef>Sacrifice</dutyDef>
+                        <customPositions>
+                            <li Class="RitualPosition_OnInteractionCell"/>
+                        </customPositions>
+                    </li>
+                    <li>
+                        <roleId>dryad</roleId>
+                        <dutyDef>LayDownAwake</dutyDef>
+                    </li>
+                </roleBehaviors>
+                <visualEffectDef>SacrificeAnimal</visualEffectDef>
+            </li>
+            <li>
+                <defaultDuty>Spectate</defaultDuty>
+                <endTriggers>
+                    <li Class="StageEndTrigger_DurationPercentage">
+                        <percentage>0.6</percentage>
+                    </li>
+                </endTriggers>
+                <roleBehaviors>
+                    <li>
+                        <roleId>ocularpriest</roleId>
+                        <dutyDef>SpeakOnCellFacingSpectators</dutyDef>
+                        <speakerInteraction>Speech_Sacrifice</speakerInteraction>
+                        <customPositions>
+                            <li Class="RitualPosition_OnInteractionCell"/>
+                        </customPositions>
+                    </li>
+                </roleBehaviors>
+            </li>
+        </stages>
+    </RitualBehaviorDef>
+</Defs>

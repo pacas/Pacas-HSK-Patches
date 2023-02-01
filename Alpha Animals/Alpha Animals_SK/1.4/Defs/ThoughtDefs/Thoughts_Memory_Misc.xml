@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThoughtDef>
+		<defName>AA_BeenPsionicallyNuzzled</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>3</stackLimit>
+		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>psionically nuzzled</label>
+				<description>That pretty fox sure seems to know how to make you feel loved...</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>AA_Disgust</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>disgusting creature</label>
+				<description>I witnessed a revolting giant slug reeking of the stench of corpse bile. I want to puke.</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>AA_PsychicHarmonyGood</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>psychic harmony (good)</label>
+				<description>A Grey-Coated Mouflon nearby is well fed and cared for.</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>AA_PsychicHarmonyBad</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+		<nullifyingTraits>
+			<li>Psychopath</li>
+		</nullifyingTraits>
+		<stages>
+			<li>
+				<label>psychic harmony (bad)</label>
+				<description>A Grey-Coated Mouflon nearby is angry or hurt, creating psychic waves of agony that are extremely distracting...</description>
+				<baseMoodEffect>-12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+
+
+</Defs>

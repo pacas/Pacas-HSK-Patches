@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <DamageDef ParentName="Bite">
+        <defName>FO_PlaguedBite</defName>
+        <label>plagued bite</label>
+        <additionalHediffs>
+            <li>
+                <hediff>Plague</hediff>
+                <severityPerDamageDealt>0.01</severityPerDamageDealt>
+            </li>
+        </additionalHediffs>
+    </DamageDef>
+</Defs>

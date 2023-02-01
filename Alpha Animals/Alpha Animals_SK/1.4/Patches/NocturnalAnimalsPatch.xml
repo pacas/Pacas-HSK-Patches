@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+            <!-- Nightling -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="AA_OcularNightling"]</xpath>
+                <value>
+                    <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                        <bodyClock>Nocturnal</bodyClock>
+                    </li>
+                </value>
+            </li>
+	
+            <!-- Nightram -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="AA_NightRam"]</xpath>
+                <value>
+                    <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                        <bodyClock>Nocturnal</bodyClock>
+                    </li>
+                </value>
+            </li>
+	
+            <!-- Nightmule -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="AA_NightMule"]</xpath>
+                <value>
+                    <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                        <bodyClock>Nocturnal</bodyClock>
+                    </li>
+                </value>
+            </li>
+
+            <!-- Crepuscular Beetle -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="AA_CrepuscularBeetle"]</xpath>
+                <value>
+                    <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                        <bodyClock>Crepuscular</bodyClock>
+                    </li>
+                </value>
+            </li>
+	
+            <!-- Dusk Rat -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="AA_DuskRat"]</xpath>
+                <value>
+                    <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                        <bodyClock>Nocturnal</bodyClock>
+                    </li>
+                </value>
+            </li>
+	
+            <!-- Frostling -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="AA_Frostling"]</xpath>
+                <value>
+                    <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                        <bodyClock>Nocturnal</bodyClock>
+                    </li>
+                </value>
+            </li>
+	
+            <!-- Night Ave -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="AA_NightAve"]</xpath>
+                <value>
+                    <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                        <bodyClock>Nocturnal</bodyClock>
+                    </li>
+                </value>
+            </li>
+	
+            <!-- Crystalline Caracal -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="AA_CrystallineCaracal"]</xpath>
+                <value>
+                    <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                        <bodyClock>Nocturnal</bodyClock>
+                    </li>
+                </value>
+            </li>
+    
+            <!-- Thunderox -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="AA_Thunderox"]</xpath>
+                <value>
+                    <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                        <bodyClock>Nocturnal</bodyClock>
+                    </li>
+                </value>
+            </li>
+            <!-- Dusk Prowler -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="AA_DuskProwler"]</xpath>
+                <value>
+                    <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                        <bodyClock>Nocturnal</bodyClock>
+                    </li>
+                </value>
+            </li>
+            <!-- Murkling -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="AA_Murkling"]</xpath>
+                <value>
+                    <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                        <bodyClock>Nocturnal</bodyClock>
+                    </li>
+                </value>
+            </li>
+            <!-- Dark Vandal -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="AA_ShadowCharger"]</xpath>
+                <value>
+                    <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                        <bodyClock>Nocturnal</bodyClock>
+                    </li>
+                </value>
+            </li>
+            <!-- Shadow Charger -->
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/ThingDef[defName="AA_DarkVandal"]</xpath>
+                <value>
+                    <li Class="NocturnalAnimals.ExtendedRaceProperties">
+                        <bodyClock>Nocturnal</bodyClock>
+                    </li>
+                </value>
+            </li>
+    
+        </operations>
+    </Operation>
+
+</Patch>

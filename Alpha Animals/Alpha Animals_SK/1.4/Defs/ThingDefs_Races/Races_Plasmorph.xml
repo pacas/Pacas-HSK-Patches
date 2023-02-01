@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ============================================================ -->
+    <ThingDef ParentName="SK_AA_Insect">
+        <defName>AA_Plasmorph</defName>
+        <label>plasmorph</label>
+        <description>This bizarre, mutant snail has a very strange way of defending itself against predators. Inside its armoured shell made of iron sulfide, specialized organs along the Plasmorph's body generate an electric discharge similar to those found in electric eels. This discharge is very low voltage, not powerful enough to damage most creatures. However, the Plasmorph uses it as a spark to ignite its own flammable spit, and lob it at its prey.\n\nSuch a strange mechanism is surely not natural, but what was its intended purpose is a mystery lost to the ages.</description>
+        <statBases>
+            <MoveSpeed>1.00</MoveSpeed>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>50</ComfyTemperatureMax>
+            <MarketValue>150</MarketValue>
+            <ArmorRating_Blunt>20</ArmorRating_Blunt>
+            <ArmorRating_Sharp>6</ArmorRating_Sharp>
+            <MeatAmount>50</MeatAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>eyestalk</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>AA_EyestalkAttackTool</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <accuracyTouch>1</accuracyTouch>
+                <accuracyShort>1</accuracyShort>
+                <accuracyMedium>1</accuracyMedium>
+                <accuracyLong>1</accuracyLong>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>AA_FireSpit</defaultProjectile>
+                <warmupTime>4</warmupTime>
+                <burstShotCount>5</burstShotCount>
+                <minRange>2</minRange>
+                <range>15</range>
+                <soundCast>AA_FireSpit</soundCast>
+                <muzzleFlashScale>0</muzzleFlashScale>
+                <label>fire spit</label>
+                <commonality>.9</commonality>
+            </li>
+        </verbs>
+        <race>
+            <wildBiomes>
+                <TemperateSwamp>0.05</TemperateSwamp>
+                <TropicalSwamp>0.05</TropicalSwamp>
+                <TemperateForest>0.01</TemperateForest>
+                <TropicalRainforest>0.01</TropicalRainforest>
+            </wildBiomes>
+            <herdAnimal>false</herdAnimal>
+            <predator>true</predator>
+            <body>AA_Snail</body>
+            <baseBodySize>1.00</baseBodySize>
+            <baseHungerRate>0.05</baseHungerRate>
+            <baseHealthScale>1.0</baseHealthScale>
+            <foodType>OmnivoreAnimal</foodType>
+            <maxPreyBodySize>0.3</maxPreyBodySize>
+            <wildness>0.7</wildness>
+            <gestationPeriodDays>45</gestationPeriodDays>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(3, 1)</li>
+                    <li>(3.5, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>20</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>.2</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>.4</minAge>
+                    <soundWounded>AA_Helixien_Angry</soundWounded>
+                    <soundDeath>AA_Helixien_Death</soundDeath>
+                    <soundAngry>AA_Helixien_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_DamageRangedFire</li>
+                    <li>AA_Yes</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_DamageRangedFireDesc</li>
+                    <li>AA_Ranged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_Plasmorph</defName>
+        <label>plasmorph</label>
+        <race>AA_Plasmorph</race>
+        <combatPower>350</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <ecoSystemWeight>0.1</ecoSystemWeight>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Plasmorph/AA_Plasmorph</texPath>
+                    <drawSize>1.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Plasmorph/AA_Dessicated_Plasmorph</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Plasmorph/AA_Plasmorph</texPath>
+                    <drawSize>1.75</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Plasmorph/AA_Dessicated_Plasmorph</texPath>
+                    <drawSize>1.75</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Plasmorph/AA_Plasmorph</texPath>
+                    <drawSize>2</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Plasmorph/AA_Dessicated_Plasmorph</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

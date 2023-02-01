@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ============================================================ -->
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_DevilSheep</defName>
+        <label>devil sheep</label>
+        <description>A genetically engineered sheep capable of producing extremely strong and valuable red wool. Some see a simple livestock; others, a demonic entity of corruption. Don’t listen to its whispers. Like devilstrand mushrooms, these sheep take some time to grow the fabric, but they can be easily bred to increase production as needed.</description>
+        <statBases>
+            <MoveSpeed>3.00</MoveSpeed>
+            <ComfyTemperatureMin>-70</ComfyTemperatureMin>
+            <MarketValue>800</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>left hoof</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>7</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right hoof</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>7</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>1.85</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+                <resourceDef>DevilstrandCloth</resourceDef>
+                <gatheringIntervalDays>30</gatheringIntervalDays>
+                <resourceAmount>30</resourceAmount>
+                <customResourceString>DevilstrandDesc</customResourceString>
+            </li>
+        </comps>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+            <body>QuadrupedAnimalWithHooves</body>
+            <baseBodySize>0.5</baseBodySize>
+            <baseHungerRate>0.5</baseHungerRate>
+            <baseHealthScale>1.0</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <leatherDef>Leather_Plain</leatherDef>
+            <useMeatFrom>Elephant</useMeatFrom>
+            <wildness>0.3</wildness>
+            <manhunterOnDamageChance>1.0</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
+            <roamMtbDays>7</roamMtbDays>
+			<trainability>None</trainability>
+            <gestationPeriodDays>15</gestationPeriodDays>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(3, 1)</li>
+                    <li>(3.5, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>10</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.30</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>1.50</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalCommon</li>
+            <li>AnimalFarm</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Farm</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_FarmWoolDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_DevilSheep</defName>
+        <label>devil sheep</label>
+        <race>AA_DevilSheep</race>
+        <combatPower>30</combatPower>
+        <labelMale>devil sheep ram</labelMale>
+        <labelFemale>devil sheep ewe</labelFemale>
+        <lifeStages>
+            <li>
+                <label>devilsheep lamb</label>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DevilSheep/AA_DevilSheepMale</texPath>
+                    <drawSize>0.9</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DevilSheep/AA_DevilSheepFemale</texPath>
+                    <drawSize>0.8</drawSize>
+                    <color>(200,200,200)</color>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DevilSheep/AA_Dessicated_DevilSheep</texPath>
+                    <drawSize>0.9</drawSize>
+                </dessicatedBodyGraphicData>
+                <femaleDessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DevilSheep/AA_Dessicated_DevilSheepFemale</texPath>
+                    <drawSize>0.8</drawSize>
+                </femaleDessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DevilSheep/AA_DevilSheepMale</texPath>
+                    <drawSize>1.1</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DevilSheep/AA_DevilSheepFemale</texPath>
+                    <drawSize>1</drawSize>
+                    <color>(200,200,200)</color>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DevilSheep/AA_Dessicated_DevilSheep</texPath>
+                    <drawSize>1.1</drawSize>
+                </dessicatedBodyGraphicData>
+                <femaleDessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DevilSheep/AA_Dessicated_DevilSheepFemale</texPath>
+                    <drawSize>1</drawSize>
+                </femaleDessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DevilSheep/AA_DevilSheepMale</texPath>
+                    <drawSize>1.5</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DevilSheep/AA_DevilSheepFemale</texPath>
+                    <drawSize>1.4</drawSize>
+                    <color>(200,200,200)</color>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DevilSheep/AA_Dessicated_DevilSheep</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+                <femaleDessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_DevilSheep/AA_Dessicated_DevilSheepFemale</texPath>
+                    <drawSize>1.4</drawSize>
+                </femaleDessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

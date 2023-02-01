@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SK_AA_Insect">
+        <defName>AA_CrepuscularBeetle</defName>
+        <label>Crepuscular Beetle</label>
+        <description>A very large arthropod reminiscent of an oversized Hercules Beetle, the Crepuscular Beetle is a peaceful herbivore that originated from a mysterious Rimworld orbiting a very faint star, perpetually covered in darkness. This was the home planet of an elusive humanoid alien race known as the Forsakens, and Crepuscular Beetles were often used as domesticated beasts of burden.\n\nCrepuscular Beetles are active during dusk. They also don't need a lot of rest, expending much less time than other creatures to replenish their energies.</description>
+        <statBases>
+            <MoveSpeed>4.0</MoveSpeed>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <MarketValue>600</MarketValue>
+            <ArmorRating_Blunt>8.4</ArmorRating_Blunt>
+            <ArmorRating_Sharp>8.4</ArmorRating_Sharp>
+        </statBases>
+        <tools>
+            <li>
+                <label>head claw</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_InitialHediff">
+                <hediffname>AA_LowRest</hediffname>
+                <hediffseverity>1</hediffseverity>
+            </li>
+            <li Class="CompProperties_EggLayer">
+                <eggUnfertilizedDef>AA_CrepuscularBeetleEggUnfertilized</eggUnfertilizedDef>
+                <eggFertilizedDef>AA_CrepuscularBeetleEggFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>10</eggLayIntervalDays>
+                <eggCountRange>
+                    <min>1</min>
+                    <max>2</max>
+                </eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <body>BeetleLikeWithClaw</body>
+            <baseBodySize>3</baseBodySize>
+            <baseHealthScale>1.2</baseHealthScale>
+            <baseHungerRate>0.3</baseHungerRate>
+            <foodType>OmnivoreRoughAnimal</foodType>
+            <packAnimal>true</packAnimal>
+            <wildness>0.75</wildness>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>37</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.90</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>1.5</minAge>
+                    <soundWounded>Pawn_Terramorph_Wounded</soundWounded>
+                    <soundDeath>Pawn_Terramorph_Death</soundDeath>
+                    <soundCall>Pawn_Terramorph_Call</soundCall>
+                    <soundAngry>Pawn_Terramorph_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <butcherProducts>
+            <Chitin>40</Chitin>
+        </butcherProducts>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+            <li>AnimalFarm</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_PackAnimal</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_PackAnimalDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_CrepuscularBeetle</defName>
+        <race>AA_CrepuscularBeetle</race>
+        <label>Crepuscular Beetle</label>
+        <combatPower>200</combatPower>
+        <ecoSystemWeight>0.2</ecoSystemWeight>
+        <wildGroupSize>
+            <min>1</min>
+            <max>3</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_CrepuscularBeetle/AA_CrepuscularBeetle</texPath>
+                    <drawSize>1.8</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_CrepuscularBeetle/AA_Dessicated_CrepuscularBeetle</texPath>
+                    <drawSize>1.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_CrepuscularBeetle/AA_CrepuscularBeetle</texPath>
+                    <drawSize>3.2</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_CrepuscularBeetle/AA_Dessicated_CrepuscularBeetle</texPath>
+                    <drawSize>3.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_CrepuscularBeetle/AA_CrepuscularBeetle</texPath>
+                    <drawSize>4.1</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_CrepuscularBeetle/AA_Dessicated_CrepuscularBeetle</texPath>
+                    <drawSize>4.1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core SK</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Battery"]/defNames</xpath>
+                    <value>
+                        <li>AA_BlueGelBattery</li>
+                        <li>AA_HexaGelBattery</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_ConvectionalPower"]/defNames</xpath>
+                    <value>
+                        <li>AA_HexagelCoreReactor</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="TableFurnace"]/recipes</xpath>
+                    <value>
+                        <li>MakeSkySteelBars_Hand</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="ElectricSmelter"]/recipes</xpath>
+                    <value>
+                        <li>MakeSkySteelBars_Electric</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Terramorph"]/race</xpath>
+                    <value>
+                        <leatherDef>Leather_BlackChitin</leatherDef>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Terramorph"]/butcherProducts</xpath>
+                    <value>
+                        <butcherProducts>
+                            <Leather_BlackChitin>25</Leather_BlackChitin>
+                            <PoisonGland>1</PoisonGland>
+                        </butcherProducts>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Terramorph"]/comps</xpath>
+                    <value>
+                        <comps>
+                            <li Class="SK.CompProperties_ShearableRenameable">
+                                <compClass>SK.CompShearableRenameable</compClass>
+                                <growthLabel>Chitin</growthLabel>
+                                <woolDef>Leather_BlackChitin</woolDef>
+                                <shearIntervalDays>5</shearIntervalDays>
+                                <woolAmount>60</woolAmount>
+                            </li>
+                        </comps>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName = "Nightling"]</xpath>
+                    <value>
+                        <li Class="AnimalBehaviours.AnimalStatExtension">
+                            <statToAdd>
+                                <li>AA_PrimaryRole</li>
+                                <li>AA_RangedAttacks</li>					
+                            </statToAdd>
+                            <statValues>
+                                <li>AA_ShockTroop</li>
+                                <li>AA_No</li>					
+                            </statValues>
+                            <statDescriptions>
+                                <li>AA_ShockTroopDesc</li>
+                                <li>AA_NoRanged</li>
+                            </statDescriptions>
+                            <showImageInInfoCard>true</showImageInInfoCard>
+                            <ImageToShowInInfoCard>Art/AA_NightlingArt</ImageToShowInInfoCard>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Nightling"]/comps</xpath>
+                    <value>
+                        <li Class="MVCF.Comps.CompProperties_RandomVerbs">
+                            <meleeChance>0.5</meleeChance>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

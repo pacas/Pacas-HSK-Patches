@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RecipeDef>
+        <defName>MakeSkySteelBars_Hand</defName>
+        <label>Smelt skysteel alloy</label>
+        <description>Smelts skysteel alloy from skyiron ore and coal or charcoal. Produces 20.</description>
+        <jobString>Smelting skysteel alloy.</jobString>
+        <workAmount>1300</workAmount>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AA_SkySteel_Ore</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Coal</li>
+                    </categories>
+                </filter>
+                <count>7</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>AA_SkySteel_Ore</li>
+            </thingDefs>
+            <categories>
+                <li>Coal</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <AA_SkySteel>20</AA_SkySteel>
+        </products>
+        <skillRequirements>
+            <Crafting>4</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <workSkillLearnFactor>0.8</workSkillLearnFactor>
+        <researchPrerequisite>Craft_B1</researchPrerequisite>
+    </RecipeDef>
+    <RecipeDef>
+        <defName>MakeSkySteelBars_Electric</defName>
+        <label>Smelt skysteel alloy</label>
+        <description>Smelts skysteel alloy from skyiron ore and coal or charcoal. Produces 20.</description>
+        <jobString>Smelting skysteel alloy.</jobString>
+        <workAmount>900</workAmount>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AA_SkySteel_Ore</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Coal</li>
+                    </categories>
+                </filter>
+                <count>7</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>AA_SkySteel_Ore</li>
+            </thingDefs>
+            <categories>
+                <li>Coal</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <AA_SkySteel>20</AA_SkySteel>
+        </products>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <workSkillLearnFactor>0.8</workSkillLearnFactor>
+        <researchPrerequisite>Metals_C1</researchPrerequisite>
+    </RecipeDef>
+</Defs>

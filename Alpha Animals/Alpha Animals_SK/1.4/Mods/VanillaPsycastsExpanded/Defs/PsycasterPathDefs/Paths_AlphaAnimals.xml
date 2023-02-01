@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <VanillaPsycastsExpanded.PsycasterPathDef>
+        <defName>AAVPE_HeraldOfTheBlackHive</defName>
+        <label>herald of the black hive</label>
+        <description>A cultist that attunes his psycasts to these dangerous, mechanoid-fighting insects.</description>
+        <background>UI/Psycasts/PathBG_BlackHive</background>
+        <altBackground>UI/Psycasts/PathBG_BlackHive_Alternate</altBackground>
+        <tab>Alpha Animals</tab>
+        <tooltip>The Black Hive was created as the ultimate mechanoid killers. A hive of highly intelligent and specialized insectoids with an intense hatred for mechanical creations. A herald of the Black Hive venerates these insects and has honed his psychic skills to acquire some of their power for his own.</tooltip>
+    </VanillaPsycastsExpanded.PsycasterPathDef>
+	
+	<VanillaPsycastsExpanded.PsycasterPathDef>
+        <defName>AAVPE_Oculist</defName>
+        <label>oculist</label>
+        <description>A disciple of the All Seeing Eye that lies beyond the veil of madness.</description>
+        <background>UI/Psycasts/PathBG_Ocular</background>
+        <altBackground>UI/Psycasts/PathBG_Ocular_Alternate</altBackground>
+        <tab>Alpha Animals</tab>
+        <tooltip>A blasphemous, hellish darkness made of equal parts madness and iniquity awaits us beyond the veil. By tapping into this obscene extra-dimensional power oculists acquire powers beyond imagining.</tooltip>
+    </VanillaPsycastsExpanded.PsycasterPathDef>
+	
+	<VanillaPsycastsExpanded.PsycasterPathDef>
+        <defName>AAVPE_Xenoseer</defName>
+        <label>xeno-seer</label>
+        <description>A psychic exo-biologist specialized in tapping into the strange abilities of genetically modified fauna.</description>
+        <background>UI/Psycasts/PathBG_AlphaAnimals</background>
+        <altBackground>UI/Psycasts/PathBG_AlphaAnimals_Alternate</altBackground>
+        <tab>Alpha Animals</tab>
+        <tooltip>Equal parts psycaster and scientist, the xeno-seer dedicates their entire willpower to meditating and studying the intricate survival abilities developed and engineered on the strange creatures that populate the Rim.</tooltip>
+    </VanillaPsycastsExpanded.PsycasterPathDef>
+	
+	<VanillaPsycastsExpanded.PsycasterPathDef>
+        <defName>AAVPE_Ravager</defName>
+        <label>ravager</label>
+        <description>An animalistic berserker that invokes the rage of the wild to strike his enemies in brutal, close quarters combat.</description>
+        <background>UI/Psycasts/PathBG_Ravager</background>
+        <altBackground>UI/Psycasts/PathBG_Ravager_Alternate</altBackground>
+        <tab>Alpha Animals</tab>
+        <tooltip>Warriors of great strength, ravager user their psychic abilities to attune themselves to animal spirits, acquiring their power to fight in a trance-like fury where they leave their humanity behind.</tooltip>
+    </VanillaPsycastsExpanded.PsycasterPathDef>
+</Defs>

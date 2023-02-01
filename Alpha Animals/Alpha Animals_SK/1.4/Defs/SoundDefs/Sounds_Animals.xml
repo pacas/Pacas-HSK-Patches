@@ -1,0 +1,2196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	<!-- ======================== Helixien ======================== -->
+
+	<SoundDef>
+		<defName>AA_HelixienCorpseSound</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Helixien/AA_Helixien_Corpse_Squish</clipPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Helixien_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Helixien/AA_Helixien_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Helixien_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Helixien/AA_Helixien_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Helixien_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Helixien/AA_Helixien_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>20</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+
+
+
+	<!-- ======================== Bumbledrone ======================== -->
+
+	<SoundDef>
+		<defName>AA_Wasp</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_Wasp</clipFolderPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+
+
+	<!-- ======================== Bouldermit ======================== -->
+
+	<SoundDef>
+		<defName>AA_BouldermitSound</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_Bouldermit</clipFolderPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+
+	<SoundDef>
+        <defName>AA_Rumbling</defName>  
+        <sustain>true</sustain> 
+        <context>MapOnly</context>
+        <eventNames />  
+        <maxSimultaneous>1</maxSimultaneous>  
+        <priorityMode>PrioritizeNearest</priorityMode>  
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>AA_Rumbling</clipFolderPath>
+                    </li>
+                </grains>      
+                <volumeRange>
+                    <min>30</min>        
+                    <max>30</max>
+                </volumeRange>
+                <sustainAttack>2</sustainAttack>      
+                <sustainRelease>2</sustainRelease>
+                <distRange>
+                    <min>20</min>
+                    <max>50</max>
+                </distRange>
+            <sustainLoop>true</sustainLoop>
+            <sustainLoopDurationRange>5~5</sustainLoopDurationRange>      
+        <sustainIntervalRange>-2.5~-2.5</sustainIntervalRange> 
+            </li>
+        </subSounds>
+    </SoundDef>
+
+
+	<!-- ======================== Green Goo ======================== -->
+
+
+
+	<SoundDef>
+		<defName>AA_GreenGoo_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_GreenGoo_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_GreenGoo_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_GreenGoo_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_GreenGoo_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_GreenGoo_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>20</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Mantrap ======================== -->
+
+
+
+	<SoundDef>
+		<defName>AA_Mantrap_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Mantrap_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Mantrap_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Mantrap_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Mantrap_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Mantrap_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>20</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+
+	<!-- ======================== Feralisk ======================== -->
+
+	<SoundDef>
+		<defName>Pawn_Feralisk_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Feralisk_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15.42672</min>
+					<max>14.7734</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Feralisk_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Feralisk_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Feralisk_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Feralisk_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Feralisk_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Feralisk_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>20</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Frostmite ======================== -->
+
+	<SoundDef>
+		<defName>Pawn_Frostmite_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Frostmite_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15.42672</min>
+					<max>14.7734</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Frostmite_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Frostmite_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Frostmite_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Frostmite_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Frostmite_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Frostmite_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>20</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Needlepost ======================== -->
+
+	<SoundDef>
+		<defName>Pawn_Needlepost_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Needlepost_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15.42672</min>
+					<max>14.7734</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Needlepost_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Needlepost_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Needlepost_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Needlepost_Angry</clipPath>
+					</li>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Needlepost_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Needlepost_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Needlepost_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>20</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== RaptorShrimp ======================== -->
+
+	<SoundDef>
+		<defName>Pawn_RaptorShrimp_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RaptorShrimp_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15.42672</min>
+					<max>14.7734</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_RaptorShrimp_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RaptorShrimp_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_RaptorShrimp_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RaptorShrimp_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_RaptorShrimp_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>RaptorShrimp_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>20</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+
+	<!-- ======================== TerramorphWorm ======================== -->
+
+	<SoundDef>
+		<defName>Pawn_Terramorph_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Terramorph_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15.42672</min>
+					<max>14.7734</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Terramorph_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Terramorph_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Terramorph_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Terramorph_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_Terramorph_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Terramorph_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>20</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== TetraSlug ======================== -->
+
+	<SoundDef>
+		<defName>Pawn_TetraSlug_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>TetraSlug_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15.42672</min>
+					<max>14.7734</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>Pawn_TetraSlug_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>TetraSlug_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== ShockGoat ======================== -->
+
+
+
+	<SoundDef>
+		<defName>AA_ShockGoat_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_ShockGoat_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_ShockGoat_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_ShockGoat_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_ShockGoat_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_ShockGoat_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>20</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Ocular Jelly ======================== -->
+
+	<SoundDef>
+		<defName>AA_OcularJelly_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_OcularJelly_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>30</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_OcularJelly_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_OcularJelly_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>50</min>
+					<max>50</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_OcularJelly_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_OcularJelly_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>30</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_OcularJelly_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_OcularJelly_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== DecayDrake ======================== -->
+
+
+
+	<SoundDef>
+		<defName>AA_DecayDrake_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_DecayDrake_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_DecayDrake_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_DecayDrake_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_DecayDrake_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_DecayDrake_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>20</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Meadow Aves ======================== -->
+
+	<SoundDef>
+		<defName>AA_MeadowAve_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_MeadowAve/AA_MeadowAve_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_MeadowAve_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_MeadowAve/AA_MeadowAve_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>10</min>
+					<max>10</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_MeadowAve_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_MeadowAve/AA_MeadowAve_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>20</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_MeadowAve_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_MeadowAve/AA_MeadowAve_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>30</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Wildpod ======================== -->
+
+	<SoundDef>
+		<defName>AA_Wildpod_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Wildpod/AA_Wildpod_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Wildpod_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Wildpod/AA_Wildpod_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>10</min>
+					<max>10</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Wildpod_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Wildpod/AA_Wildpod_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>20</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Wildpod_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Wildpod/AA_Wildpod_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>30</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Wildpawn ======================== -->
+
+	<SoundDef>
+		<defName>AA_Wildpawn_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Wildpod/AA_Wildpod_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Wildpawn_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Wildpod/AA_Wildpod_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>10</min>
+					<max>10</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1.5</min>
+					<max>1.65</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Wildpawn_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Wildpod/AA_Wildpod_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>20</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1.5</min>
+					<max>1.6</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Wildpawn_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Wildpod/AA_Wildpod_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>30</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1.5</min>
+					<max>1.6</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Siegebreaker ======================== -->
+
+	<SoundDef>
+		<defName>AA_Siegebreaker_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Siegebreaker/AA_Siegebreaker_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Siegebreaker_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Siegebreaker/AA_Siegebreaker_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>30</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Siegebreaker_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Siegebreaker/AA_Siegebreaker_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== ArcticLion ======================== -->
+
+	<SoundDef>
+		<defName>AA_ArcticLion_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_ArcticLion/AA_ArcticLion_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>45</min>
+					<max>50</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_ArcticLion_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_ArcticLion/AA_ArcticLion_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_ArcticLion_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_ArcticLion/AA_ArcticLion_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_ArcticLion_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_ArcticLion/AA_ArcticLion_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>30</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Tar Guzzler ======================== -->
+
+	<SoundDef>
+		<defName>AA_TarGuzzler_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_TarGuzzler/AA_TarGuzzler_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_TarGuzzler_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_TarGuzzler/AA_TarGuzzler_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>30</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_TarGuzzler_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_TarGuzzler/AA_TarGuzzler_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>40</min>
+					<max>40</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+<!-- ======================== Atispec (adult) ======================== -->
+
+	<SoundDef>
+		<defName>AA_Atispec_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Atispec/AA_Atispec_Call</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>45</min>
+					<max>50</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Atispec_Angry</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxVoices>2</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Atispec/AA_Atispec_Angry</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9541176</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<repeatMode>NeverTwice</repeatMode>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Atispec_Wounded</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Atispec/AA_Atispec_Wounded</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311765</min>
+					<max>1.091765</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<repeatMode>NeverTwice</repeatMode>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>AA_Atispec_Death</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Atispec/AA_Atispec_Death</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>30</min>
+					<max>30</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>70</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- ======================== Mature Fleshbeast ======================== -->
+
+	<SoundDef>
+		<defName>AA_MatureFleshbeastSwallow</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_MatureFleshbeast/AA_MatureFleshbeastSwallow</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>50</min>
+					<max>50</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9311764</min>
+					<max>1.068824</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- ======================== Bobeene ======================== -->
+
+	<SoundDef>
+		<defName>AA_Bobeene_Call</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_Bobeene</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>45</min>
+					<max>50</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- ======================== Murkling ======================== -->
+	
+	<SoundDef>
+		<defName>FO_MurklingCorpseSound</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>FO_Corpse_Squish</clipPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+</Defs>

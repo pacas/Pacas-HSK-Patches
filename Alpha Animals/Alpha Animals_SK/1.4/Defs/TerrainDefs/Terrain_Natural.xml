@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Standard soils -->
+
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>AA_FertilizedSand</defName>
+    <label>fertilized sand</label>
+    <texturePath>Terrain/AA_TilledSand</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>2</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <scatterType>SoftDry</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+	  <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <fertility>0.7</fertility>
+    <takeFootprints>True</takeFootprints>
+    <tools>
+      <li>
+         <label>sand</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>SandInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </TerrainDef>
+  
+    <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>AA_SuperiorFertilizedSand</defName>
+    <label>superior fertilized sand</label>
+    <texturePath>Terrain/AA_SuperiorTilledSand</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>340</renderPrecedence>
+    <pathCost>2</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <scatterType>SoftDry</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+	  <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <fertility>0.85</fertility>
+    <takeFootprints>True</takeFootprints>
+    <tools>
+      <li>
+         <label>sand</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>SandInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="NaturalTerrainBase">
+    <defName>AA_PollenSoil</defName>
+    <label>pollinated soil</label>
+    <texturePath>Terrain/AA_PollenSoil</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>339</renderPrecedence>
+    <pathCost>2</pathCost>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+    </statBases>
+    <scatterType>Rocky</scatterType>
+    <affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+      <li>GrowSoil</li>
+      <li>Diggable</li>
+    </affordances>
+    <generatedFilth>Filth_Dirt</generatedFilth>
+    <fertility>1.1</fertility>
+    <takeFootprints>True</takeFootprints>
+    <tools>
+      <li>
+        <label>dirt</label>
+        <capacities>
+          <li>KickMaterialInEyes</li>
+        </capacities>
+        <hediff>DirtInEyes</hediff>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+    </tools>
+    <tags>
+      <li>Soil</li>
+    </tags>
+  </TerrainDef>
+
+ 
+
+</Defs>

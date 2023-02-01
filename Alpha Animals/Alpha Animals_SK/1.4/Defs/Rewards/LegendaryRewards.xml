@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+  <VSEWW.RewardDef>
+    <defName>AA_GallatrossDrop</defName>
+    <texPath>UI/Rewards/RewardGallatrossDrop_Legendary</texPath>
+    <label>Gallatross drop</label>
+    <description>Cargo pod drops 1 tamed gallatross</description>
+    <category>Legendary</category>
+    <pawns>
+      <li>
+        <pawnkind>AA_Gallatross</pawnkind>
+        <count>1</count>
+      </li>
+    </pawns>
+  </VSEWW.RewardDef>
+
+
+</Defs>

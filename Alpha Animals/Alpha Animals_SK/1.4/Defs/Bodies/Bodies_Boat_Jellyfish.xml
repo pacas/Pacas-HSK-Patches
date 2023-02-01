@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BodyDef>
+		<defName>AA_JellyfishBoatBody</defName>
+		<label>jellyfish</label>
+		<corePart>
+			<def>AA_BoatBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+
+
+			<parts>
+				<li>
+					<def>AA_BoatHead</def>
+					<coverage>0.25</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+
+						
+						<li>
+							<def>AA_JellyfishTentacles</def>
+							<coverage>0.6</coverage>
+						</li>
+
+					</parts>
+				</li>
+				<li>
+					<def>AA_Mast</def>
+					<customLabel>mast</customLabel>
+					<coverage>0.25</coverage>
+				</li>
+				<li>
+					<def>AA_BoatHydrogenSac</def>
+
+					<coverage>0.25</coverage>
+				</li>
+				
+				
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

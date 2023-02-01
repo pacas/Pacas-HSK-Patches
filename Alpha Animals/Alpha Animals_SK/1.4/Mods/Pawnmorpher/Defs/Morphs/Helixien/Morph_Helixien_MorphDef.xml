@@ -1,0 +1,31 @@
+<Defs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Tachyonite/Pawnmorpher/dev/Schemas/MorphDef.xsd">
+	
+	<Pawnmorph.MorphDef ParentName="AA_AnimalMorph" Name="AA_HelixienMorph">
+		<defName>AA_HelixienMorph</defName>
+		<label>helixienmorph</label>
+		<description>The Helixienmorph is a hybrid Leopard Slug / humanoid. The Helixienmorph constantly secretes a foul-smelling, corrosive gas that produces an uncomfortable, itchy sensation in living beings. This gas is mostly harmless, unless it comes into contact with decaying organic matter: it greatly accelerates corpse rotting, liberating a black putrid liquid known as "purge fluid" or corpse bile. The helixienmorph feeds on this liquid sludge, although it can also feed on other organic matter if needed.\n\nThe sight of a Helixienmorph is quite revolting, and watching one wallowing in a pile of human corpses is, to say the least, a deeply traumatizing experience.</description>
+		<race>AA_Helixien</race>
+		<categories>
+			<li>Temperate</li>
+		</categories>
+		<injectorProperties></injectorProperties>
+		<fullTransformation>AA_PawnmorphHelixienTF</fullTransformation>
+		<partialTransformation>AA_PawnmorphHelixienTFPartial</partialTransformation>
+		<raceSettings>
+			<graphicsSettings>
+				<skinColorOverride>(168,106,86)</skinColorOverride>
+				<hairColorOverride>(0,0,0,0)</hairColorOverride>
+			</graphicsSettings>
+			<explicitHybridRace>AA_HelixienMorph</explicitHybridRace>
+			<transferHumanBodyAddons>true</transferHumanBodyAddons>
+			<requiredMutations>
+				<li>AA_EtherHelixienFace</li>
+				<li>AA_EtherHelixienTail</li>
+			</requiredMutations>
+		</raceSettings>
+		<transformSettings>
+			<transformationMemory>AA_HelixienTransformationMemory</transformationMemory>
+			<revertedMemory>AA_HelixienRevertedMemory</revertedMemory>
+		</transformSettings>
+	</Pawnmorph.MorphDef>
+</Defs>

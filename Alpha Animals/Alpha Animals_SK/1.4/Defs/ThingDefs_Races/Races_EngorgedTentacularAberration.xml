@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ====================================================== -->
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_EngorgedTentacularAberration</defName>
+        <label>engorged tentacular aberration</label>
+        <description>A grotesque mass of writhing tentacles, mouths and eyes, quivering in violent spasms as it strives to breathe. This poor creature knows only pain and suffering, and will be glad to inflict it upon others. Created by infusing an animal with the strange energies from an extradimensional corruption.</description>
+        <statBases>
+            <MoveSpeed>1.50</MoveSpeed>
+            <ComfyTemperatureMin>-70</ComfyTemperatureMin>
+            <MarketValue>550</MarketValue>
+            <MeatAmount>10</MeatAmount>
+            <LeatherAmount>10</LeatherAmount>
+            <FilthRate>24</FilthRate>
+        </statBases>
+        <tools>
+            <li>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>25</power>
+                <cooldownTime>1.85</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.6</chanceFactor>
+            </li>
+            <li>
+                <label>tentacles</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>AA_TentacleAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.4</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="AnimalBehaviours.CompProperties_Regeneration">
+                <rateInTicks>40</rateInTicks>
+            </li>
+        </comps>
+        <race>
+            <body>AA_GooWithTeethBody</body>
+            <baseBodySize>6</baseBodySize>
+            <baseHealthScale>4</baseHealthScale>
+            <baseHungerRate>2</baseHungerRate>
+            <foodType>CarnivoreAnimalStrict</foodType>
+            <predator>true</predator>
+            <maxPreyBodySize>4</maxPreyBodySize>
+            <wildness>0.8</wildness>
+            <trainability>Intermediate</trainability>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <leatherDef>Leather_Light</leatherDef>
+            <hasGenders>false</hasGenders>
+            <useMeatFrom>Elephant</useMeatFrom>
+            <lifeExpectancy>75</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0</minAge>
+                    <soundWounded>AA_TarGuzzler_Wounded</soundWounded>
+                    <soundDeath>AA_TarGuzzler_Death</soundDeath>
+                    <soundAngry>AA_TarGuzzler_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_Tank</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_ArmouredTankDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_EngorgedTentacularAberration</defName>
+        <label>engorged tentacular aberration</label>
+        <race>AA_EngorgedTentacularAberration</race>
+        <combatPower>500</combatPower>
+        <ecoSystemWeight>1</ecoSystemWeight>
+        <canArriveManhunter>false</canArriveManhunter>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_EngorgedTentacularAberration/AA_EngorgedTentacularAberration</texPath>
+                    <drawSize>4</drawSize>
+                    <shadowData>
+                        <volume>(0.30, 0.25, 0.20)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>
