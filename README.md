@@ -17,10 +17,12 @@ How to download only the mods you are interested in / Как загрузить 
 2) Use the "Refined GitHub" extension<br>
 3) https://download-directory.github.io<br>
 4) https://downgit.github.io/#/home<br><br>
+
 This repository contains all my own and patched HSK mods. Each folder inside this repository contains a folder of the mod itself, a description with an FAQ, a preview, and sometimes the author's license. Unpack the mods correctly and not touch __PREVIEW__ folder!<br><br>
 Это репозиторий содержит все мои самодельные и пропатченные для ХСК моды. В каждой папке внутри данного репозитория содержится папка самого мода, описание с FAQ, превью и иногда лицензия автора. Правильно распаковывайте моды и не трогайте папку __PREVIEW__!<br><br>
-##Content by version / Содержимое по версиям:<br>
+## Content by version / Содержимое по версиям:<br>
 | Mod title | Versions | Notes |
+| --- | --- | --- |
 | Advanced Shield Belts | 1.3-1.4 | --- |
 | Alpha Animals | 1.3-1.4 | --- |
 | Alpha Biomes | 1.3-1.4 | --- |
@@ -44,6 +46,6 @@ This repository contains all my own and patched HSK mods. Each folder inside thi
 | Tesla Coil | 1.3 | In progress 
 | Utility Columns | 1.3-1.4 | --- |
 <br>
-<img src="https://i.imgur.com/fdngbbh.png">
+<img src="https://i.imgur.com/fdngbbh.png"><br>
 Rimworld is owned by Tynan Sylvester.<br>
 Mod authors for these awesome mods. Check out their other mods!
