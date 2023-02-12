@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--가챠 일반-->
+    <PawnKindDef ParentName="PanielPlayerBasePawnKind">
+        <defName>Paniel_Randombox_Awful</defName>
+        <label>Paniel Randombox Awful</label>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <forceNormalGearQuality>false</forceNormalGearQuality>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Awful</li>
+                    <li>Paniel_Story_FailureA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <techHediffsChance>0</techHediffsChance>
+        <techHediffsMoney>0</techHediffsMoney>
+        <techHediffsTags>
+
+        </techHediffsTags>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>13~21</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielPlayerBasePawnKind">
+        <defName>Paniel_Randombox_Poor</defName>
+        <label>Paniel Randombox Poor</label>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <forceNormalGearQuality>false</forceNormalGearQuality>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Poor</li>
+                    <li>Paniel_Story_FailureB</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <techHediffsChance>0</techHediffsChance>
+        <techHediffsMoney>0</techHediffsMoney>
+        <techHediffsTags>
+
+        </techHediffsTags>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>13~21</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielPlayerBasePawnKind">
+        <defName>Paniel_Randombox_Normal</defName>
+        <label>Paniel Randombox Normal</label>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <forceNormalGearQuality>false</forceNormalGearQuality>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Normal</li>
+                    <li>Paniel_Story_Basic</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <techHediffsChance>0</techHediffsChance>
+        <techHediffsMoney>0</techHediffsMoney>
+        <techHediffsTags>
+
+        </techHediffsTags>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <!--가챠 특화 전투형-->
+    <PawnKindDef ParentName="PanielPlayerBasePawnKind" Name="PanielSoldierBasePawnKind" Abstract="True">
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <techHediffsChance>0</techHediffsChance>
+        <techHediffsMoney>0</techHediffsMoney>
+        <techHediffsTags>
+
+        </techHediffsTags>
+        <disallowedTraits>
+            <li>Industriousness</li>
+            <li>TorturedArtist</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielSoldierBasePawnKind">
+        <defName>Paniel_Soldier_Normal</defName>
+        <label>Paniel Normal Militia</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Normal</li>
+                    <li>Paniel_Story_MilitiaA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielSoldierBasePawnKind">
+        <defName>Paniel_Soldier_Good</defName>
+        <label>Paniel Good Militia</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Good</li>
+                    <li>Paniel_Story_MilitiaB</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielSoldierBasePawnKind">
+        <defName>Paniel_Soldier_Excellent</defName>
+        <label>Paniel Excellent Soldier</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Excellent</li>
+                    <li>Paniel_Story_SoldierA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>14~17</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielSoldierBasePawnKind">
+        <defName>Paniel_Soldier_Masterwork</defName>
+        <label>Paniel Masterwork Soldier</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Masterwork</li>
+                    <li>Paniel_Story_SoldierB</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>15~18</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielSoldierBasePawnKind">
+        <defName>Paniel_Soldier_Legendary</defName>
+        <label>Paniel Legendary Royalguard</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Legendary</li>
+                    <li>Paniel_Story_Royalguard</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>16~19</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <!--가챠 특화 제작형-->
+    <PawnKindDef ParentName="PanielPlayerBasePawnKind" Name="PanielWorkerBasePawnKind" Abstract="True">
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <techHediffsChance>0</techHediffsChance>
+        <techHediffsMoney>0</techHediffsMoney>
+        <techHediffsTags>
+
+        </techHediffsTags>
+        <disallowedTraits>
+            <li>ShootingAccuracy</li>
+            <li>Brawler</li>
+            <li>Tough</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielWorkerBasePawnKind">
+        <defName>Paniel_Worker_Normal</defName>
+        <label>Paniel Normal Apprentice</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Normal</li>
+                    <li>Paniel_Story_ApprenticeA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielWorkerBasePawnKind">
+        <defName>Paniel_Worker_Good</defName>
+        <label>Paniel Good Apprentice</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Good</li>
+                    <li>Paniel_Story_ApprenticeB</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielWorkerBasePawnKind">
+        <defName>Paniel_Worker_Excellent</defName>
+        <label>Paniel Excellent journeyman</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Excellent</li>
+                    <li>Paniel_Story_journeymanA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>14~17</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielWorkerBasePawnKind">
+        <defName>Paniel_Worker_Masterwork</defName>
+        <label>Paniel Masterwork journeyman</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Masterwork</li>
+                    <li>Paniel_Story_journeymanB</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>15~18</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielWorkerBasePawnKind">
+        <defName>Paniel_Worker_Legendary</defName>
+        <label>Paniel Legendary Meister</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Legendary</li>
+                    <li>Paniel_Story_Meister</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>16~19</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <!--가챠 특화 가정형-->
+    <PawnKindDef ParentName="PanielPlayerBasePawnKind" Name="PanielMaidBasePawnKind" Abstract="True">
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <techHediffsChance>0</techHediffsChance>
+        <techHediffsMoney>0</techHediffsMoney>
+        <techHediffsTags>
+
+        </techHediffsTags>
+        <disallowedTraits>
+            <li>ShootingAccuracy</li>
+            <li>Brawler</li>
+            <li>TorturedArtist</li>
+            <li>Tough</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielMaidBasePawnKind">
+        <defName>Paniel_Maid_Normal</defName>
+        <label>Paniel Normal Maid</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Normal</li>
+                    <li>Paniel_Story_MaidA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielMaidBasePawnKind">
+        <defName>Paniel_Maid_Good</defName>
+        <label>Paniel Good Maid</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Good</li>
+                    <li>Paniel_Story_MaidB</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielMaidBasePawnKind">
+        <defName>Paniel_Maid_Excellent</defName>
+        <label>Paniel Excellent House maid</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Excellent</li>
+                    <li>Paniel_Story_HousemaidA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>14~17</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielMaidBasePawnKind">
+        <defName>Paniel_Maid_Masterwork</defName>
+        <label>Paniel Masterwork House maid</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Masterwork</li>
+                    <li>Paniel_Story_HousemaidB</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>15~18</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PanielMaidBasePawnKind">
+        <defName>Paniel_Maid_Legendary</defName>
+        <label>Paniel Legendary Lady's maid</label>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Legendary</li>
+                    <li>Paniel_Story_Ladysmaid</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>16~19</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+</Defs>

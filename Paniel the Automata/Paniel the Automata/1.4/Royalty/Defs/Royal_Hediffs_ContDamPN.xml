@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--blooded chain sword-->
+    <ManeuverDef>
+        <defName>PN_ChainCutManeuverMono</defName>
+        <requiredCapacity>PN_ChainCutToolMono</requiredCapacity>
+        <verb>
+            <verbClass>Verb_MeleeAttackDamage</verbClass>
+            <meleeDamageDef>PN_ChainCutDamageMono</meleeDamageDef>
+        </verb>
+        <logEntryDef>MeleeAttack</logEntryDef>
+        <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+        <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+        <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+        <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+    </ManeuverDef>
+
+    <ToolCapacityDef>
+        <defName>PN_ChainCutToolMono</defName>
+        <label>chainsword cut</label>
+    </ToolCapacityDef>
+
+    <DamageDef ParentName="CutBase">
+        <defName>PN_ChainCutDamageMono</defName>
+        <hediff>PN_ChainCutHediffMono</hediff>
+        <hediffSkin>PN_ChainCutHediffMono</hediffSkin>
+        <hediffSolid>PN_ChainCrackHediffMono</hediffSolid>
+        <cutCleaveBonus>1.4</cutCleaveBonus>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <armorCategory>Sharp</armorCategory>
+        <impactSoundType>Slice</impactSoundType>
+    </DamageDef>
+
+    <HediffDef ParentName="InjuryBase">
+        <defName>PN_ChainCutHediffMono</defName>
+        <label>cut</label>
+        <labelNoun>a cut</labelNoun>
+        <description>a cut.</description>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <labelTendedWell>bandaged</labelTendedWell>
+                <labelTendedWellInner>sutured</labelTendedWellInner>
+                <labelSolidTendedWell>set</labelSolidTendedWell>
+            </li>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>0.15</infectionChance>
+            </li>
+            <li Class="HediffCompProperties_GetsPermanent">
+                <permanentLabel>cut scar</permanentLabel>
+            </li>
+            <li Class="ContDamPN.HediffCompProperties_ContinuousDamage">
+                <damageDef>PN_ChainCutDamage_ConMono</damageDef>
+                <ticksPerDamage>6</ticksPerDamage>
+                <damageAmount>4</damageAmount>
+                <endTicks>18</endTicks>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.0125</painPerSeverity>
+            <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+            <bleedRate>0.06</bleedRate>
+            <canMerge>false</canMerge>
+            <destroyedLabel>Cut off</destroyedLabel>
+            <destroyedOutLabel>Cut off</destroyedOutLabel>
+        </injuryProps>
+    </HediffDef>
+
+    <DamageDef ParentName="CutBase">
+        <defName>PN_ChainCutDamage_ConMono</defName>
+        <cutCleaveBonus>1.4</cutCleaveBonus>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <armorCategory>Sharp</armorCategory>
+        <impactSoundType>Slice</impactSoundType>
+    </DamageDef>
+
+    <HediffDef ParentName="InjuryBase">
+        <defName>PN_ChainCrackHediffMono</defName>
+        <label>crack</label>
+        <labelNoun>a crack wound</labelNoun>
+        <description>A crack.</description>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <labelTendedWell>set</labelTendedWell>
+                <labelTendedWellInner>set</labelTendedWellInner>
+                <labelSolidTendedWell>set</labelSolidTendedWell>
+            </li>
+            <li Class="HediffCompProperties_GetsPermanent">
+                <permanentLabel>permanent crack</permanentLabel>
+            </li>
+            <li Class="ContDamPN.HediffCompProperties_ContinuousDamage">
+                <damageDef>PN_ChainCrackDamage_ConMono</damageDef>
+                <ticksPerDamage>6</ticksPerDamage>
+                <damageAmount>2</damageAmount>
+                <endTicks>12</endTicks>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.01</painPerSeverity>
+            <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+            <destroyedLabel>Shattered</destroyedLabel>
+        </injuryProps>
+    </HediffDef>
+
+    <DamageDef ParentName="CutBase">
+        <defName>PN_ChainCrackDamage_ConMono</defName>
+        <cutCleaveBonus>1.4</cutCleaveBonus>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <armorCategory>Sharp</armorCategory>
+        <impactSoundType>Slice</impactSoundType>
+    </DamageDef>
+
+    <!--electrical blunt-->
+
+    <ManeuverDef>
+        <defName>PN_ElectricalBluntManeuver</defName>
+        <requiredCapacity>PN_ElectricalBluntTool</requiredCapacity>
+        <verb>
+            <verbClass>Verb_MeleeAttackDamage</verbClass>
+            <meleeDamageDef>PN_ElectricalBluntDamage</meleeDamageDef>
+        </verb>
+        <logEntryDef>MeleeAttack</logEntryDef>
+        <combatLogRulesHit>Maneuver_Smash_MeleeHit</combatLogRulesHit>
+        <combatLogRulesDeflect>Maneuver_Smash_MeleeDeflect</combatLogRulesDeflect>
+        <combatLogRulesMiss>Maneuver_Smash_MeleeMiss</combatLogRulesMiss>
+        <combatLogRulesDodge>Maneuver_Smash_MeleeDodge</combatLogRulesDodge>
+    </ManeuverDef>
+
+    <ToolCapacityDef>
+        <defName>PN_ElectricalBluntTool</defName>
+        <label>electrical blunt</label>
+    </ToolCapacityDef>
+
+    <DamageDef ParentName="BluntBase">
+        <defName>PN_ElectricalBluntDamage</defName>
+        <hediff>PN_ElectricalCrushHediff</hediff>
+        <hediffSkin>PN_ElectricalBruiseHediff</hediffSkin>
+        <hediffSolid>Crack</hediffSolid>
+    </DamageDef>
+
+    <HediffDef ParentName="InjuryBase">
+        <defName>PN_ElectricalCrushHediff</defName>
+        <label>crush</label>
+        <labelNoun>a crush wound</labelNoun>
+        <description>A crushing wound.</description>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <labelTendedWell>bandaged</labelTendedWell>
+                <labelTendedWellInner>sutured</labelTendedWellInner>
+                <labelSolidTendedWell>set</labelSolidTendedWell>
+            </li>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>0.15</infectionChance>
+            </li>
+            <li Class="HediffCompProperties_GetsPermanent">
+                <permanentLabel>mangled scar</permanentLabel>
+            </li>
+            <li Class="ContDamPN.HediffCompProperties_ContinuousDamage">
+                <damageDef>PN_ElectricalBurnDamage_Con</damageDef>
+                <ticksPerDamage>6</ticksPerDamage>
+                <damageAmount>4</damageAmount>
+                <endTicks>18</endTicks>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.0125</painPerSeverity>
+            <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+            <bleedRate>0.01</bleedRate>
+            <canMerge>true</canMerge>
+            <destroyedLabel>Crushed</destroyedLabel>
+        </injuryProps>
+    </HediffDef>
+
+    <HediffDef ParentName="InjuryBase">
+        <defName>PN_ElectricalBruiseHediff</defName>
+        <label>bruise</label>
+        <labelNoun>a bruise</labelNoun>
+        <description>A bruise.</description>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <labelTendedWell>bandaged</labelTendedWell>
+                <labelTendedWellInner>tended</labelTendedWellInner>
+                <labelSolidTendedWell>set</labelSolidTendedWell>
+            </li>
+            <li Class="ContDamPN.HediffCompProperties_ContinuousDamage">
+                <damageDef>PN_ElectricalBurnDamage_Con</damageDef>
+                <ticksPerDamage>6</ticksPerDamage>
+                <damageAmount>4</damageAmount>
+                <endTicks>18</endTicks>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.0125</painPerSeverity>
+            <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+            <canMerge>false</canMerge>
+            <destroyedLabel>Destroyed</destroyedLabel>
+        </injuryProps>
+    </HediffDef>
+
+    <DamageDef ParentName="Flame">
+        <defName>PN_ElectricalBurnDamage_Con</defName>
+        <label>electrical burn</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <hediff>PN_ElectricalBurn</hediff>
+    </DamageDef>
+
+    <HediffDef ParentName="InjuryBase">
+        <defName>PN_ElectricalBurn</defName>
+        <label>electrical burn</label>
+        <labelNoun>a electrical burn</labelNoun>
+        <description>A electrical burn.</description>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <labelTendedWell>bandaged</labelTendedWell>
+                <labelTendedWellInner>tended</labelTendedWellInner>
+                <labelSolidTendedWell>tended</labelSolidTendedWell>
+            </li>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>0.30</infectionChance>
+            </li>
+            <li Class="HediffCompProperties_GetsPermanent">
+                <permanentLabel>burn scar</permanentLabel>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.01875</painPerSeverity>
+            <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+            <canMerge>false</canMerge>
+            <destroyedLabel>Burned off</destroyedLabel>
+            <destroyedOutLabel>Burned out</destroyedOutLabel>
+        </injuryProps>
+    </HediffDef>
+
+    <!--electrical Stab-->
+
+    <ManeuverDef>
+        <defName>PN_ElectricalStabManeuver</defName>
+        <requiredCapacity>PN_ElectricalStabTool</requiredCapacity>
+        <verb>
+            <verbClass>Verb_MeleeAttackDamage</verbClass>
+            <meleeDamageDef>PN_ElectricalStabDamage</meleeDamageDef>
+        </verb>
+        <logEntryDef>MeleeAttack</logEntryDef>
+        <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+        <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+        <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+        <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+    </ManeuverDef>
+
+    <ToolCapacityDef>
+        <defName>PN_ElectricalStabTool</defName>
+        <label>electrical stab</label>
+    </ToolCapacityDef>
+
+    <DamageDef>
+        <defName>PN_ElectricalStabDamage</defName>
+        <label>stab</label>
+        <workerClass>DamageWorker_Stab</workerClass>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} has been stabbed to death.</deathMessage>
+        <hediff>PN_ElectricalStabHediff</hediff>
+        <hediffSolid>Crack</hediffSolid>
+        <impactSoundType>Slice</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <stabChanceOfForcedInternal>0.6</stabChanceOfForcedInternal>
+        <overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+    </DamageDef>
+
+    <HediffDef ParentName="InjuryBase">
+        <defName>PN_ElectricalStabHediff</defName>
+        <label>stab</label>
+        <labelNoun>a stab wound</labelNoun>
+        <description>A stab wound.</description>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <labelTendedWell>bandaged</labelTendedWell>
+                <labelTendedWellInner>sutured</labelTendedWellInner>
+                <labelSolidTendedWell>set</labelSolidTendedWell>
+            </li>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>0.15</infectionChance>
+            </li>
+            <li Class="HediffCompProperties_GetsPermanent">
+                <permanentLabel>stab scar</permanentLabel>
+            </li>
+            <li Class="ContDamPN.HediffCompProperties_ContinuousDamage">
+                <damageDef>PN_ElectricalBurnDamage_Con</damageDef>
+                <ticksPerDamage>6</ticksPerDamage>
+                <damageAmount>4</damageAmount>
+                <endTicks>12</endTicks>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.0125</painPerSeverity>
+            <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+            <bleedRate>0.06</bleedRate>
+            <canMerge>false</canMerge>
+            <destroyedLabel>Cut off</destroyedLabel>
+            <destroyedOutLabel>Cut out</destroyedOutLabel>
+        </injuryProps>
+    </HediffDef>
+</Defs>

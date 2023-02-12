@@ -1,56 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- 수리 키트 업그레이드 -->
+    <!-- 수리 키트 업그레이드 -->
 
-  <PN_upgrade_SelfRepairKit.label>Улучшить ремонтный комплект для автоматона</PN_upgrade_SelfRepairKit.label>
-  <PN_upgrade_SelfRepairKit.description>Улучшить ремонтный комплект для автоматона</PN_upgrade_SelfRepairKit.description>
-  <PN_upgrade_SelfRepairKit.jobString>Улучшает ремонтный комплект для автоматона.</PN_upgrade_SelfRepairKit.jobString>
-
-
-  <!-- 오토마톤 피부 -->
-
-  <PN_Make_Leather_Automaton.label>Сделать кожу автоматона x10</PN_Make_Leather_Automaton.label>
-  <PN_Make_Leather_Automaton.description>Сделать кожу автоматона x10</PN_Make_Leather_Automaton.description>
-  <PN_Make_Leather_Automaton.jobString>Делает кожу автоматона.</PN_Make_Leather_Automaton.jobString>
+    <PN_upgrade_SelfRepairKit.label>Улучшить ремонтный комплект для автоматона</PN_upgrade_SelfRepairKit.label>
+    <PN_upgrade_SelfRepairKit.description>Улучшить ремонтный комплект для автоматона</PN_upgrade_SelfRepairKit.description>
+    <PN_upgrade_SelfRepairKit.jobString>Улучшает ремонтный комплект для автоматона.</PN_upgrade_SelfRepairKit.jobString>
 
 
-  <!-- <RecipeDef>
-    <defName>PN_Drum_Subdivision</defName>
-    <label>subdivide drum can</label>
-    <description>subdivide drum can</description>
-    <jobString>Subdividing drum can.</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-    <effectWorking>Cook</effectWorking>
-    <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>800</workAmount>
-    <allowMixingIngredients>true</allowMixingIngredients>
-    <recipeUsers>
-      <li>PN_AutomatonBench</li>
-    </recipeUsers>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>PN_Fueldrumcan</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <products>
-      <PN_AutomatonFuel>10</PN_AutomatonFuel>
-      <Steel>5</Steel>
-    </products>
-    <skillRequirements>
-    </skillRequirements>
-    <workSkill>Crafting</workSkill>
-    <researchPrerequisite></researchPrerequisite>
-  </RecipeDef> -->
+    <!-- 오토마톤 피부 -->
 
-  <PN_Disassemble_AutomatonPackage.label>Разобрать упаковку с автоматоном</PN_Disassemble_AutomatonPackage.label>
-  <PN_Disassemble_AutomatonPackage.description>Разобрать упаковку с автоматоном</PN_Disassemble_AutomatonPackage.description>
-  <PN_Disassemble_AutomatonPackage.jobString>Разбирает упаковку.</PN_Disassemble_AutomatonPackage.jobString>
+    <PN_Make_Leather_Automaton.label>Сделать кожу автоматона x10</PN_Make_Leather_Automaton.label>
+    <PN_Make_Leather_Automaton.description>Сделать кожу автоматона x10</PN_Make_Leather_Automaton.description>
+    <PN_Make_Leather_Automaton.jobString>Делает кожу автоматона.</PN_Make_Leather_Automaton.jobString>
 
+
+
+    <PN_Disassemble_AutomatonPackage.label>Разобрать упаковку с автоматоном</PN_Disassemble_AutomatonPackage.label>
+    <PN_Disassemble_AutomatonPackage.description>Разобрать упаковку с автоматоном</PN_Disassemble_AutomatonPackage.description>
+    <PN_Disassemble_AutomatonPackage.jobString>Разбирает упаковку.</PN_Disassemble_AutomatonPackage.jobString>
+
+
+    <PN_UnlockSilverCase.label>Открыть кейс с серебром</PN_UnlockSilverCase.label>
+    <PN_UnlockSilverCase.description>Разблокировать кейс с серебром ПнЛ. Невозможно добиться идеального результата, насильно взломав защитное устройство.</PN_UnlockSilverCase.description>
+    <PN_UnlockSilverCase.jobString>Разблокирует кейс с серебром ПнЛ.</PN_UnlockSilverCase.jobString>
 
 </LanguageData>

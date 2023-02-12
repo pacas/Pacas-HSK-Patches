@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--폰카인드 베이스-->
+
+    <PawnKindDef Name="PN_PanielBasePawnKind" Abstract="True">
+        <race>Paniel_Race</race>
+        <defaultFactionType>PN_SubsidiaryFaction</defaultFactionType>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <invNutrition>1</invNutrition>
+        <minGenerationAge>20</minGenerationAge>
+        <maxGenerationAge>25</maxGenerationAge>
+        <initialWillRange>2~4</initialWillRange>
+        <initialResistanceRange>13~21</initialResistanceRange>
+        <humanPregnancyChance>0</humanPregnancyChance>
+        <techHediffsChance>0</techHediffsChance>
+        <techHediffsMoney>0</techHediffsMoney>
+        <techHediffsTags>
+        </techHediffsTags>
+        <inventoryOptions>
+            <thingDef>PN_AutomatonFuel</thingDef>
+            <countRange>3~5</countRange>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <PawnKindDef Name="PN_HumanBasePawnKind" Abstract="True">
+        <race>Human</race>
+        <defaultFactionType>PN_SubsidiaryFaction</defaultFactionType>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+        <invNutrition>2.55</invNutrition>
+        <humanPregnancyChance>0</humanPregnancyChance>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+        </apparelTags>
+    </PawnKindDef>
+
+    <!--Associate-->
+
+    <PawnKindDef ParentName="PN_HumanBasePawnKind">
+        <defName>PN_AssociateH</defName>
+        <label>associate</label>
+        <combatPower>95</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <isFighter>false</isFighter>
+        <gearHealthRange>0.2~2.0</gearHealthRange>
+        <weaponTags>
+            <li>Gun</li>
+            <li>PN_Shovel</li>
+        </weaponTags>
+        <weaponMoney>450~1400</weaponMoney>
+        <apparelMoney>400~1400</apparelMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <techHediffsChance>0.06</techHediffsChance>
+        <techHediffsMoney>50~600</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>6~10</initialResistanceRange>
+        <humanPregnancyChance>0</humanPregnancyChance>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Pigskin MayRequire="Ludeon.RimWorld.Biotech">0.1</Pigskin>
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.1</Neanderthal>
+                <Impid MayRequire="Ludeon.RimWorld.Biotech">0.1</Impid>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.05</Genie>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.1</Yttakin>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0.05</Highmate>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_PanielBasePawnKind">
+        <defName>PN_AssociateP_EngineerA</defName>
+        <label>associate unit</label>
+        <combatPower>90</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <isFighter>false</isFighter>
+        <gearHealthRange>0.2~2.0</gearHealthRange>
+        <weaponTags>
+            <li>Gun</li>
+            <li>PN_Shovel</li>
+        </weaponTags>
+        <weaponMoney>450~1400</weaponMoney>
+        <apparelMoney>400~1400</apparelMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <apparelRequired>
+            <li>PN_ApparelBasic</li>
+            <li>CE_Apparel_Backpack</li>
+        </apparelRequired>
+        <apparelTags>
+            <li>Paniel_Basic</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Normal</li>
+                    <li>Paniel_Story_ApprenticeA_PA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+        <disallowedTraits>
+            <li>ShootingAccuracy</li>
+            <li>Brawler</li>
+            <li>Tough</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_PanielBasePawnKind">
+        <defName>PN_AssociateP_EngineerB</defName>
+        <label>associate unit</label>
+        <combatPower>110</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <isFighter>false</isFighter>
+        <gearHealthRange>0.7~3.2</gearHealthRange>
+        <weaponTags>
+            <li>Gun</li>
+            <li>PN_Shovel</li>
+        </weaponTags>
+        <weaponMoney>450~1400</weaponMoney>
+        <apparelMoney>400~1600</apparelMoney>
+        <apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
+        <apparelRequired>
+            <li>PN_ApparelBasic</li>
+            <li>CE_Apparel_Backpack</li>
+        </apparelRequired>
+        <apparelTags>
+            <li>Paniel_Basic</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Good</li>
+                    <li>Paniel_Story_ApprenticeB_PA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+        <disallowedTraits>
+            <li>ShootingAccuracy</li>
+            <li>Brawler</li>
+            <li>Tough</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+
+    <PawnKindDef ParentName="PN_PanielBasePawnKind">
+        <defName>PN_AssociateP_DomesticA</defName>
+        <label>associate unit</label>
+        <combatPower>90</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <isFighter>false</isFighter>
+        <gearHealthRange>0.2~2.0</gearHealthRange>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <weaponMoney>450~1400</weaponMoney>
+        <apparelMoney>400~1400</apparelMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <apparelRequired>
+            <li>PN_ApparelBasic</li>
+            <li>CE_Apparel_Backpack</li>
+        </apparelRequired>
+        <apparelTags>
+            <li>Paniel_Basic</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Normal</li>
+                    <li>Paniel_Story_MaidA_PA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+        <disallowedTraits>
+            <li>ShootingAccuracy</li>
+            <li>Brawler</li>
+            <li>TorturedArtist</li>
+            <li>Tough</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_PanielBasePawnKind">
+        <defName>PN_AssociateP_DomesticB</defName>
+        <label>associate unit</label>
+        <combatPower>110</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <isFighter>false</isFighter>
+        <gearHealthRange>0.7~3.2</gearHealthRange>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <weaponMoney>450~1400</weaponMoney>
+        <apparelMoney>400~1600</apparelMoney>
+        <apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
+        <apparelRequired>
+            <li>PN_ApparelBasic</li>
+            <li>CE_Apparel_Backpack</li>
+        </apparelRequired>
+        <apparelTags>
+            <li>Paniel_Basic</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Good</li>
+                    <li>Paniel_Story_MaidB_PA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+        <disallowedTraits>
+            <li>ShootingAccuracy</li>
+            <li>Brawler</li>
+            <li>TorturedArtist</li>
+            <li>Tough</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <!--Manager, Director-->
+
+    <PawnKindDef ParentName="PN_HumanBasePawnKind">
+        <defName>PN_ManagerH</defName>
+        <label>manager</label>
+        <trader>true</trader>
+        <combatPower>95</combatPower>
+        <isFighter>false</isFighter>
+        <gearHealthRange>1~1</gearHealthRange>
+        <itemQuality>Normal</itemQuality>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <weaponMoney>450~1400</weaponMoney>
+        <apparelMoney>400~1600</apparelMoney>
+        <apparelTags>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>Apparel_BowlerHat</li>
+        </apparelRequired>
+        <techHediffsChance>0.15</techHediffsChance>
+        <techHediffsMoney>600~1500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <initialWillRange>5~7</initialWillRange>
+        <initialResistanceRange>26~40</initialResistanceRange>
+        <humanPregnancyChance>0</humanPregnancyChance>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.2</Yttakin>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0.2</Highmate>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.2</Genie>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_PanielBasePawnKind">
+        <defName>PN_ManageUnit_Enginer</defName>
+        <label>manage unit</label>
+        <combatPower>110</combatPower>
+        <itemQuality>Normal</itemQuality>
+        <isFighter>false</isFighter>
+        <gearHealthRange>1~1</gearHealthRange>
+        <weaponTags>
+            <li>Gun</li>
+            <li>PN_Shovel</li>
+        </weaponTags>
+        <weaponMoney>250~1400</weaponMoney>
+        <apparelMoney>400~1600</apparelMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <apparelRequired>
+            <li>PN_ApparelWorker</li>
+            <li>PN_ApparelWorkerHat</li>
+            <li>CE_Apparel_Backpack</li>
+        </apparelRequired>
+        <apparelTags>
+            <li>Paniel_Engineer</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Excellent</li>
+                    <li>Paniel_Story_journeymanA_PA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+        <disallowedTraits>
+            <li>ShootingAccuracy</li>
+            <li>Brawler</li>
+            <li>TorturedArtist</li>
+            <li>Tough</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_PanielBasePawnKind">
+        <defName>PN_ManageUnit_Domestic</defName>
+        <label>manage unit</label>
+        <combatPower>110</combatPower>
+        <trader>true</trader>
+        <itemQuality>Normal</itemQuality>
+        <isFighter>false</isFighter>
+        <gearHealthRange>1~1</gearHealthRange>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <weaponMoney>450~1400</weaponMoney>
+        <apparelMoney>400~1600</apparelMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <apparelRequired>
+            <li>PN_ApparelMaid</li>
+            <li>PN_ApparelMaidHat</li>
+        </apparelRequired>
+        <apparelTags>
+            <li>Paniel_Housekeeper</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Excellent</li>
+                    <li>Paniel_Story_HousemaidA_PA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+        <disallowedTraits>
+            <li>ShootingAccuracy</li>
+            <li>Brawler</li>
+            <li>TorturedArtist</li>
+            <li>Tough</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_HumanBasePawnKind">
+        <defName>PN_Director</defName>
+        <label>director</label>
+        <combatPower>90</combatPower>
+        <minGenerationAge>30</minGenerationAge>
+        <isFighter>false</isFighter>
+        <gearHealthRange>1~1</gearHealthRange>
+        <itemQuality>Good</itemQuality>
+        <weaponMoney>400~1200</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <apparelMoney>700~1900</apparelMoney>
+        <apparelTags>
+            <li>IndustrialMilitaryBasic</li>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>Apparel_BowlerHat</li>
+            <li>CE_Apparel_Backpack</li>
+        </apparelRequired>
+        <techHediffsChance>0.15</techHediffsChance>
+        <techHediffsMoney>600~1500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <initialWillRange>8~11</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.2</Yttakin>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0.2</Highmate>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.2</Genie>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <!--NPC Only-->
+    <PawnKindDef ParentName="PN_HumanBasePawnKind" Name="PN_NPCBasePawnKind" Abstract="True">
+        <combatPower>90</combatPower>
+        <minGenerationAge>30</minGenerationAge>
+        <isFighter>false</isFighter>
+        <gearHealthRange>1~1</gearHealthRange>
+        <itemQuality>Good</itemQuality>
+        <weaponMoney>600~1300</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <apparelMoney>700~1900</apparelMoney>
+        <apparelTags>
+            <li>IndustrialMilitaryBasic</li>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>Apparel_BowlerHat</li>
+            <li>CE_Apparel_Backpack</li>
+        </apparelRequired>
+        <techHediffsChance>0.15</techHediffsChance>
+        <techHediffsMoney>600~1500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.2</Yttakin>
+                <Highmate MayRequire="Ludeon.RimWorld.Biotech">0.2</Highmate>
+                <Genie MayRequire="Ludeon.RimWorld.Biotech">0.2</Genie>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+
+    <PawnKindDef ParentName="PN_NPCBasePawnKind">
+        <defName>PN_SeniorDirector</defName>
+        <label>senior director</label>
+        <initialWillRange>10~13</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_NPCBasePawnKind">
+        <defName>PN_VP</defName>
+        <label>VP</label>
+        <initialWillRange>11~14</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_NPCBasePawnKind">
+        <defName>PN_SVP</defName>
+        <label>SVP</label>
+        <initialWillRange>12~15</initialWillRange>
+        <initialResistanceRange>25~39</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_NPCBasePawnKind">
+        <defName>PN_CEO</defName>
+        <label>CEO</label>
+        <initialWillRange>13~16</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <!--security-->
+
+    <PawnKindDef ParentName="PN_HumanBasePawnKind">
+        <defName>PN_SecurityGuardH</defName>
+        <label>security guard</label>
+        <combatPower>140</combatPower>
+        <isFighter>true</isFighter>
+        <gearHealthRange>0.6~2</gearHealthRange>
+        <apparelTags>
+            <li>IndustrialMilitaryBasic</li>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelMoney>1000~1600</apparelMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <weaponMoney>1050~1400</weaponMoney>
+        <techHediffsChance>0.04</techHediffsChance>
+        <techHediffsMoney>400~900</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <initialWillRange>1~3</initialWillRange>
+        <initialResistanceRange>15~24</initialResistanceRange>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.25</Neanderthal>
+                <Impid MayRequire="Ludeon.RimWorld.Biotech">0.25</Impid>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_PanielBasePawnKind">
+        <defName>PN_SecurityUnit</defName>
+        <label>security unit</label>
+        <combatPower>130</combatPower>
+        <isFighter>true</isFighter>
+        <gearHealthRange>0.7~3.2</gearHealthRange>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <weaponMoney>1050~1400</weaponMoney>
+        <apparelMoney>400~1600</apparelMoney>
+        <apparelAllowHeadgearChance>0.6</apparelAllowHeadgearChance>
+        <apparelRequired>
+            <li>PN_ApparelBasic</li>
+        </apparelRequired>
+        <apparelTags>
+            <li>Paniel_Basic</li>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Normal</li>
+                    <li>Paniel_Story_MilitiaA_PA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <initialWillRange>15~18</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+        <disallowedTraits>
+            <li>Industriousness</li>
+            <li>TorturedArtist</li>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <!--Mid Unit Base-->
+
+    <PawnKindDef ParentName="PN_PanielBasePawnKind" Name="PN_MidUnitBase" Abstract="True">
+        <label>security unit</label>
+        <isFighter>true</isFighter>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.7~3.2</gearHealthRange>
+        <biocodeWeaponChance>0.2</biocodeWeaponChance>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelRequired>
+
+        </apparelRequired>
+        <apparelTags>
+            <li>Paniel_Militia</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Good</li>
+                    <li>Paniel_Story_MilitiaB_PA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <disallowedTraits>
+            <li>Industriousness</li>
+            <li>TorturedArtist</li>
+        </disallowedTraits>
+        <initialWillRange>14~17</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <!--Grenade Unit-->
+
+    <PawnKindDef ParentName="PN_MidUnitBase" Name="PN_GrenadePBase" Abstract="True">
+        <weaponMoney>500~1000</weaponMoney>
+        <apparelMoney>400~900</apparelMoney>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+
+    <PawnKindDef ParentName="PN_GrenadePBase">
+        <defName>PN_GrenadeUnit_Destructive</defName>
+        <combatPower>140</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <isGoodBreacher>true</isGoodBreacher>
+        <weaponTags>
+            <li>GrenadeDestructive</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_GrenadePBase">
+        <defName>PN_GrenadeUnit_EMP</defName>
+        <combatPower>100</combatPower>
+        <weaponTags>
+            <li>GrenadeEMP</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_GrenadePBase">
+        <defName>PN_GrenadeUnit_Smoke</defName>
+        <combatPower>100</combatPower>
+        <weaponTags>
+            <li>GrenadeSmoke</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <!--Mid tier Combat Unit-->
+
+    <PawnKindDef ParentName="PN_MidUnitBase">
+        <defName>PN_Mid_CloseUnit</defName>
+        <canBeSapper>true</canBeSapper>
+        <combatPower>200</combatPower>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+            <li>PN_Shovel</li>
+        </weaponTags>
+        <weaponMoney>1000~1500</weaponMoney>
+        <apparelMoney>1000~1500</apparelMoney>
+        <apparelRequired>
+            <li>Apparel_ShieldBelt</li>
+        </apparelRequired>
+        <disallowedTraits>
+            <li>ShootingAccuracy</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_MidUnitBase">
+        <defName>PN_Mid_RangeUnit</defName>
+        <combatPower>200</combatPower>
+        <weaponTags>
+            <li>Gun</li>
+            <li>PN_Rifle</li>
+            <li>PN_Revolver</li>
+        </weaponTags>
+        <weaponMoney>1050~1650</weaponMoney>
+        <apparelMoney>1000~1500</apparelMoney>
+        <apparelTags>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <!--Elite Unit Base-->
+
+    <PawnKindDef ParentName="PN_PanielBasePawnKind" Name="PN_EliteUnitBase" Abstract="True">
+        <label>elite security unit</label>
+        <isFighter>true</isFighter>
+        <itemQuality>Good</itemQuality>
+        <gearHealthRange>1~1</gearHealthRange>
+        <biocodeWeaponChance>0.3</biocodeWeaponChance>
+        <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+        <apparelMoney>7000~10000</apparelMoney>
+        <apparelRequired>
+
+        </apparelRequired>
+        <apparelTags>
+            <li>Paniel_EliteSecurity</li>
+        </apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Paniel_Story_Excellent</li>
+                    <li>Paniel_Story_SoldierA_PA</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <disallowedTraits>
+            <li>Industriousness</li>
+            <li>TorturedArtist</li>
+        </disallowedTraits>
+        <initialWillRange>15~18</initialWillRange>
+        <initialResistanceRange>38~58</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_EliteUnitBase">
+        <defName>PN_EliteCloseUnit</defName>
+        <combatPower>450</combatPower>
+        <weaponTags>
+            <li>PN_Chainsword</li>
+        </weaponTags>
+        <weaponMoney>3300~3300</weaponMoney>
+        <disallowedTraits>
+            <li>ShootingAccuracy</li>
+        </disallowedTraits>
+        <apparelRequired>
+            <li>Apparel_ShieldBelt</li>
+            <li>PN_CQCModule</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_EliteUnitBase">
+        <defName>PN_EliteRangeUnit</defName>
+        <combatPower>345</combatPower>
+        <weaponTags>
+            <li>PN_Rifle</li>
+        </weaponTags>
+        <apparelTags>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>PN_RapidFireModule</li>
+        </apparelRequired>
+        <weaponMoney>1100~4500</weaponMoney>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_EliteUnitBase">
+        <defName>PN_EliteHeavyUnit</defName>
+        <combatPower>390</combatPower>
+        <weaponTags>
+            <li>PN_Machinegun</li>
+        </weaponTags>
+        <apparelTags>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>PN_RapidFireModule</li>
+        </apparelRequired>
+        <weaponMoney>1100~4500</weaponMoney>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="PN_EliteUnitBase">
+        <defName>PN_EliteCannonUnit</defName>
+        <combatPower>370</combatPower>
+        <weaponTags>
+            <li>PN_Cannon</li>
+        </weaponTags>
+        <apparelTags>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>PN_RapidFireModule</li>
+        </apparelRequired>
+        <weaponMoney>1100~4500</weaponMoney>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+</Defs>

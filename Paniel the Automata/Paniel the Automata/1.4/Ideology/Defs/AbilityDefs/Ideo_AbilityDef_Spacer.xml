@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--Ability_Duration-->
+  <!--1 day = 60000 tick = 1000 (real time 1000s)-->
+  <!--1 hour = 2500 tick = 41.666-->
+
+  <!--==================================== 장교 모듈 ====================================-->
+  <AbilityDef>
+    <defName>PN_OfficerCommandAbility</defName>
+    <label>officer command</label>
+    <description>Create an aura that boosts the combat skills of everyone nearby. The effect lasts 6 hours and remains attached to the user for the duration.</description>
+    <descriptionHyperlinks>
+      <HediffDef>PN_OfficerCommandBuff</HediffDef>
+    </descriptionHyperlinks>
+    <jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <iconPath>UI/Abilities/PNOfficerCommand</iconPath>
+    <warmupMoteSocialSymbol>UI/Abilities/PNOfficerCommand</warmupMoteSocialSymbol>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <groupDef>PNModule_2day</groupDef>
+    <hotKey>Misc12</hotKey>
+    <uiOrder>3</uiOrder>
+    <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+    <statBases>
+      <Ability_Duration>250</Ability_Duration>
+      <Ability_EffectRadius>9.9</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.5</warmupTime>
+      <range>9.9</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PN_OfficerCommand</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!--==================================== 마이스터 모듈 ====================================-->
+  <AbilityDef>
+    <defName>PN_MeisterAdviceAbility</defName>
+    <label>meister's advice</label>
+    <description>Create an aura that boosts the engineer skills of everyone nearby. The effect lasts 12 hours and remains attached to the user for the duration.</description>
+    <descriptionHyperlinks>
+      <HediffDef>PN_MeisterAdviceBuff</HediffDef>
+    </descriptionHyperlinks>
+    <jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <iconPath>UI/Abilities/PNMeisterAdvice</iconPath>
+    <warmupMoteSocialSymbol>UI/Abilities/PNMeisterAdvice</warmupMoteSocialSymbol>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <groupDef>PNModule_2day</groupDef>
+    <hotKey>Misc12</hotKey>
+    <uiOrder>3</uiOrder>
+    <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+    <statBases>
+      <Ability_Duration>500</Ability_Duration>
+      <Ability_EffectRadius>9.9</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.5</warmupTime>
+      <range>9.9</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PN_MeisterAdvice</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!--==================================== 집중 의료 모듈 ====================================-->
+  <AbilityDef>
+    <defName>PN_IntensiveMedicalAbility</defName>
+    <label>intensive medical mode</label>
+    <description>This ability makes users more proficient in medical work.</description>
+    <descriptionHyperlinks>
+      <HediffDef>PN_IntensiveMedical</HediffDef>
+    </descriptionHyperlinks>
+    <jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <iconPath>UI/Abilities/PNIntensiveMedical</iconPath>
+    <warmupMoteSocialSymbol>UI/Abilities/PNIntensiveMedical</warmupMoteSocialSymbol>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <groupDef>PNModule_1day</groupDef>
+    <hotKey>Misc12</hotKey>
+    <uiOrder>3</uiOrder>
+    <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+    <statBases>
+      <Ability_Duration>84</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.5</warmupTime>
+      <range>-1</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PN_IntensiveMedical</hediffDef>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!--면역증진-->
+  <AbilityDef>
+    <defName>PN_ImmunityDriveAbility</defName>
+    <label>Immunity drive</label>
+    <description>Offer module support that energizes the body, boosting someone's immunity gain for one day.</description>
+    <descriptionHyperlinks>
+      <HediffDef>PN_ImmunityDrive</HediffDef>
+      <AbilityDef>PN_ImmunityDriveAbility</AbilityDef>
+    </descriptionHyperlinks>
+    <groupDef>PNModule_rightoff</groupDef>
+    <iconPath>UI/Abilities/PNImmunityDrive</iconPath>
+    <warmupMoteSocialSymbol>UI/Abilities/PNImmunityDrive</warmupMoteSocialSymbol>
+    <hotKey>Misc12</hotKey>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <warmupSound>ImmunityDrive_Resolve</warmupSound>
+    <statBases>
+      <Ability_Duration>1000</Ability_Duration>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PN_ImmunityDrive</hediffDef>
+        <replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>False</drawAimPie>
+      <range>-1</range>
+      <warmupTime>1.5</warmupTime>
+      <targetParams>
+        <canTargetBuildings>False</canTargetBuildings>
+        <neverTargetHostileFaction>True</neverTargetHostileFaction>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+  <!--==================================== 야전 의료 모듈 ====================================-->
+  <AbilityDef>
+    <defName>PN_FieldMedicAbility</defName>
+    <label>field medic mode</label>
+    <description>This ability enables users to provide rapid medical support in the field.</description>
+    <descriptionHyperlinks>
+      <HediffDef>PN_FieldMedic</HediffDef>
+      <AbilityDef>PN_StimPackAbility</AbilityDef>
+    </descriptionHyperlinks>
+    <jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>False</targetRequired>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <iconPath>UI/Abilities/PNFieldMedic</iconPath>
+    <warmupMoteSocialSymbol>UI/Abilities/PNFieldMedic</warmupMoteSocialSymbol>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <groupDef>PNModule_2day</groupDef>
+    <hotKey>Misc12</hotKey>
+    <uiOrder>3</uiOrder>
+    <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
+    <statBases>
+      <Ability_Duration>250</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>0.5</warmupTime>
+      <range>-1</range>
+      <drawAimPie>False</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetHumans>false</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PN_FieldMedic</hediffDef>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!--스팀팩-->
+  <AbilityDef>
+    <defName>PN_StimPackAbility</defName>
+    <label>injection stim pack</label>
+    <description>Inject drugs that increase physical stat into the target. It is not addictive, but side effects occur when the effect is over.</description>
+    <descriptionHyperlinks>
+      <HediffDef>PN_StimPack</HediffDef>
+      <HediffDef>PN_StimPackSideEffect</HediffDef>
+    </descriptionHyperlinks>
+    <groupDef>PNModule_rightoff</groupDef>
+    <iconPath>UI/Abilities/PNStimPack</iconPath>
+    <warmupMoteSocialSymbol>UI/Abilities/PNStimPack</warmupMoteSocialSymbol>
+    <hotKey>Misc12</hotKey>
+    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <stunTargetWhileCasting>True</stunTargetWhileCasting>
+    <showPsycastEffects>False</showPsycastEffects>
+    <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+    <warmupSound>ImmunityDrive_Resolve</warmupSound>
+    <statBases>
+      <Ability_Duration>250</Ability_Duration>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PN_StimPack</hediffDef>
+        <replaceExisting>true</replaceExisting>
+      </li>
+    </comps>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>False</drawAimPie>
+      <range>-1</range>
+      <warmupTime>1.5</warmupTime>
+      <targetParams>
+        <canTargetBuildings>False</canTargetBuildings>
+        <neverTargetHostileFaction>True</neverTargetHostileFaction>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+</Defs>

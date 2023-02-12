@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--본사(히든)-->
+    <FactionDef ParentName="FactionBase">
+        <defName>PN_indistryFaction</defName>
+        <label>PnL Industry</label>
+        <pawnSingular>Automaton</pawnSingular>
+        <pawnsPlural>Automata</pawnsPlural>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <fixedName>PnL Industry</fixedName>
+        <factionIconPath>Icon/Paniel_HQ</factionIconPath>
+        <hidden>true</hidden>
+        <autoFlee>false</autoFlee>
+        <techLevel>Spacer</techLevel>
+        <rescueesCanJoin>false</rescueesCanJoin>
+        <backstoryCategories>
+            <li>Offworld</li>
+        </backstoryCategories>
+        <allowedCultures>
+            <li>PN_PnLindistryCulture</li>
+        </allowedCultures>
+        <allowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">PN_Structure</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+        </allowedMemes>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">PN_Structure</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+        </requiredMemes>
+        <disallowedPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+        </disallowedPrecepts>
+    </FactionDef>
+
+    <!--행성지부(NPC)-->
+    <FactionDef ParentName="FactionBase">
+        <defName>PN_SubsidiaryFaction</defName>
+        <label>PnL Subsidiary Company</label>
+        <description>It is a subsidiary established by PnL industry to sell more products on the planet's surface. It is composed of rimworld locals and automaton.\n\nIts main job is to set up a logistics center on the planet's surface and receive products from orbit and transport them to settlements on the planet's surface.\n\nThey are concerned with the practical matters of trade, trust.\n\nThis particular group holds civil behavior in high regard.</description>
+        <pawnSingular>Employee</pawnSingular>
+        <pawnsPlural>Employees</pawnsPlural>
+        <listOrderPriority>50</listOrderPriority>
+        <settlementGenerationWeight>0.20</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxCountAtGameStart>1</maxCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canSiege>true</canSiege>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>CEO</leaderTitle>
+        <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+        <fixedLeaderKinds>
+            <li>PN_CEO</li>
+        </fixedLeaderKinds>
+        <factionIconPath>Icon/Paniel_Logi</factionIconPath>
+        <colorSpectrum>
+            <li>(1, 1, 1)</li>
+            <li>(1, 1, 1)</li>
+        </colorSpectrum>
+        <classicIdeo>false</classicIdeo>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>50</configurationListOrderPriority>
+        <techLevel>Spacer</techLevel>
+        <fixedName>PnL Logistics</fixedName>
+        <settlementNameMaker>NamerSettlementPnLSub</settlementNameMaker>
+        <allowedCultures>
+            <li>PN_PnLindistryCulture</li>
+        </allowedCultures>
+        <allowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">PN_Structure</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+        </allowedMemes>
+        <requiredMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">PN_Structure</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+        </requiredMemes>
+        <disallowedPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+        </disallowedPrecepts>
+        <backstoryCategories>
+            <li>Offworld</li>
+        </backstoryCategories>
+        <caravanTraderKinds>
+            <li>PN_Caravan_PnLindustry</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_Outlander_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>PN_Base_PnLindustry</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+        <raidLootMaker>PN_SubsidiaryRaidLootMaker</raidLootMaker>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0,35)</li>
+                <li>(70, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(100000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+
+            <!--
+      <PN_AssociateH></PN_AssociateH>
+      <PN_AssociateP_EngineerA></PN_AssociateP_EngineerA>
+      <PN_AssociateP_EngineerB></PN_AssociateP_EngineerB>
+      <PN_AssociateP_DomesticA></PN_AssociateP_DomesticA>
+      <PN_AssociateP_DomesticB></PN_AssociateP_DomesticB>
+
+      <PN_ManagerH></PN_ManagerH>
+      <PN_ManageUnit_Enginer></PN_ManageUnit_Enginer>
+      <PN_ManageUnit_Domestic></PN_ManageUnit_Domestic>
+
+      <PN_Director></PN_Director>
+
+      <PN_SecurityUnit></PN_SecurityUnit>
+
+      <PN_GrenadeUnit_Destructive></PN_GrenadeUnit_Destructive>
+      <PN_GrenadeUnit_EMP></PN_GrenadeUnit_EMP>
+      <PN_GrenadeUnit_Smoke></PN_GrenadeUnit_Smoke>
+
+      <PN_Mid_CloseUnit></PN_Mid_CloseUnit>
+      <PN_Mid_RangeUnit></PN_Mid_RangeUnit>
+
+      <PN_EliteCloseUnit></PN_EliteCloseUnit>
+      <PN_EliteRangeUnit></PN_EliteRangeUnit>
+      <PN_EliteHeavyUnit></PN_EliteHeavyUnit>
+      <PN_EliteCannonUnit></PN_EliteCannonUnit>
+      -->
+
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <PN_ManagerH>1</PN_ManagerH>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <PN_AssociateH>6</PN_AssociateH>
+                    <PN_AssociateP_EngineerA>1</PN_AssociateP_EngineerA>
+                    <PN_AssociateP_EngineerB>1</PN_AssociateP_EngineerB>
+                    <PN_AssociateP_DomesticA>1</PN_AssociateP_DomesticA>
+                    <PN_AssociateP_DomesticB>1</PN_AssociateP_DomesticB>
+
+                    <PN_GrenadeUnit_Destructive>1.5</PN_GrenadeUnit_Destructive>
+
+                    <Mercenary_Slasher>4</Mercenary_Slasher>
+                    <Mercenary_Gunner>6</Mercenary_Gunner>
+                    <PN_Mid_CloseUnit>3</PN_Mid_CloseUnit>
+                    <PN_Mid_RangeUnit>4</PN_Mid_RangeUnit>
+
+                    <Mercenary_Elite>6</Mercenary_Elite>
+                    <PN_EliteRangeUnit>4</PN_EliteRangeUnit>
+                </guards>
+            </li>
+
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <PN_ManageUnit_Domestic>1</PN_ManageUnit_Domestic>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <PN_AssociateH>6</PN_AssociateH>
+                    <PN_AssociateP_EngineerA>1</PN_AssociateP_EngineerA>
+                    <PN_AssociateP_EngineerB>1</PN_AssociateP_EngineerB>
+                    <PN_AssociateP_DomesticA>1</PN_AssociateP_DomesticA>
+                    <PN_AssociateP_DomesticB>1</PN_AssociateP_DomesticB>
+
+                    <PN_GrenadeUnit_Destructive>1.5</PN_GrenadeUnit_Destructive>
+
+                    <Mercenary_Slasher>4</Mercenary_Slasher>
+                    <Mercenary_Gunner>6</Mercenary_Gunner>
+                    <PN_Mid_CloseUnit>3</PN_Mid_CloseUnit>
+                    <PN_Mid_RangeUnit>4</PN_Mid_RangeUnit>
+
+                    <Mercenary_Elite>6</Mercenary_Elite>
+                    <PN_EliteRangeUnit>4</PN_EliteRangeUnit>
+                </guards>
+            </li>
+
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <PN_AssociateH>12</PN_AssociateH>
+                    <PN_AssociateP_EngineerA>3</PN_AssociateP_EngineerA>
+                    <PN_AssociateP_EngineerB>3</PN_AssociateP_EngineerB>
+                    <PN_AssociateP_DomesticA>3</PN_AssociateP_DomesticA>
+                    <PN_AssociateP_DomesticB>3</PN_AssociateP_DomesticB>
+
+                    <PN_ManagerH>3</PN_ManagerH>
+                    <PN_ManageUnit_Enginer>3</PN_ManageUnit_Enginer>
+                    <PN_ManageUnit_Domestic>3</PN_ManageUnit_Domestic>
+
+                    <PN_Director>3</PN_Director>
+
+                    <PN_SecurityUnit>6</PN_SecurityUnit>
+
+                    <PN_GrenadeUnit_Destructive>2</PN_GrenadeUnit_Destructive>
+
+                    <Mercenary_Slasher>4</Mercenary_Slasher>
+                    <Mercenary_Gunner>6</Mercenary_Gunner>
+                    <PN_Mid_CloseUnit>2</PN_Mid_CloseUnit>
+                    <PN_Mid_RangeUnit>4</PN_Mid_RangeUnit>
+
+                    <Mercenary_Elite>6</Mercenary_Elite>
+                    <PN_EliteRangeUnit>2</PN_EliteRangeUnit>
+                    <PN_EliteHeavyUnit>2</PN_EliteHeavyUnit>
+                    <PN_EliteCannonUnit>2</PN_EliteCannonUnit>
+                </options>
+            </li>
+
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <PN_AssociateH>10</PN_AssociateH>
+                    <PN_AssociateP_EngineerA>2</PN_AssociateP_EngineerA>
+                    <PN_AssociateP_EngineerB>1</PN_AssociateP_EngineerB>
+                    <PN_AssociateP_DomesticA>2</PN_AssociateP_DomesticA>
+                    <PN_AssociateP_DomesticB>1</PN_AssociateP_DomesticB>
+
+                    <PN_ManagerH>1</PN_ManagerH>
+                    <PN_ManageUnit_Enginer>1</PN_ManageUnit_Enginer>
+                    <PN_ManageUnit_Domestic>1</PN_ManageUnit_Domestic>
+
+                    <PN_Director>1</PN_Director>
+
+                    <PN_SecurityUnit>10</PN_SecurityUnit>
+                </options>
+            </li>
+
+            <!--Combat-->
+
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <PN_SecurityGuardH>6</PN_SecurityGuardH>
+                    <PN_SecurityUnit>4</PN_SecurityUnit>
+
+                    <PN_GrenadeUnit_EMP>0.25</PN_GrenadeUnit_EMP>
+                    <PN_GrenadeUnit_Smoke>0.25</PN_GrenadeUnit_Smoke>
+                    <PN_GrenadeUnit_Destructive>2</PN_GrenadeUnit_Destructive>
+
+                    <Mercenary_Gunner>6</Mercenary_Gunner>
+                    <Mercenary_Slasher>2</Mercenary_Slasher>
+                    <PN_Mid_RangeUnit>4</PN_Mid_RangeUnit>
+                    <PN_Mid_CloseUnit>2</PN_Mid_CloseUnit>
+
+
+                    <Mercenary_Heavy>2</Mercenary_Heavy>
+                    <Mercenary_Sniper>2</Mercenary_Sniper>
+                    <Mercenary_Elite>6</Mercenary_Elite>
+
+                    <PN_EliteCloseUnit>2</PN_EliteCloseUnit>
+                    <PN_EliteRangeUnit>2</PN_EliteRangeUnit>
+                    <PN_EliteHeavyUnit>2</PN_EliteHeavyUnit>
+                    <PN_EliteCannonUnit>2</PN_EliteCannonUnit>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <apparelStuffFilter>
+            <stuffCategoriesToAllow>
+                <li>Metallic</li>
+                <li>Fabric</li>
+                <li>Leathery</li>
+            </stuffCategoriesToAllow>
+            <disallowedThingDefs>
+                <li>Leather_Thrumbo</li>
+                <li>Hyperweave</li>
+                <li>Gold</li>
+                <li>Silver</li>
+            </disallowedThingDefs>
+        </apparelStuffFilter>
+        <settlementTexturePath>Icon/Paniel_Logi</settlementTexturePath>
+    </FactionDef>
+
+    <ThingSetMakerDef>
+        <defName>PN_SubsidiaryRaidLootMaker</defName>
+        <root Class="ThingSetMaker_MarketValue">
+            <fixedParams>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                        <li>MedicineIndustrial</li>
+                        <li>PN_RepairKit</li>
+                        <li>PN_Component</li>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+            </fixedParams>
+        </root>
+    </ThingSetMakerDef>
+
+    <RulePackDef>
+        <defName>NamerSettlementPnLSub</defName>
+        <include>
+            <li>PN_NamerUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[PNAZ][PN09][PN09] logistics center</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <CultureDef>
+        <defName>PN_PnLindistryCulture</defName>
+        <label>PnL indistry</label>
+        <description>The corporate culture of PnL Industry.</description>
+        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeo_PnLindistry</ideoNameMaker>
+        <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeity_PnLindistry</deityNameMaker>
+        <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMaker_PnLindistry</deityTypeMaker>
+        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_PnLindistry</leaderTitleMaker>
+        <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
+        <allowedPlaceTags>
+            <li>OriginSpacer</li>
+        </allowedPlaceTags>
+        <iconPath>Icon/Paniel_Icon</iconPath>
+        <iconColor>(1, 1, 1)</iconColor>
+        <styleItemTags>
+            <li>
+                <tag>Urban</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoBeard</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoTattoo</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+    </CultureDef>
+
+    <RulePackDef>
+        <defName>NamerIdeo_PnLindistry</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_ideoName->PnL bylaws</li>
+                <li>r_ideoAdjective->PnL</li>
+                <li>r_memberName->PnL Employee</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>NamerDeity_PnLindistry</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_deityName->PnL</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>DeityTypeMaker_PnLindistry</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_deityType->God of Capitalism</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>LeaderTitleMaker_PnLindistry</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_leaderTitle->CEO</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

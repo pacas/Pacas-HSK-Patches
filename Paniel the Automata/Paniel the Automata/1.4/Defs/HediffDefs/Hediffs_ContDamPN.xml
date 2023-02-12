@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ManeuverDef>
+    <defName>PN_ChainCutManeuver</defName>
+    <requiredCapacity>PN_ChainCutTool</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>PN_ChainCutDamage</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+
+  <ToolCapacityDef>
+    <defName>PN_ChainCutTool</defName>
+    <label>chainsword cut</label>
+  </ToolCapacityDef>
+
+  <DamageDef ParentName="CutBase">
+    <defName>PN_ChainCutDamage</defName>
+    <hediff>PN_ChainCutHediff</hediff>
+    <hediffSkin>PN_ChainCutHediff</hediffSkin>
+    <hediffSolid>PN_ChainCrackHediff</hediffSolid>
+    <cutCleaveBonus>1.4</cutCleaveBonus>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <armorCategory>Sharp</armorCategory>
+    <impactSoundType>Slice</impactSoundType>
+  </DamageDef>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>PN_ChainCutHediff</defName>
+    <label>cut</label>
+    <labelNoun>a cut</labelNoun>
+    <description>a cut.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>sutured</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.15</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>cut scar</permanentLabel>
+      </li>
+      <li Class="ContDamPN.HediffCompProperties_ContinuousDamage">
+        <damageDef>PN_ChainCutDamage_Con</damageDef>
+        <ticksPerDamage>6</ticksPerDamage>
+        <damageAmount>2</damageAmount>
+        <endTicks>18</endTicks>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.0125</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <bleedRate>0.06</bleedRate>
+      <canMerge>false</canMerge>
+      <destroyedLabel>Cut off</destroyedLabel>
+      <destroyedOutLabel>Cut off</destroyedOutLabel>
+    </injuryProps>
+  </HediffDef>
+
+  <DamageDef ParentName="CutBase">
+    <defName>PN_ChainCutDamage_Con</defName>
+    <cutCleaveBonus>1.4</cutCleaveBonus>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <armorCategory>Sharp</armorCategory>
+    <impactSoundType>Slice</impactSoundType>
+  </DamageDef>
+
+  <HediffDef ParentName="InjuryBase">
+    <defName>PN_ChainCrackHediff</defName>
+    <label>crack</label>
+    <labelNoun>a crack wound</labelNoun>
+    <description>A crack.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>set</labelTendedWell>
+        <labelTendedWellInner>set</labelTendedWellInner>
+        <labelSolidTendedWell>set</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>permanent crack</permanentLabel>
+      </li>
+      <li Class="ContDamPN.HediffCompProperties_ContinuousDamage">
+        <damageDef>PN_ChainCrackDamage_Con</damageDef>
+        <ticksPerDamage>6</ticksPerDamage>
+        <damageAmount>1</damageAmount>
+        <endTicks>12</endTicks>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.01</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+      <destroyedLabel>Shattered</destroyedLabel>
+    </injuryProps>
+  </HediffDef>
+
+  <DamageDef ParentName="CutBase">
+    <defName>PN_ChainCrackDamage_Con</defName>
+    <cutCleaveBonus>1.4</cutCleaveBonus>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <armorCategory>Sharp</armorCategory>
+    <impactSoundType>Slice</impactSoundType>
+  </DamageDef>
+</Defs>

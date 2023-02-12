@@ -3,7 +3,25 @@
 
   <PN_indistryFaction.label>ПнЛ Индастри</PN_indistryFaction.label>
   <PN_indistryFaction.fixedName>ПнЛ Индастри</PN_indistryFaction.fixedName>
-  <PN_indistryFaction.pawnsPlural>Автоматон</PN_indistryFaction.pawnsPlural>
+  <PN_indistryFaction.pawnSingular>Автоматон</PN_indistryFaction.pawnSingular>
+  <PN_indistryFaction.pawnsPlural>Автоматоны</PN_indistryFaction.pawnsPlural>
+  
+  <PN_SubsidiaryFaction.label>Дочерняя компания ПнЛ Индастри</PN_SubsidiaryFaction.label>
+  <PN_SubsidiaryFaction.description>Это дочерняя компания, созданная ПнЛ Индастри для продажи большего количества продукции на поверхности планеты. Она состоит из местных жителей и автоматонов.\n\nГлавная задача - создать логистический центр на поверхности планеты, получать товары с орбиты и доставлять их в поселения на поверхности планеты.\n\n\nОни занимаются практическими вопросами торговли и доверия.</PN_SubsidiaryFaction.description>
+  <PN_SubsidiaryFaction.pawnSingular>Работник</PN_SubsidiaryFaction.pawnSingular>
+  <PN_SubsidiaryFaction.pawnsPlural>Работники</PN_SubsidiaryFaction.pawnsPlural>
+  <PN_indistryFaction.fixedName>ПнЛ Логистик</PN_indistryFaction.fixedName>
+  
+  <NamerSettlementPnLSub.rulePack.rulesStrings.0>r_name->Логистический центр [PNAZ][PN09][PN09]</NamerSettlementPnLSub.rulePack.rulesStrings.0>
+  
+  <PN_PnLindistryCulture.label>ПнЛ Индастри</PN_PnLindistryCulture.label>
+  <PN_PnLindistryCulture.description>Корпоративная культура ПнЛ Индастри.</PN_PnLindistryCulture.description>
+  
+  <NamerIdeo_PnLindistry.rulePack.rulesStrings.0>r_ideoName->Устав ПнЛ</NamerIdeo_PnLindistry.rulePack.rulesStrings.0>
+  <NamerIdeo_PnLindistry.rulePack.rulesStrings.1>r_ideoAdjective->ПнЛ</NamerIdeo_PnLindistry.rulePack.rulesStrings.1>
+  <NamerIdeo_PnLindistry.rulePack.rulesStrings.2>r_memberName->Работник ПнЛ</NamerIdeo_PnLindistry.rulePack.rulesStrings.2>
+  <NamerDeity_PnLindistry.rulePack.rulesStrings.0>r_deityName->ПнЛ</NamerDeity_PnLindistry.rulePack.rulesStrings.0>
+  <DeityTypeMaker_PnLindistry.rulePack.rulesStrings.0>r_deityType->Бог Капитализма</DeityTypeMaker_PnLindistry.rulePack.rulesStrings.0>
 
 
 </LanguageData>

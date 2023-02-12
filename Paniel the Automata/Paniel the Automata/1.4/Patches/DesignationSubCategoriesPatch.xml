@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Cannons"]/defNames</xpath>
+		<value>
+			<li>PN_Artillery_Base_Core</li>
+		</value>
+	</Operation>
+    
+    <Operation Class="PatchOperationAdd" MayRequire="ChJees.Androids">
+        <xpath>Defs</xpath>
+				<value>
+					<ArchitectSense.DesignationSubCategoryDef>
+						<defName>SubCategory_DrPrinters</defName>
+						<label>droid printers</label>
+						<description>Here you can print your droid, android or automata!</description>
+						<defNames>
+							<li>PN_AutomatonBench</li>
+							<li>ChJDroidPrinter</li>
+							<li>ChJAndroidPrinter</li>
+						</defNames>
+						<designationCategory>Production</designationCategory>
+						<debug>false</debug>
+					</ArchitectSense.DesignationSubCategoryDef>
+				</value>
+	</Operation>
+
+</Patch>

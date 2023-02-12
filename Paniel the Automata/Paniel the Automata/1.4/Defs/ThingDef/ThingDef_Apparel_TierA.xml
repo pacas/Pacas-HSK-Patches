@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+        <defName>PNApparel</defName>
+        <label>PnL Apparel</label>
+        <parent>Apparel</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>PNHeadgear</defName>
+        <label>PnL Headgear</label>
+        <parent>PNApparel</parent>
+    </ThingCategoryDef>
+
+    <ThingDef Abstract="True" Name="PN_ApparelBase" ParentName="ApparelMakeableBase">
+        <apparel>
+            <tags Inherit="false">
+                <li>PN_Apparel</li>
+            </tags>
+            <defaultOutfitTags Inherit="false">
+                <li>PNApparel</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <thingCategories Inherit="False">
+            <li>PNApparel</li>
+        </thingCategories>
+        <recipeMaker>
+            <useIngredientsForColor>false</useIngredientsForColor>
+        </recipeMaker>
+        <tradeTags Inherit="false">
+
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef Abstract="True" Name="PN_HatBase" ParentName="PN_ApparelBase">
+        <thingCategories Inherit="False">
+            <li>PNHeadgear</li>
+        </thingCategories>
+        <apparel>
+            <forceRenderUnderHair>true</forceRenderUnderHair>
+        </apparel>
+    </ThingDef>
+
+    <!--==================================== 기본옷 ====================================-->
+    <ThingDef ParentName="PN_ApparelBase">
+        <defName>PN_ApparelBasic</defName>
+        <label>PnL basic shirt and boots</label>
+        <description>This is a basic paniel costume. It consists of a shirt and boots.</description>
+        <graphicData>
+            <texPath>Things/Apparel/PNBasic1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <techLevel>Industrial</techLevel>
+        <costStuffCount>80</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>HF</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>2800</WorkToMake>
+			<Mass>0.55</Mass>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>12</Insulation_Heat>
+			
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.0</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+			<CarryBulk>10</CarryBulk>
+			<MoveSpeed>-0.02</MoveSpeed>
+			<WorkSpeedGlobal>0.01</WorkSpeedGlobal>	
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<Suppressability>-0.1</Suppressability>
+		</equippedStatOffsets>	
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/PNBasic</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>OnSkin</li>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>Paniel_Basic</li>
+            </tags>
+            <defaultOutfitTags>
+
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(255,255,255)</only>
+                </li>
+                <li>
+                    <weight>15</weight>
+                    <only>(255,255,255)</only>
+                </li>
+                <li>
+                    <weight>20</weight>
+                    <only>(255,255,255)</only>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>
+
+    <ThingDef ParentName="PN_HatBase">
+        <defName>PN_ApparelBasicHat</defName>
+        <label>PnL basic hat</label>
+        <description>This is a basic paniel hat.</description>
+        <graphicData>
+            <texPath>Things/Apparel/hats/PNbasichat1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <techLevel>Industrial</techLevel>
+        <costStuffCount>25</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>HF</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>35</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.1</Mass>
+            <Insulation_Cold>6</Insulation_Cold>
+			
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.03</ArmorRating_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+			<EquipDelay>0.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+			<MoveSpeed>-0.02</MoveSpeed>	
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<Suppressability>-0.10</Suppressability>
+		</equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/hats/PNbasichat</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>Paniel_Basic</li>
+            </tags>
+            <defaultOutfitTags>
+
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(255,255,255)</only>
+                </li>
+                <li>
+                    <weight>15</weight>
+                    <only>(255,255,255)</only>
+                </li>
+                <li>
+                    <weight>20</weight>
+                    <only>(255,255,255)</only>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>
+
+    <!--==================================== 케이프 ====================================-->
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>PN_ApparelCape</defName>
+        <description>This is a basic paniel cape. It has excellent performance in heat dissipation and insulation.</description>
+        <label>PnL cape</label>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Apparel/PNCape1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <techLevel>Industrial</techLevel>
+        <costStuffCount>80</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>HF</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories Inherit="False">
+            <li>PNApparel</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.2</Mass>
+            <Insulation_Cold>6</Insulation_Cold>
+            <Insulation_Heat>6</Insulation_Heat>
+			
+			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.07</ArmorRating_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2.5</EquipDelay>
+			<Bulk>3</Bulk>
+			<WornBulk>1</WornBulk>
+        </statBases>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/PNCape</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>Paniel_Basic</li>
+            </tags>
+            <defaultOutfitTags>
+
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(255,255,255)</only>
+                </li>
+                <li>
+                    <weight>15</weight>
+                    <only>(255,255,255)</only>
+                </li>
+                <li>
+                    <weight>20</weight>
+                    <only>(255,255,255)</only>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>
+
+    <!--==================================== 티어A 밀리샤 ====================================-->
+    <ThingDef ParentName="PN_ApparelBase">
+        <defName>PN_ApparelMilitia</defName>
+        <label>PnL militia uniform</label>
+        <description>A uniform worn by the militia on automata.\n\nThis clothing is made with PnL industry's unique technology that combines metal and fabric.\n\nThe built-in parts work with the automaton to give it a decent defense.</description>
+        <graphicData>
+            <texPath>Things/Apparel/PNMilitia1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <costStuffCount>80</costStuffCount>
+        <costList>
+            <DevilstrandCloth>35</DevilstrandCloth>
+			<Cloth>40</Cloth>
+			<ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <recipeUsers Inherit="false">
+                <li>PN_AutomatonBench</li>
+            </recipeUsers>
+            <skillRequirements Inherit="false">
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>PNRP_TierA_Apparel</researchPrerequisite>
+        </recipeMaker>
+        <statBases>
+            <MaxHitPoints>170</MaxHitPoints>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>3</Mass>
+			<Bulk>18</Bulk>
+			<WornBulk>4.5</WornBulk>
+            <Insulation_Cold>5</Insulation_Cold>
+            <Insulation_Heat>5</Insulation_Heat>
+			
+			<StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
+			<ArmorRating_Sharp>7.5</ArmorRating_Sharp>
+			<ArmorRating_Blunt>9.5</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.16</ArmorRating_Heat>
+			<Flammability>0.64</Flammability>
+			<EquipDelay>4</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+			<CarryBulk>20</CarryBulk>
+			<MoveSpeed>-0.05</MoveSpeed>
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<Suppressability>-0.30</Suppressability>
+			<MeleeDodgeChance>0.05</MeleeDodgeChance>
+			<PainShockThreshold>0.1</PainShockThreshold>
+		</equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/PNMilitia</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>OnSkin</li>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>Paniel_Militia</li>
+            </tags>
+            <defaultOutfitTags></defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(255,255,255)</only>
+                </li>
+                <li>
+                    <weight>15</weight>
+                    <only>(255,255,255)</only>
+                </li>
+                <li>
+                    <weight>20</weight>
+                    <only>(255,255,255)</only>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>
+
+    <ThingDef ParentName="PN_HatBase">
+        <defName>PN_ApparelMilitiaHat</defName>
+        <label>PnL militia goggles</label>
+        <description>A goggles worn by the militia on automata.\n\nThe built-in parts work with the automaton to give it a decent defense.</description>
+        <graphicData>
+            <texPath>Things/Apparel/hats/PNMilitiahat1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <costStuffCount>16</costStuffCount>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Compaste>5</Compaste>
+            <Glass>10</Glass>
+        </costList>
+        <recipeMaker>
+            <recipeUsers Inherit="false">
+                <li>PN_AutomatonBench</li>
+            </recipeUsers>
+            <skillRequirements Inherit="false">
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>PNRP_TierA_Apparel</researchPrerequisite>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>4000</WorkToMake>
+			<MaxHitPoints>40</MaxHitPoints>
+			<Flammability>1.1</Flammability>
+			<Mass>0.2</Mass>
+			<Bulk>0.2</Bulk>
+			<WornBulk>0.1</WornBulk>
+			<EquipDelay>0.3</EquipDelay>	
+			
+			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			<StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+			<WorkSpeedGlobal>0.04</WorkSpeedGlobal>
+			<SocialImpact>0.12</SocialImpact>
+			<MentalBreakThreshold>-0.06</MentalBreakThreshold>
+			<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.1</AimingDelayFactor>
+			<MeleeHitChance>0.1</MeleeHitChance>
+			<NegotiationAbility>0.1</NegotiationAbility>
+			<TradePriceImprovement>0.07</TradePriceImprovement>
+		</equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+                <li>Eyes</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/hats/PNMilitiahat</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>Paniel_Militia</li>
+            </tags>
+            <defaultOutfitTags>
+
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(255,255,255)</only>
+                </li>
+                <li>
+                    <weight>15</weight>
+                    <only>(255,255,255)</only>
+                </li>
+                <li>
+                    <weight>20</weight>
+                    <only>(255,255,255)</only>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>
+</Defs>

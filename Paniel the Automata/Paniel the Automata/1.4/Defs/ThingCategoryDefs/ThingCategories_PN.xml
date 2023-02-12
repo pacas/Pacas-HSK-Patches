@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>PNMeleeWeapon</defName>
+		<label>PnL Melee Weapons</label>
+		<parent>WeaponsMelee</parent>
+        <iconPath>Icon/Paniel_HQ</iconPath>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>PNRangeWeapon</defName>
+		<label>PnL Ranged Weapons</label>
+		<parent>WeaponsRanged</parent>
+        <iconPath>Icon/Paniel_HQ</iconPath>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>PN_Apparel</defName>
+		<label>PnL Apparel</label>
+		<parent>Apparel</parent>
+        <iconPath>Icon/Paniel_HQ</iconPath>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>PN_Headgear</defName>
+		<label>PnL Headgear</label>
+		<parent>PN_Apparel</parent>
+        <iconPath>Icon/Paniel_HQ</iconPath>
+	</ThingCategoryDef>
+    
+    <ThingCategoryDef>
+        <defName>PNApparelModule</defName>
+        <label>Automaton Modules</label>
+        <parent>BodyParts</parent>
+        <iconPath>Things/Item/PNModuleIndustrial</iconPath>
+    </ThingCategoryDef>
+
+</Defs>

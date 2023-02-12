@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RecipeDef Name="PN_Surgery" Abstract="True">
+        <effectWorking>Repair</effectWorking>
+        <soundWorking>Interact_Repair</soundWorking>
+        <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+        <workSkill>Medicine</workSkill>
+        <workSkillLearnFactor>16</workSkillLearnFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PN_RepairKit</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <!--<li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>-->
+        </ingredients>
+        <!--<fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_Surgery">
+        <defName>PN_Disassemble</defName>
+        <label>disassemble</label>
+        <description>Disassembling.</description>
+        <workerClass>AutomataRace.Recipe_Disassemble</workerClass>
+        <jobString>Disasembling.</jobString>
+        <soundWorking>Interact_Repair</soundWorking>
+        <effectWorking>Repair</effectWorking>
+        <workAmount>2000</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <isViolation>true</isViolation>
+        <targetsBodyPart>false</targetsBodyPart>
+        <surgerySuccessChanceFactor>5</surgerySuccessChanceFactor>
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_Surgery">
+        <defName>PN_Repair</defName>
+        <label>repair</label>
+        <description>Reparing.</description>
+        <workerClass>AutomataRace.Recipe_Repair</workerClass>
+        <jobString>Reparing.</jobString>
+        <soundWorking>Interact_Repair</soundWorking>
+        <effectWorking>Repair</effectWorking>
+        <workAmount>2000</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <isViolation>false</isViolation>
+        <targetsBodyPart>false</targetsBodyPart>
+        <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
+        <ingredients Inherit="false">
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PN_RepairKit</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+    </RecipeDef>
+
+    <RecipeDef ParentName="PN_Surgery">
+        <defName>PN_Maintenance</defName>
+        <label>maintenance</label>
+        <description>Maintenance.</description>
+        <workerClass>AutomataRace.Recipe_Maintenance</workerClass>
+        <jobString>Maintenance.</jobString>
+        <soundWorking>Interact_Repair</soundWorking>
+        <effectWorking>Repair</effectWorking>
+        <workAmount>2000</workAmount>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <isViolation>false</isViolation>
+        <targetsBodyPart>false</targetsBodyPart>
+        <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
+    </RecipeDef>
+
+    <AutomataRace.ThingDefInjectDef>
+        <defName>Recipe_PN_RemoveBrain_Inject</defName>
+        <conditions>
+            <li Class="AutomataRace.ThingDefInject.IsHumanlike"/>
+            <li Class="AutomataRace.ThingDefInject.IsFlesh"/>
+            <li Class="AutomataRace.ThingDefInject.IsDefNameEqual">
+                <not>true</not>
+                <defName>Paniel_Race</defName>
+            </li>
+        </conditions>
+        <recipes>
+            <li>PN_ExtractBrain</li>
+        </recipes>
+    </AutomataRace.ThingDefInjectDef>
+
+    <RecipeDef ParentName="SurgeryFlesh">
+        <defName>PN_ExtractBrain</defName>
+        <label>extract central nervous</label>
+        <description>extract central nervous.</description>
+        <workerClass>AutomataRace.Recipe_RemoveBrain</workerClass>
+        <jobString>Remove central nervous.</jobString>
+        <workAmount>2000</workAmount>
+        <isViolation>true</isViolation>
+        <surgerySuccessChanceFactor>1.0</surgerySuccessChanceFactor>
+        <researchPrerequisite>PNRP_Brain</researchPrerequisite>
+        <uiIconThing>PN_Brain</uiIconThing>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PN_BrainEmpty</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+</Defs>

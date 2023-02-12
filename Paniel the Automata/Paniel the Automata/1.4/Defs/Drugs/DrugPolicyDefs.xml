@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <DrugPolicyDef>
+        <defName>PN_fuelOneDrinkPerDay</defName>
+        <label>Automaton</label>
+        <entries>
+            <li>
+                <drug>PN_AutomatonFuel</drug>
+                <allowedForAddiction>true</allowedForAddiction>
+                <allowScheduled>true</allowScheduled>
+                <takeToInventory>1</takeToInventory>
+                <daysFrequency>1</daysFrequency>
+            </li>
+        </entries>
+    </DrugPolicyDef>
+</Defs>

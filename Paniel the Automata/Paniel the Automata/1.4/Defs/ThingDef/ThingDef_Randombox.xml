@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+        <defName>PN_PackagedCatagory</defName>
+        <label>packaged automaton</label>
+        <parent>PN_AutomatonCatagory</parent>
+        <iconPath>UI/Icons/ThingCategories/Manufactured</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>PN_TMPackagedCatagory</defName>
+        <label>PnL automaton™</label>
+        <parent>PN_PackagedCatagory</parent>
+        <iconPath>UI/Icons/ThingCategories/Manufactured</iconPath>
+    </ThingCategoryDef>
+
+    <ThingDef Name="BasePackagedAutomaton" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <drawerType>MapMeshOnly</drawerType>
+        <graphicData>
+            <texPath>Things/Item/PNAutomatonbox</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>1</stackLimit>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>80.0</Mass>
+            <Flammability>0.2</Flammability>
+            <WorkToMake>32000</WorkToMake>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <alwaysHaulable>true</alwaysHaulable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <rotatable>false</rotatable>
+        <pathCost>14</pathCost>
+        <allowedArchonexusCount>-1</allowedArchonexusCount>
+        <tradeability>Buyable</tradeability>
+        <thingCategories Inherit="false">
+            <li>PN_TMPackagedCatagory</li>
+        </thingCategories>
+        <costList>
+            <Plasteel>75</Plasteel>
+            <TitaniumBar>45</TitaniumBar>
+            <Titanium>25</Titanium>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+            <BioMicrochips>1</BioMicrochips>
+            <Microchips>2</Microchips>
+            <PN_BrainCasing>1</PN_BrainCasing>
+            <Leather_Automaton>50</Leather_Automaton>
+            <Chemfuel>100</Chemfuel>
+        </costList>
+    </ThingDef>
+
+    <!--==================================== 일반 상자 ====================================-->
+    <ThingDef ParentName="BasePackagedAutomaton">
+        <defName>Packaged_NormalAutomaton</defName>
+        <label>packaged automaton</label>
+        <description>It's a box packed with automaton.</description>
+        <tradeability>None</tradeability>
+        <statBases>
+            <MarketValue>2500</MarketValue>
+        </statBases>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="AutomataRace.CompPropeties_AutomataDataHolder"/>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Unpackage</useLabel>
+            </li>
+            <li Class="AutomataRace.CompProperties_UseEffectGeneratePawn">
+                <letterLabel>Paniel in black</letterLabel>
+                <letterText>Sensing trouble, a mysterious [PAWN_kind] has arrived.\n\nWill [PAWN_pronoun] be able to set things right in these parts?</letterText>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf">
+                <compClass>CompUseEffect_DestroySelf</compClass>
+            </li>
+        </comps>
+        <thingCategories Inherit="false">
+            <li>PN_PackagedCatagory</li>
+        </thingCategories>
+    </ThingDef>
+
+    <!--고급부품4짜리--><!--확률:개별weight값/전체weight합-->
+    <!--==================================== 전투형 일반 상자 ====================================-->
+    <ThingDef ParentName="BasePackagedAutomaton">
+        <defName>Packaged_NormalAutomatonSoldier</defName>
+        <label>PnL automaton™ (Combat)</label>
+        <description>A box containing a combat model automaton. Unpacking will reveal an automaton of a random grade.\n\n[Random Table]\nPoor : 0.39%\nNormal : 15.79%\nGood : 54.28%\nExcellent : 27.40%\nMasterwork : 2.14%</description>
+        <statBases>
+
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Unpackage</useLabel>
+            </li>
+            <li Class="AutomataRace.CompProperties_UseEffectGeneratePawn">
+                <letterLabel>Paniel in black</letterLabel>
+                <letterText>Sensing trouble, a mysterious [PAWN_kind] has arrived.\n\nWill [PAWN_pronoun] be able to set things right in these parts?</letterText>
+                <samples>
+                    <li>
+                        <weight>39</weight>
+                        <pawnKindDefName>Paniel_Randombox_Poor</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>1579</weight>
+                        <pawnKindDefName>Paniel_Worker_Normal_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>5428</weight>
+                        <pawnKindDefName>Paniel_Worker_Good_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>3740</weight>
+                        <pawnKindDefName>Paniel_Worker_Excellent_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>214</weight>
+                        <pawnKindDefName>Paniel_Worker_Masterwork_PA</pawnKindDefName>
+                    </li>
+                </samples>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf">
+                <compClass>CompUseEffect_DestroySelf</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--==================================== 제작형 일반 상자 ====================================-->
+    <ThingDef ParentName="BasePackagedAutomaton">
+        <defName>Packaged_NormalAutomatonWorker</defName>
+        <label>PnL automaton™ (Engineer)</label>
+        <description>A box containing a engineer model automaton. Unpacking will reveal an automaton of a random grade.\n\n[Random Table]\nPoor : 0.39%\nNormal : 15.79%\nGood : 54.28%\nExcellent : 27.40%\nMasterwork : 2.14%</description>
+        <statBases>
+
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Unpackage</useLabel>
+            </li>
+            <li Class="AutomataRace.CompProperties_UseEffectGeneratePawn">
+                <samples>
+                    <li>
+                        <weight>39</weight>
+                        <pawnKindDefName>Paniel_Randombox_Poor</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>1579</weight>
+                        <pawnKindDefName>Paniel_Worker_Normal</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>5428</weight>
+                        <pawnKindDefName>Paniel_Worker_Good</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>3740</weight>
+                        <pawnKindDefName>Paniel_Worker_Excellent</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>214</weight>
+                        <pawnKindDefName>Paniel_Worker_Masterwork</pawnKindDefName>
+                    </li>
+                </samples>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf">
+                <compClass>CompUseEffect_DestroySelf</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--==================================== 가정형 일반 상자 ====================================-->
+    <ThingDef ParentName="BasePackagedAutomaton">
+        <defName>Packaged_NormalAutomatonMaid</defName>
+        <label>PnL automaton™ (Domestic)</label>
+        <description>A box containing a domestic model automaton. Unpacking will reveal an automaton of a random grade.\n\n[Random Table]\nPoor : 0.39%\nNormal : 15.79%\nGood : 54.28%\nExcellent : 27.40%\nMasterwork : 2.14%</description>
+        <statBases>
+
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Unpackage</useLabel>
+            </li>
+            <li Class="AutomataRace.CompProperties_UseEffectGeneratePawn">
+                <letterLabel>Paniel in black</letterLabel>
+                <letterText>Sensing trouble, a mysterious [PAWN_kind] has arrived.\n\nWill [PAWN_pronoun] be able to set things right in these parts?</letterText>
+                <samples>
+                    <li>
+                        <weight>39</weight>
+                        <pawnKindDefName>Paniel_Randombox_Poor</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>1579</weight>
+                        <pawnKindDefName>Paniel_Maid_Normal_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>5428</weight>
+                        <pawnKindDefName>Paniel_Maid_Good_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>2740</weight>
+                        <pawnKindDefName>Paniel_Maid_Excellent_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>214</weight>
+                        <pawnKindDefName>Paniel_Maid_Masterwork_PA</pawnKindDefName>
+                    </li>
+                </samples>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf">
+                <compClass>CompUseEffect_DestroySelf</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <!--==================================== 프리미엄 상자 베이스 ====================================-->
+    <ThingDef ParentName="BasePackagedAutomaton" Name="BasePackagedAutomatonPremium" Abstract="True">
+        <costList>
+            <Plasteel>95</Plasteel>
+            <TitaniumBar>55</TitaniumBar>
+            <Titanium>35</Titanium>
+            <ComponentIndustrial>6</ComponentIndustrial>
+            <ComponentSpacer>6</ComponentSpacer>
+            <BioMicrochips>1</BioMicrochips>
+            <Microchips>2</Microchips>
+            <PN_BrainCasing>1</PN_BrainCasing>
+            <Leather_Automaton>50</Leather_Automaton>
+            <Chemfuel>80</Chemfuel>
+            <AIPersonaCore>1</AIPersonaCore>
+        </costList>
+    </ThingDef>
+
+    <!--==================================== 전투형 프리미엄 상자 ====================================-->
+    <ThingDef ParentName="BasePackagedAutomatonPremium">
+        <defName>Packaged_PremiumAutomatonSoldier</defName>
+        <label>PnL automaton™ Pro (Combat)</label>
+        <description>A box containing a combat model automaton. Unpacking will reveal an automaton of a random grade.\n\n[Random Table]\nGood : 9.14%\nExcellent : 50.76%\nMasterwork : 33.52%\nLegendary : 6.58%</description>
+        <statBases>
+
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Unpackage</useLabel>
+            </li>
+            <li Class="AutomataRace.CompProperties_UseEffectGeneratePawn">
+                <letterLabel>Paniel in black</letterLabel>
+                <letterText>Sensing trouble, a mysterious [PAWN_kind] has arrived.\n\nWill [PAWN_pronoun] be able to set things right in these parts?</letterText>
+                <samples>
+                    <li>
+                        <weight>914</weight>
+                        <pawnKindDefName>Paniel_Soldier_Good_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>5076</weight>
+                        <pawnKindDefName>Paniel_Soldier_Excellent_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>3352</weight>
+                        <pawnKindDefName>Paniel_Soldier_Masterwork_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>658</weight>
+                        <pawnKindDefName>Paniel_Soldier_Legendary_PA</pawnKindDefName>
+                    </li>
+                </samples>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf">
+                <compClass>CompUseEffect_DestroySelf</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--==================================== 제작형 프리미엄 상자 ====================================-->
+    <ThingDef ParentName="BasePackagedAutomatonPremium">
+        <defName>Packaged_PremiumAutomatonWorker</defName>
+        <label>PnL automaton™ Pro (Engineer)</label>
+        <description>A box containing a engineer model automaton. Unpacking will reveal an automaton of a random grade.\n\n[Random Table]\nGood : 9.14%\nExcellent : 50.76%\nMasterwork : 33.52%\nLegendary : 6.58%</description>
+        <statBases>
+
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Unpackage</useLabel>
+            </li>
+            <li Class="AutomataRace.CompProperties_UseEffectGeneratePawn">
+                <letterLabel>Paniel in black</letterLabel>
+                <letterText>Sensing trouble, a mysterious [PAWN_kind] has arrived.\n\nWill [PAWN_pronoun] be able to set things right in these parts?</letterText>
+                <samples>
+                    <li>
+                        <weight>914</weight>
+                        <pawnKindDefName>Paniel_Worker_Good_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>5076</weight>
+                        <pawnKindDefName>Paniel_Worker_Excellent_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>3352</weight>
+                        <pawnKindDefName>Paniel_Worker_Masterwork_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>658</weight>
+                        <pawnKindDefName>Paniel_Worker_Legendary_PA</pawnKindDefName>
+                    </li>
+                </samples>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf">
+                <compClass>CompUseEffect_DestroySelf</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--==================================== 가정형 프리미엄 상자 ====================================-->
+    <ThingDef ParentName="BasePackagedAutomatonPremium">
+        <defName>Packaged_PremiumAutomatonMaid</defName>
+        <label>PnL automaton™ Pro (Domestic)</label>
+        <description>A box containing a domestic model automaton. Unpacking will reveal an automaton of a random grade.\n\n[Random Table]\nGood : 9.14%\nExcellent : 50.76%\nMasterwork : 33.52%\nLegendary : 6.58%</description>
+        <statBases>
+
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Unpackage</useLabel>
+            </li>
+            <li Class="AutomataRace.CompProperties_UseEffectGeneratePawn">
+                <letterLabel>Paniel in black</letterLabel>
+                <letterText>Sensing trouble, a mysterious [PAWN_kind] has arrived.\n\nWill [PAWN_pronoun] be able to set things right in these parts?</letterText>
+                <samples>
+                    <li>
+                        <weight>914</weight>
+                        <pawnKindDefName>Paniel_Maid_Good_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>5076</weight>
+                        <pawnKindDefName>Paniel_Maid_Excellent_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>3352</weight>
+                        <pawnKindDefName>Paniel_Maid_Masterwork_PA</pawnKindDefName>
+                    </li>
+                    <li>
+                        <weight>658</weight>
+                        <pawnKindDefName>Paniel_Maid_Legendary_PA</pawnKindDefName>
+                    </li>
+                </samples>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf">
+                <compClass>CompUseEffect_DestroySelf</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThingDef[defName = "Apparel_Burka"]/apparel/tags</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName = "Apparel_Burka"]/apparel</xpath>
+                        <value>
+                            <tags>
+                                <li>PN_Burka</li>
+                            </tags>
+                        </value>
+                    </nomatch>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[defName = "Apparel_Burka"]/apparel/tags</xpath>
+                        <value>
+                            <li>PN_Burka</li>
+                        </value>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

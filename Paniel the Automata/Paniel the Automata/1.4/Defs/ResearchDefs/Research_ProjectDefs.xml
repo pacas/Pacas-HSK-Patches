@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ResearchProjectTagDef>
+        <defName>PanielStart</defName>
+    </ResearchProjectTagDef>
+
+    <!--==================================== 기본 ====================================-->
+
+    <ResearchProjectDef ParentName="HitechBase">
+        <defName>PNRP_Production</defName>
+        <label>PnL automaton production</label>
+        <description>Research how to craft an automaton.</description>
+        <tab>Craft_SK</tab>
+        <baseCost>4000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>Chemistry_C3</li>
+            <li>PsychoidBrewing</li>
+            <li>Components_D1</li>
+        </prerequisites>
+        <researchViewX>18.00</researchViewX>
+		<researchViewY>25.00</researchViewY>
+        <tags>
+            <li>PanielStart</li>
+        </tags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <defName>PNRP_Brain</defName>
+        <label>PnL core analysis</label>
+        <description>Researching methods of extracting the central nervous system to make automata.</description>
+        <tab>Craft_SK</tab>
+        <baseCost>3000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>PNRP_Production</li>
+            <li>Prosthesis_making_D4</li>
+        </prerequisites>
+        <researchViewX>19.00</researchViewX>
+		<researchViewY>27.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <defName>PNRP_ExperimentalModule</defName>
+        <label>PnL custom core implant</label>
+        <description>Research how to make custom core implants. This implant makes the automaton learn like a human, but makes it mentally unstable.\n\nWarning: This implant is not a PnL licensed implant. When installed, the performance of the Automaton will decrease.</description>
+        <tab>Craft_SK</tab>
+        <baseCost>3000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>PNRP_Brain</li>
+        </prerequisites>
+        <researchViewX>20.00</researchViewX>
+		<researchViewY>25.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <defName>PNRP_BrainCasing</defName>
+        <label>PnL core casing</label>
+        <description>Researching methods of long-term storage of the central nervous system.</description>
+        <tab>Craft_SK</tab>
+        <baseCost>3000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>PNRP_Brain</li>
+            <li>Bionics</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">BrainWiring</li>
+        </prerequisites>
+        <researchViewX>20.00</researchViewX>
+		<researchViewY>26.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--==================================== 수리 키트 ====================================-->
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <defName>PNRP_SelfRepairKit</defName>
+        <label>PnL self repair kit</label>
+        <description>Research how to combine healer mech serum with repair kits.</description>
+        <tab>Craft_SK</tab>
+        <baseCost>1500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>PNRP_Production</li>
+        </prerequisites>
+        <researchViewX>19.00</researchViewX>
+		<researchViewY>26.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <defName>PNRP_ResurrectModule</defName>
+        <label>PnL resurrect implant</label>
+        <description>Research how to embed the resurrector mech serum into the Automaton.</description>
+        <tab>Craft_SK</tab>
+        <baseCost>1500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>PNRP_SelfRepairKit</li>
+        </prerequisites>
+        <researchViewX>20.00</researchViewX>
+		<researchViewY>27.00</researchViewY>
+    </ResearchProjectDef>
+
+    <!--==================================== 의상 ====================================-->
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <defName>PNRP_TierA_Apparel</defName>
+        <label>PnL militia apparel</label>
+        <description>Research how to craft a militia uniform.</description>
+        <tab>Apparel_SK</tab>
+        <baseCost>1500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>PNRP_Production</li>
+            <li>Armor_D1</li>
+        </prerequisites>
+        <researchViewX>20.0</researchViewX>
+        <researchViewY>40.0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <defName>PNRP_TierB_Apparel</defName>
+        <label>PnL special apparel</label>
+        <description>Research how to make specialized uniforms.</description>
+        <tab>Apparel_SK</tab>
+        <baseCost>1500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>PNRP_TierA_Apparel</li>
+        </prerequisites>
+        <researchViewX>21.0</researchViewX>
+        <researchViewY>40.0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <defName>PNRP_TierC_Apparel</defName>
+        <label>PnL royal apparel</label>
+        <description>Research how to craft royal uniforms.</description>
+        <tab>Apparel_SK</tab>
+        <baseCost>3800</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>PNRP_TierB_Apparel</li>
+            <li>ReconArmor</li>
+        </prerequisites>
+        <researchViewX>22.0</researchViewX>
+        <researchViewY>40.0</researchViewY>
+    </ResearchProjectDef>
+
+    <!--==================================== 무기 ====================================-->
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <defName>PNRP_AutomatonWeapons</defName>
+        <label>PnL weapons</label>
+        <description>Research how to craft basic PnL weapons.</description>
+        <tab>Weapon_SK</tab>
+        <baseCost>2100</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>PNRP_Production</li>
+            <li>Rifles_C3</li>
+        </prerequisites>
+        <researchViewX>19.0</researchViewX>
+        <researchViewY>30.0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <defName>PNRP_MachineGun</defName>
+        <label>PnL heavy weapons</label>
+        <description>Research how to craft basic PnL machine gun.</description>
+        <tab>Weapon_SK</tab>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>PNRP_AutomatonWeapons</li>
+            <li>Heavy_C3</li>
+        </prerequisites>
+        <researchViewX>20.0</researchViewX>
+        <researchViewY>30.0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <defName>PNRP_AutoArtillery</defName>
+        <label>PnL Howitzer</label>
+        <description>Research how to craft PnL Howitzer mortar.</description>
+        <tab>Weapon_SK</tab>
+        <baseCost>2900</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>PNRP_AutomatonWeapons</li>
+            <li>Artillery_C2</li>
+        </prerequisites>
+        <researchViewX>20.0</researchViewX>
+        <researchViewY>35.0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <defName>PNRP_RoyalWeapons</defName>
+        <label>Royal weapons</label>
+        <description>Research how to craft Royal PnL weapons.\n\n[caution] : Royal weapons are exclusively for Paniel.</description>
+        <tab>Craft_SK</tab>
+        <baseCost>2500</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>PNRP_MachineGun</li>
+            <li>ChargedShot</li>
+        </prerequisites>
+        <researchViewX>21.0</researchViewX>
+        <researchViewY>30.0</researchViewY>
+    </ResearchProjectDef>
+    
+    <!--==================================== 모듈 ====================================-->
+    
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <defName>PNRP_TierB_Module</defName>
+        <label>Specialization module</label>
+        <description>Research the ability modules available for (legd), (mast), (exc) model.</description>
+        <tab>Craft_SK</tab>
+        <baseCost>1000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>PNRP_TierB_Apparel</li>
+        </prerequisites>
+        <researchViewX>22.0</researchViewX>
+        <researchViewY>23.0</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <defName>PNRP_TierC_Module</defName>
+        <label>royal module</label>
+        <description>Research the ability modules available for (legd) model. (need Ideology or Biotech DLC)</description>
+        <tab>Craft_SK</tab>
+        <baseCost>3250</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>PNRP_TierC_Apparel</li>
+            <li>PNRP_TierB_Module</li>
+        </prerequisites>
+        <researchViewX>23.0</researchViewX>
+        <researchViewY>23.0</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

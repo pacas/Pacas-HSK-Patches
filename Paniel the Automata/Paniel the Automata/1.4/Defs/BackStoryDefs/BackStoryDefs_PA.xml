@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--==================================== 전투형 ====================================-->
+    <AlienRace.AlienBackstoryDef ParentName="PanielSoldierBackStory" Name="PanielSoldierBackStory_PA" Abstract="True">
+        <disallowedTraitsChance>
+            <li>
+                <defName>Pyromaniac</defName>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>TooSmart</defName>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>FastLearner</defName>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>SlowLearner</defName>
+                <chance>100</chance>
+            </li>
+        </disallowedTraitsChance>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielSoldierBackStory_PA">
+        <defName>Paniel_MilitiaA_Backstory_PA</defName>
+        <title>Automaton Militia (PA)</title>
+        <titleShort>Militia</titleShort>
+        <baseDesc>This automaton is mainly used by militias.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Shooting</key>
+                <value>3</value>
+            </li>
+            <li>
+                <key>Melee</key>
+                <value>3</value>
+            </li>
+            <li>
+                <key>Animals</key>
+                <value>3</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_MilitiaA_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Normal_Combat_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielSoldierBackStory_PA">
+        <defName>Paniel_MilitiaB_Backstory_PA</defName>
+        <title>Automaton Militia (PA)</title>
+        <titleShort>Militia</titleShort>
+        <baseDesc>This automaton is mainly used by militias.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Shooting</key>
+                <value>6</value>
+            </li>
+            <li>
+                <key>Melee</key>
+                <value>6</value>
+            </li>
+            <li>
+                <key>Animals</key>
+                <value>6</value>
+            </li>
+            <li>
+                <key>Medicine</key>
+                <value>1</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_MilitiaB_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Good_Combat_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielSoldierBackStory_PA">
+        <defName>Paniel_SoldierA_Backstory_PA</defName>
+        <title>Automaton Soldier (PA)</title>
+        <titleShort>Soldier</titleShort>
+        <baseDesc>This automaton is used as a soldier in the military.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Shooting</key>
+                <value>9</value>
+            </li>
+            <li>
+                <key>Melee</key>
+                <value>9</value>
+            </li>
+            <li>
+                <key>Animals</key>
+                <value>9</value>
+            </li>
+            <li>
+                <key>Medicine</key>
+                <value>3</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_SoldierA_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Excellent_Combat_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielSoldierBackStory_PA">
+        <defName>Paniel_SoldierB_Backstory_PA</defName>
+        <title>Automaton Soldier (PA)</title>
+        <titleShort>Soldier</titleShort>
+        <baseDesc>This automaton is used as a soldier in the military.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Shooting</key>
+                <value>12</value>
+            </li>
+            <li>
+                <key>Melee</key>
+                <value>12</value>
+            </li>
+            <li>
+                <key>Animals</key>
+                <value>12</value>
+            </li>
+            <li>
+                <key>Medicine</key>
+                <value>5</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_SoldierB_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Masterwork_Combat_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielSoldierBackStory_PA">
+        <defName>Paniel_Royalguard_Backstory_PA</defName>
+        <title>Automaton Royal guard (PA)</title>
+        <titleShort>Royal guard</titleShort>
+        <baseDesc>This automaton is used by the Royal Guard.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Shooting</key>
+                <value>18</value>
+            </li>
+            <li>
+                <key>Melee</key>
+                <value>18</value>
+            </li>
+            <li>
+                <key>Animals</key>
+                <value>18</value>
+            </li>
+            <li>
+                <key>Medicine</key>
+                <value>7</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_Royalguard_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Legendary_Combat_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <!--==================================== 제작형 ====================================-->
+    <AlienRace.AlienBackstoryDef ParentName="PanielWorkerBackStory" Name="PanielWorkerBackStory_PA" Abstract="True">
+        <disallowedTraitsChance>
+            <li>
+                <defName>Pyromaniac</defName>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>TooSmart</defName>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>FastLearner</defName>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>SlowLearner</defName>
+                <chance>100</chance>
+            </li>
+        </disallowedTraitsChance>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielWorkerBackStory_PA">
+        <defName>Paniel_ApprenticeA_Backstory_PA</defName>
+        <title>Automaton Apprentice (PA)</title>
+        <titleShort>Apprentice</titleShort>
+        <baseDesc>This automaton is used in many workshops for chores.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Construction</key>
+                <value>3</value>
+            </li>
+            <li>
+                <key>Mining</key>
+                <value>3</value>
+            </li>
+            <li>
+                <key>Crafting</key>
+                <value>3</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_ApprenticeA_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Normal_Engineer_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielWorkerBackStory_PA">
+        <defName>Paniel_ApprenticeB_Backstory_PA</defName>
+        <title>Automaton Apprentice (PA)</title>
+        <titleShort>Apprentice</titleShort>
+        <baseDesc>This automaton is used in many workshops for chores.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Construction</key>
+                <value>6</value>
+            </li>
+            <li>
+                <key>Mining</key>
+                <value>6</value>
+            </li>
+            <li>
+                <key>Crafting</key>
+                <value>6</value>
+            </li>
+            <li>
+                <key>Intellectual</key>
+                <value>1</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_ApprenticeB_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Good_Engineer_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielWorkerBackStory_PA">
+        <defName>Paniel_JourneymanA_Backstory_PA</defName>
+        <title>Automaton journeyman (PA)</title>
+        <titleShort>Journeyman</titleShort>
+        <baseDesc>This automaton is used to assist the meister.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Construction</key>
+                <value>9</value>
+            </li>
+            <li>
+                <key>Mining</key>
+                <value>9</value>
+            </li>
+            <li>
+                <key>Crafting</key>
+                <value>9</value>
+            </li>
+            <li>
+                <key>Intellectual</key>
+                <value>3</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_journeymanA_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Excellent_Engineer_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielWorkerBackStory_PA">
+        <defName>Paniel_JourneymanB_Backstory_PA</defName>
+        <title>Automaton journeyman (PA)</title>
+        <titleShort>Journeyman</titleShort>
+        <baseDesc>This automaton is used to assist the meister.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Construction</key>
+                <value>12</value>
+            </li>
+            <li>
+                <key>Mining</key>
+                <value>12</value>
+            </li>
+            <li>
+                <key>Crafting</key>
+                <value>12</value>
+            </li>
+            <li>
+                <key>Intellectual</key>
+                <value>5</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_journeymanB_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Masterwork_Engineer_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielWorkerBackStory_PA">
+        <defName>Paniel_Meister_Backstory_PA</defName>
+        <title>Automaton Meister (PA)</title>
+        <titleShort>Meister</titleShort>
+        <baseDesc>This automaton has better crafting skills than humans.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Construction</key>
+                <value>18</value>
+            </li>
+            <li>
+                <key>Mining</key>
+                <value>18</value>
+            </li>
+            <li>
+                <key>Crafting</key>
+                <value>18</value>
+            </li>
+            <li>
+                <key>Intellectual</key>
+                <value>7</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_Meister_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Legendary_Engineer_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <!--==================================== 가정형 ====================================-->
+    <AlienRace.AlienBackstoryDef ParentName="PanielMaidBackStory" Name="PanielMaidBackStory_PA" Abstract="True">
+        <disallowedTraitsChance>
+            <li>
+                <defName>Pyromaniac</defName>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>TooSmart</defName>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>FastLearner</defName>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>SlowLearner</defName>
+                <chance>100</chance>
+            </li>
+        </disallowedTraitsChance>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielMaidBackStory_PA">
+        <defName>Paniel_MaidA_Backstory_PA</defName>
+        <title>Automaton Maid (PA)</title>
+        <titleShort>Maid</titleShort>
+        <baseDesc>This automaton is used as a maid in many homes.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Cooking</key>
+                <value>3</value>
+            </li>
+            <li>
+                <key>Plants</key>
+                <value>3</value>
+            </li>
+            <li>
+                <key>Medicine</key>
+                <value>3</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_MaidA_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Normal_Domestic_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielMaidBackStory_PA">
+        <defName>Paniel_MaidB_Backstory_PA</defName>
+        <title>Automaton Maid (PA)</title>
+        <titleShort>Maid</titleShort>
+        <baseDesc>This automaton is used as a maid in many homes.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Cooking</key>
+                <value>6</value>
+            </li>
+            <li>
+                <key>Plants</key>
+                <value>6</value>
+            </li>
+            <li>
+                <key>Medicine</key>
+                <value>6</value>
+            </li>
+            <li>
+                <key>Social</key>
+                <value>1</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_MaidB_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Good_Domestic_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielMaidBackStory_PA">
+        <defName>Paniel_HousemaidA_Backstory_PA</defName>
+        <title>Automaton Housekeeper maid (PA)</title>
+        <titleShort>Housekeeper Maid</titleShort>
+        <baseDesc>This automaton leads the other maids in the noble mansion.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Cooking</key>
+                <value>9</value>
+            </li>
+            <li>
+                <key>Plants</key>
+                <value>9</value>
+            </li>
+            <li>
+                <key>Medicine</key>
+                <value>9</value>
+            </li>
+            <li>
+                <key>Social</key>
+                <value>3</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_HousemaidA_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Excellent_Domestic_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielMaidBackStory_PA">
+        <defName>Paniel_HousemaidB_Backstory_PA</defName>
+        <title>Automaton Housekeeper maid (PA)</title>
+        <titleShort>Housekeeper</titleShort>
+        <baseDesc>This automaton leads the other maids in the noble mansion.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Cooking</key>
+                <value>12</value>
+            </li>
+            <li>
+                <key>Plants</key>
+                <value>12</value>
+            </li>
+            <li>
+                <key>Medicine</key>
+                <value>12</value>
+            </li>
+            <li>
+                <key>Social</key>
+                <value>5</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_HousemaidB_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Masterwork_Domestic_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <AlienRace.AlienBackstoryDef ParentName="PanielMaidBackStory_PA">
+        <defName>Paniel_Ladysmaid_Backstory_PA</defName>
+        <title>Automaton Lady's maid (PA)</title>
+        <titleShort>Lady's maid</titleShort>
+        <baseDesc>This automaton is used as a royal servant.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Cooking</key>
+                <value>18</value>
+            </li>
+            <li>
+                <key>Plants</key>
+                <value>18</value>
+            </li>
+            <li>
+                <key>Medicine</key>
+                <value>18</value>
+            </li>
+            <li>
+                <key>Social</key>
+                <value>7</value>
+            </li>
+        </skillGains>
+        <spawnCategories>
+            <li>Paniel_Story_Ladysmaid_PA</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Legendary_Domestic_PA</li>
+        </forcedHediffs>
+    </AlienRace.AlienBackstoryDef>
+
+    <!--==================================== 실험체 ====================================-->
+
+    <AlienRace.AlienBackstoryDef ParentName="BasePanielBackStory">
+        <defName>Paniel_Testsubject_Backstory</defName>
+        <title>Automaton Test subject (PA)</title>
+        <titleShort>Test subject</titleShort>
+        <baseDesc>This automaton was built to test a new module at PnL industry. It is showing signs of mental instability.\n\n(PA) : PnL authenticated</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <li>
+                <key>Shooting</key>
+                <value>4</value>
+            </li>
+            <li>
+                <key>Melee</key>
+                <value>4</value>
+            </li>
+            <li>
+                <key>Construction</key>
+                <value>4</value>
+            </li>
+            <li>
+                <key>Plants</key>
+                <value>4</value>
+            </li>
+            <li>
+                <key>Crafting</key>
+                <value>4</value>
+            </li>
+            <li>
+                <key>Medicine</key>
+                <value>4</value>
+            </li>
+            <li>
+                <key>Intellectual</key>
+                <value>4</value>
+            </li>
+        </skillGains>
+        <workDisables>
+            <li>Artistic</li>
+        </workDisables>
+        <spawnCategories Inherit="false">
+            <li>Paniel_Story_Testsubject</li>
+        </spawnCategories>
+        <forcedHediffs>
+            <li>PN_Give_Testsubject</li>
+        </forcedHediffs>
+        <forcedTraits>
+            <!--<li>
+            <defName></defName>
+        </li>-->
+        </forcedTraits>
+        <disallowedTraitsChance>
+            <li>
+                <defName>NaturalMood</defName>
+                <degree>2</degree>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>NaturalMood</defName>
+                <degree>1</degree>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>Nerves</defName>
+                <degree>2</degree>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>Nerves</defName>
+                <degree>1</degree>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>PsychicSensitivity</defName>
+                <degree>-1</degree>
+                <chance>100</chance>
+            </li>
+            <li>
+                <defName>PsychicSensitivity</defName>
+                <degree>-2</degree>
+                <chance>100</chance>
+            </li>
+        </disallowedTraitsChance>
+    </AlienRace.AlienBackstoryDef>
+</Defs>

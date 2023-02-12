@@ -37,7 +37,7 @@
   <PN_ApparelMaidHat.description>귀족 저택에서 오토마톤에게 씌우는 모자.\n\n금속과 천을 결합하는 PnL industry만의 독특한 기술로 만들어졌습니다.\n\n내장된 부품이 오토마톤과 연동하여 적당한 방어력을 제공하고 사용자의 작업을 보조합니다.</PN_ApparelMaidHat.description>
   <PN_ApparelRoyalguard.label>파니엘 근위대 유니폼</PN_ApparelRoyalguard.label>
   <PN_ApparelRoyalguard.description>왕실 근위대에서 오토마톤에게 입히는 유니폼.\n\n금속과 천을 결합하는 PnL industry만의 독특한 기술로 만들어졌습니다.\n\n내장된 부품이 오토마톤과 연동하여 아주 뛰어난 방어력을 제공합니다. 그러나 전투 이외의 상황에선 별다른 도움이 되지 않습니다.</PN_ApparelRoyalguard.description>
-  <PN_ApparelRoyalguardHat.label>파니엘 근위대 베레모</PN_ApparelRoyalguardHat.label>
+  <PN_ApparelRoyalguardHat.label>파니엘 근위대 모자</PN_ApparelRoyalguardHat.label>
   <PN_ApparelRoyalguardHat.description>왕실 근위대에서 오토마톤에게 씌우는 모자.\n\n금속과 천을 결합하는 PnL industry만의 독특한 기술로 만들어졌습니다.\n\n내장된 부품이 오토마톤과 연동하여 아주 뛰어난 방어력을 제공합니다. 그러나 전투 이외의 상황에선 별다른 도움이 되지 않습니다.</PN_ApparelRoyalguardHat.description>
   <PN_ApparelRoyalmaid.label>파니엘 로열 메이드 유니폼</PN_ApparelRoyalmaid.label>
   <PN_ApparelRoyalmaid.description>왕궁에서 오토마톤에게 입히는 유니폼.\n\n금속과 천을 결합하는 PnL industry만의 독특한 기술로 만들어졌습니다.\n\n내장된 부품이 오토마톤과 연동하여 뛰어난 방어력을 제공하고 사용자의 작업을 보조합니다.</PN_ApparelRoyalmaid.description>
@@ -59,7 +59,7 @@
   <PN_RepairKit.description>오토마톤을 수리하는데 필요한 다양한 재료가 들어있는 키트</PN_RepairKit.description>
   <PN_SelfRepairKit.label>오토마톤 자가 수리 키트</PN_SelfRepairKit.label>
   <PN_SelfRepairKit.description>치료 혈청과 수리 키트를 결합한 키트. 시술자 없이 단독으로 사용할 수 있습니다.</PN_SelfRepairKit.description>
-  <PN_SelfRepairKit.comps.0.useLabel>자가 수리 키트 사용</PN_SelfRepairKit.comps.0.useLabel>
+  <PN_SelfRepairKit.comps.CompUsable.useLabel>자가 수리 키트 사용</PN_SelfRepairKit.comps.CompUsable.useLabel>
   <!--<PN_Fueldrumcan.label>PnL 연료 드럼</PN_Fueldrumcan.label>
   <PN_Fueldrumcan.description>PnL 연료를 대용량으로 안전하게 보관하기 위한 드럼통입니다. 높은 내구성과 낮은 가연성을 가지고 있습니다.</PN_Fueldrumcan.description>-->
   <PN_Component.label>PnL 부품</PN_Component.label>
@@ -67,15 +67,27 @@
   <Packaged_NormalAutomaton.label>포장된 오토마톤</Packaged_NormalAutomaton.label>
   <Packaged_NormalAutomaton.description>오토마톤이 포장되어 있는 상자입니다.</Packaged_NormalAutomaton.description>
   <Packaged_NormalAutomaton.comps.CompUsable.useLabel>포장 해체</Packaged_NormalAutomaton.comps.CompUsable.useLabel>
+  <Packaged_NormalAutomaton.comps.4.letterLabel>파니엘 기동</Packaged_NormalAutomaton.comps.4.letterLabel>
+  <Packaged_NormalAutomaton.comps.4.letterText>톱니가 맞물려 돌아가고, 의식이 깨어나며 [PAWN_kind]이(가) 기동을 시작했습니다. 그녀의 부품들은 올바르게 배치되었을까요?</Packaged_NormalAutomaton.comps.4.letterText>
+
   <Packaged_NormalAutomatonSoldier.label>PnL 오토마톤™ (전투형)</Packaged_NormalAutomatonSoldier.label>
   <Packaged_NormalAutomatonSoldier.description>전투형 오토마톤이 포장된 박스. 해체하면 랜덤 등급의 전투형 오토마톤이 나옵니다.\n\n[확률표]\n빈약 : 0.39%\n평범 : 15.79%\n상급 : 54.28%\n완벽 : 27.40%\n걸작 : 2.14%</Packaged_NormalAutomatonSoldier.description>
   <Packaged_NormalAutomatonSoldier.comps.CompUsable.useLabel>포장 해체</Packaged_NormalAutomatonSoldier.comps.CompUsable.useLabel>
+  <Packaged_NormalAutomatonSoldier.comps.2.letterLabel>파니엘 기동</Packaged_NormalAutomatonSoldier.comps.2.letterLabel>
+  <Packaged_NormalAutomatonSoldier.comps.2.letterText>톱니가 맞물려 돌아가고, 의식이 깨어나며 [PAWN_kind]이(가) 기동을 시작했습니다. 그녀의 부품들은 올바르게 배치되었을까요?</Packaged_NormalAutomatonSoldier.comps.2.letterText>
+
   <Packaged_NormalAutomatonWorker.label>PnL 오토마톤™ (제작형)</Packaged_NormalAutomatonWorker.label>
   <Packaged_NormalAutomatonWorker.description>제작형 오토마톤이 포장된 박스. 해체하면 랜덤 등급의 제작형 오토마톤이 나옵니다.\n\n[확률표]\n빈약 : 0.39%\n평범 : 15.79%\n상급 : 54.28%\n완벽 : 27.40%\n걸작 : 2.14%</Packaged_NormalAutomatonWorker.description>
   <Packaged_NormalAutomatonWorker.comps.CompUsable.useLabel>포장 해체</Packaged_NormalAutomatonWorker.comps.CompUsable.useLabel>
+  <Packaged_NormalAutomatonWorker.comps.2.letterLabel>파니엘 기동</Packaged_NormalAutomatonWorker.comps.2.letterLabel>
+  <Packaged_NormalAutomatonWorker.comps.2.letterText>톱니가 맞물려 돌아가고, 의식이 깨어나며 [PAWN_kind]이(가) 기동을 시작했습니다. 그녀의 부품들은 올바르게 배치되었을까요?</Packaged_NormalAutomatonWorker.comps.2.letterText>
+
   <Packaged_NormalAutomatonMaid.label>PnL 오토마톤™ (가정형)</Packaged_NormalAutomatonMaid.label>
   <Packaged_NormalAutomatonMaid.description>가정형 오토마톤이 포장된 박스. 해체하면 랜덤 등급의 가정형 오토마톤이 나옵니다.\n\n[확률표]\n빈약 : 0.39%\n평범 : 15.79%\n상급 : 54.28%\n완벽 : 27.40%\n걸작 : 2.14%</Packaged_NormalAutomatonMaid.description>
   <Packaged_NormalAutomatonMaid.comps.CompUsable.useLabel>포장 해체</Packaged_NormalAutomatonMaid.comps.CompUsable.useLabel>
+  <Packaged_NormalAutomatonMaid.comps.2.letterLabel>파니엘 기동</Packaged_NormalAutomatonMaid.comps.2.letterLabel>
+  <Packaged_NormalAutomatonMaid.comps.2.letterText>톱니가 맞물려 돌아가고, 의식이 깨어나며 [PAWN_kind]이(가) 기동을 시작했습니다. 그녀의 부품들은 올바르게 배치되었을까요?</Packaged_NormalAutomatonMaid.comps.2.letterText>
+
   <PN_Artillery_Turret.label>PnL 곡사포 터렛</PN_Artillery_Turret.label>
   <PN_Artillery_Turret.description>PnL 인더스트리에서 디자인한 곡사포. 오토마톤 두뇌 코어를 사용하여 높은 명중률을 가지고 있습니다. 그러나 과도한 계산으로 코어가 과부화 되기 때문에 주기적으로 코어를 교체해야 합니다.</PN_Artillery_Turret.description>
   <PN_Artillery_Base_Core.comps.3.fuelLabel>코어 과부하까지 남은 발사 수</PN_Artillery_Base_Core.comps.3.fuelLabel>
@@ -87,9 +99,9 @@
   <PN_Shell_HE.description>착탄하면 주변에 자탄을 흩뿌리는 고폭탄. 피해를 받으면 폭발합니다.</PN_Shell_HE.description>
   <PN_Bullet_Shell_HE.label>확산 고폭탄</PN_Bullet_Shell_HE.label>
   <PN_Bullet_Shell_HE_Sub.label>확산 고폭탄</PN_Bullet_Shell_HE_Sub.label>
-  <PN_Shell_AP.label>PnL 관통탄</PN_Shell_AP.label>
-  <PN_Shell_AP.description>단일 대상에게 강력한 피해를 주는 특수탄. 움직이는 대상에겐 맞추기 힘듭니다. 피해를 받으면 폭발합니다.</PN_Shell_AP.description>
-  <PN_Bullet_Shell_AP.label>관통탄</PN_Bullet_Shell_AP.label>
+  <PN_Shell_RG.label>PnL 레일건탄</PN_Shell_RG.label>
+  <PN_Shell_RG.description>레일건에 장전되어 단일 대상에게 강력한 피해를 주는 특수탄.</PN_Shell_RG.description>
+  <PN_Bullet_RailGunShell.label>레일건탄</PN_Bullet_RailGunShell.label>
   <PN_Shell_CI.label>PnL 확산 소이탄</PN_Shell_CI.label>
   <PN_Shell_CI.description>착탄하면 주변에 자탄을 흩뿌리는 소이탄. 피해를 받으면 폭발합니다.</PN_Shell_CI.description>
   <PN_Bullet_Shell_CI.label>확산 소이탄</PN_Bullet_Shell_CI.label>
@@ -219,4 +231,83 @@
   <PN_IntensiveMedicalModule.description>[주의]\n이 모듈은 호환되는 오토마톤만 설치 가능합니다.\n또한 모듈 시스템이 안정되어 있어야 합니다.\n\n[호환 모델 리스트]\n\n가정 모델 (전설)\n\n이 모듈을 착용하면 집중 의료 능력을 사용할 수 있습니다.</PN_IntensiveMedicalModule.description>
   <PN_FieldMedicModule.label>야전 의료 모듈</PN_FieldMedicModule.label>
   <PN_FieldMedicModule.description>[주의]\n이 모듈은 호환되는 오토마톤만 설치 가능합니다.\n또한 모듈 시스템이 안정되어 있어야 합니다.\n\n[호환 모델 리스트]\n\n전투 모델 (전설)\n가정 모델 (전설)\n\n이 모듈을 착용하면 야전 의료 능력을 사용할 수 있습니다. 야전 의료 능력이 활성화 되면 선택 대상에게 스팀팩을 주입할 수 있습니다.</PN_FieldMedicModule.description>
+
+  <PN_WarHammer.label>PnL 워해머</PN_WarHammer.label>
+  <PN_WarHammer.description>PnL 인더스트리에서 제작한 멋진 외형의 워해머. 별다른 기능은 없습니다.</PN_WarHammer.description>
+  <PN_WarHammer.tools.0.label>손잡이</PN_WarHammer.tools.0.label>
+  <PN_WarHammer.tools.1.label>워해머 헤드</PN_WarHammer.tools.1.label>
+  <PN_RoyalHeavySlug.label>PnL 로열 헤비슬러그 라이플</PN_RoyalHeavySlug.label>
+  <PN_RoyalHeavySlug.description>[주의] : 이 무기는 오토마톤 전용입니다.\n\n근위대에서 사용하기 위해 PnL Industry에서 제작한 헤비 슬러그 라이플. 거대한 탄환을 발사하지만 사거리가 짧습니다.</PN_RoyalHeavySlug.description>
+  <PN_RoyalHeavySlug.tools.0.label>손잡이</PN_RoyalHeavySlug.tools.0.label>
+  <PN_RoyalHeavySlug.tools.1.label>총열</PN_RoyalHeavySlug.tools.1.label>
+  <PN_Bullet_HeavySlug.label>헤비슬러그탄</PN_Bullet_HeavySlug.label>
+  <PN_RoyalMachinegun.label>PnL 로열 기관총</PN_RoyalMachinegun.label>
+  <PN_RoyalMachinegun.description>[주의] : 이 무기는 오토마톤 전용입니다.\n\n근위대에서 사용하기 위해 PnL Industry에서 제작한 기관총.</PN_RoyalMachinegun.description>
+  <PN_RoyalMachinegun.tools.0.label>손잡이</PN_RoyalMachinegun.tools.0.label>
+  <PN_RoyalMachinegun.tools.1.label>총열</PN_RoyalMachinegun.tools.1.label>
+  <PN_Bullet_RoyalMachinegun.label>로열기관총탄</PN_Bullet_RoyalMachinegun.label>
+  <PN_RoyalHammer_Bladelink.label>PnL 스톰 해머</PN_RoyalHammer_Bladelink.label>
+  <PN_RoyalHammer_Bladelink.description>[주의] : 이 무기는 오토마톤 전용입니다.\n\n근위대에서 사용하기 위해 PnL Industry에서 제작한 워해머. 적을 타격하면 내장된 과충전 코어가 적을 감전시켜 전기 화상을 입힙니다.</PN_RoyalHammer_Bladelink.description>
+  <PN_RoyalHammer_Bladelink.tools.0.label>손잡이</PN_RoyalHammer_Bladelink.tools.0.label>
+  <PN_RoyalHammer_Bladelink.tools.1.label>스톰해머 헤드</PN_RoyalHammer_Bladelink.tools.1.label>
+  <PN_StormLance_Bladelink.label>PnL 스톰 랜스</PN_StormLance_Bladelink.label>
+  <PN_StormLance_Bladelink.description>[주의] : 이 무기는 오토마톤 전용입니다.\n\n근위대에서 사용하기 위해 PnL Industry에서 제작한 랜스. 적을 타격하면 내장된 과충전 코어가 적을 감전시켜 전기 화상을 입힙니다.</PN_StormLance_Bladelink.description>
+  <PN_StormLance_Bladelink.tools.0.label>손잡이</PN_StormLance_Bladelink.tools.0.label>
+  <PN_StormLance_Bladelink.tools.1.label>옆면</PN_StormLance_Bladelink.tools.1.label>
+  <PN_StormLance_Bladelink.tools.2.label>창끝</PN_StormLance_Bladelink.tools.2.label>
+  <PN_BrainCasingAntigrain.label>오토마톤 반물질 코어</PN_BrainCasingAntigrain.label>
+  <PN_BrainCasingAntigrain.description>레일건에 사용하는 두뇌 코어.</PN_BrainCasingAntigrain.description>
+  <PN_OTPCard.label>PnL OTP 카드</PN_OTPCard.label>
+  <PN_OTPCard.description>PnL Industry에서 보안 회선에 연결할때 사용하는 일회용 OTP 카드.</PN_OTPCard.description>
+  <PN_Railgun_Turret.label>PnL 곡사포 터렛</PN_Railgun_Turret.label>
+  <PN_Railgun_Turret.description>PnL 인더스트리에서 디자인한 레일건. 오토마톤 두뇌 코어를 사용하여 반물질을 제어해 레일건에 필요한 전력을 생성합니다. 그러나 과도한 계산으로 코어가 과부화 되기 때문에 주기적으로 반물질 코어를 교체해야 합니다.\n\n곡사포와는 다르게 조준 보정 기능이 없습니다. 포탄에 내장된 부품이 이를 대신하지만 완벽하진 않습니다.</PN_Railgun_Turret.description>
+  <PN_Railgun_Base_Core.comps.3.fuelLabel>코어 과부하까지 남은 발사 수</PN_Railgun_Base_Core.comps.3.fuelLabel>
+  <PN_Railgun_Base_Core.comps.3.fuelGizmoLabel>코어 내구도</PN_Railgun_Base_Core.comps.3.fuelGizmoLabel>
+  <PN_Railgun_Base_Core.comps.3.outOfFuelMessage>사격 불가: 반물질 코어 교체 필요</PN_Railgun_Base_Core.comps.3.outOfFuelMessage>
+  <PN_Railgun_Base_Core.label>PnL 레일건</PN_Railgun_Base_Core.label>
+  <PN_Railgun_Base_Core.description>PnL 인더스트리에서 디자인한 레일건. 오토마톤 두뇌 코어를 사용하여 반물질을 제어해 레일건에 필요한 전력을 생성합니다. 그러나 과도한 계산으로 코어가 과부화 되기 때문에 주기적으로 반물질 코어를 교체해야 합니다.\n\n곡사포와는 다르게 조준 보정 기능이 없습니다. 포탄에 내장된 부품이 이를 대신하지만 완벽하진 않습니다.</PN_Railgun_Base_Core.description>
+  <Packaged_PremiumAutomatonSoldier.label>PnL 오토마톤™ Pro (전투형)</Packaged_PremiumAutomatonSoldier.label>
+  <Packaged_PremiumAutomatonSoldier.description>전투형 오토마톤이 포장된 박스. 해체하면 랜덤 등급의 전투형 오토마톤이 나옵니다.\n\n[확률표]\n상급 : 9.14%\n완벽 : 50.76%\n걸작 : 33.52%\n전설 : 6.58%</Packaged_PremiumAutomatonSoldier.description>
+  <Packaged_PremiumAutomatonSoldier.comps.CompUsable.useLabel>포장 해체</Packaged_PremiumAutomatonSoldier.comps.CompUsable.useLabel>
+  <Packaged_PremiumAutomatonSoldier.comps.2.letterLabel>파니엘 기동</Packaged_PremiumAutomatonSoldier.comps.2.letterLabel>
+  <Packaged_PremiumAutomatonSoldier.comps.2.letterText>톱니가 맞물려 돌아가고, 의식이 깨어나며 [PAWN_kind]이(가) 기동을 시작했습니다. 그녀의 부품들은 올바르게 배치되었을까요?</Packaged_PremiumAutomatonSoldier.comps.2.letterText>
+  <Packaged_PremiumAutomatonWorker.label>PnL 오토마톤™ Pro (제작형)</Packaged_PremiumAutomatonWorker.label>
+  <Packaged_PremiumAutomatonWorker.description>제작형 오토마톤이 포장된 박스. 해체하면 랜덤 등급의 제작형 오토마톤이 나옵니다.\n\n[확률표]\n상급 : 9.14%\n완벽 : 50.76%\n걸작 : 33.52%\n전설 : 6.58%</Packaged_PremiumAutomatonWorker.description>
+  <Packaged_PremiumAutomatonWorker.comps.CompUsable.useLabel>포장 해체</Packaged_PremiumAutomatonWorker.comps.CompUsable.useLabel>
+  <Packaged_PremiumAutomatonWorker.comps.2.letterLabel>파니엘 기동</Packaged_PremiumAutomatonWorker.comps.2.letterLabel>
+  <Packaged_PremiumAutomatonWorker.comps.2.letterText>톱니가 맞물려 돌아가고, 의식이 깨어나며 [PAWN_kind]이(가) 기동을 시작했습니다. 그녀의 부품들은 올바르게 배치되었을까요?</Packaged_PremiumAutomatonWorker.comps.2.letterText>
+  <Packaged_PremiumAutomatonMaid.label>PnL 오토마톤™ Pro (가정형)</Packaged_PremiumAutomatonMaid.label>
+  <Packaged_PremiumAutomatonMaid.description>가정형 오토마톤이 포장된 박스. 해체하면 랜덤 등급의 가정형 오토마톤이 나옵니다.\n\n[확률표]\n상급 : 9.14%\n완벽 : 50.76%\n걸작 : 33.52%\n전설 : 6.58%</Packaged_PremiumAutomatonMaid.description>
+  <Packaged_PremiumAutomatonMaid.comps.CompUsable.useLabel>포장 해체</Packaged_PremiumAutomatonMaid.comps.CompUsable.useLabel>
+  <Packaged_PremiumAutomatonMaid.comps.2.letterLabel>파니엘 기동</Packaged_PremiumAutomatonMaid.comps.2.letterLabel>
+  <Packaged_PremiumAutomatonMaid.comps.2.letterText>톱니가 맞물려 돌아가고, 의식이 깨어나며 [PAWN_kind]이(가) 기동을 시작했습니다. 그녀의 부품들은 올바르게 배치되었을까요?</Packaged_PremiumAutomatonMaid.comps.2.letterText>
+  <PN_EliteSecurityHat.label>PnL 엘리트 시큐리티 모자</PN_EliteSecurityHat.label>
+  <PN_EliteSecurityHat.description>PnL 보안팀에서 오토마톤에게 씌우는 모자.\n\n금속과 천을 결합하는 PnL industry만의 독특한 기술로 만들어졌습니다.\n\n내장된 부품이 오토마톤과 연동하여 아주 뛰어난 방어력을 제공합니다.</PN_EliteSecurityHat.description>
+  <PN_EliteSecurityUniform.label>PnL 엘리트 시큐리티 유니폼</PN_EliteSecurityUniform.label>
+  <PN_EliteSecurityUniform.description>PnL 보안팀에서 오토마톤에게 입히는 유니폼.\n\n금속과 천을 결합하는 PnL industry만의 독특한 기술로 만들어졌습니다.\n\n내장된 부품이 오토마톤과 연동하여 뛰어난 방어력을 제공합니다.</PN_EliteSecurityUniform.description>
+  <PN_ApparelRoyalmeister.label>파니엘 마이스터 유니폼</PN_ApparelRoyalmeister.label>
+  <PN_ApparelRoyalmeister.description>왕실 공방에서 오토마톤에게 입히는 유니폼.\n\n금속과 천을 결합하는 PnL industry만의 독특한 기술로 만들어졌습니다.\n\n내장된 부품이 오토마톤과 연동하여 뛰어난 방어력을 제공하고 사용자의 작업을 보조합니다.</PN_ApparelRoyalmeister.description>
+  <PN_ApparelRoyalmeisterMonocle.label>파니엘 마이스터 단안경</PN_ApparelRoyalmeisterMonocle.label>
+  <PN_ApparelRoyalmeisterMonocle.description>왕실 공방에서 오토마톤에게 씌우는 단안경.\n\n금속과 천을 결합하는 PnL industry만의 독특한 기술로 만들어졌습니다.\n\n내장된 부품이 오토마톤과 연동하여 뛰어난 방어력을 제공하고 사용자의 작업을 보조합니다.</PN_ApparelRoyalmeisterMonocle.description>
+  <PN_ApparelRoyalmeisterHat.label>파니엘 마이스터 모자</PN_ApparelRoyalmeisterHat.label>
+  <PN_ApparelRoyalmeisterHat.description>왕실 공방에서 오토마톤에게 씌우는 모자.\n\n금속과 천을 결합하는 PnL industry만의 독특한 기술로 만들어졌습니다.\n\n내장된 부품이 오토마톤과 연동하여 뛰어난 방어력을 제공하고 사용자의 작업을 보조합니다.</PN_ApparelRoyalmeisterHat.description>
+  <PN_ApparelRoyalmeisterHatWithMonocle.label>파니엘 마이스터 모자 (단안경)</PN_ApparelRoyalmeisterHatWithMonocle.label>
+  <PN_ApparelRoyalmeisterHatWithMonocle.description>왕실 공방에서 오토마톤에게 씌우는 모자와 단안경.\n\n금속과 천을 결합하는 PnL industry만의 독특한 기술로 만들어졌습니다.\n\n내장된 부품이 오토마톤과 연동하여 뛰어난 방어력을 제공하고 사용자의 작업을 보조합니다.</PN_ApparelRoyalmeisterHatWithMonocle.description>
+  <PN_SilverCase.label>PnL 실버 케이스</PN_SilverCase.label>
+  <PN_SilverCase.description>800 은이 들어있는 케이스. PnL 성과평가원에게 상납하여 신임장을 얻을 수 있습니다.\n\n특별한 보안 장치가 되어있어 제작자도 열 수 없습니다. 강제로 여는데 많은 노력이 드므로 상인들은 가격을 깎으려 할 것입니다.</PN_SilverCase.description>
+
+  <PN_ArrayModule.label>대역폭 모듈</PN_ArrayModule.label>
+  <PN_ArrayModule.description>[주의]\n이 모듈은 호환되는 오토마톤만 설치 가능합니다.\n또한 모듈 시스템이 안정되어 있어야 합니다.\n\n[호환 모델 리스트]\n\n모든 모델 (전설), (걸작), (완벽)\n\n이 모듈을 착용하면 메카노이드 대역폭과 제어 집단 능력이 향상됩니다.</PN_ArrayModule.description>
+  <PN_IntegratorModule.label>통합자 모듈</PN_IntegratorModule.label>
+  <PN_IntegratorModule.description>[주의]\n이 모듈은 호환되는 오토마톤만 설치 가능합니다.\n또한 모듈 시스템이 안정되어 있어야 합니다.\n\n[호환 모델 리스트]\n\n모든 모델 (전설)\n\n이 모듈을 착용하면 메카노이드 대역폭과 제어 집단 능력이 향상됩니다.</PN_IntegratorModule.description>
+  <PN_Mechlink.label>오토마톤 메크링크</PN_Mechlink.label>
+  <PN_Mechlink.description>오토마톤용으로 개조된 메크링크입니다.</PN_Mechlink.description>
+  <PN_Mechlink.comps.2.useLabel>메크링크 설치</PN_Mechlink.comps.2.useLabel>
+  <PN_ControlSublink.label>오토마톤 통제 서브링크 (표준)</PN_ControlSublink.label>
+  <PN_ControlSublink.description>오토마톤용으로 개조된 통제 서브링크 (표준)입니다.</PN_ControlSublink.description>
+  <PN_ControlSublink.comps.2.useLabel>통제 서브링크 (표준) 설치</PN_ControlSublink.comps.2.useLabel>
+  <PN_ControlSublinkHigh.label>오토마톤 통제 서브링크 (상급)</PN_ControlSublinkHigh.label>
+  <PN_ControlSublinkHigh.description>오토마톤용으로 개조된 통제 서브링크 (상급)입니다.</PN_ControlSublinkHigh.description>
+  <PN_ControlSublinkHigh.comps.2.useLabel>통제 서브링크 (상급) 설치</PN_ControlSublinkHigh.comps.2.useLabel>
+
 </LanguageData>

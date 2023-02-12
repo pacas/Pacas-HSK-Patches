@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--오토마톤 메카링크-->
+    <ThingDef ParentName="MechanitorImplantBase">
+        <defName>PN_Mechlink</defName>
+        <label>automaton mechlink</label>
+        <description>This is a modified mechlink for automaton.</description>
+        <thingClass>Mechlink</thingClass>
+        <descriptionHyperlinks>
+            <HediffDef>MechlinkImplant</HediffDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>-4</Beauty>
+            <Mass>1</Mass>
+            <MarketValue>500</MarketValue>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/Mechlink</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.65</drawSize>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Usable">
+                <compClass>CompUsableImplant</compClass>
+                <useJob>InstallMechlink</useJob>
+                <useLabel>Install {0_label} to become mechanitor</useLabel>
+            </li>
+            <li Class="CompProperties_UseEffectInstallImplant">
+                <compClass>CompUseEffect_InstallImplantMechlink</compClass>
+                <hediffDef>MechlinkImplant</hediffDef>
+                <bodyPart>PNBrain</bodyPart>
+                <requiresPsychicallySensitive>true</requiresPsychicallySensitive>
+            </li>
+            <li Class="CompProperties_UseEffectPlaySound">
+                <soundOnUsed>MechlinkInstalled</soundOnUsed>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <RecipeDef>
+        <defName>PN_Make_Mechlink_Automaton</defName>
+        <label>make automaton mechlink</label>
+        <description>make automaton mechlink</description>
+        <jobString>Making automaton mechlink.</jobString>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Interact_Repair</soundWorking>
+        <workAmount>2000</workAmount>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>PN_AutomatonBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Mechlink</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <products>
+            <PN_Mechlink>1</PN_Mechlink>
+        </products>
+        <skillRequirements>
+            <Crafting>10</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisite>PNRP_Mechlink</researchPrerequisite>
+    </RecipeDef>
+
+    <ThingDef ParentName="ControlSublinkBase">
+        <defName>PN_ControlSublink</defName>
+        <label>automaton control sublink (standard)</label>
+        <description>This is a modified control sublink (standard) for automaton.</description>
+        <costList>
+            <SignalChip>1</SignalChip>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>StandardMechtech</researchPrerequisite>
+        </recipeMaker>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <compClass>CompUsableImplant</compClass>
+                <useJob>UseItem</useJob>
+                <useLabel>Implant sublink</useLabel>
+                <userMustHaveHediff>MechlinkImplant</userMustHaveHediff>
+            </li>
+            <li Class="CompProperties_UseEffectInstallImplant">
+                <hediffDef>ControlSublinkImplant</hediffDef>
+                <bodyPart>PNBrain</bodyPart>
+                <canUpgrade>true</canUpgrade>
+                <maxSeverity>3</maxSeverity>
+            </li>
+        </comps>
+    </ThingDef>
+  
+    <ThingDef ParentName="ControlSublinkBase">
+        <defName>PN_ControlSublinkHigh</defName>
+        <label>automaton control sublink (high)</label>
+        <description>This is a modified control sublink (high) for automaton.</description>
+        <costList>
+            <PowerfocusChip>1</PowerfocusChip>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>HighMechtech</researchPrerequisite>
+        </recipeMaker>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <compClass>CompUsableImplant</compClass>
+                <useJob>UseItem</useJob>
+                <useLabel>Implant high sublink</useLabel>
+                <userMustHaveHediff>MechlinkImplant</userMustHaveHediff>
+            </li>
+            <li Class="CompProperties_UseEffectInstallImplant">
+                <hediffDef>ControlSublinkImplant</hediffDef>
+                <bodyPart>PNBrain</bodyPart>
+                <canUpgrade>true</canUpgrade>
+                <requiresExistingHediff>true</requiresExistingHediff>
+                <minSeverity>3</minSeverity>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <RecipeDef>
+        <defName>PN_Make_ControlSublink_Automaton</defName>
+        <label>make automaton sublink (standard)</label>
+        <description>make automaton sublink</description>
+        <jobString>Making automaton sublink.</jobString>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>2000</workAmount>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>PN_AutomatonBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ControlSublink</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <products>
+            <PN_ControlSublink>1</PN_ControlSublink>
+        </products>
+        <skillRequirements>
+            <Crafting>11</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisite>PNRP_Mechlink</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef>
+        <defName>PN_Make_PN_ControlSublinkHigh_Automaton</defName>
+        <label>make automaton sublink (high)</label>
+        <description>make automaton sublink</description>
+        <jobString>Making automaton sublink.</jobString>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>2000</workAmount>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>PN_AutomatonBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ControlSublinkHigh</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <products>
+            <PN_ControlSublinkHigh>1</PN_ControlSublinkHigh>
+        </products>
+        <skillRequirements>
+            <Crafting>14</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisite>PNRP_Mechlink</researchPrerequisite>
+    </RecipeDef>
+</Defs>

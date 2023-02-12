@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--메카나이터 모듈-->
+    <ThingDef ParentName="PN_ApparelModuleIndustrial">
+        <defName>PN_ArrayModule</defName>
+        <label>array module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nAny model (legd), (mast), (exc)\n\nThis module increases the automaton's MechBandwidth and MechControlGroups stat.</description>
+        <descriptionHyperlinks>
+            <HediffDef>PN_ArrayModuleHediff</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Titanium>50</Titanium>
+            <ComponentIndustrial>6</ComponentIndustrial>
+            <ComponentSpacer>3</ComponentSpacer>
+            <PN_Component>1</PN_Component>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierB_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>11</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <apparel>
+            <tags/>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_ArrayModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelIndustrialModuleHediffBase">
+        <defName>PN_ArrayModuleHediff</defName>
+        <label>array module</label>
+        <description>The hediff created by installing array module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_ArrayModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MechBandwidth>6</MechBandwidth>
+                    <MechControlGroups>1</MechControlGroups>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps/>
+    </HediffDef>
+
+    <ThingDef ParentName="PN_ApparelModuleSpacer">
+        <defName>PN_IntegratorModule</defName>
+        <label>integrator module</label>
+        <description>[CAUTION]\nThis module can only be installed on compatible models.\nAlso, the module system must be stable.\n\n[compatible models list]\n\nAny model (legd)\n\nThis module increases the automaton's MechBandwidth and MechControlGroups stat.</description>
+        <descriptionHyperlinks>
+            <HediffDef>PN_IntegratorModuleHediff</HediffDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Titanium>100</Titanium>
+            <ComponentIndustrial>22</ComponentIndustrial>
+            <ComponentSpacer>10</ComponentSpacer>
+            <PN_Component>3</PN_Component>
+            <SignalChip>2</SignalChip>
+            <PowerfocusChip>1</PowerfocusChip>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_TierC_Module</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>16</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <apparel>
+            <tags/>
+        </apparel>
+        <comps>
+            <li Class="CompProperties_CauseHediff_Apparel">
+                <hediff>PN_IntegratorModuleHediff</hediff>
+                <part>PNTorso</part>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef ParentName="PN_ApparelSpacerModuleHediffBase">
+        <defName>PN_IntegratorModuleHediff</defName>
+        <label>integrator module</label>
+        <description>The hediff created by installing integrator module.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PN_IntegratorModule</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statOffsets>
+                    <MechBandwidth>18</MechBandwidth>
+                    <MechControlGroups>1</MechControlGroups>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps/>
+    </HediffDef>
+</Defs>

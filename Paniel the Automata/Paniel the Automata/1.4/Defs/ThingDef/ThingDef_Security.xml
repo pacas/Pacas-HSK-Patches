@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--==================================== 오토캐논 ====================================-->
+    <ThingDef ParentName="TurretMannedBase">
+        <defName>PN_Artillery_Base_Core</defName>
+        <label>PnL Howitzer</label>
+        <description>Howitzer designed by PnL Industry. Using an automaton brain core, it has very good accuracy. However, it is necessary to periodically change the brain core due to excessive load in calculations.</description>
+        <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Things/Building/PN_Artillery_Base</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+        </placeWorkers>
+        <techLevel>Industrial</techLevel>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-3)</interactionCellOffset>
+        <size>(3,3)</size>
+        <thingCategories>
+            <li>BuildingsSecurity</li>
+        </thingCategories>
+        <designationCategory>Security</designationCategory>
+        <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+        <stuffCategories>
+            <li>RuggedMetallic</li>
+        </stuffCategories>
+        <costStuffCount>120</costStuffCount>
+        <costList>
+            <Mortar_Crate>1</Mortar_Crate>
+            <PN_BrainCasing>1</PN_BrainCasing>
+        </costList>
+        <inspectorTabs>
+            <li>ITab_Shells</li>
+        </inspectorTabs>
+        <comps>
+            <li Class="CompProperties_Refuelable">
+                <fuelLabel>Shots until core overload</fuelLabel>
+                <fuelGizmoLabel>Core overload</fuelGizmoLabel>
+                <outOfFuelMessage>Cannot shoot: Needs new core</outOfFuelMessage>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>PN_BrainCasing</li>
+                    </thingDefs>
+                </fuelFilter>
+                <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
+                <fuelCapacity>15</fuelCapacity>
+                <fuelMultiplier>15</fuelMultiplier>
+                <initialFuelPercent>1</initialFuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <minimumFueledThreshold>1</minimumFueledThreshold>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
+                <autoRefuelPercent>0</autoRefuelPercent>
+                <fuelIconPath>Things/Building/PN_cannoncore</fuelIconPath>
+            </li>
+        </comps>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>5000</WorkToBuild>
+            <Mass>613</Mass>
+            <Bulk>613</Bulk>
+        </statBases>
+        <building>
+            <turretGunDef>PN_Artillery_Turret</turretGunDef>
+            <turretTopDrawSize>3.0</turretTopDrawSize>
+            <turretTopOffset>(0, 0.35)</turretTopOffset>
+            <turretBurstWarmupTime>1.5</turretBurstWarmupTime>
+            <turretBurstCooldownTime>13</turretBurstCooldownTime>
+            <spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
+            <buildingTags>
+                <li>Artillery</li>
+                <li>Artillery_MannedMortar</li>
+            </buildingTags>
+            <uninstallWork>300</uninstallWork>
+        </building>
+        <researchPrerequisites>
+            <li>PNRP_AutoArtillery</li>
+        </researchPrerequisites>
+        <minifiedDef>MinifiedTurret_PN_Artillery</minifiedDef>
+        <uiIconPath>Things/Building/PN_Artillery_Ui</uiIconPath>
+        <uiIconScale>0.9</uiIconScale>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseGun_Turret">
+        <defName>PN_Artillery_Turret</defName>
+        <label>PnL Howitzer Turret</label>
+        <description>Howitzer designed by PnL Industries. Using an automaton brain core, it has very good accuracy. However, it is necessary to periodically change the brain core due to excessive load in calculations.</description>
+        <graphicData>
+            <texPath>Things/Building/PN_Artillery_Turret</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(6.0,6.0)</drawSize>
+        </graphicData>
+        <soundInteract>Artillery_ShellLoaded</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <weaponTags>
+            <li>Artillery</li>
+        </weaponTags>
+        <statBases>
+            <SightsEfficiency>2</SightsEfficiency>
+            <ShotSpread>0.1</ShotSpread>
+            <SwayFactor>0.60</SwayFactor>
+            <MarketValue>2500</MarketValue>
+            <Bulk>22.00</Bulk>
+            <Mass>18.50</Mass>
+            <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+        </statBases>
+        <generateCommonality>0</generateCommonality>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE" Inherit="False">
+                <verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_81mmMortarShell_HE</defaultProjectile>
+                <!--<forcedMissRadius>6</forcedMissRadius>-->
+                <circularError>1</circularError>
+                <warmupTime>2.00</warmupTime>
+                <minRange>32</minRange>
+                <range>500</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>PNCannonSound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>16</muzzleFlashScale>
+                <indirectFirePenalty>0.15</indirectFirePenalty>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>6.2</reloadTime>
+                <ammoSet>AmmoSet_81mmMortarShell</ammoSet>
+            </li>
+            <li Class="CombatExtended.CompProperties_FireModes"/>
+            <li Class="CombatExtended.CompProperties_Charges">
+                <chargeSpeeds>
+                    <li>30</li>
+                    <li>50</li>
+                    <li>70</li>
+                    <li>90</li>
+                </chargeSpeeds>
+            </li>
+        </comps>
+    </ThingDef>
+    
+    <ThingDef ParentName="MinifiedTurretBase">
+        <defName>MinifiedTurret_PN_Artillery</defName>
+        <label>Undeployed PnL Howitzer</label>
+        <statBases>
+            <Mass>320</Mass>
+            <Bulk>320</Bulk>
+        </statBases>
+    </ThingDef>
+</Defs>

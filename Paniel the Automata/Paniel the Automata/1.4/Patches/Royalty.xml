@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <!-- 오토마톤 면역 -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/HediffDef[defName = "PanielBaseHediff"]/comps/li[@Class = "MoharHediffs.HediffCompProperties_HediffNullifier"]/hediffToNullify</xpath>
+                    <value>
+                        <li>BloodRot</li>
+                        <li>Abasia</li>
+                        <li>PsychicLove</li>
+                        <li>Joyfuzz</li>
+                    </value>
+                </li>
+                <!-- 제국 우호도 -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/FactionDef[defName = "Empire"]/permanentEnemyToEveryoneExcept</xpath>
+                    <value>
+                        <li>Paniel_PlayerFaction</li>
+                    </value>
+                </li>
+                
+                <!-- 연구 -->
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ResearchProjectDef[defName = "PNRP_TierC_Apparel"]/prerequisites</xpath>
+                    <value>
+                        <prerequisites>
+                            <li>PNRP_TierB_Apparel</li>
+                            <li>CataphractArmor</li>
+                        </prerequisites>
+                    </value>
+                </li>
+
+                <!--상선청사진-->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/TraderKindDef[defName = "PN_Orbital_PnLindustry"]/stockGenerators</xpath>
+                    <value>
+                        <li Class="StockGenerator_SingleDef">
+                            <thingDef>Techprint_CataphractArmor</thingDef>
+                            <countRange>-2~1</countRange>
+                        </li>
+                        <li Class="StockGenerator_SingleDef">
+                            <thingDef>Techprint_BrainWiring</thingDef>
+                            <countRange>-2~1</countRange>
+                        </li>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/TraderKindDef[defName = "PN_Base_PnLindustry"]/stockGenerators</xpath>
+                    <value>
+                        <li Class="StockGenerator_SingleDef">
+                            <thingDef>Techprint_CataphractArmor</thingDef>
+                            <countRange>-1~1</countRange>
+                        </li>
+                        <li Class="StockGenerator_SingleDef">
+                            <thingDef>Techprint_BrainWiring</thingDef>
+                            <countRange>-1~1</countRange>
+                        </li>
+                    </value>
+                </li>
+
+                <!--퀘스트 관련-->
+                <!-- Guests -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/QuestScriptDef[defName="Util_ChooseRandomQuestLodgerKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_IsSet"]/node[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+                    <value>
+                        <li>
+                            <factionDef>PN_SubsidiaryFaction</factionDef>
+                            <pawnKinds>
+                                <li>PN_AssociateH</li>
+                                <li>PN_AssociateP_EngineerA</li>
+                                <li>PN_AssociateP_EngineerB</li>
+                                <li>PN_AssociateP_DomesticA</li>
+                                <li>PN_AssociateP_DomesticB</li>
+                            </pawnKinds>
+                        </li>
+                    </value>
+                </li>
+                <!-- Mercenaries -->
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/QuestScriptDef[defName="Util_ChooseRandomQuestHelperKind"]/root[@Class="QuestNode_Sequence"]/nodes/li[@Class="QuestNode_GetRandomPawnKindForFaction"]/choices</xpath>
+                    <value>
+                        <li>
+                            <factionDef>PN_SubsidiaryFaction</factionDef>
+                            <pawnKinds>
+                                <li>PN_Mid_CloseUnit</li>
+                                <li>PN_Mid_RangeUnit</li>
+                                <li>PN_EliteCloseUnit</li>
+                                <li>PN_EliteRangeUnit</li>
+                            </pawnKinds>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

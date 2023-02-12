@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingCategoryDef>
+        <defName>PN_AutomatonCatagory</defName>
+        <label>PnL Industry</label>
+        <parent>Manufactured</parent>
+        <iconPath>UI/Icons/PNCT_PnL</iconPath>
+    </ThingCategoryDef>
+
+    <!--==================================== 미완성 오토마톤 ====================================-->
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>UnfinishedAutomaton</defName>
+        <label>unfinished automaton</label>
+        <description>An unfinished automaton.</description>
+        <statBases>
+            <Flammability>0.5</Flammability>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/UnfinishedAutomaton</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <stuffCategories Inherit="false"/>
+    </ThingDef>
+
+    <!--==================================== 오토마톤 가죽 ====================================-->
+    <ThingDef ParentName="SK_LeatherBase">
+        <defName>Leather_Automaton</defName>
+        <label>automaton skin</label>
+        <description>leather made for automaton production. looks like human leather.</description>
+        <graphicData>
+            <color>(255,240,227)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>4.2</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <StuffPower_Armor_Sharp>0.74</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.61</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+            <Mass>0.01</Mass>
+            <Bulk>0.01</Bulk>
+        </statBases>
+        <thingCategories>
+            <li>PN_AutomatonCatagory</li>
+        </thingCategories>
+        <tradeTags Inherit="false">
+
+        </tradeTags>
+        <tradeability>Buyable</tradeability>
+        <stuffProps>
+            <color>(255,240,227)</color>
+            <commonality>0.0025</commonality>
+            <statFactors>
+                <MaxHitPoints>1</MaxHitPoints>
+                <Beauty>0.2</Beauty>
+                <MoveSpeed>1</MoveSpeed>
+                <MarketValue>0.8</MarketValue>
+                <WorkToMake>1.5</WorkToMake>
+                <WorkToBuild>1.5</WorkToBuild>
+                <BedRestEffectiveness>1.0</BedRestEffectiveness>
+                <ImmunityGainSpeedFactor>0.92</ImmunityGainSpeedFactor>
+                <Mass>0.5</Mass>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+
+    <!--==================================== 브레인 코어 ====================================-->
+    <ThingCategoryDef>
+        <defName>PN_BrainCoreCatagory</defName>
+        <label>automaton core</label>
+        <parent>PN_AutomatonCatagory</parent>
+        <iconPath>Things/Item/PNBrainCore</iconPath>
+    </ThingCategoryDef>
+
+    <!--중추신경케이스-->
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>PN_BrainEmpty</defName>
+        <label>Empty case</label>
+        <description>A case specially designed to contain the central nervous system.</description>
+        <graphicData Inherit="false">
+            <texPath>Things/Item/PNCentralnervous_empty</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <isTechHediff>false</isTechHediff>
+        <thingCategories Inherit="false">
+            <li>PN_AutomatonCatagory</li>
+        </thingCategories>
+        <statBases>
+            <Mass>1</Mass>
+            <Bulk>1</Bulk>
+            <WorkToMake>700</WorkToMake>
+            <Flammability>0.7</Flammability>
+        </statBases>
+        <stackLimit>10</stackLimit>
+        <uiIconForStackCount>1</uiIconForStackCount>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <costList>
+            <ComponentIndustrial>1</ComponentIndustrial>
+            <Plasteel>5</Plasteel>
+            <PN_AutomatonFuel>1</PN_AutomatonFuel>
+        </costList>
+        <tradeTags Inherit="false">
+
+        </tradeTags>
+        <tradeability>Buyable</tradeability>
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>PNRP_Brain</researchPrerequisite>
+            <recipeUsers>
+                <li>PN_AutomatonBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <comps>
+
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBase">
+        <defName>PN_Brain</defName>
+        <label>central nervous</label>
+        <description>A biological human central nervous. It doesn't look like it can be stored for long.</description>
+        <graphicData Inherit="false">
+            <texPath>Things/Item/PNCentralnervous</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <thingCategories Inherit="false">
+            <li>PN_BrainCoreCatagory</li>
+        </thingCategories>
+        <statBases>
+            <MarketValue>548</MarketValue>
+            <Mass>1</Mass>
+            <Bulk>1</Bulk>
+            <Flammability>0.7</Flammability>
+        </statBases>
+        <isTechHediff>false</isTechHediff>
+        <tradeTags Inherit="false">
+
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Lifespan">
+                <lifespanTicks>240000</lifespanTicks>
+                <expireEffect>RaisedRock_Collapse</expireEffect>
+            </li>
+        </comps>
+        <tradeability>Buyable</tradeability>
+        <tickerType>Normal</tickerType>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBase">
+        <defName>PN_BrainCasing</defName>
+        <label>Automaton brain core</label>
+        <description>A brain core used to make automata.</description>
+        <graphicData Inherit="false">
+            <texPath>Things/Item/PNBrainCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <isTechHediff>false</isTechHediff>
+        <thingCategories Inherit="false">
+            <li>PN_BrainCoreCatagory</li>
+        </thingCategories>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <statBases>
+            <Mass>1</Mass>
+            <Bulk>1</Bulk>
+            <WorkToMake>13000</WorkToMake>
+            <Flammability>0.7</Flammability>
+        </statBases>
+        <costList>
+            <PN_Brain>1</PN_Brain>
+            <ComponentSpacer>1</ComponentSpacer>
+            <Plasteel>15</Plasteel>
+            <PN_AutomatonFuel>2</PN_AutomatonFuel>
+        </costList>
+        <tradeTags Inherit="false">
+
+        </tradeTags>
+        <tradeability>Buyable</tradeability>
+        <comps>
+
+        </comps>
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>PNRP_BrainCasing</researchPrerequisite>
+            <recipeUsers>
+                <li>PN_AutomatonBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <!--==================================== 수리키트 ====================================-->
+    <ThingCategoryDef>
+        <defName>PNKit</defName>
+        <label>Repair kit</label>
+        <parent>PN_AutomatonCatagory</parent>
+        <iconPath>UI/Icons/PNCT_PNRepairkit</iconPath>
+    </ThingCategoryDef>
+
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>PN_RepairKit</defName>
+        <label>automaton repair kit</label>
+        <description>A kit containing various materials to repair the automaton.</description>
+        <graphicData Inherit="false">
+            <texPath>Things/Item/PNRepairkit</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+        <techLevel>Industrial</techLevel>
+        <stackLimit>25</stackLimit>
+        <uiIconForStackCount>1</uiIconForStackCount>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Mass>2</Mass>
+            <Bulk>1</Bulk>
+            <Flammability>0.7</Flammability>
+            <WorkToMake>700</WorkToMake>
+        </statBases>
+        <thingCategories>
+            <li>PNKit</li>
+        </thingCategories>
+        <costList>
+            <ComponentIndustrial>1</ComponentIndustrial>
+            <Plasteel>15</Plasteel>
+            <Chemfuel>5</Chemfuel>
+            <Leather_Automaton>10</Leather_Automaton>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+                <li>PN_AutomatonBench</li>
+            </recipeUsers>
+            <researchPrerequisite>PNRP_Production</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <tradeTags Inherit="false">
+
+        </tradeTags>
+        <comps>
+
+        </comps>
+        <tradeability>Buyable</tradeability>
+    </ThingDef>
+
+    <!--==================================== 자가 수리 키트 ====================================-->
+    <ThingDef ParentName="MechSerumBase">
+        <defName>PN_SelfRepairKit</defName>
+        <label>self repair kit</label>
+        <description>Repair kit combined with healer mech serum. It can be used alone without an operator, and the user can self-repair.</description>
+        <graphicData Inherit="false">
+            <texPath>Things/Item/PNSelfRepairkit</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+        <techLevel>Spacer</techLevel>
+        <stackLimit>25</stackLimit>
+        <uiIconForStackCount>1</uiIconForStackCount>
+        <statBases>
+            <Mass>2</Mass>
+            <Bulk>1</Bulk>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Flammability>0.7</Flammability>
+            <WorkToMake>1500</WorkToMake>
+        </statBases>
+        <thingCategories>
+            <li>PNKit</li>
+        </thingCategories>
+        <costList>
+            <MechSerumHealer>1</MechSerumHealer>
+            <ComponentIndustrial>1</ComponentIndustrial>
+            <Plasteel>15</Plasteel>
+            <Chemfuel>2</Chemfuel>
+            <Leather_Automaton>5</Leather_Automaton>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <recipeUsers>
+                <li>PN_AutomatonBench</li>
+            </recipeUsers>
+            <researchPrerequisite>PNRP_SelfRepairKit</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <tradeTags Inherit="false">
+
+        </tradeTags>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Use self repair kit</useLabel>
+                <useDuration>600</useDuration>
+            </li>
+            <li Class="AutomataRace.CompProperties_UseEffectRepairKit">
+                <thingDefs>
+                    <li>Paniel_Race</li>
+                </thingDefs>
+                <blockUnnecessaryUse>false</blockUnnecessaryUse>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf">
+                <compClass>CompUseEffect_DestroySelf</compClass>
+            </li>
+        </comps>
+        <tradeability>Buyable</tradeability>
+    </ThingDef>
+
+    <RecipeDef>
+        <defName>PN_AdministerSelfRepairKit</defName>
+        <label>administer self repair kit</label>
+        <description>Administer a self repair kit.</description>
+        <workerClass>Recipe_AdministerUsableItem</workerClass>
+        <jobString>Administering self repair kit.</jobString>
+        <targetsBodyPart>false</targetsBodyPart>
+        <anesthetize>false</anesthetize>
+        <workAmount>600</workAmount>
+        <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+        <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PN_SelfRepairKit</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PN_SelfRepairKit</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <recipeUsers>
+            <li>Paniel_Race</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <!--==================================== 로열 부품 ====================================-->
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>PN_Component</defName>
+        <label>PnL component</label>
+        <description>This is a component used in special products of PnL Industry. It's tightly sealed, so reverse engineering looks difficult.</description>
+        <graphicData>
+            <texPath>Things/Item/PNComponent</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>800</MarketValue>
+            <Mass>0.6</Mass>
+            <Flammability>0.6</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>PN_AutomatonCatagory</li>
+        </thingCategories>
+        <tradeTags Inherit="false">
+            <li>PN_RoyalComp</li>
+        </tradeTags>
+        <tradeability>Buyable</tradeability>
+        <thingSetMakerTags Inherit="false">
+      
+        </thingSetMakerTags>
+    </ThingDef>
+    
+    <!--==================================== OTP 카드 ====================================-->
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>PN_OTPCard</defName>
+        <label>PnL OTP card</label>
+        <description>A disposable OTP card used to connect to a secure line in the PnL industry.</description>
+        <graphicData>
+            <texPath>Things/Item/PNOTPCard</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <stackLimit>10</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <MarketValue>1500</MarketValue>
+            <Mass>0.1</Mass>
+            <Bulk>0.1</Bulk>
+            <Flammability>0.5</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>PN_AutomatonCatagory</li>
+        </thingCategories>
+        <tradeTags Inherit="false">
+            <li>PN_OTPCard</li>
+        </tradeTags>
+        <tradeability>Buyable</tradeability>
+        <thingSetMakerTags Inherit="false">
+
+        </thingSetMakerTags>
+    </ThingDef>
+</Defs>

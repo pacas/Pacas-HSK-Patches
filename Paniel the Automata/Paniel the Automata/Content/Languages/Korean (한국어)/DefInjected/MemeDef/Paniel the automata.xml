@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PN_Structure.label>PnL 내규</PN_Structure.label>
+  <PN_Structure.description>PnL 인더스트리의 내부 규정입니다. 모범적인 PnL 임직원은 내규를 어기지 않습니다.</PN_Structure.description>
+  <PN_Structure.generalRules.rulesStrings>
+    <li>memeLeaderNoun->CEO</li>
+    <li>memeMoralist->인사 매니저</li>
+  </PN_Structure.generalRules.rulesStrings>
+  <PN_Structure.descriptionMaker.rules.rulesStrings>
+    <li>episode(tag=meme_PN_Structure)  ->...PnL 인더스트리는 Paul과 Lauren이 번화계에 세운 작은 공방에서 시작되었으며, 이후 발전을 거듭하여 거대 성간 기업이 되었다.\n\n...\n\n비록 '불행한 사건'으로 변방계로 사업이 축소되었지만, 언젠가 다시 번화계로 귀한하는걸 목표로 모든 PnL 임직원은 각고의 노력을 하여야 할 것이다.</li>
+  </PN_Structure.descriptionMaker.rules.rulesStrings>
+  <PN_Structure.symbolPacks.0.ideoName>PnL 내규</PN_Structure.symbolPacks.0.ideoName>
+  <PN_Structure.symbolPacks.0.theme>PnL</PN_Structure.symbolPacks.0.theme>
+  <PN_Structure.symbolPacks.0.adjective>PnL</PN_Structure.symbolPacks.0.adjective>
+  <PN_Structure.symbolPacks.0.member>PnL 임직원</PN_Structure.symbolPacks.0.member>
+
+  <PN_Structure.worshipRoomLabel>대회의실</PN_Structure.worshipRoomLabel>
+</LanguageData>

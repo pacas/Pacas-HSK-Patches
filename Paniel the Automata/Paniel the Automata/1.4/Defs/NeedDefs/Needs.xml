@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <NeedDef ParentName="DrugAddictionNeedBase">
+        <defName>PN_Need_Fuel</defName>
+        <needClass>Need_Chemical</needClass>
+        <label>Automaton Fuel</label>
+        <description>The amount of fuel used by the automaton. When the gauge reaches zero, the automaton will enter emergency power mode and become very slow.</description>
+        <listPriority>984</listPriority>
+        <fallPerDay>0.20</fallPerDay>
+        <freezeWhileSleeping>true</freezeWhileSleeping>
+        <showForCaravanMembers>true</showForCaravanMembers>
+        <major>true</major>
+    </NeedDef>
+
+    <NeedDef>
+        <defName>PN_Need_Maintenance</defName>
+        <needClass>AutomataRace.Need_Maintenance</needClass>
+        <label>Maintenance</label>
+        <description>The maintenance status of the automaton.\n\nIf it is low, it will cause malfunction.\n\nMaintenance is required every year (60 rimworld days).</description>
+        <onlyIfCausedByHediff>true</onlyIfCausedByHediff>
+        <listPriority>985</listPriority>
+        <fallPerDay>0.01333</fallPerDay>
+        <showForCaravanMembers>true</showForCaravanMembers>
+    </NeedDef>
+</Defs>

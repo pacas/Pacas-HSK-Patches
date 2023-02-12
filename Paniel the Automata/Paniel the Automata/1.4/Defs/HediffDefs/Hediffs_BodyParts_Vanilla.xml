@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--==================================== 초월 공학 ====================================-->
+
+  <!-- 눈 -->
+  <!--<RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+    <defName>PN_InstallArchotechEye</defName>
+    <label>install archotech eye</label>
+    <description>Install an archotech eye.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ArchotechEye</ThingDef>
+      <HediffDef>ArchotechEye</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing archotech eye.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ArchotechEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>PNEye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechEye</addsHediff>
+  </RecipeDef>-->
+
+  <!-- 팔 -->
+  <!--<RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+    <defName>PN_InstallArchotechArm</defName>
+    <label>install archotech arm</label>
+    <description>Install an archotech arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ArchotechArm</ThingDef>
+      <HediffDef>ArchotechArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing archotech arm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ArchotechArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>PNShoulder</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechArm</addsHediff>
+  </RecipeDef>-->
+
+  <!-- 다리 -->
+  <!--<RecipeDef ParentName="PN_SurgeryInstallImplantBase">
+    <defName>PN_InstallArchotechLeg</defName>
+    <label>install archotech leg</label>
+    <description>Install an archotech leg.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ArchotechLeg</ThingDef>
+      <HediffDef>ArchotechLeg</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing archotech leg.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ArchotechLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>PNLeg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechLeg</addsHediff>
+  </RecipeDef>-->
+</Defs>

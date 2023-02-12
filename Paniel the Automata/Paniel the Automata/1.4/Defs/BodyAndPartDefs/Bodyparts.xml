@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <BodyPartDef Abstract="True" Name="PN_BodyPartDefBase">
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <alive>false</alive>
+    </BodyPartDef>
+    <!--몸통-->
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNTorso</defName>
+        <label>torso case</label>
+        <hitPoints>40</hitPoints>
+        <skinCovered>true</skinCovered>
+        <canSuggestAmputation>false</canSuggestAmputation>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNRibcage</defName>
+        <label>ribcage frame</label>
+        <hitPoints>30</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>BreathingSourceCage</li>
+        </tags>
+        <destroyableByDamage>false</destroyableByDamage>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNSternum</defName>
+        <label>sternum frame</label>
+        <hitPoints>20</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>BreathingSourceCage</li>
+        </tags>
+        <destroyableByDamage>false</destroyableByDamage>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNPelvis</defName>
+        <label>pelvis frame</label>
+        <hitPoints>25</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>Pelvis</li>
+        </tags>
+        <destroyableByDamage>false</destroyableByDamage>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNSpine</defName>
+        <label>spine frame</label>
+        <hitPoints>25</hitPoints>
+        <permanentInjuryChanceFactor>6</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <canSuggestAmputation>false</canSuggestAmputation>
+        <tags>
+            <li>Spine</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNTail</defName>
+        <label>tail</label>
+        <hitPoints>30</hitPoints>
+        <frostbiteVulnerability>3</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <beautyRelated>true</beautyRelated>
+        <canSuggestAmputation>true</canSuggestAmputation>
+    </BodyPartDef>
+
+    <!--장기-->
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNStomach</defName>
+        <label>energy absorbing part</label>
+        <hitPoints>20</hitPoints>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>MetabolismSource</li>
+        </tags>
+        <canSuggestAmputation>false</canSuggestAmputation>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNCore</defName>
+        <label>engine core</label>
+        <hitPoints>15</hitPoints>
+        <bleedRate>5</bleedRate>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>BloodPumpingSource</li>
+        </tags>
+        <canSuggestAmputation>false</canSuggestAmputation>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNLung</defName>
+        <label>breathing part</label>
+        <hitPoints>15</hitPoints>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>BreathingSource</li>
+        </tags>
+        <canSuggestAmputation>false</canSuggestAmputation>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNKidney</defName>
+        <label>oil filter</label>
+        <hitPoints>15</hitPoints>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>BloodFiltrationKidney</li>
+        </tags>
+        <canSuggestAmputation>false</canSuggestAmputation>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNLiver</defName>
+        <label>water filter</label>
+        <hitPoints>20</hitPoints>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>BloodFiltrationLiver</li>
+            <li>MetabolismSource</li>
+        </tags>
+        <canSuggestAmputation>false</canSuggestAmputation>
+    </BodyPartDef>
+
+    <!--머리-->
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNNeck</defName>
+        <label>neck</label>
+        <hitPoints>25</hitPoints>
+        <bleedRate>4</bleedRate>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>BreathingPathway</li>
+            <li>EatingPathway</li>
+            <li>TalkingPathway</li>
+        </tags>
+        <canSuggestAmputation>false</canSuggestAmputation>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNHead</defName>
+        <label>head case</label>
+        <hitPoints>25</hitPoints>
+        <skinCovered>true</skinCovered>
+        <canSuggestAmputation>false</canSuggestAmputation>
+        <bleedRate>2</bleedRate>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNSkull</defName>
+        <label>skull frame</label>
+        <hitPoints>25</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <canSuggestAmputation>false</canSuggestAmputation>
+        <bleedRate>0</bleedRate>
+        <destroyableByDamage>false</destroyableByDamage>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNBrain</defName>
+        <label>brain core</label>
+        <hitPoints>10</hitPoints>
+        <permanentInjuryChanceFactor>9999999</permanentInjuryChanceFactor>
+        <delicate>true</delicate>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>ConsciousnessSource</li>
+        </tags>
+        <canSuggestAmputation>false</canSuggestAmputation>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNEye</defName>
+        <label>sight sensor</label>
+        <hitPoints>10</hitPoints>
+        <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+        <delicate>true</delicate>
+        <skinCovered>false</skinCovered>
+        <socketed>true</socketed>
+        <beautyRelated>true</beautyRelated>
+        <tags>
+            <li>SightSource</li>
+        </tags>
+        <hitChanceFactors>
+            <li>
+                <key>Blunt</key>
+                <value>0</value>
+            </li>
+        </hitChanceFactors>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNEar</defName>
+        <label>hearing sensor</label>
+        <hitPoints>12</hitPoints>
+        <frostbiteVulnerability>5</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <beautyRelated>true</beautyRelated>
+        <tags>
+            <li>HearingSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNNose</defName>
+        <label>olfactory sensor</label>
+        <hitPoints>10</hitPoints>
+        <frostbiteVulnerability>5</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <beautyRelated>true</beautyRelated>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNJaw</defName>
+        <label>jaw</label>
+        <hitPoints>20</hitPoints>
+        <frostbiteVulnerability>2</frostbiteVulnerability>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <beautyRelated>true</beautyRelated>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>EatingSource</li>
+            <li>TalkingSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <!--팔-->
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNShoulder</defName>
+        <label>shoulder</label>
+        <hitPoints>30</hitPoints>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>ManipulationLimbSegment</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNClavicle</defName>
+        <label>clavicle frame</label>
+        <hitPoints>25</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>ManipulationLimbSegment</li>
+        </tags>
+        <destroyableByDamage>false</destroyableByDamage>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNArm</defName>
+        <label>arm</label>
+        <hitPoints>30</hitPoints>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>ManipulationLimbCore</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNHumerus</defName>
+        <label>humerus frame</label>
+        <hitPoints>25</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>ManipulationLimbSegment</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNRadius</defName>
+        <label>radius frame</label>
+        <hitPoints>20</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>ManipulationLimbSegment</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNHand</defName>
+        <label>hand</label>
+        <hitPoints>20</hitPoints>
+        <frostbiteVulnerability>0.5</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>ManipulationLimbSegment</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNFinger</defName>
+        <label>finger</label>
+        <hitPoints>8</hitPoints>
+        <frostbiteVulnerability>8</frostbiteVulnerability>
+        <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>ManipulationLimbDigit</li>
+        </tags>
+    </BodyPartDef>
+
+    <!--다리-->
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNWaist</defName>
+        <label>utility slot</label>
+        <conceptual>true</conceptual>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNLeg</defName>
+        <label>leg</label>
+        <hitPoints>30</hitPoints>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>MovingLimbCore</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNFemur</defName>
+        <label>femur frame</label>
+        <hitPoints>25</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>MovingLimbSegment</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNTibia</defName>
+        <label>tibia frame</label>
+        <hitPoints>25</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>MovingLimbSegment</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNFoot</defName>
+        <label>foot</label>
+        <hitPoints>25</hitPoints>
+        <frostbiteVulnerability>0.5</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>MovingLimbSegment</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="PN_BodyPartDefBase">
+        <defName>PNToe</defName>
+        <label>toe</label>
+        <hitPoints>8</hitPoints>
+        <frostbiteVulnerability>10</frostbiteVulnerability>
+        <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>MovingLimbDigit</li>
+        </tags>
+    </BodyPartDef>
+
+</Defs>

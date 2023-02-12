@@ -3,11 +3,13 @@
   <PN_LowMaintenance>정비 필요</PN_LowMaintenance>
   <PN_LowMaintenanceDesc>다음 파니엘의 정비 상태가 좋지 않아 고장날 수 있습니다.\n\n{0}</PN_LowMaintenanceDesc>
   <PN_NeedFuel>PnL 연료 필요</PN_NeedFuel>
-	<PN_NeedFuelDesc>다음 파니엘이 연료가 다 떨어져 비상 동력 모드로 들어갔습니다.\n\n{0}</PN_NeedFuelDesc>
-  
-  <PN_HediffNullifier>{0}(은)는 {1}(을)를 면역했습니다. 사유 : {0}(은)는 오토마톤입니다</PN_HediffNullifier>
+  <PN_NeedFuelDesc>다음 파니엘이 연료가 다 떨어져 비상 동력 모드로 들어갔습니다.\n\n{0}</PN_NeedFuelDesc>
 
-  <PN_CantReason_orhediff>아이템 설명을 확인하세요.</PN_CantReason_orhediff>
+  <PN_HediffNullifier>{0}(은)는 {1}에 면역입니다. 사유 : {0}(은)는 오토마톤입니다.</PN_HediffNullifier>
+
+  <PN_CantReason_orhediff>아이템 설명을 확인하세요.<!--\n\n[사유]\n\n아래 건강상태 중 하나 보유 : \n\n{11}\n\n아래 건강상태 중 하나도 보유하면 안됨 : \n\n{15}--></PN_CantReason_orhediff>
+  <!--디버그용-->
+  <!--<PN_CantReason_orhediff>{0} 종족 제한 사항 : \n\n{3}나이 제한 : {4} ~ {5}\n\n{6}성별 제한 : {7}\n\n{8}체형 제한 : {9}\n\n{10}이하 헤디프 중 하나 보유 : \n\n{11}\n\n{12}이하 헤디프 전체 보유 : \n\n{13}\n\n{14}이하 헤디프 중 하나도 보유하면 안됨 : \n\n{15}</PN_CantReason_orhediff>-->
 
   <PN_AUTOMATA_MATERIAL>주 재료</PN_AUTOMATA_MATERIAL>
 
@@ -27,6 +29,12 @@
 
   <PN_BILL_WINDOW_TAB_SUMMARY_BTN_CANCEL>취소</PN_BILL_WINDOW_TAB_SUMMARY_BTN_CANCEL>
   <PN_BILL_WINDOW_TAB_SUMMARY_BTN_ADD_BILL>추가</PN_BILL_WINDOW_TAB_SUMMARY_BTN_ADD_BILL>
-  
+
   <PN_AUTOMATACRYPTOSLEEPONLY>오토마톤만 사용 가능.</PN_AUTOMATACRYPTOSLEEPONLY>
+
+  <PN_REQUEST_ORBITAL_TRADER>PnL 상선 요청 (비용: {0} 우호도)</PN_REQUEST_ORBITAL_TRADER>
+  <PN_OTP_CARD_REQUIRED_IN_TRADE_BEACON>무역 송신기에 PnL OTP 카드 필요</PN_OTP_CARD_REQUIRED_IN_TRADE_BEACON>
+  <PN_ORBITAL_TRADER_SENT>OTP를 확인했습니다. 본사에 보안회선 연결중...\n\n...완료되었습니다. 2일에서 5일 사이에 상선이 도착 할 것입니다.</PN_ORBITAL_TRADER_SENT>
+  <PN_ORBITAL_TRADER_ALREADY_CALLED>이미 호출함</PN_ORBITAL_TRADER_ALREADY_CALLED>
+  <PN_ORBITAL_TRADER_ALREADY_ARRIVED>궤도에서 대기중</PN_ORBITAL_TRADER_ALREADY_ARRIVED>
 </LanguageData>

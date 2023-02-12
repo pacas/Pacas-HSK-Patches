@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--Structure-->
+
+    <MemeDef>
+        <defName>PN_Structure</defName>
+        <label>PnL bylaws</label>
+        <description>Bylaws of PnL industry. An exemplary PnL employee would not break bylaws.</description>
+        <category>Structure</category>
+        <iconPath>Icon/Paniel_bylaw</iconPath>
+        <impact>0</impact>
+        <worshipRoomLabel>Conference room</worshipRoomLabel>
+        <deityCount>0</deityCount>
+        <generalRules>
+            <rulesStrings>
+                <li>memeLeaderNoun->CEO</li>
+                <li>memeMoralist->Personnel Manager</li>
+            </rulesStrings>
+        </generalRules>
+        <descriptionMaker>
+            <rules>
+                <rulesStrings>
+                    <li>episode(tag=meme_PN_Structure)  ->...PnL Industry, founded by Paul and Lauren, has evolved from a small industrial company in Glitterworld to a giant interstellar company.\n\n...\n\nEven though we were kicked out of Rimworld for an "unfortunate incident," we're going back to Glitterworld.</li>
+                </rulesStrings>
+            </rules>
+            <patterns>
+                <li>
+                    <def>PN_IdeoStoryPattern</def>
+                </li>
+            </patterns>
+            <constants>
+                <li>
+                    <key>PN_Structure</key>
+                    <value>true</value>
+                </li>
+            </constants>
+        </descriptionMaker>
+        <symbolPacks>
+            <li>
+                <ideoName>PnL bylaws</ideoName>
+                <theme>PnL</theme>
+                <adjective>PnL</adjective>
+                <member>PnL Employee</member>
+            </li>
+        </symbolPacks>
+        <requireOne>
+            <li>
+                <li>BodyMod_Approved</li>
+            </li>
+            <li>
+                <li>OrganUse_Acceptable</li>
+            </li>
+            <li>
+                <li>DrugUse_MedicalOrSocial</li>
+            </li>
+            <li>
+                <li>Apostasy_Abhorrent</li>
+            </li>
+            <li>
+                <li>IdeoDiversity_Abhorrent</li>
+            </li>
+            <li>
+                <li>Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+            </li>
+            <li>
+                <li>Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+            </li>
+            <li>
+                <li>Execution_DontCare</li>
+            </li>
+            <li>
+                <li>Scarification_Horrible</li>
+            </li>
+            <li>
+                <li>Slavery_Abhorrent</li>
+            </li>
+            <li>
+                <li>HAR_AlienSlavery_Abhorrent</li>
+            </li>
+            <li>
+                <li>Cannibalism_Horrible</li>
+            </li>
+            <li>
+                <li>NutrientPasteEating_DontMind</li>
+            </li>
+
+        </requireOne>
+    </MemeDef>
+
+    <IdeoStoryPatternDef>
+        <defName>PN_IdeoStoryPattern</defName>
+        <segments>
+            <li>episode</li>
+        </segments>
+        <rules>
+            <include>
+                <li>IdeoDescriptionGlobal</li>
+            </include>
+        </rules>
+    </IdeoStoryPatternDef>
+
+    <IdeoIconDef>
+        <defName>PN_IdeoIcon</defName>
+        <iconPath>Icon/Paniel_Icon</iconPath>
+        <memes>
+            <li>PN_Structure</li>
+        </memes>
+    </IdeoIconDef>
+
+</Defs>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+    <!--==================================== 상납용 은 ====================================-->
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>PN_SilverCase</defName>
+        <label>PnL silver case</label>
+        <description>The case of 800 silvers, can get a result point by submitting it to PnL result appraiser.\n\nIt is locked with a special security device that even the maker cannot open. It takes a lot of effort to unlock, so the merchant will try to cut the price of it.</description>
+        <graphicData Inherit="false">
+            <texPath>Things/Item/PNSilverCase</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+        <soundInteract>Silver_Drop</soundInteract>
+        <soundDrop>Silver_Drop</soundDrop>
+        <stackLimit>10</stackLimit>
+        <uiIconForStackCount>1</uiIconForStackCount>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <Mass>6.4</Mass>
+            <RoyalFavorValue>1</RoyalFavorValue>
+            <WorkToMake>700</WorkToMake>
+        </statBases>
+        <thingCategories>
+            <li>PN_AutomatonCatagory</li>
+        </thingCategories>
+        <tradeTags Inherit="false">
+            <li>PN_SilverChest</li>
+        </tradeTags>
+        <thingSetMakerTags Inherit="false">
+
+        </thingSetMakerTags>
+        <costList>
+            <Silver>800</Silver>
+            <Plasteel>5</Plasteel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Interact_Repair</soundWorking>
+            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+            <recipeUsers>
+                <li>PN_AutomatonBench</li>
+            </recipeUsers>
+            <researchPrerequisite>PNRP_Production</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef>
+        <defName>PN_UnlockSilverCase</defName>
+        <label>Unlock PnL silver case</label>
+        <description>Unlock PnL silver case. Can't get the perfect result by forcibly breaking the security device.</description>
+        <jobString>unlocking PnL silver case.</jobString>
+        <workSpeedStat>SmithingSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <workAmount>1600</workAmount>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>PN_AutomatonBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PN_SilverCase</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <Silver>480</Silver>
+        </products>
+        <skillRequirements>
+            <Crafting>4</Crafting>
+        </skillRequirements>
+        <researchPrerequisite/>
+    </RecipeDef>
+
+</Defs>

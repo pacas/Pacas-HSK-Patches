@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--==================================== 베이스 ====================================-->
+
+    <RulePackDef>
+        <defName>PN_NamerChainSwordfirst</defName>
+        <rulePack>
+            <rulesFiles>
+                <li>PNof->Names/Weapon/PNof</li>
+                <li>PNChainSword->Names/Weapon/PNChainSword</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>PN_NamerChainSword</defName>
+        <include>
+            <li>PN_NamerFirst</li>
+            <li>PN_NamerChainSwordfirst</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_weapon_name->[PNChainSword] [PNof] [PNFirstNamer]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <ThingDef Abstract="True" Name="PN_MeleeWeaponUltratech" ParentName="SK_BaseMeleeWeapon">
+        <techLevel>Ultra</techLevel>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtWeaponMelee</nameMaker>
+                <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+                <minQualityForArtistic>Excellent</minQualityForArtistic>
+            </li>
+            <li Class="CompProperties_Biocodable"/>
+        </comps>
+        <smeltable>true</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <thingCategories>
+            <li>PNMeleeWeapon</li>
+        </thingCategories>
+        <weaponTags>
+            <li>PN_UltratechMelee</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>MeleePiercer</li>
+            <li>Ultratech</li>
+        </weaponClasses>
+    </ThingDef>
+
+    <ThingDef Name="PN_BaseWeapon_Bladelink" ParentName="SK_BaseMeleeWeapon" Abstract="True">
+        <techLevel>Ultra</techLevel>
+        <tradeNeverStack>true</tradeNeverStack>
+        <smeltable>false</smeltable>
+        <relicChance>1</relicChance>
+        <weaponTags>
+            <li>PN_Bladelink</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Ultratech</li>
+        </weaponClasses>
+        <thingCategories>
+            <li>PN_WeaponsMeleeBladelink</li>
+        </thingCategories>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_BladelinkWeapon">
+                <biocodeOnEquip>true</biocodeOnEquip>
+            </li>
+            <li Class="CompProperties_Styleable"/>
+        </comps>
+        <smeltable>true</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+    </ThingDef>
+
+    <!--==================================== 로열세이버 ====================================-->
+
+    <ThingDef ParentName="PN_BaseWeapon_Bladelink">
+        <defName>PN_RoyalSaber_Bladelink</defName>
+        <label>PnL royal saber</label>
+        <description>[caution] : Automaton exclusive weapon.\n\nA sword that uses the Royal Guard Automaton. It can cut anything with its sharp cutting power. It also uses the power of the automaton to inflict additional burn damage with the heated blade.\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <statBases>
+            <MarketValue>3000</MarketValue>
+            <Mass>7</Mass>
+            <Bulk>9.5</Bulk>
+            <MeleeCounterParryBonus>0.60</MeleeCounterParryBonus>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeCritChance>1.10</MeleeCritChance>
+            <MeleeParryChance>0.70</MeleeParryChance>
+            <MeleeDodgeChance>0.50</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <equippedAngleOffset>0</equippedAngleOffset>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Weapons/PNRoyalSaber</texPath>
+            <color>(255,255,255)</color>
+        </graphicData>
+        <soundInteract>Interact_BladelinkPlasmaSword</soundInteract>
+        <meleeHitSound>MeleeHit_BladelinkPlasmaSword</meleeHitSound>
+        <weaponClasses>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.53</cooldownTime>
+                <chanceFactor>0.10</chanceFactor>
+                <armorPenetrationBlunt>1</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>31</power>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Flame</def>
+                        <amount>8</amount>
+                        <chance>0.3</chance>
+                    </li>
+                </extraMeleeDamages>
+                <cooldownTime>1.03</cooldownTime>
+                <chanceFactor>0.66</chanceFactor>
+                <armorPenetrationBlunt>5.576</armorPenetrationBlunt>
+                <armorPenetrationSharp>29.04</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>21</power>
+                <extraMeleeDamages>
+                    <li>
+                        <def>Flame</def>
+                        <amount>5</amount>
+                        <chance>0.2</chance>
+                    </li>
+                </extraMeleeDamages>
+                <cooldownTime>0.96</cooldownTime>
+                <armorPenetrationBlunt>2.478</armorPenetrationBlunt>
+                <armorPenetrationSharp>31.72</armorPenetrationSharp>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!--==================================== 블러디드 체인소드 ====================================-->
+
+    <ThingDef ParentName="PN_BaseWeapon_Bladelink">
+        <defName>PN_Chainsword_Bladelink</defName>
+        <label>PnL blooded chain sword</label>
+        <description>[caution] : Automaton exclusive weapon.\n\nA bloody chain sword that seems to have many stories. For some reason, it has a much better performance than a normal chain sword.\nThis weapon has an onboard persona that can bond to only a single person. The wielder and intelligent weapon can synchronize their reflexes and attack with frightening speed, accuracy, and creativity. Once bonded to a wielder, the weapon's persona will refuse to be wielded by anyone else.</description>
+        <statBases>
+            <MarketValue>3000</MarketValue>
+            <Mass>9</Mass>
+            <Bulk>14.5</Bulk>
+            <MeleeCounterParryBonus>0.50</MeleeCounterParryBonus>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeCritChance>1</MeleeCritChance>
+            <MeleeParryChance>0.50</MeleeParryChance>
+            <MeleeDodgeChance>0.37</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Weapons/PNSwordLink</texPath>
+            <color>(255,255,255)</color>
+        </graphicData>
+        <soundInteract>Interact_BladelinkMonoSword</soundInteract>
+        <meleeHitSound>PNChainswordSound</meleeHitSound>
+        <weaponClasses>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>2</power>
+                <cooldownTime>1.36</cooldownTime>
+                <armorPenetrationBlunt>0.605</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>32</power>
+                <cooldownTime>0.74</cooldownTime>
+                <chanceFactor>1.33</chanceFactor>
+                <armorPenetrationBlunt>3.485</armorPenetrationBlunt>
+                <armorPenetrationSharp>21.78</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>0.85</cooldownTime>
+                <armorPenetrationBlunt>1.173</armorPenetrationBlunt>
+                <armorPenetrationSharp>25.24</armorPenetrationSharp>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_GeneratedName">
+                <nameMaker>PN_NamerChainSword</nameMaker>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--==================================== 로열해머 ====================================-->
+
+    <ThingDef ParentName="PN_BaseWeapon_Bladelink">
+        <defName>PN_RoyalHammer_Bladelink</defName>
+        <label>PnL Storm Hammer</label>
+        <description>[caution] : Automaton exclusive weapon.\n\nWarhammer used by the Automaton RoyalGuards. It has a built-in overcharge core that electrocutes when attacking an enemy, causing electrical burns.</description>
+        <statBases>
+            <MarketValue>3000</MarketValue>
+            <Mass>4</Mass>
+            <Bulk>8.5</Bulk>
+            <MeleeCounterParryBonus>0.50</MeleeCounterParryBonus>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeCritChance>1.60</MeleeCritChance>
+            <MeleeParryChance>0.40</MeleeParryChance>
+            <MeleeDodgeChance>0.40</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <equippedAngleOffset>0</equippedAngleOffset>
+        <graphicData Class="AutomataRace.GraphicData_Sprite">
+            <texPath>Things/Weapons/PNPersonaHammer</texPath>
+            <graphicClass>AutomataRace.Graphic_Sprite</graphicClass>
+            <color>(255,255,255)</color>
+            <totalFrameLength>170</totalFrameLength>
+            <keyFrames>
+                <li>
+                    <frame>0</frame>
+                    <index>0</index>
+                </li>
+                <li>
+                    <frame>120</frame>
+                    <index>1</index>
+                </li>
+                <li>
+                    <frame>125</frame>
+                    <index>2</index>
+                </li>
+                <li>
+                    <frame>130</frame>
+                    <index>0</index>
+                </li>
+                <li>
+                    <frame>165</frame>
+                    <index>1</index>
+                </li>
+            </keyFrames>
+        </graphicData>
+        <soundInteract>Interact_BladelinkZeusHammer</soundInteract>
+        <meleeHitSound>MeleeHit_BladelinkZeusHammer</meleeHitSound>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleeBlunt</li>
+        </weaponClasses>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>4</power>
+                <cooldownTime>1.62</cooldownTime>
+                <chanceFactor>0.10</chanceFactor>
+                <armorPenetrationBlunt>1.21</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>head</label>
+                <capacities>
+                    <li>PN_ElectricalBluntTool</li>
+                </capacities>
+                <power>49</power>
+                <extraMeleeDamages>
+                    <li>
+                        <def>EMP</def>
+                        <amount>8</amount>
+                    </li>
+                </extraMeleeDamages>
+                <cooldownTime>2.24</cooldownTime>
+                <armorPenetrationBlunt>190.575</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Head</linkedBodyPartsGroup>
+                <chanceFactor>0.30</chanceFactor>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <!--==================================== 스톰랜스 ====================================-->
+
+    <ThingDef ParentName="PN_BaseWeapon_Bladelink">
+        <defName>PN_StormLance_Bladelink</defName>
+        <label>PnL storm lance</label>
+        <description>[caution] : Automaton exclusive weapon.\n\nLance used by the Automaton RoyalGuards. It has a built-in overcharge core that electrocutes when attacking an enemy, causing electrical burns.</description>
+        <statBases>
+            <MarketValue>3000</MarketValue>
+            <Mass>4</Mass>
+            <Bulk>8.5</Bulk>
+            <MeleeCounterParryBonus>0.50</MeleeCounterParryBonus>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeCritChance>1.60</MeleeCritChance>
+            <MeleeParryChance>0.40</MeleeParryChance>
+            <MeleeDodgeChance>0.40</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <graphicData Class="AutomataRace.GraphicData_Sprite">
+            <texPath>Things/Weapons/PNStormLance</texPath>
+            <graphicClass>AutomataRace.Graphic_Sprite</graphicClass>
+            <color>(255,255,255)</color>
+            <totalFrameLength>170</totalFrameLength>
+            <keyFrames>
+                <li>
+                    <frame>0</frame>
+                    <index>0</index>
+                </li>
+                <li>
+                    <frame>120</frame>
+                    <index>1</index>
+                </li>
+                <li>
+                    <frame>125</frame>
+                    <index>2</index>
+                </li>
+                <li>
+                    <frame>130</frame>
+                    <index>0</index>
+                </li>
+                <li>
+                    <frame>165</frame>
+                    <index>1</index>
+                </li>
+            </keyFrames>
+        </graphicData>
+        <soundInteract>Interact_BladelinkZeusHammer</soundInteract>
+        <meleeHitSound>MeleeHit_BladelinkZeusHammer</meleeHitSound>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleeBlunt</li>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.53</cooldownTime>
+                <chanceFactor>0.10</chanceFactor>
+                <armorPenetrationBlunt>0.968</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>side</label>
+                <capacities>
+                    <li>PN_ElectricalBluntTool</li>
+                </capacities>
+                <power>28</power>
+                <extraMeleeDamages>
+                    <li>
+                        <def>EMP</def>
+                        <amount>8</amount>
+                    </li>
+                </extraMeleeDamages>
+                <cooldownTime>1.03</cooldownTime>
+                <chanceFactor>0.66</chanceFactor>
+                <armorPenetrationBlunt>111.6</armorPenetrationBlunt>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>PN_ElectricalStabTool</li>
+                </capacities>
+                <power>26</power>
+                <extraMeleeDamages>
+                    <li>
+                        <def>EMP</def>
+                        <amount>8</amount>
+                    </li>
+                </extraMeleeDamages>
+                <cooldownTime>0.96</cooldownTime>
+                <armorPenetrationBlunt>2.478</armorPenetrationBlunt>
+                <armorPenetrationSharp>38.72</armorPenetrationSharp>
+            </li>
+        </tools>
+        <comps>
+            <li Class="SYS.CompProperties_WeaponExtention">
+                <littleDown>True</littleDown>
+                <northOffset>
+                    <position>(0.2,0,0.25)</position>
+                    <angle>-45</angle>
+                </northOffset>
+                <southOffset>
+                    <position>(-0.25,0.3,0.2)</position>
+                    <angle>45</angle>
+                </southOffset>
+                <eastOffset>
+                    <position>(0.15,0.3,0.2)</position>
+                    <angle>-45</angle>
+                </eastOffset>
+                <westOffset>
+                    <position>(-0.15,-0.3,0.2)</position>
+                    <angle>45</angle>
+                </westOffset>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

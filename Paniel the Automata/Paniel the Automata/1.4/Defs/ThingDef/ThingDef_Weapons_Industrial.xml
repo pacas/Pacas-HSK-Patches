@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="PN_BaseMeleeWeapon" Abstract="True" ParentName="SK_BaseMeleeWeapon">
+        <techLevel>Spacer</techLevel>
+        <smeltable>true</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <thingCategories>
+            <li>PNMeleeWeapon</li>
+        </thingCategories>
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>PN_AutomatonBench</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+        </recipeMaker>
+        <weaponTags>
+            <li>PN_Melee</li>
+        </weaponTags>
+        <comps>
+            <li Class="CompProperties_Styleable"/>
+        </comps>
+    </ThingDef>
+
+    <ThingDef Name="PN_BaseMeleeWeapon_Sharp" ParentName="PN_BaseMeleeWeapon" Abstract="True">
+        <weaponClasses>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+    </ThingDef>
+
+    <ThingDef Name="PN_BaseMeleeWeapon_Blunt" ParentName="PN_BaseMeleeWeapon" Abstract="True">
+        <weaponClasses>
+            <li>MeleeBlunt</li>
+        </weaponClasses>
+    </ThingDef>
+
+    <!--==================================== 원거리 베이스 ====================================-->
+    <ThingDef Name="PN_BaseMakeableGun" ParentName="SK_BaseGun" Abstract="True">
+        <weaponTags>
+            <li>PN_Gun</li>
+        </weaponTags>
+        <thingCategories>
+            <li>PNRangeWeapon</li>
+        </thingCategories>
+    </ThingDef>
+
+
+    <!--==================================== 삽 ====================================-->
+    <ThingDef ParentName="PN_BaseMeleeWeapon_Blunt">
+        <defName>PN_Shovel</defName>
+        <label>PnL shovel</label>
+        <description>It's a small shovel. Useful for farming, mining and construction. It looks powerful even when used as a weapon.</description>
+        <graphicData>
+            <texPath>Things/Weapons/PNShovel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <weaponTags>
+            <li>PN_Shovel</li>
+        </weaponTags>
+        <costStuffCount>40</costStuffCount>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>1.2</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>shovel blade</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>shovel head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>Smithing</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <equippedStatOffsets>
+            <MiningSpeed>0.15</MiningSpeed>
+            <PlantWorkSpeed>0.15</PlantWorkSpeed>
+            <ConstructionSpeed>0.05</ConstructionSpeed>
+        </equippedStatOffsets>
+    </ThingDef>
+
+    <!--==================================== 체인소드 ====================================-->
+    <ThingDef ParentName="PN_BaseMeleeWeapon_Sharp">
+        <defName>PN_Chainsword</defName>
+        <label>PnL chainsword</label>
+        <description>[caution] : Automaton exclusive weapon.\n\nA sword with a rotating chain saw blade. It works by linking with the automaton and receiving power.</description>
+        <graphicData>
+            <texPath>Things/Weapons/PNSword</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <meleeHitSound>PNChainswordSound</meleeHitSound>
+        <weaponTags>
+            <li>PN_Chainsword</li>
+        </weaponTags>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <stuffCategories>
+            <li>SolidMetallic</li>
+        </stuffCategories>
+        <costStuffCount>60</costStuffCount>
+        <costList>
+            <ComponentSpacer>4</ComponentSpacer>
+            <AdvMechanism>2</AdvMechanism>
+            <Microchips>1</Microchips>
+        </costList>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>PNRP_AutomatonWeapons</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <equippedStatOffsets>
+            <PlantWorkSpeed>0.25</PlantWorkSpeed>
+        </equippedStatOffsets>
+    </ThingDef>
+
+    <!--==================================== 리볼버 ====================================-->
+    <ThingDef ParentName="PN_BaseMakeableGun">
+        <defName>PN_Revolver</defName>
+        <label>PnL revolver</label>
+        <description>A revolver similar to a shotgun that fires from six barrels at once.</description>
+        <graphicData>
+            <texPath>Things/Weapons/PNRevolver</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <uiIconScale>1</uiIconScale>
+        <soundInteract>Interact_Revolver</soundInteract>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <Mass>1.6</Mass>
+            <AccuracyTouch>0.50</AccuracyTouch>
+            <AccuracyShort>0.35</AccuracyShort>
+            <AccuracyMedium>0.15</AccuracyMedium>
+            <AccuracyLong>0.05</AccuracyLong>
+            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+            <Suppressability>-0.25</Suppressability>
+        </equippedStatOffsets>
+        <weaponTags>
+            <li>PN_Revolver</li>
+        </weaponTags>
+        <verbs>
+            <li Class="PNTorgue.Verb_Properties_ShotGun">
+                <verbClass>PNTorgue.Verb_Shoot_ShotGun</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>PN_Bullet_Revolver_Volley</defaultProjectile>
+                <warmupTime>0.5</warmupTime>
+                <range>12.9</range>
+                <burstShotCount>1</burstShotCount>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <soundCast>Shot_Revolver</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <pelletCount>6</pelletCount>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <weaponClasses>
+            <li>ShortShots</li>
+            <li>RangedLight</li>
+        </weaponClasses>
+        <smeltProducts>
+            <Pistol_Component>1</Pistol_Component>
+            <Weapon_Parts>1</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+
+    <!--==================================== 레버액션 ====================================-->
+    <ThingDef ParentName="PN_BaseMakeableGun">
+        <defName>PN_Rifle</defName>
+        <label>PnL rifle</label>
+        <description>Lever action rifle produced by PnL industry.</description>
+        <graphicData>
+            <texPath>Things/Weapons/PNRifle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>40000</WorkToMake>
+            <Mass>3.5</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.65</AccuracyMedium>
+            <AccuracyLong>0.55</AccuracyLong>
+            <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+            <Suppressability>-0.35</Suppressability>
+        </equippedStatOffsets>
+        <comps>
+            <li Class="SYS.CompProperties_Sheath">
+                <sheathOnlyGraphicData>
+                    <texPath>Things/Weapons/SYS/PNRifle_Sheath</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                </sheathOnlyGraphicData>
+                <fullGraphicData>
+                    <texPath>Things/Weapons/SYS/PNRifle_Full</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                </fullGraphicData>
+                <drawPosition>Back</drawPosition>
+                <!--x축 (-서 +동) , 레이어 , y축 (-남 +북)-->
+                <northOffset>
+                    <position>(0.15,0.3,0)</position>
+                    <angle>-45</angle>
+                </northOffset>
+                <southOffset>
+                    <position>(-0.15,-0.3,0)</position>
+                    <angle>-45</angle>
+                </southOffset>
+                <eastOffset>
+                    <position>(-0.15,-0.3,0)</position>
+                    <angle>-30</angle>
+                </eastOffset>
+                <westOffset>
+                    <position>(0.15,-0.3,0)</position>
+                    <angle>30</angle>
+                </westOffset>
+            </li>
+        </comps>
+        <verbs>
+        </verbs>
+        <weaponTags>
+            <li>PN_Rifle</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <smeltProducts>
+            <Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+
+    <!--==================================== 기관총 ====================================-->
+    <ThingDef ParentName="PN_BaseMakeableGun">
+        <defName>PN_Machinegun</defName>
+        <label>PnL machine gun</label>
+        <description>Machine gun produced by PnL industry.</description>
+        <graphicData>
+            <texPath>Things/Weapons/PNMachinegun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>60000</WorkToMake>
+            <Mass>10</Mass>
+            <AccuracyTouch>0.15</AccuracyTouch>
+            <AccuracyShort>0.25</AccuracyShort>
+            <AccuracyMedium>0.25</AccuracyMedium>
+            <AccuracyLong>0.18</AccuracyLong>
+            <RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+            <Suppressability>-0.45</Suppressability>
+            <MoveSpeed>-0.65</MoveSpeed>
+        </equippedStatOffsets>
+        <comps>
+            <li Class="SYS.CompProperties_Sheath">
+                <sheathOnlyGraphicData>
+                    <texPath>Things/Weapons/SYS/PNMachinegun_Sheath</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                </sheathOnlyGraphicData>
+                <fullGraphicData>
+                    <texPath>Things/Weapons/SYS/PNMachinegun_Full</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                </fullGraphicData>
+                <drawPosition>Back</drawPosition>
+                <northOffset>
+                    <position>(0,0.3,0.05)</position>
+                    <angle>25</angle>
+                </northOffset>
+                <southOffset>
+                    <position>(0,-0.3,0.05)</position>
+                    <angle>-25</angle>
+                </southOffset>
+                <eastOffset>
+                    <position>(-0.15,-0.3,0.05)</position>
+                    <angle>70</angle>
+                </eastOffset>
+                <westOffset>
+                    <position>(0.15,-0.3,0.05)</position>
+                    <angle>-70</angle>
+                </westOffset>
+            </li>
+        </comps>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>PN_Bullet_Machinegun</defaultProjectile>
+                <warmupTime>2.6</warmupTime>
+                <range>30.9</range>
+                <burstShotCount>40</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <soundCast>Shot_AssaultRifle</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <weaponTags>
+            <li>PN_Machinegun</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>11.7</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <smeltProducts>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>7</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+
+    <!--==================================== 포터블 캐논 ====================================-->
+    <ThingDef ParentName="PN_BaseMakeableGun">
+        <defName>PN_Cannon</defName>
+        <label>PnL portable cannon</label>
+        <description>Portable cannon produced by PnL industry.</description>
+        <graphicData>
+            <texPath>Things/Weapons/PNCannon</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <statBases>
+            <WorkToMake>68000</WorkToMake>
+            <Mass>9.5</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.85</AccuracyMedium>
+            <AccuracyLong>0.75</AccuracyLong>
+            <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+            <Suppressability>-0.45</Suppressability>
+            <MoveSpeed>-0.65</MoveSpeed>
+        </equippedStatOffsets>
+        <comps>
+            <li Class="SYS.CompProperties_Sheath">
+                <sheathOnlyGraphicData>
+                    <texPath>Things/Weapons/SYS/PNCannon_Sheath</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                </sheathOnlyGraphicData>
+                <fullGraphicData>
+                    <texPath>Things/Weapons/SYS/PNCannon_Full</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                </fullGraphicData>
+                <drawPosition>Back</drawPosition>
+                <northOffset>
+                    <position>(0,0.3,-0.05)</position>
+                    <angle>25</angle>
+                </northOffset>
+                <southOffset>
+                    <position>(0,-0.3,-0.05)</position>
+                    <angle>-25</angle>
+                </southOffset>
+                <eastOffset>
+                    <position>(-0.15,-0.3,-0.05)</position>
+                    <angle>70</angle>
+                </eastOffset>
+                <westOffset>
+                    <position>(0.15,-0.3,-0.05)</position>
+                    <angle>-70</angle>
+                </westOffset>
+            </li>
+        </comps>
+        <verbs>
+        </verbs>
+        <weaponTags>
+            <li>PN_Cannon</li>
+        </weaponTags>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>15.7</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <smeltProducts>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+            <Plastic>4</Plastic>
+        </smeltProducts>
+    </ThingDef>
+
+    <DamageDef ParentName="Bomb">
+        <defName>PN_Bomb_Cannon</defName>
+        <label>bomb</label>
+        <defaultDamage>50</defaultDamage>
+    </DamageDef>
+
+    <!--==================================== 일회용 레일건 ====================================-->
+    <ThingDef ParentName="SK_BaseGun">
+        <defName>PN_PrototypeRailGun</defName>
+        <label>PnL prototype rail gun</label>
+        <description>An electrically charged electromagnetic projectile launcher.</description>
+        <tickerType>Normal</tickerType>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Weapons/PNPrototypeRailGun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>2500</MarketValue>
+            <Mass>8</Mass>
+            <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>PN_PrototypeRailGun</li>
+        </weaponTags>
+        <thingCategories>
+            <li>PNRangeWeapon</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>RewardStandardLowFreq</li>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_ShootOneUse</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>PN_Bullet_RailGun</defaultProjectile>
+                <forcedMissRadius>0.1</forcedMissRadius>
+                <warmupTime>4.5</warmupTime>
+                <ai_AvoidFriendlyFireRadius>8</ai_AvoidFriendlyFireRadius>
+                <range>44.9</range>
+                <burstShotCount>1</burstShotCount>
+                <soundAiming>PN_PrototypeRailGun_Warmup_Sound</soundAiming>
+                <soundCast>PN_PrototypeRailGun_Fire_Sound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <onlyManualCast>true</onlyManualCast>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>11.7</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+        <comps Inherit="false">
+            <li Class="CompProperties_Forbiddable"/>
+            <li>
+                <compClass>CompEquippable</compClass>
+            </li>
+            <li Class="CompProperties_Styleable"/>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtWeaponMelee</nameMaker>
+                <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+                <minQualityForArtistic>Excellent</minQualityForArtistic>
+            </li>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>3.8</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+            </li>
+            <li Class="SYS.CompProperties_Sheath">
+                <sheathOnlyGraphicData>
+                    <texPath>Things/Weapons/SYS/PNPrototypeRailGun_Sheath</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                </sheathOnlyGraphicData>
+                <fullGraphicData>
+                    <texPath>Things/Weapons/SYS/PNPrototypeRailGun_Full</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                </fullGraphicData>
+                <drawPosition>Back</drawPosition>
+                <northOffset>
+                    <position>(0,0.3,0.05)</position>
+                    <angle>25</angle>
+                </northOffset>
+                <southOffset>
+                    <position>(0,-0.3,0.05)</position>
+                    <angle>-25</angle>
+                </southOffset>
+                <eastOffset>
+                    <position>(-0.15,-0.3,0.05)</position>
+                    <angle>70</angle>
+                </eastOffset>
+                <westOffset>
+                    <position>(0.15,-0.3,0.05)</position>
+                    <angle>-70</angle>
+                </westOffset>
+            </li>
+        </comps>
+        <equippedAngleOffset>45</equippedAngleOffset>
+        <smeltProducts>
+            <Laser_Component>1</Laser_Component>
+            <Weapon_Parts>12</Weapon_Parts>
+            <Plastic>9</Plastic>
+        </smeltProducts>
+        <weaponClasses>
+            <li>Ultratech</li>
+        </weaponClasses>
+    </ThingDef>
+
+</Defs>

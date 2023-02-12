@@ -77,8 +77,8 @@
   <PN_SyncGood_Testsubject.label>실험 모델 (상급)</PN_SyncGood_Testsubject.label>
   <PN_SyncAwful_Failure.description>이 오토마톤은 생산된 후 끔찍 등급을 받았습니다.</PN_SyncAwful_Failure.description>
   <PN_SyncAwful_Failure.label>실패작 (끔찍)</PN_SyncAwful_Failure.label>
-  <PN_SyncGood_Failure.description>이 오토마톤은 생산된 후 빈약 등급을 받았습니다.</PN_SyncGood_Failure.description>
-  <PN_SyncGood_Failure.label>실패작 (빈약)</PN_SyncGood_Failure.label>
+  <PN_SyncPoor_Failure.description>이 오토마톤은 생산된 후 빈약 등급을 받았습니다.</PN_SyncPoor_Failure.description>
+  <PN_SyncPoor_Failure.label>실패작 (빈약)</PN_SyncPoor_Failure.label>
   <PN_SyncNormal_Modified.description>이 오토마톤은 생산된 후 허가되지 않은 방법으로 개조되었습니다.</PN_SyncNormal_Modified.description>
   <PN_SyncNormal_Modified.label>개조된 모델</PN_SyncNormal_Modified.label>
   <PN_ExperimentalModuleHediff.label>커스텀 코어 임플란트</PN_ExperimentalModuleHediff.label>
@@ -161,4 +161,48 @@
   <PN_IntensiveMedicalModuleHediff.description>집중 의료 모듈을 착용해 생성된 상태.</PN_IntensiveMedicalModuleHediff.description>
   <PN_FieldMedicModuleHediff.label>야전 의료 모듈</PN_FieldMedicModuleHediff.label>
   <PN_FieldMedicModuleHediff.description>야전 의료 모듈을 착용해 생성된 상태.</PN_FieldMedicModuleHediff.description>
+
+  <PN_PnLAuthenticated.label>PnL 인증</PN_PnLAuthenticated.label>
+  <PN_PnLAuthenticated.description>이 오토마톤은 PnL에서 만든 정품입니다.</PN_PnLAuthenticated.description>
+  <PN_ChainCutHediff.label>베임</PN_ChainCutHediff.label>
+  <PN_ChainCutHediff.labelNoun>베임</PN_ChainCutHediff.labelNoun>
+  <PN_ChainCutHediff.description>베임.</PN_ChainCutHediff.description>
+  <PN_ChainCutHediff.injuryProps.destroyedLabel>잘림</PN_ChainCutHediff.injuryProps.destroyedLabel>
+  <PN_ChainCutHediff.injuryProps.destroyedOutLabel>잘림</PN_ChainCutHediff.injuryProps.destroyedOutLabel>
+  <PN_ChainCrackHediff.label>골절</PN_ChainCrackHediff.label>
+  <PN_ChainCrackHediff.labelNoun>골절</PN_ChainCrackHediff.labelNoun>
+  <PN_ChainCrackHediff.description>골절.</PN_ChainCrackHediff.description>
+  <PN_ChainCrackHediff.injuryProps.destroyedLabel>조각남</PN_ChainCrackHediff.injuryProps.destroyedLabel>
+  <PN_ChainCutHediffMono.label>베임</PN_ChainCutHediffMono.label>
+  <PN_ChainCutHediffMono.labelNoun>베임</PN_ChainCutHediffMono.labelNoun>
+  <PN_ChainCutHediffMono.description>베임.</PN_ChainCutHediffMono.description>
+  <PN_ChainCutHediffMono.injuryProps.destroyedLabel>잘림</PN_ChainCutHediffMono.injuryProps.destroyedLabel>
+  <PN_ChainCutHediffMono.injuryProps.destroyedOutLabel>잘림</PN_ChainCutHediffMono.injuryProps.destroyedOutLabel>
+  <PN_ChainCrackHediffMono.label>골절</PN_ChainCrackHediffMono.label>
+  <PN_ChainCrackHediffMono.labelNoun>골절</PN_ChainCrackHediffMono.labelNoun>
+  <PN_ChainCrackHediffMono.description>골절.</PN_ChainCrackHediffMono.description>
+  <PN_ChainCutHediffMono.injuryProps.destroyedLabel>조각남</PN_ChainCutHediffMono.injuryProps.destroyedLabel>
+  <PN_ElectricalCrushHediff.label>으깨짐</PN_ElectricalCrushHediff.label>
+  <PN_ElectricalCrushHediff.labelNoun>으깨짐</PN_ElectricalCrushHediff.labelNoun>
+  <PN_ElectricalCrushHediff.description>으깨짐.</PN_ElectricalCrushHediff.description>
+  <PN_ElectricalCrushHediff.injuryProps.destroyedLabel>으깨짐</PN_ElectricalCrushHediff.injuryProps.destroyedLabel>
+  <PN_ElectricalBruiseHediff.label>타박상</PN_ElectricalBruiseHediff.label>
+  <PN_ElectricalBruiseHediff.labelNoun>타박상</PN_ElectricalBruiseHediff.labelNoun>
+  <PN_ElectricalBruiseHediff.description>타박상.</PN_ElectricalBruiseHediff.description>
+  <PN_ElectricalBruiseHediff.injuryProps.destroyedLabel>파괴됨</PN_ElectricalBruiseHediff.injuryProps.destroyedLabel>
+  <PN_ElectricalBurn.label>감전 화상</PN_ElectricalBurn.label>
+  <PN_ElectricalBurn.labelNoun>감전 화상</PN_ElectricalBurn.labelNoun>
+  <PN_ElectricalBurn.description>감전 화상.</PN_ElectricalBurn.description>
+  <PN_ElectricalBurn.injuryProps.destroyedLabel>불탐</PN_ElectricalBurn.injuryProps.destroyedLabel>
+  <PN_ElectricalBurn.injuryProps.destroyedOutLabel>불탐</PN_ElectricalBurn.injuryProps.destroyedOutLabel>
+  <PN_ElectricalStabHediff.label>찔림</PN_ElectricalStabHediff.label>
+  <PN_ElectricalStabHediff.labelNoun>찔림</PN_ElectricalStabHediff.labelNoun>
+  <PN_ElectricalStabHediff.description>찔림.</PN_ElectricalStabHediff.description>
+  <PN_ElectricalStabHediff.injuryProps.destroyedLabel>잘림</PN_ElectricalStabHediff.injuryProps.destroyedLabel>
+  <PN_ElectricalStabHediff.injuryProps.destroyedOutLabel>잘림</PN_ElectricalStabHediff.injuryProps.destroyedOutLabel>
+
+  <PN_ArrayModuleHediff.label>대역폭 모듈</PN_ArrayModuleHediff.label>
+  <PN_ArrayModuleHediff.description>대역폭 모듈을 착용해서 생성된 상태</PN_ArrayModuleHediff.description>
+  <PN_IntegratorModuleHediff.label>통합자 모듈</PN_IntegratorModuleHediff.label>
+  <PN_IntegratorModuleHediff.description>통합자 모듈을 착용해서 생성된 상태</PN_IntegratorModuleHediff.description>
 </LanguageData>
