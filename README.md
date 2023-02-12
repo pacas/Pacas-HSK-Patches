@@ -36,17 +36,17 @@ How to download only the mods you are interested in:<br>
 | Edge of Descension Monoblades | 1.3 / 1.4 | --- |
 | Fireflies | 1.3 | Waiting for the update |
 | Frontier Developement Shields | 1.3 | Waiting for the update |
-| Gloomy Decor Pack | 1.3 | Original deco mod is dead, final release |
+| Gloomy Decor Pack | 1.3 | Original deco mod is dead, final release? |
 | Harvest Post Mortem | 1.3 / 1.4 | --- |
 | Maelstroms Metals | 1.3 / 1.4 | --- |
 | Nerve and Sleep Gas Shells | 1.3 | Original mod is dead, final release |
-| Paniel the Automata | 1.3 | Only paid update |
+| Paniel the Automata | 1.3 / 1.4 | --- |
 | Primitive Storage | 1.3 / 1.4 | --- |
 | Rabbie Race | 1.3 | In progress |
 | Revia Race | 1.3 / 1.4 | --- |
 | Rimfeller EasyMod | 1.3 / 1.4 | --- |
 | Seven Seraph Weapons | 1.3 / 1.4 | --- |
-| Tesla Coil | 1.3 | In progress 
+| Tesla Coil | 1.3 | In progress |
 | Utility Columns | 1.3 / 1.4 | --- |
 <br>
 <img src="https://i.imgur.com/fdngbbh.png"><br>
