@@ -60,7 +60,7 @@
             <shaderType>TransparentPostLight</shaderType>
         </graphicData>
         <thingClass>Projectile_Explosive</thingClass>
-        <projectile>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
             <damageDef>Bomb</damageDef>
             <!-- damage amount is the damage def default -->
             <damageAmountBase>30</damageAmountBase>
