@@ -119,6 +119,9 @@
             <MarketValue>1.1</MarketValue>
             <Nutrition>0.07</Nutrition>
         </statBases>
+        <thingCategories>
+			<li>BasicPlantFoodRaw</li>
+		</thingCategories>
         <ingestible>
             <foodType>VegetableOrFruit</foodType>
         </ingestible>
