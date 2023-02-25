@@ -261,7 +261,7 @@
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>2</drawSize>
         </graphicData>
-        <projectile>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
             <flyOverhead>false</flyOverhead>
             <damageDef>Stun</damageDef>
             <damageAmountBase>15</damageAmountBase>
@@ -346,7 +346,7 @@
         <tickDamageRate>20</tickDamageRate>
         <dealsDamageOnce>true</dealsDamageOnce>
         <minDistanceToAffect>2</minDistanceToAffect>
-        <projectile>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
             <damageDef>Flame</damageDef>
             <flyOverhead>false</flyOverhead>
             <damageAmountBase>10</damageAmountBase>
@@ -375,7 +375,7 @@
         <tickDamageRate>20</tickDamageRate>
         <dealsDamageOnce>true</dealsDamageOnce>
         <minDistanceToAffect>2</minDistanceToAffect>
-        <projectile>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
             <damageDef>AA_AcidSpit</damageDef>
             <flyOverhead>false</flyOverhead>
             <damageAmountBase>15</damageAmountBase>
@@ -403,7 +403,7 @@
         <tickDamageRate>20</tickDamageRate>
         <dealsDamageOnce>true</dealsDamageOnce>
         <minDistanceToAffect>2</minDistanceToAffect>
-        <projectile>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
             <damageDef>AA_AcidSpit</damageDef>
             <flyOverhead>false</flyOverhead>
             <damageAmountBase>20</damageAmountBase>
@@ -431,7 +431,7 @@
         <tickDamageRate>20</tickDamageRate>
         <dealsDamageOnce>true</dealsDamageOnce>
         <minDistanceToAffect>2</minDistanceToAffect>
-        <projectile>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
             <damageDef>Flame</damageDef>
             <flyOverhead>false</flyOverhead>
             <damageAmountBase>10</damageAmountBase>

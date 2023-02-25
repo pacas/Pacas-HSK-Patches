@@ -34,7 +34,7 @@
 											<texPath>Things/Projectiles/AA_PoisonBolt</texPath>
 											<graphicClass>Graphic_Single</graphicClass>
 										</graphicData>
-										<projectile>
+										<projectile Class="CombatExtended.ProjectilePropertiesCE">
 											<flyOverhead>false</flyOverhead>
 											<damageDef>AA_ToxicBolt</damageDef>
 											<damageAmountBase>10</damageAmountBase>
