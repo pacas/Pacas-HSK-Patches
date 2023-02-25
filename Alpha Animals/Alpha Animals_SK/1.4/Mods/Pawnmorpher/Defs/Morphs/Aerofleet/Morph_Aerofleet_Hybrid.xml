@@ -526,14 +526,15 @@
         <comps>
             <li Class="AnimalBehaviours.CompProperties_Floating">
 
-			</li>
+            </li>
         </comps>
         <alienRace>
             <generalSettings>
                 <humanRecipeImport>true</humanRecipeImport>
                 <alienPartGenerator>
                     <headTypes>
-                        <li>Normal</li>
+                        <li>Male_AverageNormal</li>
+                        <li>Female_AverageNormal</li>
                     </headTypes>
                     <colorChannels>
                         <li>

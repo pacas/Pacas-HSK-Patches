@@ -21,8 +21,10 @@
                             <Fat>(0,0.4)</Fat>
                         </bodyTypes>
                         <headTypes>
-                            <Average_Wide>(-0.01,0.005)</Average_Wide>
-                            <Average_Pointy>(0,0.005)</Average_Pointy>
+                            <Male_AverageWide>(-0.01,0.005)</Male_AverageWide>
+                            <Female_AverageWide>(-0.01,0.005)</Female_AverageWide>
+                            <Male_AveragePointy>(0,0.005)</Male_AveragePointy>
+                            <Female_AveragePointy>(0,0.005)</Female_AveragePointy>
                         </headTypes>
                     </south>
                     <north>
@@ -34,8 +36,10 @@
                             <Fat>(0.0,0.4)</Fat>
                         </bodyTypes>
                         <headTypes>
-                            <Average_Wide>(-0.01,0.005)</Average_Wide>
-                            <Average_Pointy>(0,0.005)</Average_Pointy>
+                            <Male_AverageWide>(-0.01,0.005)</Male_AverageWide>
+                            <Female_AverageWide>(-0.01,0.005)</Female_AverageWide>
+                            <Male_AveragePointy>(0,0.005)</Male_AveragePointy>
+                            <Female_AveragePointy>(0,0.005)</Female_AveragePointy>
                         </headTypes>
                     </north>
                     <east>
@@ -47,11 +51,16 @@
                             <Fat>(-0.1,0.4)</Fat>
                         </bodyTypes>
                         <headTypes>
-                            <Average_Wide>(-0.01,0)</Average_Wide>
-                            <Average_Pointy>(0.01,0)</Average_Pointy>
-                            <Narrow_Normal>(0.07,-0.05)</Narrow_Normal>
-                            <Narrow_Wide>(0.07,-0.05)</Narrow_Wide>
-                            <Narrow_Pointy>(0.07,-0.06)</Narrow_Pointy>
+                            <Male_AverageWide>(-0.01,0)</Male_AverageWide>
+                            <Female_AverageWide>(-0.01,0)</Female_AverageWide>
+                            <Male_AveragePointy>(0.01,0)</Male_AveragePointy>
+                            <Female_AveragePointy>(0.01,0)</Female_AveragePointy>
+                            <Male_NarrowNormal>(0.07,-0.05)</Male_NarrowNormal>
+                            <Female_NarrowNormal>(0.07,-0.05)</Female_NarrowNormal>
+                            <Male_NarrowWide>(0.07,-0.05)</Male_NarrowWide>
+                            <Female_NarrowWide>(0.07,-0.05)</Female_NarrowWide>
+                            <Male_NarrowPointy>(0.07,-0.06)</Male_NarrowPointy>
+                            <Female_NarrowPointy>(0.07,-0.06)</Female_NarrowPointy>
                         </headTypes>
                     </east>
                 </offsets>
@@ -75,10 +84,14 @@
                             <Fat>(0,0.4)</Fat>
                         </bodyTypes>
                         <headTypes>
-                            <Average_Pointy>(-0.01,0)</Average_Pointy>
-                            <Narrow_Normal>(0,0.02)</Narrow_Normal>
-                            <Narrow_Wide>(-0.02,0.02)</Narrow_Wide>
-                            <Narrow_Pointy>(0,-0.01)</Narrow_Pointy>
+                            <Male_AveragePointy>(-0.01,0)</Male_AveragePointy>
+                            <Female_AveragePointy>(-0.01,0)</Female_AveragePointy>
+                            <Male_NarrowNormal>(0,0.02)</Male_NarrowNormal>
+                            <Female_NarrowNormal>(0,0.02)</Female_NarrowNormal>
+                            <Male_NarrowWide>(-0.02,0.02)</Male_NarrowWide>
+                            <Female_NarrowWide>(-0.02,0.02)</Female_NarrowWide>
+                            <Male_NarrowPointy>(0,-0.01)</Male_NarrowPointy>
+                            <Female_NarrowPointy>(0,-0.01)</Female_NarrowPointy>
                         </headTypes>
                     </south>
                     <north>
@@ -90,10 +103,14 @@
                             <Fat>(0,0.4)</Fat>
                         </bodyTypes>
                         <headTypes>
-                            <Average_Pointy>(-0.01,0)</Average_Pointy>
-                            <Narrow_Normal>(0,0.02)</Narrow_Normal>
-                            <Narrow_Wide>(-0.02,0.02)</Narrow_Wide>
-                            <Narrow_Pointy>(0,-0.01)</Narrow_Pointy>
+                            <Male_AveragePointy>(-0.01,0)</Male_AveragePointy>
+                            <Female_AveragePointy>(-0.01,0)</Female_AveragePointy>
+                            <Male_NarrowNormal>(0,0.02)</Male_NarrowNormal>
+                            <Female_NarrowNormal>(0,0.02)</Female_NarrowNormal>
+                            <Male_NarrowWide>(-0.02,0.02)</Male_NarrowWide>
+                            <Female_NarrowWide>(-0.02,0.02)</Female_NarrowWide>
+                            <Male_NarrowPointy>(0,-0.01)</Male_NarrowPointy>
+                            <Female_NarrowPointy>(0,-0.01)</Female_NarrowPointy>
                         </headTypes>
                     </north>
                     <east>
@@ -105,12 +122,18 @@
                             <Fat>(-0.1,0.4)</Fat>
                         </bodyTypes>
                         <headTypes>
-                            <Average_Normal>(0.03,0.01)</Average_Normal>
-                            <Average_Wide>(0.03,0.01)</Average_Wide>
-                            <Average_Pointy>(0.035,0.01)</Average_Pointy>
-                            <Narrow_Normal>(0.07,-0.02)</Narrow_Normal>
-                            <Narrow_Wide>(0.07,-0.02)</Narrow_Wide>
-                            <Narrow_Pointy>(0.07,-0.05)</Narrow_Pointy>
+                            <Male_AverageNormal>(0.03,0.01)</Male_AverageNormal>
+                            <Female_AverageNormal>(0.03,0.01)</Female_AverageNormal>
+                            <Male_AverageWide>(0.03,0.01)</Male_AverageWide>
+                            <Female_AverageWide>(0.03,0.01)</Female_AverageWide>
+                            <Male_AveragePointy>(0.035,0.01)</Male_AveragePointy>
+                            <Female_AveragePointy>(0.035,0.01)</Female_AveragePointy>
+                            <Male_NarrowNormal>(0.07,-0.02)</Male_NarrowNormal>
+                            <Female_NarrowNormal>(0.07,-0.02)</Female_NarrowNormal>
+                            <Male_NarrowWide>(0.07,-0.02)</Male_NarrowWide>
+                            <Female_NarrowWide>(0.07,-0.02)</Female_NarrowWide>
+                            <Male_NarrowPointy>(0.07,-0.05)</Male_NarrowPointy>
+                            <Female_NarrowPointy>(0.07,-0.05)</Female_NarrowPointy>
                         </headTypes>
                     </east>
                 </offsets>

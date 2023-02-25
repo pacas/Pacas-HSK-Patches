@@ -514,12 +514,12 @@
                 <tickInterval>500</tickInterval>
                 <thoughtDef>AA_Disgust</thoughtDef>
             </li>
-			<li Class="AnimalBehaviours.CompProperties_FilthProducer">
-				<filthType>Filth_Slime</filthType> 
-				<rate>0.3</rate> 
-				<radius>1</radius> 
-				<ticksToCreateFilth>1200</ticksToCreateFilth>
-			</li>
+            <li Class="AnimalBehaviours.CompProperties_FilthProducer">
+                <filthType>Filth_Slime</filthType>
+                <rate>0.3</rate>
+                <radius>1</radius>
+                <ticksToCreateFilth>1200</ticksToCreateFilth>
+            </li>
         </comps>
         <race>
             <thinkTreeMain>Humanlike</thinkTreeMain>
@@ -546,34 +546,40 @@
                 <humanRecipeImport>true</humanRecipeImport>
                 <alienPartGenerator>
                     <headTypes>
-                        <li>Average_Normal</li>
-                        <li>Average_Wide</li>
-                        <li>Average_Pointy</li>
-                        <li>Narrow_Normal</li>
-                        <li>Narrow_Pointy</li>
-                        <li>Narrow_Wide</li>
+                        <li>Male_AverageNormal</li>
+                        <li>Male_AverageWide</li>
+                        <li>Male_AveragePointy</li>
+                        <li>Male_NarrowNormal</li>
+                        <li>Male_NarrowPointy</li>
+                        <li>Male_NarrowWide</li>
+                        <li>Female_AverageNormal</li>
+                        <li>Female_AverageWide</li>
+                        <li>Female_AveragePointy</li>
+                        <li>Female_NarrowNormal</li>
+                        <li>Female_NarrowPointy</li>
+                        <li>Female_NarrowWide</li>
                     </headTypes>
-                  <colorChannels>
-						<li>
-							<name>skin</name>
-							<first Class="ColorGenerator_Options">
-								<options>
-									<li>
-										<weight>1000</weight>
-										<only>RGB(168,106,86)</only>
-									</li>
-								</options>
-							</first>
-							<second Class="ColorGenerator_Options">
-								<options>
-									<li>
-										<weight>1000</weight>
-										<only>RGB(168,106,86)</only>
-									</li>
-								</options>
-							</second>
-						</li>
-					</colorChannels>
+                    <colorChannels>
+                        <li>
+                            <name>skin</name>
+                            <first Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>1000</weight>
+                                        <only>RGB(168,106,86)</only>
+                                    </li>
+                                </options>
+                            </first>
+                            <second Class="ColorGenerator_Options">
+                                <options>
+                                    <li>
+                                        <weight>1000</weight>
+                                        <only>RGB(168,106,86)</only>
+                                    </li>
+                                </options>
+                            </second>
+                        </li>
+                    </colorChannels>
                     <bodyAddons>
                         <li>
                             <!-- Body Tails -->
@@ -587,83 +593,83 @@
                                 
                             </hediffGraphics>
                            
-                           <offsets>
-					<south />
-					<north>
-						<bodyTypes>
-							<Male>(0,-0.40)</Male>
-							<Female>(0,-0.40)</Female>
-							<Thin>(0,-0.40)</Thin>
-							<Hulk>(0,-0.40)</Hulk>
-							<Fat>(0,-0.40)</Fat>
-						</bodyTypes>
-					</north>
-					<east>
-						<bodyTypes>
-							<Male>(0.3,-0.3)</Male>
-							<Female>(0.3,-0.3)</Female>
-							<Thin>(0.3,-0.3)</Thin>
-							<Hulk>(0.3,-0.3)</Hulk>
-							<Fat>(0.3,-0.3)</Fat>
-						</bodyTypes>
-					</east>
-				</offsets>
+                            <offsets>
+                                <south/>
+                                <north>
+                                    <bodyTypes>
+                                        <Male>(0,-0.40)</Male>
+                                        <Female>(0,-0.40)</Female>
+                                        <Thin>(0,-0.40)</Thin>
+                                        <Hulk>(0,-0.40)</Hulk>
+                                        <Fat>(0,-0.40)</Fat>
+                                    </bodyTypes>
+                                </north>
+                                <east>
+                                    <bodyTypes>
+                                        <Male>(0.3,-0.3)</Male>
+                                        <Female>(0.3,-0.3)</Female>
+                                        <Thin>(0.3,-0.3)</Thin>
+                                        <Hulk>(0.3,-0.3)</Hulk>
+                                        <Fat>(0.3,-0.3)</Fat>
+                                    </bodyTypes>
+                                </east>
+                            </offsets>
                         </li>
                     </bodyAddons>
                 </alienPartGenerator>
             </generalSettings>
-            <graphicPaths Inherit="False" ></graphicPaths>
+            <graphicPaths Inherit="False"/>
            
             <thoughtSettings>
 			
-				<replacerList>
-					<li>
-						<original>SoakingWet</original>
-						<replacer>AA_SoakingWetHelixien</replacer> 
-					</li>
-					<li>
-						<original>ObservedLayingCorpse</original>
-						<replacer>AA_SoakingWetHelixien</replacer> 
-					</li>
-					<li>
-						<original>ObservedLayingRottingCorpse</original>
-						<replacer>AA_ObservedLayingRottingCorpseHelixien</replacer> 
-					</li>
-					<li>
-						<original>WitnessedDeathAlly</original>
-						<replacer>AA_WitnessedDeathAllyHelixien</replacer> 
-					</li>
-					<li>
-						<original>WitnessedDeathNonAlly</original>
-						<replacer>AA_WitnessedDeathNonAllyHelixien</replacer> 
-					</li>
-					<li>
-						<original>ColonistLeftUnburied</original>
-						<replacer>AA_ColonistLeftUnburiedHelixien</replacer> 
-					</li>
-				</replacerList>
+                <replacerList>
+                    <li>
+                        <original>SoakingWet</original>
+                        <replacer>AA_SoakingWetHelixien</replacer>
+                    </li>
+                    <li>
+                        <original>ObservedLayingCorpse</original>
+                        <replacer>AA_SoakingWetHelixien</replacer>
+                    </li>
+                    <li>
+                        <original>ObservedLayingRottingCorpse</original>
+                        <replacer>AA_ObservedLayingRottingCorpseHelixien</replacer>
+                    </li>
+                    <li>
+                        <original>WitnessedDeathAlly</original>
+                        <replacer>AA_WitnessedDeathAllyHelixien</replacer>
+                    </li>
+                    <li>
+                        <original>WitnessedDeathNonAlly</original>
+                        <replacer>AA_WitnessedDeathNonAllyHelixien</replacer>
+                    </li>
+                    <li>
+                        <original>ColonistLeftUnburied</original>
+                        <replacer>AA_ColonistLeftUnburiedHelixien</replacer>
+                    </li>
+                </replacerList>
                 <cannotReceiveThoughts><li>AA_Disgust</li></cannotReceiveThoughts>
-                <canStillReceiveThoughts></canStillReceiveThoughts>
+                <canStillReceiveThoughts/>
             </thoughtSettings>
             <relationSettings>
-                <renamer></renamer>
+                <renamer/>
             </relationSettings>
             <raceRestriction>
-                <apparelList></apparelList>
-                <whiteApparelList></whiteApparelList>
-                <weaponList></weaponList>
-                <whiteWeaponList></whiteWeaponList>
-                <buildingList></buildingList>
-                <whiteBuildingList></whiteBuildingList>
-                <recipeList></recipeList>
-                <plantList></plantList>
-                <whitePlantList></whitePlantList>
-                <traitList></traitList>
-                <whiteTraitList></whiteTraitList>
-                <foodList></foodList>
-                <petList></petList>
-                <conceptList></conceptList>
-                <workGiverList></workGiverList>
+                <apparelList/>
+                <whiteApparelList/>
+                <weaponList/>
+                <whiteWeaponList/>
+                <buildingList/>
+                <whiteBuildingList/>
+                <recipeList/>
+                <plantList/>
+                <whitePlantList/>
+                <traitList/>
+                <whiteTraitList/>
+                <foodList/>
+                <petList/>
+                <conceptList/>
+                <workGiverList/>
             </raceRestriction>
 
         </alienRace>
