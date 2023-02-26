@@ -4,7 +4,7 @@
         <thingClass>Pawn</thingClass>
         <defName>ReviaRaceAlien</defName>
         <label>Revia</label>
-        <description>A bloodthirsty vulpine near-human.</description>
+        <description>A bloodthirsty vulpine creature with near-human appearance.</description>
         <alienRace>
             <generalSettings>
                 <minAgeForAdulthood>16</minAgeForAdulthood>
@@ -135,15 +135,15 @@
                     </colorChannels>
                     <headOffset>(0.0, 0.0)</headOffset>
                     <getsGreyAt>70</getsGreyAt>
-					<headTypes>
+                    <headTypes>
                         <li>Female_AverageNormal</li>
                         <li>Female_AverageWide</li>
                         <li>Female_AveragePointy</li>
-					</headTypes>
+                    </headTypes>
                     <bodyTypes>
                         <li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
-						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
-						<li>Female</li>
+                        <li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+                        <li>Female</li>
                     </bodyTypes>
                     <bodyAddons>
                         <li>
@@ -326,30 +326,10 @@
                     </bodyAddons>
                 </alienPartGenerator>
                 <growthAges>
-				  <li>7</li>
-				  <li>10</li>
-				  <li>13</li>
-				</growthAges>
-                <reproduction>
-					<femaleFertilityAgeFactor>
-						<points>
-							<li>(14, 0)</li>
-							<li>(20, 1)</li>
-							<li>(35, 0.8)</li>
-							<li>(60, 0.1)</li>
-							<li>(70, 0)</li>
-						</points>
-					</femaleFertilityAgeFactor>
-					<maleFertilityAgeFactor>
-						<points>
-							<li>(14, 0)</li>
-							<li>(20, 1)</li>
-							<li>(35, 0.8)</li>
-							<li>(60, 0.1)</li>
-							<li>(70, 0)</li>
-						</points>
-					</maleFertilityAgeFactor>
-				</reproduction>
+                    <li>7</li>
+                    <li>10</li>
+                    <li>13</li>
+                </growthAges>
             </generalSettings>
             <graphicPaths>
                 <skinShader>CutoutSkin</skinShader>
@@ -357,14 +337,26 @@
                     <path>Things/Pawn/Humanlike/Bodies/</path>
                     <bodytypeGraphics>
                         <Male>Things/Pawn/Humanlike/Bodies/Naked_Male</Male>
-						<Female>Things/Pawn/Humanlike/Bodies/Naked_Female</Female>
-						<Thin>Things/Pawn/Humanlike/Bodies/Naked_Thin</Thin>
+                        <Female>Things/Pawn/Humanlike/Bodies/Naked_Female</Female>
+                        <Thin>Things/Pawn/Humanlike/Bodies/Naked_Thin</Thin>
                         <Child MayRequire="ludeon.rimworld.biotech">Things/Pawn/Humanlike/Bodies/Child/Naked_Child</Child>
                         <Baby MayRequire="ludeon.rimworld.biotech">Things/Pawn/Humanlike/Bodies/Naked_Baby</Baby>
                     </bodytypeGraphics>
                 </body>
             </graphicPaths>
             <raceRestriction>
+                <xenotypeList MayRequire="ludeon.rimworld.biotech">
+                    <li>RevianXenotype</li>
+                </xenotypeList>
+                <geneList MayRequire="ludeon.rimworld.biotech">
+                    <li>ReviaTeeth</li>
+                    <li>ReviaClaws</li>
+                </geneList>
+                <whiteGeneList MayRequire="ludeon.rimworld.biotech">
+                    <li>ReviaTail</li>
+                    <li>ReviaEars</li>
+                </whiteGeneList>
+                <onlyUseRaceRestrictedXenotypes MayRequire="ludeon.rimworld.biotech">true</onlyUseRaceRestrictedXenotypes>
                 <recipeList>
                     <li>ReviaRaceBloodstoneToPalestone</li>
                     <li>ReviaRaceCraftBloodRune</li>
@@ -402,6 +394,10 @@
                     <li>
                         <raceList>
                             <li>Human</li>
+                            <li MayRequire="RunneLatki.RabbieRaceMod.skRunneLatki.RabbieRaceMod.sk">Rabbie</li>
+                            <li MayRequire="skyarkhangel.asarirace">Alien_Asari</li>
+                            <li MayRequire="Solaris.RatkinRaceMod">Ratkin</li>
+                            <li MayRequire="Nemonian.MY">Alien_Moyo</li>
                             <li>Alien_Nova</li>
                             <li>Alien_Dova</li>
                             <li>Norbal</li>
@@ -413,6 +409,10 @@
                     <li>
                         <raceList>
                             <li>Human</li>
+                            <li MayRequire="RunneLatki.RabbieRaceMod.skRunneLatki.RabbieRaceMod.sk">Rabbie</li>
+                            <li MayRequire="skyarkhangel.asarirace">Alien_Asari</li>
+                            <li MayRequire="Solaris.RatkinRaceMod">Ratkin</li>
+                            <li MayRequire="Nemonian.MY">Alien_Moyo</li>
                             <li>Alien_Nova</li>
                             <li>Alien_Dova</li>
                             <li>Norbal</li>
@@ -424,15 +424,15 @@
                 </ateThoughtSpecific>
             </thoughtSettings>
             <styleSettings>
-				<li>
-					<key>BeardDef</key>
-					<value>
-						<styleTags>
-							<li>NoBeard</li>
-						</styleTags>
-					</value>
-				</li>
-			</styleSettings>
+                <li>
+                    <key>BeardDef</key>
+                    <value>
+                        <styleTags>
+                            <li>NoBeard</li>
+                        </styleTags>
+                    </value>
+                </li>
+            </styleSettings>
         </alienRace>
         <statBases>
             <Mass>70</Mass>
@@ -493,8 +493,8 @@
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
-                <armorPenetrationSharp>0.5</armorPenetrationSharp>
-                <armorPenetrationBlunt>0.15</armorPenetrationBlunt>
+                <armorPenetrationSharp>0.9</armorPenetrationSharp>
+                <armorPenetrationBlunt>0.45</armorPenetrationBlunt>
             </li>
             <li Class="CombatExtended.ToolCE">
                 <label>head</label>
@@ -510,37 +510,29 @@
             </li>
         </tools>
         <race>
-            <thinkTreeMain>Humanlike</thinkTreeMain>
-            <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <leatherDef>Leather_Human</leatherDef>
             <useMeatFrom>Human</useMeatFrom>
-            <intelligence>Humanlike</intelligence>
-            <makesFootprints>true</makesFootprints>
             <lifeExpectancy>110</lifeExpectancy>
-            <nameCategory>HumanStandard</nameCategory>
             <body>ReviaRaceBody</body>
             <baseBodySize>0.95</baseBodySize>
             <baseHealthScale>1.15</baseHealthScale>
             <nuzzleMtbHours>3</nuzzleMtbHours>
             <foodType>OmnivoreHuman</foodType>
             <gestationPeriodDays>30.0</gestationPeriodDays>
-            <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-            <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
-            <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
             <ageGenerationCurve Inherit="false">
                 <points>
                     <li MayRequire="Ludeon.RimWorld.Biotech">(0,0)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(0.001,43)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(8,86)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(9.5,110)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(0.001, 0)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(8, 0)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(9.5, 1)</li>
                     <!-- Exclude 9.5-10 years to avoid spawning pawns who are very close to becoming adults -->
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(9.51,0)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(10,0)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(10.001,110)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(9.51, 0)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(10, 0)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(10.001, 110)</li>
                     <!-- End exclude -->
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(13.999,110)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(13.999, 110)</li>
                     <li>(14,0)</li>
-                    <li MayRequire="Ludeon.RimWorld.Biotech">(14.001,110)</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">(14.001, 110)</li>
                     <li>(16,100)</li>
                     <li>(20,100)</li>
                     <li>(30,40)</li>
@@ -555,13 +547,7 @@
                     <li>(110,0)</li>
                 </points>
             </ageGenerationCurve>
-            <hediffGiverSets>
-                <li>OrganicStandard</li>
-            </hediffGiverSets>
         </race>
-        <recipes>
-            <li>InstallPlasteelClaws</li>
-        </recipes>
         <modExtensions>
             <li Class="CombatExtended.RacePropertiesExtensionCE">
                 <bodyShape>Humanoid</bodyShape>

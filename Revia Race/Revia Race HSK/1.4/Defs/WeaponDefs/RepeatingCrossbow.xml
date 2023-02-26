@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <ThingDef ParentName="RangedWeaponMedievalBase">
+    <ThingDef ParentName="ReviaBaseRangedWeapon">
         <defName>ReviaRepeatingCrossbow</defName>
         <label>repeating crossbow</label>
         <description>A repeating crossbow made with complex mechanical parts.</description>
@@ -15,7 +15,7 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
-        <soundInteract>Crossbow_I_hold</soundInteract>
+        <soundInteract>Bow_Small</soundInteract>
         <recipeMaker>
             <researchPrerequisite>ReviaRaceIntermediateEquipment</researchPrerequisite>
             <skillRequirements>
@@ -28,22 +28,22 @@
         <costStuffCount>45</costStuffCount>
         <costList>
             <ComponentMedieval>8</ComponentMedieval>
-            <ComponentIndustrial>4</ComponentIndustrial>
-            <Mechanism>1</Mechanism>
             <Plasteel>30</Plasteel>
         </costList>
         <weaponTags>
             <li>ReviaRangedAdvanced</li>
         </weaponTags>
-        <tradeability>Sellable</tradeability>
         <statBases>
-			<Flammability>0.7</Flammability>
+            <MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>3</DeteriorationRate>
+			<SellPriceFactor>0.70</SellPriceFactor>
             <WorkToMake>9000</WorkToMake>
             <SightsEfficiency>1.1</SightsEfficiency>
             <ShotSpread>0.5</ShotSpread>
             <SwayFactor>1.12</SwayFactor>
-            <Bulk>6.0</Bulk>
-            <Mass>4.55</Mass>
+            <Bulk>4.0</Bulk>
+            <Mass>2.55</Mass>
             <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
         </statBases>
         <verbs>
@@ -52,12 +52,25 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Projectile_MetallicBolt</defaultProjectile>
 				<warmupTime>1.25</warmupTime>
-				<range>28</range>
+				<range>24</range>
                 <burstShotCount>3</burstShotCount>
 				<soundCast>Crossbow_S_hold</soundCast>
 			</li>
 		</verbs>
         <comps>
+            <li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>NamerArtWeaponGun</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+			<li Class="CompProperties_Styleable"/>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>3</magazineSize>
 				<reloadTime>1.30</reloadTime>
@@ -66,7 +79,18 @@
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<noSnapshot>True</noSnapshot>
+                <aiUseBurstMode>FALSE</aiUseBurstMode>
 			</li>
 		</comps>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>7</power>
+                <cooldownTime>1.6</cooldownTime>
+                <armorPenetrationBlunt>2.65</armorPenetrationBlunt>
+            </li>
+        </tools>
     </ThingDef>
 </Defs>

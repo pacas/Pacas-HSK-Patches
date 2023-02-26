@@ -13,13 +13,27 @@
         <comps>
             <li Class="HediffCompProperties_VerbGiver">
                 <tools>
-                    <li>
+                    <li Class="CombatExtended.ToolCE">
                         <label>claw</label>
                         <capacities>
                             <li>Scratch</li>
                         </capacities>
-                        <power>6</power>
-                        <cooldownTime>1</cooldownTime>
+                        <power>7</power>
+                        <cooldownTime>1.2</cooldownTime>
+                        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+                        <armorPenetrationSharp>0.9</armorPenetrationSharp>
+                        <armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+                    </li>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>claw</label>
+                        <capacities>
+                            <li>Scratch</li>
+                        </capacities>
+                        <power>7</power>
+                        <cooldownTime>1.2</cooldownTime>
+                        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+                        <armorPenetrationSharp>0.9</armorPenetrationSharp>
+                        <armorPenetrationBlunt>0.8</armorPenetrationBlunt>
                     </li>
                 </tools>
             </li>
@@ -44,15 +58,26 @@
         <comps>
             <li Class="HediffCompProperties_VerbGiver">
                 <tools>
-                    <li>
+                    <li Class="CombatExtended.ToolCE">
                         <label>teeth</label>
                         <capacities>
-                            <li>Bite</li>
+                          <li>Bite</li>
                         </capacities>
-                        <power>11</power>
+                        <power>12</power>
                         <cooldownTime>1.8</cooldownTime>
-                        <chanceFactor>0.4</chanceFactor>
-                    </li>
+                        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                        <chanceFactor>0.2</chanceFactor>
+                        <surpriseAttack>
+                            <extraMeleeDamages>
+                                <li>
+                                    <def>Stun</def>
+                                    <amount>20</amount>
+                                </li>
+                            </extraMeleeDamages>
+                        </surpriseAttack>
+                        <armorPenetrationSharp>0.9</armorPenetrationSharp>
+                        <armorPenetrationBlunt>0.45</armorPenetrationBlunt>
+                      </li>
                 </tools>
             </li>
         </comps>
