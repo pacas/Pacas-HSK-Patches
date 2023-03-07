@@ -403,4 +403,44 @@
             </li>
         </stages>
     </ThoughtDef>
+    
+    <ThoughtDef>
+        <defName>PN_AteLavishMeal</defName>
+        <durationDays>2</durationDays>
+        <stages>
+            <li>
+                <label>ate lavish meal</label>
+                <description>I've heard that lavish meal feels like nourished body and soul. I'm not sure, but it feels like something good!</description>
+                <baseMoodEffect>12</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>PN_AteFineMeal</defName>
+        <durationDays>2</durationDays>
+        <stages>
+            <li>
+                <label>ate fine meal</label>
+                <description>I heard that fine meal is delicious. Yum?</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <!--==================================== 메카클러스터 ====================================-->
+    <ThoughtDef>
+        <defName>PN_DefeatedMechCluster</defName>
+        <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+        <showBubble>true</showBubble>
+        <durationDays>10</durationDays>
+        <stackLimit>5</stackLimit>
+        <stages>
+            <li>
+                <label>defeated mech cluster</label>
+                <description>Stupid murder cans who know neither duty nor honor!</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
 </Defs>
