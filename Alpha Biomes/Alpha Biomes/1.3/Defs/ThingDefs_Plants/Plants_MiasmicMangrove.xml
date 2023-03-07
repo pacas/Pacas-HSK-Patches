@@ -9,7 +9,7 @@
             <ThingDef>WoodLog</ThingDef>
         </descriptionHyperlinks>
         <graphicData>
-            <texPath>Things/Plants/AB_Mangrove</texPath>
+            <texPath>Things/Plants/AB_MangroveTree</texPath>
             <graphicClass>Graphic_Random</graphicClass>
             <shadowData>
                 <volume>(0.18, 0.3, 0.15)</volume>
@@ -78,7 +78,7 @@
         <label>mangrove palm</label>
         <description>A palm tree adapted to the mangrove conditions.</description>
         <graphicData>
-            <texPath>Things/Plants/AB_PalmMangrove</texPath>
+            <texPath>Things/Plants/AB_MangrovePalm</texPath>
             <graphicClass>Graphic_Random</graphicClass>
             <shadowData>
                 <volume>(0.18, 0.3, 0.15)</volume>
