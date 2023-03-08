@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Enlisted -->
+
+  <RH.VOIDEnlistLetterTitle>{FACTION_name}: Приглашение</RH.VOIDEnlistLetterTitle>
+  <RH.VOIDEnlistLetterLabel>Мы ожидали вас. Добро пожаловать к {FACTION_name}\n\nПожалуйста, убедитесь, что вы должным образом экипированы и модернизированны для выполнения своих обязанностей. Мы верим, что за вами не нужно присматривать, как за ребенком, поэтому любая неспособность с вашей стороны пережить нападения со стороны обитателей этого мира — ваша ответственность. С учетом сказанного, пожалуйста, используйте наше оборудование, мы ни в коем случае не откажем в поддержке одному из нас.\n\nОфициально вы ещё не связаны с нами, так что, если возможно, используйте это преимущество перед другими фракциями. Помните, почему мы здесь и почему мы делаем то, что делаем, не причиняйте ненужных страданий этим людям, даже если они наши враги.\n\nСледите за обьектами подвергшимися влиянию Неротонин-4, на одном из наших объектов произошла утечка, которая вызвала буйство этого вируса в некоторых местных сообществах. Но, думаю, для вас это не будет проблемой, иначе вы не были бы одним из нас.\n{LEADER_nameDef}, Исполнитель {FACTION_name}</RH.VOIDEnlistLetterLabel>
+
+  <RH.VOIDEnlistButtonLabel>Введите код доступа</RH.VOIDEnlistButtonLabel>
+  <RH.VOIDEnlistButtonDesc>Введите пароль на таинственной клавиатуре.</RH.VOIDEnlistButtonDesc>
+  <RH.VOIDEnlistRequrementsNotSatisfied>Вы не были приглашены.</RH.VOIDEnlistRequrementsNotSatisfied>
+
+  <RH.VOIDEnlistedWithKey>Член: {FACTION_name}</RH.VOIDEnlistedWithKey>
+
+
+  <RH.VOIDMissionsLabel>Миссии</RH.VOIDMissionsLabel>
+  <RH.VOIDMissionsDesc>Описание миссий</RH.VOIDMissionsDesc>
+  <RH.VOIDMenuMissionsDesc>Вы бродите по комнате с одиноким проектором, отображающим статистику и информацию о текущем мире.
+</RH.VOIDMenuMissionsDesc>
+  <RH.VOIDMenuMissionsSelectQuest>Выберите миссию: </RH.VOIDMenuMissionsSelectQuest>
+  <RH.VOIDMenuMissionsStartQuest>Старт задания ({0})</RH.VOIDMenuMissionsStartQuest>
+  <RH.Cancel>Отмена</RH.Cancel>
+  <RH.VOIDNoEnoughMoney>Не достаточно денег</RH.VOIDNoEnoughMoney>
+
+  <RH.VOIDStorageLabel>Хранилище</RH.VOIDStorageLabel>
+  <RH.VOIDStorageDesc>Складывайте предметы из вашего каравана в тайник вашей фракции. Тайник распространяется на все аванпосты фракции, и его содержимое будет сохранено, даже если вы больше не работаете на корпорацию.</RH.VOIDStorageDesc>
+
+  <RH.VOIDDropPodServiceLabel>Система десантных капсул</RH.VOIDDropPodServiceLabel>
+  <RH.VOIDDropPodServiceDesc>Используйте систему десантных капсул этой фракции, чтобы путешествовать по воздуху! Безвозмездно.</RH.VOIDDropPodServiceDesc>
+  <RH.VOIDDropPodServiceRequirementDesc>Эта фракция покрывает расходы на ваше путешествие.</RH.VOIDDropPodServiceRequirementDesc>
+
+  <RH.StorageInventory>Инвентарь хранилища</RH.StorageInventory>
+  <RH.CaravanInventory>Инвентарь каравана</RH.CaravanInventory>
+
+  <RH.UltraMechSerumLabelKey>Инъекция Неротонин-2</RH.UltraMechSerumLabelKey>
+  <RH.UltraMechSerumCostRequirementKey>Вы не можете позволить себе эту услугу.</RH.UltraMechSerumCostRequirementKey>
+  <RH.UltraMechSerumDescKey>Инъекция Неротонина-2, которая мгновенно излечит все болезни вашего каравана. Безвозмездно.</RH.UltraMechSerumDescKey>
+
+  <RH.ActiveEnlistOptions>Варианты активной вербовки</RH.ActiveEnlistOptions>
+
+  <RH.VOIDSalaryLabel>Зарплата</RH.VOIDSalaryLabel>
+  <RH.VOIDSalaryDesc>Вы имеете право требовать выплаты от этой фракции каждые 7 дней.</RH.VOIDSalaryDesc>
+
+  <RH.VOIDProvisionsLabel>Провизия</RH.VOIDProvisionsLabel>
+  <RH.VOIDProvisionsDesc>Следующая провизия будет добавляться вашему каравану каждые 24 часа:\n\n- ×30 Икра\n- ×5 Красное Вино\n- ×10 Передовые медикаменты\n- ×4  таблетки Неротонин-8B</RH.VOIDProvisionsDesc>
+
+  <RH.VOIDProvisionsLabelVoidIssue>Продукция V.O.I.D.'а</RH.VOIDProvisionsLabelVoidIssue>
+  <RH.VOIDProvisionsDescVoidIssue>Следующая продукция V.O.I.D.'а будет добавляться в ваш караван каждые 30 дней:\n\n- ×1 Сумеречная Бритва (Vintage KABAR)\n- ×1 Сумеречный Вышибала\n- ×1 Сумеречный Страйкер \n- ×3 Шлем V.O.I.D.'а \n- ×3 Реактивная броня V.O.I.D.'а\n- ×3 Ускоряющий костюм Войдтех</RH.VOIDProvisionsDescVoidIssue>
+
+  <RH.VOIDProvisionsLabelVoidtech>Продукция Войдтех</RH.VOIDProvisionsLabelVoidtech>
+  <RH.VOIDProvisionsDescVoidtech>Следующая продукция Войдтех будет добавляться в ваш караван каждые 14 дней:\n\n- ×1 Полный комплект органов Войдтех\n- ×1 Полный комплект конечностей Войдтех\n- ×1 Комплект имплантов Х-Серии\n- ×1 Имплант Дьявола\n- ×1 Летучий имплант\n- ×1 Имплант Бедствия\n- ×1 Имплант Стремительности\n- ×1 Имплант Многогранности\n- ×1 Имплант Мастерства\n- ×1 Сыворотка супер обольщения\n- ×1 Обезболивающее</RH.VOIDProvisionsDescVoidtech>
+
+  <RH.VOIDPartTimeJobLabel>Неполная занятость</RH.VOIDPartTimeJobLabel>
+  <RH.VOIDPartTimeJobDesc>Зарабатывайте 15$ в час, работая неполный рабочий день в этом аванпосте. Заработок прекращается, когда фракция отдыхает ночью.</RH.VOIDPartTimeJobDesc>	
+	
+	<RH.VOIDHospitalLabel>Госпиталь</RH.VOIDHospitalLabel>
+	<RH.VOIDHospitalDesc>Свяжитесь с больницей этого аванпоста. Члены вашего каравана будут исцелены при помощи передовых медикаментов. Прирост иммунитета также увеличивается, пока ваш караван использует госпиталь.</RH.VOIDHospitalDesc>
+
+  <RH.VOIDShootingTrainingLabel>Тренировка: Продвинутое Выживание</RH.VOIDShootingTrainingLabel>
+  <RH.VOIDShootingTrainingDesc>Тренируйте свой караван с помощью высотехнологичной виртуальной реальности и улучшенной стимуляции мозга, которые бросают ваших пешек в постапокалиптический сценарий.\n\nЭта опция тренирует все навыки вашего члена каравана.\n\nПочасовой набор опыта прекращается, когда эта фракция отдыхает ночью.</RH.VOIDShootingTrainingDesc>
+
+  <RH.VOIDTurnInLabel>Сдать</RH.VOIDTurnInLabel>
+  <RH.VOIDTurnInDesc>Сдавайте преступников V.O.I.D'у. Совет ими займется.</RH.VOIDTurnInDesc>
+  <RH_TurnInTraderName>Флагман V.O.I.D.'a</RH_TurnInTraderName>
+
+  <RH.VOIDReinforcementsButtonLabel>Подкрепление</RH.VOIDReinforcementsButtonLabel>
+  <RH.VOIDReinforcementsButtonDesc>Вызовите подкрепление у одной из завербованных вами фракций. Количество войск, которые они посылают, зависит от ваших текущих отношений.</RH.VOIDReinforcementsButtonDesc>
+
+  <RH.VOIDResignMenuText>Вы покините и осудите V.O.I.D.\n\n(-100 к отношению)</RH.VOIDResignMenuText>
+  <RH.VOIDResignLetterTitle>Отправлен в отставку</RH.VOIDResignLetterTitle>
+  <RH.VOIDResignButtonLabel>Ушел в отставку</RH.VOIDResignButtonLabel>
+  <RH.VOIDResignLetterLabel>Вы покинули {FACTION_name}\n\nБудут последствия. (-100 к отношению)</RH.VOIDResignLetterLabel>
+  <RH.VOIDResignButtonDesc>Покинуть эту фракцию</RH.VOIDResignButtonDesc>
+  <RH.PlayerSettlementRequired>Требуется поселение игрока</RH.PlayerSettlementRequired>
+  <RH.VOIDEnlistedToHostileFaction>Не возможно войти, потому что вы завербованы их врагом, {HOSTILEFACTION_name}</RH.VOIDEnlistedToHostileFaction>
+
+  <RH.VOIDKickOutLetterTitle>Изгнанный</RH.VOIDKickOutLetterTitle>
+  <RH.VOIDKickOutLabelTitle>Совет санкционировал ваше отлучение от {FACTION_name}. Вы были изгнаны. Вы больше никогда не сможете присоединиться.</RH.VOIDKickOutLabelTitle>
+
+</LanguageData>
+

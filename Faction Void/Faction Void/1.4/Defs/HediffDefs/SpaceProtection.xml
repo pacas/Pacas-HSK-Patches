@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>Void_SpaceProtection</defName>
+		<label>Voidtech space implant</label>
+		<labelNoun>Voidtech space implant</labelNoun>
+		<description>A piece of mysterious technology that allows a person to be protected by an invisible "bubble" from the elements of space. All that is known about this piece of bionic, is that it is stolen ancient technology.</description>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statOffsets>	
+					<ComfyTemperatureMin>-120</ComfyTemperatureMin>			
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

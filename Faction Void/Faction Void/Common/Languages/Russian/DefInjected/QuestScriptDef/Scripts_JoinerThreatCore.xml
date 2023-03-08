@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- ########################### Utilities just for JoinerThreat ############################### -->
+
+  <Void_Util_JoinerWalkIn.questDescriptionRules.rulesStrings.0>rewardDescription-&gt;a [joiner_age]-лет [joiner_title] по имени [joiner_nameDef] присоединяется к вам. [joiner_relationInfo]</Void_Util_JoinerWalkIn.questDescriptionRules.rulesStrings.0>
+
+
+  <!-- Note: Other quests in this pattern are in expansions -->
+
+  <Void_ThreatReward_Raid_Joiner.root.nodes.5.name>raidDelayTicks</Void_ThreatReward_Raid_Joiner.root.nodes.5.name>
+  <Void_ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings.0>questDescription-&gt;A [joiner_age]-лет [joiner_title] по имени [joiner_nameDef] покинул V.O.I.D. и находится неподалеку. [joiner_nameDef] выражает глубокое раскаяние за то, что являлся частью такой злой фракции, и говорит вам, что [joiner_pronoun] очень сожалеет. [joiner_pronoun] ищет прощения, обещая помочь вашей колонии. За [joiner_nameDef] следуют [enemyFaction_pawnsPlural] из [enemyFaction_name]!</Void_ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings.0>
+  <Void_ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings.1>questDescription-&gt;A [joiner_age]-лет [joiner_title] по имени [joiner_nameDef] преследуется за дезертирство V.O.I.D.'a. [joiner_nameDef] объясняет, что [joiner_pronoun] был вынужден служить V.O.I.D. и выражает вину за все свои проступки. [joiner_nameDef] умоляет о пощаде и плачет, что [joiner_pronoun] больше некуда обратиться. За [joiner_pronoun] следуют [enemyFaction_pawnsPlural] из [enemyFaction_name]!</Void_ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings.1>
+  <Void_ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings.2>questDescription-&gt;A [joiner_age]-лет [joiner_title] по имени [joiner_nameDef] обманул и решил покинуть V.O.I.D. [joiner_nameDef] сообщает вам, что [joiner_pronoun] был похищен, ему предложил невообразимые богатства и замену органов и конечностей в обмен на послушание. Увидев, как ребенок превратился в монстра, [joiner_nameDef] решил бежать и клянется помогать вам в борьбе с VOIDом. За [joiner_pronoun] слудуют [enemyFaction_pawnsPlural] из [enemyFaction_name]!</Void_ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings.2>
+  <Void_ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings.3>questDescription-&gt;A [joiner_age]-лет [joiner_title] по имени [joiner_nameDef] переполнен чувством вины и решил покинуть V.O.I.D. [joiner_nameDef] плачет, что [joiner_pronoun] больше не может помогать V.O.I.D. и скорее умрет ужасной смертью, чем продолжит идти этим дурным путём. [joiner_pronoun] умоляет о сострадании и предлогает вам верность в обмен на свою жизнь. За [joiner_pronoun] следуют [enemyFaction_pawnsPlural] из [enemyFaction_name]!</Void_ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings.3>
+  <Void_ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings.4>questDescription-&gt;A [joiner_age]-лет [joiner_title] по имени [joiner_nameDef] утверждает, что покинул V.O.I.D. и ищет вашей помощи. [joiner_nameDef] говорит, что [joiner_pronoun] совершил непоправимую ошибку, приняв участие в отвратительных делах такой злой организации, и желает, чтобы [joiner_pronoun] вообще никогда не рождался. [joiner_pronoun] выражает большое сожаление и обещает помочь исправить ситуацию, если вы дадите ему второй шанс. За [joiner_pronoun] следуют [enemyFaction_pawnsPlural] из [enemyFaction_name]!</Void_ThreatReward_Raid_Joiner.questDescriptionRules.rulesStrings.4>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.0>questName-&gt;Раскаявшийся грешник</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.0>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.1>questName-&gt;Совесть [joiner_nameDef]</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.1>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.2>questName-&gt;Муки совести</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.2>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.3>questName-&gt;Дезертир V.O.I.D.а</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.3>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.4>questName-&gt;Предатель [joiner_nameDef]</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.4>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.5>questName-&gt;Не герой</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.5>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.6>questName-&gt;Надежда для безнадежного</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.6>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.7>questName-&gt;Нет мира для нечестивых</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.7>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.8>questName-&gt;Come as you are</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.8>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.9>questName-&gt;Фиолетовый дезертир</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.9>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.10>questName-&gt;Притча о блудном сыне</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.10>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.11>questName-&gt;Возвращение блудного дитя</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.11>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.12>questName-&gt;Разбитое фиолетовое сердце</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.12>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.13>questName-&gt;Приговор для [joiner_nameDef]</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.13>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.14>questName-&gt;Камень преткновения</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.14>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.15>questName-&gt;Больше чем человек</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.15>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.16>questName-&gt;Заблудший агнец</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.16>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.17>questName-&gt;В поисках прощения</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.17>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.18>questName-&gt;Уставший трансгуманист</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.18>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.19>questName-&gt;Покаяние [joiner_nameDef]</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.19>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.20>questName-&gt;Искупление [joiner_nameDef]</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.20>
+  <Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.21>questName-&gt;Сострадание[joiner_nameDef]</Void_ThreatReward_Raid_Joiner.questNameRules.rulesStrings.21>
+
+
+</LanguageData>

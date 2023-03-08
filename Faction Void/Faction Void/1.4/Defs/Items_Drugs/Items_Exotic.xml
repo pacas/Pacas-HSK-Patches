@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+    <!--=============== Mech serums ====================-->
+
+    <ThingDef ParentName="ResourceBase" Name="RH_Nerotonin8BBase" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MaxHitPoints>40</MaxHitPoints>
+            <Mass>0.05</Mass>
+            <Bulk>0.01</Bulk>
+            <DeteriorationRate>2.0</DeteriorationRate>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <techLevel>Ultra</techLevel>
+        <tradeTags>
+            <li>RH_ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="RH_Nerotonin8BBase">
+        <defName>RH_Nerotonin8B</defName>
+        <label>nerotonin-8B</label>
+        <description>A Nerotonin-8B (N-8B) pill that can heal health conditions rapidly. It was discovered in an abandoned secronom building years after the outbreak, the secronom corporation who was held responsible for the outbreak of the N-4 virus did not have documents or files regarding this mysterious pill. It was the cure they failed to release, which only worked on those that have not yet succumbed to the N-4 infection or to death itself.\n\nAfter being returned to Fort Pastor, research began almost immediately to allow surviving scientists to reproduce this long forgotten medicine.</description>
+        <graphicData>
+            <texPath>Things/Item/Special/Nerotonin8B</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <stackLimit>100</stackLimit>
+        <statBases>
+            <MarketValue>2800</MarketValue>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeability>All</tradeability>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseItem</useJob>
+                <useLabel>Use {0_label}</useLabel>
+                <useDuration>50</useDuration>
+            </li>
+            <li Class="CompProperties_UseEffect">
+                <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+            </li>
+            <li Class="CompProperties_UseEffectDestroySelf"/>
+        </comps>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+    </ThingDef>
+  
+    <RecipeDef>
+        <defName>AdministerRHNerotonin8B</defName><!-- Dear modder, this needs a patch to work with pawns -->
+        <label>administer nerotonin-8B</label>
+        <description>Administer a nerotonin-8B.</description>
+        <workerClass>Recipe_AdministerUsableItem</workerClass>
+        <jobString>Administering nerotonin-8B.</jobString>
+        <targetsBodyPart>false</targetsBodyPart>
+        <anesthetize>false</anesthetize>
+        <workAmount>600</workAmount>
+        <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+        <surgeryOutcomeEffect IsNull="True"/>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RH_Nerotonin8B</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RH_Nerotonin8B</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+</Defs>

@@ -34,6 +34,7 @@ How to download only the mods you are interested in:<br>
 | Dinosauria | 1.3 / 1.4 | --- |
 | Eaves Rafters and Mad Walls | 1.3 / 1.4 | --- |
 | Edge of Descension Monoblades | 1.3 / 1.4 | --- |
+| Faction Void | 1.4 | --- |
 | Fireflies | 1.3 | Waiting for the update |
 | Frontier Developement Shields | 1.3 | Waiting for the update |
 | Gloomy Decor Pack | 1.3 | Original deco mod is dead, final release? |

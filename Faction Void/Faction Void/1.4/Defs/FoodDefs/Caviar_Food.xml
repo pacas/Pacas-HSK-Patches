@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!---->
+  
+    <ThingDef Name="RH2_RationMealBase" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <statBases>
+            <MaxHitPoints>20</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Beauty>0</Beauty>
+            <Mass>0.44</Mass>
+            <DeteriorationRate>5</DeteriorationRate>
+        </statBases>
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>50</stackLimit>
+        <tickerType>Rare</tickerType>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <thingCategories>
+            <li>Preserves</li>
+        </thingCategories>
+        <alwaysHaulable>true</alwaysHaulable>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Ingredients"/>
+            <li Class="CompProperties_FoodPoisonable"/>
+            <li Class="CompProperties_Rottable">
+				<daysToRotStart>200</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+        </comps>
+        <pathCost>15</pathCost>
+        <resourceReadoutPriority>Last</resourceReadoutPriority>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <uiIconForStackCount>1</uiIconForStackCount>
+        <ingestible>
+            <foodType>Meal</foodType>
+            <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+            <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+        </ingestible>
+    </ThingDef>
+  
+    <!--============-->
+  
+    <ThingDef ParentName="RH2_RationMealBase">
+        <defName>RH2_Ration_Caviar</defName>
+        <label>Caviar</label>
+        <description>A canned caviar, from its packaging it seems to mimic an ancient Fairview brand though it's freshly produced. Caviar is a food consisting of salt-cured roe. A canned delicacy, manufactured for survival use. While it never rots, it can still deteriorate if left outside.</description>
+        <graphicData>
+            <texPath>Things/Food/Caviar/Caviar</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <DeteriorationRate>0.25</DeteriorationRate>
+            <MarketValue>35</MarketValue>
+            <Mass>0.5</Mass>
+            <Bulk>0.3</Bulk>
+            <WorkToMake>550</WorkToMake>
+            <Nutrition>0.94</Nutrition>
+        </statBases>
+        <ingestible>
+            <preferability>MealLavish</preferability>
+            <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+            <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <tasteThought>AteCaviarCannedMeal</tasteThought>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+    </ThingDef>
+</Defs>

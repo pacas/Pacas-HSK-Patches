@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Void.SettlementIsDefeated>Расширение фракции V.O.I.D.</Void.SettlementIsDefeated>
+  <Void.SettlementIsDefeatedDesc>{FACTION_name} была подавлена во время рейда. {0} захвачен V.O.I.D.'ом</Void.SettlementIsDefeatedDesc>
+  <Void.EnableVoidExpansion>Включить расширение фракции V.O.I.D.</Void.EnableVoidExpansion>
+  <Void.tickToSpawnHostiles>День появления угроз: </Void.tickToSpawnHostiles>
+
+  <Void.MessageMutantAssembled>Мутант N-4 пробудился после гибридизации.</Void.MessageMutantAssembled>
+  <Void.MessageMutantLeftToAssemble>Оставшиеся мутанты в процессе гибридизации</Void.MessageMutantLeftToAssemble>
+  <Void.MutantAssemblyCompleteIn>{0} гибридизация завершена в {1}.</Void.MutantAssemblyCompleteIn>
+  <Void.MutantAssemblyNextType>Пробуждается</Void.MutantAssemblyNextType>
+
+  <UseJetPack>Использовать прыжковый ранец</UseJetPack>
+  <UseJetPackDesc>долететь до места назначения с помощью прыжкового ранца</UseJetPackDesc>
+  <NotEnoughFuelForJetPackDesc>Не достаточно топлива</NotEnoughFuelForJetPackDesc>
+  <CurrentFuelAmount>Топлива в прыжковом ранце: {0}</CurrentFuelAmount>
+  <RefuelJetPack>Заправить прыжковый ранец</RefuelJetPack>
+  <RefuelJetPackDesc>Использовать химтопливо чтобы заправить прыжковый ранец</RefuelJetPackDesc>
+  <EnoughFuelForJetPackDesc>Не достаточно топлива для прыжкового ранца</EnoughFuelForJetPackDesc>
+
+  <!--<DropSuppliesLabel>DropSuppliesLabel</DropSuppliesLabel>
+	<DropSuppliesDesc>DropSuppliesDesc</DropSuppliesDesc>-->
+
+  <Void_ResurrectionLabel>{PAWN_nameDef} воскрешается</Void_ResurrectionLabel>
+  <Void_ResurrectionDesc>{PAWN_nameDef} был воскрешен, однако все его предметы были потеряны в течение часа.</Void_ResurrectionDesc>
+
+  <Void.EnableSpawnOfNewVoidBasesNearby>Включить появление новых поселений V.O.I.D.'а рядом с поселением игрока.</Void.EnableSpawnOfNewVoidBasesNearby>
+  <Void.MaxAmountOfNewVoidBasesNearby>Максимальное количество новых поселений V.O.I.D.'а рядом с поселением игрока</Void.MaxAmountOfNewVoidBasesNearby>
+  <Void.BunkerPasswordMessage>Пожалуйста введите код доступа к бункеру:</Void.BunkerPasswordMessage>
+  <Void.AccessDenied>В ДОСТУПЕ ОТКАЗАНО</Void.AccessDenied>
+  <Void.NukeIntercepted>Ваша ядерная бомба была перехвачена на орбите.</Void.NukeIntercepted>
+
+  <Void.VoidContact>Контакт с V.O.I.D.'ом</Void.VoidContact>
+  <Void.VoidVisitorsDesc>V.O.I.D. отправил к вам советника для переговоров о вашей капитуляции.</Void.VoidVisitorsDesc>
+  <Void.Contact>Контакт</Void.Contact>
+  <Void.Hostile>Враждебность</Void.Hostile>
+  <Void.HostileDesc>Вы ясно дали понять, что с вами невозможно договориться.</Void.HostileDesc>
+  <Void.CannotEnlist>V.O.I.D. отказывается принять вас обратно.</Void.CannotEnlist>
+
+</LanguageData>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<EncounterFramework.LocationDef>
+		<defName>RH_PlanetaryKillerSite</defName>
+		<filePreset>Presets/RH_VOID/Sites/PlanetaryKillerSite.xml</filePreset>
+		<seedGeneration>398138181</seedGeneration>
+		<mapSize>(250, 1, 250)</mapSize>
+		<threatGenerator>
+			<options>
+				<li>
+					<lordJobType>Verse.AI.Group.LordJob_DefendPoint</lordJobType>
+					<indoorsOnly>true</indoorsOnly>
+					<defaultFaction>RH_VOID</defaultFaction>
+					<pawnsToSpawn>
+						<RH_VOID_Undying>4</RH_VOID_Undying>
+						<RH_BlackTitan>1</RH_BlackTitan>
+					</pawnsToSpawn>
+				</li>
+			</options>
+		</threatGenerator>
+	</EncounterFramework.LocationDef>
+	
+</Defs>

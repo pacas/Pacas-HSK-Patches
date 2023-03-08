@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+  
+            <!--== HF Blade ==-->
+
+  <SoundDef>
+    <defName>RHInteract_DuskBlade</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Melee/DuskRazorPickup</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>45.91975</x>                  
+                    <y>4270.358</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>66.10088</x>                  
+                    <y>2557.69</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <!--== HIT 1 ==-->
+	
+	  <SoundDef>
+    <defName>RHShot_DuskBladeHit</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>10</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Melee/DuskRazor_01</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>45.91975</x>                  
+                    <y>4270.358</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>66.10088</x>                  
+                    <y>2557.69</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+  <!--== HIT 2 ==-->
+	
+	  <SoundDef>
+    <defName>RHShot_DuskBladeHit_II</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>10</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Melee/DuskRazor_02</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>45.91975</x>                  
+                    <y>4270.358</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>66.10088</x>                  
+                    <y>2557.69</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>            
+  
+  <!--== Amputator ==-->
+
+  <SoundDef>
+    <defName>RHInteract_Amputator</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Melee/AmputatorPickup</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>45.91975</x>                  
+                    <y>4270.358</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>66.10088</x>                  
+                    <y>2557.69</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <!--== HIT 1 ==-->
+	
+	  <SoundDef>
+    <defName>RHShot_AmputatorHit</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>10</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Melee/Amputator_01</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>45.91975</x>                  
+                    <y>4270.358</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>66.10088</x>                  
+                    <y>2557.69</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+  <!--== HIT 2 ==-->
+	
+	  <SoundDef>
+    <defName>RHShot_AmputatorHit_II</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>10</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Melee/Amputator_02</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>45.91975</x>                  
+                    <y>4270.358</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>66.10088</x>                  
+                    <y>2557.69</y>
+                  </loc>
+                </li>
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  
+	
+</Defs>

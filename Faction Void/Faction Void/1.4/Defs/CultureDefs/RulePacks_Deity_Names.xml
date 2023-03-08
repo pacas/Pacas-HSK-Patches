@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Shared content -->
+
+    <RulePackDef>
+        <defName>RH2_NamerDeityVOID</defName>
+        <include>
+            <li MayRequire="Ludeon.RimWorld.Ideology">GlobalUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_deityName->Great Old One</li>
+                <li>r_deityName->The Elder</li>
+                <li>r_deityName->Kutulu</li>
+                <li>r_deityName->The Administrator</li>
+                <li>r_deityName->Dreaded One</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

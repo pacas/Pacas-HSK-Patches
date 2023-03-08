@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- LEAPER -->
+  <SoundDef>
+    <defName>RHPawn_BlackLeaper_Call</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/Leaper_Call</clipPath>
+          </li>
+        </grains>
+        <volumeRange>14~14</volumeRange>
+        <pitchRange>0.9082353~1.114706</pitchRange>
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RHPawn_BlackLeaper_Angry</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/Leaper_Angry</clipPath>
+          </li>
+        </grains>
+        <volumeRange>14~14</volumeRange>
+        <pitchRange>0.9082353~1.114706</pitchRange>
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RHPawn_BlackLeaper_Death</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/Leaper_Death</clipPath>
+          </li>
+        </grains>
+        <volumeRange>14~14</volumeRange>
+        <pitchRange>0.9082353~1.114706</pitchRange>
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RHPawn_BlackLeaper_Attack</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/Leaper_Attack</clipPath>
+          </li>
+        </grains>
+        <volumeRange>21~21</volumeRange>
+        <pitchRange>1.206471~1</pitchRange>
+        <distRange>0~70</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+
+<!-- TITAN -->
+  <SoundDef>
+    <defName>RHPawn_Titan_Call</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/Titan_Call</clipPath>
+          </li>
+        </grains>
+        <volumeRange>14~14</volumeRange>
+        <pitchRange>0.9082353~1.114706</pitchRange>
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RHPawn_Titan_Angry</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/Titan_Angry</clipPath>
+          </li>
+        </grains>
+        <volumeRange>14~14</volumeRange>
+        <pitchRange>0.9082353~1.114706</pitchRange>
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RHPawn_Titan_Death</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/Titan_Death</clipPath>
+          </li>
+        </grains>
+        <volumeRange>14~14</volumeRange>
+        <pitchRange>0.9082353~1.114706</pitchRange>
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RHPawn_Titan_Injured</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/Titan_Injured</clipPath>
+          </li>
+        </grains>
+        <volumeRange>21~21</volumeRange>
+        <pitchRange>1.206471~1</pitchRange>
+        <distRange>0~70</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+  <!-- WRAITH -->
+  <SoundDef>
+    <defName>RHPawn_Wraith_Call</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/Wraith_Call</clipPath>
+          </li>
+        </grains>
+        <volumeRange>14~14</volumeRange>
+        <pitchRange>0.9082353~1.114706</pitchRange>
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RHPawn_Wraith_Angry</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/Wraith_Angry</clipPath>
+          </li>
+        </grains>
+        <volumeRange>14~14</volumeRange>
+        <pitchRange>0.9082353~1.114706</pitchRange>
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RHPawn_Wraith_Death</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/Wraith_Death</clipPath>
+          </li>
+        </grains>
+        <volumeRange>14~14</volumeRange>
+        <pitchRange>0.9082353~1.114706</pitchRange>
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RHPawn_Wraith_Injured</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/Wraith_Injured</clipPath>
+          </li>
+        </grains>
+        <volumeRange>21~21</volumeRange>
+        <pitchRange>1.206471~1</pitchRange>
+        <distRange>0~70</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    <!-- GIANT SPIDER -->
+  <SoundDef>
+    <defName>RHPawn_GiantSpider_Call</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/DFGiantSpider_Call</clipPath>
+          </li>
+        </grains>
+        <volumeRange>14~14</volumeRange>
+        <pitchRange>0.9082353~1.114706</pitchRange>
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RHPawn_GiantSpider_Angry</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/DFGiantSpider_Angry</clipPath>
+          </li>
+        </grains>
+        <volumeRange>14~14</volumeRange>
+        <pitchRange>0.9082353~1.114706</pitchRange>
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RHPawn_GiantSpider_Death</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/DFGiantSpider_Death</clipPath>
+          </li>
+        </grains>
+        <volumeRange>14~14</volumeRange>
+        <pitchRange>0.9082353~1.114706</pitchRange>
+        <distRange>0~50</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>RHPawn_GiantSpider_Injured</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/DFGiantSpider_Injured</clipPath>
+          </li>
+        </grains>
+        <volumeRange>21~21</volumeRange>
+        <pitchRange>1.206471~1</pitchRange>
+        <distRange>0~70</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+
+
+</Defs>

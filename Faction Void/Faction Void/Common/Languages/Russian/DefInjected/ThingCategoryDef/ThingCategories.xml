@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Foods -->
+
+  <RN_MREFoodMeals.label>Рационы MRE</RN_MREFoodMeals.label>
+
+
+  <!-- RH Apparel -->
+
+  <RHApparel_Main.label>Одежда Red Horse</RHApparel_Main.label>
+  <RHApparel_Casual.label>повседневная</RHApparel_Casual.label>
+  <RHApparel_Belts.label>аксессуары</RHApparel_Belts.label>
+  <RHApparel_Combat.label>боевая униформа</RHApparel_Combat.label>
+  <RHApparel_BodyArmor.label>броня</RHApparel_BodyArmor.label>
+  <RHApparel_Formal.label>форьмальная</RHApparel_Formal.label>
+
+
+  <!-- Shell -->
+
+  <RHApparel_ShellCasual.label>повседневная куртка</RHApparel_ShellCasual.label>
+  <RHApparel_ShellCombat.label>боевая куртка</RHApparel_ShellCombat.label>
+  <RHApparel_ShellFormal.label>форьмальная куртка</RHApparel_ShellFormal.label>
+
+
+  <!-- Headgear Main -->
+
+  <RHHeadgear_Main.label>Головные уборы Red Horse</RHHeadgear_Main.label>
+  <RHHeadgear_Hats.label>шляпы</RHHeadgear_Hats.label>
+  <RHHeadgear_Helmets.label>шлемы</RHHeadgear_Helmets.label>
+  <RHHeadgear_Masks.label>маски</RHHeadgear_Masks.label>
+
+
+  <!-- RH Apparel -->
+
+  <RHApparel_PoweredArmor.label>силовая броня</RHApparel_PoweredArmor.label>
+  <RHHeadgear_PoweredArmorHelmets.label>шлемы силовой брони</RHHeadgear_PoweredArmorHelmets.label>
+
+
+  <!-- Rimmu-Nation Melee -->
+
+  <RN_MeleeMain.label>Ближнее оружие Rimmu-Nation</RN_MeleeMain.label>
+
+
+  <!-- <ThingCategoryDef>
+        <defName>RN_HandgunsMain</defName>
+        <label>handguns</label>
+        <parent>RN_RangedMain</parent>
+      </ThingCategoryDef> -->
+
+  <RN_Pistols.label>пистолет</RN_Pistols.label>
+  <RN_Revolvers.label>револьвер</RN_Revolvers.label>
+
+
+  <!-- Rimmu-Nation PDW -->
+
+  <RN_PDWMain.label>ПП и ПОС</RN_PDWMain.label>
+
+
+  <!-- Rimmu-Nation Shotguns -->
+
+  <RN_ShotgunsMain.label>дробовик</RN_ShotgunsMain.label>
+
+
+  <!-- Rimmu-Nation Assault Rifles -->
+
+  <RN_RangedMain.label>оружие Rimmu-Nation</RN_RangedMain.label>
+  <RN_AssaultRifle.label>штурмовые винтовки</RN_AssaultRifle.label>
+  <RN_ARStyle.label>винтовки в стиле AR</RN_ARStyle.label>
+  <RN_AKStyle.label>винтовки в стиле AK</RN_AKStyle.label>
+  <RN_BullpupStyle.label>булл-пап винтовки</RN_BullpupStyle.label>
+  <RN_OldieRifle.label>старички</RN_OldieRifle.label>
+
+
+  <!-- <ThingCategoryDef>
+        <defName>RN_MarksmanMain</defName>
+        <label>marksman rifles</label>
+        <parent>RN_RangedMain</parent>
+      </ThingCategoryDef> -->
+
+  <RN_BoltAction.label>болтовки</RN_BoltAction.label>
+  <RN_DMR.label>DMR</RN_DMR.label>
+  <RN_AMR.label>AMR</RN_AMR.label>
+
+
+  <!-- Rimmu-Nation Misc -->
+
+  <RN_MiscRanged.label>клинки и луки</RN_MiscRanged.label>
+
+
+  <!-- Rimmu-Nation LMG -->
+
+  <RN_LMGMain.label>LMG и GPMG</RN_LMGMain.label>
+
+
+  <!-- <ThingCategoryDef>
+        <defName>RN_LaunchersMain</defName>
+        <label>launchers</label>
+        <parent>RN_RangedMain</parent>
+      </ThingCategoryDef> -->
+
+  <RN_GrenadeLaunchers.label>гранатометы</RN_GrenadeLaunchers.label>
+  <RN_RocketLaunchers.label>ракетометы</RN_RocketLaunchers.label>
+  <RN_OneTimeUseLaunchers.label>одноразовые</RN_OneTimeUseLaunchers.label>
+
+
+  <!-- <ThingCategoryDef>
+        <defName>RN_ThrownMain</defName>
+        <label>thrown</label>
+        <parent>RN_RangedMain</parent>
+      </ThingCategoryDef> -->
+
+  <RN_Grenades.label>смертельные гранаты</RN_Grenades.label>
+  <RN_GrenadesNL.label>несмертельные гранаты</RN_GrenadesNL.label>
+  <RN_OneTimeUseThrown.label>одноразовые гранаты</RN_OneTimeUseThrown.label>
+
+
+  <!-- Rimmu-Nation Things that go boom 3 -->
+
+  <RN_Airstrikes.label>воздушная поддержка</RN_Airstrikes.label>
+  <RN_SpacerMain.label>космическое</RN_SpacerMain.label>
+
+
+</LanguageData>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+	<name>Faction: V.O.I.D. - HSK Edition</name>
+	<author>Chicken Plucker</author>
+	<packageId>RH2.Faction.VOID</packageId>
+	<modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+    </modDependencies>
+	<supportedVersions>
+	<li>1.4</li>
+	</supportedVersions>
+    <loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>UnlimitedHugs.HugsLib</li>
+		<li>erdelf.HumanoidAlienRaces</li>
+		<li>CETeam.CombatExtended</li>
+		<li>skyarkhangel.HSK</li>
+	</loadAfter>
+	<description>Re-evaluate for a moment. Under what circumstances should you install this mod? None whatsoever.
+
+Featuring the most beloved organization in the outer RimWorld. Always helping people find greener pastures. Ready to take on the world!
+
+Adventure awaits. We at V.O.I.D. promise to look after you and your children because nobody else can. Always promoting a brighter tomorrow and a better world. You may be the next person selected to join our ranks!
+
+Not feeling like being assimilated? Okay, how about becoming one of our honorary research subjects? Wherever you are, whatever you do, we will find you.
+
+Credits to:
+Mehni - C# Coding
+Dninemfive - C# Coding
+Taranchuk - C# Coding
+Jecrell - C# Coding
+Morphium - .xml
+Fiendakko - Textures
+Tittymcswaggy - Textures
+Odz - Textures
+JangoD'Soul - Textures
+AOBA - Textures
+Neil Yates - Dead Frontier
+Greg Taylor - Original Dead Frontier artist
+Clayton - Dead Frontier artist
+V.O.I.D. - Major Anderson
+Cube instrumental - Karl Casey @ White Bat Audio
+
+SFX from:
+Scott Cawthon
+Valve
+Techland
+Creaky Corpse Ltd
+
+Ko-Fi supporters, special thanks to these individuals for helping this mod leave beta:
+Alex
+TL
+Anonymous (Ko-fi supporter)
+Anonymous (Ko-fi supporter)
+The Last Eternal
+getodog
+BlueBottle
+</description>
+</ModMetaData>

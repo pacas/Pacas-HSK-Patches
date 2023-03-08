@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	
+    <!-- Voidtech Base -->
+    <ThingDef Name="RH_VoidtechLE_ImplantBase" ParentName="SK_BodyPartBase" Abstract="True">
+        <techLevel>Ultra</techLevel>
+        <thingCategories Inherit="False">
+            <li>RH2_Voidtech_Implants</li>
+        </thingCategories>
+        <techHediffsTags Inherit="False"/>
+        <statBases>
+            <MarketValue>45000</MarketValue>
+            <Mass>1.0</Mass>
+        </statBases>
+    </ThingDef>
+	
+    <!-- V.O.I.D. implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_Voidtech_Implant</defName>
+        <label>V.O.I.D. implant</label>
+        <labelNoun>a V.O.I.D. implant</labelNoun>
+        <description>An installed V.O.I.D. implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Voidtech_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_Voidtech_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                    <li>
+                        <capacity>Metabolism</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <GlobalLearningFactor>0.25</GlobalLearningFactor>
+                    <ResearchSpeed>0.25</ResearchSpeed>
+                    <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+                    <MeleeArmorPenetration>0.25</MeleeArmorPenetration>
+                    <MeleeHitChance>5</MeleeHitChance>
+                    <MeleeDodgeChance>5</MeleeDodgeChance>
+                    <ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+                    <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+                    <ArmorRating_Heat>1.00</ArmorRating_Heat>
+                    <ComfyTemperatureMax>200</ComfyTemperatureMax>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_Voidtech_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_VoidtechLE_ImplantBase">
+        <defName>DF_Voidtech_Implant</defName>
+        <label>V.O.I.D. implant</label>
+        <description>The V.O.I.D. implant. It is a state of the art bionics implant that intergalactic aerospace company Voidtech produced based on the combined technology of AdminPwn's ancient implants. The V.O.I.D. implant increases the user's speed, learning capacity, combat skills and resistance to physical trauma significantly. This implant is unavailable in public records, and most V.O.I.D. members are not even authorized to use this implant.\n\nVoidtech has begun re-production of the ancient implants, hence they have been spotted in markets around worlds where V.O.I.D. may appear.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_Voidtech_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/Voidtech_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_Voidtech_Implant</defName>
+        <label>install V.O.I.D. implant</label>
+        <uiIconThing>DF_Voidtech_Implant</uiIconThing>
+        <description>Install a V.O.I.D. implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Voidtech_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing V.O.I.D. implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_Voidtech_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_Voidtech_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_Voidtech_Implant</addsHediff>
+        <incompatibleWithHediffTags>
+            <li>DF_UltraBoostImplant</li>
+        </incompatibleWithHediffTags>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_Voidtech_Implant</defName>
+        <label>remove V.O.I.D. implant</label>
+        <description>Remove V.O.I.D. implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Voidtech_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing V.O.I.D. implant.</jobString>
+        <removesHediff>DF_Voidtech_Implant</removesHediff>
+    </RecipeDef>
+	
+</Defs>

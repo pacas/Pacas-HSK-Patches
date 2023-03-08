@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Head</defName>
+    <label>head</label>
+    <hitPoints>50</hitPoints>
+    <skinCovered>true</skinCovered>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <bleedRate>2</bleedRate>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Skull</defName>
+    <label>skull</label>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <bleedRate>0</bleedRate>
+    <destroyableByDamage>false</destroyableByDamage>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Brain</defName>
+    <label>brain</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>9999999</permanentInjuryChanceFactor>
+    <delicate>true</delicate>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>ConsciousnessSource</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Eye</defName>
+    <label>eye</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+    <delicate>true</delicate>
+    <skinCovered>false</skinCovered>
+    <socketed>true</socketed>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+    <hitChanceFactors>
+      <li>
+        <key>Blunt</key>
+        <value>0</value>
+      </li>
+    </hitChanceFactors>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Ear</defName>
+    <label>ear</label>
+    <hitPoints>24</hitPoints>
+    <frostbiteVulnerability>5</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+    <beautyRelated>true</beautyRelated>
+    <tags>
+      <li>HearingSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Nose</defName>
+    <label>nose</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>5</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+    <beautyRelated>true</beautyRelated>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Jaw</defName>
+    <label>jaw</label>
+    <hitPoints>20</hitPoints>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <beautyRelated>true</beautyRelated>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>EatingSource</li>
+      <li>TalkingSource</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Neck</defName>
+    <label>neck</label>
+    <hitPoints>50</hitPoints>
+    <bleedRate>4</bleedRate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>BreathingPathway</li>
+      <li>EatingPathway</li>
+      <li>TalkingPathway</li>
+    </tags>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Ribcage</defName>
+    <label>ribcage</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>BreathingSourceCage</li>
+    </tags>
+    <destroyableByDamage>false</destroyableByDamage>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Spine</defName>
+    <label>spine</label>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>6</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <canSuggestAmputation>false</canSuggestAmputation>
+    <tags>
+      <li>Spine</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Leg</defName>
+    <label>leg</label>
+    <hitPoints>30</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Foot</defName>
+    <label>foot</label>
+    <hitPoints>50</hitPoints>
+    <frostbiteVulnerability>0.5</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+  
+  <!-- BodyPartGroups Black Leaper -->
+  
+    <BodyPartGroupDef>
+    <defName>RH_LeaperTongue</defName>
+    <label>tongue</label>
+    <labelShort>tongue</labelShort>
+    <listOrder>79</listOrder>
+  </BodyPartGroupDef>
+  
+  <!-- BodyPartGroups Blade -->
+  
+    <BodyPartGroupDef>
+    <defName>RH_LeftClawAB</defName>
+    <label>left claw</label>
+    <labelShort>claw</labelShort>
+    <listOrder>79</listOrder>
+  </BodyPartGroupDef>      
+  
+  <BodyPartGroupDef>
+    <defName>RH_RightBlade</defName>
+    <label>right blade</label>
+    <labelShort>blade</labelShort>
+    <listOrder>79</listOrder>
+  </BodyPartGroupDef>    
+  
+  <BodyPartGroupDef>
+    <defName>RH_LeftArmBlade</defName>
+    <label>left blade</label>
+    <labelShort>blade</labelShort>
+    <listOrder>79</listOrder>
+  </BodyPartGroupDef>  
+  
+  <!-- BodyPartGroups Wraith -->
+  
+    <BodyPartGroupDef>
+    <defName>RH_LeftTentacle</defName>
+    <label>left tentacle</label>
+    <labelShort>tentacle</labelShort>
+    <listOrder>79</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>RH_RightTentacle</defName>
+    <label>right tentacle</label>
+    <labelShort>tentacle</labelShort>
+    <listOrder>78</listOrder>
+  </BodyPartGroupDef>  
+  
+  <!-- N4 Fist -->
+  
+    <BodyPartGroupDef>
+    <defName>RH_N4LeftHand</defName>
+    <label>left fist</label>
+    <labelShort>fist</labelShort>
+    <listOrder>79</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>RH_N4RightHand</defName>
+    <label>right fist</label>
+    <labelShort>fist</labelShort>
+    <listOrder>78</listOrder>
+	
+	
+  </BodyPartGroupDef>  <!-- BodyPartGroups GS -->
+  
+    <BodyPartGroupDef>
+    <defName>RH_LeftClaw</defName>
+    <label>left claw</label>
+    <labelShort>claw</labelShort>
+    <listOrder>79</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>RH_RightClaw</defName>
+    <label>right claw</label>
+    <labelShort>claw</labelShort>
+    <listOrder>78</listOrder>
+  </BodyPartGroupDef>
+  
+    <BodyPartGroupDef>
+    <defName>RH_GSTeeth</defName>
+    <label>teeth</label>
+    <labelShort>teeth</labelShort>
+  </BodyPartGroupDef>    
+  
+  
+  <!-- Generic Teeth -->
+  
+  <BodyPartGroupDef>
+    <defName>RH_N4Teeth</defName>
+    <label>teeth</label>
+    <labelShort>teeth</labelShort>
+  </BodyPartGroupDef>  
+  
+</Defs>

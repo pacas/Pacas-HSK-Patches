@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">	
+        <mods>
+            <li>Vanilla Psycasts Expanded</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/VFECore.Abilities.AbilityDef[defName="VPE_ParalysisPulse"]/modExtensions/li[2]</xpath>
+					<value>
+						<durationMultiplier>PsychicSensitivity</durationMultiplier>
+					</value>
+                </li>
+				<!-- This makes Paralysis Pulse check for PsySen; the VOID helmet gives -100% psysen, thereby protecting from it. -->
+				<!-- I wanted to check for toxic sensitivity instead, but with 1.4 it's a positive stat so I don't think it works. -->
+				<li Class="PatchOperationAdd">
+                    <xpath>Defs/VFECore.Abilities.AbilityDef[defName="VPE_Age"]</xpath>
+					<value>
+						<targetingParameters>
+							<canTargetLocations>false</canTargetLocations>
+							<canTargetPawns>true</canTargetPawns>
+							<onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive>
+						</targetingParameters>
+					</value>
+                </li>
+				<!-- Forces Age to target the psychically sensitive, protecting VOID from it (since it can be used to down). -->
+				<li Class="PatchOperationAdd">
+                    <xpath>Defs/HediffDef[defName="VPE_IceBlock"]</xpath>
+					<value>
+						<comps>
+							<li Class="HediffCompProperties_RemoveIfOtherHediff">
+								<otherHediff>DF_Volatile_Implant</otherHediff>
+								<stages>0~</stages>
+								<mtbHours>0</mtbHours>
+								<message>{0}'s volatile implant melted the ice.</message>		<!--shouldn't appear unless on colonist with that implant-->
+								<messageType>SilentInput</messageType>
+								<onlyMessageForColonistsOrPrisoners>true</onlyMessageForColonistsOrPrisoners>
+							</li>
+						</comps>
+					</value>
+                </li>
+				<!-- Makes the Volatile implant negate the Ice Block psycast. -->
+				<li Class="PatchOperationAdd">
+                    <xpath>Defs/HediffDef[defName="VPE_DeathShield"]/comps</xpath>
+					<value>
+						<li Class="HediffCompProperties_RemoveIfOtherHediff">
+							<otherHediff>DF_Devils_Implant</otherHediff>
+							<stages>0~</stages>
+							<mtbHours>0</mtbHours>
+							<message>{0}'s devil implant negated the deathshield. The Devil will claim his due.</message>	<!--ow the edge-->
+							<messageType>SilentInput</messageType>
+							<onlyMessageForColonistsOrPrisoners>false</onlyMessageForColonistsOrPrisoners>
+						</li>
+					</value>
+                </li>
+				<!-- Makes the Devil implant negate the Deathshield psycast. -->
+				<!-- This was suggested by Farmer Joe in the Steam comments, as you could Deathshield a VOID pawn, almost kill them, and capture them.	-->
+				<!-- I wanted to put this on the Mortality implant, but not all VOID pawns have it. -->
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

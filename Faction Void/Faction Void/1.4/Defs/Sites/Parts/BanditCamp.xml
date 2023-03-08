@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<SitePartDef>
+		<defName>Void_PlanetaryKillerSite</defName>
+		<label>planetkiller weapon</label>
+		<description>A VOID outpost, contains the planet killer weapon.</description>
+		<siteTexture>World/WorldObjects/DefaultSettlement</siteTexture>
+		<expandingIconTexture>Things/World/VOIDLogoStar</expandingIconTexture>
+		<tags Inherit="False">
+			<li>Void_PlanetaryKillerSite</li>
+		</tags>
+		<applyFactionColorToSiteTexture>true</applyFactionColorToSiteTexture>
+		<showFactionInInspectString>true</showFactionInInspectString>
+		<requiresFaction>true</requiresFaction>
+		<approachOrderString>Attack {0}</approachOrderString>
+		<approachingReportString>Attacking {0}</approachingReportString>
+		<arrivedLetter>There is an enemy outpost in this area.</arrivedLetter>
+		<arrivedLetterDef>NegativeEvent</arrivedLetterDef>
+		<wantsThreatPoints>true</wantsThreatPoints>
+		<minThreatPoints>300</minThreatPoints>
+	</SitePartDef>
+
+	<GenStepDef>
+		<defName>Void_PlanetaryKillerSite</defName>
+		<linkWithSite>Void_PlanetaryKillerSite</linkWithSite>
+		<order>450</order>
+		<genStep Class="EncounterFramework.GenStep_LocationGeneration">
+			<locationDef>RH_PlanetaryKillerSite</locationDef>
+		</genStep>
+	</GenStepDef>
+
+	<GenStepDef>
+		<defName>Void_PlanetaryKillerSitePower</defName>
+		<linkWithSite>Void_PlanetaryKillerSite</linkWithSite>
+		<order>451</order>
+		<genStep Class="VoidEvents.GenStep_Power"/>
+	</GenStepDef>
+
+</Defs>

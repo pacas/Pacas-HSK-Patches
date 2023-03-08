@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>Void_RapidHealing</defName>
+		<label>Nerotonin-4 healing</label>
+		<labelNoun>Nerotonin-4 healing</labelNoun>
+		<description>Rapid healing caused as an effect of the Nerotonin Type 4 virus. It is activated after prolonged time away from physical trauma.</description>
+		<hediffClass>VoidEvents.Hediff_RapidHealing</hediffClass>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<label>inactive</label>
+				<minSeverity>0</minSeverity>
+			</li>
+			<li>
+				<label>active</label>
+				<minSeverity>0.50</minSeverity>
+				<naturalHealingFactor>20.0</naturalHealingFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>Void_Painstopper</defName>
+		<label>Nerotonin-4 painkiller</label>
+		<labelNoun>Nerotonin-4 painkiller</labelNoun>
+		<description>A painkiller effect caused by the Nerotonin Type 4 virus.</description>
+		<hediffClass>Hediff</hediffClass>
+		<stages>
+			<li>
+				<painFactor>0.1</painFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

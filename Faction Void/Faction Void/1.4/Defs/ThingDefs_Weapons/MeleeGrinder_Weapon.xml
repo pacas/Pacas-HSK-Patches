@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Chainsaw + Parent -->
+    <!-- USE TOOLS/CAPACITIES TO MAKE CUSTOM MELEE SOUNDS (Thank you to O-Negative) -->
+    <ThingDef ParentName="SK_BaseMeleeWeapon">
+        <defName>RNMelee_DFGrinder_Chainsaw</defName>
+        <label>grinder</label>
+        <description>The Grinder, a chainsaw with a mysterious origin. Upon close inspection, the word "ASH" is written on the side in crimson letters. Rumors say that the souls of slain enemies are what runs the high power engine of this chainsaw.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Weapons/Melee/GrinderHD</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--<equippedAngleOffset>-25</equippedAngleOffset>-->
+        <weaponTags>
+            <li>RN_Grinder</li>
+        </weaponTags>
+        <soundInteract>RHInteract_Chainsaw</soundInteract>
+        <equippedStatOffsets>
+            <PlantWorkSpeed>2.0</PlantWorkSpeed>
+            <MeleeCritChance>0.3</MeleeCritChance>
+            <MeleeParryChance>0.1</MeleeParryChance>
+            <MeleeDodgeChance>0.1</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <statBases>
+            <MarketValue>4150</MarketValue>
+            <Mass>4</Mass>
+            <Bulk>10</Bulk>
+            <MeleeCounterParryBonus>3</MeleeCounterParryBonus>
+        </statBases>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>RHMelee_ChainsawStab</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>0.8</cooldownTime>
+                <armorPenetrationBlunt>10</armorPenetrationBlunt>
+                <armorPenetrationSharp>12</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>blade</label>
+                <capacities>
+                    <li>RHMelee_ChainsawSlash</li>
+                </capacities>
+                <power>26</power>
+                <cooldownTime>1.0</cooldownTime>
+                <armorPenetrationBlunt>8</armorPenetrationBlunt>
+                <armorPenetrationSharp>6</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <thingCategories Inherit="False">
+            <li>DF_MeleeMain</li>
+        </thingCategories>
+    </ThingDef>
+</Defs>

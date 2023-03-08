@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Cap -->
+    <ThingDef ParentName="ApparelMedievalSimpleBase">
+        <defName>RHApparel_DFCloak_Hood</defName>
+        <label>cloak hood</label>
+        <description>A cloak hood that covers your head. Decent for warmth.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Display/CloakHood</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+        </graphicData>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>HF</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <costList>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <Compaste>12</Compaste>
+        </costList>
+        <statBases>
+            <WorkToMake>6000</WorkToMake>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Flammability>1.7</Flammability>
+            <Insulation_Heat>5</Insulation_Heat>
+            <Insulation_Cold>5</Insulation_Cold>
+            <Mass>0.2</Mass>
+            <Bulk>2</Bulk>
+            <WornBulk>0</WornBulk>
+            <EquipDelay>0.8</EquipDelay>
+            <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+            <StuffEffectMultiplierArmor>0.26</StuffEffectMultiplierArmor>
+            <ArmorRating_Sharp>0</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0</ArmorRating_Blunt>
+            <ArmorRating_Heat>0</ArmorRating_Heat>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.1</SocialImpact>
+            <MoveSpeed>-0.01</MoveSpeed>
+            <GermResistance>0.07</GermResistance>
+            <GermContainment>0.04</GermContainment>
+        </equippedStatOffsets>
+        <apparel>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Neck</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/Combat_Headgear/CloakHood</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+                <li>RH_Cloak_DF</li>
+                <li>RH_Hood_VOID</li>
+                <li>PassiveCamo_Black_Set</li>
+                <li>RoyalTier7</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(48, 35, 29)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(156, 156, 156)</only>
+                </li>
+                <li>
+                    <weight>30</weight>
+                    <only>(64, 56, 48)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(82, 82, 82)</min>
+                    <max>(36, 36, 36)</max>
+                </li>
+                <li>
+                    <weight>2</weight>
+                    <min>(89, 51, 51)</min>
+                    <max>(64, 32, 32)</max>
+                </li>
+            </options>
+        </colorGenerator>
+        <recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+		</recipeMaker>
+    </ThingDef>
+    <!-- ====================================== Black cloak =========================================== -->
+    <ThingDef ParentName="ApparelMedievalSimpleBase">
+        <defName>RHApparel_DFCloak_Poncho</defName>
+        <label>cloak</label>
+        <description>A windproof cloak, worn-out from it's years of use but keeps on going. It seems to be something wasteland survivors are too sentimental to let go of, before their time of using power armors. Maybe its just whats fashionable among their social circles.</description>
+        <graphicData>
+            <texPath>Things/Apparel/Display/WastelandCloak</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.90</drawSize>
+        </graphicData>
+        <stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>100</costStuffCount>
+		<costList>
+			<ComponentIndustrial>5</ComponentIndustrial>
+            <Compaste>10</Compaste>
+		</costList>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.4</Flammability>
+			<Mass>0.2</Mass>
+			<Bulk>5</Bulk>
+			<WornBulk>2</WornBulk>
+			<EquipDelay>1.5</EquipDelay>
+			<Insulation_Heat>4</Insulation_Heat>
+			<Insulation_Cold>4</Insulation_Cold>			
+			<StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierArmor>1.04</StuffEffectMultiplierArmor>
+			<ArmorRating_Sharp>0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0</ArmorRating_Heat>
+		</statBases>
+        <equippedStatOffsets>
+            <PainShockThreshold>0.05</PainShockThreshold>
+            <ForagedNutritionPerDay>0.25</ForagedNutritionPerDay>
+            <MoveSpeed>-0.05</MoveSpeed>
+			<WorkSpeedGlobal>-0.03</WorkSpeedGlobal>
+			<AimingDelayFactor>-0.03</AimingDelayFactor>
+			<GermResistance>0.05</GermResistance>
+			<GermContainment>0.05</GermContainment>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/Shell/Cloak/WastelandCloak</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>RH_Cloak_DF</li>
+                <li>RH_Shell_VOID</li>
+                <li>PassiveCamo_Black_Set</li>
+                <li>RoyalTier7</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(48, 35, 29)</only>
+                </li>
+                <li>
+                    <weight>10</weight>
+                    <only>(156, 156, 156)</only>
+                </li>
+                <li>
+                    <weight>30</weight>
+                    <only>(64, 56, 48)</only>
+                </li>
+                <li>
+                    <weight>6</weight>
+                    <min>(82, 82, 82)</min>
+                    <max>(36, 36, 36)</max>
+                </li>
+                <li>
+                    <weight>2</weight>
+                    <min>(89, 51, 51)</min>
+                    <max>(64, 32, 32)</max>
+                </li>
+            </options>
+        </colorGenerator>
+        <recipeMaker>
+            <researchPrerequisite>Fabrication</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+</Defs>

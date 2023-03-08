@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<JobDef>
+		<defName>UseSecronomControlChip</defName>
+		<driverClass>VoidEvents.JobDriver_UseItem</driverClass>
+		<reportString>using secronom control chip.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<DutyDef>
+		<defName>Void_MoveInPlace</defName>
+		<socialModeMax>Off</socialModeMax>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="ThinkNode_ConditionalCloseToDutyTarget">
+					<maxDistToDutyTarget>12</maxDistToDutyTarget>
+					<subNodes>
+						<li Class="VoidEvents.JobGiver_ContactColonist">
+						</li>
+					</subNodes>
+				</li>
+				<!-- Goto my spot -->
+				<li Class="JobGiver_GotoTravelDestination">
+					<exactCell>true</exactCell>
+					<locomotionUrgency>Jog</locomotionUrgency>
+				</li>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+
+	<JobDef>
+		<defName>Void_Contact</defName>
+		<driverClass>VoidEvents.JobDriver_Contact</driverClass>
+		<reportString>contacting TargetA.</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>Void_SwallowTarget</defName>
+		<driverClass>VoidEvents.JobDriver_SwallowItem</driverClass>
+		<reportString>swallowing TargetA.</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JobDef>
+		<defName>Void_ReleasePrisoner</defName>
+		<driverClass>VoidEvents.JobDriver_ReleasePrisoner</driverClass>
+		<reportString>releasing TargetA.</reportString>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+		<carryThingAfterJob>true</carryThingAfterJob>
+	</JobDef>
+
+</Defs>

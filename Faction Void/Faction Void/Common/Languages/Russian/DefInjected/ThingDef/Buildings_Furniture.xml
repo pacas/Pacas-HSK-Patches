@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- VOID-o-metric power cell -->
+
+  <RH_VOIDPowerCell.label>Батарея Войдтех</RH_VOIDPowerCell.label>
+  <RH_VOIDPowerCell.description>Генерирует бесконечную энергию. Эта технология разработана межгалактическим аэрокосмическим и бионическим гигантом Войдтех. Это их перепроизводство и переработка ванометрических силовых ячеек. Это был результат 100-летних исследований и поиска способов воспроизвести технологию для использования всеми, кто может позволить себе такое устройство. Ученые до сих пор ломают голову над тем, как Войдтех узнали секреты этой технологии.</RH_VOIDPowerCell.description>
+
+
+  <!-- Corpo stuff -->
+
+  <RH_Corpo_Armchair.label>Корпоративное кресло</RH_Corpo_Armchair.label>
+  <RH_Corpo_Armchair.description>Большое, мягкое, удобное современное кресло. Отлично подходит для отдыха. Может использоваться за столами, рабочими местами и в других местах.</RH_Corpo_Armchair.description>
+
+
+  <!-- Table base -->
+
+  <RH_Corpo_Table1x2c.label>Корпоративный стол (1x2)</RH_Corpo_Table1x2c.label>
+  <RH_Corpo_Table1x2c.description>Люди едят со столов когда напротив стоят стулья.</RH_Corpo_Table1x2c.description>
+
+  <RH_Corpo_Desk1x2c.label>Корпоративный рабочий стол (1x2)</RH_Corpo_Desk1x2c.label>
+  <RH_Corpo_Desk1x2c.description>Люди едят со столов когда напротив стоят стулья.</RH_Corpo_Desk1x2c.description>
+
+
+  <!-- <ThingDef ParentName="RHCorpo_TableGatherSpotBase">
+    <defName>RH_Corpo_Table2x2c</defName>
+    <label>table (2x2)</label>
+    <graphicData>
+      <texPath>Things/Building/Corpo_Furniture/Table2x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>1500</WorkToBuild>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <size>(2,2)</size>
+    <costStuffCount>50</costStuffCount>
+    <rotatable>false</rotatable>
+  </ThingDef> -->
+
+  <RH_Corpo_Table2x4c.label>Корпоративный стол (2x4)</RH_Corpo_Table2x4c.label>
+  <RH_Corpo_Table2x4c.description>Люди едят со столов когда напротив стоят стулья.</RH_Corpo_Table2x4c.description>
+
+  <RH_Corpo_Table1x1c.label>Корпоративный стол (1x1)</RH_Corpo_Table1x1c.label>
+  <RH_Corpo_Table1x1c.description>Люди едят со столов когда напротив стоят стулья.</RH_Corpo_Table1x1c.description>
+
+
+  <!-- Lamp Designator -->
+
+  <RH_Corpo_StandingLamp.label>Корпоративная лампа</RH_Corpo_StandingLamp.label>
+  <RH_Corpo_StandingLamp.description>Электрическая стоячая лампа, которая освещает территорию. Людям нужен свет, чтобы двигаться и работать на полной скорости.</RH_Corpo_StandingLamp.description>
+
+  <RH_Corpo_StandingLamp_Red.label>Корпоративная лампа (красная)</RH_Corpo_StandingLamp_Red.label>
+  <RH_Corpo_StandingLamp_Red.description>Стоячая лампа, которая освещает область красным светом.</RH_Corpo_StandingLamp_Red.description>
+
+  <RH_Corpo_StandingLamp_Green.label>Корпоративная лампа (зеленая)</RH_Corpo_StandingLamp_Green.label>
+  <RH_Corpo_StandingLamp_Green.description>Стоячая лампа, которая освещает область зеленым светом.</RH_Corpo_StandingLamp_Green.description>
+
+  <RH_Corpo_StandingLamp_Blue.label>Корпоративная лампа (синяя)</RH_Corpo_StandingLamp_Blue.label>
+  <RH_Corpo_StandingLamp_Blue.description>Стоячая лампа, которая освещает область синим светом.</RH_Corpo_StandingLamp_Blue.description>
+
+
+  <!-- Drapes, Royalty stuff -->
+
+  <RH_Corpo_Drape.label>Корпоративная занавеска</RH_Corpo_Drape.label>
+  <RH_Corpo_Drape.description>Декоративная простыня, подвешенная к вертикальной деревянной раме. Подходит для корпоративных помещений.</RH_Corpo_Drape.description>
+
+
+  <!-- Boards, Royalty stuff -->
+
+  <RH_Corpo_Whiteboard_A.label>Доска для совещаний (графики)</RH_Corpo_Whiteboard_A.label>
+  <RH_Corpo_Whiteboard_A.description>Декоративная доска, подвешенная к вертикальной деревянной раме. Подходит для корпоративных помещений.</RH_Corpo_Whiteboard_A.description>
+
+  <RH_Corpo_Whiteboard_B.label>Доска для совещаний (диаграммы)</RH_Corpo_Whiteboard_B.label>
+  <RH_Corpo_Whiteboard_B.description>Декоративная доска, подвешенная к вертикальной деревянной раме. Подходит для корпоративных помещений.</RH_Corpo_Whiteboard_B.description>
+
+  <RH_Corpo_Brazier.label>Корпоративный мангал</RH_Corpo_Brazier.label>
+  <RH_Corpo_Brazier.description>Строение квадратной формы, используемое для разведения огня. Будет освещать окрестности и создавать тепло.</RH_Corpo_Brazier.description>
+  <RH_Corpo_Brazier_Blueprint_Install.label>Корпоративный мангал (чертеж)</RH_Corpo_Brazier_Blueprint_Install.label>
+
+
+</LanguageData>

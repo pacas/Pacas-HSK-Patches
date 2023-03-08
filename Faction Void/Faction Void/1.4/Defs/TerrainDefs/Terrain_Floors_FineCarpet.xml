@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+  <!-- Made for the sole purpose of VOID bases only. -->
+  
+  <TerrainDef Name="DF_CarpetFineBase_A" ParentName="SK_CarpetBase" Abstract="True">
+    <texturePath>Terrain/Surfaces/Modern_Carpet</texturePath>
+    <tags>
+      <li>DF_FineFloor</li>
+      <li>DF_Floor</li>
+    </tags>
+  </TerrainDef>
+
+  <TerrainDef ParentName="DF_CarpetFineBase_A">
+    <defName>RH_Corpo_CarpetFineBurgundy_A</defName>
+    <label>smooth burgundy carpet</label>
+    <renderPrecedence>200</renderPrecedence>
+    <description>Classic burgundy carpet for that classic rich look.</description>
+    <color>(91,41,45)</color>
+  </TerrainDef>  
+
+  <TerrainDef ParentName="DF_CarpetFineBase_A">
+    <defName>RH_Corpo_CarpetFineIndigo_A</defName>
+    <label>smooth indigo carpet</label>
+    <renderPrecedence>199</renderPrecedence>
+    <description>Soft and silky indigo carpet, for that extra sense of pomp.</description>
+    <color>(125,73,125)</color>
+  </TerrainDef>
+
+  <TerrainDef ParentName="DF_CarpetFineBase_A">
+    <defName>RH_Corpo_CarpetFineWhite_A</defName>
+    <label>smooth white carpet</label>
+    <renderPrecedence>198</renderPrecedence>
+    <description>Sublime white carpet, glimmering with subtle patterns.</description>
+    <color>(0.65,0.65,0.65)</color>
+  </TerrainDef>
+  
+    <TerrainDef ParentName="DF_CarpetFineBase_A">
+    <defName>RH_Corpo_CarpetFineDark_A</defName>
+    <label>smooth dark carpet</label>
+    <renderPrecedence>200</renderPrecedence>
+    <description>Classic dark carpet for that classic rich look.</description>
+    <color>(81,81,81)</color>
+  </TerrainDef>
+  
+    <!-- Made for the sole purpose of VOID bases only pt 2. -->
+  
+  <TerrainDef Name="DF_CarpetFineBase_B" ParentName="SK_CarpetBase" Abstract="True">
+    <texturePath>Terrain/Surfaces/Modern_Carpet2</texturePath>
+    <tags>
+      <li>DF_FineFloor</li>
+      <li>DF_Floor</li>
+    </tags>
+  </TerrainDef>
+
+  <TerrainDef ParentName="DF_CarpetFineBase_B">
+    <defName>RH_Corpo_CarpetFineBurgundy_B</defName>
+    <label>elegant burgundy carpet</label>
+    <renderPrecedence>200</renderPrecedence>
+    <description>Classic burgundy carpet for that classic rich look.</description>
+    <color>(91,41,45)</color>
+  </TerrainDef>
+
+  <TerrainDef ParentName="DF_CarpetFineBase_B">
+    <defName>RH_Corpo_CarpetFineIndigo_B</defName>
+    <label>elegant indigo carpet</label>
+    <renderPrecedence>199</renderPrecedence>
+    <description>Soft and silky indigo carpet, for that extra sense of pomp.</description>
+    <color>(125,73,125)</color>
+  </TerrainDef>
+
+  <TerrainDef ParentName="DF_CarpetFineBase_B">
+    <defName>RH_Corpo_CarpetFineWhite_B</defName>
+    <label>elegant white carpet</label>
+    <renderPrecedence>198</renderPrecedence>
+    <description>Sublime white carpet, glimmering with subtle patterns.</description>
+    <color>(0.65,0.65,0.65)</color>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="DF_CarpetFineBase_B">
+    <defName>RH_Corpo_CarpetFineDark_B</defName>
+    <label>elegant dark carpet</label>
+    <renderPrecedence>200</renderPrecedence>
+    <description>Classic dark carpet for that classic rich look.</description>
+    <color>(81,81,81)</color>
+  </TerrainDef>
+
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAddModExtension">
+                <xpath>/Defs/FactionDef[defName="RH_VOID"]</xpath>
+                <value>
+                    <li Class="VoidEvents.Extension">
+                        <arrivalMode>CenterDrop</arrivalMode>
+                        <incidentsOnArrival>
+                            <li>ChickenVOID_SolarFlare</li>
+                            <li>ChickenVOID_ToxicFalloutCustomizable</li>
+                        </incidentsOnArrival>
+                        <strategy>ImmediateAttackSappers</strategy><!-- Note: ImmediateAttackSmart does the same thing, just without the wall-mining, in case this causes issues. -->
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+	
+</Patch>

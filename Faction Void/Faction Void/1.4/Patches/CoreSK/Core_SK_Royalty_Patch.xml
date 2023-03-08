@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_RoyaltyStuff"]/defNames</xpath>
+                    <value>
+                        <li>RH_Corpo_Drape</li>
+                        <li>RH_Corpo_Whiteboard_A</li>
+                        <li>RH_Corpo_Whiteboard_B</li>
+                        <li>RH_Corpo_Brazier</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  	<!-- ===================== DF ========================= -->
+	
+  <SoundDef>
+    <defName>RH_HulkPunch</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/HulkPunch</clipPath>
+          </li>
+        </grains>
+		
+	    <volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>   
+		
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>  	  	
+  
+  <!-- ===================== DF ========================= -->
+	
+  <SoundDef>
+    <defName>RH_HulkPoundVictim</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/HulkPoundVictim</clipPath>
+          </li>
+        </grains>      
+		
+		<volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>   
+		
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>  	  
+  
+  <!-- ===================== DF ========================= -->
+	
+  <SoundDef>
+    <defName>RH_HulkMiss</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/HulkMiss</clipPath>
+          </li>
+        </grains>    
+
+		<volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>   
+		
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>  	  	
+  
+  <!-- ===================== WRAITH ========================= -->
+	
+  <SoundDef>
+    <defName>RH_TentacleHit</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/TentacleHit</clipPath>
+          </li>
+        </grains>     
+
+		<volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>   
+		
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>  	  	
+  
+  <!-- ===================== DF ========================= -->
+	
+  <SoundDef>
+    <defName>RH_TentacleHitBuilding</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/TentacleHitBuilding</clipPath>
+          </li>
+        </grains>  
+
+		<volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>   
+		
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>  	  
+  
+  <!-- ===================== DF ========================= -->
+	
+  <SoundDef>
+    <defName>RH_WraithMiss</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/WraithMiss</clipPath>
+          </li>
+        </grains>  
+
+		<volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>   
+		
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>  	
+  
+  
+    <!-- ===================== Spider Bite ========================= -->
+	
+  <SoundDef>
+    <defName>RH_GiantSpiderHit</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DF_Monster/DFGiantSpider_Bite</clipPath>
+          </li>
+        </grains>   
+
+		<volumeRange>
+          <min>20</min>        
+          <max>20</max>
+        </volumeRange>   
+		
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>  	  
+  
+  
+</Defs>

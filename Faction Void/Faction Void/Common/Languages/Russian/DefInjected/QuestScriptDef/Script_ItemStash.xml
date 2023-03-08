@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Void_OpportunitySite_ItemStash.root.nodes.4.name>asker</Void_OpportunitySite_ItemStash.root.nodes.4.name>
+  <Void_OpportunitySite_ItemStash.root.nodes.4.elseNode.nodes.0.name>askerIsNull</Void_OpportunitySite_ItemStash.root.nodes.4.elseNode.nodes.0.name>
+  <Void_OpportunitySite_ItemStash.root.nodes.10.node.nodes.0.label>Срок действия квеста истек: [resolvedQuestName]</Void_OpportunitySite_ItemStash.root.nodes.10.node.nodes.0.label>
+  <Void_OpportunitySite_ItemStash.root.nodes.10.node.nodes.0.text>Перехваченные сообщения указывают на то, что тайник с предметами был захвачен другими. Срок действия квеста [resolvedQuestName] истек.</Void_OpportunitySite_ItemStash.root.nodes.10.node.nodes.0.text>
+  <Void_OpportunitySite_ItemStash.questDescriptionRules.rulesStrings.0>questDescription(askerIsNull==true)-&gt;Мы перехватили сообщения о коллекции ценных предметов стоимостью [itemStashContentsValue] недалеко от [map_definite]. Коллекция состоит из:\n\n[itemStashContents]\n\nКажется, что [allSitePartsDescriptionsExceptFirst]</Void_OpportunitySite_ItemStash.questDescriptionRules.rulesStrings.0>
+  <Void_OpportunitySite_ItemStash.questDescriptionRules.rulesStrings.1>questDescription(asker_factionLeader==True)-&gt;[asker_nameDef], [asker_faction_leaderTitle] [asker_faction_name], сообщил нам о коллекции ценных предметов стоимостью [itemStashContentsValue] недалеко от нас. Коллекция состоит из:\n\n[itemStashContents]\n\n[asker_label] говорит что [allSitePartsDescriptionsExceptFirst]</Void_OpportunitySite_ItemStash.questDescriptionRules.rulesStrings.1>
+  <Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.0>questName(priority=1)-&gt;[asker_nameDef] детский блюз</Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.0>
+  <Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.1>questName(priority=1)-&gt;[asker_nameDef] капуслы Неротонина</Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.1>
+  <Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.2>questName(priority=1)-&gt;[asker_nameDef] [stash] Неротонина</Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.2>
+  <Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.3>questName(priority=1)-&gt;[asker_nameDef] магические пиллюли</Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.3>
+  <Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.4>questName(priority=1)-&gt;[asker_nameDef] чудо-таблетки</Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.4>
+  <Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.5>questName(priority=1)-&gt;[asker_nameDef] синие таблетки</Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.5>
+  <Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.6>questName(priority=1)-&gt;[asker_nameDef] Неротонин</Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.6>
+  <Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.7>stash-&gt;склад</Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.7>
+  <Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.8>stash-&gt;тайник</Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.8>
+  <Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.9>stash-&gt;хранилище</Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.9>
+  <Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.10>stash-&gt;запас</Void_OpportunitySite_ItemStash.questNameRules.rulesStrings.10>
+
+
+</LanguageData>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <WorldObjectDef>
+    <defName>Void_PlanetaryKillerSite</defName>
+    <worldObjectClass>VoidEvents.VoidCamp</worldObjectClass>
+    <expandingIcon>true</expandingIcon>
+    <expandingIconPriority>70</expandingIconPriority>
+    <comps>
+      <li Class="WorldObjectCompProperties_Timeout" />
+      <li Class="WorldObjectCompProperties_DefeatAllEnemiesQuest" />
+      <li Class="WorldObjectCompProperties_ItemStashContents" />
+      <li Class="WorldObjectCompProperties_DownedRefugee" />
+      <li Class="WorldObjectCompProperties_PrisonerWillingToJoin" />
+      <li Class="WorldObjectCompProperties_FormCaravan" />
+      <li Class="VoidEvents.WorldObjectCompProperties_VoidReinforcements">
+		<reinforcementTicksInterval>5000</reinforcementTicksInterval>
+		<threatGenerator>
+			<options>
+				<li>
+					<lordJobType>RimWorld.LordJob_AssaultColony</lordJobType>
+					<defaultFaction>RH_VOID</defaultFaction>
+					<arrivalMode>EdgeDrop</arrivalMode>
+					<pawnsToSpawn>
+						<RH_VOID_Undying>1</RH_VOID_Undying>
+						<RH_VOID_Elite>4</RH_VOID_Elite>
+						<RH_BlackWraith>1</RH_BlackWraith>
+					</pawnsToSpawn>
+				</li>
+			</options>
+		</threatGenerator>
+	  </li>
+      <li Class="WorldObjectCompProperties_EnterCooldown" />
+    </comps>
+    <IncidentTargetTags>
+      <li>Map_Misc</li>
+    </IncidentTargetTags>
+  </WorldObjectDef>
+
+</Defs>

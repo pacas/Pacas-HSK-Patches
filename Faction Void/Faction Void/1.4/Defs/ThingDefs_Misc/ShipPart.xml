@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!---->
+    <ThingDef ParentName="CrashedShipPartBase">
+        <defName>Void_DefoliatorShipPart</defName>
+        <label>N-4 conversion chamber</label>
+        <description>A Nerotonin-4 conversion chamber. Seems to have come from a spacecraft's laboratory.\n\nIt is slowly releasing fumes that is destroying plant life near itself.</description>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <!-- Hack to draw defoliant radius -->
+        <thingClass>VoidEvents.DefoliatorShipPart</thingClass>
+        <placeWorkers>
+            <li>PlaceWorker_ShowPlantHarmRadius</li>
+        </placeWorkers>
+        <statBases>
+            <MaxHitPoints>2000</MaxHitPoints>
+        </statBases>
+        <building>
+            <soundAmbient>RH_VOIDConversionChamber</soundAmbient>
+        </building>
+        <graphicData>
+            <texPath>Things/Building/ConversionChamber</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(10,10)</drawSize>
+            <shadowData>
+                <volume>(0.9, 1.0, 0.9)</volume>
+            </shadowData>
+            <damageData>
+                <rect>(0.5, 0.1, 5, 2.8)</rect>
+            </damageData>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_PlantHarmRadius">
+                <radiusPerDayCurve>
+                    <points>
+                        <li>0  , 5</li>
+                        <li>1.5, 18</li>
+                        <li>6  , 40</li>
+                        <li>20 , 100</li>
+                    </points>
+                </radiusPerDayCurve>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="VoidEvents.ShipPawnTypes">
+                <pawnSpawnOptions>
+                    <li>
+                        <amount>1</amount>
+                        <pawnKindDef>RH_DF_BlackLeaper</pawnKindDef>
+                        <factionDef>RH2_Nerotonin4_Horde</factionDef>
+                    </li>
+                </pawnSpawnOptions>
+            </li>
+        </modExtensions>
+        <killedLeavings>
+            <Plasteel>10</Plasteel>
+            <DF_Havoc_Implant>1</DF_Havoc_Implant>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <Titanium>25</Titanium>
+            <ChunkSlagSteel>3</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+    <!-- VL -->
+    <ThingDef ParentName="CrashedShipPartBase">
+        <defName>VOID_Conversion_ShipPart</defName>
+        <label>N-4 conversion chamber</label>
+        <description>A Nerotonin-4 conversion chamber. Seems to have come from a spacecraft's laboratory. Something doesn't quite feel right about this one, those who approach it feel something incredibly ominous within.\n\nIt is slowly releasing fumes that is destroying plant life near itself.</description>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <!-- Hack to draw defoliant radius -->
+        <thingClass>VoidEvents.DefoliatorShipPart</thingClass>
+        <placeWorkers>
+            <li>PlaceWorker_ShowPlantHarmRadius</li>
+        </placeWorkers>
+        <statBases>
+            <MaxHitPoints>2000</MaxHitPoints>
+        </statBases>
+        <building>
+            <soundAmbient>RH_VOIDConversionChamber</soundAmbient>
+        </building>
+        <graphicData>
+            <texPath>Things/Building/ConversionChamber</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(10,10)</drawSize>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_PlantHarmRadius">
+                <radiusPerDayCurve>
+                    <points>
+                        <li>0  , 5</li>
+                        <li>1.5, 18</li>
+                        <li>6  , 40</li>
+                        <li>20 , 100</li>
+                    </points>
+                </radiusPerDayCurve>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="VoidEvents.ShipPawnTypes">
+                <pawnSpawnOptions>
+                    <li>
+                        <amount>1</amount>
+                        <pawnKindDef>RH_DF_VolatileLeaper</pawnKindDef>
+                        <factionDef>RH2_Nerotonin4_Horde</factionDef>
+                    </li>
+                </pawnSpawnOptions>
+            </li>
+        </modExtensions>
+        <killedLeavings>
+            <Plasteel>10</Plasteel>
+            <DF_Volatile_Implant>1</DF_Volatile_Implant>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <Titanium>25</Titanium>
+            <ChunkSlagSteel>3</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+    <!-- BLACK TITAN -->
+    <ThingDef ParentName="CrashedShipPartBase">
+        <defName>VOID_Rebirth_ShipPart</defName>
+        <label>N-4 rebirth chamber</label>
+        <description>A Nerotonin-4 rebirth chamber. Seems to have come from a spacecraft's laboratory. \n\nA damaged screen with unintelligible words plead to you with warning symbols to stay away.\n\nIt is slowly releasing fumes that is destroying plant life near itself.</description>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <!-- Hack to draw defoliant radius -->
+        <thingClass>VoidEvents.DefoliatorShipPart</thingClass>
+        <placeWorkers>
+            <li>PlaceWorker_ShowPlantHarmRadius</li>
+        </placeWorkers>
+        <statBases>
+            <MaxHitPoints>2500</MaxHitPoints>
+        </statBases>
+        <building>
+            <soundAmbient>RH_VOIDRebirthChamber</soundAmbient>
+        </building>
+        <graphicData>
+            <texPath>Things/Building/RebirthChamber</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(10,10)</drawSize>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_PlantHarmRadius">
+                <radiusPerDayCurve>
+                    <points>
+                        <li>0  , 5</li>
+                        <li>1.5, 18</li>
+                        <li>6  , 40</li>
+                        <li>20 , 100</li>
+                    </points>
+                </radiusPerDayCurve>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="VoidEvents.ShipPawnTypes">
+                <pawnSpawnOptions>
+                    <li>
+                        <amount>1</amount>
+                        <pawnKindDef>RH_BlackTitan</pawnKindDef>
+                        <factionDef>RH2_Nerotonin4_Horde</factionDef>
+                    </li>
+                </pawnSpawnOptions>
+            </li>
+        </modExtensions>
+        <killedLeavings>
+            <Plasteel>10</Plasteel>
+            <DF_Data_Implant>1</DF_Data_Implant>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <Titanium>25</Titanium>
+            <ChunkSlagSteel>3</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+    <!-- DH -->
+    <ThingDef ParentName="CrashedShipPartBase">
+        <defName>Void_DevilChamber_ShipPart</defName>
+        <label>N-4 devil chamber</label>
+        <description>A Nerotonin-4 conversion chamber. Seems to have come from a spacecraft's laboratory. \n\nThere's dying screen that seems as if it's fighting with it's life to stay on, flashing in red and displaying warning symbols. Your eyes are averted to one particular word, it says "Devil", with rest of the words illegible due to cracks and internal damage.\n\nIt is slowly releasing fumes that is destroying plant life near itself.</description>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <!-- Hack to draw defoliant radius -->
+        <thingClass>VoidEvents.DefoliatorShipPart</thingClass>
+        <placeWorkers>
+            <li>PlaceWorker_ShowPlantHarmRadius</li>
+        </placeWorkers>
+        <statBases>
+            <MaxHitPoints>2500</MaxHitPoints>
+        </statBases>
+        <building>
+            <soundAmbient>RH_VOIDDevilChamber</soundAmbient>
+        </building>
+        <graphicData>
+            <texPath>Things/Building/DevilChamber</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(15,15)</drawSize>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_PlantHarmRadius">
+                <radiusPerDayCurve>
+                    <points>
+                        <li>0  , 5</li>
+                        <li>1.5, 18</li>
+                        <li>6  , 40</li>
+                        <li>20 , 100</li>
+                    </points>
+                </radiusPerDayCurve>
+            </li>
+        </comps>
+        <modExtensions>
+            <li Class="VoidEvents.ShipPawnTypes">
+                <pawnSpawnOptions>
+                    <li>
+                        <amount>1</amount>
+                        <pawnKindDef>RH_DF_DevilHound</pawnKindDef>
+                        <factionDef>RH2_Nerotonin4_Horde</factionDef>
+                    </li>
+                </pawnSpawnOptions>
+            </li>
+        </modExtensions>
+        <killedLeavings>
+            <Plasteel>10</Plasteel>
+            <DF_Devils_Implant>1</DF_Devils_Implant>
+            <ComponentIndustrial>3</ComponentIndustrial>
+            <ComponentSpacer>2</ComponentSpacer>
+            <Titanium>25</Titanium>
+            <ChunkSlagSteel>3</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+</Defs>

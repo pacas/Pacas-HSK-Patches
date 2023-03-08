@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- Acid Volatile -->
+
+  <DamageDef Name="RH_DF_VolatileAcidBomb">
+    <defName>RHDamageDef_DF_VolatileAcid</defName>
+    <label>volatile acid</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion.</deathMessage>
+    <hediff>ChemicalBurn</hediff>
+    <hediffSolid>ChemicalBurn</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <minDamageToFragment>20</minDamageToFragment>
+    <defaultDamage>25</defaultDamage>
+    <defaultStoppingPower>4</defaultStoppingPower>
+    <defaultArmorPenetration>1.0</defaultArmorPenetration>
+    <buildingDamageFactor>10</buildingDamageFactor>
+    <plantDamageFactor>10</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>10</explosionHeatEnergyPerCell>
+    <explosionCellMote>RHMote_DF_VolatileAcid</explosionCellMote>
+    <soundExplosion>DF_Acid_Explosion</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+  </DamageDef>
+ 
+</Defs>

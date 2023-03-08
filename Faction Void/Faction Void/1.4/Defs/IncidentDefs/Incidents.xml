@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- VOID Drone -->
+
+
+    <GameConditionDef>
+        <defName>ChickenVOID_PsychicDrone</defName>
+        <conditionClass>GameCondition_PsychicEmanation</conditionClass>
+        <label>V.O.I.D. drone</label>
+        <description>A distant V.O.I.D. warship is emitting psychic signals through an orbital amplifier, driving people towards insanity.</description>
+        <descriptionFuture>a V.O.I.D. [psychicDroneLevel] psychic drone will buzz the area around [map_definite] for [gameConditionDuration_duration], pushing all people of the [psychicDroneGender] gender towards insanity</descriptionFuture>
+        <defaultDroneLevel>BadMedium</defaultDroneLevel>
+        <endMessage>The V.O.I.D. psychic drone is ending.</endMessage>
+        <letterText>Every {0} colonist feels a wave of anxiety and anger!\n\nSome distant engine of hatred is stirring. It is projecting a psychic drone onto this site through an orbital amplifier, tuned to only affect {0}s. For a few days, some people's mood will be quite a bit worse.\n\nThe V.O.I.D. drone level is {1}.</letterText>
+        <letterDef>VOID_DroneEvent</letterDef>
+        <canBePermanent>true</canBePermanent>
+    </GameConditionDef>
+
+    <IncidentDef>
+        <defName>ChickenVOID_DroneCustomizable</defName>
+        <label>V.O.I.D. drone</label>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>IncidentWorker_PsychicDrone</workerClass>
+        <gameCondition>ChickenVOID_PsychicDrone</gameCondition>
+        <letterLabel>V.O.I.D.</letterLabel>
+        <letterDef>VOID_DroneEvent</letterDef>
+        <baseChance>1.0</baseChance>
+        <minRefireDays>15</minRefireDays>
+        <durationDays>0.75~1.75</durationDays>
+    </IncidentDef>
+
+    <!---->
+    <IncidentDef>
+        <defName>ChickenVOID_SolarFlare</defName>
+        <label>V.O.I.D. flare</label>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>IncidentWorker_MakeGameCondition</workerClass>
+        <gameCondition>ChickenVOID_SolarFlare</gameCondition>
+        <letterLabel>V.O.I.D.</letterLabel>
+        <letterDef>VOID_NegativeEvent</letterDef>
+        <baseChance>0</baseChance>
+        <minRefireDays>15</minRefireDays>
+        <durationDays>0.5~1.5</durationDays>
+    </IncidentDef>
+
+    <GameConditionDef>
+        <defName>ChickenVOID_SolarFlare</defName>
+        <conditionClass>VoidEvents.GameCondition_SolarFlare</conditionClass>
+        <label>V.O.I.D. flare</label>
+        <description>An articially induced solar flare is blasting the planet through. The electromagnetic interference will prevent most electrical devices from working.</description>
+        <endMessage>The solar flare caused by V.O.I.D. is ending.</endMessage>
+        <letterText>An artificially induced solar flare has begun.\n\nThe intense radiation will shut down all electrical devices.\n\nIt should pass in about a day.</letterText>
+        <letterDef>NegativeEvent</letterDef>
+        <canBePermanent>true</canBePermanent>
+    </GameConditionDef>
+
+    <IncidentDef>
+        <defName>ChickenVOID_ToxicFalloutCustomizable</defName>
+        <label>V.O.I.D. fallout</label>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>IncidentWorker_MakeGameCondition</workerClass>
+        <gameCondition>ChickenVOID_ToxicFalloutCustomizable</gameCondition>
+        <letterLabel>V.O.I.D.</letterLabel>
+        <letterDef>VOID_ToxicEvent</letterDef>
+        <baseChance>0</baseChance>
+        <minRefireDays>15</minRefireDays>
+        <durationDays>0.75~3</durationDays>
+    </IncidentDef>
+
+    <GameConditionDef>
+        <defName>ChickenVOID_ToxicFalloutCustomizable</defName>
+        <conditionClass>GameCondition_ToxicFallout</conditionClass>
+        <label>V.O.I.D. fallout</label>
+        <description>A plume of toxic dust from some distant source is slowly settling over this entire region. Any living thing not under a roof will be slowly poisoned, and items left outside will corrode.</description>
+        <descriptionFuture>a cloud of toxic fallout will blanket the area around [map_definite] for [gameConditionDuration_duration], killing outdoor plant and animal life</descriptionFuture>
+        <endMessage>The worst of the toxic fallout has settled.</endMessage>
+        <letterText>A distant chemical fire has released a plume of poison over this entire region.\n\nAny person or creature not under a roof will be slowly sickened by the toxic dust settling out of the atmosphere.\n\nIt will last for anywhere between a few days to over a quadrum.</letterText>
+        <letterDef>NegativeEvent</letterDef>
+        <canBePermanent>true</canBePermanent>
+        <modExtensions>
+            <li Class="VoidEvents.CustomizableToxicFalloutExtension">
+                <transitionTicks>5000</transitionTicks>
+                <damageCheckInterval>3451</damageCheckInterval>
+                <plantKillChance>0.0065</plantKillChance>
+                <corpseRotProgressAdd>3000</corpseRotProgressAdd>
+                <maxSkyLerpFactor>0.5</maxSkyLerpFactor>
+                <skyGlow>0.85</skyGlow>
+                <colorSky>(217, 0, 0)</colorSky>
+                <colorShadow>(53, 25, 94)</colorShadow>
+                <colorOverlay>0.8, 0.7, 0.7</colorOverlay>
+                <saturation>0.85</saturation>
+                <baseToxicBuildup>0.03</baseToxicBuildup>
+                <animalDensityFactor>0</animalDensityFactor>
+                <plantDensityFactor>0</plantDensityFactor>
+            </li>
+        </modExtensions>
+    </GameConditionDef>
+
+    <LetterDef Name="VOID_DroneEvent">
+        <defName>VOID_DroneEvent</defName>
+        <color>(250, 82, 200)</color>
+        <flashColor>(255, 33, 107)</flashColor>
+        <flashInterval>40</flashInterval>
+        <arriveSound>RH_VOIDBlackout</arriveSound>
+    </LetterDef>
+	
+    <LetterDef Name="VOID_N4Event">
+        <defName>VOID_N4Event</defName>
+        <color>(184, 44, 44)</color>
+        <flashColor>(46, 21, 21)</flashColor>
+        <flashInterval>40</flashInterval>
+        <arriveSound>RH_VOIDBlackout</arriveSound>
+    </LetterDef>
+	
+    <LetterDef Name="VOID_ToxicEvent">
+        <defName>VOID_ToxicEvent</defName>
+        <color>(212, 152, 13)</color>
+        <flashColor>(130, 232, 21)</flashColor>
+        <flashInterval>40</flashInterval>
+        <arriveSound>RH_VOIDBlackout</arriveSound>
+    </LetterDef>
+
+    <LetterDef Name="VOID_RedDevil_NegativeEvent">
+        <defName>VOID_RedDevil_NegativeEvent</defName>
+        <color>(115, 0, 0)</color>
+        <flashColor>(255, 0, 204)</flashColor>
+        <flashInterval>40</flashInterval>
+        <arriveSound>RH_VOIDBlackout</arriveSound>
+    </LetterDef>
+	
+    <LetterDef Name="VOID_NegativeEvent">
+        <defName>VOID_NegativeEvent</defName>
+        <color>(140, 0, 255)</color>
+        <flashColor>(255, 0, 204)</flashColor>
+        <flashInterval>40</flashInterval>
+        <arriveSound>RH_VOIDBlackout</arriveSound>
+    </LetterDef>
+
+    <LetterDef Name="VOID_Black_NegativeEvent">
+        <defName>VOID_Black_NegativeEvent</defName>
+        <color>(82, 82, 82)</color>
+        <flashColor>(255, 0, 204)</flashColor>
+        <flashInterval>40</flashInterval>
+        <arriveSound>RH_VOIDBlackout</arriveSound>
+    </LetterDef>
+
+    <LetterDef Name="VOID_Crimson_NegativeEvent">
+        <defName>VOID_Endgame_NegativeEvent</defName>
+        <color>(89, 33, 38)</color>
+        <flashColor>(255, 0, 204)</flashColor>
+        <flashInterval>40</flashInterval>
+        <arriveSound>RH_VOIDPlanetKiller</arriveSound>
+    </LetterDef>
+
+    <IncidentDef>
+        <defName>VOID_DefoliatorShipPartCrash</defName>
+        <label>N-4 conversion chamber</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <!--<workerClass>VoidEvents.VoidEvents.IncidentWorker_CrashedShipPart</workerClass>--><!-- Original -->
+        <workerClass>VoidEvents.IncidentWorker_CrashedShipPart</workerClass>
+        <letterLabel>Conversion chamber</letterLabel>
+        <letterText>A mysterious conversion chamber has crashed nearby. A toxic fume killing all plantlife seems to emanate from within.\n\nUnsettling echoes of weeping and howling is audible from the chamber.\n\nPerhaps you should get away from it.</letterText>
+        <letterDef>VOID_Black_NegativeEvent</letterDef>
+        <baseChance>1.0</baseChance>
+        <tags>
+            <li>VOID_MechanoidShip</li>
+        </tags>
+        <refireCheckTags>
+            <li>VOID_MechanoidShip</li>
+        </refireCheckTags>
+        <category>ThreatBig</category>
+        <pointsScaleable>true</pointsScaleable>
+        <mechClusterBuilding>Void_DefoliatorShipPart</mechClusterBuilding>
+        <tale>ShipPartCrash</tale>
+        <minThreatPoints>200</minThreatPoints>
+        <minRefireDays>7</minRefireDays>
+    </IncidentDef>
+	
+    <!-- VL -->
+	
+    <IncidentDef>
+        <defName>VOID_VolatileLeaper_ShipPartCrash</defName>
+        <label>N-4 volatile chamber</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>VoidEvents.IncidentWorker_CrashedShipPart</workerClass>
+        <letterLabel>volatile chamber</letterLabel>
+        <letterText>A mysterious conversion chamber has crashed nearby. A toxic fume killing all plantlife seems to emanate from within.\n\nUnsettling echoes of weeping and howling is audible from the chamber.\n\nPerhaps you should stay far away from it.</letterText>
+        <letterDef>VOID_Black_NegativeEvent</letterDef>
+        <baseChance>1.0</baseChance>
+        <tags>
+            <li>VOID_MechanoidShip</li>
+        </tags>
+        <refireCheckTags>
+            <li>VOID_MechanoidShip</li>
+        </refireCheckTags>
+        <pointsScaleable>true</pointsScaleable>
+        <mechClusterBuilding>VOID_Conversion_ShipPart</mechClusterBuilding>
+        <tale>ShipPartCrash</tale>
+        <category>ThreatBig</category>
+        <minThreatPoints>1000</minThreatPoints>
+        <minRefireDays>30</minRefireDays>
+    </IncidentDef>
+
+    <!-- BT Chamber -->
+
+    <IncidentDef>
+        <defName>VOID_BlackTitan_ShipPartCrash</defName>
+        <label>N-4 rebirth chamber</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>VoidEvents.IncidentWorker_CrashedShipPart</workerClass>
+        <letterLabel>Rebirth chamber</letterLabel>
+        <letterText>A mysterious spherical chamber has crashed nearby.\n\nA toxic fume killing all plantlife seems to emanate from within.\n\nUnpromising roars of banging and ominous breathing is audible from the chamber.\n\nPerhaps you should leave it alone.</letterText>
+        <letterDef>VOID_Black_NegativeEvent</letterDef>
+        <baseChance>0.5</baseChance>
+        <tags>
+            <li>VOID_MechanoidShip</li>
+        </tags>
+        <refireCheckTags>
+            <li>VOID_MechanoidShip</li>
+        </refireCheckTags>
+        <pointsScaleable>true</pointsScaleable>
+        <mechClusterBuilding>VOID_Rebirth_ShipPart</mechClusterBuilding>
+        <tale>ShipPartCrash</tale>
+        <category>ThreatBig</category>
+        <minThreatPoints>600</minThreatPoints>
+        <minRefireDays>14</minRefireDays>
+    </IncidentDef>
+	
+    <!-- DH Chamber -->
+
+    <IncidentDef>
+        <defName>VOID_DevilHound_ShipPartCrash</defName>
+        <label>N-4 devil chamber</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>VoidEvents.IncidentWorker_CrashedShipPart</workerClass>
+        <letterLabel>devil chamber</letterLabel>
+        <letterText>A mysterious chamber leaking of toxic fumes has crashed nearby. There are growing tumours in and around the chamber, with red fur and large spiky bones sticking out. An inscripted company logo "OVID" is seen on the side.\n\nA toxic fume killing all plantlife seems to emanate from within.\n\nSomething seems to be growling within, those who view it feel as though something is watching them back.\n\nThe tingling sensation on your spine tells you that will be better off leaving it alone.</letterText>
+        <letterDef>VOID_RedDevil_NegativeEvent</letterDef>
+        <baseChance>0.5</baseChance>
+        <baseChanceWithRoyalty>0.25</baseChanceWithRoyalty>
+        <tags>
+            <li>VOID_MechanoidShip</li>
+        </tags>
+        <refireCheckTags>
+            <li>VOID_MechanoidShip</li>
+        </refireCheckTags>
+        <pointsScaleable>true</pointsScaleable>
+        <mechClusterBuilding>Void_DevilChamber_ShipPart</mechClusterBuilding>
+        <tale>ShipPartCrash</tale>
+        <category>ThreatBig</category>
+        <minThreatPoints>800</minThreatPoints>
+        <minRefireDays>14</minRefireDays>
+    </IncidentDef>
+	
+    <!-- Planetkiller -->
+
+    <IncidentDef>
+        <defName>Void_PlanetKiller</defName>
+        <label>Planet Killer</label>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>VoidEvents.IncidentWorker_ActivateVoidPlanetaryKiller</workerClass>
+        <gameCondition>Void_PlanetKiller</gameCondition>
+        <letterLabel>planetkiller weapon</letterLabel>
+        <letterDef>VOID_Endgame_NegativeEvent</letterDef>
+        <baseChance>0</baseChance>
+        <durationDays>7</durationDays>
+    </IncidentDef>
+
+    <GameConditionDef>
+        <defName>Void_PlanetKiller</defName>
+        <conditionClass>VoidEvents.GameCondition_VoidPlanetkiller</conditionClass>
+        <label>Planet Killer</label>
+        <letterText>V.O.I.D. has activated an ancient device that can end all life in this world. You have 7 days until this planet's core implodes within itself.</letterText>
+        <description>Mj ai gerrsx eglmizi syv zmwmsr jsv xlmw asvph, mx qywx fi tyvkih.\n\nTime is running out, my friend.</description>
+    </GameConditionDef>
+
+    <IncidentDef>
+        <defName>Void_Stalker</defName>
+        <label>stalker</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>VoidEvents.IncidentWorker_Stalker</workerClass>
+        <baseChance>0.5</baseChance>
+        <category>ThreatBig</category>
+        <pointsScaleable>true</pointsScaleable>
+    </IncidentDef>
+	
+    <IncidentDef>
+        <defName>VOID_N4Manhunter_RedZone</defName>
+        <label>N-4 wander in</label>
+        <letterLabel>N-4 wander in</letterLabel>
+        <letterText>Nerotonin Type-4 "Red Zone" variants have been spotted wandering in your area. They seem to be highly aggressive and actively hunting.</letterText>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>VoidEvents.IncidentWorker_AnimalsWanderInCustomizable</workerClass>
+        <letterDef>VOID_N4Event</letterDef>
+        <baseChance>0.5</baseChance>
+        <modExtensions>
+            <li Class="VoidEvents.CustomizableAnimalsWanderInExtension">
+                <countRange>1~12</countRange><!-- amount randomized between min and max -->
+                <animals><!-- commonalities here -->
+                    <RH_DF_Reaper>10</RH_DF_Reaper>
+                    <RH_DF_Tendril>40</RH_DF_Tendril>
+                    <RH_DF_Bone>30</RH_DF_Bone>
+                    <RH_DF2_RoidHulk>5</RH_DF2_RoidHulk>
+                </animals>
+                <factionToSet>RH2_Nerotonin4_Horde</factionToSet><!-- sets faction (optional) -->
+                <mentalStateDefToSet>ManhunterPermanent</mentalStateDefToSet><!-- sets mental state (optional) -->
+            </li>
+        </modExtensions>
+    </IncidentDef>
+	
+    <IncidentDef>
+        <defName>VOID_N4Manhunter_DeathRow</defName>
+        <label>N-4 wander in</label>
+        <letterLabel>N-4 wander in</letterLabel>
+        <letterText>Nerotonin Type-4 "Death Row" variants have been spotted wandering in your area. They seem to be highly aggressive and actively hunting.</letterText>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>VoidEvents.IncidentWorker_AnimalsWanderInCustomizable</workerClass>
+        <letterDef>VOID_N4Event</letterDef>
+        <baseChance>0.10</baseChance>
+        <modExtensions>
+            <li Class="VoidEvents.CustomizableAnimalsWanderInExtension">
+                <countRange>2~8</countRange><!-- amount randomized between min and max -->
+                <animals><!-- commonalities here -->
+                    <RH_DF_EvolvedRumbler>10</RH_DF_EvolvedRumbler>
+                    <RH_DF_EvolvedLongArms>20</RH_DF_EvolvedLongArms>
+                </animals>
+                <factionToSet>RH2_Nerotonin4_Horde</factionToSet><!-- sets faction (optional) -->
+                <mentalStateDefToSet>ManhunterPermanent</mentalStateDefToSet><!-- sets mental state (optional) -->
+            </li>
+        </modExtensions>
+    </IncidentDef>
+	
+    <IncidentDef>
+        <defName>Void_Contact</defName>
+        <label>VOID contact</label>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>VoidEvents.IncidentWorker_VoidContact</workerClass>
+        <baseChance>0</baseChance>
+        <category>Misc</category>
+    </IncidentDef>
+</Defs>

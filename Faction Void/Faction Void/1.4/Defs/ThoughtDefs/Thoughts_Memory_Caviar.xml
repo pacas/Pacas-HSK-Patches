@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ======= Basic quality thoughts ========= -->
+
+    <ThoughtDef>
+    <defName>AteCaviarCannedMeal</defName>
+    <durationDays>0.75</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>ate caviar</label>
+        <description>The canned caviar is an exquisite delight to my taste buds.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

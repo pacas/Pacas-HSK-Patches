@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Tendril -->
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_Tendril</defName>
+		<label>tendril</label>
+		<description>The Nerotonin Type-4 variant Tendril. It the result of a female subject mutating into having arms resembling tentacles that it uses as a weapon.\n\nThe Tendrils are typically found in Red Zones, areas where infected variants start showing specialized mutations as opposed to a normal mindless mob of zombies.\n\nThe N-4 strain allows this subject to be resistant to fire, but not impervious to it like most extreme mutations.</description>
+		<statBases>
+			<MoveSpeed>4.5</MoveSpeed>
+			<Flammability>0.50</Flammability>
+			<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.5</ArmorRating_Heat>
+			<Insulation_Heat>4</Insulation_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+		</statBases>
+		<tools>
+			<li>
+				<label>tentacles</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RH_LeftTentacle</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>5</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>tentacles</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2.3</cooldownTime>
+				<linkedBodyPartsGroup>RH_RightTentacle</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>5</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>4</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant_Wraith</body>
+			<baseBodySize>2.0</baseBodySize>
+			<baseHealthScale>2</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_Infected_Quiet</soundWounded>
+                    <soundDeath>RHPawn_Infected_Quiet</soundDeath>
+					<soundCall>RHPawn_Tendril_Call</soundCall>
+					<soundAngry>RHPawn_Infected_Quiet</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RHPawn_InfectedHit_A</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RHPawn_InfectedHit_Scratch</soundMeleeHitBuilding>
+			<soundMeleeMiss>RHPawn_InfectedHit_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- TENDRIL END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_DF_Tendril</defName>
+		<label>tendril</label>
+		<defaultFactionType>RH2_Nerotonin4_Horde</defaultFactionType>
+		<race>RH_DF_Tendril</race>
+		<combatPower>15</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/RedZone/Tendril</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+	
+		<!-- Bone -->
+
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_Bone</defName>
+		<label>bone</label>
+		<description>Nerotonin Type-4 variant Bone, typically a strain present in subjects with anger management issues. Bones protrude out of the body and the muscle mass of the subject is significantly increased. It is the known predecessor of the Titan strain.\n\nBones are typically found in Red Zones, areas where infected variants start showing specialized mutations as opposed to a normal mindless mob of zombies.\n\nThe N-4 strain allows this subject to be resistant to fire, but not impervious to it like most extreme mutations.</description>
+		<statBases>
+			<MoveSpeed>2</MoveSpeed>
+			<Flammability>0.50</Flammability>
+			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.5</ArmorRating_Heat>
+			<Insulation_Heat>4</Insulation_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.5</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>8</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.7</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>8</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>10</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant</body>
+			<baseBodySize>2.0</baseBodySize>
+			<baseHealthScale>2.5</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_Infected_Quiet</soundWounded>
+					<soundDeath>RHPawn_Infected_Quiet</soundDeath>
+					<soundCall>RHPawn_Bone_Call</soundCall>
+					<soundAngry>RHPawn_Infected_Quiet</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RHPawn_InfectedHit_B</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RHPawn_InfectedHit_Scratch</soundMeleeHitBuilding>
+			<soundMeleeMiss>RHPawn_InfectedHit_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- Bone END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_DF_Bone</defName>
+		<label>bone</label>
+		<defaultFactionType>RH2_Nerotonin4_Horde</defaultFactionType>
+		<race>RH_DF_Bone</race>
+		<combatPower>15</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/RedZone/Bone</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+	
+	<!-- roid hulk -->
+
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF2_RoidHulk</defName>
+		<label>roid hulk</label>
+		<description>Nerotonin Type-4 variant Roid Hulk, subjects with this evolved strain are typically those with anabolic or other forms steroids found within their body during the initial phases of their infection.\n\nRoid Hulks are typically found in Red Zones, areas where infected variants start showing specialized mutations as opposed to a normal mindless mob of zombies. The Nerotonin Type-4 virus increases the rate of muscle growth, which has lead to survivors referring to these as "Roid Hulk".\n\nThe N-4 strain allows this subject to be heavily resistant to fire.</description>
+		<statBases>
+			<MoveSpeed>3.8</MoveSpeed>
+			<Flammability>0.75</Flammability>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.75</ArmorRating_Heat>
+			<Insulation_Heat>4</Insulation_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+		</statBases>
+		<tools>
+			<!-- Claw -->
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>13</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.8</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>15</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>12</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant</body>
+			<baseBodySize>4.0</baseBodySize>
+			<baseHealthScale>10</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_Infected_Quiet</soundWounded>
+					<soundDeath>RHPawn_RoidHulk_Death</soundDeath>
+					<soundCall>RHPawn_RoidHulk_Call</soundCall>
+					<soundAngry>RHPawn_Infected_Quiet</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RHPawn_InfectedHit_Scratch</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RH_HulkPoundVictim</soundMeleeHitBuilding>
+			<soundMeleeMiss>RHPawn_InfectedHit_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- roid hulk END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_DF2_RoidHulk</defName>
+		<label>roid hulk</label>
+		<defaultFactionType>RH2_Nerotonin4_Horde</defaultFactionType>
+		<race>RH_DF2_RoidHulk</race>
+		<combatPower>80</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/RedZone/Rulk</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>3</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>	
+	
+	<!-- Reaper -->
+
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_Reaper</defName>
+		<label>Reaper</label>
+		<description>Nerotonin Type-4 variant Reaper, subjects with this evolved strain are seen with a scythe like blade on their arm, which has lead to many survivors warning against engaging in melee combat against it.\n\nReapers are typically found in Red Zones, areas where infected variants start showing specialized mutations as opposed to a normal mindless mob of zombies. The Nerotonin Type-4 virus attacks the subject's main arm and turns it into a grotesque organic blade that is capable of withstanding and even damaging metallic surfaces.\n\nThe N-4 strain allows this subject to be resistant to fire, but not impervious to it like most extreme mutations.</description>
+		<statBases>
+			<MoveSpeed>1.8</MoveSpeed>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.60</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.5</ArmorRating_Heat>
+			<Insulation_Heat>4</Insulation_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+		</statBases>
+		<tools>
+			<!-- Claw -->
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2.2</cooldownTime>
+				<linkedBodyPartsGroup>RH_LeftClawAB</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>13</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>arm blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>21</power>
+				<cooldownTime>2.6</cooldownTime>
+				<armorPenetration>0.75</armorPenetration>
+				<linkedBodyPartsGroup>RH_RightBlade</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>15</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+				<chanceFactor>0.9</chanceFactor>
+			</li>
+			
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>11</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant_ArmBlade</body>
+			<baseBodySize>5.0</baseBodySize>
+			<baseHealthScale>2.3</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_Infected_Quiet</soundWounded>
+					<soundDeath>RHPawn_Infected_Quiet</soundDeath>
+					<soundCall>RHPawn_RoidHulk_Call</soundCall>
+					<soundAngry>RHPawn_Infected_Quiet</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- roid hulk END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_DF_Reaper</defName>
+		<label>reaper</label>
+		<defaultFactionType>RH2_Nerotonin4_Horde</defaultFactionType>
+		<race>RH_DF_Reaper</race>
+		<combatPower>10</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/RedZone/Reaper</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+	
+</Defs>

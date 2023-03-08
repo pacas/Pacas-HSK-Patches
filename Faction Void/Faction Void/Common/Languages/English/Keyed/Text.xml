@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<Void.SettlementIsDefeated>V.O.I.D. Expansion</Void.SettlementIsDefeated>
+	<Void.SettlementIsDefeatedDesc>{FACTION_name} has been overwhelmed during a raid. {0} has been captured by V.O.I.D.</Void.SettlementIsDefeatedDesc>
+	<Void.EnableVoidExpansion>Enable V.O.I.D. expansion</Void.EnableVoidExpansion>
+	<Void.tickToSpawnHostiles>Threat spawn day: </Void.tickToSpawnHostiles>
+	<Void.EnableVoidContact>Enable V.O.I.D. contact</Void.EnableVoidContact>
+	
+	<Void.MessageMutantAssembled>An N-4 mutant has awakened from hybernation.</Void.MessageMutantAssembled>
+	<Void.MessageMutantLeftToAssemble>Remaining mutants in hybernation</Void.MessageMutantLeftToAssemble>
+	<Void.MutantAssemblyCompleteIn>{0} hybernation completes in {1}.</Void.MutantAssemblyCompleteIn>
+	<Void.MutantAssemblyNextType>Will awaken</Void.MutantAssemblyNextType>
+	
+	<UseJetPack>Use jump pack</UseJetPack>
+	<UseJetPackDesc>fly to a destination with the jump pack</UseJetPackDesc>
+	<NotEnoughFuelForJetPackDesc>Not to enough fuel</NotEnoughFuelForJetPackDesc>
+	<CurrentFuelAmount>jump pack fuel amount: {0}</CurrentFuelAmount>
+	<RefuelJetPack>Refuel jump pack</RefuelJetPack>
+	<RefuelJetPackDesc>Use chemfuel to refuel jump pack</RefuelJetPackDesc>
+	<EnoughFuelForJetPackDesc>Not enough fuel for the jump pack</EnoughFuelForJetPackDesc>
+	
+	<!--<DropSuppliesLabel>DropSuppliesLabel</DropSuppliesLabel>
+	<DropSuppliesDesc>DropSuppliesDesc</DropSuppliesDesc>-->
+	
+	<Void_ResurrectionLabel>{PAWN_nameDef}'s resurrection</Void_ResurrectionLabel>
+	<Void_ResurrectionDesc>{PAWN_nameDef} has been resurrected, however all their items were lost during the hour.</Void_ResurrectionDesc>
+	
+	<Void.EnableSpawnOfNewVoidBasesNearby>Enable spawn of new V.O.I.D. bases nearby player colony</Void.EnableSpawnOfNewVoidBasesNearby>
+	<Void.MaxAmountOfNewVoidBasesNearby>Max amount of new V.O.I.D. bases nearby player colony</Void.MaxAmountOfNewVoidBasesNearby>
+	<Void.BunkerPasswordMessage>Please enter bunker passcode:</Void.BunkerPasswordMessage>
+	<Void.AccessDenied>ACCESS DENIED</Void.AccessDenied>
+	<Void.NukeIntercepted>Your nuclear bomb has been intercepted in orbit.</Void.NukeIntercepted>
+	
+	<Void.VoidContact>V.O.I.D. contact</Void.VoidContact>
+	<Void.VoidVisitorsDesc>V.O.I.D. has sent an advisor to negotiate your surrender.</Void.VoidVisitorsDesc>
+	<Void.Contact>Contact</Void.Contact>
+	<Void.Hostile>V.O.I.D.</Void.Hostile>
+	<Void.HostileDesc>A booming, familiar monotone voice seemingly from the sky like the noise of thunder talks down to you and your colony. It is similar to the voice of a V.O.I.D. advisor.\n\n"You were warned to leave this world and yet you remain. You have made it clear that you cannot be reasoned with. Consider this a declaration of war."\n\nV.O.I.D. is now hostile towards your colony.</Void.HostileDesc>
+	<Void.CannotEnlist>V.O.I.D. refuses to accept you back.</Void.CannotEnlist>
+	
+	<Void.EnterProtocol>Protocol</Void.EnterProtocol>
+	<Void.EnterProtocolDesc>Submit a protocol to the V.O.I.D. executive controlling this sector. Protocols are codes given by the council that must be followed under special circumstances, even if submitted by a junior member.</Void.EnterProtocolDesc>
+	<Void.EnterProtocolText>Enter protocol codeword</Void.EnterProtocolText>
+	<Void.InvalidProtocol>Protocol code not recognized.</Void.InvalidProtocol>
+	<Void.ProjectArgentTitle>Protocol: ARGENT</Void.ProjectArgentTitle>
+	<Void.ProjectArgentText>Protocol: ARGENT will initiate in 1 day</Void.ProjectArgentText>
+	
+	<Void.ProjectArgentInitiatedTitle>Protocol: ARGENT initiated</Void.ProjectArgentInitiatedTitle>
+	<Void.ProjectArgentInitiatedText>Through silver tongue and much reparations, V.O.I.D. has negotiated successfully with all non-hostile faction leaders. Peace has been declared, treaties have been signed and to the much confusion and surprise of the surrounding communities.\n\nBe warned, naturally hostile faction leaders have rejected signing the peace treaty.</Void.ProjectArgentInitiatedText>
+</LanguageData>
+

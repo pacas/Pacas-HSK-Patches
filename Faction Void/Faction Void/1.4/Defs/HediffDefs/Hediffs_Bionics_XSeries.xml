@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Base -->
+    <ThingDef Name="RH_X_ImplantBase" ParentName="SK_BodyPartBase" Abstract="True">
+        <techLevel>Spacer</techLevel>
+        <thingCategories Inherit="False">
+            <li>RH2_Implants_X</li>
+        </thingCategories>
+        <techHediffsTags Inherit="False"/>
+        <statBases>
+            <MarketValue>2200</MarketValue>
+            <Mass>0.05</Mass>
+            <MaxHitPoints>20</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+
+    <!-- x-hyper implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_BionicImplant">
+        <defName>DF_XHyper_Implant</defName>
+        <label>x-hyper implant</label>
+        <labelNoun>a x-hyper implant</labelNoun>
+        <description>An installed x-hyper implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XHyper_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_XHyper_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_XHyper_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_X_ImplantBase">
+        <defName>DF_XHyper_Implant</defName>
+        <label>x-hyper implant</label>
+        <description>The X-Hyper implant. Enhances the user's mobility.\n\nIt is part of the X Series of implants. It is crafted by wasteland engineers and surviving Secronom scientists using available modern technology and junkyard materials in order to provide a cheap physical enhancement for survivors who could not afford the higher end implants.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_XHyper_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/X/X-Hyper_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_XHyper_Implant</defName>
+        <label>install x-hyper implant</label>
+        <uiIconThing>DF_XHyper_Implant</uiIconThing>
+        <description>Install a x-hyper implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XHyper_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing x-hyper implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_XHyper_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_XHyper_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_XHyper_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DF_HasteImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_XHyper_Implant</defName>
+        <label>remove x-hyper implant</label>
+        <description>Remove x-hyper implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XHyper_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing x-hyper implant.</jobString>
+        <removesHediff>DF_XHyper_Implant</removesHediff>
+    </RecipeDef>
+			
+	
+	
+    <!-- x-perception implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_BionicImplant">
+        <defName>DF_XPerception_Implant</defName>
+        <label>x-perception implant</label>
+        <labelNoun>a x-perception implant</labelNoun>
+        <description>An installed x-perception implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XPerception_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_XPerception_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <GlobalLearningFactor>0.05</GlobalLearningFactor>
+                    <ResearchSpeed>0.05</ResearchSpeed>
+                    <MentalBreakThreshold>-0.05</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_XPerception_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_X_ImplantBase">
+        <defName>DF_XPerception_Implant</defName>
+        <label>x-perception implant</label>
+        <description>The X-Perception implant. Enhances the user's level of sight, capacity to learn and emotional regulations.\n\nIt is part of the X Series of implants. It is crafted by wasteland engineers and surviving Secronom scientists using available modern technology and junkyard materials in order to provide a cheap physical enhancement for survivors who could not afford the higher end implants.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_XPerception_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/X/X-Perception_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_XPerception_Implant</defName>
+        <label>install x-perception implant</label>
+        <uiIconThing>DF_XPerception_Implant</uiIconThing>
+        <description>Install a x-perception implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XPerception_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing x-perception implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_XPerception_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_XPerception_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_XPerception_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DF_GeniusImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_XPerception_Implant</defName>
+        <label>remove x-perception implant</label>
+        <description>Remove x-perception implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XPerception_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing x-perception implant.</jobString>
+        <removesHediff>DF_XPerception_Implant</removesHediff>
+    </RecipeDef>
+	
+    <!-- x-ironskin implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_BionicImplant">
+        <defName>DF_XIronskin_Implant</defName>
+        <label>x-ironskin implant</label>
+        <labelNoun>a x-ironskin implant</labelNoun>
+        <description>An installed x-ironskin implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XIronskin_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_XIronskin_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.05</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_XIronskin_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_X_ImplantBase">
+        <defName>DF_XIronskin_Implant</defName>
+        <label>x-ironskin implant</label>
+        <description>The X-Ironskin implant. Enhances the user's resistance to physical trauma.\n\nIt is part of the X Series of implants. It is crafted by wasteland engineers and surviving Secronom scientists using available modern technology and junkyard materials in order to provide a cheap physical enhancement for survivors who could not afford the higher end implants.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_XIronskin_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/X/X-Ironskin_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_XIronskin_Implant</defName>
+        <label>install x-ironskin implant</label>
+        <uiIconThing>DF_XIronskin_Implant</uiIconThing>
+        <description>Install a x-ironskin implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XIronskin_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing x-ironskin implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_XIronskin_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_XIronskin_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_XIronskin_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DF_GhostImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_XIronskin_Implant</defName>
+        <label>remove x-ironskin implant</label>
+        <description>Remove x-ironskin implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XIronskin_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing x-ironskin implant.</jobString>
+        <removesHediff>DF_XIronskin_Implant</removesHediff>
+    </RecipeDef>
+	
+    <!-- x-violence implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_BionicImplant">
+        <defName>DF_XViolence_Implant</defName>
+        <label>x-violence implant</label>
+        <labelNoun>a x-violence implant</labelNoun>
+        <description>An installed x-violence implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XViolence_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_XViolence_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <MeleeArmorPenetration>0.5</MeleeArmorPenetration>
+                    <MeleeHitChance>0.5</MeleeHitChance>
+                    <MeleeDodgeChance>0.5</MeleeDodgeChance>
+                    <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_XViolence_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_X_ImplantBase">
+        <defName>DF_XViolence_Implant</defName>
+        <label>x-violence implant</label>
+        <description>The x-violence implant. Enhances the user's combat skills.\n\nIt is part of the X Series of implants. It is crafted by wasteland engineers and surviving Secronom scientists using available modern technology and junkyard materials in order to provide a cheap physical enhancement for survivors who could not afford the higher end implants.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_XViolence_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/X/X-Violence_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_XViolence_Implant</defName>
+        <label>install x-violence implant</label>
+        <uiIconThing>DF_XViolence_Implant</uiIconThing>
+        <description>Install a x-violence implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XViolence_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing x-violence implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_XViolence_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_XViolence_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_XViolence_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DF_DestructionImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_XViolence_Implant</defName>
+        <label>remove x-violence implant</label>
+        <description>Remove x-violence implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XViolence_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing x-violence implant.</jobString>
+        <removesHediff>DF_XViolence_Implant</removesHediff>
+    </RecipeDef>
+
+	
+	
+</Defs>

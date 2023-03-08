@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="VoidConditionCauserBase" Abstract="True" ParentName="SK_BuildingBase">
+		<altitudeLayer>Building</altitudeLayer>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<passability>Impassable</passability>
+		<fillPercent>1.0</fillPercent>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Flame</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+		</damageMultipliers>
+		<building>
+			<combatPower>750</combatPower>
+			<claimable>false</claimable>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+		<comps>
+			<li Class="CompProperties_WakeUpDormant" />
+			<li Class="CompProperties_Initiatable" />
+		</comps>
+		<receivesSignals>true</receivesSignals>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<drawerType>MapMeshOnly</drawerType>
+		<castEdgeShadows>True</castEdgeShadows>
+		<repairEffect>ConstructMetal</repairEffect>
+		<forceDebugSpawnable>true</forceDebugSpawnable>
+		<isMechClusterThreat>true</isMechClusterThreat>
+		<killedLeavings>
+			<Plasteel>50</Plasteel>
+			<ComponentIndustrial>12</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+			<DF_Amber_Implant>1</DF_Amber_Implant>
+			<DF_Calamity_Implant>1</DF_Calamity_Implant>
+			<DF_Destruction_Implant>1</DF_Destruction_Implant>
+			<DF_Voidtech_Implant>1</DF_Voidtech_Implant>
+			<Titanium>200</Titanium>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</killedLeavings>
+	</ThingDef>
+
+	<ThingDef ParentName="VoidConditionCauserBase">
+		<defName>Void_PlanetaryKiller</defName>
+		<label>End of all things</label>
+		<description>An ancient machine from an extinct race of men that plotted to become gods.\n\nHaving nearly achieved their goals, their very creation caused their own destruction. The device causes a planet's core to implode on itself, destroying all life within.</description>
+		<size>(6,6)</size>
+		<thingClass>VoidEvents.PlanetaryKiller</thingClass>
+		<statBases>
+			<MaxHitPoints>3001</MaxHitPoints>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Building/VOIDWorldKiller</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,6)</drawSize>
+			<drawOffset>(0,0,0.6)</drawOffset>
+			<shadowData>
+				<volume>(4.5,3.5,3.4)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.5, 0, 4.8, 3.4)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<soundAmbient>GeothermalPlant_Ambience</soundAmbient>
+		</building>
+	</ThingDef>
+</Defs>

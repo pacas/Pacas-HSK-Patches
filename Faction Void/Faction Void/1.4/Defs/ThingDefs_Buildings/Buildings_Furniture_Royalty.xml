@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--============================== Drapes, Royalty stuff ==============================-->
+  
+    <ThingDef ParentName="SK_FurnitureBase">
+        <defName>RH_Corpo_Drape</defName>
+        <label>corpo drape</label>
+        <description>A decorative sheet hanging from a vertical wooden frame. Appropriate for corporate rooms.</description>
+        <!--<designationCategory>Furniture</designationCategory>-->
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.40</fillPercent>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>2000</WorkToBuild>
+            <Mass>15</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>7.5</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>150</costStuffCount>
+        <costList>
+            <ComponentMedieval>12</ComponentMedieval>
+        </costList>
+        <canOverlapZones>true</canOverlapZones>
+        <pathCost>14</pathCost>
+        <rotatable>true</rotatable>
+        <size>(2,1)</size>
+        <uiIconOffset>(0, 0.15)</uiIconOffset>
+        <filthLeaving>Filth_Trash</filthLeaving>
+        <building>
+            <destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+            <destroyShakeAmount>0</destroyShakeAmount>
+        </building>
+        <researchPrerequisites>
+            <li>Construction_B1</li>
+        </researchPrerequisites>
+        <graphicData>
+            <drawSize>(5.8,7.8)</drawSize>
+            <texPath>Things/Building/Corpo_Furniture/Drape</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <shadowData>
+                <volume>(2,0.5,0.3)</volume>
+                <offset>(0,0,-0.2</offset>
+            </shadowData>
+            <damageData>
+                <rectN>(0.1, 0.1, 1.8, 1.5)</rectN>
+                <rectS>(0.1, 0.1, 1.8, 1.5)</rectS>
+                <rectE>(0.25, 0.5, 0.5, 1.5)</rectE>
+                <rectW>(0.25, 0.5, 0.5, 1.5)</rectW>
+            </damageData>
+        </graphicData>
+    </ThingDef>
+  
+    <!--============================== Boards, Royalty stuff ==============================-->
+  
+    <ThingDef ParentName="SK_FurnitureBase">
+        <defName>RH_Corpo_Whiteboard_A</defName>
+        <label>meeting whiteboard (graphs)</label>
+        <description>A decorative board hanging from a vertical wooden frame. Appropriate for corporate rooms.</description>
+        <!--<designationCategory>Furniture</designationCategory>-->
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <fillPercent>0.40</fillPercent>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>2000</WorkToBuild>
+            <Mass>15</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>30.9</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Woody</li>
+            <li>Metallic</li>
+            <li>Plastic</li>
+			<li>Precious</li>
+        </stuffCategories>
+        <costStuffCount>100</costStuffCount>
+        <costList>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <canOverlapZones>true</canOverlapZones>
+        <pathCost>14</pathCost>
+        <rotatable>true</rotatable>
+        <size>(2,1)</size>
+        <uiIconOffset>(0, 0.15)</uiIconOffset>
+        <filthLeaving>Filth_Trash</filthLeaving>
+        <building>
+            <destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+            <destroyShakeAmount>0</destroyShakeAmount>
+        </building>
+        <researchPrerequisites>
+            <li>Construction_B1</li>
+        </researchPrerequisites>
+        <graphicData>
+            <drawSize>(6,6)</drawSize>
+            <texPath>Things/Building/Corpo_Furniture/Whiteboard</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <shadowData>
+                <volume>(2,0.5,0.3)</volume>
+                <offset>(0,0,-0.2</offset>
+            </shadowData>
+            <damageData>
+                <rectN>(0.1, 0.1, 1.8, 1.5)</rectN>
+                <rectS>(0.1, 0.1, 1.8, 1.5)</rectS>
+                <rectE>(0.25, 0.5, 0.5, 1.5)</rectE>
+                <rectW>(0.25, 0.5, 0.5, 1.5)</rectW>
+            </damageData>
+        </graphicData>
+    </ThingDef>
+  
+  
+    <ThingDef ParentName="SK_FurnitureBase">
+        <defName>RH_Corpo_Whiteboard_B</defName>
+        <label>meeting whiteboard (charts)</label>
+        <description>A decorative board hanging from a vertical wooden frame. Appropriate for corporate rooms.</description>
+        <!--<designationCategory>Furniture</designationCategory>-->
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <fillPercent>0.40</fillPercent>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>2000</WorkToBuild>
+            <Mass>15</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>30.9</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Woody</li>
+            <li>Metallic</li>
+            <li>Plastic</li>
+			<li>Precious</li>
+        </stuffCategories>
+        <costStuffCount>100</costStuffCount>
+        <costList>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <canOverlapZones>true</canOverlapZones>
+        <pathCost>14</pathCost>
+        <rotatable>true</rotatable>
+        <size>(2,1)</size>
+        <uiIconOffset>(0, 0.15)</uiIconOffset>
+        <filthLeaving>Filth_Trash</filthLeaving>
+        <building>
+            <destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+            <destroyShakeAmount>0</destroyShakeAmount>
+        </building>
+        <researchPrerequisites>
+            <li>Construction_B1</li>
+        </researchPrerequisites>
+        <graphicData>
+            <drawSize>(6,6)</drawSize>
+            <texPath>Things/Building/Corpo_Furniture/Whiteboard2</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <shadowData>
+                <volume>(2,0.5,0.3)</volume>
+                <offset>(0,0,-0.2</offset>
+            </shadowData>
+            <damageData>
+                <rectN>(0.1, 0.1, 1.8, 1.5)</rectN>
+                <rectS>(0.1, 0.1, 1.8, 1.5)</rectS>
+                <rectE>(0.25, 0.5, 0.5, 1.5)</rectE>
+                <rectW>(0.25, 0.5, 0.5, 1.5)</rectW>
+            </damageData>
+        </graphicData>
+    </ThingDef>
+  
+  
+    <!---->
+
+    <ThingDef ParentName="SK_FurnitureBase">
+        <defName>RH_Corpo_Brazier</defName>
+        <label>corpo brazier</label>
+        <description>A square-shaped furnishing used to hold a fire. Will light the surroundings and create heat.</description>
+        <category>Building</category>
+        <tickerType>Normal</tickerType>
+        <drawerType>RealtimeOnly</drawerType>
+        <fillPercent>0.15</fillPercent>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToBuild>100</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Mass>15</Mass>
+            <MeditationFocusStrength>0.0</MeditationFocusStrength>
+        </statBases>
+        <selectable>true</selectable>
+        <uiIconOffset>(0, -0.04)</uiIconOffset>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <stuffCategories>
+            <li>RuggedMetallic</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <costList>
+            <ComponentMedieval>10</ComponentMedieval>
+        </costList>
+        <!--<designationCategory>Accessories</designationCategory>-->
+        <placeWorkers>
+            <li>PlaceWorker_Heater</li>
+            <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+        </placeWorkers>
+        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+        <comps>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>1.75</fuelConsumptionRate>
+                <fuelCapacity>30.0</fuelCapacity>
+                <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Kindling</li>
+                    </thingDefs>
+                    <categories>
+                        <li>Wooden</li>
+                    </categories>
+                </fuelFilter>
+                <initialFuelPercent>0</initialFuelPercent>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>10</glowRadius>
+                <glowColor>(252,187,113,0)</glowColor>
+            </li>
+            <li Class="SK.CompProperties_HeatPusherAdvanced">
+                <compClass>SK.CompHeatPusherAdvanced</compClass>
+                <heatPerSecond>3</heatPerSecond>
+                <heatPushMaxTemperature>23</heatPushMaxTemperature>
+            </li>
+            <li Class="CompProperties_FireOverlay">
+                <fireSize>1</fireSize>
+                <offset>(0,0,0.18)</offset>
+            </li>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes><li>Flame</li></focusTypes>
+                <offsets>
+                    <li Class="FocusStrengthOffset_Lit">
+                        <offset>0.15</offset>
+                    </li>
+                    <li Class="FocusStrengthOffset_BuildingDefsLit">
+                        <defs>
+                            <li>Campfire</li>
+                            <li>TorchLamp</li>
+                            <!--<li>Brazier</li>-->
+                        </defs>
+                        <offsetPerBuilding>0.02</offsetPerBuilding>
+                        <radius>9.9</radius>
+                        <maxBuildings>8</maxBuildings>
+                        <explanationKey>MeditationFocusPerFlame</explanationKey>
+                        <explanationKeyAbstract>MeditationFocusPerFlameAbstract</explanationKeyAbstract>
+                    </li>
+                </offsets>
+            </li>
+        </comps>
+        <canOverlapZones>false</canOverlapZones>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>42</pathCost>
+        <rotatable>false</rotatable>
+        <researchPrerequisites>
+            <li>Construction_B1</li>
+        </researchPrerequisites>
+        <graphicData><!-- art+to -->
+            <texPath>Things/Building/Corpo_Furniture/Brazier</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(1.5, 1.5)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <shadowData>
+                <volume>(0.55, 0.35, 0.3)</volume>
+                <offset>(0, 0, -0.28)</offset>
+            </shadowData>
+            <damageData>
+                <rect>(0.2,0.3,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+    </ThingDef>
+
+
+</Defs>

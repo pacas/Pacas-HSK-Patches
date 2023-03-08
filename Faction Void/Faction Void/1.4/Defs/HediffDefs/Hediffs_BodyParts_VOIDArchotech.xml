@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="BodyPartRH2_VOIDArchotechBase" ParentName="SK_BodyPartBase" Abstract="True">
+        <techLevel>Archotech</techLevel>
+        <thingCategories Inherit="False">
+            <li>RH2_Voidtech_BodyParts</li>
+        </thingCategories>
+        <techHediffsTags Inherit="False"/>
+        <graphicData>
+            <texPath>Things/Item/Special/Voidtech_Limb</texPath>
+            <color>(195, 159, 201)</color>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.90</drawSize>
+        </graphicData>
+        <statBases>
+            <DeteriorationRate>0</DeteriorationRate>
+        </statBases>
+    </ThingDef>
+
+
+    <!-- voidtech eye -->
+    <HediffDef ParentName="HediffBodyPartBase_Cybernetic">
+        <defName>RH2_VOIDArchotechEye</defName>
+        <label>voidtech eye</label>
+        <labelNoun>an voidtech eye</labelNoun>
+        <description>An installed voidtech eye.</description>
+        <descriptionHyperlinks><ThingDef>RH2_VOIDArchotechEye</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>RH2_VOIDArchotechEye</spawnThingOnRemoved>
+        <addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.35</partEfficiency>
+		</addedPartProps>
+		<stages>
+			<li>
+				<statOffsets>
+					<NightVisionEfficiency_Implant>0.5</NightVisionEfficiency_Implant>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartRH2_VOIDArchotechBase">
+        <defName>RH2_VOIDArchotechEye</defName>
+        <label>voidtech eye</label>
+        <description>An artificial eye built by Voidtech. Seems to be a slight improvement from stolen specifications. It perceives every type of electromagnetic radiation, including radio waves, infrared, light, x-rays, and gamma rays. Its visual acuity is precise enough to read handwriting from twenty meters away. It can emit various wavelengths of radiation like a flashlight, and has an internal subpersona AI which helps highlight useful visual information. Its internal workings are a mystery to those outside Voidtech. The bionic part looks and feels exactly like its natural counterpart.</description>
+        <descriptionHyperlinks><RecipeDef>InstallVOIDArchotechEye</RecipeDef></descriptionHyperlinks>
+        <statBases>
+            <MarketValue>4500</MarketValue>
+            <Mass>0.3</Mass>
+            <MaxHitPoints>60</MaxHitPoints>
+			<NightVisionEfficiency_Implant>0.5</NightVisionEfficiency_Implant>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+        <defName>InstallVOIDArchotechEye</defName>
+        <label>install voidtech eye</label>
+        <workAmount>7500</workAmount>
+        <uiIconThing>RH2_VOIDArchotechEye</uiIconThing>
+        <description>Install an voidtech eye.</description>
+        <descriptionHyperlinks>
+            <ThingDef>RH2_VOIDArchotechEye</ThingDef>
+            <HediffDef>RH2_VOIDArchotechEye</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing voidtech eye.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RH2_VOIDArchotechEye</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RH2_VOIDArchotechEye</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Eye</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>RH2_VOIDArchotechEye</addsHediff>
+    </RecipeDef>
+
+    <!-- voidtech arm -->
+    <HediffDef ParentName="HediffBodyPartBase_Cybernetic">
+        <defName>RH2_VOIDArchotechArm</defName>
+        <label>voidtech arm</label>
+        <labelNoun>an voidtech arm</labelNoun>
+        <description>An installed voidtech arm.</description>
+        <descriptionHyperlinks><ThingDef>RH2_VOIDArchotechArm</ThingDef></descriptionHyperlinks>
+        <addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.35</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li Class="CombatExtended.ToolCE">
+						<label>fist</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>20</power>
+						<cooldownTime>1.3</cooldownTime>
+						<armorPenetrationBlunt>11</armorPenetrationBlunt>
+						<soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+						<soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
+					</li>
+				</tools>
+			</li>
+		</comps>
+        <spawnThingOnRemoved>RH2_VOIDArchotechArm</spawnThingOnRemoved>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartRH2_VOIDArchotechBase">
+        <defName>RH2_VOIDArchotechArm</defName>
+        <label>voidtech arm</label>
+        <description>An artificial arm built by Voidtech. Seems to be a slight improvement from stolen specifications. It's strong enough to crush a thick hardwood branch in its hand, and precise enough to write a sonnet on a grain of rice. It looks and feels like natural flesh, but it's harder to damage than titanium. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to those outside Voidtech. The bionic part looks and feels exactly like its natural counterpart.</description>
+        <descriptionHyperlinks><RecipeDef>InstallVOIDArchotechArm</RecipeDef></descriptionHyperlinks>
+        <statBases>
+            <MarketValue>6200</MarketValue>
+            <Mass>4</Mass>
+            <MaxHitPoints>180</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+        <defName>InstallVOIDArchotechArm</defName>
+        <label>install voidtech arm</label>
+        <workAmount>7500</workAmount>
+        <uiIconThing>RH2_VOIDArchotechArm</uiIconThing>
+        <description>Install an voidtech arm.</description>
+        <descriptionHyperlinks>
+            <ThingDef>RH2_VOIDArchotechArm</ThingDef>
+            <HediffDef>RH2_VOIDArchotechArm</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing voidtech arm.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RH2_VOIDArchotechArm</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RH2_VOIDArchotechArm</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Shoulder</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>RH2_VOIDArchotechArm</addsHediff>
+    </RecipeDef>
+
+    <!-- voidtech leg -->
+    <HediffDef ParentName="HediffBodyPartBase_Cybernetic">
+        <defName>RH2_VOIDArchotechLeg</defName>
+        <label>voidtech leg</label>
+        <labelNoun>an voidtech leg</labelNoun>
+        <description>An installed voidtech leg.</description>
+        <descriptionHyperlinks><ThingDef>RH2_VOIDArchotechLeg</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>RH2_VOIDArchotechLeg</spawnThingOnRemoved>
+        <addedPartProps>			
+			<solid>true</solid>
+			<partEfficiency>1.35</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartRH2_VOIDArchotechBase">
+        <defName>RH2_VOIDArchotechLeg</defName>
+        <label>voidtech leg</label>
+        <description>An artificial leg built by Voidtech. Seems to be a slight improvement from stolen specifications. It looks and feels like natural flesh, but a pair of these can move the user as fast as a decent car, and it's harder to damage than titanium. Even if it is harmed, it repairs itself over time. Its internal workings are a mystery to those outside Voidtech.</description>
+        <descriptionHyperlinks><RecipeDef>InstallVOIDArchotechLeg</RecipeDef></descriptionHyperlinks>
+        <statBases>
+            <MarketValue>6500</MarketValue>
+            <Mass>7</Mass>
+            <MaxHitPoints>180</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+        <defName>InstallVOIDArchotechLeg</defName>
+        <label>install voidtech leg</label>
+        <workAmount>7500</workAmount>
+        <uiIconThing>RH2_VOIDArchotechLeg</uiIconThing>
+        <description>Install an voidtech leg.</description>
+        <descriptionHyperlinks>
+            <ThingDef>RH2_VOIDArchotechLeg</ThingDef>
+            <HediffDef>RH2_VOIDArchotechLeg</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing voidtech leg.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RH2_VOIDArchotechLeg</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RH2_VOIDArchotechLeg</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Leg</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>RH2_VOIDArchotechLeg</addsHediff>
+    </RecipeDef>
+
+</Defs>

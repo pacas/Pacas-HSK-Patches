@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--########################### Utilities just for JoinerThreat ############################### -->
+
+	<QuestScriptDef>
+		<defName>Void_Util_Raid</defName>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="QuestNode_LoopCount">
+					<loopCount>3</loopCount>
+					<node Class="QuestNode_GeneratePawn">
+						<kindDef>RH_VOID_Member</kindDef>
+						<faction>$enemyFaction</faction>
+						<addToList>raiders</addToList>
+					</node>
+				</li>
+				<li Class="VoidEvents.QuestNode_RaidersArrive">
+					<pawns>$raiders</pawns>
+					<customLetterLabel>Raid: V.O.I.D.</customLetterLabel>
+					<customLetterText>$customLetterText</customLetterText>
+					<customLetterDef>ThreatBig</customLetterDef>
+					<customLetterLabelRules>$customLetterLabelRules</customLetterLabelRules>
+					<customLetterTextRules>$customLetterTextRules</customLetterTextRules>
+				</li>
+			</nodes>
+		</root>
+	</QuestScriptDef>
+
+
+	<QuestScriptDef>
+		<defName>Void_Util_JoinerWalkIn</defName>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>rewardDescription->a [joiner_age]-year-old [joiner_title] named [joiner_nameDef] will arrive and join you. [joiner_relationInfo]</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="QuestNode_GeneratePawn">
+					<storeAs>joiner</storeAs>
+					<kindDef>RH_VOID_Elite</kindDef>
+				</li>
+
+				<li Class="QuestNode_PawnsArrive">
+					<pawns>$joiner</pawns>
+					<joinPlayer>true</joinPlayer>
+					<customLetterLabel>$customLetterLabel</customLetterLabel>
+					<customLetterText>$customLetterText</customLetterText>
+					<customLetterLabelRules>$customLetterLabelRules</customLetterLabelRules>
+					<customLetterTextRules>$customLetterTextRules</customLetterTextRules>
+					<isSingleReward>true</isSingleReward>
+					<rewardDetailsHidden>true</rewardDetailsHidden>
+				</li>
+			</nodes>
+		</root>
+	</QuestScriptDef>
+
+	<QuestScriptDef>
+		<defName>Void_Util_JoinerThreat_Joiner</defName>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="QuestNode_Delay">
+					<delayTicks>$(randInt(600,1200))</delayTicks>
+					<node Class="QuestNode_Sequence">
+						<nodes>
+							<li Class="QuestNode_SubScript">
+								<def>Void_Util_JoinerWalkIn</def>
+							</li>
+							<li Class="QuestNode_SendSignals">
+								<outSignals>JoinerArrived</outSignals>
+							</li>
+						</nodes>
+					</node>
+				</li>
+			</nodes>
+		</root>
+	</QuestScriptDef>
+
+	<QuestScriptDef>
+		<defName>Void_ThreatReward_Raid_Joiner</defName>
+		<rootSelectionWeight>0.6</rootSelectionWeight>
+		<rootMinPoints>0</rootMinPoints>
+		<expireDaysRange>0.3</expireDaysRange>
+    <questNameRules>
+      <rulesStrings>
+	    <li>questName->Repentant sinner</li>
+		<li>questName->[joiner_nameDef]'s conscience</li>
+        <li>questName->Guilty conscience</li>
+        <li>questName->A V.O.I.D. deserter</li>
+		<li>questName->[joiner_nameDef] the traitor</li>
+		<li>questName->Not a hero</li>
+		<li>questName->Hope for the hopeless</li>
+		<li>questName->No rest for the wicked</li>
+		<li>questName->Come as you are</li>
+		<li>questName->The purple deserter</li>
+		<li>questName->Parable of the Prodigal son</li>
+		<li>questName->Return of the prodigal child</li>
+		<li>questName->A broken purple heart</li>
+		<li>questName->[joiner_nameDef]'s condemnation</li>
+		<li>questName->A stumbling block</li>
+		<li>questName->More than human</li>
+		<li>questName->The lost sheep</li>
+		<li>questName->Seeking forgiveness</li>
+		<li>questName->A weary transhumanist</li>
+		<li>questName->[joiner_nameDef]'s repentance</li>
+		<li>questName->[joiner_nameDef]'s redemption</li>
+		<li>questName->[joiner_nameDef]'s compassion</li>
+      </rulesStrings>
+    </questNameRules>
+		<questDescriptionRules>
+			<rulesStrings>
+				<li>questDescription->A [joiner_age]-year-old [joiner_title] named [joiner_nameDef] has deserted V.O.I.D. and is calling from nearby. [joiner_nameDef] expresses deep remorse for being a part of such an evil faction and tells you that [joiner_pronoun] is very sorry. [joiner_pronoun] seeks forgiveness by promising to help around your colony. [joiner_nameDef] is being followed by [enemyFaction_pawnsPlural] of [enemyFaction_name]!</li>
+				<li>questDescription->A [joiner_age]-year-old [joiner_title] named [joiner_nameDef] is being hunted for deserting V.O.I.D.. [joiner_nameDef] explains that [joiner_pronoun] was forced to serve V.O.I.D. and expresses guilt for all of their wrongdoing. [joiner_nameDef] is pleading for your mercy, and cries that [joiner_pronoun] has nowhere else to turn. [joiner_pronoun] is being followed by [enemyFaction_pawnsPlural] of [enemyFaction_name]!</li>
+				<li>questDescription->A [joiner_age]-year-old [joiner_title] named [joiner_nameDef] has gone rogue and decided to leave V.O.I.D.. [joiner_nameDef] tells you that [joiner_pronoun] was kidnapped, offered unimaginable riches and had their organs and limbs replaced in exchange for obedience. After having seen a child transformed into a monster, [joiner_nameDef] has decided to go on the run and vows to help you fight V.O.I.D.. [joiner_pronoun] is being followed by [enemyFaction_pawnsPlural] of [enemyFaction_name]!</li>
+				<li>questDescription->A [joiner_age]-year-old [joiner_title] named [joiner_nameDef] is overcome by guilt and chose to desert V.O.I.D.. [joiner_nameDef] cries that [joiner_pronoun] can no longer bear to help V.O.I.D. and would rather die a horrible death than carry on this evil path. [joiner_pronoun] pleads for your compassion and promises to offer you their life and loyalty in exchange. [joiner_pronoun] is being followed by [enemyFaction_pawnsPlural] of [enemyFaction_name]!</li>
+				<li>questDescription->A [joiner_age]-year-old [joiner_title] named [joiner_nameDef] claims to have left V.O.I.D. and seeks your help. [joiner_nameDef] says [joiner_pronoun] made an irrevocable mistake by taking part in the abominable works of such a wicked organization and wishes [joiner_pronoun] had never been born at all. [joiner_pronoun] expresses much regret and promises to help set things right if you give them a second chance. [joiner_pronoun] is being followed by [enemyFaction_pawnsPlural] of [enemyFaction_name]!</li>
+			</rulesStrings>
+		</questDescriptionRules>
+		<root Class="QuestNode_Sequence">
+			<nodes>
+				<li Class="QuestNode_SubScript">
+					<def>Util_RandomizePointsChallengeRating</def>
+				</li>
+				<li Class="QuestNode_GetMap" />
+
+				<!-- Get a walk-in spot so joiner and raid come from the same spot -->
+				<li Class="QuestNode_GetWalkInSpot" /> 
+
+				<!-- Get raider faction -->
+				<li Class="VoidEvents.QuestNode_GetFactionFromDef">
+					<factionDef>RH_VOID</factionDef>
+					<mustBeEnemy>true</mustBeEnemy>
+					<storeAs>enemyFaction</storeAs>
+				</li>
+
+				<!-- Joiner arrives -->
+				<li Class="QuestNode_SubScript">
+					<def>Void_Util_JoinerThreat_Joiner</def>
+				</li>
+
+				<!-- Raid arrives -->
+				<!-- Note that the joiner has a delay, so the raid needs an even longer delay -->
+				<li Class="QuestNode_Set">
+					<name>raidDelayTicks</name>
+					<value>$(roundToTicksRough(randInt(1800, 2400)))</value>
+				</li>
+				<li Class="QuestNode_Delay">
+					<delayTicks>$raidDelayTicks</delayTicks>
+					<node Class="QuestNode_SubScript">
+						<def>Void_Util_Raid</def>
+						<prefix>raid</prefix>
+						<parms>
+							<inSignal>$inSignal</inSignal>
+							<map>$map</map>
+							<points>$points</points>
+							<enemyFaction>$enemyFaction</enemyFaction>
+							<walkInSpot>$walkInSpot</walkInSpot>
+							<customLetterLabel TKey="LetterLabelCashing">{BASELABEL} chasing [../joiner_nameDef]</customLetterLabel>
+							<customLetterText TKey="LetterTextCashing">{BASETEXT}
+              \nThe [enemyFaction_pawnsPlural] have come to get [../joiner_nameDef].</customLetterText>
+						</parms>
+					</node>
+				</li>
+
+				<!-- End a few seconds after raid arrives -->
+				<li Class="QuestNode_Delay">
+					<delayTicks>$($raidDelayTicks+600)</delayTicks>
+					<node Class="QuestNode_End" />
+				</li>
+			</nodes>
+		</root>
+	</QuestScriptDef>
+
+</Defs>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef Name="RH_FactionBase_VOID" Abstract="True">
+        <pawnSingular>member</pawnSingular>
+        <pawnsPlural>members</pawnsPlural>
+        <listOrderPriority>30</listOrderPriority>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>30</configurationListOrderPriority>
+        <canMakeRandomly>false</canMakeRandomly>
+        <maxCountAtGameStart>1</maxCountAtGameStart>
+        <earliestRaidDays>320</earliestRaidDays>
+        <canSiege>false</canSiege>
+        <autoFlee>false</autoFlee>
+        <leaderTitle>executive</leaderTitle>
+        <canStageAttacks>true</canStageAttacks>
+        <naturalEnemy>true</naturalEnemy>
+        <allowedCultures>
+            <li>RH2_VOIDKriminul</li>
+        </allowedCultures>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginHindu</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginBuddhist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+        </disallowedMemes>
+        <disallowedPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+        </disallowedPrecepts>
+        <factionIconPath>Things/World/VOIDLogo3</factionIconPath>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <fixedName>V.O.I.D.</fixedName>
+        <!--<factionNameMaker>NamerFactionOutlander</factionNameMaker>-->
+        <settlementNameMaker>RH_NamerVOIDOutposts</settlementNameMaker>
+        <techLevel>Ultra</techLevel>
+        <structureMemeWeights>
+            <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">0.25</Structure_TheistEmbodied>
+            <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">0.35</Structure_TheistAbstract>
+            <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+            <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_Archist>
+            <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginChristian>
+            <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginIslamic>
+            <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginHindu>
+            <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">0</Structure_OriginBuddhist>
+        </structureMemeWeights>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Pirate</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <apparelStuffFilter>
+            <thingDefs>
+                <li>Hyperweave</li>
+                <li>Titanium</li>
+            </thingDefs>
+        </apparelStuffFilter>
+        <allowedArrivalTemperatureRange>
+            <min>-60</min>
+            <max>65</max>
+        </allowedArrivalTemperatureRange>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0, 50)</li>
+                <li>(700, 100)</li>
+                <li>(1300, 150)</li>
+                <li>(12000, 350)</li>
+                <li>(100000, 10000)</li>
+                <li>(150000, 20000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <raidLootValueFromPointsCurve>
+            <points>
+                <li>(350,     150)</li>
+                <li>(1000,   1200)</li>
+                <li>(10000,  5000)</li>
+                <li>(20000,  8000)</li>
+                <li>(40000, 10000)</li>
+            </points>
+        </raidLootValueFromPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <!-- Normal fights, no undying or black leaper -->
+                <kindDef>Combat</kindDef>
+                <commonality>50</commonality>
+                <options>
+                    <RH_VOID_Member>10</RH_VOID_Member>
+                    <RH_VOID_Associate>8</RH_VOID_Associate>
+                    <RH_VOID_Destroyer>8</RH_VOID_Destroyer>
+                    <RH_VOID_Grinder>5</RH_VOID_Grinder>
+                    <RH_VOID_Collaborator>10</RH_VOID_Collaborator>
+                    <RH_Titan>8</RH_Titan>
+                    <RH_Wraith>8</RH_Wraith>
+                    <RH_DFGiantSpider>8</RH_DFGiantSpider>
+                    <RH_DF_Mother>5</RH_DF_Mother>
+                    <RH_VOID_Elite>5</RH_VOID_Elite>
+                    <RH_VOID_Boss>5</RH_VOID_Boss>
+                </options>
+            </li>
+            <li>
+                <!-- Difficulty up -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <RH_BlackTitan>5</RH_BlackTitan>
+                    <RH_BlackWraith>5</RH_BlackWraith>
+                    <RH_VOID_Grinder>5</RH_VOID_Grinder>
+                    <RH_VOID_Collaborator>8</RH_VOID_Collaborator>
+                    <RH_VOID_Destroyer>10</RH_VOID_Destroyer>
+                    <RH_DF_DevilHound>20</RH_DF_DevilHound>
+                    <RH_DF_VolatileLeaper>10</RH_DF_VolatileLeaper>
+                    <RH_Titan>8</RH_Titan>
+                    <RH_Wraith>10</RH_Wraith>
+                    <RH_DFGiantSpider>8</RH_DFGiantSpider>
+                    <RH_VOID_Elite>30</RH_VOID_Elite>
+                    <RH_VOID_Boss>5</RH_VOID_Boss>
+                    <RH_VOID_Undying>20</RH_VOID_Undying>
+                </options>
+            </li>
+            <li>
+                <!-- Just the elites and the pets. -->
+                <kindDef>Combat</kindDef>
+                <commonality>15</commonality>
+                <disallowedStrategies>
+                    <li>Siege</li>
+                    <li>StageThenAttack</li>
+                    <li>ImmediateAttack</li>
+                </disallowedStrategies>
+                <options>
+                    <RH_BlackTitan>5</RH_BlackTitan>
+                    <RH_BlackWraith>5</RH_BlackWraith>
+                    <RH_Titan>8</RH_Titan>
+                    <RH_Wraith>10</RH_Wraith>
+                    <RH_DF_Mother>10</RH_DF_Mother>
+                    <RH_DFGiantSpider>5</RH_DFGiantSpider>
+                    <RH_DF_DevilHound>20</RH_DF_DevilHound>
+                    <RH_VOID_Elite>10</RH_VOID_Elite>
+                    <RH_VOID_Boss>10</RH_VOID_Boss>
+                    <RH_VOID_Undying>10</RH_VOID_Undying>
+                </options>
+            </li>
+            <li>
+                <!-- This is bad. -->
+                <kindDef>Combat</kindDef>
+                <commonality>30</commonality>
+                <disallowedStrategies>
+                    <li>Siege</li>
+                    <li>StageThenAttack</li>
+                    <li>ImmediateAttack</li>
+                </disallowedStrategies>
+                <options>
+                    <RH_BlackTitan>5</RH_BlackTitan>
+                    <RH_BlackWraith>5</RH_BlackWraith>
+                    <RH_DF_DevilHound>20</RH_DF_DevilHound>
+                    <RH_DF_VolatileLeaper>10</RH_DF_VolatileLeaper>
+                    <RH_VOID_Elite>20</RH_VOID_Elite>
+                    <RH_VOID_Undying>10</RH_VOID_Undying>
+                </options>
+            </li>
+            <li>
+                <!-- This is REALLY bad. -->
+                <kindDef>Combat</kindDef>
+                <commonality>30</commonality>
+                <disallowedStrategies>
+                    <li>Siege</li>
+                    <li>StageThenAttack</li>
+                    <li>ImmediateAttack</li>
+                </disallowedStrategies>
+                <options>
+                    <RH_DF_DevilHound>20</RH_DF_DevilHound>
+                    <RH_DF_VolatileLeaper>10</RH_DF_VolatileLeaper>
+                    <RH_VOID_Undying>30</RH_VOID_Undying>
+                </options>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <RH_VOID_Member>10</RH_VOID_Member>
+                    <RH_VOID_Associate>8</RH_VOID_Associate>
+                    <RH_VOID_Destroyer>8</RH_VOID_Destroyer>
+                    <RH_VOID_Grinder>5</RH_VOID_Grinder>
+                    <RH_VOID_Collaborator>10</RH_VOID_Collaborator>
+                    <RH_VOID_Elite>10</RH_VOID_Elite>
+                    <RH_VOID_Boss>5</RH_VOID_Boss>
+                    <RH_VOID_Undying>5</RH_VOID_Undying>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <baseTraderKinds>
+            <li>RHBase_VOID_Standard</li>
+        </baseTraderKinds>
+        <disallowedRaidAgeRestrictions>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+        </disallowedRaidAgeRestrictions>
+    </FactionDef>
+
+    <FactionDef ParentName="RH_FactionBase_VOID">
+        <defName>RH_VOID</defName>
+        <label>???</label>
+        <description>Records of V.O.I.D. trace back to an intergalactic conglomerate that is trailblazing in the scientific industry for their aerospace, bionics and pharmaceutical products. Under the corporate monikers of "OVID" and "Voidtech" they also have records, lands and properties established in several Glitterworlds where they reside.\n\nOmnitech Viral Intelligence Development (OVID in short) is a high profile company blamed for several catastrophic virus outbreaks across a number of Midworlds and Urbworlds, some of which are no longer habitable due to infected variants taking over their planets. Those of which responsible for these incidents are yet to be held accountable. Their mission as a corporation is finding the cure for death, and to them it seems the ends justify the means.\n\nTheir secondary company known as Voidtech is an aeropace company that produces bionics adapted from archo-technology. Voidtech is also on a watchlist for having the side gig of producing weaponry, powered armours and power generation for V.O.I.D. covertly.\n\nTheir target audience and source of revenue are typically extremely wealthy individuals in places of authority and power who are often inducted into their secret society. Outside of business, they are rumoured to toy with geopolitics of different worlds and sway the outcome of wars and the market through infiltrating the right places and using information for their benefit or personal amusement behind the scenes.\n\nThe earliest known origin of V.O.I.D. is widely speculation. Their miracle pill "Nerotonin" is said to be stolen technology from Secronom, a defunct company that caused a disastrous global pandemic in their home planet. V.O.I.D. was a world government contingency plan gone rogue. It is said that their elder council members are survivors from this cataclysm, and they escaped the planet armed with the knowledge that lead to them becoming who they are now.</description>
+        <colorSpectrum>
+            <!--<li>(255, 255, 255)</li>-->
+            <li>(90,0,214)</li>
+            <!--<li>(0.45, 0.40, 0.90)</li>-->
+        </colorSpectrum>
+        <modExtensions>
+            <li Class="FactionTweaks.FactionOptions">
+                <hideFactionLeader>true</hideFactionLeader>
+                <!--<leaderNames>
+				<li>
+					<first>John</first>
+					<nick></nick>
+					<last>Smith</last>
+				</li>
+			</leaderNames>-->
+                <preceptsToAdd>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Raiding_Respected</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Cannibalism_Disapproved</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Biosculpting_Accelerated</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Corpses_DontCare</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive_Tripled</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Disapproved</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">MarriageName_Random</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Male_Unlimited</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Female_Unlimited</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">OrganUse_Acceptable</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Execution_RespectedIfGuilty</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Mild</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">SmallSpaces_Acceptable</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Research_VeryFast</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">BodyMod_Approved</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">Apostasy_Abhorrent</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">InsectMeatEating_Loved</li>
+                </preceptsToAdd>
+                <hasUniqueIdeo>true</hasUniqueIdeo>
+                <customIdeoIcon>RH_VoidIcon</customIdeoIcon>
+                <customIdeoColor>Purple</customIdeoColor>
+                <customIdeoDescription>Only through chaos can true order be established. The human construct of right and wrong is far too subjective to be deemed reliable and those without the will to break through the constraints of morality and personal weaknesses are to be kept out of the loop. With that said, unnecessary cruelty and distasteful barbarism are frowned upon in our society. Acts of treachery are abominable of the highest order. If we are respectul of others, including our enemies, we display a great example as their future rulers.\n\nThere is something greater than all of us out there, and it is waiting for its turn to destroy us all. Only through human intervention, research and many sacrifices can a true utopia be established, transcending all natural limitations and overcoming death itself. The ends justify the means. We have the ability to manipulate reality through the very tools nature provides, and the masses must be subdued in order to keep them from getting in the way of our goals.</customIdeoDescription>
+            </li>
+            <li Class="Enlist.FactionEnlistOptions">
+                <enlistOptionsDefs>
+                    <li>RH_VOID</li>
+                </enlistOptionsDefs>
+                <ignoreAutoAssignedDefs>true</ignoreAutoAssignedDefs>
+            </li>
+        </modExtensions>
+    </FactionDef>
+
+    <IdeoIconDef>
+        <defName>RH_VoidIcon</defName>
+        <iconPath>Things/World/VOIDLogoStar_2</iconPath>
+        <cultures>
+            <li MayRequire="Ludeon.RimWorld.Ideology">RH2_VOIDKriminul</li>
+        </cultures>
+        <memes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+        </memes>
+    </IdeoIconDef>
+</Defs>

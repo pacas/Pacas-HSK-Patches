@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	
+	<!-- Enlisted -->
+	
+	<RH.VOIDEnlistLetterTitle>{FACTION_name}: Invited</RH.VOIDEnlistLetterTitle>
+	<RH.VOIDEnlistLetterLabel>We were expecting you. Welcome to {FACTION_name}\n\nPlease ensure you are properly equipped and enhanced to perform your duties. We trust that you do not need to be supervised like a child, therefore any failure on your part to survive any attacks from inhabitants of this world is your responsibility. With that said, please make use of our facilities, we'll by no means refuse to look after one of our own.\n\nYou are not officially associated with us yet, so perhaps make use of this advantage around the other factions. Remember why we're here and why we do what we do, do not cause unnecessary suffering to these people even though they are our enemies.\n\nKeep an eye out for Nerotonin-4 variants, there has been a leak in one of our facilities that caused the virus to run amok some of the local communities. I trust it will be no problem for you, you wouldn't be one of us otherwise.\n\nKind regards, I know you won't let us down.\n{LEADER_nameDef}, {FACTION_name} Executive</RH.VOIDEnlistLetterLabel>
+	
+	<RH.VOIDEnlistButtonLabel>enter passcode</RH.VOIDEnlistButtonLabel>
+	<RH.VOIDEnlistButtonDesc>enter a passcode in a mysterious keypad.</RH.VOIDEnlistButtonDesc>
+	<RH.VOIDEnlistRequrementsNotSatisfied>You are not invited.</RH.VOIDEnlistRequrementsNotSatisfied>
+	
+	<RH.VOIDEnlistedWithKey>Member of: {FACTION_name}</RH.VOIDEnlistedWithKey>
+	
+
+	<RH.VOIDMissionsLabel>Missions</RH.VOIDMissionsLabel>
+	<RH.VOIDMissionsDesc>Missions description</RH.VOIDMissionsDesc>
+	<RH.VOIDMenuMissionsDesc>You walk across a room with a lone projector displaying statistics and intelligence around the current world.
+</RH.VOIDMenuMissionsDesc>
+	<RH.VOIDMenuMissionsSelectQuest>Select a Mission: </RH.VOIDMenuMissionsSelectQuest>
+	<RH.VOIDMenuMissionsStartQuest>Start Quest ({0})</RH.VOIDMenuMissionsStartQuest>
+	<RH.Cancel>Cancel</RH.Cancel>
+	<RH.VOIDNoEnoughMoney>Not enough money</RH.VOIDNoEnoughMoney>
+	
+	<RH.VOIDStorageLabel>Storage</RH.VOIDStorageLabel>
+	<RH.VOIDStorageDesc>Store items from your caravan to your faction stash. Faction stashes transfer across all of the faction's outposts and will save contents even if you are no longer enlisted.</RH.VOIDStorageDesc>
+	
+	<RH.VOIDDropPodServiceLabel>Drop Pod service</RH.VOIDDropPodServiceLabel>
+	<RH.VOIDDropPodServiceDesc>Use this faction's drop pod service to travel by air! Free of charge.</RH.VOIDDropPodServiceDesc>
+	<RH.VOIDDropPodServiceRequirementDesc>This faction covers the expenses of your travel.</RH.VOIDDropPodServiceRequirementDesc>
+	
+	<RH.StorageInventory>Storage inventory</RH.StorageInventory>
+	<RH.CaravanInventory>Caravan inventory</RH.CaravanInventory>
+	
+	<RH.UltraMechSerumLabelKey>Nerotonin-2 booster</RH.UltraMechSerumLabelKey>
+	<RH.UltraMechSerumCostRequirementKey>You cannot afford this service.</RH.UltraMechSerumCostRequirementKey>
+	<RH.UltraMechSerumDescKey>Nerotonin-2 injection that will instantly heal all your caravan's medical conditions. Free of charge.</RH.UltraMechSerumDescKey>
+	
+	<RH.ActiveEnlistOptions>Active enlist options</RH.ActiveEnlistOptions>
+	
+	<RH.VOIDSalaryLabel>Salary</RH.VOIDSalaryLabel>
+	<RH.VOIDSalaryDesc>You are entitled to claim payment from this faction every 7 days.</RH.VOIDSalaryDesc>		
+	
+	<RH.VOIDProvisionsLabel>Provisions</RH.VOIDProvisionsLabel>
+	<RH.VOIDProvisionsDesc>Provisions will give your caravan inventory the following every 24 hours:\n\n- ×30 Caviar\n- ×5 Red Wine\n- ×10 Glittertech Medicine\n- ×4 Nerotonin-8B pills</RH.VOIDProvisionsDesc>
+
+	<RH.VOIDProvisionsLabelVoidIssue>V.O.I.D. Issue</RH.VOIDProvisionsLabelVoidIssue>
+	<RH.VOIDProvisionsDescVoidIssue>V.O.I.D. Issue will give your caravan inventory the following every 30 days:\n\n- ×1 Dusk Razor\n- ×1 Dusk Enforcer\n- ×1 Dusk Striker \n- ×3 V.O.I.D. Helmet \n- ×3 V.O.I.D. Reactive\n- ×3 Voidtech skin</RH.VOIDProvisionsDescVoidIssue>	
+	
+	<RH.VOIDProvisionsLabelVoidtech>Voidtech Issue</RH.VOIDProvisionsLabelVoidtech>
+	<RH.VOIDProvisionsDescVoidtech>Voidtech Issue will give your caravan inventory the following every 14 days:\n\n- ×1 Complete set of Voidtech Organs\n- ×1 Complete set of Voidtech Limbs\n- ×1 Complete X-Series implants\n- ×1 Devil's Implant\n- ×1 Volatile Implant\n- ×1 Calamity Implant\n- ×1 Celerity Implant\n- ×1 Versatility Implant\n- ×1 Mastery Implant\n- ×1 Super Seducer Serum\n- ×1 Painstopper\n- ×2 Voidtech Power Cell</RH.VOIDProvisionsDescVoidtech>
+	
+	<!--<RH.VOIDPartTimeJobLabel>Part-Time Job</RH.VOIDPartTimeJobLabel>
+	<RH.VOIDPartTimeJobDesc>Earn $15 an hour working part-time with this outpost. Earnings are halted when the faction is resting at night.</RH.VOIDPartTimeJobDesc>	
+	
+	<RH.VOIDHospitalLabel>Hospital</RH.VOIDHospitalLabel>
+	<RH.VOIDHospitalDesc>Check in with the hospital of this outpost. This service tends to all of your caravan members with industrial medicine. Immunity gain is also increased while your caravan is using the hospital.</RH.VOIDHospitalDesc>-->
+	
+	<RH.VOIDShootingTrainingLabel>Training: Advanced Survival</RH.VOIDShootingTrainingLabel>
+	<RH.VOIDShootingTrainingDesc>Train your caravan with highly advanced virtual reality and enhanced brain stimulations that throw your pawns in a post apocalyptic scenario.\n\nThis option trains all of your caravan member's skills.\n\nHourly experience gain stops when this faction is resting at night.</RH.VOIDShootingTrainingDesc>	
+
+	<RH.VOIDTurnInLabel>Turn in</RH.VOIDTurnInLabel>
+	<RH.VOIDTurnInDesc>Turn in criminals to the V.O.I.D. Council to be processed.</RH.VOIDTurnInDesc>	
+	<RH_VOIDTurnInTraderName>Mothership</RH_VOIDTurnInTraderName>
+
+	<RH.VOIDReinforcementsButtonLabel>Reinforcements</RH.VOIDReinforcementsButtonLabel>
+	<RH.VOIDReinforcementsButtonDesc>Call for reinforcements from your enlisted faction. Amount of troops they send depend on your current relations.</RH.VOIDReinforcementsButtonDesc>
+	
+	<RH.VOIDResignMenuText>You will leave and denounce V.O.I.D.\n\n(-100 in relations)</RH.VOIDResignMenuText>
+	<RH.VOIDResignLetterTitle>Resigned</RH.VOIDResignLetterTitle>
+	<RH.VOIDResignButtonLabel>Resign</RH.VOIDResignButtonLabel>
+	<RH.VOIDResignLetterLabel>You have left {FACTION_name}\n\nThere will be consequences. (-100 relations)</RH.VOIDResignLetterLabel>
+    <RH.VOIDResignButtonDesc>leave this faction</RH.VOIDResignButtonDesc>
+    <RH.PlayerSettlementRequired>Player's settlement required</RH.PlayerSettlementRequired>
+	<RH.VOIDEnlistedToHostileFaction>cannot enter because you are enlisted with their enemy, {HOSTILEFACTION_name}</RH.VOIDEnlistedToHostileFaction>
+	
+	<RH.VOIDEnlistRequiredForTrading>You cannot trade with this faction. You do not belong here.</RH.VOIDEnlistRequiredForTrading>
+	<RH.VOIDEnlistRequiredForGifting>There is nothing you can offer this faction. You do not belong here.</RH.VOIDEnlistRequiredForGifting>
+	
+	<RH.VOIDKickOutLetterTitle>Exiled</RH.VOIDKickOutLetterTitle>
+	<RH.VOIDKickOutLabelTitle>An order for your excommunication from {FACTION_name} has been authorized by The Council. You have been exiled. You can never join again.</RH.VOIDKickOutLabelTitle>
+
+    <RH.VoidPromoteButtonLabel>Promote</RH.VoidPromoteButtonLabel>
+    <RH.VoidPromoteButtonDesc>Promote one of your pawns to the Advisor role</RH.VoidPromoteButtonDesc>
+    <RH.VoidPromoteSkillsNotSatisfied>In order to promote, one of your colonists need to satisfy the following skill requirements:\n{0}</RH.VoidPromoteSkillsNotSatisfied>
+	<RH.VOIDProvisionsPromotedLabel>Advisor Issue</RH.VOIDProvisionsPromotedLabel>
+	<RH.VOIDProvisionsPromotedDesc>Advisor Issue will give your caravan inventory the following every 30 days:\n\n- ×1 Dusk MAG\n- ×1 V.O.I.D. Helmet \n- ×1 V.O.I.D. Reactive\n- ×1 Voidtech skin\n- ×1 Voidtech suit\n- ×1 Complete set of Elite Implants (EXCL Dawn)\n- ×1 Complete set of Epic Implants\n- ×1 Cat Eye Implant\n- ×1 Destruction Implant\n- ×1 Amber Implant\n- ×1 Genius Implant\n- ×1 Data Implant\n- ×1 Havoc Implant\n- ×1 Nerotonin-V Implant\n- ×1 Nerotonin-2B Implant\n- ×75,000 Silver\n- ×3 Voidtech Power Cell\n- ×2 Infinite Chemreactor</RH.VOIDProvisionsPromotedDesc>
+</LanguageData>
+

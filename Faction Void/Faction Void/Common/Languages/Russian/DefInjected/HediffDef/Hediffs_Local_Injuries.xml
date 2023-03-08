@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Acid -->
+
+  <DF_VolatileAcid_Burn.label>Кислотный ожог</DF_VolatileAcid_Burn.label>
+  <DF_VolatileAcid_Burn.description>Кислотный ожог.</DF_VolatileAcid_Burn.description>
+  <DF_VolatileAcid_Burn.comps.0.labelTendedWell>перевязано</DF_VolatileAcid_Burn.comps.0.labelTendedWell>
+  <DF_VolatileAcid_Burn.comps.0.labelTendedWellInner>обработано</DF_VolatileAcid_Burn.comps.0.labelTendedWellInner>
+  <DF_VolatileAcid_Burn.comps.0.labelSolidTendedWell>обработано</DF_VolatileAcid_Burn.comps.0.labelSolidTendedWell>
+  <DF_VolatileAcid_Burn.injuryProps.destroyedLabel>Сожжено</DF_VolatileAcid_Burn.injuryProps.destroyedLabel>
+  <DF_VolatileAcid_Burn.injuryProps.destroyedOutLabel>Сгорело</DF_VolatileAcid_Burn.injuryProps.destroyedOutLabel>
+  <DF_VolatileAcid_Burn.labelNoun>Кислотный ожог</DF_VolatileAcid_Burn.labelNoun>
+
+  <ChemicalBurn.label>Химический ожог</ChemicalBurn.label>
+  <ChemicalBurn.description>Химический ожог.</ChemicalBurn.description>
+  <ChemicalBurn.comps.0.labelTendedWell>перевязано</ChemicalBurn.comps.0.labelTendedWell>
+  <ChemicalBurn.comps.0.labelTendedWellInner>обработано</ChemicalBurn.comps.0.labelTendedWellInner>
+  <ChemicalBurn.comps.0.labelSolidTendedWell>обработано</ChemicalBurn.comps.0.labelSolidTendedWell>
+  <ChemicalBurn.injuryProps.destroyedLabel>Сожжено (химически)</ChemicalBurn.injuryProps.destroyedLabel>
+  <ChemicalBurn.injuryProps.destroyedOutLabel>Сгорело (химически)</ChemicalBurn.injuryProps.destroyedOutLabel>
+  <ChemicalBurn.labelNoun>Химический ожог</ChemicalBurn.labelNoun>
+
+  <Crush.label>Раздробленно</Crush.label>
+  <Crush.description>Раздробленная рана.</Crush.description>
+  <Crush.comps.0.labelTendedWell>перевязано</Crush.comps.0.labelTendedWell>
+  <Crush.comps.0.labelTendedWellInner>зашито</Crush.comps.0.labelTendedWellInner>
+  <Crush.comps.0.labelSolidTendedWell>обработано</Crush.comps.0.labelSolidTendedWell>
+  <Crush.injuryProps.destroyedLabel>Раздробленно</Crush.injuryProps.destroyedLabel>
+  <Crush.labelNoun>Дробящая рана</Crush.labelNoun>
+
+  <Crack.label>Перелом</Crack.label>
+  <Crack.description>Перелом.</Crack.description>
+  <Crack.comps.0.labelTendedWell>обработано</Crack.comps.0.labelTendedWell>
+  <Crack.comps.0.labelTendedWellInner>обработано</Crack.comps.0.labelTendedWellInner>
+  <Crack.comps.0.labelSolidTendedWell>обработано</Crack.comps.0.labelSolidTendedWell>
+  <Crack.injuryProps.destroyedLabel>Отломано</Crack.injuryProps.destroyedLabel>
+  <Crack.labelNoun>Перелом</Crack.labelNoun>
+
+  <Cut.label>Порез</Cut.label>
+  <Cut.description>Порез.</Cut.description>
+  <Cut.comps.0.labelTendedWell>перевязано</Cut.comps.0.labelTendedWell>
+  <Cut.comps.0.labelTendedWellInner>зашито</Cut.comps.0.labelTendedWellInner>
+  <Cut.comps.0.labelSolidTendedWell>обработано</Cut.comps.0.labelSolidTendedWell>
+  <Cut.injuryProps.destroyedLabel>Отрезано</Cut.injuryProps.destroyedLabel>
+  <Cut.injuryProps.destroyedOutLabel>Отрезано</Cut.injuryProps.destroyedOutLabel>
+  <Cut.labelNoun>Порез</Cut.labelNoun>
+
+  <SurgicalCut.label>Хирургический разрез</SurgicalCut.label>
+  <SurgicalCut.description>Разрез, сделанный во время операции.</SurgicalCut.description>
+  <SurgicalCut.comps.0.labelTendedWell>перевязано</SurgicalCut.comps.0.labelTendedWell>
+  <SurgicalCut.comps.0.labelTendedWellInner>зашито</SurgicalCut.comps.0.labelTendedWellInner>
+  <SurgicalCut.comps.0.labelSolidTendedWell>обработано</SurgicalCut.comps.0.labelSolidTendedWell>
+  <SurgicalCut.labelNoun>Хирургический разрез</SurgicalCut.labelNoun>
+
+  <ExecutionCut.label>Порез</ExecutionCut.label>
+  <ExecutionCut.description>Порез, сделанный во время казни.</ExecutionCut.description>
+  <ExecutionCut.labelNoun>Порез</ExecutionCut.labelNoun>
+
+  <Scratch.label>Царапина</Scratch.label>
+  <Scratch.description>Царапина или разрыв.</Scratch.description>
+  <Scratch.comps.0.labelTendedWell>перевязано</Scratch.comps.0.labelTendedWell>
+  <Scratch.comps.0.labelTendedWellInner>зашито</Scratch.comps.0.labelTendedWellInner>
+  <Scratch.comps.0.labelSolidTendedWell>обработано</Scratch.comps.0.labelSolidTendedWell>
+  <Scratch.injuryProps.destroyedLabel>Оторвано</Scratch.injuryProps.destroyedLabel>
+  <Scratch.injuryProps.destroyedOutLabel>Оторвано</Scratch.injuryProps.destroyedOutLabel>
+  <Scratch.labelNoun>Царапина</Scratch.labelNoun>
+
+  <Bite.label>Укус</Bite.label>
+  <Bite.description>Укус.</Bite.description>
+  <Bite.comps.0.labelTendedWell>перевязано</Bite.comps.0.labelTendedWell>
+  <Bite.comps.0.labelTendedWellInner>зашито</Bite.comps.0.labelTendedWellInner>
+  <Bite.comps.0.labelSolidTendedWell>обработано</Bite.comps.0.labelSolidTendedWell>
+  <Bite.injuryProps.destroyedLabel>Откушено</Bite.injuryProps.destroyedLabel>
+  <Bite.injuryProps.destroyedOutLabel>Откушено</Bite.injuryProps.destroyedOutLabel>
+  <Bite.labelNoun>Укус</Bite.labelNoun>
+
+  <Stab.label>Укол</Stab.label>
+  <Stab.description>Колющее ранение.</Stab.description>
+  <Stab.comps.0.labelTendedWell>перевязано</Stab.comps.0.labelTendedWell>
+  <Stab.comps.0.labelTendedWellInner>зашито</Stab.comps.0.labelTendedWellInner>
+  <Stab.comps.0.labelSolidTendedWell>обработано</Stab.comps.0.labelSolidTendedWell>
+  <Stab.injuryProps.destroyedLabel>Отрезано</Stab.injuryProps.destroyedLabel>
+  <Stab.injuryProps.destroyedOutLabel>Отрезано</Stab.injuryProps.destroyedOutLabel>
+  <Stab.labelNoun>колющее ранение</Stab.labelNoun>
+
+  <Gunshot.label>Огнестрельное ранение</Gunshot.label>
+  <Gunshot.description>Огнестрельное ранение.</Gunshot.description>
+  <Gunshot.comps.0.labelTendedWell>перевязано</Gunshot.comps.0.labelTendedWell>
+  <Gunshot.comps.0.labelTendedWellInner>зашито</Gunshot.comps.0.labelTendedWellInner>
+  <Gunshot.comps.0.labelSolidTendedWell>обработано</Gunshot.comps.0.labelSolidTendedWell>
+  <Gunshot.injuryProps.destroyedLabel>Отстреляно</Gunshot.injuryProps.destroyedLabel>
+  <Gunshot.injuryProps.destroyedOutLabel>Отстреляно</Gunshot.injuryProps.destroyedOutLabel>
+  <Gunshot.labelNoun>Огнестрельное ранение</Gunshot.labelNoun>
+
+  <Shredded.label>Рваная рана</Shredded.label>
+  <Shredded.description>Часть тела измельчена и разорвана.</Shredded.description>
+  <Shredded.comps.0.labelTendedWell>перевязано</Shredded.comps.0.labelTendedWell>
+  <Shredded.comps.0.labelTendedWellInner>зашито</Shredded.comps.0.labelTendedWellInner>
+  <Shredded.comps.0.labelSolidTendedWell>обработано</Shredded.comps.0.labelSolidTendedWell>
+  <Shredded.injuryProps.destroyedLabel>Оторвано</Shredded.injuryProps.destroyedLabel>
+  <Shredded.injuryProps.destroyedOutLabel>Оторвано</Shredded.injuryProps.destroyedOutLabel>
+  <Shredded.labelNoun>Рваная рана</Shredded.labelNoun>
+
+  <Bruise.label>Ушиб</Bruise.label>
+  <Bruise.description>Ушиб.</Bruise.description>
+  <Bruise.comps.0.labelTendedWell>перевязано</Bruise.comps.0.labelTendedWell>
+  <Bruise.comps.0.labelTendedWellInner>обработано</Bruise.comps.0.labelTendedWellInner>
+  <Bruise.comps.0.labelSolidTendedWell>обработано</Bruise.comps.0.labelSolidTendedWell>
+  <Bruise.injuryProps.destroyedLabel>Уничтожено</Bruise.injuryProps.destroyedLabel>
+  <Bruise.labelNoun>Ушиб</Bruise.labelNoun>
+
+  <Frostbite.label>Обморожение</Frostbite.label>
+  <Frostbite.description>Обморожение тканей, вызванное воздействием холода без надлежащей защиты. Обморожение очень болезненно, и отмерзшие части тела часто приходится удалять.</Frostbite.description>
+  <Frostbite.comps.0.labelTendedWell>перевязано</Frostbite.comps.0.labelTendedWell>
+  <Frostbite.comps.0.labelTendedWellInner>обработано</Frostbite.comps.0.labelTendedWellInner>
+  <Frostbite.comps.0.labelSolidTendedWell>обработано</Frostbite.comps.0.labelSolidTendedWell>
+  <Frostbite.injuryProps.destroyedLabel>Отморожено</Frostbite.injuryProps.destroyedLabel>
+
+
+</LanguageData>

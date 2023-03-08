@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+    <!-- Base -->
+    <ThingDef Name="RH2_NerotoninSerum_ImplantBase" ParentName="SK_BodyPartBase" Abstract="True">
+        <techLevel>Archotech</techLevel>
+        <thingCategories Inherit="False">
+            <li>RH2_Nerotonin_Serum</li>
+        </thingCategories>
+        <techHediffsTags Inherit="False"/>
+        <statBases>
+            <Mass>0.25</Mass>
+            <Bulk>0.5</Bulk>
+        </statBases>
+    </ThingDef>
+  
+    <!-- NV -->
+	
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>RH2_NerotoninV_Implant</defName>
+        <label>nerotonin-V serum</label>
+        <labelNoun>a nerotonin-V serum</labelNoun>
+        <description>An installed nerotonin-V serum.</description>
+        <descriptionHyperlinks>
+            <ThingDef>RH2_NerotoninV_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>RH2_NerotoninV_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ToxicResistance>1.00</ToxicResistance>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="VoidEvents.HediffCompProperties_LifeExpectancy">
+                <lifeExpectancy>1000</lifeExpectancy>
+            </li>
+        </comps>
+        <defaultLabelColor>(240, 179, 255)</defaultLabelColor>
+    </HediffDef>
+
+    <ThingDef ParentName="RH2_NerotoninSerum_ImplantBase">
+        <defName>RH2_NerotoninV_Implant</defName>
+        <label>nerotonin-V serum</label>
+        <description>The Nerotonin-V serum allows its user to extend their life expectancy up to a thousand year, along with extreme levels of resistance to toxicity in the user's system. Its limits is currently still unknown. Nerotonin-V is an award winning serum synthesized by intergalactic pharmaceutical corporation Omnitech Viral Intelligence Development (OVID in short) in collaboration with famous bionics manufacturer Voidtech. They credit long lost research by a now defunct company known as Secronom for this life changing product, using the deadly Nerotonin-4 virus and genetically engineering its cells into becoming what it is now in the Nerotonin-V serum.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallRH2_NerotoninV_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/Serum/Nerotonin-V</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.90</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>250000</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallRH2_NerotoninV_Implant</defName>
+        <label>install nerotonin-V serum</label>
+        <uiIconThing>RH2_NerotoninV_Implant</uiIconThing>
+        <description>Install a nerotonin-V serum.</description>
+        <descriptionHyperlinks>
+            <ThingDef>RH2_NerotoninV_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing nerotonin-V serum.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RH2_NerotoninV_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RH2_NerotoninV_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>RH2_NerotoninV_Implant</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveInstallRH2_NerotoninV_Implant</defName>
+        <label>remove nerotonin-V serum</label>
+        <description>Remove nerotonin-V serum.</description>
+        <descriptionHyperlinks>
+            <ThingDef>RH2_NerotoninV_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing nerotonin-V serum.</jobString>
+        <removesHediff>RH2_NerotoninV_Implant</removesHediff>
+    </RecipeDef>
+	
+    <!-- N2 -->
+	
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>RH2_Nerotonin2b_Implant</defName>
+        <label>nerotonin-2b serum</label>
+        <labelNoun>a nerotonin-2b serum</labelNoun>
+        <description>An installed nerotonin-2b serum.</description>
+        <descriptionHyperlinks>
+            <ThingDef>RH2_Nerotonin2b_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <hediffClass>VoidEvents.Hediff_Regeneration</hediffClass>
+        <spawnThingOnRemoved>RH2_Nerotonin2b_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ImmunityGainSpeed>2.0</ImmunityGainSpeed>
+                </statOffsets>
+                <naturalHealingFactor>100.0</naturalHealingFactor>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>2.0</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <defaultLabelColor>(89, 201, 214)</defaultLabelColor>
+    </HediffDef>
+
+    <ThingDef ParentName="RH2_NerotoninSerum_ImplantBase">
+        <defName>RH2_Nerotonin2b_Implant</defName>
+        <label>nerotonin-2b serum</label>
+        <description>The Nerotonin-2b serum allows its user to have rapid healing and immunity gain, to the point of which lost limbs can be regenerated and cancers eliminated in the body. Nerotonin-2B is an award winning serum synthesized by intergalactic pharmaceutical corporation Omnitech Viral Intelligence Development (OVID in short) in collaboration with famous bionics manufacturer Voidtech. They credit long lost research by a now defunct company known as Secronom for this life changing product, using the ancient Nerotonin-2 serum and genetically engineering it into self replicating smart cells later named Nerotonin Type 2B.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallRH2_Nerotonin2b_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/Serum/Nerotonin-2b</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.90</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>250000</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallRH2_Nerotonin2b_Implant</defName>
+        <label>install nerotonin-2b serum</label>
+        <uiIconThing>RH2_Nerotonin2b_Implant</uiIconThing>
+        <description>Install a nerotonin-2b serum.</description>
+        <descriptionHyperlinks>
+            <ThingDef>RH2_Nerotonin2b_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing nerotonin-2b serum.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RH2_Nerotonin2b_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RH2_Nerotonin2b_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>RH2_Nerotonin2b_Implant</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveInstallRH2_Nerotonin2b_Implant</defName>
+        <label>remove nerotonin-2b virus</label>
+        <description>Remove nerotonin-2b virus.</description>
+        <descriptionHyperlinks>
+            <ThingDef>RH2_Nerotonin2b_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing nerotonin-2b virus.</jobString>
+        <removesHediff>RH2_Nerotonin2b_Implant</removesHediff>
+    </RecipeDef>
+	
+	
+    <!-- The nerotonin-4b serum -->
+	
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>RH2_Nerotonin4b_Implant</defName>
+        <label>nerotonin-4b serum</label>
+        <labelNoun>a nerotonin-4b serum</labelNoun>
+        <description>An installed nerotonin-4b serum.</description>
+        <descriptionHyperlinks>
+            <ThingDef>RH2_Nerotonin4b_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>RH2_Nerotonin4b_Implant</spawnThingOnRemoved>
+        <hediffClass>VoidEvents.Hediff_Resurrection</hediffClass>
+        <defaultLabelColor>(230, 28, 14)</defaultLabelColor>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ImmunityGainSpeed>2</ImmunityGainSpeed>
+                </statOffsets>
+                <totalBleedFactor>0.65</totalBleedFactor>
+                <naturalHealingFactor>75.0</naturalHealingFactor>
+                <capMods>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="VoidEvents.ResurrectionOptions">
+                <ticksToResurrect>4200</ticksToResurrect><!-- 60 ticks is 1 second -->
+            </li>
+        </modExtensions>
+    </HediffDef>
+
+    <ThingDef ParentName="RH2_NerotoninSerum_ImplantBase">
+        <defName>RH2_Nerotonin4b_Implant</defName>
+        <label>nerotonin-4b serum</label>
+        <description>An serum that by all means does not exist in any records of both its creators Omnitech Viral Intelligence Department (OVID in short) and Voidtech. It is an unrecorded miracle, rumoured to be the long developed "cure for death" that OVID has been developing in secret\n\nThe Nerotonin-4b serum replicates the resurrective properties of the Nerotonin Type 4 virus, though without the negative effects of the virus that cause subjects to become mindless zombies. Nerotonin-4b's research is covered in bloody hands, in that it is associated with multiple dead or dying urbworlds and midworlds that OVID and Voidtech began research and development in. The original Nerotonin Type 4 is a virus that is highly contagious and highly deadly which results in resurrection after death, the subject is then cursed to become an aggressive monster that would attack even its former loved ones. Its origin is traced back in a fallen ancient world from a company known as Secronom, of which OVID has credited and sourced a lot of research from.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallRH2_Nerotonin4b_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/Serum/Nerotonin-4b</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.90</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>500000</MarketValue>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallRH2_Nerotonin4b_Implant</defName>
+        <label>install nerotonin-4b serum</label>
+        <uiIconThing>RH2_Nerotonin4b_Implant</uiIconThing>
+        <description>Install nerotonin-4b serum.</description>
+        <descriptionHyperlinks>
+            <ThingDef>RH2_Nerotonin4b_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing nerotonin-4b serum.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RH2_Nerotonin4b_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RH2_Nerotonin4b_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>RH2_Nerotonin4b_Implant</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveInstallRH2_Nerotonin4b_Implant</defName>
+        <label>extract nerotonin-4b serum</label>
+        <description>Extract nerotonin-4b serum.</description>
+        <descriptionHyperlinks>
+            <ThingDef>RH2_Nerotonin4b_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Extracting nerotonin-4b serum.</jobString>
+        <removesHediff>RH2_Nerotonin4b_Implant</removesHediff>
+    </RecipeDef>
+	
+</Defs>

@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  	    <!-- ===================== Stalker Call ========================= -->
+  
+      <SoundDef>
+    <defName>RHPawn_EvolvedLongArms_Call</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Evolved/Evolved_LongArmsCall</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef> 
+  
+    <!-- ===================== Stalker Dead ========================= -->
+
+    <SoundDef>
+    <defName>RHPawn_EvolvedLongArms_Death</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Evolved/Evolved_LongArmsDeath</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef> 
+  
+  <!-- ===================== Stalker Hurt ========================= -->
+
+<SoundDef>
+    <defName>RHPawn_EvolvedRumbler_Call</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Evolved/Evolved_RumblerCall</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>     
+  
+  <!-- ===================== Stalker Hurt ========================= -->
+
+<SoundDef>
+    <defName>RHPawn_DevilHound_Angry</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Evolved/DevilHound_Angry</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>     
+  
+  <!-- ===================== DH Call ========================= -->
+
+<SoundDef>
+    <defName>RHPawn_DevilHound_Call</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Evolved/DevilHound_Call</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>     
+  
+  <!-- ===================== DH Call ========================= -->
+
+<SoundDef>
+    <defName>RHPawn_DevilHound_Death</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Evolved/DevilHound_DeathRattle</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>   
+   
+   
+   <!-- ===================== N4 quiet ========================= -->
+
+<SoundDef>
+    <defName>RHPawn_Infected_Quiet</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Evolved/DF_InfectedQuiet</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>0.936413</min>        
+          <max>1.042391</max>
+        </pitchRange>      
+        <paramMappings>
+          <li>
+            <inParam Class="SoundParamSource_CameraAltitude" />          
+            <outParam Class="SoundParamTarget_PropertyLowPass">
+              <filterProperty>Cutoff</filterProperty>
+            </outParam>          
+            <paramUpdateMode>Constant</paramUpdateMode>          
+            <curve>
+              <points>
+                <li>
+                  <loc>
+                    <x>17.08957</x>                  
+                    <y>21001.8</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>24.77761</x>                  
+                    <y>12701.95</y>
+                  </loc>
+                </li>              
+                <li>
+                  <loc>
+                    <x>32.786</x>                  
+                    <y>7168.717</y>
+                  </loc>
+                </li>              
+              </points>
+            </curve>
+          </li>
+        </paramMappings>      
+        <filters>
+          <li Class="SoundFilterLowPass">
+            <cutoffFrequency>10000</cutoffFrequency>          
+            <lowpassResonaceQ>1</lowpassResonaceQ>
+          </li>
+        </filters>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>   
+ 
+  
+</Defs>

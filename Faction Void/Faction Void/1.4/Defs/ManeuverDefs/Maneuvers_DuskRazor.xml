@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Dusk Sword -->
+  <ManeuverDef>
+    <defName>RHManeuver_DFBladeSlash</defName>
+    <requiredCapacity>RHMelee_DFBladeSlash</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>Cut</meleeDamageDef>
+	  <soundCast>RHShot_DuskBladeHit</soundCast>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ManeuverDef>
+    <defName>RHManeuver_DFBladeStab</defName>
+    <requiredCapacity>RHMelee_DFBladeStab</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>Stab</meleeDamageDef>
+	  <soundCast>RHShot_DuskBladeHit_II</soundCast>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>  
+  
+  <!-- Amputator -->
+  <ManeuverDef>
+    <defName>RHManeuver_DFAmputatorSlash</defName>
+    <requiredCapacity>RHMelee_AmputatorSlash</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>Cut</meleeDamageDef>
+	  <soundCast>RHShot_AmputatorHit</soundCast>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+  <ManeuverDef>
+    <defName>RHManeuver_DFAmputatorStab</defName>
+    <requiredCapacity>RHMelee_AmputatorStab</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>Stab</meleeDamageDef>
+	  <soundCast>RHShot_AmputatorHit_II</soundCast>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Stab_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Stab_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Stab_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Stab_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
+  
+</Defs>

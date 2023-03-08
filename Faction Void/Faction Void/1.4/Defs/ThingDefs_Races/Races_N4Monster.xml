@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="SK_BasePawn" Name="Base_RHN4Mutant" Abstract="True">
+		<thingClass>VoidEvents.Mutant</thingClass>
+		<statBases>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ComfyTemperatureMin>-55</ComfyTemperatureMin>
+			<ComfyTemperatureMax>500</ComfyTemperatureMax>
+			<Flammability>-1.0</Flammability>
+			<ToxicEnvironmentResistance>2.0</ToxicEnvironmentResistance>
+		</statBases>
+		<race>
+			<intelligence>ToolUser</intelligence>
+			<needsRest>false</needsRest>
+			<hasGenders>false</hasGenders>
+			<foodType>CarnivoreAnimal</foodType>
+			<lifeExpectancy>300</lifeExpectancy>
+			<trainability>Advanced</trainability>
+			<wildness>0.80</wildness>
+            <useMeatFrom>Human</useMeatFrom>
+			<leatherDef>Leather_Plain</leatherDef>
+			<hediffGiverSets>
+				<li>OrganicStandard</li>
+			</hediffGiverSets>
+		</race>
+	</ThingDef>
+
+
+	<PawnKindDef Name="RH_BaseN4MutantKind" Abstract="True">
+		<defaultFactionType>RH_VOID</defaultFactionType>
+	</PawnKindDef>	
+	
+	<!-- MOTHER -->
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_Mother</defName>
+		<label>mother</label>
+		<description>Nerotonin Type-4 strain Mother. This subject was formerly a pregnant woman, its unborn child is noticeably merged with the mother's belly forming a second face.\n\nThe Mother is one of the most abominable results of the N4 virus, a walking corpse with a permanent reminder of what a child's life could've been. Slow in terms of mobility compared to other variants in its league, The Mother has a ranged attack, vomitting out fast dissipating volatile acid that can melt through armor and buildings.\n\nThe N-4 strain allows this subject to be heavily resistant to fire.</description>
+		<statBases>
+			<MoveSpeed>4.0</MoveSpeed>
+			<Flammability>0</Flammability>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Heat>6</Insulation_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>5</cooldownTime>
+				<linkedBodyPartsGroup>RH_LeftClaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>30</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>4.5</cooldownTime>
+				<linkedBodyPartsGroup>RH_RightClaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>30</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>14</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<!--<verbs>			
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>RNBullet_DF_VolatileAcid</defaultProjectile>
+				<forcedMissRadius>3</forcedMissRadius>
+				<warmupTime>3</warmupTime>
+				<ai_AvoidFriendlyFireRadius>1</ai_AvoidFriendlyFireRadius>
+				<range>18.5</range>
+				<burstShotCount>5</burstShotCount>
+				<soundCast>DF_Spit_VolatileAcid</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<onlyManualCast>true</onlyManualCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>1</muzzleFlashScale>
+				<commonality>.8</commonality>
+			</li>
+		</verbs>-->
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant_Mother</body>
+			<!--<deathActionWorkerClass>VoidEvents.DeathActionWorker_NoFireExplosion</deathActionWorkerClass>-->
+			<baseBodySize>18.0</baseBodySize>
+			<baseHealthScale>15</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_Mother_Hurt</soundWounded>
+					<soundDeath>RHPawn_Mother_Death</soundDeath>
+					<soundCall>RHPawn_Mother_Mad</soundCall>
+					<soundAngry>RHPawn_Mother_Call</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RH_GiantSpiderHit</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RH_GiantSpiderHit</soundMeleeHitBuilding>
+			<soundMeleeMiss>RH_HulkMiss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- MOTHER END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_DF_Mother</defName>
+		<label>Mother</label>
+		<defaultFactionType>RH_VOID</defaultFactionType>
+		<race>RH_DF_Mother</race>
+		<combatPower>200</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mother</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>6</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+
+
+	<!-- TITAN -->
+
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_Titan</defName>
+		<label>titan</label>
+		<description>Nerotonin Type-4 variant Titan, an enlarged and muscle bound subject with bones protruding out of its body.\n\nThe Titan's strength is featured in its ability to run rampant across streets, running through vehicles in its path and losing very little speed to chase after its prey. The N4 strain changed this subject's bones into something stronger if not equal to concrete in terms of strength. This effectively makes the Titan a living tank, capable of taking many punishing hits before it goes down.\n\nThe N-4 strain allows this subject to be heavily resistant to fire.</description>
+		<statBases>
+			<MoveSpeed>8.5</MoveSpeed>
+			<Flammability>0</Flammability>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Heat>5</Insulation_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>52</power>
+				<cooldownTime>4.2</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>45</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>57</power>
+				<cooldownTime>4.0</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>45</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>60</power>
+				<cooldownTime>15</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant</body>
+			<baseBodySize>20.0</baseBodySize>
+			<baseHealthScale>18</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_Titan_Injured</soundWounded>
+					<soundDeath>RHPawn_Titan_Death</soundDeath>
+					<soundCall>RHPawn_Titan_Call</soundCall>
+					<soundAngry>RHPawn_Titan_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RH_HulkPunch</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RH_HulkPoundVictim</soundMeleeHitBuilding>
+			<soundMeleeMiss>RH_HulkMiss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- TITAN END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_Titan</defName>
+		<label>titan</label>
+		<defaultFactionType>RH_VOID</defaultFactionType>
+		<race>RH_DF_Titan</race>
+		<combatPower>200</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Titan</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>6</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+
+	<!-- WRAITH -->
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_Wraith</defName>
+		<label>Wraith</label>
+		<description>Nerotonin Type-4 variant Wraith, also known as "The Destroying Angel".\n\nThe Wraith's tentacles are capable of penetrating heavy armour found in tanks. They are the archetype of all female N-4 mutants. Wraiths are perhaps the least mentally affected by the mutations of Nerotonin-4, allowing them to retain their premortem mental acuity. Known back in their world as an eerie reminder of humanity’s best.\n\nThe N-4 strain allows this subject to be heavily resistant to fire.</description>
+		<statBases>
+			<MoveSpeed>16</MoveSpeed>
+			<Flammability>0.0</Flammability>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Heat>5</Insulation_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+		</statBases>
+		<tools>
+			<li>
+				<label>tentacles</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>48</power>
+				<cooldownTime>3.7</cooldownTime>
+				<linkedBodyPartsGroup>RH_LeftTentacle</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>85</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>tentacles</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>52</power>
+				<cooldownTime>3.9</cooldownTime>
+				<linkedBodyPartsGroup>RH_RightTentacle</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>85</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>45</power>
+				<cooldownTime>13</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant_Wraith</body>
+			<baseBodySize>14.0</baseBodySize>
+			<baseHealthScale>17</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<!--<soundWounded>RHPawn_Wraith_Injured</soundWounded>
+          <soundDeath>Wraith_Death</soundDeath>-->
+					<soundCall>RHPawn_Wraith_Call</soundCall>
+					<soundAngry>RHPawn_Wraith_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RH_HulkPoundVictim</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RH_HulkPunch</soundMeleeHitBuilding>
+			<soundMeleeMiss>RH_HulkMiss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- WRAITH END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_Wraith</defName>
+		<label>wraith</label>
+		<defaultFactionType>RH_VOID</defaultFactionType>
+		<race>RH_DF_Wraith</race>
+		<combatPower>180</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Wraith</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+
+	<!-- GIANT SPIDER -->
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_GiantSpider</defName>
+		<label>giant spider</label>
+		<description>Nerotonin Type-4 variant Giant Spider, typically a strain found in athletic body type subjects.\n\nThis Nerotonin Type-4 strain is an evolved form of the "Spider" mutation, which causes the infected to grow an extra set of 4 arms.\n\nIt is not clear how they could have grown so exponentially. It is hypothesized that the N4 virus mutated the pituitary gland to excrete vast amounts of HGH (Human Growth Hormone), the same mutation that might be found in Titans and Wraiths. This creature's intelligence is about the same as its predecessor, a disadvantage that allows it to be trapped with ease.\n\nThe N-4 strain allows this subject to be heavily resistant to fire.</description>
+		<statBases>
+			<MoveSpeed>17</MoveSpeed>
+			<Flammability>0.0</Flammability>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Heat>5</Insulation_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>23</power>
+				<cooldownTime>3.7</cooldownTime>
+				<linkedBodyPartsGroup>RH_LeftClaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>27</power>
+				<cooldownTime>3.3</cooldownTime>
+				<linkedBodyPartsGroup>RH_RightClaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>40</power>
+				<cooldownTime>9.7</cooldownTime>
+				<linkedBodyPartsGroup>RH_GSTeeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.95</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>50</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<race>
+			<body>RH_N4Mutant_GiantSpider</body>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<baseBodySize>20.0</baseBodySize>
+			<baseHealthScale>16</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_GiantSpider_Injured</soundWounded>
+					<soundDeath>RHPawn_GiantSpider_Death</soundDeath>
+					<soundCall>RHPawn_GiantSpider_Call</soundCall>
+					<soundAngry>RHPawn_GiantSpider_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RH_GiantSpiderHit</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RH_HulkPunch</soundMeleeHitBuilding>
+			<soundMeleeMiss>RH_HulkMiss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- TITAN END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_DFGiantSpider</defName>
+		<label>giant spider</label>
+		<defaultFactionType>RH_VOID</defaultFactionType>
+		<race>RH_DF_GiantSpider</race>
+		<combatPower>200</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/DF_GiantSpider</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>5</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>  
+
+</Defs>

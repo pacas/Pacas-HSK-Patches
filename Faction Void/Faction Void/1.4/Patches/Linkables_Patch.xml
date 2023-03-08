@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+            <li Class="PatchOperationTest">
+                <xpath>*/ThingDef[defName = "Brazier"]</xpath>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName = "Brazier"]/comps/li[@Class = "FocusStrengthOffset_BuildingDefsLit"]</xpath>
+                <value>
+                    <li>RH_Corpo_Brazier</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

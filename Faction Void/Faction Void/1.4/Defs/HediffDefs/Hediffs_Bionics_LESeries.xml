@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+    <!-- Base -->
+    <ThingDef Name="RH_LE_ImplantBase" ParentName="SK_BodyPartBase" Abstract="True">
+        <techLevel>Ultra</techLevel>
+        <thingCategories Inherit="False">
+            <li>RH2_Implants_LE</li>
+        </thingCategories>
+        <techHediffsTags Inherit="False"/>
+        <statBases>
+            <MarketValue>4000</MarketValue>
+            <Mass>0.05</Mass>
+            <MaxHitPoints>20</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+	
+    <!-- 2021 Implants -->
+	
+    <!-- MOTL implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_MOTL_Implant</defName>
+        <label>MOTL implant</label>
+        <labelNoun>a MOTL implant</labelNoun>
+        <description>An installed MOTL implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_MOTL_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_MOTL_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <GlobalLearningFactor>0.05</GlobalLearningFactor>
+                    <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.05</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_MOTL_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_LE_ImplantBase">
+        <defName>DF_MOTL_Implant</defName>
+        <label>MOTL implant</label>
+        <description>The March of the Living implant or MOTL for short. An implant invented by Dr. David Tolousse, a surviving Secronom scientist during the N-4 global pandemic. He invented this implant in mind in order to help survivors gain a greater edge in exploring the wastelands on the outskirts of the inner city, where the infected within were capable of outrunning an average adult human. Thanks to this implant, other innovations were developed that helped survivors who used them suffer less fatalities.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_MOTL_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/LE/MOTL_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_MOTL_Implant</defName>
+        <label>install MOTL implant</label>
+        <uiIconThing>DF_MOTL_Implant</uiIconThing>
+        <description>Install a MOTL implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_MOTL_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing MOTL implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_MOTL_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_MOTL_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_MOTL_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DF_TrinityImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_MOTL_Implant</defName>
+        <label>remove MOTL implant</label>
+        <description>Remove MOTL implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_MOTL_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing MOTL implant.</jobString>
+        <removesHediff>DF_MOTL_Implant</removesHediff>
+    </RecipeDef>
+	
+	
+    <!-- haste implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_Haste_Implant</defName>
+        <label>haste implant</label>
+        <labelNoun>a haste implant</labelNoun>
+        <description>An installed haste implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Haste_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_Haste_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.10</WorkSpeedGlobal>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_Haste_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_LE_ImplantBase">
+        <defName>DF_Haste_Implant</defName>
+        <label>haste implant</label>
+        <description>The Haste implant. Enhances the user's mobility.\n\nIt is part of the Limited Edition Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_Haste_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/LE/Haste_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_Haste_Implant</defName>
+        <label>install haste implant</label>
+        <uiIconThing>DF_Haste_Implant</uiIconThing>
+        <description>Install a haste implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Haste_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing haste implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_Haste_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_Haste_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_Haste_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DF_HasteImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_Haste_Implant</defName>
+        <label>remove haste implant</label>
+        <description>Remove haste implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Haste_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing haste implant.</jobString>
+        <removesHediff>DF_Haste_Implant</removesHediff>
+    </RecipeDef>
+	
+    <!-- cat eye implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_CatEye_Implant</defName>
+        <label>cat eye implant</label>
+        <labelNoun>a cat eye implant</labelNoun>
+        <description>An installed cat eye implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_CatEye_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_CatEye_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.08</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.08</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.08</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.08</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.08</WorkSpeedGlobal>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_CatEye_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_LE_ImplantBase">
+        <defName>DF_CatEye_Implant</defName>
+        <label>cat eye implant</label>
+        <description>The cat eye implant. Enhances the user's mobility.\n\nIt is part of the Limited Edition Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_CatEye_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/LE/CatEye_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_CatEye_Implant</defName>
+        <label>install cat eye implant</label>
+        <uiIconThing>DF_CatEye_Implant</uiIconThing>
+        <description>Install a cat eye implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_CatEye_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing cat eye implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_CatEye_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_CatEye_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_CatEye_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DF_CatEyeImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_CatEye_Implant</defName>
+        <label>remove cat eye implant</label>
+        <description>Remove cat eye implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_CatEye_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing cat eye implant.</jobString>
+        <removesHediff>DF_CatEye_Implant</removesHediff>
+    </RecipeDef>
+	
+    <!-- ghost implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_Ghost_Implant</defName>
+        <label>ghost implant</label>
+        <labelNoun>a ghost implant</labelNoun>
+        <description>An installed ghost implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Ghost_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_Ghost_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <GlobalLearningFactor>0.07</GlobalLearningFactor>
+                    <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+                    <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.05</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_Ghost_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_LE_ImplantBase">
+        <defName>DF_Ghost_Implant</defName>
+        <label>ghost implant</label>
+        <description>The Ghost implant. Enhances the user's mobility, capacity to learn and resistance to physical trauma.\n\nIt is part of the Limited Edition Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_Ghost_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/LE/Ghost_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_Ghost_Implant</defName>
+        <label>install ghost implant</label>
+        <uiIconThing>DF_Ghost_Implant</uiIconThing>
+        <description>Install a ghost implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Ghost_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing ghost implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_Ghost_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_Ghost_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_Ghost_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DF_GhostImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_Ghost_Implant</defName>
+        <label>remove ghost implant</label>
+        <description>Remove ghost implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Ghost_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing ghost implant.</jobString>
+        <removesHediff>DF_Ghost_Implant</removesHediff>
+    </RecipeDef>
+	
+    <!-- destruction implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_Destruction_Implant</defName>
+        <label>destruction implant</label>
+        <labelNoun>a destruction implant</labelNoun>
+        <description>An installed destruction implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Destruction_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_Destruction_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <MeleeArmorPenetration>1.0</MeleeArmorPenetration>
+                    <MeleeHitChance>1.0</MeleeHitChance>
+                    <MeleeDodgeChance>1.0</MeleeDodgeChance>
+                    <MeleeDPS>1.0</MeleeDPS>
+                    <ShootingAccuracyPawn>1.0</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_Destruction_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_LE_ImplantBase">
+        <defName>DF_Destruction_Implant</defName>
+        <label>destruction implant</label>
+        <description>The destruction implant. Enhances the user's combat skills.\n\nIt is part of the Limited Edition Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_Destruction_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/LE/Destruction_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_Destruction_Implant</defName>
+        <label>install destruction implant</label>
+        <uiIconThing>DF_Destruction_Implant</uiIconThing>
+        <description>Install a destruction implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Destruction_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing destruction implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_Destruction_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_Destruction_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_Destruction_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DF_DestructionImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_Destruction_Implant</defName>
+        <label>remove destruction implant</label>
+        <description>Remove destruction implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Destruction_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing destruction implant.</jobString>
+        <removesHediff>DF_Destruction_Implant</removesHediff>
+    </RecipeDef>
+
+    <!-- amber implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_Amber_Implant</defName>
+        <label>amber implant</label>
+        <labelNoun>a amber implant</labelNoun>
+        <description>An installed amber implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Amber_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_Amber_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.12</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <MeleeArmorPenetration>1.2</MeleeArmorPenetration>
+                    <MeleeHitChance>1.2</MeleeHitChance>
+                    <MeleeDodgeChance>1.2</MeleeDodgeChance>
+                    <MeleeDPS>1.2</MeleeDPS>
+                    <ShootingAccuracyPawn>1.2</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_Amber_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_LE_ImplantBase">
+        <defName>DF_Amber_Implant</defName>
+        <label>amber implant</label>
+        <description>The Amber implant. Enhances the user's combat skills.\n\nIt is part of the Limited Edition Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_Amber_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/LE/Amber_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_Amber_Implant</defName>
+        <label>install amber implant</label>
+        <uiIconThing>DF_Amber_Implant</uiIconThing>
+        <description>Install a amber implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Amber_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing amber implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_Amber_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_Amber_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_Amber_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DF_AmberImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_Amber_Implant</defName>
+        <label>remove amber implant</label>
+        <description>Remove amber implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Amber_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing amber implant.</jobString>
+        <removesHediff>DF_Amber_Implant</removesHediff>
+    </RecipeDef>
+	
+	
+    <!-- genius implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_Genius_Implant</defName>
+        <label>genius implant</label>
+        <labelNoun>a genius implant</labelNoun>
+        <description>An installed genius implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Genius_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_Genius_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <GlobalLearningFactor>0.15</GlobalLearningFactor>
+                    <ResearchSpeed>0.15</ResearchSpeed>
+                    <MentalBreakThreshold>-0.15</MentalBreakThreshold>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_Genius_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_LE_ImplantBase">
+        <defName>DF_Genius_Implant</defName>
+        <label>genius implant</label>
+        <description>The Genius implant. Enhances the user's capacity to learn significantly, along with improved regulations of emotion.\n\nIt is part of the Limited Edition Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_Genius_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/LE/Genius_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_Genius_Implant</defName>
+        <label>install genius implant</label>
+        <uiIconThing>DF_Genius_Implant</uiIconThing>
+        <description>Install a genius implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Genius_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing genius implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_Genius_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_Genius_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_Genius_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DF_GeniusImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_Genius_Implant</defName>
+        <label>remove genius implant</label>
+        <description>Remove genius implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Genius_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing genius implant.</jobString>
+        <removesHediff>DF_Genius_Implant</removesHediff>
+    </RecipeDef>
+	
+    <!-- golden rabbit implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_GoldenRabbit_Implant</defName>
+        <label>golden rabbit implant</label>
+        <labelNoun>a golden rabbit implant</labelNoun>
+        <description>An installed golden rabbit implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_GoldenRabbit_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_GoldenRabbit_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.15</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.25</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+                    <NegotiationAbility>0.25</NegotiationAbility>
+                    <SocialImpact>0.25</SocialImpact>
+                    <TradePriceImprovement>0.25</TradePriceImprovement>
+                    <DrugSellPriceImprovement>0.25</DrugSellPriceImprovement>
+                    <ArrestSuccessChance>0.25</ArrestSuccessChance>
+                    <TrainAnimalChance>0.25</TrainAnimalChance>
+                    <BondAnimalChanceFactor>0.25</BondAnimalChanceFactor>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_GoldenRabbit_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_LE_ImplantBase">
+        <defName>DF_GoldenRabbit_Implant</defName>
+        <label>golden rabbit implant</label>
+        <description>The Golden Rabbit implant. Enhances the user's speed and social skills significantly.\n\nIt is part of the Limited Edition Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_GoldenRabbit_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/LE/GoldenRabbit_implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_GoldenRabbit_Implant</defName>
+        <label>install golden rabbit implant</label>
+        <uiIconThing>DF_GoldenRabbit_Implant</uiIconThing>
+        <description>Install a golden rabbit implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_GoldenRabbit_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing golden rabbit implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_GoldenRabbit_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_GoldenRabbit_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_GoldenRabbit_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DFGoldenRabbitImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_GoldenRabbit_Implant</defName>
+        <label>remove golden rabbit implant</label>
+        <description>Remove golden rabbit implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_GoldenRabbit_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing golden rabbit implant.</jobString>
+        <removesHediff>DF_GoldenRabbit_Implant</removesHediff>
+    </RecipeDef>
+	
+    <!-- data implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_Data_Implant</defName>
+        <label>data implant</label>
+        <labelNoun>a data implant</labelNoun>
+        <description>An installed data implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Data_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_Data_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <GlobalLearningFactor>0.12</GlobalLearningFactor>
+                    <ResearchSpeed>0.12</ResearchSpeed>
+                    <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+                    <ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+                    <ArmorRating_Heat>0.05</ArmorRating_Heat>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_Data_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_LE_ImplantBase">
+        <defName>DF_Data_Implant</defName>
+        <label>data implant</label>
+        <description>The Data implant. Enhances the user's capacity to learn, the user's resistance to trauma and general speed.\n\nIt is part of the Limited Edition Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_Data_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/LE/Data_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_Data_Implant</defName>
+        <label>install data implant</label>
+        <uiIconThing>DF_Data_Implant</uiIconThing>
+        <description>Install a data implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Data_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing data implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_Data_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_Data_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_Data_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DF_DataImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_Data_Implant</defName>
+        <label>remove data implant</label>
+        <description>Remove data implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Data_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing data implant.</jobString>
+        <removesHediff>DF_Data_Implant</removesHediff>
+    </RecipeDef>
+	
+    <!-- havoc implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_Havoc_Implant</defName>
+        <label>havoc implant</label>
+        <labelNoun>a havoc implant</labelNoun>
+        <description>An installed havoc implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Havoc_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_Havoc_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <GlobalLearningFactor>0.05</GlobalLearningFactor>
+                    <ResearchSpeed>0.05</ResearchSpeed>
+                    <MentalBreakThreshold>0.05</MentalBreakThreshold>
+                    <MeleeHitChance>0.6</MeleeHitChance>
+                    <MeleeDodgeChance>0.6</MeleeDodgeChance>
+                    <MeleeDPS>0.6</MeleeDPS>
+                    <ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_Havoc_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_LE_ImplantBase">
+        <defName>DF_Havoc_Implant</defName>
+        <label>havoc implant</label>
+        <description>The Havoc implant. Enhances the user's capacity to learn and combat skills.\n\nIt is part of the Limited Edition Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_Havoc_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/LE/Havoc_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+        <defName>InstallDF_Havoc_Implant</defName>
+        <label>install havoc implant</label>
+        <uiIconThing>DF_Havoc_Implant</uiIconThing>
+        <description>Install a havoc implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Havoc_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing havoc implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_Havoc_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_Havoc_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_Havoc_Implant</addsHediff>
+        <!--<incompatibleWithHediffTags>
+			<li>DF_HavocImplant</li>
+		</incompatibleWithHediffTags>-->
+    </RecipeDef>
+
+    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+        <defName>RemoveDF_Havoc_Implant</defName>
+        <label>remove havoc implant</label>
+        <description>Remove havoc implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Havoc_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing havoc implant.</jobString>
+        <removesHediff>DF_Havoc_Implant</removesHediff>
+    </RecipeDef>
+	
+</Defs>

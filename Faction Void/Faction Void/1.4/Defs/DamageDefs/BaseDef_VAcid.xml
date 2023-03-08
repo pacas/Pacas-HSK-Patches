@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ================================= Volatile Acid Projectile ==================================== -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>RNBullet_DF_VolatileAcid</defName>
+        <label>volatile acid</label>
+        <graphicData>
+            <texPath>Things/Projectile/AcidVomit</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>RHDamageDef_DF_VolatileAcid</damageDef>
+            <!-- Use default damage from explosion def -->
+            <explosionRadius>2.0</explosionRadius>
+            <speed>25</speed>
+            <damageAmountBase>15</damageAmountBase>
+            <stoppingPower>2</stoppingPower>
+            <armorPenetrationBase>1.0</armorPenetrationBase>
+        </projectile>
+    </ThingDef>
+</Defs>

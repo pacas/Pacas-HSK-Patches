@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <CultureDef>
+        <defName>RH2_VOIDKriminul</defName>
+        <label>???</label>
+        <description>A broad category describing the styles and practices of many pirate groups.</description>
+        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoKriminul</ideoNameMaker>
+        <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">RH2_NamerDeityVOID</deityNameMaker>
+        <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerKriminul</deityTypeMaker>
+        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Kriminul</leaderTitleMaker>
+        <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalKriminul</festivalNameMaker>
+        <allowedPlaceTags>
+            <li MayRequire="Ludeon.RimWorld.Ideology">OriginSpacer</li>
+        </allowedPlaceTags>
+        <iconPath>World/WorldObjects/Expanding/PirateOutpost</iconPath>
+        <thingStyleCategories>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <category>Spikecore</category>
+                <priority>2</priority>
+            </li>
+        </thingStyleCategories>
+        <styleItemTags>
+            <li>
+                <tag>Rural</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoBeard</tag>
+                <baseWeight>10</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>BeardRural</tag>
+                <baseWeight>0.25</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoTattoo</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+    </CultureDef>
+
+</Defs>

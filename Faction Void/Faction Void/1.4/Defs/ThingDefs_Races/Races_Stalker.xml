@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!-- STALKER and I don't mean the ones from Cherynobl -->
+	
+		<!-- STALKER -->
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF2_Stalker</defName>
+		<label>stalker</label>
+		<description>A new Nerotonin Type-4 variant, the Stalker is an incredibly smart creature that seems to be capable of finding thrill in hunting its prey. Survivors who have escaped the stalker speak of hearing ominous heavy breathing when approaching its presence out of sight.</description>
+		
+		<statBases>
+			<MoveSpeed>4.5</MoveSpeed>
+			<Flammability>0</Flammability>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Heat>6</Insulation_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>4.9</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>30</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>3.1</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>30</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<!--<comps>
+			<li Class="VoidEvents.CompProperties_AmbientSound">
+				<ambientSound>RHPawn_Stalker_Breathing</ambientSound>
+			</li>
+			<li Class="VoidEvents.CompProperties_SwallowedItems">
+				<maxSwallowedItems>30</maxSwallowedItems>
+			</li> 
+		</comps>--> <!-- Note: Stalker's comps are in the patch.xml file, game would cry duplicate comps if not put there -->
+		<race>
+			<thinkTreeMain>RH_DF2_Stalker</thinkTreeMain>
+			<body>RH_N4Mutant</body>
+			<baseBodySize>3.0</baseBodySize>
+			<baseHealthScale>15</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.15</minAge>
+					<soundWounded>RHPawn_Infected_Quiet</soundWounded>
+					<soundDeath>RHPawn_Stalker_Death</soundDeath>
+					<soundCall>RHPawn_Stalker_Angry</soundCall>
+					<soundAngry>RHPawn_Infected_Quiet</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>10000</min>
+				<max>15000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RH_StalkerHit</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RH_StalkerHit</soundMeleeHitBuilding>
+			<soundMeleeMiss>RH_StalkerMiss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- MOTHER END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_DF2_Stalker</defName>
+		<label>Stalker</label>
+		<defaultFactionType>RH2_Nerotonin4_Horde</defaultFactionType>
+		<race>RH_DF2_Stalker</race>
+		<combatPower>200</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Stalker/Stalker</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+
+</Defs>

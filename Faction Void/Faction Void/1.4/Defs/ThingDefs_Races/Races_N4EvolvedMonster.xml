@@ -1,0 +1,933 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- EV Rumbler -->
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_EvolvedRumbler</defName>
+		<label>evolved rumbler</label>
+		<description>An evolved rumbler. This creature is a Nerotonin Type-4 variant that was commonly founded in dangerous areas known as "purple zones" in maps where the plague has spread, these areas are known to be more dangerous than black zones and have been labelled by survivors as "Death Row" due to the high mortality rates of looters in the area.</description>
+		<statBases>
+			<MoveSpeed>7</MoveSpeed>
+			<Flammability>0</Flammability>
+			<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Heat>10</Insulation_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>3.8</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>3.5</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>5.2</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant</body>
+			<!--<deathActionWorkerClass>VoidEvents.DeathActionWorker_NoFireExplosion</deathActionWorkerClass>-->
+			<baseBodySize>3.0</baseBodySize>
+			<baseHealthScale>6</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_Infected_Quiet</soundWounded>
+					<soundDeath>RHPawn_Infected_Quiet</soundDeath>
+					<soundCall>RHPawn_EvolvedRumbler_Call</soundCall>
+					<soundAngry>RHPawn_Infected_Quiet</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RHPawn_InfectedHit_Scratch</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RHPawn_InfectedHit_Scratch</soundMeleeHitBuilding>
+			<soundMeleeMiss>RHPawn_InfectedHit_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- RUMBLER END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_DF_EvolvedRumbler</defName>
+		<label>evolved rumbler</label>
+		<defaultFactionType>RH2_Nerotonin4_Horde</defaultFactionType>
+		<race>RH_DF_EvolvedRumbler</race>
+		<combatPower>75</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Evolved/EvolvedRumbler</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+	
+	
+		<!-- evolved long arm -->
+
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_EvolvedLongArms</defName>
+		<label>evolved long arms</label>
+		<description>An evolved long arms, the creature has reinforced bones sticking out of its elongated arms that form the shape of a blade. This creature is a Nerotonin Type-4 variant that was commonly founded in dangerous areas known as "purple zones" in maps where the plague has spread, these areas are known to be more dangerous than black zones and have been labelled by survivors as "Death Row" due to the high mortality rates of looters in the area.</description>
+		<statBases>
+			<MoveSpeed>8.5</MoveSpeed>
+			<Flammability>0</Flammability>
+			<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Heat>10</Insulation_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+		</statBases>
+		<tools>
+			<li>
+				<label>left arm blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>3.8</cooldownTime>
+				<linkedBodyPartsGroup>RH_LeftArmBlade</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>8</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right arm blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>RH_RightBlade</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>8</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>5.2</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant_ArmBlade</body>
+			<baseBodySize>3</baseBodySize>
+			<baseHealthScale>5</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_Infected_Quiet</soundWounded>
+					<soundDeath>RHPawn_EvolvedLongArms_Death</soundDeath>
+					<soundCall>RHPawn_EvolvedLongArms_Call</soundCall>
+					<soundAngry>RHPawn_Infected_Quiet</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RHPawn_InfectedHit_Scratch</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RHPawn_InfectedHit_Scratch</soundMeleeHitBuilding>
+			<soundMeleeMiss>RHPawn_InfectedHit_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- evolved long arm END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_DF_EvolvedLongArms</defName>
+		<label>evolved long arm</label>
+		<defaultFactionType>RH2_Nerotonin4_Horde</defaultFactionType>
+		<race>RH_DF_EvolvedLongArms</race>
+		<combatPower>75</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Evolved/EvolvedLongArm</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+	
+			<!-- irridiated long arm -->
+
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_IrridiatedLongArms</defName>
+		<label>irridiated long arms</label>
+		<description>The irridiated long arms, a step further from the evolved long arms variant growing in size, change of skin colour and ferocity. This creature is a Nerotonin Type-4 variant that was commonly founded in dangerous areas known as "purple zones" in maps where the plague has spread, these areas are known to be more dangerous than black zones and have been labelled by survivors as "Death Row" due to the high mortality rates of looters in the area.</description>
+		<statBases>
+			<MoveSpeed>16.5</MoveSpeed>
+			<Flammability>0</Flammability>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Heat>10</Insulation_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+		</statBases>
+		<tools>
+			<li>
+				<label>left arm blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>67</power>
+				<cooldownTime>4</cooldownTime>
+				<armorPenetration>0.75</armorPenetration>
+				<linkedBodyPartsGroup>RH_LeftArmBlade</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>50</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right arm blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>71</power>
+				<cooldownTime>4.4</cooldownTime>
+				<armorPenetration>0.75</armorPenetration>
+				<linkedBodyPartsGroup>RH_RightBlade</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>60</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>87</power>
+				<cooldownTime>8.2</cooldownTime>
+				<armorPenetration>0.5</armorPenetration>
+				<linkedBodyPartsGroup>RH_N4Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant_ArmBlade</body>
+			<baseBodySize>6</baseBodySize>
+			<baseHealthScale>18</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_Infected_Quiet</soundWounded>
+					<soundDeath>RHPawn_EvolvedLongArms_Death</soundDeath>
+					<soundCall>RHPawn_EvolvedLongArms_Call</soundCall>
+					<soundAngry>RHPawn_Infected_Quiet</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RHPawn_InfectedHit_Scratch</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RHPawn_InfectedHit_Scratch</soundMeleeHitBuilding>
+			<soundMeleeMiss>RHPawn_InfectedHit_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- irridiated long arm END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_DF_IrridiatedLongArms</defName>
+		<label>irridiated long arm</label>
+		<defaultFactionType>RH2_Nerotonin4_Horde</defaultFactionType>
+		<race>RH_DF_IrridiatedLongArms</race>
+		<combatPower>300</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Evolved/IrridiatedLongArm</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>2.6</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+	
+
+	<!-- Volatile Leaper -->
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_VolatileLeaper</defName>
+		<label>volatile leaper</label>
+		<description>The Volatile Leaper. Incredibly fast, evolved version of the leaper in that it explodes irridiated substances upon death, and its signature movement is twitching as if posessed as it moves in very high speed.\n\nThe Leaper was an infamous type of creature well known for killing unsuspecting survivors in Fairview. Slow in terms of mobility, however, their tongue being their main weapon is hardened to the point of penetrating most material known to man with its skin near impervious to small-arms damage. Originally, the creature was the size of a 6 foot tall human being, the Volatile Leaper has undergone several forced mutations to make it superior in every way than its predecessor.\n\nDue to how the N-4 virus strain works, this creature is immune to heat damage, though the creature is still vulnerable to heatstrokes.</description>
+		<statBases>
+			<MoveSpeed>19</MoveSpeed>
+			<Flammability>0</Flammability>
+			<ArmorRating_Blunt>0.60</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.55</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Heat>10</Insulation_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<ComfyTemperatureMin>-9999</ComfyTemperatureMin>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>38</power>
+				<cooldownTime>3.7</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>30</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>42</power>
+				<cooldownTime>3.5</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>30</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>tongue</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>700</power>
+				<cooldownTime>4.2</cooldownTime>
+				<armorPenetration>1.0</armorPenetration>
+				<linkedBodyPartsGroup>RH_LeaperTongue</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>1.0</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant_BlackLeaper</body>
+			<baseBodySize>30.0</baseBodySize>
+			<baseHealthScale>27</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_Infected_Quiet</soundWounded>
+					<soundDeath>RHPawn_BlackLeaper_Death</soundDeath>
+					<soundCall>RHPawn_BlackLeaper_Call</soundCall>
+					<soundAngry>RHPawn_BlackLeaper_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RH_HulkPoundVictim</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RH_HulkPoundVictim</soundMeleeHitBuilding>
+			<soundMeleeMiss>RH_HulkMiss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- Volatile Leaper END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_DF_VolatileLeaper</defName>
+		<label>Volatile Leaper</label>
+		<defaultFactionType>RH2_Nerotonin4_Horde</defaultFactionType>
+		<race>RH_DF_VolatileLeaper</race>
+		<combatPower>700</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/VolatileLeaper</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>8</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+
+		<!-- BLACK TITAN -->
+
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_BlackTitan</defName>
+		<label>black titan</label>
+		<description>A weaponized Black Titan, the result of a Titan's prolonged exposure to high temperature in a controlled environment.\n\nNotably has a soot-black skin, larger in size and its bones protruding out of its body as a result of its "change". It is significantly faster and stronger than its Titan predecessor, its bones and muscle have adapted to be as hard as titanium. The Nerotonin-4 virus, having been known to survive high temperatures, under the right circumstances could potentially evolve in an attempt to preserve its host. Black Titans were among the most feared abominations within the Fairview Wasteland, very few survivors lived to report sightings in black zones.\n\nDue to how the N-4 virus strain works, this creature is immune to heat damage, though the creature is still vulnerable to heatstrokes.</description>
+		<statBases>
+			<MoveSpeed>16</MoveSpeed>
+			<Flammability>0</Flammability>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.45</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Heat>5</Insulation_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<ComfyTemperatureMin>-9999</ComfyTemperatureMin>
+		</statBases>
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>80</power>
+				<cooldownTime>4.8</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>70</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>85</power>
+				<cooldownTime>3.4</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>70</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>100</power>
+				<cooldownTime>4.2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant</body>
+			<baseBodySize>25.0</baseBodySize>
+			<baseHealthScale>25</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_Titan_Injured</soundWounded>
+					<soundDeath>RHPawn_Titan_Death</soundDeath>
+					<soundCall>RHPawn_Titan_Call</soundCall>
+					<soundAngry>RHPawn_Titan_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RH_HulkPunch</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RH_HulkPoundVictim</soundMeleeHitBuilding>
+			<soundMeleeMiss>RH_HulkMiss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- BLACK TITAN END -->
+
+
+	<PawnKindDef Name="RH_BaseN4MutantKind_BT">
+		<defName>RH_BlackTitan</defName>
+		<label>black titan</label>
+		<defaultFactionType>RH2_Nerotonin4_Horde</defaultFactionType>
+		<race>RH_DF_BlackTitan</race>
+		<combatPower>400</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/BlackTitan</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>8</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+	
+		<!-- WRAITH -->
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_BlackWraith</defName>
+		<label>Black Wraith</label>
+		<description>Nerotonin Type-4 variant Black Wraith, The Charred Destroying Angel. Black Wraiths are an evolution further from the Wraith variant caused by circumstances leading to the subject's mutation underconstant exposure to high temperature.\n\nThe Wraith's tentacles are capable of penetrating heavy armour found in tanks. They are the archetype of all female N-4 mutants. Wraiths are perhaps the least mentally affected by the mutations of Nerotonin-4, allowing them to retain their premortem mental acuity. Known back in their world as an eerie reminder of humanity’s best.\n\nThe N-4 strain allows this subject to be heavily resistant to fire.</description>
+		<statBases>
+			<MoveSpeed>17</MoveSpeed>
+			<Flammability>0.0</Flammability>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.35</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Heat>6</Insulation_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+		</statBases>
+		<tools>
+			<li>
+				<label>tentacles</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>97</power>
+				<cooldownTime>3.5</cooldownTime>
+				<linkedBodyPartsGroup>RH_LeftTentacle</linkedBodyPartsGroup>
+				<armorPenetration>0.85</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>85</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>tentacles</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>110</power>
+				<cooldownTime>3.8</cooldownTime>
+				<linkedBodyPartsGroup>RH_RightTentacle</linkedBodyPartsGroup>
+				<armorPenetration>0.85</armorPenetration>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>105</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>90</power>
+				<cooldownTime>3.5</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant_Wraith</body>
+			<baseBodySize>24.0</baseBodySize>
+			<baseHealthScale>26</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<!--<soundWounded>RHPawn_Wraith_Injured</soundWounded>-->
+                    <soundDeath>RHPawn_Wraith_Injured</soundDeath>
+					<soundCall>RHPawn_Wraith_Call</soundCall>
+					<soundAngry>RHPawn_Wraith_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RH_HulkPoundVictim</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RH_HulkPunch</soundMeleeHitBuilding>
+			<soundMeleeMiss>RH_HulkMiss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- Black WRAITH END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_BlackWraith</defName>
+		<label>black wraith</label>
+		<defaultFactionType>RH2_Nerotonin4_Horde</defaultFactionType>
+		<race>RH_DF_BlackWraith</race>
+		<combatPower>450</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/BlackWraith</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>7</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+	
+		<!-- BLACK LEAPER -->
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_BlackLeaper</defName>
+		<label>black leaper</label>
+		<description>An experimental weaponized Black Leaper, a mutant infected with a modified strain of the N-4 virus.\n\nThe Leaper was an infamous type of creature well known for killing unsuspecting survivors in Fairview. Slow in terms of mobility, however, their tongue being their main weapon is hardened to the point of penetrating most material known to man with its skin near impervious to small-arms damage. Originally, the creature was the size of a 6 foot tall human being, the Black Leaper has undergone several forced mutations to make it superior in every way than its predecessor.\n\nDue to how the N-4 virus strain works, this creature is immune to heat damage, though the creature is still vulnerable to heatstrokes.</description>
+		<statBases>
+			<MoveSpeed>1.5</MoveSpeed>
+			<Flammability>0</Flammability>
+			<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.55</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Heat>6</Insulation_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<ComfyTemperatureMin>-9999</ComfyTemperatureMin>
+		</statBases>
+		<tools>
+			<li>
+				<label>left claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>35</power>
+				<cooldownTime>5.5</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>30</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right claw</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>37</power>
+				<cooldownTime>5.4</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>30</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>tongue</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>600</power>
+				<cooldownTime>6.7</cooldownTime>
+				<armorPenetration>1.0</armorPenetration>
+				<linkedBodyPartsGroup>RH_LeaperTongue</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant_BlackLeaper</body>
+			<baseBodySize>30.0</baseBodySize>
+			<baseHealthScale>23</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_BlackLeaper_Attack</soundWounded>
+					<soundDeath>RHPawn_BlackLeaper_Death</soundDeath>
+					<soundCall>RHPawn_BlackLeaper_Call</soundCall>
+					<soundAngry>RHPawn_BlackLeaper_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RH_HulkPoundVictim</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RH_HulkPoundVictim</soundMeleeHitBuilding>
+			<soundMeleeMiss>RH_HulkMiss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- BLACK LEAPER END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_DF_BlackLeaper</defName>
+		<label>Black Leaper</label>
+		<defaultFactionType>RH2_Nerotonin4_Horde</defaultFactionType>
+		<race>RH_DF_BlackLeaper</race>
+		<combatPower>500</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/BlackLeaper</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>8</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+	
+		<!-- Devil Hound -->
+
+	<ThingDef ParentName="Base_RHN4Mutant">
+		<defName>RH_DF_DevilHound</defName>
+		<label>Devil Hound</label>
+		<description>The dreaded Devil Hound of the wastelands, a K-9 infected with an unstable strain of the N-4 virus.\n\nThe Devil Hound is among the most dangerous Nerotonin Type-4 creature on record. Though it does not have the same lethality guaranteed by a Volatile Leaper's tongue, it is the fastest and most resilient creature on the roster of the abominable variants.</description>
+		<statBases>
+			<MoveSpeed>24</MoveSpeed>
+			<Flammability>0.0</Flammability>
+			<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.50</ArmorRating_Sharp>
+			<ArmorRating_Heat>2.0</ArmorRating_Heat>
+			<Insulation_Heat>100</Insulation_Heat>
+			<Insulation_Cold>100</Insulation_Cold>
+		</statBases>
+		<tools>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>72</power>
+				<cooldownTime>3.6</cooldownTime>
+				<linkedBodyPartsGroup>RH_LeftClaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>85</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>claws</label>
+				<capacities>
+					<li>Scratch</li>
+				</capacities>
+				<power>77</power>
+				<cooldownTime>3.1</cooldownTime>
+				<linkedBodyPartsGroup>RH_RightClaw</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>85</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>ToxicBite</li>
+				</capacities>
+				<power>125</power>
+				<cooldownTime>4.7</cooldownTime>
+				<linkedBodyPartsGroup>RH_N4Teeth</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<thinkTreeMain>Animal</thinkTreeMain>
+			<body>RH_N4Mutant</body>
+			<baseBodySize>33.0</baseBodySize>
+			<baseHealthScale>33</baseHealthScale>
+			<lifeStageAges>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.1</minAge>
+					<soundWounded>RHPawn_Infected_Quiet</soundWounded>
+                    <soundDeath>RHPawn_DevilHound_Death</soundDeath>
+					<soundCall>RHPawn_DevilHound_Call</soundCall>
+					<soundAngry>RHPawn_DevilHound_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundCallIntervalRange>
+				<min>12000</min>
+				<max>24000</max>
+			</soundCallIntervalRange>
+			<soundMeleeHitPawn>RH_GiantSpiderHit</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>RH_GiantSpiderHit</soundMeleeHitBuilding>
+			<soundMeleeMiss>RH_HulkMiss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+
+	<!-- Devil Hound END -->
+
+
+	<PawnKindDef ParentName="RH_BaseN4MutantKind">
+		<defName>RH_DF_DevilHound</defName>
+		<label>Devil Hound</label>
+		<defaultFactionType>RH2_Nerotonin4_Horde</defaultFactionType>
+		<race>RH_DF_DevilHound</race>
+		<combatPower>900</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/DevilHound</texPath>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>9</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<apparelMoney>
+			<min>-10</min>
+			<max>-10</max>
+		</apparelMoney>
+	</PawnKindDef>
+
+
+</Defs>
