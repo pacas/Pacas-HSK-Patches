@@ -14,6 +14,12 @@
                         </incidentsOnArrival>
                         <strategy>ImmediateAttackSappers</strategy><!-- Note: ImmediateAttackSmart does the same thing, just without the wall-mining, in case this causes issues. -->
                     </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/FactionDef[@Name="RH_FactionBase_VOID"]/earliestRaidDays</xpath>
+                    </li>
+                    <li Class="PatchOperationRemove">
+                        <xpath>Defs/FactionDef[defName="RH2_Nerotonin4_Horde"]/earliestRaidDays</xpath>
+                    </li>
                 </value>
             </li>
         </operations>
