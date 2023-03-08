@@ -5,7 +5,7 @@
 Convertion of this mod:<br>
 https://steamcommunity.com/sharedfiles/filedetails/?id=2883208829
 <br><br>
-<img src="https://i.imgur.com/svEwA2k.png">
+<img src="https://i.imgur.com/svEwA2k.png"><br>
 Re-evaluate for a moment. Under what circumstances should you install this mod? None whatsoever.<br>
 Featuring the most beloved organization in the outer RimWorld. Always helping people find greener pastures. Ready to take on the world!<br>
 Adventure awaits. We at V.O.I.D. promise to look after you and your children because nobody else can. Always promoting a brighter tomorrow and a better world. You may be the next person selected to join our ranks!<br>
@@ -16,11 +16,16 @@ Not feeling like being assimilated? Okay, how about becoming one of our honorary
 Приключения ждут вас. Мы в V.O.I.D. обещаем заботиться о вас и ваших детях, потому что никто другой не может этого сделать. Мы всегда выступаем за светлое завтра и лучший мир. Возможно, именно вы станете следующим человеком, который пополнит наши ряды!<br>
 Не хочется ассимилироваться? Хорошо, как насчет того, чтобы стать одним из наших почетных объектов исследования? Где бы вы ни были, что бы вы ни делали, мы вас найдем.<br>
 <br>
-<img src="https://i.imgur.com/5KVUmeE.png">
+<img src="https://i.imgur.com/5KVUmeE.png"><br>
 Q: I feel only pain! Why?<br>
 A: Because.<br>
 Q: Я чувствую только лишь боль! Почему?<br>
 A: Потому что.<br>
+#-------------------------------------------------------------#<br>
+Q: What kind of addons are these?<br>
+A: Surprise, but the names should speak for themselves.<br>
+Q: Что это за аддоны?<br>
+A: Сюрприз, но названия должны говорить сами за себя.<br>
 #-------------------------------------------------------------#<br>
 Q: Is this mod compatibile with Combat Extended?<br>
 A: This is HSK convertion man, of course.<br>
