@@ -15,12 +15,6 @@
             <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=839005762</steamWorkshopUrl>
             <downloadUrl>https://github.com/erdelf/AlienRaces/wiki</downloadUrl>
         </li>
-        <li IfModActive="Ludeon.RimWorld.Biotech">
-            <packageId>telardo.BetterGeneGraphicsFramework</packageId>
-            <displayName>BetterGeneGraphicsFramework</displayName>
-            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2880940958</steamWorkshopUrl>
-            <downloadUrl>https://github.com/chzhrr/RW-BetterGeneGraphicsFramework</downloadUrl>
-        </li>
     </modDependencies>
     <loadAfter>
         <li>erdelf.HumanoidAlienRaces</li>
