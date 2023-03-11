@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+    <RecipeDef Name="AncientStonesRecipeBase">
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+			<li>TableMachining</li>
+		</recipeUsers>
+        <skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+        <researchPrerequisite>Stones_C1</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AncientStonesRecipeBase">
+		<defName>CreateBigGlowstone</defName>
+		<label>make big glowstone structure</label>
+		<description>make big glowstone structure.</description>
+		<jobString>making glowstone structure</jobString>
+		<workAmount>40000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Glowstone</li>
+					</thingDefs>
+				</filter>
+				<count>200</count>
+			</li>
+            <li>
+				<filter>
+					<thingDefs>
+						<li>Rubber</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<BigGlowstoneCrystalTrophy>1</BigGlowstoneCrystalTrophy>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Glowstone</li>
+                <li>Rubber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+    
+    <RecipeDef ParentName="AncientStonesRecipeBase">
+		<defName>CreateBigColdstone</defName>
+		<label>make big coldtone structure</label>
+		<description>make big coldstone structure.</description>
+		<jobString>making coldstone structure</jobString>
+		<workAmount>40000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Coldstone</li>
+					</thingDefs>
+				</filter>
+				<count>200</count>
+			</li>
+            <li>
+				<filter>
+					<thingDefs>
+						<li>Rubber</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<BigColdstoneCrystalTrophy>1</BigColdstoneCrystalTrophy>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Coldstone</li>
+                <li>Rubber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+    
+    <RecipeDef ParentName="AncientStonesRecipeBase">
+		<defName>CreateBigQuartz</defName>
+		<label>make big quartz structure</label>
+		<description>make big quartz structure.</description>
+		<jobString>making quartz structure</jobString>
+		<workAmount>40000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RoughGem</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+            <li>
+				<filter>
+					<thingDefs>
+						<li>Rubber</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<BigQuartzCrystalTrophy>1</BigQuartzCrystalTrophy>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RoughGem</li>
+                <li>Rubber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+    
+    <RecipeDef ParentName="AncientStonesRecipeBase">
+		<defName>CreateBigAmethyst</defName>
+		<label>make big amethyst structure</label>
+		<description>make big amethyst structure.</description>
+		<jobString>making amethyst structure</jobString>
+		<workAmount>40000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RoughUltrahardGem</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+            <li>
+				<filter>
+					<thingDefs>
+						<li>Rubber</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<BigAmethystCrystalTrophy>1</BigAmethystCrystalTrophy>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RoughUltrahardGem</li>
+                <li>Rubber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<skillRequirements>
+			<Crafting>15</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+    
+    <RecipeDef ParentName="AncientStonesRecipeBase">
+		<defName>CreateMediumFossil</defName>
+		<label>make medium fossil structure</label>
+		<description>make medium fossil structure.</description>
+		<jobString>making fossil structure</jobString>
+		<workAmount>5000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmallFossil</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+            <li>
+				<filter>
+					<thingDefs>
+						<li>Rubber</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<MediumFossilTrophy>1</MediumFossilTrophy>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmallFossil</li>
+                <li>Rubber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+    
+    <RecipeDef ParentName="AncientStonesRecipeBase">
+		<defName>CreateBigFossil</defName>
+		<label>make big fossil structure</label>
+		<description>make big fossil structure.</description>
+		<jobString>making fossil structure</jobString>
+		<workAmount>40000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmallFossil</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+            <li>
+				<filter>
+					<thingDefs>
+						<li>Rubber</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products>
+			<LargeFossilTrophy>1</LargeFossilTrophy>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SmallFossil</li>
+                <li>Rubber</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+</Defs>
