@@ -2,7 +2,7 @@
 <Defs>
 
 
-    <RecipeDef Name="AncientStonesRecipeBase">
+    <RecipeDef Name="AncientStonesRecipeBase" Abstract="True">
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
