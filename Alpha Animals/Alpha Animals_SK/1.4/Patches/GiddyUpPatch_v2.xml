@@ -163,46 +163,7 @@
 						</li>
 					</value>
 				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "AA_Barbslinger"]</xpath> 
-					<value>
-						<comps>
-							<li Class="GiddyUp.CompProperties_Overlay">
-								<overlaySide> 
-									<graphicDataDefault>
-										<texPath>Things/Pawn/Animal/Saddles/AA_Saddle3_east</texPath>
-										<graphicClass>Graphic_Single</graphicClass>
-										<drawSize>2</drawSize>
-										<drawRotated>false</drawRotated>
-										
-									</graphicDataDefault>					
-									<offsetDefault>(0,0,0,0)</offsetDefault>
-								</overlaySide>
-								<overlayFront> 
-									<graphicDataDefault>
-										<texPath>Things/Pawn/Animal/Saddles/AA_Saddle3_south</texPath>
-										<graphicClass>Graphic_Single</graphicClass>
-										<drawSize>2</drawSize>
-										<drawRotated>false</drawRotated>
-										
-									</graphicDataDefault>					
-									<offsetDefault>(0,0,0,0)</offsetDefault>
-								</overlayFront>
-								<overlayBack> 
-									<graphicDataDefault>
-										<texPath>Things/Pawn/Animal/Saddles/AA_Saddle3_north</texPath>
-										<graphicClass>Graphic_Single</graphicClass>
-										<drawSize>2</drawSize>
-										<drawRotated>false</drawRotated>
-										
-									</graphicDataDefault>					
-									<offsetDefault>(0,0,0,0)</offsetDefault>
-								</overlayBack>
-								
-							</li>
-						</comps>
-					</value>
-				</li>
+			
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/ThingDef[defName = "AA_Blizzarisk"]/comps</xpath> 
 					<value>
@@ -1159,57 +1120,6 @@
 								<offsetDefault>(0,0,0,0)</offsetDefault>
 							</overlayFront>
 							
-							
-						</li>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAddModExtension">
-					<xpath>/Defs/ThingDef[defName = "AA_Nightling"]</xpath> 
-					<value>
-						<li Class="GiddyUp.DrawingOffset">
-							<eastOffset>(0.205,0,-0.48)</eastOffset>
-							<westOffset>(-0.205,0,-0.48)</westOffset>
-							<northOffset>(0,0,-0.48)</northOffset>
-							<southOffset>(0,0,-0.48)</southOffset>
-						</li>				
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName = "AA_Nightling"]/comps</xpath> 
-					<value>
-						<li Class="GiddyUp.CompProperties_Overlay">
-							<overlaySide> 
-								<graphicDataDefault>
-									<texPath>Things/Pawn/Animal/Saddles/AA_Saddle11_east</texPath>
-									<graphicClass>Graphic_Single</graphicClass>
-									<drawSize>2.05</drawSize>
-									<drawRotated>false</drawRotated>
-									
-								</graphicDataDefault>					
-								<offsetDefault>(0,0,0,0)</offsetDefault>
-							</overlaySide>
-							<overlayFront> 
-								<graphicDataDefault>
-									<texPath>Things/Pawn/Animal/Saddles/AA_Saddle11_south</texPath>
-									<graphicClass>Graphic_Single</graphicClass>
-									<drawSize>2.05</drawSize>
-									<drawRotated>false</drawRotated>
-									
-								</graphicDataDefault>					
-								<offsetDefault>(0,0,0,0)</offsetDefault>
-							</overlayFront>
-							<overlayBack> 
-								<graphicDataDefault>
-									<texPath>Things/Pawn/Animal/Saddles/AA_Saddle11_north</texPath>
-									<graphicClass>Graphic_Single</graphicClass>
-									<drawSize>2.05</drawSize>
-									<drawRotated>false</drawRotated>
-									
-								</graphicDataDefault>					
-								<offsetDefault>(0,0,0,0)</offsetDefault>
-							</overlayBack>
 							
 						</li>
 					</value>
