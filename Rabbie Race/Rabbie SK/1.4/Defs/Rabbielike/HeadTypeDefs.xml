@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bases -->
+  
+  <HeadTypeDef ParentName="AverageBase" Name="Infinity_MaleHeadtypeBase" Abstract="True">
+	<gender>Female</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>RabbieNormalA</defName>
+    <graphicPath>Rabbielike/Heads/Custom_1</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>RabbieNormalB</defName>
+    <graphicPath>Rabbielike/Heads/Custom_2</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>RabbieNormalC</defName>
+    <graphicPath>Rabbielike/Heads/Custom_3</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>RabbieNormalD</defName>
+    <graphicPath>Rabbielike/Heads/Custom_4</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>RabbieNormalE</defName>
+    <graphicPath>Rabbielike/Heads/Custom_5</graphicPath>
+  </HeadTypeDef>
+  
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>RabbieNormalF</defName>
+    <graphicPath>Rabbielike/Heads/Custom_6</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>RabbieNormalG</defName>
+    <graphicPath>Rabbielike/Heads/Custom_7</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>RabbieNormalH</defName>
+    <graphicPath>Rabbielike/Heads/Custom_8</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>RabbieNormalI</defName>
+    <graphicPath>Rabbielike/Heads/Custom_9</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>RabbieNormalJ</defName>
+    <graphicPath>Rabbielike/Heads/Custom_10</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>RabbieNormalK</defName>
+    <graphicPath>Rabbielike/Heads/Custom_11</graphicPath>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="Infinity_MaleHeadtypeBase">
+    <defName>RabbieNormalL</defName>
+    <graphicPath>Rabbielike/Heads/Custom_12</graphicPath>
+  </HeadTypeDef>
+
+</Defs>

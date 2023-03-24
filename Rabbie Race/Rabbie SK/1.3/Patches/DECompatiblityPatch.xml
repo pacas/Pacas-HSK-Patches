@@ -15,7 +15,7 @@
 			<li>1983507181</li>
 		</mods>
 		<match Class="PatchOperationAdd">
-			<xpath>Defs/RecipeDef[@Name = "DESurgeries"]/recipeUsers</xpath>
+			<xpath>/Defs/RecipeDef[@Name = "DESurgeries"]/recipeUsers</xpath>
 			<value>
 				<li>Rabbie</li>
 			</value>

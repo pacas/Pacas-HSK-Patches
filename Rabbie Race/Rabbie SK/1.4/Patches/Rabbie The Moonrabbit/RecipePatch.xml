@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>Defs/WorkGiverDef[defName="DoBillsMakeApparel"]/fixedBillGiverDefs</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/WorkGiverDef[defName="DoBillsMakeApparel"]/fixedBillGiverDefs</xpath>
+				<value>
+					<li>RB_MoonTailoringBench</li>
+					<li>RB_MoonTableMachining</li>				
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[defName="CremateCorpse" or defName="Make_SoylentGreen"]/defaultIngredientFilter/thingDefs</xpath>
+		<value>
+			<li>Corpse_Rabbie</li>
+		</value>
+	</Operation>
+	
+</Patch>

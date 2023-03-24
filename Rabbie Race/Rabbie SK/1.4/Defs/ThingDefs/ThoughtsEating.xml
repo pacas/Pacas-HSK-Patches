@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- 고기 섭취 -->
+  
+    <ThoughtDef>
+        <defName>AteMeatIngredient</defName>
+        <showBubble>true</showBubble>
+        <icon>Things/Mote/ThoughtSymbol/Food</icon>
+        <durationDays>0.5</durationDays>
+        <stackLimit>3</stackLimit>
+        <stages>
+            <li>
+                <label>고기를 먹어버렸어!</label>
+                <description>토할 것만 같아.. 소화도 잘 안 돼...</description>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+	
+	
+    <!-- 채소 냄비요리 -->
+	
+    <ThoughtDef>
+        <defName>AteHeartwarmFood</defName>
+        <durationDays>0.5</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>따뜻한 달냄비 요리.</label>
+                <description>정말 맛있는 채소 전골이야. 마음이 따뜻해져.</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

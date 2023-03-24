@@ -43,7 +43,7 @@ How to download only the mods you are interested in:<br>
 | Nerve and Sleep Gas Shells | 1.3 | Original mod is dead, final release |
 | Paniel the Automata | 1.3 / 1.4 | --- |
 | Primitive Storage | 1.3 / 1.4 | --- |
-| Rabbie Race | 1.3 | In progress |
+| Rabbie Race | 1.3 / 1.4 | --- |
 | Revia Race | 1.3 / 1.4 | --- |
 | Rimfeller EasyMod | 1.3 / 1.4 | --- |
 | Seven Seraph Weapons | 1.3 / 1.4 | --- |
