@@ -58,24 +58,24 @@
                                 <options>
                                     <li>
                                         <weight>10</weight>
-                                        <min>RGBA(238,207,180,255)</min>
-                                        <max>RGBA(255,224,196,255)</max>
+                                        <min>(238,207,180)</min>
+                                        <max>(255,224,196)</max>
                                     </li>
                                     <li>
                                         <weight>10</weight>
-                                        <only>RGBA(255,224,196,255)</only>
+                                        <only>(255,224,196)</only>
                                     </li>
                                     <li>
                                         <weight>10</weight>
-                                        <only>RGBA(255,220,177,255)</only>
+                                        <only>(255,220,177)</only>
                                     </li>
                                     <li>
                                         <weight>10</weight>
-                                        <only>RGBA(253,228,200,255)</only>
+                                        <only>(253,228,200)</only>
                                     </li>
                                     <li>
                                         <weight>10</weight>
-                                        <only>RGBA(238,207,180,255)</only>
+                                        <only>(238,207,180)</only>
                                     </li>
                                 </options>
                             </first>
@@ -83,7 +83,7 @@
                                 <options>
                                     <li>
                                         <weight>10</weight>
-                                        <only>RGBA(255,224,196,255)</only>
+                                        <only>(255,224,196)</only>
                                     </li>
                                 </options>
                             </second>
@@ -95,31 +95,31 @@
                                     <!-- Blondes -->
                                     <li>
                                         <weight>15</weight>
-                                        <min>RGBA(161,121,48,255)</min>
-                                        <max>RGBA(180,130,65,255)</max>
+                                        <min>(161,121,48)</min>
+                                        <max>(180,130,65)</max>
                                     </li>
                                     <li>
                                         <weight>10</weight>
-                                        <min>RGBA(180,170,65,255)</min>
-                                        <max>RGBA(225,200,90,255)</max>
+                                        <min>(180,170,65)</min>
+                                        <max>(225,200,90)</max>
                                     </li>
                                     <!-- Redheads -->
                                     <li>
                                         <weight>15</weight>
-                                        <min>RGBA(225,98,29,255)</min>
-                                        <max>RGBA(240,140,55,255)</max>
+                                        <min>(225,98,29)</min>
+                                        <max>(240,140,55)</max>
                                     </li>
                                     <!-- Brunettes -->
                                     <li>
                                         <weight>20</weight>
-                                        <min>RGBA(45,23,14,255)</min>
-                                        <max>RGBA(109,71,14,255)</max>
+                                        <min>(45,23,14)</min>
+                                        <max>(109,71,14)</max>
                                     </li>
                                     <!-- Ravens -->
                                     <li>
                                         <weight>20</weight>
-                                        <min>RGBA(2,2,2,255)</min>
-                                        <max>RGBA(33,33,2,255)</max>
+                                        <min>(2,2,2)</min>
+                                        <max>(33,33,2)</max>
                                     </li>
                                 </options>
                             </first>
@@ -127,7 +127,7 @@
                                 <options>
                                     <li>
                                         <weight>10</weight>
-                                        <only>RGBA(255,255,255,255)</only>
+                                        <only>(255,255,255)</only>
                                     </li>
                                 </options>
                             </second>
