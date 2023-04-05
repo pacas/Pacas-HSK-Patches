@@ -5,14 +5,14 @@
 Convertion of this mod:<br>
 https://steamcommunity.com/sharedfiles/filedetails/?id=2938738526
 <br><br>
-<img src="https://i.imgur.com/svEwA2k.png">
+<img src="https://i.imgur.com/svEwA2k.png"><br>
 Short Ranged Transport Ships<br>
 These are tiered, flying ships with very specific roles. They can load people and cargo and bring it somewhere else -- potentially a very long distance, and back again. These act like drop pods, but are not one use -- when you bring it back home you choose where to land and disembark. It's a fully working flying vessel.And combat versions can bombard opponents!<br>
 <br>
 Транспортные корабли малой дальности<br>
 Это летающие корабли cо специфическими функциями. Они могут загружать людей и грузы и доставлять их в другое место - потенциально на очень большое расстояние - и обратно. Они действуют как капсулы, но не являются одноразовыми - когда вы возвращаете корабль домой, вы сами выбираете, где приземлиться и высадиться. Это полностью рабочий летающий корабль. А боевые версии могут проводить бомбардировку противников!<br>
 <br>
-<img src="https://i.imgur.com/5KVUmeE.png">
+<img src="https://i.imgur.com/5KVUmeE.png"><br>
 Q: I can not conduct a bombardment, writes that it is impossible!<br>
 A: At the moment of bombardment at least one pawn must be on the map.<br>
 Q: Не могу провести бомбардировку, пишет что это невозможно!<br>
