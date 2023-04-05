@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ResearchProjectDef[defName="Research_SRTSMkIV"]/prerequisites</xpath>
+                <value>
+                    <li>Research_SRTSAurora</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

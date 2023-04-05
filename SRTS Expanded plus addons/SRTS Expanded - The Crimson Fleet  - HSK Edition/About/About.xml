@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>SRTS Expanded - The Crimson Fleet - HSK Edition</name>
+    <author>Ravvy, Elldar, Pacas</author>
+    <packageId>Ravvy.SRTS.TCF.HSK</packageId>
+    <modDependencies>
+        <li>
+            <packageId>smashphil.srtsexpanded</packageId>
+            <displayName>SRTS Expanded</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2878587061</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pacas/RW-Pacas-HSK-Patches/tree/master/SRTS%20Expanded</downloadUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>smashphil.srtsexpanded</li>
+    </loadAfter>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+    <description>An Extension for SRTS Expanded mod. Adds 6 new crafts with more specialised purpose. Thats... pretty much it.</description>
+</ModMetaData>

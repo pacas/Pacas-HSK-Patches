@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <tab>SRTSE</tab>
+        <defName>Research_SRTSSurveyorComet</defName>
+        <label>The Surveyor / The Comet</label>
+        <description>An aerial military craft specially made for scoutting and small cargo shipping. It is extremely fast and fuel efficient.</description>
+        <baseCost>7000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>Research_SRTSSkip</li>
+        </prerequisites>
+        <researchViewX>21</researchViewX>
+        <researchViewY>72</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <tab>SRTSE</tab>
+        <defName>Research_SRTSBasilisk</defName>
+        <label>The Basilisk</label>
+        <description>Massive military cargo ship. Can move entire bases singlehandedly.</description>
+        <baseCost>8000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>Research_SRAF</li>
+        </prerequisites>
+        <researchViewX>21</researchViewX>
+        <researchViewY>73</researchViewY>
+    </ResearchProjectDef>
+  
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <tab>SRTSE</tab>
+        <defName>Research_SRTSCourier</defName>
+        <label>The Courier</label>
+        <description>A multipurpose aircraft. Useful when you have limited resources. But not specialised in any way.</description>
+        <baseCost>9000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>Research_SRAF</li>
+        </prerequisites>
+        <researchViewX>21</researchViewX>
+        <researchViewY>74</researchViewY>
+    </ResearchProjectDef>
+  
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <tab>SRTSE</tab>
+        <defName>Research_SRTSTitan</defName>
+        <label>The Titan</label>
+        <description>Powerful gunship. Built for extensive raiding and bombing.</description>
+        <baseCost>12000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>Research_SRTSMkII</li>
+        </prerequisites>
+        <researchViewX>22</researchViewX>
+        <researchViewY>73</researchViewY>
+    </ResearchProjectDef>
+  
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <tab>SRTSE</tab>
+        <defName>Research_SRTSAurora</defName>
+        <label>The Aurora</label>
+        <description>A gigantic flagship armed to the teeth. Capable of holding massive amounts of cargo as well as huge amount of bombs. The ultimate aircraft for war.</description>
+        <baseCost>18000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>Research_SRTSMkIIIp</li>
+        </prerequisites>
+        <researchViewX>24</researchViewX>
+        <researchViewY>73</researchViewY>
+    </ResearchProjectDef>
+</Defs>
