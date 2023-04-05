@@ -1,9 +1,9 @@
-Everything inside this repository belongs to the owners of these mods. I only made a HSK convertion.
+Everything in this repository belongs to the owners of the original mods. I only do the HSK conversion.
 
 
 The MIT License (MIT)
 
-Copyright (c) 2022 Pacas
+Copyright (c) 2023 Pacas
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
