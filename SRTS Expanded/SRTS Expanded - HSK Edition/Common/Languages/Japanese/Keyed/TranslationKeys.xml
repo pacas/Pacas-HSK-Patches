@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Labels and Titles -->
+  <SRTSExpanded>SRTS Expanded</SRTSExpanded>
+  <SRTSDef>SRTS Def</SRTSDef>
+
+  <!-- Settings -->
+  <ResetDefault>リセット</ResetDefault>
+  <ResetDefaultTooltip>初期値にリセットします</ResetDefaultTooltip>
+  <ResetThisSRTS>この船をリセット</ResetThisSRTS>
+  <ResetAll>全てリセット</ResetAll>
+
+  <DefaultValues>初期値</DefaultValues>
+  <CustomValues>改変値</CustomValues>
+
+  <MainSettings>メイン設定</MainSettings>
+
+  <PassengerLimit>乗客人数の制限：</PassengerLimit>
+  <PassengerLimitTooltip>SRTSで許可される最小乗客数と最大乗客数を設定する</PassengerLimitTooltip>
+  <DisplayHomeItems>全アイテムをリストに表示：</DisplayHomeItems>
+  <DisplayHomeItemsTooltip>SRTSに積み込む際にコロニーゾーンだけでなくマップ上の全アイテムを表示します。</DisplayHomeItemsTooltip>
+  <DefSettings>ステータス</DefSettings>
+  <DynamicWorldObjectSRTS>動的ワールドマップ描画：</DynamicWorldObjectSRTS>
+  <DynamicWorldObjectSRTSTooltip>SRTS画像を回転させてワールドマップ上で進行方向と表示画像が一致するように、SRTSのテクスチャを動的に描画します</DynamicWorldObjectSRTSTooltip>
+  <ExpandBombPoints>爆撃目標の拡張：</ExpandBombPoints>
+  <ExpandBombPointsTooltip>爆撃目標を基準にして爆弾投下地点を飛行ラインに沿ってライン全体に移動させます。</ExpandBombPointsTooltip>
+  <AllowedBombs>爆弾搭載を許可（爆撃の実行）</AllowedBombs>
+  <ChangeItemSRTS>変更</ChangeItemSRTS>
+  <SearchExplosive>爆弾追加</SearchExplosive>
+  <CurrentExplosives>現在の爆弾</CurrentExplosives>
+  <SRTSBoardingOptions>搭乗設定</SRTSBoardingOptions>
+  <AllowDownedSRTS>倒れたポーンを許可</AllowDownedSRTS>
+  <AllowUnsecurePrisonerSRTS>未拘束な囚人を許可</AllowUnsecurePrisonerSRTS>
+  <AllowCapturablePawnSRTS>逮捕可能なポーンを許可</AllowCapturablePawnSRTS>
+
+  <SOS2Compatibility>SOS2オプション</SOS2Compatibility>
+  <SpaceFaring>宇宙旅行</SpaceFaring>
+  <ShuttleBayLanding>シャトルベイに着陸</ShuttleBayLanding>
+  <NonSpaceFaringSRTS>{0}は軌道に到達不可能</NonSpaceFaringSRTS>
+
+  <SRTSSettings>SRTSの設定</SRTSSettings>
+  <FlightSpeed>飛行速度（ワールドマップ上）</FlightSpeed>
+  <Instant>即時</Instant>
+  <FuelEfficiency>燃料コスト:</FuelEfficiency>
+  <FuelEfficiencySymbol>/タイル毎</FuelEfficiencySymbol>
+  <CargoCapacity>最大積載量:</CargoCapacity>
+  <MinPassengers>最小乗客人数:</MinPassengers>
+  <MaxPassengers>最大乗客人数:</MaxPassengers>
+  <SRTSResearch>研究コスト:</SRTSResearch>
+  <SRTSResearchRequirements>前提となる研究</SRTSResearchRequirements>
+
+  <BombSettings>爆撃の設定</BombSettings>
+  <BombSpeed>飛行速度（爆撃時）</BombSpeed>
+  <RadiusDrop>爆撃半径:</RadiusDrop>
+  <BombCountSRTS>爆弾数:</BombCountSRTS>
+  <CarpetBombing>絨毯爆撃</CarpetBombing>
+  <PreciseBombing>精密爆撃</PreciseBombing>
+  <DistanceBetweenDrops>投下距離の間隔</DistanceBetweenDrops>
+  <CellsEndValue> セル</CellsEndValue>
+  <SingleDrop>1発投下</SingleDrop>
+
+  <ResearchSettings>研究</ResearchSettings>
+  <ResearchDef>Research Def:\n{0}</ResearchDef>
+  <SearchResearch>Research Defsを追加</SearchResearch>
+  <AddItemSRTS>追加</AddItemSRTS>
+  <RemoveResearch>削除</RemoveResearch>
+  <RestartGameResearch>変更した研究設定を適用するには再起動が必要</RestartGameResearch>
+
+  <!-- Float Menu -->
+  <BoardSRTS>{0}に乗り込む</BoardSRTS>
+  <JoinSRTSGroup>SRTS搭乗グループに追加</JoinSRTSGroup>
+
+  <!-- Messages -->
+  <SRTSNoPilot>パイロットなしでSRTSは発進できません。</SRTSNoPilot>
+  <NotEnoughPilots>発信するのにパイロットが不足</NotEnoughPilots>
+  <TooManyPilots>乗り込む入植者が多すぎます</TooManyPilots>
+  <BombRunStarted>爆撃が開始されました。</BombRunStarted>
+  <CannotBombMap>マップが読み込まれない限り、ここへ爆撃することは不可能です。</CannotBombMap>
+  <CommandAddFuelSRTS>{0}を給油</CommandAddFuelSRTS>
+  <CommandAddFuelDescSRTS>インベントリからSRTSに燃料を給油する</CommandAddFuelDescSRTS>
+  <AddFuelSRTSCaravan>{0}の燃料が{1}に給油されました。</AddFuelSRTSCaravan>
+  <NoFuelSRTSCaravan>燃料がありません</NoFuelSRTSCaravan>
+
+  <!-- Caravans -->
+
+  <!-- Status and Compatibility-->
+  <CommandLaunchOrbit>軌道上に発射</CommandLaunchOrbit>
+  <CommandLaunchOrbitDesc>軌道上の場所に打ち上げます。</CommandLaunchOrbitDesc>
+
+  <!-- Gizmo -->
+  <BombTarget>爆撃目標</BombTarget>
+  <BombTargetDesc>別のマップで爆弾を投下する目標を選択します。</BombTargetDesc>
+
+</LanguageData>

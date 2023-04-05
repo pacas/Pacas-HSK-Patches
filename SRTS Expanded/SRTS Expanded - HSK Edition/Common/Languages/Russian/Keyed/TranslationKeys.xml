@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Labels and Titles -->
+  <SRTSExpanded>SRTS Expanded</SRTSExpanded>
+  <SRTSDef>SRTS Def</SRTSDef>
+
+  <!-- Settings -->
+  <ResetDefault>Сбросить</ResetDefault>
+  <ResetDefaultTooltip>Сбросить до значений по умолчанию</ResetDefaultTooltip>
+  <ResetThisSRTS>Сбросить Это</ResetThisSRTS>
+  <ResetAll>Сбросить Всё</ResetAll>
+
+  <DefaultValues>Параметры по умолчанию</DefaultValues>
+  <CustomValues>Пользовательские параметры</CustomValues>
+
+  <MainSettings>Основные настройки</MainSettings>
+
+  <PassengerLimit>Лимит пассажиров</PassengerLimit>
+  <PassengerLimitTooltip>Закрепить ванильное минимальное и максимальное количество пассажиров, разрешенных для перевозки на шаттлах.</PassengerLimitTooltip>
+  <DisplayHomeItems>Отображать все предметы</DisplayHomeItems>
+  <DisplayHomeItemsTooltip>При погрузке шаттлов отображать все предметы, расположенные на карте, а не только на домашней зоне.</DisplayHomeItemsTooltip>
+  <DefSettings>Характеристики</DefSettings>
+  <DynamicWorldObjectSRTS>Динамическая отрисовка</DynamicWorldObjectSRTS>
+  <DynamicWorldObjectSRTSTooltip>Динамически отрисовывать текстуры шаттла на карте мира.</DynamicWorldObjectSRTSTooltip>
+  <ExpandBombPoints>Expand Bomb Targets</ExpandBombPoints>
+  <ExpandBombPointsTooltip>Expand the bombing points along the targeting line to fit across the line.</ExpandBombPointsTooltip>
+  <AllowedBombs>Разрешенная взрывчатка</AllowedBombs>
+  <ChangeItemSRTS>Добавить</ChangeItemSRTS>
+  <SearchExplosive>Добавить объект</SearchExplosive>
+  <CurrentExplosives>Разрешенные бомбы</CurrentExplosives>
+  <SRTSBoardingOptions>Опции погрузки на борт</SRTSBoardingOptions>
+  <AllowDownedSRTS>Разрешить сражённых пешек</AllowDownedSRTS>
+  <AllowUnsecurePrisonerSRTS>Разрешить не конвоируемых заключенных</AllowUnsecurePrisonerSRTS>
+  <AllowCapturablePawnSRTS>Разрешить захватываемых пешек</AllowCapturablePawnSRTS>
+
+  <SOS2Compatibility>Совместимость с Save Our Ship 2</SOS2Compatibility>
+  <SpaceFaring>Запуск в космос</SpaceFaring>
+  <ShuttleBayLanding>(стыкуется)</ShuttleBayLanding>
+  <NonSpaceFaringSRTS>{0} не способен достичь орбиты.</NonSpaceFaringSRTS>
+
+  <SRTSSettings>Настройки SRTS</SRTSSettings>
+  <FlightSpeed>Скорость полёта (карта мира)</FlightSpeed>
+  <Instant>Сразу</Instant>
+  <FuelEfficiency>Топливная эффективность</FuelEfficiency>
+  <FuelEfficiencySymbol> на клетку</FuelEfficiencySymbol>
+  <CargoCapacity>Грузоподъемность</CargoCapacity>
+  <MinPassengers>Минимум пассажиров</MinPassengers>
+  <MaxPassengers>Максимум пассажиров</MaxPassengers>
+  <SRTSResearch>Стоимость исследования</SRTSResearch>
+  <SRTSResearchRequirements>Требует исследования</SRTSResearchRequirements>
+
+  <BombSettings>Настройки вооружения</BombSettings>
+  <BombSpeed>Скорость полёта (бомбардировка)</BombSpeed>
+  <RadiusDrop>Разброс бомб</RadiusDrop>
+  <BombCountSRTS>Количество бомб</BombCountSRTS>
+  <CarpetBombing>Ковровая бомбардировка</CarpetBombing>
+  <PreciseBombing>Точная бомбардировка</PreciseBombing>
+  <DistanceBetweenDrops>Расстояние между сбросами</DistanceBetweenDrops>
+  <CellsEndValue> Клетки</CellsEndValue>
+  <SingleDrop>Одиночный сброс</SingleDrop>
+
+  <ResearchSettings>Исследование</ResearchSettings>
+  <ResearchDef>{0} ResearchDef</ResearchDef>
+  <SearchResearch>Добавить Research Defs</SearchResearch>
+  <AddItemSRTS>Добавить</AddItemSRTS>
+  <RemoveResearch>Удалить</RemoveResearch>
+  <RestartGameResearch>Перезапустите игру, чтобы применить новые настройки исследования.</RestartGameResearch>
+
+  <!-- Float Menu -->
+  <BoardSRTS>Войти на борт {0}</BoardSRTS>
+  <JoinSRTSGroup>Join SRTS Boarding Group</JoinSRTSGroup>
+
+  <!-- Messages -->
+  <SRTSNoPilot>Нельзя отправить шаттл без пилота.</SRTSNoPilot>
+  <NotEnoughPilots>Недостаточно пилотов для запуска.</NotEnoughPilots>
+  <TooManyPilots>Слишком много пассажиров для запуска.</TooManyPilots>
+  <BombRunStarted>Бомбардировка гуков началась!</BombRunStarted>
+  <CannotBombMap>Невозможно совершить бомбометание.</CannotBombMap>
+  <CommandAddFuelSRTS>Заправить {0}</CommandAddFuelSRTS>
+  <CommandAddFuelDescSRTS>Заправить шаттл из инвентаря.</CommandAddFuelDescSRTS>
+  <AddFuelSRTSCaravan>{0} ед. топлива было заправлено в {1}.</AddFuelSRTSCaravan>
+  <NoFuelSRTSCaravan>Нет доступного топлива.</NoFuelSRTSCaravan>
+
+  <!-- Caravans -->
+
+  <!-- Status and Compatibility -->
+  <CommandLaunchOrbit>Запустить на орбиту</CommandLaunchOrbit>
+  <CommandLaunchOrbitDesc>Запустить на локацию на орбите.</CommandLaunchOrbitDesc>
+
+  <!-- Gizmo -->
+  <BombTarget>Бомбардировка</BombTarget>
+  <BombTargetDesc>Выбрать цель для бомбардировки на другой карте.</BombTargetDesc>
+
+</LanguageData>

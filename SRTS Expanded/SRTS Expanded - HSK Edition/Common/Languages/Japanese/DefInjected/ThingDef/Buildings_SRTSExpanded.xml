@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <SRTSSuperpod.label>スーパー ポッド</SRTSSuperpod.label>
+  <SRTSSuperpod.description>輸送ポッドよりも優れたエンジンと手動操作による飛行システムを装備して改造された輸送ポッドです。燃料タンクが大きくないので遠くまでは飛べませんが、通常の輸送ポッドとは違ってコロニーに戻ることが可能です。世界中に乗客と貨物を飛ばすために作られた完成した輸送システムです。
+
+乗客定員：1名
+宇宙飛行：不可
+----------------------------
+移動速度：遅い(1マス/時間)
+燃料容量：400 L
+燃料効率：悪い
+----------------------------
+積載量：120kg
+内部電源：400w</SRTSSuperpod.description>
+  <Blueprint_SRTSSuperpod.label>スーパーポッド(設計)</Blueprint_SRTSSuperpod.label>
+  <Blueprint_Install_SRTSSuperpod.label>スーパーポッド(移動先)</Blueprint_Install_SRTSSuperpod.label>
+  <Frame_SRTSSuperpod.label>スーパーポッド(施工)</Frame_SRTSSuperpod.label>
+  <Frame_SRTSSuperpod.description>輸送ポッドよりも優れたエンジンと手動操作による飛行システムを装備して改造された輸送ポッドです。燃料タンクが大きくないので遠くまでは飛べませんが、通常の輸送ポッドとは違ってコロニーに戻ることが可能です。世界中に乗客と貨物を飛ばすために作られた完成した輸送システムです。
+
+乗客定員：1名
+宇宙飛行：不可
+----------------------------
+移動速度：遅い(1マス/時間)
+燃料容量：400L
+燃料効率：悪い
+----------------------------
+積載量：120kg
+内部電源：400w</Frame_SRTSSuperpod.description>
+
+  <SRTSSkip.label>SRTS:Mk-1 スキップ</SRTSSkip.label>
+  <SRTSSkip.description>乗員最大2人用に設計された、貨物を搭載でき安定した高速飛行が可能な小型輸送・偵察・軽攻撃用途の船です。スーパーポッドよりもはるかに優れていますが、それでも長距離旅行用に設計された船ほどは快適ではありません。世界中に乗客と貨物を飛ばすために作られた完成した輸送システムです。
+
+乗客定員：1-2名
+宇宙飛行：可能,シャトルベイ専用
+
+--武装--
+爆装：投下x4発/搭載x4発
+命中精度：悪い
+爆撃形式：通常爆撃
+----------------------------
+移動速度：遅い(3マス/時間)
+燃料容量：500L
+燃料効率：普通
+----------------------------
+積載量：170kg
+内部電源：650w</SRTSSkip.description>
+  <Blueprint_SRTSSkip.label>SRTS:Mk-1 スキップ(設計)</Blueprint_SRTSSkip.label>
+  <Blueprint_Install_SRTSSkip.label>SRTS:Mk-1 スキップ(移動先)</Blueprint_Install_SRTSSkip.label>
+  <Frame_SRTSSkip.label>SRTS:Mk-1 スキップ(施工)</Frame_SRTSSkip.label>
+  <Frame_SRTSSkip.description>乗員最大2人用に設計された、貨物を搭載でき安定した高速飛行が可能な小型輸送・偵察・軽攻撃用途の船です。スーパーポッドよりもはるかに優れていますが、それでも長距離旅行用に設計された船ほどは快適ではありません。世界中に乗客と貨物を飛ばすために作られた完成した輸送システムです。
+
+乗客定員：1-2名
+宇宙飛行：可能,シャトルベイ専用
+
+--武装--
+爆装：投下x4発/搭載x4発
+命中精度：悪い
+爆撃形式：通常爆撃
+----------------------------
+移動速度：遅い(3マス/時間)
+燃料容量：500L
+燃料効率：普通
+----------------------------
+積載量：170kg
+内部電源：650w</Frame_SRTSSkip.description>
+
+  <SRAF.label>SRAF: カナリア</SRAF.label>
+  <SRAF.description>これらの産業用のSRAF(短距離輸送機:Short-Range-Air-Freighter)は千年以上に渡り使われてきた大型輸送貨物船です。大型なだけあって、かなり大量な荷物を輸送する事が可能で、また飛行に使う燃料も大量に積載できます。攻撃任務には適しません。世界中に乗客と貨物を飛ばすために作られた完成した輸送システムです。
+
+乗客定員：1-15名
+宇宙飛行：不可
+----------------------------
+移動速度：遅い(2マス/時間)
+燃料容量：5,000L
+燃料効率：悪い
+----------------------------
+積載量：15,000kg
+内部電源：1000w</SRAF.description>
+  <Blueprint_SRAF.label>SRAF: カナリア(設計)</Blueprint_SRAF.label>
+  <Blueprint_Install_SRAF.label>SRAF: カナリア(移動先)</Blueprint_Install_SRAF.label>
+  <Frame_SRAF.label>SRAF: カナリア(施工)</Frame_SRAF.label>
+  <Frame_SRAF.description>これらの産業用のSRAF(短距離輸送機:Short-Range-Air-Freighter)は千年以上に渡り使われてきた大型輸送貨物船です。大型なだけあって、かなり大量な荷物を輸送する事が可能で、また飛行に使う燃料も大量に積載できます。攻撃任務には適しません。世界中に乗客と貨物を飛ばすために作られた完成した輸送システムです。
+
+乗客定員：1-15名
+宇宙飛行：不可
+----------------------------
+移動速度：遅い(2マス/時間)
+燃料容量：5,000L
+燃料効率：悪い
+----------------------------
+積載量：15,000kg
+内部電源：1000w</Frame_SRAF.description>
+
+  <SRAFTek.label>SRTS:TEK-7</SRAFTek.label>
+  <SRAFTek.description>大人数を収容できる設計がされた宇宙船で、複数の自動発射装置に乗員を収容して、素早く船外に射出することが可能です。そして大容量の貨物室を持ちます。
+
+乗客定員：1-28名
+宇宙飛行：可能
+
+----------------------------
+移動速度：平均的(8マス/時間)
+燃料容量：2,600L
+燃料効率：良い
+----------------------------
+積載量：20,000kg
+内部電源：1,700w</SRAFTek.description>
+  <Blueprint_SRAFTek.label>SRTS:TEK-7(設計)</Blueprint_SRAFTek.label>
+  <Blueprint_Install_SRAFTek.label>SRTS:TEK-7(移動先)</Blueprint_Install_SRAFTek.label>
+  <Frame_SRAFTek.label>SRTS:TEK-7(施工)</Frame_SRAFTek.label>
+  <Frame_SRAFTek.description>大人数を収容できる設計がされた宇宙船で、複数の自動発射装置に乗員を収容して、素早く船外に射出することが可能です。そして大容量の貨物室を持ちます。
+
+乗客定員：1-28名
+宇宙飛行：可能
+
+----------------------------
+移動速度：平均的(8マス/時間)
+燃料容量：2,600L
+燃料効率：良い
+----------------------------
+積載量：20,000kg
+内部電源：1,700w</Frame_SRAFTek.description> -->
+
+  <SRTSMkII.label>SRTS:Mk-2 アルバトロス</SRTSMkII.label>
+  <SRTSMkII.description>X-11アルバトロス(アホウドリ)は、より高度な技術と技術によって、従来のSRTSとほぼ同じ重量クラスでありながら、より優れた燃費性能とより多くの燃料を積むことが可能です。世界中に乗客と貨物を飛ばすために作られた完成した輸送システムです。
+
+乗客定員：1-7名
+宇宙飛行：可能
+
+--武装--
+爆装：投下x6発/搭載x16発
+命中精度：普通
+爆撃形式：精密爆撃
+----------------------------
+移動速度：早い(11マス/時間)
+燃料容量：4,000L
+燃料効率：良い
+----------------------------
+積載量：2,200kg
+内部電源：1,700w</SRTSMkII.description>
+  <Blueprint_SRTSMkII.label>SRTS:Mk-2 アルバトロス(設計)</Blueprint_SRTSMkII.label>
+  <Blueprint_Install_SRTSMkII.label>SRTS:Mk-2 アルバトロス(移動先)</Blueprint_Install_SRTSMkII.label>
+  <Frame_SRTSMkII.label>SRTS:Mk-2 アルバトロス(施工)</Frame_SRTSMkII.label>
+  <Frame_SRTSMkII.description>X-11アルバトロス(アホウドリ)は、より高度な技術と技術によって、従来のSRTSとほぼ同じ重量クラスでありながら、より優れた燃費性能とより多くの燃料を積むことが可能です。世界中に乗客と貨物を飛ばすために作られた完成した輸送システムです。
+
+乗客定員：1-7名
+宇宙飛行：可能
+
+--武装--
+爆装：投下x6発/搭載x16発
+命中精度：普通
+爆撃形式：精密爆撃
+----------------------------
+移動速度：早い(11マス/時間)
+燃料容量：4,000L
+燃料効率：良い
+----------------------------
+積載量：2,200kg
+内部電源：1,700w</Frame_SRTSMkII.description>
+
+  <SRTSMkIII.label>SRTS:Mk-3 フェニックス</SRTSMkIII.label>
+  <SRTSMkIII.description>古代文明によって設計された先進的なフェニックスはアルバトロスと同程度の燃費性能を実現しましたが、予備燃料タンクと積載量が増加しています。さらにMk-2と異なりより高度な化学的資源を必要としますが、破壊するのがより困難で、建設に必要な材料がより少なくなる長所があります。世界中に乗客と貨物を飛ばすために作られた完成した輸送システムです。
+
+乗客定員：1-17名
+宇宙飛行：可能
+
+--武装--
+爆装：投下x10発/搭載x20発
+命中精度：良好
+爆撃形式：絨毯爆撃
+----------------------------
+移動速度：とても早い(20マス/時間)
+燃料容量：2,800L
+燃料効率：すばらしい
+----------------------------
+積載量：6,000kg
+内部電源：3,600w</SRTSMkIII.description>
+  <Blueprint_SRTSMkIII.label>SRTS:Mk-3 フェニックス(設計)</Blueprint_SRTSMkIII.label>
+  <Blueprint_Install_SRTSMkIII.label>SRTS:Mk-3 フェニックス(移動先)</Blueprint_Install_SRTSMkIII.label>
+  <Frame_SRTSMkIII.label>SRTS:Mk-3 フェニックス(施工)</Frame_SRTSMkIII.label>
+  <Frame_SRTSMkIII.description>古代文明によって設計された先進的なフェニックスはアルバトロスと同程度の燃費性能を実現しましたが、予備燃料タンクと積載量が増加しています。さらにMk-2と異なりより高度な化学的資源を必要としますが、破壊するのがより困難で、建設に必要な材料がより少なくなる長所があります。世界中に乗客と貨物を飛ばすために作られた完成した輸送システムです。
+
+乗客定員：1-17名
+宇宙飛行：可能
+
+--武装--
+爆装：投下x10発/搭載x20発
+命中精度：良好
+爆撃形式：絨毯爆撃
+----------------------------
+移動速度：とても早い(20マス/時間)
+燃料容量：2,800L
+燃料効率：すばらしい
+----------------------------
+積載量：6,000kg
+内部電源：3,600w</Frame_SRTSMkIII.description>
+
+  <SRTSMkIIIp.label>SRTS:Mk-3P型 ペリカン</SRTSMkIIIp.label>
+  <SRTSMkIIIp.description>「ペリカン」貨物輸送船です。RimWorldでこれまで開発された最高の通常型の貨物・輸送船です。古代文明によって作成された高度な技術が使われています。
+
+乗客定員：1-42名
+宇宙飛行：可能
+----------------------------
+移動速度：高速(20マス/時間)
+燃料容量：5,000
+燃料効率：すばらしい
+----------------------------
+積載量：30,000kg
+内部電源：2,800w</SRTSMkIIIp.description>
+  <Blueprint_SRTSMkIIIp.label>SRTS:Mk-3P型 ペリカン(設計)</Blueprint_SRTSMkIIIp.label>
+  <Blueprint_Install_SRTSMkIIIp.label>SRTS:Mk-3P型 ペリカン(移動先)</Blueprint_Install_SRTSMkIIIp.label>
+  <Frame_SRTSMkIIIp.label>SRTS:Mk-3P型 ペリカン(施工)</Frame_SRTSMkIIIp.label>
+  <Frame_SRTSMkIIIp.description>「ペリカン」貨物輸送船です。RimWorldでこれまで開発された最高の通常型の貨物・輸送船です。古代文明によって作成された高度な技術が使われています。
+
+乗客定員：1-42名
+宇宙飛行：可能
+----------------------------
+移動速度：高速(20マス/時間)
+燃料容量：5,000
+燃料効率：すばらしい
+----------------------------
+積載量：30,000kg
+内部電源：2,800w</Frame_SRTSMkIIIp.description>
+
+  <SRTSMkIV.label>SRTS:Mk-4 ジェネシス</SRTSMkIV.label>
+  <SRTSMkIV.description>ジェネシス型の輸送船は非常に高度なアーキテック技術の船です。ジェネシスの安定性や燃料搭載量や貨物積載量と快適性に匹敵する船はありません。この船は、ウランを燃料にしており、貨物を異次元空間に収容して、船体自体の大きさよりもはるかに大量の貨物を運搬できます。船体部品を組み合わせると、船は自動的に建築できるようです。
+
+乗客定員：1名以上-制限無し
+宇宙飛行：可能
+
+--武装--
+爆装：投下x32発/搭載x32発
+命中精度：最高
+爆撃形式：広域殲滅型
+----------------------------
+移動速度：最高(80マス/時間)
+燃料タイプ：？？？
+燃料容量：？？？
+燃料効率：？？？
+----------------------------
+積載量：無限
+内部電源：12,000w</SRTSMkIV.description>
+  <Blueprint_SRTSMkIV.label>SRTS:Mk-4 ジェネシス(設計)</Blueprint_SRTSMkIV.label>
+  <Blueprint_Install_SRTSMkIV.label>SRTS:Mk-4 ジェネシス(移動先)</Blueprint_Install_SRTSMkIV.label>
+  <Frame_SRTSMkIV.label>SRTS:Mk-4 ジェネシス(施工)</Frame_SRTSMkIV.label>
+  <Frame_SRTSMkIV.description>ジェネシス型の輸送船は非常に高度なアーキテック技術の船です。ジェネシスの安定性や燃料搭載量や貨物積載量と快適性に匹敵する船はありません。この船は、ウランを燃料にしており、貨物を異次元空間に収容して、船体自体の大きさよりもはるかに大量の貨物を運搬できます。船体部品を組み合わせると、船は自動的に建築できるようです。
+
+乗客定員：1名以上-制限無し
+宇宙飛行：可能
+
+--武装--
+爆装：投下x32発/搭載x32発
+命中精度：最高
+爆撃形式：広域殲滅型
+----------------------------
+移動速度：最高(80マス/時間)
+燃料タイプ：？？？
+燃料容量：？？？
+燃料効率：？？？
+----------------------------
+積載量：無限
+内部電源：12,000w</Frame_SRTSMkIV.description>
+  <SRTSMkIV.comps.CompRefuelable.fuelGizmoLabel>超空間反応炉</SRTSMkIV.comps.CompRefuelable.fuelGizmoLabel>
+  <SRTSMkIV.comps.CompRefuelable.fuelLabel>超空間充填率</SRTSMkIV.comps.CompRefuelable.fuelLabel>
+
+</LanguageData>

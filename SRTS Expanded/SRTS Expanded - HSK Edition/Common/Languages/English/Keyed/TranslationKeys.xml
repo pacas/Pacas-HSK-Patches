@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<LanguageData>
+	<!-- Labels and Titles -->
+	<SRTSExpanded>SRTS Expanded</SRTSExpanded>
+	<SRTSDef>SRTS Def</SRTSDef>
+	
+	<!-- Settings -->
+	<ResetDefault>Reset</ResetDefault>
+	<ResetDefaultTooltip>Reset to Default Values</ResetDefaultTooltip>
+	<ResetThisSRTS>Reset This</ResetThisSRTS>
+	<ResetAll>Reset All</ResetAll>
+	
+	<DefaultValues>Default Values</DefaultValues>
+	<CustomValues>Custom Values</CustomValues>
+	
+	<MainSettings>Main Settings</MainSettings>
+	
+	<PassengerLimit>Passenger Limits</PassengerLimit>
+	<PassengerLimitTooltip>Enforce minimum and maximum passengers allowed on SRTS</PassengerLimitTooltip>
+	<DisplayHomeItems>Display All Items</DisplayHomeItems>
+	<DisplayHomeItemsTooltip>Display all items on the map when loading SRTS and not on home map.</DisplayHomeItemsTooltip>
+	<DefSettings>Stats</DefSettings>
+	<DynamicWorldObjectSRTS>Dynamic World Textures</DynamicWorldObjectSRTS>
+	<DynamicWorldObjectSRTSTooltip>Dynamically draw SRTS textures on the world map to match both SRTS texture and rotation</DynamicWorldObjectSRTSTooltip>
+	<ExpandBombPoints>Expand Bomb Targets</ExpandBombPoints>
+	<ExpandBombPointsTooltip>Expand the bombing points along the targeting line to fit across the line.</ExpandBombPointsTooltip>
+	<AllowedBombs>Allowed Explosives (Bomb Runs)</AllowedBombs>
+	<ChangeItemSRTS>Edit</ChangeItemSRTS>
+	<SearchExplosive>Add Item</SearchExplosive>
+	<CurrentExplosives>Allowed Explosives</CurrentExplosives>
+	<SRTSBoardingOptions>Boarding Options</SRTSBoardingOptions>
+	<AllowDownedSRTS>Allow Downed Pawns</AllowDownedSRTS>
+	<AllowUnsecurePrisonerSRTS>Allow Unsecured Prisoners</AllowUnsecurePrisonerSRTS>
+	<AllowCapturablePawnSRTS>Allow Capturable Pawns</AllowCapturablePawnSRTS>
+	
+	<SOS2Compatibility>Save Our Ship 2 Options</SOS2Compatibility>
+	<SpaceFaring>Space Faring</SpaceFaring>
+	<ShuttleBayLanding>Shuttle Bay Landing</ShuttleBayLanding>
+	<NonSpaceFaringSRTS>{0} is unable to reach orbit</NonSpaceFaringSRTS>
+	
+	<SRTSSettings>SRTS Settings</SRTSSettings>
+	<FlightSpeed>Flight Speed (World Map)</FlightSpeed>
+	<Instant>Instant</Instant>
+	<FuelEfficiency>Fuel Cost</FuelEfficiency>
+	<FuelEfficiencySymbol> per Tile</FuelEfficiencySymbol>
+	<CargoCapacity>Cargo Capacity</CargoCapacity>
+	<MinPassengers>Minimum Passengers</MinPassengers>
+	<MaxPassengers>Maximum Passengers</MaxPassengers>
+	<SRTSResearch>Research Cost</SRTSResearch>
+	<SRTSResearchRequirements>Research Required</SRTSResearchRequirements>
+	
+	<BombSettings>Bomb Settings</BombSettings>
+	<BombSpeed>Flight Speed (Bomb Run)</BombSpeed>
+	<RadiusDrop>Bomb Radius</RadiusDrop>
+	<BombCountSRTS>Bomb Counts</BombCountSRTS>
+	<CarpetBombing>Carpet Bombing</CarpetBombing>
+	<PreciseBombing>Precise Drop</PreciseBombing>
+	<DistanceBetweenDrops>Distance between drops</DistanceBetweenDrops>
+	<CellsEndValue> Cells</CellsEndValue>
+	<SingleDrop>Single Drop</SingleDrop>
+	
+	<ResearchSettings>Research</ResearchSettings>
+	<ResearchDef>{0} ResearchDef</ResearchDef>
+	<SearchResearch>Add Research Defs</SearchResearch>
+	<AddItemSRTS>Add</AddItemSRTS>
+	<RemoveResearch>Remove</RemoveResearch>
+	<RestartGameResearch>Restart your game for new research settings to apply</RestartGameResearch>
+	
+	<!-- Float Menu -->
+	<BoardSRTS>Board {0}</BoardSRTS>
+	<JoinSRTSGroup>Join SRTS Boarding Group</JoinSRTSGroup>
+	
+	<!-- Messages -->
+	<SRTSNoPilot>Cannot send SRTS without a Pilot.</SRTSNoPilot>
+	<NotEnoughPilots>Not enough pilots to launch</NotEnoughPilots>
+	<TooManyPilots>Too many colonists to launch</TooManyPilots>
+	<BombRunStarted>Bomb run has begun.</BombRunStarted>
+	<CannotBombMap>Cannot bomb here unless active map is loaded.</CannotBombMap>
+	<CommandAddFuelSRTS>Refuel {0}</CommandAddFuelSRTS>
+	<CommandAddFuelDescSRTS>Add fuel from inventory into SRTS</CommandAddFuelDescSRTS>
+	<AddFuelSRTSCaravan>{0} fuel has been added to {1}.</AddFuelSRTSCaravan>
+	<NoFuelSRTSCaravan>No fuel available</NoFuelSRTSCaravan>
+	
+	<!-- Caravans -->
+
+	<!-- Status and Compatibility-->
+	<CommandLaunchOrbit>Launch Orbit</CommandLaunchOrbit>
+	<CommandLaunchOrbitDesc>Launch to locations in Orbit</CommandLaunchOrbitDesc>
+	
+	
+	<!-- Gizmo -->
+	<BombTarget>Bomb Target</BombTarget>
+	<BombTargetDesc>Select a target on another map to drop bombs on.</BombTargetDesc>
+</LanguageData>
