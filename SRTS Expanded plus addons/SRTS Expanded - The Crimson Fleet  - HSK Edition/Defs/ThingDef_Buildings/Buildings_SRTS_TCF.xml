@@ -30,7 +30,7 @@
         <comps>
             <li Class="CompProperties_Transporter">
                 <restEffectiveness>0.75</restEffectiveness>
-                <massCapacity>350</massCapacity>
+                <massCapacity>300</massCapacity>
             </li>
             <li Class="SRTS.CompProperties_LaunchableSRTS"><!-- required for SRTS like functionality (ie. space ship reusable drop pod -->
                 <travelSpeed>6</travelSpeed>
@@ -60,7 +60,7 @@
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerPlant</compClass>
-                <basePowerConsumption>-1000</basePowerConsumption>
+                <basePowerConsumption>-500</basePowerConsumption>
                 <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Glower">
@@ -71,7 +71,7 @@
         <researchPrerequisites><!-- research requirements -->
             <li>Research_SRTSSurveyorComet</li>
         </researchPrerequisites>
-        <constructionSkillPrerequisite>8</constructionSkillPrerequisite><!-- construction skill requirements -->
+        <constructionSkillPrerequisite>12</constructionSkillPrerequisite><!-- construction skill requirements -->
         <uiIconScale>0.5</uiIconScale><!-- UI scaling -->
         <killedLeavings>
             <ChunkSlagSteel>6</ChunkSlagSteel>
@@ -81,7 +81,7 @@
     <ThingDef ParentName="NECShipBase">
         <defName>TCFComet</defName><!-- defName must be unique, including with other mods so be creative -->
         <label>SRTS: Comet</label><!-- name displayed ingame -->
-        <description>A small, supersonic precision bomber. Cant hold much cargo.\n\nPassenger cap: 1\n\nFuel efficiency: 1.5 per tile\n\nCargo capacity: 120kg\n\nSpeed: Fast\n\nBombs: 10</description>
+        <description>A small, supersonic precision bomber. Cant hold much cargo.\n\nPassenger cap: 1\n\nFuel efficiency: 1.5 per tile\n\nCargo capacity: 200kg\n\nSpeed: Fast\n\nBombs: 7</description>
         <graphicData>
             <texPath>Comet</texPath>
             <graphicClass>Graphic_Multi</graphicClass><!-- graphic class can be left alone, it's how the game pulls _north, _east, _south textures -->
@@ -107,7 +107,7 @@
         <comps><!-- required for sending as drop pod -->
             <li Class="CompProperties_Transporter">
                 <restEffectiveness>0.75</restEffectiveness>
-                <massCapacity>350</massCapacity>
+                <massCapacity>200</massCapacity>
             </li>
             <li Class="SRTS.CompProperties_LaunchableSRTS"><!-- required for SRTS like functionality (ie. space ship reusable drop pod -->
                 <travelSpeed>6</travelSpeed>
@@ -118,8 +118,8 @@
                 <shuttleBayLanding>false</shuttleBayLanding>
             </li>
             <li Class="SRTS.CompProperties_BombsAway"><!-- include this comp if you want it to be able to carpet bomb, remove this comp if you dont -->
-                <numberBombs>10</numberBombs><!-- num dropped per run -->
-                <precisionBombingNumBombs>10</precisionBombingNumBombs><!-- number of bombs dropped in precise drop -->
+                <numberBombs>7</numberBombs><!-- num dropped per run -->
+                <precisionBombingNumBombs>7</precisionBombingNumBombs><!-- number of bombs dropped in precise drop -->
                 <radiusOfDrop>2</radiusOfDrop><!-- how many cells out from the center the bombs may drop -->
                 <speed>3</speed><!-- How quickly the ship flies over. Default 1 -->
                 <distanceBetweenDrops>2</distanceBetweenDrops><!-- Distance in cells from when each bomb is dropped -->
@@ -144,7 +144,7 @@
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerPlant</compClass>
-                <basePowerConsumption>-1250</basePowerConsumption>
+                <basePowerConsumption>-500</basePowerConsumption>
                 <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Glower">
@@ -155,7 +155,7 @@
         <researchPrerequisites><!-- research requirements -->
             <li>Research_SRTSSurveyorComet</li>
         </researchPrerequisites>
-        <constructionSkillPrerequisite>7</constructionSkillPrerequisite><!-- construction skill requirements -->
+        <constructionSkillPrerequisite>12</constructionSkillPrerequisite><!-- construction skill requirements -->
         <uiIconScale>0.5</uiIconScale><!-- UI scaling -->
         <killedLeavings>
             <ChunkSlagSteel>7</ChunkSlagSteel>
@@ -165,7 +165,7 @@
     <ThingDef ParentName="NECShipBase">
         <defName>TCFBasilisk</defName>
         <label>SRAF: Basilisk</label>
-        <description>Massive military cargo ship. Can move entire bases singlehandedly.\n\nPassenger cap: 1-14\n\nFuel efficiency: 5 per tile\n\nCargo capacity: 20000kg\n\nSpeed: Slow</description>
+        <description>Massive military cargo ship. Can move entire bases singlehandedly.\n\nPassenger cap: 1-14\n\nFuel efficiency: 5 per tile\n\nCargo capacity: 25000kg\n\nSpeed: Slow</description>
         <graphicData>
             <texPath>Basilisk</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -195,7 +195,7 @@
         <comps>
             <li Class="CompProperties_Transporter">
                 <restEffectiveness>0.8</restEffectiveness>
-                <massCapacity>20000</massCapacity>
+                <massCapacity>25000</massCapacity>
             </li>
             <li Class="SRTS.CompProperties_LaunchableSRTS">
                 <travelSpeed>3</travelSpeed>
@@ -206,7 +206,7 @@
                 <shuttleBayLanding>false</shuttleBayLanding>
             </li>
             <li Class="CompProperties_Refuelable">
-                <fuelCapacity>5000</fuelCapacity>
+                <fuelCapacity>7000</fuelCapacity>
                 <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
                 <initialConfigurableTargetFuelLevel>2500</initialConfigurableTargetFuelLevel>
                 <fuelFilter>
@@ -223,7 +223,7 @@
             </li>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerPlant</compClass>
-                <basePowerConsumption>-3500</basePowerConsumption>
+                <basePowerConsumption>-1200</basePowerConsumption>
                 <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Flickable"/>
@@ -236,7 +236,7 @@
         <researchPrerequisites>
             <li>Research_SRTSBasilisk</li>
         </researchPrerequisites>
-        <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
         <uiIconScale>0.75</uiIconScale>
         <killedLeavings>
             <ChunkSlagSteel>12</ChunkSlagSteel>
@@ -245,7 +245,7 @@
   
     <ThingDef ParentName="NECShipBase">
         <defName>TCFCourier</defName>
-        <label>Courier</label>
+        <label>SRAF: Courier</label>
         <description>A multipurpose aircraft. Useful when you have limited resources. But not specialised in any way.\n\nPassenger cap: 1-12\n\nFuel efficiency: 3.25 per tile\n\nCargo capacity: 7500kg\n\nSpeed: Normal\n\nBombs: 12</description>
         <graphicData>
             <texPath>Courier</texPath>
@@ -262,17 +262,16 @@
         </statBases>
         <costList>
             <Plasteel>750</Plasteel>
-            <AluminiumBar>500</AluminiumBar>
+            <AluminiumBar>300</AluminiumBar>
             <TitaniumBar>100</TitaniumBar>
-            <ReinforcedGlass>60</ReinforcedGlass>
+            <ReinforcedGlass>40</ReinforcedGlass>
             <Plastic>100</Plastic>
             <ComponentIndustrial>10</ComponentIndustrial>
-            <ComponentSpacer>6</ComponentSpacer>
+            <ComponentSpacer>4</ComponentSpacer>
             <Mechanism>10</Mechanism>
-            <AdvMechanism>5</AdvMechanism>
-            <Electronics>25</Electronics>
-            <ElectronicComponents>6</ElectronicComponents>
-            <Microchips>1</Microchips>
+            <AdvMechanism>3</AdvMechanism>
+            <Electronics>20</Electronics>
+            <ElectronicComponents>5</ElectronicComponents>
         </costList>
         <comps>
             <li Class="CompProperties_Transporter">
@@ -290,9 +289,9 @@
             <li Class="SRTS.CompProperties_BombsAway">
                 <numberBombs>12</numberBombs>
                 <precisionBombingNumBombs>12</precisionBombingNumBombs>
-                <radiusOfDrop>4</radiusOfDrop>
+                <radiusOfDrop>5</radiusOfDrop>
                 <speed>2</speed>
-                <distanceBetweenDrops>3</distanceBetweenDrops>
+                <distanceBetweenDrops>4</distanceBetweenDrops>
             </li>
             <li Class="CompProperties_Refuelable">
                 <fuelCapacity>2000</fuelCapacity>
@@ -312,7 +311,7 @@
             </li>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerPlant</compClass>
-                <basePowerConsumption>-2000</basePowerConsumption>
+                <basePowerConsumption>-1000</basePowerConsumption>
                 <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Flickable"/>
@@ -325,7 +324,7 @@
         <researchPrerequisites>
             <li>Research_SRTSCourier</li>
         </researchPrerequisites>
-        <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
         <uiIconScale>0.40</uiIconScale>
         <killedLeavings>
             <ChunkSlagSteel>10</ChunkSlagSteel>
@@ -334,7 +333,7 @@
   
     <ThingDef ParentName="NECShipBase">
         <defName>TCFTitan</defName>
-        <label>SRTS: Titan</label>
+        <label>SRTS Mk.IIa: Titan</label>
         <description>Powerful gunship. Built for extensive raiding and bombing.\n\nPassenger cap: 1-25\n\nFuel efficiency: 3.75 per tile\n\nCargo capacity: 25000kg\n\nSpeed: Fast\n\nBombs: 30</description>
         <graphicData>
             <texPath>Titan</texPath>
@@ -385,7 +384,7 @@
                 <distanceBetweenDrops>1.5</distanceBetweenDrops>
             </li>
             <li Class="CompProperties_Refuelable">
-                <fuelCapacity>4200</fuelCapacity>
+                <fuelCapacity>4500</fuelCapacity>
                 <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
                 <initialConfigurableTargetFuelLevel>2100</initialConfigurableTargetFuelLevel>
                 <fuelFilter>
@@ -402,7 +401,7 @@
             </li>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerPlant</compClass>
-                <basePowerConsumption>-5250</basePowerConsumption>
+                <basePowerConsumption>-2000</basePowerConsumption>
                 <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Flickable"/>
@@ -415,7 +414,7 @@
         <researchPrerequisites>
             <li>Research_SRTSTitan</li>
         </researchPrerequisites>
-        <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>17</constructionSkillPrerequisite>
         <uiIconScale>0.65</uiIconScale>
         <killedLeavings>
             <ChunkSlagSteel>14</ChunkSlagSteel>
@@ -424,7 +423,7 @@
   
     <ThingDef ParentName="NECShipBase">
         <defName>TCFAurora</defName>
-        <label>SRTS: Aurora</label>
+        <label>SRTS Mk.IV: Aurora</label>
         <description>A gigantic flagship armed to the teeth. Capable of holding massive amounts of cargo as well as huge amount of bombs. The ultimate aircraft for war.\n\nPassenger cap: 1-200\n\nFuel efficiency: 7.5 per tile\n\nCargo capacity: 35000kg\n\nSpeed: Very Fast\n\nBombs: 80</description>
         <graphicData>
             <texPath>Aurora</texPath>
@@ -464,16 +463,16 @@
             </li>
             <li Class="SRTS.CompProperties_LaunchableSRTS">
                 <travelSpeed>10</travelSpeed>
-                <fuelPerTile>7.5</fuelPerTile>
+                <fuelPerTile>6</fuelPerTile>
                 <minPassengers>1</minPassengers>
-                <maxPassengers>200</maxPassengers>
+                <maxPassengers>100</maxPassengers>
                 <spaceFaring>false</spaceFaring>
                 <shuttleBayLanding>false</shuttleBayLanding>
             </li>
             <li Class="SRTS.CompProperties_BombsAway">
                 <numberBombs>80</numberBombs>
                 <precisionBombingNumBombs>80</precisionBombingNumBombs>
-                <radiusOfDrop>7.5</radiusOfDrop>
+                <radiusOfDrop>3</radiusOfDrop>
                 <speed>0.5</speed>
                 <distanceBetweenDrops>1</distanceBetweenDrops>
             </li>
@@ -495,7 +494,7 @@
             </li>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerPlant</compClass>
-                <basePowerConsumption>-15000</basePowerConsumption>
+                <basePowerConsumption>-7000</basePowerConsumption>
                 <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Flickable"/>
@@ -508,7 +507,7 @@
         <researchPrerequisites>
             <li>Research_SRTSAurora</li>
         </researchPrerequisites>
-        <constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>19</constructionSkillPrerequisite>
         <uiIconScale>0.65</uiIconScale>
         <killedLeavings>
             <ChunkSlagSteel>20</ChunkSlagSteel>
