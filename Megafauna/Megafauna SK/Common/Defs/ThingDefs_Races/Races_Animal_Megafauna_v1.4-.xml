@@ -1,0 +1,2755 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+
+    <!-- ======================================================UPDATE#5====================================================== -->
+
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Deinotherium</defName>
+        <label>deinotherium</label>
+        <description>Long extinct giant mammals, brought back to life as a part of the Megafauna Project.\n\n"Deinotherium" means "terrible beast". It's a unique cousin to mammoths and mastodons, equipped with downward curving tusks on the lower jaw.\nVery short-tempered and incredibly dangerous when angered.</description>
+        <statBases>
+            <MoveSpeed>4.3</MoveSpeed>
+            <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+            <MarketValue>1750</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>tusk</label>
+                <cooldownTime>2.3</cooldownTime>
+                <power>34</power>
+                <capacities><li>Scratch</li><li>Stab</li></capacities>
+                <linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>left foot</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>1.75</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right foot</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>1.75</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <cooldownTime>1.65</cooldownTime>
+                <power>15</power>
+                <capacities><li>Blunt</li></capacities>
+                <chanceFactor>0.01</chanceFactor>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+            <body>QuadrupedAnimalWithHoovesTusksAndTrunk</body>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
+            <baseHungerRate>1.9</baseHungerRate>
+            <baseBodySize>5.5</baseBodySize>
+            <baseHealthScale>8.5</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <gestationPeriodDays>40</gestationPeriodDays>
+            <packAnimal>true</packAnimal>
+            <wildness>0.85</wildness>
+            <lifeExpectancy>80</lifeExpectancy>
+            <trainability>Advanced</trainability>
+            <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <leatherDef>Leather_Elephant</leatherDef>
+            <useMeatFrom>Elephant</useMeatFrom>
+            <wildBiomes>
+                <HmcIronWoodForest MayRequire="arpomo6.hmc.biomes">0.007</HmcIronWoodForest>
+                <HmcSavanna MayRequire="arpomo6.hmc.biomes">0.005</HmcSavanna>
+                <HmcBambooGrove MayRequire="arpomo6.hmc.biomes">0.005</HmcBambooGrove>
+                <TemperateSwamp>0.005</TemperateSwamp>
+                <TemperateSwampArchipelago>0.005</TemperateSwampArchipelago>
+                <AridShrubland>0.005</AridShrubland>
+                <TemperateForest>0.007</TemperateForest>
+                <TemperateArchipelago>0.007</TemperateArchipelago>
+            </wildBiomes>
+            <nuzzleMtbHours>30</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>1</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>2.2</minAge>
+                    <soundCall>Pawn_Elephant_Call</soundCall>
+                    <soundAngry>Pawn_Elephant_Angry</soundAngry>
+                    <soundWounded>Pawn_Elephant_Injured</soundWounded>
+                    <soundDeath>Pawn_Elephant_Dead</soundDeath>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Deinotherium</defName>
+        <label>deinotherium</label>
+        <race>Deinotherium</race>
+        <combatPower>500</combatPower>
+        <labelPlural>deinothere</labelPlural>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildGroupSize>
+            <min>1</min>
+            <max>4</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>deinotherium calf</label>
+                <labelPlural>deinotherium calves</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Deinotherium/megafauna_deinotherium</texPath>
+                    <drawSize>3</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Deinotherium/megafauna_deinotherium</texPath>
+                    <drawSize>2.8</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Deinotherium/megafauna_Dessicated_Deinotherium</texPath>
+                    <drawSize>2.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Deinotherium/megafauna_deinotherium</texPath>
+                    <drawSize>4</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Deinotherium/megafauna_deinotherium</texPath>
+                    <drawSize>3.8</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Deinotherium/megafauna_Dessicated_Deinotherium</texPath>
+                    <drawSize>3.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Deinotherium/megafauna_deinotherium</texPath>
+                    <drawSize>5.2</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Deinotherium/megafauna_deinotherium</texPath>
+                    <drawSize>5</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Deinotherium/megafauna_Dessicated_Deinotherium</texPath>
+                    <drawSize>5</drawSize>
+                </dessicatedBodyGraphicData>
+                <butcherBodyPart>
+                    <bodyPartGroup>TuskAttackTool</bodyPartGroup>
+                    <thing>DeinotheriumTusk</thing>
+                    <allowFemale>true</allowFemale>
+                </butcherBodyPart>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ============================================================ -->
+
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Aurochs</defName>
+        <label>aurochs</label>
+        <description>Long extinct giant mammals, brought back to life as a part of the Megafauna Project.\n\nThe ancestor of domestic cattle, the aurochs, was to modern cows what wolves are to dogs.\nLarger, tougher, faster, but producing less resources and eating more than today's cattle.</description>
+        <statBases>
+            <MoveSpeed>4.7</MoveSpeed>
+            <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+            <MarketValue>900</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Milkable">
+                <milkDef>Milk</milkDef>
+                <milkIntervalDays>1</milkIntervalDays>
+                <milkAmount>10</milkAmount>
+            </li>
+        </comps>
+        <tools>
+            <li>
+                <label>left hoof</label>
+                <cooldownTime>1.65</cooldownTime>
+                <power>10</power>
+                <capacities><li>Blunt</li></capacities>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right hoof</label>
+                <cooldownTime>1.65</cooldownTime>
+                <power>10</power>
+                <capacities><li>Blunt</li></capacities>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>horn</label>
+                <cooldownTime>1.35</cooldownTime>
+                <power>18</power>
+                <capacities><li>Blunt</li><li>Stab</li></capacities>
+                <chanceFactor>0.45</chanceFactor>
+                <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <cooldownTime>1.65</cooldownTime>
+                <power>15</power>
+                <capacities><li>Blunt</li></capacities>
+                <chanceFactor>0.25</chanceFactor>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+            <body>QuadrupedAnimalWithHoovesAndHorn</body>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
+            <packAnimal>true</packAnimal>
+            <baseBodySize>3</baseBodySize>
+            <baseHungerRate>1.05</baseHungerRate>
+            <baseHealthScale>2.5</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <leatherDef>Leather_Heavy</leatherDef>
+            <wildness>0.35</wildness>
+            <trainability>Intermediate</trainability>
+            <useMeatFrom>Cow</useMeatFrom>
+            <gestationPeriodDays>20</gestationPeriodDays>
+            <lifeExpectancy>35</lifeExpectancy>
+            <manhunterOnDamageChance>0.65</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+            <wildBiomes>
+                <HmcIronWoodForest MayRequire="arpomo6.hmc.biomes">0.02</HmcIronWoodForest>
+                <HmcSavanna MayRequire="arpomo6.hmc.biomes">0.006</HmcSavanna>
+                <HmcBambooGrove MayRequire="arpomo6.hmc.biomes">0.003</HmcBambooGrove>
+                <TemperateSwamp>0.003</TemperateSwamp>
+                <TemperateSwampArchipelago>0.003</TemperateSwampArchipelago>
+                <TemperateForest>0.025</TemperateForest>
+                <TemperateArchipelago>0.025</TemperateArchipelago>
+                <AridShrubland>0.006</AridShrubland>
+                <BorealForest>0.006</BorealForest>
+                <BorealArchipelago>0.006</BorealArchipelago>
+            </wildBiomes>
+            <nuzzleMtbHours>90</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.8</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>1.2</minAge>
+                    <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
+                    <soundDeath>Pawn_Muffalo_Death</soundDeath>
+                    <soundCall>Pawn_Muffalo_Call</soundCall>
+                    <soundAngry>Pawn_Muffalo_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Aurochs</defName>
+        <label>aurochs</label>
+        <race>Aurochs</race>
+        <combatPower>250</combatPower>
+        <labelPlural>aurochses</labelPlural>
+        <labelMale>aurochs bull</labelMale>
+        <labelFemale>aurochs cow</labelFemale>
+        <labelMalePlural>aurochs bulls</labelMalePlural>
+        <labelFemalePlural>aurochs cows</labelFemalePlural>
+        <canArriveManhunter>false</canArriveManhunter>
+        <wildGroupSize>
+            <min>3</min>
+            <max>7</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>aurochs calf</label>
+                <labelPlural>aurochs calves</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Aurochs/megafauna_aurochsMale</texPath>
+                    <drawSize>1.8</drawSize>
+                    <color>(170,170,170)</color>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Aurochs/megafauna_aurochsFemale</texPath>
+                    <drawSize>1.5</drawSize>
+                    <color>(200,200,200)</color>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Aurochs/megafauna_Dessicated_Aurochs</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Aurochs/megafauna_aurochsMale</texPath>
+                    <drawSize>2.6</drawSize>
+                    <color>(170,170,170)</color>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Aurochs/megafauna_aurochsFemale</texPath>
+                    <drawSize>2.4</drawSize>
+                    <color>(200,200,200)</color>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Aurochs/megafauna_Dessicated_Aurochs</texPath>
+                    <drawSize>2.4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Aurochs/megafauna_aurochsMale</texPath>
+                    <drawSize>4</drawSize>
+                    <color>(170,170,170)</color>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Aurochs/megafauna_aurochsFemale</texPath>
+                    <drawSize>3.8</drawSize>
+                    <color>(200,200,200)</color>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Aurochs/megafauna_Dessicated_Aurochs</texPath>
+                    <drawSize>3.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ============================================================ -->
+
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Megalochelys</defName>
+        <label>megalochelys</label>
+        <description>Long extinct giant reptiles, brought back to life as a part of the Megafauna Project.\n\nThe largest tortoise of all time.\nThere aren't many predators that pose a threat to megalochelys, thanks to its thick and hard as rock shell. The ones that attempt to attack it anyway, will have to be prepared to deal with its surprisingly powerful bite.</description>
+        <statBases>
+            <MoveSpeed>1.2</MoveSpeed>
+            <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+            <MarketValue>1400</MarketValue>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
+        </statBases>
+        <tools>
+            <li>
+                <label>beak</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>2.4</cooldownTime>
+                <linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>13</power>
+                <cooldownTime>2.6</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>EggMegalochelysFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>30</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>
+                    <min>1</min>
+                    <max>3</max>
+                </eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <herdAnimal>false</herdAnimal>
+            <predator>false</predator>
+            <body>TurtleLike</body>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
+            <baseHungerRate>0.3</baseHungerRate>
+            <baseBodySize>4.5</baseBodySize>
+            <baseHealthScale>7.5</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <leatherDef>Leather_Lizard</leatherDef>
+            <useMeatFrom>Tortoise</useMeatFrom>
+            <gestationPeriodDays>30</gestationPeriodDays>
+            <packAnimal>true</packAnimal>
+            <wildness>0.70</wildness>
+            <lifeExpectancy>200</lifeExpectancy>
+            <trainability>Advanced</trainability>
+            <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.1</manhunterOnDamageChance>
+            <wildBiomes>
+                <HmcIronWoodForest MayRequire="arpomo6.hmc.biomes">0.003</HmcIronWoodForest>
+                <HmcSavanna MayRequire="arpomo6.hmc.biomes">0.003</HmcSavanna>
+                <HmcBambooGrove MayRequire="arpomo6.hmc.biomes">0.005</HmcBambooGrove>
+                <TemperateForest>0.003</TemperateForest>
+                <TemperateArchipelago>0.003</TemperateArchipelago>
+                <TemperateSwamp>0.005</TemperateSwamp>
+                <TemperateSwampArchipelago>0.005</TemperateSwampArchipelago>
+                <BorealForest>0.005</BorealForest>
+                <BorealArchipelago>0.005</BorealArchipelago>
+                <ColdBog>0.005</ColdBog>
+                <ColdBogArchipelago>0.005</ColdBogArchipelago>
+                <AridShrubland>0.003</AridShrubland>
+            </wildBiomes>
+            <nuzzleMtbHours>55</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.6</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.9</minAge>
+                    <soundWounded>Pawn_Tortoise_Wounded</soundWounded>
+                    <soundDeath>Pawn_Tortoise_Death</soundDeath>
+                    <soundCall>Pawn_Tortoise_Call</soundCall>
+                    <soundAngry>Pawn_Tortoise_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Megalochelys</defName>
+        <label>megalochelys</label>
+        <race>Megalochelys</race>
+        <combatPower>200</combatPower>
+        <labelPlural>megalochelyses</labelPlural>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildGroupSize>
+            <min>1</min>
+            <max>1</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Megalochelys/megafauna_megalochelys</texPath>
+                    <drawSize>1.9</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Megalochelys/megafauna_megalochelys</texPath>
+                    <drawSize>1.7</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Megalochelys/megafauna_Dessicated_Megalochelys</texPath>
+                    <drawSize>1.7</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Megalochelys/megafauna_megalochelys</texPath>
+                    <drawSize>3.2</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Megalochelys/megafauna_megalochelys</texPath>
+                    <drawSize>3</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Megalochelys/megafauna_Dessicated_Megalochelys</texPath>
+                    <drawSize>3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Megalochelys/megafauna_megalochelys</texPath>
+                    <drawSize>4</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Megalochelys/megafauna_megalochelys</texPath>
+                    <drawSize>3.8</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Megalochelys/megafauna_Dessicated_Megalochelys</texPath>
+                    <drawSize>3.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ====================================================== -->
+ 
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Palaeeudyptes</defName>
+        <label>palaeeudyptes</label>
+        <description>Long extinct giant birds, brought back to life as a part of the Megafauna Project.\n\nThe biggest penguin in history. While it's clearly best fitted for hunting fish, palaeeudyptes won't hesitate to take advantage of its huge size, and will attempt to hunt other vertebrates that are smaller than itself.</description>
+        <statBases>
+            <MoveSpeed>3.5</MoveSpeed>
+            <ComfyTemperatureMin>-70</ComfyTemperatureMin>
+            <MarketValue>1100</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>claws</label>
+                <cooldownTime>1.2</cooldownTime>
+                <power>13</power>
+                <capacities><li>Scratch</li></capacities>
+                <linkedBodyPartsGroup>Feet</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>16</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+            <li>
+                <cooldownTime>1.4</cooldownTime>
+                <power>16</power>
+                <capacities><li>Bite</li></capacities>
+                <linkedBodyPartsGroup>Beak</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>19</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>EggPalaeeudyptesFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>true</predator>
+            <body>Bird</body>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
+            <baseHungerRate>0.2</baseHungerRate>
+            <baseBodySize>2.8</baseBodySize>
+            <baseHealthScale>4.8</baseHealthScale>
+            <foodType>CarnivoreAnimal</foodType>
+            <gestationPeriodDays>30</gestationPeriodDays>
+            <mateMtbHours>8</mateMtbHours>
+            <wildness>0.75</wildness>
+            <lifeExpectancy>25</lifeExpectancy>
+            <trainability>Intermediate</trainability>
+            <maxPreyBodySize>1.5</maxPreyBodySize>
+            <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.7</manhunterOnDamageChance>
+            <leatherDef>Leather_Bird</leatherDef>
+            <useMeatFrom>Cassowary</useMeatFrom>
+            <wildBiomes>
+                <ColdBog>0.005</ColdBog>
+                <ColdBogArchipelago>0.005</ColdBogArchipelago>
+                <SeaIce>0.06</SeaIce>
+                <IceSheet>0.04</IceSheet>
+                <Tundra>0.005</Tundra>
+                <TundraArchipelago>0.005</TundraArchipelago>
+                <BorealForest>0.005</BorealForest>
+                <BorealArchipelago>0.005</BorealArchipelago>
+            </wildBiomes>
+            <nuzzleMtbHours>50</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.4</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.8</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalExotic</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Palaeeudyptes</defName>
+        <label>palaeeudyptes</label>
+        <race>Palaeeudyptes</race>
+        <combatPower>350</combatPower>
+        <labelPlural>palaeeudypteses</labelPlural>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildGroupSize>
+            <min>2</min>
+            <max>5</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Palaeeudyptes/megafauna_palaeeudyptes</texPath>
+                    <drawSize>1.3</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Palaeeudyptes/megafauna_palaeeudyptes</texPath>
+                    <drawSize>1.2</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Palaeeudyptes/megafauna_Dessicated_Palaeeudyptes</texPath>
+                    <drawSize>1.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Palaeeudyptes/megafauna_palaeeudyptes</texPath>
+                    <drawSize>2.4</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Palaeeudyptes/megafauna_palaeeudyptes</texPath>
+                    <drawSize>2.2</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Palaeeudyptes/megafauna_Dessicated_Palaeeudyptes</texPath>
+                    <drawSize>2.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Palaeeudyptes/megafauna_palaeeudyptes</texPath>
+                    <drawSize>3.1</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Palaeeudyptes/megafauna_palaeeudyptes</texPath>
+                    <drawSize>3</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Palaeeudyptes/megafauna_Dessicated_Palaeeudyptes</texPath>
+                    <drawSize>3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ====================================================== -->
+
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Josephoartigasia</defName>
+        <label>josephoartigasia</label>
+        <description>Long extinct giant mammals, brought back to life as a part of the Megafauna Project.\n\nThe largest rodent of all time, josephoartigasia, resembles a gigantic capybara or pacarana, but in a few regards it appears to be closer to today's hippopotamuses.\nIt is not a very good runner, and to compensate for that, it sports huge incisors that could prove very dangerous to lesser predators.</description>
+        <statBases>
+            <MoveSpeed>3.3</MoveSpeed>
+            <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+            <MarketValue>1100</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <cooldownTime>1.35</cooldownTime>
+                <power>13</power>
+                <capacities><li>Scratch</li></capacities>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <cooldownTime>1.35</cooldownTime>
+                <power>13</power>
+                <capacities><li>Scratch</li></capacities>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <cooldownTime>1.7</cooldownTime>
+                <power>16</power>
+                <capacities><li>Bite</li></capacities>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>18</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+            <body>QuadrupedAnimalWithPaws</body>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
+            <baseHungerRate>1</baseHungerRate>
+            <baseBodySize>4</baseBodySize>
+            <baseHealthScale>6</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <gestationPeriodDays>30</gestationPeriodDays>
+            <packAnimal>true</packAnimal>
+            <wildness>0.50</wildness>
+            <lifeExpectancy>45</lifeExpectancy>
+            <trainability>Advanced</trainability>
+            <manhunterOnTameFailChance>0.01</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.1</manhunterOnDamageChance>
+            <leatherDef>Leather_Heavy</leatherDef>
+            <wildBiomes>
+                <HmcIronWoodForest MayRequire="arpomo6.hmc.biomes">0.004</HmcIronWoodForest>
+                <HmcBambooGrove MayRequire="arpomo6.hmc.biomes">0.004</HmcBambooGrove>
+                <TropicalRainforest>0.007</TropicalRainforest>
+                <TropicalArchipelago>0.007</TropicalArchipelago>
+                <TropicalSwamp>0.007</TropicalSwamp>
+                <TropicalSwampArchipelago>0.007</TropicalSwampArchipelago>
+                <TemperateForest>0.004</TemperateForest>
+                <TemperateArchipelago>0.004</TemperateArchipelago>
+                <TemperateSwamp>0.004</TemperateSwamp>
+                <TemperateSwampArchipelago>0.004</TemperateSwampArchipelago>
+            </wildBiomes>
+            <nuzzleMtbHours>140</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.4</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.8</minAge>
+                    <soundWounded>Pawn_Rodent_Wounded</soundWounded>
+                    <soundDeath>Pawn_Rodent_Death</soundDeath>
+                    <soundCall>Pawn_Rodent_Call</soundCall>
+                    <soundAngry>Pawn_Rodent_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <comps>
+            <li Class="CompProperties_Shearable">
+                <woolDef>JosephoartigasiaWool</woolDef>
+                <shearIntervalDays>20</shearIntervalDays>
+                <woolAmount>200</woolAmount>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Josephoartigasia</defName>
+        <label>josephoartigasia</label>
+        <race>Josephoartigasia</race>
+        <combatPower>300</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildGroupSize>
+            <min>2</min>
+            <max>4</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Josephoartigasia/megafauna_josephoartigasia</texPath>
+                    <drawSize>1.3</drawSize>
+                    <color>(177,161,132)</color>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Josephoartigasia/megafauna_josephoartigasia</texPath>
+                    <drawSize>1.3</drawSize>
+                    <color>(177,161,132)</color>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Josephoartigasia/megafauna_Dessicated_Josephoartigasia</texPath>
+                    <drawSize>1.3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Josephoartigasia/megafauna_josephoartigasia</texPath>
+                    <drawSize>2</drawSize>
+                    <color>(177,161,132)</color>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Josephoartigasia/megafauna_josephoartigasia</texPath>
+                    <color>(177,161,132)</color>
+                    <drawSize>2.1</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Josephoartigasia/megafauna_Dessicated_Josephoartigasia</texPath>
+                    <drawSize>2.1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Josephoartigasia/megafauna_josephoartigasia</texPath>
+                    <drawSize>3.6</drawSize>
+                    <color>(177,161,132)</color>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Josephoartigasia/megafauna_josephoartigasia</texPath>
+                    <drawSize>3.6</drawSize>
+                    <color>(177,161,132)</color>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Josephoartigasia/megafauna_Dessicated_Josephoartigasia</texPath>
+                    <drawSize>3.6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ====================================================== -->
+ 
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Gigantophis</defName>
+        <label>gigantophis</label>
+        <description>Long extinct giant reptiles, brought back to life as a part of the Megafauna Project.\n\nThe second biggest snake in history, thought to have been the largest until the discovery of titanoboa.\nIt much prefers hunting big animals as they're easier to smell out.</description>
+        <statBases>
+            <MoveSpeed>4.24</MoveSpeed>
+            <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+            <MarketValue>2500</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <cooldownTime>4</cooldownTime>
+                <power>45</power>
+                <capacities><li>Bite</li></capacities>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>55</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>EggGigantophisFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>20</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <predator>true</predator>
+            <body>Snake</body>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <baseHungerRate>1</baseHungerRate>
+            <baseBodySize>11</baseBodySize>
+            <baseHealthScale>9</baseHealthScale>
+            <foodType>CarnivoreAnimal</foodType>
+            <gestationPeriodDays>30</gestationPeriodDays>
+            <mateMtbHours>8</mateMtbHours>
+            <wildness>0.90</wildness>
+            <lifeExpectancy>100</lifeExpectancy>
+            <trainability>Intermediate</trainability>
+            <maxPreyBodySize>9</maxPreyBodySize>
+            <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <leatherDef>Leather_Lizard</leatherDef>
+            <useMeatFrom>Titanoboa</useMeatFrom>
+            <wildBiomes>
+                <HmcSavanna MayRequire="arpomo6.hmc.biomes">0.007</HmcSavanna>
+                <Desert>0.008</Desert>
+                <DesertArchipelago>0.008</DesertArchipelago>
+                <ExtremeDesert>0.007</ExtremeDesert>
+                <AridShrubland>0.004</AridShrubland>
+            </wildBiomes>
+            <nuzzleMtbHours>75</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.7</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>1.3</minAge>
+                    <soundCall>Pawn_Cobra_Call</soundCall>
+                    <soundAngry>Pawn_Cobra_Angry</soundAngry>
+                    <soundWounded>Pawn_Cobra_Wounded</soundWounded>
+                    <soundDeath>Pawn_Cobra_Death</soundDeath>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalExotic</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Gigantophis</defName>
+        <label>gigantophis</label>
+        <race>Gigantophis</race>
+        <combatPower>600</combatPower>
+        <labelPlural>gigantophises</labelPlural>
+        <canArriveManhunter>false</canArriveManhunter>
+        <wildGroupSize>
+            <min>1</min>
+            <max>1</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Gigantophis/megafauna_gigantophisMale</texPath>
+                    <drawSize>2</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Gigantophis/megafauna_gigantophisFemale</texPath>
+                    <drawSize>2.2</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Gigantophis/megafauna_Dessicated_Gigantophis</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Gigantophis/megafauna_gigantophisMale</texPath>
+                    <drawSize>3</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Gigantophis/megafauna_gigantophisFemale</texPath>
+                    <drawSize>3.2</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Gigantophis/megafauna_Dessicated_Gigantophis</texPath>
+                    <drawSize>3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Gigantophis/megafauna_gigantophisMale</texPath>
+                    <drawSize>4.1</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Gigantophis/megafauna_gigantophisFemale</texPath>
+                    <drawSize>4.4</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Gigantophis/megafauna_Dessicated_Gigantophis</texPath>
+                    <drawSize>4.1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ====================================================== -->
+
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Meganeura</defName>
+        <label>meganeura</label>
+        <description>Long extinct giant arthropods, brought back to life as a part of the Megafauna Project.\n\nThe biggest flying insect to ever exist, meganeura, just like modern dragonflies, is a highly specialised predator.\nSwift and agile, it used to have no aerial competition, which was one of the reasons why it had evolved to be so gigantic.</description>
+        <statBases>
+            <MoveSpeed>8</MoveSpeed>
+            <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+            <MarketValue>750</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+        </statBases>
+        <tools>
+            <li>
+                <cooldownTime>0.75</cooldownTime>
+                <power>8</power>
+                <capacities><li>Bite</li></capacities>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>9</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>EggMeganeuraFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>2</eggFertilizationCountMax>
+                <eggLayIntervalDays>15</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>2</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <body>FlyingInsect</body>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <baseHungerRate>0.15</baseHungerRate>
+            <baseBodySize>0.7</baseBodySize>
+            <baseHealthScale>0.6</baseHealthScale>
+            <foodType>CarnivoreAnimal</foodType>
+            <maxPreyBodySize>0.9</maxPreyBodySize>
+            <gestationPeriodDays>30</gestationPeriodDays>
+            <mateMtbHours>8</mateMtbHours>
+            <wildness>0.65</wildness>
+            <lifeExpectancy>10</lifeExpectancy>
+            <packAnimal>false</packAnimal>
+            <trainability>Intermediate</trainability>
+            <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <wildBiomes>
+                <HmcIronWoodForest MayRequire="arpomo6.hmc.biomes">0.008</HmcIronWoodForest>
+                <HmcBambooGrove MayRequire="arpomo6.hmc.biomes">0.03</HmcBambooGrove>
+                <TropicalSwamp>0.04</TropicalSwamp>
+                <TropicalSwampArchipelago>0.04</TropicalSwampArchipelago>
+                <TemperateSwamp>0.03</TemperateSwamp>
+                <TemperateSwampArchipelago>0.03</TemperateSwampArchipelago>
+                <TropicalRainforest>0.03</TropicalRainforest>
+                <TropicalArchipelago>0.03</TropicalArchipelago>
+                <TemperateForest>0.008</TemperateForest>
+                <TemperateArchipelago>0.008</TemperateArchipelago>
+            </wildBiomes>
+            <nuzzleMtbHours>20</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.6</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.7</minAge>
+                    <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+                    <soundDeath>Pawn_BigInsect_Death</soundDeath>
+                    <soundCall>Pawn_BigInsect_Call</soundCall>
+                    <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Meganeura</defName>
+        <label>meganeura</label>
+        <race>Meganeura</race>
+        <combatPower>250</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildGroupSize>
+            <min>1</min>
+            <max>1</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>meganeura nymph</label>
+                <labelPlural>meganeura nymphs</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Meganeura/megafauna_meganeuraNymph</texPath>
+                    <drawSize>1.0</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Meganeura/megafauna_meganeuraNymph</texPath>
+                    <drawSize>1.0</drawSize>
+                    <color>(165,82,88)</color>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Meganeura/megafauna_Dessicated_MeganeuraNymph</texPath>
+                    <drawSize>1.0</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Meganeura/megafauna_meganeura</texPath>
+                    <drawSize>1.6</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Meganeura/megafauna_meganeura</texPath>
+                    <drawSize>1.6</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Meganeura/megafauna_Dessicated_Meganeura</texPath>
+                    <drawSize>1.6</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Meganeura/megafauna_meganeura</texPath>
+                    <drawSize>1.9</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Meganeura/megafauna_meganeura</texPath>
+                    <drawSize>2</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Meganeura/megafauna_Dessicated_Meganeura</texPath>
+                    <drawSize>1.9</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ============================================================ -->
+
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Zygolophodon</defName>
+        <label>zygolophodon</label>
+        <description>Long extinct giant mammals, brought back to life as a part of the Megafauna Project.\n\nOne of the mastodons, and owner of some of the longest tusks in history.\nWhile more primitive than mammoths, it's bigger, tougher, and more powerful than most of them. It is also heavier than some sauropod dinosaurs.</description>
+        <statBases>
+            <MoveSpeed>4</MoveSpeed>
+            <ComfyTemperatureMin>-25</ComfyTemperatureMin>
+            <MarketValue>1900</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>tusk</label>
+                <cooldownTime>2.5</cooldownTime>
+                <power>33</power>
+                <capacities><li>Scratch</li><li>Stab</li></capacities>
+                <linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>left foot</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>1.75</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right foot</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>1.75</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <cooldownTime>1.65</cooldownTime>
+                <power>14</power>
+                <capacities><li>Blunt</li></capacities>
+                <chanceFactor>0.01</chanceFactor>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+            <body>QuadrupedAnimalWithHoovesTusksAndTrunk</body>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
+            <baseHungerRate>1.6</baseHungerRate>
+            <baseBodySize>5.3</baseBodySize>
+            <baseHealthScale>9</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <gestationPeriodDays>40</gestationPeriodDays>
+            <packAnimal>true</packAnimal>
+            <wildness>0.75</wildness>
+            <lifeExpectancy>90</lifeExpectancy>
+            <trainability>Advanced</trainability>
+            <manhunterOnTameFailChance>0.028</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.75</manhunterOnDamageChance>
+            <leatherDef>Leather_Elephant</leatherDef>
+            <useMeatFrom>Elephant</useMeatFrom>
+            <wildBiomes>
+                <HmcIronWoodForest MayRequire="arpomo6.hmc.biomes">0.004</HmcIronWoodForest>
+                <HmcBambooGrove MayRequire="arpomo6.hmc.biomes">0.004</HmcBambooGrove>
+                <TemperateSwamp>0.004</TemperateSwamp>
+                <TemperateSwampArchipelago>0.004</TemperateSwampArchipelago>
+                <BorealForest>0.004</BorealForest>
+                <BorealArchipelago>0.004</BorealArchipelago>
+                <TemperateForest>0.004</TemperateForest>
+                <TemperateArchipelago>0.004</TemperateArchipelago>
+            </wildBiomes>
+            <nuzzleMtbHours>40</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>1</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>2.2</minAge>
+                    <soundCall>Pawn_Elephant_Call</soundCall>
+                    <soundAngry>Pawn_Elephant_Angry</soundAngry>
+                    <soundWounded>Pawn_Elephant_Injured</soundWounded>
+                    <soundDeath>Pawn_Elephant_Dead</soundDeath>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalExotic</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Zygolophodon</defName>
+        <label>zygolophodon</label>
+        <race>Zygolophodon</race>
+        <combatPower>450</combatPower>
+        <canArriveManhunter>false</canArriveManhunter>
+        <wildGroupSize>
+            <min>2</min>
+            <max>3</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>zygolophodon calf</label>
+                <labelPlural>zygolophodon calves</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Zygolophodon/megafauna_zygolophodon</texPath>
+                    <drawSize>4.2</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Zygolophodon/megafauna_zygolophodon</texPath>
+                    <drawSize>4</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Zygolophodon/megafauna_Dessicated_Zygolophodon</texPath>
+                    <drawSize>4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Zygolophodon/megafauna_zygolophodon</texPath>
+                    <drawSize>5.2</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Zygolophodon/megafauna_zygolophodon</texPath>
+                    <drawSize>5</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Zygolophodon/megafauna_Dessicated_Zygolophodon</texPath>
+                    <drawSize>5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Zygolophodon/megafauna_zygolophodon</texPath>
+                    <drawSize>6.9</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Zygolophodon/megafauna_zygolophodon</texPath>
+                    <drawSize>6.7</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Zygolophodon/megafauna_Dessicated_Zygolophodon</texPath>
+                    <drawSize>6.7</drawSize>
+                </dessicatedBodyGraphicData>
+                <butcherBodyPart>
+                    <bodyPartGroup>TuskAttackTool</bodyPartGroup>
+                    <thing>ZygolophodonTusk</thing>
+                    <allowFemale>true</allowFemale>
+                </butcherBodyPart>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ============================================================ -->
+
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Platybelodon</defName>
+        <label>platybelodon</label>
+        <description>Long extinct giant mammals, brought back to life as a part of the Megafauna Project.\n\nVery unique kind of proboscideans, which, due to the shape of their two lower teeth is popularly known as "shovel tuskers".\nIt grasps tree branches with its trunk and rubs them against the lower teeth to cut them off. The "tusk shovel" is also used by platybelodons to strip bark from trees.</description>
+        <statBases>
+            <MoveSpeed>3.6</MoveSpeed>
+            <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+            <MarketValue>1200</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>tusk</label>
+                <cooldownTime>2.5</cooldownTime>
+                <power>20</power>
+                <capacities><li>Scratch</li><li>Stab</li></capacities>
+                <linkedBodyPartsGroup>TuskAttackTool</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>left foot</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>1.85</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right foot</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>1.85</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightLeg</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <cooldownTime>1.85</cooldownTime>
+                <power>10</power>
+                <capacities><li>Blunt</li></capacities>
+                <chanceFactor>0.01</chanceFactor>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+            <body>QuadrupedAnimalWithHoovesTusksAndTrunk</body>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
+            <baseHungerRate>1.55</baseHungerRate>
+            <baseBodySize>4.5</baseBodySize>
+            <baseHealthScale>7</baseHealthScale>
+            <foodType>DendrovoreAnimal, VegetarianRoughAnimal</foodType>
+            <gestationPeriodDays>40</gestationPeriodDays>
+            <packAnimal>true</packAnimal>
+            <wildness>0.70</wildness>
+            <lifeExpectancy>80</lifeExpectancy>
+            <trainability>Advanced</trainability>
+            <manhunterOnTameFailChance>0.028</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.75</manhunterOnDamageChance>
+            <leatherDef>Leather_Elephant</leatherDef>
+            <useMeatFrom>Elephant</useMeatFrom>
+            <wildBiomes>
+                <HmcIronWoodForest MayRequire="arpomo6.hmc.biomes">0.005</HmcIronWoodForest>
+                <BorealForest>0.004</BorealForest>
+                <BorealArchipelago>0.004</BorealArchipelago>
+                <TemperateForest>0.005</TemperateForest>
+                <TemperateArchipelago>0.005</TemperateArchipelago>
+                <TropicalRainforest>0.003</TropicalRainforest>
+                <TropicalArchipelago>0.003</TropicalArchipelago>
+            </wildBiomes>
+            <nuzzleMtbHours>60</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>1</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>2.2</minAge>
+                    <soundCall>Pawn_Elephant_Call</soundCall>
+                    <soundAngry>Pawn_Elephant_Angry</soundAngry>
+                    <soundWounded>Pawn_Elephant_Injured</soundWounded>
+                    <soundDeath>Pawn_Elephant_Dead</soundDeath>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Platybelodon</defName>
+        <label>platybelodon</label>
+        <race>Platybelodon</race>
+        <combatPower>350</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildGroupSize>
+            <min>2</min>
+            <max>5</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>platybelodon calf</label>
+                <labelPlural>platybelodon calves</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Platybelodon/megafauna_platybelodon</texPath>
+                    <drawSize>1.4</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Platybelodon/megafauna_platybelodon</texPath>
+                    <drawSize>1.4</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Platybelodon/megafauna_Dessicated_Platybelodon</texPath>
+                    <drawSize>1.4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Platybelodon/megafauna_platybelodon</texPath>
+                    <drawSize>2.8</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Platybelodon/megafauna_platybelodon</texPath>
+                    <drawSize>2.8</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Platybelodon/megafauna_Dessicated_Platybelodon</texPath>
+                    <drawSize>2.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Platybelodon/megafauna_platybelodon</texPath>
+                    <drawSize>4.1</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Platybelodon/megafauna_platybelodon</texPath>
+                    <drawSize>4.1</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Platybelodon/megafauna_Dessicated_Platybelodon</texPath>
+                    <drawSize>4.1</drawSize>
+                </dessicatedBodyGraphicData>
+                <butcherBodyPart>
+                    <bodyPartGroup>TuskAttackTool</bodyPartGroup>
+                    <thing>PlatybelodonTusk</thing>
+                    <allowFemale>true</allowFemale>
+                </butcherBodyPart>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ============================================================ -->
+ 
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Purussaurus</defName>
+        <label>purussaurus</label>
+        <description>Long extinct giant reptiles, brought back to life as a part of the Megafauna Project.\n\nQuite possibly, the largest crocodilian of all time, and also the biggest reptile to roam the Earth after the extinction of dinosaurs.\nIt is so massive that even giant ground sloths have a place on its menu.</description>
+        <statBases>
+            <MoveSpeed>4.25</MoveSpeed>
+            <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+            <MarketValue>3200</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <cooldownTime>1.65</cooldownTime>
+                <power>30</power>
+                <capacities><li>Scratch</li></capacities>
+                <linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <cooldownTime>1.65</cooldownTime>
+                <power>30</power>
+                <capacities><li>Scratch</li></capacities>
+                <linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <cooldownTime>2</cooldownTime>
+                <power>45</power>
+                <capacities><li>Bite</li></capacities>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>45</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+        <comps>
+            <li Class="CompProperties_EggLayer">
+                <eggFertilizedDef>EggPurussaurusFertilized</eggFertilizedDef>
+                <eggFertilizationCountMax>1</eggFertilizationCountMax>
+                <eggLayIntervalDays>35</eggLayIntervalDays>
+                <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+                <eggCountRange>1</eggCountRange>
+            </li>
+        </comps>
+        <race>
+            <herdAnimal>false</herdAnimal>
+            <predator>true</predator>
+            <body>QuadrupedAnimalWithClawsTailAndJowl</body>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <baseHungerRate>0.85</baseHungerRate>
+            <baseBodySize>10</baseBodySize>
+            <baseHealthScale>10</baseHealthScale>
+            <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+            <gestationPeriodDays>30</gestationPeriodDays>
+            <packAnimal>true</packAnimal>
+            <wildness>0.9</wildness>
+            <lifeExpectancy>160</lifeExpectancy>
+            <trainability>Advanced</trainability>
+            <maxPreyBodySize>8.5</maxPreyBodySize>
+            <manhunterOnTameFailChance>0.25</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <leatherDef>Leather_Lizard</leatherDef>
+            <useMeatFrom>Quinkana</useMeatFrom>
+            <wildBiomes>
+                <HmcBambooGrove MayRequire="arpomo6.hmc.biomes">0.007</HmcBambooGrove>
+                <TemperateSwamp>0.007</TemperateSwamp>
+                <TemperateSwampArchipelago>0.007</TemperateSwampArchipelago>
+                <TropicalSwamp>0.007</TropicalSwamp>
+                <TropicalSwampArchipelago>0.007</TropicalSwampArchipelago>
+                <TropicalRainforest>0.005</TropicalRainforest>
+                <TropicalArchipelago>0.005</TropicalArchipelago>
+            </wildBiomes>
+            <nuzzleMtbHours>1</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>1</minAge>
+                    <soundCall>Pawn_Iguana_Call</soundCall>
+                    <soundAngry>Pawn_Iguana_Angry</soundAngry>
+                    <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+                    <soundDeath>Pawn_Iguana_Death</soundDeath>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>1.8</minAge>
+                    <soundCall>Pawn_Iguana_Call</soundCall>
+                    <soundAngry>Pawn_Iguana_Angry</soundAngry>
+                    <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+                    <soundDeath>Pawn_Iguana_Death</soundDeath>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalExotic</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Purussaurus</defName>
+        <label>purussaurus</label>
+        <race>Purussaurus</race>
+        <combatPower>750</combatPower>
+        <labelPlural>purussauruses</labelPlural>
+        <canArriveManhunter>false</canArriveManhunter>
+        <wildGroupSize>
+            <min>1</min>
+            <max>1</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Purussaurus/megafauna_purussaurus</texPath>
+                    <drawSize>3</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Purussaurus/megafauna_purussaurus</texPath>
+                    <drawSize>3</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Purussaurus/megafauna_Dessicated_Purussaurus</texPath>
+                    <drawSize>3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Purussaurus/megafauna_purussaurus</texPath>
+                    <drawSize>4.5</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Purussaurus/megafauna_purussaurus</texPath>
+                    <drawSize>4.5</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Purussaurus/megafauna_Dessicated_Purussaurus</texPath>
+                    <drawSize>4.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Purussaurus/megafauna_purussaurus</texPath>
+                    <drawSize>6.5</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Purussaurus/megafauna_purussaurus</texPath>
+                    <drawSize>6.5</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Purussaurus/megafauna_Dessicated_Purussaurus</texPath>
+                    <drawSize>6.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ============================================================ -->
+
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Uintatherium</defName>
+        <label>uintatherium</label>
+        <description>Long extinct giant mammals, brought back to life as a part of the Megafauna Project.\n\nA very primitive, giant cousin of rhinoceroses.\nIt is neither the most beautiful, nor the most intelligent animal in history, with its brain being merely the size of an orange, but it can make up for it with its strong back, which renders it a good partner for a journey.</description>
+        <statBases>
+            <MoveSpeed>3.6</MoveSpeed>
+            <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Milkable">
+                <milkDef>Milk</milkDef>
+                <milkIntervalDays>5</milkIntervalDays>
+                <milkAmount>20</milkAmount>
+            </li>
+        </comps>
+        <tools>
+            <li>
+                <label>horns</label>
+                <capacities>
+                    <li>Scratch</li>
+                    <li>Stab</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HornAttackTool</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>13</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+            <body>QuadrupedAnimalWithHoovesAndHorn</body>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
+            <baseHungerRate>2</baseHungerRate>
+            <baseBodySize>4.5</baseBodySize>
+            <baseHealthScale>6.5</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <gestationPeriodDays>40</gestationPeriodDays>
+            <packAnimal>true</packAnimal>
+            <wildness>0.55</wildness>
+            <lifeExpectancy>65</lifeExpectancy>
+            <trainability>None</trainability>
+            <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <leatherDef>Leather_Rhinoceros</leatherDef>
+            <meatLabel>uintatherium meat</meatLabel>
+            <trainability>None</trainability>
+            <wildBiomes>
+                <HmcIronWoodForest MayRequire="arpomo6.hmc.biomes">0.004</HmcIronWoodForest>
+                <HmcSavanna MayRequire="arpomo6.hmc.biomes">0.008</HmcSavanna>
+                <HmcBambooGrove MayRequire="arpomo6.hmc.biomes">0.004</HmcBambooGrove>
+                <TemperateSwamp>0.004</TemperateSwamp>
+                <TemperateSwampArchipelago>0.004</TemperateSwampArchipelago>
+                <ColdBog>0.002</ColdBog>
+                <ColdBogArchipelago>0.002</ColdBogArchipelago>
+                <BorealForest>0.002</BorealForest>
+                <BorealArchipelago>0.002</BorealArchipelago>
+                <TemperateForest>0.004</TemperateForest>
+                <TemperateArchipelago>0.004</TemperateArchipelago>
+                <AridShrubland>0.008</AridShrubland>
+            </wildBiomes>
+            <nuzzleMtbHours>75</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>1</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>2.2</minAge>
+                    <soundWounded>Pawn_Dromedary_Wounded</soundWounded>
+                    <soundDeath>Pawn_Dromedary_Death</soundDeath>
+                    <soundCall>Pawn_Dromedary_Call</soundCall>
+                    <soundAngry>Pawn_Dromedary_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Uintatherium</defName>
+        <label>uintatherium</label>
+        <race>Uintatherium</race>
+        <combatPower>200</combatPower>
+        <labelPlural>uintathere</labelPlural>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildGroupSize>
+            <min>1</min>
+            <max>3</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Uintatherium/megafauna_uintatherium</texPath>
+                    <drawSize>2.1</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Uintatherium/megafauna_uintatherium</texPath>
+                    <drawSize>2</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Uintatherium/megafauna_Dessicated_Uintatherium</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Uintatherium/megafauna_uintatherium</texPath>
+                    <drawSize>3.2</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Uintatherium/megafauna_uintatherium</texPath>
+                    <drawSize>3</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Uintatherium/megafauna_Dessicated_Uintatherium</texPath>
+                    <drawSize>3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Uintatherium/megafauna_uintatherium</texPath>
+                    <drawSize>4.2</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Uintatherium/megafauna_uintatherium</texPath>
+                    <drawSize>4</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Uintatherium/megafauna_Dessicated_Uintatherium</texPath>
+                    <drawSize>4</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ============================================================ -->
+  
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Pulmonoscorpius</defName>
+        <label>pulmonoscorpius</label>
+        <description>Long extinct giant arthropods, brought back to life as a part of the Megafauna Project.\n\nThe biggest land scorpion to ever exist.\nPulmonoscorpius is a solitary predator capable of taking down creatures way larger than itself with its deadly venom. Its sting should be stayed away from at all costs.</description>
+        <statBases>
+            <MoveSpeed>3.75</MoveSpeed>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <MarketValue>1050</MarketValue>
+            <LeatherAmount>0</LeatherAmount>
+            <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+        </statBases>
+        <tools>
+            <li>
+                <label>left pincer</label>
+                <cooldownTime>1.25</cooldownTime>
+                <power>13</power>
+                <capacities><li>Scratch</li></capacities>
+                <linkedBodyPartsGroup>LeftPincer</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right pincer</label>
+                <cooldownTime>1.25</cooldownTime>
+                <power>13</power>
+                <capacities><li>Scratch</li></capacities>
+                <linkedBodyPartsGroup>RightPincer</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>stinger</label>
+                <cooldownTime>1.7</cooldownTime>
+                <power>17</power>
+                <capacities><li>ToxicSting</li></capacities>
+                <linkedBodyPartsGroup>Stinger</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>17</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+                <chanceFactor>0.4</chanceFactor>
+            </li>
+            <li>
+                <cooldownTime>1.55</cooldownTime>
+                <power>13</power>
+                <capacities><li>Bite</li></capacities>
+                <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <race>
+            <body>Scorpion</body>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
+            <predator>true</predator>
+            <maxPreyBodySize>2</maxPreyBodySize>
+            <baseHungerRate>0.3</baseHungerRate>
+            <baseBodySize>1.1</baseBodySize>
+            <baseHealthScale>1.8</baseHealthScale>
+            <foodType>CarnivoreAnimal</foodType>
+            <gestationPeriodDays>30</gestationPeriodDays>
+            <mateMtbHours>8</mateMtbHours>
+            <wildness>0.65</wildness>
+            <lifeExpectancy>150</lifeExpectancy>
+            <packAnimal>false</packAnimal>
+            <trainability>Advanced</trainability>
+            <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
+            <useMeatFrom>Megaspider</useMeatFrom>
+            <wildBiomes>
+                <HmcIronWoodForest MayRequire="arpomo6.hmc.biomes">0.007</HmcIronWoodForest>
+                <HmcSavanna MayRequire="arpomo6.hmc.biomes">0.007</HmcSavanna>
+                <HmcBambooGrove MayRequire="arpomo6.hmc.biomes">0.007</HmcBambooGrove>
+                <TemperateSwamp>0.007</TemperateSwamp>
+                <TemperateSwampArchipelago>0.007</TemperateSwampArchipelago>
+                <AridShrubland>0.007</AridShrubland>
+                <TemperateForest>0.007</TemperateForest>
+                <TemperateArchipelago>0.007</TemperateArchipelago>
+                <Desert>0.008</Desert>
+                <DesertArchipelago>0.008</DesertArchipelago>
+                <ExtremeDesert>0.008</ExtremeDesert>
+            </wildBiomes>
+            <nuzzleMtbHours>30</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.08</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.2</minAge>
+                    <soundWounded>Pawn_BigInsect_Pain</soundWounded>
+                    <soundDeath>Pawn_BigInsect_Death</soundDeath>
+                    <soundCall>Pawn_BigInsect_Call</soundCall>
+                    <soundAngry>Pawn_BigInsect_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Pulmonoscorpius</defName>
+        <label>pulmonoscorpius</label>
+        <race>Pulmonoscorpius</race>
+        <combatPower>300</combatPower>
+        <labelPlural>pulmonoscorpiuses</labelPlural>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildGroupSize>
+            <min>1</min>
+            <max>1</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <label>pulmonoscorpius larva</label>
+                <labelPlural>pulmonoscorpius larvae</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Pulmonoscorpius/megafauna_pulmonoscorpius</texPath>
+                    <drawSize>0.5</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Pulmonoscorpius/megafauna_pulmonoscorpius</texPath>
+                    <drawSize>1.5</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Pulmonoscorpius/megafauna_Dessicated_Pulmonoscorpius</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Pulmonoscorpius/megafauna_pulmonoscorpius</texPath>
+                    <drawSize>2</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Pulmonoscorpius/megafauna_pulmonoscorpius</texPath>
+                    <drawSize>2</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Pulmonoscorpius/megafauna_Dessicated_Pulmonoscorpius</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Pulmonoscorpius/megafauna_pulmonoscorpius</texPath>
+                    <drawSize>2.5</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Pulmonoscorpius/megafauna_pulmonoscorpius</texPath>
+                    <drawSize>2.5</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Pulmonoscorpius/megafauna_Dessicated_Pulmonoscorpius</texPath>
+                    <drawSize>2.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ============================================================ -->
+
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Dinopithecus</defName>
+        <label>dinopithecus</label>
+        <description>Long extinct giant mammals, brought back to life as a part of the Megafauna Project.\n\nA gigantic species of baboons with an unusually prominent liking for meat.\nThey used to be the natural enemies of early humans, hunting them down more often than one could expect. It is possible that they could see modern humans as prey, too.</description>
+        <statBases>
+            <MoveSpeed>5</MoveSpeed>
+            <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+            <MarketValue>1200</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>left hand</label>
+                <cooldownTime>1.4</cooldownTime>
+                <power>17</power>
+                <capacities><li>Blunt</li><li>Scratch</li></capacities>
+                <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right hand</label>
+                <cooldownTime>1.4</cooldownTime>
+                <power>17</power>
+                <capacities><li>Blunt</li><li>Scratch</li></capacities>
+                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <cooldownTime>1.5</cooldownTime>
+                <power>17</power>
+                <capacities><li>Bite</li></capacities>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>19</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>true</predator>
+            <body>Monkey</body>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
+            <baseHungerRate>0.4</baseHungerRate>
+            <baseBodySize>2.5</baseBodySize>
+            <baseHealthScale>3.5</baseHealthScale>
+            <maxPreyBodySize>1.5</maxPreyBodySize>
+            <foodType>OmnivoreAnimal</foodType>
+            <gestationPeriodDays>30</gestationPeriodDays>
+            <packAnimal>true</packAnimal>
+            <wildness>0.8</wildness>
+            <lifeExpectancy>40</lifeExpectancy>
+            <trainability>Advanced</trainability>
+            <manhunterOnTameFailChance>0.3</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <nameOnTameChance>1</nameOnTameChance>
+            <leatherDef>Leather_Heavy</leatherDef>
+            <useMeatFrom>Monkey</useMeatFrom>
+            <wildBiomes>
+                <HmcIronWoodForest MayRequire="arpomo6.hmc.biomes">0.006</HmcIronWoodForest>
+                <HmcSavanna MayRequire="arpomo6.hmc.biomes">0.008</HmcSavanna>
+                <TemperateForest>0.006</TemperateForest>
+                <TemperateArchipelago>0.006</TemperateArchipelago>
+                <AridShrubland>0.008</AridShrubland>
+            </wildBiomes>
+            <nuzzleMtbHours>1</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.5</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.8</minAge>
+                    <soundCall>Pawn_Monkey_Call</soundCall>
+                    <soundAngry>Pawn_Monkey_Angry</soundAngry>
+                    <soundWounded>Pawn_Monkey_Wounded</soundWounded>
+                    <soundDeath>Pawn_Monkey_Death</soundDeath>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Dinopithecus</defName>
+        <label>dinopithecus</label>
+        <race>Dinopithecus</race>
+        <combatPower>350</combatPower>
+        <labelPlural>dinopithecuses</labelPlural>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildGroupSize>
+            <min>2</min>
+            <max>5</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dinopithecus/megafauna_dinopithecusMale</texPath>
+                    <drawSize>1.2</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Dinopithecus/megafauna_dinopithecusFemale</texPath>
+                    <drawSize>1</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dinopithecus/megafauna_Dessicated_Dinopithecus</texPath>
+                    <drawSize>1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dinopithecus/megafauna_dinopithecusMale</texPath>
+                    <drawSize>2</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Dinopithecus/megafauna_dinopithecusFemale</texPath>
+                    <drawSize>1.8</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dinopithecus/megafauna_Dessicated_Dinopithecus</texPath>
+                    <drawSize>1.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dinopithecus/megafauna_dinopithecusMale</texPath>
+                    <drawSize>3.2</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Dinopithecus/megafauna_dinopithecusFemale</texPath>
+                    <drawSize>3</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Dinopithecus/megafauna_Dessicated_Dinopithecus</texPath>
+                    <drawSize>3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ============================================================ -->
+
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Castoroides</defName>
+        <label>castoroides</label>
+        <description>Long extinct giant mammals, brought back to life as a part of the Megafauna Project.\n\nGiant beavers, the largest to ever exist.\nIts incisors aren't as well fitted for cutting wood as those of its modern equivalents, which is why it doesn't bother with constructing dams. This makes it so it will more often have to resort to either running from predators or attempting to fight them off, instead of simply hiding away from them.</description>
+        <statBases>
+            <MoveSpeed>4.1</MoveSpeed>
+            <ComfyTemperatureMin>-45</ComfyTemperatureMin>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>14</power>
+                <cooldownTime>1.75</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.7</chanceFactor>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>false</predator>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <herdMigrationAllowed>true</herdMigrationAllowed>
+            <baseHungerRate>1</baseHungerRate>
+            <baseBodySize>1.75</baseBodySize>
+            <baseHealthScale>3</baseHealthScale>
+            <foodType>DendrovoreAnimal, VegetarianAnimal</foodType>
+            <gestationPeriodDays>30</gestationPeriodDays>
+            <packAnimal>false</packAnimal>
+            <wildness>0.6</wildness>
+            <lifeExpectancy>25</lifeExpectancy>
+            <trainability>Advanced</trainability>
+            <manhunterOnTameFailChance>0.0028</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.3</manhunterOnDamageChance>
+            <leatherDef>Leather_Heavy</leatherDef>
+            <useMeatFrom>Alphabeaver</useMeatFrom>
+            <wildBiomes>
+                <HmcIronWoodForest MayRequire="arpomo6.hmc.biomes">0.01</HmcIronWoodForest>
+                <HmcBambooGrove MayRequire="arpomo6.hmc.biomes">0.01</HmcBambooGrove>
+                <TemperateSwamp>0.01</TemperateSwamp>
+                <TemperateSwampArchipelago>0.01</TemperateSwampArchipelago>
+                <TemperateForest>0.01</TemperateForest>
+                <TemperateArchipelago>0.01</TemperateArchipelago>
+                <ColdBog>0.008</ColdBog>
+                <ColdBogArchipelago>0.008</ColdBogArchipelago>
+                <BorealForest>0.008</BorealForest>
+                <BorealArchipelago>0.008</BorealArchipelago>
+                <Tundra>0.005</Tundra>
+                <TundraArchipelago>0.005</TundraArchipelago>
+            </wildBiomes>
+            <nuzzleMtbHours>250</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>1</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>1.3</minAge>
+                    <soundWounded>Pawn_Alphabeaver_Wounded</soundWounded>
+                    <soundDeath>Pawn_Alphabeaver_Death</soundDeath>
+                    <soundCall>Pawn_Alphabeaver_Call</soundCall>
+                    <soundAngry>Pawn_Alphabeaver_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Castoroides</defName>
+        <label>castoroides</label>
+        <race>Castoroides</race>
+        <combatPower>120</combatPower>
+        <labelPlural>castoroideses</labelPlural>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildGroupSize>
+            <min>2</min>
+            <max>6</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Castoroides/megafauna_castoroides</texPath>
+                    <drawSize>1</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Castoroides/megafauna_castoroides</texPath>
+                    <drawSize>1</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Castoroides/megafauna_Dessicated_Castoroides</texPath>
+                    <drawSize>1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Castoroides/megafauna_castoroides</texPath>
+                    <drawSize>1.7</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Castoroides/megafauna_castoroides</texPath>
+                    <drawSize>1.7</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Castoroides/megafauna_Dessicated_Castoroides</texPath>
+                    <drawSize>1.7</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Castoroides/megafauna_castoroides</texPath>
+                    <drawSize>3</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Castoroides/megafauna_castoroides</texPath>
+                    <drawSize>3</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Castoroides/megafauna_Dessicated_Castoroides</texPath>
+                    <drawSize>3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+  
+    <!-- ============================================================ -->
+
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>Enhydriodon</defName>
+        <label>enhydriodon</label>
+        <description>Long extinct giant mammals, brought back to life as a part of the Megafauna Project.\n\nThe largest mustelid ever discovered. Enhydriodon is a bear-sized ancestor of modern otters, and a very dangerous predator that used to be a big threat to early humans.\nGreat swimmers, surprisingly swift on land.</description>
+        <statBases>
+            <MoveSpeed>5.25</MoveSpeed>
+            <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+            <MarketValue>1300</MarketValue>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <cooldownTime>1.55</cooldownTime>
+                <power>17</power>
+                <capacities><li>Scratch</li></capacities>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <cooldownTime>1.55</cooldownTime>
+                <power>17</power>
+                <capacities><li>Scratch</li></capacities>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <cooldownTime>1.55</cooldownTime>
+                <power>19</power>
+                <capacities><li>Bite</li></capacities>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>21</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
+        </tools>
+        <race>
+            <herdAnimal>true</herdAnimal>
+            <predator>true</predator>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <herdMigrationAllowed>false</herdMigrationAllowed>
+            <baseHungerRate>0.5</baseHungerRate>
+            <baseBodySize>3</baseBodySize>
+            <baseHealthScale>5.25</baseHealthScale>
+            <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+            <gestationPeriodDays>30</gestationPeriodDays>
+            <wildness>0.80</wildness>
+            <lifeExpectancy>35</lifeExpectancy>
+            <trainability>Advanced</trainability>
+            <maxPreyBodySize>3.75</maxPreyBodySize>
+            <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <leatherDef>Leather_Heavy</leatherDef>
+            <meatLabel>otter meat</meatLabel>
+            <wildBiomes>
+                <HmcIronWoodForest MayRequire="arpomo6.hmc.biomes">0.006</HmcIronWoodForest>
+                <HmcBambooGrove MayRequire="arpomo6.hmc.biomes">0.008</HmcBambooGrove>
+                <TemperateSwamp>0.008</TemperateSwamp>
+                <TemperateSwampArchipelago>0.008</TemperateSwampArchipelago>
+                <TemperateForest>0.006</TemperateForest>
+                <TemperateArchipelago>0.006</TemperateArchipelago>
+                <ColdBog>0.006</ColdBog>
+                <ColdBogArchipelago>0.006</ColdBogArchipelago>
+                <BorealForest>0.005</BorealForest>
+                <BorealArchipelago>0.005</BorealArchipelago>
+            </wildBiomes>
+            <nuzzleMtbHours>70</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.99, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(1.01, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.3</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.9</minAge>
+                    <soundAngry>Pawn_Cougar_Angry</soundAngry>
+                    <soundWounded>Pawn_Cougar_Injured</soundWounded>
+                    <soundDeath>Pawn_Cougar_Death</soundDeath>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+    </ThingDef>
+
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>Enhydriodon</defName>
+        <label>enhydriodon</label>
+        <race>Enhydriodon</race>
+        <combatPower>375</combatPower>
+        <canArriveManhunter>true</canArriveManhunter>
+        <wildGroupSize>
+            <min>1</min>
+            <max>2</max>
+        </wildGroupSize>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Enhydriodon/megafauna_enhydriodon</texPath>
+                    <drawSize>1</drawSize>
+                    <shadowData>
+                        <volume>(0.4, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.2)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Enhydriodon/megafauna_enhydriodon</texPath>
+                    <drawSize>1</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Enhydriodon/megafauna_Dessicated_Enhydriodon</texPath>
+                    <drawSize>1</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Enhydriodon/megafauna_enhydriodon</texPath>
+                    <drawSize>2.3</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.45, 0.45)</volume>
+                        <offset>(0,0,-0.25)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Enhydriodon/megafauna_enhydriodon</texPath>
+                    <drawSize>2.3</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Enhydriodon/megafauna_Dessicated_Enhydriodon</texPath>
+                    <drawSize>2.3</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Enhydriodon/megafauna_enhydriodon</texPath>
+                    <drawSize>3.8</drawSize>
+                    <shadowData>
+                        <volume>(0.8, 0.6, 0.6)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <femaleGraphicData>
+                    <texPath>Things/Pawn/Animal/Enhydriodon/megafauna_enhydriodon</texPath>
+                    <drawSize>3.8</drawSize>
+                </femaleGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Enhydriodon/megafauna_Dessicated_Enhydriodon</texPath>
+                    <drawSize>3.8</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>

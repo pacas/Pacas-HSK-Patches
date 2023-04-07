@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core SK</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Daeodon" or defName="Gigantopithecus" or defName="Paraceratherium" or defName="Elasmotherium"or defName="Palaeeudyptes" or defName="Gigantophis" or defName="Purussaurus" or defName="Dinopithecus" or defName="Castoroides" or defName="Dinornis" or defName="Megalochelys"]/race/useMeatFrom</xpath>
+                    <value>
+                        <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Uintatherium" or defName="Doedicurus" or defName="Enhydriodon" or defName="Gomphotaria" or defName="Diprotodon" or defName="Dinocrocuta" or defName="Quinkana" or defName="Titanoboa" or defName="Chalicotherium" or defName="Procoptodon" or defName="Megalania" or defName="Josephoartigasia"]/race</xpath>
+                    <value>
+                        <useMeatFrom>Elephant</useMeatFrom>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="Titanis" or defName="WoollyMammoth" or defName="Smilodon" or defName="Megaloceros" or defName="Aurochs" or defName="ShortfacedBear"]/race/useMeatFrom</xpath>
+                    <value>
+                        <useMeatFrom>Muffalo</useMeatFrom>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Sivatherium" or defName="Andrewsarchus" or defName="Macrauchenia"]/race</xpath>
+                    <value>
+                        <useMeatFrom>Muffalo</useMeatFrom>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

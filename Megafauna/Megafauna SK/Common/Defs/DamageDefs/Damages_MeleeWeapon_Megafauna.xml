@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <DamageDef Name="LocalInjuryBase" Abstract="True">
+        <workerClass>DamageWorker_AddInjury</workerClass>
+    </DamageDef>
+    <DamageDef Name="ToxicSting" ParentName="LocalInjuryBase">
+        <defName>ToxicSting</defName>
+        <workerClass>DamageWorker_Stab</workerClass>
+        <label>toxic sting</label>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} has been stung to death.</deathMessage>
+        <hediff>Stab</hediff>
+        <hediffSolid>Crack</hediffSolid>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Slice</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <additionalHediffs>
+            <li>
+                <hediff>ToxicBuildup</hediff>
+                <severityPerDamageDealt>0.015</severityPerDamageDealt>
+                <victimSeverityScaling>ToxicResistance</victimSeverityScaling>
+                <inverseStatScaling>true</inverseStatScaling>
+            </li>
+        </additionalHediffs>
+    </DamageDef>
+</Defs>

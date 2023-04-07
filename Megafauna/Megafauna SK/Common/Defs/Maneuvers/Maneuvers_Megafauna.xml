@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ManeuverDef>
+        <defName>ToxicSting</defName>
+        <requiredCapacity>ToxicSting</requiredCapacity>
+        <verb>
+            <verbClass>Verb_MeleeAttackDamage</verbClass>
+            <meleeDamageDef>ToxicSting</meleeDamageDef>
+        </verb>
+        <logEntryDef>MeleeAttack</logEntryDef>
+        <combatLogRulesHit>Maneuver_Poke_MeleeHit</combatLogRulesHit>
+        <combatLogRulesDeflect>Maneuver_Poke_MeleeDeflect</combatLogRulesDeflect>
+        <combatLogRulesMiss>Maneuver_Poke_MeleeMiss</combatLogRulesMiss>
+        <combatLogRulesDodge>Maneuver_Poke_MeleeDodge</combatLogRulesDodge>
+    </ManeuverDef>
+</Defs>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Giddy-up! Battle Mounts</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+					<li Class="PatchOperationAdd">
+						<xpath>*/ThingDef[defName = "Titanoboa" or defName = "Megalochelys" or defName = "Palaeeudyptes" or defName = "Gigantophis" or defName = "Meganeura" or defName = "Pulmonoscorpius" or defName = "Dinopithecus" or defName = "Castoroides"]/comps</xpath>
+						<value>
+							<li Class="GiddyUpCore.CompProperties_Mount">
+								<isException>true</isException>
+							</li>
+						</value>
+					</li>
+
+
+					<li Class="PatchOperationAdd">
+						<xpath>*/ThingDef[(defName = "Titanoboa" or defName = "Megalochelys" or defName = "Palaeeudyptes" or defName = "Gigantophis" or defName = "Meganeura" or defName = "Pulmonoscorpius" or defName = "Dinopithecus" or defName = "Castoroides") and not(comps)]</xpath>
+						<value>
+							<comps>
+								<li Class="GiddyUpCore.CompProperties_Mount">
+								<isException>true</isException>
+								</li>
+							</comps>
+						</value>
+					</li>
+
+
+					<li Class="PatchOperationAdd">
+						<xpath>*/ThingDef[defName = "Gigantopithecus" or defName = "Paraceratherium" or defName = "Titanis" or defName = "Elasmotherium" or defName = "Chalicotherium" or defName = "Procoptodon" or defName = "Gomphotaria" or defName = "Diprotodon" or defName = "ShortfacedBear" or defName = "Dinocrocuta" or defName = "Sivatherium" or defName = "Dinornis" or defName = "Macrauchenia"]/comps</xpath>
+						<value>
+							<li Class="GiddyUpCore.CompProperties_Mount">
+								<drawFront>true</drawFront>
+							</li>
+						</value>
+					</li>
+
+
+					<li Class="PatchOperationAdd">
+						<xpath>*/ThingDef[(defName = "Gigantopithecus" or defName = "Paraceratherium" or defName = "Titanis" or defName = "Elasmotherium" or defName = "Chalicotherium" or defName = "Procoptodon" or defName = "Gomphotaria" or defName = "Diprotodon" or defName = "ShortfacedBear" or defName = "Dinocrocuta" or defName = "Sivatherium" or defName = "Dinornis" or defName = "Macrauchenia") and not(comps)]</xpath>
+						<value>
+							<comps>
+								<li Class="GiddyUpCore.CompProperties_Mount">
+								<drawFront>true</drawFront>
+								</li>
+							</comps>
+						</value>
+					</li>
+
+
+					<li Class="PatchOperationAddModExtension">
+						<xpath>*/ThingDef[ defName = "Deinotherium"]</xpath> 
+						<value>
+							<li Class="GiddyUpCore.DrawingOffsetPatch">
+								<northOffsetCSV>0,0,-0.3</northOffsetCSV>
+								<southOffsetCSV>0,0,-0.55</southOffsetCSV>	
+								<eastOffsetCSV>0,0,0</eastOffsetCSV>	
+								<westOffsetCSV>0,0,0</westOffsetCSV>	
+							</li>
+						</value>
+					</li>
+
+
+					<li Class="PatchOperationAddModExtension">
+						<xpath>*/ThingDef[ defName = "Zygolophodon"]</xpath> 
+						<value>
+							<li Class="GiddyUpCore.DrawingOffsetPatch">
+								<northOffsetCSV>0,0,0</northOffsetCSV>
+								<southOffsetCSV>0,0,0.3</southOffsetCSV>	
+								<eastOffsetCSV>-1.6,0,0</eastOffsetCSV>	
+								<westOffsetCSV>1.6,0,0</westOffsetCSV>	
+							</li>
+						</value>
+					</li>
+
+
+					<li Class="PatchOperationAddModExtension">
+						<xpath>*/ThingDef[ defName = "Uintatherium"]</xpath> 
+						<value>
+							<li Class="GiddyUpCore.DrawingOffsetPatch">
+								<northOffsetCSV>0,0,0.5</northOffsetCSV>
+								<southOffsetCSV>0,0,0.5</southOffsetCSV>	
+								<eastOffsetCSV>0,0,0</eastOffsetCSV>	
+								<westOffsetCSV>0,0,0</westOffsetCSV>	
+							</li>
+						</value>
+					</li>
+
+
+			</operations>
+		</match>
+	</Operation>
+</Patch>

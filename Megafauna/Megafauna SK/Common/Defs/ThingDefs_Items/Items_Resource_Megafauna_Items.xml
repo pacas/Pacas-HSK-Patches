@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="SK_EggFertBase">
+        <defName>EggTitanoboaFertilized</defName>
+        <label>titanoboa egg (fert.)</label>
+        <description>Fertilized titanoboa egg. If all goes well, it should hatch into a baby titanoboa. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <color>(200,200,200)</color>
+            <drawSize>2</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>200.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>30</hatcherDaystoHatch>
+                <hatcherPawn>Titanoboa</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_EggFertBase">
+        <defName>EggArthropleuraFertilized</defName>
+        <label>arthropleura egg (fert.)</label>
+        <description>Fertilized arthropleura egg. If all goes well, it should hatch into an arthropleura larva. It can be eaten raw, but it tastes horrible.</description>
+        <graphicData>
+            <color>(152,176,148)</color>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>125.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>10</hatcherDaystoHatch>
+                <hatcherPawn>Arthropleura</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_EggFertBase">
+        <defName>EggTitanisFertilized</defName>
+        <label>titanis egg (fert.)</label>
+        <description>Fertilized titanis egg. If all goes well, it should hatch into a baby titanis. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <color>(200,200,200)</color>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>80.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>15</hatcherDaystoHatch>
+                <hatcherPawn>Titanis</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>DoedicurusShell</defName>
+        <label>doedicurus shell</label>
+        <description>A doedicurus' shell. It's remarkably durable but humans have no use for it. However, some collectors are still willing to pay a lot for one.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/megafauna_doedricusshell</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(177,161,132)</color>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>10</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>10</Mass>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>MammothTusk</defName>
+        <label>mammoth tusk</label>
+        <description>A mammoth's tusk. Very durable and valuable.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/megafauna_mammothtusk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <statBases>
+            <MarketValue>700</MarketValue>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>4</Mass>
+            <Flammability>0.5</Flammability>
+            <DeteriorationRate>0.3</DeteriorationRate>
+        </statBases>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>10</stackLimit>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>MammothWool</defName>
+        <label>mammoth wool</label>
+        <description>Wool from a woolly mammoth. Provides great protection from cold and looks mighty stylish.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Wool</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <color>(93,73,53)</color>
+        </graphicData>
+        <statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+			<StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.285</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>40</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+            <MarketValue>5.5</MarketValue>
+			<Mass>0.02</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+        <tickerType>Rare</tickerType>
+		<stackLimit>300</stackLimit>
+		<techLevel>Neolithic</techLevel>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(93,73,53)</color>
+            <commonality>0.15</commonality>
+			<statFactors>
+				<MaxHitPoints>1.3</MaxHitPoints>
+				<Beauty>1.3</Beauty>
+				<MoveSpeed>0.85</MoveSpeed>
+				<MarketValue>0.7</MarketValue>
+				<WorkToMake>1.3</WorkToMake>
+				<WorkToBuild>1.3</WorkToBuild>
+				<BedRestEffectiveness>1.05</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>0.68</ImmunityGainSpeedFactor>
+				<Mass>0.78</Mass>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BTextiles</li>
+		</thingCategories>
+    </ThingDef>
+  
+    <!-- ======================================================UPDATE#1====================================================== -->
+   
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>ElasmotheriumHorn</defName>
+        <label>elasmotherium horn</label>
+        <description>An elasmotherium's horn. Not nearly as deadly in human hands, but can still prove to be a relatively decent weapon.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/megafauna_elasmotheriumhorn</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <statBases>
+            <MarketValue>1500</MarketValue>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>4</Mass>
+            <Flammability>0.5</Flammability>
+            <DeteriorationRate>0.3</DeteriorationRate>
+        </statBases>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>10</stackLimit>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>ElasmotheriumWool</defName>
+        <label>elasmotherium wool</label>
+        <description>Wool from an elasmotherium. The most exclusive kind of wool imaginable. It's as great for cold weather as it is beautiful.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Wool</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <color>(60,50,41)</color>
+        </graphicData>
+        <statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+			<StuffPower_Armor_Blunt>1.2</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>0.79</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.27</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>45</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+            <MarketValue>8.5</MarketValue>
+			<Mass>0.02</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+        <tickerType>Rare</tickerType>
+		<stackLimit>300</stackLimit>
+		<techLevel>Neolithic</techLevel>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(60,50,41)</color>
+            <commonality>0.08</commonality>
+			<statFactors>
+				<MaxHitPoints>1.2</MaxHitPoints>
+				<Beauty>1.4</Beauty>
+				<MoveSpeed>0.85</MoveSpeed>
+				<MarketValue>0.7</MarketValue>
+				<WorkToMake>1.3</WorkToMake>
+				<WorkToBuild>1.3</WorkToBuild>
+				<BedRestEffectiveness>1.05</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1</ImmunityGainSpeedFactor>
+				<Mass>0.76</Mass>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BTextiles</li>
+		</thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>SmilodonFangs</defName>
+        <label>smilodon fangs</label>
+        <description>A dead smilodon's pair of canines. Fantastic trophy.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/megafauna_smilodonfangs</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <statBases>
+            <MarketValue>800</MarketValue>
+            <MaxHitPoints>120</MaxHitPoints>
+            <Mass>2</Mass>
+            <Flammability>0.5</Flammability>
+            <DeteriorationRate>0.3</DeteriorationRate>
+        </statBases>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>10</stackLimit>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>MegalocerosAntlers</defName>
+        <label>megaloceros antlers</label>
+        <description>A dead megaloceros' pair of antlers. Great as a decoration.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/megafauna_megalocerosantlers</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(177,161,132)</color>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>10</stackLimit>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>1250</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>3</Mass>
+        </statBases>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_EggFertBase">
+        <defName>EggMegalaniaFertilized</defName>
+        <label>megalania egg (fert.)</label>
+        <description>Fertilized megalania egg. If all goes well, it should hatch into a baby megalania. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <color>(200,200,200)</color>
+            <drawSize>1.9</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>90.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>17</hatcherDaystoHatch>
+                <hatcherPawn>Megalania</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+  
+    <!-- ======================================================UPDATE#2====================================================== -->
+  
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>SivatheriumMilk</defName>
+        <label>sivatherium milk</label>
+        <description>Very nutritious milk from a sivatherium.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Milk</texPath>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <MarketValue>7.5</MarketValue>
+            <Mass>0.055</Mass>
+            <MaxHitPoints>75</MaxHitPoints>
+            <Flammability>0.2</Flammability>
+            <Nutrition>0.3</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>16</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <foodType>AnimalProduct, Fluid</foodType>
+        </ingestible>
+        <thingCategories>
+            <li>AnimalProductRaw</li>
+        </thingCategories>
+    </ThingDef>
+  
+    <!-- ======================================================UPDATE#3====================================================== -->
+  
+    <ThingDef ParentName="SK_EggFertBase">
+        <defName>EggDinornisFertilized</defName>
+        <label>dinornis egg (fert.)</label>
+        <description>Fertilized dinornis egg. If all goes well, it should hatch into a baby dinornis bird. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <color>(200,200,200)</color>
+            <drawSize>1.75</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>70.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>14</hatcherDaystoHatch>
+                <hatcherPawn>Dinornis</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_EggFertBase">
+        <defName>EggQuinkanaFertilized</defName>
+        <label>quinkana egg (fert.)</label>
+        <description>Fertilized quinkana egg. If all goes well, it should hatch into a baby quinkana. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <color>(200,200,200)</color>
+            <drawSize>1.85</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>90.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>19</hatcherDaystoHatch>
+                <hatcherPawn>Quinkana</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+  
+    <!-- ======================================================UPDATE#5====================================================== -->
+
+    <ThingDef ParentName="SK_EggFertBase">
+        <defName>EggMegalochelysFertilized</defName>
+        <label>megalochelys egg (fert.)</label>
+        <description>Fertilized megalochelys egg. If all goes well, it should hatch into a baby megalochelys. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <color>(200,200,200)</color>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>160.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>35</hatcherDaystoHatch>
+                <hatcherPawn>Megalochelys</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_EggFertBase">
+        <defName>EggPalaeeudyptesFertilized</defName>
+        <label>palaeeudyptes egg (fert.)</label>
+        <description>Fertilized palaeeudyptes egg. If all goes well, it should hatch into a baby palaeeudyptes. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <color>(200,200,200)</color>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>130.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>15</hatcherDaystoHatch>
+                <hatcherPawn>Palaeeudyptes</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_EggFertBase">
+        <defName>EggGigantophisFertilized</defName>
+        <label>gigantophis egg (fert.)</label>
+        <description>Fertilized gigantophis egg. If all goes well, it should hatch into a baby gigantophis. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <color>(200,200,200)</color>
+            <drawSize>1.9</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>180.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>30</hatcherDaystoHatch>
+                <hatcherPawn>Gigantophis</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_EggFertBase">
+        <defName>EggPurussaurusFertilized</defName>
+        <label>purussaurus egg (fert.)</label>
+        <description>Fertilized purussaurus egg. If all goes well, it should hatch into a baby purussaurus. It can be eaten raw, but it's much better cooked.</description>
+        <graphicData>
+            <color>(200,200,200)</color>
+            <drawSize>2.1</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>200.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>25</hatcherDaystoHatch>
+                <hatcherPawn>Purussaurus</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_EggFertBase">
+        <defName>EggMeganeuraFertilized</defName>
+        <label>meganeura egg (fert.)</label>
+        <description>Fertilized meganeura egg. If all goes well, it should hatch into a meganeura larva. It can be eaten raw, but it tastes horrible.</description>
+        <graphicData>
+            <color>(152,176,148)</color>
+            <drawSize>0.6</drawSize>
+        </graphicData>
+        <statBases>
+            <MarketValue>70.0</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Hatcher">
+                <hatcherDaystoHatch>5</hatcherDaystoHatch>
+                <hatcherPawn>Meganeura</hatcherPawn>
+            </li>
+        </comps>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>JosephoartigasiaWool</defName>
+        <label>josephoartigasia wool</label>
+        <description>Wool from a josephoartigasia. Provides good insulation from both cold and heat. Very fluffy.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Wool</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <color>(135,112,80)</color>
+        </graphicData>
+        <statBases>
+			<DeteriorationRate>0</DeteriorationRate>
+			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>0.39</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.2</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>23</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+            <MarketValue>3.5</MarketValue>
+			<Mass>0.02</Mass>
+			<Bulk>0.02</Bulk>
+		</statBases>
+        <tickerType>Rare</tickerType>
+		<stackLimit>300</stackLimit>
+		<techLevel>Neolithic</techLevel>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(135,112,80)</color>
+            <commonality>0.17</commonality>
+			<statFactors>
+				<MaxHitPoints>1.1</MaxHitPoints>
+				<Beauty>0.9</Beauty>
+				<MoveSpeed>0.85</MoveSpeed>
+				<MarketValue>0.7</MarketValue>
+				<WorkToMake>1.0</WorkToMake>
+				<WorkToBuild>1.0</WorkToBuild>
+				<BedRestEffectiveness>0.89</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>0.08</ImmunityGainSpeedFactor>
+				<Mass>0.76</Mass>
+			</statFactors>
+		</stuffProps>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BTextiles</li>
+		</thingCategories>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>DeinotheriumTusk</defName>
+        <label>deinotherium tusk</label>
+        <description>A deinotherium's tusk. Very durable and valuable.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/megafauna_deinotheriumtusk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <statBases>
+            <MarketValue>600</MarketValue>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>4</Mass>
+            <Flammability>1</Flammability>
+            <DeteriorationRate>0.3</DeteriorationRate>
+        </statBases>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>10</stackLimit>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>ZygolophodonTusk</defName>
+        <label>zygolophodon tusk</label>
+        <description>A zygolophodon's enormous tusk. Extremely durable and valuable.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/megafauna_zygolophodontusk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Mass>7</Mass>
+            <Flammability>1</Flammability>
+            <DeteriorationRate>0.3</DeteriorationRate>
+        </statBases>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>10</stackLimit>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>PlatybelodonTusk</defName>
+        <label>platybelodon tusk</label>
+        <description>A platybelodon's tusk. Somewhat small, compared to those of other proboscidea.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/megafauna_platybelodontusk</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <equippedAngleOffset>-20</equippedAngleOffset>
+        <statBases>
+            <MarketValue>350</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Mass>2.5</Mass>
+            <Flammability>1</Flammability>
+            <DeteriorationRate>0.3</DeteriorationRate>
+        </statBases>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>10</stackLimit>
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>AnimalPart</li>
+        </thingSetMakerTags>
+    </ThingDef>
+</Defs>

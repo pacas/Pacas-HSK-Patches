@@ -7,6 +7,7 @@ This repository contains all my own and patched HSK mods. Each folder inside thi
 Это репозиторий содержит все мои самодельные и пропатченные для ХСК моды. В каждой папке внутри данного репозитория содержится папка самого мода, описание с FAQ, превью и иногда лицензия автора. Правильно распаковывайте моды и не трогайте папку __PREVIEW__!<br>
 ## Donate / Order a patch / Поддержать:<br>
 You can thank me for the work done and donate:<br>
+- [Boosty (almost Patreon)](https://boosty.to/pacas)
 - [Donate items on Steam](https://steamcommunity.com/tradeoffer/new/?partner=93729960&token=dgWxX8tO) (preferably TF2 keys)
 ___
 Вы можете поблагодарить меня за проделанную работу и пожертвовать:<br>
@@ -15,6 +16,7 @@ ___
 - Кружку чая на [QIWI](https://qiwi.com/n/PACAS)<br>
 
 Для пользователей из других стран:<br>
+- [Boosty](https://boosty.to/pacas)
 - [Подарить предметы в стиме](https://steamcommunity.com/tradeoffer/new/?partner=93729960&token=dgWxX8tO) (желательно ключики тф2)
 ## Download / Загрузка:<br>
 How to download only the mods you are interested in:<br>
@@ -40,6 +42,7 @@ How to download only the mods you are interested in:<br>
 | Gloomy Decor Pack | 1.3 | Original deco mod is dead, final release? |
 | Harvest Post Mortem | 1.3 / 1.4 | --- |
 | Maelstroms Metals | 1.3 / 1.4 | --- |
+| Megafauna | 1.3 / 1.4 | --- |
 | Nerve and Sleep Gas Shells | 1.3 | Original mod is dead, final release |
 | Paniel the Automata | 1.3 / 1.4 | --- |
 | Primitive Storage | 1.3 / 1.4 | --- |
@@ -47,6 +50,8 @@ How to download only the mods you are interested in:<br>
 | Revia Race | 1.3 / 1.4 | --- |
 | Rimfeller EasyMod | 1.3 / 1.4 | --- |
 | Seven Seraph Weapons | 1.3 / 1.4 | --- |
+| SRTS Expanded | 1.4 | --- |
+| SRTS Crimson Fleet | 1.4 | --- |
 | Tesla Coil | 1.3 | In progress |
 | Utility Columns | 1.3 / 1.4 | --- |
 <br>
