@@ -27,7 +27,7 @@ How to download only the mods you are interested in:<br>
 4) https://downgit.github.io/#/home<br>
 ## Content by version / Содержимое по версиям:<br>
 | Mod title | 1.3 | 1.4 |Notes |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | Advanced Shield Belts | :white_check_mark: | :white_check_mark: | --- |
 | Alpha Animals | :white_check_mark: | :white_check_mark: | --- |
 | Alpha Biomes | :white_check_mark: | :white_check_mark: | --- |
