@@ -26,34 +26,34 @@ How to download only the mods you are interested in:<br>
 3) https://download-directory.github.io<br>
 4) https://downgit.github.io/#/home<br>
 ## Content by version / Содержимое по версиям:<br>
-| Mod title | Versions | Notes |
+| Mod title | 1.3 | 1.4 |Notes |
 | --- | --- | --- |
-| Advanced Shield Belts | 1.3 / 1.4 | --- |
-| Alpha Animals | 1.3 / 1.4 | --- |
-| Alpha Biomes | 1.3 / 1.4 | --- |
-| Apex Rimworld Legends | 1.3 / 1.4 | --- |
-| Code Valkyrie | 1.3 | Waiting for the update |
-| Dinosauria | 1.3 / 1.4 | --- |
-| Eaves Rafters and Mad Walls | 1.3 / 1.4 | --- |
-| Edge of Descension Monoblades | 1.3 / 1.4 | --- |
-| Faction Void | 1.4 | --- |
-| Fireflies | 1.3 | Waiting for the update |
-| Frontier Developement Shields | 1.3 | Waiting for the update |
-| Gloomy Decor Pack | 1.3 | Original deco mod is dead, final release? |
-| Harvest Post Mortem | 1.3 / 1.4 | --- |
-| Maelstroms Metals | 1.3 / 1.4 | --- |
-| Megafauna | 1.3 / 1.4 | --- |
-| Nerve and Sleep Gas Shells | 1.3 | Original mod is dead, final release |
-| Paniel the Automata | 1.3 / 1.4 | --- |
-| Primitive Storage | 1.3 / 1.4 | --- |
-| Rabbie Race | 1.3 / 1.4 | --- |
-| Revia Race | 1.3 / 1.4 | --- |
-| Rimfeller EasyMod | 1.3 / 1.4 | --- |
-| Seven Seraph Weapons | 1.3 / 1.4 | --- |
-| SRTS Expanded | 1.4 | --- |
-| SRTS Crimson Fleet | 1.4 | --- |
-| Tesla Coil | 1.3 | In progress |
-| Utility Columns | 1.3 / 1.4 | --- |
+| Advanced Shield Belts | :white_check_mark: | :white_check_mark: | --- |
+| Alpha Animals | :white_check_mark: | :white_check_mark: | --- |
+| Alpha Biomes | :white_check_mark: | :white_check_mark: | --- |
+| Apex Rimworld Legends | :white_check_mark: | :white_check_mark: | --- |
+| Code Valkyrie | :white_check_mark: | :x: | Waiting for the update |
+| Dinosauria | :white_check_mark: | :white_check_mark: | --- |
+| Eaves Rafters and Mad Walls | :white_check_mark: | :white_check_mark: | --- |
+| Edge of Descension Monoblades | :white_check_mark: | :white_check_mark: | --- |
+| Faction Void | :x: | :white_check_mark: | --- |
+| Fireflies | :white_check_mark: | :x: | Waiting for the update |
+| Frontier Developement Shields | :white_check_mark: | :x: | Waiting for the update |
+| Gloomy Decor Pack | :white_check_mark: | :x: | Original deco mod is dead, final release? |
+| Harvest Post Mortem | :white_check_mark: | :white_check_mark: | --- |
+| Maelstroms Metals | :white_check_mark: | :white_check_mark: | --- |
+| Megafauna | :white_check_mark: | :white_check_mark: | --- |
+| Nerve and Sleep Gas Shells | :white_check_mark: | :x: | Original mod is dead, final release |
+| Paniel the Automata | :white_check_mark: | :white_check_mark: | --- |
+| Primitive Storage | :white_check_mark: | :white_check_mark: | --- |
+| Rabbie Race | :white_check_mark: | :white_check_mark: | --- |
+| Revia Race | :white_check_mark: | :white_check_mark: | --- |
+| Rimfeller EasyMod | :white_check_mark: | :white_check_mark: | --- |
+| Seven Seraph Weapons | :white_check_mark: | :white_check_mark: | --- |
+| SRTS Expanded | :x: | :white_check_mark: | --- |
+| SRTS Crimson Fleet | :x: | :white_check_mark: | --- |
+| Tesla Coil | :x: | :white_check_mark: | In progress |
+| Utility Columns | :white_check_mark: | :white_check_mark: | --- |
 <br>
 <img src="https://i.imgur.com/fdngbbh.png"><br>
 Rimworld is owned by Tynan Sylvester.<br>
