@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <XenotypeDef>
+        <defName>XenoRabbie</defName>
+        <label>Adapted Rabbie</label>
+        <description>Small in stature, but quick on their feet, xenobuns are excellent trackers, gatherers, and finders. Their nervous dispositions increase the liklihood of mental break and their smaller stature and demeanor slows them down in some tasks. Can be mistaken for true buns at first glace, but actually a xenohuman.\n\nCreated by genemanipulating xenoanthropologists generations ago to investigate bun culture, this geneline escaped into the wild. Similar enough to blend into bun societies, when present this xenospecies lack of viability with buns generally marks it as a separate social class. Their similarity to true buns made it difficult to track down and recover the geneline, and now they live either side-by-side with bun cultures (albiet in small numbers) or in their own families and gatherings.</description>
+        <descriptionShort>Small in stature, but quick on their feet, xenobuns are excellent trackers, gatherers, and finders. Their nervous dispositions increase the liklihood of mental break and their smaller stature and demeanor slows them down in some tasks. Can be mistaken for true buns at first glace, but actually a xenohuman.</descriptionShort>
+        <iconPath>Icon/RB_Icon</iconPath>
+        <inheritable>true</inheritable>
+        <!--<nameMaker>NamerPersonDirtmole_Male</nameMaker>
+            <nameMakerFemale>NamerPersonDirtmole_Female</nameMakerFemale>
+            <chanceToUseNameMaker>0</chanceToUseNameMaker> --><!--change when I figure out name maker-->
+        <genes>
+            <li>Ears_Rabbie</li>
+            <li>Rabbie_Tail</li>
+            <li>GermResist_Strong</li>
+            <li>MinTemp_TinyDecrease</li>
+            <li>MinorDarkVision</li>
+            <li>Learning_Better</li>
+            <li>MoveSpeed_ExtremelyQuick</li>
+            <li>Beard_NoBeardOnly</li>
+            <li>Immunity_Strong</li>
+            <li>VeryEfficientStomach</li>
+            <li>NakedSpeed</li>
+            <!--<li>ChemicalDependency_Planetarium</li> -->
+        </genes>
+    </XenotypeDef>
+  
+    <XenotypeDef>
+        <defName>BaseRabbie</defName>
+        <label>Basic Rabbie</label>
+        <description>Small in stature, but quick on their feet, xenobuns are excellent trackers, gatherers, and finders. Their nervous dispositions increase the liklihood of mental break and their smaller stature and demeanor slows them down in some tasks. Can be mistaken for true buns at first glace, but actually a xenohuman.\n\nCreated by genemanipulating xenoanthropologists generations ago to investigate bun culture, this geneline escaped into the wild. Similar enough to blend into bun societies, when present this xenospecies lack of viability with buns generally marks it as a separate social class. Their similarity to true buns made it difficult to track down and recover the geneline, and now they live either side-by-side with bun cultures (albiet in small numbers) or in their own families and gatherings.</description>
+        <descriptionShort>Small in stature, but quick on their feet, xenobuns are excellent trackers, gatherers, and finders. Their nervous dispositions increase the liklihood of mental break and their smaller stature and demeanor slows them down in some tasks. Can be mistaken for true buns at first glace, but actually a xenohuman.</descriptionShort>
+        <iconPath>Icon/RB_Icon</iconPath>
+        <inheritable>true</inheritable>
+        <!--<nameMaker>NamerPersonDirtmole_Male</nameMaker>
+            <nameMakerFemale>NamerPersonDirtmole_Female</nameMakerFemale>
+            <chanceToUseNameMaker>0</chanceToUseNameMaker> --><!--change when I figure out name maker-->
+        <genes>
+            <li>Ears_Rabbie</li>
+            <li>Rabbie_Tail</li>
+            <li>ToxWeakness_Minor</li>
+            <li>GermResist_Minor</li>
+            <li>MinTemp_TinyDecrease</li>
+            <li>MinorDarkVision</li>
+            <li>Learning_Better</li>
+            <li>MoveSpeed_ExtremelyQuick</li>
+            <li>Beard_NoBeardOnly</li>
+            <li>Immunity_Strong</li>
+            <li>VeryEfficientStomach</li>
+            <li>NakedSpeed</li>
+            <!--<li>ChemicalDependency_Planetarium</li> -->
+        </genes>
+    </XenotypeDef>
+</Defs>

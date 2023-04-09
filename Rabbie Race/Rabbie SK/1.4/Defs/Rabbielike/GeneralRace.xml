@@ -156,6 +156,7 @@
                             <colorChannel>skin</colorChannel>
                             <defaultOffset>Tail</defaultOffset>
                             <shaderType>Cutout</shaderType>
+							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Rabbie_Tail</geneRequirement>
                             <offsets>
                                 <south>
                                     <bodyTypes>
@@ -191,6 +192,7 @@
                             <shaderType>Cutout</shaderType>
                             <drawSize>1</drawSize>
                             <angle>0</angle>
+							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Rabbie</geneRequirement>
                             <offsets>
                                 <south>
                                     <bodyTypes>
@@ -226,6 +228,7 @@
                             <shaderType>Cutout</shaderType>
                             <drawSize>1</drawSize>
                             <angle>0</angle>
+							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Rabbie</geneRequirement>
                             <offsets>
                                 <south>
                                     <bodyTypes>
@@ -257,6 +260,7 @@
                             <shaderType>Cutout</shaderType>
                             <drawSize>1</drawSize>
                             <angle>0</angle>
+							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Rabbie</geneRequirement>
                             <offsets>
                                 <south>
                                     <bodyTypes>
@@ -292,6 +296,7 @@
                             <shaderType>Cutout</shaderType>
                             <drawSize>1</drawSize>
                             <angle>0</angle>
+							<geneRequirement MayRequire="Ludeon.RimWorld.Biotech">Ears_Rabbie</geneRequirement>
                             <offsets>
                                 <south>
                                     <bodyTypes>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef ParentName="GeneEarsBase">
+        <defName>Ears_Rabbie</defName>
+        <label>Rabbie ears</label>
+        <description>Rabbie ears.</description>
+        <iconPath>Rabbielike/Ear/RBEarLA_south</iconPath>
+        <biostatMet>0</biostatMet>
+        <randomChosen>true</randomChosen>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Rabbie_Tail</defName>
+        <label>Rabbie tail</label>
+        <description>Rabbie tail.</description>
+        <iconPath>Rabbielike/Tails/RBTail_north</iconPath>
+        <iconColor>(0.75, 0.75, 0.75)</iconColor>
+        <displayOrderInCategory>1000</displayOrderInCategory>
+        <displayCategory>Miscellaneous</displayCategory>
+        <exclusionTags>
+            <li>Tail</li>
+        </exclusionTags>
+        <biostatCpx>0</biostatCpx>
+        <randomChosen>true</randomChosen>
+    </GeneDef>
+</Defs>

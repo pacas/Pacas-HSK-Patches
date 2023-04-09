@@ -4,10 +4,16 @@
 
 	<PawnKindDef Name="RBBasePawnKind" Abstract="True">
 		<race>Rabbie</race>
-		<combatPower>30</combatPower>
+        <combatPower>40</combatPower>
 		<isFighter>false</isFighter>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
+        <xenotypeSet MayRequire="Ludeon.Rimworld.Biotech">
+            <xenotypeChances>
+                <XenoRabbie>0.5</XenoRabbie>
+                <BaseRabbie>0.5</BaseRabbie>
+            </xenotypeChances>
+        </xenotypeSet>
 	</PawnKindDef>
 
 
