@@ -363,6 +363,10 @@
             </relationSettings>
             <!--=============================================================================================================================-->
             <raceRestriction>
+                <xenotypeList MayRequire="ludeon.rimworld.biotech">
+                    <li>XenoRabbie</li>
+                    <li>BaseRabbie</li>
+                </xenotypeList>
                 <onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
                 <apparelList>
                     <li>RB_Apron</li>
