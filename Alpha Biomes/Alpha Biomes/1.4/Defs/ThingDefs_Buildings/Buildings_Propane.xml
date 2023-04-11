@@ -198,7 +198,6 @@
 		<defName>AB_PropaneHeater</defName>
 		<label>propane heater</label>
 		<description>A device that burns propane fuel and turns it into heat. The propane heater wastes a lot of fuel when attempting to reach temperatures too different from ambient ones, but it's quite fuel conservative if configured carefully.</description>
-		<thingClass>AlphaBiomes.Building_PropaneHeater</thingClass>
 		<graphicData>
 			<texPath>Things/Building/AB_PropaneHeater</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -251,7 +250,7 @@
 		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
 		<comps>
             <li Class="SK.CompFueled_Properties">
-				<operatingTemp>1000</operatingTemp>
+				<operatingTemp>700</operatingTemp>
 				<drawfirefuel>false</drawfirefuel>
 				<canAutoBurn>true</canAutoBurn>
 				<smokeDrawOffset>(0,-0.1,0.85)</smokeDrawOffset>
