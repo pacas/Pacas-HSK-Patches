@@ -102,6 +102,9 @@
         <tradeTags>
             <li>AnimalCommon</li>
         </tradeTags>
+        <butcherProducts>
+			<AA_BlueGel>10</AA_BlueGel>
+		</butcherProducts>
         <modExtensions>
             <li Class="AnimalBehaviours.AnimalStatExtension">
                 <statToAdd>
@@ -261,6 +264,9 @@
             <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
             <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
         </race>
+        <butcherProducts>
+			<AA_BlueGel>150</AA_BlueGel>
+		</butcherProducts>
         <tradeTags>
             <li>AnimalExotic</li>
             <li>AnimalAlpha</li>
