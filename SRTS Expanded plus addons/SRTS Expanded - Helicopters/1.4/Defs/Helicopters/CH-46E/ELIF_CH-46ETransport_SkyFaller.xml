@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--BASE CONTENT-->
+	<ThingDef Name="ELIFCH-46ETransport_SkyfallerBase" ParentName="SkyfallerBase" Abstract="True">
+		<graphicData>
+			<texPath>CH-46E/CH-46ETransport_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>194,197,199</color>
+			<drawSize>(15,27)</drawSize>
+			<drawOffsetNorth>(0,0,-1.5)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,1.5)</drawOffsetSouth>
+			<drawOffsetEast>(-1.5,0,0)</drawOffsetEast>
+			<drawOffsetWest>(1.5,0,0)</drawOffsetWest>
+		</graphicData>
+		<skyfaller>
+			<shadowSize>(3,7)</shadowSize>
+			<shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+		</skyfaller>
+	</ThingDef>
+	
+	<!--SKYFALLER-->
+	<ThingDef ParentName="ELIFCH-46ETransport_SkyfallerBase">
+		<defName>ELIFCH-46ETransport_Incoming</defName>
+		<label>CH-46E Sea Knight (Transport) incoming</label>
+		<thingClass>SRTS.SRTSIncoming</thingClass>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<anticipationSoundTicks>100</anticipationSoundTicks>
+			<anticipationSound>ELIF_HelicopterLanding</anticipationSound>
+			<motesPerCell>0</motesPerCell>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef ParentName="ELIFCH-46ETransport_SkyfallerBase">
+		<defName>ELIFCH-46ETransport_Leaving</defName>
+		<label>CH-46E Sea Knight (Transport) leaving</label>
+		<thingClass>SRTS.SRTSLeaving</thingClass>
+		<skyfaller>
+			<movementType>Accelerate</movementType>
+			<reversed>true</reversed>
+			<anticipationSound>ELIF_HelicopterLaunch</anticipationSound>
+			<anticipationSoundTicks>-10</anticipationSoundTicks>
+			<ticksToImpactRange>
+				<min>-40</min>
+				<max>-15</max>
+			</ticksToImpactRange>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef>
+		<defName>ELIFCH-46ETransport_Active</defName>
+		<label>CH-46E Sea Knight (Transport) active</label>
+		<category>Item</category>
+		<thingClass>ActiveDropPod</thingClass>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>CH-46E/CH-46ETransport_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>194,197,199</color>
+			<drawSize>(15,27)</drawSize>
+			<drawOffsetNorth>(0,0,-1.5)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,1.5)</drawOffsetSouth>
+			<drawOffsetEast>(-1.5,0,0)</drawOffsetEast>
+			<drawOffsetWest>(1.5,0,0)</drawOffsetWest>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+	</ThingDef>
+
+</Defs>

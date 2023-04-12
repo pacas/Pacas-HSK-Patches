@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ELIF_HelicopterBase">
+		<!-- defName must be unique, including with other mods so be creative -->
+		<defName>ELIFV-22Transport</defName>
+		<!-- name displayed ingame -->
+		<label>V-22 Osprey (Transport)</label>
+		<description><![CDATA[<size=14><b>DESCRIPTION:</b></size>
+The V-22 is a helicopter designed for medium to long range quick deploy huge capacity transport of goods and personnel, sacrificing a bit of range and uses large amounts of fuel.
+
+<size=14><b>BASIC STATS:</b></size>
+Health: 2000
+
+<size=14><b>LOGISTICS POTENTIAL:</b></size>
+Cargo Capacity: 2300kg
+Speed: 8
+Passenger Capacity: 1-18
+Fuel Per Tile: 25
+Fuel Capacity: 2250
+Round Trip Range: 45
+Full Range: 90
+Internal Power: 2500w
+
+<size=14><b>ATTACK POTENTIAL:</b></size>
+Bombing Run Capacity: n/a
+Precision Run Capacity: n/a
+Spread: n/a
+Distance between drops: n/a]]></description>
+		<!-- graphic class can be left alone, it's how the game pulls _north, _east, _south textures -->
+		<graphicData>
+			<texPath>V-22/V-22Transport_body</texPath>
+			<!-- how much the image is stretched out ingame -->
+			<color>157, 162, 166</color>
+			<drawSize>(15, 16)</drawSize>
+			<drawOffsetNorth>(0,0,-2)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,2)</drawOffsetSouth>
+			<drawOffsetEast>(-2,0,0)</drawOffsetEast>
+			<drawOffsetWest>(2,0,0)</drawOffsetWest>
+		</graphicData>
+		<!-- hitbox -->
+		<size>(3,11)</size>
+		<statBases>
+			<!-- hitpoints of the building -->
+			<MaxHitPoints>2000</MaxHitPoints>
+			<!-- how much work it costs to build, which is more like a base type, as more properties affect it, resulting in a different final number for construction -->
+			<WorkToBuild>22000</WorkToBuild>
+			<!-- how much it weighs for a pawn to carry. My guess is they are light in this mod so pawns entering a map will throw it in their inventory rather than lose it, but i can check that later. -->
+			<Flammability>0.3</Flammability>
+			<Mass>20</Mass>
+			<!-- beauty on overlap, and for pawns -->
+			<Beauty>10</Beauty>
+		</statBases>
+		<!-- Costs to build, the names are the defNames of items -->
+		<costList>
+            <Plasteel>500</Plasteel>
+            <AluminiumBar>500</AluminiumBar>
+            <TitaniumBar>300</TitaniumBar>
+            <Titanium>100</Titanium>
+            <ReinforcedGlass>50</ReinforcedGlass>
+            <Plastic>200</Plastic>
+            <ComponentIndustrial>25</ComponentIndustrial>
+            <ComponentSpacer>10</ComponentSpacer>
+            <Mechanism>15</Mechanism>
+            <AdvMechanism>8</AdvMechanism>
+            <Electronics>15</Electronics>
+            <ElectronicComponents>10</ElectronicComponents>
+            <Microchips>3</Microchips>
+        </costList>
+		<comps>
+			<li Class="ELIF_RotorFramework.Components.CompProps_Rotor">
+				<rotationMaxSpeed>3.5</rotationMaxSpeed>
+				<rotationAcceleration>0.1</rotationAcceleration>
+				<rotationDeceleration>0.25</rotationDeceleration>
+				<indentTick>75</indentTick>
+				<rotors>
+					<li>V-22TransportRight_toprotor</li>
+					<li>V-22TransportLeft_toprotor</li>
+				</rotors>
+			</li>
+			<li Class="CompProperties_Transporter">
+				<restEffectiveness>0.75</restEffectiveness>
+				<massCapacity>2300</massCapacity>
+			</li>
+			<!-- required for SRTS like functionality (ie. space ship reusable drop pod -->
+			<li Class="SRTS.CompProperties_LaunchableSRTS">
+				<travelSpeed>8</travelSpeed>
+				<fuelPerTile>25</fuelPerTile>
+				<minPassengers>1</minPassengers>
+				<maxPassengers>18</maxPassengers>
+				<spaceFaring>false</spaceFaring>
+				<shuttleBayLanding>false</shuttleBayLanding>
+			</li>
+			<!-- comp for allowing to fuel the srts, don't remove -->
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>2250</fuelCapacity>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<initialConfigurableTargetFuelLevel>100</initialConfigurableTargetFuelLevel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>1</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-2500</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+		<!-- research requirements -->
+		<researchPrerequisites>
+			<li>Research_V-22_Transport</li>
+		</researchPrerequisites>
+		<!-- construction skill requirements -->
+		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+		<!-- UI scaling -->
+		<uiIconScale>0.75</uiIconScale>
+		<killedLeavings>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</killedLeavings>
+	</ThingDef>
+</Defs>

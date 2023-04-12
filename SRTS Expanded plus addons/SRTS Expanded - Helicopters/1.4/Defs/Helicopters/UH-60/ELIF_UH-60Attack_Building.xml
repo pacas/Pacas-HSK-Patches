@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ELIF_HelicopterBase">
+		<!-- defName must be unique, including with other mods so be creative -->
+		<defName>ELIFUH-60Attack</defName>
+		<!-- name displayed ingame -->
+		<label>MH-60L DAP Blackhawk (Attack)</label>
+		<description><![CDATA[<size=14><b>DESCRIPTION:</b></size>
+The MH-60L DAP (Direct Action Penetrator) is a helicopter designed for medium to long range attack runs, sacrificing storage, passenger and fuel capacity to maintain the same speed of its counterpart.
+
+<size=14><b>BASIC STATS:</b></size>
+Health: 1000
+
+<size=14><b>LOGISTICS POTENTIAL:</b></size>
+Cargo Capacity: 800kg
+Speed: 6
+Passenger Capacity: 1-4
+Fuel Per Tile: 9
+Fuel Capacity: 675
+Round Trip Range: 37.5
+Full Range: 75
+Internal Power: 600w
+
+<size=14><b>ATTACK POTENTIAL:</b></size>
+Bombing Run Capacity: 4
+Precision Run Capacity: 3
+Spread: 5
+Distance between drops: 4]]></description>
+		<!-- graphic class can be left alone, it's how the game pulls _north, _east, _south textures -->
+		<graphicData>
+			<texPath>UH-60/UH-60Attack_body</texPath>
+			<!-- how much the image is stretched out ingame -->
+			<color>100,100,100</color>
+			<drawSize>(5,15)</drawSize>
+			<drawOffsetNorth>(0,0,-3)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,3)</drawOffsetSouth>
+			<drawOffsetEast>(-3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(3,0,0)</drawOffsetWest>
+		</graphicData>
+		<!-- hitbox -->
+		<size>(3,7)</size>
+		<statBases>
+			<!-- hitpoints of the building -->
+			<MaxHitPoints>1000</MaxHitPoints>
+			<!-- how much work it costs to build, which is more like a base type, as more properties affect it, resulting in a different final number for construction -->
+			<WorkToBuild>16000</WorkToBuild>
+			<!-- how much it weighs for a pawn to carry. My guess is they are light in this mod so pawns entering a map will throw it in their inventory rather than lose it, but i can check that later. -->
+			<Flammability>0.3</Flammability>
+			<Mass>20</Mass>
+			<!-- beauty on overlap, and for pawns -->
+			<Beauty>10</Beauty>
+		</statBases>
+		<!-- Costs to build, the names are the defNames of items -->
+		<costList>
+            <Plasteel>230</Plasteel>
+            <TitaniumBar>300</TitaniumBar>
+            <AluminiumBar>400</AluminiumBar>
+            <ReinforcedGlass>50</ReinforcedGlass>
+            <Plastic>70</Plastic>
+            <ComponentIndustrial>20</ComponentIndustrial>
+            <ComponentSpacer>8</ComponentSpacer>
+            <Mechanism>10</Mechanism>
+            <AdvMechanism>5</AdvMechanism>
+            <Electronics>10</Electronics>
+            <ElectronicComponents>5</ElectronicComponents>
+            <Microchips>1</Microchips>
+        </costList>
+		<comps>
+			<li Class="ELIF_RotorFramework.Components.CompProps_Rotor">
+				<rotationMaxSpeed>3.5</rotationMaxSpeed>
+				<rotationAcceleration>0.1</rotationAcceleration>
+				<rotationDeceleration>0.25</rotationDeceleration>
+				<indentTick>75</indentTick>
+				<rotors>
+					<li>UH-60Attack_toprotor</li>
+					<li>UH-60Attack_tailrotor</li>
+				</rotors>
+			</li>
+			<li Class="CompProperties_Transporter">
+				<restEffectiveness>0.75</restEffectiveness>
+				<massCapacity>800</massCapacity>
+			</li>
+			<!-- required for SRTS like functionality (ie. space ship reusable drop pod -->
+			<li Class="SRTS.CompProperties_LaunchableSRTS">
+				<travelSpeed>6</travelSpeed>
+				<fuelPerTile>9</fuelPerTile>
+				<minPassengers>1</minPassengers>
+				<maxPassengers>4</maxPassengers>
+				<spaceFaring>false</spaceFaring>
+				<shuttleBayLanding>false</shuttleBayLanding>
+			</li>
+			<!-- include this comp if you want it to be able to carpet bomb, remove this comp if you dont. Be aware you must also add a bomber skydropper def set -->
+			<li Class="SRTS.CompProperties_BombsAway">
+				<!-- num dropped per run -->
+				<numberBombs>4</numberBombs>
+				<!-- number of bombs dropped in precise drop -->
+				<precisionBombingNumBombs>3</precisionBombingNumBombs>
+				<!-- how many cells out from the center the bombs may drop -->
+				<radiusOfDrop>5</radiusOfDrop>
+				<!-- How quickly the ship flies over. Default 1 -->
+				<speed>0.75</speed>
+				<!-- Distance in cells from when each bomb is dropped -->
+				<distanceBetweenDrops>4</distanceBetweenDrops>
+			</li>
+			<!-- comp for allowing to fuel the srts, don't remove -->
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>675</fuelCapacity>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<initialConfigurableTargetFuelLevel>100</initialConfigurableTargetFuelLevel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>1</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-600</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+		<!-- research requirements -->
+		<researchPrerequisites>
+			<li>Research_UH-60_Attack</li>
+		</researchPrerequisites>
+		<!-- construction skill requirements -->
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		<!-- UI scaling -->
+		<uiIconScale>0.75</uiIconScale>
+		<killedLeavings>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</killedLeavings>
+	</ThingDef>
+</Defs>

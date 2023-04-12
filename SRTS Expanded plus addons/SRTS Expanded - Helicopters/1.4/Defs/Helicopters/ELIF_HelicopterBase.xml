@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="ELIF_HelicopterBase" ParentName="NECShipBase" Abstract="True">
+		<graphicData>
+			<shaderType>CutoutComplex</shaderType>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable"/>
+		</comps>
+        <altitudeLayer>Blueprint</altitudeLayer>
+	</ThingDef>
+</Defs>

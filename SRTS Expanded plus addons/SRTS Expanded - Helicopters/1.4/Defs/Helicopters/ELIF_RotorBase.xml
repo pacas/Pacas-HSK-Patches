@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ELIF_RotorFramework.Defs.RotorDef Name="ELIF_RotorBase" Abstract="True">
+		<!--Determines whether the rotor should be facing forward or to the side-->
+		<isVertical>false</isVertical>
+		<!--Determines whether youre using a texture for front rotor or tail rotor "Value is ignored if isVertical is false"-->
+		<isTail>false</isTail>
+		<!--Determines blaze size, for example a value of 2 would result to a 2x2 rotor-->
+		<bladeSize>1.0</bladeSize>
+		<!--Determines the vertical "north & south" offset of the rotor-->
+		<verticalOffset>0.0</verticalOffset>
+		<!--Determines the horizontal "east & west" offset of the rotor-->
+		<horizontalOffset>0.0</horizontalOffset>
+		<!--Determines if the rotor is above or below another rotor-->
+		<drawLayerOffset>0.3</drawLayerOffset>
+		<!--Determines whether the rotor rotates clockwise or anti clockwise-->
+		<antiClockwise>false</antiClockwise>
+		<!--Determines what def mote it will use to generate dust-->
+        <dust>Elif_Dust_toprotor_medium</dust>
+		<!--ESSENTIAL RIMWORLD STUFF, DO NOT REMOVE-->
+		<drawerType>RealtimeOnly</drawerType>
+	</ELIF_RotorFramework.Defs.RotorDef>
+	
+</Defs>

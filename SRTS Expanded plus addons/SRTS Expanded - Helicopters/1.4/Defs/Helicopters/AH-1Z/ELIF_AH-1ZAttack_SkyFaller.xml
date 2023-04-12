@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--BASE CONTENT-->
+	<ThingDef Name="ELIFAH-1ZVAttack_SkyfallerBase" ParentName="SkyfallerBase" Abstract="True">
+		<graphicData>
+			<texPath>AH-1Z/AH-1ZAttack_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>189,189,189</color>
+			<drawSize>(15,17)</drawSize>
+			<drawOffsetNorth>(0,0,-3)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,3)</drawOffsetSouth>
+			<drawOffsetEast>(-3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(3,0,0)</drawOffsetWest>
+		</graphicData>
+		<skyfaller>
+			<shadowSize>(2,6)</shadowSize>
+			<shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+		</skyfaller>
+	</ThingDef>
+	
+	<!--SKYFALLER-->
+	<ThingDef ParentName="ELIFAH-1ZVAttack_SkyfallerBase">
+		<defName>ELIFAH-1ZVAttack_Incoming</defName>
+		<label>AH-1Z Viper (Attack) incoming</label>
+		<thingClass>SRTS.SRTSIncoming</thingClass>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<anticipationSoundTicks>100</anticipationSoundTicks>
+			<anticipationSound>ELIF_HelicopterLanding</anticipationSound>
+			<motesPerCell>0</motesPerCell>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef ParentName="ELIFAH-1ZVAttack_SkyfallerBase">
+		<defName>ELIFAH-1ZVAttack_Leaving</defName>
+		<label>AH-1Z Viper (Attack) leaving</label>
+		<thingClass>SRTS.SRTSLeaving</thingClass>
+		<skyfaller>
+			<movementType>Accelerate</movementType>
+			<reversed>true</reversed>
+			<anticipationSound>ELIF_HelicopterLaunch</anticipationSound>
+			<anticipationSoundTicks>-10</anticipationSoundTicks>
+			<ticksToImpactRange>
+				<min>-40</min>
+				<max>-15</max>
+			</ticksToImpactRange>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef>
+		<defName>ELIFAH-1ZVAttack_Active</defName>
+		<label>AH-1Z Viper (Attack) active</label>
+		<category>Item</category>
+		<thingClass>ActiveDropPod</thingClass>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>AH-1Z/AH-1ZAttack_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>189,189,189</color>
+			<drawSize>(15,17)</drawSize>
+			<drawOffsetNorth>(0,0,-3)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,3)</drawOffsetSouth>
+			<drawOffsetEast>(-3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(3,0,0)</drawOffsetWest>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+	</ThingDef>
+	
+	<!--SKYFALLER_BOMBER-->
+	<ThingDef ParentName="BomberSkyfallerBase">
+		<defName>ELIFAH-1ZVAttack_BomberRun</defName>
+		<label>AH-1Z Viper (Attack) Bombing</label>
+		<thingClass>SRTS.SRTSBombing</thingClass>
+		<graphicData>
+			<texPath>AH-1Z/AH-1ZAttack_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>189,189,189</color>
+			<drawSize>(15,17)</drawSize>
+			<drawOffsetNorth>(0,0,-3)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,3)</drawOffsetSouth>
+			<drawOffsetEast>(-3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(3,0,0)</drawOffsetWest>
+		</graphicData>
+		<skyfaller>
+			<speed>0.85</speed>
+			<movementType>ConstantSpeed</movementType>
+			<shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+			<shadowSize>(2,6)</shadowSize>
+			<anticipationSound>ELIF_HelicopterLanding</anticipationSound>
+			<anticipationSoundTicks>100</anticipationSoundTicks>
+			<motesPerCell>0</motesPerCell>
+		</skyfaller>
+	</ThingDef>
+</Defs>

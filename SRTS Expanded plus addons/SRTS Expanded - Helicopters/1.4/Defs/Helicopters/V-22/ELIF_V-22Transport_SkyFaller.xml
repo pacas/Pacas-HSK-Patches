@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--BASE CONTENT-->
+	<ThingDef Name="ELIFV-22Transport_SkyfallerBase" ParentName="SkyfallerBase" Abstract="True">
+		<graphicData>
+			<texPath>V-22/V-22Transport_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>157, 162, 166</color>
+			<drawSize>(24,24)</drawSize>
+			<drawOffsetNorth>(0,0,-2)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,2)</drawOffsetSouth>
+			<drawOffsetEast>(-2,0,0)</drawOffsetEast>
+			<drawOffsetWest>(2,0,0)</drawOffsetWest>
+		</graphicData>
+		<skyfaller>
+			<shadowSize>(3,7)</shadowSize>
+			<shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+		</skyfaller>
+	</ThingDef>
+	
+	<!--SKYFALLER-->
+	<ThingDef ParentName="ELIFV-22Transport_SkyfallerBase">
+		<defName>ELIFV-22Transport_Incoming</defName>
+		<label>V-22 Osprey (Transport) incoming</label>
+		<thingClass>SRTS.SRTSIncoming</thingClass>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<anticipationSoundTicks>100</anticipationSoundTicks>
+			<anticipationSound>ELIF_HelicopterLanding</anticipationSound>
+			<motesPerCell>0</motesPerCell>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef ParentName="ELIFV-22Transport_SkyfallerBase">
+		<defName>ELIFV-22Transport_Leaving</defName>
+		<label>V-22 Osprey (Transport) leaving</label>
+		<thingClass>SRTS.SRTSLeaving</thingClass>
+		<skyfaller>
+			<movementType>Accelerate</movementType>
+			<reversed>true</reversed>
+			<anticipationSound>ELIF_HelicopterLaunch</anticipationSound>
+			<anticipationSoundTicks>-10</anticipationSoundTicks>
+			<ticksToImpactRange>
+				<min>-40</min>
+				<max>-15</max>
+			</ticksToImpactRange>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef>
+		<defName>ELIFV-22Transport_Active</defName>
+		<label>V-22 Osprey (Transport) active</label>
+		<category>Item</category>
+		<thingClass>ActiveDropPod</thingClass>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>V-22/V-22Transport_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>157, 162, 166</color>
+			<drawSize>(24,24)</drawSize>
+			<drawOffsetNorth>(0,0,-2)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,2)</drawOffsetSouth>
+			<drawOffsetEast>(-2,0,0)</drawOffsetEast>
+			<drawOffsetWest>(2,0,0)</drawOffsetWest>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+	</ThingDef>
+
+</Defs>

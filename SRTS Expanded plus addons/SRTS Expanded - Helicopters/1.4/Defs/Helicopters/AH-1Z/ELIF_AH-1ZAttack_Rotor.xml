@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ELIF_RotorFramework.Defs.RotorDef ParentName="ELIF_RotorBase">
+		<defName>AH-1ZAttack_toprotor</defName>
+		<horizontalOffset>0</horizontalOffset>
+		<verticalOffset>-1.5</verticalOffset>
+		<isVertical>false</isVertical>
+		<bladeSize>11</bladeSize>
+		<isTail>false</isTail>
+		<graphicData>
+			<texPath>AH-1Z/AH-1ZAttack_toprotor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>189,189,189</color>
+		</graphicData>
+	</ELIF_RotorFramework.Defs.RotorDef>
+	
+	<ELIF_RotorFramework.Defs.RotorDef ParentName="ELIF_RotorBase">
+		<defName>AH-1ZAttack_tailrotor</defName>
+		<horizontalOffset>-0.32</horizontalOffset>
+		<verticalOffset>-8.85</verticalOffset>
+		<isVertical>true</isVertical>
+        <dust>Elif_Dust_tail</dust>
+		<bladeSize>2</bladeSize>
+		<isTail>true</isTail>
+		<graphicData>
+			<texPath>MH6/MH-6Transport_tailrotor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>189,189,189</color>
+		</graphicData>
+	</ELIF_RotorFramework.Defs.RotorDef>
+	
+</Defs>

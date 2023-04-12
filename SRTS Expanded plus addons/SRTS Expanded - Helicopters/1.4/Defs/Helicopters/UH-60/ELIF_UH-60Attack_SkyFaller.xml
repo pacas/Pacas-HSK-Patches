@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--BASE CONTENT-->
+	<ThingDef Name="ELIFUH-60Attack_SkyfallerBase" ParentName="SkyfallerBase" Abstract="True">
+		<graphicData>
+			<texPath>UH-60/UH-60Attack_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>100,100,100</color>
+			<drawSize>(17,23)</drawSize>
+			<drawOffsetNorth>(0,0,-3)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,3)</drawOffsetSouth>
+			<drawOffsetEast>(-3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(3,0,0)</drawOffsetWest>
+		</graphicData>
+		<skyfaller>
+			<shadowSize>(3,7)</shadowSize>
+			<shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+		</skyfaller>
+	</ThingDef>
+	
+	<!--SKYFALLER-->
+	<ThingDef ParentName="ELIFUH-60Attack_SkyfallerBase">
+		<defName>ELIFUH-60Attack_Incoming</defName>
+		<label>MH-60L DAP Blackhawk (Attack) incoming</label>
+		<thingClass>SRTS.SRTSIncoming</thingClass>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<anticipationSoundTicks>100</anticipationSoundTicks>
+			<anticipationSound>ELIF_HelicopterLanding</anticipationSound>
+			<motesPerCell>0</motesPerCell>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef ParentName="ELIFUH-60Attack_SkyfallerBase">
+		<defName>ELIFUH-60Attack_Leaving</defName>
+		<label>MH-60L DAP Blackhawk (Attack) leaving</label>
+		<thingClass>SRTS.SRTSLeaving</thingClass>
+		<skyfaller>
+			<movementType>Accelerate</movementType>
+			<reversed>true</reversed>
+			<anticipationSound>ELIF_HelicopterLaunch</anticipationSound>
+			<anticipationSoundTicks>-10</anticipationSoundTicks>
+			<ticksToImpactRange>
+				<min>-40</min>
+				<max>-15</max>
+			</ticksToImpactRange>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef>
+		<defName>ELIFUH-60Attack_Active</defName>
+		<label>MH-60L DAP Blackhawk (Attack) active</label>
+		<category>Item</category>
+		<thingClass>ActiveDropPod</thingClass>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>UH-60/UH-60Attack_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>100,100,100</color>
+			<drawSize>(17,23)</drawSize>
+			<drawOffsetNorth>(0,0,-3)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,3)</drawOffsetSouth>
+			<drawOffsetEast>(-3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(3,0,0)</drawOffsetWest>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+	</ThingDef>
+	
+	<!--SKYFALLER_BOMBER-->
+	<ThingDef ParentName="BomberSkyfallerBase">
+		<defName>ELIFUH-60Attack_BomberRun</defName>
+		<label>MH-60L DAP Blackhawk (Attack) Bombing</label>
+		<thingClass>SRTS.SRTSBombing</thingClass>
+		<graphicData>
+			<texPath>UH-60/UH-60Attack_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>100,100,100</color>
+			<drawSize>(17,23)</drawSize>
+			<drawOffsetNorth>(0,0,-3)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,3)</drawOffsetSouth>
+			<drawOffsetEast>(-3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(3,0,0)</drawOffsetWest>
+		</graphicData>
+		<skyfaller>
+			<speed>0.85</speed>
+			<movementType>ConstantSpeed</movementType>
+			<shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+			<shadowSize>(3,7)</shadowSize>
+			<anticipationSound>ELIF_HelicopterLanding</anticipationSound>
+			<anticipationSoundTicks>100</anticipationSoundTicks>
+			<motesPerCell>0</motesPerCell>
+		</skyfaller>
+	</ThingDef>
+</Defs>

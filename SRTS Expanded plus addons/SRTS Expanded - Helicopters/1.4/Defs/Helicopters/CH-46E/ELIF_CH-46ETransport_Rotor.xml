@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ELIF_RotorFramework.Defs.RotorDef ParentName="ELIF_RotorBase">
+		<defName>CH-46ETransportFront_toprotor</defName>
+		<horizontalOffset>0</horizontalOffset>
+		<verticalOffset>3.75</verticalOffset>
+        <dust>Elif_Dust_toprotor_large</dust>
+		<isVertical>false</isVertical>
+		<bladeSize>15</bladeSize>
+		<isTail>false</isTail>
+		<graphicData>
+			<texPath>CH-46E/CH-46ETransport_toprotor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>194,197,199</color>
+		</graphicData>
+	</ELIF_RotorFramework.Defs.RotorDef>
+	
+	<ELIF_RotorFramework.Defs.RotorDef ParentName="ELIF_RotorBase">
+		<defName>CH-46ETransportBack_toprotor</defName>
+		<drawLayerOffset>0.3</drawLayerOffset>
+		<horizontalOffset>0</horizontalOffset>
+		<verticalOffset>-6.55</verticalOffset>
+        <dust>Elif_Dust_toprotor_large</dust>
+		<isVertical>false</isVertical>
+		<bladeSize>15</bladeSize>
+		<isTail>false</isTail>
+		<graphicData>
+			<texPath>CH-46E/CH-46ETransport_toprotor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>194,197,199</color>
+		</graphicData>
+	</ELIF_RotorFramework.Defs.RotorDef>
+	
+</Defs>

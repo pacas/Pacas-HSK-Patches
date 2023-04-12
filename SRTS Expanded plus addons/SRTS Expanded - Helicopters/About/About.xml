@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<packageId>ELIF.SRTS.Helicopters</packageId>
+	<name>SRTS Expanded - Helicopters</name>
+	<author>ELIF</author>
+	<description>Ever wanted to fly through Rimworld with style and practicality? Well helicopters are here to bring you just that, helicopters have always been the king when it comes to aeronautical utility, the ability for helicopters to land without a runway is incredibly useful, especially when secure spaces are of a premium due to pesky raiders trying to steal your tables, it also allows you to launch attack operations without needing an entire airfield to land on, which is great for retaliation and retaking your stolen tables.
+	</description>	
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>smashphil.srtsexpanded</packageId>
+			<displayName>SRTS Expanded</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2878587061</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>smashphil.neceros.srtsexpanded</li>
+	</loadAfter>
+</ModMetaData>

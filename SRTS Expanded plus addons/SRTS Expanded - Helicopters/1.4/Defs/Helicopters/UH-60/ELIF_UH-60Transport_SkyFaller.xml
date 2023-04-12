@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--BASE CONTENT-->
+	<ThingDef Name="ELIFUH-60Transport_SkyfallerBase" ParentName="SkyfallerBase" Abstract="True">
+		<graphicData>
+			<texPath>UH-60/UH-60Transport_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>100,100,100</color>
+			<drawSize>(17,23)</drawSize>
+			<drawOffsetNorth>(0,0,-3)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,3)</drawOffsetSouth>
+			<drawOffsetEast>(-3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(3,0,0)</drawOffsetWest>
+		</graphicData>
+		<skyfaller>
+			<shadowSize>(3,7)</shadowSize>
+			<shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+		</skyfaller>
+	</ThingDef>
+	
+	<!--SKYFALLER-->
+	<ThingDef ParentName="ELIFUH-60Transport_SkyfallerBase">
+		<defName>ELIFUH-60Transport_Incoming</defName>
+		<label>UH-60 Blackhawk (Transport) incoming</label>
+		<thingClass>SRTS.SRTSIncoming</thingClass>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<anticipationSoundTicks>100</anticipationSoundTicks>
+			<anticipationSound>ELIF_HelicopterLanding</anticipationSound>
+			<motesPerCell>0</motesPerCell>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef ParentName="ELIFUH-60Transport_SkyfallerBase">
+		<defName>ELIFUH-60Transport_Leaving</defName>
+		<label>UH-60 Blackhawk (Transport) leaving</label>
+		<thingClass>SRTS.SRTSLeaving</thingClass>
+		<skyfaller>
+			<movementType>Accelerate</movementType>
+			<reversed>true</reversed>
+			<anticipationSound>ELIF_HelicopterLaunch</anticipationSound>
+			<anticipationSoundTicks>-10</anticipationSoundTicks>
+			<ticksToImpactRange>
+				<min>-40</min>
+				<max>-15</max>
+			</ticksToImpactRange>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef>
+		<defName>ELIFUH-60Transport_Active</defName>
+		<label>UH-60 Blackhawk (Transport) active</label>
+		<category>Item</category>
+		<thingClass>ActiveDropPod</thingClass>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>UH-60/UH-60Transport_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>100,100,100</color>
+			<drawSize>(17,23)</drawSize>
+			<drawOffsetNorth>(0,0,-3)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,3)</drawOffsetSouth>
+			<drawOffsetEast>(-3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(3,0,0)</drawOffsetWest>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+	</ThingDef>
+
+</Defs>

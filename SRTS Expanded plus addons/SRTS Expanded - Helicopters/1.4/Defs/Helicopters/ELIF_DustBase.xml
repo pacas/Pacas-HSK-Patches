@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MoteBase">
+		<defName>Elif_Dust_toprotor_small</defName>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+			<solidTime>1.75</solidTime>
+			<fadeOutTime>2.5</fadeOutTime>
+			<growthRate>4</growthRate>
+		</mote>
+		<graphicData>
+			<texPath>Effects/Elif_Dust</texPath>
+			<color>(0.909,0.871,0.847,0.45)</color>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="MoteBase">
+		<defName>Elif_Dust_toprotor_medium</defName>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+			<solidTime>2</solidTime>
+			<fadeOutTime>2.75</fadeOutTime>
+			<growthRate>4.5</growthRate>
+		</mote>
+		<graphicData>
+			<texPath>Effects/Elif_Dust</texPath>
+			<color>(0.909,0.871,0.847,0.5)</color>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="MoteBase">
+		<defName>Elif_Dust_toprotor_large</defName>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+			<solidTime>2</solidTime>
+			<fadeOutTime>2.75</fadeOutTime>
+			<growthRate>5</growthRate>
+		</mote>
+		<graphicData>
+			<texPath>Effects/Elif_Dust</texPath>
+			<color>(0.909,0.871,0.847,0.55)</color>
+		</graphicData>
+	</ThingDef>
+	
+	<ThingDef ParentName="MoteBase">
+		<defName>Elif_Dust_tail</defName>
+		<altitudeLayer>MoteLow</altitudeLayer>
+		<mote>
+			<solidTime>1.5</solidTime>
+			<fadeOutTime>2</fadeOutTime>
+			<growthRate>3.5</growthRate>
+		</mote>
+		<graphicData>
+			<texPath>Effects/Elif_Dust</texPath>
+			<color>(0.909,0.871,0.847,0.35)</color>
+		</graphicData>
+	</ThingDef>
+</Defs>

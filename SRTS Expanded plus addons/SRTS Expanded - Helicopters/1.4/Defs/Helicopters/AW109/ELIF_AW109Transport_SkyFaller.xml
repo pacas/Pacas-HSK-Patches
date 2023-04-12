@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--BASE CONTENT-->
+	<ThingDef Name="AW109VTransport_SkyfallerBase" ParentName="SkyfallerBase" Abstract="True">
+		<graphicData>
+			<texPath>AW109/AW109Transport_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>140,140,140</color>
+			<drawSize>(13,19)</drawSize>
+			<drawOffsetNorth>(0,0,-3)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,3)</drawOffsetSouth>
+			<drawOffsetEast>(-3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(3,0,0)</drawOffsetWest>
+		</graphicData>
+		<skyfaller>
+			<shadowSize>(2,5)</shadowSize>
+			<shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+		</skyfaller>
+	</ThingDef>
+	
+	<!--SKYFALLER-->
+	<ThingDef ParentName="AW109VTransport_SkyfallerBase">
+		<defName>ELIFAW109VTransport_Incoming</defName>
+		<label>AW109 Agusta Westland (Transport) incoming</label>
+		<thingClass>SRTS.SRTSIncoming</thingClass>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<anticipationSoundTicks>100</anticipationSoundTicks>
+			<anticipationSound>ELIF_HelicopterLanding</anticipationSound>
+			<motesPerCell>0</motesPerCell>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef ParentName="AW109VTransport_SkyfallerBase">
+		<defName>ELIFAW109VTransport_Leaving</defName>
+		<label>AW109 Agusta Westland (Transport) leaving</label>
+		<thingClass>SRTS.SRTSLeaving</thingClass>
+		<skyfaller>
+			<movementType>Accelerate</movementType>
+			<reversed>true</reversed>
+			<anticipationSound>ELIF_HelicopterLaunch</anticipationSound>
+			<anticipationSoundTicks>-10</anticipationSoundTicks>
+			<ticksToImpactRange>
+				<min>-40</min>
+				<max>-15</max>
+			</ticksToImpactRange>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef>
+		<defName>ELIFAW109VTransport_Active</defName>
+		<label>AW109 Agusta Westland (Transport) active</label>
+		<category>Item</category>
+		<thingClass>ActiveDropPod</thingClass>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>AW109/AW109Transport_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>140,140,140</color>
+			<drawSize>(13,19)</drawSize>
+			<drawOffsetNorth>(0,0,-3)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,3)</drawOffsetSouth>
+			<drawOffsetEast>(-3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(3,0,0)</drawOffsetWest>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+	</ThingDef>
+
+</Defs>

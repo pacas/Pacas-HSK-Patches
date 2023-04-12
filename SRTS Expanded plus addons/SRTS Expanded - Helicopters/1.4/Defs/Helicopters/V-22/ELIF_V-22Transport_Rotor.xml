@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ELIF_RotorFramework.Defs.RotorDef ParentName="ELIF_RotorBase">
+		<defName>V-22TransportRight_toprotor</defName>
+		<horizontalOffset>6.6</horizontalOffset>
+		<verticalOffset>0</verticalOffset>
+        <dust>Elif_Dust_toprotor_large</dust>
+		<isVertical>false</isVertical>
+		<bladeSize>11</bladeSize>
+		<antiClockwise>true</antiClockwise>
+		<isTail>false</isTail>
+		<graphicData>
+			<texPath>V-22/V-22Transport_toprotor_R</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>157, 162, 166</color>
+		</graphicData>
+	</ELIF_RotorFramework.Defs.RotorDef>
+	
+	<ELIF_RotorFramework.Defs.RotorDef ParentName="ELIF_RotorBase">
+		<defName>V-22TransportLeft_toprotor</defName>
+		<drawLayerOffset>0.3</drawLayerOffset>
+		<horizontalOffset>-6.6</horizontalOffset>
+		<verticalOffset>0</verticalOffset>
+        <dust>Elif_Dust_toprotor_large</dust>
+		<isVertical>false</isVertical>
+		<bladeSize>11</bladeSize>
+		<isTail>false</isTail>
+		<graphicData>
+			<texPath>V-22/V-22Transport_toprotor_L</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>157, 162, 166</color>
+		</graphicData>
+	</ELIF_RotorFramework.Defs.RotorDef>
+	
+</Defs>

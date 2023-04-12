@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ELIF_RotorFramework.Defs.RotorDef ParentName="ELIF_RotorBase">
+		<defName>AW109Transport_toprotor</defName>
+		<horizontalOffset>0</horizontalOffset>
+		<verticalOffset>-0.3</verticalOffset>
+		<isVertical>false</isVertical>
+		<bladeSize>10</bladeSize>
+		<isTail>false</isTail>
+		<graphicData>
+			<texPath>AW109/AW109Transport_toprotor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>140,140,140</color>
+		</graphicData>
+	</ELIF_RotorFramework.Defs.RotorDef>
+
+	<ELIF_RotorFramework.Defs.RotorDef ParentName="ELIF_RotorBase">
+		<defName>AW109Transport_tailrotor</defName>
+		<horizontalOffset>-0.29</horizontalOffset>
+		<verticalOffset>-8.05</verticalOffset>
+		<isVertical>true</isVertical>
+        <dust>Elif_Dust_tail</dust>
+		<bladeSize>1.8</bladeSize>
+		<isTail>true</isTail>
+		<graphicData>
+			<texPath>MH6/MH-6Transport_tailrotor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>140,140,140</color>
+		</graphicData>
+	</ELIF_RotorFramework.Defs.RotorDef>
+	
+</Defs>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ELIF_RotorFramework.Defs.RotorDef ParentName="ELIF_RotorBase">
+		<defName>MH6Attack_toprotor</defName>
+		<horizontalOffset>0</horizontalOffset>
+		<verticalOffset>-0.5</verticalOffset>
+        <dust>Elif_Dust_toprotor_small</dust>
+		<isVertical>false</isVertical>
+		<bladeSize>8</bladeSize>
+		<isTail>false</isTail>
+		<graphicData>
+			<texPath>MH6/MH-6Attack_toprotor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>200,200,200</color>
+		</graphicData>
+	</ELIF_RotorFramework.Defs.RotorDef>
+
+	<ELIF_RotorFramework.Defs.RotorDef ParentName="ELIF_RotorBase">
+		<defName>MH6Attack_tailrotor</defName>
+		<horizontalOffset>-0.3</horizontalOffset>
+		<verticalOffset>-4.6</verticalOffset>
+		<isVertical>true</isVertical>
+        <dust>Elif_Dust_tail</dust>
+		<bladeSize>1.5</bladeSize>
+		<isTail>true</isTail>
+		<graphicData>
+			<texPath>MH6/MH-6Attack_tailrotor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>200,200,200</color>
+		</graphicData>
+		<drawLayerOffset>0</drawLayerOffset>
+	</ELIF_RotorFramework.Defs.RotorDef>
+	
+</Defs>

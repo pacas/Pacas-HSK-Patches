@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef ParentName="HitechMultiBase">
+		<tab>SRTSE_Helicopters</tab>
+		<defName>Research_MH-6LB_Transport</defName>
+		<label>MH-6 Little Bird (Transport)</label>
+		<description><![CDATA[<size=14><b>DESCRIPTION:</b></size>
+The MH-6M is a helicopter designed for general small range transport of goods and personnel.
+
+<size=14><b>BASIC STATS:</b></size>
+Health: 500
+
+<size=14><b>LOGISTICS POTENTIAL:</b></size>
+Cargo Capacity: 400kg
+Speed: 5
+Passenger Capacity: 1-4
+Fuel Per Tile: 5
+Fuel Capacity: 300
+Round Trip Range: 30
+Full Range: 60
+Internal Power: 500w
+
+<size=14><b>ATTACK POTENTIAL:</b></size>
+Bombing Run Capacity: n/a
+Precision Run Capacity: n/a
+Spread: n/a
+Distance between drops: n/a]]></description>
+		<baseCost>4000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Telecommunications_C1</li>
+		</prerequisites>
+		<researchViewX>17</researchViewX>
+		<researchViewY>75</researchViewY>
+	</ResearchProjectDef>
+
+
+	<ResearchProjectDef ParentName="HitechMultiBase">
+		<tab>SRTSE_Helicopters</tab>
+		<defName>Research_MH-6LB_Attack</defName>
+		<label>MH-6 Little Bird (Attack)</label>
+		<description><![CDATA[<size=14><b>DESCRIPTION:</b></size>
+The AH-6M is a helicopter designed for small range attack runs, sacrificing storage, passenger and fuel capacity to maintain the same speed of its counterpart.
+
+<size=14><b>BASIC STATS:</b></size>
+Health: 600
+
+<size=14><b>LOGISTICS POTENTIAL:</b></size>
+Cargo Capacity: 350kg
+Speed: 5
+Passenger Capacity: 1-2
+Fuel Per Tile: 5
+Fuel Capacity: 250
+Round Trip Range: 25
+Full Range: 50
+Internal Power: 250w
+
+<size=14><b>ATTACK POTENTIAL:</b></size>
+Bombing Run Capacity: 2
+Precision Run Capacity: 1
+Spread: 5
+Distance between drops: 3]]></description>
+		<baseCost>4000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Telecommunications_C1</li>
+		</prerequisites>
+		<researchViewX>17</researchViewX>
+		<researchViewY>76</researchViewY>
+	</ResearchProjectDef>
+
+
+
+	<ResearchProjectDef ParentName="HitechMultiBase">
+		<tab>SRTSE_Helicopters</tab>
+		<defName>Research_UH-1Y_Transport</defName>
+		<label>UH-1Y Venom (Transport)</label>
+		<description><![CDATA[<size=14><b>DESCRIPTION:</b></size>
+The UH-1Y is a helicopter designed for general medium range transport of goods and personnel.
+
+<size=14><b>BASIC STATS:</b></size>
+Health: 700
+
+<size=14><b>LOGISTICS POTENTIAL:</b></size>
+Cargo Capacity: 800kg
+Speed: 5.5
+Passenger Capacity: 1-6
+Fuel Per Tile: 6
+Fuel Capacity: 480
+Round Trip Range: 40
+Full Range: 80
+Internal Power: 700w
+
+<size=14><b>ATTACK POTENTIAL:</b></size>
+Bombing Run Capacity: n/a
+Precision Run Capacity: n/a
+Spread: n/a
+Distance between drops: n/a]]></description>
+		<baseCost>5400</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Research_MH-6LB_Transport</li>
+		</prerequisites>
+		<researchViewX>18</researchViewX>
+		<researchViewY>75</researchViewY>
+	</ResearchProjectDef>
+    
+    
+    
+	<ResearchProjectDef ParentName="HitechMultiBase">
+		<tab>SRTSE_Helicopters</tab>
+		<defName>Research_UH-1Y_Attack</defName>
+		<label>UH-1Y Venom (Attack)</label>
+		<description><![CDATA[<size=14><b>DESCRIPTION:</b></size>
+This UH-1Y with attached rocket pods is a helicopter designed for medium range attack runs, sacrificing storage, passenger and fuel capacity to maintain the same speed of its counterpart.
+
+<size=14><b>BASIC STATS:</b></size>
+Health: 800
+
+<size=14><b>LOGISTICS POTENTIAL:</b></size>
+Cargo Capacity: 600kg
+Speed: 5.5
+Passenger Capacity: 1-3
+Fuel Per Tile: 7
+Fuel Capacity: 420
+Round Trip Range: 30
+Full Range: 60
+Internal Power: 400w
+
+<size=14><b>ATTACK POTENTIAL:</b></size>
+Bombing Run Capacity: 3
+Precision Run Capacity: 2
+Spread: 6
+Distance between drops: 4]]></description>
+		<baseCost>5400</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Research_MH-6LB_Attack</li>
+		</prerequisites>
+		<researchViewX>18</researchViewX>
+		<researchViewY>76</researchViewY>
+	</ResearchProjectDef>
+
+
+
+	<ResearchProjectDef ParentName="HitechMultiBase">
+		<tab>SRTSE_Helicopters</tab>
+		<defName>Research_UH-60_Transport</defName>
+		<label>UH-60 Blackhawk (Transport)</label>
+		<description><![CDATA[<size=14><b>DESCRIPTION:</b></size>
+The UH-60 is a helicopter designed for general medium to long range transport of goods and personnel.
+
+<size=14><b>BASIC STATS:</b></size>
+Health: 900
+
+<size=14><b>LOGISTICS POTENTIAL:</b></size>
+Cargo Capacity: 1000kg
+Speed: 6
+Passenger Capacity: 1-8
+Fuel Per Tile: 8
+Fuel Capacity: 720
+Round Trip Range: 45
+Full Range: 90
+Internal Power: 900w
+
+<size=14><b>ATTACK POTENTIAL:</b></size>
+Bombing Run Capacity: n/a
+Precision Run Capacity: n/a
+Spread: n/a
+Distance between drops: n/a]]></description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Research_UH-1Y_Transport</li>
+		</prerequisites>
+		<researchViewX>19</researchViewX>
+		<researchViewY>75</researchViewY>
+	</ResearchProjectDef>
+
+
+
+	<ResearchProjectDef ParentName="HitechMultiBase">
+		<tab>SRTSE_Helicopters</tab>
+		<defName>Research_UH-60_Attack</defName>
+		<label>UH-60 Blackhawk (Attack)</label>
+		<description><![CDATA[<size=14><b>DESCRIPTION:</b></size>
+The MH-60L DAP (Direct Action Penetrator) is a helicopter designed for medium to long range attack runs, sacrificing storage, passenger and fuel capacity to maintain the same speed of its counterpart.
+
+<size=14><b>BASIC STATS:</b></size>
+Health: 1000
+
+<size=14><b>LOGISTICS POTENTIAL:</b></size>
+Cargo Capacity: 800kg
+Speed: 6
+Passenger Capacity: 1-4
+Fuel Per Tile: 9
+Fuel Capacity: 675
+Round Trip Range: 37.5
+Full Range: 75
+Internal Power: 600w
+
+<size=14><b>ATTACK POTENTIAL:</b></size>
+Bombing Run Capacity: 4
+Precision Run Capacity: 3
+Spread: 5
+Distance between drops: 4]]></description>
+		<baseCost>6000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Research_UH-1Y_Attack</li>
+		</prerequisites>
+		<researchViewX>19</researchViewX>
+		<researchViewY>76</researchViewY>
+	</ResearchProjectDef>
+
+
+
+	<ResearchProjectDef ParentName="HitechLabStationBase">
+		<tab>SRTSE_Helicopters</tab>
+		<defName>Research_AH-1Z_Attack</defName>
+		<label>AH-1Z Viper (Attack)</label>
+		<description><![CDATA[<size=14><b>DESCRIPTION:</b></size>
+The AH-1Z is a helicopter designed for long range precision bombing, sacrificing bombing capacity for high-end computational computers for higher accuracy.
+
+<size=14><b>BASIC STATS:</b></size>
+Health: 1400
+
+<size=14><b>LOGISTICS POTENTIAL:</b></size>
+Cargo Capacity: 500kg
+Speed: 8
+Passenger Capacity: 1-2
+Fuel Per Tile: 10
+Fuel Capacity: 1060
+Round Trip Range: 53
+Full Range: 106
+Internal Power: 700w
+
+<size=14><b>ATTACK POTENTIAL:</b></size>
+Bombing Run Capacity: 3
+Precision Run Capacity: 7
+Spread: 4
+Distance between drops: 3]]></description>
+		<baseCost>9000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Research_UH-60_Attack</li>
+		</prerequisites>
+		<researchViewX>20</researchViewX>
+		<researchViewY>76</researchViewY>
+	</ResearchProjectDef>
+
+
+
+	<ResearchProjectDef ParentName="HitechLabStationBase">
+		<tab>SRTSE_Helicopters</tab>
+		<defName>Research_CH-46E_Transport</defName>
+		<label>CH-46E Sea Knight (Transport)</label>
+		<description><![CDATA[<size=14><b>DESCRIPTION:</b></size>
+The CH-46E is a helicopter designed for long range huge capacity transport of goods and personnel.
+
+<size=14><b>BASIC STATS:</b></size>
+Health: 1800
+
+<size=14><b>LOGISTICS POTENTIAL:</b></size>
+Cargo Capacity: 2000kg
+Speed: 6
+Passenger Capacity: 1-16
+Fuel Per Tile: 16
+Fuel Capacity: 1760
+Round Trip Range: 55
+Full Range: 130
+Internal Power: 2200w
+
+<size=14><b>ATTACK POTENTIAL:</b></size>
+Bombing Run Capacity: n/a
+Precision Run Capacity: n/a
+Spread: n/a
+Distance between drops: n/a]]></description>
+		<baseCost>16000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Research_UH-60_Transport</li>
+		</prerequisites>
+		<researchViewX>20</researchViewX>
+		<researchViewY>75</researchViewY>
+	</ResearchProjectDef>
+
+
+
+	<ResearchProjectDef ParentName="HitechLabStationBase">
+		<tab>SRTSE_Helicopters</tab>
+		<defName>Research_AW109_Transport</defName>
+		<label>AW109 Agusta Westland (Transport)</label>
+		<description><![CDATA[<size=14><b>DESCRIPTION:</b></size>
+The AW109 is a helicopter designed for extremely long range quick deploy transport of goods and personnel.
+
+<size=14><b>BASIC STATS:</b></size>
+Health: 1500
+
+<size=14><b>LOGISTICS POTENTIAL:</b></size>
+Cargo Capacity: 900kg
+Speed: 9
+Passenger Capacity: 1-8
+Fuel Per Tile: 9
+Fuel Capacity: 1170
+Round Trip Range: 65
+Full Range: 110
+Internal Power: 1200w
+
+<size=14><b>ATTACK POTENTIAL:</b></size>
+Bombing Run Capacity: n/a
+Precision Run Capacity: n/a
+Spread: n/a
+Distance between drops: n/a]]></description>
+		<baseCost>11000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Research_CH-46E_Transport</li>
+		</prerequisites>
+		<researchViewX>21</researchViewX>
+		<researchViewY>75</researchViewY>
+	</ResearchProjectDef>
+
+
+
+	<ResearchProjectDef ParentName="HitechLabStationBase">
+		<tab>SRTSE_Helicopters</tab>
+		<defName>Research_V-22_Transport</defName>
+		<label>V-22 Osprey Knight (Transport)</label>
+		<description><![CDATA[<size=14><b>DESCRIPTION:</b></size>
+The V-22 is a helicopter designed for medium to long range quick deploy huge capacity transport of goods and personnel, sacrificing a bit of range and uses large amounts of fuel.
+
+<size=14><b>BASIC STATS:</b></size>
+Health: 2000
+
+<size=14><b>LOGISTICS POTENTIAL:</b></size>
+Cargo Capacity: 2300kg
+Speed: 8
+Passenger Capacity: 1-18
+Fuel Per Tile: 25
+Fuel Capacity: 2250
+Round Trip Range: 45
+Full Range: 90
+Internal Power: 2500w
+
+<size=14><b>ATTACK POTENTIAL:</b></size>
+Bombing Run Capacity: n/a
+Precision Run Capacity: n/a
+Spread: n/a
+Distance between drops: n/a]]></description>
+		<baseCost>16000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>Research_CH-46E_Transport</li>
+		</prerequisites>
+		<researchViewX>21</researchViewX>
+		<researchViewY>76</researchViewY>
+    </ResearchProjectDef>
+</Defs>

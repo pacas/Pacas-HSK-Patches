@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--BASE CONTENT-->
+	<ThingDef Name="MH-6Transport_SkyfallerBase" ParentName="SkyfallerBase" Abstract="True">
+		<graphicData>
+			<texPath>MH6/MH-6Transport_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>100,100,100</color>
+			<drawSize>(8,10)</drawSize>
+			<drawOffsetNorth>(0,0,-1.5)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,1.5)</drawOffsetSouth>
+			<drawOffsetEast>(-1.5,0,0)</drawOffsetEast>
+			<drawOffsetWest>(1.5,0,0)</drawOffsetWest>
+		</graphicData>
+		<skyfaller>
+			<shadowSize>(2,3)</shadowSize>
+			<shadow>Things/Skyfaller/SkyfallerShadowDropPod</shadow>
+		</skyfaller>
+	</ThingDef>
+	
+	<!--SKYFALLER-->
+	<ThingDef ParentName="MH-6Transport_SkyfallerBase">
+		<defName>ELIFMH-6LBTransport_Incoming</defName>
+		<label>MH-6M Little Bird (Transport) incoming</label>
+		<thingClass>SRTS.SRTSIncoming</thingClass>
+		<skyfaller>
+			<movementType>Decelerate</movementType>
+			<anticipationSoundTicks>100</anticipationSoundTicks>
+			<anticipationSound>ELIF_HelicopterLanding</anticipationSound>
+			<motesPerCell>0</motesPerCell>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef ParentName="MH-6Transport_SkyfallerBase">
+		<defName>ELIFMH-6LBTransport_Leaving</defName>
+		<label>MH-6M Little Bird (Transport) leaving</label>
+		<thingClass>SRTS.SRTSLeaving</thingClass>
+		<skyfaller>
+			<movementType>Accelerate</movementType>
+			<reversed>true</reversed>
+			<anticipationSound>ELIF_HelicopterLaunch</anticipationSound>
+			<anticipationSoundTicks>-10</anticipationSoundTicks>
+			<ticksToImpactRange>
+				<min>-40</min>
+				<max>-15</max>
+			</ticksToImpactRange>
+		</skyfaller>
+	</ThingDef>
+	<ThingDef>
+		<defName>ELIFMH-6LBTransport_Active</defName>
+		<label>MH-6M Little Bird (Transport) active</label>
+		<category>Item</category>
+		<thingClass>ActiveDropPod</thingClass>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>MH6/MH-6Transport_skyfaller</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<color>100,100,100</color>
+			<drawSize>(8,10)</drawSize>
+			<drawOffsetNorth>(0,0,-1.5)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,1.5)</drawOffsetSouth>
+			<drawOffsetEast>(-1.5,0,0)</drawOffsetEast>
+			<drawOffsetWest>(1.5,0,0)</drawOffsetWest>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<blockWind>true</blockWind>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Flammability>0</Flammability>
+		</statBases>
+		<selectable>true</selectable>
+	</ThingDef>
+
+</Defs>

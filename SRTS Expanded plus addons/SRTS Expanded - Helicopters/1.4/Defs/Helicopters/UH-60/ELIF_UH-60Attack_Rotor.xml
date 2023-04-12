@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ELIF_RotorFramework.Defs.RotorDef ParentName="ELIF_RotorBase">
+		<defName>UH-60Attack_toprotor</defName>
+		<horizontalOffset>0</horizontalOffset>
+		<verticalOffset>-0.25</verticalOffset>
+        <dust>Elif_Dust_toprotor_large</dust>
+		<isVertical>false</isVertical>
+		<bladeSize>13</bladeSize>
+		<isTail>false</isTail>
+		<graphicData>
+			<texPath>UH-60/UH-60Attack_toprotor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ELIF_RotorFramework.Defs.RotorDef>
+
+	<ELIF_RotorFramework.Defs.RotorDef ParentName="ELIF_RotorBase">
+		<defName>UH-60Attack_tailrotor</defName>
+		<horizontalOffset>0.34</horizontalOffset>
+		<verticalOffset>-9.2</verticalOffset>
+		<isVertical>true</isVertical>
+        <dust>Elif_Dust_tail</dust>
+		<bladeSize>2</bladeSize>
+		<isTail>true</isTail>
+		<graphicData>
+			<texPath>UH-60/UH-60Attack_tailrotor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ELIF_RotorFramework.Defs.RotorDef>
+	
+</Defs>

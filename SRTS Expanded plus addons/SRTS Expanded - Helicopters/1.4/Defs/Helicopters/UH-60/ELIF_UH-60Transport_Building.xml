@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ELIF_HelicopterBase">
+		<!-- defName must be unique, including with other mods so be creative -->
+		<defName>ELIFUH-60Transport</defName>
+		<!-- name displayed ingame -->
+		<label>UH-60 Blackhawk (Transport)</label>
+		<description><![CDATA[<size=14><b>DESCRIPTION:</b></size>
+The UH-60 is a helicopter designed for general medium to long range transport of goods and personnel.
+
+<size=14><b>BASIC STATS:</b></size>
+Health: 900
+
+<size=14><b>LOGISTICS POTENTIAL:</b></size>
+Cargo Capacity: 1000kg
+Speed: 6
+Passenger Capacity: 1-8
+Fuel Per Tile: 8
+Fuel Capacity: 720
+Round Trip Range: 45
+Full Range: 90
+Internal Power: 900w
+
+<size=14><b>ATTACK POTENTIAL:</b></size>
+Bombing Run Capacity: n/a
+Precision Run Capacity: n/a
+Spread: n/a
+Distance between drops: n/a]]></description>
+		<!-- graphic class can be left alone, it's how the game pulls _north, _east, _south textures -->
+		<graphicData>
+			<texPath>UH-60/UH-60Transport_body</texPath>
+			<!-- how much the image is stretched out ingame -->
+			<color>100,100,100</color>
+			<drawSize>(5,15)</drawSize>
+			<drawOffsetNorth>(0,0,-3)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,3)</drawOffsetSouth>
+			<drawOffsetEast>(-3,0,0)</drawOffsetEast>
+			<drawOffsetWest>(3,0,0)</drawOffsetWest>
+		</graphicData>
+		<!-- hitbox -->
+		<size>(3,7)</size>
+		<statBases>
+			<!-- hitpoints of the building -->
+			<MaxHitPoints>900</MaxHitPoints>
+			<!-- how much work it costs to build, which is more like a base type, as more properties affect it, resulting in a different final number for construction -->
+			<WorkToBuild>15000</WorkToBuild>
+			<!-- how much it weighs for a pawn to carry. My guess is they are light in this mod so pawns entering a map will throw it in their inventory rather than lose it, but i can check that later. -->
+			<Flammability>0.3</Flammability>
+			<Mass>20</Mass>
+			<!-- beauty on overlap, and for pawns -->
+			<Beauty>10</Beauty>
+		</statBases>
+		<!-- Costs to build, the names are the defNames of items -->
+		<costList>
+            <Plasteel>400</Plasteel>
+            <AluminiumBar>350</AluminiumBar>
+            <ReinforcedGlass>30</ReinforcedGlass>
+            <Plastic>100</Plastic>
+            <ComponentIndustrial>20</ComponentIndustrial>
+            <ComponentSpacer>7</ComponentSpacer>
+            <Mechanism>10</Mechanism>
+            <AdvMechanism>3</AdvMechanism>
+            <Electronics>10</Electronics>
+            <ElectronicComponents>4</ElectronicComponents>
+            <Microchips>1</Microchips>
+        </costList>
+		<comps>
+			<li Class="ELIF_RotorFramework.Components.CompProps_Rotor">
+				<rotationMaxSpeed>3.5</rotationMaxSpeed>
+				<rotationAcceleration>0.1</rotationAcceleration>
+				<rotationDeceleration>0.25</rotationDeceleration>
+				<indentTick>75</indentTick>
+				<rotors>
+					<li>UH-60Transport_toprotor</li>
+					<li>UH-60Transport_tailrotor</li>
+				</rotors>
+			</li>
+			<li Class="CompProperties_Transporter">
+				<restEffectiveness>0.75</restEffectiveness>
+				<massCapacity>1000</massCapacity>
+			</li>
+			<!-- required for SRTS like functionality (ie. space ship reusable drop pod -->
+			<li Class="SRTS.CompProperties_LaunchableSRTS">
+				<travelSpeed>6</travelSpeed>
+				<fuelPerTile>8</fuelPerTile>
+				<minPassengers>1</minPassengers>
+				<maxPassengers>8</maxPassengers>
+				<spaceFaring>false</spaceFaring>
+				<shuttleBayLanding>false</shuttleBayLanding>
+			</li>
+			<!-- comp for allowing to fuel the srts, don't remove -->
+			<li Class="CompProperties_Refuelable">
+				<fuelCapacity>720</fuelCapacity>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+				<initialConfigurableTargetFuelLevel>100</initialConfigurableTargetFuelLevel>
+				<fuelFilter>
+					<thingDefs>
+						<li>Chemfuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>1</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+				<drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-900</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+		<!-- research requirements -->
+		<researchPrerequisites>
+			<li>Research_UH-60_Transport</li>
+		</researchPrerequisites>
+		<!-- construction skill requirements -->
+		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+		<!-- UI scaling -->
+		<uiIconScale>0.75</uiIconScale>
+		<killedLeavings>
+			<ChunkSlagSteel>5</ChunkSlagSteel>
+		</killedLeavings>
+	</ThingDef>
+</Defs>
