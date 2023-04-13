@@ -52,6 +52,7 @@ How to download only the mods you are interested in:<br>
 | Seven Seraph Weapons | :white_check_mark: | :white_check_mark: | --- |
 | SRTS Expanded | :x: | :white_check_mark: | --- |
 | SRTS Crimson Fleet | :x: | :white_check_mark: | --- |
+| SRTS Helicopters | :x: | :white_check_mark: | --- |
 | Tesla Coil | :x: | :white_check_mark: | In progress |
 | Utility Columns | :white_check_mark: | :white_check_mark: | --- |
 <br>
