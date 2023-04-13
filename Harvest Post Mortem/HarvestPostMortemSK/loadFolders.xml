@@ -3,11 +3,11 @@
 	<v1.3>
 		<li>1.3</li>
 		<li>Common</li>
-		<li MayRequire="rim.job.world">1.3/ModAddons/RJW</li>
+		<li IfModActive="rim.job.world">1.3/ModAddons/RJW</li>
 	</v1.3>
     <v1.4>
 		<li>1.4</li>
 		<li>Common</li>
-        <li MayRequire="rim.job.world">1.4/ModAddons/RJW</li>
+        <li IfModActive="rim.job.world">1.4/ModAddons/RJW</li>
 	</v1.4>
 </loadFolders>
