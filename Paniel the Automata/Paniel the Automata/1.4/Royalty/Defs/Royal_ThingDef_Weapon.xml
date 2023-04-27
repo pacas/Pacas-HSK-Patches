@@ -60,7 +60,6 @@
     <ThingDef Name="PN_BaseWeapon_Bladelink" ParentName="SK_BaseMeleeWeapon" Abstract="True">
         <techLevel>Ultra</techLevel>
         <tradeNeverStack>true</tradeNeverStack>
-        <smeltable>false</smeltable>
         <relicChance>1</relicChance>
         <weaponTags>
             <li>PN_Bladelink</li>
