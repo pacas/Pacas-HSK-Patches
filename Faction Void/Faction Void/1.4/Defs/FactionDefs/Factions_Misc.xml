@@ -20,6 +20,11 @@
         <allowedCultures>
             <li>RH2_VOIDKriminul</li>
         </allowedCultures>
+        <xenotypeSet>
+          <xenotypeChances>
+            <Baseliner MayRequire="Ludeon.RimWorld.Biotech">1.0</Baseliner>
+          </xenotypeChances>
+        </xenotypeSet>
         <disallowedMemes>
             <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
             <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>

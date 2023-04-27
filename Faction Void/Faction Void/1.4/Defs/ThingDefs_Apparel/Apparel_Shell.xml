@@ -13,6 +13,8 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
+        <techLevel>Spacer</techLevel>
+        <generateCommonality>0.000001</generateCommonality>
         <thingCategories>
             <li>MediumUpperArmorCat</li>
         </thingCategories>
@@ -74,5 +76,6 @@
             </defaultOutfitTags>
             <useWornGraphicMask>true</useWornGraphicMask>
         </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel"/>
     </ThingDef>
 </Defs>
