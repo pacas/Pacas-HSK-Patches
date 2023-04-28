@@ -2,8 +2,11 @@
 ![Preview](/__PREVIEW__/SRTS.png?raw=true "Preview")<br><br>
 [Hardcore SK modpack only!](https://github.com/skyarkhangel/Hardcore-SK/tree/development)
 <br>
-Convertion of this mod:<br>
-https://steamcommunity.com/sharedfiles/filedetails/?id=2938738526
+Convertion of these mods:<br>
+https://steamcommunity.com/sharedfiles/filedetails/?id=2878587061<br>
+https://steamcommunity.com/sharedfiles/filedetails/?id=2938738526<br>
+https://steamcommunity.com/sharedfiles/filedetails/?id=2138497005<br>
+https://steamcommunity.com/sharedfiles/filedetails/?id=2575097304
 <br><br>
 <img src="https://i.imgur.com/svEwA2k.png"><br>
 Short Ranged Transport Ships<br>
@@ -40,5 +43,5 @@ A: Репортить в соответствующую ветку в дисе �
 <br>
 <img src="https://i.imgur.com/fdngbbh.png"><br>
 Rimworld is owned by Tynan Sylvester. Obviously.<br>
-NECEROS, Smash Phil and Шашлычник for this awesome mod. Check out other mods!<br>
+NECEROS, Smash Phil, Ravvy, 《ELIF_》 and Шашлычник for these awesome mods. Check out other mods!<br>
 Pacas (me) for doing a HSK convertion.<br>

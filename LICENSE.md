@@ -1,5 +1,4 @@
-Everything in this repository belongs to the owners of the original mods. I only do the HSK conversion.
-
+Everything in this repository belongs to the owners of the original mods. I only do HSK conversions. Please, download and endorse original mod!
 
 The MIT License (MIT)
 
