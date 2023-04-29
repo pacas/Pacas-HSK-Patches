@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--==================== Firefly Body ====================-->
+
+    <BodyDef>
+
+		<defName>FF_FireflyBody</defName>
+		<label>firefly body</label>
+
+		<corePart>
+			<def>FF_Body</def>
+			<height>Top</height>
+			<depth>Outside</depth>
+			<parts>
+                <li>
+                    <def>Head</def>
+					<coverage>0.10</coverage>
+              		<groups>
+                		<li>HeadAttackTool</li>
+              		</groups>
+                    <parts>
+                        <li>
+                            <def>FF_Antennae</def>
+							<customLabel>right antennae</customLabel>
+							<coverage>0.01</coverage>
+                        </li>
+                        <li>
+                            <def>FF_Antennae</def>
+							<customLabel>left antennae</customLabel>
+							<coverage>0.01</coverage>
+                        </li>
+                        <li>
+                            <def>FF_Eye</def>
+							<customLabel>right compound eye</customLabel>
+							<coverage>0.01</coverage>
+                        </li>
+                        <li>
+                            <def>FF_Eye</def>
+							<customLabel>left compound eye</customLabel>
+							<coverage>0.01</coverage>
+                        </li>
+                        <li>
+                            <def>FF_RedPlate</def>
+                            <coverage>0.05</coverage>
+                        </li>
+                    </parts>
+				</li>
+                <li>
+					<def>FF_Thorax</def>
+					<coverage>0.03</coverage>
+				</li>
+                <li>
+                    <def>FF_Scutellum</def>
+					<coverage>0.03</coverage>
+                </li>
+                <li>
+                    <def>FF_Elytra</def>
+                    <customLabel>right elytra</customLabel>
+					<coverage>0.04</coverage>
+                </li>
+                <li>
+                    <def>FF_Wing</def>
+                    <customLabel>right wing</customLabel>
+					<coverage>0.04</coverage>
+                </li>
+                <li>
+                    <def>FF_Wing</def>
+                    <customLabel>left wing</customLabel>
+					<coverage>0.04</coverage>
+                </li>
+                <li>
+                    <def>FF_Elytra</def>
+                    <customLabel>left elytra</customLabel>
+					<coverage>0.04</coverage>
+                </li>
+                <li>
+					<def>FF_Abdomen</def>
+					<coverage>0.50</coverage>
+					<depth>Inside</depth>
+                    <parts>
+                        <li>
+                            <def>FF_ReflectorCells</def>
+					        <coverage>0.02</coverage>
+                        </li>
+                        <li>
+                            <def>FF_LightCells</def>
+					        <coverage>0.02</coverage>
+                        </li>
+                        <li>
+                            <def>FF_TransparentExoskeleton</def>
+					        <coverage>0.02</coverage>
+                        </li>
+                    </parts>
+				</li>
+                <li>
+					<def>FF_Leg</def>
+					<customLabel>right foreleg</customLabel>
+					<coverage>0.02</coverage>
+					<height>Middle</height>
+				</li>
+                <li>
+					<def>FF_Leg</def>
+					<customLabel>left foreleg</customLabel>
+					<coverage>0.02</coverage>
+					<height>Middle</height>
+				</li>
+                <li>
+					<def>FF_Leg</def>
+					<customLabel>right middle leg</customLabel>
+					<coverage>0.02</coverage>
+					<height>Middle</height>
+				</li>
+                <li>
+					<def>FF_Leg</def>
+					<customLabel>left middle leg</customLabel>
+					<coverage>0.02</coverage>
+					<height>Middle</height>
+				</li>
+                <li>
+					<def>FF_Leg</def>
+					<customLabel>right hind leg</customLabel>
+					<coverage>0.02</coverage>
+					<height>Middle</height>
+				</li>
+                <li>
+					<def>FF_Leg</def>
+					<customLabel>left hind leg</customLabel>
+					<coverage>0.02</coverage>
+					<height>Middle</height>
+				</li>
+			</parts>
+		</corePart>
+        
+	</BodyDef>
+	
+</Defs>

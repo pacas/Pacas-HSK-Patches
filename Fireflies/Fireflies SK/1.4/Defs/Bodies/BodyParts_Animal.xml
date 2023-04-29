@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--==================== Firefly Bodyparts ====================-->
+
+    <BodyPartDef>
+		<defName>FF_Body</defName>
+		<label>firefly body</label>
+		<hitPoints>50</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<skinCovered>true</skinCovered>
+		<canScarify>true</canScarify>
+		<bleedRate>0.02</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+    <BodyPartDef>
+		<defName>FF_Antennae</defName>
+		<label>antennae</label>
+		<hitPoints>5</hitPoints>
+		<bleedRate>0.02</bleedRate>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+        <tags>
+			<li>ManipulationLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+    <BodyPartDef>
+		<defName>FF_Eye</defName>
+		<label>compound eye</label>
+		<hitPoints>10</hitPoints>
+		<frostbiteVulnerability>0.1</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>.001</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<alive>true</alive>
+		<tags>
+			<li>SightSource</li>
+		</tags>
+	</BodyPartDef>
+
+    <BodyPartDef>
+		<defName>FF_RedPlate</defName>
+		<label>red plate</label>
+		<hitPoints>15</hitPoints>
+		<skinCovered>true</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>
+
+    <BodyPartDef>
+		<defName>FF_Thorax</defName>
+		<label>thorax</label>
+		<hitPoints>10</hitPoints>
+        <bleedRate>0.10</bleedRate>
+		<skinCovered>true</skinCovered>
+        <permanentInjuryChanceFactor>.05</permanentInjuryChanceFactor>
+		<tags>
+			<li>MetabolismSource</li>
+			<li>BreathingSource</li>
+		</tags>
+	</BodyPartDef>
+    
+    <BodyPartDef>
+		<defName>FF_Scutellum</defName>
+		<label>scutellum</label>
+		<hitPoints>15</hitPoints>
+		<skinCovered>true</skinCovered>
+		<solid>true</solid>
+		<alive>false</alive>
+		<bleedRate>0</bleedRate>
+	</BodyPartDef>
+
+    <BodyPartDef>
+		<defName>FF_Elytra</defName>
+		<label>elytra</label>
+		<hitPoints>100</hitPoints>
+		<frostbiteVulnerability>0.5</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<socketed>true</socketed>
+		<alive>true</alive>
+		<bleedRate>0.05</bleedRate>
+	</BodyPartDef>
+
+    <BodyPartDef>
+		<defName>FF_Wing</defName>
+		<label>wing</label>
+		<hitPoints>10</hitPoints>
+		<frostbiteVulnerability>0.01</frostbiteVulnerability>
+		<permanentInjuryChanceFactor>.02</permanentInjuryChanceFactor>
+		<skinCovered>true</skinCovered>
+		<socketed>true</socketed>
+		<alive>true</alive>
+		<bleedRate>0.05</bleedRate>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+    <BodyPartDef>
+		<defName>FF_Abdomen</defName>
+		<label>abdomen</label>
+		<hitPoints>50</hitPoints>
+		<bleedRate>0.20</bleedRate>
+		<skinCovered>true</skinCovered>
+	</BodyPartDef>
+
+    <BodyPartDef>
+		<defName>FF_ReflectorCells</defName>
+		<label>reflector cells</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>true</skinCovered>
+		<tags>
+			<li>BloodPumpingSource</li>
+			<li>BloodFiltrationSource</li>
+		</tags>
+	</BodyPartDef>
+
+    <BodyPartDef>
+		<defName>FF_LightCells</defName>
+		<label>light cells</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>true</skinCovered>
+        <tags>
+			<li>BloodFiltrationSource</li>
+		</tags>
+	</BodyPartDef>
+
+    <BodyPartDef>
+		<defName>FF_TransparentExoskeleton</defName>
+		<label>transparent exoskeleton</label>
+		<hitPoints>30</hitPoints>
+		<skinCovered>true</skinCovered>
+	</BodyPartDef>
+
+    <BodyPartDef>
+		<defName>FF_Leg</defName>
+		<label>leg</label>
+		<hitPoints>5</hitPoints>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+        <bleedRate>0</bleedRate>
+		<tags>
+			<li>ManipulationLimbCore</li>
+            <li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+</Defs>

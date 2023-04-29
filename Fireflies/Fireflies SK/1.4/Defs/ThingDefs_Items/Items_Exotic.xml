@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--==================== Firefly Essence ====================-->
+    <ThingDef ParentName="ResourceBase">
+        <defName>FF_Firefly_Essence</defName>
+        <label>firefly essence</label>
+        <description>The essence of a recently deceased firefly. Use it to create a beautiful firefly-filled jar for your colonists to enjoy during those stressful times on The Rim.</description>
+        <graphicData>
+            <texPath>Things/Item/Special/FF_Firefly_Essence</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <stackLimit>90</stackLimit>
+        <statBases>
+            <MarketValue>8.25</MarketValue>
+            <Mass>0.01</Mass>
+        </statBases>
+        <thingCategories>
+            <li>Items</li>
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+    </ThingDef>
+</Defs>

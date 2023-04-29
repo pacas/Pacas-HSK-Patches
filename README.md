@@ -37,7 +37,7 @@ How to download only the mods you are interested in:<br>
 | Eaves Rafters and Mad Walls | :white_check_mark: | :white_check_mark: | --- |
 | Edge of Descension Monoblades | :white_check_mark: | :white_check_mark: | --- |
 | Faction Void | :x: | :white_check_mark: | --- |
-| Fireflies | :white_check_mark: | :x: | Waiting for the update |
+| Fireflies | :white_check_mark: | :x: | :white_check_mark: |
 | Frontier Developement Shields | :white_check_mark: | :x: | Waiting for the update |
 | Gloomy Decor Pack | :white_check_mark: | :x: | Original deco mod is dead, final release? |
 | Harvest Post Mortem | :white_check_mark: | :white_check_mark: | --- |
@@ -53,7 +53,7 @@ How to download only the mods you are interested in:<br>
 | SRTS Expanded | :x: | :white_check_mark: | --- |
 | SRTS Crimson Fleet | :x: | :white_check_mark: | --- |
 | SRTS Helicopters | :x: | :white_check_mark: | --- |
-| Tesla Coil | :x: | :white_check_mark: | In progress |
+| Tesla Coil | :x: | :white_check_mark: | :x: |
 | Utility Columns | :white_check_mark: | :white_check_mark: | --- |
 <br>
 <img src="https://i.imgur.com/fdngbbh.png"><br>
