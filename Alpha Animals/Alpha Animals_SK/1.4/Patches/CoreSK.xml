@@ -89,6 +89,32 @@
                         </li>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/RecipeDef[
+                    defName="MakeFruitYogurt" or
+                    defName="MakeFruitYogurt_Bulk" or
+                    defName="MakeChocoMilk" or
+                    defName="Makecheese" or 
+                    @Name="Make_CheeseBase"
+                    ]/fixedIngredientFilter/thingDefs</xpath>
+                    <value>
+                        <li>AA_BlueMilk</li>
+                        <li>AA_GowMilk</li>
+                        <li>AA_NightMilk</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/RecipeDef[
+                    defName="Make_Cheese" or
+                    defName="Make_Cheese_x5" or
+                    defName="Make_Cheese_Vat_x10"
+                    ]/ingredients/li[1]/filter/thingDefs</xpath>
+                    <value>
+                        <li>AA_BlueMilk</li>
+                        <li>AA_GowMilk</li>
+                        <li>AA_NightMilk</li>
+                    </value>
+                </li>
             </operations>
         </match>
     </Operation>
