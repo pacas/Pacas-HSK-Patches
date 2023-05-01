@@ -10,8 +10,8 @@
         <prerequisites>
             <li>Fabrication</li>
         </prerequisites>
-        <researchViewX>8.00</researchViewX>
-        <researchViewY>40.00</researchViewY>
+        <researchViewX>9.00</researchViewX>
+        <researchViewY>44.00</researchViewY>
         <tab>Apparel_SK</tab>
     </ResearchProjectDef>
 
@@ -26,7 +26,7 @@
             <li>Melee_C1</li>
             <li>Apparel_C2</li>
         </prerequisites>
-        <researchViewX>9.00</researchViewX>
+        <researchViewX>12.00</researchViewX>
         <researchViewY>44.00</researchViewY>
         <tab>Apparel_SK</tab>
     </ResearchProjectDef>
@@ -41,8 +41,8 @@
             <li>Lunarsewing</li>
             <li>AdvancedFabrication</li>
         </prerequisites>
-        <researchViewX>12.00</researchViewX>
-        <researchViewY>41.00</researchViewY>
+        <researchViewX>13.00</researchViewX>
+        <researchViewY>39.00</researchViewY>
         <tab>Apparel_SK</tab>
     </ResearchProjectDef>
 
@@ -57,7 +57,7 @@
             <li>Lunarmachining</li>
             <li>Moonthread</li>
         </prerequisites>
-        <researchViewX>13.00</researchViewX>
+        <researchViewX>14.00</researchViewX>
         <researchViewY>43.00</researchViewY>
         <tab>Apparel_SK</tab>
     </ResearchProjectDef>
@@ -71,7 +71,7 @@
         <prerequisites>
             <li>Moonthread</li>
         </prerequisites>
-        <researchViewX>13.00</researchViewX>
+        <researchViewX>14.00</researchViewX>
         <researchViewY>44.00</researchViewY>
         <tab>Apparel_SK</tab>
     </ResearchProjectDef>
@@ -132,7 +132,7 @@
         <prerequisites>
             <li>EFClothing</li>
         </prerequisites>
-        <researchViewX>14.00</researchViewX>
+        <researchViewX>15.00</researchViewX>
         <researchViewY>45.00</researchViewY>
     </ResearchProjectDef>
 
@@ -147,11 +147,11 @@
             <li>Moonthread</li>
             <li>Components_D3</li>
         </prerequisites>
-        <researchViewX>22</researchViewX>
-        <researchViewY>37</researchViewY>
+        <researchViewX>20</researchViewX>
+        <researchViewY>41</researchViewY>
     </ResearchProjectDef>
 
-    <ResearchProjectDef ParentName="HitechMultiBase">
+    <ResearchProjectDef ParentName="HitechLabStationBase">
         <defName>RBpowerarmor</defName>
         <label>Advanced power armor</label>
         <description>Learn how to produces advanced power armor worn by the Rabbie Imperial Army.</description>
@@ -162,8 +162,8 @@
             <li>RBMoonsilk</li>
             <li>PoweredArmor</li>
         </prerequisites>
-        <researchViewX>24</researchViewX>
-        <researchViewY>37</researchViewY>
+        <researchViewX>23</researchViewX>
+        <researchViewY>40</researchViewY>
     </ResearchProjectDef>
 
 </Defs>

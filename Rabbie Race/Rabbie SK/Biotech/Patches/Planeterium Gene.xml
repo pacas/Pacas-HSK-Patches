@@ -1,13 +1,54 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-    <Operation Class="PatchOperationSequence">
-        <operations>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ChemicalDef[defName="Planetarium"]</xpath>
-                <value>
-                    <generateAddictionGenes>true</generateAddictionGenes>
-                </value>
-            </li>
-        </operations>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Alpha Genes</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <GeneDef>
+                            <defName>RB_Planetarium</defName>
+                            <label>Flow of Spice</label>
+                            <description>The body flows in the body. There is no way to escape.</description>
+                            <iconPath>UI/Icons/Genes/Chemicals/Planetarium/ChemicalDependency</iconPath>
+                            <displayCategory>Drugs</displayCategory>
+                            <selectionWeight>0</selectionWeight>
+                            <biostatCpx>1</biostatCpx>
+                            <biostatMet>1</biostatMet>
+                            <customEffectDescriptions>
+                                <li>If you lack Planetarium, your mind will be devastated and wandering.</li>
+                            </customEffectDescriptions>
+                            <modExtensions>
+                                <li Class="VanillaGenesExpanded.GeneExtension">
+                                    <hediffToWholeBody>PlanetariumAddiction</hediffToWholeBody>
+                                </li>
+                            </modExtensions>
+                        </GeneDef>
+                    </value>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/AlienRace.AlienBackstoryDef[@Name="RabbieBackStory"]/forcedHediffs</xpath>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="XenoRabbie" or defName="BaseRabbie"]/genes</xpath>
+                    <value>
+                        <li>RB_Planetarium</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ChemicalDef[defName="Planetarium"]</xpath>
+                    <value>
+                        <generateAddictionGenes>true</generateAddictionGenes>
+                    </value>
+                </li>
+            </operations>
+        </nomatch>
     </Operation>
 </Patch>
