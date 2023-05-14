@@ -65,6 +65,12 @@
         <placeWorkers>
             <li>PrimitiveCooling.PlaceWorker_UndergroundSpacing</li>
         </placeWorkers>
+        <modExtensions Inherit="false">
+           <li Class="PrimitiveCooling.UnderGroundExtension">
+              <isUnderground Inherit="false">true</isUnderground>
+              <range>1</range>
+           </li>
+        </modExtensions>
     </ThingDef>
 
     <!-- =============================  Wood Storage Pit =============================== -->
@@ -129,6 +135,12 @@
         <placeWorkers>
             <li>PrimitiveCooling.PlaceWorker_UndergroundSpacing</li>
         </placeWorkers>
+        <modExtensions Inherit="false">
+           <li Class="PrimitiveCooling.UnderGroundExtension">
+              <isUnderground Inherit="false">true</isUnderground>
+              <range>2</range>
+           </li>
+        </modExtensions>
     </ThingDef>
 
     <!-- ==========================  Stone Storage Pit =============================  -->
@@ -196,5 +208,11 @@
         <placeWorkers>
             <li>PrimitiveCooling.PlaceWorker_UndergroundSpacing</li>
         </placeWorkers>
+        <modExtensions Inherit="false">
+           <li Class="PrimitiveCooling.UnderGroundExtension">
+              <isUnderground Inherit="false">true</isUnderground>
+              <range>4</range>
+           </li>
+        </modExtensions>
     </ThingDef>
 </Defs>
