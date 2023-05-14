@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/DesignationCategoryDef[defName="Ship"]/researchPrerequisites</xpath>
+                <value>
+                    <researchPrerequisites>
+                        <li>Telecommunications_C1</li>
+                    </researchPrerequisites>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+	
+</Patch>
