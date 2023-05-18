@@ -1,33 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-
-	
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
-		<value>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>AA_DisgustingMealNutrientPaste</thingDef>
-			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>AA_GallatrossHorn</thingDef>
-			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>AA_SkySteel</thingDef>
-			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>AA_UraniumCrystals</thingDef>
-			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>AA_CactipineQuill</thingDef>
-			</li>
-			<li Class="StockGenerator_BuySingleDef">
-				<thingDef>AA_BlueMilk</thingDef>
-			</li>
-		</value>
-	</Operation>
-
-
-
-	
-
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
+                <value>
+                    <li Class="StockGenerator_BuySingleDef">
+                        <thingDef>AA_DisgustingMealNutrientPaste</thingDef>
+                    </li>
+                    <li Class="StockGenerator_BuySingleDef">
+                        <thingDef>AA_GallatrossHorn</thingDef>
+                    </li>
+                    <li Class="StockGenerator_BuySingleDef">
+                        <thingDef>AA_SkySteel</thingDef>
+                    </li>
+                    <li Class="StockGenerator_BuySingleDef">
+                        <thingDef>AA_UraniumCrystals</thingDef>
+                    </li>
+                    <li Class="StockGenerator_BuySingleDef">
+                        <thingDef>AA_CactipineQuill</thingDef>
+                    </li>
+                    <li Class="StockGenerator_BuySingleDef">
+                        <thingDef>AA_BlueMilk</thingDef>
+                    </li>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="AA_Gigantelope"]/statBases/MarketValue</xpath>
+                    <value>
+                        <MarketValue>800</MarketValue>
+                    </value>
+                </li>
+        </operations>
+    </Operation>
 </Patch>
