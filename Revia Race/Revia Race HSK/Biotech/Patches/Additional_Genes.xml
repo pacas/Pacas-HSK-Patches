@@ -15,4 +15,20 @@
             </operations>
         </match>
     </Operation>
+    
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Dominant Gene</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="RevianXenotype"]/genes</xpath>
+                    <value>
+                        <li>DominantGene</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>
