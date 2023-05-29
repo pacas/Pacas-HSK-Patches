@@ -115,9 +115,10 @@
         <ingredients>
             <li>
                 <filter>
-                    <categories>
-                        <li>Medicine</li>
-                    </categories>
+                    <thingDefs>
+                        <li>MedicineUltratech</li>
+                        <li>MedicineIndustrial</li>
+                    </thingDefs>
                 </filter>
                 <count>1</count>
             </li>
@@ -131,9 +132,11 @@
             </li>
         </ingredients>
         <fixedIngredientFilter>
-            <categories>
-                <li>Medicine</li>
-            </categories>
+            <thingDefs>
+                <li>PN_BrainEmpty</li>
+                <li>MedicineIndustrial</li>
+                <li>MedicineIndustrial</li>
+            </thingDefs>
         </fixedIngredientFilter>
     </RecipeDef>
 </Defs>

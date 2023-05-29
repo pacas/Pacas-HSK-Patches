@@ -117,9 +117,8 @@
                 <!--<forcedMissRadius>6</forcedMissRadius>-->
                 <circularError>1</circularError>
                 <warmupTime>2.00</warmupTime>
-                <minRange>32</minRange>
-                <range>500</range>
-                <burstShotCount>1</burstShotCount>
+                <minRange>25</minRange>
+                <range>300</range>
                 <soundCast>PNCannonSound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>16</muzzleFlashScale>
@@ -136,14 +135,14 @@
                 <ammoSet>AmmoSet_81mmMortarShell</ammoSet>
             </li>
             <li Class="CombatExtended.CompProperties_FireModes"/>
-            <li Class="CombatExtended.CompProperties_Charges">
+            <!--<li Class="CombatExtended.CompProperties_Charges">
                 <chargeSpeeds>
                     <li>30</li>
                     <li>50</li>
                     <li>70</li>
                     <li>90</li>
                 </chargeSpeeds>
-            </li>
+            </li>-->
         </comps>
     </ThingDef>
     
