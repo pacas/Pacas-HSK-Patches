@@ -439,73 +439,20 @@
             <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
             <fixedStorageSettings>
                 <filter>
-                    <thingDefs>
-                        <li>WoodLog</li>
-                        <li>Bamboo</li>
-                        <li>RedWoodLog</li>
-                        <li>WoodPlank</li>
-                        <li>BambooPlank</li>
-                        <li>RedWoodPlank</li>
-                        <li>Kindling</li>
-                        <li MayRequire="arpomo6.hmc.biomes">IronWoodLogHMC</li>
-                        <li MayRequire="arpomo6.hmc.biomes">IronWoodPlankHMC</li>
-                        <li MayRequire="ViTech.HCSKWood">CecropiaLog</li>
-                        <li MayRequire="ViTech.HCSKWood">PineLog</li>
-                        <li MayRequire="ViTech.HCSKWood">WillowLog</li>
-                        <li MayRequire="ViTech.HCSKWood">CypressLog</li>
-                        <li MayRequire="ViTech.HCSKWood">BirchLog</li>
-                        <li MayRequire="ViTech.HCSKWood">PoplarLog</li>
-                        <li MayRequire="ViTech.HCSKWood">MapleLog</li>
-                        <li MayRequire="ViTech.HCSKWood">TeakLog</li>
-                        <li MayRequire="ViTech.HCSKWood">OakLog</li>
-                        <li MayRequire="ViTech.HCSKWood">AcaciaLog</li>
-                        <li MayRequire="ViTech.HCSKWood">DragonwoodLog</li>
-                        <li MayRequire="ViTech.HCSKWood">MangroveLog</li>
-                        <li MayRequire="sarg.alphabiomes">GU_RedWood</li>
-                        <li MayRequire="sarg.alphabiomes">AB_Red_WoodPlank</li>
-                        <li MayRequire="sarg.alphabiomes">AB_CrystalWood</li>
-                        <li MayRequire="sarg.alphabiomes">AB_Crystal_WoodPlank</li>
-                        <li MayRequire="sarg.alphabiomes">AB_MushroomWoodLog</li>
-                        <li MayRequire="sarg.alphabiomes">AB_Shroom_WoodPlank</li>
-                        <li MayRequire="elkyelky.KindlingAndWildHay">WoodTwig</li>
-                        <li MayRequire="elkyelky.WoodTwigBundle">WoodTwig</li>
-                        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_DarkWoodLog</li>
-                        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_ElvenWoodLog</li>
-                        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_DryadWoodLog</li>
-                        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_AncientWoodLog</li>
-                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_BlackEbonyLog</li>
-                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_GreenEbonyLog</li>
-                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_RoseWoodLog</li>
-                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_MahoganyLog</li>
-                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_GuatambuLog</li>
-                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_ElvishTreeLog</li>
-                        <li MayRequire="Brohuld.MoreTrees">MoreTrees_SkyTreeLog</li>
-                        <li MayRequire="RimWorldsoudanzyo.ResourcePackCore">RPC_Firewood</li>
-                        <li MayRequire="Incense.velcroboy333">VBY_SandalWoodLog</li>
-                        <li MayRequire="Incense.velcroboy333">VBY_FrankincenseWoodLog</li>
-                        <li MayRequire="Incense.velcroboy333">VBY_TragacanthWoodLog</li>
-                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_BlackCapLog</li>
-                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_BloodThornLog</li>
-                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_FungiWoodLog</li>
-                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_TowerCapLog</li>
-                        <li MayRequire="dismarzero.VGP.RimFortressDwarvenPlants">DF_TunnelTubeLog</li>
-                        <li MayRequire="RimNature.velcroboy333">FlexiLog</li>
-                        <li MayRequire="RimNature.velcroboy333">DimenLog</li>
-                        <li MayRequire="Owlchemist.SimpleChains.Lumber">Owl_Firewood</li>
-                        <li MayRequire="Owlchemist.SimpleChains.Lumber">Owl_WoodLog</li>
-                        <li MayRequire="Owlchemist.SimpleChains.Lumber">Owl_GreenLumber</li>
-                        <li MayRequire="syrchalis.thrumkin">WoodLog_GhostAsh</li>
-                        <li MayRequire="Mlie.ZenGarden">ZEN_CherryWood</li>
-                        <li MayRequire="Mlie.ZenGarden">ZEN_EbonyWood</li>
-                        <li MayRequire="Ripmorld.AnimaWood">AnimaWood</li>
-                    </thingDefs>
                     <categories>
-                        <li MayRequire="Adventurer.ExpandWoodwork">WoodTypes</li>
-                        <li MayRequire="Adventurer.ExpandWoodwork">WoodLumber</li>
-                        <li MayRequire="teflonjim.extendedwoodworking">WoodTypes</li>
-                        <li MayRequire="teflonjim.extendedwoodworking">WoodLumber</li>
+                        <li>Woody</li>
+                        <li>Wooden</li>
                         <li MayRequire="ViTech.HCSKWood">FirewoodSeasoned</li>
                         <li MayRequire="ViTech.HCSKWood">FirewoodGreen</li>
+                        <li MayRequire="ViTech.HCSKWood">RawLogs</li>
+                        <li MayRequire="ViTech.HCSKWood">Hardwoods</li>
+                        <li MayRequire="ViTech.HCSKWood">Softwoods</li>
+                        <li MayRequire="ViTech.HCSKWood">Ultrahardwoods</li>
+                        <li MayRequire="ViTech.HCSKWood">BambooLogs</li>
+                        <li MayRequire="ViTech.HCSKWood">HardwoodLumber</li>
+                        <li MayRequire="ViTech.HCSKWood">SoftwoodLumber</li>
+                        <li MayRequire="ViTech.HCSKWood">UltrahardwoodLumber</li>
+                        <li MayRequire="ViTech.HCSKWood">EngineeredLumber</li>
                     </categories>
                 </filter>
             </fixedStorageSettings>
