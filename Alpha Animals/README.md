@@ -38,7 +38,7 @@ Q: Совместимо с идущей игрой?<br>
 A: Да, вы можете добавлять его когда захотите. Не рекомендую удалять после.<br>
 #-------------------------------------------------------------#<br>
 Q: I found a bug!<br>
-A: Report to the appropriate branch in the HSK discord or githab Issues.<br>
+A: Report to the appropriate branch in the HSK discord or github Issues.<br>
 Q: Я нашёл ошибку!<br>
 A: Репортить в соответствующую ветку в дисе ХСК или в Issues гитхаба.<br><br>
 <b>Whats removed or major changed in this patch | Что удалено или сильно изменено в этом патче:</b><br>

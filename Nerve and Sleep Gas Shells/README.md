@@ -11,14 +11,6 @@ This mod adds two mortar shells. The nerve gas shell that slowly kills any pawns
 Using the gas masks and environmental protection full-head helmets prevents pawns from being affected.<br><br>
 Этот мод добавляет два минометных снаряда. Снаряд с нервно-паралитическим газом, который медленно убивает всех пешек вблизи газового облака, и снаряд с усыпляющим газом, который снижает сознание пешки вплоть до ее убийства.<br>
 Использование противогазов и защитных шлемов предотвращает поражение пешек.<br><br>
-
-![Image](https://i.imgur.com/d9tcOKx.png)
-
-![Image](https://i.imgur.com/xCwGTD4.png)
-
-![Image](https://i.imgur.com/TjZ0yqN.png)
-
-<br>
 <img src="https://i.imgur.com/5KVUmeE.png">
 <br>
 Q: Where can I get them?<br>
