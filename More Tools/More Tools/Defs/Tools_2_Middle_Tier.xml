@@ -5,6 +5,7 @@
 		<defName>Dll_Tool_Chainsaw</defName>
 		<label>Chainsaw</label>
 		<description>Portable saw that cuts with a set of rotating chain with teeth. Hard to use as weapon, but if enemy is right here, and you dont have a gun...</description>
+        <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
 		<graphicData>
 			<texPath>Things/Items/Tools/Chainsaw</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -26,6 +27,7 @@
 			<Bulk>2.5</Bulk>
 			<Mass>6</Mass>
 			<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
+            <ToolEffectivenessFactor>1.3</ToolEffectivenessFactor>
 		</statBases>
 		<equippedAngleOffset>-35</equippedAngleOffset>
 		<techLevel>Industrial</techLevel>
@@ -58,9 +60,16 @@
 				<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<equippedStatOffsets>
-			<TreeFellingSpeed>1</TreeFellingSpeed>
-		</equippedStatOffsets>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.SurvivalToolProperties">
+                <baseWorkStatFactors>
+                    <TreeFellingSpeed>2</TreeFellingSpeed>
+                </baseWorkStatFactors>
+                <defaultSurvivalToolAssignmentTags>
+                    <li>PlantWorker</li>
+                </defaultSurvivalToolAssignmentTags>
+            </li>
+		</modExtensions>
 		<thingCategories>
 			<li>SurvivalToolsIndustrial</li>
 		</thingCategories>
@@ -75,6 +84,7 @@
 		<defName>Dll_Tool_Jackhammer</defName>
 		<label>Jackhammer</label>
 		<description>Pneumatic tool that combines a hammer directly with a chisel.</description>
+        <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
 		<graphicData>
 			<texPath>Things/Items/Tools/jackhammer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -96,6 +106,7 @@
 			<Bulk>8.5</Bulk>
 			<Mass>22</Mass>
 			<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
+            <ToolEffectivenessFactor>1.3</ToolEffectivenessFactor>
 		</statBases>
 		<equippedAngleOffset>1</equippedAngleOffset>
 		<techLevel>Industrial</techLevel>
@@ -128,9 +139,16 @@
 				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<equippedStatOffsets>
-			<MiningSpeed>1</MiningSpeed>
-		</equippedStatOffsets>
+		<modExtensions>
+			<li Class="SurvivalToolsLite.SurvivalToolProperties">
+                <baseWorkStatFactors>
+                    <MiningSpeed>2</MiningSpeed>
+                </baseWorkStatFactors>
+                <defaultSurvivalToolAssignmentTags>
+                    <li>Miner</li>
+                </defaultSurvivalToolAssignmentTags>
+            </li>
+		</modExtensions>
 		<thingCategories>
 			<li>SurvivalToolsIndustrial</li>
 		</thingCategories>
@@ -145,6 +163,7 @@
 		<defName>Dll_Tool_Agriculture</defName>
 		<label>Cultivator</label>
 		<description>One of the best tools for soil cultivation, also can be used as planter, irrigator, and harvester. Too heavy for using as weapon.</description>
+        <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
 		<graphicData>
 			<texPath>Things/Items/Tools/Cultivator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -166,6 +185,7 @@
 			<Bulk>20</Bulk>
 			<Mass>27</Mass>
 			<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
+            <ToolEffectivenessFactor>1.3</ToolEffectivenessFactor>
 		</statBases>
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<techLevel>Industrial</techLevel>
@@ -210,10 +230,17 @@
 				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<equippedStatOffsets>
-			<PlantHarvestingSpeed>0.8</PlantHarvestingSpeed>
-			<PlantSowingSpeed>0.8</PlantSowingSpeed>
-		</equippedStatOffsets>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.SurvivalToolProperties">
+                <baseWorkStatFactors>
+                    <PlantHarvestingSpeed>1.5</PlantHarvestingSpeed>
+					<PlantSowingSpeed>1.5</PlantSowingSpeed>
+                </baseWorkStatFactors>
+                <defaultSurvivalToolAssignmentTags>
+                    <li>PlantWorker</li>
+                </defaultSurvivalToolAssignmentTags>
+            </li>
+		</modExtensions>
 		<thingCategories>
 			<li>SurvivalToolsIndustrial</li>
 		</thingCategories>
@@ -228,6 +255,7 @@
 		<defName>Dll_Tool_LeafBlower</defName>
 		<label>Leaf Blower</label>
 		<description>Powerful tool for cleaning large areas.</description>
+        <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
 		<graphicData>
 			<texPath>Things/Items/Tools/LeafBlower</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -249,6 +277,7 @@
 			<Bulk>8</Bulk>
 			<Mass>4.5</Mass>
 			<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
+            <ToolEffectivenessFactor>1.3</ToolEffectivenessFactor>
 		</statBases>
 		<equippedAngleOffset>15</equippedAngleOffset>
 		<techLevel>Industrial</techLevel>
@@ -281,9 +310,13 @@
 				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<equippedStatOffsets>
-			<CleaningSpeed>1.5</CleaningSpeed>
-		</equippedStatOffsets>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.SurvivalToolProperties">
+                <baseWorkStatFactors>
+                    <CleaningSpeed>1.5</CleaningSpeed>
+                </baseWorkStatFactors>
+            </li>
+		</modExtensions>
 		<thingCategories>
 			<li>SurvivalToolsIndustrial</li>
 		</thingCategories>
@@ -298,6 +331,7 @@
 		<defName>Dll_Tool_AngleGrinder</defName>
 		<label>Angle grinder</label>
 		<description>Handheld power tool used for abrasive cutting and polishing.</description>
+        <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
 		<graphicData>
 			<texPath>Things/Items/Tools/angleGrinder</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -319,6 +353,7 @@
 			<Bulk>4.5</Bulk>
 			<Mass>3</Mass>
 			<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
+            <ToolEffectivenessFactor>1.3</ToolEffectivenessFactor>
 		</statBases>
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<techLevel>Industrial</techLevel>
@@ -351,11 +386,18 @@
 				<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<equippedStatOffsets>
-			<ConstructionSpeed>0.7</ConstructionSpeed>
-			<SmoothingSpeed>1</SmoothingSpeed>
-			<ConstructSuccessChance>1</ConstructSuccessChance>
-		</equippedStatOffsets>
+        <modExtensions>
+			<li Class="SurvivalToolsLite.SurvivalToolProperties">
+                <baseWorkStatFactors>
+                    <ConstructionSpeed>1.2</ConstructionSpeed>
+                    <SmoothingSpeed>1.4</SmoothingSpeed>
+                    <ConstructSuccessChance>1.2</ConstructSuccessChance>
+                </baseWorkStatFactors>
+                <defaultSurvivalToolAssignmentTags>
+                    <li>Constructor</li>
+                </defaultSurvivalToolAssignmentTags>
+            </li>
+		</modExtensions>
 		<thingCategories>
 			<li>SurvivalToolsIndustrial</li>
 		</thingCategories>
@@ -370,6 +412,7 @@
 		<defName>Dll_Tool_SolderingIron</defName>
 		<label>Soldering iron</label>
 		<description>Simple tool that melt solder so that it can flow into the joint between two workpieces.</description>
+        <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
 		<graphicData>
 			<texPath>Things/Items/Tools/SolderingIron</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -392,10 +435,19 @@
 			<Bulk>2.5</Bulk>
 			<Mass>0.5</Mass>
 			<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
+            <ToolEffectivenessFactor>1.3</ToolEffectivenessFactor>
 		</statBases>
 		<equippedAngleOffset>45</equippedAngleOffset>
 		<techLevel>Industrial</techLevel>
 		<modExtensions>
+            <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                <baseWorkStatFactors>
+                    <ElectronicCraftingSpeed>1.5</ElectronicCraftingSpeed>
+                </baseWorkStatFactors>
+                <defaultSurvivalToolAssignmentTags>
+                    <li>Crafter</li>
+                </defaultSurvivalToolAssignmentTags>
+            </li>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>0.4,0.4</DrawSize>
 			</li>
@@ -441,9 +493,6 @@
 				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<equippedStatOffsets>
-			<ElectronicCraftingSpeed>1</ElectronicCraftingSpeed>
-		</equippedStatOffsets>
 		<thingCategories>
 			<li>SurvivalToolsIndustrial</li>
 		</thingCategories>
@@ -458,6 +507,7 @@
 		<defName>Dll_Tool_ToolBox</defName>
 		<label>Toolbox</label>
 		<description>Roomy case with different tools for work.</description>
+        <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
 		<graphicData>
 			<texPath>Things/Items/Tools/ToolBox</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -480,10 +530,26 @@
 			<Bulk>11.5</Bulk>
 			<Mass>5</Mass>
 			<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
+            <ToolEffectivenessFactor>1.3</ToolEffectivenessFactor>
 		</statBases>
 		<equippedAngleOffset>-48</equippedAngleOffset>
 		<techLevel>Industrial</techLevel>
 		<modExtensions>
+            <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                <baseWorkStatFactors>
+                    <StonecuttingSpeed>1.2</StonecuttingSpeed>
+                    <GeneralLaborSpeed>1.2</GeneralLaborSpeed>
+                    <SmeltingSpeed>1.2</SmeltingSpeed>
+                    <SmithingSpeed>1.2</SmithingSpeed>
+                    <ConstructionSpeed>1.2</ConstructionSpeed>
+                    <SmoothingSpeed>1.2</SmoothingSpeed>
+                    <ButcheryMechanoidSpeed>1.2</ButcheryMechanoidSpeed>
+                </baseWorkStatFactors>
+                <defaultSurvivalToolAssignmentTags>
+                    <li>Crafter</li>
+                    <li>Constructor</li>
+                </defaultSurvivalToolAssignmentTags>
+            </li>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>0.7,0.7</DrawSize>
 			</li>
@@ -505,13 +571,6 @@
 				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<equippedStatOffsets>
-			<StonecuttingSpeed>0.4</StonecuttingSpeed>
-			<GeneralLaborSpeed>0.4</GeneralLaborSpeed>
-			<SmeltingSpeed>0.4</SmeltingSpeed>
-			<SmithingSpeed>0.4</SmithingSpeed>
-			<ButcheryMechanoidSpeed>0.4</ButcheryMechanoidSpeed>
-		</equippedStatOffsets>
 		<thingCategories>
 			<li>SurvivalToolsIndustrial</li>
 		</thingCategories>
@@ -526,6 +585,7 @@
 		<defName>Dll_Tool_Medbag</defName>
 		<label>Medbag</label>
 		<description>Handbag with bunch of medical tools: different types of scalpel, surgical scissors, hemostats, endoscope, and bunch of surgical sutures and staples</description>
+        <thingClass>SurvivalToolsLite.SurvivalTool</thingClass>
 		<graphicData>
 			<texPath>Things/Items/Tools/MedTools</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -549,10 +609,19 @@
 			<Bulk>4.5</Bulk>
 			<Mass>3</Mass>
 			<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
+            <ToolEffectivenessFactor>1.3</ToolEffectivenessFactor>
 		</statBases>
 		<equippedAngleOffset>-45</equippedAngleOffset>
 		<techLevel>Industrial</techLevel>
 		<modExtensions>
+            <li Class="SurvivalToolsLite.SurvivalToolProperties">
+                <baseWorkStatFactors>
+                    <MedicalTendSpeed>1.2</MedicalTendSpeed>
+                    <MedicalTendQuality>1.2</MedicalTendQuality>
+                    <MedicalOperationSpeed>1.2</MedicalOperationSpeed>
+                    <MedicalSurgerySuccessChance>1.2</MedicalSurgerySuccessChance>
+                </baseWorkStatFactors>
+            </li>
 			<li Class="CombatExtended.GunDrawExtension">
 				<DrawSize>0.65,0.65</DrawSize>
 			</li>
@@ -575,12 +644,6 @@
 				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
 			</li>
 		</tools>
-		<equippedStatOffsets>
-			<MedicalTendSpeed>0.4</MedicalTendSpeed>
-			<MedicalTendQuality>0.25</MedicalTendQuality>
-			<MedicalOperationSpeed>0.3</MedicalOperationSpeed>
-			<MedicalSurgerySuccessChance>0.15</MedicalSurgerySuccessChance>
-		</equippedStatOffsets>
 		<thingCategories>
 			<li>SurvivalToolsIndustrial</li>
 		</thingCategories>
