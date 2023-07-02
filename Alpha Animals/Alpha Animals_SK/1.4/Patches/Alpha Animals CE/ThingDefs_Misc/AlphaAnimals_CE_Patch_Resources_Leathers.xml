@@ -8,21 +8,21 @@
 			<operations>
 				<!-- Remove GallatrossHorn as a weapon -->
 				<li Class="PatchOperationRemove">
-					<xpath>/Defs/ThingDef[defName="AA_GallatrossHorn"]/tools</xpath>
+					<xpath>Defs/ThingDef[defName="AA_GallatrossHorn"]/tools</xpath>
 				</li>
 				<li Class="PatchOperationAttributeSet">
-					<xpath>/Defs/ThingDef[defName="AA_GallatrossHorn"]</xpath>
+					<xpath>Defs/ThingDef[defName="AA_GallatrossHorn"]</xpath>
 					<attribute>ParentName</attribute>
 					<value>SK_ResourceBase</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName="AA_GallatrossHorn"]/description</xpath>
+					<xpath>Defs/ThingDef[defName="AA_GallatrossHorn"]/description</xpath>
 					<value>
 						<description>A single horn of the mighty Gallatross. Proof that you're a warrior worthy of the title of Aberration Killer. Traders and collectors might pay a high price for this.</description>
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName="AA_GallatrossHorn"]/statBases/MarketValue</xpath>
+					<xpath>Defs/ThingDef[defName="AA_GallatrossHorn"]/statBases/MarketValue</xpath>
 					<value>
 						<MarketValue>1800</MarketValue>
 					</value>

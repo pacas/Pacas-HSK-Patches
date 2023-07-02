@@ -11,9 +11,9 @@
 			<!-- ====== The Eye ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_EyeBody"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_EyeBody"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_EyeBody"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_EyeBody"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -21,7 +21,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_EyeBody"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_EyeBody"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -29,9 +29,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_EyeBody"]/corePart/parts/li[def="AA_JellyfishTentacle"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_EyeBody"]/corePart/parts/li[def="AA_JellyfishTentacle"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_EyeBody]/corePart/parts/li[def="AA_JellyfishTentacle"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_EyeBody]/corePart/parts/li[def="AA_JellyfishTentacle"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -39,7 +39,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_EyeBody"]/corePart/parts/li[def="AA_JellyfishTentacle"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_EyeBody"]/corePart/parts/li[def="AA_JellyfishTentacle"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -47,9 +47,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_EyeBody"]/corePart/parts/li[def="Head"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_EyeBody"]/corePart/parts/li[def="Head"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_EyeBody"]/corePart/parts/li[def="Head"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_EyeBody"]/corePart/parts/li[def="Head"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -57,7 +57,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_EyeBody"]/corePart/parts/li[def="Head"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_EyeBody"]/corePart/parts/li[def="Head"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -215,7 +215,7 @@
 					</li>
 
 					<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName="AA_BoulderMit" or
+					<xpath>Defs/ThingDef[defName="AA_BoulderMit" or
 						defName="AA_SummitCrab" or
 						defName="AA_CrystalMit" or
 						defName="AA_PebbleMit"
@@ -232,9 +232,9 @@
 			<!-- ====== AA_Arachnid ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Arachnid"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Arachnid"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Arachnid"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Arachnid"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -242,7 +242,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Arachnid"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Arachnid"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -250,9 +250,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="AA_Thorax"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="AA_Thorax"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="AA_Thorax"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="AA_Thorax"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -260,7 +260,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="AA_Thorax"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="AA_Thorax"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -268,9 +268,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="Pronotum"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="Pronotum"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -278,7 +278,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -286,9 +286,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -296,7 +296,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Arachnid"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -306,9 +306,9 @@
 			<!-- ====== AA_ArmouredSlug ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -316,7 +316,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -324,9 +324,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/parts/li[def="AA_Carapace"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/parts/li[def="AA_Carapace"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/parts/li[def="AA_Carapace"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/parts/li[def="AA_Carapace"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -334,7 +334,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/parts/li[def="AA_Carapace"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/parts/li[def="AA_Carapace"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -342,9 +342,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/parts/li[def="Head"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/parts/li[def="Head"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/parts/li[def="Head"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/parts/li[def="Head"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -352,7 +352,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/parts/li[def="Head"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ArmouredSlug"]/corePart/parts/li[def="Head"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -362,9 +362,9 @@
 			<!-- ====== AA_Atispec ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -372,7 +372,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -380,9 +380,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="Pronotum"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="Pronotum"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -390,7 +390,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -398,9 +398,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -408,7 +408,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -416,9 +416,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="AA_Abdomen"]/parts/li[def="AA_InsectSting"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="AA_Abdomen"]/parts/li[def="AA_InsectSting"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="AA_Abdomen"]/parts/li[def="AA_InsectSting"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="AA_Abdomen"]/parts/li[def="AA_InsectSting"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -426,7 +426,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="AA_Abdomen"]/parts/li[def="AA_InsectSting"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="AA_Abdomen"]/parts/li[def="AA_InsectSting"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -434,9 +434,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="AA_FrontClaw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="AA_FrontClaw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="AA_FrontClaw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="AA_FrontClaw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -444,189 +444,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="AA_FrontClaw"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-					
-			<!-- ====== AA_Aura ====== -->
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalNeck"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalNeck"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalNeck"]/parts/li[def="MechanicalHead"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalShoulder"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalShoulder"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalShoulder"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalShoulder"]/parts/li[def="MechanicalArm"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalShoulder"]/parts/li[def="MechanicalArm"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalShoulder"]/parts/li[def="MechanicalArm"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalShoulder"]/parts/li[def="MechanicalArm"]/parts/li[def="MechanicalHand"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalShoulder"]/parts/li[def="MechanicalArm"]/parts/li[def="MechanicalHand"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalShoulder"]/parts/li[def="MechanicalArm"]/parts/li[def="MechanicalHand"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalShoulder"]/parts/li[def="MechanicalArm"]/parts/li[def="MechanicalHand"]/parts/li[def="MechanicalFinger"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalShoulder"]/parts/li[def="MechanicalArm"]/parts/li[def="MechanicalHand"]/parts/li[def="MechanicalFinger"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalShoulder"]/parts/li[def="MechanicalArm"]/parts/li[def="MechanicalHand"]/parts/li[def="MechanicalFinger"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalLeg"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalLeg"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalLeg"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalLeg"]/parts/li[def="MechanicalFoot"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalLeg"]/parts/li[def="MechanicalFoot"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="MechanicalLeg"]/parts/li[def="MechanicalFoot"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="AA_MechanoidWing"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="AA_MechanoidWing"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_AuraBody"]/corePart/parts/li[def="AA_MechanoidWing"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Atispec"]/corePart/parts/li[def="AA_FrontClaw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -640,9 +458,9 @@
 			<!-- ====== ClawedSlug ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ClawedSlug"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ClawedSlug"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -650,7 +468,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -658,9 +476,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/parts/li[def="AA_Carapace"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/parts/li[def="AA_Carapace"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/parts/li[def="AA_Carapace"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/parts/li[def="AA_Carapace"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -668,7 +486,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/parts/li[def="AA_Carapace"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/parts/li[def="AA_Carapace"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -676,9 +494,9 @@
 					</li>
 			
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/parts/li[def="AA_FrontClaw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/parts/li[def="AA_FrontClaw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/parts/li[def="AA_FrontClaw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/parts/li[def="AA_FrontClaw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -686,7 +504,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/parts/li[def="AA_FrontClaw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ClawedSlug"]/corePart/parts/li[def="AA_FrontClaw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -696,9 +514,9 @@
 			<!-- ====== Crocodile ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -706,7 +524,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -714,9 +532,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Tail"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Tail"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Tail"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Tail"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -724,7 +542,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Tail"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Tail"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -732,9 +550,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Neck"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Neck"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Neck"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Neck"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -742,7 +560,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Neck"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Neck"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -750,9 +568,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -760,7 +578,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -768,9 +586,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Leg"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Leg"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Leg"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Leg"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -778,7 +596,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Leg"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Leg"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -786,9 +604,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -796,130 +614,19 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Crocodile"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
 					</match>
 					</li>
-
-			<!-- ====== DaggerSnout ====== -->
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="MechanicalHead"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="MechanicalHead"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="MechanicalHead"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="MechanicalHead"]/parts/li[def="Blade"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="MechanicalHead"]/parts/li[def="Blade"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="MechanicalHead"]/parts/li[def="Blade"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="AA_TankPlateThird"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="AA_TankPlateThird"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="AA_TankPlateThird"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="AA_TankPlateThird"]/parts/li[def="AA_TankPlateFifth"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="AA_TankPlateThird"]/parts/li[def="AA_TankPlateFifth"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="AA_TankPlateThird"]/parts/li[def="AA_TankPlateFifth"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>					
-					
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="MechanicalLeg"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="MechanicalLeg"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_DaggerSnoutBody"]/corePart/parts/li[def="MechanicalLeg"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
 
 			<!-- ====== DualJawedQuadruped ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -927,7 +634,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -935,9 +642,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -945,7 +652,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -953,9 +660,9 @@
 					</li>
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -963,7 +670,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -971,9 +678,9 @@
 					</li>
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -981,7 +688,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -989,9 +696,9 @@
 					</li>
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Leg"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Leg"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Leg"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Leg"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -999,7 +706,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Leg"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Leg"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1007,9 +714,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1017,7 +724,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_DualJawedQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1027,9 +734,9 @@
 					<!-- ====== ExtraClawedQuadruped ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1037,7 +744,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1045,9 +752,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Neck"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Neck"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Neck"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Neck"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1055,7 +762,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Neck"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Neck"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1063,9 +770,9 @@
 					</li>
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1073,7 +780,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1081,9 +788,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="AA_FrontClaw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="AA_FrontClaw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="AA_FrontClaw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="AA_FrontClaw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1091,7 +798,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="AA_FrontClaw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="AA_FrontClaw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1099,9 +806,9 @@
 					</li>
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Leg"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Leg"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Leg"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Leg"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1109,7 +816,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Leg"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Leg"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1117,9 +824,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1127,7 +834,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ExtraClawedQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1138,9 +845,9 @@
 			<!-- ====== EyelessQuadruped ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1148,7 +855,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1156,9 +863,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Neck"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Neck"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Neck"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Neck"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1166,7 +873,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Neck"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Neck"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1174,9 +881,9 @@
 					</li>
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1184,7 +891,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1192,9 +899,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1202,7 +909,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_EyelessQuadruped"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1212,9 +919,9 @@
 			<!-- ====== Tentacled EyelessQuadruped ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1222,7 +929,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1230,9 +937,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Neck"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Neck"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Neck"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Neck"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1240,7 +947,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Neck"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Neck"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1248,9 +955,9 @@
 					</li>
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1258,7 +965,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1266,9 +973,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1276,7 +983,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_TentacledQuadrupedEyeless"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1286,9 +993,9 @@
 			<!-- ====== ManTrap or FlyTrap or Sentientplant ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_FlyTrap" or defName="AA_SentientPlant"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_FlyTrap" or defName="AA_SentientPlant"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_FlyTrap" or defName="AA_SentientPlant"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_FlyTrap" or defName="AA_SentientPlant"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1296,7 +1003,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_FlyTrap" or defName="AA_SentientPlant"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_FlyTrap" or defName="AA_SentientPlant"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1304,9 +1011,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_FlyTrap" or defName="AA_SentientPlant"]/corePart/parts/li[def="Neck"]/parts/li[def="AA_SentientPlantHead"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_FlyTrap" or defName="AA_SentientPlant"]/corePart/parts/li[def="Neck"]/parts/li[def="AA_SentientPlantHead"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_FlyTrap" or defName="AA_SentientPlant"]/corePart/parts/li[def="Neck"]/parts/li[def="AA_SentientPlantHead"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_FlyTrap" or defName="AA_SentientPlant"]/corePart/parts/li[def="Neck"]/parts/li[def="AA_SentientPlantHead"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1314,7 +1021,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_FlyTrap" or defName="AA_SentientPlant"]/corePart/parts/li[def="Neck"]/parts/li[def="AA_SentientPlantHead"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_FlyTrap" or defName="AA_SentientPlant"]/corePart/parts/li[def="Neck"]/parts/li[def="AA_SentientPlantHead"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1328,9 +1035,9 @@
 			<!-- ====== Hexapod ====== -->
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1338,7 +1045,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1346,9 +1053,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Neck"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Neck"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Neck"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Neck"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1356,7 +1063,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Neck"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Neck"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1364,9 +1071,9 @@
 					</li>
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1374,7 +1081,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1383,9 +1090,9 @@
 
 				
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Leg"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Leg"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Leg"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Leg"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1393,7 +1100,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Leg"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Leg"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1401,9 +1108,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1411,7 +1118,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Hexapod"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1423,9 +1130,9 @@
 					<!-- ====== NightMuleBody ====== -->
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1433,7 +1140,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1441,9 +1148,9 @@
 					</li>
 			
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1451,7 +1158,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1459,9 +1166,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1469,7 +1176,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1477,9 +1184,9 @@
 					</li>					
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Horn"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Horn"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Horn"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Horn"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1487,7 +1194,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Horn"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Horn"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1495,9 +1202,9 @@
 					</li>
 				
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Leg"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Leg"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Leg"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Leg"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1505,7 +1212,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Leg"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Leg"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1513,9 +1220,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1523,7 +1230,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_NightMuleBody"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1533,9 +1240,9 @@
 			<!-- ====== NightRam ====== -->
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1543,7 +1250,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1551,9 +1258,9 @@
 					</li>
 			
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1561,7 +1268,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1569,9 +1276,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1579,7 +1286,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1587,9 +1294,9 @@
 					</li>					
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Horn"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Horn"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Horn"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Horn"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1597,7 +1304,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Horn"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="Horn"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1605,9 +1312,9 @@
 					</li>
 				
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Leg"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Leg"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Leg"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Leg"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1615,7 +1322,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Leg"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Leg"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1623,9 +1330,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1633,7 +1340,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_NightRamBody"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1651,9 +1358,9 @@
 			<!-- ====== AA_ScorpionLike ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1661,7 +1368,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1669,9 +1376,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="AA_Thorax"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="AA_Thorax"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="AA_Thorax"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="AA_Thorax"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1679,7 +1386,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="AA_Thorax"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="AA_Thorax"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1687,9 +1394,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="Pronotum"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="Pronotum"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1697,7 +1404,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1705,9 +1412,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1715,7 +1422,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1723,9 +1430,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="InsectLeg"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="InsectLeg"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="InsectLeg"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="InsectLeg"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1733,7 +1440,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="InsectLeg"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="InsectLeg"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1741,9 +1448,9 @@
 					</li>
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="AA_InsectTail"]/parts/li[def="AA_InsectSting"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="AA_InsectTail"]/parts/li[def="AA_InsectSting"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="AA_InsectTail"]/parts/li[def="AA_InsectSting"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="AA_InsectTail"]/parts/li[def="AA_InsectSting"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1751,148 +1458,19 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="AA_InsectTail"]/parts/li[def="AA_InsectSting"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>					
-
-					<!-- ====== AA_SlurrypedeBody ====== -->
-					
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_ScorpionLike"]/corePart/parts/li[def="AA_InsectTail"]/parts/li[def="AA_InsectSting"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
 					</match>
 					</li>
-			
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankTurret"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankTurret"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankTurret"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>
-
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/parts/li[def="AA_TankPlateThird"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/parts/li[def="AA_TankPlateThird"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/parts/li[def="AA_TankPlateThird"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>					
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/parts/li[def="AA_TankPlateThird"]/parts/li[def="AA_TankPlateFourth"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/parts/li[def="AA_TankPlateThird"]/parts/li[def="AA_TankPlateFourth"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/parts/li[def="AA_TankPlateThird"]/parts/li[def="AA_TankPlateFourth"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>					
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/parts/li[def="AA_TankPlateThird"]/parts/li[def="AA_TankPlateFourth"]/parts/li[def="AA_TankPlateFifth"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/parts/li[def="AA_TankPlateThird"]/parts/li[def="AA_TankPlateFourth"]/parts/li[def="AA_TankPlateFifth"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/parts/li[def="AA_TankPlateThird"]/parts/li[def="AA_TankPlateFourth"]/parts/li[def="AA_TankPlateFifth"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>			
-
-					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/parts/li[def="AA_TankPlateThird"]/parts/li[def="AA_TankPlateFourth"]/parts/li[def="AA_TankPlateFifth"]/parts/li[def="AA_TankPlateSixth"]/groups</xpath>
-					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/parts/li[def="AA_TankPlateThird"]/parts/li[def="AA_TankPlateFourth"]/parts/li[def="AA_TankPlateFifth"]/parts/li[def="AA_TankPlateSixth"]</xpath>
-							<value>
-								<groups>
-									<li>CoveredByNaturalArmor</li>
-								</groups>
-							</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SiegebreakerBody"]/corePart/parts/li[def="AA_TankPlateSecond"]/parts/li[def="AA_TankPlateThird"]/parts/li[def="AA_TankPlateFourth"]/parts/li[def="AA_TankPlateFifth"]/parts/li[def="AA_TankPlateSixth"]/groups</xpath>
-						<value>
-							<li>CoveredByNaturalArmor</li>
-						</value>
-					</match>
-					</li>	
 					
 					<!-- ====== SixEyedGoat ====== -->
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1900,7 +1478,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1908,9 +1486,9 @@
 					</li>
 			
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1918,7 +1496,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1926,9 +1504,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1936,7 +1514,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[def="AnimalJaw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1944,9 +1522,9 @@
 					</li>					
 				
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Leg"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Leg"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Leg"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Leg"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1954,7 +1532,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Leg"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Leg"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1962,9 +1540,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1972,7 +1550,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SixEyedGoat"]/corePart/parts/li[def="Leg"]/parts/li[def="Hoof"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -1982,9 +1560,9 @@
 					<!-- ====== AA_Slug ====== -->
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Slug"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Slug"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Slug"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Slug"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -1992,7 +1570,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Slug"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Slug"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2000,9 +1578,9 @@
 					</li>
 			
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Slug"]/corePart/parts/li[def="Head"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Slug"]/corePart/parts/li[def="Head"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Slug"]/corePart/parts/li[def="Head"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Slug"]/corePart/parts/li[def="Head"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2010,7 +1588,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Slug"]/corePart/parts/li[def="Head"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Slug"]/corePart/parts/li[def="Head"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2020,9 +1598,9 @@
 					<!-- ====== AA_SlurrypedeBody ====== -->
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2030,7 +1608,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2038,9 +1616,9 @@
 					</li>
 			
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalHead"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalHead"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalHead"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalHead"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2048,7 +1626,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalHead"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalHead"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2056,9 +1634,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2066,7 +1644,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2075,9 +1653,9 @@
 
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2085,7 +1663,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2093,9 +1671,9 @@
 					</li>					
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2103,7 +1681,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2111,9 +1689,9 @@
 					</li>					
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/parts/li[def="MechanicalCentipedeBodyFifthRing"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/parts/li[def="MechanicalCentipedeBodyFifthRing"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/parts/li[def="MechanicalCentipedeBodyFifthRing"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/parts/li[def="MechanicalCentipedeBodyFifthRing"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2121,7 +1699,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/parts/li[def="MechanicalCentipedeBodyFifthRing"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/parts/li[def="MechanicalCentipedeBodyFifthRing"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2129,9 +1707,9 @@
 					</li>			
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/parts/li[def="MechanicalCentipedeBodyFifthRing"]/parts/li[def="MechanicalCentipedeBodySixthRing"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/parts/li[def="MechanicalCentipedeBodyFifthRing"]/parts/li[def="MechanicalCentipedeBodySixthRing"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/parts/li[def="MechanicalCentipedeBodyFifthRing"]/parts/li[def="MechanicalCentipedeBodySixthRing"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/parts/li[def="MechanicalCentipedeBodyFifthRing"]/parts/li[def="MechanicalCentipedeBodySixthRing"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2139,7 +1717,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/parts/li[def="MechanicalCentipedeBodyFifthRing"]/parts/li[def="MechanicalCentipedeBodySixthRing"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SlurrypedeBody"]/corePart/parts/li[def="MechanicalCentipedeBodySecondRing"]/parts/li[def="MechanicalCentipedeBodyThirdRing"]/parts/li[def="MechanicalCentipedeBodyFourthRing"]/parts/li[def="MechanicalCentipedeBodyFifthRing"]/parts/li[def="MechanicalCentipedeBodySixthRing"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2149,9 +1727,9 @@
 					<!-- ====== AA_Snail ====== -->
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Snail"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Snail"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Snail"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Snail"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2159,7 +1737,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Snail"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Snail"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2167,9 +1745,9 @@
 					</li>			
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Snail"]/corePart/parts/li[def="AA_Carapace"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Snail"]/corePart/parts/li[def="AA_Carapace"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Snail"]/corePart/parts/li[def="AA_Carapace"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Snail"]/corePart/parts/li[def="AA_Carapace"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2177,7 +1755,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Snail"]/corePart/parts/li[def="AA_Carapace"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Snail"]/corePart/parts/li[def="AA_Carapace"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2187,9 +1765,9 @@
 					<!-- ====== AA_SnakeWithTwoLimbs ====== -->
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2197,7 +1775,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2205,9 +1783,9 @@
 					</li>			
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="AA_LeftCreatureLimb" or def="AA_RightCreatureLimb"]/parts/li[def="AA_LeftCreatureBlade" or def="AA_RightCreatureBlade"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="AA_LeftCreatureLimb" or def="AA_RightCreatureLimb"]/parts/li[def="AA_LeftCreatureBlade" or def="AA_RightCreatureBlade"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="AA_LeftCreatureLimb" or def="AA_RightCreatureLimb"]/parts/li[def="AA_LeftCreatureBlade" or def="AA_RightCreatureBlade"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="AA_LeftCreatureLimb" or def="AA_RightCreatureLimb"]/parts/li[def="AA_LeftCreatureBlade" or def="AA_RightCreatureBlade"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2215,7 +1793,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="AA_LeftCreatureLimb" or def="AA_RightCreatureLimb"]/parts/li[def="AA_LeftCreatureBlade" or def="AA_RightCreatureBlade"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="AA_LeftCreatureLimb" or def="AA_RightCreatureLimb"]/parts/li[def="AA_LeftCreatureBlade" or def="AA_RightCreatureBlade"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2223,9 +1801,9 @@
 					</li>													
 			
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="Neck"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="Neck"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="Neck"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="Neck"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2233,7 +1811,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="Neck"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="Neck"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2241,9 +1819,9 @@
 					</li>	
 			
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="Neck"]/parts/li[def="SnakeHead"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="Neck"]/parts/li[def="SnakeHead"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="Neck"]/parts/li[def="SnakeHead"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="Neck"]/parts/li[def="SnakeHead"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2251,7 +1829,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="Neck"]/parts/li[def="SnakeHead"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_SnakeWithTwoLimbs"]/corePart/parts/li[def="Neck"]/parts/li[def="SnakeHead"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2261,9 +1839,9 @@
 					<!-- ====== AA_Squid ====== -->
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Squid"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Squid"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Squid"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Squid"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2271,7 +1849,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Squid"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Squid"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2279,9 +1857,9 @@
 					</li>
 			
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Squid"]/corePart/parts/li[def="AA_ConicalShell"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Squid"]/corePart/parts/li[def="AA_ConicalShell"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Squid"]/corePart/parts/li[def="AA_ConicalShell"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Squid"]/corePart/parts/li[def="AA_ConicalShell"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2289,7 +1867,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Squid"]/corePart/parts/li[def="AA_ConicalShell"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Squid"]/corePart/parts/li[def="AA_ConicalShell"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2303,9 +1881,9 @@
 					<!-- ====== AA_Wasp ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2313,7 +1891,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2321,9 +1899,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_Thorax"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_Thorax"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_Thorax"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_Thorax"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2331,7 +1909,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_Thorax"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_Thorax"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2339,9 +1917,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="Pronotum"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="Pronotum"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2349,7 +1927,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="Pronotum"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2357,9 +1935,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2367,7 +1945,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="Pronotum"]/parts/li[def="InsectHead"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2375,9 +1953,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_Abdomen"]/parts/li[def="AA_InsectSting"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_Abdomen"]/parts/li[def="AA_InsectSting"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_Abdomen"]/parts/li[def="AA_InsectSting"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_Abdomen"]/parts/li[def="AA_InsectSting"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2385,7 +1963,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_Abdomen"]/parts/li[def="AA_InsectSting"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_Abdomen"]/parts/li[def="AA_InsectSting"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2393,9 +1971,9 @@
 					</li>					
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_SmallInsectLeg"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_SmallInsectLeg"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_SmallInsectLeg"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_SmallInsectLeg"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2403,7 +1981,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_SmallInsectLeg"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_Wasp"]/corePart/parts/li[def="AA_SmallInsectLeg"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2413,9 +1991,9 @@
 					<!-- ====== AA_WingedQuadrupedAnimalWithPawsAndTail ====== -->
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2423,7 +2001,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2431,9 +2009,9 @@
 					</li>
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Tail"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Tail"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Tail"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Tail"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2441,7 +2019,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Tail"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Tail"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2449,9 +2027,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Neck"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Neck"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Neck"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Neck"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2459,7 +2037,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Neck"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Neck"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2467,9 +2045,9 @@
 					</li>
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2477,7 +2055,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2486,9 +2064,9 @@
 
 				
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Leg"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Leg"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Leg"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Leg"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2496,7 +2074,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Leg"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Leg"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2504,9 +2082,9 @@
 					</li>
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2514,7 +2092,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="Leg"]/parts/li[def="Paw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2522,9 +2100,9 @@
 					</li>	
 			
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="AA_ReptileWing"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="AA_ReptileWing"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="AA_ReptileWing"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="AA_ReptileWing"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2532,7 +2110,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="AA_ReptileWing"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WingedQuadrupedAnimalWithPawsAndTail"]/corePart/parts/li[def="AA_ReptileWing"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2542,9 +2120,9 @@
 					<!-- ====== AA_WormWithArmor ====== -->
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WormWithArmor"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WormWithArmor"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2552,7 +2130,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2560,9 +2138,9 @@
 					</li>
 			
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="AA_FirstWormSegment" or def="AA_SecondWormSegment" or def="AA_ThirdWormSegment" or def="AA_FourthWormSegment"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="AA_FirstWormSegment" or def="AA_SecondWormSegment" or def="AA_ThirdWormSegment" or def="AA_FourthWormSegment"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="AA_FirstWormSegment" or def="AA_SecondWormSegment" or def="AA_ThirdWormSegment" or def="AA_FourthWormSegment"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="AA_FirstWormSegment" or def="AA_SecondWormSegment" or def="AA_ThirdWormSegment" or def="AA_FourthWormSegment"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2570,7 +2148,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="AA_FirstWormSegment" or def="AA_SecondWormSegment" or def="AA_ThirdWormSegment" or def="AA_FourthWormSegment"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="AA_FirstWormSegment" or def="AA_SecondWormSegment" or def="AA_ThirdWormSegment" or def="AA_FourthWormSegment"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2579,9 +2157,9 @@
 					
 		
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="SnakeHead"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="SnakeHead"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="SnakeHead"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="SnakeHead"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2589,7 +2167,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="SnakeHead"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="SnakeHead"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2597,9 +2175,9 @@
 					</li>						
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2607,7 +2185,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WormWithArmor"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2617,9 +2195,9 @@
 					<!-- ====== AA_WormWithArmorAndTusks ====== -->
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2627,7 +2205,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2635,9 +2213,9 @@
 					</li>
 			
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="AA_FirstWormSegment" or def="AA_SecondWormSegment" or def="AA_ThirdWormSegment" or def="AA_FourthWormSegment"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="AA_FirstWormSegment" or def="AA_SecondWormSegment" or def="AA_ThirdWormSegment" or def="AA_FourthWormSegment"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="AA_FirstWormSegment" or def="AA_SecondWormSegment" or def="AA_ThirdWormSegment" or def="AA_FourthWormSegment"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="AA_FirstWormSegment" or def="AA_SecondWormSegment" or def="AA_ThirdWormSegment" or def="AA_FourthWormSegment"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2645,7 +2223,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="AA_FirstWormSegment" or def="AA_SecondWormSegment" or def="AA_ThirdWormSegment" or def="AA_FourthWormSegment"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="AA_FirstWormSegment" or def="AA_SecondWormSegment" or def="AA_ThirdWormSegment" or def="AA_FourthWormSegment"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2654,9 +2232,9 @@
 					
 		
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2664,7 +2242,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2672,9 +2250,9 @@
 					</li>						
 					
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2682,7 +2260,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
@@ -2690,9 +2268,9 @@
 					</li>			
 
 					<li Class="PatchOperationConditional">
-					<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/parts/li[def="Tusk"]/groups</xpath>
+					<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/parts/li[def="Tusk"]/groups</xpath>
 					<nomatch Class="PatchOperationAdd">
-							<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/parts/li[def="Tusk"]</xpath>
+							<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/parts/li[def="Tusk"]</xpath>
 							<value>
 								<groups>
 									<li>CoveredByNaturalArmor</li>
@@ -2700,7 +2278,7 @@
 							</value>
 					</nomatch>
 					<match Class="PatchOperationAdd">
-						<xpath>/Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/parts/li[def="Tusk"]/groups</xpath>
+						<xpath>Defs/BodyDef[defName="AA_WormWithArmorAndTusks"]/corePart/parts/li[def="SnakeHead"]/parts/li[def="Jaw"]/parts/li[def="Tusk"]/groups</xpath>
 						<value>
 							<li>CoveredByNaturalArmor</li>
 						</value>
