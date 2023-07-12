@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
     <Operation Class="PatchOperationSequence">
         <operations>
             <li Class="PatchOperationAddModExtension">
@@ -12,17 +11,17 @@
                             <li>ChickenVOID_SolarFlare</li>
                             <li>ChickenVOID_ToxicFalloutCustomizable</li>
                         </incidentsOnArrival>
-                        <strategy>ImmediateAttackSappers</strategy><!-- Note: ImmediateAttackSmart does the same thing, just without the wall-mining, in case this causes issues. -->
-                    </li>
-                    <li Class="PatchOperationRemove">
-                        <xpath>Defs/FactionDef[@Name="RH_FactionBase_VOID"]/earliestRaidDays</xpath>
-                    </li>
-                    <li Class="PatchOperationRemove">
-                        <xpath>Defs/FactionDef[defName="RH2_Nerotonin4_Horde"]/earliestRaidDays</xpath>
+                        <strategy>ImmediateAttackSappers</strategy>
+                        <!-- Note: ImmediateAttackSmart does the same thing, just without the wall-mining, in case this causes issues. -->
                     </li>
                 </value>
             </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/FactionDef[@Name="RH_FactionBase_VOID"]/earliestRaidDays</xpath>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>Defs/FactionDef[defName="RH2_Nerotonin4_Horde"]/earliestRaidDays</xpath>
+            </li>
         </operations>
     </Operation>
-	
 </Patch>
