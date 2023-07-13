@@ -6,6 +6,11 @@
 		<label>rabbie bionic tail</label>
 		<description>Bionic tail connected to the spine and nerves. The built-in gyroscope naturally adjusts the balance.</description>
 		<techLevel>Spacer</techLevel>
+        <graphicData>
+			<texPath>Things/Item/BodyPart/BionicTail</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
         <statBases>
 			<Mass>1</Mass>
 		</statBases>

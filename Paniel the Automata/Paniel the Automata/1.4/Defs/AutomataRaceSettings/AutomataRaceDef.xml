@@ -464,7 +464,10 @@
                 <li>
                     <key>HairDef</key>
                     <value>
-                        <hasStyle>false</hasStyle>
+                        <hasStyle>true</hasStyle>
+						<styleTagsOverride>
+							<li>Bald</li>
+						</styleTagsOverride>
                     </value>
                 </li>
                 <li>
