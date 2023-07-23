@@ -7,7 +7,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/RecipeDef[defName="ExtractSeed_AB_DribblingCap"]/ingredients</xpath>
+                    <xpath>Defs/RecipeDef[defName="ExtractSeed_AB_DribblingCap"]/ingredients</xpath>
                     <value>
                         <ingredients>
                             <li>
@@ -22,11 +22,19 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/RecipeDef[defName="ExtractSeed_AB_DribblingCap"]/fixedIngredientFilter/thingDefs</xpath>
+                    <xpath>Defs/RecipeDef[defName="ExtractSeed_AB_DribblingCap"]/fixedIngredientFilter/thingDefs</xpath>
                     <value>
                         <thingDefs>
                             <li>AB_PinkRawFungus</li>
                         </thingDefs>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/SeedsPlease.SeedDef[defName="Seed_AB_DribblingCap"]</xpath>
+                    <value>
+                        <statBases>
+                          <MarketValue>3</MarketValue>
+                        </statBases>
                     </value>
                 </li>
             </operations>
