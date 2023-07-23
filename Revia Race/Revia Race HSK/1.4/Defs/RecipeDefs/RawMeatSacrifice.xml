@@ -17,6 +17,9 @@
             <categories>
                 <li>MeatRaw</li>
             </categories>
+            <disallowedThingDefs>
+		        <li>soylentgreen</li>
+		    </disallowedThingDefs>
             <specialFiltersToDisallow>
                 <li>AllowPlantFood</li>
                 <li>AllowRotten</li>

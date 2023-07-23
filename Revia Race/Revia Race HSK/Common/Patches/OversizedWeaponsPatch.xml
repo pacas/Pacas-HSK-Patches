@@ -2,10 +2,10 @@
 <Patch>
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>jecrell.jecstools</li>
+            <li>Jecstools</li>
         </mods>
         <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="ReviaBaseMeleeWeapon"]/comps</xpath>
+            <xpath>Defs/ThingDef[defName="ReviaBaseMeleeWeapon"]/comps</xpath>
             <value>
                 <li>CompOversizedWeapon.CompProperties_OversizedWeapon</li>
             </value>
