@@ -3,7 +3,7 @@
     <Operation Class="PatchOperationSequence">
         <operations>
             <li Class="PatchOperationAddModExtension">
-                <xpath>/Defs/FactionDef[defName="RH_VOID"]</xpath>
+                <xpath>Defs/FactionDef[defName="RH_VOID"]</xpath>
                 <value>
                     <li Class="VoidEvents.Extension">
                         <arrivalMode>CenterDrop</arrivalMode>
@@ -14,6 +14,23 @@
                         <strategy>ImmediateAttackSappers</strategy>
                         <!-- Note: ImmediateAttackSmart does the same thing, just without the wall-mining, in case this causes issues. -->
                     </li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="RH_DF_GiantSpider"]</xpath>
+                <value>
+                    <comps>
+                        <li Class="SK.CompProperties_PawnJumper">
+                            <maxCharges>2</maxCharges> <!-- Number of possible jumps -->
+                            <minEnergy>0.75</minEnergy> <!-- Subtracts from the current rest(energy) level. 0.5 = 50% -->
+                            <ammoCountPerCharge>50</ammoCountPerCharge> <!-- Rest(energy) consumption. 10 = 10% cost per jump. -->
+                            <jumpCooldown>2500</jumpCooldown> <!-- Jump cooldown in ticks -->
+                            <range>3</range>
+                            <chargeNoun>jump</chargeNoun>
+                            <hotKey>Misc4</hotKey>
+                            <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+                        </li>
+                    </comps>
                 </value>
             </li>
             <li Class="PatchOperationRemove">
