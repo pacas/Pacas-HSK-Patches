@@ -33,13 +33,6 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="Scorpion"]/race/wildBiomes</xpath>
-                    <value>
-                        <TKKN_Desert>0.1</TKKN_Desert>
-                        <TKKN_Oasis>0.5</TKKN_Oasis>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
                     <xpath>/Defs/ThingDef[defName="AA_BedBug"]/race/wildBiomes</xpath>
                     <value>
                         <TKKN_Oasis>0.01</TKKN_Oasis>

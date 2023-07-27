@@ -7,7 +7,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Aerofleet"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Aerofleet"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.05</PoisonForest>
                         <Savanna>0.1</Savanna>
@@ -17,7 +17,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_AnimusVox"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_AnimusVox"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.05</PoisonForest>
                         <Savanna>0.05</Savanna>
@@ -27,14 +27,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="Scorpion"]/race/wildBiomes</xpath>
-                    <value>
-                        <Savanna>0.05</Savanna>
-                        <Wasteland>0.05</Wasteland>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_BedBug"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_BedBug"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.01</PoisonForest>
                         <Savanna>0.05</Savanna>
@@ -42,7 +35,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_BloodShrimp"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_BloodShrimp"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.01</PoisonForest>
                         <Savanna>0.01</Savanna>
@@ -52,7 +45,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_BoulderMit"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_BoulderMit"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.1</PoisonForest>
                         <Savanna>0.1</Savanna>
@@ -62,7 +55,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Bumbledrone"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Bumbledrone"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.05</PoisonForest>
                         <Savanna>0.05</Savanna>
@@ -72,21 +65,21 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Cinderlisk"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Cinderlisk"]/race/wildBiomes</xpath>
                     <value>
                         <Volcano>0.1</Volcano>
                         <Wasteland>0.05</Wasteland>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_CrystalMit"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_CrystalMit"]/race/wildBiomes</xpath>
                     <value>
                         <Volcano>0.5</Volcano>
                         <Wasteland>0.07</Wasteland>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_DecayDrake"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_DecayDrake"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.05</PoisonForest>
                         <Savanna>0.01</Savanna>
@@ -94,14 +87,14 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Feralisk"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Feralisk"]/race/wildBiomes</xpath>
                     <value>
                         <Savanna>0.05</Savanna>
                         <Wasteland>0.1</Wasteland>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_FissionMouse"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_FissionMouse"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.05</PoisonForest>
                         <Savanna>0.03</Savanna>
@@ -111,14 +104,14 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_GreatDevourer"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_GreatDevourer"]/race/wildBiomes</xpath>
                     <value>
                         <Volcano>0.02</Volcano>
                         <Wasteland>0.05</Wasteland>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Groundrunner"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Groundrunner"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.01</PoisonForest>
                         <Savanna>0.2</Savanna>
@@ -126,7 +119,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Helixien"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Helixien"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.15</PoisonForest>
                         <Savanna>0.05</Savanna>
@@ -134,13 +127,13 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_MammothWorm"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_MammothWorm"]/race/wildBiomes</xpath>
                     <value>
                         <Volcano>0.01</Volcano>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_MeadowAve"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_MeadowAve"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.05</PoisonForest>
                         <Savanna>0.2</Savanna>
@@ -148,7 +141,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_MegaLouse"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_MegaLouse"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.03</PoisonForest>
                         <Savanna>0.03</Savanna>
@@ -158,19 +151,19 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Needlepost"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Needlepost"]/race/wildBiomes</xpath>
                     <value>
                         <Savanna>0.01</Savanna>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Needleroll"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Needleroll"]/race/wildBiomes</xpath>
                     <value>
                         <Savanna>0.01</Savanna>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="Nightling"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="Nightling"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.1</PoisonForest>
                         <Savanna>0.1</Savanna>
@@ -180,7 +173,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_OvergrownColossus"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_OvergrownColossus"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.05</PoisonForest>
                         <Savanna>0.01</Savanna>
@@ -188,7 +181,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_OcularJelly"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_OcularJelly"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.005</PoisonForest>
                         <Savanna>0.005</Savanna>
@@ -198,7 +191,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_PebbleMit"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_PebbleMit"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.07</PoisonForest>
                         <Savanna>0.07</Savanna>
@@ -208,7 +201,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Razorjack"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Razorjack"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.01</PoisonForest>
                         <Savanna>0.1</Savanna>
@@ -217,7 +210,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_RipperHound"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_RipperHound"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.01</PoisonForest>
                         <Savanna>0.01</Savanna>
@@ -226,7 +219,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_RoughPlatedMonitor"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_RoughPlatedMonitor"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.10</PoisonForest>
                         <Volcano>0.07</Volcano>
@@ -234,13 +227,13 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_SandSquid"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_SandSquid"]/race/wildBiomes</xpath>
                     <value>
                         <Savanna>0.01</Savanna>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_ShockGoat"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_ShockGoat"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.1</PoisonForest>
                         <Savanna>0.1</Savanna>
@@ -248,7 +241,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Slurrypede"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Slurrypede"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.01</PoisonForest>
                         <Savanna>0.01</Savanna>
@@ -258,7 +251,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Swarmling"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Swarmling"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.05</PoisonForest>
                         <Savanna>0.01</Savanna>
@@ -268,7 +261,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_TetraSlug"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_TetraSlug"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.001</PoisonForest>
                         <Savanna>0.001</Savanna>
@@ -278,7 +271,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Thermadon"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Thermadon"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.01</PoisonForest>
                         <Savanna>0.01</Savanna>
@@ -288,14 +281,14 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Wildpod"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Wildpod"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.05</PoisonForest>
                         <Wetland>0.1</Wetland>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="AA_Wildpawn"]/race/wildBiomes</xpath>
+                    <xpath>Defs/ThingDef[defName="AA_Wildpawn"]/race/wildBiomes</xpath>
                     <value>
                         <PoisonForest>0.05</PoisonForest>
                         <Wetland>0.1</Wetland>
