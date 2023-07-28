@@ -9,9 +9,9 @@
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<forceNormalGearQuality>true</forceNormalGearQuality>
         <xenotypeSet MayRequire="Ludeon.Rimworld.Biotech">
-            <xenotypeChances>
-                <XenoRabbie>0.5</XenoRabbie>
-                <BaseRabbie>0.5</BaseRabbie>
+            <xenotypeChances MayRequire="Ludeon.Rimworld.Biotech">
+                <XenoRabbie MayRequire="Ludeon.Rimworld.Biotech">0.5</XenoRabbie>
+                <BaseRabbie MayRequire="Ludeon.Rimworld.Biotech">0.5</BaseRabbie>
             </xenotypeChances>
         </xenotypeSet>
 	</PawnKindDef>
