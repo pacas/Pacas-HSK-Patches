@@ -363,9 +363,9 @@
             </relationSettings>
             <!--=============================================================================================================================-->
             <raceRestriction>
-                <xenotypeList MayRequire="ludeon.rimworld.biotech">
-                    <li>XenoRabbie</li>
-                    <li>BaseRabbie</li>
+                <xenotypeList MayRequire="Ludeon.Rimworld.Biotech">
+                    <li MayRequire="Ludeon.Rimworld.Biotech">XenoRabbie</li>
+                    <li MayRequire="Ludeon.Rimworld.Biotech">BaseRabbie</li>
                 </xenotypeList>
                 <onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
                 <apparelList>
@@ -570,7 +570,7 @@
                 <Patient>0</Patient>
                 <Doctor>10</Doctor>
                 <PatientBedRest>0</PatientBedRest>
-                <Childcare>0</Childcare>
+                <Childcare MayRequire="Ludeon.RimWorld.Biotech">0</Childcare>
                 <BasicWorker>3</BasicWorker>
                 <Warden>10</Warden>
                 <Handling>7</Handling>

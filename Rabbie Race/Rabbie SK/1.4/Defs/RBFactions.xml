@@ -214,9 +214,9 @@
             <li>(1, 1, 1)</li>
         </colorSpectrum>
         <xenotypeSet MayRequire="Ludeon.Rimworld.Biotech">
-            <xenotypeChances>
-                <BaseRabbie>0.5</BaseRabbie>
-                <XenoRabbie>0.5</XenoRabbie>
+            <xenotypeChances MayRequire="Ludeon.Rimworld.Biotech">
+                <BaseRabbie MayRequire="Ludeon.Rimworld.Biotech">0.5</BaseRabbie>
+                <XenoRabbie MayRequire="Ludeon.Rimworld.Biotech">0.5</XenoRabbie>
             </xenotypeChances>
         </xenotypeSet>
         <earliestRaidDays>90</earliestRaidDays>
