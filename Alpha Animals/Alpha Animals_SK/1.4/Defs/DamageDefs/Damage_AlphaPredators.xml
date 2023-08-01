@@ -3,7 +3,7 @@
 	<DamageDef Name="Sting">
 		<defName>AA_ToxicSting</defName>
 		<label>toxic sting</label>
-		<workerClass>DamageWorker_Stab</workerClass>
+		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been stung to death.</deathMessage>
 		<hediff>Stab</hediff>
@@ -23,7 +23,7 @@
 	<DamageDef>
 		<defName>AA_ToxicBite</defName>
 		<label>toxic bite</label>
-		<workerClass>DamageWorker_Stab</workerClass>
+		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been bitten to death.</deathMessage>
 		<hediff>Stab</hediff>
@@ -66,7 +66,7 @@
 	<DamageDef Name="StingBolt">
 		<defName>AA_ToxicBolt</defName>
 		<label>toxic sting</label>
-		<workerClass>DamageWorker_Stab</workerClass>
+		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been stung to death.</deathMessage>
 		<hediff>Stab</hediff>
@@ -146,7 +146,7 @@
 	<DamageDef>
 		<defName>AA_VeryToxicSting</defName>
 		<label>very toxic sting</label>
-		<workerClass>DamageWorker_Stab</workerClass>
+		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been stung to death.</deathMessage>
 		<hediff>Stab</hediff>
@@ -278,7 +278,7 @@
 	<DamageDef>
 		<defName>AA_Pierce</defName>
 		<label>pierce</label>
-		<workerClass>DamageWorker_Stab</workerClass>
+		<workerClass>DamageWorker_AddInjury</workerClass>
 		<externalViolence>true</externalViolence>
 		<deathMessage>{0} has been gored to death.</deathMessage>
 		<hediff>Stab</hediff>
