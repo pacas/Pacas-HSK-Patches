@@ -21,7 +21,7 @@
                     </li>
                     <li>
                         <capacity>Consciousness</capacity>
-                        <offset>0.25</offset>
+                        <offset>0.20</offset>
                     </li>
                     <li>
                         <capacity>BloodPumping</capacity>
@@ -33,7 +33,7 @@
                     </li>
                 </capMods>
                 <statFactors>
-                    <IncomingDamageFactor>0.50</IncomingDamageFactor>
+                    <IncomingDamageFactor>0.54</IncomingDamageFactor>
                 </statFactors>
                 <statOffsets>
                     <ComfyTemperatureMax>15</ComfyTemperatureMax>
@@ -46,7 +46,7 @@
                     <ToxicResistance>0.4</ToxicResistance>
                     <MarketValue>3000</MarketValue>
                     <PainShockThreshold>0.40</PainShockThreshold>
-                    <Suppressability>-0.9</Suppressability>
+                    <Suppressability>-0.8</Suppressability>
                 </statOffsets>
             </li>
         </stages>

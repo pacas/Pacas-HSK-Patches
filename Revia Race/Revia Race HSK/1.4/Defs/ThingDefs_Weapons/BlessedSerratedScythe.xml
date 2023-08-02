@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef ParentName="WeaponMedievalBase">
-        <defName>ReviaSerratedScythe</defName>
-        <label>harvester</label>
-        <description>A cruel bardiche with a blade of razor-sharp palestone shards. Designed to inflict severe bleeding and grievous wounds.</description>
+        <defName>ReviaBlessedSerratedScythe</defName>
+        <label>Vermillion Tide</label>
+        <description>A cruel bardiche with a razor sharp blade. A murderous spirit resides within it.</description>
         <weaponClasses>
 			<li>MeleePiercer</li>
 		</weaponClasses>
@@ -20,10 +20,11 @@
         <costStuffCount>90</costStuffCount>
         <costList>
             <ReviaRacePalestone>35</ReviaRacePalestone>
+            <ReviaGreaterBloodRune>1</ReviaGreaterBloodRune>
             <ComponentMedieval>8</ComponentMedieval>
         </costList>
         <statBases>
-            <WorkToMake>15000</WorkToMake>
+            <WorkToMake>25600</WorkToMake>
             <Mass>3.50</Mass>
             <Bulk>8</Bulk>
             <MeleeCounterParryBonus>0.69</MeleeCounterParryBonus>
@@ -34,16 +35,23 @@
             <MeleeDodgeChance>0.8</MeleeDodgeChance>
         </equippedStatOffsets>
         <recipeMaker>
-            <researchPrerequisite>ReviaRaceIntermediateEquipment</researchPrerequisite>
+            <researchPrerequisite>ReviaRaceConsecratedWeaponry</researchPrerequisite>
             <skillRequirements>
-                <Crafting>10</Crafting>
+                <Crafting>12</Crafting>
+                <Intellectual>12</Intellectual>
             </skillRequirements>
         </recipeMaker>
         <stuffCategories>
             <li>StrongMetallic</li>
         </stuffCategories>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+            <li Class="ReviaRace.Comps.CompProperties_LifeLeech">
+                <LeechStrength>2.5</LeechStrength>
+            </li>
+        </comps>
         <weaponTags>
-            <li>ReviaMeleeIntermediate</li>
+            <li>ReviaMeleeLegendary</li>
         </weaponTags>
         <tools>
             <li Class="CombatExtended.ToolCE">
@@ -52,8 +60,8 @@
                     <li>Blunt</li>
                 </capacities>
                 <power>7</power>
-                <cooldownTime>2.46</cooldownTime>
-                <armorPenetrationBlunt>6</armorPenetrationBlunt>
+                <cooldownTime>1.67</cooldownTime>
+                <armorPenetrationBlunt>8</armorPenetrationBlunt>
                 <chanceFactor>0.15</chanceFactor>
                 <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
             </li>
@@ -62,9 +70,8 @@
                 <capacities>
                     <li>Gash</li>
                 </capacities>
-                <power>23</power>
-                <cooldownTime>2.63</cooldownTime>
-                <chanceFactor>1.122</chanceFactor>
+                <power>31</power>
+                <cooldownTime>1.87</cooldownTime>
                 <armorPenetrationBlunt>9</armorPenetrationBlunt>
 				<armorPenetrationSharp>3.5</armorPenetrationSharp>
                 <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
