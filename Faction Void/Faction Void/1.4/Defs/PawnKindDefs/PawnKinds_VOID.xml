@@ -49,6 +49,8 @@
             <!-- Must be capable of labor, as this pawn kind is used in laborer quests. -->
             <li>Violent</li>
         </requiredWorkTags>
+        <initialWillRange>30~50</initialWillRange>
+		<initialResistanceRange>70~120</initialResistanceRange>
         <modExtensions>
             <li Class="CombatExtended.LoadoutPropertiesExtension">
                 <primaryMagazineCount>
@@ -65,8 +67,6 @@
             <min>100</min>
             <max>7000</max>
         </techHediffsMoney>
-        <initialWillRange>50~80</initialWillRange>
-        <initialResistanceRange>10~80</initialResistanceRange>
         <techHediffsTags>
             <li>Advanced</li>
         </techHediffsTags>
@@ -133,7 +133,7 @@
                     </li>
                     <li>
                         <skill>Social</skill>
-                        <range>10~20</range>
+                        <range>19~20</range>
                     </li>
                     <li>
                         <skill>Medicine</skill>
@@ -315,7 +315,7 @@
     <PawnKindDef Abstract="True" Name="RH_VOIDAdvMemberBase" ParentName="RH_VOID_Base">
         <combatPower>650</combatPower>
         <initialWillRange>70~100</initialWillRange>
-        <initialResistanceRange>70~100</initialResistanceRange>
+        <initialResistanceRange>70~200</initialResistanceRange>
         <backstoryFilters>
             <li>
                 <categories>
@@ -431,7 +431,7 @@
                     </li>
                     <li>
                         <skill>Social</skill>
-                        <range>13~20</range>
+                        <range>19~20</range>
                     </li>
                     <li>
                         <skill>Medicine</skill>
@@ -768,7 +768,7 @@
     <PawnKindDef Abstract="True" Name="RH_VOIDEliteBase" ParentName="RH_VOID_Base">
         <combatPower>1000</combatPower>
         <initialWillRange>90~100</initialWillRange>
-        <initialResistanceRange>90~100</initialResistanceRange>
+        <initialResistanceRange>90~250</initialResistanceRange>
         <backstoryFilters>
             <li>
                 <categories>
@@ -958,7 +958,7 @@
     <PawnKindDef Abstract="True" Name="RH_VOIDEliteCloakedBase" ParentName="RH_VOID_Base">
         <combatPower>1000</combatPower>
         <initialWillRange>90~100</initialWillRange>
-        <initialResistanceRange>90~100</initialResistanceRange>
+        <initialResistanceRange>90~250</initialResistanceRange>
         <backstoryFilters>
             <li>
                 <categories>

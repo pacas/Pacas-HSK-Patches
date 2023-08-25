@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <!-- human -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThingDef[defName="Human"]/alienRace/raceRestriction/blackXenotypeList</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Human"]/alienRace/raceRestriction</xpath>
+                    <value>
+                        <blackXenotypeList>
+                            <li>RevianXenotype</li>
+                        </blackXenotypeList>
+                    </value>
+                </nomatch>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Human"]/alienRace/raceRestriction/blackXenotypeList</xpath>
+                    <value>
+                        <li>RevianXenotype</li>
+                    </value>
+                </match>
+            </li>
+            <!-- nova -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Nova"]/alienRace/raceRestriction/blackXenotypeList</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Nova"]/alienRace/raceRestriction</xpath>
+                    <value>
+                        <blackXenotypeList>
+                            <li>RevianXenotype</li>
+                        </blackXenotypeList>
+                    </value>
+                </nomatch>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Nova"]/alienRace/raceRestriction/blackXenotypeList</xpath>
+                    <value>
+                        <li>RevianXenotype</li>
+                    </value>
+                </match>
+            </li>
+            <!-- dova -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Dova"]/alienRace/raceRestriction/blackXenotypeList</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Dova"]/alienRace/raceRestriction</xpath>
+                    <value>
+                        <blackXenotypeList>
+                            <li>RevianXenotype</li>
+                        </blackXenotypeList>
+                    </value>
+                </nomatch>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Dova"]/alienRace/raceRestriction/blackXenotypeList</xpath>
+                    <value>
+                        <li>RevianXenotype</li>
+                    </value>
+                </match>
+            </li>
+            <!-- orassan -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/raceRestriction/blackXenotypeList</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/raceRestriction</xpath>
+                    <value>
+                        <blackXenotypeList>
+                            <li>RevianXenotype</li>
+                        </blackXenotypeList>
+                    </value>
+                </nomatch>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Orassan"]/alienRace/raceRestriction/blackXenotypeList</xpath>
+                    <value>
+                        <li>RevianXenotype</li>
+                    </value>
+                </match>
+            </li>
+            <!-- norbal -->
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Norbal"]/alienRace/raceRestriction</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Norbal"]/alienRace</xpath>
+                    <value>
+                        <raceRestriction>
+                            <blackXenotypeList>
+                                <li>RevianXenotype</li>
+                            </blackXenotypeList>
+                        </raceRestriction>
+                    </value>
+                </nomatch>
+                <match Class="PatchOperationConditional">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Norbal"]/alienRace/raceRestriction/blackXenotypeList</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Norbal"]/alienRace/raceRestriction</xpath>
+                        <value>
+                            <blackXenotypeList>
+                                <li>RevianXenotype</li>
+                            </blackXenotypeList>
+                        </value>
+                    </nomatch>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Norbal"]/alienRace/raceRestriction/blackXenotypeList</xpath>
+                        <value>
+                            <li>RevianXenotype</li>
+                        </value>
+                    </match>
+                </match>
+            </li>
+            <!-- rabbie -->
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Rabbie The Moonrabbit race</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Rabbie"]/alienRace/raceRestriction</xpath>
+                    <value>
+                        <blackXenotypeList>
+                            <li>RevianXenotype</li>
+                        </blackXenotypeList>
+                    </value>
+                </match>
+            </li>
+            <!-- asari -->
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>AsariRace</li>
+                </mods>
+                <match Class="PatchOperationConditional">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Asari"]/alienRace/raceRestriction/blackXenotypeList</xpath>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Asari"]/alienRace/raceRestriction</xpath>
+                        <value>
+                            <blackXenotypeList>
+                                <li>RevianXenotype</li>
+                            </blackXenotypeList>
+                        </value>
+                    </nomatch>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Asari"]/alienRace/raceRestriction/blackXenotypeList</xpath>
+                        <value>
+                            <li>RevianXenotype</li>
+                        </value>
+                    </match>
+                </match>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
