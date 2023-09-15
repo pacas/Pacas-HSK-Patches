@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="XmlExtensions.OptionalPatch">
+                <modId>VOID.Pacas.Settings</modId>
+                <key>Recruit_Cheese</key>
+                <defaultValue>true</defaultValue>
+                <caseTrue>
+                    <Operation Class="PatchOperationAddModExtension">
+                        <xpath>Defs/PawnKindDef[@Name="RH_VOID_Base" or @Name="RH_VOID_BB_Base"]</xpath>
+                        <value>
+                            <li Class="Capturable.NonCapturable"/>
+                            <li Class="Capturable.NonArestable"/>
+                        </value>
+                    </Operation>
+                </caseTrue>
+            </li>
+            <li Class="XmlExtensions.OptionalPatch">
+                <modId>VOID.Pacas.Settings</modId>
+                <key>Invis_Cheese</key>
+                <defaultValue>true</defaultValue>
+                <caseTrue>
+                    <Operation Class="XmlExtensions.DefDatabaseOperationAdd">
+                        <objPath>HediffDef/[defName="PsychicInvisibility"]/comps</objPath>
+                        <value>
+                            <li Class="NoCheese.HediffCompProperties_TickDownIfFactionIsClose">
+                                <factionsToCheckAreClose>
+                                    <li>RH2_Nerotonin4_Horde</li>
+                                    <li>N-4 infected</li>
+                                    <li>Undead horde</li>
+                                    <li>RH_VOID</li>
+                                    <li>V.O.I.D.</li>
+                                    <li>???</li>
+                                </factionsToCheckAreClose>
+                            </li>
+                        </value>
+                    </Operation>
+                </caseTrue>
+            </li>
+            <li Class="XmlExtensions.OptionalPatch">
+                <modId>VOID.Pacas.Settings</modId>
+                <key>Raid_Cheese</key>
+                <defaultValue>false</defaultValue>
+                <caseTrue>
+                    <Operation Class="PatchOperationAddModExtension">
+                        <xpath>Defs/FactionDef[defName="RH_VOID"]</xpath>
+                        <value>
+                            <li Class="VoidEvents.Extension">
+                                <arrivalMode>CenterDrop</arrivalMode>
+                                <incidentsOnArrival>
+                                    <li>ChickenVOID_SolarFlare</li>
+                                    <li>ChickenVOID_ToxicFalloutCustomizable</li>
+                                </incidentsOnArrival>
+                                <strategy>ImmediateAttackSappers</strategy>
+                            </li>
+                        </value>
+                    </Operation>
+                    <Operation Class="PatchOperationRemove">
+                        <xpath>Defs/FactionDef[@Name="RH_FactionBase_VOID"]/earliestRaidDays</xpath>
+                    </Operation>
+                    <Operation Class="PatchOperationRemove">
+                        <xpath>Defs/FactionDef[defName="RH2_Nerotonin4_Horde"]/earliestRaidDays</xpath>
+                    </Operation>
+                </caseTrue>
+            </li>
+            <li Class="XmlExtensions.OptionalPatch">
+                <modId>VOID.Pacas.Settings</modId>
+                <key>Spider_Jump_Void</key>
+                <defaultValue>false</defaultValue>
+                <caseTrue>
+                    <Operation Class="XmlExtensions.DefDatabaseOperationAdd">
+                        <objPath>ThingDef/[defName="RH_DF_GiantSpider"]</objPath>
+                        <value>
+                            <comps>
+                                <li Class="SK.CompProperties_PawnJumper">
+                                    <maxCharges>2</maxCharges>
+                                    <!-- Number of possible jumps -->
+                                    <minEnergy>0.75</minEnergy>
+                                    <!-- Subtracts from the current rest(energy) level. 0.5 = 50% -->
+                                    <ammoCountPerCharge>50</ammoCountPerCharge>
+                                    <!-- Rest(energy) consumption. 10 = 10% cost per jump. -->
+                                    <jumpCooldown>2500</jumpCooldown>
+                                    <!-- Jump cooldown in ticks -->
+                                    <range>3</range>
+                                    <chargeNoun>jump</chargeNoun>
+                                    <hotKey>Misc4</hotKey>
+                                    <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+                                </li>
+                            </comps>
+                        </value>
+                    </Operation>
+                </caseTrue>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

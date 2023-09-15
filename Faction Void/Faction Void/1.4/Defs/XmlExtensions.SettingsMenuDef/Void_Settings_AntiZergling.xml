@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <XmlExtensions.SettingsMenuDef>
+        <defName>VOID_Settings_Plus</defName>
+        <modId>VOID.Pacas.Settings</modId>
+        <tKey>VOID_MainTitle</tKey>
+        <label>V.O.I.D. - Extended Settings</label>
+        <settings>
+            <li Class="XmlExtensions.Setting.Gap"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Difficulty</text>
+                <tKey>Difficulty_Title</tKey>
+                <font>Medium</font>
+                <anchor>Middle</anchor>
+            </li>
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Recruit_Cheese</key>
+                <label>Recruit</label>
+                <tKey>Recruit_Cheese</tKey>
+                <defaultValue>true</defaultValue>
+                <tooltip>V.O.I.D. will not tolerate deserters</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Invis_Cheese</key>
+                <label>Invisibility</label>
+                <tKey>Invis_Cheese</tKey>
+                <defaultValue>true</defaultValue>
+                <tooltip>V.O.I.D. will see you even in invisibility</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Raid_Cheese</key>
+                <label>Raids</label>
+                <tKey>Raid_Cheese</tKey>
+                <defaultValue>false</defaultValue>
+                <tooltip>V.O.I.D. will smash you faster</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Spider_Jump_Void</key>
+                <label>Spider mutant</label>
+                <tKey>Spider_Jump_Void</tKey>
+                <defaultValue>false</defaultValue>
+                <tooltip>Mutant spider can jump!</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>All options require restart to apply</text>
+            </li>
+        </settings>
+        <!--<postCloseActions>
+            <li Class="XmlExtensions.Action.ApplyOperations">
+                <apply>
+                    <Operation Class="XmlExtensions.UseSettings">
+                        <modId>VOID.Pacas.Settings</modId>
+                        <keys>
+                            <li>Recruit_Cheese</li>
+                            <li>Invis_Cheese</li>
+                            <li>Spider_Jump_Void</li>
+                        </keys>
+                        <defaultValues>
+                            <li>true</li>
+                            <li>true</li>
+                            <li>false</li>
+                        </defaultValues>
+                        <apply>
+                            <Operation Class="PatchOperationSequence">
+                                <operations>
+                                    <li Class="XmlExtensions.OptionalPatch">
+                                        <modId>VOID.Pacas.Settings</modId>
+                                        <key>Recruit_Cheese</key>
+                                        <defaultValue>true</defaultValue>
+                                        <caseTrue>
+                                            <Operation Class="XmlExtensions.DefDatabaseOperationAdd">
+                                                <objPath>PawnKindDef/[@Name="RH_VOID_BB_Base"]/modExtensions</objPath>
+                                                <value>
+                                                    <li Class="Capturable.NonCapturable" />
+                                                </value>
+                                            </Operation>
+                                            <Operation Class="XmlExtensions.DefDatabaseOperationAdd">
+                                                <objPath>PawnKindDef/[@Name="RH_VOID_Base"]/modExtensions</objPath>
+                                                <value>
+                                                    <li Class="Capturable.NonCapturable" />
+                                                </value>
+                                            </Operation>
+                                        </caseTrue>
+                                    </li>
+                                    <li Class="XmlExtensions.OptionalPatch">
+                                        <modId>VOID.Pacas.Settings</modId>
+                                        <key>Invis_Cheese</key>
+                                        <defaultValue>true</defaultValue>
+                                        <caseTrue>
+                                            <Operation Class="XmlExtensions.DefDatabaseOperationAdd">
+                                                <objPath>HediffDef/[defName="PsychicInvisibility"]/comps</objPath>
+                                                <value>
+                                                    <li Class="NoCheese.HediffCompProperties_TickDownIfFactionIsClose">
+                                                        <factionsToCheckAreClose>
+                                                            <li>RH2_Nerotonin4_Horde</li>
+                                                            <li>N-4 infected</li>
+                                                            <li>Undead horde</li>
+                                                            <li>RH_VOID</li>
+                                                            <li>V.O.I.D.</li>
+                                                            <li>???</li>
+                                                        </factionsToCheckAreClose>
+                                                    </li>
+                                                </value>
+                                            </Operation>
+                                        </caseTrue>
+                                    </li>
+                                    <li Class="XmlExtensions.OptionalPatch">
+                                        <modId>VOID.Pacas.Settings</modId>
+                                        <key>Spider_Jump_Void</key>
+                                        <defaultValue>false</defaultValue>
+                                        <caseTrue>
+                                            <Operation Class="XmlExtensions.DefDatabaseOperationAdd">
+                                                <objPath>ThingDef/[defName="RH_DF_GiantSpider"]</objPath>
+                                                <value>
+                                                    <comps>
+                                                        <li Class="SK.CompProperties_PawnJumper">
+                                                            <maxCharges>2</maxCharges><!{1}** Number of possible jumps **{1}>
+                                                            <minEnergy>0.75</minEnergy><!{1}** Subtracts from the current rest(energy) level. 0.5 = 50% **{1}>
+                                                            <ammoCountPerCharge>50</ammoCountPerCharge><!{1}** Rest(energy) consumption. 10 = 10% cost per jump. **{1}>
+                                                            <jumpCooldown>2500</jumpCooldown><!{1}** Jump cooldown in ticks **{1}>
+                                                            <range>3</range>
+                                                            <chargeNoun>jump</chargeNoun>
+                                                            <hotKey>Misc4</hotKey>
+                                                            <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+                                                        </li>
+                                                    </comps>
+                                                </value>
+                                            </Operation>
+                                        </caseTrue>
+                                    </li>
+                                </operations>
+                            </Operation>
+                        </apply>
+                    </Operation>
+                </apply>
+            </li>
+        </postCloseActions>-->
+    </XmlExtensions.SettingsMenuDef>
+</Defs>
