@@ -16,7 +16,7 @@
 			<li>
 				<label>active</label>
 				<minSeverity>0.50</minSeverity>
-				<naturalHealingFactor>20.0</naturalHealingFactor>
+				<naturalHealingFactor>10.0</naturalHealingFactor>
 			</li>
 		</stages>
 	</HediffDef>
@@ -29,7 +29,7 @@
 		<hediffClass>Hediff</hediffClass>
 		<stages>
 			<li>
-				<painFactor>0.1</painFactor>
+				<painFactor>0.15</painFactor>
 			</li>
 		</stages>
 	</HediffDef>

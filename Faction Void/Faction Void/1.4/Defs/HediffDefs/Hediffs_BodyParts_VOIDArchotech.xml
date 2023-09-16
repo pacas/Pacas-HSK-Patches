@@ -59,7 +59,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+    <RecipeDef ParentName="VOID_InstallVOIDBionic">
         <defName>InstallVOIDArchotechEye</defName>
         <label>install voidtech eye</label>
         <workAmount>7500</workAmount>
@@ -145,7 +145,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+    <RecipeDef ParentName="VOID_InstallVOIDBionic">
         <defName>InstallVOIDArchotechArm</defName>
         <label>install voidtech arm</label>
         <workAmount>7500</workAmount>
@@ -214,7 +214,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+    <RecipeDef ParentName="VOID_InstallVOIDBionic">
         <defName>InstallVOIDArchotechLeg</defName>
         <label>install voidtech leg</label>
         <workAmount>7500</workAmount>

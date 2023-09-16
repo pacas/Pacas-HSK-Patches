@@ -52,7 +52,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="VOID_InstallVOIDBionic">
 		<defName>InstallRH_VOIDBionicSpine</defName>
 		<label>install voidtech spine</label>
         <workAmount>7500</workAmount>
@@ -144,7 +144,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="VOID_InstallVOIDBionic">
 		<defName>InstallRH_VOIDBionicHeart</defName>
 		<label>install voidtech heart</label>
         <workAmount>7500</workAmount>
@@ -228,7 +228,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="VOID_InstallVOIDBionic">
 		<defName>InstallRH_VOIDBionicStomach</defName>
 		<label>install voidtech stomach</label>
         <workAmount>7500</workAmount>
@@ -306,7 +306,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="VOID_InstallVOIDBionic">
 		<defName>InstallRH_VOIDBionicEar</defName>
 		<label>install voidtech ear</label>
 		<uiIconThing>RH_VOIDBionicEar</uiIconThing>
@@ -390,7 +390,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="VOID_InstallVOIDBionic">
 		<defName>InstallRH_VOIDBionicLung</defName>
 		<label>install voidtech lung</label>
         <workAmount>5500</workAmount>
@@ -468,7 +468,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="VOID_InstallVOIDBionic">
 		<defName>InstallRH_VOIDBionicKidney</defName>
 		<label>install voidtech kidney</label>
         <workAmount>5500</workAmount>
@@ -550,7 +550,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="VOID_InstallVOIDBionic">
 		<defName>InstallRH_VOIDBionicLiver</defName>
 		<label>install voidtech liver</label>
         <workAmount>5500</workAmount>
@@ -636,7 +636,7 @@
         </thingCategories>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+	<RecipeDef ParentName="VOID_InstallVOIDBionic">
 		<defName>InstallRH_VOIDCircadianHalfCycler</defName>
 		<label>install voidtech half-cycler</label>
         <workAmount>5500</workAmount>
@@ -738,7 +738,7 @@
         </thingCategories>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+	<RecipeDef ParentName="VOID_InstallVOIDBionic">
 		<defName>InstallVOIDBrain_Implant</defName>
 		<label>install voidtech AI implant</label>
         <workAmount>7500</workAmount>
@@ -824,7 +824,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SK_SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="VOID_InstallVOIDBionic">
 		<defName>InstallRH_VOIDAestheticNose</defName>
 		<label>install voidtech nose</label>
 		<uiIconThing>RH_VOIDAestheticNose</uiIconThing>

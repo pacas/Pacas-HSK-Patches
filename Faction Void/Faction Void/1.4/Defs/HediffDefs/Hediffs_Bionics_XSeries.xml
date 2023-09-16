@@ -69,7 +69,7 @@
         </graphicData>
     </ThingDef>
 
-    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+    <RecipeDef ParentName="VOID_InstallImplantLE">
         <defName>InstallDF_XHyper_Implant</defName>
         <label>install x-hyper implant</label>
         <uiIconThing>DF_XHyper_Implant</uiIconThing>
@@ -165,7 +165,7 @@
         </graphicData>
     </ThingDef>
 
-    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+    <RecipeDef ParentName="VOID_InstallImplantLE">
         <defName>InstallDF_XPerception_Implant</defName>
         <label>install x-perception implant</label>
         <uiIconThing>DF_XPerception_Implant</uiIconThing>
@@ -249,7 +249,7 @@
         </graphicData>
     </ThingDef>
 
-    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+    <RecipeDef ParentName="VOID_InstallImplantLE">
         <defName>InstallDF_XIronskin_Implant</defName>
         <label>install x-ironskin implant</label>
         <uiIconThing>DF_XIronskin_Implant</uiIconThing>
@@ -340,7 +340,7 @@
         </graphicData>
     </ThingDef>
 
-    <RecipeDef ParentName="SK_SurgeryInstallImplantBase">
+    <RecipeDef ParentName="VOID_InstallImplantLE">
         <defName>InstallDF_XViolence_Implant</defName>
         <label>install x-violence implant</label>
         <uiIconThing>DF_XViolence_Implant</uiIconThing>

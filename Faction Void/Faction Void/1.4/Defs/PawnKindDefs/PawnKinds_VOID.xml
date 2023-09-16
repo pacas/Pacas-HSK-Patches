@@ -188,7 +188,7 @@
     <PawnKindDef ParentName="RH_VOIDMemberBase">
         <defName>RH_VOID_Member</defName>
         <label>member</label>
-        <combatPower>550</combatPower>
+        <combatPower>650</combatPower>
         <gearHealthRange>
             <min>1</min>
             <max>1</max>
@@ -248,7 +248,7 @@
     <PawnKindDef ParentName="RH_VOIDMemberBase">
         <defName>RH_VOID_Collaborator</defName>
         <label>member</label>
-        <combatPower>550</combatPower>
+        <combatPower>650</combatPower>
         <gearHealthRange>
             <min>1</min>
             <max>1</max>
@@ -313,7 +313,7 @@
     </PawnKindDef>
     <!-- Elite tier - merc elite, pirate boss -->
     <PawnKindDef Abstract="True" Name="RH_VOIDAdvMemberBase" ParentName="RH_VOID_Base">
-        <combatPower>650</combatPower>
+        <combatPower>750</combatPower>
         <initialWillRange>70~100</initialWillRange>
         <initialResistanceRange>70~200</initialResistanceRange>
         <backstoryFilters>
@@ -500,7 +500,7 @@
     <PawnKindDef ParentName="RH_VOIDAdvMemberBase">
         <defName>RH_VOID_Associate</defName>
         <label>senior member</label>
-        <combatPower>650</combatPower>
+        <combatPower>750</combatPower>
         <gearHealthRange>
             <min>1</min>
             <max>1</max>
@@ -766,7 +766,7 @@
     </PawnKindDef>
     <!-- Elite tier - merc elite, pirate boss -->
     <PawnKindDef Abstract="True" Name="RH_VOIDEliteBase" ParentName="RH_VOID_Base">
-        <combatPower>1000</combatPower>
+        <combatPower>1100</combatPower>
         <initialWillRange>90~100</initialWillRange>
         <initialResistanceRange>90~250</initialResistanceRange>
         <backstoryFilters>
@@ -956,7 +956,7 @@
     </PawnKindDef>
     <!-- Elite tier - merc elite, pirate boss -->
     <PawnKindDef Abstract="True" Name="RH_VOIDEliteCloakedBase" ParentName="RH_VOID_Base">
-        <combatPower>1000</combatPower>
+        <combatPower>1100</combatPower>
         <initialWillRange>90~100</initialWillRange>
         <initialResistanceRange>90~250</initialResistanceRange>
         <backstoryFilters>
@@ -1285,7 +1285,7 @@
     <PawnKindDef ParentName="RH_VOIDEliteBase">
         <defName>RH_VOID_Bodyguard</defName>
         <label>close protection</label>
-        <combatPower>400</combatPower>
+        <combatPower>500</combatPower>
         <gearHealthRange>
             <min>1</min>
             <max>1</max>
