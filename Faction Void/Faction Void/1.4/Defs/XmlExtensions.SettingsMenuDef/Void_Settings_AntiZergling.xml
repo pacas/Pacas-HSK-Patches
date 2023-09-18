@@ -64,6 +64,8 @@
                 <tooltip>Mutant spider can jump!</tooltip>
             </li>
             <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.ResetSettings"/>
+            <li Class="XmlExtensions.Setting.GapLine"/>
             <li Class="XmlExtensions.Setting.Text">
                 <text>All options require restart to apply</text>
             </li>
