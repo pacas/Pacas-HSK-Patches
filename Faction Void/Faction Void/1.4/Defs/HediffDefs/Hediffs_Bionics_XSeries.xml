@@ -102,7 +102,7 @@
 		</incompatibleWithHediffTags>-->
     </RecipeDef>
 
-    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+    <RecipeDef ParentName="VOID_RemoveImplantLE">
         <defName>RemoveDF_XHyper_Implant</defName>
         <label>remove x-hyper implant</label>
         <description>Remove x-hyper implant.</description>
@@ -198,7 +198,7 @@
 		</incompatibleWithHediffTags>-->
     </RecipeDef>
 
-    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+    <RecipeDef ParentName="VOID_RemoveImplantLE">
         <defName>RemoveDF_XPerception_Implant</defName>
         <label>remove x-perception implant</label>
         <description>Remove x-perception implant.</description>
@@ -282,7 +282,7 @@
 		</incompatibleWithHediffTags>-->
     </RecipeDef>
 
-    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+    <RecipeDef ParentName="VOID_RemoveImplantLE">
         <defName>RemoveDF_XIronskin_Implant</defName>
         <label>remove x-ironskin implant</label>
         <description>Remove x-ironskin implant.</description>
@@ -373,7 +373,7 @@
 		</incompatibleWithHediffTags>-->
     </RecipeDef>
 
-    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+    <RecipeDef ParentName="VOID_RemoveImplantLE">
         <defName>RemoveDF_XViolence_Implant</defName>
         <label>remove x-violence implant</label>
         <description>Remove x-violence implant.</description>

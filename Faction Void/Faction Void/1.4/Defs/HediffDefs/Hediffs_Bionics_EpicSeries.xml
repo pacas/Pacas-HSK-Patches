@@ -97,7 +97,7 @@
 		<addsHediff>DF_Trinity_Implant</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
 		<defName>RemoveDF_Trinity_Implant</defName>
 		<label>remove trinity implant</label>
 		<description>Remove trinity implant.</description>
@@ -195,7 +195,7 @@
 		</incompatibleWithHediffTags>-->
 	</RecipeDef>
 
-	<RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
 		<defName>RemoveDF_Ghastly_Implant</defName>
 		<label>remove ghastly implant</label>
 		<description>Remove ghastly implant.</description>
@@ -295,7 +295,7 @@
 		</incompatibleWithHediffTags>-->
 	</RecipeDef>
 
-	<RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
 		<defName>RemoveDF_Celerity_Implant</defName>
 		<label>remove celerity implant</label>
 		<description>Remove celerity implant.</description>
@@ -406,7 +406,7 @@
 		</incompatibleWithHediffTags>-->
 	</RecipeDef>
 
-	<RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
 		<defName>RemoveDF_Scrutiny_Implant</defName>
 		<label>remove scrutiny implant</label>
 		<description>Remove scrutiny implant.</description>
@@ -512,7 +512,7 @@
 		</incompatibleWithHediffTags>-->
 	</RecipeDef>
 
-	<RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
 		<defName>RemoveDF_Versatility_Implant</defName>
 		<label>remove versatility implant</label>
 		<description>Remove versatility implant.</description>
@@ -602,7 +602,7 @@
 		</incompatibleWithHediffTags>-->
 	</RecipeDef>
 
-	<RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
 		<defName>RemoveDF_Mastery_Implant</defName>
 		<label>remove mastery implant</label>
 		<description>Remove mastery implant.</description>
@@ -697,7 +697,7 @@
 		</incompatibleWithHediffTags>-->
 	</RecipeDef>
 
-	<RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
 		<defName>RemoveDF_Calamity_Implant</defName>
 		<label>remove calamity implant</label>
 		<description>Remove calamity implant.</description>
@@ -786,7 +786,7 @@
 		<addsHediff>DF_Lethality_Implant</addsHediff>
 	</RecipeDef>
 
-	<RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
 		<defName>RemoveDF_Lethality_Implant</defName>
 		<label>remove lethality implant</label>
 		<description>Remove lethality implant.</description>
@@ -883,7 +883,7 @@
 		</incompatibleWithHediffTags>-->
 	</RecipeDef>
 
-	<RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
 		<defName>RemoveDF_Mortality_Implant</defName>
 		<label>remove mortality implant</label>
 		<description>Remove mortality implant.</description>
@@ -977,7 +977,7 @@
 		</incompatibleWithHediffTags>-->
 	</RecipeDef>
 
-	<RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
 		<defName>RemoveDF_Prosperity_Implant</defName>
 		<label>remove prosperity implant</label>
 		<description>Remove prosperity implant.</description>

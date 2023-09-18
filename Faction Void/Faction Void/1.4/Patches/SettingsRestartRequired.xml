@@ -2,16 +2,42 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
-            <li Class="XmlExtensions.OptionalPatch">
+        <li Class="XmlExtensions.OptionalPatch">
                 <modId>VOID.Pacas.Settings</modId>
-                <key>Recruit_Cheese</key>
+                <key>Arrest_Cheese</key>
                 <defaultValue>true</defaultValue>
                 <caseTrue>
                     <Operation Class="PatchOperationAddModExtension">
                         <xpath>Defs/PawnKindDef[@Name="RH_VOID_Base" or @Name="RH_VOID_BB_Base"]</xpath>
                         <value>
-                            <li Class="Capturable.NonCapturable"/>
                             <li Class="Capturable.NonArestable"/>
+                        </value>
+                    </Operation>
+                </caseTrue>
+            </li>
+            <li Class="XmlExtensions.OptionalPatch">
+                <modId>VOID.Pacas.Settings</modId>
+                <key>Recruit_Cheese</key>
+                <defaultValue>false</defaultValue>
+                <caseTrue>
+                    <Operation Class="PatchOperationAddModExtension">
+                        <xpath>Defs/PawnKindDef[@Name="RH_VOID_Base" or @Name="RH_VOID_BB_Base"]</xpath>
+                        <value>
+                            <li Class="Capturable.NonCapturable"/>
+                        </value>
+                    </Operation>
+                </caseTrue>
+            </li>
+            <li Class="XmlExtensions.OptionalPatch">
+                <modId>VOID.Pacas.Settings</modId>
+                <key>Help_Cheese</key>
+                <defaultValue>false</defaultValue>
+                <caseTrue>
+                    <Operation Class="PatchOperationAddModExtension">
+                        <xpath>Defs/PawnKindDef[@Name="RH_VOID_Base" or @Name="RH_VOID_BB_Base"]</xpath>
+                        <value>
+                            <li Class="Capturable.NonCarryable"/>
+                            <li Class="Capturable.NonResqueable"/>
                         </value>
                     </Operation>
                 </caseTrue>
@@ -64,6 +90,126 @@
                     </Operation>
                 </caseTrue>
             </li>
+            
+            <li Class="XmlExtensions.OptionalPatch">
+                <modId>VOID.Pacas.Settings</modId>
+                <key>Surgery_Setting_Void</key>
+                <defaultValue>false</defaultValue>
+                <caseTrue>
+                    <Operation Class="XmlExtensions.ForEach">
+                        <xpath>Defs/RecipeDef[@ParentName="VOID_RemoveImplantLE" or
+                        @ParentName="VOID_RemoveImplantElite" or
+                        @ParentName="VOID_RemoveImplantEpic" or
+                        @ParentName="VOID_RemoveImplantBest"]</xpath>
+                        <storeIn>DEF</storeIn>
+                        <apply>
+                            <Operation Class="PatchOperationRemove">
+                                <xpath>{DEF}</xpath>
+                            </Operation>
+                        </apply>
+                    </Operation>
+                </caseTrue>
+                <caseFalse>
+                    <Operation Class="PatchOperationAdd">
+                        <xpath>Defs/ThingDef[@Name="BaseHumanlikePawn"]/recipes</xpath>
+                        <value>
+                            <li>AdministerRHNerotonin8B</li>
+                            <!-- Elite -->
+                            <li>InstallDF_UltraBoost_Implant</li>
+                            <li>RemoveDF_UltraBoost_Implant</li>
+                            <li>InstallDF_Devils_Implant</li>
+                            <li>RemoveDF_Devils_Implant</li>
+                            <li>InstallDF_Volatile_Implant</li>
+                            <li>RemoveDF_Volatile_Implant</li>
+                            <li>InstallDF_XDusk_Implant</li>
+                            <li>RemoveDF_XDusk_Implant</li>
+                            <li>InstallDF_Dawn_Implant</li>
+                            <li>RemoveDF_Dawn_Implant</li>
+                            <!-- Epic -->
+                            <li>InstallDF_Trinity_Implant</li>
+                            <li>RemoveDF_Trinity_Implant</li>
+                            <li>InstallDF_Ghastly_Implant</li>
+                            <li>RemoveDF_Ghastly_Implant</li>
+                            <li>InstallDF_Celerity_Implant</li>
+                            <li>RemoveDF_Celerity_Implant</li>
+                            <li>InstallDF_Scrutiny_Implant</li>
+                            <li>RemoveDF_Scrutiny_Implant</li>
+                            <li>InstallDF_Versatility_Implant</li>
+                            <li>RemoveDF_Versatility_Implant</li>
+                            <li>InstallDF_Mastery_Implant</li>
+                            <li>RemoveDF_Mastery_Implant</li>
+                            <li>InstallDF_Calamity_Implant</li>
+                            <li>RemoveDF_Calamity_Implant</li>
+                            <li>InstallDF_Lethality_Implant</li>
+                            <li>RemoveDF_Lethality_Implant</li>
+                            <li>InstallDF_Mortality_Implant</li>
+                            <li>RemoveDF_Mortality_Implant</li>
+                            <li>InstallDF_Prosperity_Implant</li>
+                            <li>RemoveDF_Prosperity_Implant</li>
+                            <!-- LE -->
+                            <li>InstallDF_MOTL_Implant</li>
+                            <li>RemoveDF_MOTL_Implant</li>
+                            <li>InstallDF_Haste_Implant</li>
+                            <li>RemoveDF_Haste_Implant</li>
+                            <li>InstallDF_CatEye_Implant</li>
+                            <li>RemoveDF_CatEye_Implant</li>
+                            <li>InstallDF_Ghost_Implant</li>
+                            <li>RemoveDF_Ghost_Implant</li>
+                            <li>InstallDF_Destruction_Implant</li>
+                            <li>RemoveDF_Destruction_Implant</li>
+                            <li>InstallDF_Amber_Implant</li>
+                            <li>RemoveDF_Amber_Implant</li>
+                            <li>InstallDF_Genius_Implant</li>
+                            <li>RemoveDF_Genius_Implant</li>
+                            <li>InstallDF_GoldenRabbit_Implant</li>
+                            <li>RemoveDF_GoldenRabbit_Implant</li>
+                            <li>InstallDF_Data_Implant</li>
+                            <li>RemoveDF_Data_Implant</li>
+                            <li>InstallDF_Havoc_Implant</li>
+                            <li>RemoveDF_Havoc_Implant</li>
+                            <!-- MISC -->
+                            <li>InstallRH_AestheticShaper</li>
+                            <li>RemoveRH_AestheticShaper</li>
+                            <li>InstallDF_Voidtech_Implant</li>
+                            <li>RemoveDF_Voidtech_Implant</li>
+                            <li>InstallRH_VOIDCircadianHalfCycler</li>
+                            <li>RemoveRH_VOIDCircadianHalfCycler</li>
+                            <li>InstallVOIDBrain_Implant</li>
+                            <li>RemoveVOIDBrain_Implant</li>
+                            <li>InstallRH_VOIDAestheticNose</li>
+                            <li>RemoveRH_VOIDAestheticNose</li>
+                            <!-- X -->
+                            <li>InstallDF_XHyper_Implant</li>
+                            <li>RemoveDF_XHyper_Implant</li>
+                            <li>InstallDF_XPerception_Implant</li>
+                            <li>RemoveDF_XPerception_Implant</li>
+                            <li>InstallDF_XIronskin_Implant</li>
+                            <li>RemoveDF_XIronskin_Implant</li>
+                            <li>InstallDF_XViolence_Implant</li>
+                            <li>RemoveDF_XViolence_Implant</li>
+                            <!-- Bionic -->
+                            <li>InstallVOIDArchotechEye</li>
+                            <li>InstallVOIDArchotechArm</li>
+                            <li>InstallVOIDArchotechLeg</li>
+                            <li>InstallRH_VOIDBionicSpine</li>
+                            <li>InstallRH_VOIDBionicHeart</li>
+                            <li>InstallRH_VOIDBionicStomach</li>
+                            <li>InstallRH_VOIDBionicEar</li>
+                            <li>InstallRH_VOIDBionicLung</li>
+                            <li>InstallRH_VOIDBionicKidney</li>
+                            <li>InstallRH_VOIDBionicLiver</li>
+                            <!-- Serum -->
+                            <li>InstallRH2_NerotoninV_Implant</li>
+                            <li>RemoveInstallRH2_NerotoninV_Implant</li>
+                            <li>InstallRH2_Nerotonin2b_Implant</li>
+                            <li>RemoveInstallRH2_Nerotonin2b_Implant</li>
+                            <li>InstallRH2_Nerotonin4b_Implant</li>
+                            <li>RemoveInstallRH2_Nerotonin4b_Implant</li>
+                        </value>
+                    </Operation>
+                </caseFalse>
+            </li>
+            
             <li Class="XmlExtensions.OptionalPatch">
                 <modId>VOID.Pacas.Settings</modId>
                 <key>Spider_Jump_Void</key>

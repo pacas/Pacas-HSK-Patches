@@ -130,7 +130,7 @@
         </incompatibleWithHediffTags>
     </RecipeDef>
 
-    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+    <RecipeDef ParentName="VOID_RemoveImplantEpic">
         <defName>RemoveDF_UltraBoost_Implant</defName>
         <label>remove ultra boost implant</label>
         <description>Remove ultra boost implant.</description>
@@ -223,7 +223,7 @@
         <addsHediff>DF_Devils_Implant</addsHediff>
     </RecipeDef>
 
-    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+    <RecipeDef ParentName="VOID_RemoveImplantEpic">
         <defName>RemoveDF_Devils_Implant</defName>
         <label>remove devil's implant</label>
         <description>Remove devil's implant.</description>
@@ -325,7 +325,7 @@
         <addsHediff>DF_Volatile_Implant</addsHediff>
     </RecipeDef>
 
-    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+    <RecipeDef ParentName="VOID_RemoveImplantEpic">
         <defName>RemoveDF_Volatile_Implant</defName>
         <label>remove volatile implant</label>
         <description>Remove volatile implant.</description>
@@ -426,7 +426,7 @@
         </incompatibleWithHediffTags>
     </RecipeDef>
 
-    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+    <RecipeDef ParentName="VOID_RemoveImplantEpic">
         <defName>RemoveDF_XDusk_Implant</defName>
         <label>remove x-dusk implant</label>
         <description>Remove x-dusk implant.</description>
@@ -574,7 +574,7 @@
         </incompatibleWithHediffTags>
     </RecipeDef>
 
-    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+    <RecipeDef ParentName="VOID_RemoveImplantEpic">
         <defName>RemoveDF_Dawn_Implant</defName>
         <label>remove dawn implant</label>
         <description>Remove dawn implant.</description>

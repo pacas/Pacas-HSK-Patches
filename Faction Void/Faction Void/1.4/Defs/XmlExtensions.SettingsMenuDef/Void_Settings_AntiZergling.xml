@@ -15,11 +15,25 @@
             </li>
             <li Class="XmlExtensions.Setting.GapLine"/>
             <li Class="XmlExtensions.Setting.Checkbox">
-                <key>Recruit_Cheese</key>
-                <label>Recruit</label>
-                <tKey>Recruit_Cheese</tKey>
+                <key>Arrest_Cheese</key>
+                <label>Arrest</label>
+                <tKey>Arrest_Cheese</tKey>
                 <defaultValue>true</defaultValue>
+                <tooltip>V.O.I.D. will kill all aggressors towards diplomats</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Recruit_Cheese</key>
+                <label>Capture</label>
+                <tKey>Recruit_Cheese</tKey>
+                <defaultValue>false</defaultValue>
                 <tooltip>V.O.I.D. will not tolerate deserters</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Help_Cheese</key>
+                <label>Rescue</label>
+                <tKey>Help_Cheese</tKey>
+                <defaultValue>false</defaultValue>
+                <tooltip>V.O.I.D. recruits would rather die than get help</tooltip>
             </li>
             <li Class="XmlExtensions.Setting.Checkbox">
                 <key>Invis_Cheese</key>
@@ -34,6 +48,13 @@
                 <tKey>Raid_Cheese</tKey>
                 <defaultValue>false</defaultValue>
                 <tooltip>V.O.I.D. will smash you faster</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Surgery_Setting_Void</key>
+                <label>I hate implants</label>
+                <tKey>Surgery_Setting_Void</tKey>
+                <defaultValue>false</defaultValue>
+                <tooltip>No more V.O.I.D. implants and serums for you</tooltip>
             </li>
             <li Class="XmlExtensions.Setting.Checkbox">
                 <key>Spider_Jump_Void</key>

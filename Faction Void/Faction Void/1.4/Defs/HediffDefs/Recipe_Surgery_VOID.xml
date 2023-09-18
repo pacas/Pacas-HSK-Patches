@@ -35,5 +35,36 @@
 		</skillRequirements>
 		<researchPrerequisite>Prosthesis_install_E2</researchPrerequisite>
     </RecipeDef>
+    
+    
+    
+    
+    <RecipeDef Name="VOID_RemoveImplantLE" ParentName="SK_SurgeryRemoveImplantBase" Abstract="True">
+        <skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_C3</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef Name="VOID_RemoveImplantElite" ParentName="SK_SurgeryRemoveImplantBase" Abstract="True">
+        <skillRequirements>
+			<Medicine>11</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef Name="VOID_RemoveImplantEpic" ParentName="SK_SurgeryRemoveImplantBase" Abstract="True">
+        <skillRequirements>
+			<Medicine>11</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_D4</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef Name="VOID_RemoveImplantBest" ParentName="SK_SurgeryRemoveImplantBase" Abstract="True">
+        <skillRequirements>
+			<Medicine>15</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_E2</researchPrerequisite>
+    </RecipeDef>
 	
 </Defs>

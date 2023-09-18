@@ -5,7 +5,7 @@
         <operations>
             <!-- For testing. Remember that you can add to the <comps/> tag on your demons' ThingDefs directly. -->
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_Titan"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_Titan"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -16,7 +16,7 @@
             </li>
 	
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_Wraith"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_Wraith"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -27,7 +27,7 @@
             </li>
 	
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_GiantSpider"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_GiantSpider"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -39,7 +39,7 @@
 	
             <!-- -->
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_Mother"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_Mother"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -51,7 +51,7 @@
 		
 	
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_IrridiatedLongArms"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_IrridiatedLongArms"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -63,7 +63,7 @@
 		
 		
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_BlackWraith"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_BlackWraith"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -74,7 +74,7 @@
             </li>
 	
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_BlackTitan"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_BlackTitan"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -87,7 +87,7 @@
             <!-- EVERYONE BACK AWAY LEAVE THIS BOY ALONE HE NEEDS EXTRA COMPS -->
 	
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF2_Stalker"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF2_Stalker"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -106,7 +106,7 @@
             <!-- STALKER IS SPECIAL LEAVE THE POOR BOY ALONE -->
 	
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_BlackLeaper"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_BlackLeaper"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -118,7 +118,7 @@
 	
             <!-- -->
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_EvolvedRumbler"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_EvolvedRumbler"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -129,7 +129,7 @@
             </li>
 	
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_EvolvedLongArms"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_EvolvedLongArms"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -140,7 +140,7 @@
             </li>
 	
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_VolatileLeaper"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_VolatileLeaper"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -151,7 +151,7 @@
             </li>
 	
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_DevilHound"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_DevilHound"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -163,7 +163,7 @@
 	
             <!-- Red Zone -->
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_Reaper"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_Reaper"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -174,7 +174,7 @@
             </li>
 	
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_Tendril"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_Tendril"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -185,7 +185,7 @@
             </li>
 	
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF_Bone"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF_Bone"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">
@@ -196,7 +196,7 @@
             </li>
 	
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="RH_DF2_RoidHulk"]</xpath>
+                <xpath>Defs/ThingDef[defName="RH_DF2_RoidHulk"]</xpath>
                 <value>
                     <comps>
                         <li Class="ChickenCorpses.CompProperties_ApplyHediff">

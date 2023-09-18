@@ -61,7 +61,7 @@
         <addsHediff>RH_AestheticShaper</addsHediff>
     </RecipeDef>
   
-    <RecipeDef ParentName="SK_SurgeryRemoveImplantBase">
+    <RecipeDef ParentName="VOID_RemoveImplantLE">
         <defName>RemoveRH_AestheticShaper</defName>
         <label>remove super seducer implant</label>
         <description>Remove super seducer implant.</description>
