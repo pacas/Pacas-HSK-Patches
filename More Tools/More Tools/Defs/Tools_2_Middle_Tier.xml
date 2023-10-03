@@ -24,8 +24,8 @@
 		</costList>
 		<statBases>
 			<WorkToMake>9000</WorkToMake>
-			<Bulk>2.5</Bulk>
-			<Mass>6</Mass>
+			<Bulk>6.5</Bulk>
+			<Mass>9</Mass>
 			<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
             <ToolEffectivenessFactor>1.3</ToolEffectivenessFactor>
 		</statBases>
@@ -104,7 +104,7 @@
 		<statBases>
 			<WorkToMake>9000</WorkToMake>
 			<Bulk>8.5</Bulk>
-			<Mass>22</Mass>
+			<Mass>15</Mass>
 			<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
             <ToolEffectivenessFactor>1.3</ToolEffectivenessFactor>
 		</statBases>
@@ -182,8 +182,8 @@
 		</costList>
 		<statBases>
 			<WorkToMake>9000</WorkToMake>
-			<Bulk>20</Bulk>
-			<Mass>27</Mass>
+			<Bulk>10</Bulk>
+			<Mass>15</Mass>
 			<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
             <ToolEffectivenessFactor>1.3</ToolEffectivenessFactor>
 		</statBases>
@@ -528,9 +528,9 @@
 		<statBases>
 			<WorkToMake>9000</WorkToMake>
 			<Bulk>11.5</Bulk>
-			<Mass>5</Mass>
+			<Mass>10</Mass>
 			<MeleeCounterParryBonus>0.1</MeleeCounterParryBonus>
-            <ToolEffectivenessFactor>1.3</ToolEffectivenessFactor>
+            <ToolEffectivenessFactor>1.2</ToolEffectivenessFactor>
 		</statBases>
 		<equippedAngleOffset>-48</equippedAngleOffset>
 		<techLevel>Industrial</techLevel>
@@ -538,7 +538,7 @@
             <li Class="SurvivalToolsLite.SurvivalToolProperties">
                 <baseWorkStatFactors>
                     <StonecuttingSpeed>1.2</StonecuttingSpeed>
-                    <GeneralLaborSpeed>1.2</GeneralLaborSpeed>
+                    <GeneralLaborSpeed>1.1</GeneralLaborSpeed>
                     <SmeltingSpeed>1.2</SmeltingSpeed>
                     <SmithingSpeed>1.2</SmithingSpeed>
                     <ConstructionSpeed>1.2</ConstructionSpeed>
