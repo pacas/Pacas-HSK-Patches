@@ -155,7 +155,7 @@
         <graphicData>
             <texPath>Things/HMC_Woven_Basket/HMC_Woven_Basket</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(1,1)</drawSize>
+            <drawSize>(1.5,1.5)</drawSize>
             <drawRotated>false</drawRotated>
         </graphicData>
         <defaultPlacingRot>South</defaultPlacingRot>
@@ -217,7 +217,7 @@
         <graphicData>
             <texPath>Things/HMC_WovenBasket_Two/HMC_WovenBasket_Two</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(1,1)</drawSize>
+            <drawSize>(1.5,1.5)</drawSize>
             <drawRotated>false</drawRotated>
         </graphicData>
         <defaultPlacingRot>South</defaultPlacingRot>
@@ -280,8 +280,8 @@
         <graphicData>
             <texPath>Things/HDM_BasketDouble/HDM_Basket3</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(2,2)</drawSize>
-            <drawOffset>(0,0,0.5)</drawOffset>
+            <drawSize>(1.5,2)</drawSize>
+            <drawOffset>(0,0,0)</drawOffset>
             <drawRotated>false</drawRotated>
         </graphicData>
         <altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -345,8 +345,8 @@
         <graphicData>
             <texPath>Things/HDM_BasketTriple/HDM_Basket4</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(2,2)</drawSize>
-            <drawOffset>(0,0,0.5)</drawOffset>
+            <drawSize>(1.5,2.5)</drawSize>
+            <drawOffset>(0,0,0)</drawOffset>
             <drawRotated>false</drawRotated>
         </graphicData>
         <altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -410,7 +410,7 @@
         <graphicData>
             <texPath>Things/HMC_pileoflogs/HMC_pileoflogs</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(3.4,1)</drawSize>
+            <drawSize>(4,2)</drawSize>
             <drawRotated>false</drawRotated>
         </graphicData>
         <defaultPlacingRot>South</defaultPlacingRot>
@@ -477,8 +477,8 @@
         <description>A storage tent for....storing things.</description>
         <graphicData>
             <texPath>Things/HMC_StorageTent/HMC_StorageTent</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(3,3)</drawSize>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(4,4)</drawSize>
             <drawRotated>false</drawRotated>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
@@ -548,8 +548,8 @@
         <graphicData>
             <texPath>Things/HMC_Granary/HMC_Granary</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(4,4)</drawSize>
-            <drawOffset>(0,0,1)</drawOffset>
+            <drawSize>(3.5)</drawSize>
+            <drawOffset>(0,0,0)</drawOffset>
             <drawRotated>false</drawRotated>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
@@ -562,7 +562,7 @@
         <castEdgeShadows>false</castEdgeShadows>
         <pathCost>250</pathCost>
         <fillPercent>1</fillPercent>
-        <size>(3,2)</size>
+        <size>(2,2)</size>
         <statBases>
             <Beauty>0</Beauty>
             <MaxHitPoints>600</MaxHitPoints>
@@ -606,7 +606,7 @@
         <comps>
             <li Class="LWM.DeepStorage.Properties">
                 <minNumberStacks>1</minNumberStacks>
-                <maxNumberStacks>2</maxNumberStacks>
+                <maxNumberStacks>4</maxNumberStacks>
                 <minTimeStoringTakes>180</minTimeStoringTakes>
                 <additionalTimeEachStack>45</additionalTimeEachStack>
                 <additionalTimeStackSize>2</additionalTimeStackSize>
@@ -633,7 +633,8 @@
         <graphicData>
             <texPath>Things/HDM_weaponRack/HDM_weaponRack</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(2,2)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2.5,1.5)</drawSize>
             <drawRotated>false</drawRotated>
         </graphicData>
         <defaultPlacingRot>South</defaultPlacingRot>
@@ -664,6 +665,8 @@
                     <categories>
                         <li>WeaponsMelee</li>
                         <li>WeaponsRanged</li>
+                        <li>SurvivalTools</li>
+                        <li>SpecialWeapons</li>
                     </categories>
                 </filter>
             </fixedStorageSettings>
@@ -673,6 +676,8 @@
                     <categories>
                         <li>WeaponsMelee</li>
                         <li>WeaponsRanged</li>
+                        <li>SurvivalTools</li>
+                        <li>SpecialWeapons</li>
                     </categories>
                 </filter>
             </defaultStorageSettings>
@@ -702,7 +707,7 @@
         <graphicData>
             <texPath>Things/HDM_MeatRack/HDM_MeatRack</texPath><!-- here  -->
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(1,1)</drawSize>
+            <drawSize>(1.5,1.5)</drawSize>
             <shadowData>
                 <volume>(0,0,0)</volume>
             </shadowData>

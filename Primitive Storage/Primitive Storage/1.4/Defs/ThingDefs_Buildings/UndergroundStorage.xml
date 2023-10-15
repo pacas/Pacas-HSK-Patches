@@ -11,7 +11,8 @@
         <graphicData>
             <texPath>Things/HMC_StoragePit/HMC_StoragePit</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(3,3)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.4,1.4)</drawSize>
             <drawRotated>false</drawRotated>
         </graphicData>
         <uiIconPath>Things/HMC_StoragePit/HMC_StoragePit</uiIconPath>
@@ -82,7 +83,7 @@
         <graphicData>
             <texPath>Things/HDM_cellardoorWood/HDM_cellardoorWood</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1,1)</drawSize>
+            <drawSize>(1.4,1.4)</drawSize>
             <drawRotated>false</drawRotated>
         </graphicData>
         <uiIconPath>Things/HDM_cellardoorWood/HDM_cellardoorWood_south</uiIconPath>
@@ -152,7 +153,8 @@
         <graphicData>
             <texPath>Things/HDM_cellardoor/HDM_cellardoor</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1,1)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.4,1.4)</drawSize>
             <drawRotated>false</drawRotated>
         </graphicData>
         <uiIconPath>Things/HDM_cellardoor/HDM_cellardoor_south</uiIconPath>
