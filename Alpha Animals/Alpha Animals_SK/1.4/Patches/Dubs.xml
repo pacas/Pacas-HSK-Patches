@@ -4,11 +4,23 @@
         <mods>
             <li>Dubs Bad Hygiene</li>
         </mods>
-        <match Class="PatchOperationAdd">
-            <xpath>Defs/NeedDef[defName="Bladder"]/Exemptions/BodyDefs</xpath>
-            <value>
-                <li>BeetleLikeWithClaw</li>
-            </value>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/NeedDef[defName="Bladder"]/Exemptions/BodyDefs</xpath>
+                    <value>
+                        <li>BeetleLikeWithClaw</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationInsert">
+                    <xpath>Defs/ThinkTreeDef[defName = "VEF_SatisfyBasicNeedsWeirdEater"]/thinkRoot[@Class="ThinkNode_Tagger"]/subNodes/li[@Class="ThinkNode_PrioritySorter"]/subNodes/li[2]</xpath>
+                    <value>
+                        <li Class="DubsBadHygiene.JobGiver_DrinkWater"/>
+                        <li Class="DubsBadHygiene.JobGiver_HaveWash"/>
+                        <li Class="DubsBadHygiene.JobGiver_UseToilet"/>
+                    </value>
+                </li>
+            </operations>
         </match>
     </Operation>
 </Patch>
