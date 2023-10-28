@@ -40,7 +40,7 @@
             </points>
         </raidLootValueFromPointsCurve>
         <raidLootMaker>ReviaRaiderLootMaker</raidLootMaker>
-    <melaninRange>1</melaninRange>
+        <melaninRange>0~1</melaninRange>
         <startingResearchTags>
             <li>TribalStart</li>
         </startingResearchTags>
@@ -48,11 +48,11 @@
             <li>TribalStart</li>
             <li>TribalStartTechprints</li>
         </startingTechprintsResearchTags>
-    <xenotypeSet Inherit="False">
-      <xenotypeChances>
-        <RevianXenotype MayRequire="Ludeon.Rimworld.Biotech">999</RevianXenotype>
-      </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
-    </xenotypeSet>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <RevianXenotype MayRequire="Ludeon.Rimworld.Biotech">999</RevianXenotype>
+            </xenotypeChances>
+            <warnIfTotalAbove1>false</warnIfTotalAbove1>
+        </xenotypeSet>
     </FactionDef>
 </Defs>
