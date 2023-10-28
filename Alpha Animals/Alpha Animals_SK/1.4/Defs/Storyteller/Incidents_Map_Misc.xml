@@ -219,4 +219,63 @@
 		<letterDef>NegativeEvent</letterDef>
 		<canBePermanent>true</canBePermanent>
 	</GameConditionDef>
+    
+    
+    <ThingDef ParentName="CrashedShipPartBase">
+		<defName>AA_AncientMechAssembler</defName>
+		<label>ancient mech assembler</label>
+		<description>A large ancient mechanoid assembler, lost in space long time ago. It might be thousands of years old.\n\nThis one cannot do anything for you - except send all the mechanoids to hunt you down.</description>
+		<graphicData>
+			<texPath>Things/Building/AA_AncientMechAssembler</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+            <shadowData>
+                <volume>(2.8, 0.8, 2.8)</volume>
+            </shadowData>
+            <damageData>
+                <rect>(0.15, 0.15, 2.7, 2.7)</rect>
+            </damageData>
+		</graphicData>
+		<size>(4,4)</size>
+		<killedLeavings>
+			<ChunkSlagSteel>6</ChunkSlagSteel>
+			<ComponentSpacer>4</ComponentSpacer>
+			<AIPersonaCore>1</AIPersonaCore>
+		</killedLeavings>
+		<comps>
+			<li Class="CompProperties_CanBeDormant" />
+            <li Class="CompProperties_WakeUpDormant">
+                <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+            </li>
+		</comps>
+		<buildingTags>
+            <li>MechClusterCombatThreat</li>
+        </buildingTags>
+	</ThingDef>
+    <IncidentDef>
+		<defName>AA_AncientMechAssemblerShipPartCrash</defName>
+		<label>ancient mech assembler crash</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>SK.Events.IncidentWorker_CrashedShipPart</workerClass>
+		<letterLabel>Ancient mechanoid assembler</letterLabel>
+		<letterText>A large ancient mechanoid assembler has crashed nearby.\n\nYour colonists can hear the sounds of its internal systems as it tries to produce more mechanoids for your destruction, but cannot due to too much damage caused by age and impact with the planet.\n\nIt will do nothing to your colony on its own, but beware - it will probably defend itself.</letterText>
+		<letterDef>ThreatSmall</letterDef>
+		<baseChance>1.2</baseChance>
+		<baseChanceWithRoyalty>0.3</baseChanceWithRoyalty>
+		<minRefireDays>20</minRefireDays>
+		<tags>
+			<li>MechanoidShip</li>
+		</tags>
+		<refireCheckTags>
+			<li>MechanoidShip</li>
+		</refireCheckTags>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+		<earliestDay>170</earliestDay>
+		<minThreatPoints>7000</minThreatPoints>
+		<mechClusterBuilding>AA_AncientMechAssembler</mechClusterBuilding>
+		<tale>ShipPartCrash</tale>
+	</IncidentDef>
 </Defs>

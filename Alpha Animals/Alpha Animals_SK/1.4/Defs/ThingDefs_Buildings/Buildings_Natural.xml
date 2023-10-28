@@ -99,7 +99,7 @@
     </ThingDef>
 
     <ThingDef ParentName="RockBase">
-        <defName>AA_SkySteelClumps</defName>
+        <defName>AA_SkySteelClumpsBackup</defName>
         <label>strange shiny mineral</label>
         <graphicData>
             <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
@@ -122,5 +122,42 @@
                 <max>40</max>
             </mineableScatterLumpSizeRange>
         </building>
+    </ThingDef>
+    
+    <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>AA_SkySteelClumps</defName>
+        <label>Strange shiny mineral</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(55,64,17)</color>
+            <colorTwo>(36,84,150)</colorTwo>
+        </graphicData>
+        <coloredByTerrain>false</coloredByTerrain>
+        <description>This strange mineral is very hard and resilient. Perhaps you could find a way to extract useable materials from it.</description>
+        <statBases>
+            <MaxHitPoints>2500</MaxHitPoints>
+        </statBases>
+        <initialSizeMin>0</initialSizeMin>
+        <initialSizeMax>0</initialSizeMax>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Sulfur</ResourceDefName>
+                <DropProbability>0.3</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>AA_SkySteel_Ore</ResourceDefName>
+                <DropProbability>10</DropProbability>
+                <CountPerDrop>6</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>AA_SkySteelClumps</li>
+        </ThingsToReplace>
+        <!-- How easy it is to mine -->
+        <mineSpeedFactor>0.8</mineSpeedFactor>
     </ThingDef>
 </Defs>
