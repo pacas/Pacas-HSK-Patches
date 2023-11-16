@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>ra2_AlliedAirDefense_shot</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxVoices>1</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>ra2/Allied/AirDefense/shot</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>75</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+
+</Defs>

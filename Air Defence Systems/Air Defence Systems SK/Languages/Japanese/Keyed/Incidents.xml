@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AirDefenseHit>目標に命中！</AirDefenseHit>
+  <Beshotdown>対空砲で撃たれた！</Beshotdown>
+  <BeshotdownMsg>ああ、なんてことだ！少なくとも1人以上の入植者が、{0}の対空砲によって撃墜されました：</BeshotdownMsg>
+  <restoreBullet>弾薬を補充</restoreBullet>
+  <restoreProgress>作業</restoreProgress>
+  <ADAUnderRoof>エラー：屋根の下です！</ADAUnderRoof>
+  <atkTicks>装填時間</atkTicks>
+  <ra2Sec>秒</ra2Sec>
+
+  <ADADroppodCargoDropPercentage>撃墜ポッドの回収率</ADADroppodCargoDropPercentage>
+  <ADADroppodCargoDropPercentageDesc>輸送ポッドが撃墜された時に、どの程度積まれていたアイテムを回収できるかの確率(％)です。\n（0=なし、100=全て回収）</ADADroppodCargoDropPercentageDesc>
+
+  <ADA_Hit>撃ち落とす</ADA_Hit>
+  <ADA_NoManner>誰も配置されていません</ADA_NoManner>
+  <ADA_NoShip>衛星軌道に宇宙船が居ません</ADA_NoShip>
+  <PassingShipShotDown>トレードシップを撃墜した！</PassingShipShotDown>
+  <PassingShipShotDownMsg>{0}は撃墜された！貨物が落ちてくるでしょう</PassingShipShotDownMsg>
+  <ADA_Hit_NoTarget>目標が未選択です</ADA_Hit_NoTarget>
+  <ADA_Hit_Target>目標</ADA_Hit_Target>
+  <ADA_Fiya>発射！</ADA_Fiya>
+  <ADA_StopFiya>発射中止</ADA_StopFiya>
+  <FireProgress>発射準備中</FireProgress>
+  <ADAHITWaitCoolDown>クールダウン消化まで待機</ADAHITWaitCoolDown>
+  <ADAHITNeedAmmo>衛星破壊砲弾が必要です！！</ADAHITNeedAmmo>
+  <ADAHITCANTStop>もう発射を中止できません</ADAHITCANTStop>
+  <ReasonHitTradeShip>トレードシップを撃墜した</ReasonHitTradeShip>
+  <HitADAOnlyOne>同時に2つ以上の衛星破壊砲を持つことはできません</HitADAOnlyOne>
+  <MustPlaceOnHugeADA>衛星破壊砲に装填が必要</MustPlaceOnHugeADA>
+
+</LanguageData>

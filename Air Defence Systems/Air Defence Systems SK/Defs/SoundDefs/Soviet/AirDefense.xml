@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>ra2_SovietAirDefense_shot</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxVoices>1</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>ra2/Soviet/AirDefense/shot</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>75</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+   <SoundDef>
+    <defName>ra2_HugeAirDefense_shot</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxVoices>1</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ra2/Soviet/048-Explosion01</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>60</min>
+          <max>75</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef> 
+
+
+</Defs>

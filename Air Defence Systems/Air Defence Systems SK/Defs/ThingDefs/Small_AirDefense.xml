@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>ADA_AirDefense_small</defName>
+        <label>Small ADA</label>
+        <thingClass>ADA.Building_AirDefense</thingClass>
+        <graphicData>
+            <texPath>ADA/Building/ADA_small_bottom</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.8, 0.3, 0.3)</volume>
+                <offset>(0,0,-0.25)</offset>
+            </shadowData>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>ADA/Building/ADA_smallAirDefense_UI</uiIconPath>
+        <uiIconScale>2</uiIconScale>
+        <altitudeLayer>Building</altitudeLayer>
+        <size>(2,2)</size>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+            <WorkToBuild>2500</WorkToBuild>
+            <Flammability>0.3</Flammability>
+            <Mass>8</Mass>
+            <Beauty>-6</Beauty>
+        </statBases>
+        <description>Hits drop pods.</description>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <fillPercent>0.15</fillPercent>
+        <costList>
+            <Steel>600</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Gold>12</Gold>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>400</basePowerConsumption>
+                <shortCircuitInRain>false</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="ADA.CompProperties_TurretTopSize">
+                <topSize>(2,2,2)</topSize>
+                <soundShoot>ra2_SovietAirDefense_shot</soundShoot>
+                <canShotPod>true</canShotPod>
+                <storeTick>180</storeTick>
+                <atkRange>30</atkRange>
+            </li>
+        </comps>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <pathCost>8</pathCost>
+        <researchPrerequisites>
+            <li>ADASmall</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+        </placeWorkers>
+        <designationCategory>Security</designationCategory>
+        <rotatable>false</rotatable>
+        <specialDisplayRadius>30</specialDisplayRadius>
+        <tickerType>Normal</tickerType>
+        <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+        <building>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretGunDef>ADASmall_Cannon</turretGunDef>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>ADASmall_Cannon</defName>
+        <label>ADA Small Cannon</label>
+        <description>ADA Small Cannon.</description>
+        <graphicData>
+            <texPath>ADA/Building/ADA_smallAirDefense_top</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.8, 0.3, 0.3)</volume>
+                <offset>(0,0,-0.25)</offset>
+            </shadowData>
+            <drawSize>(4,4)</drawSize>
+        </graphicData>
+        <verbs>
+            <li>
+                <warmupTime>0</warmupTime>
+            </li>
+        </verbs>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="OrbitalStrikeBase">
+        <defName>PowerBeamNoDamage</defName>
+        <label>power beam</label>
+        <thingClass>ADA.PowerBeamNoDamage</thingClass>
+        <comps>
+            <li Class="CompProperties_OrbitalBeam">
+                <width>8</width>
+                <color>(255, 245, 214, 242)</color>
+                <sound>OrbitalBeam</sound>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

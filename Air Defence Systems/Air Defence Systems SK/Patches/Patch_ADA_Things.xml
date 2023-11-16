@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_small"]/costList</xpath>
+                <value>
+                    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+                    <techLevel>Industrial</techLevel>
+                    <stuffCategories>
+                        <li>RuggedMetallic</li>
+                    </stuffCategories>
+                    <costStuffCount>200</costStuffCount>
+                    <costList>
+                        <ComponentIndustrial>20</ComponentIndustrial>
+                        <Weapon_Parts>10</Weapon_Parts>
+                        <Heavy_Component>1</Heavy_Component>
+                        <ElectronicComponents>10</ElectronicComponents>
+                        <Electronics>5</Electronics>
+                        <ComponentSpacer>3</ComponentSpacer>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_small"]/statBases/WorkToBuild</xpath>
+                <value>
+                    <WorkToBuild>4000</WorkToBuild>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_small"]/constructionSkillPrerequisite</xpath>
+                <value>
+                    <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_small"]/comps</xpath>
+                <value>
+                    <comps>
+                        <li Class="CompProperties_Power">
+                            <compClass>CompPowerTrader</compClass>
+                            <basePowerConsumption>1800</basePowerConsumption>
+                            <shortCircuitInRain>false</shortCircuitInRain>
+                        </li>
+                        <li Class="CompProperties_Flickable"/>
+                        <li Class="CompProperties_Breakdownable"/>
+                        <li Class="CompProperties_Explosive">
+                            <explosiveRadius>2.9</explosiveRadius>
+                            <explosiveDamageType>Bomb</explosiveDamageType>
+                        </li>
+                        <li Class="ADA.CompProperties_TurretTopSize">
+                            <topSize>(2,2,2)</topSize>
+                            <soundShoot>ra2_SovietAirDefense_shot</soundShoot>
+                            <canShotPod>true</canShotPod>
+                            <storeTick>70</storeTick>
+                            <atkRange>23</atkRange>
+                            <maxStoreBullet>1</maxStoreBullet>
+                            <atkTicks>10</atkTicks>
+                        </li>
+                        <li Class="CompProperties_Refuelable">
+                            <fuelLabel>30x173mm cartridge (HE)</fuelLabel>
+                            <fuelGizmoLabel>30x173mm cartridge (HE)</fuelGizmoLabel>
+                            <fuelCapacity>5.0</fuelCapacity>
+                            <targetFuelLevelConfigurable>false</targetFuelLevelConfigurable>
+                            <initialConfigurableTargetFuelLevel>0</initialConfigurableTargetFuelLevel>
+                            <fuelFilter>
+                                <thingDefs>
+                                    <li>Ammo_30x173mm_HE</li>
+                                </thingDefs>
+                            </fuelFilter>
+                            <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                            <autoRefuelPercent>100</autoRefuelPercent>
+                            <showFuelGizmo>true</showFuelGizmo>
+                            <drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
+                            <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+                        </li>
+                    </comps>
+                </value>
+            </li>
+            
+            
+            
+             <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_middle"]/costList</xpath>
+                <value>
+                    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+                    <techLevel>Spacer</techLevel>
+                    <stuffCategories>
+                        <li>SolidMetallic</li>
+                    </stuffCategories>
+                    <costStuffCount>250</costStuffCount>
+                    <costList>
+                        <ComponentIndustrial>30</ComponentIndustrial>
+                        <Weapon_Parts>17</Weapon_Parts>
+                        <Heavy_Component>3</Heavy_Component>
+                        <ElectronicComponents>20</ElectronicComponents>
+                        <Electronics>10</Electronics>
+                        <Microchips>4</Microchips>
+                        <ComponentSpacer>7</ComponentSpacer>
+                        <ComponentAdvanced>10</ComponentAdvanced>
+                        <AdvMechanism>10</AdvMechanism>
+                        <MagneticMaterial>10</MagneticMaterial>
+                        <Hexcell>3</Hexcell>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_middle"]/statBases/WorkToBuild</xpath>
+                <value>
+                    <WorkToBuild>7500</WorkToBuild>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_middle"]/statBases/MaxHitPoints</xpath>
+                <value>
+                    <MaxHitPoints>800</MaxHitPoints>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_middle"]/constructionSkillPrerequisite</xpath>
+                <value>
+                    <constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_middle"]/comps</xpath>
+                <value>
+                    <comps>
+                        <li Class="CompProperties_Power">
+                            <compClass>CompPowerTrader</compClass>
+                            <basePowerConsumption>2600</basePowerConsumption>
+                            <shortCircuitInRain>false</shortCircuitInRain>
+                        </li>
+                        <li Class="CompProperties_Flickable"/>
+                        <li Class="CompProperties_Breakdownable"/>
+                        <li Class="CompProperties_Explosive">
+                            <explosiveRadius>4.9</explosiveRadius>
+                            <explosiveDamageType>Bomb</explosiveDamageType>
+                        </li>
+                        <li Class="ADA.CompProperties_TurretTopSize">
+                            <topSize>(4,4,4)</topSize>
+                            <soundShoot>ra2_AlliedAirDefense_shot</soundShoot>
+                            <canShotPod>true</canShotPod>
+                            <atkRange>34</atkRange>
+                            <atkTicks>30</atkTicks>
+                            <maxStoreBullet>6</maxStoreBullet>
+                            <storeTick>140</storeTick>
+                        </li>
+                        <li Class="CompProperties_Refuelable">
+                            <fuelLabel>30x173mm cartridge (HE)</fuelLabel>
+                            <fuelGizmoLabel>30x173mm cartridge (HE)</fuelGizmoLabel>
+                            <fuelCapacity>30.0</fuelCapacity>
+                            <targetFuelLevelConfigurable>false</targetFuelLevelConfigurable>
+                            <initialConfigurableTargetFuelLevel>0</initialConfigurableTargetFuelLevel>
+                            <fuelFilter>
+                                <thingDefs>
+                                    <li>Ammo_30x173mm_HE</li>
+                                </thingDefs>
+                            </fuelFilter>
+                            <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                            <autoRefuelPercent>100</autoRefuelPercent>
+                            <showFuelGizmo>true</showFuelGizmo>
+                            <drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
+                            <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+                        </li>
+                    </comps>
+                </value>
+            </li>
+            
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_huge"]/costList</xpath>
+                <value>
+                    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+                    <techLevel>Ultra</techLevel>
+                    <stuffCategories>
+                        <li>SolidMetallic</li>
+                    </stuffCategories>
+                    <costStuffCount>500</costStuffCount>
+                    <costList>
+                        <ComponentIndustrial>50</ComponentIndustrial>
+                        <Weapon_Parts>25</Weapon_Parts>
+                        <Heavy_Component>5</Heavy_Component>
+                        <ElectronicComponents>35</ElectronicComponents>
+                        <Electronics>15</Electronics>
+                        <Microchips>8</Microchips>
+                        <ComponentUltra>5</ComponentUltra>
+                        <ComponentAdvanced>10</ComponentAdvanced>
+                        <AdvMechanism>15</AdvMechanism>
+                        <MagneticMaterial>25</MagneticMaterial>
+                        <Hexcell>10</Hexcell>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_huge"]/statBases/WorkToBuild</xpath>
+                <value>
+                    <WorkToBuild>10000</WorkToBuild>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_huge"]/constructionSkillPrerequisite</xpath>
+                <value>
+                    <constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_huge"]/comps</xpath>
+                <value>
+                    <comps>
+                        <li Class="CompProperties_Power">
+                            <compClass>CompPowerTrader</compClass>
+                            <basePowerConsumption>5000</basePowerConsumption>
+                            <shortCircuitInRain>false</shortCircuitInRain>
+                        </li>
+                        <li Class="CompProperties_Flickable"/>
+                        <li Class="CompProperties_Breakdownable"/>
+                        <li Class="CompProperties_Explosive">
+                            <explosiveRadius>9.9</explosiveRadius>
+                            <explosiveDamageType>Bomb</explosiveDamageType>
+                        </li>
+                        <li Class="ADA.CompProperties_TurretTopSize">
+                            <topSize>(10,10,10)</topSize>
+                            <soundShoot>ra2_HugeAirDefense_shot</soundShoot>
+                            <canShotPod>true</canShotPod>
+                            <canShotShip>true</canShotShip>
+                            <atkRange>80</atkRange>
+                            <storeTick>1800</storeTick>
+                            <atkTicks>100</atkTicks>
+                            <maxStoreBullet>1</maxStoreBullet>
+                        </li>
+                        <li Class="CompProperties_Refuelable">
+                            <fuelLabel>450mm shrapnel shell</fuelLabel>
+                            <fuelGizmoLabel>450mm shrapnel shell</fuelGizmoLabel>
+                            <fuelCapacity>1.0</fuelCapacity>
+                            <targetFuelLevelConfigurable>false</targetFuelLevelConfigurable>
+                            <initialConfigurableTargetFuelLevel>0</initialConfigurableTargetFuelLevel>
+                            <fuelFilter>
+                                <thingDefs>
+                                    <li>Ammo_450mmBuckShell</li>
+                                </thingDefs>
+                            </fuelFilter>
+                            <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                            <autoRefuelPercent>100</autoRefuelPercent>
+                            <showFuelGizmo>true</showFuelGizmo>
+                            <drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
+                            <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+                        </li>
+                    </comps>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_HIT"]/costList</xpath>
+                <value>
+                    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+                    <techLevel>Ultra</techLevel>
+                    <stuffCategories>
+                        <li>SolidMetallic</li>
+                    </stuffCategories>
+                    <costStuffCount>750</costStuffCount>
+                    <costList>
+                        <ComponentIndustrial>75</ComponentIndustrial>
+                        <Weapon_Parts>45</Weapon_Parts>
+                        <Heavy_Component>7</Heavy_Component>
+                        <ElectronicComponents>40</ElectronicComponents>
+                        <Electronics>20</Electronics>
+                        <Microchips>10</Microchips>
+                        <ComponentUltra>5</ComponentUltra>
+                        <ComponentAdvanced>25</ComponentAdvanced>
+                        <AdvMechanism>25</AdvMechanism>
+                        <MagneticMaterial>25</MagneticMaterial>
+                        <Hexcell>10</Hexcell>
+                    </costList>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_HIT"]/statBases/WorkToBuild</xpath>
+                <value>
+                    <WorkToBuild>20000</WorkToBuild>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_HIT"]/statBases/MaxHitPoints</xpath>
+                <value>
+                    <MaxHitPoints>3500</MaxHitPoints>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_HIT"]/constructionSkillPrerequisite</xpath>
+                <value>
+                    <constructionSkillPrerequisite>19</constructionSkillPrerequisite>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>Defs/ThingDef[defName="ADA_AirDefense_HIT"]/comps</xpath>
+                <value>
+                    <comps>
+                        <li Class="CompProperties_Power">
+                            <compClass>CompPowerTrader</compClass>
+                            <basePowerConsumption>20000</basePowerConsumption>
+                            <shortCircuitInRain>false</shortCircuitInRain>
+                        </li>
+                        <li Class="CompProperties_Flickable"/>
+                        <li Class="CompProperties_Breakdownable"/>
+                        <li Class="CompProperties_Explosive">
+                            <explosiveRadius>12.9</explosiveRadius>
+                            <explosiveDamageType>Bomb</explosiveDamageType>
+                        </li>
+                        <li Class="ADA.CompProperties_HitPassingShip"/>
+                        <li Class="ADA.CompProperties_HitTop"/>
+                        <li Class="CompProperties_Refuelable">
+                            <fuelLabel>450mm slug shell</fuelLabel>
+                            <fuelGizmoLabel>450mm slug shell</fuelGizmoLabel>
+                            <fuelCapacity>1.0</fuelCapacity>
+                            <targetFuelLevelConfigurable>false</targetFuelLevelConfigurable>
+                            <initialConfigurableTargetFuelLevel>0</initialConfigurableTargetFuelLevel>
+                            <fuelFilter>
+                                <thingDefs>
+                                    <li>Ammo_450mmSlugShell</li>
+                                </thingDefs>
+                            </fuelFilter>
+                            <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                            <autoRefuelPercent>100</autoRefuelPercent>
+                            <showFuelGizmo>true</showFuelGizmo>
+                            <drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
+                            <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+                        </li>
+                    </comps>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!--Industrial-->
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <tab>Weapon_SK</tab>
+        <defName>ADASmall</defName>
+        <label>ADS I</label>
+        <description>Learn to create compact air defence systems for outposts.</description>
+        <baseCost>4000</baseCost>
+        <researchViewX>19.00</researchViewX>
+		<researchViewY>35.00</researchViewY>
+        <prerequisites>
+            <li>GunTurrets</li>
+            <li>Heavy_turrets_C3</li>
+            <li>Artillery_C2</li>
+            <li>Rockets_C2</li>
+        </prerequisites>
+        <techLevel>Spacer</techLevel>
+    </ResearchProjectDef>
+  
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <tab>Weapon_SK</tab>
+        <defName>ADAMiddle</defName>
+        <label>ADS II</label>
+        <description>Learn to create middle-sized air defence systems for fortresses.</description>
+        <baseCost>6000</baseCost>
+        <researchViewX>20.00</researchViewX>
+		<researchViewY>35.00</researchViewY>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>ADASmall</li>
+            <li>Autoturrets_D2</li>
+            <li>Rockets_D1</li>
+        </prerequisites>
+    </ResearchProjectDef>
+  
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <tab>Weapon_SK</tab>
+        <defName>ADAHuge</defName>
+        <label>ADS III</label>
+        <description>Learn to create huge-sized air defence systems for large Empire cities.</description>
+        <baseCost>8000</baseCost>
+        <researchViewX>21.00</researchViewX>
+		<researchViewY>35.00</researchViewY>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>ADAMiddle</li>
+            <li>Autoturrets_D3</li>
+            <li>Rockets_D2</li>
+        </prerequisites>
+    </ResearchProjectDef>
+  
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <tab>Weapon_SK</tab>
+        <defName>ADAHit</defName>
+        <label>Giant SDS</label>
+        <description>Learn to create spacecraft destruction system. And screw you.</description>
+        <baseCost>8000</baseCost>
+        <researchViewX>22.00</researchViewX>
+		<researchViewY>35.00</researchViewY>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>ADAHuge</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+</Defs>

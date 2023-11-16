@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>ADA_AirDefense_HIT</defName>
+        <label>TradeShip Destroyer</label>
+        <graphicData>
+            <texPath>ADA/Building/ADA_hugeAirDefense_bottom</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.8, 0.3, 0.3)</volume>
+                <offset>(0,0,-0.25)</offset>
+            </shadowData>
+            <drawSize>(15,15)</drawSize>
+        </graphicData>
+        <uiIconPath>ADA/Building/ADA_Hit_UI</uiIconPath>
+        <uiIconScale>2</uiIconScale>
+        <altitudeLayer>Building</altitudeLayer>
+        <size>(9,9)</size>
+        <statBases>
+            <MaxHitPoints>2600</MaxHitPoints>
+            <WorkToBuild>2500</WorkToBuild>
+            <Flammability>0.3</Flammability>
+            <Mass>8</Mass>
+            <Beauty>-6</Beauty>
+        </statBases>
+        <researchPrerequisites>
+            <li>ADAHit</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+        </placeWorkers>
+        <description>This will shoot down trade ships. A lot of factions will hate you for this.</description>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <fillPercent>0.15</fillPercent>
+        <costList>
+            <Steel>3600</Steel>
+            <ComponentSpacer>15</ComponentSpacer>
+            <Gold>150</Gold>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>3600</basePowerConsumption>
+                <shortCircuitInRain>false</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="ADA.CompProperties_HitPassingShip"/>
+            <li Class="ADA.CompProperties_HitTop"/>
+            <li Class="CompProperties_Refuelable">
+                <fuelLabel>Destroyer Shell</fuelLabel>
+                <fuelGizmoLabel>Shell</fuelGizmoLabel>
+                <fuelCapacity>1.0</fuelCapacity>
+                <targetFuelLevelConfigurable>false</targetFuelLevelConfigurable>
+                <initialConfigurableTargetFuelLevel>1</initialConfigurableTargetFuelLevel>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>ADA_DestroyerShell</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <autoRefuelPercent>100</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <drawOutOfFuelOverlay>true</drawOutOfFuelOverlay>
+                <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+            </li>
+        </comps>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <pathCost>8</pathCost>
+        <designationCategory>Security</designationCategory>
+        <rotatable>false</rotatable>
+        <tickerType>Normal</tickerType>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <building>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretGunDef>ADADestroyer_Cannon</turretGunDef>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>ADADestroyer_Cannon</defName>
+        <label>ADA Destroyer Cannon</label>
+        <description>ADA Destroyer Cannon.</description>
+        <graphicData>
+            <texPath>ADA/Building/ADA_Hit_top</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.8, 0.3, 0.3)</volume>
+                <offset>(0,0,-0.25)</offset>
+            </shadowData>
+            <drawSize>(15,15)</drawSize>
+        </graphicData>
+        <verbs>
+            <li>
+                <warmupTime>0</warmupTime>
+            </li>
+        </verbs>
+    </ThingDef>
+</Defs>

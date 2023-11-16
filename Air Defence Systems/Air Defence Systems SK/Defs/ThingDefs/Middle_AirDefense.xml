@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>ADA_AirDefense_middle</defName>
+        <label>Middle ADA</label>
+        <thingClass>ADA.Building_AirDefense</thingClass>
+        <graphicData>
+            <texPath>ADA/Building/ADA_middle_bottom</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.8, 0.3, 0.3)</volume>
+                <offset>(0,0,-0.25)</offset>
+            </shadowData>
+            <drawSize>(4,4)</drawSize>
+        </graphicData>
+        <uiIconPath>ADA/Building/ADA_middleAirDefense_UI</uiIconPath>
+        <uiIconScale>2</uiIconScale>
+        <altitudeLayer>Building</altitudeLayer>
+        <size>(3,3)</size>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+            <WorkToBuild>2500</WorkToBuild>
+            <Flammability>0.3</Flammability>
+            <Mass>8</Mass>
+            <Beauty>-6</Beauty>
+        </statBases>
+        <description>Hits drop pods, requires time to recharge all shells.</description>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <fillPercent>0.15</fillPercent>
+        <costList>
+            <Steel>1800</Steel>
+            <ComponentSpacer>2</ComponentSpacer>
+            <Gold>33</Gold>
+        </costList>
+        <researchPrerequisites>
+            <li>ADAMiddle</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+        </placeWorkers>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>800</basePowerConsumption>
+                <shortCircuitInRain>false</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="ADA.CompProperties_TurretTopSize">
+                <topSize>(4,4,4)</topSize>
+                <soundShoot>ra2_AlliedAirDefense_shot</soundShoot>
+                <canShotPod>true</canShotPod>
+                <atkRange>45</atkRange>
+                <atkTicks>30</atkTicks>
+                <maxStoreBullet>5</maxStoreBullet>
+                <storeTick>600</storeTick>
+            </li>
+        </comps>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <pathCost>8</pathCost>
+        <designationCategory>Security</designationCategory>
+        <rotatable>false</rotatable>
+        <specialDisplayRadius>45</specialDisplayRadius>
+        <tickerType>Normal</tickerType>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <building>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretGunDef>ADAMiddle_Cannon</turretGunDef>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>ADAMiddle_Cannon</defName>
+        <label>ADA Middle Cannon</label>
+        <description>ADA Middle Cannon.</description>
+        <graphicData>
+            <texPath>ADA/Building/ADA_middleAirDefense_top</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.8, 0.3, 0.3)</volume>
+                <offset>(0,0,-0.25)</offset>
+            </shadowData>
+            <drawSize>(4,4)</drawSize>
+        </graphicData>
+        <verbs>
+            <li>
+                <warmupTime>0</warmupTime>
+            </li>
+        </verbs>
+    </ThingDef>
+</Defs>

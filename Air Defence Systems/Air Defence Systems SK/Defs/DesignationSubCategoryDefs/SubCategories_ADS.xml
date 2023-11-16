@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_ADS_ADA</defName>
+		<label>ADS</label>
+		<description>Air Defence Systems</description>
+		<defNames>
+			<li>ADA_AirDefense_small</li>
+			<li>ADA_AirDefense_middle</li>
+			<li>ADA_AirDefense_huge</li>
+			<li>ADA_AirDefense_HIT</li>
+		</defNames>
+		<designationCategory>Security</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+</Defs>	

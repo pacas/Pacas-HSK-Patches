@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>ADA_AirDefense_huge</defName>
+        <label>Huge ADA</label>
+        <thingClass>ADA.Building_AirDefense</thingClass>
+        <graphicData>
+            <texPath>ADA/Building/ADA_hugeAirDefense_bottom</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.8, 0.3, 0.3)</volume>
+                <offset>(0,0,-0.25)</offset>
+            </shadowData>
+            <drawSize>(15,15)</drawSize>
+        </graphicData>
+        <uiIconPath>ADA/Building/ADA_hugeAirDefense_UI</uiIconPath>
+        <uiIconScale>2</uiIconScale>
+        <altitudeLayer>Building</altitudeLayer>
+        <size>(9,9)</size>
+        <statBases>
+            <MaxHitPoints>2600</MaxHitPoints>
+            <WorkToBuild>2500</WorkToBuild>
+            <Flammability>0.3</Flammability>
+            <Mass>8</Mass>
+            <Beauty>-6</Beauty>
+        </statBases>
+        <researchPrerequisites>
+            <li>ADAHuge</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+        </placeWorkers>
+        <description>Hits enemy drop pods and crashed ships.</description>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <fillPercent>0.15</fillPercent>
+        <costList>
+            <Steel>3600</Steel>
+            <ComponentSpacer>15</ComponentSpacer>
+            <Gold>150</Gold>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1800</basePowerConsumption>
+                <shortCircuitInRain>false</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="ADA.CompProperties_TurretTopSize">
+                <topSize>(10,10,10)</topSize>
+                <soundShoot>ra2_HugeAirDefense_shot</soundShoot>
+                <canShotPod>true</canShotPod>
+                <canShotShip>true</canShotShip>
+                <atkRange>56</atkRange>
+                <storeTick>1800</storeTick>
+            </li>
+        </comps>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <pathCost>8</pathCost>
+        <designationCategory>Security</designationCategory>
+        <rotatable>false</rotatable>
+        <specialDisplayRadius>56</specialDisplayRadius>
+        <tickerType>Normal</tickerType>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <building>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretGunDef>ADAHuge_Cannon</turretGunDef>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>ADAHuge_Cannon</defName>
+        <label>ADA Huge Cannon</label>
+        <description>ADA Huge Cannon.</description>
+        <graphicData>
+            <texPath>ADA/Building/ADA_hugeAirDefense_top</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.8, 0.3, 0.3)</volume>
+                <offset>(0,0,-0.25)</offset>
+            </shadowData>
+            <drawSize>(15,15)</drawSize>
+        </graphicData>
+        <verbs>
+            <li>
+                <warmupTime>0</warmupTime>
+            </li>
+        </verbs>
+    </ThingDef>
+</Defs>
