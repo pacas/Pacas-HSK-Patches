@@ -27,13 +27,13 @@ A: Delete the mod configuration files in the game settings folder.<br>
 Q: Сломались окна настройки мода!<br>
 A: Удалить файлы конфига мода в папке настроек игры.<br>
 #-------------------------------------------------------------#<br>
-Q: Is this mod compatibile with Combat Extended?<br>
+Q: Is this mod compatible with Combat Extended?<br>
 A: This is HSK convertion, of course.<br>
 Q: Совместимо с Combat Extended?<br>
 A: Это конвертация под ХСК, естественно.<br>
 #-------------------------------------------------------------#<br>
 Q: Is this mod save game compatible?<br>
-A: Yes, you can add it whenever you like. Don not recommend to remove.<br>
+A: Yes, you can add it whenever you like. Donе not recommend to remove.<br>
 Q: Совместимо с идущей игрой?<br>
 A: Да, вы можете добавлять его когда захотите. Не рекомендую удалять после.<br>
 #-------------------------------------------------------------#<br>
