@@ -29,6 +29,7 @@ How to download only the mods you are interested in:<br>
 | Mod title | 1.3 | 1.4 | Notes |
 | --- | --- | --- | --- |
 | Advanced Shield Belts | :white_check_mark: | :white_check_mark: | --- |
+| Air Defence Systems | :x: | :white_check_mark: | --- |
 | Alpha Animals | :white_check_mark: | :white_check_mark: | --- |
 | Alpha Biomes | :white_check_mark: | :white_check_mark: | --- |
 | Apex Rimworld Legends | :white_check_mark: | :white_check_mark: | --- |
@@ -53,7 +54,7 @@ How to download only the mods you are interested in:<br>
 | SRTS Expanded | :x: | :white_check_mark: | --- |
 | SRTS Crimson Fleet | :x: | :white_check_mark: | --- |
 | SRTS Helicopters | :x: | :white_check_mark: | --- |
-| Tesla Coil | :x: | :white_check_mark: | :x: |
+| Tesla Coil | :white_check_mark: | :x: | :x: |
 | Utility Columns | :white_check_mark: | :white_check_mark: | --- |
 <br>
 <img src="https://i.imgur.com/fdngbbh.png"><br>
