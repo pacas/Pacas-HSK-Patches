@@ -19,10 +19,17 @@
 				</li>
                 
                 <!-- Config pages -->
-                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
-                    <def>ConfigPage_ConfigureStartingPawns</def>
-                    <pawnCount>3</pawnCount>
-                    <pawnChoiceCount>8</pawnChoiceCount>
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+                  <def>ConfigurePawnsKindDefs</def>
+                  <pawnChoiceCount>8</pawnChoiceCount>
+                  <leftBehindPawnKind>ReviaRaceColonist</leftBehindPawnKind>
+                  <kindCounts>
+                    <li>
+                      <kindDef>ReviaRaceColonist</kindDef>
+                      <count>3</count>
+                      <requiredAtStart>true</requiredAtStart>
+                    </li>
+                  </kindCounts>
                 </li>
 
                 <li Class="ScenPart_PlayerPawnsArriveMethod">
