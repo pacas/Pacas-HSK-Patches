@@ -5,19 +5,17 @@
 <img src="https://i.imgur.com/svEwA2k.png"><br><br>
 This repository contains all my own and patched HSK mods. Each folder inside this repository contains a folder of the mod itself, a description with an FAQ, a preview, and sometimes the author's license. Unpack the mods correctly and not touch __PREVIEW__ folder!<br><br>
 Это репозиторий содержит все мои самодельные и пропатченные для ХСК моды. В каждой папке внутри данного репозитория содержится папка самого мода, описание с FAQ, превью и иногда лицензия автора. Правильно распаковывайте моды и не трогайте папку __PREVIEW__!<br>
-## Donate / Order a patch / Поддержать:<br>
+
+## Donate or Order a patch | Поддержать или Заказать патч:<br>
 You can thank me for the work done and donate:<br>
-- [Boosty (almost Patreon)](https://boosty.to/pacas)
-- [Donate items on Steam](https://steamcommunity.com/tradeoffer/new/?partner=93729960&token=dgWxX8tO) (preferably TF2 keys)
-___
 Вы можете поблагодарить меня за проделанную работу и пожертвовать:<br>
-Для пользователей из России:<br>
+- [Boosty](https://boosty.to/pacas)
+- [DonationAlerts](https://www.donationalerts.com/r/pacas)
+- [Donate items on Steam](https://steamcommunity.com/tradeoffer/new/?partner=93729960&token=dgWxX8tO) (preferably keys or CS2 containers)
+Для пользователей из России также работает эти методы:<br>
 - Чашку кофе на Сбер `2202 2010 7950 3500`<br>
 - Кружку чая на [QIWI](https://qiwi.com/n/PACAS)<br>
 
-Для пользователей из других стран:<br>
-- [Boosty](https://boosty.to/pacas)
-- [Подарить предметы в стиме](https://steamcommunity.com/tradeoffer/new/?partner=93729960&token=dgWxX8tO) (желательно ключики тф2)
 ## Download / Загрузка:<br>
 How to download only the mods you are interested in:<br>
 Как загрузить только те моды, которые вас интересуют:<br>
@@ -25,6 +23,7 @@ How to download only the mods you are interested in:<br>
 2) Use the "Refined GitHub" extension<br>
 3) https://download-directory.github.io<br>
 4) https://downgit.github.io/#/home<br>
+
 ## Content by version / Содержимое по версиям:<br>
 | Mod title | 1.3 | 1.4 | Notes |
 | --- | --- | --- | --- |
