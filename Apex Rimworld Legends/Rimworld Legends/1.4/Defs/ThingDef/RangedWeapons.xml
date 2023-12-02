@@ -1243,7 +1243,7 @@
             <li>CE_AI_Rifle</li>
         </weaponTags>
         <thingCategories>
-            <li>SRifles</li>
+            <li>Rifles</li>
         </thingCategories>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
@@ -1558,8 +1558,8 @@
     <!-- ============================================== -->
     <ThingDef ParentName="BaseGun_Heavy">
         <defName>ARL_ChargeMinigun</defName>
-        <label>Charge Minigun</label>
-        <description>The 40mm Charge Minigun (Or "40 mil") is a multi-purpose/ anti-vehicle automatic cannon. It is a popular and versatile armament often fielded by glitterworld soldiers operating in medium to long-distance engagements. The 40mm cartridge can be lethal to both enemy personnel and vehicles due to explosive shells.</description>
+        <label>MPAVAC</label>
+        <description>MPAVAC - multi-purpose/ anti-vehicle automatic cannon. It is a popular and versatile armament often fielded by glitterworld soldiers operating in medium to long-distance engagements. The cartridge can be lethal to both enemy personnel and vehicles due to explosive shells.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <texPath>Things/A16/40mm-tracker-cannon</texPath>
@@ -1586,22 +1586,26 @@
             <li>Exotic</li>
         </tradeTags>
         <thingCategories>
+            <li>Glaunchers</li>
             <li>Futuristic</li>
         </thingCategories>
         <weaponTags>
-            <li>MG3</li>
-            <li>AdvancedGun</li>
+            <li>Glaunchers</li>
             <li>GunHeavy</li>
-            <li>TierTwoAdvanced</li>
+            <li>RKT3</li>
             <li>CE_AI_Suppressive</li>
+            <li>CE_AI_Rifle</li>
+            <li>CE_AI_Launcher</li>
+			<li>CE_AI_AOE</li>
+            <li>EliteGun</li>
         </weaponTags>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
-                <recoilAmount>1.98</recoilAmount>
+                <recoilAmount>2.98</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_12x64mmCharged</defaultProjectile>
-                <burstShotCount>10</burstShotCount>
+                <defaultProjectile>Ammo_40x46mmGrenade_HE</defaultProjectile>
+                <burstShotCount>4</burstShotCount>
                 <ticksBetweenBurstShots>18</ticksBetweenBurstShots>
                 <warmupTime>1.75</warmupTime>
                 <range>40</range>
@@ -1621,9 +1625,9 @@
                 <aiAimMode>AimedShot</aiAimMode>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>30</magazineSize>
+                <magazineSize>20</magazineSize>
                 <reloadTime>4.9</reloadTime>
-                <ammoSet>AmmoSet_12x64mmCharged</ammoSet>
+                <ammoSet>Ammo40x46mmGrenades</ammoSet>
             </li>
         </comps>
         <smeltProducts>
