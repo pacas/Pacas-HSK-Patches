@@ -329,6 +329,13 @@
                     </comps>
                 </value>
             </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="TableMachining"]/recipes</xpath>
+                <value>
+                    <li>MakeAmmo_450mmBuckShell</li>
+                    <li>MakeAmmo_450mmSlugShell</li>
+                </value>
+            </li>
         </operations>
     </Operation>
 </Patch>
