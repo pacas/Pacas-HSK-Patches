@@ -6,10 +6,10 @@
         <description>A blessing given by the Revian pantheon. Supposedly confers divine favour on the user.</description>
         <techLevel>Neolithic</techLevel>
         <graphicData>
-            <texPath>Things/Item/Health/HealthItem</texPath>
+            <texPath>Things/Item/Misc/Ritual/ReviaRaceBloodstone</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>0.80</drawSize>
-            <color>(200, 50, 0)</color>
+            <color>(255, 255, 255)</color>
         </graphicData>
         <stackLimit>75</stackLimit>
         <thingCategories>

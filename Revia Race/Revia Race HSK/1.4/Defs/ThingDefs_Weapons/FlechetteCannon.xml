@@ -19,8 +19,10 @@
         <graphicData>
             <texPath>Things/Item/Weapons/FlechetteCannon</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
+        <equippedAngleOffset>45</equippedAngleOffset>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>

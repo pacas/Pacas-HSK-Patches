@@ -56,5 +56,7 @@ A: Репортить в соответствующую ветку в дисе �
 <br>
 <img src="https://i.imgur.com/fdngbbh.png"><br>
 Rimworld is owned by Tynan Sylvester. Obviously.<br>
-Fox with a Shotgun for this awesome mod. Check out other mods!<br>
+Fox with a Shotgun [for this awesome mod](https://steamcommunity.com/workshop/filedetails/?id=2020041005).<br>
+Шашлычник [for Biotech mod version](https://steamcommunity.com/workshop/filedetails/?id=2893157989).<br>
+SGG1 [for this retexture mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3142300372).<br>
 Pacas (me) for doing a HSK convertion.<br>
