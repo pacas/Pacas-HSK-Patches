@@ -1039,8 +1039,8 @@
             <Bulk>3.5</Bulk>
             <Mass>2.5</Mass>
             <SightsEfficiency>1</SightsEfficiency>
-            <ShotSpread>1.16</ShotSpread>
-            <SwayFactor>0.85</SwayFactor>
+            <ShotSpread>1.09</ShotSpread>
+            <SwayFactor>0.89</SwayFactor>
             <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
         </statBases>
         <thingCategories>
@@ -1074,13 +1074,13 @@
             </li>
         </comps>
         <weaponTags>
-            <li>RF3</li>
+            <li>RF2</li>
             <li>AdvancedGun</li>
             <li>TierOneRifle</li>
             <li>CE_AI_Rifle</li>
         </weaponTags>
         <smeltProducts>
-            <AdvRifle_Component>1</AdvRifle_Component>
+            <Rifle_Component>1</Rifle_Component>
             <Weapon_Parts>5</Weapon_Parts>
         </smeltProducts>
         <thingSetMakerTags>
