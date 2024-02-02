@@ -7,7 +7,7 @@
         <effectWorking>Smelt</effectWorking>
         <soundWorking>Recipe_Smelt</soundWorking>
         <workSkill>Crafting</workSkill>
-    	<workSkillLearnFactor>0.8</workSkillLearnFactor>
+        <workSkillLearnFactor>0.8</workSkillLearnFactor>
     </RecipeDef>
     
     <RecipeDef Name="Soul_HandSmeltAbstract" ParentName="Soul_SmeltAbstract" Abstract="True">
@@ -85,13 +85,13 @@
                 <count>5</count>
             </li>
             <li>
-				<filter>
-					<categories>
-						<li>HCM</li>
-					</categories>
-				</filter>
-				<count>5</count>
-			</li>
+                <filter>
+                    <categories>
+                        <li>HCM</li>
+                    </categories>
+                </filter>
+                <count>5</count>
+            </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
@@ -131,13 +131,13 @@
                 <count>5</count>
             </li>
             <li>
-				<filter>
-					<categories>
-						<li>HCM</li>
-					</categories>
-				</filter>
-				<count>5</count>
-			</li>
+                <filter>
+                    <categories>
+                        <li>HCM</li>
+                    </categories>
+                </filter>
+                <count>5</count>
+            </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
@@ -153,7 +153,7 @@
         </products>
     </RecipeDef>
 
-//Gritsteel
+    <!--Gritsteel-->
 
     <RecipeDef ParentName="Soul_HandSmeltAbstract">
         <defName>Make_GritsteelSmall</defName>
@@ -171,15 +171,15 @@
                 <count>15</count>
             </li>
             <li>
-				<filter>
-					<categories>
-						<li>HCM</li>
+                <filter>
+                    <categories>
+                        <li>HCM</li>
                         <li>HVY</li>
                         <li>SLD</li>
-					</categories>
-				</filter>
-				<count>5</count>
-			</li>
+                    </categories>
+                </filter>
+                <count>5</count>
+            </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
@@ -214,15 +214,15 @@
                 <count>15</count>
             </li>
             <li>
-				<filter>
-					<categories>
-						<li>HCM</li>
+                <filter>
+                    <categories>
+                        <li>HCM</li>
                         <li>HVY</li>
                         <li>SLD</li>
-					</categories>
-				</filter>
-				<count>5</count>
-			</li>
+                    </categories>
+                </filter>
+                <count>5</count>
+            </li>
         </ingredients>
         <fixedIngredientFilter>
             <thingDefs>
@@ -316,7 +316,7 @@
         </products>
     </RecipeDef>
 
-//Silfoil
+    <!--Silfoil-->
 
     <RecipeDef ParentName="Soul_HandSmeltAbstract">
         <defName>Make_SilfoilSmall</defName>
@@ -344,18 +344,18 @@
             <li>
                 <filter>
                     <thingDefs>
-						<li>Copper</li>
-						<li>CopperBar</li>
-					</thingDefs>
+                        <li>Copper</li>
+                        <li>CopperBar</li>
+                    </thingDefs>
                 </filter>
                 <count>5</count>
             </li>
             <li>
                 <filter>
                     <thingDefs>
-						<li>TinBar</li>
-						<li>AluminiumBar</li>
-					</thingDefs>
+                        <li>TinBar</li>
+                        <li>AluminiumBar</li>
+                    </thingDefs>
                 </filter>
                 <count>5</count>
             </li>
@@ -365,9 +365,9 @@
                 <li>Silver</li>
                 <li>Neutroamine</li>
                 <li>Copper</li>
-				<li>CopperBar</li>
+                <li>CopperBar</li>
                 <li>TinBar</li>
-				<li>AluminiumBar</li>
+                <li>AluminiumBar</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
@@ -400,18 +400,18 @@
             <li>
                 <filter>
                     <thingDefs>
-						<li>Copper</li>
-						<li>CopperBar</li>
-					</thingDefs>
+                        <li>Copper</li>
+                        <li>CopperBar</li>
+                    </thingDefs>
                 </filter>
                 <count>5</count>
             </li>
             <li>
                 <filter>
                     <thingDefs>
-						<li>TinBar</li>
-						<li>AluminiumBar</li>
-					</thingDefs>
+                        <li>TinBar</li>
+                        <li>AluminiumBar</li>
+                    </thingDefs>
                 </filter>
                 <count>5</count>
             </li>
@@ -421,9 +421,9 @@
                 <li>Silver</li>
                 <li>Neutroamine</li>
                 <li>Copper</li>
-				<li>CopperBar</li>
+                <li>CopperBar</li>
                 <li>TinBar</li>
-				<li>AluminiumBar</li>
+                <li>AluminiumBar</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
@@ -431,7 +431,7 @@
         </products>
     </RecipeDef>
 	
-//Razorsteel
+    <!--Razorsteel-->
 
     <RecipeDef ParentName="Soul_ElecSmeltAbstractT2">
         <defName>Make_RazorsteelSmall</defName>
@@ -468,7 +468,7 @@
         </products>
     </RecipeDef>
 
-//Greenglow
+    <!--Greenglow-->
 
     <RecipeDef ParentName="Soul_ElecSmeltAbstractT3">
         <defName>Make_GreenglowSmall</defName>
@@ -514,7 +514,7 @@
         </products>
     </RecipeDef>
 
-//Prismallium
+    <!--Prismallium-->
 
     <RecipeDef ParentName="Soul_ElecSmeltAbstractT3">
         <defName>Make_PrismalliumSmall</defName>
@@ -560,7 +560,7 @@
         </products>
     </RecipeDef>
 
-//Shardplate
+    <!--Shardplate-->
 
     <RecipeDef ParentName="Soul_ElecSmeltAbstractT3">
         <defName>Make_ShardplateSmall</defName>
@@ -615,7 +615,7 @@
         </products>
     </RecipeDef>
 
-//Neutrite
+    <!--Neutrite-->
 
     <RecipeDef ParentName="Soul_ElecSmeltAbstractT3">
         <defName>Make_NeutriteSmall</defName>
@@ -671,7 +671,7 @@
     </RecipeDef>
 
   
-//Mechanical Hardlight
+    <!--Mechanical Hardlight-->
   
     <RecipeDef ParentName="Soul_ElecSmeltAbstractT4">
         <defName>Make_MechHardlightSmall</defName>
@@ -726,7 +726,7 @@
         </products>
     </RecipeDef>
 
-//Avarisum 
+    <!--Avarisum--> 
 
     <RecipeDef ParentName="Soul_ElecSmeltAbstractT3">
         <defName>Make_AvarisumSmall</defName>
