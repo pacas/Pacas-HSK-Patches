@@ -17,12 +17,12 @@
                 </value>
             </li>
             
-            <li Class="PatchOperationAdd">
+            <!--<li Class="PatchOperationAdd">
                 <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_RenewablePower"]/defNames</xpath>
                 <value>
                     <li>RH_VOIDPowerCell</li>
                 </value>
-            </li>
+            </li>-->
             
             <li Class="PatchOperationInsert">
                 <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_ComfortableSeats"]/defNames/li[6]</xpath>
