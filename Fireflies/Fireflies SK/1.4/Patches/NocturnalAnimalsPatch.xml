@@ -6,7 +6,7 @@
             <li>Vanilla Expanded Framework</li>
         </mods>
         <match Class="PatchOperationAddModExtension">
-            <xpath>/Defs/ThingDef[defName="FF_Firefly"]</xpath>
+            <xpath>Defs/ThingDef[defName="FF_Firefly"]</xpath>
             <value>
                 <li Class="NocturnalAnimals.ExtendedRaceProperties">
                     <bodyClock>Nocturnal</bodyClock>

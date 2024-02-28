@@ -49,6 +49,10 @@
                 <heatPushMaxTemperature>5</heatPushMaxTemperature>
             </li>
         </comps>
-        <designationCategory>Accessories</designationCategory>
+        <placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+
+		<designationCategory>Accessories</designationCategory>
     </ThingDef>
 </Defs>

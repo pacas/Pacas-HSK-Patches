@@ -9,8 +9,8 @@
         <statBases>
             <Mass>1</Mass>
 			<MoveSpeed>7.5</MoveSpeed>
-			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
-			<ComfyTemperatureMax>95</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+			<ComfyTemperatureMax>45</ComfyTemperatureMax>
 			<MarketValue>30</MarketValue>
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>0</MeatAmount>
@@ -92,7 +92,7 @@
             <gestationPeriodDays>5</gestationPeriodDays>
             <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
 			<manhunterOnDamageChance>0</manhunterOnDamageChance>
-            <lifeExpectancy>2</lifeExpectancy>
+            <lifeExpectancy>1</lifeExpectancy>
             <litterSizeCurve>
                 <points>
                     <li>(0.5, 0)</li>
@@ -108,11 +108,11 @@
                 </li>
                 <li>
                     <def>AnimalJuvenile</def>
-                    <minAge>0.05</minAge>
+                    <minAge>0.15</minAge>
                 </li>
                 <li>
                     <def>AnimalAdult</def>
-                    <minAge>0.2</minAge>
+                    <minAge>0.6</minAge>
                 </li>
             </lifeStageAges>
             <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
