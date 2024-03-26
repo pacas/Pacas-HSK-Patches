@@ -134,7 +134,8 @@
         <modExtensions>
             <li Class="BetterGeneGraphicsFramework.GraphicsWithAge">
                 <ages>
-                    <li>-1</li>
+                    <li>0</li>
+                    <li>18</li>
                 </ages>
                 <bodyPartExpressions>
                     <li>Left ear|Right ear</li>
@@ -143,6 +144,11 @@
                     <li>!Left ear|!Right ear</li>
                 </bodyPartExpressions>
                 <graphicPaths>
+                    <!--child-->
+                    <li>Things/Ears/Baby/EarMerged/EarMerged</li>
+                    <li>Things/Ears/Baby/EarRight/EarRight</li>
+                    <li>Things/Ears/Baby/EarLeft/EarLeft</li>
+                    <li>Things/Ears/EarNone/EarNone</li>
                     <!--adult-->
                     <li>Things/Ears/Adult/EarMerged/EarMerged</li>
                     <li>Things/Ears/Adult/EarRight/EarRight</li>

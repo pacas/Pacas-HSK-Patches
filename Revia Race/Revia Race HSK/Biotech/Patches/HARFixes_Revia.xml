@@ -2,6 +2,12 @@
 <Patch>
     <Operation Class="PatchOperationSequence">
         <operations>
+            <li Class="PatchOperationReplace">
+                    <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="ReviaRaceAlien"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+                    <value>
+                        <bodyAddons></bodyAddons>
+                    </value>
+            </li>
             <!-- human -->
             <li Class="PatchOperationConditional">
                 <xpath>Defs/ThingDef[defName="Human"]/alienRace/raceRestriction/blackXenotypeList</xpath>
