@@ -18,9 +18,6 @@ Giant SDS: An energy cannon that can shoot down trade ships at the cost of your 
 Большая установка ПВО: Может сбивать большое количество капсул, а также подбитые корабли, если они находятся в зоне досягаемости, однако требует некоторого времени на вращение и потребляет много энергии.<br>
 Установка УКК: энергетическая пушка, способная сбивать торговые корабли ценой потери репутации с другими фракциями.<br>
 <br><br>
-<img src="https://i.imgur.com/5KVUmeE.png"><br><br>
-Based on AA version 3.9 and CE patches from 30.09.22 
-<br><br>
 Q: How to get more resources from merchants?<br>
 A: Mod settings.<br>
 Q: Как получать больше ресурсов от подбитых торговцев?<br>

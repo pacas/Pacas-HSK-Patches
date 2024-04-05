@@ -32,12 +32,13 @@ How to download only the mods you are interested in:<br>
 | Alpha Animals | :white_check_mark: | :white_check_mark: | --- |
 | Alpha Biomes | :white_check_mark: | :white_check_mark: | --- |
 | Apex Rimworld Legends | :white_check_mark: | :white_check_mark: | --- |
-| Code Valkyrie | :white_check_mark: | :x: | Waiting for the update |
+| Better Bridges Pack | :white_check_mark: | :white_check_mark: | --- |
+| Code Valkyrie | :white_check_mark: | :x: | Dead mod |
 | Dinosauria | :white_check_mark: | :white_check_mark: | --- |
 | Eaves Rafters and Mad Walls | :white_check_mark: | :white_check_mark: | --- |
 | Edge of Descension Monoblades | :white_check_mark: | :white_check_mark: | --- |
 | Faction Void | :x: | :white_check_mark: | --- |
-| Fireflies | :white_check_mark: | :x: | :white_check_mark: |
+| Fireflies | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | Frontier Developement Shields | :white_check_mark: | :x: | Waiting for the update |
 | Gloomy Decor Pack | :white_check_mark: | :x: | Original deco mod is dead, final release? |
 | Harvest Post Mortem | :white_check_mark: | :white_check_mark: | --- |
