@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="RailingBase" Abstract="True">
+        <category>Building</category>
+        <thingClass>Building</thingClass>
+		<altitudeLayer>Building</altitudeLayer>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <selectable>true</selectable>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <!--<terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>-->
+        <repairEffect>Repair</repairEffect>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+        <statBases>
+            <SellPriceFactor>0.70</SellPriceFactor>
+        </statBases>
+        <designationCategory>Structure</designationCategory>
+    </ThingDef>
+    
+    <ThingDef ParentName="RailingBase">
+        <defName>BBP_Railing</defName>
+        <label>bridge railing</label>
+        <description>Railing for bridges.</description>
+        <graphicData>
+            <texPath>Things/Building/Railing/Railing</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>Transparent</shaderType>
+            <drawSize>(4,4)</drawSize>
+            <damageData>
+				<enabled>false</enabled>
+			</damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Railing/Railing_MenuIcon</uiIconPath>
+        <size>(1,1)</size>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <statBases>
+            <MaxHitPoints>30</MaxHitPoints>
+            <WorkToBuild>160</WorkToBuild>
+            <Mass>5</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+        </statBases>
+		<costList>
+			<WoodLog>1</WoodLog>
+		</costList>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <pathCost>0.5</pathCost>
+        <fillPercent>0</fillPercent>
+        <building>
+            <isSittable>false</isSittable>
+        </building>
+    </ThingDef>
+    
+    <ThingDef ParentName="RailingBase">
+        <defName>BBP_RailingDiagonal</defName>
+        <label>corner bridge railing</label>
+        <description>Railing for bridges.</description>
+        <graphicData>
+            <texPath>Things/Building/Railing/RailingDiagonal</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>Transparent</shaderType>
+            <drawSize>(4,4)</drawSize>
+            <damageData>
+				<enabled>false</enabled>
+			</damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Railing/RailingDiagonal_MenuIcon</uiIconPath>
+        <size>(1,1)</size>
+        <statBases>
+            <MaxHitPoints>30</MaxHitPoints>
+            <WorkToBuild>160</WorkToBuild>
+            <Mass>5</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+        </statBases>
+		<costList>
+			<WoodLog>2</WoodLog>
+		</costList>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <pathCost>0.5</pathCost>
+        <fillPercent>0</fillPercent>
+        <building>
+            <isSittable>false</isSittable>
+        </building>
+    </ThingDef>
+</Defs>

@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <TerrainDef Name="SpecialBridgesBaseSK" Abstract="True">
+        <edgeType>Hard</edgeType>
+        <renderPrecedence>400</renderPrecedence>
+        <layerable>true</layerable>
+        <bridge>true</bridge>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+        </affordances>
+        <tags>
+			<li>Floor</li>
+		</tags>
+        <designationCategory>Structure</designationCategory>
+        <autoRebuildable>true</autoRebuildable>
+        <fertility>0</fertility>
+        <constructEffect>ConstructMetal</constructEffect>
+        <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+        <isPaintable>true</isPaintable>
+        <destroyEffect>Bridge_Collapse</destroyEffect>
+        <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+        <researchPrerequisites>
+			<li>Construction_B2</li>
+		</researchPrerequisites>
+    </TerrainDef>
+    
+    <!--Base Heavy-->
+    <TerrainDef Name="HeavyBridgeBaseSK" ParentName="SpecialBridgesBaseSK" Abstract="True">
+        <description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <uiIconPath>Terrain/Icons/Heavy/HeavyBridge_MenuIcon</uiIconPath>
+        <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>180</MaxHitPoints>
+            <WorkToBuild>2000</WorkToBuild>
+            <Flammability>0</Flammability>
+			<Beauty>2</Beauty>
+        </statBases>
+        <destroyOnBombDamageThreshold>45</destroyOnBombDamageThreshold>
+        <researchPrerequisites>
+            <li>Firefoam</li>
+        </researchPrerequisites>
+    </TerrainDef>
+    <TerrainDef Name="HeavyBridgeMetalBaseSK" ParentName="HeavyBridgeBaseSK" Abstract="True">
+        <texturePath>Terrain/Surfaces/BBP_BridgeMetalPlate</texturePath>
+        <researchPrerequisites>
+            <li>Metals_C1</li>
+        </researchPrerequisites>
+    </TerrainDef>
+    <TerrainDef Name="HeavyBridgeBricksBaseSK" ParentName="HeavyBridgeBaseSK" Abstract="True">
+        <texturePath>Terrain/Surfaces/BBP_BridgeBricks</texturePath>
+        <researchPrerequisites>
+            <li>Stones_C1</li>
+        </researchPrerequisites>
+    </TerrainDef>
+    <TerrainDef Name="HeavyBridgeStoneBaseSK" ParentName="HeavyBridgeBaseSK" Abstract="True">
+        <texturePath>Terrain/Surfaces/BBP_BridgeStone</texturePath>
+        <researchPrerequisites>
+            <li>Stones_C1</li>
+        </researchPrerequisites>
+    </TerrainDef>
+    <TerrainDef Name="HeavyBridgePlatesBaseSK" ParentName="HeavyBridgeBaseSK" Abstract="True">
+        <texturePath>Terrain/Surfaces/BBP_BridgePlates</texturePath>
+        <researchPrerequisites>
+            <li>Concrete_C1</li>
+        </researchPrerequisites>
+    </TerrainDef>
+    
+    <!--Base Deep-->
+    <TerrainDef Name="DeepWaterBridgeBaseSK" ParentName="SpecialBridgesBaseSK" Abstract="True">
+        <description>A flat surface of the chosen material on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <uiIconPath>Terrain/Icons/Deep/DeepWaterBridge_MenuIcon</uiIconPath>
+        <terrainAffordanceNeeded>BridgeableDeepWater</terrainAffordanceNeeded>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>2500</WorkToBuild>
+            <Flammability>0</Flammability>
+			<Beauty>2</Beauty>
+        </statBases>
+        <destroyOnBombDamageThreshold>70</destroyOnBombDamageThreshold>
+        <researchPrerequisites>
+            <li>Autodoors</li>
+            <li>Concrete_C1</li>
+        </researchPrerequisites>
+    </TerrainDef>
+    <TerrainDef Name="DeepWaterBridgeMetalBaseSK" ParentName="DeepWaterBridgeBaseSK" Abstract="True">
+        <texturePath>Terrain/Surfaces/BBP_BridgeMetalPlate</texturePath>
+        <researchPrerequisites>
+            <li>Metals_C1</li>
+        </researchPrerequisites>
+    </TerrainDef>
+    <TerrainDef Name="DeepWaterBridgeBricksBaseSK" ParentName="DeepWaterBridgeBaseSK" Abstract="True">
+        <texturePath>Terrain/Surfaces/BBP_BridgeBricks</texturePath>
+        <researchPrerequisites>
+            <li>Stones_C1</li>
+        </researchPrerequisites>
+    </TerrainDef>
+    <TerrainDef Name="DeepWaterBridgeStoneBaseSK" ParentName="DeepWaterBridgeBaseSK" Abstract="True">
+        <texturePath>Terrain/Surfaces/BBP_BridgeStone</texturePath>
+        <researchPrerequisites>
+            <li>Stones_C1</li>
+        </researchPrerequisites>
+    </TerrainDef>
+    <TerrainDef Name="DeepWaterBridgePlatesBaseSK" ParentName="DeepWaterBridgeBaseSK" Abstract="True">
+        <texturePath>Terrain/Surfaces/BBP_BridgePlates</texturePath>
+        <researchPrerequisites>
+            <li>Concrete_C1</li>
+        </researchPrerequisites>
+    </TerrainDef>
+
+    <!--======================== Heavy bridge ========================-->
+    
+    <TerrainDef ParentName="HeavyBridgeBricksBaseSK">
+		<defName>HeavyBridgeBricks</defName>
+		<label>brick bridge</label>
+		<description>A flat brick surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(125,60,30)</color>
+        <uiIconPath>Terrain/Icons/Heavy/HeavyBridgeBricks_MenuIcon</uiIconPath>
+		<costList>
+			<ClayBrick>16</ClayBrick>
+			<Plasteel>4</Plasteel>
+		</costList>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="HeavyBridgePlatesBaseSK">
+		<defName>HeavyBridgeReinforcedConcrete</defName>
+		<label>reinforced concrete bridge</label>
+		<description>A flat surface from reinforced concrete on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well. Much stronger than regular bridges, but ugly to look at.</description>
+        <color>(122,122,120)</color>
+        <uiIconPath>Terrain/Icons/Heavy/HeavyBridgeConcrete_MenuIcon</uiIconPath>
+        <destroyOnBombDamageThreshold>90</destroyOnBombDamageThreshold>
+        <statBases>
+			<Beauty>-2</Beauty>
+            <MaxHitPoints>280</MaxHitPoints>
+        </statBases>
+		<costList>
+			<ReinforcedConcrete>8</ReinforcedConcrete>
+			<Plasteel>4</Plasteel>
+		</costList>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="HeavyBridgeStoneBaseSK">
+		<defName>HeavyBridgeSandstone</defName>
+		<label>sandstone bridge</label>
+		<description>A flat sandstone surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(126,104,94)</color>
+        <uiIconPath>Terrain/Icons/Heavy/HeavyBridgeSandstone_MenuIcon</uiIconPath>
+		<costList>
+			<BlocksSandstone>12</BlocksSandstone>
+			<Plasteel>4</Plasteel>
+		</costList>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="HeavyBridgeStoneBaseSK">
+		<defName>HeavyBridgeGranite</defName>
+		<label>granite bridge</label>
+		<description>A flat granite surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(105,95,97)</color>
+        <uiIconPath>Terrain/Icons/Heavy/HeavyBridgeGranite_MenuIcon</uiIconPath>
+		<costList>
+			<BlocksGranite>12</BlocksGranite>
+			<Plasteel>4</Plasteel>
+		</costList>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="HeavyBridgeStoneBaseSK">
+		<defName>HeavyBridgeLimestone</defName>
+		<label>limestone bridge</label>
+		<description>A flat limestone surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(158,153,135)</color>
+        <uiIconPath>Terrain/Icons/Heavy/HeavyBridgeLimestone_MenuIcon</uiIconPath>
+		<costList>
+			<BlocksLimestone>12</BlocksLimestone>
+			<Plasteel>4</Plasteel>
+		</costList>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="HeavyBridgeStoneBaseSK">
+		<defName>HeavyBridgeSlate</defName>
+		<label>slate bridge</label>
+		<description>A flat slate surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(105,105,105)</color>
+        <uiIconPath>Terrain/Icons/Heavy/HeavyBridgeSlate_MenuIcon</uiIconPath>
+		<costList>
+			<BlocksSlate>12</BlocksSlate>
+			<Plasteel>4</Plasteel>
+		</costList>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="HeavyBridgeStoneBaseSK">
+		<defName>HeavyBridgeMarble</defName>
+		<label>marble bridge</label>
+		<description>A flat marble surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(132,135,132)</color>
+        <uiIconPath>Terrain/Icons/Heavy/HeavyBridgeMarble_MenuIcon</uiIconPath>
+		<costList>
+			<BlocksMarble>12</BlocksMarble>
+			<Plasteel>4</Plasteel>
+		</costList>
+	</TerrainDef>
+    
+    <!--===== Minerals =====-->
+    
+    <TerrainDef ParentName="HeavyBridgeStoneBaseSK">
+		<defName>HeavyBridgeBasalt</defName>
+		<label>basalt bridge</label>
+		<description>A flat basalt surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(50,50,50)</color>
+        <uiIconPath>Terrain/Icons/Heavy/HeavyBridgeBasalt_MenuIcon</uiIconPath>
+		<costList>
+			<ZF_BlocksBasalt>12</ZF_BlocksBasalt>
+			<Plasteel>4</Plasteel>
+		</costList>
+        <statBases>
+			<Beauty>3</Beauty>
+        </statBases>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="HeavyBridgeStoneBaseSK">
+		<defName>HeavyBridgeAlabaster</defName>
+		<label>alabaster bridge</label>
+		<description>A flat alabaster surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well. Beautiful to look at.</description>
+        <color>(215,215,215)</color>
+        <uiIconPath>Terrain/Icons/Heavy/HeavyBridgeAlabaster_MenuIcon</uiIconPath>
+		<costList>
+			<ZF_BlocksAlabaster>8</ZF_BlocksAlabaster>
+			<Plasteel>4</Plasteel>
+		</costList>
+        <statBases>
+			<Beauty>7</Beauty>
+        </statBases>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="HeavyBridgeStoneBaseSK">
+		<defName>HeavyBridgePegmatite</defName>
+		<label>pegmatite bridge</label>
+		<description>A flat pegmatite surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well. Beautiful to look at.</description>
+        <color>(226,174,156)</color>
+        <uiIconPath>Terrain/Icons/Heavy/HeavyBridgePegmatite_MenuIcon</uiIconPath>
+		<costList>
+			<ZF_BlocksPegmatite>8</ZF_BlocksPegmatite>
+			<Plasteel>4</Plasteel>
+		</costList>
+        <statBases>
+			<Beauty>7</Beauty>
+        </statBases>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="HeavyBridgeStoneBaseSK">
+		<defName>HeavyBridgeDunite</defName>
+		<label>dunite bridge</label>
+		<description>A flat dunite surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well. Beautiful to look at.</description>
+		<color>(166,210,121)</color>
+        <uiIconPath>Terrain/Icons/Heavy/HeavyBridgeDunite_MenuIcon</uiIconPath>
+		<costList>
+			<ZF_BlocksDunite>8</ZF_BlocksDunite>
+			<Plasteel>4</Plasteel>
+		</costList>
+        <statBases>
+			<Beauty>7</Beauty>
+        </statBases>
+	</TerrainDef>
+
+    <!--======================== Deep water bridge ========================-->
+    
+    <TerrainDef ParentName="DeepWaterBridgeBricksBaseSK">
+		<defName>DeepWaterBridgeBricks</defName>
+		<label>deep water brick bridge</label>
+		<description>A flat brick surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(125,60,30)</color>
+        <uiIconPath>Terrain/Icons/Deep/DeepWaterBridgeBricks_MenuIcon</uiIconPath>
+		<costList>
+			<ClayBrick>20</ClayBrick>
+			<ReinforcedConcrete>4</ReinforcedConcrete>
+		</costList>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="DeepWaterBridgePlatesBaseSK">
+		<defName>DeepWaterBridgeReinforcedConcrete</defName>
+		<label>deep water reinforced concrete bridge</label>
+		<description>A flat surface from reinforced concrete on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well. Much stronger than regular bridges, but ugly to look at.</description>
+        <color>(122,122,120)</color>
+        <uiIconPath>Terrain/Icons/Deep/DeepWaterBridgeConcrete_MenuIcon</uiIconPath>
+        <destroyOnBombDamageThreshold>150</destroyOnBombDamageThreshold>
+        <statBases>
+            <MaxHitPoints>360</MaxHitPoints>
+			<Beauty>-2</Beauty>
+        </statBases>
+		<costList>
+			<ReinforcedConcrete>16</ReinforcedConcrete>
+		</costList>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="DeepWaterBridgeStoneBaseSK">
+		<defName>DeepWaterBridgeSandstone</defName>
+		<label>deep water sandstone bridge</label>
+		<description>A flat sandstone surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(126,104,94)</color>
+        <uiIconPath>Terrain/Icons/Deep/DeepWaterBridgeSandstone_MenuIcon</uiIconPath>
+		<costList>
+			<BlocksSandstone>16</BlocksSandstone>
+			<ReinforcedConcrete>4</ReinforcedConcrete>
+		</costList>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="DeepWaterBridgeStoneBaseSK">
+		<defName>DeepWaterBridgeGranite</defName>
+		<label>deep water granite bridge</label>
+		<description>A flat granite surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(105,95,97)</color>
+        <uiIconPath>Terrain/Icons/Deep/DeepWaterBridgeGranite_MenuIcon</uiIconPath>
+		<costList>
+			<BlocksGranite>16</BlocksGranite>
+			<ReinforcedConcrete>4</ReinforcedConcrete>
+		</costList>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="DeepWaterBridgeStoneBaseSK">
+		<defName>DeepWaterBridgeLimestone</defName>
+		<label>deep water limestone bridge</label>
+		<description>A flat limestone surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(158,153,135)</color>
+        <uiIconPath>Terrain/Icons/Deep/DeepWaterBridgeLimestone_MenuIcon</uiIconPath>
+		<costList>
+			<BlocksLimestone>16</BlocksLimestone>
+			<ReinforcedConcrete>4</ReinforcedConcrete>
+		</costList>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="DeepWaterBridgeStoneBaseSK">
+		<defName>DeepWaterBridgeSlate</defName>
+		<label>deep water slate bridge</label>
+		<description>A flat slate surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(105,105,105)</color>
+        <uiIconPath>Terrain/Icons/Deep/DeepWaterBridgeSlate_MenuIcon</uiIconPath>
+		<costList>
+			<BlocksSlate>16</BlocksSlate>
+			<ReinforcedConcrete>4</ReinforcedConcrete>
+		</costList>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="DeepWaterBridgeStoneBaseSK">
+		<defName>DeepWaterBridgeMarble</defName>
+		<label>deep water marble bridge</label>
+		<description>A flat marble surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(132,135,132)</color>
+        <uiIconPath>Terrain/Icons/Deep/DeepWaterBridgeMarble_MenuIcon</uiIconPath>
+		<costList>
+			<BlocksMarble>16</BlocksMarble>
+			<ReinforcedConcrete>4</ReinforcedConcrete>
+		</costList>
+	</TerrainDef>
+    
+    <!--===== Minerals =====-->
+    
+    <TerrainDef ParentName="DeepWaterBridgeStoneBaseSK">
+		<defName>DeepWaterBridgeBasalt</defName>
+		<label>deep water basalt bridge</label>
+		<description>A flat basalt surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well.</description>
+        <color>(50,50,50)</color>
+        <uiIconPath>Terrain/Icons/Deep/DeepWaterBridgeBasalt_MenuIcon</uiIconPath>
+		<costList>
+			<ZF_BlocksBasalt>16</ZF_BlocksBasalt>
+			<ReinforcedConcrete>4</ReinforcedConcrete>
+		</costList>
+        <statBases>
+			<Beauty>3</Beauty>
+        </statBases>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="DeepWaterBridgeStoneBaseSK">
+		<defName>DeepWaterBridgeAlabaster</defName>
+		<label>deep water alabaster bridge</label>
+		<description>A flat alabaster surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well. Beautiful to look at.</description>
+        <color>(105,105,105)</color>
+        <uiIconPath>Terrain/Icons/Deep/DeepWaterBridgeAlabaster_MenuIcon</uiIconPath>
+		<costList>
+			<ZF_BlocksAlabaster>12</ZF_BlocksAlabaster>
+			<ReinforcedConcrete>4</ReinforcedConcrete>
+		</costList>
+        <statBases>
+			<Beauty>7</Beauty>
+        </statBases>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="DeepWaterBridgeStoneBaseSK">
+		<defName>DeepWaterBridgePegmatite</defName>
+		<label>deep water pegmatite bridge</label>
+		<description>A flat pegmatite surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well. Beautiful to look at.</description>
+        <color>(215,215,215)</color>
+        <uiIconPath>Terrain/Icons/Deep/DeepWaterBridgePegmatite_MenuIcon</uiIconPath>
+		<costList>
+			<ZF_BlocksPegmatite>12</ZF_BlocksPegmatite>
+			<ReinforcedConcrete>4</ReinforcedConcrete>
+		</costList>
+        <statBases>
+			<Beauty>7</Beauty>
+        </statBases>
+	</TerrainDef>
+    
+    <TerrainDef ParentName="DeepWaterBridgeStoneBaseSK">
+		<defName>DeepWaterBridgeDunite</defName>
+		<label>deep water dunite bridge</label>
+		<description>A flat dunite surface on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well. Beautiful to look at.</description>
+        <color>(166,210,121)</color>
+        <uiIconPath>Terrain/Icons/Deep/DeepWaterBridgeDunite_MenuIcon</uiIconPath>
+		<costList>
+			<ZF_BlocksDunite>12</ZF_BlocksDunite>
+			<ReinforcedConcrete>4</ReinforcedConcrete>
+		</costList>
+        <statBases>
+			<Beauty>7</Beauty>
+        </statBases>
+	</TerrainDef>
+</Defs>

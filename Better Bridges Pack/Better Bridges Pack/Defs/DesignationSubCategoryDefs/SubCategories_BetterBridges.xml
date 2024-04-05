@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_BridgesHeavy</defName>
+		<label>heavy bridges</label>
+		<description>Small islands life? Now possible!</description>
+		<defNames>
+			<li>HeavyBridgeReinforcedConcrete</li>
+			<li>HeavyBridgeBricks</li>
+			<li>HeavyBridgeSandstone</li>
+			<li>HeavyBridgeGranite</li>
+			<li>HeavyBridgeLimestone</li>
+            <li>HeavyBridgeSlate</li>
+            <li>HeavyBridgeMarble</li>
+            <li>HeavyBridgeBasalt</li>
+            <li>HeavyBridgeDunite</li>
+            <li>HeavyBridgePegmatite</li>
+            <li>HeavyBridgeAlabaster</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_BridgesDeep</defName>
+		<label>deep water bridges</label>
+		<description>Even more space for your safe base (beware of space garbage)!</description>
+		<defNames>
+			<li>DeepWaterBridgeReinforcedConcrete</li>
+			<li>DeepWaterBridgeBricks</li>
+			<li>DeepWaterBridgeSandstone</li>
+			<li>DeepWaterBridgeGranite</li>
+			<li>DeepWaterBridgeLimestone</li>
+            <li>DeepWaterBridgeSlate</li>
+            <li>DeepWaterBridgeMarble</li>
+            <li>DeepWaterBridgeBasalt</li>
+            <li>DeepWaterBridgeDunite</li>
+            <li>DeepWaterBridgePegmatite</li>
+            <li>DeepWaterBridgeAlabaster</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_BridgesRailing</defName>
+		<label>bridge railing</label>
+		<description>No more water danger!</description>
+		<defNames>
+			<li>BBP_Railing</li>
+			<li>BBP_RailingDiagonal</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+	
+</Defs>	
