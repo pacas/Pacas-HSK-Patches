@@ -1,4 +1,6 @@
 # Pacas HSK Patches
+![Versions](https://img.shields.io/badge/version-1.3%2C_1.4-blue?style=for-the-badge)
+![Support Me](https://img.shields.io/badge/boosty-support_me-red?style=for-the-badge&logo=boosty&labelColor=grey&link=https%3A%2F%2Fboosty.to%2Fpacas)<br>
 ![Preview](/mod_preview.png?raw=true "Preview")<br><br>
 [Hardcore SK modpack only!](https://github.com/skyarkhangel/Hardcore-SK/tree/development)
 <br><br>
@@ -14,7 +16,6 @@ You can thank me for the work done and donate:<br>
 - [Donate items on Steam](https://steamcommunity.com/tradeoffer/new/?partner=93729960&token=dgWxX8tO) (preferably keys or CS2 containers)<br>
 Для пользователей из России также работает эти методы:<br>
 - Чашку кофе на Сбер `2202 2010 7950 3500`<br>
-- Кружку чая на [QIWI](https://qiwi.com/n/PACAS)<br>
 
 ## Download / Загрузка:<br>
 How to download only the mods you are interested in:<br>
