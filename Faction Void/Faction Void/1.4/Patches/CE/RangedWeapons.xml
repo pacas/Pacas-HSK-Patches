@@ -486,7 +486,7 @@
 					  <soundCastTail>GunTail_Heavy</soundCastTail>
 					  <muzzleFlashScale>9</muzzleFlashScale>
 					</Properties>
-					  <AmmoUser>
+					<AmmoUser>
 					  <magazineSize>20</magazineSize>
 					  <reloadTime>4.3</reloadTime>
 					  <ammoSet>AmmoSet_50BMG</ammoSet>
@@ -502,8 +502,8 @@
 					<defName>RNGun_DFGAUSSRifle_AMR</defName>
 					<statBases>
 					  <Mass>5</Mass>
-					  <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
-					  <SightsEfficiency>1.1</SightsEfficiency>
+					  <RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+					  <SightsEfficiency>1.4</SightsEfficiency>
 					  <ShotSpread>0.02</ShotSpread>
 					  <SwayFactor>1.68</SwayFactor>
 					  <Bulk>8</Bulk>
@@ -511,17 +511,17 @@
 					<Properties>
 					  <verbClass>CombatExtended.Verb_ShootCE</verbClass>
 					  <hasStandardCommand>true</hasStandardCommand>
-					  <defaultProjectile>Bullet_9x44mmCharged</defaultProjectile>
+					  <defaultProjectile>Bullet_5x100mmCaseless_Sabot</defaultProjectile>
 					  <warmupTime>1.0</warmupTime>
-					  <range>60</range>
+					  <range>68</range>
 					  <soundCast>RNShot_DFGAUSSRifle</soundCast>
 					  <soundCastTail>GunTail_Heavy</soundCastTail>
-					  <muzzleFlashScale>9</muzzleFlashScale>
+					  <muzzleFlashScale>2</muzzleFlashScale>
 					</Properties>
 					  <AmmoUser>
 					  <magazineSize>20</magazineSize>
-					  <reloadTime>4.3</reloadTime>
-					  <ammoSet>AmmoSet_9x44mmCharged</ammoSet>
+					  <reloadTime>4</reloadTime>
+					  <ammoSet>AmmoSet_5x100mmCaseless</ammoSet>
 					</AmmoUser>
 					<FireModes>
 					  <aiAimMode>AimedShot</aiAimMode>
