@@ -32,12 +32,12 @@
         <uiIconPath>Terrain/Icons/Heavy/HeavyBridge_MenuIcon</uiIconPath>
         <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
         <statBases>
-            <MaxHitPoints>180</MaxHitPoints>
+            <MaxHitPoints>200</MaxHitPoints>
             <WorkToBuild>2000</WorkToBuild>
             <Flammability>0</Flammability>
 			<Beauty>2</Beauty>
         </statBases>
-        <destroyOnBombDamageThreshold>45</destroyOnBombDamageThreshold>
+        <destroyOnBombDamageThreshold>80</destroyOnBombDamageThreshold>
         <researchPrerequisites>
             <li>Firefoam</li>
         </researchPrerequisites>
@@ -79,7 +79,7 @@
             <Flammability>0</Flammability>
 			<Beauty>2</Beauty>
         </statBases>
-        <destroyOnBombDamageThreshold>70</destroyOnBombDamageThreshold>
+        <destroyOnBombDamageThreshold>130</destroyOnBombDamageThreshold>
         <researchPrerequisites>
             <li>Autodoors</li>
             <li>Concrete_C1</li>
@@ -130,7 +130,7 @@
 		<description>A flat surface from reinforced concrete on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well. Much stronger than regular bridges, but ugly to look at.</description>
         <color>(122,122,120)</color>
         <uiIconPath>Terrain/Icons/Heavy/HeavyBridgeConcrete_MenuIcon</uiIconPath>
-        <destroyOnBombDamageThreshold>90</destroyOnBombDamageThreshold>
+        <destroyOnBombDamageThreshold>130</destroyOnBombDamageThreshold>
         <statBases>
 			<Beauty>-2</Beauty>
             <MaxHitPoints>280</MaxHitPoints>
@@ -283,7 +283,7 @@
 		<description>A flat surface from reinforced concrete on supportive beams which can be built over water. You can even build heavy structures on these bridges, but be careful, they are still fragile. If a bridge falls, buildings on top of it fall as well. Much stronger than regular bridges, but ugly to look at.</description>
         <color>(122,122,120)</color>
         <uiIconPath>Terrain/Icons/Deep/DeepWaterBridgeConcrete_MenuIcon</uiIconPath>
-        <destroyOnBombDamageThreshold>150</destroyOnBombDamageThreshold>
+        <destroyOnBombDamageThreshold>250</destroyOnBombDamageThreshold>
         <statBases>
             <MaxHitPoints>360</MaxHitPoints>
 			<Beauty>-2</Beauty>
