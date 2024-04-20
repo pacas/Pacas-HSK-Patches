@@ -20,7 +20,7 @@
         <match Class="PatchOperationAdd">
             <xpath>Defs/TerrainDef[@Name="WaterDeepBase"]/affordances</xpath>
             <value>
-                <li>BridgeableDeep</li>
+                <li>BridgeableDeepWater</li>
             </value>
         </match>
     </Operation>
