@@ -6,11 +6,11 @@
 <br><br>
 <img src="https://i.imgur.com/svEwA2k.png"><br><br>
 This repository contains all my own and patched HSK mods. Each folder inside this repository contains a folder of the mod itself, a description with an FAQ, a preview, and sometimes the author's license. Unpack the mods correctly and not touch __PREVIEW__ folder!<br><br>
-Это репозиторий содержит все мои самодельные и пропатченные для ХСК моды. В каждой папке внутри данного репозитория содержится папка самого мода, описание с FAQ, превью и иногда лицензия автора. Правильно распаковывайте моды и не трогайте папку __PREVIEW__!<br>
+Это репозиторий содержит все мои самодельные и пропатченные для ХСК моды. В каждой папке внутри данного реpпозитория содержится папка самого мода, описание с FAQ, превью и иногда лицензия автора. Правильно распаковывайте моды и не трогайте папку __PREVIEW__!<br>
 
 ## Donate or Order a patch | Поддержать или Заказать патч:<br>
 You can thank me for the work done and donate:<br>
-Вы можете поблагодарить меня за проделанную работу и пожертвовать:<br>
+Вы можете поблагодарить меня за проделанную работу и пожертвовать:<br>p
 - [Boosty](https://boosty.to/pacas)
 - [DonationAlerts](https://www.donationalerts.com/r/pacas)
 - [Donate items on Steam](https://steamcommunity.com/tradeoffer/new/?partner=93729960&token=dgWxX8tO) (preferably keys or CS2 containers)<br>
