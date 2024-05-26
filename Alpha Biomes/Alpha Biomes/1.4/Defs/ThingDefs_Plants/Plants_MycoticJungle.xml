@@ -41,7 +41,6 @@
             <topWindExposure>0.05</topWindExposure>
             <wildClusterRadius>3</wildClusterRadius>
             <wildClusterWeight>5</wildClusterWeight>
-            <mustBeWildToSow>true</mustBeWildToSow>
             <purpose>Food</purpose>
             <sowTags>
                 <li>Ground</li>
@@ -81,7 +80,6 @@
             <topWindExposure>0.05</topWindExposure>
             <wildClusterRadius>3</wildClusterRadius>
             <wildClusterWeight>5</wildClusterWeight>
-            <mustBeWildToSow>true</mustBeWildToSow>
             <purpose>Food</purpose>
             <sowResearchPrerequisites>
                 <li>TreeSowing</li>
@@ -124,14 +122,13 @@
             <topWindExposure>0.05</topWindExposure>
             <wildClusterRadius>3</wildClusterRadius>
             <wildClusterWeight>5</wildClusterWeight>
-            <mustBeWildToSow>true</mustBeWildToSow>
             <purpose>Food</purpose>
-            <sowResearchPrerequisites>
-                <li>TreeSowing</li>
-            </sowResearchPrerequisites>
-            <sowTags>
-                <li>Ground</li>
-            </sowTags>
+			<sowTags>
+				<li>Fungiponics</li>
+			</sowTags>
+			<sowResearchPrerequisites>
+				<li>Fungiponics_B1</li>
+			</sowResearchPrerequisites>
         </plant>
     </ThingDef>
     <ThingDef ParentName="AB_Cave_PlantBase">
@@ -168,14 +165,13 @@
             <topWindExposure>0.05</topWindExposure>
             <wildClusterRadius>3</wildClusterRadius>
             <wildClusterWeight>5</wildClusterWeight>
-            <mustBeWildToSow>true</mustBeWildToSow>
             <purpose>Food</purpose>
-            <sowResearchPrerequisites>
-                <li>TreeSowing</li>
-            </sowResearchPrerequisites>
-            <sowTags>
-                <li>Ground</li>
-            </sowTags>
+			<sowTags>
+				<li>Fungiponics</li>
+			</sowTags>
+			<sowResearchPrerequisites>
+				<li>Fungiponics_B1</li>
+			</sowResearchPrerequisites>
         </plant>
     </ThingDef>
     <ThingDef ParentName="AB_Cave_PlantBase">
@@ -213,16 +209,14 @@
             <harvestedThingDef>AB_PurpleRawFungus</harvestedThingDef>
             <neverBlightable>true</neverBlightable>
             <blockAdjacentSow>true</blockAdjacentSow>
-            <mustBeWildToSow>true</mustBeWildToSow>
             <visualSizeRange>0.9~1.5</visualSizeRange>
             <topWindExposure>0.1</topWindExposure>
-            <sowResearchPrerequisites>
-                <li>TreeSowing</li>
-            </sowResearchPrerequisites>
-            <purpose>Food</purpose>
-            <sowTags>
-                <li>Ground</li>
-            </sowTags>
+			<sowTags>
+				<li>Fungiponics</li>
+			</sowTags>
+			<sowResearchPrerequisites>
+				<li>Fungiponics_B1</li>
+			</sowResearchPrerequisites>
         </plant>
     </ThingDef>
     <ThingDef ParentName="AB_Cave_PlantBase">
@@ -266,7 +260,6 @@
             <sowResearchPrerequisites>
                 <li>TreeSowing</li>
             </sowResearchPrerequisites>
-            <mustBeWildToSow>true</mustBeWildToSow>
             <purpose>Food</purpose>
             <sowTags>
                 <li>Ground</li>
@@ -356,7 +349,6 @@
             <harvestedThingDef>PoisonDart</harvestedThingDef>
             <neverBlightable>true</neverBlightable>
             <blockAdjacentSow>true</blockAdjacentSow>
-            <mustBeWildToSow>true</mustBeWildToSow>
             <visualSizeRange>3.5~5</visualSizeRange>
             <topWindExposure>0.1</topWindExposure>
             <sowResearchPrerequisites>
@@ -404,7 +396,6 @@
             <harvestedThingDef>AB_MushroomWoodLog</harvestedThingDef>
             <neverBlightable>true</neverBlightable>
             <blockAdjacentSow>true</blockAdjacentSow>
-            <mustBeWildToSow>true</mustBeWildToSow>
             <visualSizeRange>3.5~5</visualSizeRange>
             <topWindExposure>0.1</topWindExposure>
             <sowResearchPrerequisites>
@@ -448,7 +439,6 @@
             <growDays>15</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <blockAdjacentSow>true</blockAdjacentSow>
-            <mustBeWildToSow>true</mustBeWildToSow>
             <harvestYield>10</harvestYield>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>AB_BlueRawFungus</harvestedThingDef>
