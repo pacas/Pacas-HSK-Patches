@@ -6,12 +6,15 @@
 		<label>Eaves and Rafters</label>
 		<description>Roofs. Yes, we have it, but what if...</description>
 		<defNames>
-			<li>AR_Eave</li>
 			<li>AR_EaveWoody</li>
+			<li>AR_EaveWoodyCorner</li>
 			<li>AR_EaveStony</li>
-			<li>AR_Rafter</li>
+            <li>AR_EaveStonyCorner</li>
+			<li>AR_Eave</li>
+			<li>AR_EaveMetalCorner</li>
             <li>AR_RafterWoody</li>
             <li>AR_RafterStony</li>
+			<li>AR_Rafter</li>
 		</defNames>
 		<designationCategory>Structure</designationCategory>
 		<debug>false</debug>
