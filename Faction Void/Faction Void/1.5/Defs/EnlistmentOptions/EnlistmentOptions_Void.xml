@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<Enlist.FactionEnlistOptionsDef>
+		<defName>RH_VOID</defName>
+		<workerClass>VoidEvents.VoidEnlistWorker</workerClass>
+		<enlistGoodwillGain>80</enlistGoodwillGain>
+		<minGoodwillUponEnlist>-5</minGoodwillUponEnlist>
+		<enlistLetterTitleKey>RH.VOIDEnlistLetterTitle</enlistLetterTitleKey>
+		<enlistLetterLabelKey>RH.VOIDEnlistLetterLabel</enlistLetterLabelKey>
+		<enlistButtonLabelKey>RH.VOIDEnlistButtonLabel</enlistButtonLabelKey>
+		<enlistButtonDescKey>RH.VOIDEnlistButtonDesc</enlistButtonDescKey>
+		<enlistRequrementsNotSatisfiedKey>RH.VOIDEnlistRequrementsNotSatisfied</enlistRequrementsNotSatisfiedKey>
+		<enlistedToHostileFactionKey>RH.VOIDEnlistedToHostileFaction</enlistedToHostileFactionKey>
+		<enlistButtonIconTexPath>Things/UI/Enlisted/Passcode</enlistButtonIconTexPath>
+		<enlistedSoundDef>RH2_Enlisted_VOID</enlistedSoundDef>
+		<enlistedWithKey>RH.VOIDEnlistedWithKey</enlistedWithKey>
+		
+		<mechSerumIsEnabled>true</mechSerumIsEnabled>
+		<mechSerumLabelKey>RH.UltraMechSerumLabelKey</mechSerumLabelKey>
+		<mechSerumDescKey>RH.UltraMechSerumDescKey</mechSerumDescKey>
+		<mechSerumButtonIconTexPath>Things/UI/Enlisted/Hospital_VOID</mechSerumButtonIconTexPath>
+		<mechSerumCost>0</mechSerumCost>
+		<mechSerumCostRequirementKey>RH.UltraMechSerumCostRequirementKey</mechSerumCostRequirementKey>
+
+		<missionsAreEnabled>true</missionsAreEnabled>
+		<missionsLabelKey>RH.VOIDMissionsLabel</missionsLabelKey>
+		<missionsDescKey>RH.VOIDMissionsDesc</missionsDescKey>
+		<missionsButtonIconTexPath>Things/UI/Enlisted/Mission_VOID</missionsButtonIconTexPath>
+		<missionsBackgroundMenuTexPath>Things/UI/Enlisted/Missions_UI_VOID</missionsBackgroundMenuTexPath>
+		<missionsMenuAmbientSoundDef>RH_MissionMenuAmbientSound_VOID</missionsMenuAmbientSoundDef>
+		<missionsMenuDescriptionKey>RH.VOIDMenuMissionsDesc</missionsMenuDescriptionKey>
+		<missionsMenuSelectQuestKey>RH.VOIDMenuMissionsSelectQuest</missionsMenuSelectQuestKey>
+		<missionsMenuStartQuestKey>RH.VOIDMenuMissionsStartQuest</missionsMenuStartQuestKey>
+		<missionsQuestCost>0</missionsQuestCost>
+		<missionsMenuStartQuestNoEnoughMoneyKey>RH.VOIDNoEnoughMoney</missionsMenuStartQuestNoEnoughMoneyKey>
+
+		<salaryIsEnabled>true</salaryIsEnabled>
+		<salaryLabelKey>RH.VOIDSalaryLabel</salaryLabelKey>
+		<salaryDescKey>RH.VOIDSalaryDesc</salaryDescKey>
+		<salaryButtonIconTexPath>Things/UI/Enlisted/Salary_VOID</salaryButtonIconTexPath>
+		<salaryRange>8000~18000</salaryRange>
+		<salaryPeriodDays>7</salaryPeriodDays>
+
+		<provisionOptions>
+			<li>
+				<provisionsLabelKey>RH.VOIDProvisionsLabel</provisionsLabelKey>
+				<provisionsDescKey>RH.VOIDProvisionsDesc</provisionsDescKey>
+				<provisionsButtonIconTexPath>Things/UI/Enlisted/Provisions_VOID</provisionsButtonIconTexPath>
+				<provisions>
+					<li>
+						<thing>RH2_Ration_Caviar</thing>
+						<amountRange>30</amountRange>
+					</li>
+					<li>
+						<thing>RH_RedWine</thing>
+						<amountRange>4</amountRange>
+					</li>
+					<li>
+						<thing>MedicineUltratech</thing>
+						<amountRange>10</amountRange>
+					</li>					
+					<li>
+						<thing>RH_Nerotonin8B</thing>
+						<amountRange>4</amountRange>
+					</li>
+				</provisions>
+				<provisionsRestockInDays>1</provisionsRestockInDays>
+			</li>
+			
+			<li>
+				<provisionsLabelKey>RH.VOIDProvisionsLabelVoidIssue</provisionsLabelKey>
+				<provisionsDescKey>RH.VOIDProvisionsDescVoidIssue</provisionsDescKey>
+				<provisionsButtonIconTexPath>Things/UI/Enlisted/Issue_VOID</provisionsButtonIconTexPath>
+				<provisions>
+					<li>
+						<thing>RNMelee_DFDuskBlade_Sword</thing>
+						<amountRange>1</amountRange>
+					</li>						
+					<li>
+						<thing>RNGun_DuskStriker_Shotgun</thing>
+						<amountRange>1</amountRange>
+					</li>										
+					<li>
+						<thing>RNGun_DuskEnforcer_Revolver</thing>
+						<amountRange>1</amountRange>
+					</li>
+					<li>
+						<thing>RHApparel_VOIDReactive_Helmet</thing>
+						<amountRange>3</amountRange>
+					</li>					
+					<li>
+						<thing>RHApparel_VOIDReactive_PowerArmor</thing>
+						<amountRange>3</amountRange>
+				    </li>					
+					<li>
+						<thing>RHApparel_VOID_SpeedSkin</thing>
+						<stuff>Hyperweave</stuff>
+						<amountRange>3</amountRange>
+				    </li>
+				</provisions>
+				<provisionsRestockInDays>30.00</provisionsRestockInDays>
+			</li>			
+			
+			<li>
+				<provisionsLabelKey>RH.VOIDProvisionsLabelVoidtech</provisionsLabelKey>
+				<provisionsDescKey>RH.VOIDProvisionsDescVoidtech</provisionsDescKey>
+				<provisionsButtonIconTexPath>Things/UI/Enlisted/Provisions_Organs</provisionsButtonIconTexPath>
+				<provisions>
+					<li>
+						<thing>RH_VOIDBionicSpine</thing>
+						<amountRange>1</amountRange>
+					</li>						
+					<li>
+						<thing>RH_VOIDBionicHeart</thing>
+						<amountRange>1</amountRange>
+					</li>										
+					<li>
+						<thing>RH_VOIDBionicEar</thing>
+						<amountRange>2</amountRange>
+					</li>
+					<li>
+						<thing>RH_VOIDAestheticNose</thing>
+						<amountRange>1</amountRange>
+					</li>					
+					<li>
+						<thing>RH_VOIDBionicStomach</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					<li>
+						<thing>RH_VOIDCircadianHalfCycler</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					<li>
+						<thing>RH_AestheticShaper</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					<li>
+						<thing>RH_VOIDBionicLung</thing>
+						<amountRange>2</amountRange>
+				    </li>					
+					<li>
+						<thing>RH_VOIDBionicLiver</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					<li>
+						<thing>RH_VOIDBionicKidney</thing>
+						<amountRange>2</amountRange>
+				    </li>					
+					<li>
+						<thing>RH2_VOIDArchotechLeg</thing>
+						<amountRange>2</amountRange>
+				    </li>					
+					<li>
+						<thing>RH2_VOIDArchotechArm</thing>
+						<amountRange>2</amountRange>
+				    </li>					
+					<li>
+						<thing>RH2_VOIDArchotechEye</thing>
+						<amountRange>2</amountRange>
+				    </li>					
+					
+					<li>
+						<thing>DF_XHyper_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					
+					<li>
+						<thing>DF_Devils_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>						
+					<li>
+						<thing>DF_Volatile_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>	
+					
+					<li>
+						<thing>DF_XPerception_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					<li>
+						<thing>DF_XIronskin_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					<li>
+						<thing>DF_XViolence_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					
+					<li>
+						<thing>DF_Versatility_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					<li>
+						<thing>DF_Mastery_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					<li>
+						<thing>DF_Celerity_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					<li>
+						<thing>DF_Calamity_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					
+					<li>
+						<thing>Painstopper</thing>
+						<amountRange>1</amountRange>
+				    </li>
+					<!-- PowerCell -->
+					<li>
+						<thing>RH_VOIDPowerCell</thing>
+						<amountRange>2</amountRange>
+				    </li>
+				</provisions>
+				
+				<provisionsRestockInDays>14.00</provisionsRestockInDays>
+			</li>
+		</provisionOptions>
+
+		<storageIsEnabled>true</storageIsEnabled>
+		<storageLabelKey>RH.VOIDStorageLabel</storageLabelKey>
+		<storageDescKey>RH.VOIDStorageDesc</storageDescKey>
+		<storageButtonIconTexPath>Things/UI/Enlisted/Storage_VOID</storageButtonIconTexPath>
+
+		<recreationGainPerTick>0.01</recreationGainPerTick>
+		<workOptions>
+			<li>
+				<workLabelKey>RH.VOIDShootingTrainingLabel</workLabelKey>
+				<workDescKey>RH.VOIDShootingTrainingDesc</workDescKey>
+				<workButtonIconTexPath>Things/UI/Enlisted/Neurotraining_VR_VOID</workButtonIconTexPath>
+				<experienceGainsPerHour>
+					<Shooting>700</Shooting>
+					<Melee>625</Melee>
+					
+					<Medicine>500</Medicine>
+					<Social>600</Social>
+					<Intellectual>525</Intellectual>
+					
+					<Crafting>400</Crafting>
+					<Plants>400</Plants>
+					<Cooking>400</Cooking>
+					<Animals>400</Animals>
+					<Construction>400</Construction>
+					
+				</experienceGainsPerHour>
+				<additionalRestFall>0.75</additionalRestFall>
+			</li>
+		</workOptions>
+
+		<turnInIsEnabled>true</turnInIsEnabled>
+		<turnInLabelKey>RH.VOIDTurnInLabel</turnInLabelKey>
+		<turnInDescKey>RH.VOIDTurnInDesc</turnInDescKey>
+		<turnInButtonIconTexPath>Things/UI/Enlisted/TurnIn</turnInButtonIconTexPath>
+		<turnInTraderKind>RH_SubjectTrader</turnInTraderKind>
+		<turnInThought>RH_TurnedInASubject</turnInThought>
+		<turnInRefreshSilverInDays>7</turnInRefreshSilverInDays>
+		<turnInTraderNameKey>RH_VOIDTurnInTraderName</turnInTraderNameKey>
+
+		<dropPodServiceIsEnabled>true</dropPodServiceIsEnabled>
+		<dropPodServiceLabelKey>RH.VOIDDropPodServiceLabel</dropPodServiceLabelKey>
+		<dropPodServiceDescKey>RH.VOIDDropPodServiceDesc</dropPodServiceDescKey>
+		<dropPodServiceButtonIconTexPath>Things/UI/Enlisted/Travel to destination</dropPodServiceButtonIconTexPath>
+		<dropPodServiceCost>0</dropPodServiceCost>
+		<dropPodServiceCostRequirementKey>RH.VOIDDropPodServiceRequirementDesc</dropPodServiceCostRequirementKey>
+
+		<resignGoodwillGain>-9999</resignGoodwillGain>
+		<resignMenuTextKey>RH.VOIDResignMenuText</resignMenuTextKey>
+		<resignLetterTitleKey>RH.VOIDResignLetterTitle</resignLetterTitleKey>
+		<resignLetterLabelKey>RH.VOIDResignLetterLabel</resignLetterLabelKey>
+		<resignButtonLabelKey>RH.VOIDResignButtonLabel</resignButtonLabelKey>
+		<resignButtonDescKey>RH.VOIDResignButtonDesc</resignButtonDescKey>
+		<resignButtonIconTexPath>Things/UI/Enlisted/Resign_Villain</resignButtonIconTexPath>
+
+		<kickOutLetterTitleKey>RH.VOIDKickOutLetterTitle</kickOutLetterTitleKey>
+		<kickOutLetterLabelKey>RH.VOIDKickOutLabelTitle</kickOutLetterLabelKey>
+
+		<reinforcementsAreEnabled>true</reinforcementsAreEnabled>
+		<reinforcementsButtonLabelKey>RH.VOIDReinforcementsButtonLabel</reinforcementsButtonLabelKey>
+		<reinforcementsButtonDescKey>RH.VOIDReinforcementsButtonDesc</reinforcementsButtonDescKey>
+		<reinforcementsButtonIconTexPath>Things/UI/Enlisted/Reinforcement_Call_Spacer</reinforcementsButtonIconTexPath>
+		<reinforcementCallGoodwillCost>0</reinforcementCallGoodwillCost>
+		<reinforcementCallCooldownTicks>30000</reinforcementCallCooldownTicks>
+		<reinforcementOptions>
+			<li>
+				<relationsRange>75~100</relationsRange>
+				<pointsRange>2500~3500</pointsRange>
+			</li>
+			<li>
+				<relationsRange>50~74</relationsRange>
+				<pointsRange>2000~2500</pointsRange>
+			</li>
+			<li>
+				<relationsRange>26~49</relationsRange>
+				<pointsRange>1800~2000</pointsRange>
+			</li>
+			<li>
+				<relationsRange>-100~25</relationsRange>
+				<pointsRange>1500~1800</pointsRange>
+			</li>
+		</reinforcementOptions>
+		<settlementTradingLockedBehindEnlist>true</settlementTradingLockedBehindEnlist>
+		<settlementTradingLockedBehindEnlistReasonKey>RH.VOIDEnlistRequiredForTrading</settlementTradingLockedBehindEnlistReasonKey>
+		<settlementGiftingLockedBehindEnlist>true</settlementGiftingLockedBehindEnlist>
+		<settlementGiftingLockedBehindEnlistReasonKey>RH.VOIDEnlistRequiredForGifting</settlementGiftingLockedBehindEnlistReasonKey>
+		
+		<promoteOptionEnabled>true</promoteOptionEnabled>
+        <promoteButtonLabelKey>RH.VoidPromoteButtonLabel</promoteButtonLabelKey>
+        <promoteButtonDescKey>RH.VoidPromoteButtonDesc</promoteButtonDescKey>
+        <promoteButtonIconTexPath>Things/UI/Enlisted/Promote</promoteButtonIconTexPath>
+        <promoteRequrementsNotSatisfiedKey>RH.VoidPromoteSkillsNotSatisfied</promoteRequrementsNotSatisfiedKey>
+		<promoteSkillRequirements>
+			<Shooting>20</Shooting>
+			<Melee>20</Melee>
+			<Social>20</Social>
+			<Intellectual>20</Intellectual>
+		</promoteSkillRequirements>
+		<promoteProvisionOptions>
+			<li>
+				<provisionsLabelKey>RH.VOIDProvisionsPromotedLabel</provisionsLabelKey>
+				<provisionsDescKey>RH.VOIDProvisionsPromotedDesc</provisionsDescKey>
+				<provisionsButtonIconTexPath>Things/UI/Enlisted/Provisions_VOID_Promoted</provisionsButtonIconTexPath>
+				<provisions>		
+					<li>
+						<thing>RHApparel_VOID_BusinessSuit</thing>
+						<stuff>Hyperweave</stuff>
+						<amountRange>1</amountRange>
+					</li>				
+					<li>
+						<thing>RHApparel_VOIDReactive_Helmet</thing>
+						<amountRange>1</amountRange>
+					</li>					
+					<li>
+						<thing>RHApparel_VOIDReactive_PowerArmor</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					<li>
+						<thing>RHApparel_VOID_SpeedSkin</thing>
+						<stuff>Hyperweave</stuff>
+						<amountRange>1</amountRange>
+				    </li>					
+					<li>
+						<thing>RNGun_DuskMAG_HMG</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					
+					<!-- Implants Nero -->
+			
+					<li>
+						<thing>RH2_NerotoninV_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					<li>
+						<thing>RH2_Nerotonin2b_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>	
+					
+					<!-- Elite -->
+					
+					<li>
+						<thing>DF_UltraBoost_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					
+					<li>
+						<thing>DF_XDusk_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>						
+					
+					<li>
+						<thing>DF_Devils_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					
+					<li>
+						<thing>DF_Volatile_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>						
+					
+					<!-- Epic -->
+					
+					<li>
+						<thing>DF_Versatility_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					
+					<li>
+						<thing>DF_Trinity_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>						
+					
+					<li>
+						<thing>DF_Ghastly_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					
+					<li>
+						<thing>DF_Celerity_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>	
+										
+					<li>
+						<thing>DF_Scrutiny_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					
+					<li>
+						<thing>DF_Mastery_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>						
+					
+					<li>
+						<thing>DF_Calamity_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					
+					<li>
+						<thing>DF_Lethality_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>						
+					
+					<li>
+						<thing>DF_Mortality_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>						
+					
+					<li>
+						<thing>DF_Prosperity_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>	
+
+					<!-- LE -->
+					
+					<li>
+						<thing>DF_CatEye_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					
+					<li>
+						<thing>DF_Destruction_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>						
+					
+					<li>
+						<thing>DF_Amber_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					
+					<li>
+						<thing>DF_Genius_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>						
+					
+					<li>
+						<thing>DF_Data_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>					
+					
+					<li>
+						<thing>DF_Havoc_Implant</thing>
+						<amountRange>1</amountRange>
+				    </li>						
+					
+					
+					<!-- Money -->
+					<li>
+						<thing>Silver</thing>
+						<amountRange>75000</amountRange>
+				    </li>					
+					
+					<!-- PowerCell -->
+					<li>
+						<thing>RH_VOIDPowerCell</thing>
+						<amountRange>3</amountRange>
+				    </li>					
+					
+					<!-- Infinite Chemreactor -->
+					<li>
+						<thing>InfiniteChemreactor</thing>
+						<amountRange>2</amountRange>
+				    </li>
+					
+				</provisions>
+				<provisionsRestockInDays>30</provisionsRestockInDays>
+			</li>
+		</promoteProvisionOptions>
+		
+		<protocolButtonLabelKey>Void.EnterProtocol</protocolButtonLabelKey>
+		<protocolButtonDescKey>Void.EnterProtocolDesc</protocolButtonDescKey>
+		<protocolButtonIconTexPath>Things/UI/Enlisted/EnterProtocol</protocolButtonIconTexPath>
+		<protocolEnterText>Void.EnterProtocolText</protocolEnterText>
+		<protocolInvalidWarning>Void.InvalidProtocol</protocolInvalidWarning>
+		<protocolOptions>
+			<li>
+				<protocolHashKey>-32830549</protocolHashKey>
+				<action>VoidEvents.VoidUtils.ActivateProtocol</action>
+			</li>
+		</protocolOptions>
+	</Enlist.FactionEnlistOptionsDef>
+</Defs>

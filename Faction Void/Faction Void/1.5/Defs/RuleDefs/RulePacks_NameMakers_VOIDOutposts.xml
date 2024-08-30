@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>RH_NamerVOIDOutposts</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[RH_DF_Fort] [RH_DF_Religion]</li>
+        <li>name->[RH_DF_ForSecronom] [RH_DF_SurSecronom]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>RH_DF_ForSecronom</keyword>
+          <path>NameBanks/Names_Secronom</path>
+        </li>        
+		<li Class="Rule_File">
+          <keyword>RH_DF_SurSecronom</keyword>
+          <path>NameBanks/Names_SurnamesSecronom</path>
+        </li>
+		<li Class="Rule_File">
+          <keyword>RH_DF_Religion</keyword>
+          <path>NameBanks/Names_Religion</path>
+        </li>		
+		<li Class="Rule_File">
+          <keyword>RH_DF_Fort</keyword>
+          <path>NameBanks/Names_Fort</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>  
+  
+  <RulePackDef>
+    <defName>RH_NamerVOIDFaction</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[RH_VOIDFactionName]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>RH_VOIDFactionName</keyword>
+          <path>NameBanks/Names_VOIDFaction</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Ranger content -->
+    <RulePackDef>
+        <defName>LeaderTitleMaker_RH2Rangers</defName>
+        <include>
+            <li>LeaderTitleMaker_GlobalStructure</li>
+            <li>LeaderTitleMaker_GenericContent</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>memeLeaderNoun(priority=1)->[cultureLeaderNoun]</li>
+                <!-- ignore all meme nouns, tribals always use a culture noun -->
+                <li>cultureLeaderTitle->[cultureLeaderNoun]</li>
+                <li>cultureLeaderNoun->ranger</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+    <RulePackDef>
+        <defName>LeaderTitleMaker_RH2RangerGeneric</defName>
+        <rulePack>
+            <rulesStrings>
+                <!-- Generic content -->
+                <li>cultureLeaderAdjective->chief</li>
+                <li>cultureLeaderAdjective->commissioner</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

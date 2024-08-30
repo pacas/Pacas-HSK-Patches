@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+    <!-- VOID-o-metric power cell -->
+  
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>RH_VOIDPowerCell</defName>
+        <label>Voidtech power cell</label>
+        <description>Generates infinite energy. This technology is developed by intergalactic aerospace and bionics manufacturing giant Voidtech. This their re-production and re-design of vanometric power cells. It was the result of a 100 year chapter in research and seeking ways to replicate the technology for use of whoever can afford such a device. Scholars are still scratching their heads as to how Voidtech unlocked the answers to their questions.</description>
+        <graphicData>
+            <texPath>Things/Building/Special/Power_Cell</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2.1, 2.1)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <pathCost>42</pathCost>
+        <fillPercent>0.4</fillPercent>
+        <passability>PassThroughOnly</passability>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <canOverlapZones>false</canOverlapZones>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.5</staticSunShadowHeight>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <thingCategories>
+            <li>BuildingsSpecial</li>
+        </thingCategories>
+        <statBases>
+            <MarketValue>100000</MarketValue>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <Mass>20</Mass>
+            <Bulk>45</Bulk>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <size>(1, 2)</size>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-7500</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(156, 64, 255)</glowColor>
+            </li>
+        </comps>
+        <building>
+			<uninstallWork>350</uninstallWork>
+		</building>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <tradeability>Sellable</tradeability>
+        <tradeTags>
+            <li>ExoticBuilding</li>
+        </tradeTags>
+    </ThingDef>
+
+
+    <!--============================== Corpo stuff ==============================-->
+
+
+    <ThingDef ParentName="SK_FurnitureBase">
+        <defName>RH_Corpo_Armchair</defName>
+        <label>corpo armchair</label>
+        <description>A large, soft, comfy modern seat. Great for relaxation. Can be used at tables, work stations, and elsewhere.</description>
+        <graphicData>
+            <texPath>Things/Building/Corpo_Furniture/Corporate_Chair</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.5,1.5)</drawSize>
+            <damageData>
+                <rectN>(0,0,1,0.703125)</rectN>
+                <rectS>(0.09375,0,0.84375,1)</rectS>
+                <rectE>(0,0,0.84375,0.625)</rectE>
+                <rectW>(0.15625,0,0.84375,0.625)</rectW>
+            </damageData>
+            <shadowData>
+                <volume>(0.3, 0.33, 0.3)</volume>
+            </shadowData>
+        </graphicData>
+        <!--<designationCategory>Furniture</designationCategory>-->
+        <uiIconScale>0.9</uiIconScale>
+        <altitudeLayer>Building</altitudeLayer>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>1700</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>8</Beauty>
+			<Comfort>0.75</Comfort>
+			<Bulk>31</Bulk>
+			<Mass>15</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">7</StyleDominance>
+        </statBases>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <size>(1,1)</size>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>HF</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>45</costStuffCount>
+		<costList>
+			<TitaniumBar>15</TitaniumBar>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+        <researchPrerequisites>
+			<li>Tables_C1</li>
+		</researchPrerequisites>
+        <pathCost>30</pathCost>
+        <fillPercent>0.40</fillPercent>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <building>
+            <isSittable>true</isSittable>
+            <destroySound>BuildingDestroyed_Soft_Small</destroySound>
+        </building>
+    </ThingDef>
+
+
+    <ThingDef ParentName="SK_TableGatherSpotBase">
+        <defName>RH_Corpo_Table1x2c</defName>
+        <label>corpo table (1x2)</label>
+        <graphicData>
+            <texPath>Things/Building/Corpo_Furniture/table1x2</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.5,2.25)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <uiIconScale>0.8</uiIconScale>
+        <statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>700</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+			<Bulk>28</Bulk>
+			<Mass>10</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Plastic</li>
+			<li>Precious</li>
+			<li>Glass</li>		
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    </ThingDef>
+  
+    <ThingDef ParentName="SK_TableGatherSpotBase">
+        <defName>RH_Corpo_Desk1x2c</defName>
+        <label>corpo desk (1x2)</label>
+        <graphicData>
+            <texPath>Things/Building/Corpo_Furniture/Desk</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.5,2.25)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <uiIconScale>0.8</uiIconScale>
+        <statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToBuild>700</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+			<Bulk>28</Bulk>
+			<Mass>10</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">6</StyleDominance>
+		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Plastic</li>
+			<li>Precious</li>
+			<li>Glass</li>		
+		</stuffCategories>
+		<costStuffCount>30</costStuffCount>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    </ThingDef>
+
+
+    <ThingDef ParentName="SK_TableGatherSpotBase">
+        <defName>RH_Corpo_Table2x4c</defName>
+        <label>corpo table (2x4)</label>
+        <graphicData>
+            <texPath>Things/Building/Corpo_Furniture/Table2x4</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(3,4.2)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>1400</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>6</Beauty>
+			<Bulk>90</Bulk>
+			<Mass>17</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">18</StyleDominance>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Plastic</li>
+			<li>Precious</li>
+			<li>Glass</li>
+		</stuffCategories>
+		<size>(2,3)</size>
+		<costStuffCount>80</costStuffCount>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<building>
+			<buildingSizeCategory>Medium</buildingSizeCategory>
+		</building>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_TableGatherSpotBase">
+        <defName>RH_Corpo_Table1x1c</defName>
+        <label>corpo table (1x1)</label>
+        <graphicData>
+            <texPath>Things/Building/Corpo_Furniture/table1x1</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.2,1.2)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <uiIconScale>0.9</uiIconScale>
+        <rotatable>false</rotatable>
+		<statBases>
+			<MaxHitPoints>65</MaxHitPoints>
+			<WorkToBuild>500</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>1</Beauty>
+			<Bulk>14</Bulk>
+			<Mass>5</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">3</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Plastic</li>
+			<li>Precious</li>
+			<li>Glass</li>		
+		</stuffCategories>
+		<costStuffCount>15</costStuffCount>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <!-- ======================== Lighting ======================= -->
+  
+    <ThingDef ParentName="SK_LampBase">
+        <defName>RH_Corpo_StandingLamp</defName>
+        <thingClass>SK.Building_Lamp</thingClass>
+        <label>corpo lamp</label>
+        <description>People need light to move and work at full speed. Requires 100 W.</description>
+        <graphicData>
+            <texPath>Things/Building/Corpo_Furniture/ModernLamp</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,1.5)</drawSize>
+            <drawRotated>true</drawRotated>
+			<allowFlip>true</allowFlip>
+        </graphicData>
+		<fillPercent>0.2</fillPercent>
+		<drawerType>RealtimeOnly</drawerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+        <statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+			<WorkToBuild>380</WorkToBuild>
+			<Beauty>20</Beauty>
+			<Bulk>19</Bulk>
+			<Mass>5</Mass>
+			<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+		</statBases>
+		<size>(1,1)</size>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Plastic>8</Plastic>
+			<Glass>5</Glass>
+			<ElectronicComponents>1</ElectronicComponents>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100</basePowerConsumption>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<soundPowerOn>Power_OnSmall</soundPowerOn>
+				<soundPowerOff>Power_OffSmall</soundPowerOff>
+				<powerUpgrades>
+				  <li>
+					<researchProject>ColoredLights</researchProject>
+					<factor>0.5</factor>
+				  </li>
+				</powerUpgrades>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>16</glowRadius>
+				<glowColor>(217,217,217,0)</glowColor>
+				<colorPickerEnabled>true</colorPickerEnabled>
+				<darklightToggle>true</darklightToggle>
+			</li><!--
+			<li Class="SK.CompProperties_ColoredLight">
+				<compClass>SK.CompColoredLight</compClass>
+			</li>-->
+		</comps>
+		<building>
+			<uninstallWork>300</uninstallWork>
+		</building>
+		<tickerType>Rare</tickerType>
+		<rotatable>true</rotatable>
+		<filthLeaving>Filth_BrokenGlass</filthLeaving>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<researchPrerequisites>
+			<li>Light_C2</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    </ThingDef>
+
+</Defs>

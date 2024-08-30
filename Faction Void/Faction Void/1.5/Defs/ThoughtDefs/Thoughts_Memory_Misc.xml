@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThoughtDef>
+		<defName>Void_EerieNoises</defName>
+		<workerClass>VoidEvents.ThoughtWorker_EerieNoises</workerClass>
+		<stages>
+			<li>
+				<label>eerie noises</label>
+				<description>eerie noises.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Void_AteMutantMeat</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate mutant meat</label>
+        <description>I just ate a mutated being! I think I'm gonna be sick.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>Void_AteMutantCorpse</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate mutant</label>
+        <description>I had to eat the flesh of a dead mutated creature without even butchering or cooking it!</description>
+        <baseMoodEffect>-24</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

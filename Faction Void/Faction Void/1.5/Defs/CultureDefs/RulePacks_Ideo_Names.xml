@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RulePackDef>
+        <defName>NamerIdeoRH2Ranger</defName>
+        <include>
+            <li MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoGlobal</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">CultureSpacer</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>globalAdjective(p=15)->Ranger</li>
+                <li>globalAdjective(p=15)->Vigilante</li>
+                <li>globalAdjective(p=15)->Lawkeeper</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

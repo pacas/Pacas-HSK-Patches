@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ====================================== Ecstacy of Gold =========================================== -->
+    <!-- ====================================== Combat Fleece =========================================== -->
+    <ThingDef ParentName="SK_ApparelBase">
+        <defName>RHApparel_VOID_SpeedSkin</defName>
+        <description>A speed skin that utilizes nano technology. It allows the user to perform actions almost as fast as they think them, with the skin suit preventing burnout, acid buildup and other issued to allow the wearer's body to move freely at meta human speeds.\n\nIt was something "borrowed" by VOID from Glitterworlds during their early stages of venturing through the stars.</description>
+        <label>Voidtech skin</label>
+        <graphicData>
+            <texPath>Things/Apparel/Display/Voidtech_Speedskin</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>0.90</drawSize>
+        </graphicData>
+        <thingCategories>
+            <li>FullBodySuitsCat</li>
+        </thingCategories>
+        <generateCommonality>1</generateCommonality>
+        <smeltable>false</smeltable>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <MarketValue>3800</MarketValue>
+            <Mass>0.5</Mass>
+            <Bulk>4</Bulk>
+			<WornBulk>2</WornBulk>
+            <Flammability>0.25</Flammability>
+            <StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>5.00</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>2.00</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>2</EquipDelay>
+			<StuffEffectMultiplierArmor>2</StuffEffectMultiplierArmor>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>2.0</MoveSpeed>
+            <WorkSpeedGlobal>1.7</WorkSpeedGlobal>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/Onskin/Voidtech_Speedskin</wornGraphicPath>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <tags>
+                <li>RH_Onskin_VOID</li>
+                <li>RoyalTier7</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <useWornGraphicMask>true</useWornGraphicMask>
+        </apparel>
+    </ThingDef>
+</Defs>

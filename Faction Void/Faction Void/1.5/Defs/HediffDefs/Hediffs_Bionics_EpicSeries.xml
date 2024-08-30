@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Base -->
+  	<ThingDef Name="RH_Epic_ImplantBase" ParentName="SK_BodyPartBase" Abstract="True">
+	<techLevel>Ultra</techLevel>
+		<thingCategories Inherit="False">
+			<li>RH2_Implants_Epic</li>
+		</thingCategories>
+		<techHediffsTags Inherit="False"/>
+	    <statBases>
+	    	<MarketValue>3000</MarketValue>
+			<Mass>0.05</Mass>
+            <MaxHitPoints>20</MaxHitPoints>
+		</statBases>
+	</ThingDef>
+	
+				<!-- Trinity implant -->
+
+	<HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+		<defName>DF_Trinity_Implant</defName>
+		<label>trinity implant</label>
+		<labelNoun>a trinity implant</labelNoun>
+		<description>An installed trinity implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Trinity_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>DF_Trinity_Implant</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+                    <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+				    <GlobalLearningFactor>0.05</GlobalLearningFactor>
+		            <MeleeHitChance>1</MeleeHitChance>
+	                <MeleeDodgeChance>1</MeleeDodgeChance>
+	                <ShootingAccuracyPawn>0.6</ShootingAccuracyPawn>
+				</statOffsets>
+			</li>
+		</stages>
+		<tags>
+			<li>DF_Trinity_Implant</li>
+		</tags>
+	</HediffDef>
+
+	<ThingDef ParentName="RH_Epic_ImplantBase">
+		<defName>DF_Trinity_Implant</defName>
+		<label>trinity implant</label>
+		<description>The Trinity implant. Enhances the user's mobility, resistance to trauma and capacity to learn.\n\nIt is part of the Epic Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallDF_Trinity_Implant</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Special/Epic/Trinity_Implant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="VOID_InstallImplantElite">
+		<defName>InstallDF_Trinity_Implant</defName>
+		<label>install trinity implant</label>
+		<uiIconThing>DF_Trinity_Implant</uiIconThing>
+		<description>Install a trinity implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Trinity_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing trinity implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DF_Trinity_Implant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DF_Trinity_Implant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DF_Trinity_Implant</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
+		<defName>RemoveDF_Trinity_Implant</defName>
+		<label>remove trinity implant</label>
+		<description>Remove trinity implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Trinity_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing trinity implant.</jobString>
+		<removesHediff>DF_Trinity_Implant</removesHediff>
+	</RecipeDef>
+	
+					<!-- ghastly implant -->
+
+	<HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+		<defName>DF_Ghastly_Implant</defName>
+		<label>ghastly implant</label>
+		<labelNoun>a ghastly implant</labelNoun>
+		<description>An installed ghastly implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Ghastly_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>DF_Ghastly_Implant</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.06</offset>
+					</li>    
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.06</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+                    <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+				    <GlobalLearningFactor>0.05</GlobalLearningFactor>
+				    <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.05</ArmorRating_Heat>			
+				</statOffsets>
+			</li>
+		</stages>
+		<tags>
+			<li>DF_Ghastly_Implant</li>
+		</tags>
+	</HediffDef>
+
+	<ThingDef ParentName="RH_Epic_ImplantBase">
+		<defName>DF_Ghastly_Implant</defName>
+		<label>ghastly implant</label>
+		<description>The Ghatly implant. Enhances the user's mobility, capacity to learn and resistance to physical trauma.\n\nIt is part of the Epic Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallDF_Ghastly_Implant</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Special/Epic/Ghastly_Implant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="VOID_InstallImplantElite">
+		<defName>InstallDF_Ghastly_Implant</defName>
+		<label>install ghastly implant</label>
+		<uiIconThing>DF_Ghastly_Implant</uiIconThing>
+		<description>Install a ghastly implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Ghastly_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing ghastly implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DF_Ghastly_Implant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DF_Ghastly_Implant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DF_Ghastly_Implant</addsHediff>
+		<!--<incompatibleWithHediffTags>
+			<li>DF_GhastlyImplant</li>
+		</incompatibleWithHediffTags>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
+		<defName>RemoveDF_Ghastly_Implant</defName>
+		<label>remove ghastly implant</label>
+		<description>Remove ghastly implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Ghastly_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing ghastly implant.</jobString>
+		<removesHediff>DF_Ghastly_Implant</removesHediff>
+	</RecipeDef>
+	
+					<!-- Celerity implant -->
+
+	<HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+		<defName>DF_Celerity_Implant</defName>
+		<label>celerity implant</label>
+		<labelNoun>a celerity implant</labelNoun>
+		<description>An installed celerity implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Celerity_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>DF_Celerity_Implant</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+				    <WorkSpeedGlobal>0.1</WorkSpeedGlobal>	
+				</statOffsets>
+			</li>
+		</stages>
+		<tags>
+			<li>DF_Celerity_Implant</li>
+		</tags>
+	</HediffDef>
+
+	<ThingDef ParentName="RH_Epic_ImplantBase">
+		<defName>DF_Celerity_Implant</defName>
+		<label>celerity implant</label>
+		<description>The Celerity implant. Enhances the user's mobility.\n\nIt is part of the Epic Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallDF_Celerity_Implant</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Special/Epic/Celerity_Implant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="VOID_InstallImplantElite">
+		<defName>InstallDF_Celerity_Implant</defName>
+		<label>install celerity implant</label>
+		<uiIconThing>DF_Celerity_Implant</uiIconThing>
+		<description>Install a celerity implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Celerity_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing celerity implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DF_Celerity_Implant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DF_Celerity_Implant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DF_Celerity_Implant</addsHediff>
+		<!--<incompatibleWithHediffTags>
+			<li>DF_CelerityImplant</li>
+		</incompatibleWithHediffTags>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
+		<defName>RemoveDF_Celerity_Implant</defName>
+		<label>remove celerity implant</label>
+		<description>Remove celerity implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Celerity_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing celerity implant.</jobString>
+		<removesHediff>DF_Celerity_Implant</removesHediff>
+	</RecipeDef>
+	
+					<!-- scrutiny implant -->
+
+	<HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+		<defName>DF_Scrutiny_Implant</defName>
+		<label>scrutiny implant</label>
+		<labelNoun>a scrutiny implant</labelNoun>
+		<description>An installed scrutiny implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Scrutiny_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>DF_Scrutiny_Implant</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+                    <ArmorRating_Sharp>1</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>1</ArmorRating_Blunt>
+				    <GlobalLearningFactor>0.1</GlobalLearningFactor>
+					<ResearchSpeed>0.1</ResearchSpeed>
+					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>	
+					<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.05</ArmorRating_Heat>			
+				</statOffsets>
+			</li>
+		</stages>
+		<tags>
+			<li>DF_Scrutiny_Implant</li>
+		</tags>
+	</HediffDef>
+
+	<ThingDef ParentName="RH_Epic_ImplantBase">
+		<defName>DF_Scrutiny_Implant</defName>
+		<label>scrutiny implant</label>
+		<description>The Scrutiny implant. Enhances the user's capacity to learn, the user's resistance to trauma and general speed.\n\nIt is part of the Epic Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallDF_Scrutiny_Implant</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Special/Epic/Scrutiny_Implant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="VOID_InstallImplantElite">
+		<defName>InstallDF_Scrutiny_Implant</defName>
+		<label>install scrutiny implant</label>
+		<uiIconThing>DF_Scrutiny_Implant</uiIconThing>
+		<description>Install a scrutiny implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Scrutiny_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing scrutiny implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DF_Scrutiny_Implant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DF_Scrutiny_Implant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DF_Scrutiny_Implant</addsHediff>
+		<!--<incompatibleWithHediffTags>
+			<li>DF_scrutinyImplant</li>
+		</incompatibleWithHediffTags>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
+		<defName>RemoveDF_Scrutiny_Implant</defName>
+		<label>remove scrutiny implant</label>
+		<description>Remove scrutiny implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Scrutiny_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing scrutiny implant.</jobString>
+		<removesHediff>DF_Scrutiny_Implant</removesHediff>
+	</RecipeDef>
+	
+					<!-- versatility implant -->
+
+	<HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+		<defName>DF_Versatility_Implant</defName>
+		<label>versatility implant</label>
+		<labelNoun>a versatility implant</labelNoun>
+		<description>An installed versatility implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Versatility_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>DF_Versatility_Implant</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.05</offset>
+					</li>					
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+				    <GlobalLearningFactor>0.05</GlobalLearningFactor>
+		            <MeleeHitChance>1</MeleeHitChance>
+	                <MeleeDodgeChance>1</MeleeDodgeChance>
+	                <ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+	                <NegotiationAbility>0.1</NegotiationAbility>
+	                <SocialImpact>0.1</SocialImpact>
+	                <TradePriceImprovement>0.1</TradePriceImprovement>
+	                <DrugSellPriceImprovement>0.1</DrugSellPriceImprovement>
+	                <ArrestSuccessChance>0.1</ArrestSuccessChance>
+	                <TrainAnimalChance>0.1</TrainAnimalChance>
+	                <BondAnimalChanceFactor>0.1</BondAnimalChanceFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<tags>
+			<li>DF_Versatility_Implant</li>
+		</tags>
+	</HediffDef>
+
+	<ThingDef ParentName="RH_Epic_ImplantBase">
+		<defName>DF_Versatility_Implant</defName>
+		<label>versatility implant</label>
+		<description>The Versatility implant. Enhances the user's capacity to learn, the user's combat skills, general speed and social skills.\n\nIt is part of the Epic Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallDF_Versatility_Implant</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Special/Epic/Versatility_Implant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="VOID_InstallImplantElite">
+		<defName>InstallDF_Versatility_Implant</defName>
+		<label>install versatility implant</label>
+		<uiIconThing>DF_Versatility_Implant</uiIconThing>
+		<description>Install a versatility implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Versatility_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing versatility implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DF_Versatility_Implant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DF_Versatility_Implant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DF_Versatility_Implant</addsHediff>
+		<!--<incompatibleWithHediffTags>
+			<li>DF_versatilityImplant</li>
+		</incompatibleWithHediffTags>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
+		<defName>RemoveDF_Versatility_Implant</defName>
+		<label>remove versatility implant</label>
+		<description>Remove versatility implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Versatility_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing versatility implant.</jobString>
+		<removesHediff>DF_Versatility_Implant</removesHediff>
+	</RecipeDef>					
+	
+					<!-- mastery implant -->
+
+	<HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+		<defName>DF_Mastery_Implant</defName>
+		<label>mastery implant</label>
+		<labelNoun>a mastery implant</labelNoun>
+		<description>An installed mastery implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Mastery_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>DF_Mastery_Implant</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.12</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+				    <GlobalLearningFactor>0.08</GlobalLearningFactor>
+					<ResearchSpeed>0.12</ResearchSpeed>
+					<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+		</stages>
+		<tags>
+			<li>DF_Mastery_Implant</li>
+		</tags>
+	</HediffDef>
+
+	<ThingDef ParentName="RH_Epic_ImplantBase">
+		<defName>DF_Mastery_Implant</defName>
+		<label>mastery implant</label>
+		<description>The mastery implant. Enhances the user's capacity to learn significantly, along with improved regulations of emotion.\n\nIt is part of the Epic Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallDF_Mastery_Implant</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Special/Epic/Mastery_Implant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="VOID_InstallImplantElite">
+		<defName>InstallDF_Mastery_Implant</defName>
+		<label>install mastery implant</label>
+		<uiIconThing>DF_Mastery_Implant</uiIconThing>
+		<description>Install a mastery implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Mastery_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing mastery implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DF_Mastery_Implant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DF_Mastery_Implant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DF_Mastery_Implant</addsHediff>
+		<!--<incompatibleWithHediffTags>
+			<li>DF_MasteryImplant</li>
+		</incompatibleWithHediffTags>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
+		<defName>RemoveDF_Mastery_Implant</defName>
+		<label>remove mastery implant</label>
+		<description>Remove mastery implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Mastery_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing mastery implant.</jobString>
+		<removesHediff>DF_Mastery_Implant</removesHediff>
+	</RecipeDef>					
+	
+					<!-- calamity implant -->
+
+	<HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+		<defName>DF_Calamity_Implant</defName>
+		<label>calamity implant</label>
+		<labelNoun>a calamity implant</labelNoun>
+		<description>An installed calamity implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Calamity_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>DF_Calamity_Implant</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+				    <MeleeArmorPenetration>1</MeleeArmorPenetration>
+                    <AimingDelayFactor>-0.1</AimingDelayFactor>
+		            <MeleeHitChance>3</MeleeHitChance>
+	                <MeleeDodgeChance>0.5</MeleeDodgeChance>
+	                <ShootingAccuracyPawn>1</ShootingAccuracyPawn>
+				</statOffsets>
+			</li>
+		</stages>
+		<tags>
+			<li>DF_Calamity_Implant</li>
+		</tags>
+	</HediffDef>
+
+	<ThingDef ParentName="RH_Epic_ImplantBase">
+		<defName>DF_Calamity_Implant</defName>
+		<label>calamity implant</label>
+		<description>The calamity implant. Enhances the user's combat skills.\n\nIt is part of the Epic Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallDF_Calamity_Implant</RecipeDef>
+		</descriptionHyperlinks>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+		<graphicData>
+			<texPath>Things/Item/Special/Epic/Calamity_Implant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="VOID_InstallImplantElite">
+		<defName>InstallDF_Calamity_Implant</defName>
+		<label>install calamity implant</label>
+		<uiIconThing>DF_Calamity_Implant</uiIconThing>
+		<description>Install a calamity implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Calamity_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing calamity implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DF_Calamity_Implant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DF_Calamity_Implant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DF_Calamity_Implant</addsHediff>
+		<!--<incompatibleWithHediffTags>
+			<li>DF_CalamityImplant</li>
+		</incompatibleWithHediffTags>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
+		<defName>RemoveDF_Calamity_Implant</defName>
+		<label>remove calamity implant</label>
+		<description>Remove calamity implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Calamity_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing calamity implant.</jobString>
+		<removesHediff>DF_Calamity_Implant</removesHediff>
+	</RecipeDef>					
+	
+						<!-- lethality implant -->
+
+	<HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+		<defName>DF_Lethality_Implant</defName>
+		<label>lethality implant</label>
+		<labelNoun>a lethality implant</labelNoun>
+		<description>An installed lethality implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Lethality_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>DF_Lethality_Implant</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.20</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+				    <MeleeArmorPenetration>1.5</MeleeArmorPenetration>
+		            <MeleeHitChance>2</MeleeHitChance>
+	                <MeleeDodgeChance>2</MeleeDodgeChance>
+	                <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+                    <AimingDelayFactor>-0.15</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<tags>
+			<li>DF_Lethality_Implant</li>
+		</tags>
+	</HediffDef>
+
+	<ThingDef ParentName="RH_Epic_ImplantBase">
+		<defName>DF_Lethality_Implant</defName>
+		<label>lethality implant</label>
+		<description>The lethality implant. Enhances the user's combat skills.\n\nIt is part of the Epic Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallDF_Lethality_Implant</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Special/Epic/Lethality_Implant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="VOID_InstallImplantElite">
+		<defName>InstallDF_Lethality_Implant</defName>
+		<label>install lethality implant</label>
+		<uiIconThing>DF_Lethality_Implant</uiIconThing>
+		<description>Install a lethality implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Lethality_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing lethality implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DF_Lethality_Implant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DF_Lethality_Implant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Torso</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DF_Lethality_Implant</addsHediff>
+	</RecipeDef>
+
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
+		<defName>RemoveDF_Lethality_Implant</defName>
+		<label>remove lethality implant</label>
+		<description>Remove lethality implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Lethality_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing lethality implant.</jobString>
+		<removesHediff>DF_Lethality_Implant</removesHediff>
+	</RecipeDef>				
+	
+					<!-- mortality implant -->
+
+	<HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+		<defName>DF_Mortality_Implant</defName>
+		<label>mortality implant</label>
+		<labelNoun>a mortality implant</labelNoun>
+		<description>An installed mortality implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Mortality_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>DF_Mortality_Implant</spawnThingOnRemoved>
+		<stages>
+			<li>
+			   <capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>0.05</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+				    <GlobalLearningFactor>0.05</GlobalLearningFactor>
+				    <ResearchSpeed>0.05</ResearchSpeed>
+					<MentalBreakThreshold>0.05</MentalBreakThreshold>
+		            <MeleeHitChance>0.05</MeleeHitChance>
+	                <MeleeDodgeChance>0.05</MeleeDodgeChance>
+                    <AimingDelayFactor>-0.05</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<tags>
+			<li>DF_Mortality_Implant</li>
+		</tags>
+	</HediffDef>
+
+	<ThingDef ParentName="RH_Epic_ImplantBase">
+		<defName>DF_Mortality_Implant</defName>
+		<label>mortality implant</label>
+		<description>The mortality implant. Enhances the user's capacity to learn and combat skills.\n\nIt is part of the Epic Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallDF_Mortality_Implant</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Special/Epic/Mortality_Implant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="VOID_InstallImplantElite">
+		<defName>InstallDF_Mortality_Implant</defName>
+		<label>install mortality implant</label>
+		<uiIconThing>DF_Mortality_Implant</uiIconThing>
+		<description>Install a mortality implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Mortality_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing mortality implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DF_Mortality_Implant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DF_Mortality_Implant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DF_Mortality_Implant</addsHediff>
+		<!--<incompatibleWithHediffTags>
+			<li>DF_MortalityImplant</li>
+		</incompatibleWithHediffTags>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
+		<defName>RemoveDF_Mortality_Implant</defName>
+		<label>remove mortality implant</label>
+		<description>Remove mortality implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Mortality_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing mortality implant.</jobString>
+		<removesHediff>DF_Mortality_Implant</removesHediff>
+	</RecipeDef>	
+	
+					<!-- prosperity implant -->
+
+	<HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+		<defName>DF_Prosperity_Implant</defName>
+		<label>prosperity implant</label>
+		<labelNoun>a prosperity implant</labelNoun>
+		<description>An installed prosperity implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Prosperity_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>DF_Prosperity_Implant</spawnThingOnRemoved>
+		<stages>
+			<li>
+				<capMods>		
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<statOffsets>
+	                <NegotiationAbility>0.2</NegotiationAbility>
+	                <SocialImpact>0.2</SocialImpact>
+	                <TradePriceImprovement>0.2</TradePriceImprovement>
+	                <DrugSellPriceImprovement>0.2</DrugSellPriceImprovement>
+	                <ArrestSuccessChance>0.2</ArrestSuccessChance>
+	                <TrainAnimalChance>0.2</TrainAnimalChance>
+	                <BondAnimalChanceFactor>0.2</BondAnimalChanceFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<tags>
+			<li>DF_Prosperity_Implant</li>
+		</tags>
+	</HediffDef>
+
+	<ThingDef ParentName="RH_Epic_ImplantBase">
+		<defName>DF_Prosperity_Implant</defName>
+		<label>prosperity implant</label>
+		<description>The prosperity implant. Enhances the user's social skills significantly.\n\nIt is part of the Epic Series of implants. It is crafted by a worldhopper known only as AdminPwn. Survivors who were able to afford these high class implants paid in a currency known as credits. The implants allowed elite survivors to face up against even some of the most dangerous N-4 variants that plagued the inner city when utilized with other implants that enhance the body.</description>
+		<descriptionHyperlinks>
+			<RecipeDef>InstallDF_Prosperity_Implant</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Special/Epic/Prosperity_Implant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.0</drawSize>
+			<color>(255, 255, 255)</color>
+		</graphicData>
+	</ThingDef>
+
+	<RecipeDef ParentName="VOID_InstallImplantElite">
+		<defName>InstallDF_Prosperity_Implant</defName>
+		<label>install prosperity implant</label>
+		<uiIconThing>DF_Prosperity_Implant</uiIconThing>
+		<description>Install a prosperity implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Prosperity_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Installing prosperity implant.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>DF_Prosperity_Implant</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>DF_Prosperity_Implant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>DF_Prosperity_Implant</addsHediff>
+		<!--<incompatibleWithHediffTags>
+			<li>DF_ProsperityImplant</li>
+		</incompatibleWithHediffTags>-->
+	</RecipeDef>
+
+	<RecipeDef ParentName="VOID_RemoveImplantElite">
+		<defName>RemoveDF_Prosperity_Implant</defName>
+		<label>remove prosperity implant</label>
+		<description>Remove prosperity implant.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DF_Prosperity_Implant</ThingDef>
+		</descriptionHyperlinks>
+		<jobString>Removing prosperity implant.</jobString>
+		<removesHediff>DF_Prosperity_Implant</removesHediff>
+	</RecipeDef>	
+	
+</Defs>

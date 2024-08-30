@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+    <!-- Weapons -->
+    <!-- DF Melee -->
+		
+    <ThingCategoryDef>
+        <defName>DF_MeleeMain</defName>
+        <label>Fairview melee</label>
+        <parent>WeaponsMelee</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>DF_RangedMain</defName>
+        <label>Fairview ranged</label>
+        <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+  
+    <!-- Implants -->
+    <ThingCategoryDef>
+        <defName>RH2_Voidtech_MainCat</defName>
+        <label>Voidtech</label>
+        <parent>BodyParts</parent>
+    </ThingCategoryDef>
+    
+    <ThingCategoryDef>
+        <defName>RH2_Nerotonin_Serum</defName>
+        <label>Nerotonin Serum</label>
+        <parent>RH2_Voidtech_MainCat</parent>
+    </ThingCategoryDef>
+	        
+    <ThingCategoryDef>
+        <defName>RH2_Voidtech_BodyParts</defName>
+        <label>Voidtech Bionics</label>
+        <parent>RH2_Voidtech_MainCat</parent>
+    </ThingCategoryDef>
+    
+    <ThingCategoryDef>
+        <defName>RH2_Voidtech_Implants</defName>
+        <label>Voidtech Implants</label>
+        <parent>RH2_Voidtech_MainCat</parent>
+    </ThingCategoryDef>
+	  
+    <ThingCategoryDef>
+        <defName>RH2_Implants_Elite</defName>
+        <label>Elite Implants Collection</label>
+        <parent>RH2_Voidtech_Implants</parent>
+    </ThingCategoryDef>
+	  
+    <ThingCategoryDef>
+        <defName>RH2_Implants_LE</defName>
+        <label>LE Implants Collection</label>
+        <parent>RH2_Voidtech_Implants</parent>
+    </ThingCategoryDef>
+	  
+    <ThingCategoryDef>
+        <defName>RH2_Implants_Epic</defName>
+        <label>Epic Implants Collection</label>
+        <parent>RH2_Voidtech_Implants</parent>
+    </ThingCategoryDef>
+	  
+    <ThingCategoryDef>
+        <defName>RH2_Implants_X</defName>
+        <label>X Implants Collection</label>
+        <parent>RH2_Voidtech_Implants</parent>
+    </ThingCategoryDef>
+
+
+</Defs>

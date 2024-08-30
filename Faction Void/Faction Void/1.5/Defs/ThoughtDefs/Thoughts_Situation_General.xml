@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThoughtDef>
+    <defName>NVG_CanSeeInDarkness</defName>
+    <workerClass>NightVisionGoggle.ThoughtWorker_CanSeeInDarkness</workerClass>
+    <stages>
+      <li>
+        <label>I can see in darkness</label>
+        <description>I can see in darkness</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>NVG_TooBright</defName>
+    <workerClass>NightVisionGoggle.ThoughtWorker_TooBright</workerClass>
+    <stages>
+      <li>
+        <label>Too bright</label>
+        <description>Too bright</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

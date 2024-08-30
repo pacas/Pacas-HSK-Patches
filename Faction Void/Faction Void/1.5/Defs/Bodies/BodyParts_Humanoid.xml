@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Torso</defName>
+    <label>torso</label>
+    <hitPoints>80</hitPoints>
+    <skinCovered>true</skinCovered>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Shoulder</defName>
+    <label>shoulder</label>
+    <hitPoints>60</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Arm</defName>
+    <label>arm</label>
+    <hitPoints>60</hitPoints>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Hand</defName>
+    <label>hand</label>
+    <hitPoints>40</hitPoints>
+    <frostbiteVulnerability>0.5</frostbiteVulnerability>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Finger</defName>
+    <label>finger</label>
+    <hitPoints>16</hitPoints>
+    <frostbiteVulnerability>8</frostbiteVulnerability>
+    <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>ManipulationLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Waist</defName>
+    <label>waist</label>
+    <conceptual>true</conceptual>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Toe</defName>
+    <label>toe</label>
+    <hitPoints>16</hitPoints>
+    <frostbiteVulnerability>10</frostbiteVulnerability>
+    <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+    <skinCovered>true</skinCovered>
+    <tags>
+      <li>MovingLimbDigit</li>
+    </tags>
+  </BodyPartDef>
+  
+  <!-- Bones -->
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Clavicle</defName>
+    <label>clavicle</label>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+    <destroyableByDamage>false</destroyableByDamage>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Sternum</defName>
+    <label>sternum</label>
+    <hitPoints>40</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>BreathingSourceCage</li>
+    </tags>
+    <destroyableByDamage>false</destroyableByDamage>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Humerus</defName>
+    <label>humerus</label>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Radius</defName>
+    <label>radius</label>
+    <hitPoints>40</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Pelvis</defName>
+    <label>pelvis</label>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>Pelvis</li>
+    </tags>
+    <destroyableByDamage>false</destroyableByDamage>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Femur</defName>
+    <label>femur</label>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Tibia</defName>
+    <label>tibia</label>
+    <hitPoints>50</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbSegment</li>
+    </tags>
+  </BodyPartDef>
+
+</Defs>

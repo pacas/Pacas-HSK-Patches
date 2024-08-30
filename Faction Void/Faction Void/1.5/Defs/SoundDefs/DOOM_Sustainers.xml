@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+    	<!-- ===================== Sustainer ========================= -->
+
+    <SoundDef>
+    <defName>RHGun_DOOMChaingunAiming</defName>
+    <sustain>true</sustain>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>
+	  <!--<onCamera>True</onCamera>--> 
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>DOOM/DOOM2016_ChaingunAiming</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>
+          <min>1</min>        
+          <max>1</max>
+        </pitchRange>
+        <volumeRange>
+          <min>50</min>        
+          <max>50</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+ 
+
+</Defs>

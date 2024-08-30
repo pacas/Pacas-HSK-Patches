@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="SK_ResourceBase" Name="VoidArtifactBase" Abstract="True">
+		<thingClass>ThingWithComps</thingClass>
+		<techLevel>Ultra</techLevel>
+		<thingCategories>
+			<li>Artifacts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+            <MarketValue>1200</MarketValue>
+			<Mass>0.5</Mass>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="VoidArtifactBase">
+		<defName>Void_SecronomControlChip</defName>
+		<label>N-4 control implant</label>
+		<description>The Nerotonin Type-4 control implant, developed by Voidtech Bionics in collaboration with intergalactic pharmaceutical corporation Omnitech Viral Intelligence Development (OVID in short) designed only for Nerotonin-4 infected variants.\n\nUnfortunately, this device can only detect Nerotonin-4 variants within touching distance, which means you have to be close and personal to the subject you wish to control. The device has a built-in AI, it features tentacles that cling onto the subject's body violently in order to climb and burrow its way into the brain and inject massive amounts of nanites that render the Nerotonin-4 virus cells docile and the subject friendly. After the control chip has finished its job, the device stays burrowed inside the subject's brain to continue regulating the nanites.\n\nIt is rumoured to be stolen from the long lost technology of Project Lazarus and Secronom. Nerotonin-4 variants of the extreme kind have been sought after as a weaponized unit by shady organizations, or possibly a means to control the infected until a cure could be developed. Sadly after endless trials, a cure has been deemed "impossible" and the N-4 control chip has found other purposes other than humanitarian.</description>
+		<graphicData>
+			<texPath>Things/Item/Special/Control_Implant/N4_Control_Implant</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+		</statBases>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<comps>
+			<li Class="CompProperties_Targetable">
+				<compClass>VoidEvents.CompTargetable_SingleMutant</compClass>
+                <fleckOnTarget>PsycastPsychicEffect</fleckOnTarget>
+                <fleckOnUsed>PsycastAreaEffect</fleckOnUsed>
+			</li>
+			<li Class="CompProperties_Usable">
+				<useJob>UseSecronomControlChip</useJob>
+				<useLabel>Activate</useLabel>
+			</li>
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>PsychicInsanityLanceCast</sound>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="VoidEvents.MutantsToTarget">
+				<mutants>
+					<li>RH_DF2_Stalker</li>
+					<li>RH_DF_DevilHound</li>
+					<li>RH_DF_VolatileLeaper</li>
+					<li>RH_DF_EvolvedRumbler</li>					
+					<li>RH_DF_EvolvedLongArms</li>					
+					<li>RH_DF_BlackLeaper</li>
+					<li>RH_Titan</li>
+					<li>RH_DF_Mother</li>
+					<li>RH_Wraith</li>
+					<li>RH_DFGiantSpider</li>
+					<li>RH_BlackTitan</li>					
+					<li>RH_DF2_RoidHulk</li>
+					<li>RH_DF_Bone</li>
+					<li>RH_DF_Reaper</li>
+					<li>RH_DF_Tendril</li>					
+					<li>RH_DF_IrridiatedLongArms</li>
+					<li>RH_BlackWraith</li>
+				</mutants>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

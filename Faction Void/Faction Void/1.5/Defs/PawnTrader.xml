@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>RH_SubjectTrader</defName>
+    <stockGenerators>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>300000~750000</countRange>
+      </li>
+      <li Class="Enlist.StockGenerator_Pawns">
+	    <price>Expensive</price>
+        <countRange>7~24</countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+  
+</Defs>

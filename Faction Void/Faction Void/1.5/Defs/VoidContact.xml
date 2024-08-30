@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <VoidEvents.VoidContactDef>
+        <defName>VoidContact</defName>
+        <negotiatorDef>RH_VOID_Negotiator</negotiatorDef>
+        <bodyguardDef>RH_VOID_Bodyguard</bodyguardDef>
+        <bodyguardCount>4</bodyguardCount>
+        <begSuccessChance>0.9</begSuccessChance>
+        <incidentsAfterDeclining>
+            <li>ChickenVOID_SolarFlare</li>
+            <li>ChickenVOID_ToxicFalloutCustomizable</li>
+        </incidentsAfterDeclining>
+        <incidentsAfterDecliningInTicks>60000</incidentsAfterDecliningInTicks>
+        <giftOptions>
+            <li>
+                <gift>MedicineUltratech</gift>
+                <count>3</count>
+            </li>
+            <li>
+                <gift>RH_RedWine</gift>
+                <count>1</count>
+            </li>
+        </giftOptions>
+        <netralPeriodAfterBeg>30</netralPeriodAfterBeg>
+        <netralPeriodAfterRespectfulDecline>1</netralPeriodAfterRespectfulDecline>
+        <!-- dialogs -->
+        <voidStartingText>A group of five well dressed, heavily armed individuals with purple coloured masks and piercing blue eyes stare into your soul as they approach you. They come bearing gifts. They make it clear that they've come to negotiate, not to fight.\n\n"Greetings. We are V.O.I.D."\n\n"You are unlawfully trespassing in our newly annexed territory. You must leave this world at once or else we will have to forcefully remove you."\n\n"You have to leave this planet effective immediately."\n\nThe advisor sizes you up briefly as you think of your reply. You have three response options below.</voidStartingText>
+        <begOptionText>Beg for mercy. Try to plead to their humanity, they seem to be reasonable people.</begOptionText>
+        <disrespectOptionText>Say something incredibly insulting. Immediately attack them.</disrespectOptionText>
+        <respectfulDeclineOptionText>Respectfully decline. You aren't here to beg or to surrender to anyone.</respectfulDeclineOptionText>
+        <begOptionResponses>
+            <li>"We understand. We aren't unreasonable people. You will be extended 30 days of stay, after that we have to act upon our newly established laws as the future government of this world."\n\n"Please accept our token of hospitality, a leaving gift."\n\n"Goodbye."</li>
+            <li>"We understand. This situation isn't easy for everyone. You are hereby granted 30 days of grace period until we are permitted to remove you by force."\n\n"Please accept our token of hospitality, a leaving gift."\n\n"Goodbye."</li>
+            <li>"Please, there's no need to worry. We grant you 30 days extension, consider this your final warning. If you are still here after your extension, we will return for you."\n\n"Please accept our token of hospitality, a leaving gift."\n\n"Goodbye."</li>
+            <li>"There is nothing to be afraid of. We are here to help. You are granted 30 days extension, V.O.I.D. will leave you alone for this duration. After this extension, you are no longer under protection."\n\n"Please accept our token of hospitality, a leaving gift."\n\n"Goodbye."</li>
+            <li>The V.O.I.D. advisor, cold and emotionless look down on you as you try to move them with words.\n\n"You have 30 days. That is all we will give you as grace period before you leave us no choice. Please extend us the courtesy and respect that we have given you, then we will find common ground."\n\n"One final thing, please accept our token of hospitality. We present to you a leaving gift."\n\n"Goodbye."</li>
+        </begOptionResponses>
+        <disrespectOptionResponses>
+            <li>The V.O.I.D. advisor shakes their head at your response.\n\n"It's as if I'm speaking to a child."</li>
+            <li>The V.O.I.D. advisor, surprised by your rude response, nods.\n\n"I see. You have mistaken our kindness for weakness."</li>
+            <li>The V.O.I.D. advisor, surprised by your remarks, responds with a flat and condescending tone.\n\n"Where those manners come from?"</li>
+            <li>The V.O.I.D. advisor is taken back by your response.\n\n"Interesting. You must be confused."</li>
+            <li>The V.O.I.D. advisor is still and without emotion they utter one word.\n\n"Interesting."</li>
+            <li>The mask of the V.O.I.D. advisor displays a smirking imprint, with the beady eyes glowing slightly brighter towards you.\n\n"This is our entertainment for the day. Thank you."</li>
+            <li>You see a smirk unfold by the mouth of the mask of the V.O.I.D. advisor.\n\n"This will be easy."</li>
+            <li>The V.O.I.D. advisor leans back with surprise at your response.\n\n"This will be interesting."</li>
+            <li>The advisor shrugs at your response, as if they expected it.\n\nFunny. I thought you would say that.</li>
+            <li>The tone in the voice of the V.O.I.D. advisor shifts from neutral to a mildly frustrated one due to your response.\n\n"Big mistake."</li>
+            <li>The advisor analyzes the situation briefly after your response and looks back at you.\n\n"You have made a huge blunder."</li>
+            <li>You seemed to have angered the V.O.I.D. advisor. The voice behind the emotionless mask speaks the following words full of indignation.\n\n"You are past redemption."</li>
+            <li>A cold and calculated V.O.I.D. advisor reacts to your response after a brief moment.\n\n"I was hoping you would say that."</li>
+            <li>With a dry and condescending tone, the V.O.I.D. advisor quips back at your response.\n\n"And here I thought you were damsels in distress."</li>
+            <li>You see the advisor sent by V.O.I.D. slightly confused by your hostility, then immediately realizes your intentions.\n\n"You will instantly regret this decision."</li>
+            <li>In the tone of a disappointed parent, the advisor sent by V.O.I.D. tells you these final words.\n\n"You are a fool."</li>
+        </disrespectOptionResponses>
+        <respectfulDeclineOptionResponses>
+            <li>The V.O.I.D. advisor gives you a warm nod and begins bidding you farewell.\n\n"We understand. I hope you and I will find our future encounters in good faith."\n\n"Please accept our token of hospitality, a leaving gift."</li>
+            <li>The V.O.I.D. advisor gives you a slight bow with their hand in their heart and bids you farewell.\n"We understand. Till we meet again."\n\n"Please accept our token of hospitality, a leaving gift."</li>
+            <li>The V.O.I.D. advisor nods and signs at their bodyguards to begin leaving.\n"Thank you for your time."\n\n"Please accept our token of hospitality, a leaving gift."</li>
+            <li>The V.O.I.D. advisor looks at one of the bodyguards and back to you with some final words.\n"Understandable. We respect your courage and integrity."\n\n"Please accept our token of hospitality, a leaving gift."</li>
+            <li>The V.O.I.D. advisor is surprised by your brazen response, their body language abruptly reveals this.\n\n"I see. What an unexpected turn of events. We'll be on our way then."\n\n"Please accept our token of hospitality, a leaving gift."</li>
+            <li>The V.O.I.D. advisor stands still, almost emotionless. They abruptly begin leaving.\n"Understandable. Have a good day."\n\n"Please accept our token of hospitality, a leaving gift."</li>
+        </respectfulDeclineOptionResponses>
+    </VoidEvents.VoidContactDef>
+</Defs>

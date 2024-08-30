@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Heart</defName>
+    <label>heart</label>
+    <hitPoints>30</hitPoints>
+    <bleedRate>5</bleedRate>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BloodPumpingSource</li>
+    </tags>
+    <spawnThingOnRemoved>Heart</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Lung</defName>
+    <label>lung</label>
+    <hitPoints>30</hitPoints>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BreathingSource</li>
+    </tags>
+    <spawnThingOnRemoved>Lung</spawnThingOnRemoved>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Kidney</defName>
+    <label>kidney</label>
+    <hitPoints>30</hitPoints>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BloodFiltrationKidney</li>
+    </tags>
+    <spawnThingOnRemoved>Kidney</spawnThingOnRemoved>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Liver</defName>
+    <label>liver</label>
+    <hitPoints>40</hitPoints>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>BloodFiltrationLiver</li>
+      <li>MetabolismSource</li>
+    </tags>
+    <spawnThingOnRemoved>Liver</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>RH_N4Mutant_Stomach</defName>
+    <label>stomach</label>
+    <hitPoints>40</hitPoints>
+    <skinCovered>false</skinCovered>
+    <tags>
+      <li>MetabolismSource</li>
+    </tags>
+  </BodyPartDef>
+  
+</Defs>

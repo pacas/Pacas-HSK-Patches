@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Save Our Ship 2</li>
+        </mods>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>/Defs/PawnKindDef[defName="RH_VOID_Member" or defName="RH_VOID_Elite"]</xpath>
+            <value>
+                <li Class="VoidEvents.SpaceProtection"/>
+            </value>
+        </match>
+    </Operation>
+</Patch>

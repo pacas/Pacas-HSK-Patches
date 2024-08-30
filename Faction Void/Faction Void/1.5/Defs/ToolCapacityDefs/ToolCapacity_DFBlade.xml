@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <ToolCapacityDef>
+    <defName>RHMelee_DFBladeSlash</defName>
+    <label>cutting</label>
+  </ToolCapacityDef>
+
+  <ToolCapacityDef>
+    <defName>RHMelee_DFBladeStab</defName>
+    <label>piercing</label>
+  </ToolCapacityDef>  
+  
+  <!-- AMP -->
+  
+  <ToolCapacityDef>
+    <defName>RHMelee_AmputatorSlash</defName>
+    <label>cutting</label>
+  </ToolCapacityDef>
+
+  <ToolCapacityDef>
+    <defName>RHMelee_AmputatorStab</defName>
+    <label>piercing</label>
+  </ToolCapacityDef>
+  
+</Defs>

@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Chamber -->
+	<ThingDef ParentName="SK_MechBuildingBase">
+		<defName>Void_MutantSpawner</defName>
+		<label>hibernation chamber</label>
+		<description>A hibernation chamber for freshly converted N-4 infected subjects. It periodically awakens the creatures.</description>
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>260</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>2500</WorkToBuild>
+		</statBases>
+		<!--<designationCategory>Misc</designationCategory>-->
+		<castEdgeShadows>False</castEdgeShadows>
+		<graphicData>
+			<texPath>Things/Building/ConversionChamber_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(6,6)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<building>
+			<combatPower>350</combatPower>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+		<costList>
+			<ComponentSpacer>1</ComponentSpacer>
+			<ComponentIndustrial>30</ComponentIndustrial>
+			<Titanium>120</Titanium>
+		</costList>
+		<killedLeavings>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Titanium>10</Titanium>
+		</killedLeavings>
+		<comps>
+			<li Class="CompProperties_SpawnerPawn">
+				<compClass>VoidEvents.CompSpawnerMutant</compClass>
+				<spawnablePawnKinds>
+					<!--<li>RH_DF_BlackLeaper</li>-->
+					<li>RH_Titan</li>
+					<li>RH_Wraith</li>
+					<li>RH_DFGiantSpider</li>
+					<li>RH_DF_Mother</li>
+					<li>RH_DF2_RoidHulk</li>
+					<li>RH_DF_IrridiatedLongArms</li>
+					<!--<li>RH_DF_DevilHound</li>-->
+				</spawnablePawnKinds>
+				<chooseSingleTypeToSpawn>False</chooseSingleTypeToSpawn>
+				<spawnMessageKey>Void.MessageMutantAssembled</spawnMessageKey>
+				<pawnsLeftToSpawnKey>Void.MessageMutantLeftToAssemble</pawnsLeftToSpawnKey>
+				<noPawnsLeftToSpawnKey>ShutDown</noPawnsLeftToSpawnKey>
+				<nextSpawnInspectStringKey>Void.MutantAssemblyCompleteIn</nextSpawnInspectStringKey>
+				<nextSpawnInspectStringKeyDormant>Void.MutantAssemblyNextType</nextSpawnInspectStringKeyDormant>
+				<maxPawnsToSpawn>1</maxPawnsToSpawn>
+				<spawnSound>CryptosleepCasket_Eject</spawnSound>
+				<showNextSpawnInInspect>true</showNextSpawnInInspect>
+				<lordJob>LordJob_DefendAndExpandHive</lordJob>
+				<pawnSpawnIntervalDays>0.1~0.3</pawnSpawnIntervalDays>
+				<shouldJoinParentLord>True</shouldJoinParentLord>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- Black Chamber -->
+	<ThingDef ParentName="SK_MechBuildingBase">
+		<defName>Void_Volatile_MutantSpawner</defName>
+		<label>volatile chamber</label>
+		<description>A volatile chamber for freshly converted N-4 infected subjects. It periodically awakens the creatures.</description>
+		<size>(2,4)</size>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>2500</WorkToBuild>
+		</statBases>
+		<!--<designationCategory>Misc</designationCategory>-->
+		<castEdgeShadows>False</castEdgeShadows>
+		<graphicData>
+			<texPath>Things/Building/ConversionChamber_Black</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(10,10)</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<building>
+			<combatPower>350</combatPower>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+		<costList>
+			<ComponentIndustrial>30</ComponentIndustrial>
+			<ComponentSpacer>4</ComponentSpacer>
+			<Titanium>150</Titanium>
+		</costList>
+		<killedLeavings>
+			<ChunkSlagSteel>3</ChunkSlagSteel>
+			<ComponentSpacer>3</ComponentSpacer>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<Titanium>35</Titanium>
+		</killedLeavings>
+		<comps>
+			<li Class="CompProperties_SpawnerPawn">
+				<compClass>VoidEvents.CompSpawnerMutant</compClass>
+				<spawnablePawnKinds>
+					<li>RH_DF_BlackLeaper</li>
+					<li>RH_DF_VolatileLeaper</li>
+				</spawnablePawnKinds>
+				<chooseSingleTypeToSpawn>False</chooseSingleTypeToSpawn>
+				<spawnMessageKey>Void.MessageMutantAssembled</spawnMessageKey>
+				<pawnsLeftToSpawnKey>Void.MessageMutantLeftToAssemble</pawnsLeftToSpawnKey>
+				<noPawnsLeftToSpawnKey>ShutDown</noPawnsLeftToSpawnKey>
+				<nextSpawnInspectStringKey>Void.MutantAssemblyCompleteIn</nextSpawnInspectStringKey>
+				<nextSpawnInspectStringKeyDormant>Void.MutantAssemblyNextType</nextSpawnInspectStringKeyDormant>
+				<maxPawnsToSpawn>1</maxPawnsToSpawn>
+				<spawnSound>CryptosleepCasket_Eject</spawnSound>
+				<showNextSpawnInInspect>true</showNextSpawnInInspect>
+				<lordJob>LordJob_DefendAndExpandHive</lordJob>
+				<pawnSpawnIntervalDays>0.1~0.3</pawnSpawnIntervalDays>
+				<shouldJoinParentLord>True</shouldJoinParentLord>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+<!-- Chamber -->
+	<ThingDef ParentName="SK_MechBuildingBase">
+		<defName>Void_Rebirth_MutantSpawner</defName>
+		<label>rebirth chamber</label>
+		<description>A rebirth chamber for freshly converted N-4 infected subjects. It periodically awakens creatures.</description>
+		<size>(4,4)</size>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>2500</WorkToBuild>
+		</statBases>
+		<!--<designationCategory>Misc</designationCategory>-->
+		<castEdgeShadows>False</castEdgeShadows>
+		<graphicData>
+			<texPath>Things/Building/ConversionChamber_Rebirth</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(10,10)</drawSize>
+			<shadowData>
+				<volume>(2.8, 0.8, 2.8)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.15, 0.15, 2.7, 2.7)</rect>
+			</damageData>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<building>
+			<combatPower>350</combatPower>
+			<destroySound>BuildingDestroyed_Metal_Big</destroySound>
+		</building>
+		<costList>
+			<ComponentIndustrial>25</ComponentIndustrial>
+			<ComponentSpacer>5</ComponentSpacer>
+			<Titanium>150</Titanium>
+		</costList>
+		<killedLeavings>
+			<ChunkSlagSteel>4</ChunkSlagSteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<Titanium>30</Titanium>
+		</killedLeavings>
+		<comps>
+			<li Class="CompProperties_SpawnerPawn">
+				<compClass>VoidEvents.CompSpawnerMutant</compClass>
+				<spawnablePawnKinds>
+					<li>RH_BlackTitan</li>
+					<li>RH_BlackWraith</li>
+				</spawnablePawnKinds>
+				<chooseSingleTypeToSpawn>False</chooseSingleTypeToSpawn>
+				<spawnMessageKey>Void.MessageMutantAssembled</spawnMessageKey>
+				<pawnsLeftToSpawnKey>Void.MessageMutantLeftToAssemble</pawnsLeftToSpawnKey>
+				<noPawnsLeftToSpawnKey>ShutDown</noPawnsLeftToSpawnKey>
+				<nextSpawnInspectStringKey>Void.MutantAssemblyCompleteIn</nextSpawnInspectStringKey>
+				<nextSpawnInspectStringKeyDormant>Void.MutantAssemblyNextType</nextSpawnInspectStringKeyDormant>
+				<maxPawnsToSpawn>1</maxPawnsToSpawn>
+				<spawnSound>CryptosleepCasket_Eject</spawnSound>
+				<showNextSpawnInInspect>true</showNextSpawnInInspect>
+				<lordJob>LordJob_DefendAndExpandHive</lordJob>
+				<pawnSpawnIntervalDays>0.1~0.3</pawnSpawnIntervalDays>
+				<shouldJoinParentLord>True</shouldJoinParentLord>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

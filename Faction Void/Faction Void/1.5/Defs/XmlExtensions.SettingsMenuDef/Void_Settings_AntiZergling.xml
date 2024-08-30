@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <XmlExtensions.SettingsMenuDef>
+        <defName>VOID_Settings_Plus</defName>
+        <modId>VOID.Pacas.Settings</modId>
+        <tKey>VOID_MainTitle</tKey>
+        <label>V.O.I.D. - Extended Settings</label>
+        <settings>
+            <li Class="XmlExtensions.Setting.Gap"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Difficulty</text>
+                <tKey>Difficulty_Title</tKey>
+                <font>Medium</font>
+                <anchor>Middle</anchor>
+            </li>
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Arrest_Cheese</key>
+                <label>Arrest</label>
+                <tKey>Arrest_Cheese</tKey>
+                <defaultValue>true</defaultValue>
+                <tooltip>V.O.I.D. will kill all aggressors towards diplomats</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Recruit_Cheese</key>
+                <label>Capture</label>
+                <tKey>Recruit_Cheese</tKey>
+                <defaultValue>false</defaultValue>
+                <tooltip>V.O.I.D. will not tolerate deserters</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Help_Cheese</key>
+                <label>Rescue</label>
+                <tKey>Help_Cheese</tKey>
+                <defaultValue>false</defaultValue>
+                <tooltip>V.O.I.D. recruits would rather die than get help</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Invis_Cheese</key>
+                <label>Invisibility</label>
+                <tKey>Invis_Cheese</tKey>
+                <defaultValue>true</defaultValue>
+                <tooltip>V.O.I.D. will see you even in invisibility</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Raid_Cheese</key>
+                <label>Raids</label>
+                <tKey>Raid_Cheese</tKey>
+                <defaultValue>false</defaultValue>
+                <tooltip>V.O.I.D. will smash you faster</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Surgery_Setting_Void</key>
+                <label>I hate implants</label>
+                <tKey>Surgery_Setting_Void</tKey>
+                <defaultValue>false</defaultValue>
+                <tooltip>No more V.O.I.D. implants and serums for you</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>Spider_Jump_Void</key>
+                <label>Spider mutant</label>
+                <tKey>Spider_Jump_Void</tKey>
+                <defaultValue>false</defaultValue>
+                <tooltip>Mutant spider can jump!</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.ResetSettings"/>
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>All options require restart to apply</text>
+            </li>
+        </settings>
+    </XmlExtensions.SettingsMenuDef>
+</Defs>

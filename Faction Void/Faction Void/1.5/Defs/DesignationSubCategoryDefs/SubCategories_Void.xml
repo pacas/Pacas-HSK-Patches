@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_VoidTables</defName>
+		<label>Corpo tables</label>
+		<description>Dining tables, side tables and coffee tables.</description>
+		<defNames>
+			<li>RH_Corpo_Table1x1c</li>
+			<li>RH_Corpo_Table1x2c</li>
+			<li>RH_Corpo_Desk1x2c</li>
+			<li>RH_Corpo_Table2x4c</li>
+		</defNames>
+		<designationCategory>Furniture</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_VoidSmoothCarpets</defName>
+		<label>Corpo smooth carpet</label>
+		<description>Stunning carpet that is soft and relaxing.</description>
+		<defNames>
+			<li>RH_Corpo_CarpetFineBurgundy_A</li>
+			<li>RH_Corpo_CarpetFineIndigo_A</li>
+			<li>RH_Corpo_CarpetFineWhite_A</li>
+			<li>RH_Corpo_CarpetFineDark_A</li>
+		</defNames>
+		<designationCategory>Floors</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_VoidElegantCarpets</defName>
+		<label>Corpo elegant carpet</label>
+		<description>Stunning carpet that is soft and relaxing.</description>
+		<defNames>
+			<li>RH_Corpo_CarpetFineBurgundy_B</li>
+			<li>RH_Corpo_CarpetFineIndigo_B</li>
+			<li>RH_Corpo_CarpetFineWhite_B</li>
+			<li>RH_Corpo_CarpetFineDark_B</li>
+		</defNames>
+		<designationCategory>Floors</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+
+	
+</Defs>	

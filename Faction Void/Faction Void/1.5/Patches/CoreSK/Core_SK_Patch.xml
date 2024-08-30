@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationInsert">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_StandartBeds"]/defNames/li[5]</xpath>
+                <value>
+                    <li>RH2_CorpoBed</li>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationInsert">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_DoubleBeds"]/defNames/li[4]</xpath>
+                <value>
+                    <li>RH2_CorpoDoubleBed</li>
+                </value>
+            </li>
+            
+            <!--<li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_RenewablePower"]/defNames</xpath>
+                <value>
+                    <li>RH_VOIDPowerCell</li>
+                </value>
+            </li>-->
+            
+            <li Class="PatchOperationInsert">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_ComfortableSeats"]/defNames/li[6]</xpath>
+                <value>
+                    <li>RH_Corpo_Armchair</li>
+                </value>
+            </li>
+            
+            <li Class="PatchOperationInsert">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Lamps"]/defNames/li[2]</xpath>
+                <value>
+                    <li>RH_Corpo_StandingLamp</li>
+                </value>
+            </li>
+            
+        </operations>
+    </Operation>
+
+</Patch>

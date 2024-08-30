@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <CultureDef>
+        <defName>RH2_VOIDKriminul</defName>
+        <label>???</label>
+        <description>We are in control.</description>
+        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">RH2NamerIdeo_VOID</ideoNameMaker>
+        <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">RH2_NamerDeityVOID</deityNameMaker>
+        <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerKriminul</deityTypeMaker>
+        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_VOID</leaderTitleMaker>
+        <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalKriminul</festivalNameMaker>
+        <allowedPlaceTags>
+            <li MayRequire="Ludeon.RimWorld.Ideology">OriginSpacer</li>
+        </allowedPlaceTags>
+        <iconPath>Things/World/VOIDLogoStar_blank</iconPath>
+        <thingStyleCategories>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <category>Spikecore</category>
+                <priority>2</priority>
+            </li>
+        </thingStyleCategories>
+        <styleItemTags>
+            <li>
+                <tag>Rural</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoBeard</tag>
+                <baseWeight>10</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>BeardRural</tag>
+                <baseWeight>0.25</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoTattoo</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+    </CultureDef>
+
+
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>RH2NamerIdeo_VOID</defName>
+        <include>
+            <li>GlobalUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <!-- The system will feed one (and only one) of these cases into this namer:
+                - key deity
+                - symbol pack
+             These cases are separate, they won't mix.
+
+             The system will also feed a set of place_* keys correesponding to the ideo's foundation PlaceDef
+         -->
+
+                <!-- The Buzzwords -->
+                <li>r_ideoName->[VOIDAdjective] Control</li>
+                <li>r_ideoName->[VOIDAdjective] Chaos</li>
+		
+                <!-- Membername -->
+                <li>r_memberName->member</li>
+		
+                <li>r_ideoAdjective(priority=1)->Void</li>
+                <li>r_ideoAdjective(priority=1)->Core</li>
+		
+                <!-- GK Creeds whatever the hell, Ideology DLC is annoying to deal with. -->
+                <li>creed->[genericCreed]</li>
+
+                <li>genericCreed->creed</li>
+                <li>genericCreed->doctrine</li>
+                <li>genericCreed->way</li>
+                <li>genericCreed->path</li>
+		
+                <!-- The Whateverwords -->
+
+                <li>VOIDAdjective->Total</li>
+                <li>VOIDAdjective->Absolute</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+  
+  
+    <!-- Leader -->
+  
+    <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
+        <defName>LeaderTitleMaker_VOID</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_leaderTitle->executive</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

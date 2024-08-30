@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <FactionDef ParentName="FactionBase">
+        <defName>RH2_Nerotonin4_Horde</defName>
+        <label>undead horde</label>
+        <description>The infected Nerotonin-4 horde, survivors have labelled these creatures as "zombies". These monsters do not rest until living non-infected beings around them are dead. Many worlds have fallen prey to this Nerotonin Type-4 virus, and it originated from a defunct company named Secronom that unleashed a pandemic the likes of which can only be described as horror. Lately the last known source of the virus is a result of intergalactic pharmaceutical corporation Omnitech Viral Intelligence Development (OVID in short) experiments. Nobody knows what goes on in the minds of these creatures, other than they are solely driven to commit violence.</description>
+        <pawnSingular>undead</pawnSingular>
+        <pawnsPlural>undead</pawnsPlural>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <fixedName>N-4 infected</fixedName>
+        <factionIconPath>Things/World/N4</factionIconPath>
+        <canStageAttacks>true</canStageAttacks>
+        <colorSpectrum>
+            <li>(156, 12, 17)</li>
+        </colorSpectrum>
+        <humanlikeFaction>false</humanlikeFaction>
+        <hidden>true</hidden>
+        <autoFlee>false</autoFlee>
+        <canUseAvoidGrid>false</canUseAvoidGrid>
+        <techLevel>Animal</techLevel>
+        <earliestRaidDays>120</earliestRaidDays>
+        <permanentEnemy>true</permanentEnemy>
+        <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(400,200)</li>
+                <li>(900,300)</li>
+                <li>(100000,10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <!-- Death Row -->
+                <kindDef>Combat</kindDef>
+                <commonality>40</commonality>
+                <options>
+                    <RH_DF_EvolvedRumbler>30</RH_DF_EvolvedRumbler>
+                    <RH_DF_EvolvedLongArms>40</RH_DF_EvolvedLongArms>
+                </options>
+            </li>
+            <li>
+                <!-- Red -->
+                <kindDef>Combat</kindDef>
+                <commonality>100</commonality>
+                <options>
+                    <RH_DF_Reaper>10</RH_DF_Reaper>
+                    <RH_DF_Tendril>40</RH_DF_Tendril>
+                    <RH_DF_Bone>30</RH_DF_Bone>
+                    <RH_DF2_RoidHulk>5</RH_DF2_RoidHulk>
+                    <RH_Titan>1</RH_Titan>
+                    <RH_Wraith>1</RH_Wraith>
+                    <RH_DFGiantSpider>5</RH_DFGiantSpider>
+                    <RH_DF_Mother>5</RH_DF_Mother>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>900</configurationListOrderPriority>
+    </FactionDef>
+</Defs>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/WorldObjectDef[defName="Settlement"]/comps/li[@Class="Enlist.WorldObjectCompProperties_Enlist"]</xpath>
+				<nomatch Class="PatchOperationAdd">
+					<xpath>Defs/WorldObjectDef[defName="Settlement"]/comps</xpath>
+					<value>
+						<li Class="Enlist.WorldObjectCompProperties_Enlist" />
+					</value>
+				</nomatch>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

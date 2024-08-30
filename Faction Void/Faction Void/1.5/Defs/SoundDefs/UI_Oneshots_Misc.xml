@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <SoundDef>
+    <defName>RH_VOIDBlackout</defName>    
+    <maxVoices>1</maxVoices>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>UI/VOID/PowerOut</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>30~30</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <!-- PlanetKiller -->
+  
+    <SoundDef>
+    <defName>RH_VOIDPlanetKiller</defName>    
+    <maxVoices>1</maxVoices>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>UI/VOID/NowIAmBecomeDeath</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>50~50</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+    	<!-- ===================== Takeover ========================= -->
+  
+  <SoundDef>
+    <defName>RH_VOIDTakeover</defName>    
+    <maxVoices>1</maxVoices>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>UI/VOID/Takeover</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>30~30</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

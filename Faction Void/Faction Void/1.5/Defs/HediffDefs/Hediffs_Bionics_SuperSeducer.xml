@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- super seducer -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>RH_AestheticShaper</defName>
+        <label>super seducer implant</label>
+        <labelNoun>a super seducer implant</labelNoun>
+        <description>An installed super seducer.</description>
+        <descriptionHyperlinks><ThingDef>RH_AestheticShaper</ThingDef></descriptionHyperlinks>
+        <spawnThingOnRemoved>RH_AestheticShaper</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PawnBeauty>5</PawnBeauty>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_Epic_ImplantBase">
+        <defName>RH_AestheticShaper</defName>
+        <label>super seducer implant</label>
+        <description>A highly sophisticated modification of the Aesthetic Shaper, a package of hormonal and mechanite influences shapes the muscles and fat on the body, adding non-functional aesthetic tissue where needed to achieve a desired appearance. This implant can be configured to form various body shapes according to the user’s taste - or that of their partner.\n\nThis implant was produced by the infamous Dr. La Ruina, who made off with insurmountable wealth for the invention of this implant. He is hunted for multiple counts of unethical human experimentation, and being involved with human traffickers that use these implants for slaves.</description>
+        <descriptionHyperlinks><RecipeDef>InstallRH_AestheticShaper</RecipeDef></descriptionHyperlinks>
+        <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+        <graphicData>
+            <texPath>Things/Item/Special/Serum/SuperSeducerSerum</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <!--<color>(255, 133, 167)</color>-->
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="VOID_InstallImplantLE">
+        <defName>InstallRH_AestheticShaper</defName>
+        <label>install super seducer implant</label>
+        <uiIconThing>RH_AestheticShaper</uiIconThing>
+        <description>Install a super seducer implant.</description>
+        <descriptionHyperlinks><ThingDef>RH_AestheticShaper</ThingDef></descriptionHyperlinks>
+        <jobString>Installing super seducer.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>RH_AestheticShaper</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>RH_AestheticShaper</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>RH_AestheticShaper</addsHediff>
+    </RecipeDef>
+  
+    <RecipeDef ParentName="VOID_RemoveImplantLE">
+        <defName>RemoveRH_AestheticShaper</defName>
+        <label>remove super seducer implant</label>
+        <description>Remove super seducer implant.</description>
+        <descriptionHyperlinks><ThingDef>RH_AestheticShaper</ThingDef></descriptionHyperlinks>
+        <jobString>Removing super seducer implant.</jobString>
+        <removesHediff>RH_AestheticShaper</removesHediff>
+    </RecipeDef>
+
+</Defs>

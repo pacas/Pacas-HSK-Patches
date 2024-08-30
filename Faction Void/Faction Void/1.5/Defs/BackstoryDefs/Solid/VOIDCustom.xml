@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <BackStoryDef Abstract="True" Name="RH2_DOOMSolid">
+        <shuffleable>true</shuffleable>
+    </BackStoryDef>
+    <BackstoryDef ParentName="RH2_DOOMSolid">
+        <defName>RH2_CustomVOID_Childhood</defName>
+        <title>apocalyptic survivor</title>
+        <titleShort>survivor</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up as one of many survivors of the catastrophic Nerotonin-4 outbreak. [PAWN_pronoun] lived in one of the many outposts Fairview, migrating from the Holdout to the last reamining Secronom Bunker.\n\n[PAWN_nameDef] has seen many horrors and had to endure losing friends and remaining family on a daily basis on top of fighting the never ending horde of infected creatures out in the inner city walls.\n\n[PAWN_nameDef] learning knowledge of bartering in [PAWN_possessive] early age on top of having to fight in order to avoid going hungry when looting is not viable, and crops were too slow.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Shooting>3</Shooting>      
+            <Melee>4</Melee>
+            <Medicine>1</Medicine>	  
+            <Social>2</Social>
+        </skillGains>
+        <spawnCategories>
+            <li>RH2_VOID</li>
+        </spawnCategories>
+        <shuffleable>true</shuffleable>
+        <forcedTraits>
+            <Nerves>1</Nerves>
+        </forcedTraits>
+    </BackstoryDef>
+    <!---->
+    <BackstoryDef ParentName="RH2_DOOMSolid">
+        <defName>RH2_CustomDFChildhood_B</defName>
+        <title>death row looter</title>
+        <titleShort>death row</titleShort>
+        <baseDesc>[PAWN_nameDef] was a scavenger during the midst of a Nerotonin-4 outbreak. [PAWN_pronoun] encountered several dangerous creatures and lost many of [PAWN_possessive] comrades during [PAWN_possessive] time as a survivor. What [PAWN_pronoun] was known for is undertaking one of the most dangerous tasks in the inner city. Looting the "Death Row" purple zones, an area occupied by evolved strains of the virus.\n\n[PAWN_nameDef] grew up having to sharpen [PAWN_possessive] silver tongue and personal relations, on top of [PAWN_possessive] combat abilities in order to continue putting food in the table for [PAWN_possessive] family at a young age.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Shooting>4</Shooting>      
+            <Melee>2</Melee>
+            <Medicine>2</Medicine>	  
+            <Social>5</Social>
+        </skillGains>
+        <spawnCategories>
+            <li>RH2_VOID</li>
+        </spawnCategories>
+        <shuffleable>true</shuffleable>
+        <forcedTraits>
+            <Nerves>1</Nerves>
+        </forcedTraits>
+    </BackstoryDef>
+    <!---->
+    <BackstoryDef ParentName="RH2_DOOMSolid">
+        <defName>RH2_CustomDFAdulthood_A</defName>
+        <title>elite survivor</title>
+        <titleShort>elite</titleShort>
+        <baseDesc>[PAWN_nameDef] was recruited into a mysterious organization that manifested itself among the flames and foundations of bodies in the inner city. [PAWN_pronoun] did not ask to join, they were invited. From then on, [PAWN_possessive] life was changed forever. The clan had access to the most powerful arsenal in their world, the Dusk gear. They also manipulated the market in order to hoard masses of resources for themselves when other survivors barely got by looting in the Inner City.\n\n[PAWN_possessive] was trained in all possible skills each clan member had to offer and learned in a higher capacity than normal means due to implants. The clan found means to escape the planet after re-developing space flight systems in complete secrecy from the average scavengers who still had their minds set on survival alone.</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Shooting>20</Shooting>
+            <Melee>20</Melee>      
+            <Medicine>20</Medicine>		  
+            <Construction>20</Construction>		  
+            <Crafting>20</Crafting>		 	  
+            <Mining>20</Mining>		  
+            <Social>20</Social>	  
+            <Intellectual>20</Intellectual>
+        </skillGains>
+        <spawnCategories>
+            <li>RH2_VOID</li>
+        </spawnCategories>
+        <shuffleable>true</shuffleable>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Hulk</bodyTypeMale>
+        <forcedTraits>
+            <Nerves>2</Nerves>
+            <Bloodlust>0</Bloodlust>
+        </forcedTraits>
+    </BackstoryDef>
+    <!---->
+    <BackstoryDef ParentName="RH2_DOOMSolid">
+        <defName>RH2_CustomDFAdulthood_B</defName>
+        <title>dusk champion</title>
+        <titleShort>dusk</titleShort>
+        <baseDesc>[PAWN_nameDef] participated in a competition known as top survivor during a dusk event in Fairview. [PAWN_pronoun] won after losing several of [PAWN_possessive] friends and clanmates clearing innumerable hordes of N-4 infected through the wasteland, fighting other clans who encountered them trying to win the highly sought after Dusk Gear.\n\n[PAWN_nameDef] was later recruited into a mysterious organization for [PAWN_possessive] talents, and the memories will never leave [PAWN_possessive] mind.</baseDesc>
+        <slot>Adulthood</slot>
+        <skillGains>
+            <Shooting>20</Shooting>
+            <Melee>20</Melee>      
+            <Medicine>20</Medicine>		  
+            <Construction>20</Construction>		  
+            <Crafting>20</Crafting>		 	  
+            <Mining>20</Mining>		  
+            <Social>20</Social>	  
+            <Intellectual>20</Intellectual>
+        </skillGains>
+        <spawnCategories>
+            <li>RH2_VOID</li>
+        </spawnCategories>
+        <shuffleable>true</shuffleable>
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        <forcedTraits>
+            <Nerves>2</Nerves>
+            <Bloodlust>0</Bloodlust>
+        </forcedTraits>
+    </BackstoryDef>
+</Defs>

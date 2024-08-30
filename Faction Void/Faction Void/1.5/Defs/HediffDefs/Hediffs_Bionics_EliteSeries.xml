@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+    <!-- Base -->
+    <ThingDef Name="RH_Elite_ImplantBase" ParentName="BodyPartBase" Abstract="True">
+        <techLevel>Ultra</techLevel>
+        <thingCategories Inherit="False">
+            <li>RH2_Implants_Elite</li>
+        </thingCategories>
+		<techHediffsTags Inherit="False"/>
+        <statBases>
+            <MarketValue>25000</MarketValue>
+            <Mass>0.05</Mass>
+            <MaxHitPoints>20</MaxHitPoints>
+        </statBases>
+    </ThingDef>
+  
+    <!-- Ultra Boost Implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_UltraBoost_Implant</defName>
+        <label>ultra boost implant</label>
+        <labelNoun>a ultra boost implant</labelNoun>
+        <description>An installed ultra boost implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_UltraBoost_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_UltraBoost_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                    <li>
+                        <capacity>Metabolism</capacity>
+                        <offset>0.3</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <GlobalLearningFactor>0.50</GlobalLearningFactor>
+                    <ResearchSpeed>0.4</ResearchSpeed>
+                    <WorkSpeedGlobal>0.3</WorkSpeedGlobal>
+                    <MeleeArmorPenetration>0.3</MeleeArmorPenetration>
+                    <MeleeHitChance>2</MeleeHitChance>
+                    <MeleeDodgeChance>3</MeleeDodgeChance>
+                    <AimingDelayFactor>-0.05</AimingDelayFactor>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_UltraBoost_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_Elite_ImplantBase">
+        <defName>DF_UltraBoost_Implant</defName>
+        <label>ultra boost implant</label>
+        <description>The Ultra Boost implant. Originally a drug synthesized by surviving Secronom scientists for the elite survivors of Fairview, and later converted into an implant. It was intended to be used by the best of the best.\n\nA worldhopper known only as AdminPwn commissioned its inception in order to reward the most powerful warriors within the inner city and allow them to protect the remaining humans that inhabit the world. Due the growing threat of wasteland mutations evolving rampant and eventually leaking into the streets where the average survivor scavenged and grew produce.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_UltraBoost_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/Ultra_Boost</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="VOID_InstallImplantEpic">
+        <defName>InstallDF_UltraBoost_Implant</defName>
+        <label>install ultra boost implant</label>
+        <uiIconThing>DF_UltraBoost_Implant</uiIconThing>
+        <description>Install a ultra boost implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_UltraBoost_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing ultra boost implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_UltraBoost_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_UltraBoost_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_UltraBoost_Implant</addsHediff>
+        <incompatibleWithHediffTags>
+            <li>DF_UltraBoostImplant</li>
+        </incompatibleWithHediffTags>
+    </RecipeDef>
+
+    <RecipeDef ParentName="VOID_RemoveImplantEpic">
+        <defName>RemoveDF_UltraBoost_Implant</defName>
+        <label>remove ultra boost implant</label>
+        <description>Remove ultra boost implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_UltraBoost_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing ultra boost implant.</jobString>
+        <removesHediff>DF_UltraBoost_Implant</removesHediff>
+    </RecipeDef>
+	
+    <!-- devil's implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_Devils_Implant</defName>
+        <label>devil's implant</label>
+        <labelNoun>a devil's implant</labelNoun>
+        <description>An installed devil's implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Devils_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_Devils_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ArmorRating_Sharp>2.5</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>2.5</ArmorRating_Blunt>
+                    <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+                    <ArmorRating_Heat>1.00</ArmorRating_Heat>
+                    <ComfyTemperatureMax>150</ComfyTemperatureMax>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_Devils_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_Elite_ImplantBase">
+        <defName>DF_Devils_Implant</defName>
+        <label>devil's implant</label>
+        <description>The Devil's implant. Crafted from the beating heart of a Nerotonin Type-4 "Devil Hound". It enhances the user's mobility and resistance to physical trauma. It also inherits a small percentile of the Type-4 variant's ability to endure extremely high temperatures that would kill the average human being.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_Devils_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/Devils_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="VOID_InstallImplantEpic">
+        <defName>InstallDF_Devils_Implant</defName>
+        <label>install devil's implant</label>
+        <uiIconThing>DF_Devils_Implant</uiIconThing>
+        <description>Install a devil's implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Devils_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing devil's implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_Devils_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_Devils_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_Devils_Implant</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="VOID_RemoveImplantEpic">
+        <defName>RemoveDF_Devils_Implant</defName>
+        <label>remove devil's implant</label>
+        <description>Remove devil's implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Devils_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing devil's implant.</jobString>
+        <removesHediff>DF_Devils_Implant</removesHediff>
+    </RecipeDef>
+	
+    <!-- volatile implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_Volatile_Implant</defName>
+        <label>volatile implant</label>
+        <labelNoun>a volatile implant</labelNoun>
+        <description>An installed volatile implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Volatile_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_Volatile_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <MeleeArmorPenetration>0.05</MeleeArmorPenetration>
+                    <MeleeHitChance>0.05</MeleeHitChance>
+                    <MeleeDodgeChance>0.05</MeleeDodgeChance>
+                    <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+                    <ArmorRating_Heat>1.00</ArmorRating_Heat>
+                    <ComfyTemperatureMax>150</ComfyTemperatureMax>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_DissolveGearOnDeath">
+                <fleck>AcidCloud</fleck>
+                <moteCount>6</moteCount>
+                <moteOffsetRange>0.25~0.75</moteOffsetRange>
+                <filth>Filth_Slime</filth>
+                <sound>DeathAcidifier</sound>
+                <injuryCreatedOnDeath>ChemicalBurn</injuryCreatedOnDeath>
+                <injuryCount>5~20</injuryCount>
+            </li>
+        </comps>
+        <tags>
+            <li>DF_Volatile_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_Elite_ImplantBase">
+        <defName>DF_Volatile_Implant</defName>
+        <label>volatile implant</label>
+        <description>The Volatile implant. Crafted from the Volatile hide and innards of a Nerotonin Type-4 "Volatile Leaper". It enhances the user's mobility and resistance to physical trauma. It also inherits a small percentile of the Type-4 variant's unnatural strength and ability to endure extremely high temperatures that would kill the average human being and secretes volatile chemicals from the body upon death, which would likely destroy the equipment on the user.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_Volatile_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/Volatile_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="VOID_InstallImplantEpic">
+        <defName>InstallDF_Volatile_Implant</defName>
+        <label>install volatile implant</label>
+        <uiIconThing>DF_Volatile_Implant</uiIconThing>
+        <description>Install a volatile implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Volatile_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing volatile implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_Volatile_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_Volatile_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_Volatile_Implant</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="VOID_RemoveImplantEpic">
+        <defName>RemoveDF_Volatile_Implant</defName>
+        <label>remove volatile implant</label>
+        <description>Remove volatile implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Volatile_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing volatile implant.</jobString>
+        <removesHediff>DF_Volatile_Implant</removesHediff>
+    </RecipeDef>
+	
+    <!-- X-Dusk Implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_XDusk_Implant</defName>
+        <label>x-dusk implant</label>
+        <labelNoun>a x-dusk implant</labelNoun>
+        <description>An installed x-dusk implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XDusk_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_XDusk_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.08</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>0.08</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.08</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <GlobalLearningFactor>0.08</GlobalLearningFactor>
+                    <ResearchSpeed>0.08</ResearchSpeed>
+                    <MeleeArmorPenetration>0.08</MeleeArmorPenetration>
+                    <MeleeHitChance>0.08</MeleeHitChance>
+                    <MeleeDodgeChance>0.08</MeleeDodgeChance>
+                    <ShootingAccuracyPawn>0.08</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_XDusk_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_Elite_ImplantBase">
+        <defName>DF_XDusk_Implant</defName>
+        <label>x-dusk implant</label>
+        <description>The X-Dusk implant. An implant that was created by a worldhopper that went by the name of AdminPwn. Along with the Dusk set, the X-Dusk was a Mk 2 upgrade of the gear that equipped elite survivors to better deal with the growing threat of more and more extreme mutations appearing in their world thanks to the Nerotonin Type 4 virus outbreak.\n\nCannot be used with the Dawn implant.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_XDusk_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/X-Dusk_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="VOID_InstallImplantEpic">
+        <defName>InstallDF_XDusk_Implant</defName>
+        <label>install x-dusk implant</label>
+        <uiIconThing>DF_XDusk_Implant</uiIconThing>
+        <description>Install a x-dusk implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XDusk_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing x-dusk implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_XDusk_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_XDusk_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_XDusk_Implant</addsHediff>
+        <incompatibleWithHediffTags>
+            <li>DF_UltraBoostImplant</li>
+        </incompatibleWithHediffTags>
+    </RecipeDef>
+
+    <RecipeDef ParentName="VOID_RemoveImplantEpic">
+        <defName>RemoveDF_XDusk_Implant</defName>
+        <label>remove x-dusk implant</label>
+        <description>Remove x-dusk implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_XDusk_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing x-dusk implant.</jobString>
+        <removesHediff>DF_XDusk_Implant</removesHediff>
+        <incompatibleWithHediffTags>
+            <li>DF_Dawn_Implant</li>
+        </incompatibleWithHediffTags>
+    </RecipeDef>
+	
+    <!-- DAWN Base -->
+    <ThingDef Name="RH_DawnElite_ImplantBase" ParentName="SK_BodyPartBase" Abstract="True">
+        <techLevel>Ultra</techLevel>
+        <thingCategories Inherit="False">
+            <li>RH2_Implants_Elite</li>
+        </thingCategories>
+        <statBases>
+            <MarketValue>35000</MarketValue>
+            <Mass>1.0</Mass>
+            <Bulk>3.0</Bulk>
+        </statBases>
+        <techHediffsTags Inherit="False"/>
+    </ThingDef>
+	
+    <!-- dawn implant -->
+
+    <HediffDef ParentName="HediffBodyPartBase_GlitterworldImplants">
+        <defName>DF_Dawn_Implant</defName>
+        <label>dawn implant</label>
+        <labelNoun>a dawn implant</labelNoun>
+        <description>An installed dawn implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Dawn_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <spawnThingOnRemoved>DF_Dawn_Implant</spawnThingOnRemoved>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.05</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Sight</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Hearing</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>BloodPumping</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Metabolism</capacity>
+                        <offset>0.10</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <GlobalLearningFactor>0.10</GlobalLearningFactor>
+                    <ResearchSpeed>0.10</ResearchSpeed>
+                    <WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+                    <MeleeArmorPenetration>0.10</MeleeArmorPenetration>
+                    <MeleeHitChance>0.10</MeleeHitChance>
+                    <MeleeDodgeChance>0.10</MeleeDodgeChance>
+                    <MeleeDPS>0.10</MeleeDPS>
+                    <ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+                </statOffsets>
+            </li>
+        </stages>
+        <tags>
+            <li>DF_Dawn_Implant</li>
+        </tags>
+    </HediffDef>
+
+    <ThingDef ParentName="RH_DawnElite_ImplantBase">
+        <defName>DF_Dawn_Implant</defName>
+        <label>dawn implant</label>
+        <description>The Dawn implant. An upgraded version of the X-Dusk implant, which leads to an incompatibility between the two implants. The Dawn implant is part of the Dawn series, a general upgrade of the X-Dusk set. Its architect was an engineer that was mentored by the renowned worldhopper and craftsman AdminPwn.\n\nCannot be used with the X-Dusk implant.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>InstallDF_Dawn_Implant</RecipeDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Special/Dawn_Implant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.0</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+    </ThingDef>
+
+    <RecipeDef ParentName="VOID_InstallImplantEpic">
+        <defName>InstallDF_Dawn_Implant</defName>
+        <label>install dawn implant</label>
+        <uiIconThing>DF_Dawn_Implant</uiIconThing>
+        <description>Install a dawn implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Dawn_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing dawn implant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DF_Dawn_Implant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DF_Dawn_Implant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DF_Dawn_Implant</addsHediff>
+        <incompatibleWithHediffTags>
+            <li>DF_UltraBoostImplant</li>
+        </incompatibleWithHediffTags>
+    </RecipeDef>
+
+    <RecipeDef ParentName="VOID_RemoveImplantEpic">
+        <defName>RemoveDF_Dawn_Implant</defName>
+        <label>remove dawn implant</label>
+        <description>Remove dawn implant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DF_Dawn_Implant</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Removing dawn implant.</jobString>
+        <removesHediff>DF_Dawn_Implant</removesHediff>
+        <incompatibleWithHediffTags>
+            <li>DF_XDusk_Implant</li>
+        </incompatibleWithHediffTags>
+    </RecipeDef>
+	
+</Defs>

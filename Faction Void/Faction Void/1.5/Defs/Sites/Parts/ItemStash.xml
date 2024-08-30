@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <SitePartDef>
+    <defName>NerotoninStash</defName>
+    <label>item stash</label>
+    <description>A stash of valuable items.</description>
+    <workerClass>VoidEvents.SitePartWorker_NerotoninStash</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/ItemStash</expandingIconTexture>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>NerotoninStash</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>NerotoninStash</defName>
+    <linkWithSite>NerotoninStash</linkWithSite>
+    <order>460</order>
+    <genStep Class="VoidEvents.GenStep_NerotoninStash">
+      <count>1</count>
+      <nearMapCenter>true</nearMapCenter>
+    </genStep>
+  </GenStepDef>
+
+</Defs>

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Chainsaw + Parent -->
+    <!-- USE TOOLS/CAPACITIES TO MAKE CUSTOM MELEE SOUNDS (Thank you to O-Negative) -->
+    <ThingDef ParentName="SK_BaseMeleeWeapon">
+        <defName>RNMelee_DFDuskBlade_Sword</defName>
+        <label>dusk razor</label>
+        <description>The Dusk Razor is a strange and powerful falchion-like blade.\n\nPart of the dusk set, the rare weapon systems are shrouded in mystery. Legend says that before its schematics were unlocked for reproduction, the only way to obtain it was through winning a survivor's bloodsport within an ancient world lost to a viral outbreak the self contained world of Fairview. A worldhopper known only by "AdminPwn" was the credited author of the Dusk Set, and he was the one who chose who to award the gear to within the inner city of Fairview.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Weapons/Melee/DuskRazor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--<equippedAngleOffset>-25</equippedAngleOffset>-->
+        <weaponTags>
+            <li>RN_DuskRazor</li>
+        </weaponTags>
+        <soundInteract>RHInteract_DuskBlade</soundInteract>
+        <statBases>
+            <MarketValue>3100</MarketValue>
+            <Mass>2</Mass>
+            <Bulk>9</Bulk>
+            <MeleeCounterParryBonus>1</MeleeCounterParryBonus>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeCritChance>0.68</MeleeCritChance>
+            <MeleeParryChance>0.8</MeleeParryChance>
+            <MeleeDodgeChance>0.45</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>pommel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.8</cooldownTime>
+                <chanceFactor>0.33</chanceFactor>
+                <armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>RHMelee_DFBladeStab</li>
+                </capacities>
+                <power>25</power>
+                <cooldownTime>2.1</cooldownTime>
+                <armorPenetrationBlunt>10</armorPenetrationBlunt>
+                <armorPenetrationSharp>20</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>serrated blade</label>
+                <capacities>
+                    <li>RHMelee_DFBladeSlash</li>
+                </capacities>
+                <power>42</power>
+                <cooldownTime>1.8</cooldownTime>
+                <armorPenetrationBlunt>10</armorPenetrationBlunt>
+                <armorPenetrationSharp>8</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <thingCategories Inherit="False">
+            <li>DF_MeleeMain</li>
+        </thingCategories>
+    </ThingDef>
+    
+    
+    <!-- Amputator -->
+    <ThingDef ParentName="SK_BaseMeleeWeapon">
+        <defName>RNMelee_DFAmputator_Blade</defName>
+        <label>amputator</label>
+        <description>A strange, scythe-like blade. Quite awkward and unwieldy, but lives up to its name. Earned its title through years of use from wherever world it came from, against creatures that can endure losing limbs.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Weapons/Melee/Amputator</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--<equippedAngleOffset>-25</equippedAngleOffset>-->
+        <weaponTags>
+            <li>RN_Amputator</li>
+        </weaponTags>
+        <soundInteract>RHInteract_DuskBlade</soundInteract>
+        <statBases>
+            <MarketValue>3000</MarketValue>
+            <Mass>2</Mass>
+            <Bulk>9</Bulk>
+            <MeleeCounterParryBonus>1</MeleeCounterParryBonus>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeCritChance>0.63</MeleeCritChance>
+            <MeleeParryChance>0.75</MeleeParryChance>
+            <MeleeDodgeChance>0.4</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>pommel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.8</cooldownTime>
+                <chanceFactor>0.33</chanceFactor>
+                <armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>RHMelee_AmputatorStab</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>1.8</cooldownTime>
+                <armorPenetrationBlunt>10</armorPenetrationBlunt>
+                <armorPenetrationSharp>18</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>blade</label>
+                <capacities>
+                    <li>RHMelee_AmputatorSlash</li>
+                </capacities>
+                <power>52</power>
+                <cooldownTime>2.1</cooldownTime>
+                <armorPenetrationBlunt>9</armorPenetrationBlunt>
+                <armorPenetrationSharp>7</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <thingCategories Inherit="False">
+            <li>DF_MeleeMain</li>
+        </thingCategories>
+    </ThingDef>
+    <!-- Dual Blade -->
+    <ThingDef ParentName="SK_BaseMeleeWeapon">
+        <defName>RNMelee_DFDual_Blade</defName>
+        <label>dual blade</label>
+        <description>The legendary Dual Blade. Originally produced from the blades of a wakizashi and a katana, the mysterious survivor's name responsible for it's invention has been lost to history. Copies of this item were given to Fairview blacksmiths and mass production began. Elite survivors chose this expensive weapon to take to bloodsport events since it outperformed even the Dusk Razor.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Item/Equipment/Weapons/Melee/DualBlade</texPath>
+            <drawSize>1.10</drawSize>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--<equippedAngleOffset>-25</equippedAngleOffset>-->
+        <weaponTags>
+            <li>RN_DualBlade</li>
+        </weaponTags>
+        <soundInteract>RHInteract_DuskBlade</soundInteract>
+        <statBases>
+            <MarketValue>9000</MarketValue>
+            <Mass>3</Mass>
+            <Bulk>9</Bulk>
+            <MeleeCounterParryBonus>1</MeleeCounterParryBonus>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeCritChance>1.0</MeleeCritChance>
+            <MeleeParryChance>0.5</MeleeParryChance>
+            <MeleeDodgeChance>0.45</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>pommel</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.8</cooldownTime>
+                <chanceFactor>0.33</chanceFactor>
+                <armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>RHMelee_DFBladeStab</li>
+                </capacities>
+                <power>32</power>
+                <cooldownTime>2.1</cooldownTime>
+                <armorPenetrationBlunt>15</armorPenetrationBlunt>
+                <armorPenetrationSharp>25</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>blade</label>
+                <capacities>
+                    <li>RHMelee_DFBladeSlash</li>
+                </capacities>
+                <power>65</power>
+                <cooldownTime>2.7</cooldownTime>
+                <armorPenetrationBlunt>15</armorPenetrationBlunt>
+                <armorPenetrationSharp>12</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+        <thingCategories Inherit="False">
+            <li>DF_MeleeMain</li>
+        </thingCategories>
+    </ThingDef>
+</Defs>

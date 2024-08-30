@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+    <RecipeDef Name="VOID_InstallImplantLE" ParentName="SK_SurgeryInstallImplantBase" Abstract="True">
+        <skillRequirements>
+			<Medicine>8</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_C3</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef Name="VOID_InstallImplantElite" ParentName="SK_SurgeryInstallImplantBase" Abstract="True">
+        <skillRequirements>
+			<Medicine>13</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef Name="VOID_InstallImplantEpic" ParentName="SK_SurgeryInstallImplantBase" Abstract="True">
+        <skillRequirements>
+			<Medicine>14</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_D4</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef Name="VOID_InstallVOIDBionic" ParentName="SK_SurgeryInstallBodyPartArtificialBase" Abstract="True">
+        <skillRequirements>
+			<Medicine>14</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_D4</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef Name="VOID_InstallImplantBest" ParentName="SK_SurgeryInstallImplantBase" Abstract="True">
+        <skillRequirements>
+			<Medicine>17</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_E2</researchPrerequisite>
+    </RecipeDef>
+    
+    
+    
+    
+    <RecipeDef Name="VOID_RemoveImplantLE" ParentName="SK_SurgeryRemoveImplantBase" Abstract="True">
+        <skillRequirements>
+			<Medicine>6</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_C3</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef Name="VOID_RemoveImplantElite" ParentName="SK_SurgeryRemoveImplantBase" Abstract="True">
+        <skillRequirements>
+			<Medicine>11</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_D3</researchPrerequisite>
+    </RecipeDef>
+    
+    <RecipeDef Name="VOID_RemoveImplantEpic" ParentName="SK_SurgeryRemoveImplantBase" Abstract="True">
+        <skillRequirements>
+			<Medicine>11</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_D4</researchPrerequisite>
+    </RecipeDef>
+
+    <RecipeDef Name="VOID_RemoveImplantBest" ParentName="SK_SurgeryRemoveImplantBase" Abstract="True">
+        <skillRequirements>
+			<Medicine>15</Medicine>
+		</skillRequirements>
+		<researchPrerequisite>Prosthesis_install_E2</researchPrerequisite>
+    </RecipeDef>
+	
+</Defs>

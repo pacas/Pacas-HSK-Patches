@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RuleDef>
+    <defName>VoidSettlement</defName>
+    <symbol>voidSettlement</symbol>
+    <resolvers>
+      <li Class="VoidEvents.SymbolResolver_VoidSettlement">
+        <minRectSize>(12, 12)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+
+  <RuleDef>
+    <defName>VoidOutdoorLighting</defName>
+    <symbol>voidOutdoorLighting</symbol>
+    <resolvers>
+      <li Class="VoidEvents.SymbolResolver_OutdoorLighting" />
+    </resolvers>
+  </RuleDef>
+  
+    <RuleDef>
+    <defName>VoidEdgeDefense</defName>
+    <symbol>voidEdgeDefense</symbol>
+    <resolvers>
+      <li Class="VoidEvents.SymbolResolver_EdgeDefense">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  
+</Defs>

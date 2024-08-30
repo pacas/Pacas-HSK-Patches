@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HediffDef>
+		<defName>FCD_ApplyDecayOnDeath</defName>
+		<label>!HIDDEN! fast corpse decay</label>
+		<description>.</description>		
+		<hediffClass>HediffWithComps</hediffClass>
+		<isBad>false</isBad>
+		<everCurableByItem>false</everCurableByItem>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+			<li Class="ChickenCorpses.HediffCompProperties_AddThingCompOnDeath">
+				<comp Class="ChickenCorpses.CompProperties_DecayAfterDelay">
+					<delayTicks>1500~2000</delayTicks>
+					<moteDef>Mote_FCD_CorpseDecay</moteDef> <!-- defName of mote to create when the corpse decays -->
+					<moteCount>15</moteCount> 				<!-- number of particles to create when the corpse decays. Set to 0 or less to disable mote creation. -->
+					<scale>0.5</scale> 						<!-- scale of each created mote -->
+					<rotationRate>-15~15</rotationRate> 	<!-- min~max rotation speed, set for each mote -->
+					<velocityRange>0.2~0.3</velocityRange> <!-- min~max mote speed, in a random direction -->
+				</comp>
+			</li>
+		</comps>
+	</HediffDef>
+	<ThingDef ParentName="MoteBase">
+		<defName>Mote_FCD_CorpseDecay</defName>
+		<graphicData>
+		  <texPath>Mote/RedThingy</texPath>
+		</graphicData>
+		<mote>
+		  <fadeInTime>0.08</fadeInTime>
+		  <solidTime>0.56</solidTime>
+		  <fadeOutTime>0.08</fadeOutTime>
+		  <collide>false</collide>
+		</mote>
+	</ThingDef>
+</Defs>
