@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Alpha Memes</li>
+        </mods>
+        <match Class="PatchOperationFindMod">
+            <mods>
+                <li>Ideology</li>
+            </mods>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/ThoughtDef[defName="AB_RedFogThought"]</xpath>
+                <value>
+                    <nullifyingPrecepts>
+                        <li MayRequire="Ludeon.RimWorld.Ideology">AM_OcularTrees_Desired</li>
+                    </nullifyingPrecepts>
+                </value>
+            </match>
+        </match>
+    </Operation>
+</Patch>

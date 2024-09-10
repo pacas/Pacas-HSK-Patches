@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="WorkTable" Name="AB_SmelterBase" Abstract="true">
+        <description>Extracts usable metal from exotic rock chunks and other strange material.</description>
+        <thingClass>Building_WorkTable_HeatPush</thingClass>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.5,1.5)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <statBases>
+			<WorkToBuild>3500</WorkToBuild>
+			<MaxHitPoints>230</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<Cleanliness>-8</Cleanliness>
+		</statBases>
+        <tickerType>Normal</tickerType>
+        <size>(3,1)</size>
+        <placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+			<li>PlaceWorker_ReportWorkSpeedPenalties</li>
+		</placeWorkers>
+		<building>
+			<heatPerTickWhileWorking>2</heatPerTickWhileWorking>
+		</building>
+        <designationCategory>Production</designationCategory>
+        <constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>950</basePowerConsumption>
+				<shortCircuitInRain>true</shortCircuitInRain>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(217,112,33,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>9.5</heatPerSecond>
+				<heatPushMaxTemperature>75</heatPushMaxTemperature>
+			</li>
+			<li Class="SK.CompProperties_LowIdleDraw">
+				<compClass>SK.CompPowerLowIdleDraw</compClass>
+				<idlePowerFactor>0.1</idlePowerFactor>
+			</li>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+					<li>PodChair</li>
+				</linkableFacilities>
+			</li>
+			<li>
+				<compClass>CompReportWorkSpeed</compClass>
+			</li>
+		</comps>
+        <researchPrerequisites>
+            <li>Metals_C1</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+
+    <ThingDef ParentName="AB_SmelterBase">
+        <defName>AB_ExoticSmelterOcular</defName>
+        <label>exotic smelter</label>
+        <graphicData>
+            <texPath>Things/Building/AB_ExoticSmelter</texPath>
+        </graphicData>
+        <stuffCategories>
+			<li>RuggedMetallic</li>
+		</stuffCategories>
+		<costStuffCount>155</costStuffCount>
+		<costList>
+			<ComponentIndustrial>12</ComponentIndustrial>
+			<ElectronicComponents>6</ElectronicComponents>
+			<Mechanism>8</Mechanism>
+		</costList>
+    </ThingDef>
+</Defs>

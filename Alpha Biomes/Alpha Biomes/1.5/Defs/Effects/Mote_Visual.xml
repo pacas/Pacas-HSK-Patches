@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="MoteBase">
+        <defName>AB_TarMote</defName>
+        <graphicData>
+            <texPath>Things/Mote/AB_TarMote</texPath>
+        </graphicData>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <mote>
+            <fadeInTime>0.04</fadeInTime>
+            <solidTime>0.03</solidTime>
+            <fadeOutTime>3</fadeOutTime>
+        </mote>
+    </ThingDef>
+</Defs>

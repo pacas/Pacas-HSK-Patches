@@ -1,10 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Alpha Biomes</name>
 	<author>Sarg</author>
 	<supportedVersions>
 		<li>1.3</li>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/AlphaBiomesLogo</modIconPath>
 	<modDependencies>
 		<li>
 			<packageId>brrainz.harmony</packageId>
@@ -27,65 +30,6 @@
 		<li>BiomesTeam.BiomesIslands</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	</loadAfter>
-
 	<packageId>sarg.alphabiomes</packageId>
-	<description>Adds multiple unique new biomes to Rimworld.
-
-&lt;size=24&gt;Features&lt;/size&gt;
-
-Adds 12 new diverse biomes to your Rimworlds. The mod has been designed with the Alpha Animals mod in mind, although it is not a requirement.
-
-- The Mycotic Jungle: a warm and humid biome filled with HUGE mushrooms. Home to the Wildpod and some weird mushroom varieties of usual creatures.
-- The Gallatross Graveyard: an arid temperate biome, littered with the skeletal remains of ancient beasts.
-- The Feralisk Infested Jungle: a warm, wet biome with incredibly dense vegetation, filled to the brink with extremely dangerous predatory spiders.
-- The Ocular Forest: a weird transdimensional realm intruding upon our Universe. Home to strange new flora and fauna.
-- The Gelatinous Superorganism: a swampy biome that is actually the upper surface of an extraordinarily large mold-like creature. No rocks to be found, but plenty of food.
-- The Mechanoid Intrusion: a desolate temperate biome with mechanical ruins. Apparently an ancient mechanoid attempt at turning the planet into a megastructure.
-- The Propane Lakes: a frozen wasteland, colder than the most inhospitable Sea Ice, but teaming with aberrant flora and fauna.
-- The Forsaken Crags: permanently clouded by a preternatural darkness, light is the most valuable commodity in this desertic landscape. Inspired by (and compatible with) the Forsakens mod.
-- The Tar Pits: an arid biome rich in vegetation, filled with treacherous tar pits that make movement quite difficult. Beware the Bumbledrone hives! 
-- The Pyroclastic Conflagration: a volcanic expanse of unrelenting and brutal nature. Fire and lava are both your worst enemy and your best friend in this biome.
-- The Idyllic Meadows: a lush meadow of giant flowers. A super easy biome that provides tons of resources and few predators.
-- The Miasmic Mangrove: a dangerous tropical biome full of debilitating diseases.
-
-
-The biomes have been tweaked so they don't take too much space in the world map, and you might have to generate a planet again if some biome is not appearing, since they have different temperature and humidity characteristics.
-
-&lt;size=24&gt;Issues&lt;/size&gt;
-
-Balance is obviously always a concern, although it has been playtested. Feel free to tell me if you think something is too wacky.
-
-&lt;size=24&gt;Plans for the future&lt;/size&gt;
-
-Maybe more biomes, who knows!
-
-&lt;size=24&gt;Compatibility&lt;/size&gt;
-
-Compatible with any other biome mod 
-Compatible with Alpha Animals (obviously)
-Compatible with Magical Menagerie
-Compatible with Dinosauria
-Compatible with Megafauna
-Compatible with Animal Collab Project
-Compatible with Vanilla Animals Expanded
-Compatible with Rim of Madness - Bones
-Compatible with Vanilla Fishing Expanded (adds 19 new fish)
-Compatible with Fish Industry
-Compatible with Forsakens
-Compatible with Camouflage and Stealth
-Compatible with Fertile Fields
-
-Mods that modify the way the world is generated MAY cause some weird results. Use at your own risk.
-
-&lt;size=24&gt;Credit&lt;/size&gt;
-Bone planet: Hyptosis https://opengameart.org/content/bone-planet 
-Some sounds by Mike Koenig at http://soundbible.com
-Alien planet sound modified from Speedenza: https://freesound.org/people/Speedenza/sounds/198532/
-
-&lt;size=24&gt;Changelog&lt;/size&gt;
-
-Current version tag: v3.07
-
-
-	</description>
+	<description>Adds multiple unique new biomes to Rimworld. Last full mod check: 10.09.2024</description>
 </ModMetaData>

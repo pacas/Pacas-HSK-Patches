@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="GU_BuildingNaturalBase" Abstract="True">
+        <category>Building</category>
+        <selectable>true</selectable>
+        <drawerType>MapMeshOnly</drawerType>
+        <filthLeaving>Filth_RubbleRock</filthLeaving>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+    </ThingDef>
+
+    <ThingDef Name="GU_RockBase" ParentName="GU_BuildingNaturalBase" Abstract="True">
+        <thingClass>Mineable</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Linked/Rock_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Rock</li>
+                <li>MapEdge</li>
+            </linkFlags>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <neverMultiSelect>true</neverMultiSelect>
+        <rotatable>false</rotatable>
+        <saveCompressible>false</saveCompressible>
+        <holdsRoof>true</holdsRoof>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <mineable>true</mineable>
+        <statBases>
+            <Flammability>0</Flammability>
+            <Beauty>-2</Beauty>
+        </statBases>
+        <building>
+            <isInert>true</isInert>
+            <isNaturalRock>true</isNaturalRock>
+            <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+            <deconstructible>false</deconstructible>
+            <destroyShakeAmount>0</destroyShakeAmount>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="SK_StoneBlocksBase" Name="GU_StoneBlocksBase" Abstract="True">
+        <stuffProps>
+            <categories>
+                <li>AB_Exotic</li>
+                <li>Stony</li>
+            </categories>
+        </stuffProps>
+    </ThingDef>
+    <!-- ================ Rose Quartz ================ -->
+    <ThingDef ParentName="GU_RockBase" Name="GU_QuartzBase">
+        <defName>GU_RoseQuartz</defName>
+        <label>rose quartz</label>
+        <generateCommonality>0</generateCommonality>
+        <description>A hard, pinkish looking mineral deposit.</description>
+        <graphicData>
+            <color>(120,50,50)</color>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+        </statBases>
+        <building>
+            <mineableThing>GU_ChunkRoseQuartz</mineableThing>
+            <mineableDropChance>0.25</mineableDropChance>
+            <mineableYieldWasteable>false</mineableYieldWasteable>
+            <smoothedThing>GU_SmoothedQuartz</smoothedThing>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="GU_QuartzBase">
+        <defName>GU_SmoothedQuartz</defName>
+        <label>smoothed quartz</label>
+        <description>A hard, pinkish looking mineral deposit. The layers have been polished to a flat, smooth surface.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+        </graphicData>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MarketValue>18</MarketValue>
+        </statBases>
+        <building>
+            <isNaturalRock>false</isNaturalRock>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+            <smoothedThing/>
+        </building>
+        <saveCompressible>false</saveCompressible>
+        <repairEffect>Repair</repairEffect>
+    </ThingDef>
+    <ThingDef ParentName="SK_ChunkRockBase">
+        <defName>GU_ChunkRoseQuartz</defName>
+        <label>rose quartz chunk</label>
+        <graphicData>
+            <texPath>Things/Item/Chunk/Stone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+            <color>(120,50,50)</color>
+        </graphicData>
+        <statBases>
+            <Mass>20</Mass>
+        </statBases>
+        <soundDrop>ChunkRock_Drop</soundDrop>
+        <butcherProducts>
+            <GU_BlocksRoseQuartz>20</GU_BlocksRoseQuartz>
+        </butcherProducts>
+    </ThingDef>
+    <ThingDef ParentName="GU_StoneBlocksBase">
+        <defName>GU_BlocksRoseQuartz</defName>
+        <label>rose quartz blocks</label>
+        <description>Blocks of solid rose quartz.</description>
+        <graphicData>
+            <color>(120,50,50)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.2</MarketValue>
+            <Mass>1</Mass>
+            <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+        </statBases>
+        <tradeability>Sellable</tradeability>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>
+        <stuffProps>
+            <commonality>0</commonality>
+            <color>(120,50,50)</color>
+            <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <stuffAdjective>rose quartz</stuffAdjective>
+            <statFactors>
+                <Beauty>1.35</Beauty>
+                <MarketValue>0.4</MarketValue>
+                <MaxHitPoints>1.4</MaxHitPoints>
+                <WorkToBuild>5.0</WorkToBuild>
+                <WorkToMake>1.1</WorkToMake>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+    <RecipeDef ParentName="SK_MakeStoneBlocksBase">
+        <defName>GU_MakeStoneBlocksRoseQuartz</defName>
+        <label>make rose quartz blocks</label>
+        <description>Cuts rose quartz chunks into usable blocks.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>GU_ChunkRoseQuartz</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>GU_ChunkRoseQuartz</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <GU_BlocksRoseQuartz>20</GU_BlocksRoseQuartz>
+        </products>
+    </RecipeDef>
+    <!-- ================ Cragstone ================ -->
+    <ThingDef ParentName="GU_RockBase" Name="AB_Cragstone">
+        <defName>AB_Cragstone</defName>
+        <label>cragstone</label>
+        <generateCommonality>0</generateCommonality>
+        <description>A dark-hued, homogeneous metamorphic rock. These rocks seem to be attracting the darkness surrounding them.</description>
+        <graphicData>
+            <texPath>Things/Building/AB_Cragstone</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <linkType>None</linkType>
+            <color>(36,35,40)</color>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>550</MaxHitPoints>
+        </statBases>
+        <building>
+            <mineableThing>AB_ChunkCragstone</mineableThing>
+            <mineableDropChance>0.25</mineableDropChance>
+            <mineableYieldWasteable>false</mineableYieldWasteable>
+            <smoothedThing>AB_SmoothedCragstone</smoothedThing>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="AB_Cragstone">
+        <defName>AB_SmoothedCragstone</defName>
+        <label>smoothed cragstone</label>
+        <description>A dark-hued, homogeneous metamorphic rock. These rocks seem to be attracting the darkness surrounding them.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Rock</li>
+                <li>MapEdge</li>
+            </linkFlags>
+        </graphicData>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MarketValue>18</MarketValue>
+        </statBases>
+        <building>
+            <isNaturalRock>false</isNaturalRock>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+            <smoothedThing/>
+        </building>
+        <saveCompressible>false</saveCompressible>
+        <repairEffect>Repair</repairEffect>
+    </ThingDef>
+    <ThingDef ParentName="SK_ChunkRockBase">
+        <defName>AB_ChunkCragstone</defName>
+        <label>cragstone chunk</label>
+        <graphicData>
+            <texPath>Things/Item/Chunk/Stone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+            <color>(36,35,40)</color>
+        </graphicData>
+        <statBases>
+            <Mass>20</Mass>
+        </statBases>
+        <soundDrop>ChunkRock_Drop</soundDrop>
+        <butcherProducts>
+            <AB_BlocksCragstone>20</AB_BlocksCragstone>
+        </butcherProducts>
+    </ThingDef>
+    <ThingDef ParentName="GU_StoneBlocksBase">
+        <defName>AB_BlocksCragstone</defName>
+        <label>cragstone blocks</label>
+        <description>Blocks of solid cragstone.</description>
+        <graphicData>
+            <color>(36,35,40)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.9</MarketValue>
+            <Mass>1</Mass>
+            <SharpDamageMultiplier>0.75</SharpDamageMultiplier>
+        </statBases>
+        <tradeability>Sellable</tradeability>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>
+        <stuffProps>
+            <commonality>0</commonality>
+            <color>(36,35,40)</color>
+            <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <stuffAdjective>cragstone</stuffAdjective>
+            <statFactors>
+                <Beauty>1.1</Beauty>
+                <MarketValue>0.4</MarketValue>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <WorkToBuild>5.0</WorkToBuild>
+                <WorkToMake>1.1</WorkToMake>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+    <RecipeDef ParentName="SK_MakeStoneBlocksBase">
+        <defName>AB_MakeStoneBlocksCragstone</defName>
+        <label>make cragstone blocks</label>
+        <description>Cuts cragstone chunks into usable blocks.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AB_ChunkCragstone</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>AB_ChunkCragstone</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <AB_BlocksCragstone>20</AB_BlocksCragstone>
+        </products>
+    </RecipeDef>
+    <!-- ================ Obsidian ================ -->
+    <ThingDef ParentName="GU_RockBase" Name="AB_Obsidianstone">
+        <defName>AB_Obsidianstone</defName>
+        <label>obsidian</label>
+        <generateCommonality>0</generateCommonality>
+        <description>Obsidian is a naturally occurring volcanic glass formed as an extrusive igneous rock, produced when lava from a volcano cools rapidly with minimal crystal growth. Obsidian is hard, brittle, and amorphous; it therefore fractures with very sharp edges.</description>
+        <graphicData>
+            <texPath>Things/Building/AB_Cragstone</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <linkType>None</linkType>
+            <color>(50,50,50)</color>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>1000</MaxHitPoints>
+        </statBases>
+        <building>
+            <mineableThing>AB_ChunkObsidian</mineableThing>
+            <mineableDropChance>0.25</mineableDropChance>
+            <mineableYieldWasteable>false</mineableYieldWasteable>
+            <smoothedThing>AB_SmoothedObsidian</smoothedThing>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="AB_Obsidianstone">
+        <defName>AB_SmoothedObsidian</defName>
+        <label>smoothed obsidian</label>
+        <description>Obsidian is a naturally occurring volcanic glass formed as an extrusive igneous rock, produced when lava from a volcano cools rapidly with minimal crystal growth. Obsidian is hard, brittle, and amorphous; it therefore fractures with very sharp edges.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Rock</li>
+                <li>MapEdge</li>
+            </linkFlags>
+        </graphicData>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MarketValue>18</MarketValue>
+        </statBases>
+        <building>
+            <isNaturalRock>false</isNaturalRock>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+            <smoothedThing/>
+        </building>
+        <saveCompressible>false</saveCompressible>
+        <repairEffect>Repair</repairEffect>
+    </ThingDef>
+    <ThingDef ParentName="SK_ChunkRockBase">
+        <defName>AB_ChunkObsidian</defName>
+        <label>obsidian chunk</label>
+        <graphicData>
+            <texPath>Things/Item/Chunk/Stone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+            <color>(50,50,50)</color>
+        </graphicData>
+        <statBases>
+            <Mass>20</Mass>
+        </statBases>
+        <soundDrop>ChunkRock_Drop</soundDrop>
+        <butcherProducts>
+            <AB_BlocksObsidian>20</AB_BlocksObsidian>
+        </butcherProducts>
+    </ThingDef>
+    <ThingDef ParentName="GU_StoneBlocksBase">
+        <defName>AB_BlocksObsidian</defName>
+        <label>obsidian blocks</label>
+        <description>Blocks of solid obsidian.</description>
+        <graphicData>
+            <color>(50,50,50)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.9</MarketValue>
+            <Mass>1</Mass>
+            <SharpDamageMultiplier>1.0</SharpDamageMultiplier>
+        </statBases>
+        <tradeability>Sellable</tradeability>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>
+        <stuffProps>
+            <commonality>0</commonality>
+            <color>(50,50,50)</color>
+            <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <stuffAdjective>obsidian</stuffAdjective>
+            <statFactors>
+                <Beauty>1.1</Beauty>
+                <MarketValue>0.4</MarketValue>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <WorkToBuild>5.0</WorkToBuild>
+                <WorkToMake>1.5</WorkToMake>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+    <RecipeDef ParentName="SK_MakeStoneBlocksBase">
+        <defName>AB_MakeStoneBlocksObsidian</defName>
+        <label>make obsidian blocks</label>
+        <description>Cuts obsidian chunks into usable blocks.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AB_ChunkObsidian</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>AB_ChunkObsidian</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <AB_BlocksObsidian>20</AB_BlocksObsidian>
+        </products>
+    </RecipeDef>
+    <!-- ================ Mudstone ================ -->
+    <ThingDef ParentName="GU_RockBase" Name="AB_MudstoneBase">
+        <defName>AB_Mudstone</defName>
+        <label>mudstone</label>
+        <generateCommonality>0</generateCommonality>
+        <description>Mudstone, a type of mudrock, is a fine-grained sedimentary rock whose original constituents were clays or muds. Mudstone looks like hardened clay and, depending upon the circumstances under which it was formed, it may show cracks or fissures, like a sun-baked clay deposit.</description>
+        <graphicData>
+            <color>(31,25,21)</color>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>475</MaxHitPoints>
+        </statBases>
+        <building>
+            <mineableThing>AB_ChunkMudstone</mineableThing>
+            <mineableDropChance>0.25</mineableDropChance>
+            <mineableYieldWasteable>false</mineableYieldWasteable>
+            <smoothedThing>AB_SmoothedMudstone</smoothedThing>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="AB_MudstoneBase">
+        <defName>AB_SmoothedMudstone</defName>
+        <label>smoothed mudstone</label>
+        <description>Mudstone, a type of mudrock, is a fine-grained sedimentary rock whose original constituents were clays or muds. Mudstone looks like hardened clay and, depending upon the circumstances under which it was formed, it may show cracks or fissures, like a sun-baked clay deposit.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+        </graphicData>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MarketValue>18</MarketValue>
+        </statBases>
+        <building>
+            <isNaturalRock>false</isNaturalRock>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+            <smoothedThing/>
+        </building>
+        <saveCompressible>false</saveCompressible>
+        <repairEffect>Repair</repairEffect>
+    </ThingDef>
+    <ThingDef ParentName="SK_ChunkRockBase">
+        <defName>AB_ChunkMudstone</defName>
+        <label>mudstone chunk</label>
+        <graphicData>
+            <texPath>Things/Item/Chunk/Stone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+            <color>(31,25,21)</color>
+        </graphicData>
+        <statBases>
+            <Mass>20</Mass>
+        </statBases>
+        <soundDrop>ChunkRock_Drop</soundDrop>
+        <butcherProducts>
+            <AB_BlocksMudstone>20</AB_BlocksMudstone>
+        </butcherProducts>
+    </ThingDef>
+    <ThingDef ParentName="GU_StoneBlocksBase">
+        <defName>AB_BlocksMudstone</defName>
+        <label>mudstone blocks</label>
+        <description>Blocks of solid mudstone.</description>
+        <graphicData>
+            <color>(31,25,21)</color>
+        </graphicData>
+        <generateCommonality>0</generateCommonality>
+        <generateAllowChance>0</generateAllowChance>
+        <statBases>
+            <MarketValue>0.75</MarketValue>
+            <Mass>1</Mass>
+            <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+        </statBases>
+        <tradeability>Sellable</tradeability>
+        <stuffProps>
+            <commonality>0</commonality>
+            <color>(31,25,21)</color>
+            <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <stuffAdjective>mudstone</stuffAdjective>
+            <statFactors>
+                <Beauty>1.1</Beauty>
+                <MaxHitPoints>1.25</MaxHitPoints>
+            </statFactors>
+        </stuffProps>
+    </ThingDef>
+    <RecipeDef ParentName="SK_MakeStoneBlocksBase">
+        <defName>GU_MakeStoneBlocksMudstone</defName>
+        <label>make mudstone blocks</label>
+        <description>Cuts mudstone chunks into usable blocks.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AB_ChunkMudstone</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>AB_ChunkMudstone</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <AB_BlocksMudstone>20</AB_BlocksMudstone>
+        </products>
+    </RecipeDef>
+    <!-- ================ Slime ================ -->
+    <ThingDef ParentName="GU_RockBase" Name="AB_SlimeBase">
+        <defName>AB_SlimeStone</defName>
+        <label>hardened slime</label>
+        <generateCommonality>0</generateCommonality>
+        <description>This is a hardened slime deposit. Not very useful... This "rock" produces chunks, but they can't be turned into blocks like other types of rock.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/AB_SlimeAtlas</texPath>
+            <color>(45,66,36)</color>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>700</MaxHitPoints>
+        </statBases>
+        <building>
+            <mineableThing>AB_ChunkSlimeStone</mineableThing>
+            <mineableDropChance>0.1</mineableDropChance>
+            <mineableYieldWasteable>false</mineableYieldWasteable>
+            <smoothedThing>AB_SmoothedSlimeStone</smoothedThing>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="AB_SlimeBase">
+        <defName>AB_SmoothedSlimeStone</defName>
+        <label>smoothed slime</label>
+        <description>This is a hardened slime deposit. Not very useful... This "rock" produces chunks, but they can't be turned into blocks like other types of rock.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+        </graphicData>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MarketValue>18</MarketValue>
+        </statBases>
+        <building>
+            <isNaturalRock>false</isNaturalRock>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+            <smoothedThing/>
+        </building>
+        <saveCompressible>false</saveCompressible>
+        <repairEffect>Repair</repairEffect>
+    </ThingDef>
+    <ThingDef ParentName="SK_ChunkRockBase">
+        <defName>AB_ChunkSlimeStone</defName>
+        <label>hardened slime chunk</label>
+        <description>This is a hardened slime chunk. Not very useful... Maybe it can be deconstructed into little pieces of hardened slime, and then... eaten. Yuck.</description>
+        <graphicData>
+            <texPath>Things/Item/Chunk/Stone</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+            <color>(51,55,20)</color>
+        </graphicData>
+        <statBases>
+            <Mass>20</Mass>
+        </statBases>
+        <soundDrop>ChunkRock_Drop</soundDrop>
+        <butcherProducts>
+            <AB_SlimeMeal>1</AB_SlimeMeal>
+        </butcherProducts>
+    </ThingDef>
+    <RecipeDef ParentName="SK_MakeStoneBlocksBase">
+        <defName>AB_MakeStoneBlocksSlimeStone</defName>
+        <label>turn hardened slime chunks into "food"</label>
+        <description>Cuts slime stone chunks into semi-edible food.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>AB_ChunkSlimeStone</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>AB_ChunkSlimeStone</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <AB_SlimeMeal>1</AB_SlimeMeal>
+        </products>
+    </RecipeDef>
+    <!-- ================ Ancient Metals ================ -->
+    <ThingDef ParentName="GU_RockBase" Name="GU_AncientMetals">
+        <defName>GU_AncientMetals</defName>
+        <label>ancient metal</label>
+        <generateCommonality>0</generateCommonality>
+        <description>These ancient metal walls have been here for a while. They can be mined to acquire steel chunks.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/AB_SlimeAtlas</texPath>
+            <color>(80,80,80)</color>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>950</MaxHitPoints>
+        </statBases>
+        <building>
+            <mineableThing>ChunkSlagSteel</mineableThing>
+            <mineableDropChance>0.75</mineableDropChance>
+            <mineableYieldWasteable>false</mineableYieldWasteable>
+            <smoothedThing>AB_SmoothedAncientMetals</smoothedThing>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="GU_AncientMetals">
+        <defName>AB_SmoothedAncientMetals</defName>
+        <label>smoothed ancient metal</label>
+        <description>These ancient metal walls have been here for a while. They can be mined to acquire steel chunks.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+        </graphicData>
+        <statBases>
+            <Beauty>1</Beauty>
+            <MarketValue>18</MarketValue>
+        </statBases>
+        <building>
+            <isNaturalRock>false</isNaturalRock>
+            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+            <smoothedThing/>
+        </building>
+        <saveCompressible>false</saveCompressible>
+        <repairEffect>Repair</repairEffect>
+    </ThingDef>
+</Defs>

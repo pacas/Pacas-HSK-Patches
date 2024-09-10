@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PollutionTreeBase">
+		<defName>AB_ToxicGamma</defName>
+		<label>toxic gamma</label>
+		<description>A huge bioluminescent globular plant. Can be used as a natural sunlamp to grow regular plants, though the toxic environment it grows at might not be the best for cultivation. Note that light-sensitive plants such as domesticated Stikehr and mushrooms should be kept far away from them.\n\nPlant details: Toxic Gamma is a wild plant. It needs no light, and produces 100% light on its own, which is enough to grow other plants around it.</description>
+		<pathCost>10</pathCost>
+		<graphicData>
+			<texPath>Things/Plants/AB_ToxicGamma</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+
+
+			<shadowData>
+				<volume>(0.55, 0.17, 0.15)</volume>
+				<offset>(0,0,-0.2)</offset>
+			</shadowData>
+		</graphicData>
+		<plant>
+			<growMinGlow>0</growMinGlow>
+			
+			<visualSizeRange>2.5~3</visualSizeRange>
+			
+		</plant>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<comps>
+			<li Class="CompProperties_Glower">
+				<overlightRadius>7</overlightRadius>
+				<glowRadius>10</glowRadius>
+				<glowColor>(192,228,191,0)</glowColor>
+			</li>
+		</comps>
+		<placeWorkers><li>AlphaBiomes.PlaceWorker_ShowGammaRadius</li></placeWorkers>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="PollutionTreeBase">
+		<defName>AB_PollutedStikehr</defName>
+		<label>polluted stikehr</label>
+		<description>A giant alien mushroom that glows in the strange darkening mist. This stikehr has adapted to a very polluted environment, and produces a meager amount of wood. \n\nPlant details: Polluted Stikehr is a wild plant that can only grow in polluted terrains. It needs no light, and produces 50% light on its own, not enough to grow other plants around it. Can be harvested for normal wood.</description>
+		<descriptionHyperlinks>
+			<ThingDef>WoodLog</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Beauty>-2</Beauty>
+			<Nutrition>0.4</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_PollutedStikehr</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.3, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<pathCost>25</pathCost>
+		<ingestible />
+		<plant>
+			
+			<wildOrder>1</wildOrder>
+			<wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+			<growMinGlow>0</growMinGlow>
+	
+			<growDays>15</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestYield>12</harvestYield>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>WoodLog</harvestedThingDef>
+			<neverBlightable>true</neverBlightable>
+			<visualSizeRange>2~4</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
+			
+		</plant>
+		<comps>
+			<li Class="CompProperties_Glower">
+
+				<glowRadius>10</glowRadius>
+				<glowColor>(192,228,191,0)</glowColor>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

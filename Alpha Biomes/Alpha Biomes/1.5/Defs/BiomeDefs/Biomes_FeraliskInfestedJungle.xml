@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<BiomeDef>
+		<defName>AB_FeraliskInfestedJungle</defName>
+		<label>feralisk infested jungle</label>
+		<description>An incredibly thick jungle, completely infested with spiders. Infested jungles such as these sometimes start expanding in a planet's biosphere, if the conditions are right. These worlds usually have to be bombarded from orbit with atomic weapons, to avoid the spiders being unwittingly (or worse, on purpose) transported to other inhabited planets.\n\n&lt;color=#d73b33&gt;Biome difficulty: Very hard. This is a VERY hostile biome. Don't start your base here unless you know very well what you are doing. Build a walled compound, leave it as seldom as possible, and USE the spiders in your advantage.&lt;/color&gt;</description>
+		<workerClass>AlphaBiomes.BiomeWorker_FeraliskInfestedJungle</workerClass>
+		<animalDensity>5.4</animalDensity>
+		<plantDensity>0.90</plantDensity>
+		<settlementSelectionWeight>0.7</settlementSelectionWeight>
+		<movementDifficulty>2</movementDifficulty>
+		<texture>Biomes/AB_FeraliskInfestedJungle</texture>
+		<forageability>1</forageability>
+		<foragedFood>RawBerries</foragedFood>
+		<wildPlantRegrowDays>15</wildPlantRegrowDays>
+		<soundsAmbient>
+			<li>Ambient_NightInsects_Jungle</li>
+			<li>Ambient_DayInsects_Jungle</li>
+		</soundsAmbient>
+		<diseaseMtbDays>35</diseaseMtbDays>
+		<diseases>
+			<li>
+				<diseaseInc>Disease_Malaria</diseaseInc>
+				<commonality>160</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SleepingSickness</diseaseInc>
+				<commonality>140</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Flu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_Plague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_GutWorms</diseaseInc>
+				<commonality>80</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_MuscleParasites</diseaseInc>
+				<commonality>80</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+				<commonality>30</commonality>
+			</li>
+
+			<li>
+				<diseaseInc>Disease_AnimalFlu</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+			<li>
+				<diseaseInc>Disease_AnimalPlague</diseaseInc>
+				<commonality>100</commonality>
+			</li>
+		</diseases>
+		<terrainsByFertility>
+			<li>
+				<terrain>AB_DenseMud</terrain>
+				<min>-999</min>
+				<max>0.35</max>
+			</li>
+			<li>
+				<terrain>AB_DenseGrass</terrain>
+				<min>0.35</min>
+				<max>0.87</max>
+			</li>
+			<li>
+				<terrain>SoilRich</terrain>
+				<min>0.87</min>
+				<max>999</max>
+			</li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.04</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>AB_WebbedMarshyTerrain</terrain>
+						<min>0.7</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.035</perlinFrequency>
+				<thresholds>
+					<li>
+						<terrain>AB_WebbedMarshyTerrain</terrain>
+						<min>0.64</min>
+						<max>0.87</max>
+					</li>
+					<li>
+						<terrain>Marsh</terrain>
+						<min>0.87</min>
+						<max>999</max>
+					</li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<baseWeatherCommonalities>
+			<Clear>18</Clear>
+			<Fog>1</Fog>
+			<Rain>2</Rain>
+			<DryThunderstorm>0.3</DryThunderstorm>
+			<RainyThunderstorm>1.7</RainyThunderstorm>
+			<FoggyRain>1</FoggyRain>
+			<SnowGentle>4</SnowGentle>
+			<SnowHard>4</SnowHard>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<AB_JungleTree_Polluted MayRequire="Ludeon.RimWorld.Biotech">0.4</AB_JungleTree_Polluted>
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">1.6</Plant_GrayGrass>
+			<Plant_RatPalm MayRequire="Ludeon.RimWorld.Biotech">0.1</Plant_RatPalm>			
+			<AB_WeepingToxberry MayRequire="Ludeon.RimWorld.Biotech">0.2</AB_WeepingToxberry>
+			<Plant_Grass>3.0</Plant_Grass>
+			<Plant_TallGrass>2.0</Plant_TallGrass>
+			<Plant_ShrubLow>2.0</Plant_ShrubLow>
+			<Plant_Alocasia>0.8</Plant_Alocasia>
+			<AB_JungleTree>1.1</AB_JungleTree>
+			<AB_Gomphoeria>0.15</AB_Gomphoeria>
+			<AB_RedBugloss>0.07</AB_RedBugloss>
+			<Plant_Berry>0.05</Plant_Berry>
+			<AB_Aaklac>0.05</AB_Aaklac>
+		</wildPlants>
+		<wildAnimals>
+			<Rat>0.1</Rat>
+			<Monkey>0.1</Monkey>
+			<Boomalope>0.1</Boomalope>
+			<Capybara>0.1</Capybara>
+			<Cassowary>0.1</Cassowary>
+			<Tortoise>0.1</Tortoise>
+			<Chinchilla>0.1</Chinchilla>
+			<WildBoar>0.05</WildBoar>
+			<Elephant>0.05</Elephant>
+			<Rhinoceros>0.05</Rhinoceros>
+			<Alpaca>0.1</Alpaca>
+			<Cobra>0.05</Cobra>
+			<Panther>0.05</Panther>
+			<Horse>0.05</Horse>
+		</wildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Elephant</li>
+			
+		</allowedPackAnimals>
+	</BiomeDef>
+
+
+
+</Defs>

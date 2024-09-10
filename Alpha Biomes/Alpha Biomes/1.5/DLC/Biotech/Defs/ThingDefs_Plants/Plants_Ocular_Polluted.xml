@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="PollutionPlantBase">
+		<defName>AB_EyeGrass</defName>
+		<label>flowering ocular grass</label>
+		<description>Are those... eyes?</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Flammability>1.3</Flammability>
+			<Nutrition>0.30</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_EyeGrass</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<ingestible/>
+		<selectable>false</selectable>
+		<plant>
+			<growDays>2.5</growDays>
+			<leaflessGraphicPath>Things/Plant/Graygrass_Leafless/GraygrassA</leaflessGraphicPath>
+			<harvestWork>40</harvestWork>
+			<maxMeshCount>9</maxMeshCount>
+			<visualSizeRange>0.4~0.6</visualSizeRange>
+			<topWindExposure>0.4</topWindExposure>
+			<wildOrder>1</wildOrder>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PollutionTreeWithStumpBase">
+		<defName>AB_AlienTree_Polluted</defName>
+		<label>mutated ocular tree</label>
+		<description>This ocular tree has been affected by pollution and mutated in strange ways. Concerningly, it seems to actually be flourishing in these conditions.\n\nPlant details: Mutated ocular trees are a wild plant, and they need minimum terrain fertility of 0.05. Can only grow in polluted terrains. Can be harvested for small amounts of Red Wood. Tree lover ideologies don't much care about chopping down these weird trees.</description>
+		<descriptionHyperlinks>
+			<ThingDef>GU_RedWood</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Nutrition>0.05</Nutrition>
+			<Mass>175</Mass>
+			<Beauty>-5</Beauty>
+			<BeautyOutdoors>-3</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_PollutedAlienTree</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<fillPercent>0.35</fillPercent>
+		<minifiedDef>MinifiedTree</minifiedDef>
+		<passability>PassThroughOnly</passability>
+		<pathCost>130</pathCost>
+		<rotatable>false</rotatable>
+		<blockWind>true</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>5</growDays>
+			<treeCategory>Full</treeCategory>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<harvestWork>800</harvestWork>
+			<harvestedThingDef>GU_RedWood</harvestedThingDef>
+			<harvestTag>Wood</harvestTag>
+			<harvestYield>6</harvestYield>
+			<harvestMinGrowth>0.4</harvestMinGrowth>
+			<harvestFailable>false</harvestFailable>
+			<visualSizeRange>3.5~4</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+		</plant>
+	</ThingDef>
+	<ThingDef ParentName="PollutionTreeWithStumpBase">
+		<defName>AB_GlobularPlant_Polluted</defName>
+		<label>polluted globular aberration</label>
+		<description>This globular aberration has been affected by pollution and mutated in strange ways. Concerningly, it seems to actually be flourishing in these conditions.\n\nPlant details: Polluted globular aberrations are a wild plant, and they need minimum terrain fertility of 0.05. Can only grow in polluted terrains. Can be harvested for small amounts of Red Wood. Tree lover ideologies don't much care about chopping down these weird trees.</description>
+		<descriptionHyperlinks>
+			<ThingDef>GU_RedWood</ThingDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>1</Flammability>
+			<Nutrition>0.05</Nutrition>
+			<Mass>175</Mass>
+			<Beauty>-5</Beauty>
+			<BeautyOutdoors>-3</BeautyOutdoors>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/AB_GlobularPlant_Polluted</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.24, 0.3, 0.15)</volume>
+				<offset>(0,0,-0.38)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<selectable>true</selectable>
+		<fillPercent>0.35</fillPercent>
+		<minifiedDef>MinifiedTree</minifiedDef>
+		<passability>PassThroughOnly</passability>
+		<pathCost>130</pathCost>
+		<rotatable>false</rotatable>
+		<blockWind>true</blockWind>
+		<ingestible>
+			<foodType>Tree</foodType>
+			<preferability>RawBad</preferability>
+		</ingestible>
+		<plant>
+			<fertilityMin>0.05</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
+			<growDays>5</growDays>
+			<treeCategory>Full</treeCategory>
+			<soundHarvesting>Harvest_Tree</soundHarvesting>
+			<soundHarvestFinish>Harvest_Tree_Finish</soundHarvestFinish>
+			<harvestWork>800</harvestWork>
+			<harvestedThingDef>GU_RedWood</harvestedThingDef>
+			<harvestTag>Wood</harvestTag>
+			<harvestYield>6</harvestYield>
+			<harvestMinGrowth>0.4</harvestMinGrowth>
+			<harvestFailable>false</harvestFailable>
+			<visualSizeRange>3.5~4</visualSizeRange>
+			<topWindExposure>0.3</topWindExposure>
+		</plant>
+	</ThingDef>
+</Defs>

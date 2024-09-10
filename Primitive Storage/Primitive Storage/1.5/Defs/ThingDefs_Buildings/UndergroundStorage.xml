@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+    <!-- ==================== Dirt Storage Pit ==================== -->
+      
+	  
+    <ThingDef ParentName="VBY_UndergroundStorageBase">
+        <defName>VBY_StoragePit</defName>
+        <label>dirt storage pit</label>
+        <description>This storage pit is a hole dug in the ground with a make-shift ladder to get in and out. Keeps things sligthly cooler underground.</description>
+        <graphicData>
+            <texPath>Things/HMC_StoragePit/HMC_StoragePit</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.4,1.4)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <uiIconPath>Things/HMC_StoragePit/HMC_StoragePit</uiIconPath>
+        <size>(1,1)</size>
+        <statBases>
+            <Beauty>-6</Beauty>
+            <MaxHitPoints>1000</MaxHitPoints>
+            <WorkToBuild>5000</WorkToBuild>
+            <Flammability>0.0</Flammability>
+            <Mass>4000</Mass>
+        </statBases>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>25</costStuffCount><!-- It's just a ladder and a hole  -->
+        <terrainAffordanceNeeded>Diggable</terrainAffordanceNeeded>
+        <building>
+            <preventDeteriorationInside>true</preventDeteriorationInside>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <categories>
+						<li>Root</li>
+					</categories>
+					<disallowedCategories>
+						<li>Chunks</li>
+						<li>Buildings</li>
+					</disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+        <comps>
+            <li Class="SK.CompProperties_RotModified">
+				<compClass>SK.CompRotModified</compClass>
+				<rotmodifier>0.6</rotmodifier>
+			</li>
+            <li Class="LWM.DeepStorage.Properties">
+                <minNumberStacks>1</minNumberStacks>
+                <maxNumberStacks>10</maxNumberStacks><!-- 4cells x 5stacks -->
+                <minTimeStoringTakes>240</minTimeStoringTakes>
+                <additionalTimeEachStack>30</additionalTimeEachStack>
+                <additionalTimeStackSize>1</additionalTimeStackSize>
+                <showContents>false</showContents>
+                <overlayType>SumOfItemsPerCell</overlayType>
+                <!-- <maxTotalMass>80</maxTotalMass>   ??  -->
+            </li>
+        </comps>
+        <researchPrerequisites Inherit="false"/>
+        <placeWorkers>
+            <li>PrimitiveCooling.PlaceWorker_UndergroundSpacing</li>
+        </placeWorkers>
+        <modExtensions Inherit="false">
+           <li Class="PrimitiveCooling.UnderGroundExtension">
+              <isUnderground Inherit="false">true</isUnderground>
+              <range>1</range>
+           </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!-- =============================  Wood Storage Pit =============================== -->
+
+    <ThingDef ParentName="VBY_UndergroundStorageBase">
+        <defName>VBY_StoragePitWood</defName>
+        <label>wood storage pit</label>
+        <description>This storage pit is larger than the basic hole and uses a wood frame to keep it from collapsing in. Keeps things sligthly cooler underground.</description>
+        <graphicData>
+            <texPath>Things/HDM_cellardoorWood/HDM_cellardoorWood</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(1.4,1.4)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <uiIconPath>Things/HDM_cellardoorWood/HDM_cellardoorWood_south</uiIconPath>
+        <size>(1,1)</size>
+        <statBases>
+            <Beauty>0</Beauty>
+            <MaxHitPoints>1500</MaxHitPoints>
+            <WorkToBuild>9500</WorkToBuild>
+            <Flammability>0.0</Flammability>
+            <Mass>6000</Mass>
+        </statBases>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>300</costStuffCount><!-- It's just a ladder and a hole w/ some wooden reinforcements inside -->
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <categories>
+						<li>Root</li>
+					</categories>
+					<disallowedCategories>
+						<li>Chunks</li>
+						<li>Buildings</li>
+					</disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+        <comps>
+            <li Class="SK.CompProperties_RotModified">
+				<compClass>SK.CompRotModified</compClass>
+				<rotmodifier>0.5</rotmodifier>
+			</li>
+            <li Class="LWM.DeepStorage.Properties">
+                <minNumberStacks>1</minNumberStacks>
+                <maxNumberStacks>55</maxNumberStacks><!-- 9cells x 6stacks(ish) -->
+                <minTimeStoringTakes>180</minTimeStoringTakes>
+                <additionalTimeEachStack>20</additionalTimeEachStack>
+                <additionalTimeStackSize>1</additionalTimeStackSize>
+                <showContents>false</showContents>
+                <overlayType>None</overlayType>
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li>Construction_B1</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PrimitiveCooling.PlaceWorker_UndergroundSpacing</li>
+        </placeWorkers>
+        <modExtensions Inherit="false">
+           <li Class="PrimitiveCooling.UnderGroundExtension">
+              <isUnderground Inherit="false">true</isUnderground>
+              <range>2</range>
+           </li>
+        </modExtensions>
+    </ThingDef>
+
+    <!-- ==========================  Stone Storage Pit =============================  -->
+
+    <ThingDef ParentName="VBY_UndergroundStorageBase">
+        <defName>VBY_StoragePitStone</defName>
+        <label>stone storage pit</label>
+        <description>This storage pit is much larger than the basic hole and uses masonry to support it. Keeps things sligthly cooler underground.</description>
+        <graphicData>
+            <texPath>Things/HDM_cellardoor/HDM_cellardoor</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(1.4,1.4)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <uiIconPath>Things/HDM_cellardoor/HDM_cellardoor_south</uiIconPath>
+        <size>(1,1)</size>
+        <statBases>
+            <Beauty>0</Beauty>
+            <MaxHitPoints>3000</MaxHitPoints>
+            <WorkToBuild>20000</WorkToBuild>
+            <Flammability>0.0</Flammability>
+            <Mass>8000</Mass>
+        </statBases>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Bricks</li>
+        </stuffCategories>
+        <costStuffCount>450</costStuffCount><!-- It's just a ladder and a hole w/ stone walls/floors inside -->
+        <costList>
+            <WoodLog>25</WoodLog>
+        </costList>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <fixedStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <categories>
+						<li>Root</li>
+					</categories>
+					<disallowedCategories>
+						<li>Chunks</li>
+						<li>Buildings</li>
+					</disallowedCategories>
+                </filter>
+            </fixedStorageSettings>
+        </building>
+        <researchPrerequisites>
+            <li>Stonecutting</li>
+        </researchPrerequisites>
+        <comps>
+            <li Class="SK.CompProperties_RotModified">
+				<compClass>SK.CompRotModified</compClass>
+				<rotmodifier>0.4</rotmodifier>
+			</li>
+            <li Class="LWM.DeepStorage.Properties">
+                <minNumberStacks>1</minNumberStacks>
+                <maxNumberStacks>180</maxNumberStacks><!-- 25cells x 7stacks -->
+                <minTimeStoringTakes>180</minTimeStoringTakes>
+                <additionalTimeEachStack>5</additionalTimeEachStack>
+                <additionalTimeStackSize>0</additionalTimeStackSize>
+                <showContents>false</showContents>
+                <overlayType>None</overlayType>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PrimitiveCooling.PlaceWorker_UndergroundSpacing</li>
+        </placeWorkers>
+        <modExtensions Inherit="false">
+           <li Class="PrimitiveCooling.UnderGroundExtension">
+              <isUnderground Inherit="false">true</isUnderground>
+              <range>4</range>
+           </li>
+        </modExtensions>
+    </ThingDef>
+</Defs>

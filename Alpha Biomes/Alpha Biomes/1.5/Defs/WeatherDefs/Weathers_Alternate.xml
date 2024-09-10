@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<WeatherDef>
+		<defName>AB_ForsakenNight_Alternate</defName>
+		<label>forsaken fog</label>
+		<description>A preternatural darkness that seeps into your very soul. Even during the "day" brightness will be very low, so lighting is going to be absolutely essential. Nights are going to be REALLY dark.</description>
+		<accuracyMultiplier>0.6</accuracyMultiplier>
+		<repeatable>true</repeatable>
+		<favorability>Good</favorability>
+		<perceivePriority>0</perceivePriority>
+		<weatherThought>AB_ForsakenNight</weatherThought>
+		<ambientSounds>
+			<li>Ambient_Wind_Fog</li>
+		</ambientSounds>
+		<!-- Colors are Super Dark -->
+		<skyColorsDay>
+			<sky>(0.65,0.70,0.75)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.75,0.75,0.75)</overlay>
+			<saturation>1.1</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(0.6,0.6,0.5)</sky>
+			<shadow>(0.955,0.886,0.914)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.382,0.403,0.482)</sky>
+			<shadow>(0.92,0.82,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.75</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.282,0.403,0.482)</sky>
+			<shadow>(0.85, 0.85, 0.85)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.75</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	<WeatherDef>
+		<defName>AB_ForsakenRainyNight_Alternate</defName>
+		<label>forsaken rain</label>
+		<temperatureRange>
+			<min>-15</min>
+			<max>100</max>
+		</temperatureRange>
+		<description>A preternatural darkness that seeps into your very soul. A freezing rain of supercooled water has started to drop from the darkened sky.</description>
+		<accuracyMultiplier>0.6</accuracyMultiplier>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<favorability>Neutral</favorability>
+		<perceivePriority>1</perceivePriority>
+		<weatherThought>AB_ForsakenRain</weatherThought>
+		<moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+		<rainRate>1</rainRate>
+		<ambientSounds>
+			<li>Ambient_Rain</li>
+		</ambientSounds>
+		<overlayClasses>
+			<li>WeatherOverlay_Rain</li>
+		</overlayClasses>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+				<li>(4000, 3.0)</li>
+			</points>
+		</commonalityRainfallFactor>
+		<!-- Colors are Super Dark -->
+		<skyColorsDay>
+			<sky>(0.65,0.70,0.75)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.75,0.75,0.75)</overlay>
+			<saturation>1.1</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(0.55,0.60,0.65)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.65,0.65,0.65)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.4,0.4,0.4)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.75</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.4,0.4,0.4)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+	<WeatherDef>
+		<defName>AB_ForsakenThunderstorm_Alternate</defName>
+		<label>forsaken thunderstorm</label>
+		<description>A preternatural darkness that seeps into your very soul. Now with a dry thunderstorm! Isn't it great?</description>
+		<accuracyMultiplier>0.3</accuracyMultiplier>
+		<repeatable>true</repeatable>
+		<favorability>VeryBad</favorability>
+		<perceivePriority>2</perceivePriority>
+		<weatherThought>AB_ForsakenThunderstorm</weatherThought>
+		<windSpeedFactor>1.5</windSpeedFactor>
+		<ambientSounds>
+			<li>Ambient_Wind_Storm</li>
+		</ambientSounds>
+		<durationRange>
+			<min>15000</min>
+			<max>40000</max>
+		</durationRange>
+		<eventMakers>
+			<li>
+				<averageInterval>1200</averageInterval>
+				<eventClass>WeatherEvent_LightningFlash</eventClass>
+			</li>
+			<li>
+				<averageInterval>1200</averageInterval>
+				<eventClass>WeatherEvent_LightningStrike</eventClass>
+			</li>
+		</eventMakers>
+		<!-- Colors are Super Dark -->
+		<skyColorsDay>
+			<sky>(0.55,0.60,0.65)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.75,0.75,0.75)</overlay>
+			<saturation>1</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(0.55,0.60,0.65)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.5,0.5,0.5)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.75</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.4,0.4,0.4)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.75</saturation>
+		</skyColorsNightMid>
+	</WeatherDef>
+</Defs>
+
+
+
+
+
+
+
+

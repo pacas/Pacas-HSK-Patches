@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ArchitectSense.DesignationSubCategoryDef>
+        <defName>SubCategory_BunkersPlus</defName>
+        <label>Bunkers</label>
+        <description>Hans, get your Volkssturmgewehr, Wolfgang, grab the StG 44, I'm going for the MG42! The Insectoids are close!</description>
+        <defNames>
+            <li>BunkerwallSW</li>
+            <li>BunkerwallNE</li>
+            <li>Bunkerdoor_S</li>
+            <li>Bunkerdoor_N</li>
+            <li>Bunkerdoor_E</li>
+            <li>Bunkerdoor_W</li>
+            <li>BunkerembrasureSW</li>
+            <li>BunkerembrasureNE</li>
+            <li>Bunkerroof3x3tr</li>
+            <li>Bunkerroof5x5tr</li>
+        </defNames>
+        <designationCategory>Security</designationCategory>
+        <debug>false</debug>
+    </ArchitectSense.DesignationSubCategoryDef>
+</Defs>

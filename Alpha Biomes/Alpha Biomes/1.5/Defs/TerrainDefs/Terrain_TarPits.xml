@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <TerrainDef>
+        <defName>AB_AsphaltBridge</defName>
+        <label>asphalt bridge</label>
+        <description>A flat asphalt surface on supportive beams which can be built over water. You can build light and medium structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well. An asphalt bridge is almost fireproof and more durable than its wooden counterpart.</description>
+        <texturePath>Terrain/Surfaces/AB_Tarmac</texturePath>
+        <uiIconPath>Terrain/Surfaces/AB_AsphaltBridge_MenuIcon</uiIconPath>
+        <layerable>true</layerable>
+        <bridge>true</bridge>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+        </affordances>
+        <tags>
+			<li>Floor</li>
+		</tags>
+        <designationCategory>Structure</designationCategory>
+        <fertility>0</fertility>
+        <constructEffect>ConstructWood</constructEffect>
+        <terrainAffordanceNeeded>AB_TarAffordance</terrainAffordanceNeeded>
+        <edgeType>Hard</edgeType>
+        <renderPrecedence>400</renderPrecedence>
+        <autoRebuildable>true</autoRebuildable>
+        <statBases>
+            <WorkToBuild>2800</WorkToBuild>
+            <Flammability>0.1</Flammability>
+        </statBases>
+        <costList>
+            <AB_AsphaltBucket>5</AB_AsphaltBucket>
+        </costList>
+        <destroyOnBombDamageThreshold>75</destroyOnBombDamageThreshold>
+        <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+        <destroyEffect>Bridge_Collapse</destroyEffect>
+        <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+        <researchPrerequisites>
+			<li>Construction_B2</li>
+		</researchPrerequisites>
+    </TerrainDef>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_LushGrass</defName>
+        <label>lush grass</label>
+        <texturePath>Terrain/Surfaces/AB_LushGrass</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/AB_LushGrass_Polluted</pollutedTexturePath>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+	 <pollutionColor>(214, 140, 234, 0.15)</pollutionColor>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>340</renderPrecedence>
+        <pathCost>2</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <scatterType>Rocky</scatterType>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>1.0</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tools>
+            <li>
+                <label>dirt</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>DirtInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+        <tags>
+			<li>Soil</li>
+		</tags>
+    </TerrainDef>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_GrassySand</defName>
+        <label>grassy sand</label>
+        <texturePath>Terrain/Surfaces/AB_GrassySand</texturePath>
+		 <pollutedTexturePath>Terrain/Surfaces/AB_GrassySand_Polluted</pollutedTexturePath>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSand</pollutionOverlayTexturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>350</renderPrecedence>
+        <pathCost>15</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-1</Cleanliness>
+        </statBases>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Sand</generatedFilth>
+        <fertility>0.10</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tools>
+            <li>
+                <label>sand</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>SandInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+        <tags>
+			<li>Sand</li>
+		</tags>
+    </TerrainDef>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_ParchedEarth</defName>
+        <label>parched mud</label>
+        <texturePath>Terrain/Surfaces/AB_ParchedEarth</texturePath>
+		 <pollutedTexturePath>Terrain/Surfaces/AB_ParchedEarth_Polluted</pollutedTexturePath>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSand</pollutionOverlayTexturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>320</renderPrecedence>
+        <pathCost>30</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-2</Cleanliness>
+        </statBases>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0.70</fertility>
+        <takeFootprints>True</takeFootprints>
+        <tools>
+            <li>
+                <label>mud</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>MudInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+        <tags>
+			<li>Soil</li>
+		</tags>
+    </TerrainDef>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_TarMud</defName>
+        <label>tarred mud</label>
+        <texturePath>Terrain/Surfaces/AB_TarMud</texturePath>
+		 <pollutedTexturePath>Terrain/Surfaces/AB_TarMud_Polluted</pollutedTexturePath>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionColor>(1, 1, 1, 1)</pollutionColor>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>330</renderPrecedence>
+        <pathCost>100</pathCost>
+        <statBases>
+            <Beauty>-5</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-2</Cleanliness>
+        </statBases>
+        <affordances>
+            <li>Light</li>
+            <li>AB_TarAffordance</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0</fertility>
+        <takeFootprints>True</takeFootprints>
+        <avoidWander>true</avoidWander>
+        <driesTo>AB_ParchedEarth</driesTo>
+        <tools>
+            <li>
+                <label>mud</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>MudInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+    </TerrainDef>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_ArtificialTar</defName>
+        <label>tar puddles</label>
+        <layerable>true</layerable>
+        <texturePath>Terrain/Surfaces/AB_TarDeepRamp</texturePath>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>400</renderPrecedence>
+        <pathCost>200</pathCost>
+        <statBases>
+            <Beauty>-10</Beauty>
+            <Cleanliness>-10</Cleanliness>
+        </statBases>
+        <affordances>
+            <li>Light</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>0</fertility>
+        <takeFootprints>True</takeFootprints>
+        <avoidWander>true</avoidWander>
+    </TerrainDef>
+
+    <TerrainDef ParentName="SK_WaterDeepBase">
+        <defName>AB_Tar</defName>
+        <texturePath>Terrain/Surfaces/AB_TarDeepRamp</texturePath>
+        <label>tar pit</label>
+        <affordances>
+            <li>AB_TarAffordance</li>
+        </affordances>
+        <changeable>true</changeable>
+        <renderPrecedence>395</renderPrecedence>
+    </TerrainDef>
+</Defs>

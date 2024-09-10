@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <IncidentDef ParentName="DiseaseIncident">
+        <defName>AB_Disease_SporesAllergy</defName>
+        <label>spores allergy</label>
+        <diseaseIncident>AB_SporesAllergy</diseaseIncident>
+        <letterLabel>Disease (spores allergy)</letterLabel>
+    </IncidentDef>
+
+    <IncidentDef ParentName="DiseaseAnimalIncident">
+        <defName>AB_Disease_AnimalSporesAllergy</defName>
+        <label>spores allergy (animals)</label>
+        <diseaseIncident>AB_AnimalSporesAllergy</diseaseIncident>
+        <letterLabel>Animal disease (spores allergy)</letterLabel>
+    </IncidentDef>
+  
+    <IncidentDef ParentName="DiseaseIncident">
+        <defName>AB_Disease_BacterialGangrene</defName>
+        <label>bacterial gangrene</label>
+        <diseaseIncident>AB_BacterialGangrene</diseaseIncident>
+        <letterLabel>Disease (bacterial gangrene)</letterLabel>
+    </IncidentDef>
+  
+    <IncidentDef ParentName="DiseaseIncident">
+        <defName>AB_Disease_ViralAbasia</defName>
+        <label>viral abasia</label>
+        <diseaseIncident>AB_ViralAbasia</diseaseIncident>
+        <letterLabel>Disease (viral abasia)</letterLabel>
+    </IncidentDef>
+  
+    <IncidentDef ParentName="DiseaseIncident">
+        <defName>AB_Disease_RavagingIntestinalParasites</defName>
+        <label>ravaging intestinal parasites</label>
+        <diseaseIncident>AB_RavagingIntestinalParasites</diseaseIncident>
+        <letterLabel>Disease (ravaging intestinal parasites)</letterLabel>
+    </IncidentDef>
+
+</Defs>

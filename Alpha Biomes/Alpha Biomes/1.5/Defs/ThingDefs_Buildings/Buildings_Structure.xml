@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--============================== Exotic Column ==============================-->
+
+	<ThingDef ParentName="SK_BuildingBase">
+		<defName>AB_ExoticColumn</defName>
+		<label>exotic column</label>
+		<description>A column built using exotic materials. Does not block sight or movement and looks quite nice.</description>
+		<designationCategory>Structure</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.25</fillPercent>
+		<pathCost>0</pathCost>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>10</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>7</Beauty>
+		</statBases>
+		<stuffCategories>
+			<li>AB_Exotic</li>
+			<li>AB_ExoticWooden</li>
+			<li>AB_ExoticMetals</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+		<rotatable>false</rotatable>
+		<fertility>0</fertility>
+		<building>
+			<isInert>true</isInert>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+		<graphicData>
+			<drawSize>(1,1.25)</drawSize>
+			<drawOffset>(0,0,0.2)</drawOffset>
+			<texPath>Things/Building/AB_OrnateColumn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.3, 0.5, 0.3)</volume>
+				<offset>(0,0,-0.23)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+		</graphicData>
+	</ThingDef>
+
+
+</Defs>

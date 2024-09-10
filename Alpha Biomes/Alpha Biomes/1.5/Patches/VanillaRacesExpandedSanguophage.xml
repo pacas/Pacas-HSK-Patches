@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Sanguophage</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="AB_ForsakenNight"]/nullifyingGenes</xpath>
+			<value>
+				<li>VRE_Sensitivity_Dangerous</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

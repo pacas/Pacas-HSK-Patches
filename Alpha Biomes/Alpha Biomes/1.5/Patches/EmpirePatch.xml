@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Empire</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <FactionColonies.BiomeResourceDef>
+                            <defName>AB_FeraliskInfestedJungle</defName>
+                            <label>Feralisk Infested Jungle</label>
+                            <canSettle>true</canSettle>
+                            <BaseProductionAdditive>
+                                <!-- 0 is default -->
+                                <li>1.5</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>1.5</li>
+                                <!-- Animals -->
+                                <li>1.5</li>
+                                <!-- Logging -->
+                                <li>1</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionAdditive>
+                            <BaseProductionMultiplicative>
+                                <!-- li is default -->
+                                <li>.75</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>1.5</li>
+                                <!-- Animals -->
+                                <li>1</li>
+                                <!-- Logging -->
+                                <li>.5</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>0.75</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionMultiplicative>
+                        </FactionColonies.BiomeResourceDef>
+                        <FactionColonies.BiomeResourceDef>
+                            <defName>AB_MycoticJungle</defName>
+                            <label>Mycotic Jungle</label>
+                            <canSettle>true</canSettle>
+                            <BaseProductionAdditive>
+                                <!-- 0 is default -->
+                                <li>0.75</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>1.5</li>
+                                <!-- Animals -->
+                                <li>0.5</li>
+                                <!-- Logging -->
+                                <li>1</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1.5</li>
+                                <!-- Medicine -->
+                            </BaseProductionAdditive>
+                            <BaseProductionMultiplicative>
+                                <!-- li is default -->
+                                <li>.5</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>1.5</li>
+                                <!-- Animals -->
+                                <li>1</li>
+                                <!-- Logging -->
+                                <li>.5</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>0.75</li>
+                                <!-- Power -->
+                                <li>1.25</li>
+                                <!-- Medicine -->
+                            </BaseProductionMultiplicative>
+                        </FactionColonies.BiomeResourceDef>
+                        <FactionColonies.BiomeResourceDef>
+                            <defName>AB_OcularForest</defName>
+                            <label>Ocular Forest</label>
+                            <canSettle>true</canSettle>
+                            <BaseProductionAdditive>
+                                <!-- 0 is default -->
+                                <li>0.25</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>1</li>
+                                <!-- Animals -->
+                                <li>0.5</li>
+                                <!-- Logging -->
+                                <li>1</li>
+                                <!-- Mining -->
+                                <li>1.5</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionAdditive>
+                            <BaseProductionMultiplicative>
+                                <!-- li is default -->
+                                <li>.25</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>1</li>
+                                <!-- Animals -->
+                                <li>1</li>
+                                <!-- Logging -->
+                                <li>1</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionMultiplicative>
+                        </FactionColonies.BiomeResourceDef>
+                        <FactionColonies.BiomeResourceDef>
+                            <defName>AB_GelatinousSuperorganism</defName>
+                            <label>Gelatinous Superorganism</label>
+                            <canSettle>true</canSettle>
+                            <BaseProductionAdditive>
+                                <!-- 0 is default -->
+                                <li>1.5</li>
+                                <!-- Food -->
+                                <li>0.5</li>
+                                <!-- Weapons -->
+                                <li>0.5</li>
+                                <!-- Apparel -->
+                                <li>1.25</li>
+                                <!-- Animals -->
+                                <li>0</li>
+                                <!-- Logging -->
+                                <li>0</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionAdditive>
+                            <BaseProductionMultiplicative>
+                                <!-- li is default -->
+                                <li>1.25</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>1</li>
+                                <!-- Animals -->
+                                <li>1</li>
+                                <!-- Logging -->
+                                <li>1</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionMultiplicative>
+                        </FactionColonies.BiomeResourceDef>
+                        <FactionColonies.BiomeResourceDef>
+                            <defName>AB_GallatrossGraveyard</defName>
+                            <label>Gallatross Graveyard</label>
+                            <canSettle>true</canSettle>
+                            <BaseProductionAdditive>
+                                <!-- 0 is default -->
+                                <li>.5</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>.75</li>
+                                <!-- Animals -->
+                                <li>.5</li>
+                                <!-- Logging -->
+                                <li>1.25</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionAdditive>
+                            <BaseProductionMultiplicative>
+                                <!-- li is default -->
+                                <li>1</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>1</li>
+                                <!-- Animals -->
+                                <li>1</li>
+                                <!-- Logging -->
+                                <li>1</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionMultiplicative>
+                        </FactionColonies.BiomeResourceDef>
+                        <FactionColonies.BiomeResourceDef>
+                            <defName>AB_MechanoidIntrusion</defName>
+                            <label>Mechanoid Intrusion</label>
+                            <canSettle>true</canSettle>
+                            <BaseProductionAdditive>
+                                <!-- 0 is default -->
+                                <li>0</li>
+                                <!-- Food -->
+                                <li>.5</li>
+                                <!-- Weapons -->
+                                <li>.25</li>
+                                <!-- Apparel -->
+                                <li>0</li>
+                                <!-- Animals -->
+                                <li>0</li>
+                                <!-- Logging -->
+                                <li>2</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1.25</li>
+                                <!-- Power -->
+                                <li>0</li>
+                                <!-- Medicine -->
+                            </BaseProductionAdditive>
+                            <BaseProductionMultiplicative>
+                                <!-- li is default -->
+                                <li>1</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>1</li>
+                                <!-- Animals -->
+                                <li>1</li>
+                                <!-- Logging -->
+                                <li>1</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionMultiplicative>
+                        </FactionColonies.BiomeResourceDef>
+                        <FactionColonies.BiomeResourceDef>
+                            <defName>AB_PropaneLakes</defName>
+                            <label>Propane Lakes</label>
+                            <canSettle>true</canSettle>
+                            <BaseProductionAdditive>
+                                <!-- 0 is default -->
+                                <li>0</li>
+                                <!-- Food -->
+                                <li>.5</li>
+                                <!-- Weapons -->
+                                <li>.5</li>
+                                <!-- Apparel -->
+                                <li>.1</li>
+                                <!-- Animals -->
+                                <li>0</li>
+                                <!-- Logging -->
+                                <li>0</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionAdditive>
+                            <BaseProductionMultiplicative>
+                                <!-- li is default -->
+                                <li>1</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>1</li>
+                                <!-- Animals -->
+                                <li>1</li>
+                                <!-- Logging -->
+                                <li>1</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionMultiplicative>
+                        </FactionColonies.BiomeResourceDef>
+                        <FactionColonies.BiomeResourceDef>
+                            <defName>AB_TarPits</defName>
+                            <label>Tar Pits</label>
+                            <canSettle>true</canSettle>
+                            <BaseProductionAdditive>
+                                <!-- 0 is default -->
+                                <li>.5</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>.75</li>
+                                <!-- Animals -->
+                                <li>.5</li>
+                                <!-- Logging -->
+                                <li>1.25</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionAdditive>
+                            <BaseProductionMultiplicative>
+                                <!-- li is default -->
+                                <li>1</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>1</li>
+                                <!-- Animals -->
+                                <li>1</li>
+                                <!-- Logging -->
+                                <li>1</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionMultiplicative>
+                        </FactionColonies.BiomeResourceDef>
+                        <FactionColonies.BiomeResourceDef>
+                            <defName>AB_RockyCrags</defName>
+                            <label>Forsaken Crags</label>
+                            <canSettle>true</canSettle>
+                            <BaseProductionAdditive>
+                                <!-- 0 is default -->
+                                <li>.75</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>.75</li>
+                                <!-- Animals -->
+                                <li>.25</li>
+                                <!-- Logging -->
+                                <li>1.25</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>0</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionAdditive>
+                            <BaseProductionMultiplicative>
+                                <!-- li is default -->
+                                <li>1</li>
+                                <!-- Food -->
+                                <li>1</li>
+                                <!-- Weapons -->
+                                <li>1</li>
+                                <!-- Apparel -->
+                                <li>1</li>
+                                <!-- Animals -->
+                                <li>1</li>
+                                <!-- Logging -->
+                                <li>1</li>
+                                <!-- Mining -->
+                                <li>1</li>
+                                <!-- Research -->
+                                <li>1</li>
+                                <!-- Power -->
+                                <li>1</li>
+                                <!-- Medicine -->
+                            </BaseProductionMultiplicative>
+                        </FactionColonies.BiomeResourceDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
+

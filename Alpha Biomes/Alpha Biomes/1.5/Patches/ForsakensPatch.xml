@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Forsakens</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AB_WildRadagast"]/plant</xpath>
+                    <value>
+                        <harvestYield>10</harvestYield>
+                        <harvestWork>250</harvestWork>
+                        <harvestTag>Standard</harvestTag>
+                        <harvestAfterGrowth>0.30</harvestAfterGrowth>
+                        <harvestedThingDef>RagadastFruit</harvestedThingDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

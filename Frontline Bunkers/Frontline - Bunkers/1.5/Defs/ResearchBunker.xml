@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef ParentName="IndustrialBase">
+    <defName>Bunker1</defName>
+    <label>Bunkers</label>
+    <techLevel>Industrial</techLevel>
+    <description>Klaus, get the MG42, the insectoids are almost here!</description>
+    <baseCost>1700</baseCost>
+    <prerequisites>
+      <li>IEDs</li>
+    </prerequisites>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>14.00</researchViewY>
+    <tab>Buildings_SK</tab>
+  </ResearchProjectDef>
+</Defs>

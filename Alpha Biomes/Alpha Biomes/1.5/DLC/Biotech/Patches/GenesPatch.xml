@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biotech</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThoughtDef[defName="AB_ForsakenNight"]/nullifyingGenes</xpath>
+			<value>
+				<li>UVSensitivity_Mild</li>
+				<li>UVSensitivity_Intense</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
+

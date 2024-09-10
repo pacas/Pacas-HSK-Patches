@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/TerrainDef[@Name="WaterDeepBase"]/changeable</xpath>
+        <match Class="PatchOperationRemove">
+            <xpath>Defs/TerrainDef[@Name="WaterDeepBase"]/changeable</xpath>
+        </match>
+    </Operation>
+    
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/TerrainDef[@Name="WaterDeepBase"]/affordances</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/TerrainDef[@Name="WaterDeepBase"]</xpath>
+            <value>
+                <affordances>
+                    <li>BridgeableDeepWater</li>
+                </affordances>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/TerrainDef[@Name="WaterDeepBase"]/affordances</xpath>
+            <value>
+                <li>BridgeableDeepWater</li>
+            </value>
+        </match>
+    </Operation>
+</Patch>

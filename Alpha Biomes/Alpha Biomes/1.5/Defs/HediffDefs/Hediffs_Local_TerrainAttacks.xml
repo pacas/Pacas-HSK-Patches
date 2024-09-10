@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defName>AB_SlimeInEyes</defName>
+        <label>slime</label>
+        <description>Slime in your eyes blinds you for a while. Also, yuck.</description>
+        <labelNoun>slime</labelNoun>
+        <battleStateLabel>blind</battleStateLabel>
+        <maxSeverity>1</maxSeverity>
+        <stages>
+            <li>
+                <partEfficiencyOffset>-0.8</partEfficiencyOffset>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SelfHeal">
+                <healAmount>0.05</healAmount>
+            </li>
+        </comps>
+    </HediffDef>
+</Defs>

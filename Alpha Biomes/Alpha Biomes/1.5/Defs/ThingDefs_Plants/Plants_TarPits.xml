@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--============================ Bushes =============================-->
+    <ThingDef ParentName="SK_PlantBase">
+        <defName>AB_GreenRockFern</defName>
+        <label>green rock fern</label>
+        <description>A wild tall fern. Slows down anyone moving over it.</description>
+        <statBases>
+            <MaxHitPoints>90</MaxHitPoints>
+            <Flammability>1.3</Flammability>
+            <Nutrition>0.16</Nutrition>
+        </statBases>
+        <pathCost>50</pathCost>
+        <graphicData>
+            <texPath>Things/Plants/AB_GreenRockFern</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.55, 0.17, 0.15)</volume>
+                <offset>(0,0,-0.2)</offset>
+            </shadowData>
+        </graphicData>
+        <ingestible/>
+        <plant>
+            <fertilitySensitivity>0.7</fertilitySensitivity>
+            <growDays>3</growDays>
+            <harvestWork>60</harvestWork>
+			<leaflessGraphicPath>Things/Plants/AB_GreenRockFernLeafless</leaflessGraphicPath>
+            <wildClusterRadius>4</wildClusterRadius>
+            <wildClusterWeight>7.5</wildClusterWeight>
+            <visualSizeRange>1~1.5</visualSizeRange>
+            <wildOrder>1</wildOrder>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="SK_BushBase">
+        <defName>AB_Iashiphus</defName>
+        <label>iashiphus</label>
+        <description>This vivid green plant seem to be related to cacti. Though it's fleshy bark is not edible, it produces flowers than can be consumed by humans.\n\nPlant details: Iashiphus is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.7. Can be harvested for raw iashiphus fruit.</description>
+        <descriptionHyperlinks>
+            <ThingDef>AB_RawIashiphus</ThingDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <Beauty>2</Beauty>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plants/AB_Iashiphus</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.3, 0.2, 0.15)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+        </graphicData>
+        <plant>
+            <wildClusterRadius>3</wildClusterRadius>
+            <wildClusterWeight>4</wildClusterWeight>
+            <visualSizeRange>2~2.5</visualSizeRange>
+            <harvestYield>10</harvestYield>
+            <harvestWork>250</harvestWork>
+            <harvestTag>Standard</harvestTag>
+            <harvestAfterGrowth>0.30</harvestAfterGrowth>
+            <harvestedThingDef>AB_RawIashiphus</harvestedThingDef>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="SK_BushBase">
+        <defName>AB_SugarFamewort</defName>
+        <label>sugar famewort</label>
+        <description>The sugar famewort grows in areas with a high concentration of pollinating insects. It generates a sweet nectar that attracts these insects, and they disperse its pollen when they feed on it.\n\nPlant details: Sugar Famewort is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.7. Can be harvested for raw sugar famewort.</description>
+        <descriptionHyperlinks>
+            <ThingDef>AB_RawSugarFamewort</ThingDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <Beauty>2</Beauty>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plants/AB_SugarFamewort</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.3, 0.2, 0.15)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+        </graphicData>
+        <plant>
+            <wildClusterRadius>3</wildClusterRadius>
+            <wildClusterWeight>4</wildClusterWeight>
+            <visualSizeRange>2~2.2</visualSizeRange>
+            <harvestYield>10</harvestYield>
+            <harvestWork>250</harvestWork>
+            <harvestTag>Standard</harvestTag>
+            <harvestAfterGrowth>0.30</harvestAfterGrowth>
+            <harvestedThingDef>AB_RawSugarFamewort</harvestedThingDef>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="SK_PlantBase">
+        <defName>AB_RavenNettle</defName>
+        <label>raven nettle</label>
+        <description>Tangled, thorny, woody shoots covered with leaves. Raven nettle grows in clusters, and slows down anyone moving over it.</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Nutrition>0.2</Nutrition>
+        </statBases>
+        <pathCost>75</pathCost>
+        <graphicData>
+            <texPath>Things/Plants/AB_RavenNettle</texPath>
+            <drawSize>1.7</drawSize>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <ingestible/>
+        <plant>
+            <fertilitySensitivity>0.7</fertilitySensitivity>
+            <growDays>3</growDays>
+            <harvestWork>60</harvestWork>
+            <maxMeshCount>4</maxMeshCount>
+            <leaflessGraphicPath>Things/Plants/AB_RavenNettleLeafless</leaflessGraphicPath>
+            <visualSizeRange>0.7~0.85</visualSizeRange>
+            <topWindExposure>0.15</topWindExposure>
+            <wildClusterRadius>8</wildClusterRadius>
+            <wildClusterWeight>350</wildClusterWeight>
+            <wildOrder>1</wildOrder>
+            <wildEqualLocalDistribution>false</wildEqualLocalDistribution>
+        </plant>
+    </ThingDef>
+    <!--============================ Wild - Trees ============================-->
+    <ThingDef ParentName="SK_TreeBase">
+        <defName>AB_FanPalm</defName>
+        <label>fan palm</label>
+        <description>This exuberant palm grows in areas with a rich soil surrounding the tar pits.\n\nPlant details: Fan palms are a cultivated plant that also appear in the wild, and it needs minimum terrain fertility of 0.85. Can be harvested for normal wood.</description>
+        <descriptionHyperlinks>
+            <ThingDef>WoodLog</ThingDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Plants/AB_FanPalm</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.18, 0.3, 0.15)</volume>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <statBases>
+            <Nutrition>2.5</Nutrition>
+        </statBases>
+        <plant>
+			<leaflessGraphicPath>Things/Plants/AB_FanPalmLeafless</leaflessGraphicPath>
+            <sowResearchPrerequisites>
+                <li>TreeSowing</li>
+            </sowResearchPrerequisites>
+            <mustBeWildToSow>true</mustBeWildToSow>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
+            <neverBlightable>true</neverBlightable>
+            <growDays>14</growDays>
+            <harvestWork>1200</harvestWork>
+            <harvestYield>40</harvestYield>
+            <wildClusterRadius>10</wildClusterRadius>
+            <wildClusterWeight>11</wildClusterWeight>
+            <visualSizeRange>3.8~5</visualSizeRange>
+            <fertilityMin>0.85</fertilityMin>
+        </plant>
+        <ingestible/>
+    </ThingDef>
+    <ThingDef ParentName="SK_TreeBase">
+        <defName>AB_KeeningCordax</defName>
+        <label>keening cordax</label>
+        <description>The keening cordax is a carnivore plant so called for the high-pitched sound that it makes during the day. Its huge openings are filled with a smelly, sticky substance that attracts all kinds of small insects. These insects get stuck to this organic glue, and inevitably perish, serving as food for the plant.\n\nThis sticky substance, known as cordax resin, can be used as a very efficient sealant.\n\nPlant details: Keening cordax is a wild plant that cannot be cultivated, and it needs minimum terrain fertility of 0.7. Can be harvested for cordax resin.</description>
+        <descriptionHyperlinks>
+            <ThingDef>AB_CordaxResin</ThingDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Plants/AB_KeeningCordax</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.18, 0.3, 0.15)</volume>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <statBases>
+            <Beauty>-10</Beauty>
+            <Nutrition>2.5</Nutrition>
+        </statBases>
+        <plant>
+            <fertilityMin>0.85</fertilityMin>
+            <growDays>14</growDays>
+            <harvestWork>250</harvestWork>
+            <harvestYield>15</harvestYield>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>AB_CordaxResin</harvestedThingDef>
+            <wildClusterRadius>10</wildClusterRadius>
+            <harvestAfterGrowth>0.30</harvestAfterGrowth>
+            <wildClusterWeight>11</wildClusterWeight>
+            <visualSizeRange>2~3</visualSizeRange>
+        </plant>
+        <ingestible/>
+    </ThingDef>
+    <ThingDef ParentName="AB_Cave_PlantBase">
+        <defName>AB_TarPuddle</defName>
+        <label>tar puddle</label>
+        <thingClass>AlphaBiomes.Plant_Tar</thingClass>
+        <description>This is a puddle of fresh tar. No animal would eat this, right?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>0</Beauty>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Nutrition>0</Nutrition>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Plants/AB_TarPuddle</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <altitudeLayer>Skyfaller</altitudeLayer>
+        <blockLight>false</blockLight>
+        <selectable>true</selectable>
+        <neverMultiSelect>false</neverMultiSelect>
+        <pathCost>150</pathCost>
+        <ingestible>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilityMin>0</fertilityMin>
+            <fertilitySensitivity>0</fertilitySensitivity>
+            <growDays>0.0001</growDays>
+            <dieIfLeafless>false</dieIfLeafless>
+            <neverBlightable>true</neverBlightable>
+            <visualSizeRange>1~1.3</visualSizeRange>
+            <topWindExposure>0</topWindExposure>
+            <lifespanDaysPerGrowDays>0</lifespanDaysPerGrowDays>
+            <purpose>Food</purpose>
+        </plant>
+    </ThingDef>
+</Defs>

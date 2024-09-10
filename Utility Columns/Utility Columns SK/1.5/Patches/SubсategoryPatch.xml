@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Columns"]/defNames</xpath>
+        <value>
+            <li>LightColumnMod</li>
+            <li>DarkColumnMod</li>
+            <li>OrbitalTradeColumnMod</li>
+            <li>EMPColumnMod</li>
+            <li>SunColumnMod</li>
+            <li>IceColumnMod</li>
+            <li>GraveColumnMod</li>
+        </value>
+    </Operation>
+</Patch>

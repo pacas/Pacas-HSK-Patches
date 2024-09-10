@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Magical Menagerie</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Ahuizotl"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.07</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.07</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.07</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.01</AB_GallatrossGraveyard>
+                        <AB_MechanoidIntrusion>0.01</AB_MechanoidIntrusion>
+                        <AB_RockyCrags>0.01</AB_RockyCrags>
+                        <AB_TarPits>0.01</AB_TarPits>
+                        <AB_MiasmicMangrove>0.045</AB_MiasmicMangrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Chimera"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.05</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.05</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.01</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.07</AB_GallatrossGraveyard>
+                        <AB_RockyCrags>0.05</AB_RockyCrags>
+                        <AB_TarPits>0.07</AB_TarPits>
+                        <AB_MiasmicMangrove>0.01</AB_MiasmicMangrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_ErymanthianBoar"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.01</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.01</AB_MycoticJungle>
+                        <AB_OcularForest>0.005</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.07</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.005</AB_GallatrossGraveyard>
+                        <AB_TarPits>0.005</AB_TarPits>
+                        <AB_MiasmicMangrove>0.01</AB_MiasmicMangrove>
+                        <AB_IdyllicMeadows>0.004</AB_IdyllicMeadows>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Griffin"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.07</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.01</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.01</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.05</AB_GallatrossGraveyard>
+                        <AB_TarPits>0.05</AB_TarPits>
+                        <AB_MiasmicMangrove>0.045</AB_MiasmicMangrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Kitsune"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.07</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.07</AB_MycoticJungle>
+                        <AB_OcularForest>0.07</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.07</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.07</AB_GallatrossGraveyard>
+                        <AB_MechanoidIntrusion>0.005</AB_MechanoidIntrusion>
+                        <AB_PropaneLakes>0.005</AB_PropaneLakes>
+                        <AB_RockyCrags>0.005</AB_RockyCrags>
+                        <AB_TarPits>0.07</AB_TarPits>
+                        <AB_PyroclasticConflagration>0.01</AB_PyroclasticConflagration>
+                        <AB_MiasmicMangrove>0.07</AB_MiasmicMangrove>
+                        <AB_IdyllicMeadows>0.07</AB_IdyllicMeadows>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_LernaeanHydra"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.01</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.01</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.05</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.001</AB_GallatrossGraveyard>
+                        <AB_MechanoidIntrusion>0.001</AB_MechanoidIntrusion>
+                        <AB_PropaneLakes>0.001</AB_PropaneLakes>
+                        <AB_RockyCrags>0.001</AB_RockyCrags>
+                        <AB_TarPits>0.001</AB_TarPits>
+                        <AB_MiasmicMangrove>0.05</AB_MiasmicMangrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Manticore"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.07</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.01</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.01</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.05</AB_GallatrossGraveyard>
+                        <AB_TarPits>0.05</AB_TarPits>
+                        <AB_PyroclasticConflagration>0.01</AB_PyroclasticConflagration>
+                        <AB_MiasmicMangrove>0.07</AB_MiasmicMangrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Pegasus"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.01</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.01</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.05</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.001</AB_GallatrossGraveyard>
+                        <AB_MechanoidIntrusion>0.001</AB_MechanoidIntrusion>
+                        <AB_PropaneLakes>0.001</AB_PropaneLakes>
+                        <AB_RockyCrags>0.001</AB_RockyCrags>
+                        <AB_TarPits>0.001</AB_TarPits>
+                        <AB_PyroclasticConflagration>0.01</AB_PyroclasticConflagration>
+                        <AB_MiasmicMangrove>0.004</AB_MiasmicMangrove>
+                        <AB_IdyllicMeadows>0.002</AB_IdyllicMeadows>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Unicorn"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.01</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.01</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.05</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.001</AB_GallatrossGraveyard>
+                        <AB_MechanoidIntrusion>0.001</AB_MechanoidIntrusion>
+                        <AB_PropaneLakes>0.001</AB_PropaneLakes>
+                        <AB_RockyCrags>0.001</AB_RockyCrags>
+                        <AB_TarPits>0.001</AB_TarPits>
+                        <AB_MiasmicMangrove>0.004</AB_MiasmicMangrove>
+                        <AB_IdyllicMeadows>0.004</AB_IdyllicMeadows>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Qilin"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.01</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.01</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.05</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.001</AB_GallatrossGraveyard>
+                        <AB_MechanoidIntrusion>0.001</AB_MechanoidIntrusion>
+                        <AB_PropaneLakes>0.001</AB_PropaneLakes>
+                        <AB_RockyCrags>0.001</AB_RockyCrags>
+                        <AB_TarPits>0.001</AB_TarPits>
+                        <AB_MiasmicMangrove>0.004</AB_MiasmicMangrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_WildMinotaur"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.01</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.01</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.05</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.001</AB_GallatrossGraveyard>
+                        <AB_MechanoidIntrusion>0.001</AB_MechanoidIntrusion>
+                        <AB_PropaneLakes>0.001</AB_PropaneLakes>
+                        <AB_RockyCrags>0.001</AB_RockyCrags>
+                        <AB_TarPits>0.001</AB_TarPits>
+                        <AB_MiasmicMangrove>0.001</AB_MiasmicMangrove>
+                        <AB_IdyllicMeadows>0.001</AB_IdyllicMeadows>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_WillOWisp"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_GelatinousSuperorganism>0.1</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.001</AB_GallatrossGraveyard>
+                        <AB_MechanoidIntrusion>0.1</AB_MechanoidIntrusion>
+                        <AB_PropaneLakes>0.1</AB_PropaneLakes>
+                        <AB_TarPits>0.001</AB_TarPits>
+                        <AB_PyroclasticConflagration>0.1</AB_PyroclasticConflagration>
+                        <AB_MiasmicMangrove>0.004</AB_MiasmicMangrove>
+                        <AB_IdyllicMeadows>0.004</AB_IdyllicMeadows>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Catoblepas"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.01</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.01</AB_MycoticJungle>
+                        <AB_OcularForest>0.035</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.001</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.01</AB_GallatrossGraveyard>
+                        <AB_MechanoidIntrusion>0.0005</AB_MechanoidIntrusion>
+                        <AB_PropaneLakes>0.0005</AB_PropaneLakes>
+                        <AB_TarPits>0.035</AB_TarPits>
+                        <AB_PyroclasticConflagration>0.01</AB_PyroclasticConflagration>
+                        <AB_MiasmicMangrove>0.004</AB_MiasmicMangrove>
+                        <AB_IdyllicMeadows>0.004</AB_IdyllicMeadows>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_CeryneianHind"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.01</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.01</AB_MycoticJungle>
+                        <AB_OcularForest>0.035</AB_OcularForest>
+                        <AB_MiasmicMangrove>0.004</AB_MiasmicMangrove>
+                        <AB_IdyllicMeadows>0.004</AB_IdyllicMeadows>
+                        <AB_TarPits>0.005</AB_TarPits>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Cerberus"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.035</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.035</AB_MycoticJungle>
+                        <AB_MiasmicMangrove>0.004</AB_MiasmicMangrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Basilisk"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.01</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.01</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.035</AB_GelatinousSuperorganism>
+                        <AB_MiasmicMangrove>0.004</AB_MiasmicMangrove>
+                        <AB_IdyllicMeadows>0.004</AB_IdyllicMeadows>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Fenghuang"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.005</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.005</AB_MycoticJungle>
+                        <AB_OcularForest>0.005</AB_OcularForest>
+                        <AB_GelatinousSuperorganism>0.001</AB_GelatinousSuperorganism>
+                        <AB_GallatrossGraveyard>0.01</AB_GallatrossGraveyard>
+                        <AB_MechanoidIntrusion>0.0005</AB_MechanoidIntrusion>
+                        <AB_TarPits>0.035</AB_TarPits>
+                        <AB_MiasmicMangrove>0.004</AB_MiasmicMangrove>
+                        <AB_IdyllicMeadows>0.05</AB_IdyllicMeadows>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Ieltxu"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.005</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.005</AB_MycoticJungle>
+                        <AB_OcularForest>0.005</AB_OcularForest>
+                        <AB_MiasmicMangrove>0.004</AB_MiasmicMangrove>
+                        <AB_IdyllicMeadows>0.05</AB_IdyllicMeadows>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Kappa"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.05</AB_FeraliskInfestedJungle>
+                        <AB_MiasmicMangrove>0.1</AB_MiasmicMangrove>
+                        <AB_IdyllicMeadows>0.05</AB_IdyllicMeadows>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_LesserWyvern"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.001</AB_FeraliskInfestedJungle>
+                        <AB_GallatrossGraveyard>0.001</AB_GallatrossGraveyard>
+                        <AB_MiasmicMangrove>0.01</AB_MiasmicMangrove>
+                        <AB_TarPits>0.001</AB_TarPits>
+                        <AB_PyroclasticConflagration>0.001</AB_PyroclasticConflagration>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Phoenix"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_GallatrossGraveyard>0.001</AB_GallatrossGraveyard>
+                        <AB_TarPits>0.001</AB_TarPits>
+                        <AB_PyroclasticConflagration>0.001</AB_PyroclasticConflagration>
+                        <AB_MiasmicMangrove>0.004</AB_MiasmicMangrove>
+                        <AB_IdyllicMeadows>0.004</AB_IdyllicMeadows>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Salamander"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_GallatrossGraveyard>0.001</AB_GallatrossGraveyard>
+                        <AB_TarPits>0.001</AB_TarPits>
+                        <AB_PyroclasticConflagration>0.001</AB_PyroclasticConflagration>
+                        <AB_MiasmicMangrove>0.004</AB_MiasmicMangrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Tlilcoatl"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_FeraliskInfestedJungle>0.01</AB_FeraliskInfestedJungle>
+                        <AB_MycoticJungle>0.01</AB_MycoticJungle>
+                        <AB_OcularForest>0.01</AB_OcularForest>
+                        <AB_MiasmicMangrove>0.01</AB_MiasmicMangrove>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="MM_Xiezhi"]/race/wildBiomes</xpath>
+                    <value>
+                        <AB_GallatrossGraveyard>0.001</AB_GallatrossGraveyard>
+                        <AB_MiasmicMangrove>0.001</AB_MiasmicMangrove>
+                        <AB_TarPits>0.001</AB_TarPits>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
+

@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>AB_GallatrossBones</defName>
+        <label>gallatross bones</label>
+        <description>This ribcage once belonged to a living Gallatross of truly exceptional size. Note: if you have the Rim of Madness - Bones mod installed, you can deconstruct these into useable bones.</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AB_Bones1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4,4)</drawSize>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>4</Mass>
+            <Flammability>1.0</Flammability>
+            <MarketValue>50</MarketValue>
+            <WorkToBuild>2000</WorkToBuild>
+        </statBases>
+        <fillPercent>0.5</fillPercent>
+        <destroyable>true</destroyable>
+        <useHitPoints>true</useHitPoints>
+        <tickerType>Normal</tickerType>
+        <selectable>true</selectable>
+        <size>(4,4)</size>
+        <blockPlants>true</blockPlants>
+    </ThingDef>
+    <ThingDef ParentName="BuildingBase">
+        <defName>AB_AncientGallatrossSkull</defName>
+        <label>ancient gallatross skull</label>
+        <description>This skull belonged to an exceptionally huge Gallatross. Look at the size of this thing! Note: if you have the Rim of Madness - Bones mod installed, you can deconstruct these into useable bones.</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AB_AncientGallatrossSkull</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4,4)</drawSize>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <fillPercent>0.5</fillPercent>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <Mass>4</Mass>
+            <Flammability>1.0</Flammability>
+            <MarketValue>50</MarketValue>
+            <WorkToBuild>600</WorkToBuild>
+        </statBases>
+        <destroyable>true</destroyable>
+        <useHitPoints>true</useHitPoints>
+        <tickerType>Normal</tickerType>
+        <selectable>true</selectable>
+        <size>(2,2)</size>
+        <blockPlants>true</blockPlants>
+    </ThingDef>
+    <ThingDef ParentName="BuildingBase">
+        <defName>AB_AncientBone</defName>
+        <label>ancient bone</label>
+        <description>This fosilized bone might have belonged to an exceptionally large Gallatross. Note: if you have the Rim of Madness - Bones mod installed, you can deconstruct these into useable bones.</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AB_AncientBone</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4,4)</drawSize>
+        </graphicData>
+        <altitudeLayer>Floor</altitudeLayer>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>4</Mass>
+            <Flammability>1.0</Flammability>
+            <MarketValue>50</MarketValue>
+            <WorkToBuild>600</WorkToBuild>
+        </statBases>
+        <destroyable>true</destroyable>
+        <useHitPoints>true</useHitPoints>
+        <tickerType>Normal</tickerType>
+        <selectable>true</selectable>
+        <size>(2,2)</size>
+        <blockPlants>true</blockPlants>
+    </ThingDef>
+    <ThingDef ParentName="BuildingBase">
+        <defName>AB_AncientBrokenBone</defName>
+        <label>ancient shattered bone</label>
+        <description>This fosilized bone might have belonged to an exceptionally large Gallatross. Note: if you have the Rim of Madness - Bones mod installed, you can deconstruct these into useable bones.</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AB_AncientBrokenBone</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4,4)</drawSize>
+        </graphicData>
+        <altitudeLayer>Floor</altitudeLayer>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>25</MaxHitPoints>
+            <Mass>4</Mass>
+            <Flammability>1.0</Flammability>
+            <MarketValue>50</MarketValue>
+            <WorkToBuild>400</WorkToBuild>
+        </statBases>
+        <destroyable>true</destroyable>
+        <useHitPoints>true</useHitPoints>
+        <tickerType>Normal</tickerType>
+        <selectable>true</selectable>
+        <size>(1,1)</size>
+        <blockPlants>true</blockPlants>
+    </ThingDef>
+    <ThingDef ParentName="BuildingBase">
+        <defName>AB_AncientVerticalBone</defName>
+        <label>ancient bones</label>
+        <description>These fosilized bones might have belonged to an exceptionally large Gallatross. Note: if you have the Rim of Madness - Bones mod installed, you can deconstruct these into useable bones.</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AB_AncientVerticalBone</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4,4)</drawSize>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <fillPercent>0.5</fillPercent>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>4</Mass>
+            <Flammability>1.0</Flammability>
+            <MarketValue>50</MarketValue>
+            <WorkToBuild>1200</WorkToBuild>
+        </statBases>
+        <destroyable>true</destroyable>
+        <useHitPoints>true</useHitPoints>
+        <tickerType>Normal</tickerType>
+        <selectable>true</selectable>
+        <size>(1,2)</size>
+        <blockPlants>true</blockPlants>
+    </ThingDef>
+    <ThingDef ParentName="BuildingBase">
+        <defName>AB_HugeGallatrossSkeleton</defName>
+        <label>huge gallatross skeleton</label>
+        <description>These fosilized bones might have belonged to an exceptionally large Gallatross. Note: if you have the Rim of Madness - Bones mod installed, you can deconstruct these into useable bones.</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AB_WholeGallatrossSkeleton</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(12,8)</drawSize>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <rotatable>false</rotatable>
+        <fillPercent>0.75</fillPercent>
+        <statBases>
+            <MaxHitPoints>850</MaxHitPoints>
+            <Mass>4</Mass>
+            <Flammability>1.0</Flammability>
+            <MarketValue>50</MarketValue>
+            <WorkToBuild>3000</WorkToBuild>
+        </statBases>
+        <destroyable>true</destroyable>
+        <useHitPoints>true</useHitPoints>
+        <tickerType>Normal</tickerType>
+        <selectable>true</selectable>
+        <size>(8,4)</size>
+        <blockPlants>true</blockPlants>
+    </ThingDef>
+    <ThingDef ParentName="BuildingBase">
+        <thingClass>Building</thingClass>
+        <defName>AB_AbandonedShipPart</defName>
+        <label>long abandoned ship part</label>
+        <description>A mysterious crashed piece of a spaceship. This was probably full of mechanoids once, but it seems to have been left abandoned for a while. Perhaps it could be salvaged for raw materials.</description>
+        <graphicData>
+            <texPath>Things/Building/Exotic/CrashedShipPart</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(6,3)</drawSize>
+            <shadowData>
+                <volume>(5.17, 1.0, 2.4)</volume>
+                <offset>(-0.16, 0, -0.08)</offset>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <pathCost>150</pathCost>
+        <blockWind>true</blockWind>
+        <passability>Impassable</passability>
+        <fillPercent>1.0</fillPercent>
+        <size>(6,3)</size>
+        <statBases>
+            <MaxHitPoints>1000</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <Beauty>-200</Beauty>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <killedLeavings>
+            <Steel>75</Steel>
+            <Plasteel>15</Plasteel>
+            <ChunkSlagSteel>8</ChunkSlagSteel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <ComponentSpacer>1</ComponentSpacer>
+        </killedLeavings>
+        <rotatable>true</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <drawerType>MapMeshOnly</drawerType>
+        <repairEffect>ConstructMetal</repairEffect>
+        <forceDebugSpawnable>true</forceDebugSpawnable>
+        <building>
+            <claimable>true</claimable>
+            <soundAmbient>CrashedShipPart_Ambience</soundAmbient>
+            <roofCollapseDamageMultiplier>0.2</roofCollapseDamageMultiplier>
+        </building>
+        <comps>
+            <li Class="CompProperties_SnowExpand"/>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="BuildingNaturalBase">
+        <defName>AB_TarHole</defName>
+        <label>tar hole</label>
+        <description>A natural hole in the mud connecting to an underground tar reservoir. This will periodically spray fresh tar in the vicinity.</description>
+        <thingClass>AlphaBiomes.Building_TarHole</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AB_TarHole</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>Transparent</shaderType>
+            <drawSize>(4,4)</drawSize>
+        </graphicData>
+        <uiIconScale>0.5</uiIconScale>
+        <altitudeLayer>Floor</altitudeLayer>
+        <rotatable>false</rotatable>
+        <destroyable>false</destroyable>
+        <useHitPoints>false</useHitPoints>
+        <tickerType>Normal</tickerType>
+        <selectable>true</selectable>
+        <size>(4,4)</size>
+        <neverOverlapFloors>true</neverOverlapFloors>
+        <blockPlants>true</blockPlants>
+        <building>
+            <isEdifice>false</isEdifice>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="BuildingNaturalBase">
+        <defName>AB_BumbledroneHive</defName>
+        <label>bumbledrone hive</label>
+        <description>A huge mound of hardened organic matter that communicates with an extensive underground hive. Bumbledrones will periodically exit this hive to gather food for the bumbledrone colony. Bumbledrones surrounding a hive are particularly aggressive, so it's best to give them some space.</description>
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AB_BumbledroneHive</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.6</drawSize>
+        </graphicData>
+        <uiIconScale>0.65</uiIconScale>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <fillPercent>0.5</fillPercent>
+        <statBases>
+            <MaxHitPoints>2000</MaxHitPoints>
+            <Flammability>2.0</Flammability>
+        </statBases>
+        <pathCost>50</pathCost>
+        <receivesSignals>true</receivesSignals>
+        <blockWind>true</blockWind>
+        <tickerType>Normal</tickerType>
+        <passability>PassThroughOnly</passability>
+        <killedLeavings>
+            <InsectJelly>30</InsectJelly>
+        </killedLeavings>
+        <comps>
+            <li Class="AlphaBiomes.CompProperties_SpawnerPawnCustom">
+                <spawnablePawnKinds>
+                    <li>AA_Bumbledrone</li>
+                    <li>AA_Bumbledrone</li>
+                    <li>AA_Bumbledrone</li>
+                    <li>AA_Bumbledrone</li>
+                    <li>AA_Bumbledrone</li>
+                    <li>AA_Bumbledrone</li>
+                    <li>AA_Bumbledrone</li>
+                    <li>AA_Bumbledrone</li>
+                    <li>AA_Bumbledrone</li>
+                    <li>AA_Bumbledrone</li>
+                    <li>AA_BumbledroneHierophant</li>
+                    <li>AA_BumbledroneHierophant</li>
+                    <li>AA_BumbledroneHierophant</li>
+                    <li>AA_BumbledroneQueen</li>
+                </spawnablePawnKinds>
+                <pawnSpawnIntervalDays>0.5~1</pawnSpawnIntervalDays>
+                <spawnSound>AB_Hive_Spawn</spawnSound>
+                <initialPawnsCount>5</initialPawnsCount>
+            </li>
+            <li Class="CompProperties_SelfhealHitpoints">
+                <ticksPerHeal>600</ticksPerHeal>
+                <!-- 60k ticks = 1 day, 10 hp per day -->
+            </li>
+            <li Class="CompProperties_Spawner">
+                <thingToSpawn>GlowPod</thingToSpawn>
+                <spawnCount>1</spawnCount>
+                <spawnIntervalRange>30000~60000</spawnIntervalRange>
+                <spawnMaxAdjacent>1</spawnMaxAdjacent>
+                <saveKeysPrefix>pod</saveKeysPrefix>
+                <inheritFaction>true</inheritFaction>
+            </li>
+            <li Class="CompProperties_Spawner">
+                <thingToSpawn>AB_BumbledroneFood</thingToSpawn>
+                <spawnCount>40</spawnCount>
+                <spawnIntervalRange>4000~10000</spawnIntervalRange>
+                <spawnMaxAdjacent>40</spawnMaxAdjacent>
+                <spawnForbidden>true</spawnForbidden>
+                <saveKeysPrefix>jelly</saveKeysPrefix>
+            </li>
+        </comps>
+        <building>
+            <isEdifice>false</isEdifice>
+            <claimable>false</claimable>
+            <deconstructible>false</deconstructible>
+        </building>
+    </ThingDef>
+</Defs>

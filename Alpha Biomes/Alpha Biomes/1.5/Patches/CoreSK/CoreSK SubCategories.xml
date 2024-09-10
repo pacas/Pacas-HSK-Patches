@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Columns"]/defNames</xpath>
+                <value>
+                    <li>AB_ExoticColumn</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Mining"]/defNames</xpath>
+                <value>
+                    <li>AB_CoreSampleDrill</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_RenewablePower"]/defNames</xpath>
+                <value>
+                    <li>AB_AlcyoniteSolar</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Furnaces"]/defNames</xpath>
+                <value>
+                    <li>AB_ExoticSmelterOcular</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Stove"]/defNames</xpath>
+                <value>
+                    <li>AB_PropaneStove</li>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Heaters"]/defNames</xpath>
+                <value>
+                    <li>AB_PropaneHeater</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+	
+</Patch>

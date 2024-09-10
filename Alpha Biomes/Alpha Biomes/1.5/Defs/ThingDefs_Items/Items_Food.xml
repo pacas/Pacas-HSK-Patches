@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SK_MealBase">
+        <defName>AB_SlimeMeal</defName>
+        <label>slime meal</label>
+        <description>These hardened chunks of slime can be used as a last chance alternative to starvation. Barely edible, and absolutely disgusting.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AB_SlimeMeal</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>10</MarketValue>
+            <Nutrition>0.85</Nutrition>
+            <DeteriorationRate>2</DeteriorationRate>
+			<Bulk>1.50</Bulk>
+			<Mass>1.20</Mass>
+        </statBases>
+        <ingestible>
+            <foodType>Meal</foodType>
+            <preferability>MealAwful</preferability>
+            <tasteThought>AteNutrientPasteMeal</tasteThought>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+        <comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>15</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+    </ThingDef>
+</Defs>

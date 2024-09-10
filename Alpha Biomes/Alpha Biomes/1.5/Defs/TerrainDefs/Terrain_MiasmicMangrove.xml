@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TerrainDef ParentName="NaturalTerrainBase">
+        <defName>AB_FertileMud</defName>
+        <label>fertile mud</label>
+        <texturePath>Terrain/Surfaces/AB_FertileMud</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/AB_FertileMud_Polluted</pollutedTexturePath>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMud</pollutionOverlayTexturePath>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+        <edgeType>FadeRough</edgeType>
+        <renderPrecedence>330</renderPrecedence>
+        <pathCost>12</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-2</Cleanliness>
+        </statBases>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+            <li>GrowSoil</li>
+            <li>Diggable</li>
+        </affordances>
+        <generatedFilth>Filth_Dirt</generatedFilth>
+        <fertility>1</fertility>
+        <takeFootprints>True</takeFootprints>
+        <avoidWander>true</avoidWander>
+        <driesTo>Soil</driesTo>
+        <tools>
+            <li>
+                <label>mud</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>MudInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+        <tags>
+			<li>Soil</li>
+		</tags>
+    </TerrainDef>
+
+    <TerrainDef ParentName="SK_WaterShallowBase">
+        <defName>AB_FertileMarsh</defName>
+        <label>fertile marsh</label>
+        <texturePath>Terrain/Surfaces/AB_FertileMarsh</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/AB_FertileMarsh_Polluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionMarsh</pollutionOverlayTexturePath>
+        <pollutionColor>(1, 1, 1, 0.15)</pollutionColor>
+		
+        <waterDepthShader>Map/WaterDepth</waterDepthShader>
+        <pathCost>1</pathCost>
+        <statBases>
+            <Beauty>-3</Beauty>
+            <BeautyOutdoors>0</BeautyOutdoors>
+            <Cleanliness>-2</Cleanliness>
+        </statBases>
+        <fertility>0.7</fertility>
+        <driesTo>Soil</driesTo>
+        <extinguishesFire>true</extinguishesFire>
+        <tools>
+            <li>
+                <label>mud</label>
+                <capacities>
+                    <li>KickMaterialInEyes</li>
+                </capacities>
+                <hediff>MudInEyes</hediff>
+                <cooldownTime>1.5</cooldownTime>
+            </li>
+        </tools>
+		<tags>
+			<li>Soil</li>
+		</tags>
+    </TerrainDef>
+</Defs>

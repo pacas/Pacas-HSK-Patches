@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--============================== BaseRoofBuilding ==============================-->
+    <ThingDef ParentName="BuildingBase" Name="BaseRoofBuilding" Abstract="True">
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <damageData>
+                <enabled>false</enabled>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <category>Building</category>
+        <selectable>true</selectable>
+        <destroyable>true</destroyable>
+        <clearBuildingArea>false</clearBuildingArea>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <passability>Standable</passability>
+        <building>
+            <isEdifice>false</isEdifice>
+            <canPlaceOverWall>true</canPlaceOverWall>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <castEdgeShadows>false</castEdgeShadows>
+        <blockWind>false</blockWind>
+        <fillPercent>0.05</fillPercent>
+        <coversFloor>false</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Never</tickerType>
+        <rotatable>true</rotatable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <holdsRoof>false</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>0</staticSunShadowHeight>
+        <blockLight>false</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <fertility>0</fertility>
+        <terrainAffordanceNeeded/>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>2</multiplier>
+            </li>
+        </damageMultipliers>
+        <modExtensions Inherit="False">
+            <li MayRequire="owlchemist.perspectivebuildings" Class="Perspective.Offsetter">
+                <mirror>False</mirror>
+                <offsetType>Eight</offsetType>
+                <offsets>
+                    <li>(0.5, 0, 0.5)</li>
+                </offsets>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--============================== Rafter ==============================-->
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveWoody</defName>
+        <label>Wood eave</label>
+        <description>A standard eave. Made out of wood.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/WoodEave/Eave</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/WoodEave_Icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveWoodyCorner</defName>
+        <label>Wood corner eave (outer)</label>
+        <description>A corner eave for fill the gap.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/WoodEave_Corner/Eavecornerout</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/Eavecornerout_Icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Mass>1.5</Mass>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveStony</defName>
+        <label>Stone eave</label>
+        <description>A standard eave. Made out of blocks.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/StoneEave/Eave</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/StoneEave_Icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Bricks</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveStonyCorner</defName>
+        <label>Stone corner eave (outer)</label>
+        <description>A corner eave for fill the gap.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/StoneEave_Corner/Eavecornerout</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/Eavecornerout_Icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Mass>1.5</Mass>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Bricks</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_Eave</defName>
+        <label>Metal eave</label>
+        <description>A standard eave. Made out of metals.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/MetalEave/Eave</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/MetalEave_Icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveMetalCorner</defName>
+        <label>Metal corner eave (outer)</label>
+        <description>A corner eave for fill the gap.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/MetalEave_Corner/Eavecornerout</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/Eavecornerout_Icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Mass>1.5</Mass>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    </ThingDef>
+    <!--============================================================-->
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_Rafter</defName>
+        <label>Metal rafter</label>
+        <description>Use this rafters and try to decorate your metal buildings again.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Rafter</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/Rafter_icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_RafterStony</defName>
+        <label>Stone rafter</label>
+        <description>Use this rafters and try to decorate your stone buildings again.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Rafter</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/Rafter_icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Bricks</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_RafterWoody</defName>
+        <label>Wood rafter</label>
+        <description>Use this rafters and try to decorate your wooden buildings again.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Rafter</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/Rafter_icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+    </ThingDef>
+    <!--============================================================-->
+    <ThingDef ParentName="SK_BuildingBase" Name="GTM_Hatchbase">
+        <defName>SDW_Hatch</defName>
+        <label>wall (burrowed)</label>
+        <description>burrowed wall.</description>
+        <thingClass>BombInWall.SDW_Hatch</thingClass>
+        <category>Building</category>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <fillPercent>0.2</fillPercent>
+        <useHitPoints>true</useHitPoints>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Stony</li>
+            <li>Bricks</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <costList>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <costStuffCount>10</costStuffCount>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+            <WorkToBuild>2000</WorkToBuild>
+        </statBases>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <selectable>true</selectable>
+        <tickerType>Normal</tickerType>
+        <rotatable>false</rotatable>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <holdsRoof>false</holdsRoof>
+        <staticSunShadowHeight>0</staticSunShadowHeight>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>30</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <researchPrerequisites>
+            <li>Autodoors</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <passability>Standable</passability>
+        <graphicData>
+            <texPath>Things/Building/SDW_Hatch</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <damageData>
+                <enabled>false</enabled>
+            </damageData>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>FPBIWWWG</defName>
+        <label>burrowing wall</label>
+        <description>An impassable wall. Capable of holding up a roof. Burrow function added.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <texPath>Things/Building/Linked/Wall</texPath>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>350</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <ElectronicComponents>1</ElectronicComponents>
+        </costList>
+        <costStuffCount>10</costStuffCount>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.5</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <chanceNeverExplodeFromDamage>0.2</chanceNeverExplodeFromDamage>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>30</basePowerConsumption>
+            </li>
+            <li Class="BombInWall.CompProperties_BIWHidingWall"/>
+        </comps>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <tickerType>Normal</tickerType>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Stony</li>
+            <li>Bricks</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>3</multiplier>
+            </li>
+        </damageMultipliers>
+        <researchPrerequisites>
+            <li>Autodoors</li>
+        </researchPrerequisites>
+    </ThingDef>
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>FPBIWBombInWall</defName>
+        <label>wall with bomb</label>
+        <description>An impassable wall. Capable of holding up a roof. Self destruction function added.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <texPath>Things/Building/Linked/BombInWall</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>2.0</Flammability>
+        </statBases>
+        <costList>
+            <Chemfuel>15</Chemfuel>
+            <ElectronicComponents>1</ElectronicComponents>
+        </costList>
+        <costStuffCount>10</costStuffCount>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.7</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <chanceNeverExplodeFromDamage>0.2</chanceNeverExplodeFromDamage>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>30</basePowerConsumption>
+            </li>
+            <li Class="BombInWall.CompProperties_FPBIW"/>
+        </comps>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <tickerType>Normal</tickerType>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Stony</li>
+            <li>Bricks</li>
+        </stuffCategories>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>3</multiplier>
+            </li>
+        </damageMultipliers>
+        <researchPrerequisites>
+            <li>IEDs</li>
+        </researchPrerequisites>
+    </ThingDef>
+</Defs>

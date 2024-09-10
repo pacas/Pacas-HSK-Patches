@@ -6,6 +6,7 @@
 	<supportedVersions>
         <li>1.3</li>
         <li>1.4</li>
+        <li>1.5</li>
 	</supportedVersions>
 	<loadBefore></loadBefore>
 	<loadAfter>
@@ -16,17 +17,13 @@
 		<li>roolo.giddyupcaravan</li>
 	</loadAfter>
 	<url>http://megafaunarimworld.wikia.com</url>
-	<description>Version: 1.5
-
----
-
-&lt;size=20&gt;Description&lt;/size&gt;
+	<description>Description
 Thanks to the wonders of today's technology, the small group of scientists that was previously known for bringing the Megatherium-
 Uh, I mean, the Megasloth back to life, was able to make the Megafauna Project a reality! 
 This time around, they were able to recreate 38 different species of animals that used to inhabit planet Earth thousands to millions years ago. 
 ...Was that a wise move? Who cares! Now we all can feast our eyes on those glorious beasts as they will slowly inevitably turn all the ecosystems we know upside-down!
 
-&lt;size=20&gt;Features&lt;/size&gt;
+Features
 38 new species of animals, all able to spawn naturally in different biomes:
 - Arthropleura,
 - Doedicurus,
@@ -70,75 +67,5 @@ This time around, they were able to recreate 38 different species of animals tha
 These animals are quite rare, and should be a good challenge to either tame or slay. 
 A lot of them can also be used as pack animals for a caravan (with paraceratherium being your new best caravan buddy!).
 Wooly mammoth, elasmotherium, and josephoartigasia are shearable, and arthropleura, titanis, titanoboa, megalania, dinornis, quinkana, megalochelys, palaeeudyptes, gigantophis, meganeura, and purussaurus do lay eggs. Sivatherium, macrauchenia, aurochs cows, and uintatherium are milkable - sivatherium's milk is very nutritious and quite valuable!
-
-Megafauna will automatically detect and patch both A Dog Said... by SpoonShortage and Giddy-up! by Roolo, so make sure to make it load after those mods.
-
-&lt;size=20&gt;Languages&lt;/size&gt;
-English, Polish,
-
-&lt;size=20&gt;Credits&lt;/size&gt;
-Roolo - for great help with making Megafauna compatible with his Giddy-up mod.
-Nightinggale - for his immensely useful ModCheck.
-
-&lt;size=20&gt;Changelog&lt;/size&gt;
-10.10.2020 - Update #8:
-			- updated to be compatible with Rimworld 1.2.
-			
-23.03.2020 - Update #7.5:
-			- brought back A Dog Said... compatibility,
-			- hopefully fixed a bunch of errors people were getting.
-
-22.03.2020 - Update #7:
-			- updated to be compatible with Rimworld 1.1.
-			
-03.11.2018 - Update #6:
-			- changed the name of the "ScorpionLike" body type to fix compatibility issues with AnimalCollabProject,
-			- changed the intelligence level of smilodon and dinocrocuta to advanced, to match the change made to vanilla's cougar and panther,
-			- changed the intelligence level of pulmonoscorpius to advanced.
-			
-01.11.2018 - Update #5:
-			- updated to be compatible with Rimworld 1.0,
-			- all animals now have unique dessicated sprites,
-			- a lot of small changes intended to help with the balance, like lower hunger rates for predators or sizes of groups some of the animals can spawn in,
-			- added 15 (!) more animals.
-			
-06.04.2018 - Update #4:
-			- there is a simple official megafauna wiki now: http://megafaunarimworld.wikia.com!
-			- actually made all the animals less rare - turns out that the last time I made the spawn chances about 5-8 times lower than I intended, oops,
-			- minor changes to some of the animals' stats,
-			- woolly mammoth's name is no longer misspelled.
-			
-20.12.2017 - Update #3:
-			- updated to be compatible with Rimworld Beta 18,
-			- no longer requires an additional patch to be compatible with A Dog Said..., it will now automatically detect it and patch all the necessary stuff in,
-			- also comes with a built-in patch for Giddy-up!,
-			- daeodon, titanis, titanoboa, smilodon, procoptodon, gomphotaria, short-faced bear, and dinocrocuta are no longer pack animals (can't be used to carry stuff in caravans),
-			- very minor tweaks to a few animals in regards to their body size and meat/leather yield,
-			- some of the animals can now spawn in the new swamp-type biomes (titanoboa's no longer exclusive to the tropical rainforest!),
-			- some of the older animals such as arthropleura and doedicurus now have their own body types instead of using unfitting vanilla ones,
-			- some of the older animals won't be sold by traders anymore, in order to make obtaining them feel more special, those being: paraceratherium, titanoboa, elasmotherium, megalania, gomphotaria, and short-faced bear.
-			- added 4 more animals.
-			
-22.08.2017 - Update #2:
-			- fixed problems with breeding arthropleura (hopefully...?),
-			- reduced meat/leather yield of almost all the animals,
-			- finally added the max body sizes of prey the predators will hunt,
-			- slight changes as to what biomes the animals can spawn in,
-			- changed entelodont's name to daeodon as it is more specific and therefore more fitting.
-			- added 5 more animals.
-	
-01.08.2017 - Update #1:
-			- dropped support for A Dog Said... Easy Patcher (now requires a separate compatibility patch for A Dog Said..., which adds the feature of healing old wounds on animals)
-			- reduced spawn rates of the creatures,
-			- reduced meat/leather yield of paraceratherium/titanoboa,
-			- slightly reduced size of giganthopithecus/titanoboa,
-			- fixed problems with selling items to traders,
-			- fixed some herbivores not being able to eat live plants,
-			- removed unfertilized eggs of arthropleura/titanis/titanoboa,
-			- increased size of baby animals,
-			- increased market value of the mammoth wool,
-			- all the leathers now have different stats as well as market value,
-			- added 6 more animals.
-
 </description>
 </ModMetaData>

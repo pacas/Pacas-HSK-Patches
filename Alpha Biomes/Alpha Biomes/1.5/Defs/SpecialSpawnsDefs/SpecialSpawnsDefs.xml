@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  
+    <AlphaBiomes.SpecialSpawnsDef>
+        <defName>AB_SpawnAgariluxPrime</defName>
+        <thingDef>AB_AgariluxPrime</thingDef>
+        <allowOnWater>false</allowOnWater>
+        <numberToSpawn>3~3</numberToSpawn>
+        <terrainValidationDisallowed/>
+        <terrainValidationAllowed>
+            <li>AB_MycoticGrass</li>
+        </terrainValidationAllowed>
+        <biomesWithExtraGeneration/>
+        <allowedBiome>AB_MycoticJungle</allowedBiome>
+    </AlphaBiomes.SpecialSpawnsDef>
+   
+    <AlphaBiomes.SpecialSpawnsDef>
+        <defName>AB_SpawnGallatrossBones</defName>
+        <thingDef>AB_GallatrossBones</thingDef>
+        <allowOnWater>false</allowOnWater>
+        <numberToSpawn>25~35</numberToSpawn>
+        <terrainValidationDisallowed/>
+        <terrainValidationAllowed>
+            <li>AB_CrackedMud</li>
+            <li>AB_RichCrackedMud</li>
+        </terrainValidationAllowed>
+        <biomesWithExtraGeneration/>
+        <allowedBiome>AB_GallatrossGraveyard</allowedBiome>
+
+    </AlphaBiomes.SpecialSpawnsDef>
+   
+    <AlphaBiomes.SpecialSpawnsDef>
+        <defName>AB_SpawnGallatrossBonesTwo</defName>
+        <thingDef>AB_AncientGallatrossSkull</thingDef>
+        <allowOnWater>false</allowOnWater>
+        <numberToSpawn>15~15</numberToSpawn>
+        <terrainValidationDisallowed/>
+        <terrainValidationAllowed>
+            <li>AB_CrackedMud</li>
+            <li>AB_RichCrackedMud</li>
+        </terrainValidationAllowed>
+        <biomesWithExtraGeneration/>
+        <allowedBiome>AB_GallatrossGraveyard</allowedBiome>
+
+    </AlphaBiomes.SpecialSpawnsDef>
+    <AlphaBiomes.SpecialSpawnsDef>
+        <defName>AB_SpawnGallatrossBonesThree</defName>
+        <thingDef>AB_AncientBone</thingDef>
+        <allowOnWater>false</allowOnWater>
+        <numberToSpawn>35~45</numberToSpawn>
+        <terrainValidationDisallowed/>
+        <terrainValidationAllowed>
+            <li>AB_CrackedMud</li>
+            <li>AB_RichCrackedMud</li>
+        </terrainValidationAllowed>
+        <biomesWithExtraGeneration/>
+        <allowedBiome>AB_GallatrossGraveyard</allowedBiome>
+
+    </AlphaBiomes.SpecialSpawnsDef>
+    <AlphaBiomes.SpecialSpawnsDef>
+        <defName>AB_SpawnGallatrossBonesFour</defName>
+        <thingDef>AB_AncientBrokenBone</thingDef>
+        <allowOnWater>false</allowOnWater>
+        <numberToSpawn>60~70</numberToSpawn>
+        <terrainValidationDisallowed/>
+        <terrainValidationAllowed>
+            <li>AB_CrackedMud</li>
+            <li>AB_RichCrackedMud</li>
+        </terrainValidationAllowed>
+        <biomesWithExtraGeneration/>
+        <allowedBiome>AB_GallatrossGraveyard</allowedBiome>
+
+    </AlphaBiomes.SpecialSpawnsDef>
+    <AlphaBiomes.SpecialSpawnsDef>
+        <defName>AB_SpawnGallatrossBonesFive</defName>
+        <thingDef>AB_AncientVerticalBone</thingDef>
+        <allowOnWater>false</allowOnWater>
+        <numberToSpawn>30~40</numberToSpawn>
+        <terrainValidationDisallowed/>
+        <terrainValidationAllowed>
+            <li>AB_CrackedMud</li>
+            <li>AB_RichCrackedMud</li>
+        </terrainValidationAllowed>
+        <biomesWithExtraGeneration/>
+        <allowedBiome>AB_GallatrossGraveyard</allowedBiome>
+
+    </AlphaBiomes.SpecialSpawnsDef>
+   
+   
+    <AlphaBiomes.SpecialSpawnsDef>
+        <defName>AB_SpawnGallatrossBonesSix</defName>
+        <thingDef>AB_HugeGallatrossSkeleton</thingDef>
+        <allowOnWater>false</allowOnWater>
+        <numberToSpawn>5~7</numberToSpawn>
+        <terrainValidationDisallowed/>
+        <terrainValidationAllowed>
+            <li>AB_FineSand</li>
+        </terrainValidationAllowed>
+        <biomesWithExtraGeneration/>
+        <allowedBiome>AB_GallatrossGraveyard</allowedBiome>
+
+    </AlphaBiomes.SpecialSpawnsDef>
+   
+    <AlphaBiomes.SpecialSpawnsDef>
+        <defName>AB_SpawnShipChunks</defName>
+        <thingDef>ShipChunk</thingDef>
+        <allowOnWater>false</allowOnWater>
+        <numberToSpawn>12~17</numberToSpawn>
+        <terrainValidationDisallowed/>
+        <terrainValidationAllowed>
+            <li>GU_MetalFloor1</li>
+            <li>GU_MetalFloor2</li>
+            <li>GU_MetalFloor3</li>
+        </terrainValidationAllowed>
+        <biomesWithExtraGeneration/>
+        <allowedBiome>AB_MechanoidIntrusion</allowedBiome>
+
+    </AlphaBiomes.SpecialSpawnsDef>
+   
+  
+   
+    <AlphaBiomes.SpecialSpawnsDef>
+        <defName>AB_SpawnPoisonShipChunks</defName>
+        <thingDef>AB_AbandonedShipPart</thingDef>
+        <allowOnWater>false</allowOnWater>
+        <numberToSpawn>1~1</numberToSpawn>
+        <terrainValidationDisallowed/>
+        <terrainValidationAllowed>
+            <li>GU_MetalFloor1</li>
+            <li>GU_MetalFloor2</li>
+            <li>GU_MetalFloor3</li>
+        </terrainValidationAllowed>
+        <biomesWithExtraGeneration/>
+        <allowedBiome>AB_MechanoidIntrusion</allowedBiome>
+
+    </AlphaBiomes.SpecialSpawnsDef>
+   
+    <AlphaBiomes.SpecialSpawnsDef>
+        <defName>AB_SpawnFrozenTrees</defName>
+        <thingDef>AB_FlashFrozenTree</thingDef>
+        <allowOnWater>false</allowOnWater>
+        <numberToSpawn>30~35</numberToSpawn>
+        <terrainValidationDisallowed/>
+        <terrainValidationAllowed/>
+        <biomesWithExtraGeneration/>
+        <allowedBiome>AB_PropaneLakes</allowedBiome>
+
+    </AlphaBiomes.SpecialSpawnsDef>
+   
+    <AlphaBiomes.SpecialSpawnsDef>
+        <defName>AB_SpawnTarHoles</defName>
+        <thingDef>AB_TarHole</thingDef>
+        <allowOnWater>false</allowOnWater>
+        <numberToSpawn>6~8</numberToSpawn>
+        <terrainValidationDisallowed/>
+        <terrainValidationAllowed>
+            <li>AB_TarMud</li>
+        </terrainValidationAllowed>
+        <biomesWithExtraGeneration/>
+        <allowedBiome>AB_TarPits</allowedBiome>
+
+    </AlphaBiomes.SpecialSpawnsDef>
+   
+   
+    <AlphaBiomes.SpecialSpawnsDef>
+        <defName>AB_SpawnBumbledroneHives</defName>
+        <thingDef>AB_BumbledroneHive</thingDef>
+        <allowOnWater>false</allowOnWater>
+        <numberToSpawn>2~4</numberToSpawn>
+        <terrainValidationDisallowed/>
+        <terrainValidationAllowed/>
+        <biomesWithExtraGeneration/>
+        <findCellsOutsideColony>true</findCellsOutsideColony>
+      
+        <allowedBiome>AB_TarPits</allowedBiome>
+
+    </AlphaBiomes.SpecialSpawnsDef>
+   
+    <!--<AlphaBiomes.SpecialSpawnsDef>
+      <defName>AB_SpawnGeyser</defName>
+      <thingDef>AB_TarHole</thingDef>
+      <allowOnWater>true</allowOnWater>
+	  <numberToSpawn>100</numberToSpawn>
+      <terrainValidationDisallowed/>
+      <terrainValidationAllowed>
+		<li>AB_LiquidLava</li>
+	  </terrainValidationAllowed>
+      <biomesWithExtraGeneration/>
+      <allowedBiome>AB_PyroclasticConflagration</allowedBiome>
+
+   </AlphaBiomes.SpecialSpawnsDef>-->
+   
+</Defs>

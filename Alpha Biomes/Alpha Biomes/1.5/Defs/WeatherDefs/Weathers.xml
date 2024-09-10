@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <WeatherDef>
+        <defName>AB_RedFog</defName>
+        <label>red fog</label>
+        <description>Red fog reduces the accuracy of ranged weapons.</description>
+        <windSpeedFactor>0.5</windSpeedFactor>
+        <accuracyMultiplier>0.4</accuracyMultiplier>
+        <favorability>Neutral</favorability>
+        <perceivePriority>1</perceivePriority>
+        <ambientSounds>
+            <li>Ambient_Wind_Fog</li>
+        </ambientSounds>
+        <overlayClasses>
+            <li>WeatherOverlay_Fog</li>
+        </overlayClasses>
+        <weatherThought>AB_RedFogThought</weatherThought>
+        <commonalityRainfallFactor>
+            <points>
+                <li>(0, 0)</li>
+                <li>(1300, 1)</li>
+            </points>
+        </commonalityRainfallFactor>
+        <!-- Colors are Overcast -->
+        <skyColorsDay>
+            <sky>(0.8,0.4,0.4)</sky>
+            <shadow>(0.92,0.72,0.72)</shadow>
+            <overlay>(0.7,0.7,0.7)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(1,0.9,0.9)</sky>
+            <shadow>(0.92,0.72,0.72)</shadow>
+            <overlay>(0.6,0.6,0.6)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.55,0.40,0.45)</sky>
+            <shadow>(0.92,0.72,0.72)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.55,0.40,0.45)</sky>
+            <shadow>(0.92,0.72,0.72)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+
+    <WeatherDef>
+        <defName>AB_VolcanicAsh</defName>
+        <label>volcanic ash</label>
+        <description>A mixture of rock, mineral, and glass particles expelled from a volcano during a volcanic eruption. This creates a thick atmospheric layer that reduces ranged accuracy.</description>
+        <accuracyMultiplier>0.7</accuracyMultiplier>
+        <repeatable>true</repeatable>
+        <favorability>Bad</favorability>
+        <perceivePriority>0</perceivePriority>
+        <overlayClasses>
+            <li>WeatherOverlay_Fog</li>
+        </overlayClasses>
+        <ambientSounds>
+            <li>Ambient_Wind_Fog</li>
+        </ambientSounds>
+        <weatherThought>AB_VolcanicAshThought</weatherThought>
+        <!-- Colors are Dark -->
+        <skyColorsDay>
+            <sky>(0.6,0.60,0.6)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(0.5,0.50,0.5)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.3,0.3,0.3)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.6</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.2,0.2,0.2)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.6</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+
+    <WeatherDef>
+        <defName>AB_VolcanicAshRain</defName>
+        <label>volcanic ash with rain</label>
+        <description>A mixture of rock, mineral, and glass particles expelled from a volcano during a volcanic eruption, precipitating with rain. This creates a thick atmospheric layer that reduces ranged accuracy.</description>
+        <accuracyMultiplier>0.6</accuracyMultiplier>
+        <repeatable>true</repeatable>
+        <favorability>Bad</favorability>
+        <perceivePriority>0</perceivePriority>
+        <weatherThought>AB_VolcanicAshThought</weatherThought>
+        <ambientSounds>
+            <li>Ambient_Wind_Fog</li>
+            <li>Ambient_Rain</li>
+        </ambientSounds>
+        <overlayClasses>
+            <li>WeatherOverlay_Fog</li>
+            <li>WeatherOverlay_Rain</li>
+        </overlayClasses>
+        <eventMakers>
+            <li>
+                <averageInterval>6000</averageInterval>
+                <eventClass>WeatherEvent_LightningFlash</eventClass>
+            </li>
+            <li>
+                <averageInterval>6000</averageInterval>
+                <eventClass>WeatherEvent_LightningStrike</eventClass>
+            </li>
+        </eventMakers>
+        <commonalityRainfallFactor>
+            <points>
+                <li>(0, 0)</li>
+                <li>(1300, 1)</li>
+            </points>
+        </commonalityRainfallFactor>
+        <!-- Colors are Dark -->
+        <skyColorsDay>
+            <sky>(0.6,0.60,0.6)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(0.5,0.50,0.5)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.3,0.3,0.3)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.6</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.2,0.2,0.2)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.6</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+
+    <WeatherDef>
+        <defName>AB_ForsakenNight</defName>
+        <label>forsaken fog</label>
+        <description>A preternatural darkness that seeps into your very soul. Even during the "day" brightness will be very low, so lighting is going to be absolutely essential. Nights are going to be REALLY dark.</description>
+        <accuracyMultiplier>0.6</accuracyMultiplier>
+        <repeatable>true</repeatable>
+        <favorability>Good</favorability>
+        <perceivePriority>0</perceivePriority>
+        <weatherThought>AB_ForsakenNight</weatherThought>
+        <ambientSounds>
+            <li>Ambient_Wind_Fog</li>
+        </ambientSounds>
+        <!-- Colors are Super Dark -->
+        <skyColorsDay>
+            <sky>(0.45,0.50,0.55)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(0.35,0.40,0.45)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.1,0.1,0.1)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.6</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.01,0.01,0.01)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.6</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+
+    <WeatherDef>
+        <defName>AB_ForsakenRainyNight</defName>
+        <label>forsaken rain</label>
+        <temperatureRange>
+            <min>-15</min>
+            <max>100</max>
+        </temperatureRange>
+        <description>A preternatural darkness that seeps into your very soul. A freezing rain of supercooled water has started to drop from the darkened sky.</description>
+        <accuracyMultiplier>0.6</accuracyMultiplier>
+        <windSpeedFactor>1.5</windSpeedFactor>
+        <favorability>Neutral</favorability>
+        <perceivePriority>1</perceivePriority>
+        <weatherThought>AB_ForsakenRain</weatherThought>
+        <moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+        <rainRate>1</rainRate>
+        <ambientSounds>
+            <li>Ambient_Rain</li>
+        </ambientSounds>
+        <overlayClasses>
+            <li>WeatherOverlay_Rain</li>
+        </overlayClasses>
+        <commonalityRainfallFactor>
+            <points>
+                <li>(0, 0)</li>
+                <li>(1300, 1)</li>
+                <li>(4000, 3.0)</li>
+            </points>
+        </commonalityRainfallFactor>
+        <!-- Colors are Super Dark -->
+        <skyColorsDay>
+            <sky>(0.45,0.50,0.55)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(0.35,0.40,0.45)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.1,0.1,0.1)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.6</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.01,0.01,0.01)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.6</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+
+    <WeatherDef>
+        <defName>AB_ForsakenThunderstorm</defName>
+        <label>forsaken thunderstorm</label>
+        <description>A preternatural darkness that seeps into your very soul. Now with a dry thunderstorm! Isn't it great?</description>
+        <accuracyMultiplier>0.3</accuracyMultiplier>
+        <repeatable>true</repeatable>
+        <favorability>VeryBad</favorability>
+        <perceivePriority>2</perceivePriority>
+        <weatherThought>AB_ForsakenThunderstorm</weatherThought>
+        <windSpeedFactor>1.5</windSpeedFactor>
+        <ambientSounds>
+            <li>Ambient_Wind_Storm</li>
+        </ambientSounds>
+        <durationRange>
+            <min>15000</min>
+            <max>40000</max>
+        </durationRange>
+        <eventMakers>
+            <li>
+                <averageInterval>1200</averageInterval>
+                <eventClass>WeatherEvent_LightningFlash</eventClass>
+            </li>
+            <li>
+                <averageInterval>1200</averageInterval>
+                <eventClass>WeatherEvent_LightningStrike</eventClass>
+            </li>
+        </eventMakers>
+        <!-- Colors are Super Dark -->
+        <skyColorsDay>
+            <sky>(0.35,0.40,0.45)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(0.35,0.40,0.45)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.1,0.1,0.1)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.6</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.01,0.01,0.01)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.6</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+
+    <WeatherDef>
+        <defName>AB_AcidRainWeather</defName>
+        <label>acid rain</label>
+        <description>Toxic gas emissions from nearby volcanically active calderas are precipitating in the form of dangerous acid rain. Acid rain has an adverse impact on flora and fauna, killing insect and aquatic life-forms as well as having impacts on human health. Acid rain reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.</description>
+        <temperatureRange>0~100</temperatureRange>
+        <windSpeedFactor>1.5</windSpeedFactor>
+        <accuracyMultiplier>0.8</accuracyMultiplier>
+        <favorability>VeryBad</favorability>
+        <perceivePriority>2</perceivePriority>
+        <weatherThought>SoakingWet</weatherThought>
+        <rainRate>1</rainRate>
+        <durationRange>60000</durationRange>
+        <moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+        <ambientSounds>
+            <li>Ambient_Rain</li>
+        </ambientSounds>
+        <overlayClasses>
+            <li>WeatherOverlay_Rain</li>
+        </overlayClasses>
+        <commonalityRainfallFactor>
+            <points>
+                <li>(0, 0)</li>
+                <li>(1300, 1)</li>
+                <li>(4000, 3.0)</li>
+            </points>
+        </commonalityRainfallFactor>
+        <!-- Colors are Overcast -->
+        <skyColorsDay>
+            <sky>(0.85,0.85,0)</sky>
+            <shadow>(0.92,0.78,1)</shadow>
+            <overlay>(0.6,0.8,0.5)</overlay>
+            <saturation>0.85</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(0.85,0.85,0)</sky>
+            <shadow>(0.92,0.78,1)</shadow>
+            <overlay>(0.6,0.8,0.5)</overlay>
+            <saturation>0.85</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.85,0.85,0)</sky>
+            <shadow>(0.92,0.78,1)</shadow>
+            <overlay>(0.6,0.8,0.5)</overlay>
+            <saturation>0.85</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.85,0.85,0)</sky>
+            <shadow>(0.92,0.78,1)</shadow>
+            <overlay>(0.6,0.8,0.5)</overlay>
+            <saturation>0.85</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+</Defs>
