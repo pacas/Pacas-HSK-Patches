@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!--========== AA leathers ============-->
+    <ThingDef ParentName="SK_LeatherBase">
+		<defName>AA_Leather_Behemoth</defName>
+		<label>behemoth scales</label>
+		<description>Hard overlapping scales of draconic chitin. It is exceptionally durable in combat, but provides little protection from weather.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AA_Chitin</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(45,45,57)</color>
+		</graphicData>
+		<statBases>
+        <MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>6.2</MarketValue>
+            <Flammability>0.5</Flammability>
+			<StuffPower_Armor_Sharp>1.75</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.29</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat>
+            <Mass>0.1</Mass>
+			<Bulk>0.1</Bulk>
+		</statBases>
+		<stuffProps>
+			<color>(45,45,57)</color>
+			<commonality>0</commonality>
+			<statFactors>
+                <MaxHitPoints>1.9</MaxHitPoints>
+				<Flammability>0.5</Flammability>
+				<MoveSpeed>0.9</MoveSpeed>
+				<WorkToMake>1.5</WorkToMake>
+				<WorkToBuild>1.5</WorkToBuild>
+				<BedRestEffectiveness>0.7</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1.02</ImmunityGainSpeedFactor>
+				<Mass>1.5</Mass>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+    
+	<ThingDef ParentName="SK_LeatherBase">
+		<defName>AA_Leather_Aerofleet</defName>
+		<label>aerofleet fur</label>
+		<description>A fuzzy, soft layer of pliable material. Not as tough as other types of leather, but a decent insulator.</description>
+		<graphicData>
+			<color>(108,157,177)</color>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>2.2</MarketValue>
+			<Flammability>1.2</Flammability>
+			<StuffPower_Armor_Sharp>0.75</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.6</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.09</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>11</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
+			<Mass>0.01</Mass>
+			<Bulk>0.01</Bulk>
+		</statBases>
+		<stuffProps>
+			<color>(108,157,177)</color>
+			<commonality>0.001</commonality>
+            <statFactors>
+				<MaxHitPoints>0.7</MaxHitPoints>
+				<Flammability>1.2</Flammability>
+				<Beauty>1</Beauty>
+				<MoveSpeed>1.1</MoveSpeed>
+				<WorkToMake>1.1</WorkToMake>
+				<WorkToBuild>1.1</WorkToBuild>
+				<BedRestEffectiveness>1.1</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+				<Mass>0.5</Mass>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_LeatherBase">
+		<defName>AA_ArcticLion_Leather</defName>
+		<label>arctic lion fur</label>
+		<description>White thick leather covered in a long, rugged mat of fur. Harvested from an arctic lion. This thick skin insulates and protects really well.</description>
+		<graphicData>
+			<color>(127,129,154)</color>
+		</graphicData>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.01</Mass>
+			<Bulk>0.01</Bulk>
+			<MarketValue>3.3</MarketValue>
+			<StuffPower_Armor_Sharp>1.24</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.15</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.077</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(127,129,154)</color>
+			<commonality>0.001</commonality>
+			<statFactors>
+				<MaxHitPoints>1.5</MaxHitPoints>
+				<Beauty>1.4</Beauty>
+				<MoveSpeed>1</MoveSpeed>
+				<MarketValue>1.1</MarketValue>
+				<WorkToMake>1.5</WorkToMake>
+				<WorkToBuild>1</WorkToBuild>
+				<BedRestEffectiveness>0.85</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+				<Mass>1.1</Mass>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_LeatherBase">
+		<defName>AA_SandLion_Leather</defName>
+		<label>sand lion fur</label>
+		<description>Cream coloured thick leather covered in a long, rugged mat of fur. Harvested from a sand lion. This thick skin insulates from heat and protects really well.</description>
+		<graphicData>
+			<color>(178,129,100)</color>
+		</graphicData>
+		<statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.01</Mass>
+			<Bulk>0.01</Bulk>
+			<MarketValue>3.3</MarketValue>
+			<StuffPower_Armor_Sharp>1.24</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.15</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.077</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+		</statBases>
+		<stuffProps>
+			<color>(178,129,100)</color>
+			<commonality>0.001</commonality>
+			<statFactors>
+				<MaxHitPoints>1.5</MaxHitPoints>
+				<Beauty>1.4</Beauty>
+				<MoveSpeed>1</MoveSpeed>
+				<MarketValue>1.1</MarketValue>
+				<WorkToMake>1.5</WorkToMake>
+				<WorkToBuild>1</WorkToBuild>
+				<BedRestEffectiveness>0.85</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+				<Mass>1.1</Mass>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_LeatherBase">
+		<defName>Leather_IronChitin</defName>
+		<label>iron chitin</label>
+		<description>Super hard overlapping scales of insectoid chitin. It seems to be reinforced with some kind of iron lattice.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AA_Chitin</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(110,112,100)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<StuffPower_Armor_Blunt>1.9</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>2.05</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.152</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+			<Mass>0.05</Mass>
+			<Bulk>0.05</Bulk>
+		</statBases>
+		<stuffProps>
+			<color>(110,112,100)</color>
+			<commonality>0.001</commonality>
+			<statFactors>
+				<MaxHitPoints>2</MaxHitPoints>
+				<Flammability>0.2</Flammability>
+				<Beauty>0.7</Beauty>
+				<WorkToMake>3</WorkToMake>
+				<WorkToBuild>3</WorkToBuild>
+				<MarketValue>1.2</MarketValue>
+				<Mass>0.35</Mass>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_LeatherBase">
+		<defName>Leather_RaptorPlates</defName>
+		<label>hardened chitin</label>
+		<description>Overlapping plates of hardened chitin. Really durable in combat, but provides little protection from weather.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AA_Chitin</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(86,94,74)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>6</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<StuffPower_Armor_Blunt>2</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>1.3</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+			<Mass>0.05</Mass>
+			<Bulk>0.05</Bulk>
+		</statBases>
+		<stuffProps>
+			<color>(86,94,74)</color>
+			<commonality>0.001</commonality>
+			<statFactors>
+				<MaxHitPoints>1.9</MaxHitPoints>
+				<Flammability>0.4</Flammability>
+				<WorkToMake>2</WorkToMake>
+				<WorkToBuild>2</WorkToBuild>
+				<MarketValue>0.9</MarketValue>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_LeatherBase">
+		<defName>Leather_BlackChitin</defName>
+		<label>black insect chitin</label>
+		<description>Hard overlapping scales of insectoid chitin. It is exceptionally durable in combat, but provides little protection from weather.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AA_Chitin</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(66,57,60)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.3</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<StuffPower_Armor_Blunt>1.8</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>1.65</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+			<Mass>0.05</Mass>
+			<Bulk>0.05</Bulk>
+		</statBases>
+		<stuffProps>
+			<color>(26,12,16)</color>
+			<commonality>0.001</commonality>
+			<statFactors>
+				<MaxHitPoints>2</MaxHitPoints>
+				<Flammability>0.3</Flammability>
+				<Beauty>1.3</Beauty>
+				<WorkToMake>2</WorkToMake>
+				<WorkToBuild>2</WorkToBuild>
+				<MarketValue>1.4</MarketValue>
+				<Mass>0.35</Mass>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_LeatherBase">
+		<defName>Leather_Gallatross</defName>
+		<label>gallatross leather</label>
+		<description>This furry hide is of exceptional quality. Probably one of the best possible leathers on the Rim.</description>
+		<graphicData>
+			<color>(151,146,169)</color>
+		</graphicData>
+		<statBases>
+			<MarketValue>16</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+			<StuffPower_Armor_Blunt>3.9</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Sharp>3.5</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Heat>0.2</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>26</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+			<Mass>0.05</Mass>
+			<Bulk>0.05</Bulk>
+		</statBases>
+		<stuffProps>
+			<color>(151,146,169)</color>
+			<commonality>0.0005</commonality>
+			<statFactors>
+				<MaxHitPoints>3</MaxHitPoints>
+				<Flammability>0.5</Flammability>
+				<Beauty>7.5</Beauty>
+				<WorkToMake>2</WorkToMake>
+				<WorkToBuild>2</WorkToBuild>
+				<MarketValue>3</MarketValue>
+				<Mass>0.5</Mass>
+				<MoveSpeed>1</MoveSpeed>
+				<BedRestEffectiveness>0.9</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1.4</ImmunityGainSpeedFactor>
+			</statFactors>
+		</stuffProps>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>AA_CinderSilk</defName>
+		<label>cindersilk</label>
+		<description>This silk is as strong as synthread, but it is also an excellent thermal insulator. It is completely non-flammable.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AA_CinderSilk</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>5</MarketValue>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>3</DeteriorationRate>
+			<StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>1.66</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.2</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>22</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>28</StuffPower_Insulation_Heat>
+            <Mass>0.03</Mass>
+			<Bulk>0.03</Bulk>
+		</statBases>
+        <tickerType>Rare</tickerType>
+		<stackLimit>150</stackLimit>
+		<techLevel>Industrial</techLevel>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<commonality>0.01</commonality>
+			<color>(208,207,162)</color>
+			<statFactors>
+				<MaxHitPoints>1.3</MaxHitPoints>
+				<Beauty>2.5</Beauty>
+                <WorkToMake>0.9</WorkToMake>
+				<WorkToBuild>0.9</WorkToBuild>
+				<MoveSpeed>1.1</MoveSpeed>
+				<MarketValue>0.7</MarketValue>
+				<BedRestEffectiveness>0.9</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1.0</ImmunityGainSpeedFactor>
+				<Mass>0.55</Mass>
+			</statFactors>
+		</stuffProps>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>HTextiles</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef ParentName="SK_ResourceBase">
+		<defName>AA_MothSilk</defName>
+		<label>moth silk</label>
+		<description>A very tough silk extracted from Angel moths and Crowned Silkie. Very poor insulator.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/AA_MothSilk</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>5.5</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>5</DeteriorationRate>
+			<StuffPower_Armor_Sharp>1.40</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>6</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<stackLimit>150</stackLimit>
+		<techLevel>Neolithic</techLevel>
+		<minRewardCount>30</minRewardCount>
+		<stuffProps>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<commonality>0</commonality>
+			<color>(249,235,220)</color>
+			<statFactors>
+				<MaxHitPoints>0.9</MaxHitPoints>
+				<Beauty>3</Beauty>
+                <WorkToMake>1.3</WorkToMake>
+				<WorkToBuild>1.3</WorkToBuild>
+				<MoveSpeed>1.1</MoveSpeed>
+				<MarketValue>0.7</MarketValue>
+				<BedRestEffectiveness>1.1</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1.15</ImmunityGainSpeedFactor>
+				<Mass>0.47</Mass>
+			</statFactors>
+		</stuffProps>
+		<thingCategories>
+			<li>BTextiles</li>
+		</thingCategories>
+	</ThingDef>
+    
+    <ThingDef ParentName="SK_ResourceBase">
+		<defName>AA_NightWool</defName>
+		<label>night wool</label>
+		<description>This dark hued wool is soft, light and provides very good insulation. Stronger than other similar wools.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Wool</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(69,69,75)</color>
+		</graphicData>
+        <statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>4.5</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>0.8</Flammability>
+			<StuffPower_Armor_Sharp>1.0</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.3</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.8</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+		</statBases>
+        <tickerType>Rare</tickerType>
+		<stackLimit>150</stackLimit>
+		<techLevel>Neolithic</techLevel>
+		<minRewardCount>30</minRewardCount>
+		<stuffProps>
+            <categories>
+				<li>Fabric</li>
+			</categories>
+			<commonality>0.025</commonality>
+			<color>(45,45,57)</color>
+            <statFactors>
+				<Beauty>2</Beauty>
+				<BedRestEffectiveness>1.3</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1.08</ImmunityGainSpeedFactor>
+				<Mass>0.7</Mass>
+			</statFactors>
+		</stuffProps>
+        <thingCategories>
+			<li>BTextiles</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>

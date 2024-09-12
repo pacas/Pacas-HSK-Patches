@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef>
+		<defName>AA_GreaterBlackHiveBolt</defName>
+		<label>greater vile spit</label>
+			<thingClass>Projectile_Liquid</thingClass>
+		<category>Projectile</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<texPath>Things/Mote/AA_NoxiousBreath</texPath>
+			<graphicClass>Graphic_Random</graphicClass>		
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>AA_BlackHiveBolt</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<speed>15</speed>
+			<numExtraHitCells>5</numExtraHitCells>
+			<filthCount>1</filthCount>
+			<arcHeightFactor>0.1</arcHeightFactor>
+			<armorPenetrationBase>0.8</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<shadowSize>0</shadowSize>
+			<filth>AA_FilthSlimyPuke</filth>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	
+	
+</Defs>

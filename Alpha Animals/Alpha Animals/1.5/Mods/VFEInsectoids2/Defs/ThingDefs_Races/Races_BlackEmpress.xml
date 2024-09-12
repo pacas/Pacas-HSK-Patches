@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Empress -->
+	<ThingDef ParentName="VFEI2_BaseInsect">
+		<defName>VFEI2_BlackEmpress</defName>
+		<label>black empress</label>
+		<description>An incredibly rare and monstrously large insectoid of the Black Hive geneline. Unlike its Sorne counterpart, the black empress is not worried about creating offspring, feeling more concerned about acting as an absolute nightmare in close quarters combat. She can tore through heavy armor as if it wasn't there, but what makes her particularly dangerous is her ability to absolutely melt any mechanoids it encounters with a ranged spit attack. Upon death, it’s possible to extract a Black Hive pherocore from her body.</description>
+		<statBases>
+			<MoveSpeed>5.6</MoveSpeed>
+			<Flammability>0.2</Flammability>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<MarketValue>1800</MarketValue>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+			<LeatherAmount>30</LeatherAmount>
+		</statBases>
+		<tools>
+			<li>
+				<label>head claw</label>
+				<capacities>
+					<li>AA_ExtraDamageMechanoidsClaws</li>
+				</capacities>
+				<armorPenetration>0.06</armorPenetration>
+				<power>18</power>
+				<cooldownTime>1.25</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>front claw</label>
+				<capacities>
+					<li>AA_ExtraDamageMechanoidsClaws</li>
+				</capacities>
+				<armorPenetration>0.18</armorPenetration>
+				<power>20</power>
+				<cooldownTime>1.25</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<armorPenetration>0.02</armorPenetration>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			
+			<li Class="AnimalBehaviours.CompProperties_FixedGender">
+				<gender>Female</gender>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Draftable">
+				<makeNonFleeingToo>true</makeNonFleeingToo>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+				<resourceDef>AA_BlackInsectJelly</resourceDef>
+				<gatheringIntervalDays>1</gatheringIntervalDays>
+				<resourceAmount>15</resourceAmount>
+				<customResourceString>VFEI2_BlackInsectJelly</customResourceString>
+				<hideDisplayOnWildAnimals>true</hideDisplayOnWildAnimals>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_InitialAbility">
+				<initialAbility>AA_GreaterVileSpit</initialAbility>
+			</li>
+			
+		</comps>
+		<race>
+			<body>BeetleLikeWithClaw</body>
+			<baseHungerRate>0.12</baseHungerRate>
+			<baseBodySize>4</baseBodySize>
+			<baseHealthScale>7</baseHealthScale>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<wildness>0.8</wildness>
+			<manhunterOnDamageChance>1</manhunterOnDamageChance>
+			<manhunterOnTameFailChance>1</manhunterOnTameFailChance>
+			<trainability>Advanced</trainability>
+			<lifeExpectancy>14</lifeExpectancy>
+			<leatherDef>VFEI2_Chitin</leatherDef>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectLarva</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectJuvenile</def>
+					<minAge>0.05</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>1</minAge>
+					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
+					<soundDeath>Pawn_BigInsect_Death</soundDeath>
+					<soundCall>Pawn_BigInsect_Call</soundCall>
+					<soundAngry>Pawn_BigInsect_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<killedLeavings>
+      <VFEI2_PherocoreBlack>1</VFEI2_PherocoreBlack>
+      
+    </killedLeavings>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>VFEI2_BlackEmpress</defName>
+		<label>black empress</label>
+		<race>VFEI2_BlackEmpress</race>
+		<combatPower>800</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.50</ecoSystemWeight>
+		<defaultFactionType>Insect</defaultFactionType>
+		<aiAvoidCover>false</aiAvoidCover>
+		<defendPointRadius>0</defendPointRadius>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/VFEI2_BlackEmpress/VFEI2_BlackEmpress</texPath>
+					
+					<drawSize>3.6</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/VFEI2_BlackEmpress/VFEI2_Dessicated_BlackEmpress</texPath>
+					<drawSize>3.6</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/VFEI2_BlackEmpress/VFEI2_BlackEmpress</texPath>
+					<drawSize>4.0</drawSize>
+					
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/VFEI2_BlackEmpress/VFEI2_Dessicated_BlackEmpress</texPath>
+					<drawSize>4.0</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/VFEI2_BlackEmpress/VFEI2_BlackEmpress</texPath>
+					<drawSize>5.2</drawSize>
+					
+					<shadowData>
+						<volume>(0.5, 0.7, 0.43)</volume>
+						<offset>(0,0,-0.1)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/VFEI2_BlackEmpress/VFEI2_Dessicated_BlackEmpress</texPath>
+					<drawSize>5.2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

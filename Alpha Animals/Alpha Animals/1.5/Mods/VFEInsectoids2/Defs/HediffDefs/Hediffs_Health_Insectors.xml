@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>AA_EcholocativeFeedbackLoop</defName>
+		<label>echolocative feedback loop</label>
+		<description>This person relies on echolocation instead of regular sight but environmental factors such as loud explosions can cause a debilitating feedback loop, causing sensory overload and confusion and driving them into a catatonic state.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_MentalBreakOnDamage">
+				<damageTypeReceived>Bomb</damageTypeReceived>
+				<mentalBreak>Catatonic</mentalBreak>
+				<reason>AA_EcholocativeFeedbackReason</reason>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

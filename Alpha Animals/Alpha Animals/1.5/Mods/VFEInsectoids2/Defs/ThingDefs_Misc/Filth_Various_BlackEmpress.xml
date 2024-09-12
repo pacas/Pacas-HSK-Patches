@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseFilth">
+		<defName>AA_FilthSlimyPuke</defName>
+		<label>vile spit residue</label>
+		<statBases>
+			<Beauty>-50</Beauty>
+			<Cleanliness>-20</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/PoolSoft</texPath>
+			<color>(160, 167, 12, 180)</color>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<filth>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<maxThickness>1</maxThickness>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseFilth">
+		<defName>AA_Filth_BlackJelly</defName>
+		<label>black jelly smear</label>
+		<statBases>
+			<Beauty>-40</Beauty>
+			<Cleanliness>-15</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(61, 61, 52)</color>
+		</graphicData>
+		<filth>
+			<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>80</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+	
+</Defs>

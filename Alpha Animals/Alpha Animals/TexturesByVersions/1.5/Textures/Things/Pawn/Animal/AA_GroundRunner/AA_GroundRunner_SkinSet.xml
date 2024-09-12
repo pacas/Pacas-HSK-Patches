@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<SkinSet>
+  
+  <lifeStage>
+    <appliesToAll>true</appliesToAll>
+    <variants>
+      <skin>
+        <color>(110,95,82)</color>
+        <commonality>1</commonality>
+        <texName>AA_GroundRunnerW</texName>
+        <useComplexShader>true</useComplexShader>
+      </skin>
+      <skin>
+        <color>(156,151,146)</color>
+        <commonality>0.5</commonality>
+        <texName>AA_GroundRunnerW</texName>
+        <useComplexShader>true</useComplexShader>
+      </skin>
+      <skin>
+        <color>(84,78,73)</color>
+        <commonality>0.5</commonality>
+        <texName>AA_GroundRunnerW</texName>
+        <useComplexShader>true</useComplexShader>
+      </skin>
+      <skin>
+        <color>(181,170,161)</color>
+        <commonality>0.3</commonality>
+        <texName>AA_GroundRunnerW</texName>
+        <useComplexShader>true</useComplexShader>
+      </skin>   
+      <skin>
+        <color>(250,250,250)</color>
+        <commonality>0.1</commonality>
+        <texName>AA_GroundRunnerW</texName>
+        <useComplexShader>true</useComplexShader>
+      </skin>  	  
+    </variants>  
+	
+    <winterCoat>
+      <useWinterCoat>false</useWinterCoat>
+    </winterCoat>
+  </lifeStage>
+  
+</SkinSet>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>AA_BlackCreep</defName>
+    <label>black creep</label>
+    <description>A unique form of cracked soil, devoid of any minerals and nutrition, created around the insectoid infested areas. Supports insectoid structures and significantly hinders non-insectoid movement.</description>
+    <texturePath>Terrain/AA_BlackCreep</texturePath>
+    <edgeType>FadeRough</edgeType>
+    <renderPrecedence>70</renderPrecedence>
+    <isPaintable>false</isPaintable>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-2</Cleanliness>
+	  <FilthMultiplier>1.5</FilthMultiplier>
+      <WorkToBuild>1000</WorkToBuild>
+      <CleaningTimeFactor>0.5</CleaningTimeFactor>
+	  <Flammability>0.75</Flammability>
+    </statBases>
+    <affordances>
+      <li>Light</li>
+	  <li>VFEI2_Creep</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
+	<fertility>0.05</fertility>
+	<constructEffect>VFEI2_ConstructSlime</constructEffect>
+    <uiOrder>2020</uiOrder>
+	<designationCategory inherit ="False"/>
+	<burnedDef>VFEI2_BurnedCreep</burnedDef>
+  </TerrainDef>
+  
+ 
+
+</Defs>

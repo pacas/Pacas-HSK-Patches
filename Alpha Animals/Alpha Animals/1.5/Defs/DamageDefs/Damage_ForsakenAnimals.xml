@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <DamageDef ParentName="Bite">
+        <defName>FO_PlaguedBite</defName>
+        <label>plagued bite</label>
+        <workerClass>AlphaBehavioursAndEvents.DamageWorker_PlaguedBite</workerClass>
+    </DamageDef>
+</Defs>

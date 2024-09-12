@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Insectoid Queen -->
+	<ThingDef ParentName="VFEI2_BaseInsect">
+		<defName>VFEI2_BlackQueen</defName>
+		<label>black insectoid queen</label>
+		<description>A giant, genetically-engineered insectoid responsible for creating new Black Hive spawn. A mother to the insects in her hive, a black queen doesn’t do heavy work, and tries to avoid combat if possible. As massive as an adult thrumbo, the queen instills fear in most opponents. Her thick chitinous armor makes her hard to kill, whilst long, deadly blades can tear through plasteel shielding in seconds. Despite being quite slow in open terrain, an insectoid black queen is capable of creating new black swarmlings at a rapid pace, and should never be allowed to settle down.\n\n&lt;color=#E5E54C&gt;Gameplay effect:&lt;/color&gt; The Black Queen regenerates health.</description>
+		<statBases>
+			<MoveSpeed>5</MoveSpeed>
+			<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+			<MarketValue>1500</MarketValue>
+			<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+			<LeatherAmount>30</LeatherAmount>
+		</statBases>
+		<tools>
+			<li>
+				<label>head claw</label>
+				<capacities>
+					<li>AA_ExtraDamageMechanoidsClaws</li>
+				</capacities>
+				<power>28</power>
+				<armorPenetration>0.18</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<armorPenetration>0.1</armorPenetration>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="VFEInsectoids.CompProperties_SpawnSwarmlings">
+				<ticksBetweenSpawn>6000</ticksBetweenSpawn>
+				<numberToSpawn>1~1</numberToSpawn>
+				<defToSpawn>VFEI2_BlackSwarmling</defToSpawn>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_FixedGender">
+				<gender>Female</gender>
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_AnimalProduct">
+				<resourceDef>AA_BlackInsectJelly</resourceDef>
+				<gatheringIntervalDays>5</gatheringIntervalDays>
+				<resourceAmount>5</resourceAmount>
+				<customResourceString>VFEI2_BlackInsectJelly</customResourceString>
+				<hideDisplayOnWildAnimals>true</hideDisplayOnWildAnimals>
+
+			</li>
+			<li Class="AnimalBehaviours.CompProperties_Regeneration">
+				<rateInTicks>60</rateInTicks>
+
+			</li>
+		</comps>
+		<race>
+			<body>BeetleLikeWithClaw</body>
+			<baseHungerRate>0.70</baseHungerRate>
+			<baseBodySize>4</baseBodySize>
+			<baseHealthScale>8</baseHealthScale>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<wildness>0.95</wildness>
+			<trainability>Advanced</trainability>
+			<lifeExpectancy>6</lifeExpectancy>
+			<leatherDef>VFEI2_Chitin</leatherDef>
+			<lifeStageAges>
+				<li>
+					<def>EusocialInsectLarva</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectJuvenile</def>
+					<minAge>0.03</minAge>
+				</li>
+				<li>
+					<def>EusocialInsectAdult</def>
+					<minAge>0.2</minAge>
+					<soundWounded>Pawn_BigInsect_Pain</soundWounded>
+					<soundDeath>Pawn_BigInsect_Death</soundDeath>
+					<soundCall>Pawn_BigInsect_Call</soundCall>
+					<soundAngry>Pawn_BigInsect_Angry</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+	</ThingDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>VFEI2_BlackQueen</defName>
+		<label>black insectoid queen</label>
+		<race>VFEI2_BlackQueen</race>
+		<combatPower>450</combatPower>
+		<canArriveManhunter>false</canArriveManhunter>
+		<ecoSystemWeight>0.50</ecoSystemWeight>
+		<defaultFactionType>Insect</defaultFactionType>
+		<aiAvoidCover>false</aiAvoidCover>
+		<defendPointRadius>0</defendPointRadius>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_BlackQueen/AA_BlackQueen</texPath>
+				
+					<drawSize>1.75</drawSize>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+				<texPath>Things/Pawn/Animal/AA_BlackQueen/AA_Dessicated_BlackQueen</texPath>
+					<drawSize>1.75</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_BlackQueen/AA_BlackQueen</texPath>
+					<drawSize>2.5</drawSize>
+					
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_BlackQueen/AA_Dessicated_BlackQueen</texPath>
+					<drawSize>2.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_BlackQueen/AA_BlackQueen</texPath>
+					<drawSize>3.5</drawSize>
+					
+					<shadowData>
+						<volume>(0.5, 0.7, 0.43)</volume>
+						<offset>(0,0,-0.1)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/AA_BlackQueen/AA_Dessicated_BlackQueen</texPath>
+					<drawSize>3.5</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

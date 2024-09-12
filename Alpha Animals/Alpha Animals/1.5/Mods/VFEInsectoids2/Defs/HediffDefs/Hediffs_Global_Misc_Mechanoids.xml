@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>AA_MechDisruption</defName>
+		<label>mech disruption</label>
+		<description>This mechanoid's targeting, speed and agility are being dirupted by a nearby bio mechanoid disruptor building.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>30</disappearsAfterTicks>
+				<showRemainingTime>false</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="HediffCompProperties_Link">
+				<requireLinkOnOtherPawn>false</requireLinkOnOtherPawn>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<RangedCooldownFactor>1.15</RangedCooldownFactor>
+					<MoveSpeed>0.85</MoveSpeed>
+					<MeleeDodgeChance>0.85</MeleeDodgeChance>
+					
+				</statFactors>
+			</li>
+		</stages>
+		<isBad>false</isBad>
+	</HediffDef>
+</Defs>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName = "AA_AnimaColossus"]/comps</xpath>
+			<value>
+				<li Class="CompProperties_Spawner">
+					<thingToSpawn>AA_HugeAnimaPearl</thingToSpawn>
+					<spawnForbidden>false</spawnForbidden>
+					<requiresPower>false</requiresPower>
+					<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+					<showMessageIfOwned>false</showMessageIfOwned>
+					<saveKeysPrefix>AA_</saveKeysPrefix>
+					<inheritFaction>false</inheritFaction>
+					<spawnIntervalRange>1800000~1800000</spawnIntervalRange>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

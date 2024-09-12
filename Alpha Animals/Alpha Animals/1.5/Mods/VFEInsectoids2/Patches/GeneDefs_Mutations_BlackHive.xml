@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Insector</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<VanillaRacesExpandedInsector.GenelineGeneDef ParentName="VRE_MutationGene">
+					<defName>AA_Gene_EcholocativeFeedbackLoop</defName>
+					<label>echolocative feedback loop</label>
+					<description>Carriers of this gene rely on echolocation instead of regular sight but environmental factors such as loud explosions can cause a debilitating feedback loop, causing sensory overload and confusion and driving them into a catatonic state.</description>
+					<selectionWeight>0</selectionWeight>
+					<unlockable>true</unlockable>
+					<iconPath>UI/Icons/Genes/AA_Gene_EcholocativeFeedbackLoop</iconPath>
+					<displayOrderInCategory>2001</displayOrderInCategory>
+					<customEffectDescriptions>
+						<li>Any damage of type Bomb caused to the carrier will trigger a catatonic breakdown.</li>
+					</customEffectDescriptions>
+					<modExtensions>
+						<li Class="VanillaGenesExpanded.GeneExtension">
+							<hediffToWholeBody>AA_EcholocativeFeedbackLoop</hediffToWholeBody>
+							<backgroundPathEndogenes>UI/Icons/Genes/VRE_MutationBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/VRE_MutationBG</backgroundPathXenogenes>
+						</li>
+					</modExtensions>
+				</VanillaRacesExpandedInsector.GenelineGeneDef>
+				<VanillaRacesExpandedInsector.GenelineGeneDef ParentName="VRE_MutationGene">
+					<defName>AA_Gene_PhotosensitiveExoskeleton</defName>
+					<label>photosensitive exoskeleton</label>
+					<description>Carriers of this gene were primarily designed to operate underground or in low-light environments to ambush Mechanoids. Exposure to bright light causes a sensory overload, disorienting them and reducing their combat effectiveness.</description>
+					<iconPath>UI/Icons/Genes/AA_Gene_PhotosensitiveExoskeleton</iconPath>
+					<displayOrderInCategory>2002</displayOrderInCategory>
+					<unlockable>true</unlockable>
+					<conditionalStatAffecters>
+						<li Class="ConditionalStatAffecter_InSunlight">
+							<statFactors>
+								<MoveSpeed>0.8</MoveSpeed>
+							</statFactors>
+						</li>
+					</conditionalStatAffecters>
+					<mentalBreakMtbDays>0.35</mentalBreakMtbDays>
+					<mentalBreakDef>AA_PhotosensitiveExoskeleton</mentalBreakDef>
+					<customEffectDescriptions>
+						<li>Will periodically be dissoriented under direct sunlight</li>
+					</customEffectDescriptions>
+					<modExtensions>
+						<li Class="VanillaGenesExpanded.GeneExtension">
+							<backgroundPathEndogenes>UI/Icons/Genes/VRE_MutationBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>UI/Icons/Genes/VRE_MutationBG</backgroundPathXenogenes>
+						</li>
+					</modExtensions>
+				</VanillaRacesExpandedInsector.GenelineGeneDef>
+				<MentalBreakDef>
+					<defName>AA_PhotosensitiveExoskeleton</defName>
+					<label>sunlight disorientation</label>
+					<intensity>Minor</intensity>
+					<workerClass>AlphaBehavioursAndEvents.MentalBreakWorker_PhotosensitiveExoskeleton</workerClass>
+					<mentalState>AA_PhotosensitiveExoskeleton</mentalState>
+					<requiredGene>AA_Gene_PhotosensitiveExoskeleton</requiredGene>
+				</MentalBreakDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>
+

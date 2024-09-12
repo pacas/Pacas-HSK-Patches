@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThoughtDef>
+		<defName>AA_PhotosensitiveExoskeleton</defName>
+		<workerClass>AlphaBehavioursAndEvents.ThoughtWorker_PhotosensitiveExoskeleton</workerClass>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>disoriented in sunlight</label>
+				<description>What? Where am I? What was I doing?</description>
+				<baseMoodEffect>-5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+	
+</Defs>

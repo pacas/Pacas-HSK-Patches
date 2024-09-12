@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<EffecterDef>
+		<defName>AA_NoxiousBreath_Directional</defName>
+		<children>
+			<li>
+				<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+				<positionRadius>0.15</positionRadius>
+				<fleckDef>AA_NoxiousBreath_Spray</fleckDef>
+				<burstCount>2~4</burstCount>
+				<speed>0.6~3.3</speed>
+				<scale>0.8~1.25</scale>
+				<angle>-24~24</angle>
+				<positionLerpFactor>0.85</positionLerpFactor>
+				<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+			</li>
+		</children>
+	</EffecterDef>
+	<FleckDef ParentName="FleckBase_RandomGraphic_Thrown">
+		<defName>AA_NoxiousBreath_Spray</defName>
+		<randomGraphics>
+			<li>
+				<graphicClass>Graphic_Fleck</graphicClass>
+				<texPath>Things/Mote/AA_Noxious/AA_NoxiousA</texPath>
+				<shaderType>TransparentPostLight</shaderType>
+				<renderInstanced>true</renderInstanced>
+			</li>
+			<li>
+				<graphicClass>Graphic_Fleck</graphicClass>
+				<texPath>Things/Mote/AA_Noxious/AA_NoxiousB</texPath>
+				<shaderType>TransparentPostLight</shaderType>
+				<renderInstanced>true</renderInstanced>
+			</li>
+			<li>
+				<graphicClass>Graphic_Fleck</graphicClass>
+				<texPath>Things/Mote/AA_Noxious/AA_NoxiousC</texPath>
+				<shaderType>TransparentPostLight</shaderType>
+				<renderInstanced>true</renderInstanced>
+			</li>
+		</randomGraphics>
+		<altitudeLayer>MoteOverhead</altitudeLayer>
+		<fadeInTime>0</fadeInTime>
+		<solidTime>0.6</solidTime>
+		<fadeOutTime>0.35</fadeOutTime>
+		<growthRate>0.6</growthRate>
+	</FleckDef>
+</Defs>

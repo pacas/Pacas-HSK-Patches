@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<VFEInsectoids.InsectGenelineDef>
+		<defName>VFEI_AA_BlackHive</defName>
+		<hive>VFEI2_AA_BlackHive</hive>
+		<spawnWeight>0.05</spawnWeight>
+		<boss>VFEI2_BlackEmpress</boss>
+		
+		<insects>
+			<AA_MammothWorm>1</AA_MammothWorm>
+			<AA_MegaLouse>2</AA_MegaLouse>
+			<AA_Ravager>1</AA_Ravager>
+			<AA_BlackScarab>10</AA_BlackScarab>
+			<AA_BlackSpelopede>7</AA_BlackSpelopede>
+			<AA_BlackSpider>3</AA_BlackSpider>
+			<VFEI2_BlackQueen>1</VFEI2_BlackQueen>
+			<VFEI2_BlackSwarmling>1</VFEI2_BlackSwarmling>
+		</insects>
+	</VFEInsectoids.InsectGenelineDef>
+
+	
+	
+</Defs>

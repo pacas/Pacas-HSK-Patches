@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Alpha Animals</name>
+    <supportedVersions>
+        <li>1.4</li>
+        <li>1.5</li>
+    </supportedVersions>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/AlphaAnimalsLogo</modIconPath>
+    <modDependencies>
+        <li>
+            <packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+        </li>
+        <li>
+            <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+            <displayName>Vanilla Expanded Framework</displayName>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
+			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
+        </li>
+    </modDependencies>
+	<incompatibleWith>
+		<li>zal.AnimalTraders</li>
+	</incompatibleWith>
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
+        <li>Ludeon.RimWorld.Biotech</li>
+        <li>brrainz.harmony</li>
+        <li>skyarkhangel.hsk</li>
+        <li>ceteam.combatextended</li>
+        <li>spoonshortage.adogsaidanimalprosthetics</li>
+        <li>sarg.alphabiomes</li>
+        <li>roolo.giddyupcore</li>
+        <li>arpomo6.hmc.biomes</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>vanillaexpanded.achievements</li> 
+		<li>Kompadt.Warhammer.Dryad</li>
+		<li>VanillaExpanded.VPsycastsE</li>
+		<li>BiomesTeam.BiomesIslands</li>
+		<li>vanillaracesexpanded.insector</li>
+		<li>OskarPotocki.VFE.Insectoid2</li>
+		<li>zacharyfoster.minerals</li>
+    </loadAfter>
+    <author>Sarg Bjornson, AFriend and Pacas</author>
+    <packageId>sarg.alphaanimals</packageId>
+    <description>Adds multiple unique new animals to Rimworld. Based on version 13.09.2024.</description>
+</ModMetaData>

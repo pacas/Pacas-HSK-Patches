@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	
+	
+	<HediffDef ParentName="InfectionBase">
+		<defName>VFEI2_BlackEmpressSpawn</defName>
+		<label>black empress spawn</label>
+		<description>A gestating, insectoid spawn. Starting from a small egg, it will quickly absorb nutrients and grow, slowly causing more pain to the host. It will quickly take control of the nervous system, grow, and extend throughout the host's body until it is ready to emerge through the rib cage, ultimately killing the host. During its growth, the spawn absorbs memories of the host, which will make the insectoid friendly to your colony.</description>
+		<makesSickThought>true</makesSickThought>
+		<lethalSeverity>1</lethalSeverity>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		
+		<comps>
+			
+			<li Class="VFEInsectoids.HediffCompProperties_Spawn">
+				<spawn>VFEI2_BlackEmpress</spawn>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDayRange>0.0332~0.0668</severityPerDayRange>
+			</li>
+			
+		</comps>
+		<stages>
+			<li>
+				<label>egg</label>
+				<painOffset>0.05</painOffset>
+				 <hungerRateFactor>1.15</hungerRateFactor>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<label>larva</label>
+				<painOffset>0.1</painOffset>
+				 <hungerRateFactor>1.5</hungerRateFactor>
+				 <capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>pupa</label>
+			
+				<painOffset>0.3</painOffset>
+				<hungerRateFactor>2</hungerRateFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.1</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+				
+			</li>
+			<li>
+				<minSeverity>0.9</minSeverity>
+				<label>juvenile</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.8</painOffset>
+				<hungerRateFactor>2</hungerRateFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+					
+				</capMods>
+				
+			</li>
+		</stages>
+	</HediffDef>
+	
+
+</Defs>

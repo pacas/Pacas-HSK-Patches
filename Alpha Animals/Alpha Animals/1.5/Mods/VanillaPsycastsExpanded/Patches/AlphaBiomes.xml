@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Alpha Biomes</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="AA_AlienTree"]/plant/harvestedThingDef</xpath>
+            <value>
+                <harvestedThingDef>GU_RedWood</harvestedThingDef>
+            </value>
+        </match>
+    </Operation>
+</Patch>

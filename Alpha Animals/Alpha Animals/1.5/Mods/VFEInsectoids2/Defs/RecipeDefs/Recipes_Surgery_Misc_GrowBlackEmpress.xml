@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef ParentName="SurgeryFlesh">
+		<defName>VFEI2_AdministerBlackPherocore</defName>
+		<label>administer Black pherocore</label>
+		<description>Administer Black pherocore to convert this person into a Black Empress.</description>
+		<workerClass>VFEInsectoids.Recipe_AdministerBlackPherocore</workerClass>
+		<jobString>Administering Black pherocore to convert this person into a Black Empress.</jobString>
+		<workAmount>500</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<isViolation>true</isViolation>
+		<targetsBodyPart>false</targetsBodyPart>
+		<surgerySuccessChanceFactor>5</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VFEI2_PherocoreBlack</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VFEI2_PherocoreBlack</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+	</RecipeDef>
+
+</Defs>

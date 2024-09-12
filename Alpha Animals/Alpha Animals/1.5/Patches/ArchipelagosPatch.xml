@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core SK</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Aerofleet"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.4</BorealArchipelago>
+                        <TundraArchipelago>0.05</TundraArchipelago>
+                        <ColdBogArchipelago>0.05</ColdBogArchipelago>
+                        <TemperateSwampArchipelago>0.4</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.3</TropicalSwampArchipelago>
+                        <TemperateArchipelago>0.4</TemperateArchipelago>
+                        <DesertArchipelago>0.1</DesertArchipelago>
+                        <TropicalArchipelago>0.2</TropicalArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_AngelMothLarva"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.05</BorealArchipelago>
+                        <TemperateArchipelago>0.07</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.04</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.04</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.05</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_AngelMoth"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.05</BorealArchipelago>
+                        <TemperateArchipelago>0.07</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.04</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.04</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.05</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_AnimaColossus"]/race/wildBiomes</xpath>
+                    <value>
+                        <TemperateArchipelago>0.005</TemperateArchipelago>
+                        <TropicalArchipelago>0.005</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.007</TropicalSwampArchipelago>
+                        <TemperateSwampArchipelago>0.007</TemperateSwampArchipelago>
+                        <ColdBogArchipelago>0.007</ColdBogArchipelago>
+                        <BorealArchipelago>0.002</BorealArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_AnimusVox"]/race/wildBiomes</xpath>
+                    <value>
+                        <TemperateArchipelago>0.05</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.02</TemperateSwampArchipelago>
+                        <BorealArchipelago>0.05</BorealArchipelago>
+                        <TropicalArchipelago>0.05</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.02</TropicalSwampArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_ArcticLion"]/race/wildBiomes</xpath>
+                    <value>
+                        <TundraArchipelago>0.07</TundraArchipelago>
+                        <ColdBogArchipelago>0.07</ColdBogArchipelago>
+                        <BorealArchipelago>0.07</BorealArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_LarvalAtispec"]/race/wildBiomes</xpath>
+                    <value>
+                        <TemperateArchipelago>0.01</TemperateArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_AuroraSylph"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.05</BorealArchipelago>
+                        <TemperateArchipelago>0.03</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.03</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.04</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.04</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_BedBug"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.03</BorealArchipelago>
+                        <ColdBogArchipelago>0.07</ColdBogArchipelago>
+                        <TemperateArchipelago>0.03</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.07</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.07</TropicalSwampArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Blizzarisk"]/race/wildBiomes</xpath>
+                    <value>
+                        <TundraArchipelago>0.07</TundraArchipelago>
+                        <ColdBogArchipelago>0.07</ColdBogArchipelago>
+                        <BorealArchipelago>0.07</BorealArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_BloodShrimp"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <TemperateArchipelago>0.02</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.01</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.005</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_BoulderMit"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.04</BorealArchipelago>
+                        <TundraArchipelago>0.07</TundraArchipelago>
+                        <ColdBogArchipelago>0.07</ColdBogArchipelago>
+                        <TemperateArchipelago>0.05</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.1</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.05</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.05</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.07</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Bumbledrone"]/race/wildBiomes</xpath>
+                    <value>
+                        <TundraArchipelago>0.07</TundraArchipelago>
+                        <TemperateArchipelago>0.07</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.1</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.07</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.07</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_BumbledroneHierophant"]/race/wildBiomes</xpath>
+                    <value>
+                        <TundraArchipelago>0.005</TundraArchipelago>
+                        <TemperateArchipelago>0.01</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.02</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.01</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.02</TropicalSwampArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Cactipine"]/race/wildBiomes</xpath>
+                    <value>
+                        <DesertArchipelago>0.07</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_ChameleonYak"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.15</BorealArchipelago>
+                        <TundraArchipelago>0.3</TundraArchipelago>
+                        <ColdBogArchipelago>0.07</ColdBogArchipelago>
+                        <TemperateArchipelago>0.1</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.07</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.07</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.07</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Cinderlisk"]/race/wildBiomes</xpath>
+                    <value>
+                        <DesertArchipelago>0.05</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_CrescendoAnole"]/race/wildBiomes</xpath>
+                    <value>
+                        <TropicalSwampArchipelago>0.04</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.03</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_CrystallineCaracal"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TemperateArchipelago>0.005</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.005</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.005</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.005</TropicalSwampArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_CrystalMit"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TemperateArchipelago>0.02</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.02</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.01</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.07</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Darkbeast"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.005</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TemperateArchipelago>0.005</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.005</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.005</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.005</TropicalSwampArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_DecayDrake"]/race/wildBiomes</xpath>
+                    <value>
+                        <TropicalArchipelago>0.05</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.05</TropicalSwampArchipelago>
+                        <TemperateSwampArchipelago>0.05</TemperateSwampArchipelago>
+                        <ColdBogArchipelago>0.02</ColdBogArchipelago>
+                        <TemperateArchipelago>0.005</TemperateArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_DesertAve"]/race/wildBiomes</xpath>
+                    <value>
+                        <DesertArchipelago>0.8</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_DrainerLarva"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.05</BorealArchipelago>
+                        <TemperateArchipelago>0.03</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.03</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.04</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.04</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Drainer"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.05</BorealArchipelago>
+                        <TemperateArchipelago>0.03</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.03</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.04</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.04</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Dunealisk"]/race/wildBiomes</xpath>
+                    <value>
+                        <DesertArchipelago>0.1</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_EmpressButterflyLarva"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.005</BorealArchipelago>
+                        <TundraArchipelago>0.005</TundraArchipelago>
+                        <TemperateArchipelago>0.02</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.01</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                        <TropicalArchipelago>0.02</TropicalArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_EmpressButterfly"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.005</BorealArchipelago>
+                        <TundraArchipelago>0.005</TundraArchipelago>
+                        <TemperateArchipelago>0.02</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.01</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                        <TropicalArchipelago>0.02</TropicalArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Erin"]/race/wildBiomes</xpath>
+                    <value>
+                        <DesertArchipelago>0.015</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Feralisk"]/race/wildBiomes</xpath>
+                    <value>
+                        <TemperateSwampArchipelago>0.15</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.15</TropicalSwampArchipelago>
+                        <TemperateArchipelago>0.07</TemperateArchipelago>
+                        <TropicalArchipelago>0.15</TropicalArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_FissionMouse"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.03</ColdBogArchipelago>
+                        <TemperateArchipelago>0.07</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.03</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.03</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.03</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_FlamingoPhoenix"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.001</BorealArchipelago>
+                        <TundraArchipelago>0.005</TundraArchipelago>
+                        <ColdBogArchipelago>0.005</ColdBogArchipelago>
+                        <TemperateSwampArchipelago>0.001</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.001</TropicalSwampArchipelago>
+                        <TemperateArchipelago>0.001</TemperateArchipelago>
+                        <TropicalArchipelago>0.001</TropicalArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_FrostAve"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.1</BorealArchipelago>
+                        <TundraArchipelago>0.4</TundraArchipelago>
+                        <ColdBogArchipelago>0.4</ColdBogArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_FrostLynx"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TemperateSwampArchipelago>0.001</TemperateSwampArchipelago>
+                        <TemperateArchipelago>0.001</TemperateArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Frostmite"]/race/wildBiomes</xpath>
+                    <value>
+                        <TundraArchipelago>0.05</TundraArchipelago>
+                        <ColdBogArchipelago>0.03</ColdBogArchipelago>
+                        <BorealArchipelago>0.02</BorealArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Genix"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TemperateSwampArchipelago>0.01</TemperateSwampArchipelago>
+                        <TemperateArchipelago>0.005</TemperateArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_GiantCrownedSilkie"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.005</BorealArchipelago>
+                        <TemperateArchipelago>0.005</TemperateArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Gigantelope"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.4</BorealArchipelago>
+                        <TundraArchipelago>0.05</TundraArchipelago>
+                        <ColdBogArchipelago>0.05</ColdBogArchipelago>
+                        <TemperateSwampArchipelago>0.4</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.3</TropicalSwampArchipelago>
+                        <TemperateArchipelago>0.4</TemperateArchipelago>
+                        <DesertArchipelago>0.1</DesertArchipelago>
+                        <TropicalArchipelago>0.2</TropicalArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_GreatDevourer"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TemperateArchipelago>0.01</TemperateArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_GreyCoatedMouflon"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.05</BorealArchipelago>
+                        <TundraArchipelago>0.05</TundraArchipelago>
+                        <ColdBogArchipelago>0.03</ColdBogArchipelago>
+                        <TemperateArchipelago>0.005</TemperateArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Groundrunner"]/race/wildBiomes</xpath>
+                    <value>
+                        <TemperateArchipelago>0.2</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <BorealArchipelago>0.2</BorealArchipelago>
+                        <TropicalArchipelago>0.07</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.07</TropicalSwampArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Helixien"]/race/wildBiomes</xpath>
+                    <value>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <TemperateArchipelago>0.02</TemperateArchipelago>
+                        <TropicalSwampArchipelago>0.07</TropicalSwampArchipelago>
+                        <TropicalArchipelago>0.03</TropicalArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Lockjaw"]/race/wildBiomes</xpath>
+                    <value>
+                        <TropicalArchipelago>0.2</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.2</TropicalSwampArchipelago>
+                        <TemperateSwampArchipelago>0.2</TemperateSwampArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_LuciferBug"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.005</TundraArchipelago>
+                        <ColdBogArchipelago>0.005</ColdBogArchipelago>
+                        <TemperateArchipelago>0.005</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.01</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.01</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.03</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_MammothWorm"]/race/wildBiomes</xpath>
+                    <value>
+                        <DesertArchipelago>0.03</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Mantrap"]/race/wildBiomes</xpath>
+                    <value>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                        <TemperateArchipelago>0.05</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TropicalArchipelago>0.1</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.1</TropicalSwampArchipelago>
+                        <ColdBogArchipelago>0.05</ColdBogArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_MatureFleshbeast"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TemperateSwampArchipelago>0.01</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                        <TemperateArchipelago>0.01</TemperateArchipelago>
+                        <TropicalArchipelago>0.01</TropicalArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_MeadowAve"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.3</BorealArchipelago>
+                        <TundraArchipelago>0.07</TundraArchipelago>
+                        <ColdBogArchipelago>0.07</ColdBogArchipelago>
+                        <TemperateArchipelago>0.4</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.07</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.07</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.03</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_MegaLouse"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.03</BorealArchipelago>
+                        <TundraArchipelago>0.03</TundraArchipelago>
+                        <ColdBogArchipelago>0.03</ColdBogArchipelago>
+                        <TemperateArchipelago>0.03</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.03</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.03</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.03</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.03</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Needlepost"]/race/wildBiomes</xpath>
+                    <value>
+                        <DesertArchipelago>0.1</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Needleroll"]/race/wildBiomes</xpath>
+                    <value>
+                        <DesertArchipelago>1.2</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_NightAve"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.02</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TemperateArchipelago>0.01</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.04</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.02</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.04</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_OcularJelly"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.005</BorealArchipelago>
+                        <ColdBogArchipelago>0.005</ColdBogArchipelago>
+                        <TemperateSwampArchipelago>0.005</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.005</TropicalSwampArchipelago>
+                        <TemperateArchipelago>0.005</TemperateArchipelago>
+                        <TropicalArchipelago>0.005</TropicalArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_OvergrownColossus"]/race/wildBiomes</xpath>
+                    <value>
+                        <TemperateArchipelago>0.01</TemperateArchipelago>
+                        <TropicalArchipelago>0.02</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.02</TropicalSwampArchipelago>
+                        <TemperateSwampArchipelago>0.02</TemperateSwampArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_PebbleMit"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.07</BorealArchipelago>
+                        <TundraArchipelago>0.07</TundraArchipelago>
+                        <ColdBogArchipelago>0.07</ColdBogArchipelago>
+                        <TemperateArchipelago>0.07</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.05</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.05</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.07</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_PedigreedRaptor"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TemperateArchipelago>0.05</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.02</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.05</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.05</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.015</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_PhoenixOwlcat"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.03</ColdBogArchipelago>
+                        <TemperateArchipelago>0.025</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.03</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.03</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.03</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Plasmorph"]/race/wildBiomes</xpath>
+                    <value>
+                        <TemperateSwampArchipelago>0.05</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.05</TropicalSwampArchipelago>
+                        <TemperateArchipelago>0.01</TemperateArchipelago>
+                        <TropicalArchipelago>0.01</TropicalArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Radyak"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.001</BorealArchipelago>
+                        <TundraArchipelago>0.005</TundraArchipelago>
+                        <ColdBogArchipelago>0.005</ColdBogArchipelago>
+                        <TemperateSwampArchipelago>0.001</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.001</TropicalSwampArchipelago>
+                        <TemperateArchipelago>0.001</TemperateArchipelago>
+                        <TropicalArchipelago>0.001</TropicalArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_RaptorShrimp"]/race/wildBiomes</xpath>
+                    <value>
+                        <TropicalArchipelago>0.04</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.04</TropicalSwampArchipelago>
+                        <TemperateSwampArchipelago>0.04</TemperateSwampArchipelago>
+                        <ColdBogArchipelago>0.02</ColdBogArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_RayHound"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.05</BorealArchipelago>
+                        <TundraArchipelago>0.03</TundraArchipelago>
+                        <ColdBogArchipelago>0.02</ColdBogArchipelago>
+                        <TemperateArchipelago>0.07</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.07</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.07</TropicalSwampArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Razorjack"]/race/wildBiomes</xpath>
+                    <value>
+                        <TemperateSwampArchipelago>0.025</TemperateSwampArchipelago>
+                        <TemperateArchipelago>0.025</TemperateArchipelago>
+                        <TropicalSwampArchipelago>0.025</TropicalSwampArchipelago>
+                        <TropicalArchipelago>0.025</TropicalArchipelago>
+                        <DesertArchipelago>0.07</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_RipperHound"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.005</ColdBogArchipelago>
+                        <TemperateArchipelago>0.05</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.005</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.005</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_RoughPlatedMonitor"]/race/wildBiomes</xpath>
+                    <value>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.07</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_RoyalAve"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.005</TundraArchipelago>
+                        <ColdBogArchipelago>0.005</ColdBogArchipelago>
+                        <TemperateArchipelago>0.01</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.005</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.005</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_SandLion"]/race/wildBiomes</xpath>
+                    <value>
+                        <DesertArchipelago>0.1</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_SandProwler"]/race/wildBiomes</xpath>
+                    <value>
+                        <DesertArchipelago>0.1</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_SandSquid"]/race/wildBiomes</xpath>
+                    <value>
+                        <TemperateArchipelago>0.01</TemperateArchipelago>
+                        <DesertArchipelago>0.05</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_ShockGoat"]/race/wildBiomes</xpath>
+                    <value>
+                        <TropicalArchipelago>0.02</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.02</TropicalSwampArchipelago>
+                        <TemperateSwampArchipelago>0.02</TemperateSwampArchipelago>
+                        <ColdBogArchipelago>0.02</ColdBogArchipelago>
+                        <TemperateArchipelago>0.05</TemperateArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Skiphound"]/race/wildBiomes</xpath>
+                    <value>
+                        <TemperateArchipelago>0.005</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.02</TemperateSwampArchipelago>
+                        <BorealArchipelago>0.02</BorealArchipelago>
+                        <TropicalArchipelago>0.005</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.02</TropicalSwampArchipelago>
+                        <TundraArchipelago>0.005</TundraArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Slurrypede"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TemperateSwampArchipelago>0.01</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                        <TemperateArchipelago>0.01</TemperateArchipelago>
+                        <TropicalArchipelago>0.01</TropicalArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Swarmling"]/race/wildBiomes</xpath>
+                    <value>
+                        <ColdBogArchipelago>0.03</ColdBogArchipelago>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <TemperateArchipelago>0.07</TemperateArchipelago>
+                        <TropicalSwampArchipelago>0.03</TropicalSwampArchipelago>
+                        <TropicalArchipelago>0.03</TropicalArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_TeratogenicOriginator"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TemperateSwampArchipelago>0.01</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                        <TemperateArchipelago>0.01</TemperateArchipelago>
+                        <TropicalArchipelago>0.01</TropicalArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Terramorph"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.01</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TemperateArchipelago>0.02</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.02</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.01</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.07</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_TetraSlug"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.001</BorealArchipelago>
+                        <TundraArchipelago>0.001</TundraArchipelago>
+                        <ColdBogArchipelago>0.001</ColdBogArchipelago>
+                        <TemperateSwampArchipelago>0.001</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.001</TropicalSwampArchipelago>
+                        <TemperateArchipelago>0.001</TemperateArchipelago>
+                        <TropicalArchipelago>0.001</TropicalArchipelago>
+                        <DesertArchipelago>0.001</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Thunderbeast"]/race/wildBiomes</xpath>
+                    <value>
+                        <TemperateArchipelago>0.025</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.01</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.01</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_WaywardMobileAssembler"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.005</BorealArchipelago>
+                        <TundraArchipelago>0.005</TundraArchipelago>
+                        <ColdBogArchipelago>0.005</ColdBogArchipelago>
+                        <TemperateSwampArchipelago>0.005</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.005</TropicalSwampArchipelago>
+                        <TemperateArchipelago>0.005</TemperateArchipelago>
+                        <TropicalArchipelago>0.005</TropicalArchipelago>
+                        <DesertArchipelago>0.005</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Wildpawn"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.1</BorealArchipelago>
+                        <TundraArchipelago>0.07</TundraArchipelago>
+                        <TemperateArchipelago>0.1</TemperateArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Wildpod"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.1</BorealArchipelago>
+                        <TundraArchipelago>0.07</TundraArchipelago>
+                        <ColdBogArchipelago>0.07</ColdBogArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <TropicalSwampArchipelago>0.07</TropicalSwampArchipelago>
+                        <TemperateArchipelago>0.07</TemperateArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_WindBeast"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.0025</BorealArchipelago>
+                        <TundraArchipelago>0.0025</TundraArchipelago>
+                        <ColdBogArchipelago>0.0025</ColdBogArchipelago>
+                        <TemperateArchipelago>0.0025</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.0025</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.0025</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.0025</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.0025</DesertArchipelago>
+                    </value>
+                </li>
+                
+                
+                
+                
+                
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Murkling"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.5</BorealArchipelago>
+                        <TundraArchipelago>0.3</TundraArchipelago>
+                        <ColdBogArchipelago>0.07</ColdBogArchipelago>
+                        <TemperateArchipelago>0.4</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.01</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.01</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.1</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_DarkVandal"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.05</BorealArchipelago>
+                        <TundraArchipelago>0.01</TundraArchipelago>
+                        <ColdBogArchipelago>0.01</ColdBogArchipelago>
+                        <TemperateArchipelago>0.1</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.1</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.1</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.1</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_DuskProwler"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.1</BorealArchipelago>
+                        <TundraArchipelago>0.03</TundraArchipelago>
+                        <ColdBogArchipelago>0.03</ColdBogArchipelago>
+                        <TemperateArchipelago>0.1</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.05</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.05</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.05</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.03</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_Thunderox"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.03</BorealArchipelago>
+                        <TundraArchipelago>0.03</TundraArchipelago>
+                        <ColdBogArchipelago>0.07</ColdBogArchipelago>
+                        <TemperateArchipelago>0.1</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.07</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.01</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.01</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="AA_ShadowCharger"]/race/wildBiomes</xpath>
+                    <value>
+                        <BorealArchipelago>0.04</BorealArchipelago>
+                        <TundraArchipelago>0.05</TundraArchipelago>
+                        <ColdBogArchipelago>0.05</ColdBogArchipelago>
+                        <TemperateArchipelago>0.04</TemperateArchipelago>
+                        <TemperateSwampArchipelago>0.04</TemperateSwampArchipelago>
+                        <TropicalArchipelago>0.02</TropicalArchipelago>
+                        <TropicalSwampArchipelago>0.03</TropicalSwampArchipelago>
+                        <DesertArchipelago>0.01</DesertArchipelago>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

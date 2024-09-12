@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ======= Basic quality thoughts ========= -->
+    <ThoughtDef>
+        <defName>AA_AteSuperAwfulMeal</defName>
+        <durationDays>1</durationDays>
+        <stages>
+            <li>
+                <label>ate incredibly awful meal</label>
+                <description>I had to eat something that was processed in the guts of a biomechanical abomination. I haven't eaten a more disgusting meal in my whole life.</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    
+    <ThoughtDef>
+        <defName>AA_AteHorribleRot</defName>
+        <durationDays>1</durationDays>
+        <stages>
+            <li>
+                <label>ate fermented rotting vegetation</label>
+                <description>I had to scavenge fermented rotting vegetation to survive. This was worse than eating a corpse. The end is near.</description>
+                <baseMoodEffect>-25</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    
+    <ThoughtDef>
+        <defName>AA_UncomfortablyHot</defName>
+        <durationDays>1</durationDays>
+        <stages>
+            <li>
+                <label>ate terrible wasp eggs</label>
+                <description>I ate food with terrible wasp eggs. They burned my mouth and the burning sensation doesn't go away!.</description>
+                <baseMoodEffect>-7</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+    <ThoughtDef>
+    
+		<defName>AA_AteBlackTruffleIngredient</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>AA_AteBlackTruffleIngredient</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>ate black truffle</label>
+				<description>An absolute delicacy.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+		<AbilityDef>
+		<defName>AA_GreaterVileSpit</defName>
+		<label>greater vile spit</label>
+		<description>Eject a flow of vile noxious spit that poisons fleshy targets, while acting as a powerful acid against mechanoids, dissolving their plasteels carapaces.</description>
+		<iconPath>UI/Abilities/AA_NoxiousBreath</iconPath>
+		<cooldownTicksRange>3000</cooldownTicksRange>
+		<warmupStartSound>VFEI2_FireSpew_Warmup</warmupStartSound>
+		<hostile>true</hostile>
+			<aiCanUse>true</aiCanUse>
+			<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<casterMustBeCapableOfViolence>true</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>20.9</range>
+			<warmupTime>1</warmupTime>
+			<soundCast>VFEI2_FireSpew_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilitySprayLiquid">
+				<projectileDef>AA_GreaterBlackHiveBolt</projectileDef>
+				<numCellsToHit>16</numCellsToHit>
+				<sprayEffecter>AA_NoxiousBreath_Directional</sprayEffecter>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+</Defs>

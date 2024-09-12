@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <ThingDef ParentName="VFEI2_ThumperBase">
+    <defName>VFEI2_Thumper_BlackEmpress</defName>
+    <label>black empress thumper</label>
+    <description>A vibration-producing thumper device. When activated, it starts emitting powerful thump pulses, which will attract an insectoid black empress to attack with its escorts. If you can defeat her, you can collect a special pherocore from her corpse. The thumps destabilise the thumper, so this building can only be used once.</description>
+    <graphicData>
+      <texPath>Things/Building/VFEI2_BlackEmpressThumper_Base</texPath>
+    </graphicData>
+	<uiIconPath>Things/Building/VFEI2_BlackEmpressThumper_MenuIcon</uiIconPath>
+    <costList>
+      <Steel>70</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <researchPrerequisites>
+        <li>VFEI2_StandardHivetech</li>
+		<li>Electricity</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="VFEInsectoids.CompProperties_Thumper">
+		<topGraphic>
+			<texPath>Things/Building/VFEI2_BlackEmpressThumper_Top</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</topGraphic>
+		<wave>VFEI2_Thumper_BlackEmpress</wave>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <VFEInsectoids.InsectWaveDef>
+	<defName>VFEI2_Thumper_BlackEmpress</defName>
+	<minWaveRepeatIndex>2</minWaveRepeatIndex>
+	<waves>
+	
+	
+		<li>
+			<insects>
+				<VFEI2_BlackEmpress>1</VFEI2_BlackEmpress>
+				<AA_BlackSpider>2</AA_BlackSpider>
+				<AA_BlackSpelopede>4</AA_BlackSpelopede>
+				<AA_BlackScarab>6</AA_BlackScarab>
+			</insects>
+		</li>
+		<li>
+			<insects>
+				<VFEI2_BlackEmpress>1</VFEI2_BlackEmpress>
+				<AA_BlackSpider>2</AA_BlackSpider>
+				<AA_BlackSpelopede>3</AA_BlackSpelopede>
+				<AA_BlackScarab>5</AA_BlackScarab>
+				<AA_MegaLouse>3</AA_MegaLouse>
+			</insects>
+		</li>
+		<li>
+			<insects>
+				<VFEI2_BlackEmpress>1</VFEI2_BlackEmpress>
+				<AA_BlackSpider>4</AA_BlackSpider>
+				<AA_BlackSpelopede>6</AA_BlackSpelopede>
+				<AA_BlackScarab>5</AA_BlackScarab>
+				<AA_MegaLouse>5</AA_MegaLouse>
+				<AA_MammothWorm>2</AA_MammothWorm>
+			</insects>
+		</li>
+		<li>
+			<insects>
+				<VFEI2_BlackEmpress>2</VFEI2_BlackEmpress>
+				<AA_BlackSpider>6</AA_BlackSpider>
+				<AA_BlackSpelopede>10</AA_BlackSpelopede>
+				<AA_BlackScarab>5</AA_BlackScarab>
+				<AA_MegaLouse>5</AA_MegaLouse>
+				<AA_MammothWorm>2</AA_MammothWorm>
+				<AA_Ravager>2</AA_Ravager>
+			</insects>
+		</li>
+		<li>
+			<insects>
+				<VFEI2_BlackEmpress>2</VFEI2_BlackEmpress>
+				<AA_MammothWorm>2</AA_MammothWorm>
+				<AA_BlackSpider>6</AA_BlackSpider>
+				<AA_BlackSpelopede>10</AA_BlackSpelopede>
+				<AA_BlackScarab>10</AA_BlackScarab>
+				<AA_MegaLouse>5</AA_MegaLouse>
+				<AA_Ravager>2</AA_Ravager>
+			</insects>
+		</li>
+		<li>
+			<insects>
+				<VFEI2_BlackEmpress>2</VFEI2_BlackEmpress>
+				<VFEI2_BlackQueen>1</VFEI2_BlackQueen>
+				<AA_MammothWorm>4</AA_MammothWorm>
+				<AA_BlackSpider>8</AA_BlackSpider>
+				<AA_BlackSpelopede>5</AA_BlackSpelopede>
+				<AA_BlackScarab>15</AA_BlackScarab>
+				<AA_MegaLouse>7</AA_MegaLouse>
+				<AA_Ravager>3</AA_Ravager>
+			</insects>
+		</li>
+		<li>
+			<insects>
+				<VFEI2_BlackEmpress>2</VFEI2_BlackEmpress>
+				<VFEI2_BlackQueen>1</VFEI2_BlackQueen>
+				<AA_MammothWorm>4</AA_MammothWorm>
+				<AA_BlackSpider>10</AA_BlackSpider>
+				<AA_BlackSpelopede>18</AA_BlackSpelopede>
+				<AA_MegaLouse>7</AA_MegaLouse>
+				<AA_Ravager>5</AA_Ravager>
+			</insects>
+		</li>
+		<li>
+			<insects>
+				<VFEI2_BlackEmpress>3</VFEI2_BlackEmpress>
+				<VFEI2_BlackQueen>2</VFEI2_BlackQueen>
+				<AA_MammothWorm>6</AA_MammothWorm>
+				<AA_BlackSpider>16</AA_BlackSpider>
+				<AA_BlackSpelopede>20</AA_BlackSpelopede>
+				<AA_MegaLouse>7</AA_MegaLouse>
+				<AA_Ravager>5</AA_Ravager>
+			</insects>
+		</li>
+	</waves>
+  </VFEInsectoids.InsectWaveDef>
+
+  
+</Defs>

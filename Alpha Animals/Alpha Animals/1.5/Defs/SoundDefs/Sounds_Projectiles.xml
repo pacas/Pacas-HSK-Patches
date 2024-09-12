@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ======================== Poison Bolt ======================== -->
+
+	<SoundDef>
+		<defName>AA_PoisonBolt</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_PoisonBolt</clipFolderPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+		<!-- ======================== Electric Bolt ======================== -->
+
+	<SoundDef>
+		<defName>AA_ElectricBolt</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_ElectricBolt</clipFolderPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+			<!-- ======================== Wind Bolt ======================== -->
+
+	<SoundDef>
+		<defName>AA_WindBolt</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_WindBolt</clipFolderPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+			<!-- ======================== Laser Bullet ======================== -->
+
+	<SoundDef>
+		<defName>AA_LaserBullet</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_LaserBullet</clipFolderPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+		<!-- ======================== Cryogun ======================== -->
+
+	<SoundDef>
+		<defName>AA_Cryogun</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_Cryogun</clipFolderPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Acid Attack ======================== -->
+
+	<SoundDef>
+		<defName>AA_AcidSound</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_AcidSound</clipPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Goo pop ======================== -->
+
+	<SoundDef>
+		<defName>AA_GooPop</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>AA_GooPop</clipPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Gallatross Rock Throw ======================== -->
+
+	<SoundDef>
+		<defName>AA_RockThrow</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_RockThrow</clipFolderPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+	<!-- ======================== TetraSlug Plasma Gun ======================== -->
+
+	<SoundDef>
+		<defName>AA_Plasma</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_Plasma</clipFolderPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+		<!-- ======================== Demolisher Charge ======================== -->
+
+	<SoundDef>
+		<defName>AA_DemolisherCharge</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_DemolisherCharge</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>25</min>
+					<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Dart Throw ======================== -->
+
+	<SoundDef>
+		<defName>AA_DartSound</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_DartSound</clipFolderPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+	<!-- ======================== Web Throw ======================== -->
+
+	<SoundDef>
+		<defName>AA_Throw</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_Throw</clipFolderPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ======================== Fire Spit ======================== -->
+
+	<SoundDef>
+		<defName>AA_FireSpit</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_FireSpit</clipFolderPath>
+					</li>
+				</grains>
+				<repeatMode>NeverTwice</repeatMode>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- ======================== Ice crash ======================== -->
+
+	<SoundDef>
+		<defName>AA_IceCrash</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_IceCrash</clipFolderPath>
+					</li>
+				</grains>
+
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- ======================== Frost Bolt ======================== -->
+
+	<SoundDef>
+		<defName>AA_FrostBolt</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>AA_FrostBolt</clipFolderPath>
+					</li>
+				</grains>
+				<repeatMode>NeverTwice</repeatMode>
+				<pitchRange>
+					<min>0.9770588</min>
+					<max>1.137647</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50.40025</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<!-- ======================== Behemoth breath ======================== -->
+	
+	<SoundDef>
+		<defName>FO_FlameBreathSound</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>FO_FlameBreath</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9652174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+
+</Defs>

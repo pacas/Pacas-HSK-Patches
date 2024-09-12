@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<PawnRenderTreeDef>
+		<defName>AA_ArcticLion</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<tagDef>Body</tagDef>
+					<useRottenColor>true</useRottenColor>
+					<nodeClass>AlphaBehavioursAndEvents.PawnRenderNode_ArcticLion</nodeClass>
+					<children>
+						<li>
+							<debugLabel>Wounds</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>3</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Firefoam</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>10</baseLayer>
+						</li>
+						<li Class="PawnRenderNodeProperties_Carried">
+							<debugLabel>Carried thing</debugLabel>
+							<workerClass>PawnRenderNodeWorker_Carried</workerClass>
+						</li>
+					</children>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+	<PawnRenderTreeDef>
+		<defName>AA_CrescendoAnole</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<tagDef>Body</tagDef>
+					<useRottenColor>true</useRottenColor>
+					<nodeClass>AlphaBehavioursAndEvents.PawnRenderNode_CrescendoAnole</nodeClass>
+					<children>
+						<li>
+							<debugLabel>Wounds</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>3</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Firefoam</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>10</baseLayer>
+						</li>
+						<li Class="PawnRenderNodeProperties_Carried">
+							<debugLabel>Carried thing</debugLabel>
+							<workerClass>PawnRenderNodeWorker_Carried</workerClass>
+						</li>
+					</children>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+	<PawnRenderTreeDef>
+		<defName>AA_RipperHound</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<tagDef>Body</tagDef>
+					<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+					<useRottenColor>true</useRottenColor>
+					<children>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_RipperHound/AA_RipperHoundLeftClaw</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataEast>
+									<layer>-5</layer>
+								</dataEast>
+								<dataWest>
+									<flip>true</flip>
+									<layer>-5</layer>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_RipperHound/AA_RipperHoundRightClaw</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<offset>(0, 0, 0)</offset>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li>
+							<debugLabel>Wounds</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>3</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Pack</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPack</nodeClass>
+							<workerClass>PawnRenderNodeWorker_AnimalPack</workerClass>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<baseLayer>5</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Firefoam</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>10</baseLayer>
+						</li>
+					</children>
+				</li>
+				<li Class="PawnRenderNodeProperties_Carried">
+					<debugLabel>Carried thing</debugLabel>
+					<workerClass>PawnRenderNodeWorker_Carried</workerClass>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+	<PawnRenderTreeDef>
+		<defName>AA_ColossalAerofleet</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<tagDef>Body</tagDef>
+					<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+					<useRottenColor>true</useRottenColor>
+					<children>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_Aerofleet/AA_Aerofleet_Colossal_Tentacle1</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+								<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<defaultData>
+									<offset>(0, 0, -0.15)</offset>
+								</defaultData>
+								<dataNorth>
+									<layer>-5</layer>
+								</dataNorth>
+								<dataSouth>
+									<layer>-5</layer>
+								</dataSouth>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_Aerofleet/AA_Aerofleet_Colossal_Tentacle2</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataNorth>
+									<layer>-5</layer>
+								</dataNorth>
+								<dataSouth>
+									<layer>-5</layer>
+								</dataSouth>
+								<defaultData>
+									<offset>(0, 0, -0.15)</offset>
+								</defaultData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_Aerofleet/AA_Aerofleet_Colossal_Tentacle3</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+								<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataNorth>
+									<layer>-5</layer>
+								</dataNorth>
+								<dataSouth>
+									<layer>-5</layer>
+								</dataSouth>
+								<defaultData>
+									<offset>(0, 0, -0.15)</offset>
+								</defaultData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_Aerofleet/AA_Aerofleet_Colossal_Tentacle4</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataNorth>
+									<layer>-5</layer>
+								</dataNorth>
+								<dataSouth>
+									<layer>-5</layer>
+								</dataSouth>
+								<defaultData>
+									<offset>(0, 0, -0.15)</offset>
+								</defaultData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li>
+							<debugLabel>Wounds</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>3</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Pack</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPack</nodeClass>
+							<workerClass>PawnRenderNodeWorker_AnimalPack</workerClass>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<baseLayer>5</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Firefoam</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>10</baseLayer>
+						</li>
+					</children>
+				</li>
+				<li Class="PawnRenderNodeProperties_Carried">
+					<debugLabel>Carried thing</debugLabel>
+					<workerClass>PawnRenderNodeWorker_Carried</workerClass>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+	
+	<PawnRenderTreeDef>
+		<defName>AA_GreenGoo</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<tagDef>Body</tagDef>
+					<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+					<useRottenColor>true</useRottenColor>
+					<children>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_GreenGoo/AA_GreenGoo_LeftTentacle</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+							<drawSize>1.6</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								
+								<dataWest>
+									<flip>true</flip>
+									
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_GreenGoo/AA_GreenGoo_RightTentacle</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+							<drawSize>1.6</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+								
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li>
+							<debugLabel>Wounds</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>3</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Pack</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPack</nodeClass>
+							<workerClass>PawnRenderNodeWorker_AnimalPack</workerClass>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<baseLayer>5</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Firefoam</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>10</baseLayer>
+						</li>
+					</children>
+				</li>
+				<li Class="PawnRenderNodeProperties_Carried">
+					<debugLabel>Carried thing</debugLabel>
+					<workerClass>PawnRenderNodeWorker_Carried</workerClass>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+	
+		<PawnRenderTreeDef>
+		<defName>AA_RedGoo</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<tagDef>Body</tagDef>
+					<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+					<useRottenColor>true</useRottenColor>
+					<children>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_RedGoo/AA_RedGoo_LeftTentacle</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+							<drawSize>1.6</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								
+								<dataWest>
+									<flip>true</flip>
+									
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_RedGoo/AA_RedGoo_RightTentacle</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+							<drawSize>1.6</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+								
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li>
+							<debugLabel>Wounds</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>3</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Pack</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPack</nodeClass>
+							<workerClass>PawnRenderNodeWorker_AnimalPack</workerClass>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<baseLayer>5</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Firefoam</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>10</baseLayer>
+						</li>
+					</children>
+				</li>
+				<li Class="PawnRenderNodeProperties_Carried">
+					<debugLabel>Carried thing</debugLabel>
+					<workerClass>PawnRenderNodeWorker_Carried</workerClass>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+	
+		<PawnRenderTreeDef>
+		<defName>AA_Mantrap</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<tagDef>Body</tagDef>
+					<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+					<useRottenColor>true</useRottenColor>
+					<children>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_Mantrap/AA_Mantrap_Tentacle1</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								
+								<dataWest>
+									<flip>true</flip>
+									
+								</dataWest>
+								<dataNorth>
+									
+									<layer>-5</layer>
+								</dataNorth>
+							</drawData>
+						</li>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_Mantrap/AA_Mantrap_Tentacle2</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+								<layer>-5</layer>
+									<flip>true</flip>
+								</dataWest>
+								<dataEast>
+								<layer>-5</layer>
+									
+								</dataEast>
+								<dataSouth>
+									
+									<layer>-5</layer>
+								</dataSouth>
+							</drawData>
+						</li>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_Mantrap/AA_Mantrap_Tentacle3</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								
+								<dataWest>
+									<flip>true</flip>
+									
+								</dataWest>
+								<dataNorth>
+									
+									<layer>-5</layer>
+								</dataNorth>
+							</drawData>
+						</li>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_Mantrap/AA_Mantrap_Tentacle4</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+								<layer>-5</layer>
+									<flip>true</flip>
+								</dataWest>
+								<dataEast>
+								<layer>-5</layer>
+									
+								</dataEast>
+								<dataSouth>
+									
+									<layer>-5</layer>
+								</dataSouth>
+							</drawData>
+						</li>
+						<li>
+							<debugLabel>Wounds</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>3</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Pack</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPack</nodeClass>
+							<workerClass>PawnRenderNodeWorker_AnimalPack</workerClass>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<baseLayer>5</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Firefoam</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>10</baseLayer>
+						</li>
+					</children>
+				</li>
+				<li Class="PawnRenderNodeProperties_Carried">
+					<debugLabel>Carried thing</debugLabel>
+					<workerClass>PawnRenderNodeWorker_Carried</workerClass>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+	<PawnRenderTreeDef>
+		<defName>AA_OcularJelly</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<tagDef>Body</tagDef>
+					<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+					<useRottenColor>true</useRottenColor>
+					<children>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_OcularJelly/AA_OcularJelly_Tentacle1</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+								<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>-10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								
+								
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_OcularJelly/AA_OcularJelly_Tentacle2</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+								<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>-10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								
+								
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_OcularJelly/AA_OcularJelly_Tentacle3</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+								<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>-10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								
+								
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="AlphaBehavioursAndEvents.PawnRenderNodeProperties_SpasticScaled">
+							<linkedBodyPartsGroup>Arms</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/AA_OcularJelly/AA_OcularJelly_Tentacle4</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<rotationRange>-15~15</rotationRange>
+							<durationTicksRange>10~35</durationTicksRange>
+								<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>-10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								
+								
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li>
+							<debugLabel>Wounds</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>3</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Pack</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPack</nodeClass>
+							<workerClass>PawnRenderNodeWorker_AnimalPack</workerClass>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<baseLayer>5</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Firefoam</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>10</baseLayer>
+						</li>
+					</children>
+				</li>
+				<li Class="PawnRenderNodeProperties_Carried">
+					<debugLabel>Carried thing</debugLabel>
+					<workerClass>PawnRenderNodeWorker_Carried</workerClass>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+	
+</Defs>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>AA_AnimaLeafA</defName>
+    <graphicData>
+      <texPath>Things/Mote/AA_AnimaLeaves/AA_AnimaLeavesA</texPath>
+      <drawSize>(0.4, 0.4)</drawSize>
+     
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>2.5</solidTime>
+    <fadeInTime>0.05</fadeInTime>
+    <fadeOutTime>0.5</fadeOutTime>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>AA_AnimaLeafB</defName>
+    <graphicData>
+      <texPath>Things/Mote/AA_AnimaLeaves/AA_AnimaLeavesB</texPath>
+      <drawSize>(0.4, 0.4)</drawSize>
+     
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>2.5</solidTime>
+    <fadeInTime>0.05</fadeInTime>
+    <fadeOutTime>0.5</fadeOutTime>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>AA_AnimaLeafC</defName>
+    <graphicData>
+      <texPath>Things/Mote/AA_AnimaLeaves/AA_AnimaLeavesC</texPath>
+      <drawSize>(0.4, 0.4)</drawSize>
+     
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>2.5</solidTime>
+    <fadeInTime>0.05</fadeInTime>
+    <fadeOutTime>0.5</fadeOutTime>
+  </FleckDef>
+
+  
+
+</Defs>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+   <Operation Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AA_DarkGlowPod"]</xpath>
+      <value>
+         <costList>
+            <AA_BlackInsectJelly>10</AA_BlackInsectJelly>
+         </costList>
+         <designationCategory>VFEI2_Insectoids</designationCategory>
+         <researchPrerequisites>
+            <li>VFEI2_BasicHivetech</li>
+         </researchPrerequisites>
+		<constructEffect>VFEI2_ConstructSlime</constructEffect>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+      </value>
+   </Operation>
+   
+   <Operation Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="AA_DarkGlowPod"]/statBases</xpath>
+      <value>
+        <WorkToBuild>1000</WorkToBuild>
+      </value>
+   </Operation>
+   
+   <Operation Class="PatchOperationReplace">
+      <xpath>Defs/ThingDef[defName="AA_DarkGlowPod"]/statBases/MarketValue</xpath>
+      <value>
+        <MarketValue>20</MarketValue>
+      </value>
+   </Operation>
+   
+   <Operation Class="PatchOperationAddModExtension">
+   	<xpath>Defs/ThingDef[defName="AA_DarkGlowPod"]</xpath>
+      <value>
+		<li Class="VFEInsectoids.InsectBuilding"></li>
+      </value>
+	</Operation>
+
+</Patch>

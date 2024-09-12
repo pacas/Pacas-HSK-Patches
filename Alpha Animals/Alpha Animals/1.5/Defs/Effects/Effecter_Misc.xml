@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <EffecterDef>
+    <defName>AA_AnimaLeaves</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>AA_AnimaLeafA</fleckDef>
+        <spawnLocType>RandomCellOnTarget</spawnLocType>
+        <rotationRate>-10~10</rotationRate>
+        <angle>280~310</angle>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        <speed>0.6~0.9</speed>
+        <burstCount>1~2</burstCount>
+        <chancePerTick>0.005</chancePerTick>
+        <scale>0.8~1</scale>
+        <positionOffset>(0,0,1)</positionOffset>
+        <positionRadius>0.4</positionRadius>
+      </li>
+	  <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>AA_AnimaLeafB</fleckDef>
+        <spawnLocType>RandomCellOnTarget</spawnLocType>
+        <rotationRate>-10~10</rotationRate>
+        <angle>280~310</angle>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        <speed>0.6~0.9</speed>
+        <burstCount>1~2</burstCount>
+        <chancePerTick>0.005</chancePerTick>
+        <scale>0.8~1</scale>
+        <positionOffset>(0,0,1)</positionOffset>
+        <positionRadius>0.4</positionRadius>
+      </li>
+	  <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <fleckDef>AA_AnimaLeafC</fleckDef>
+        <spawnLocType>RandomCellOnTarget</spawnLocType>
+        <rotationRate>-10~10</rotationRate>
+        <angle>280~310</angle>
+        <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+        <speed>0.6~0.9</speed>
+        <burstCount>1~2</burstCount>
+        <chancePerTick>0.005</chancePerTick>
+        <scale>0.8~1</scale>
+        <positionOffset>(0,0,1)</positionOffset>
+        <positionRadius>0.4</positionRadius>
+      </li>
+    </children>
+  </EffecterDef>
+
+ 
+
+</Defs>

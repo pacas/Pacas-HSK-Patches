@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SK_AnimalThingBase">
+        <defName>AA_Frostling</defName>
+        <label>frostling</label>
+        <description>Perhaps a distant offshoot or an evolutionary relative of the sleek Nightling, the Frostling is a predator adapted to extremely low temperatures. The Frostling is a nocturnal animal that preys on the strange creatures inhabiting the frozen wastes.</description>
+        <statBases>
+            <MoveSpeed>6.00</MoveSpeed>
+            <ComfyTemperatureMin>-150</ComfyTemperatureMin>
+            <ComfyTemperatureMax>0</ComfyTemperatureMax>
+            <MarketValue>750</MarketValue>
+            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+            <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+        </statBases>
+        <tools>
+            <li>
+                <label>left claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>right claw</label>
+                <capacities>
+                    <li>Scratch</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>1.5</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2.0</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+            <li>
+                <label>head</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>3</power>
+                <cooldownTime>1.65</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <chanceFactor>0.2</chanceFactor>
+            </li>
+        </tools>
+        <comps>
+			<li Class="MVCF.Comps.CompProperties_RandomVerbs">
+				<meleeChance>0.5</meleeChance>
+			</li>
+		</comps>
+        <race>
+            <body>QuadrupedAnimalWithPawsAndTail</body>
+            <predator>true</predator>
+            <baseBodySize>1.5</baseBodySize>
+            <baseHungerRate>0.15</baseHungerRate>
+            <baseHealthScale>2</baseHealthScale>
+            <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+            <leatherDef>Leather_Heavy</leatherDef>
+            <useMeatFrom>Muffalo</useMeatFrom>
+            <maxPreyBodySize>3</maxPreyBodySize>
+            <trainability>Advanced</trainability>
+            <gestationPeriodDays>35</gestationPeriodDays>
+            <nameOnTameChance>1</nameOnTameChance>
+            <wildness>0.75</wildness>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+            <nuzzleMtbHours>45</nuzzleMtbHours>
+            <litterSizeCurve>
+                <points>
+                    <li>(0.5, 0)</li>
+                    <li>(1, 1)</li>
+                    <li>(2, 1.7)</li>
+                    <li>(3, 0.7)</li>
+                    <li>(3.5, 0)</li>
+                </points>
+            </litterSizeCurve>
+            <lifeExpectancy>18</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.4</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.9</minAge>
+                    <soundWounded>Pawn_Warg_Wounded</soundWounded>
+                    <soundDeath>Pawn_Warg_Death</soundDeath>
+                    <soundCall>Pawn_Warg_Call</soundCall>
+                    <soundAngry>Pawn_Warg_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalFighter</li>
+        </tradeTags>
+        <modExtensions>
+            <li Class="AnimalBehaviours.AnimalStatExtension">
+                <statToAdd>
+                    <li>AA_PrimaryRole</li>
+                    <li>AA_RangedAttacks</li>
+                </statToAdd>
+                <statValues>
+                    <li>AA_ShockTroop</li>
+                    <li>AA_No</li>
+                </statValues>
+                <statDescriptions>
+                    <li>AA_ShockTroopDesc</li>
+                    <li>AA_NoRanged</li>
+                </statDescriptions>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>AA_Frostling</defName>
+        <label>frostling</label>
+        <race>AA_Frostling</race>
+        <combatPower>125</combatPower>
+        <lifeStages>
+            <li>
+                <label>frostling cub</label>
+                <labelPlural>frostling puppies</labelPlural>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Frostling/AA_Frostling</texPath>
+                    <drawSize>1.5</drawSize>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Frostling/AA_Dessicated_Frostling</texPath>
+                    <drawSize>1.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Frostling/AA_Frostling</texPath>
+                    <drawSize>2</drawSize>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Frostling/AA_Dessicated_Frostling</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Frostling/AA_Frostling</texPath>
+                    <drawSize>2.5</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/AA_Frostling/AA_Dessicated_Frostling</texPath>
+                    <drawSize>2.5</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+        <ecoSystemWeight>0.9</ecoSystemWeight>
+        <wildGroupSize>
+            <min>2</min>
+            <max>5</max>
+        </wildGroupSize>
+    </PawnKindDef>
+</Defs>

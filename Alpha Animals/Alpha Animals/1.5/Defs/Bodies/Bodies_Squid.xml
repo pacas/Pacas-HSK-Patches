@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ======================== Sand Squid ======================== -->
+    <BodyDef>
+        <defName>AA_Squid</defName>
+        <label>squid</label>
+        <corePart>
+            <def>SnakeBody</def>
+            <coverage>0.10</coverage>
+            <height>Middle</height>
+            <depth>Outside</depth>
+            <parts>
+                <li>
+                    <def>AA_SquidBody</def>
+                    <coverage>0.30</coverage>
+                    <height>Middle</height>
+                    <depth>Outside</depth>
+                    <parts>
+                        <li>
+                            <def>Brain</def>
+                            <coverage>0.1</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>AA_VibrationReceptor</def>
+                            <coverage>0.15</coverage>
+                        </li>
+                        <li>
+                            <def>Beak</def>
+                            <coverage>0.1</coverage>
+                            <groups>
+                                <li>AA_Mouth</li>
+                            </groups>
+                        </li>
+                        <li>
+                            <def>Heart</def>
+                            <coverage>0.1</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>Lung</def>
+                            <customLabel>left lung</customLabel>
+                            <coverage>0.05</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>Lung</def>
+                            <customLabel>right lung</customLabel>
+                            <coverage>0.05</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>Stomach</def>
+                            <coverage>0.05</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>Liver</def>
+                            <coverage>0.05</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>Kidney</def>
+                            <customLabel>left kidney</customLabel>
+                            <coverage>0.05</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>Kidney</def>
+                            <customLabel>right kidney</customLabel>
+                            <coverage>0.05</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <def>AA_ConicalShell</def>
+                    <customLabel>conical shell</customLabel>
+                    <coverage>0.3</coverage>
+                </li>
+                <li>
+                    <def>AA_SquidTentacle</def>
+                    <customLabel>first tentacle</customLabel>
+                    <coverage>0.1</coverage>
+                    <depth>Outside</depth>
+                    <groups>
+                        <li>AA_TentacleAttackTool</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>AA_SquidTentacle</def>
+                    <customLabel>second tentacle</customLabel>
+                    <coverage>0.1</coverage>
+                    <depth>Outside</depth>
+                    <groups>
+                        <li>AA_TentacleAttackTool</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>AA_SquidTentacle</def>
+                    <customLabel>third tentacle</customLabel>
+                    <coverage>0.1</coverage>
+                    <depth>Outside</depth>
+                    <groups>
+                        <li>AA_TentacleAttackTool</li>
+                    </groups>
+                </li>
+            </parts>
+        </corePart>
+    </BodyDef>
+    <BodyDef>
+        <defName>AA_Squid_NoShell</defName>
+        <label>squid</label>
+        <corePart>
+            <def>SnakeBody</def>
+            <coverage>0.10</coverage>
+            <height>Middle</height>
+            <depth>Outside</depth>
+            <parts>
+                <li>
+                    <def>AA_SquidBody</def>
+                    <coverage>0.60</coverage>
+                    <height>Middle</height>
+                    <depth>Outside</depth>
+                    <parts>
+                        <li>
+                            <def>Brain</def>
+                            <coverage>0.1</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>AA_VibrationReceptor</def>
+                            <coverage>0.1</coverage>
+                        </li>
+                        <li>
+                            <def>Eye</def>
+                            <customLabel>first eye</customLabel>
+                            <coverage>0.025</coverage>
+                        </li>
+                        <li>
+                            <def>Eye</def>
+                            <customLabel>second eye</customLabel>
+                            <coverage>0.025</coverage>
+                        </li>
+                        <li>
+                            <def>Eye</def>
+                            <customLabel>third eye</customLabel>
+                            <coverage>0.025</coverage>
+                        </li>
+                        <li>
+                            <def>Eye</def>
+                            <customLabel>fourth eye</customLabel>
+                            <coverage>0.025</coverage>
+                        </li>
+                        <li>
+                            <def>Beak</def>
+                            <coverage>0.05</coverage>
+                            <groups>
+                                <li>AA_Mouth</li>
+                            </groups>
+                        </li>
+                        <li>
+                            <def>Heart</def>
+                            <coverage>0.1</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>Lung</def>
+                            <customLabel>left lung</customLabel>
+                            <coverage>0.05</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>Lung</def>
+                            <customLabel>right lung</customLabel>
+                            <coverage>0.05</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>Stomach</def>
+                            <coverage>0.05</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>Liver</def>
+                            <coverage>0.05</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>Kidney</def>
+                            <customLabel>left kidney</customLabel>
+                            <coverage>0.05</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                        <li>
+                            <def>Kidney</def>
+                            <customLabel>right kidney</customLabel>
+                            <coverage>0.05</coverage>
+                            <depth>Inside</depth>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <def>AA_SquidTentacle</def>
+                    <customLabel>first tentacle</customLabel>
+                    <coverage>0.1</coverage>
+                    <depth>Outside</depth>
+                    <groups>
+                        <li>AA_TentacleAttackTool</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>AA_SquidTentacle</def>
+                    <customLabel>second tentacle</customLabel>
+                    <coverage>0.1</coverage>
+                    <depth>Outside</depth>
+                    <groups>
+                        <li>AA_TentacleAttackTool</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>AA_SquidTentacle</def>
+                    <customLabel>third tentacle</customLabel>
+                    <coverage>0.1</coverage>
+                    <depth>Outside</depth>
+                    <groups>
+                        <li>AA_TentacleAttackTool</li>
+                    </groups>
+                </li>
+            </parts>
+        </corePart>
+    </BodyDef>
+</Defs>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<PawnRenderTreeDef>
+		<defName>VFEI2_BlackSwarmling</defName>
+		<root Class="PawnRenderNodeProperties_Parent">
+			<debugLabel>Root</debugLabel>
+			<tagDef>Root</tagDef>
+			<children>
+				<li>
+					<debugLabel>Body</debugLabel>
+					<tagDef>Body</tagDef>
+					<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+					<useRottenColor>true</useRottenColor>
+					<children>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>VFEI2_SwarmlingA</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/VFEI2_BlackSwarmling/VFEI2_BlackSwarmling2</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<offsetRangeX>-0.15~0.15</offsetRangeX>
+							<offsetRangeZ>-0.15~0.15</offsetRangeZ>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>-10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>VFEI2_SwarmlingB</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/VFEI2_BlackSwarmling/VFEI2_BlackSwarmling3</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<offsetRangeX>-0.15~0.15</offsetRangeX>
+							<offsetRangeZ>-0.15~0.15</offsetRangeZ>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>-10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>VFEI2_SwarmlingC</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/VFEI2_BlackSwarmling/VFEI2_BlackSwarmling4</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<offsetRangeX>-0.15~0.15</offsetRangeX>
+							<offsetRangeZ>-0.15~0.15</offsetRangeZ>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>-10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li Class="PawnRenderNodeProperties_Spastic">
+							<linkedBodyPartsGroup>VFEI2_SwarmlingD</linkedBodyPartsGroup>
+							<texPath>Things/Pawn/Animal/VFEI2_BlackSwarmling/VFEI2_BlackSwarmling5</texPath>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<rotateFacing>false</rotateFacing>
+							<offsetRangeX>-0.15~0.15</offsetRangeX>
+							<offsetRangeZ>-0.15~0.15</offsetRangeZ>
+							<durationTicksRange>10~35</durationTicksRange>
+							<nextSpasmTicksRange>0~15</nextSpasmTicksRange>
+							<drawSize>1.4</drawSize>
+							<baseLayer>-10</baseLayer>
+							<useRottenColor>true</useRottenColor>
+							<drawData>
+								<dataWest>
+									<flip>true</flip>
+								</dataWest>
+							</drawData>
+						</li>
+						<li>
+							<debugLabel>Wounds</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayWounds</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>3</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Pack</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPack</nodeClass>
+							<workerClass>PawnRenderNodeWorker_AnimalPack</workerClass>
+							<rotDrawMode>Fresh, Rotting</rotDrawMode>
+							<baseLayer>5</baseLayer>
+						</li>
+						<li>
+							<debugLabel>Firefoam</debugLabel>
+							<nodeClass>PawnRenderNode_AnimalPart</nodeClass>
+							<workerClass>PawnRenderNodeWorker_OverlayFirefoam</workerClass>
+							<overlayLayer>Body</overlayLayer>
+							<useGraphic>false</useGraphic>
+							<baseLayer>10</baseLayer>
+						</li>
+					</children>
+				</li>
+				<li Class="PawnRenderNodeProperties_Carried">
+					<debugLabel>Carried thing</debugLabel>
+					<workerClass>PawnRenderNodeWorker_Carried</workerClass>
+				</li>
+			</children>
+		</root>
+	</PawnRenderTreeDef>
+</Defs>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingNaturalBase">
+        <defName>AA_Overgrown_DropPod</defName>
+        <label>overgrown drop pod</label>
+        <description>This standard issue drop pod seems to have been modified to host a small self contained ecosystem. As soon as it impacted, strange creeping vines and weird creatures emerged from it. It seems to be some kind of terraforming machine.\n\nYou can destroy it to avoid release of hostile lifeforms into this region, or wait until its work is done to see what happens.</description>
+        <thingClass>AlphaBehavioursAndEvents.Building_Overgrown_DropPod</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AA_Overgrown_DropPod</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2</drawSize>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <fillPercent>0.5</fillPercent>
+        <statBases>
+            <MaxHitPoints>130</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <pathCost>50</pathCost>
+        <blockWind>true</blockWind>
+        <tickerType>Normal</tickerType>
+        <passability>PassThroughOnly</passability>
+        <comps>
+            <li Class="CompProperties_Spawner">
+                <thingToSpawn>InsectJelly</thingToSpawn>
+                <spawnCount>20</spawnCount>
+                <spawnIntervalRange>
+                    <min>26000</min>
+                    <max>30000</max>
+                </spawnIntervalRange>
+                <spawnMaxAdjacent>40</spawnMaxAdjacent>
+                <spawnForbidden>true</spawnForbidden>
+                <saveKeysPrefix>jelly</saveKeysPrefix>
+            </li>
+        </comps>
+    </ThingDef>
+    <ThingDef ParentName="BuildingNaturalBase">
+        <defName>AA_BlackHiveMound</defName>
+        <label>huge black hive mound</label>
+        <description>A hive of giant insects. This mound was used by the Black Hive to tunnel to this territory, and is now inert. It will erode in a few days.</description>
+        <thingClass>AlphaBehavioursAndEvents.Building_BlackHiveMound</thingClass>
+        <graphicData>
+            <texPath>Things/Building/AA_BlackHive</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.6</drawSize>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <rotatable>false</rotatable>
+        <fillPercent>0.5</fillPercent>
+        <statBases>
+            <MaxHitPoints>130</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <pathCost>50</pathCost>
+        <blockWind>true</blockWind>
+        <tickerType>Normal</tickerType>
+        <passability>PassThroughOnly</passability>
+        <killedLeavings>
+            <AA_BlackInsectJelly>30</AA_BlackInsectJelly>
+        </killedLeavings>
+        <comps>
+            <li Class="CompProperties_Spawner">
+                <thingToSpawn>AA_BlackInsectJelly</thingToSpawn>
+                <spawnCount>5</spawnCount>
+                <spawnIntervalRange>
+                    <min>26000</min>
+                    <max>30000</max>
+                </spawnIntervalRange>
+                <spawnMaxAdjacent>40</spawnMaxAdjacent>
+                <spawnForbidden>true</spawnForbidden>
+                <saveKeysPrefix>jelly</saveKeysPrefix>
+            </li>
+            <li Class="CompProperties_Spawner">
+                <thingToSpawn>AA_DarkGlowPod</thingToSpawn>
+                <spawnCount>1</spawnCount>
+                <spawnIntervalRange>
+                    <min>30000</min>
+                    <max>60000</max>
+                </spawnIntervalRange>
+                <spawnMaxAdjacent>1</spawnMaxAdjacent>
+                <saveKeysPrefix>pod</saveKeysPrefix>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <heatPerSecond>6</heatPerSecond>
+                <heatPushMaxTemperature>38</heatPushMaxTemperature>
+            </li>
+            <li Class="CompProperties_SpawnerFilth">
+                <filthDef>Filth_Slime</filthDef>
+                <spawnCountOnSpawn>10</spawnCountOnSpawn>
+                <spawnMtbHours>4</spawnMtbHours>
+                <spawnRadius>5</spawnRadius>
+            </li>
+            <li Class="CompProperties_Lifespan">
+                <lifespanTicks>120000</lifespanTicks>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingNaturalBase">
+        <defName>AA_DarkGlowPod</defName>
+        <label>dark glow pod</label>
+        <description>A darklight pod produced by giant insects. Glows under its own light for a long time, then dies.</description>
+        <thingClass>Building</thingClass>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <selectable>true</selectable>
+        <fillPercent>0.20</fillPercent>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <rotatable>false</rotatable>
+        <tickerType>Rare</tickerType>
+        <thingCategories>
+            <li>BuildingsSpecial</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <Mass>4</Mass>
+            <Flammability>1.0</Flammability>
+            <MarketValue>50</MarketValue>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>6</glowRadius>
+                <glowColor>(78, 226, 229, 0)</glowColor>
+                <!-- This is a specific darklight color, make sure it matches DarklightUtility.IsDarklight -->
+            </li>
+            <li Class="CompProperties_Lifespan">
+                <lifespanTicks>1200000</lifespanTicks>
+            </li>
+        </comps>
+        <graphicData>
+            <texPath>Things/Building/AA_DarkGlowPod</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shadowData>
+                <volume>(0.3, 0.6, 0.3)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="RockBase">
+        <defName>AA_SkySteelClumpsBackup</defName>
+        <label>strange shiny mineral</label>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(36,84,150)</color>
+            <colorTwo>(107,123,33)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>4500</MaxHitPoints>
+        </statBases>
+        <description>This strange mineral is very hard and resilient. Perhaps you could find a way to extract useable materials from it.</description>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>AA_SkySteel_Ore</mineableThing>
+            <mineableYield>35</mineableYield>
+            <mineableScatterCommonality>0</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>
+                <min>20</min>
+                <max>40</max>
+            </mineableScatterLumpSizeRange>
+        </building>
+    </ThingDef>
+
+    <ThingDef ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral">
+        <defName>AA_SkySteelClumps</defName>
+        <label>Strange shiny mineral</label>
+        <graphicData>
+            <shaderType>CutoutComplex</shaderType>
+            <texPath>Things/Ore/WeatheredOre</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(1.5,1.5)</drawSize>
+            <color>(55,64,17)</color>
+            <colorTwo>(36,84,150)</colorTwo>
+        </graphicData>
+        <coloredByTerrain>false</coloredByTerrain>
+        <description>This strange mineral is very hard and resilient. Perhaps you could find a way to extract useable materials from it.</description>
+        <statBases>
+            <MaxHitPoints>2500</MaxHitPoints>
+        </statBases>
+        <initialSizeMin>0</initialSizeMin>
+        <initialSizeMax>0</initialSizeMax>
+        <randomlyDropResources>
+            <li>
+                <ResourceDefName>Sulfur</ResourceDefName>
+                <DropProbability>0.3</DropProbability>
+                <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+                <ResourceDefName>AA_SkySteel_Ore</ResourceDefName>
+                <DropProbability>10</DropProbability>
+                <CountPerDrop>6</CountPerDrop>
+            </li>
+        </randomlyDropResources>
+        <ThingsToReplace>
+            <li>AA_SkySteelClumps</li>
+        </ThingsToReplace>
+        <!-- How easy it is to mine -->
+        <mineSpeedFactor>0.8</mineSpeedFactor>
+    </ThingDef>
+</Defs>

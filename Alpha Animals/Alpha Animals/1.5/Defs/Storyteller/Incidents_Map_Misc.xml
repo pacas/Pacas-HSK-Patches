@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IncidentDef>
+		<defName>AA_Incident_Aerofleets</defName>
+		<label>colossal Aerofleet</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_Aerofleets</workerClass>
+		<baseChance>0.7</baseChance>
+		<minRefireDays>13</minRefireDays>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_IncidentStalkingArcticLion</defName>
+		<label>stalking arctic lion</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_StalkingArcticLion</workerClass>
+		<baseChance>0.5</baseChance>
+		<category>ThreatBig</category>
+		<minRefireDays>30</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<earliestDay>15</earliestDay>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_IncidentBlizzariskClutchMother</defName>
+		<label>blizzarisk clutch mother</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_BlizzariskClutchMother</workerClass>
+		<baseChance>.5</baseChance>
+		<category>Misc</category>
+		<minRefireDays>25</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<earliestDay>15</earliestDay>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_IncidentDunealiskClutchMother</defName>
+		<label>dunealisk clutch mother</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_DunealiskClutchMother</workerClass>
+		<baseChance>.5</baseChance>
+		<category>Misc</category>
+		<minRefireDays>25</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<earliestDay>15</earliestDay>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_IncidentFeraliskClutchMother</defName>
+		<label>feralisk clutch mother</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_FeraliskClutchMother</workerClass>
+		<baseChance>.5</baseChance>
+		<category>Misc</category>
+		<minRefireDays>25</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<earliestDay>15</earliestDay>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_IncidentAnimaliskEnters</defName>
+		<label>animalisk spotted</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_Animalisk</workerClass>
+		<baseChance>.1</baseChance>
+		<category>Misc</category>
+		<minRefireDays>60</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<earliestDay>15</earliestDay>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_IncidentSummitCrab</defName>
+		<label>summit crab</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_SummitCrab</workerClass>
+		<baseChance>0.3</baseChance>
+		<category>ThreatBig</category>
+		<minRefireDays>50</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_CactipineDropPod</defName>
+		<label>strange drop pod</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_CactipineDropPod</workerClass>
+		<baseChance>0.2</baseChance>
+		<category>Misc</category>
+		<minRefireDays>25</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_Incident_Gallatross</defName>
+		<label>gallatross wanders</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_Gallatross</workerClass>
+		<baseChance>0.35</baseChance>
+		<minRefireDays>30</minRefireDays>
+	</IncidentDef>
+    <IncidentDef>
+		<defName>AA_BehemothPasses</defName>
+		<label>behemoth wanders</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_BehemothPasses</workerClass>
+		<baseChance>0.25</baseChance>
+		<minRefireDays>40</minRefireDays>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_Incident_SkyMeteorite</defName>
+		<label>sky meteorite</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_Asteroid</workerClass>
+		<baseChance>0.1</baseChance>
+		<minRefireDays>60</minRefireDays>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_Incident_Bumbledrones</defName>
+		<label>bumbledrone migration</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_Bumbledrones</workerClass>
+		<baseChance>0.35</baseChance>
+		<minRefireDays>30</minRefireDays>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_Incident_BlackHive</defName>
+		<label>black hive attack</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_BlackHive</workerClass>
+		<baseChance>1.2</baseChance>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+		<minRefireDays>25</minRefireDays>
+		<earliestDay>75</earliestDay>
+		<tale>Raid</tale>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_MimeWandererJoinQuest</defName>
+		<label>wanderer join</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_GiveQuest</workerClass>
+		<questScriptDef>AA_MimeWandererJoins</questScriptDef>
+		<baseChance>0.05</baseChance>
+		<pawnKind>Villager</pawnKind>
+		<populationEffect>IncreaseEasy</populationEffect>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_ResourcePodCrash</defName>
+		<label>alpha animal resource pod crash</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_AlphaResourcePodCrash</workerClass>
+		<baseChance>0</baseChance>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_IncidentFungalHusk</defName>
+		<label>fungal husks</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>AlphaBehavioursAndEvents.IncidentWorker_FungalHusk</workerClass>
+		<baseChance>0.1</baseChance>
+		<category>ThreatBig</category>
+		<minRefireDays>150</minRefireDays>
+		<pointsScaleable>true</pointsScaleable>
+		<earliestDay>30</earliestDay>
+	</IncidentDef>
+	<IncidentDef>
+		<defName>AA_Eclipse</defName>
+		<label>mechanite eclipse</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
+		<gameCondition>AA_Eclipse</gameCondition>
+		<letterLabel>Mechanite Eclipse</letterLabel>
+		<letterDef>NegativeEvent</letterDef>
+		<baseChance>0</baseChance>
+		<durationDays>0.35~0.75</durationDays>
+		<tale>Eclipse</tale>
+	</IncidentDef>
+	<GameConditionDef>
+		<defName>AA_Eclipse</defName>
+		<conditionClass>GameCondition_NoSunlight</conditionClass>
+		<label>mechanite eclipse</label>
+		<description>A cloud of sun-blocking mechanites is shadowing the surface. It will be dark, even during the daytime.</description>
+		<endMessage>The cloud of sun-blocking mechanites is dissipating.</endMessage>
+		<letterText>A Darkbeast has died nearby, releasing a cloud of sun-blocking mechanites.\n\nThese mechanites will block sunlight, plunging the whole region into darkness. They will eventually dissipate and it will thankfully last less than a natural eclipse.</letterText>
+		<letterDef>NegativeEvent</letterDef>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+    
+    
+    <ThingDef ParentName="CrashedShipPartBase">
+		<defName>AA_AncientMechAssembler</defName>
+		<label>ancient mech assembler</label>
+		<description>A large ancient mechanoid assembler, lost in space long time ago. It might be thousands of years old.\n\nThis one cannot do anything for you - except send all the mechanoids to hunt you down.</description>
+		<graphicData>
+			<texPath>Things/Building/AA_AncientMechAssembler</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,4)</drawSize>
+            <shadowData>
+                <volume>(2.8, 0.8, 2.8)</volume>
+            </shadowData>
+            <damageData>
+                <rect>(0.15, 0.15, 2.7, 2.7)</rect>
+            </damageData>
+		</graphicData>
+		<size>(4,4)</size>
+		<killedLeavings>
+			<ChunkSlagSteel>6</ChunkSlagSteel>
+			<ComponentSpacer>4</ComponentSpacer>
+			<AIPersonaCore>1</AIPersonaCore>
+		</killedLeavings>
+		<comps>
+			<li Class="CompProperties_CanBeDormant" />
+            <li Class="CompProperties_WakeUpDormant">
+                <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+            </li>
+		</comps>
+	</ThingDef>
+    <IncidentDef>
+		<defName>AA_AncientMechAssemblerShipPartCrash</defName>
+		<label>ancient mech assembler crash</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>SK.Events.IncidentWorker_CrashedShipPart</workerClass>
+		<letterLabel>Ancient mechanoid assembler</letterLabel>
+		<letterText>A large ancient mechanoid assembler has crashed nearby.\n\nYour colonists can hear the sounds of its internal systems as it tries to produce more mechanoids for your destruction, but cannot due to too much damage caused by age and impact with the planet.\n\nIt will do nothing to your colony on its own, but beware - it will probably defend itself.</letterText>
+		<letterDef>ThreatSmall</letterDef>
+		<baseChance>1.2</baseChance>
+		<baseChanceWithRoyalty>0.3</baseChanceWithRoyalty>
+		<minRefireDays>20</minRefireDays>
+		<tags>
+			<li>MechanoidShip</li>
+		</tags>
+		<refireCheckTags>
+			<li>MechanoidShip</li>
+		</refireCheckTags>
+		<category>ThreatBig</category>
+		<pointsScaleable>true</pointsScaleable>
+		<earliestDay>170</earliestDay>
+		<minThreatPoints>7000</minThreatPoints>
+		<mechClusterBuilding>AA_AncientMechAssembler</mechClusterBuilding>
+		<tale>ShipPartCrash</tale>
+	</IncidentDef>
+</Defs>

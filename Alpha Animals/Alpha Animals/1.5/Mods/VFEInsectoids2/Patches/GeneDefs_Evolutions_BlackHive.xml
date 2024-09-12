@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Races Expanded - Insector</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs</xpath>
+			<value>
+				<VanillaRacesExpandedInsector.GenelineGeneDef ParentName="VRE_EvolutionGene">
+					<defName>AA_Gene_GreaterVileSpit</defName>
+					<label>greater vile spit</label>
+					<description>Carriers of this gene can spit a corrosive liquid that poisons humans, causing immediate toxin buildup. This liquid spit transforms into a potent acid when in contact with mechanoids, rapidly corroding metal and causing significant integrity loss.</description>
+					<selectionWeight>0</selectionWeight>
+					<unlockable>true</unlockable>
+					<iconPath>UI/Icons/Genes/AA_Gene_GreaterVileSpit</iconPath>
+					<displayOrderInCategory>2001</displayOrderInCategory>
+					<abilities>
+						<li>AA_GreaterVileSpit</li>
+					</abilities>
+					<exclusionTags>
+						<li>InsectorGlands</li>
+					</exclusionTags>
+					<modExtensions>
+						<li Class="VanillaGenesExpanded.GeneExtension">
+							<backgroundPathEndogenes>UI/Icons/Genes/VRE_EvolutionBG</backgroundPathEndogenes>
+							<backgroundPathXenogenes>UI/Icons/Genes/VRE_EvolutionBG</backgroundPathXenogenes>
+						</li>
+					</modExtensions>
+				</VanillaRacesExpandedInsector.GenelineGeneDef>
+				<VanillaRacesExpandedInsector.GenelineGeneDef ParentName="VRE_EvolutionGene">
+					<defName>AA_Gene_MechanoidRendingClaws</defName>
+					<label>mechanoid rending claws</label>
+					<description>Carriers of this gene develop razor-sharp claws specially designed to tear through metal and electronics, inflicting extra EMP damage to mechanoids, temporarily disrupting their systems and causing additional electrical damage.</description>
+					<iconPath>UI/Icons/Genes/AA_Gene_MechanoidRendingClaws</iconPath>
+					<displayOrderInCategory>2002</displayOrderInCategory>
+					<unlockable>true</unlockable>
+					<statOffsets>
+						<WorkSpeedGlobal>-0.3</WorkSpeedGlobal>
+					</statOffsets>
+					<exclusionTags>
+						<li>Hands</li>
+					</exclusionTags>
+					<modExtensions>
+						<li Class="VanillaGenesExpanded.GeneExtension">
+							<backgroundPathEndogenes>UI/Icons/Genes/VRE_EvolutionBG</backgroundPathEndogenes>
+							<backgroundPathXenogenes>UI/Icons/Genes/VRE_EvolutionBG</backgroundPathXenogenes>
+							<hediffsToBodyParts>
+								<li>
+									<hediff>AA_MechanoidRendingClaws</hediff>
+									<bodyparts>
+										<li>Hand</li>
+										<li>Hand</li>
+									</bodyparts>
+								</li>
+							</hediffsToBodyParts>
+						</li>
+					</modExtensions>
+				</VanillaRacesExpandedInsector.GenelineGeneDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>
+

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>AA_MechanoidRendingClaws</defName>
+		<label>mechanoid rending claws</label>
+		<description>Razor-sharp claws specially designed to tear through metal and electronics, inflicting extra EMP damage to mechanoids, temporarily disrupting their systems and causing additional electrical damage.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>mechanoid rending claws</label>
+						<capacities>
+							<li>AA_EMPSlash</li>
+						</capacities>
+						<power>18</power>
+						<cooldownTime>2</cooldownTime>
+						<armorPenetration>0.27</armorPenetration>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+</Defs>

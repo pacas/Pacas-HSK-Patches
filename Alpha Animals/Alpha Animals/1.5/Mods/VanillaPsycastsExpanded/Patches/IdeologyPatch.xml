@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/VanillaPsycastsExpanded.PsycasterPathDef[defName = "AAVPE_Oculist"]</xpath>
+            <value>
+                <lockedReason>Corruptors only</lockedReason>
+                <requiredMeme>AA_BiologicalCorruptors</requiredMeme>
+            </value>
+        </match>
+    </Operation>
+</Patch>
