@@ -64,6 +64,14 @@
         <label>X Implants Collection</label>
         <parent>RH2_Voidtech_Implants</parent>
     </ThingCategoryDef>
+    
+    <ThingCategoryDef>
+        <defName>VOID_Monsters</defName>
+        <label>VOID monsters</label>
+        <parent>Corpses</parent>
+        <resourceReadoutRoot>true</resourceReadoutRoot>
+        <iconPath>UI/Icons/ThingCategories/Foods</iconPath>
+    </ThingCategoryDef>
 
 
 </Defs>

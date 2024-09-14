@@ -495,7 +495,11 @@
 		<protocolOptions>
 			<li>
 				<protocolHashKey>-32830549</protocolHashKey>
-				<action>VoidEvents.VoidUtils.ActivateProtocol</action>
+				<action>VoidEvents.VoidUtils.ActivateDefencePactProtocol</action>
+			</li>
+			<li>
+				<protocolHashKey>2146173891</protocolHashKey>
+				<action>VoidEvents.VoidUtils.ActivateFrenemyProtocol</action>
 			</li>
 		</protocolOptions>
 	</Enlist.FactionEnlistOptionsDef>

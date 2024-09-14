@@ -21,19 +21,19 @@
                 <count>1</count>
             </li>
         </giftOptions>
-        <netralPeriodAfterBeg>30</netralPeriodAfterBeg>
-        <netralPeriodAfterRespectfulDecline>1</netralPeriodAfterRespectfulDecline>
+        <netralPeriodAfterBeg>60</netralPeriodAfterBeg>
+        <netralPeriodAfterRespectfulDecline>7</netralPeriodAfterRespectfulDecline>
         <!-- dialogs -->
         <voidStartingText>A group of five well dressed, heavily armed individuals with purple coloured masks and piercing blue eyes stare into your soul as they approach you. They come bearing gifts. They make it clear that they've come to negotiate, not to fight.\n\n"Greetings. We are V.O.I.D."\n\n"You are unlawfully trespassing in our newly annexed territory. You must leave this world at once or else we will have to forcefully remove you."\n\n"You have to leave this planet effective immediately."\n\nThe advisor sizes you up briefly as you think of your reply. You have three response options below.</voidStartingText>
         <begOptionText>Beg for mercy. Try to plead to their humanity, they seem to be reasonable people.</begOptionText>
         <disrespectOptionText>Say something incredibly insulting. Immediately attack them.</disrespectOptionText>
         <respectfulDeclineOptionText>Respectfully decline. You aren't here to beg or to surrender to anyone.</respectfulDeclineOptionText>
         <begOptionResponses>
-            <li>"We understand. We aren't unreasonable people. You will be extended 30 days of stay, after that we have to act upon our newly established laws as the future government of this world."\n\n"Please accept our token of hospitality, a leaving gift."\n\n"Goodbye."</li>
-            <li>"We understand. This situation isn't easy for everyone. You are hereby granted 30 days of grace period until we are permitted to remove you by force."\n\n"Please accept our token of hospitality, a leaving gift."\n\n"Goodbye."</li>
-            <li>"Please, there's no need to worry. We grant you 30 days extension, consider this your final warning. If you are still here after your extension, we will return for you."\n\n"Please accept our token of hospitality, a leaving gift."\n\n"Goodbye."</li>
-            <li>"There is nothing to be afraid of. We are here to help. You are granted 30 days extension, V.O.I.D. will leave you alone for this duration. After this extension, you are no longer under protection."\n\n"Please accept our token of hospitality, a leaving gift."\n\n"Goodbye."</li>
-            <li>The V.O.I.D. advisor, cold and emotionless look down on you as you try to move them with words.\n\n"You have 30 days. That is all we will give you as grace period before you leave us no choice. Please extend us the courtesy and respect that we have given you, then we will find common ground."\n\n"One final thing, please accept our token of hospitality. We present to you a leaving gift."\n\n"Goodbye."</li>
+            <li>"We understand. We aren't unreasonable people. You will be extended 60 days of stay, after that we have to act upon our newly established laws as the future government of this world."\n\n"Please accept our token of hospitality, a leaving gift."\n\n"Goodbye."</li>
+            <li>"We understand. This situation isn't easy for everyone. You are hereby granted 60 days of grace period until we are permitted to remove you by force."\n\n"Please accept our token of hospitality, a leaving gift."\n\n"Goodbye."</li>
+            <li>"Please, there's no need to worry. We grant you 60 days extension, consider this your final warning. If you are still here after your extension, we will return for you."\n\n"Please accept our token of hospitality, a leaving gift."\n\n"Goodbye."</li>
+            <li>"There is nothing to be afraid of. We are here to help. You are granted 60 days extension, V.O.I.D. will leave you alone for this duration. After this extension, you are no longer under protection."\n\n"Please accept our token of hospitality, a leaving gift."\n\n"Goodbye."</li>
+            <li>The V.O.I.D. advisor, cold and emotionless look down on you as you try to move them with words.\n\n"You have 60 days. That is all we will give you as grace period before you leave us no choice. Please extend us the courtesy and respect that we have given you, then we will find common ground."\n\n"One final thing, please accept our token of hospitality. We present to you a leaving gift."\n\n"Goodbye."</li>
         </begOptionResponses>
         <disrespectOptionResponses>
             <li>The V.O.I.D. advisor shakes their head at your response.\n\n"It's as if I'm speaking to a child."</li>

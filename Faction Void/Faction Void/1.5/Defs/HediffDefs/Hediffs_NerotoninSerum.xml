@@ -109,7 +109,6 @@
         <descriptionHyperlinks>
             <ThingDef>RH2_Nerotonin2b_Implant</ThingDef>
         </descriptionHyperlinks>
-        <hediffClass>VoidEvents.Hediff_Regeneration</hediffClass>
         <spawnThingOnRemoved>RH2_Nerotonin2b_Implant</spawnThingOnRemoved>
         <stages>
             <li>
@@ -125,6 +124,11 @@
                 </capMods>
             </li>
         </stages>
+        <comps>
+            <li>
+                <compClass>RH_RapidHealing.HediffComp_Regeneration</compClass>
+            </li>
+        </comps>
         <defaultLabelColor>(89, 201, 214)</defaultLabelColor>
     </HediffDef>
 
@@ -199,7 +203,6 @@
             <ThingDef>RH2_Nerotonin4b_Implant</ThingDef>
         </descriptionHyperlinks>
         <spawnThingOnRemoved>RH2_Nerotonin4b_Implant</spawnThingOnRemoved>
-        <hediffClass>VoidEvents.Hediff_Resurrection</hediffClass>
         <defaultLabelColor>(230, 28, 14)</defaultLabelColor>
         <stages>
             <li>
@@ -220,11 +223,11 @@
                 </capMods>
             </li>
         </stages>
-        <modExtensions>
-            <li Class="VoidEvents.ResurrectionOptions">
+        <comps>
+            <li Class="RH_Resurrector.HediffCompProperties_Resurrection">
                 <ticksToResurrect>4200</ticksToResurrect><!-- 60 ticks is 1 second -->
             </li>
-        </modExtensions>
+        </comps>
     </HediffDef>
 
     <ThingDef ParentName="RH2_NerotoninSerum_ImplantBase">
