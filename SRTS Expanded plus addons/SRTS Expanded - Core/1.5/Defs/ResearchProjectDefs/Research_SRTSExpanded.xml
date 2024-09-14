@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <tab>SRTSE</tab>
+        <defName>Research_SRTSSuperpod</defName>
+        <label>The Superpod</label>
+        <description>Slap a few Orbital Relay Launch Modules onto a traditional transport pod and Voilà! You've got a ship capable of return flight! It's just a first shaky step though.</description>
+        <baseCost>4000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>TransportPod</li>
+        </prerequisites>
+        <researchViewX>19</researchViewX>
+        <researchViewY>71</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <tab>SRTSE</tab>
+        <defName>Research_SRTSSkip</defName>
+        <label>The Skip</label>
+        <description>This vessel design was conceived after a nearby colony on this world tried their own version of a superpod. They decided to take apart the pods and put it together uniquely. It turned out really nice, and since then it's become popular as a design due to its cheap material cost and reliable transport. \n\nHas military potential.</description>
+        <baseCost>5200</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>Research_SRTSSuperpod</li>
+        </prerequisites>
+        <researchViewX>20</researchViewX>
+        <researchViewY>70</researchViewY>
+        <discoveredLetterTitle>Short Range Transport Ships</discoveredLetterTitle>
+        <discoveredLetterText>Building a shuttle is expensive and time consuming, but absolutely worth the cost.\n\nYou will find your ship blueprints under the SHIP tab, in your architech menu.</discoveredLetterText>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechMultiBase">
+        <tab>SRTSE</tab>
+        <defName>Research_SRAF</defName>
+        <label>The SRAF</label>
+        <description>A large aerial transport freighter for cargo. We don't know the history of this ship, but it's everywhere. You can find an SRAF on every homeworld in the millions. Real shit on the chemfuel mileage and very slow, but the cargo room is amazing.</description>
+        <baseCost>6500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>Research_SRTSSuperpod</li>
+        </prerequisites>
+        <researchViewX>20</researchViewX>
+        <researchViewY>72</researchViewY>
+    </ResearchProjectDef>
+
+
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <tab>SRTSE</tab>
+        <defName>Research_SRAFTek</defName>
+        <label>The Drop Ship</label>
+        <description>A large aerial transport freighter for cargo. The TEK-7 class space-faring ship is rather new. It's powered by contential means, but uses more modern technology to achieve more than it's predecessors.\n\nTerra Enclave Kingdrone - 7th Variation, Year 4186. This class has seen much combat, through many model variations each specialized in specific roles. \n\nTEK-7 is designated as a transport carrier.</description>
+        <baseCost>10000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>Research_SRAF</li>
+        </prerequisites>
+        <researchViewX>21</researchViewX>
+        <researchViewY>72</researchViewY>
+    </ResearchProjectDef>
+
+
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <tab>SRTSE</tab>
+        <defName>Research_SRTSMkII</defName>
+        <label>The Albatross</label>
+        <description>The Albatross X-11 was originally designed for military exoplanetary exploration, but was quickly replaced by a newer ship model with a much better engine system. You can find X-11 parts across the galaxy at typically low prices. It's natural a natural design that could easily be changed to atmospheric flight. \n\n Definitely has military potential.</description>
+        <baseCost>10000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>Research_SRTSSkip</li>
+        </prerequisites>
+        <researchViewX>21</researchViewX>
+        <researchViewY>70</researchViewY>
+        <discoveredLetterTitle>Albatross X-11</discoveredLetterTitle>
+        <discoveredLetterText>You've unocked the Albatross X-11, an earlier design used for military exoplanetrary exploration.</discoveredLetterText>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <tab>SRTSE</tab>
+        <defName>Research_SRTSMkIII</defName>
+        <label>The Phoenix</label>
+        <description>After years of research we finally discovered something special: a new technique originally used by an ancient exctinct alien civilization used in the process of ship making.\n\nThis process infuses the ship with a "mystical" neuromesh technology while using fewer materials in the build. The new model is light, spacious, and hauls serious ass compared to the Albatross.\n\nThe schematic shows serious military capability.</description>
+        <baseCost>18500</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>Research_SRTSMkII</li>
+        </prerequisites>
+        <researchViewX>23</researchViewX>
+        <researchViewY>70</researchViewY>
+        <techprintCount>2</techprintCount>
+        <techprintCommonality>3</techprintCommonality>
+        <techprintMarketValue>2560</techprintMarketValue>
+        <heldByFactionCategoryTags>
+            <li>Empire</li>
+            <li>Outlander</li>
+        </heldByFactionCategoryTags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <tab>SRTSE</tab>
+        <defName>Research_SRTSMkIIIp</defName>
+        <label>The Pelican</label>
+        <description>Devoid of all military dressing, the Pelican is basically a Mk. III Phoenix that's been retrofit into a massive cargo and transport vessel. \n\nStill utilizing the superior technology discovered recently, this ship is lighter, faster, and far more powerful than anything previously known.</description>
+        <baseCost>15000</baseCost>
+        <techLevel>Ultra</techLevel>
+        <prerequisites>
+            <li>Research_SRTSMkII</li>
+            <li>Research_SRAFTek</li>
+        </prerequisites>
+        <researchViewX>23</researchViewX>
+        <researchViewY>72</researchViewY>
+        <techprintCount>2</techprintCount>
+        <techprintCommonality>3</techprintCommonality>
+        <techprintMarketValue>2560</techprintMarketValue>
+        <heldByFactionCategoryTags>
+            <li>Empire</li>
+            <li>Outlander</li>
+        </heldByFactionCategoryTags>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="HitechLabStationBase">
+        <tab>SRTSE</tab>
+        <defName>Research_SRTSMkIV</defName>
+        <label>The Genesis</label>
+        <description>The Genesis is a highly advanced transport shuttle that utilizes uranium for fuel, and incorporates archotech level technology to increase the cargo space beyond dimensional boundaries. This is "Blue box" level stuff.\n\nThis blueprint seems like it simply won't work with how advanced it is, but we won't know unless we try.</description>
+        <baseCost>30000</baseCost>
+        <techLevel>Archotech</techLevel>
+        <prerequisites>
+            <li>Research_SRTSMkIII</li>
+            <li>Research_SRTSMkIIIp</li>
+        </prerequisites>
+        <researchViewX>25</researchViewX>
+        <researchViewY>71</researchViewY>
+        <discoveredLetterTitle>The Genesis</discoveredLetterTitle>
+        <discoveredLetterText>A few of the components needed to build the Genesis elude you. You don't think you can craft them yourself being how complicated they are. At least not yet.\n\nFor now, buy the more advanced components from traders or as quest rewards to build the Genesis.</discoveredLetterText>
+        <techprintCount>3</techprintCount>
+        <techprintCommonality>1</techprintCommonality>
+        <techprintMarketValue>5000</techprintMarketValue>
+        <heldByFactionCategoryTags>
+            <li>Empire</li>
+            <li>Outlander</li>
+        </heldByFactionCategoryTags>
+    </ResearchProjectDef>
+
+</Defs>

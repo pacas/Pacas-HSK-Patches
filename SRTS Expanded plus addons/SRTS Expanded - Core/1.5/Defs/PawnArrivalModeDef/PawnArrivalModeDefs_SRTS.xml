@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<PawnsArrivalModeDef>
+		<defName>EdgeDrop</defName>
+		<workerClass>PawnsArrivalModeWorker_EdgeDrop</workerClass>
+		<selectionWeightCurve>
+			<points>
+				<li>(250, 0)</li>
+				<li>(800, 30)</li>
+			</points>
+		</selectionWeightCurve>
+		<minTechLevel>Industrial</minTechLevel>
+		<textEnemy>A group of {0} from {1} have arrived in transport pods nearby.</textEnemy>
+		<textFriendly>A group of friendly {0} from {1} have arrived in transport pods nearby.</textFriendly>
+		<forQuickMilitaryAid>true</forQuickMilitaryAid>
+	</PawnsArrivalModeDef>
+</Defs>

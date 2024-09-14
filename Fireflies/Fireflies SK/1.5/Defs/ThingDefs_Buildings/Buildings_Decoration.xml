@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>FF_Firefly_Jar</defName>
+        <label>firefly jar</label>
+        <thingClass>Building</thingClass>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <clearBuildingArea>false</clearBuildingArea>
+        <thingCategories>
+            <li>BuildingsFurniture</li>
+        </thingCategories>
+        <uiIconPath>UI/FF_Firefly_Jar</uiIconPath>
+        <description>A decorative jar of beautiful, lively, fireflies. A great way for colonists to become completely lost in the moment.</description>
+        <graphicData>
+            <texPath>Things/Building/FF_Firefly_Jar</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>(1.5,1.5)</drawSize>
+        </graphicData>
+        <costList>
+            <FF_Firefly_Essence>3</FF_Firefly_Essence>
+            <Glass>5</Glass>
+        </costList>
+        <rotatable>false</rotatable>
+        <building>
+            <isEdifice>false</isEdifice>
+            <canPlaceOverWall>true</canPlaceOverWall>
+        </building>
+        <passability>Standable</passability>
+        <pathCost>8</pathCost>
+        <fillPercent>0.15</fillPercent>
+        <statBases>
+            <MaxHitPoints>5</MaxHitPoints>
+            <WorkToBuild>75</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Beauty>10</Beauty>
+            <Mass>0.2</Mass>
+        </statBases>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>3</glowRadius>
+                <glowColor>(255,235,0,0)</glowColor>
+                <overlightRadius>3</overlightRadius>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <heatPerSecond>0.2</heatPerSecond>
+                <heatPushMaxTemperature>5</heatPushMaxTemperature>
+            </li>
+        </comps>
+        <placeWorkers>
+			<li>PlaceWorker_Heater</li>
+		</placeWorkers>
+
+		<designationCategory>Accessories</designationCategory>
+    </ThingDef>
+</Defs>

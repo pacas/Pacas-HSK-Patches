@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <!--==================== Animals Disabled From Quests ====================-->
+
+	<AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+		<defName>FF_DisabledAnimalToggles</defName>
+		<disabledFromQuestsPawns>			
+			
+		    <li>FF_FireflyKind</li>
+			
+		</disabledFromQuestsPawns>
+	</AnimalBehaviours.AnimalsDisabledFromQuestsDef>
+
+</Defs>

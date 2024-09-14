@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<Fireflies.FireflySettingsDef>
+		<defName>FireflySettings</defName>
+		<maxGroupsByBiome>
+
+			<!--==================== Vanilla Biomes ====================-->
+
+			<IceSheet>1</IceSheet>
+			<SeaIce>1</SeaIce>
+			<ColdBog>2</ColdBog>
+			<Desert>2</Desert>
+			<BorealForest>2</BorealForest>
+			<Tundra>2</Tundra>
+			<TemperateForest>4</TemperateForest>
+			<TemperateSwamp>3</TemperateSwamp>
+			<TropicalRainforest>4</TropicalRainforest>
+			<TropicalSwamp>3</TropicalSwamp>
+			<AridShrubland>2</AridShrubland>
+
+		</maxGroupsByBiome>
+		<spawnHours>18~22</spawnHours>
+		<despawnHours>4~8</despawnHours>
+		<despawnInterval>190</despawnInterval>
+	</Fireflies.FireflySettingsDef>
+
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Biomes! Islands</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> --> <!-- TESTING -->
+			<operations>
+
+				<!--==================== Firefly Biomes! Islands Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+					<value>
+
+						<BiomesIslands_Atoll>3</BiomesIslands_Atoll>
+						<BiomesIslands_BorealIsland>2</BiomesIslands_BorealIsland>
+						<BiomesIslands_BorealArchipelago>2</BiomesIslands_BorealArchipelago>
+						<BiomesIslands_DesertIsland>1</BiomesIslands_DesertIsland>
+						<BiomesIslands_DesertArchipelago>1</BiomesIslands_DesertArchipelago>
+                        <BiomesIslands_TemperateIsland>3</BiomesIslands_TemperateIsland>
+                        <BiomesIslands_TemperateArchipelago>3</BiomesIslands_TemperateArchipelago>
+                        <BiomesIslands_TropicalIsland>3</BiomesIslands_TropicalIsland>
+                        <BiomesIslands_TropicalArchipelago>3</BiomesIslands_TropicalArchipelago>
+                        <BiomesIslands_TundraIsland>1</BiomesIslands_TundraIsland>
+                        <BiomesIslands_TundraArchipelago>2</BiomesIslands_TundraArchipelago>
+
+					</value>
+				</li>
+
+            </operations>
+		</match>
+	</Operation>
+
+</Patch>

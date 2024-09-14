@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Nature's Pretty Sweet (Continued)</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> --> <!-- TESTING -->
+			<operations>
+
+				<!--==================== Nature's Pretty Sweet Biomes Spawning ====================-->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/Fireflies.FireflySettingsDef[defName="FireflySettings"]/maxGroupsByBiome</xpath>
+					<value>
+
+						<TKKN_VolcanicFlow>1</TKKN_VolcanicFlow>
+						<TKKN_RedwoodForest>3</TKKN_RedwoodForest>
+						<TKKN_Grasslands>3</TKKN_Grasslands>
+						<TKKN_Savanna>2</TKKN_Savanna>
+						<TKKN_Desert>1</TKKN_Desert>
+						<TKKN_Oasis>2</TKKN_Oasis>
+
+					</value>
+				</li>
+
+            </operations>
+		</match>
+	</Operation>
+
+</Patch>

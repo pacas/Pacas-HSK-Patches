@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="NECShipBase" ParentName="SK_BuildingBase" Abstract="True">
+        <category>Building</category>
+        <thingClass>Building</thingClass>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <selectable>true</selectable>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <repairEffect>Repair</repairEffect>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+        <statBases>
+            <SellPriceFactor>0.70</SellPriceFactor>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <stealable>false</stealable>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>Buildings</li>
+        </thingCategories>
+        <inspectorTabs>
+            <li>ITab_ContentsTransporter</li>
+        </inspectorTabs>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+        </placeWorkers>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.90</fillPercent>
+        <designationCategory>Ship</designationCategory>
+        <killedLeavings>
+            <ChunkSlagSteel>12</ChunkSlagSteel>
+        </killedLeavings>
+        <comps>
+            <li Class="Rimefeller.CompProperties_Pipe"/>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="NECShipBase">
+        <defName>SRTSSuperpod</defName>
+        <label>Superpod</label>
+        <description>An aerial transport system designed to fly passengers and cargo slowly and dangerously across the world. Liable to breakdown.
+
+Passenger capacity: 1
+----------------------------
+Speed: Awful
+Fuel capacity: 400L
+Fuel efficiency: Awful
+----------------------------
+Cargo capacity: 120kg
+Internal power plant: 400w</description>
+        <graphicData>
+            <texPath>Superpod</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <size>(2,2)</size>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <WorkToBuild>5000</WorkToBuild>
+            <Flammability>0.4</Flammability>
+            <Mass>1640</Mass>
+            <Beauty>15</Beauty>
+        </statBases>
+        <costList>
+            <Plasteel>60</Plasteel>
+            <AluminiumBar>60</AluminiumBar>
+            <ReinforcedGlass>15</ReinforcedGlass>
+            <Plastic>15</Plastic>
+            <ComponentIndustrial>8</ComponentIndustrial>
+            <Electronics>4</Electronics>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Transporter">
+                <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+                <restEffectiveness>0.5</restEffectiveness><!-- How well (1.0 = 100%) passengers can rest, eat, heal while aboard -->
+                <massCapacity>120</massCapacity><!-- weight in kg -->
+            </li>
+            <li Class="SRTS.CompProperties_LaunchableSRTS">
+                <travelSpeed>1</travelSpeed><!-- Vanilla drop pod is 25 speed, min 1, max 100 -->
+                <fuelPerTile>3.5</fuelPerTile><!-- Drop pod cost is 2.25 per tile. min 1, max 6. Why'd we cap it at 6? I can't remember. -->
+                <minPassengers>1</minPassengers>
+                <maxPassengers>1</maxPassengers>
+                <spaceFaring>false</spaceFaring><!-- For save our ship 2 -->
+                <shuttleBayLanding>false</shuttleBayLanding>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelCapacity>400</fuelCapacity>
+                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+                <initialConfigurableTargetFuelLevel>300</initialConfigurableTargetFuelLevel>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <initialFuelPercent>0</initialFuelPercent>
+                <autoRefuelPercent>1</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-400</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>12</glowRadius>
+                <glowColor>(217,217,217,0)</glowColor>
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li>Research_SRTSSuperpod</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <uiIconScale>0.75</uiIconScale>
+        <killedLeavings>
+            <ChunkSlagSteel>2</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+
+
+    <ThingDef ParentName="NECShipBase">
+        <defName>SRTSSkip</defName><!-- defName must be unique, including with other mods so be creative -->
+        <label>SRTS Mk.I: Skip</label><!-- name displayed ingame -->
+        <description>An aerial military vessel designed to scout, quest, and minor assaults. Liable to breakdown.
+
+Passenger cap: 1 - 2
+
+--Military--
+  Bombs: 4/4
+  Accuracy: Poor
+  Build: Strike Craft
+----------------------------
+Speed: Poor
+Fuel cap: 500L
+Fuel efficiency: Normal
+----------------------------
+Cargo cap: 170kg
+Internal power plant: 650w</description><!-- description of course... -->
+        <graphicData>
+            <texPath>Skip</texPath><!-- filepath starting from Textures folder, our textures our not organized so.. no file path can be noticed lol "-P"
+
+      Pfft. Organization. "-N" -->
+            <graphicClass>Graphic_Multi</graphicClass><!-- graphic class can be left alone, it's how the game pulls _north, _east, _south textures -->
+            <drawSize>(4,4)</drawSize><!-- how much the image is stretched out ingame -->
+        </graphicData>
+        <size>(2,2)</size><!-- hitbox -->
+        <statBases>
+            <MaxHitPoints>450</MaxHitPoints><!-- hitpoints of the building -->
+            <WorkToBuild>7200</WorkToBuild><!-- how much work it costs to build, which is more like a base type, as more properties affect it, resulting in a different final number for construction -->
+            <Flammability>0.7</Flammability><!-- how easy it is to catch on fire (duh) -->
+            <Mass>2865</Mass><!-- how much it weighs for a pawn to carry. My guess is they are light in this mod so pawns entering a map will throw it in their inventory rather than lose it, but i can check that later. -->
+            <Beauty>25</Beauty><!-- beauty on overlap, and for pawns -->
+        </statBases>
+        <costList>
+            <Plasteel>120</Plasteel>
+            <AluminiumBar>120</AluminiumBar>
+            <ReinforcedGlass>30</ReinforcedGlass>
+            <Plastic>30</Plastic>
+            <ComponentIndustrial>20</ComponentIndustrial>
+            <Electronics>10</Electronics>
+            <ElectronicComponents>1</ElectronicComponents>
+        </costList>
+        <comps><!-- required for sending as drop pod -->
+            <li Class="CompProperties_Transporter">
+                <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+                <restEffectiveness>0.75</restEffectiveness>
+                <massCapacity>170</massCapacity>
+            </li>
+            <li Class="SRTS.CompProperties_LaunchableSRTS"><!-- required for SRTS like functionality (ie. space ship reusable drop pod -->
+                <travelSpeed>3</travelSpeed>
+                <fuelPerTile>2.25</fuelPerTile>
+                <minPassengers>1</minPassengers>
+                <maxPassengers>2</maxPassengers>
+                <spaceFaring>false</spaceFaring>
+                <shuttleBayLanding>true</shuttleBayLanding>
+            </li>
+            <li Class="SRTS.CompProperties_BombsAway"><!-- include this comp if you want it to be able to carpet bomb, remove this comp if you dont. Be aware you must also add a bomber skydropper def set -->
+                <numberBombs>4</numberBombs><!-- num dropped per run -->
+                <precisionBombingNumBombs>4</precisionBombingNumBombs><!-- number of bombs dropped in precise drop -->
+                <radiusOfDrop>6</radiusOfDrop><!-- how many cells out from the center the bombs may drop -->
+                <speed>1</speed><!-- How quickly the ship flies over. Default 1 -->
+                <distanceBetweenDrops>3</distanceBetweenDrops><!-- Distance in cells from when each bomb is dropped -->
+            </li>
+            <li Class="CompProperties_Refuelable"><!-- comp for allowing to fuel the srts, don't remove -->
+                <fuelCapacity>500</fuelCapacity>
+                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+                <initialConfigurableTargetFuelLevel>500</initialConfigurableTargetFuelLevel>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <initialFuelPercent>0</initialFuelPercent>
+                <autoRefuelPercent>1</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+            </li>
+            <li Class="CompProperties_Power"><!-- how much power it gives off (gonna be making this cost fuel in the future -->
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-650</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>12</glowRadius>
+                <glowColor>(217,217,217,0)</glowColor>
+            </li>
+        </comps>
+        <researchPrerequisites><!-- research requirements -->
+            <li>Research_SRTSSkip</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>10</constructionSkillPrerequisite><!-- construction skill requirements -->
+        <uiIconScale>0.55</uiIconScale><!-- UI scaling -->
+        <killedLeavings>
+            <ChunkSlagSteel>5</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+
+
+    <ThingDef ParentName="NECShipBase">
+        <defName>SRAF</defName>
+        <label>SRAF: Canary</label>
+        <description>Short Range Aerial Freighter. A transport system made to fly cargo across the world. These industrial behemoths have been in service for millenia.
+
+Passenger cap: 1 - 15
+----------------------------
+Speed: Poor
+Fuel cap: 5,000L
+Fuel efficiency: Poor
+----------------------------
+Cargo cap: 15,000kg
+Internal power plant: 1000w</description>
+        <graphicData>
+            <texPath>Freighter</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(15,15)</drawSize>
+        </graphicData>
+        <size>(5,9)</size>
+        <statBases>
+            <MaxHitPoints>6000</MaxHitPoints>
+            <WorkToBuild>32000</WorkToBuild>
+            <Flammability>0.3</Flammability>
+            <Mass>35650</Mass>
+            <Beauty>25</Beauty>
+        </statBases>
+        <costList>
+            <Plasteel>1200</Plasteel>
+            <AluminiumBar>1200</AluminiumBar>
+            <ReinforcedGlass>60</ReinforcedGlass>
+            <Plastic>60</Plastic>
+            <ComponentIndustrial>20</ComponentIndustrial>
+            <ComponentSpacer>10</ComponentSpacer>
+            <Mechanism>20</Mechanism>
+            <AdvMechanism>10</AdvMechanism>
+            <Electronics>20</Electronics>
+            <ElectronicComponents>10</ElectronicComponents>
+            <Microchips>2</Microchips>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Transporter">
+                <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+                <restEffectiveness>0.6</restEffectiveness>
+                <massCapacity>15000</massCapacity>
+            </li>
+            <li Class="SRTS.CompProperties_LaunchableSRTS">
+                <travelSpeed>5</travelSpeed>
+                <fuelPerTile>3.6</fuelPerTile>
+                <minPassengers>1</minPassengers>
+                <maxPassengers>15</maxPassengers>
+                <spaceFaring>false</spaceFaring>
+                <shuttleBayLanding>false</shuttleBayLanding>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelCapacity>5000</fuelCapacity>
+                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+                <initialConfigurableTargetFuelLevel>5000</initialConfigurableTargetFuelLevel>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <initialFuelPercent>0</initialFuelPercent>
+                <autoRefuelPercent>1</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-1000</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>18</glowRadius>
+                <glowColor>(217,217,217,0)</glowColor>
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li>Research_SRAF</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+        <uiIconScale>0.75</uiIconScale>
+        <killedLeavings>
+            <ChunkSlagSteel>8</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+
+
+    <ThingDef ParentName="NECShipBase">
+        <defName>SRAFTek</defName>
+        <label>SRAF: TEK-7</label>
+        <description>An aerial vessel designed to hold many people, with several automatic launchbays able to hold a person, and quickly eject said person to the outside of the ship. Significant cargo capacity.
+
+Passenger cap: 1 - 28
+Space flight: Yes
+----------------------------
+Speed: Normal
+Fuel cap: 2,600L
+Fuel efficiency: Good
+----------------------------
+Cargo cap: 20,000kg
+Internal power plant: 1,700w</description>
+        <graphicData>
+            <texPath>TEK7</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(15,15)</drawSize>
+        </graphicData>
+        <size>(5,9)</size>
+        <statBases>
+            <MaxHitPoints>1300</MaxHitPoints>
+            <WorkToBuild>24000</WorkToBuild>
+            <Flammability>0.3</Flammability>
+            <Mass>27456</Mass>
+            <Beauty>50</Beauty>
+        </statBases>
+        <costList>
+            <Plasteel>800</Plasteel>
+            <AluminiumBar>800</AluminiumBar>
+            <TitaniumBar>200</TitaniumBar>
+            <ReinforcedGlass>50</ReinforcedGlass>
+            <Plastic>50</Plastic>
+            <ComponentIndustrial>17</ComponentIndustrial>
+            <ComponentSpacer>9</ComponentSpacer>
+            <Mechanism>20</Mechanism>
+            <AdvMechanism>10</AdvMechanism>
+            <Electronics>20</Electronics>
+            <ElectronicComponents>15</ElectronicComponents>
+            <Microchips>1</Microchips>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Transporter">
+                <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+                <restEffectiveness>1.5</restEffectiveness>
+                <massCapacity>20000</massCapacity>
+            </li>
+            <li Class="SRTS.CompProperties_LaunchableSRTS">
+                <travelSpeed>8</travelSpeed>
+                <fuelPerTile>2.25</fuelPerTile>
+                <minPassengers>1</minPassengers>
+                <maxPassengers>28</maxPassengers>
+                <spaceFaring>true</spaceFaring>
+                <shuttleBayLanding>false</shuttleBayLanding>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelCapacity>2600</fuelCapacity>
+                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+                <initialConfigurableTargetFuelLevel>2600</initialConfigurableTargetFuelLevel>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <initialFuelPercent>0</initialFuelPercent>
+                <autoRefuelPercent>1</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-1700</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>18</glowRadius>
+                <glowColor>(217,217,217,0)</glowColor>
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li>Research_SRAFTek</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>16</constructionSkillPrerequisite>
+        <uiIconScale>0.50</uiIconScale>
+        <killedLeavings>
+            <ChunkSlagSteel>8</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+  
+
+    <ThingDef ParentName="NECShipBase">
+        <defName>SRTSMkII</defName>
+        <label>SRTS Mk.II: Albatross</label>
+        <description>An aerial vessel designed to care for all of your caravaning and military needs. A good ship, but not specialized, so it's not great in any one area.
+
+Passenger cap: 1 - 7
+
+--Military--
+  Bombs: 6/16
+  Accuracy: Normal
+  Build: Precise
+----------------------------
+Speed: Good
+Fuel cap: 1,600L
+Fuel efficiency: Good
+----------------------------
+Cargo capy: 4,000kg
+Internal power plant: 1,700w</description>
+        <graphicData>
+            <texPath>Albatross</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(9,9)</drawSize>
+        </graphicData>
+        <size>(3,3)</size>
+        <statBases>
+            <MaxHitPoints>700</MaxHitPoints>
+            <WorkToBuild>15000</WorkToBuild>
+            <Flammability>0.4</Flammability>
+            <Mass>43021</Mass>
+            <Beauty>50</Beauty>
+        </statBases>
+        <costList>
+            <Plasteel>550</Plasteel>
+            <AluminiumBar>550</AluminiumBar>
+            <TitaniumBar>100</TitaniumBar>
+            <ReinforcedGlass>50</ReinforcedGlass>
+            <Plastic>120</Plastic>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentSpacer>6</ComponentSpacer>
+            <Mechanism>10</Mechanism>
+            <AdvMechanism>6</AdvMechanism>
+            <Electronics>20</Electronics>
+            <ElectronicComponents>6</ElectronicComponents>
+            <Microchips>1</Microchips>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Transporter">
+                <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+                <restEffectiveness>1</restEffectiveness>
+                <massCapacity>4000</massCapacity>
+            </li>
+            <li Class="SRTS.CompProperties_LaunchableSRTS">
+                <travelSpeed>11</travelSpeed>
+                <fuelPerTile>1.75</fuelPerTile>
+                <minPassengers>1</minPassengers>
+                <maxPassengers>7</maxPassengers>
+                <spaceFaring>true</spaceFaring>
+                <shuttleBayLanding>true</shuttleBayLanding>
+            </li>
+            <li Class="SRTS.CompProperties_BombsAway">
+                <numberBombs>6</numberBombs>
+                <precisionBombingNumBombs>20</precisionBombingNumBombs>
+                <radiusOfDrop>4</radiusOfDrop>
+                <speed>1</speed>
+                <distanceBetweenDrops>3</distanceBetweenDrops>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelCapacity>1600</fuelCapacity>
+                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+                <initialConfigurableTargetFuelLevel>1600</initialConfigurableTargetFuelLevel>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <initialFuelPercent>0</initialFuelPercent>
+                <autoRefuelPercent>1</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-1700</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>18</glowRadius>
+                <glowColor>(217,217,217,0)</glowColor>
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li>Research_SRTSMkII</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+        <uiIconScale>0.30</uiIconScale>
+        <killedLeavings>
+            <ChunkSlagSteel>8</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+
+
+    <ThingDef ParentName="NECShipBase">
+        <defName>SRTSMkIII</defName>
+        <label>SRTS Mk.III: Phoenix</label>
+        <description>An aerial transport ship designed to raid, assault, and bomb. Highly advanced, created by an ancient civilization.
+
+Passenger cap: 1 - 17
+
+--Military--
+  Bombs: 20/10
+  Accuracy: Good
+  Build: Wide
+----------------------------
+Speed: Excellent
+Fuel cap: 2,800L
+Fuel efficiency: Excellent
+----------------------------
+Cargo cap: 6,000kg
+Internal power plant: 3,600w</description>
+        <graphicData>
+            <texPath>Phoenix</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(11,11)</drawSize>
+        </graphicData>
+        <size>(3,3)</size>
+        <statBases>
+            <MaxHitPoints>1500</MaxHitPoints>
+            <WorkToBuild>32000</WorkToBuild>
+            <Flammability>0.3</Flammability>
+            <Mass>67550</Mass>
+            <Beauty>75</Beauty>
+        </statBases>
+        <costList>
+            <Plasteel>300</Plasteel>
+            <AluminiumBar>800</AluminiumBar>
+            <TitaniumBar>700</TitaniumBar>
+            <ReinforcedGlass>120</ReinforcedGlass>
+            <Plastic>230</Plastic>
+            <ComponentIndustrial>20</ComponentIndustrial>
+            <ComponentSpacer>20</ComponentSpacer>
+            <Mechanism>20</Mechanism>
+            <AdvMechanism>20</AdvMechanism>
+            <Electronics>20</Electronics>
+            <ElectronicComponents>20</ElectronicComponents>
+            <Microchips>2</Microchips>
+            <Neutroamine>100</Neutroamine>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Transporter">
+                <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+                <restEffectiveness>2</restEffectiveness>
+                <massCapacity>6000</massCapacity>
+            </li>
+            <li Class="SRTS.CompProperties_LaunchableSRTS">
+                <travelSpeed>20</travelSpeed>
+                <fuelPerTile>1.25</fuelPerTile>
+                <minPassengers>1</minPassengers>
+                <maxPassengers>17</maxPassengers>
+                <spaceFaring>true</spaceFaring>
+                <shuttleBayLanding>true</shuttleBayLanding>
+            </li>
+            <li Class="SRTS.CompProperties_BombsAway">
+                <numberBombs>20</numberBombs>
+                <precisionBombingNumBombs>10</precisionBombingNumBombs>
+                <radiusOfDrop>3</radiusOfDrop>
+                <speed>1</speed>
+                <distanceBetweenDrops>2</distanceBetweenDrops>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelCapacity>2800</fuelCapacity>
+                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+                <initialConfigurableTargetFuelLevel>2800</initialConfigurableTargetFuelLevel>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <initialFuelPercent>0</initialFuelPercent>
+                <autoRefuelPercent>1</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-3600</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>18</glowRadius>
+                <glowColor>(217,217,217,0)</glowColor>
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li>Research_SRTSMkIII</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+        <uiIconScale>0.30</uiIconScale>
+        <killedLeavings>
+            <ChunkSlagSteel>12</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+
+
+    <ThingDef ParentName="NECShipBase">
+        <defName>SRTSMkIIIp</defName>
+        <label>SRTS Mk.IIIp: Pelican</label>
+        <description>An aerial cargo transport vessel. Low military application, but the best conventional cargo and tranport ship ever concieved in the outer rim. Highly advanced, created by an ancient civilization.
+
+Passenger cap: 1 - 42
+----------------------------
+Speed: Excellent
+Fuel cap: 5,000L
+Fuel efficiency: Excellent
+----------------------------
+Cargo cap: 30,000kg
+Internal power plant: 2,800w</description>
+        <graphicData>
+            <texPath>Pelican</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(25,25)</drawSize>
+        </graphicData>
+        <size>(11,9)</size>
+        <statBases>
+            <MaxHitPoints>2000</MaxHitPoints>
+            <WorkToBuild>32000</WorkToBuild>
+            <Flammability>0.3</Flammability>
+            <Mass>55110</Mass>
+            <Beauty>75</Beauty>
+        </statBases>
+        <costList>
+            <Plasteel>1600</Plasteel>
+            <AluminiumBar>1600</AluminiumBar>
+            <TitaniumBar>300</TitaniumBar>
+            <ReinforcedGlass>340</ReinforcedGlass>
+            <Plastic>460</Plastic>
+            <ComponentIndustrial>40</ComponentIndustrial>
+            <ComponentSpacer>40</ComponentSpacer>
+            <Mechanism>40</Mechanism>
+            <AdvMechanism>40</AdvMechanism>
+            <Electronics>40</Electronics>
+            <ElectronicComponents>40</ElectronicComponents>
+            <Microchips>5</Microchips>
+            <Neutroamine>200</Neutroamine>
+            <MagneticMaterial>20</MagneticMaterial>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Transporter">
+                <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+                <restEffectiveness>1</restEffectiveness>
+                <massCapacity>30000</massCapacity>
+            </li>
+            <li Class="SRTS.CompProperties_LaunchableSRTS">
+                <travelSpeed>20</travelSpeed>
+                <fuelPerTile>1.25</fuelPerTile>
+                <minPassengers>1</minPassengers>
+                <maxPassengers>42</maxPassengers>
+                <spaceFaring>true</spaceFaring>
+                <shuttleBayLanding>false</shuttleBayLanding>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelCapacity>5000</fuelCapacity>
+                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+                <initialConfigurableTargetFuelLevel>5000</initialConfigurableTargetFuelLevel>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <initialFuelPercent>0</initialFuelPercent>
+                <autoRefuelPercent>1</autoRefuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-2800</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>18</glowRadius>
+                <glowColor>(217,217,217,0)</glowColor>
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li>Research_SRTSMkIIIp</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>18</constructionSkillPrerequisite>
+        <uiIconScale>0.50</uiIconScale>
+        <killedLeavings>
+            <ChunkSlagSteel>12</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+
+
+    <ThingDef ParentName="NECShipBase">
+        <defName>SRTSMkIV</defName>
+        <label>SRTS Mk.IV: Genesis</label>
+        <description>The Genesis transport ship is highly advanced archotech technology. Fueled by mixed oxide fuel rods, and incorporates extra dimensional shiftspace to haul cargo much heavier and bigger than the ship itself.
+
+Passenger cap: No limit
+
+--Military--
+  Bombs: 32/32
+  Accuracy: Legendary
+  Build: Ultimate
+----------------------------
+Speed: Legendary
+Fuel type: Mixed Oxide Uranium-Plutonium Fuel Rod
+Fuel cap: Practically unlimited
+Fuel efficiency: Ultimate
+----------------------------
+Cargo cap: Extreme
+Internal power plant: 12,000w</description>
+        <graphicData>
+            <texPath>SRTSMk4</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(9,9)</drawSize>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <size>(5,5)</size>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>3000000</MaxHitPoints>
+            <WorkToBuild>35000</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Mass>100000</Mass>
+            <Beauty>100</Beauty>
+        </statBases>
+        <costList>
+            <Plasteel>1000</Plasteel>
+            <AluminiumBar>1000</AluminiumBar>
+            <TitaniumBar>2000</TitaniumBar>
+            <NitinolAlloy>1000</NitinolAlloy>
+            <CarbonAlloy>1000</CarbonAlloy>
+            <DepletedUranium>500</DepletedUranium>
+            <SilverBar>1000</SilverBar>
+            <ReinforcedGlass>1000</ReinforcedGlass>
+            <Plastic>1100</Plastic>
+            <ComponentIndustrial>200</ComponentIndustrial>
+            <ComponentSpacer>70</ComponentSpacer>
+            <Mechanism>130</Mechanism>
+            <AdvMechanism>80</AdvMechanism>
+            <Electronics>120</Electronics>
+            <ElectronicComponents>90</ElectronicComponents>
+            <Microchips>20</Microchips>
+            <Neutroamine>400</Neutroamine>
+            <MagneticMaterial>40</MagneticMaterial>
+            <FuelRodsMOX>2</FuelRodsMOX>
+            <BiosyntheticMaterial>30</BiosyntheticMaterial>
+            <Hexcell>30</Hexcell>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Transporter">
+                <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+                <restEffectiveness>17</restEffectiveness>
+                <massCapacity>900000000</massCapacity>
+            </li>
+            <li Class="SRTS.CompProperties_LaunchableSRTS">
+                <travelSpeed>80</travelSpeed>
+                <fuelPerTile>1</fuelPerTile>
+                <minPassengers>1</minPassengers>
+                <maxPassengers>9999</maxPassengers>
+                <spaceFaring>true</spaceFaring>
+                <shuttleBayLanding>false</shuttleBayLanding>
+            </li>
+            <li Class="SRTS.CompProperties_BombsAway">
+                <numberBombs>32</numberBombs>
+                <precisionBombingNumBombs>32</precisionBombingNumBombs>
+                <radiusOfDrop>1</radiusOfDrop>
+                <speed>0.7</speed>
+                <distanceBetweenDrops>1</distanceBetweenDrops>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelLabel>Hyperspace Containment</fuelLabel>
+                <fuelGizmoLabel>Hyperspace Containment</fuelGizmoLabel>
+                <fuelCapacity>20000</fuelCapacity>
+                <fuelMultiplier>5000</fuelMultiplier>
+                <initialConfigurableTargetFuelLevel>10000</initialConfigurableTargetFuelLevel>
+                <initialFuelPercent>1.0</initialFuelPercent>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>FuelRodsMOX</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <autoRefuelPercent>1</autoRefuelPercent>
+                <showFuelGizmo>false</showFuelGizmo>
+                <drawOutOfFuelOverlay>false</drawOutOfFuelOverlay>
+                <drawFuelGaugeInMap>false</drawFuelGaugeInMap>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerPlant</compClass>
+                <basePowerConsumption>-12000</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>20</glowRadius>
+                <glowColor>(217,217,217,0)</glowColor>
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li>Research_SRTSMkIV</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
+        <uiIconScale>0.60</uiIconScale>
+        <killedLeavings>
+            <ChunkSlagSteel>12</ChunkSlagSteel>
+        </killedLeavings>
+    </ThingDef>
+  
+</Defs>
