@@ -27,7 +27,7 @@ How to download only the mods you are interested in:<br>
 
 ## Content by version / Содержимое по версиям:<br>
 | Mod title                     | 1.3                | 1.4                | 1.5                | Notes         |
-|-------------------------------|--------------------|--------------------|--------------------|-------        |
+|-------------------------------|--------------------|--------------------|--------------------|---------------|
 | Advanced Shield Belts         | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Air Defence Systems           | :x:                | :white_check_mark: | :x:                | Not working   |
 | Alpha Animals                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
@@ -39,7 +39,7 @@ How to download only the mods you are interested in:<br>
 | Edge of Descension Monoblades | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Faction Void                  | :x:                | :white_check_mark: | :white_check_mark: | ---           |
 | Fireflies                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Harvest Post Mortem           | :white_check_mark: | :white_check_mark: | :x:                | Not working   |
+| Harvest Post Mortem           | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Maelstroms Metals             | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Megafauna                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Primitive Storage             | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |

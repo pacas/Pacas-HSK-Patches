@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <WorkGiverDef>
+        <defName>DoBillsMedicalHumanOperationOrgans</defName>
+        <label>medically extract organs</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Doctor</workType>
+        <priorityInType>75</priorityInType>
+        <fixedBillGiverDefs>
+            <li>TableAutopsy</li>
+        </fixedBillGiverDefs>
+        <billGiversAllHumanlikes>true</billGiversAllHumanlikes>
+        <billGiversAllHumanlikesCorpses>true</billGiversAllHumanlikesCorpses>
+        <verb>operate</verb>
+        <gerund>operating on</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+</Defs>
