@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BodyPartBase_Bionic">
+		<defName>RB_BionicTail</defName>
+		<label>rabbie bionic tail</label>
+		<description>Bionic tail connected to the spine and nerves. The built-in gyroscope naturally adjusts the balance.</description>
+		<techLevel>Spacer</techLevel>
+        <graphicData>
+			<texPath>Things/Item/BodyPart/BionicTail</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+        <statBases>
+			<Mass>1</Mass>
+		</statBases>
+		<costList>
+			<ComponentAdvanced>2</ComponentAdvanced>
+			<Biomatter>25</Biomatter>
+			<SyntheticFibers>12</SyntheticFibers>
+			<ArtificialBone>1</ArtificialBone>
+			<Microchips>1</Microchips>
+		</costList>
+		<recipeMaker>
+			<productCount>1</productCount>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+		    <researchPrerequisite>Bionics</researchPrerequisite>
+		</recipeMaker>
+	</ThingDef>
+
+</Defs>

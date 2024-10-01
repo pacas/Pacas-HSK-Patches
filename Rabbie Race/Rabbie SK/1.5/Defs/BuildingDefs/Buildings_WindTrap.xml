@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- 윈드 트랩 -->
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>PlanetariumRefinery</defName>
+        <label>Wind Trap</label>
+        <description>A device that collects and refines planetarium particles in the air through natural condensation.</description>
+        <graphicData>
+            <texPath>Things/Building/CantMinified/Planetariumrefinery</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2.6,2.6)</drawSize>
+            <shadowData>
+                <volume>(1.93,1,1.69)</volume>
+                <offset>(-0.03,0,-0.1)</offset>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <blockWind>true</blockWind>
+        <fillPercent>0.7</fillPercent>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>2500</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>-3</Beauty>
+            <Mass>500</Mass>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <canOverlapZones>false</canOverlapZones>
+        <size>(2,2)</size>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <costStuffCount>150</costStuffCount>
+        <costList>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <Electronics>6</Electronics>
+            <Mechanism>4</Mechanism>
+        </costList>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <thingCategories>
+            <li>BuildingsProduction</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <glowRadius>4</glowRadius>
+                <glowColor>(80,112,180,0)</glowColor>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>400</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Spawner">
+                <requiresPower>true</requiresPower>
+                <thingToSpawn>RefinedPlanetarium</thingToSpawn>
+                <spawnCount>4</spawnCount>
+                <spawnIntervalRange>
+                    <min>391741</min>
+                    <max>391741</max>
+                </spawnIntervalRange>
+                <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+                <showMessageIfOwned>true</showMessageIfOwned>
+            </li>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>4</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+        </placeWorkers>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <designationCategory>Production</designationCategory>
+        <designationHotKey>Misc1</designationHotKey>
+        <building>
+            <allowAutoroof>false</allowAutoroof>
+            <uninstallWork>1450</uninstallWork>
+        </building>
+        <researchPrerequisites>
+            <li>RefinePlanetarium</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </ThingDef>
+</Defs>

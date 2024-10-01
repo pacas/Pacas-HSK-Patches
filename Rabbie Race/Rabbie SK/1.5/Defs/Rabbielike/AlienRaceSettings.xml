@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AlienRace.RaceSettings>
+    <defName>RB_Race_Setting</defName>
+     <pawnKindSettings>
+            
+			<startingColonists>
+				<li>
+				<pawnKindEntries>
+					<li>
+                    <kindDefs>
+                        <li>RB_Colonist</li>
+                    </kindDefs>
+                    <chance>10.0</chance>
+					</li>
+				</pawnKindEntries>
+					<factionDefs>
+						<li>RB_PlayerFaction</li> 
+					</factionDefs>
+				</li>
+			</startingColonists>
+			<alienslavekinds>
+                <li>
+                    <kindDefs>
+						<li>RB_Worker</li>
+                        <li>RB_Technician</li>
+                    </kindDefs>
+                    <chance>30.0</chance>
+                </li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+                <li>
+                    <kindDefs>
+						<li>RB_Worker</li>
+                        <li>RB_Technician</li>
+                        <li>RB_SubOfficer</li>
+						<li>RB_EliteOfficer</li>
+						<li>RB_EnergySupply</li>
+                    </kindDefs>
+                    <chance>30.0</chance>
+                </li>
+
+            </alienrefugeekinds>
+          <!--  <alienwandererkinds> 
+                <li>
+                    <pawnKindEntries>
+                        <li>
+                            <kindDefs>
+								<li>RB_Wanderer</li>
+                            </kindDefs>
+                            <chance>30.0</chance>
+                        </li>
+                    </pawnKindEntries>
+                    <factionDefs>
+                        <li>Rabbitish</li> 
+                    </factionDefs>
+                </li>
+            </alienwandererkinds> -->
+        </pawnKindSettings>
+  </AlienRace.RaceSettings>
+</Defs>

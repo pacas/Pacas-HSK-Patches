@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Rabbitish Faction / Settlement namers -->
+
+  <RulePackDef>
+    <defName>NamerFactionRabbitish</defName>
+
+    <rulePack>
+      <rulesStrings>
+        <!-- For Watership Down-->
+        <li>r_name->House of Hazel</li>
+        <li>r_name->House of Bigwig</li>
+        <li>r_name->House of Dandelion</li>
+        <li>r_name->House of Fiver</li>
+        <li>r_name->House of Blackberry</li>
+        <li>r_name->House of Acorn</li>
+        <li>r_name->House of Silver</li>
+        <li>r_name->House of Pipkin</li>
+        <li>r_name->House of Cowslip</li>
+        <li>r_name->House of Strawberry</li>
+        <li>r_name->House of Bluebell</li>
+        <li>r_name->House of Holly</li>
+        <li>r_name->House of Clover</li>
+        <li>r_name->House of Hyzenthlay</li>
+        <li>r_name->House of Blackavar</li>
+        <li>r_name->Territory of General Woundwort</li>
+        <!-- Misc-->
+        <li>r_name->House of Jackrabbit</li>
+        <li>r_name->House of Inaba</li>
+        <li>r_name->House of Tsukino</li>
+        <li>r_name->House of Seiran</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  
+  <RulePackDef>
+    <defName>NamerSettlementRabbitish</defName>
+    <rulePack>
+      <rulesStrings>
+
+        <li>r_name(p=12)->[townname_wordgen]</li>
+        <li>r_name(p=4)->[townname_combo]</li>
+        <li>r_name->[townname_near]</li>
+
+        <li>topicalnoun->[Vegetable]</li>
+        <li>topicalnoun->[Game]</li>
+        <li>topicalnoun->[BodyPart]</li>
+
+        <li>townname_combo->[topicalnoun] [TerrainFeature] [RBTStownend]</li>
+        <li>townname_combo->[topicalnoun] [Community] [RBTStownend]</li>
+        <li>townname_combo->[topicalnoun]'s [TerrainFeature] [RBTStownend]</li>
+        <li>townname_combo->[topicalnoun]'s [Community] [RBTStownend]</li>
+        <li>townname_combo(p=2)->[concept_positive]'s [TerrainFeature] [RBTStownend]</li>
+        <li>townname_combo(p=2)->[concept_positive] [TerrainFeature] [RBTStownend]</li>
+        <li>townname_combo(p=2)->[concept_positive] [Community] [RBTStownend]</li>
+        <li>townname_combo(p=3)->[Character]'s [TerrainFeature] [RBTStownend]</li>
+        <li>townname_combo(p=3)->[Character]'s [Community] [RBTStownend]</li>
+
+        <li>townname_near->[nearnameinitial]-at-the-[TerrainFeature] [RBTStownend]</li>
+        <li>townname_near->[nearnameinitial]-by-the-[TerrainFeature] [RBTStownend]</li>
+        <li>townname_near->[nearnameinitial]-on-the-[TerrainFeature] [RBTStownend]</li>
+        <li>nearnameinitial->[townname_wordgen]</li>
+        <li>nearnameinitial->[Community]</li>
+
+        <li>townname_wordgen(p=2)->[SylE][SylE] [RBTStownend]</li>
+        <li>townname_wordgen(p=2)->[SylE][SylE][SylE] [RBTStownend]</li>
+        <li>townname_wordgen(p=2)->[SylE] [RBTStownend]</li>
+        <li>townname_wordgen(p=2)->[SylE][SylE] [RBTstownend]</li>
+        <li>townname_wordgen->[TerrainFeature] [RBTStownend]</li>
+        <li>townname_wordgen->[topicalnoun] [RBTStownend]</li>
+        <li>RBTStownend->Fieldarmy Base</li>
+        <li>RBTStownend->Power Station</li>
+        <li>RBTStownend->Powerplant</li>
+        <li>RBTStownend->Fuel rig</li>
+        <li>RBTStownend->Supply Fortress</li>
+        <li>RBTStownend->Planetarium Refinery</li>
+        <li>RBTStownend->Laboratory</li>
+        <li>RBTStownend->Infantry RegroupPoint</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>townname_fixed->Names/OutlanderTown</li>
+        <li>concept_positive->Words/Nouns/Concepts_Positive</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+</Defs>

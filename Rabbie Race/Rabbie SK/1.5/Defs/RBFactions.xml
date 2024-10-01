@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef Abstract="True" Name="RB_PlayerFactionBase">
+        <settlementTexturePath>Icon/RB_Icon</settlementTexturePath>
+        <colorSpectrum>
+            <li>(1, 1, 1)</li>
+        </colorSpectrum>
+        <raidLootValueFromPointsCurve>
+            <points>
+                <li>(35,     15)</li>
+                <li>(100,   120)</li>
+                <li>(1000,  500)</li>
+                <li>(2000,  800)</li>
+                <li>(4000, 1000)</li>
+            </points>
+        </raidLootValueFromPointsCurve>
+    </FactionDef>
+
+    <FactionDef ParentName="RB_PlayerFactionBase">
+        <defName>RB_PlayerFaction</defName>
+        <label>New Beginning</label>
+        <description>당신의 래비 정착지입니다.</description>
+        <isPlayer>true</isPlayer>
+        <basicMemberKind>RB_Colonist</basicMemberKind>
+        <pawnSingular>Rabbie</pawnSingular>
+        <pawnsPlural>Rabbies</pawnsPlural>
+        <techLevel>Industrial</techLevel>
+        <backstoryCategories>
+            <li>Offworld</li>
+        </backstoryCategories>
+        <factionIconPath>Icon/RB_Icon</factionIconPath>
+        <settlementTexturePath>Icon/RB_HomeIcon</settlementTexturePath>
+        <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+        <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <melaninRange>0</melaninRange>
+        <allowedCultures><li>Rabbitishstandard</li></allowedCultures>
+        <startingResearchTags>
+            <li>ClassicStart</li>
+        </startingResearchTags>
+    </FactionDef>
+
+    <FactionDef ParentName="FactionBase" Name="RabbitishFactionBase" Abstract="True">
+        <pawnSingular>Rabbie</pawnSingular>
+        <pawnsPlural>Rabbies</pawnsPlural>
+        <listOrderPriority>30</listOrderPriority>
+        <configurationListOrderPriority>105</configurationListOrderPriority>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <maxCountAtGameStart>1</maxCountAtGameStart>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canStageAttacks>true</canStageAttacks>
+        <leaderTitle>Proconsul of Planet</leaderTitle>
+        <factionIconPath>Icon/RB_Icon</factionIconPath>
+        <factionNameMaker>NamerFactionRabbitish</factionNameMaker>
+        <settlementNameMaker>NamerSettlementRabbitish</settlementNameMaker>
+        <melaninRange>0</melaninRange>
+        <allowedCultures><li>Rabbitishstandard</li></allowedCultures>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <techLevel>Spacer</techLevel>
+        <backstoryCategories>
+            <li>Offworld</li>
+        </backstoryCategories>
+        <caravanTraderKinds>
+            <li>Caravan_Outlander_BulkGoods</li>
+            <li>Caravan_Outlander_CombatSupplier</li>
+            <li>Caravan_Outlander_Exotic</li>
+            <li>Caravan_Outlander_PirateMerchant</li>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+            <li>Visitor_Outlander_Standard</li>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+            <li>Base_Outlander_Standard</li>
+        </baseTraderKinds>
+        <allowedArrivalTemperatureRange>-45~45</allowedArrivalTemperatureRange>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+        </disallowedMemes>
+        <structureMemeWeights>
+            <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+            <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+            <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">3</Structure_Ideological>
+            <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">3</Structure_Archist>
+            <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+            <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+            <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+            <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+        </structureMemeWeights>
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(1000, 0)</li>
+                <li>(3000, 0.4)</li>
+                <li>(4500, 0.6)</li>
+                <li>(6000, 0.9)</li>
+                <li>(15000, 0.7)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(1000, 60)</li>
+                <li>(1900, 150)</li>
+                <li>(5000, 350)</li>
+                <li>(10000, 10000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <pawnGroupMakers>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>50</commonality>
+                <maxTotalPoints>8500</maxTotalPoints>
+                <options>
+                    <RB_SubOfficer>1</RB_SubOfficer>
+                    <RB_FSapper>5</RB_FSapper>
+                    <RB_FRifle>20</RB_FRifle>
+                    <RB_FMachinegunner>10</RB_FMachinegunner>
+                    <RB_FSniper>13</RB_FSniper>
+                </options>
+            </li>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>35</commonality>
+                <options>
+                    <RB_SubOfficer>1</RB_SubOfficer>
+                    <RB_FSapper>5</RB_FSapper>
+                    <RB_FRifle>12</RB_FRifle>
+                    <RB_FMachinegunner>5</RB_FMachinegunner>
+                    <RB_FSniper>6</RB_FSniper>
+                    <RB_RGunner>11</RB_RGunner>
+                </options>
+            </li>
+            <li>
+                <kindDef>Combat</kindDef>
+                <maxTotalPoints>8500</maxTotalPoints>
+                <commonality>15</commonality>
+                <disallowedStrategies>
+                    <li>Siege</li>
+                </disallowedStrategies>
+                <options>
+                    <RB_EliteOfficer>1</RB_EliteOfficer>
+                    <RB_RGunner>30</RB_RGunner>
+                </options>
+            </li>
+            <li>
+                <kindDef>Combat</kindDef>
+                <commonality>25</commonality>
+                <disallowedStrategies>
+                    <li>Siege</li>
+                </disallowedStrategies>
+                <options>
+                    <RB_EliteOfficer>1</RB_EliteOfficer>
+                    <RB_RGunner>20</RB_RGunner>
+                </options>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <RB_EliteOfficer>2</RB_EliteOfficer>
+                    <RB_SubOfficer>5</RB_SubOfficer>
+                    <RB_EnergySupply>3</RB_EnergySupply>
+                    <RB_Technician>3</RB_Technician>
+                    <RB_Worker>5</RB_Worker>
+                    <RB_FRifle>13</RB_FRifle>
+                    <RB_FSniper>8</RB_FSniper>
+                    <RB_FMachinegunner>10</RB_FMachinegunner>
+                    <RB_FSapper>2</RB_FSapper>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <RB_EliteOfficer>1</RB_EliteOfficer>
+                    <RB_SubOfficer>2</RB_SubOfficer>
+                    <RB_EnergySupply>5</RB_EnergySupply>
+                    <RB_Technician>3</RB_Technician>
+                    <RB_Worker>7</RB_Worker>
+                    <RB_FRifle>10</RB_FRifle>
+                    <RB_FSniper>5</RB_FSniper>
+                    <RB_FMachinegunner>5</RB_FMachinegunner>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <RB_SubOfficer>1</RB_SubOfficer>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <RB_EnergySupply>2</RB_EnergySupply>
+                    <RB_Worker>2</RB_Worker>
+                    <RB_FSapper>2</RB_FSapper>
+                    <RB_FSniper>4</RB_FSniper>
+                    <RB_FRifle>6</RB_FRifle>
+                    <RB_FMachinegunner>3</RB_FMachinegunner>
+                </guards>
+            </li>
+        </pawnGroupMakers>
+        <settlementTexturePath>Icon/RB_Icon</settlementTexturePath>
+    </FactionDef>
+
+    <FactionDef ParentName="RabbitishFactionBase">
+        <defName>Rabbitish</defName>
+        <label>Rabbitish Empire</label>
+        <description>토끼의 유전자를 가진 외계 종족으로, 전쟁과 연구 그리고 의학에 능숙한 군사 제국입니다.\n\n거의 번화계 수준에 다다른 기술로 여러 우주로 이주해 다니며, 플라네타륨이 분포하는 행성을 찾아 그 달에 도시를 건설해 왔습니다.\n\n래비들은 행성에 내려오면 전력과 플라네타륨을 채취하는 시설들을 건설하고, 시민들이 복무하는 구성된 야전군이 그곳을 지킵니다. \n\n먼 거리로 인해 이전 우주의 래비들과는 단절됩니다.</description>
+        <colorSpectrum>
+            <li>(1, 1, 1)</li>
+            <li>(1, 1, 1)</li>
+        </colorSpectrum>
+        <xenotypeSet MayRequire="Ludeon.Rimworld.Biotech">
+            <xenotypeChances MayRequire="Ludeon.Rimworld.Biotech">
+                <BaseRabbie MayRequire="Ludeon.Rimworld.Biotech">0.5</BaseRabbie>
+                <XenoRabbie MayRequire="Ludeon.Rimworld.Biotech">0.5</XenoRabbie>
+            </xenotypeChances>
+        </xenotypeSet>
+        <earliestRaidDays>90</earliestRaidDays>
+        <naturalEnemy>true</naturalEnemy>
+    </FactionDef>
+</Defs>

@@ -1,5 +1,5 @@
 # Pacas HSK Patches
-![Versions](https://img.shields.io/badge/version-1.3%2C_1.4-blue?style=for-the-badge)
+![Versions](https://img.shields.io/badge/version-1.3--1.5-blue?style=for-the-badge)
 ![Support Me](https://img.shields.io/badge/boosty-support_me-red?style=for-the-badge&logo=boosty&labelColor=grey&link=https%3A%2F%2Fboosty.to%2Fpacas)<br>
 ![Preview](/mod_preview.png?raw=true "Preview")<br><br>
 [Hardcore SK modpack only!](https://github.com/skyarkhangel/Hardcore-SK/tree/development)
@@ -43,7 +43,7 @@ How to download only the mods you are interested in:<br>
 | Maelstroms Metals             | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Megafauna                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Primitive Storage             | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Rabbie Race                   | :white_check_mark: | :white_check_mark: | :x:                | ---           |
+| Rabbie Race                   | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Revia Race                    | :white_check_mark: | :white_check_mark: | :x:                | ---           |
 | Rimfeller EasyMod             | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Seven Seraph Weapons          | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
