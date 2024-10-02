@@ -25,7 +25,7 @@ Bombing Run Capacity: n/a
 Precision Run Capacity: n/a
 Spread: n/a
 Distance between drops: n/a]]></description>
-		<baseCost>4000</baseCost>
+		<baseCost>3000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>Telecommunications_C1</li>
@@ -60,7 +60,7 @@ Bombing Run Capacity: 2
 Precision Run Capacity: 1
 Spread: 5
 Distance between drops: 3]]></description>
-		<baseCost>4000</baseCost>
+		<baseCost>3000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>Telecommunications_C1</li>
@@ -96,7 +96,7 @@ Bombing Run Capacity: n/a
 Precision Run Capacity: n/a
 Spread: n/a
 Distance between drops: n/a]]></description>
-		<baseCost>5400</baseCost>
+		<baseCost>4000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>Research_MH-6LB_Transport</li>
@@ -132,7 +132,7 @@ Bombing Run Capacity: 3
 Precision Run Capacity: 2
 Spread: 6
 Distance between drops: 4]]></description>
-		<baseCost>5400</baseCost>
+		<baseCost>4000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>Research_MH-6LB_Attack</li>
@@ -168,7 +168,7 @@ Bombing Run Capacity: n/a
 Precision Run Capacity: n/a
 Spread: n/a
 Distance between drops: n/a]]></description>
-		<baseCost>6000</baseCost>
+		<baseCost>4500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>Research_UH-1Y_Transport</li>
@@ -204,7 +204,7 @@ Bombing Run Capacity: 4
 Precision Run Capacity: 3
 Spread: 5
 Distance between drops: 4]]></description>
-		<baseCost>6000</baseCost>
+		<baseCost>4500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>Research_UH-1Y_Attack</li>
@@ -240,7 +240,7 @@ Bombing Run Capacity: 3
 Precision Run Capacity: 7
 Spread: 4
 Distance between drops: 3]]></description>
-		<baseCost>9000</baseCost>
+		<baseCost>6000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>Research_UH-60_Attack</li>
@@ -276,7 +276,7 @@ Bombing Run Capacity: n/a
 Precision Run Capacity: n/a
 Spread: n/a
 Distance between drops: n/a]]></description>
-		<baseCost>16000</baseCost>
+		<baseCost>8000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>Research_UH-60_Transport</li>
@@ -312,7 +312,7 @@ Bombing Run Capacity: n/a
 Precision Run Capacity: n/a
 Spread: n/a
 Distance between drops: n/a]]></description>
-		<baseCost>11000</baseCost>
+		<baseCost>7000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
 			<li>Research_CH-46E_Transport</li>
@@ -320,8 +320,6 @@ Distance between drops: n/a]]></description>
 		<researchViewX>21</researchViewX>
 		<researchViewY>75</researchViewY>
 	</ResearchProjectDef>
-
-
 
 	<ResearchProjectDef ParentName="HitechLabStationBase">
 		<tab>SRTSE_Helicopters</tab>
@@ -348,7 +346,7 @@ Bombing Run Capacity: n/a
 Precision Run Capacity: n/a
 Spread: n/a
 Distance between drops: n/a]]></description>
-		<baseCost>16000</baseCost>
+		<baseCost>9000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
 			<li>Research_CH-46E_Transport</li>
