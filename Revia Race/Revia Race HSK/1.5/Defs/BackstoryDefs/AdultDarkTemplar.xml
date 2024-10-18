@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <BackstoryDef>
+    <defName>ReviaRaceBackstoryAdultDarkTemplar</defName>
+    <title>Revian Dark Templar</title>
+    <titleShort>Templar</titleShort>
+    <baseDesc>[PAWN_nameDef] is a part of the higher echelons of the dark god's priesthood. Skilled with blades as much as [PAWN_pronoun] is with [PAWN_possessive] wits, [PAWN_pronoun] is as equally charismatic as [PAWN_pronoun] is dangerous.</baseDesc>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>ReviaRaceBackstory</li>
+      <li>ReviaRaceTemplar</li>
+    </spawnCategories>
+    <skillGains>
+      <Melee>4</Melee>
+      <Shooting>4</Shooting>
+      <Social>4</Social>
+    </skillGains>
+    <forcedTraits>
+      <PsychicSensitivity>
+        2
+      </PsychicSensitivity>
+      <PsychicSensitivity>
+        1
+      </PsychicSensitivity>
+    
+  </forcedTraits>
+    <workDisables>
+      <li>Caring</li>
+    </workDisables>
+  </BackstoryDef>
+</Defs>

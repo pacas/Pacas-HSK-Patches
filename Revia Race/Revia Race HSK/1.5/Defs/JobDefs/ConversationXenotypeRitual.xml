@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>ReviaRaceXenotypeConversation</defName>
+    <driverClass>ReviaRace.JobDrivers.ConversationRitualJobDriver</driverClass>
+    <reportString>Converting to revia.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+
+</Defs>

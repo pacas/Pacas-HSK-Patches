@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef>
+    <defName>ReviaMarauderFaction</defName>
+    <label>Revian Marauders</label>
+    <description>A loose alliance of Revia marauders. These bloodthirsty warriors seek sacrifices and plunder in the honour of their blood god.</description>
+    <pawnSingular>revia</pawnSingular>
+    <pawnsPlural>revia</pawnsPlural>
+    <listOrderPriority>10</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Skullshatterer</leaderTitle>
+    <factionIconPath>World/ReviaEmblem</factionIconPath>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <maxConfigurableAtWorldCreation>5</maxConfigurableAtWorldCreation>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ReviaRaceSkarniteMeme</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+    </allowedMemes>
+    <allowedCultures>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ReviaRaceRaiderCulture</li>
+    </allowedCultures>
+    <colorSpectrum>
+      <li>(0.60, 0.60, 0.05)</li>
+      <li>(0.85, 0.65, 0.05)</li>
+    </colorSpectrum>
+    <permanentEnemy>true</permanentEnemy>
+    <autoFlee>false</autoFlee>
+    <factionNameMaker>NamerFactionReviaMarauder</factionNameMaker>
+    <settlementNameMaker>NamerSettlementReviaMarauder</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+    <backstoryCategories>
+      <li>ReviaMarauder</li>
+    </backstoryCategories>
+    <melaninRange>0~0.8</melaninRange>
+    <allowedArrivalTemperatureRange>-40~55</allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+    <raidLootMaker>ReviaRaiderLootMaker</raidLootMaker>
+    <pawnGroupMakers>
+        <li>
+            <!--Type 1 - Smaller scouting raid-->
+            <kindDef>Combat</kindDef>
+            <commonality>60</commonality>
+            <options>
+                <ReviaRaceRaider>5</ReviaRaceRaider>
+                <ReviaRaceMarauder>1</ReviaRaceMarauder>
+            </options>
+        </li>
+        <li>
+            <!--Type 2 - Moderate sized raid-->
+            <kindDef>Combat</kindDef>
+            <commonality>30</commonality>
+            <options>
+                <ReviaRaceMarauder>5</ReviaRaceMarauder>
+                <ReviaRaceBerserker>2</ReviaRaceBerserker>
+            </options>
+        </li>
+        <li>
+            <!--Type 3 - Heavy assault raid-->
+            <kindDef>Combat</kindDef>
+            <commonality>15</commonality>
+            <options>
+                <ReviaRaceRaider>7</ReviaRaceRaider>
+                <ReviaRaceMarauder>3</ReviaRaceMarauder>
+                <ReviaRaceBerserker>2</ReviaRaceBerserker>
+                <ReviaRaceSmasher>2</ReviaRaceSmasher>
+                <ReviaRaceSkullshatterer>1</ReviaRaceSkullshatterer>
+            </options>
+        </li>
+        <li>
+            <!--Type 4 - Base siege -->
+            <kindDef>Combat</kindDef>
+            <commonality>5</commonality>
+            <options>
+                <ReviaRaceRaider>13</ReviaRaceRaider>
+                <ReviaRaceMarauder>8</ReviaRaceMarauder>
+                <ReviaRaceBerserker>3</ReviaRaceBerserker>
+                <ReviaRaceSmasher>2</ReviaRaceSmasher>
+                <ReviaRaceSkullshatterer>1</ReviaRaceSkullshatterer>
+            </options>
+        </li>
+        <li>
+            <kindDef>Settlement</kindDef>
+            <commonality>100</commonality>
+            <options>
+                <ReviaRaceMarauder>13</ReviaRaceMarauder>
+                <ReviaRaceRaider>13</ReviaRaceRaider>
+                <ReviaRaceBerserker>4</ReviaRaceBerserker>
+                <ReviaRaceSmasher>2</ReviaRaceSmasher>
+                <ReviaRaceSkullshatterer>1</ReviaRaceSkullshatterer>
+            </options>
+        </li>
+    </pawnGroupMakers>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <RevianXenotype>999</RevianXenotype>
+      </xenotypeChances>
+    </xenotypeSet>
+  </FactionDef>
+</Defs>

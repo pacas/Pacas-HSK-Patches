@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BackstoryDef>
+    <defName>ReviaRaceBackstoryAdultReaver</defName>
+    <title>Revian Reaver</title>
+    <titleShort>Reaver</titleShort>
+    <baseDesc>[PAWN_nameDef] was once an abandoned child. Now grown, [PAWN_pronoun] wishes to see the world burn for its perceived sins.</baseDesc>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>ReviaRaceBackstory</li>
+      <li>ReviaMarauder</li>
+    </spawnCategories>
+    <skillGains>
+      <Melee>2</Melee>
+      <Shooting>2</Shooting>
+    </skillGains>
+  </BackstoryDef>
+</Defs>

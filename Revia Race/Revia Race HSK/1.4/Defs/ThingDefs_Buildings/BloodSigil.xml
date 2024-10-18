@@ -18,7 +18,7 @@
         <altitudeLayer>FloorEmplacement</altitudeLayer>
         <statBases>
             <WorkToBuild>600</WorkToBuild>
-            <MaxHitPoints>250</MaxHitPoints>
+            <MaxHitPoints>100</MaxHitPoints>
             <WorkTableWorkSpeedFactor>1.5</WorkTableWorkSpeedFactor>
             <MeditationFocusStrength>0.25</MeditationFocusStrength>
             <Flammability>0</Flammability>
@@ -39,7 +39,7 @@
         <size>(3,3)</size>
         <designationCategory>Misc</designationCategory>
         <rotatable>true</rotatable>
-        <pathCost>20</pathCost>
+        <passability>Standable</passability>
         <hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,0)</interactionCellOffset>
         <surfaceType>Item</surfaceType>

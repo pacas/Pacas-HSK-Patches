@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[customLabel="left ear"]/groups</xpath>
+        <value>
+            <li>LeftEar</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/BodyDef/corePart/parts/li[def="Neck"]/parts/li[def="Head"]/parts/li[customLabel="right ear"]/groups</xpath>
+        <value>
+            <li>RightEar</li>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Human"]/alienRace/generalSettings/alienPartGenerator/bodyAddons</xpath>
+		<value>
+			<li>
+				<conditions>
+					<BodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>left ear</bodyPartLabel>
+					</BodyPart>
+					<RotStage>Fresh</RotStage>
+					<Gene>ReviaEars</Gene>
+					<Apparel>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</Apparel>
+				</conditions>
+				<path>Things/Ears/EarLeft</path>
+				<inFrontOfBody>true</inFrontOfBody>
+                <colorChannel>hair</colorChannel>
+                <shaderType>CutoutComplex</shaderType>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<offsets>
+					<south>
+                        <offset>(0.42, -0.26)</offset>
+                        <bodyTypes>
+                            <Female>(-0.475, 0.57)</Female>
+                            <Thin>(-0.475, 0.57)</Thin>
+                            <Baby>(-0.40, 0.56)</Baby>
+                            <Child>(-0.40, 0.56)</Child>
+                        </bodyTypes>
+                        <headTypes>
+                            <Female_AverageNormal>(0, 0)</Female_AverageNormal>
+                            <Female_AveragePointy>(0, 0)</Female_AveragePointy>
+                            <Female_AverageWide>(0, 0)</Female_AverageWide>
+                        </headTypes>
+                    </south>
+                    <north>
+                        <offset>(-0.04, -0.52)</offset>
+                        <bodyTypes>
+                            <Female>(0.05, 0.9)</Female>
+                            <Thin>(0.05, 0.9)</Thin>
+                            <Baby>(-0.007,0.83)</Baby>
+                            <Child>(-0.007,0.83)</Child>
+                        </bodyTypes>
+                        <headTypes>
+                            <Female_AverageNormal>(0, 0)</Female_AverageNormal>
+                            <Female_AveragePointy>(0, 0)</Female_AveragePointy>
+                            <Female_AverageWide>(0, 0)</Female_AverageWide>
+                        </headTypes>
+                    </north>
+                    <east>
+                        <offset>(0.42, -0.22)</offset>
+                        <bodyTypes>
+                            <Female>(-0.375, 0.57)</Female>
+                            <Thin>(-0.375, 0.57)</Thin>
+                            <Baby>(-0.4,0.47)</Baby>
+                            <Child>(-0.4,0.51)</Child>
+                        </bodyTypes>
+                        <headTypes>
+                            <Female_AverageNormal>(0, 0)</Female_AverageNormal>
+                            <Female_AveragePointy>(0, 0)</Female_AveragePointy>
+                            <Female_AverageWide>(0, 0)</Female_AverageWide>
+                        </headTypes>
+                    </east>
+				</offsets>
+			</li>
+			<li>
+				<conditions>
+					<BodyPart>
+						<bodyPart>Ear</bodyPart>
+						<bodyPartLabel>right ear</bodyPartLabel>
+					</BodyPart>
+					<RotStage>Fresh</RotStage>
+					<Gene>ReviaEars</Gene>
+					<Apparel>
+						<hiddenUnderApparelFor>
+							<li>FullHead</li>
+						</hiddenUnderApparelFor>
+					</Apparel>
+				</conditions>
+				<path>Things/Ears/EarRight</path>
+				<inFrontOfBody>true</inFrontOfBody>
+                <colorChannel>hair</colorChannel>
+                <shaderType>CutoutComplex</shaderType>
+				<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+				<offsets>
+                    <south>
+                        <offset>(0.42, -0.26)</offset>
+                        <bodyTypes>
+                            <Female>(-0.375, 0.57)</Female>
+                            <Thin>(-0.375, 0.57)</Thin>
+                            <Baby>(-0.45, 0.56)</Baby>
+                            <Child>(-0.45, 0.56)</Child>
+                        </bodyTypes>
+                        <headTypes>
+                            <Female_AverageNormal>(0, 0)</Female_AverageNormal>
+                            <Female_AveragePointy>(0, 0)</Female_AveragePointy>
+                            <Female_AverageWide>(0, 0)</Female_AverageWide>
+                        </headTypes>
+                    </south>
+                    <north>
+                        <offset>(0.04, -0.52)</offset>
+                        <bodyTypes>
+                            <Female>(-0.05, 0.9)</Female>
+                            <Thin>(-0.05, 0.9)</Thin>
+                            <Baby>(-0.01,0.83)</Baby>
+                            <Child>(-0.01,0.83)</Child>
+                        </bodyTypes>
+                        <headTypes>
+                            <Female_AverageNormal>(0, 0)</Female_AverageNormal>
+                            <Female_AveragePointy>(0, 0)</Female_AveragePointy>
+                            <Female_AverageWide>(0, 0)</Female_AverageWide>
+                        </headTypes>
+                    </north>
+                    <east>
+                        <layerOffset>-1</layerOffset>
+                        <offset>(0.42, -0.22)</offset>
+                        <bodyTypes>
+                            <Female>(-0.375, 0.57)</Female>
+                            <Thin>(-0.375, 0.57)</Thin>
+                            <Baby>(-0.46,0.46)</Baby>
+                            <Child>(-0.46,0.46)</Child>
+                        </bodyTypes>
+                        <headTypes>
+                            <Female_AverageNormal>(0, 0)</Female_AverageNormal>
+                            <Female_AveragePointy>(0, 0)</Female_AveragePointy>
+                            <Female_AverageWide>(0, 0)</Female_AverageWide>
+                        </headTypes>
+                    </east>
+                </offsets>
+			</li>
+		</value>
+	</Operation>
+</Patch>

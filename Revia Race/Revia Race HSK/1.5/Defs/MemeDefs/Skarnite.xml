@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <MemeDef MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>ReviaRaceSkarniteMeme</defName>
+    <label>skarnite</label>
+    <description>A person's greatest aspiration is to serve the bloody goddess, in all her forms. All hail Skarne!</description>
+    <iconPath>UI/Memes/Raider</iconPath>
+    <groupDef>Misc</groupDef>
+    <impact>3</impact>
+    <renderOrder>10</renderOrder>
+    <veneratedAnimalsCountOverride>0</veneratedAnimalsCountOverride>
+    <consumableBuildings>
+      <li>Effigy</li>
+    </consumableBuildings>
+    <startingResearchProjects>
+      <li>ReviaRaceReligionBase</li>
+    </startingResearchProjects>
+    <agreeableTraits>
+      <li>Bloodlust</li>
+      <li>Tough</li>
+    </agreeableTraits>
+    <disagreeableTraits>
+      <li>Wimp</li>
+      <li>Kind</li>
+    </disagreeableTraits>
+    <requireOne>
+      <li>
+        <li>Raiding_Respected</li>
+        <li>Raiding_Required</li>
+      </li>
+      <li>
+        <li>Execution_DontCare</li>
+        <li>Execution_RespectedIfGuilty</li>
+        <li>Execution_Required</li>
+      </li>
+      <li>
+        <li>Nudity_Female_NoRules</li>
+      </li>
+      <li>
+        <li>Skullspike_Desired</li>
+      </li>
+      <li>
+        <li>IdeoDiversity_Horrible</li>
+      </li>
+      <li>
+        <li>Lovin_SpouseOnly_Mild</li>
+        <li>Lovin_SpouseOnly_Moderate</li>
+        <li>Lovin_FreeApproved</li>
+      </li>
+      <li>
+        <li>Corpses_DontCare</li>
+      </li>
+      <li>
+        <li>OrganUse_Acceptable</li>
+      </li>
+    </requireOne>
+    <generalRules>
+      <rulesStrings>
+        <li>memeAdjective->skarnite</li>
+        <li>memeHyphenPrefix->skarnite</li>
+        <li>memeConcept->bloodlust</li>
+        <li>memeConcept->violence</li>
+        <li>memeConcept->warfare</li>
+        <li>memeConcept->death</li>
+        <li>memeLeaderNoun->archon</li>
+        <li>memeLeaderNoun->executrix</li>
+        <li>memeLeaderNoun->zealot</li>
+        <li>memeLeaderNoun->haemoarch</li>
+        <li>memeMoralist->acolyte</li>
+        <li>memeMoralist->proselyte</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <rules>
+        <rulesStrings>
+          <!-- theist myth-->
+          <li>creation(tag=meme_revia)->[deity0_name] brought her daughters into the universe from the endless Void from the beyond.</li>
+          <li>episode(uses=1, tag=meme_revia)->[deity0_name] sipped from her goblet of scarlet lifeblood, casting it to the earth and painting it red. Smiling, she bid her daughters to continue her work. To rip and tear all in their path, until the universe is bathed in blood.</li>
+          <!-- theist founder-->
+          <li>intro(tag=meme_revia)->The daughters of [deity0_name] swept across the world, purging those unworthy to share the air that they breathed.</li>
+          <li>conflict(tag=meme_revia)->Infidels stood in their path, wherever they went. By sword, gun or bomb, they resisted the daughters of [deity0_name] with all their might.</li>
+          <li>victory(tag=meme_revia)->Yet the bloody blessings of their bloody matron kept them surging onwards, overcoming adversity through sheer will and uncontrollable fury.</li>
+        </rulesStrings>
+      </rules>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+        <ideoName>Skarnism</ideoName>
+        <theme>Skarne worship</theme>
+        <adjective>Skarnic</adjective>
+        <member>Skarnite</member>
+      </li>
+    </symbolPacks>
+  </MemeDef>
+</Defs>

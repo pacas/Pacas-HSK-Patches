@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <HediffDef>
+        <defName>ReviaRaceSoulreapTier5</defName>
+        <label>Soul Reap (5)</label>
+        <description>An indication of how many lives this Revia has taken. Revia grow stronger with the more lives that they take.</description>
+        <isBad>false</isBad>
+        <defaultLabelColor>(0.8, 0.4, 0.4)</defaultLabelColor>
+        <causesNeed>ReviaRaceBloodthirstNeed</causesNeed>
+        <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <offset>0.14</offset>
+                    </li>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.14</offset>
+                    </li>
+                </capMods>
+                <statFactors>
+                    <IncomingDamageFactor>0.90</IncomingDamageFactor>
+                </statFactors>
+                <statOffsets>
+                    <ImmunityGainSpeed>0.2</ImmunityGainSpeed>
+                    <SmokeSensitivity>-0.08</SmokeSensitivity>
+                    <ToxicResistance>0.08</ToxicResistance>
+                    <MarketValue>250</MarketValue>
+                    <Suppressability>-0.30</Suppressability>
+                </statOffsets>
+            </li>
+        </stages>
+        <renderNodeProperties>
+            <li Class="Shashlichnik.PawnRenderNodeProperties_Animated">
+                <!--Tail 1-->
+                <debugLabel>Tail1</debugLabel>
+                <texPath>Things/Animated/Tail/Tail1/1</texPath>
+                <colorType>Hair</colorType>
+                <overrideMeshSize>(1, 1)</overrideMeshSize>
+                <parentTagDef>Body</parentTagDef>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <shaderTypeDef>CutoutComplex</shaderTypeDef>
+                <subworkerClasses>
+                    <li>Shashlichnik.PawnRenderSubWorker_RotateByRot</li>
+                    <li>Shashlichnik.PawnRenderSubWorker_AttachmentBody</li>
+                </subworkerClasses>
+                <drawData>
+                    <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+                    <defaultData>
+                        <layer>-10</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <offset>(-0.02, 0.03, -0.57)</offset>
+                    </dataNorth>
+                    <dataSouth>
+                        <offset>(-0.05, 0, -0.12)</offset>
+                    </dataSouth>
+                    <dataEast>
+                        <offset>(-0.20, 0, -0.42)</offset>
+                    </dataEast>
+                    <dataWest>
+                        <offset>(0.20, 0, -0.42)</offset>
+                    </dataWest>
+                </drawData>
+                <keyframeLines>
+                    <li>
+                        <keyframesTexPath>Things/Animated/Tail/Tail1/</keyframesTexPath>
+                        <keyframesCount>40</keyframesCount>
+                        <drawData>
+                            <scale>2.23</scale>
+                        </drawData>
+                    </li>
+                    <li>
+                        <keyframesTexPath>Things/Animated/Tail/Core/</keyframesTexPath>
+                        <keyframesCount>70</keyframesCount>
+                        <drawData>
+                            <scale>2.1</scale>
+                        </drawData>
+                    </li>
+                </keyframeLines>
+            </li>
+            <li Class="Shashlichnik.PawnRenderNodeProperties_Animated">
+                <!--Tail 2-->
+                <debugLabel>Tail2</debugLabel>
+                <texPath>Things/Animated/Tail/Tail1/1</texPath>
+                <colorType>Hair</colorType>
+                <overrideMeshSize>(1, 1)</overrideMeshSize>
+                <parentTagDef>Body</parentTagDef>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <shaderTypeDef>CutoutComplex</shaderTypeDef>
+                <subworkerClasses>
+                    <li>Shashlichnik.PawnRenderSubWorker_RotateByRot</li>
+                    <li>Shashlichnik.PawnRenderSubWorker_AttachmentBody</li>
+                </subworkerClasses>
+                <drawData>
+                    <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+                    <defaultData>
+                        <layer>-12</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <offset>(-0.02, 0.03, -0.57)</offset>
+                    </dataNorth>
+                    <dataSouth>
+                        <offset>(-0.05, 0, -0.12)</offset>
+                    </dataSouth>
+                    <dataEast>
+                        <offset>(-0.20, 0, -0.42)</offset>
+                    </dataEast>
+                    <dataWest>
+                        <offset>(0.20, 0, -0.42)</offset>
+                    </dataWest>
+                </drawData>
+                <keyframeLines>
+                    <li>
+                        <tickOffset>12</tickOffset>
+                        <keyframesTexPath>Things/Animated/Tail/Tail1/</keyframesTexPath>
+                        <keyframesCount>40</keyframesCount>
+                        <drawData>
+                            <scale>2.20</scale>
+                            <defaultData>
+                                <rotationOffset>18</rotationOffset>
+                            </defaultData>
+                        </drawData>
+                    </li>
+                    <li>
+                        <keyframesTexPath>Things/Animated/Tail/Left1/</keyframesTexPath>
+                        <keyframesCount>70</keyframesCount>
+                        <drawData>
+                            <scale>2.1</scale>
+                            <defaultData>
+                                <rotationOffset>356</rotationOffset>
+                            </defaultData>
+                            <dataEast>
+                                <layer>-19</layer>
+                            </dataEast>
+                            <dataWest>
+                                <layer>-11</layer>
+                            </dataWest>
+                        </drawData>
+                    </li>
+                </keyframeLines>
+            </li>
+            <li Class="Shashlichnik.PawnRenderNodeProperties_Animated">
+                <!--Tail 3-->
+                <debugLabel>Tail3</debugLabel>
+                <texPath>Things/Animated/Tail/Tail1/1</texPath>
+                <colorType>Hair</colorType>
+                <overrideMeshSize>(1, 1)</overrideMeshSize>
+                <parentTagDef>Body</parentTagDef>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <shaderTypeDef>CutoutComplex</shaderTypeDef>
+                <subworkerClasses>
+                    <li>Shashlichnik.PawnRenderSubWorker_RotateByRot</li>
+                    <li>Shashlichnik.PawnRenderSubWorker_AttachmentBody</li>
+                </subworkerClasses>
+                <drawData>
+                    <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+                    <defaultData>
+                        <layer>-13</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <offset>(-0.02, 0.03, -0.57)</offset>
+                    </dataNorth>
+                    <dataSouth>
+                        <offset>(-0.05, 0, -0.12)</offset>
+                    </dataSouth>
+                    <dataEast>
+                        <offset>(-0.20, 0, -0.42)</offset>
+                    </dataEast>
+                    <dataWest>
+                        <offset>(0.20, 0, -0.42)</offset>
+                    </dataWest>
+                </drawData>
+                <keyframeLines>
+                    <li>
+                        <tickOffset>114</tickOffset>
+                        <keyframesTexPath>Things/Animated/Tail/Tail1/</keyframesTexPath>
+                        <keyframesCount>40</keyframesCount>
+                        <drawData>
+                            <scale>2.20</scale>
+                            <defaultData>
+                                <rotationOffset>346</rotationOffset>
+                            </defaultData>
+                        </drawData>
+                    </li>
+                    <li>
+                        <keyframesTexPath>Things/Animated/Tail/Right1/</keyframesTexPath>
+                        <keyframesCount>70</keyframesCount>
+                        <drawData>
+                            <scale>2.1</scale>
+                            <dataEast>
+                                <layer>-11</layer>
+                            </dataEast>
+                            <dataWest>
+                                <layer>-19</layer>
+                            </dataWest>
+                        </drawData>
+                    </li>
+                </keyframeLines>
+            </li>
+            <li Class="Shashlichnik.PawnRenderNodeProperties_Animated">
+                <!--Tail 4-->
+                <debugLabel>Tail4</debugLabel>
+                <texPath>Things/Animated/Tail/Tail1/1</texPath>
+                <colorType>Hair</colorType>
+                <overrideMeshSize>(1, 1)</overrideMeshSize>
+                <parentTagDef>Body</parentTagDef>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <shaderTypeDef>CutoutComplex</shaderTypeDef>
+                <subworkerClasses>
+                    <li>Shashlichnik.PawnRenderSubWorker_RotateByRot</li>
+                    <li>Shashlichnik.PawnRenderSubWorker_AttachmentBody</li>
+                </subworkerClasses>
+                <drawData>
+                    <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+                    <defaultData>
+                        <layer>-14</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <offset>(-0.02, 0.03, -0.57)</offset>
+                    </dataNorth>
+                    <dataSouth>
+                        <offset>(-0.05, 0, -0.12)</offset>
+                    </dataSouth>
+                    <dataEast>
+                        <offset>(-0.20, 0, -0.42)</offset>
+                    </dataEast>
+                    <dataWest>
+                        <offset>(0.20, 0, -0.42)</offset>
+                    </dataWest>
+                </drawData>
+                <keyframeLines>
+                    <li>
+                        <tickOffset>9</tickOffset>
+                        <keyframesTexPath>Things/Animated/Tail/Tail1/</keyframesTexPath>
+                        <keyframesCount>40</keyframesCount>
+                        <drawData>
+                            <scale>2.10</scale>
+                            <defaultData>
+                                <rotationOffset>29</rotationOffset>
+                            </defaultData>
+                        </drawData>
+                    </li>
+                    <li>
+                        <keyframesTexPath>Things/Animated/Tail/Left2/</keyframesTexPath>
+                        <keyframesCount>70</keyframesCount>
+                        <drawData>
+                            <scale>2.1</scale>
+                            <dataEast>
+                                <layer>-19</layer>
+                            </dataEast>
+                            <dataWest>
+                                <layer>-11</layer>
+                            </dataWest>
+                        </drawData>
+                    </li>
+                </keyframeLines>
+            </li>
+            <li Class="Shashlichnik.PawnRenderNodeProperties_Animated">
+                <!--Tail 5-->
+                <debugLabel>Tail5</debugLabel>
+                <texPath>Things/Animated/Tail/Tail1/1</texPath>
+                <colorType>Hair</colorType>
+                <overrideMeshSize>(1, 1)</overrideMeshSize>
+                <parentTagDef>Body</parentTagDef>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <shaderTypeDef>CutoutComplex</shaderTypeDef>
+                <subworkerClasses>
+                    <li>Shashlichnik.PawnRenderSubWorker_RotateByRot</li>
+                    <li>Shashlichnik.PawnRenderSubWorker_AttachmentBody</li>
+                </subworkerClasses>
+                <drawData>
+                    <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+                    <defaultData>
+                        <layer>-11</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <offset>(-0.02, 0.03, -0.57)</offset>
+                    </dataNorth>
+                    <dataSouth>
+                        <offset>(-0.05, 0, -0.12)</offset>
+                    </dataSouth>
+                    <dataEast>
+                        <offset>(-0.20, 0, -0.42)</offset>
+                    </dataEast>
+                    <dataWest>
+                        <offset>(0.20, 0, -0.42)</offset>
+                    </dataWest>
+                </drawData>
+                <keyframeLines>
+                    <li>
+                        <tickOffset>117</tickOffset>
+                        <keyframesTexPath>Things/Animated/Tail/Tail1/</keyframesTexPath>
+                        <keyframesCount>40</keyframesCount>
+                        <drawData>
+                            <scale>2.00</scale>
+                            <defaultData>
+                                <rotationOffset>325</rotationOffset>
+                            </defaultData>
+                        </drawData>
+                    </li>
+                    <li>
+                        <keyframesTexPath>Things/Animated/Tail/Right2/</keyframesTexPath>
+                        <keyframesCount>70</keyframesCount>
+                        <drawData>
+                            <scale>2.1</scale>
+                            <dataEast>
+                                <layer>-11</layer>
+                                <rotationOffset>351</rotationOffset>
+                            </dataEast>
+                            <dataWest>
+                                <layer>-19</layer>
+                                <rotationOffset>9</rotationOffset>
+                            </dataWest>
+                        </drawData>
+                    </li>
+                </keyframeLines>
+            </li>
+        </renderNodeProperties>
+    </HediffDef>
+</Defs>

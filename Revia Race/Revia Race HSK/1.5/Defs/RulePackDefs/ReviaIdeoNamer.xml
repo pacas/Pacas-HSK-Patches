@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>ReviaHighIdeoNamer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ideoName->[creed] of the [colour] [icon]</li>
+        
+        <li>r_ideoAdjective->Skarnic</li>
+
+        <li>r_memberName->Skarnite</li>
+        <li>r_memberName->Skarnist</li>
+
+        <li>hyphenPrefix->[globalHyphenPrefix]</li>
+
+        <li>globalHyphenPrefix->neo</li>
+        <li>globalHyphenPrefix->archaeo</li>
+        
+        <li>creed->doctrine</li>
+        <li>creed->creed</li>
+        <li>creed->devotees</li>
+        <li>creed->way</li>
+        <li>creed->path</li>
+        <li>creed->disciples</li>
+        <li>creed->orthodoxy</li>
+        <li>creed->hierarchy</li>
+        <li>creed->covenant</li>
+
+        <li>colour->crimson</li>
+        <li>colour->vermillion</li>
+        <li>colour->obsidian</li>
+        <li>colour->incarnadine</li>
+        <li>colour->scarlet</li>
+
+        <li>icon->throne</li>
+        <li>icon->flame</li>
+        <li>icon->skull</li>
+        <li>icon->rose</li>
+        <li>icon->thorns</li>
+        <li>icon->shards</li>
+        <li>icon->sun</li>
+        <li>icon->moon</li>  
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>ReviaRaiderIdeoNamer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_ideoName->[creed] of [barbaricNoun]</li>
+        <li>r_ideoName->[creed] of [deity]</li>
+
+        <li>r_ideoAdjective->Skarnic</li>
+
+        <li>r_memberName->Skarnite</li>
+        <li>r_memberName->Skarnist</li>
+
+        <li>hyphenPrefix->[globalHyphenPrefix]</li>
+
+        <li>globalHyphenPrefix->neo</li>
+        <li>globalHyphenPrefix->archaeo</li>
+        <li>globalHyphenPrefix->anarcho</li>
+
+        <li>barbaricNoun->blood</li>
+        <li>barbaricNoun->gore</li>
+        <li>barbaricNoun->devastation</li>
+        <li>barbaricNoun->annihilation</li>
+        <li>barbaricNoun->destruction</li>
+        <li>barbaricNoun->the Apocalypse</li>
+        <li>barbaricNoun->bloodshed</li>
+      
+        <li>creed->way</li>
+        <li>creed->path</li>
+        <li>creed->zealots</li>
+
+        <li>deity->the Bloody Mistress</li>
+        <li>deity->the Great Devourer</li>
+        <li>deity->the Scourge</li>
+        <li>deity->the Bringer of End Times</li>
+        <li>deity->She Who Thirsts</li>
+        <li>deity->the Bloody Goddess</li>
+        <li>deity->the World-Eater</li>
+        <li>deity->the Crimson Moon</li>
+        <li>deity->the Bloodbringer</li>  
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef>
+    <defName>ReviaRangedGash</defName>
+    <label>gash</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been stabbed to death.</deathMessage>
+    <hediff>Gash</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+  <DamageDef>
+    <defName>ReviaMeleeGash</defName>
+    <label>gash</label>
+    <workerClass>DamageWorker_Cut</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been slashed to death.</deathMessage>
+    <hediff>Gash</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <impactSoundType>Slice</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <overkillPctToDestroyPart>0.4~1.0</overkillPctToDestroyPart>
+    <isRanged>false</isRanged>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <cutExtraTargetsCurve>
+      <points>
+        <li>0, 0</li>
+        <li>0.4, 1</li>
+        <li>0.8, 2</li>
+        <li>0.9, 3</li>
+        <li>1, 4</li>
+      </points>
+    </cutExtraTargetsCurve>
+    <cutCleaveBonus>1.4</cutCleaveBonus>
+  </DamageDef>
+</Defs>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="MakeableDrugBase">
+        <defName>ReviaRaceRedHaze</defName>
+        <label>Red Haze</label>
+        <description>A scarlet powder made from ground-up bloodstones. When taken, it is said that the user is given a small portion of Skarne's undying rage.</description>
+        <descriptionHyperlinks>
+            <HediffDef>ReviaRaceRedHazeFury</HediffDef>
+            <HediffDef>ReviaRaceRedHazeAddiction</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Drug/Yayo</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>600</WorkToMake>
+            <MarketValue>80</MarketValue>
+            <Mass>0.05</Mass>
+            <Bulk>0.1</Bulk>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>ReviaRaceBloodBenediction</researchPrerequisite>
+            <recipeUsers>
+                <li>ReviaBloodSigil</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <ReviaRaceBloodstone>1</ReviaRaceBloodstone>
+        </costList>
+        <techLevel>Medieval</techLevel>
+        <ingestible>
+            <foodType>Processed</foodType>
+            <drugCategory>Medical</drugCategory>
+            <baseIngestTicks>240</baseIngestTicks>
+            <ingestSound>Ingest_Snort</ingestSound>
+            <ingestHoldOffsetStanding>
+                <northDefault>
+                    <offset>(0.21,0,0.05)</offset>
+                </northDefault>
+            </ingestHoldOffsetStanding>
+            <ingestHoldUsesTable>false</ingestHoldUsesTable>
+            <ingestCommandString>Consume {0}</ingestCommandString>
+            <ingestReportString>Consuming {0}</ingestReportString>
+            <useEatingSpeedStat>false</useEatingSpeedStat>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>ReviaRaceRedHazeFury</hediffDef>
+                    <severity>1.00</severity>
+                    <doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+                </li>
+                <li Class="IngestionOutcomeDoer_OffsetNeed">
+                    <need>Rest</need>
+                    <offset>1.0</offset>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <chemical>ReviaRaceRedHaze</chemical>
+                <addictiveness>1.00</addictiveness>
+                <needLevelOffset>1.00</needLevelOffset>
+                <listOrder>1009</listOrder>
+            </li>
+        </comps>
+        <tradeTags>
+            <li>ExoticMisc</li>
+        </tradeTags>
+    </ThingDef>
+</Defs>

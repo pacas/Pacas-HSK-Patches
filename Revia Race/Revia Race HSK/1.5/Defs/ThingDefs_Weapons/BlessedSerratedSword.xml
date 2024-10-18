@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="WeaponMedievalBase">
+        <defName>ReviaBlessedSerratedSword</defName>
+        <label>Red Inquisitor</label>
+        <description>A cruel sword with a serrated blade, containing a hateful spirit.</description>
+        <weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<thingCategories>
+			<li>ReviaCategoryMelee</li>
+		</thingCategories>
+        <graphicData>
+            <texPath>Things/Item/Weapons/BSerratedsword</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <costStuffCount>100</costStuffCount>
+        <costList>
+            <ReviaRacePalestone>35</ReviaRacePalestone>
+            <ReviaBloodRune>1</ReviaBloodRune>
+            <ComponentMedieval>4</ComponentMedieval>
+        </costList>
+        <statBases>
+            <WorkToMake>25600</WorkToMake>
+            <Mass>1.50</Mass>
+            <Bulk>3.5</Bulk>
+            <MeleeCounterParryBonus>0.4</MeleeCounterParryBonus>
+        </statBases>
+        <equippedStatOffsets>
+            <MeleeCritChance>0.2</MeleeCritChance>
+			<MeleeParryChance>0.5</MeleeParryChance>
+			<MeleeDodgeChance>0.2</MeleeDodgeChance>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>ReviaRaceConsecratedWeaponry</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+                <Intellectual>9</Intellectual>
+            </skillRequirements>
+        </recipeMaker>
+        <stuffCategories>
+            <li>StrongMetallic</li>
+        </stuffCategories>
+        <weaponTags>
+            <li>ReviaMeleeLegendary</li>
+        </weaponTags>
+        <comps>
+            <li Class="CompProperties_Biocodable"/>
+            <li Class="ReviaRace.Comps.CompProperties_LifeLeech">
+                <LeechStrength>1.50</LeechStrength>
+            </li>
+        </comps>
+        <tools>
+            <li Class="CombatExtended.ToolCE">
+                <label>handle</label>
+                <capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.2</cooldownTime>
+				<chanceFactor>0.1</chanceFactor>
+				<armorPenetrationBlunt>4</armorPenetrationBlunt>
+                <linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>point</label>
+                <capacities>
+                    <li>Gash</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>1.66</cooldownTime>
+                <chanceFactor>1.062</chanceFactor>
+                <armorPenetrationBlunt>1.5</armorPenetrationBlunt>
+				<armorPenetrationSharp>4.8</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+            </li>
+            <li Class="CombatExtended.ToolCE">
+                <label>edge</label>
+                <capacities>
+                    <li>Gash</li>
+                </capacities>
+                <power>22</power>
+                <cooldownTime>1.7</cooldownTime>
+                <chanceFactor>1.322</chanceFactor>
+                <armorPenetrationBlunt>6.5</armorPenetrationBlunt>
+				<armorPenetrationSharp>3.7</armorPenetrationSharp>
+                <linkedBodyPartsGroup>Edge</linkedBodyPartsGroup>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>

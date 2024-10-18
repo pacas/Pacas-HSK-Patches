@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>ReviaRaceConsecrateBloodRune</defName>
+    <label>Consecrate Blood Rune</label>
+    <description>Consecrate a Blood Rune in the name of Skarne, the bloody god.</description>
+    <jobString>Consecrating Blood Rune.</jobString>
+    <workAmount>25600</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <skillRequirements>
+      <Intellectual>10</Intellectual>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ReviaBloodRuneBlank</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ReviaRacePalestone</li>
+          </thingDefs>
+        </filter>
+        <count>500</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ReviaRaceBloodstone</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <ReviaBloodRune>1</ReviaBloodRune>
+    </products>
+    <recipeUsers>
+      <li>ReviaBloodSigil</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

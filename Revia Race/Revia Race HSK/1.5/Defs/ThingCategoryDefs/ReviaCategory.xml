@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingCategoryDef>
+        <defName>ReviaCategoryArtifact</defName>
+        <label>Revia Artifacts</label>
+        <parent>Artifacts</parent>
+    </ThingCategoryDef>
+  
+    <ThingCategoryDef>
+        <defName>ReviaCategoryMelee</defName>
+        <label>Revia Melee</label>
+        <parent>WeaponsMelee</parent>
+    </ThingCategoryDef>
+</Defs>

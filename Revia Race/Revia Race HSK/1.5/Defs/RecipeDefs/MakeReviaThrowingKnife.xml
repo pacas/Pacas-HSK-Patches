@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RecipeDef ParentName="RangedWeaponRecipeBase">
+        <defName>MakeReviaThrowingKnife</defName>
+        <label>make throwing knives x10</label>
+        <description>Craft 10 throwing knives.</description>
+        <jobString>Making throwing knives.</jobString>
+        <workAmount>1000</workAmount>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <skillRequirements>
+            <Crafting>3</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ReviaThrowingKnife>10</ReviaThrowingKnife>
+        </products>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>FueledSmithy</li>
+        </recipeUsers>
+        <researchPrerequisite>ReviaRaceBasicEquipment</researchPrerequisite>
+    </RecipeDef>
+</Defs>

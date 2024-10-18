@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>ReviaBaseNamerDeity</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityName->[name]</li>
+
+        <li>name->the [adjective] [noun]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>ReviaHighNamerDeity</defName>
+    <include>
+      <li>ReviaBaseNamerDeity</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>adjective->vermillion</li>
+        <li>adjective->scarlet</li>
+        <li>adjective->incarnadine</li>
+        <li>adjective->implacable</li>
+        <li>adjective->stalwart</li>
+        <li>adjective->unyielding</li>
+
+        <li>noun->rose</li>
+        <li>noun->flower</li>
+        <li>noun->thorns</li>
+        <li>noun->lady</li>
+        <li>noun->maiden</li>
+        <li>noun->mistress</li>
+        <li>noun->flame</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>ReviaRaiderNamerDeity</defName>
+    <include>
+      <li>ReviaBaseNamerDeity</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>adjective->bloody</li>
+        <li>adjective->scarlet</li>
+        <li>adjective->incarnadine</li>
+        <li>adjective->devouring</li>
+        <li>adjective->destructive</li>
+        <li>adjective->bladed</li>
+        <li>adjective->bone-strewn</li>
+        <li>adjective->gore-draped</li>
+
+        <li>noun->thorns</li>
+        <li>noun->flower</li>
+        <li>noun->rose</li>
+        <li>noun->flame</li>
+        <li>noun->vixen</li>
+        <li>noun->slayer</li>
+        <li>noun->scourge</li>
+        <li>noun->world-eater</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>ReviaRaiderNamerDeityType</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->[reviaDeity] of [memeConcept]</li>
+
+        <li>reviaDeity->goddess</li>
+        <li>reviaDeity->scourge</li>
+        <li>reviaDeity->harbinger</li>
+        <li>reviaDeity->purveyor</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>ReviaHighNamerDeityType</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_deityType->[reviaDeity] of [memeConcept]</li>
+
+        <li>reviaDeity->goddess</li>
+        <li>reviaDeity->divine rose</li>
+        <li>reviaDeity->rose</li>
+        <li>reviaDeity->mistress</li>
+        <li>reviaDeity->maiden</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

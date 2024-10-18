@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RecipeDef>
+        <workerClass>ReviaRace.Workers.SacrificeWorker</workerClass>
+        <defName>ReviaRaceSacrificeCorpse</defName>
+        <label>sacrifice humanlike</label>
+        <description>Sacrifice a humanlike corpse to honour the bloody gods of the Revian pantheon.</description>
+        <jobString>Sacrificing to the gods.</jobString>
+        <workAmount>450</workAmount>
+        <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+        <workSkill>Cooking</workSkill>
+        <efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+        <effectWorking>ButcherFlesh</effectWorking>
+        <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+        <interruptIfIngredientIsRotting>true</interruptIfIngredientIsRotting>
+        <autoStripCorpses>false</autoStripCorpses>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Corpses</li>
+            </categories>
+            <disallowedCategories>
+                <li>CorpsesMechanoid</li>
+                <li>CorpsesFish</li>
+                <li>CorpsesAnimal</li>
+        		<li MayRequire="Ludeon.RimWorld.Anomaly">CorpsesEntity</li>
+            </disallowedCategories>
+            <specialFiltersToDisallow>
+                <li>AllowRotten</li>
+            </specialFiltersToDisallow>
+        </fixedIngredientFilter>
+        <products>
+            <ReviaRaceBloodstone>1</ReviaRaceBloodstone>
+        </products>
+        <recipeUsers>
+            <li>ReviaSacrificeSpot</li>
+            <li>ReviaBloodSigil</li>
+        </recipeUsers>
+    </RecipeDef>
+</Defs>

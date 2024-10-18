@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ScenarioDef Name="ReviaExclave">
+        <defName>ReviaExclave</defName>
+        <label>Revian Frontiersmen</label>
+        <description>After one too many arguments with the High Templar of your hometown, you and two of your fellows decide to embark on an adventure. An adventure to establish a Revian exclave where you were free to establish your own rules. Two quadrums of wandering later, and you decide to settle down before your supplies ran out completely.</description>
+        <scenario>
+            <summary>Three Revian renegades, trying to establish their independence.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>ReviaPlayerColony</factionDef>
+            </playerFaction>
+            <parts>
+                <!-- Game start dialog -->
+                <li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<textKey>After one too many arguments with the High Templar of your hometown, you and two of your fellows decide to embark on an adventure. An adventure to establish a Revian exclave where you were free to establish your own rules. Two quadrums of wandering later, and you decide to settle down before your supplies ran out completely.</textKey>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+                
+                <!-- Config pages -->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+                  <def>ConfigurePawnsKindDefs</def>
+                  <pawnChoiceCount>8</pawnChoiceCount>
+                  <leftBehindPawnKind>ReviaRaceColonist</leftBehindPawnKind>
+                  <kindCounts>
+                    <li>
+                      <kindDef>ReviaRaceColonist</kindDef>
+                      <count>3</count>
+                      <requiredAtStart>true</requiredAtStart>
+                    </li>
+                  </kindCounts>
+                </li>
+
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>Standing</method>
+                    <visible>false</visible>
+                </li>
+        
+                <!-- Starting research -->
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>Stonecutting</project>
+                </li>
+
+                <!--Player starting things-->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>500</count>
+                </li>
+
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Pemmican</thingDef>
+                    <count>500</count>
+                </li>
+
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MedicineHerbal</thingDef>
+                    <count>20</count>
+                </li>
+
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ReviaThrowingKnife</thingDef>
+                    <count>20</count>
+                </li>
+
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ReviaSerratedScythe</thingDef>
+                    <stuff>Plasteel</stuff>
+                </li>
+
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ReviaRaceBloodstone</thingDef>
+                    <count>4</count>
+                </li>
+      
+                <!-- Scatter some things near player start -->
+                <li Class="ScenPart_ScatterThingsNearPlayerStart">
+                    <def>ScatterThingsNearPlayerStart</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>150</count>
+                </li>
+
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Plasteel</thingDef>
+                    <count>100</count>
+                </li>
+        
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentMedieval</thingDef>
+                    <count>15</count>
+                </li>
+        
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>5</count>
+                </li>
+        
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Mechanism</thingDef>
+                    <count>2</count>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+</Defs>

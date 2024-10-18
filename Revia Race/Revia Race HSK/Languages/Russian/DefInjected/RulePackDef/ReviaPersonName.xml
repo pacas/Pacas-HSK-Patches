@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <NamerPersonRevia.rulePack.rulesStrings>
+    <li>name->[firstName] [tribeName]</li>
+
+    <li>tribeName->[animal_1]а</li>
+    <li>tribeName->[animal_2]а</li>
+	<li>tribeName->[animal_3]а</li>
+    <li>tribeName->[feature_1]ая [animal_1]а</li>
+    <li>tribeName->[feature_1]ая [animal_2]а</li>
+	<li>tribeName->[feature_1]ая [animal_3]а</li>
+    <li>tribeName->[feature_2]ая [animal_1]а</li>
+    <li>tribeName->[feature_2]ая [animal_2]а</li>
+	<li>tribeName->[feature_2]ая [animal_3]а</li>
+    <li>tribeName->[feature_3]ая [animal_1]а</li>
+    <li>tribeName->[feature_3]ая [animal_2]а</li>
+	<li>tribeName->[feature_3]ая [animal_3]а</li>
+    <li>tribeName->[animal_1]е[interactionLiving]</li>
+    <li>tribeName->[animal_2]о[interactionLiving]</li>
+    <li>tribeName->[animal_3]о[interactionLiving]</li>
+    <li>tribeName->[interactionLiving2] [animal_1]ы</li>
+    <li>tribeName->[interactionLiving2] [animal_2]ы</li>
+    <li>tribeName->[interactionLiving2] [animal_3]и</li>
+    <li>tribeName->[interactionLiving2] [animal_1]</li>
+    <li>tribeName->[interactionLiving2] [animal_2]</li>
+    <li>tribeName->[interactionNonLiving]ая [object]</li>
+    <li>tribeName->[interactionNonLiving]ое [object_1]</li>
+    <li>tribeName->[interactionNonLiving]ый [object_2]</li>
+    <li>tribeName->[feature_1]ая [object]</li>
+    <li>tribeName->[feature_1]ое [object_1]</li>
+    <li>tribeName->[feature_1]ый [object_2]</li>
+    <li>tribeName->[feature_2]ая [object_a]</li>
+    <li>tribeName->[feature_2]ое [object_1a]</li>
+    <li>tribeName->[feature_2]ый [object_2a]</li>
+
+    <li>firstName->Абей</li>
+    <li>firstName->Агвеза</li>
+    <li>firstName->Агуара</li>
+    <li>firstName->Азерия</li>
+    <li>firstName->Аката</li>
+    <li>firstName->Алепа</li>
+    <li>firstName->Вульпина</li>
+    <li>firstName->Делпра</li>
+    <li>firstName->Гиню</li>
+    <li>firstName->Зори</li>
+    <li>firstName->Имунгуш</li>
+    <li>firstName->Кашта</li>
+    <li>firstName->Кетту</li>
+    <li>firstName->Кода</li>
+    <li>firstName->Кольха</li>
+    <li>firstName->Кона</li>
+    <li>firstName->Курукен</li>
+    <li>firstName->Лапса</li>
+    <li>firstName->Лиза</li>
+    <li>firstName->Ломбара</li>
+    <li>firstName->Ломдхи</li>
+    <li>firstName->Любри</li>
+    <li>firstName->Люмори</li>
+    <li>firstName->Мела</li>
+    <li>firstName->Микуэй</li>
+    <li>firstName->Нари</li>
+    <li>firstName->Рапоша</li>
+    <li>firstName->Реви</li>
+    <li>firstName->Руба</li>
+    <li>firstName->Рюка</li>
+    <li>firstName->Сакрама</li>
+    <li>firstName->Сарди</li>
+    <li>firstName->Сионна</li>
+    <li>firstName->Сиалла</li>
+    <li>firstName->Тао</li>
+    <li>firstName->Тивула</li>
+    <li>firstName->Тюлькю</li>
+    <li>firstName->Фоксия</li>
+    <li>firstName->Фукузе</li>
+    <li>firstName->Хлова</li>
+    <li>firstName->Хицу</li>
+    <li>firstName->Хули</li>
+    <li>firstName->Шиаль</li>
+    <li>firstName->Щуан</li>
+    <li>firstName->Эббия</li>
+    <li>firstName->Юнег</li>
+
+    <li>feature_1->Красн</li>
+    <li>feature_1->Ал</li>
+    <li>feature_1->Багров</li>
+    <li>feature_1->Кровав</li>
+    <li>feature_1->Розов</li>
+    <li>feature_1->Жёлт</li>
+    <li>feature_1->Зелён</li>
+    <li>feature_1->Голуб</li>
+    <li>feature_1->Лазурн</li>
+    <li>feature_1->Пурпурн</li>
+    <li>feature_1->Бел</li>
+    <li>feature_1->Чёрн</li>
+    <li>feature_1->Пёстр</li>
+    <li>feature_1->Бур</li>
+
+    <li>feature_1->Солнечн</li>
+    <li>feature_1->Полуденн</li>
+    <li>feature_1->Закатн</li>
+    <li>feature_1->Сумрачн</li>
+    <li>feature_1->Сумеречн</li>
+    <li>feature_1->Ночн</li>
+    <li>feature_1->Лунн</li>
+    <li>feature_1->Звёздн</li>
+    <li>feature_1->Облачн</li>
+    <li>feature_1->Крепк</li>
+    <li>feature_1->Твёрд</li>
+    <li>feature_1->Надёжн</li>
+    <li>feature_1->Прочн</li>
+    <li>feature_1->Волшебн</li>
+	<li>feature_1->Чудесн</li>
+    <li>feature_1->Ядовит</li>
+
+    <li>feature_2->Золот</li>
+    <li>feature_2->Серебрян</li>
+    <li>feature_2->Медн</li>
+    <li>feature_2->Бронзов</li>
+	<li>feature_2->Железн</li>
+    <li>feature_2->Стальн</li>
+    <li>feature_2->Пласталев</li>
+    <li>feature_2->Уранов</li>
+    <li>feature_2->Титанов</li>
+    <li>feature_2->Стеклянн</li>
+    <li>feature_2->Оловянн</li>
+    <li>feature_2->Деревянн</li>
+	<li>feature_2->Костян</li>
+    <li>feature_2->Каменн</li>
+    <li>feature_2->Гранитн</li>
+    <li>feature_2->Мраморн</li>
+    <li>feature_2->Нефритов</li>
+    <li>feature_2->Обсидианов</li>
+    <li>feature_2->Бриллиантов</li>
+    <li>feature_2->Рубинов</li>
+    <li>feature_2->Сапфиров</li>
+    <li>feature_2->Изумрудн</li>
+    <li>feature_2->Гранатов</li>
+    <li>feature_2->Янтарн</li>
+    <li>feature_2->Малахитов</li>
+    <li>feature_2->Яхонтов</li>
+
+    <li>feature_3->Быстр</li>
+    <li>feature_3->Ловк</li>
+    <li>feature_3->Хитр</li>
+    <li>feature_3->Смел</li>
+    <li>feature_3->Храбр</li>
+    <li>feature_3->Умн</li>
+    <li>feature_3->Мудр</li>
+	<li>feature_3->Неграмот</li>
+    <li>feature_3->Зл</li>
+	<li>feature_3->Жесток</li>
+    <li>feature_3->Добр</li>
+    <li>feature_3->Хвостат</li>
+    <li>feature_3->Ушаст</li>
+    <li>feature_3->Зубаст</li>
+    <li>feature_3->Клыкаст</li>
+    <li>feature_3->Когтист</li>
+    <li>feature_3->Летающ</li>
+    <li>feature_3->Летуч</li>
+    <li>feature_3->Прыгающ</li>
+    <li>feature_3->Скачущ</li>
+
+	<li>animal_1->Гусениц</li>
+    <li>animal_1->Куниц</li>
+    <li>animal_1->Куриц</li>
+    <li>animal_1->Лисиц</li>
+    <li>animal_1->Львиц</li>
+    <li>animal_1->Птиц</li>
+    <li>animal_1->Тигриц</li>
+    <li>animal_1->Синиц</li>
+    <li>animal_1->Ящериц</li>
+
+    <li>animal_2->Акул</li>
+    <li>animal_2->Анаконд</li>
+    <li>animal_2->Антилоп</li>
+    <li>animal_2->Бумалоп</li>
+    <li>animal_2->Бумкрыс</li>
+    <li>animal_2->Ворон</li>
+    <li>animal_2->Выдр</li>
+    <li>animal_2->Гиен</li>
+    <li>animal_2->Жаб</li>
+    <li>animal_2->Зебр</li>
+    <li>animal_2->Игуан</li>
+    <li>animal_2->Коз</li>
+    <li>animal_2->Крыс</li>
+    <li>animal_2->Кобр</li>
+    <li>animal_2->Лис</li>
+    <li>animal_2->Обезьян</li>
+    <li>animal_2->Пантер</li>
+    <li>animal_2->Пум</li>
+    <li>animal_2->Пчел</li>
+    <li>animal_2->Рыб</li>
+    <li>animal_2->Сов</li>
+    <li>animal_2->Стрекоз</li>
+    <li>animal_2->Токсилоп</li>
+    <li>animal_2->Шиншилл</li>
+
+    <li>animal_3->Альпак</li>
+    <li>animal_3->Бабочк</li>
+    <li>animal_3->Белк</li>
+	<li>animal_3->Бурузубк</li>
+    <li>animal_3->Гадюк</li>
+    <li>animal_3->Зайк</li>
+    <li>animal_3->Индейк</li>
+    <li>animal_3->Ласк</li>
+    <li>animal_3->Мартышк</li>
+    <li>animal_3->Мошк</li>
+    <li>animal_3->Мух</li>
+    <li>animal_3->Росомах</li>
+    <li>animal_3->Собак</li>
+    <li>animal_3->Сойк</li>
+    <li>animal_3->Слоних</li>
+    <li>animal_3->Сорок</li>
+    <li>animal_3->Утк</li>
+    <li>animal_3->Чайк</li>
+    <li>animal_3->Черепах</li>
+    <li>animal_3->Щук</li>
+
+    <li>interactionLiving->лов</li>
+    <li>interactionLiving->вод</li>
+    <li>interactionLiving->ед</li>
+    <li>interactionLiving->крад</li>
+    <li>interactionLiving->бой</li>
+    <li>interactionLiving->стрел</li>
+    <li>interactionLiving->убийца</li>
+    <li>interactionLiving->люб</li>
+
+    <li>interactionLiving2->Смерть</li>
+    <li>interactionLiving2->Гибель</li>
+    <li>interactionLiving2->Беда</li>
+	<li>interactionLiving2->Горе</li>
+	<li>interactionLiving2->Гроза</li>
+    <li>interactionLiving2->Надежда</li>
+    <li>interactionLiving2->Защита</li>
+    <li>interactionLiving2->Спасение</li>
+    <li>interactionLiving2->Неволя</li>
+    <li>interactionLiving2->Убийца</li>
+	<li>interactionLiving2->Победитель</li>
+    <li>interactionLiving2->Спаситель</li>
+    <li>interactionLiving2->Похититель</li>
+    <li>interactionLiving2->Обманщица</li>
+    <li>interactionLiving2->Пленница</li>
+    <li>interactionLiving2->Рабыня</li>
+    <li>interactionLiving2->Мать</li>
+    <li>interactionLiving2->Дочь</li>
+    <li>interactionLiving2->Сестра</li>
+    <li>interactionLiving2->Дитя</li>
+
+    <li>object->Скала</li>
+    <li>object->Тьма</li>
+	<li>object->Туча</li>
+    <li>object->Глубина</li>
+    <li>object->Сосна</li>
+    <li>object->Ель</li>
+    <li>object->Пихта</li>
+    <li>object->Драгоценность</li>
+    <li>object->Цепь</li>
+    <li>object->Голова</li>
+    <li>object->Кость</li>
+    <li>object->Бронза</li>
+    <li>object->Сталь</li>
+    <li>object->Пласталь</li>
+
+    <li>object_1->Облако</li>
+    <li>object_1->Золото</li>
+    <li>object_1->Серебро</li>
+    <li>object_1->Медь</li>
+    <li>object_1->Железо</li>
+	<li>object_1->Стекло</li>
+    <li>object_1->Олово</li>
+    <li>object_1->Дерево</li>
+    <li>object_1->Древо</li>
+
+    <li>object_2->Череп</li>
+	<li>object_2->Шлем</li>
+	<li>object_2->Доспех</li>
+    <li>object_2->Уран</li>
+    <li>object_2->Титан</li>
+    <li>object_2->Камень</li>
+    <li>object_2->Гранит</li>
+    <li>object_2->Мрамор</li>
+    <li>object_2->Нефрит</li>
+    <li>object_2->Обсидиан</li>
+    <li>object_2->Бриллиант</li>
+    <li>object_2->Рубин</li>
+    <li>object_2->Сапфир</li>
+    <li>object_2->Изумруд</li>
+    <li>object_2->Гранат</li>
+    <li>object_2->Янтарь</li>
+    <li>object_2->Малахит</li>
+    <li>object_2->Яхонт</li>
+
+    <li>object_a->Скала</li>
+    <li>object_a->Тьма</li>
+	<li>object_a->Туча</li>
+    <li>object_a->Глубина</li>
+    <li>object_a->Сосна</li>
+    <li>object_a->Ель</li>
+    <li>object_a->Пихта</li>
+    <li>object_a->Драгоценность</li>
+    <li>object_a->Цепь</li>
+    <li>object_a->Голова</li>
+    <li>object_a->Кость</li>
+    <li>object_1a->Облако</li>
+    <li>object_1a->Слово</li>
+    <li>object_1a->Древо</li>
+    <li>object_2a->Череп</li>
+    <li>object_2a->Шлем</li>
+    <li>object_2a->Доспех</li>
+
+    <li>interactionNonLiving->Разорван</li>
+    <li>interactionNonLiving->Разрушенн</li>
+    <li>interactionNonLiving->Раздробленн</li>
+	<li>interactionNonLiving->Разбит</li>
+    <li>interactionNonLiving->Поверженн</li>
+    <li>interactionNonLiving->Украшенн</li>
+    <li>interactionNonLiving->Неразрушим</li>
+    <li>interactionNonLiving->Невидим</li>
+	<li>interactionNonLiving->Спрятанн</li>
+	<li>interactionNonLiving->Тайн</li>
+    <li>interactionNonLiving->Украденн</li>
+
+  </NamerPersonRevia.rulePack.rulesStrings>
+
+</LanguageData>

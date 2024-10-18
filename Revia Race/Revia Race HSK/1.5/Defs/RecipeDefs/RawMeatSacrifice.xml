@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <RecipeDef>
+        <defName>ReviaRaceSacrificeRawMeat</defName>
+        <label>sacrifice raw meat</label>
+        <description>Sacrifice some raw meat to honour the bloody gods of the Revian pantheon.</description>
+        <jobString>Sacrificing to the gods.</jobString>
+        <workAmount>240</workAmount>
+        <workSpeedStat>ButcheryFleshSpeed</workSpeedStat>
+        <workSkill>Cooking</workSkill>
+        <efficiencyStat>ButcheryFleshEfficiency</efficiencyStat>
+        <effectWorking>ButcherFlesh</effectWorking>
+        <soundWorking>Recipe_ButcherCorpseFlesh</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+        <fixedIngredientFilter>
+            <categories>
+                <li>MeatRaw</li>
+            </categories>
+            <disallowedThingDefs>
+		        <li>soylentgreen</li>
+		    </disallowedThingDefs>
+            <specialFiltersToDisallow>
+                <li>AllowPlantFood</li>
+                <li>AllowRotten</li>
+            </specialFiltersToDisallow>
+        </fixedIngredientFilter>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>MeatRaw</li>
+                    </categories>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <products>
+            <ReviaRacePalestone>32</ReviaRacePalestone>
+        </products>
+        <recipeUsers>
+            <li>ReviaSacrificeSpot</li>
+            <li>ReviaBloodSigil</li>
+        </recipeUsers>
+    </RecipeDef>
+</Defs>

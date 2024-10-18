@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ReviaClaws</defName>
+        <label>claws</label>
+        <hediffClass>Hediff_Implant</hediffClass>
+        <description>Revia attack</description>
+        <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+        <stages>
+            <li>
+                <becomeVisible>False</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>claw</label>
+                        <capacities>
+                            <li>Scratch</li>
+                        </capacities>
+                        <power>4</power>
+                        <cooldownTime>1.26</cooldownTime>
+                        <armorPenetrationBlunt>0.3</armorPenetrationBlunt>
+                        <armorPenetrationSharp>0.7</armorPenetrationSharp>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <addedPartProps>
+            <isGoodWeapon>true</isGoodWeapon>
+            <solid>true</solid>
+            <partEfficiency>1.00</partEfficiency>
+            <betterThanNatural>False</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ReviaTeeth</defName>
+        <label>teeth</label>
+        <description>Revia attack</description>
+        <hediffClass>Hediff_Implant</hediffClass>
+        <countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+        <stages>
+            <li>
+                <becomeVisible>False</becomeVisible>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li Class="CombatExtended.ToolCE">
+                        <label>teeth</label>
+                        <capacities>
+                            <li>Bite</li>
+                        </capacities>
+                        <power>8</power>
+                        <cooldownTime>1.75</cooldownTime>
+                        <armorPenetrationSharp>0.980</armorPenetrationSharp>
+                        <armorPenetrationBlunt>0.550</armorPenetrationBlunt>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+        <addedPartProps>
+            <isGoodWeapon>true</isGoodWeapon>
+            <solid>true</solid>
+            <partEfficiency>1.00</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+    </HediffDef>
+</Defs>

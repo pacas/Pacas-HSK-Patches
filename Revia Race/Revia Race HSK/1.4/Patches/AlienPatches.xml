@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "ReviaRaceAlien"]/alienRace/thoughtSettings/ateThoughtSpecific/li[1]/raceList</xpath>
+					<value>
+						<li MayRequire="skyarkhangel.asarirace">Alien_Asari</li>
+                        <li MayRequire="runnelatki.rabbieracemod.sk">Rabbie</li>
+                        <li MayRequire="nemonian.my">Alien_Moyo</li>
+                        <li MayRequire="aoba.redmoyo">Alien_RedMoyo</li>
+                        <li MayRequire="farmradish.nyaron">Alien_Nyaron</li>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName = "ReviaRaceAlien"]/alienRace/thoughtSettings/ateThoughtSpecific/li[2]/raceList</xpath>
+					<value>
+						<li MayRequire="skyarkhangel.asarirace">Alien_Asari</li>
+                        <li MayRequire="runnelatki.rabbieracemod.sk">Rabbie</li>
+                        <li MayRequire="nemonian.my">Alien_Moyo</li>
+                        <li MayRequire="aoba.redmoyo">Alien_RedMoyo</li>
+                        <li MayRequire="farmradish.nyaron">Alien_Nyaron</li>
+					</value>
+				</li>	
+			</operations>
+	</Operation>
+</Patch>

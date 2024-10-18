@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BackstoryDef>
+    <defName>ReviaRaceBackstoryAdultWarsmith</defName>
+    <title>Revian Warsmith</title>
+    <titleShort>Warsmith</titleShort>
+    <baseDesc>[PAWN_nameDef] is a master craftsman of the Revia. [PAWN_pronoun] works metal like a potter would clay, fashioning items of incredible quality.</baseDesc>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>ReviaRaceBackstory</li>
+      <li>ReviaRaceTemplar</li>
+    </spawnCategories>
+    <skillGains>
+      <Crafting>6</Crafting>
+      <Construction>2</Construction>
+      <Animals>-2</Animals>
+    </skillGains>
+  </BackstoryDef>
+</Defs>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BackstoryDef>
+    <defName>ReviaRaceBackstoryChildHerbSniffer</defName>
+    <title>Revian Herb Sniffer</title>
+    <titleShort>Sniffer</titleShort>
+    <baseDesc>[PAWN_nameDef] was blessed with an exceptional sense of smell. [PAWN_pronoun] was often used to find medicinal herbs for use in apothecaries, as well as small prey for the dinner table.</baseDesc>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>ReviaRaceBackstory</li>
+      <li>ReviaRaceTemplar</li>
+    </spawnCategories>
+    <skillGains>
+      <Intellectual>2</Intellectual>
+      <Plants>4</Plants>
+      <Shooting>-2</Shooting>
+      <Melee>-2</Melee>
+    </skillGains>
+    <!--<linkedBackstory>ReviaRaceBackstoryAdultFleshBinder</linkedBackstory>-->
+  </BackstoryDef>
+</Defs>

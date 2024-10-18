@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <CultureDef>
+        <defName>ReviaRaceHighCulture</defName>
+        <label>Imperial Revian</label>
+        <description>A fanatical theocratic culture revolving around the worship of a bloody goddess.</description>
+        <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">ReviaHighIdeoNamer</ideoNameMaker>
+        <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">ReviaHighNamerDeity</deityNameMaker>
+        <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">ReviaHighNamerDeityType</deityTypeMaker>
+        <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">ReviaHighNamerLeader</leaderTitleMaker>
+        <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">ReviaNamerFestival</festivalNameMaker>
+        <allowedPlaceTags>
+            <li>OriginTribal</li>
+        </allowedPlaceTags>
+        <iconPath>World/ReviaEmblem</iconPath>
+        <iconColor>(0.8, 0.2, 0.05)</iconColor>
+        <styleItemTags>
+            <li>
+                <tag>Rural</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoBeard</tag>
+                <baseWeight>10</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
+                <tag>NoTattoo</tag>
+                <baseWeight>10</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+    </CultureDef>
+</Defs>

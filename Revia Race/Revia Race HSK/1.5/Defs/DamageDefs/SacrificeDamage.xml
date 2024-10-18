@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef ParentName="CutBase">
+    <defName>ReviaRaceSacrificeDamage</defName>
+    <label>torn out</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <deathMessage>{0} has died from ritual-inflicted wounds.</deathMessage>
+    <hediff>SurgicalCut</hediff>
+    <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <canInterruptJobs>false</canInterruptJobs>
+    <impactSoundType />
+    <armorCategory />
+  </DamageDef>
+</Defs>

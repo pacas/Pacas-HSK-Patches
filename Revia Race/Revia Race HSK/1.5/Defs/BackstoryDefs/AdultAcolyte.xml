@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BackstoryDef>
+    <defName>ReviaRaceBackstoryAdultAcolyte</defName>
+    <title>Revian Skarne Acolyte</title>
+    <titleShort>Acolyte</titleShort>
+    <baseDesc>[PAWN_nameDef] is an acolyte of the bloody god of the Revia. [PAWN_pronoun] often sacrifices animals, humanlikes or any other living creature that [PAWN_pronoun] can get a hold of. Despite having the fiery fervour to deliver truly gripping sermons, [PAWN_pronoun] is often shunned by animals and humans alike, perhaps fearing that they would be next on the altar.</baseDesc>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>ReviaRaceBackstory</li>
+    </spawnCategories>
+    <skillGains>
+      <Medicine>3</Medicine>
+      <Social>-1</Social>
+      <Animals>-2</Animals>
+    </skillGains>
+  </BackstoryDef>
+</Defs>

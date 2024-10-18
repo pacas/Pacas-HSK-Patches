@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>ReviaRaceCraftGreaterBloodRune</defName>
+    <label>Craft Greater Blood Rune</label>
+    <description>Craft an inert Greater Blood Rune.</description>
+    <jobString>Carving Greater Blood Rune.</jobString>
+    <workAmount>51200</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Artistic</workSkill>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <skillRequirements>
+      <Artistic>12</Artistic>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Jade</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>120</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>12.5</count>
+      </li>
+    </ingredients>
+    <products>
+      <ReviaGreaterBloodRuneBlank>1</ReviaGreaterBloodRuneBlank>
+    </products>
+    <recipeUsers>
+      <li>TableSculpting</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Ideology</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/PreceptDef[defName="IdeoBuilding"]/buildingDefChances</xpath>
+                    <value>
+                        <ReviaBloodSigil>0</ReviaBloodSigil>
+                    </value>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>Defs/PreceptDef[defName="IdeoBuilding"]/buildingRoomRequirementsFixed/li[labelKey="RoomRequirementNoProductionFacilities"]</xpath>
+                </li>
+            </operations>
+        </match>
+        <success>Always</success>
+    </Operation>
+</Patch>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="SK_ResourceBase">
+        <defName>ReviaGreaterBloodRune</defName>
+        <label>Greater Blood Rune</label>
+        <description>A symbol of Skarne, carefully carved on a richly decorated disc. Pulsing with a malevolent, bloodthirsty spirit.</description>
+        <techLevel>Neolithic</techLevel>
+        <graphicData>
+            <texPath>Things/Item/Misc/Ritual/ReviaGreaterBloodRune</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+            <color>(255, 255, 255)</color>
+        </graphicData>
+        <stackLimit>75</stackLimit>
+        <thingCategories>
+            <li>ReviaCategoryArtifact</li>
+        </thingCategories>
+        <tradeTags>
+            <li>Artifact</li>
+        </tradeTags>
+        <tradeability>Sellable</tradeability>
+        <statBases>
+            <Mass>0.01</Mass>
+            <Bulk>0.01</Bulk>
+            <MarketValue>3500</MarketValue>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>0.0</Flammability>
+            <DeteriorationRate>0.0</DeteriorationRate>
+            <Beauty>4</Beauty>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>UseArtifact</useJob>
+                <useLabel>Sanctify equipped weapon</useLabel>
+            </li>
+            <li Class="CompProperties_UseEffect">
+                <compClass>ReviaRace.Comps.InvokeGreaterSanctify</compClass>
+            </li>
+        </comps>
+        <tickerType>Never</tickerType>
+    </ThingDef>
+</Defs>

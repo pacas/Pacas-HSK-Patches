@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BackstoryDef>
+    <defName>ReviaRaceBackstoryAdultFleshBinder</defName>
+    <title>Revian Fleshbinder</title>
+    <titleShort>Healer</titleShort>
+    <baseDesc>There are few healers in Revian society, but those that are healers earn the begrudging trust of the others. [PAWN_nameDef] apprenticed under other acolytes, learning the functions of various body parts as [PAWN_pronoun] sees them extracted from sacrifices. [PAWN_possessive] bedside manners may be lacking, but [PAWN_pronoun] certainly does not lack for practical knowledge of bodily functions.</baseDesc>
+    <bodyTypeMale>Thin</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>ReviaRaceBackstory</li>
+      <li>ReviaMarauder</li>
+    </spawnCategories>
+    <skillGains>
+      <Medicine>4</Medicine>
+      <Melee>2</Melee>
+      <Social>-4</Social>
+    </skillGains>
+  </BackstoryDef>
+</Defs>
