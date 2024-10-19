@@ -29,7 +29,7 @@ How to download only the mods you are interested in:<br>
 | Mod title                     | 1.3                | 1.4                | 1.5                | Notes         |
 |-------------------------------|--------------------|--------------------|--------------------|---------------|
 | Advanced Shield Belts         | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Air Defence Systems           | :x:                | :white_check_mark: | :x:                | Not working   |
+| Air Defence Systems           | :x:                | :white_check_mark: | :x:                | ---           |
 | Alpha Animals                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Alpha Biomes                  | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Apex Rimworld Legends         | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
@@ -44,7 +44,7 @@ How to download only the mods you are interested in:<br>
 | Megafauna                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Primitive Storage             | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Rabbie Race                   | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Revia Race                    | :white_check_mark: | :white_check_mark: | :x:                | ---           |
+| Revia Race                    | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Rimfeller EasyMod             | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | Seven Seraph Weapons          | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
 | SRTS Expanded                 | :x:                | :white_check_mark: | :white_check_mark: | ---           |
