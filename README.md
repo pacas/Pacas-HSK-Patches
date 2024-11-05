@@ -8,6 +8,9 @@
 This repository contains all my own and patched HSK mods. Each folder inside this repository contains a folder of the mod itself, a description with an FAQ, a preview, and sometimes the author's license. Unpack the mods correctly and not touch __PREVIEW__ folder!<br><br>
 Это репозиторий содержит все мои самодельные и пропатченные для ХСК моды. В каждой папке внутри данного реpпозитория содержится папка самого мода, описание с FAQ, превью и иногда лицензия автора. Правильно распаковывайте моды и не трогайте папку __PREVIEW__!<br>
 
+## Mod list | Список модов:<br>
+[Table](https://www.pacas.dev/mods/patches.php)
+
 ## Donate | Поддержать:<br>
 You can thank me for the work done here:<br>
 Вы можете поблагодарить меня за проделанную работу здесь:<br>p
@@ -25,42 +28,6 @@ How to download only the mods you are interested in:<br>
 3) https://download-directory.github.io<br>
 4) https://downgit.github.io/#/home<br>
 
-## Content by version / Содержимое по версиям:<br>
-| Mod title                     | 1.3                | 1.4                | 1.5                | Notes         |
-|-------------------------------|--------------------|--------------------|--------------------|---------------|
-| Advanced Shield Belts         | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Air Defence Systems           | :x:                | :white_check_mark: | :x:                | ---           |
-| Alpha Animals                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Alpha Biomes                  | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Apex Rimworld Legends         | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Better Bridges Pack           | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Dinosauria                    | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Eaves Rafters and Mad Walls   | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Edge of Descension Monoblades | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Faction Void                  | :x:                | :white_check_mark: | :white_check_mark: | ---           |
-| Fireflies                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Harvest Post Mortem           | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Maelstroms Metals             | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Megafauna                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Primitive Storage             | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Rabbie Race                   | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Revia Race                    | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Rimfeller EasyMod             | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| Seven Seraph Weapons          | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-| SRTS Expanded                 | :x:                | :white_check_mark: | :white_check_mark: | ---           |
-| SRTS Crimson Fleet            | :x:                | :white_check_mark: | :white_check_mark: | ---           |
-| SRTS Helicopters              | :x:                | :white_check_mark: | :white_check_mark: | ---           |
-| Utility Columns               | :white_check_mark: | :white_check_mark: | :white_check_mark: | ---           |
-
-## Mods without support / Моды без поддержки:<br>
-| Mod title                     | Last version  |
-|-------------------------------|---------------|
-| Code Valkyrie                 | 1.3           |
-| Frontier Developement Shields | 1.3           |
-| Gloomy Decor Pack             | 1.3           |
-| Nerve and Sleep Gas Shells    | 1.3           |
-| Paniel the Automata           | 1.4           |
-| Tesla Coil                    | 1.3           |
 <br>
 <img src="https://i.imgur.com/fdngbbh.png"><br>
 Rimworld is owned by Tynan Sylvester.<br>
