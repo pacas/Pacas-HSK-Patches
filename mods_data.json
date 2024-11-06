@@ -47,26 +47,13 @@
         "versions": {
             "1.3": false,
             "1.4": true,
-            "1.5": false
+            "1.5": true
         }
     },
     {
         "mod_title": "Alpha Animals",
         "notes": "---",
         "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=1541721856",
-        "russian_translation": true,
-        "type": "Conversion",
-        "last_version": "1.5",
-        "versions": {
-            "1.3": true,
-            "1.4": true,
-            "1.5": true
-        }
-    },
-    {
-        "mod_title": "Alpha Biomes",
-        "notes": "---",
-        "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=1841354677",
         "russian_translation": true,
         "type": "Conversion",
         "last_version": "1.5",
@@ -84,6 +71,19 @@
         "type": "Patch",
         "last_version": "1.5",
         "versions": {
+            "1.4": true,
+            "1.5": true
+        }
+    },
+    {
+        "mod_title": "Alpha Biomes",
+        "notes": "---",
+        "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=1841354677",
+        "russian_translation": true,
+        "type": "Conversion",
+        "last_version": "1.5",
+        "versions": {
+            "1.3": true,
             "1.4": true,
             "1.5": true
         }
@@ -269,7 +269,7 @@
         "notes": "---",
         "russian_translation": true,
         "type": "Native Addon",
-        "last_version": "1.5",
+        "last_version": "---",
         "versions": {
             "1.3": true,
             "1.4": true,
@@ -343,7 +343,7 @@
     },
     {
         "mod_title": "Harvest Organs Post Mortem",
-        "notes": "WIP",
+        "notes": "---",
         "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=1204502413",
         "russian_translation": true,
         "type": "Conversion",
@@ -351,7 +351,7 @@
         "versions": {
             "1.3": false,
             "1.4": true,
-            "1.5": false
+            "1.5": true
         }
     },
     {
@@ -373,9 +373,9 @@
         "notes": "---",
         "russian_translation": true,
         "type": "Native Addon",
-        "last_version": "1.5",
+        "last_version": "---",
         "versions": {
-            "1.4": true,
+            "1.3": true,
             "1.4": true,
             "1.5": true
         }
@@ -386,11 +386,11 @@
         "link": "https://discord.com/channels/272340793174392832/1061698507720900768",
         "russian_translation": false,
         "type": "Patch",
-        "last_version": "1.4",
+        "last_version": "1.5",
         "versions": {
             "1.3": false,
             "1.4": true,
-            "1.5": false
+            "1.5": true
         }
     },
     {
@@ -433,6 +433,18 @@
         }
     },
     {
+        "mod_title": "Minerals Ancient Stones",
+        "notes": "---",
+        "russian_translation": true,
+        "type": "Native Addon",
+        "last_version": "---",
+        "versions": {
+            "1.3": false,
+            "1.4": true,
+            "1.5": true
+        }
+    },
+    {
         "mod_title": "MiningCo. Projector",
         "notes": "---",
         "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=955561873",
@@ -452,6 +464,18 @@
         "russian_translation": false,
         "type": "Patch",
         "last_version": "1.5",
+        "versions": {
+            "1.3": false,
+            "1.4": true,
+            "1.5": true
+        }
+    },
+    {
+        "mod_title": "More Tools",
+        "notes": "---",
+        "russian_translation": true,
+        "type": "Native Addon",
+        "last_version": "---",
         "versions": {
             "1.3": false,
             "1.4": true,
@@ -566,7 +590,7 @@
         "notes": "---",
         "russian_translation": true,
         "type": "Native Addon",
-        "last_version": "1.5",
+        "last_version": "---",
         "versions": {
             "1.3": true,
             "1.4": true,
@@ -682,7 +706,7 @@
         "notes": "---",
         "russian_translation": true,
         "type": "Native Addon",
-        "last_version": "1.3",
+        "last_version": "---",
         "versions": {
             "1.3": true,
             "1.4": false,
