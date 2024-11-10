@@ -357,18 +357,6 @@
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
 	<AchievementsExpanded.AchievementDef ParentName="AA_AchievementParent">
-		<defName>AA_AchievementGourmelette</defName>
-		<label>Gourmelette</label>
-		<description>Use an expensive Nightling Egg to create a Lavish Meal</description>
-		<tracker Class="AchievementsExpanded.ItemCraftTracker">
-			<def>MealLavish</def>
-			<includeingredient>AA_EggNightlingFertilized</includeingredient>
-			<count>1</count>
-		</tracker>
-		<texPath>Achievements/AA_AchievementGourmelette</texPath>
-		<points>10</points>
-	</AchievementsExpanded.AchievementDef>
-	<AchievementsExpanded.AchievementDef ParentName="AA_AchievementParent">
 		<defName>AA_AchievementJellyfishSalad</defName>
 		<label>Jellyfish salad</label>
 		<description>Make a Simple meal out of Aerofleet meat</description>

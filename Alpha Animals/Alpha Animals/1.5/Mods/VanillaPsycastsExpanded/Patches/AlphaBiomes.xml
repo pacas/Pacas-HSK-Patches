@@ -5,7 +5,7 @@
             <li>Alpha Biomes</li>
         </mods>
         <match Class="PatchOperationReplace">
-            <xpath>/Defs/ThingDef[defName="AA_AlienTree"]/plant/harvestedThingDef</xpath>
+            <xpath>Defs/ThingDef[defName="AA_AlienTree"]/plant/harvestedThingDef</xpath>
             <value>
                 <harvestedThingDef>GU_RedWood</harvestedThingDef>
             </value>

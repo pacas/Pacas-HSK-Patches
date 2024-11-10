@@ -22,7 +22,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/VFECore.Abilities.AbilityDef[defName="AAVPE_VenomSpit"]/modExtensions/li[@Class="VFECore.Abilities.AbilityExtension_Projectile"]/projectile</xpath>
 					<value>
-						<projectile>AA_PoisonBolt_V</projectile>
+						<projectile>AA_PoisonBolt</projectile>
 					</value>
 				</li>
 
