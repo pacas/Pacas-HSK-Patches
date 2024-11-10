@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RJW Race Support</li>
+		</mods>
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/rjw.RaceGroupDef[defName = "Rodent_Dick_AA"]/raceNames/li[text()="AA_Nightling"]</xpath>
+		</match>
+	</Operation>
+</Patch>
