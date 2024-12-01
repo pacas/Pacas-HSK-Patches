@@ -4,9 +4,6 @@
         <defName>ReviaRepeatingCrossbow</defName>
         <label>repeating crossbow</label>
         <description>A repeating crossbow made with complex mechanical parts.</description>
-        <thingCategories>
-			<li>CrossbarRanged</li>
-		</thingCategories>
         <weaponClasses>
 			<li>ShortShots</li>
 		</weaponClasses>
@@ -33,6 +30,9 @@
         <weaponTags>
             <li>ReviaRangedAdvanced</li>
         </weaponTags>
+		<thingCategories Inherit="False">
+			<li>CrossbarRanged</li>
+		</thingCategories>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
 			<Flammability>1.0</Flammability>
