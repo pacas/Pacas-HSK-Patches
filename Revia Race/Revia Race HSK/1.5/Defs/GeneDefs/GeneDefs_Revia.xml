@@ -13,7 +13,7 @@
             <MoveSpeed>0.3</MoveSpeed>
             <LifespanFactor>1.7</LifespanFactor>
         </statOffsets>
-        <biostatMet>0</biostatMet>
+        <biostatMet>-1</biostatMet>
         <biostatCpx>2</biostatCpx>
         <minAgeActive>3</minAgeActive>
         <causesNeed>ReviaRaceBloodthirstNeed</causesNeed>
@@ -30,7 +30,7 @@
         <description>The sharp claws of the Revia, specialized for bloodshed.</description>
         <geneClass>ReviaRace.Genes.ReviaClawsGene</geneClass>
         <biostatCpx>0</biostatCpx>
-        <biostatMet>0</biostatMet>
+        <biostatMet>-1</biostatMet>
     </GeneDef>
     <GeneDef ParentName="GeneEarsBase">
         <defName>ReviaEars</defName>
