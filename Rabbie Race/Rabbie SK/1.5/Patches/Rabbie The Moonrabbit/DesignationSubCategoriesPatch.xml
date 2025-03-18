@@ -9,7 +9,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Sewing"]/defNames</xpath>
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Smithy"]/defNames</xpath>
 		<value>
 			<li>RB_MoonTableMachining</li>
 		</value>
@@ -18,8 +18,8 @@
     <Operation Class="PatchOperationAdd">
 		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Medicine"]/defNames</xpath>
 		<value>
-			<li>Planetariumrefineryprimitive</li>
-			<li>Planetariumrefinery</li>
+			<li>PlanetariumRefineryPrimitive</li>
+			<li>PlanetariumRefinery</li>
 		</value>
 	</Operation>
     
