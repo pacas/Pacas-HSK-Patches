@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <NonSkarniteOrReviaSacrificing>Пешка не скарнит или ревия</NonSkarniteOrReviaSacrificing>
   <ReviaRaceSacrificePrisonerNone>Нет пленников для жертвоприношения.</ReviaRaceSacrificePrisonerNone>
   <ReviaRaceSacrificePrisonerName>Жертва {0}</ReviaRaceSacrificePrisonerName>
   <ReviaRaceSacrificeRejected>{0} подношение было принято, но сочтено недостаточным. Богиня крови требует больше крови.</ReviaRaceSacrificeRejected>
@@ -9,7 +10,7 @@
   <ReviaRaceOfferingStart>{0} предлагает несколько {1} богине крови.</ReviaRaceOfferingStart>
   <ReviaRaceOfferingInvalidPawn>Богиня крови отвергает мольбу.</ReviaRaceOfferingInvalidPawn>
   <ReviaRaceOfferingMaxLevel>{0} уже на пике {1} могущества!</ReviaRaceOfferingMaxLevel>
-  <ReviaRaceModName>Revia Race</ReviaRaceModName>
+  <ReviaRaceModName>Раса Ревий</ReviaRaceModName>
   <ReviaRaceSettingsSacrificeCostHeader>Настройки жертвоприношения</ReviaRaceSettingsSacrificeCostHeader>
   <ReviaRaceSettingsSacrificeCostBase>Базовая стоимость Кровавого Камня</ReviaRaceSettingsSacrificeCostBase>
   <ReviaRaceSettingsSacrificeCostGrowthFactor>Фактор роста затрат</ReviaRaceSettingsSacrificeCostGrowthFactor>
@@ -19,16 +20,30 @@
   <ReviaRaceSettingsEnableStripOnSacrifice>Раздевать тела при жертвоприношении</ReviaRaceSettingsEnableStripOnSacrifice>
   <ReviaRaceSettingsEnableBloodthirstNeed>Включить потребность в кровопролитии у ревий</ReviaRaceSettingsEnableBloodthirstNeed>
   <ReviaRaceSettingsBloodthirstDaysToEmpty>Дней до исчерпания потребности</ReviaRaceSettingsBloodthirstDaysToEmpty>
-  <ReviaRaceSettingsSacrificeCostGreater>Стоимость Кровавого Камня с текущими настройками : {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}</ReviaRaceSettingsSacrificeCostGreater>
-  <ReviaRaceSettingsSacrificeCostLesser>Стоимость Бледного Камня с текущими настройками : {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}</ReviaRaceSettingsSacrificeCostLesser>
-  <ReviaRaceSettingsSoulReapSpawnFixed>Уровень Жатвы Душ при спавне ревий</ReviaRaceSettingsSoulReapSpawnFixed>
-  <ReviaRaceSettingsSoulReapSpawnRange>Случайные уровни Жатвы Душ</ReviaRaceSettingsSoulReapSpawnRange>
+  <ReviaRaceSettingsSacrificeCostGreater>Стоимость кровавого камня с текущими настройками : {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}</ReviaRaceSettingsSacrificeCostGreater>
+  <ReviaRaceSettingsSacrificeCostLesser>Стоимость бледного камня с текущими настройками : {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}</ReviaRaceSettingsSacrificeCostLesser>
+  <ReviaRaceSettingsSoulReapSpawnFixed>Уровень жатвы душ при спавне ревий</ReviaRaceSettingsSoulReapSpawnFixed>
+  <ReviaRaceSettingsSoulReapSpawnAgeCurve>Уровни жатвы душ выдаются на основе возраста</ReviaRaceSettingsSoulReapSpawnAgeCurve>
   <ReviaRaceSanctifyNonMeleeWeapon>Можно освятить только оружие ближнего боя.</ReviaRaceSanctifyNonMeleeWeapon>
   <ReviaRaceSanctifyNonReviaNonSkarnite>Руна не отзывается в руках неверных.</ReviaRaceSanctifyNonReviaNonSkarnite>
   <ReviaRaceSanctifyAlreadySanctified>Это оружие уже наделено кровожадным духом.</ReviaRaceSanctifyAlreadySanctified>
   <ReviaRaceSanctifyDescPart>Кровожадный дух обитает в этом оружии, даруя верным Скарне здоровье в обмен на пролитую кровь.</ReviaRaceSanctifyDescPart>
+  <ReviaDisableUncompleteDebuff_Teeth>Отключить дебафф за отсутствие гена зубов</ReviaDisableUncompleteDebuff_Teeth>
+  <ReviaDisableUncompleteDebuff_Ears>Отключить дебафф за отсутствие гена ушей</ReviaDisableUncompleteDebuff_Ears>
+  <ReviaDisableUncompleteDebuff_Claws>Отключить дебафф за отсутствие гена когтей</ReviaDisableUncompleteDebuff_Claws>
+  <ReviaNoProjectLimitaions>Без ограничений на исследование технологий ревий</ReviaNoProjectLimitaions>
+  <ReviaNoCraftLimitaions>Без ограничений на крафт оружия ревий</ReviaNoCraftLimitaions>
+  <ReviaRaceSettingsNoHybrid>Без гибридов от ревий</ReviaRaceSettingsNoHybrid>
   <Linear>Линейно</Linear>
   <Quadratic>Квадратично</Quadratic>
   <Exponential>Экспотенциально</Exponential>
+  <ReviaRaceConvertName>Сменить ксенотип на {0}</ReviaRaceConvertName>
+  <ReviaRaceSettingsBornType>Тип рождения</ReviaRaceSettingsBornType>
+  <NoMaleBorn>Только девушки-ревии</NoMaleBorn>
+  <ForceBornRevia>Ревии рождают только ревий</ForceBornRevia>
+  <ReviaRejectionType>Отторжение генов ревий</ReviaRejectionType>
+  <InstaKill>Мгновенная смерть</InstaKill>
+  <Disease>Болезнь</Disease>
+  <NoRejection>Нет отторжения</NoRejection>
 
 </LanguageData>

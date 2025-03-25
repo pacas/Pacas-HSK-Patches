@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <NonSkarniteOrReviaSacrificing>Pawn is not skarnite or revia</NonSkarniteOrReviaSacrificing>
   <ReviaRaceSacrificePrisonerNone>No prisoners to be sacrificed.</ReviaRaceSacrificePrisonerNone>
   <ReviaRaceSacrificePrisonerName>Sacrifice {0}</ReviaRaceSacrificePrisonerName>
   <ReviaRaceSacrificeRejected>{0}'s offering was accepted, but deemed insufficient. The blood god demands more blood.</ReviaRaceSacrificeRejected>
@@ -28,7 +29,20 @@
   <ReviaRaceSanctifyNonReviaNonSkarnite>The rune does not respond in the hands of infidels.</ReviaRaceSanctifyNonReviaNonSkarnite>
   <ReviaRaceSanctifyAlreadySanctified>The weapon is already blessed with a bloodthirsty spirit.</ReviaRaceSanctifyAlreadySanctified>
   <ReviaRaceSanctifyDescPart>A bloodthirsty spirit inhabits this weapon, granting the faithful of Skarne health in exchange for spilled blood.</ReviaRaceSanctifyDescPart>
+  <ReviaDisableUncompleteDebuff_Teeth>Disable debuff for teeth</ReviaDisableUncompleteDebuff_Teeth>
+  <ReviaDisableUncompleteDebuff_Ears>Disable debuff for ears</ReviaDisableUncompleteDebuff_Ears>
+  <ReviaDisableUncompleteDebuff_Claws>Disable debuff for claws</ReviaDisableUncompleteDebuff_Claws>
+  <ReviaNoProjectLimitaions>No limitations for revia projects</ReviaNoProjectLimitaions>
+  <ReviaNoCraftLimitaions>No limitations for revia crafts</ReviaNoCraftLimitaions>
+  <ReviaRaceSettingsNoHybrid>No hybrids with revia</ReviaRaceSettingsNoHybrid>
   <Linear>Linear</Linear>
   <Quadratic>Quadratic</Quadratic>
   <Exponential>Exponential</Exponential>
+  <ReviaRaceConvertName>Change xenotype for {0}</ReviaRaceConvertName>
+  <ReviaRaceSettingsBornType>Born type</ReviaRaceSettingsBornType>
+  <NoMaleBorn>Revia born only female</NoMaleBorn>
+  <ForceBornRevia>Revia born only revia</ForceBornRevia>
+  <ReviaRejectionType>Revia genes rejection type</ReviaRejectionType>
+  <InstaKill>Instant kills pawn</InstaKill>
+  <NoRejection>No rejection</NoRejection>
 </LanguageData>
