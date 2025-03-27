@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+    <ThingDef ParentName="SK_BuildingBase" Name="GTM_Hatchbase">
+        <defName>SDW_Hatch</defName>
+        <label>wall (burrowed)</label>
+        <description>burrowed wall.</description>
+        <thingClass>BombInWall.SDW_Hatch</thingClass>
+        <category>Building</category>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <fillPercent>0.2</fillPercent>
+        <useHitPoints>true</useHitPoints>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Stony</li>
+            <li>Bricks</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <costList>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <costStuffCount>10</costStuffCount>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+            <WorkToBuild>2000</WorkToBuild>
+        </statBases>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <selectable>true</selectable>
+        <tickerType>Normal</tickerType>
+        <rotatable>false</rotatable>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <holdsRoof>false</holdsRoof>
+        <staticSunShadowHeight>0</staticSunShadowHeight>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>30</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <researchPrerequisites>
+            <li>Autodoors</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <passability>Standable</passability>
+        <graphicData>
+            <texPath>Things/Building/SDW_Hatch</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <damageData>
+                <enabled>false</enabled>
+            </damageData>
+        </graphicData>
+    </ThingDef>
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>FPBIWWWG</defName>
+        <label>burrowing wall</label>
+        <description>An impassable wall. Capable of holding up a roof. Burrow function added.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <texPath>Things/Building/Linked/Wall</texPath>
+            <graphicClass>Graphic_Appearances</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>350</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+        </statBases>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <ElectronicComponents>1</ElectronicComponents>
+        </costList>
+        <costStuffCount>10</costStuffCount>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.5</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <chanceNeverExplodeFromDamage>0.2</chanceNeverExplodeFromDamage>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>30</basePowerConsumption>
+            </li>
+            <li Class="BombInWall.CompProperties_BIWHidingWall"/>
+        </comps>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <tickerType>Normal</tickerType>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Stony</li>
+            <li>Bricks</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>3</multiplier>
+            </li>
+        </damageMultipliers>
+        <researchPrerequisites>
+            <li>Autodoors</li>
+        </researchPrerequisites>
+    </ThingDef>
+    <ThingDef ParentName="SK_BuildingBase">
+        <defName>FPBIWBombInWall</defName>
+        <label>wall with bomb</label>
+        <description>An impassable wall. Capable of holding up a roof. Self destruction function added.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <texPath>Things/Building/Linked/BombInWall</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>2.0</Flammability>
+        </statBases>
+        <costList>
+            <Chemfuel>15</Chemfuel>
+            <ElectronicComponents>1</ElectronicComponents>
+        </costList>
+        <costStuffCount>10</costStuffCount>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.7</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <chanceNeverExplodeFromDamage>0.2</chanceNeverExplodeFromDamage>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>30</basePowerConsumption>
+            </li>
+            <li Class="BombInWall.CompProperties_FPBIW"/>
+        </comps>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <tickerType>Normal</tickerType>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Stony</li>
+            <li>Bricks</li>
+        </stuffCategories>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>3</multiplier>
+            </li>
+        </damageMultipliers>
+        <researchPrerequisites>
+            <li>IEDs</li>
+        </researchPrerequisites>
+    </ThingDef>
+</Defs>

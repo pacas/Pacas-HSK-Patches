@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-	<ArchitectSense.DesignationSubCategoryDef>
-		<defName>SubCategory_EavesAndRafters</defName>
-		<label>Eaves and Rafters</label>
-		<description>Roofs. Yes, we have it, but what if...</description>
-		<defNames>
-			<li>AR_EaveWoody</li>
-			<li>AR_EaveWoodyCorner</li>
-			<li>AR_EaveStony</li>
-            <li>AR_EaveStonyCorner</li>
-			<li>AR_Eave</li>
-			<li>AR_EaveMetalCorner</li>
-            <li>AR_RafterWoody</li>
-            <li>AR_RafterStony</li>
-			<li>AR_Rafter</li>
-		</defNames>
-		<designationCategory>Structure</designationCategory>
-		<debug>false</debug>
-	</ArchitectSense.DesignationSubCategoryDef>
     
     <ArchitectSense.DesignationSubCategoryDef>
 		<defName>SubCategory_Inter_Walls</defName>
@@ -32,5 +13,39 @@
 		<debug>false</debug>
 	</ArchitectSense.DesignationSubCategoryDef>
 
+	<ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Eaves</defName>
+		<label>Eaves</label>
+		<description>Roofs. Yes, we have it, but what if...</description>
+		<defNames>
+			<li>AR_EaveWoody</li>
+			<li>AR_EaveWoodyCorner</li>
+			<li>AR_EaveWoodyCorner_InnerSmall</li>
+			<li>AR_EaveWoodyCorner_InnerLarge</li>
+			<li>AR_EaveStony</li>
+			<li>AR_EaveStonyCorner</li>
+            <li>AR_EaveStonyCorner_InnerSmall</li>
+            <li>AR_EaveStonyCorner_InnerLarge</li>
+			<li>AR_Eave</li>
+			<li>AR_EaveMetalCorner</li>
+			<li>AR_EaveMetalCorner_InnerSmall</li>
+			<li>AR_EaveMetalCorner_InnerLarge</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
+    
+    <ArchitectSense.DesignationSubCategoryDef>
+		<defName>SubCategory_Rafters</defName>
+		<label>Rafters</label>
+		<description>Roofs. Yes, we have it, but what if...</description>
+		<defNames>
+            <li>AR_RafterWoody</li>
+            <li>AR_RafterStony</li>
+			<li>AR_Rafter</li>
+		</defNames>
+		<designationCategory>Structure</designationCategory>
+		<debug>false</debug>
+	</ArchitectSense.DesignationSubCategoryDef>
 	
 </Defs>	
