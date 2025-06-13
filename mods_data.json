@@ -27,7 +27,7 @@
     },
     {
         "mod_title": "Air Defence Systems",
-        "notes": "---",
+        "notes": "Latest CE update now include turrets which can shoot meteors, this mod is obsolete",
         "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=2802147499",
         "russian_translation": true,
         "type": "Conversion",
@@ -92,7 +92,7 @@
     },
     {
         "mod_title": "Alpha Genes",
-        "notes": "Update scheduled after Urban Ruins patch",
+        "notes": "---",
         "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=2891845502",
         "russian_translation": true,
         "type": "Patch",
@@ -149,18 +149,6 @@
         "russian_translation": true,
         "type": "Patch",
         "last_version": "1.5",
-        "versions": {
-            "1.3": false,
-            "1.4": true,
-            "1.5": true
-        }
-    },
-    {
-        "mod_title": "Better Bridges Pack",
-        "notes": "---",
-        "russian_translation": true,
-        "type": "Native Addon",
-        "last_version": "---",
         "versions": {
             "1.3": false,
             "1.4": true,
@@ -455,7 +443,7 @@
     },
     {
         "mod_title": "Medical System Expansion 2",
-        "notes": "Ignore 2 errors",
+        "notes": "Ignore 2 errors, untested on 1.5",
         "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=2056706586",
         "russian_translation": true,
         "type": "Patch",
@@ -463,7 +451,7 @@
         "versions": {
             "1.3": false,
             "1.4": true,
-            "1.5": false
+            "1.5": true
         }
     },
     {
@@ -475,18 +463,6 @@
         "last_version": "1.5",
         "versions": {
             "1.3": true,
-            "1.4": true,
-            "1.5": true
-        }
-    },
-    {
-        "mod_title": "Minerals Ancient Stones",
-        "notes": "---",
-        "russian_translation": true,
-        "type": "Native Addon",
-        "last_version": "---",
-        "versions": {
-            "1.3": false,
             "1.4": true,
             "1.5": true
         }
@@ -508,7 +484,7 @@
         "mod_title": "More Persona Traits",
         "notes": "---",
         "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=2863308112",
-        "russian_translation": false,
+        "russian_translation": true,
         "type": "Patch",
         "last_version": "1.5",
         "versions": {
@@ -552,6 +528,18 @@
             "1.3": true,
             "1.4": false,
             "1.5": false
+        }
+    },
+    {
+        "mod_title": "Pacas Even More Content",
+        "notes": "---",
+        "russian_translation": true,
+        "type": "Native Addon",
+        "last_version": "---",
+        "versions": {
+            "1.3": false,
+            "1.4": true,
+            "1.5": true
         }
     },
     {
@@ -628,18 +616,6 @@
         "last_version": "1.5",
         "versions": {
             "1.3": false,
-            "1.4": true,
-            "1.5": true
-        }
-    },
-    {
-        "mod_title": "Rimfeller EasyMod",
-        "notes": "---",
-        "russian_translation": true,
-        "type": "Native Addon",
-        "last_version": "---",
-        "versions": {
-            "1.3": true,
             "1.4": true,
             "1.5": true
         }
@@ -750,18 +726,6 @@
         }
     },
     {
-        "mod_title": "Tesla Coil",
-        "notes": "---",
-        "russian_translation": true,
-        "type": "Native Addon",
-        "last_version": "---",
-        "versions": {
-            "1.3": true,
-            "1.4": false,
-            "1.5": false
-        }
-    },
-    {
         "mod_title": "Uncle Boris' - Brainwash Chair",
         "notes": "---",
         "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=2885223720",
@@ -792,7 +756,7 @@
         "notes": "---",
         "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=3171145240",
         "russian_translation": true,
-        "type": "Conversion",
+        "type": "Patch",
         "last_version": "1.5",
         "versions": {
             "1.3": true,
