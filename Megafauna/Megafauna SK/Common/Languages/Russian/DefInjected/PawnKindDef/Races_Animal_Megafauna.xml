@@ -1,219 +1,962 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData> 
-	<Arthropleura.label>артроплевра</Arthropleura.label>
+<LanguageData>
+    <Arthropleura.label>артроплевра</Arthropleura.label>
     <Arthropleura.labelPlural>артроплевры</Arthropleura.labelPlural>
-	<Arthropleura.lifeStages.0.labelMale>личинка артроплевры</Arthropleura.lifeStages.0.label>
+    <Arthropleura.lifeStages.0.label>личинка артроплевры</Arthropleura.lifeStages.0.label>
+    <Arthropleura.lifeStages.0.labelPlural>личинки артроплевры</Arthropleura.lifeStages.0.labelPlural>
+    <Arthropleura.lifeStages.0.labelMale>самец личинки артроплевры</Arthropleura.lifeStages.0.labelMale>
+    <Arthropleura.lifeStages.0.labelMalePlural>самцы личинки артроплевры</Arthropleura.lifeStages.0.labelMalePlural>
+    <Arthropleura.lifeStages.0.labelFemale>самка личинки артроплевры</Arthropleura.lifeStages.0.labelFemale>
+    <Arthropleura.lifeStages.0.labelFemalePlural>самки личинок артроплевры</Arthropleura.lifeStages.0.labelFemalePlural>
+    <Arthropleura.lifeStages.1.label>артроплевра</Arthropleura.lifeStages.1.label>
+    <Arthropleura.lifeStages.1.labelPlural>артроплевры</Arthropleura.lifeStages.1.labelPlural>
+    <Arthropleura.lifeStages.1.labelMale>самец артроплевры</Arthropleura.lifeStages.1.labelMale>
+    <Arthropleura.lifeStages.1.labelMalePlural>самцы артроплевр</Arthropleura.lifeStages.1.labelMalePlural>
+    <Arthropleura.lifeStages.1.labelFemale>самка артроплевры</Arthropleura.lifeStages.1.labelFemale>
+    <Arthropleura.lifeStages.1.labelFemalePlural>саки артроплевр</Arthropleura.lifeStages.1.labelFemalePlural>
+    <Arthropleura.lifeStages.2.label>артроплева</Arthropleura.lifeStages.2.label>
+    <Arthropleura.lifeStages.2.labelPlural>артроплевры</Arthropleura.lifeStages.2.labelPlural>
+    <Arthropleura.lifeStages.2.labelMale>самец артроплевры</Arthropleura.lifeStages.2.labelMale>
+    <Arthropleura.lifeStages.2.labelMalePlural>самцы артроплевр</Arthropleura.lifeStages.2.labelMalePlural>
+    <Arthropleura.lifeStages.2.labelFemale>самка артроплевры</Arthropleura.lifeStages.2.labelFemale>
+    <Arthropleura.lifeStages.2.labelFemalePlural>самки артроплевр</Arthropleura.lifeStages.2.labelFemalePlural>
     <Arthropleura.labelMale>самец артроплевры</Arthropleura.labelMale>
+    <Arthropleura.labelMalePlural>самцы артроплевр</Arthropleura.labelMalePlural>
     <Arthropleura.labelFemale>самка артроплевры</Arthropleura.labelFemale>
+    <Arthropleura.labelFemalePlural>самки артроплевр</Arthropleura.labelFemalePlural>
 
-	<Doedicurus.label>дедикурус</Doedicurus.label>
+    <Doedicurus.label>дедикурус</Doedicurus.label>
     <Doedicurus.labelPlural>дедикурусы</Doedicurus.labelPlural>
+    <Doedicurus.lifeStages.0.label>дедикурус</Doedicurus.lifeStages.0.label>
+    <Doedicurus.lifeStages.0.labelPlural>дедикурусы</Doedicurus.lifeStages.0.labelPlural>
+    <Doedicurus.lifeStages.0.labelMale>самец дедикуруса</Doedicurus.lifeStages.0.labelMale>
+    <Doedicurus.lifeStages.0.labelMalePlural>самцы дедикурусы</Doedicurus.lifeStages.0.labelMalePlural>
+    <Doedicurus.lifeStages.0.labelFemale>самка дедикуруса</Doedicurus.lifeStages.0.labelFemale>
+    <Doedicurus.lifeStages.0.labelFemalePlural>самки дедикурусы</Doedicurus.lifeStages.0.labelFemalePlural>
+    <Doedicurus.lifeStages.1.label>дедикурус</Doedicurus.lifeStages.1.label>
+    <Doedicurus.lifeStages.1.labelPlural>дедикурусы</Doedicurus.lifeStages.1.labelPlural>
+    <Doedicurus.lifeStages.1.labelMale>самец дедикуруса</Doedicurus.lifeStages.1.labelMale>
+    <Doedicurus.lifeStages.1.labelMalePlural>самцы дедикурусы</Doedicurus.lifeStages.1.labelMalePlural>
+    <Doedicurus.lifeStages.1.labelFemale>самка дедикуруса</Doedicurus.lifeStages.1.labelFemale>
+    <Doedicurus.lifeStages.1.labelFemalePlural>самки дедикурусы</Doedicurus.lifeStages.1.labelFemalePlural>
+    <Doedicurus.lifeStages.2.label>дедикурус</Doedicurus.lifeStages.2.label>
+    <Doedicurus.lifeStages.2.labelPlural>дедикурусы</Doedicurus.lifeStages.2.labelPlural>
+    <Doedicurus.lifeStages.2.labelMale>самец дедикуруса</Doedicurus.lifeStages.2.labelMale>
+    <Doedicurus.lifeStages.2.labelMalePlural>самцы дедикурусы</Doedicurus.lifeStages.2.labelMalePlural>
+    <Doedicurus.lifeStages.2.labelFemale>самка дедикуруса</Doedicurus.lifeStages.2.labelFemale>
+    <Doedicurus.lifeStages.2.labelFemalePlural>самки дедикурусы</Doedicurus.lifeStages.2.labelFemalePlural>
     <Doedicurus.labelMale>самец дедикуруса</Doedicurus.labelMale>
+    <Doedicurus.labelMalePlural>самцы дедикурусы</Doedicurus.labelMalePlural>
     <Doedicurus.labelFemale>самка дедикуруса</Doedicurus.labelFemale>
-	
-	<Daeodon.label>деодон</Daeodon.label>
+    <Doedicurus.labelFemalePlural>самки дедикурусы</Doedicurus.labelFemalePlural>
+
+    <Daeodon.label>деодон</Daeodon.label>
     <Daeodon.labelPlural>деодоны</Daeodon.labelPlural>
-    <Daeodon.labelMale>самец деодон</Daeodon.labelMale>
+    <Daeodon.lifeStages.0.label>деодон</Daeodon.lifeStages.0.label>
+    <Daeodon.lifeStages.0.labelPlural>деодон</Daeodon.lifeStages.0.labelPlural>
+    <Daeodon.lifeStages.0.labelMale>самец деодона</Daeodon.lifeStages.0.labelMale>
+    <Daeodon.lifeStages.0.labelMalePlural>самцы деодоны</Daeodon.lifeStages.0.labelMalePlural>
+    <Daeodon.lifeStages.0.labelFemale>самка деодона</Daeodon.lifeStages.0.labelFemale>
+    <Daeodon.lifeStages.0.labelFemalePlural>самки деодоны</Daeodon.lifeStages.0.labelFemalePlural>
+    <Daeodon.lifeStages.1.label>деодон</Daeodon.lifeStages.1.label>
+    <Daeodon.lifeStages.1.labelPlural>деодон</Daeodon.lifeStages.1.labelPlural>
+    <Daeodon.lifeStages.1.labelMale>самец деодона</Daeodon.lifeStages.1.labelMale>
+    <Daeodon.lifeStages.1.labelMalePlural>самцы деодоны</Daeodon.lifeStages.1.labelMalePlural>
+    <Daeodon.lifeStages.1.labelFemale>самка деодона</Daeodon.lifeStages.1.labelFemale>
+    <Daeodon.lifeStages.1.labelFemalePlural>самки деодоны</Daeodon.lifeStages.1.labelFemalePlural>
+    <Daeodon.lifeStages.2.label>деодон</Daeodon.lifeStages.2.label>
+    <Daeodon.lifeStages.2.labelPlural>деодон</Daeodon.lifeStages.2.labelPlural>
+    <Daeodon.lifeStages.2.labelMale>самец деодона</Daeodon.lifeStages.2.labelMale>
+    <Daeodon.lifeStages.2.labelMalePlural>самцы деодоны</Daeodon.lifeStages.2.labelMalePlural>
+    <Daeodon.lifeStages.2.labelFemale>самка деодона</Daeodon.lifeStages.2.labelFemale>
+    <Daeodon.lifeStages.2.labelFemalePlural>самки деодоны</Daeodon.lifeStages.2.labelFemalePlural>
+    <Daeodon.labelMale>самец деодона</Daeodon.labelMale>
+    <Daeodon.labelMalePlural>самцы деодоны</Daeodon.labelMalePlural>
     <Daeodon.labelFemale>самка деодона</Daeodon.labelFemale>
+    <Daeodon.labelFemalePlural>самки деодоны</Daeodon.labelFemalePlural>
 
-	<Gigantopithecus.label>гигантопетик</Gigantopithecus.label>
-    <Gigantopithecus.labelPlural>гигантопетики</Gigantopithecus.labelPlural>
-    <Gigantopithecus.labelMale>самец гигантопетикa</Gigantopithecus.labelMale>
-    <Gigantopithecus.labelFemale>самка гигантопетикa</Gigantopithecus.labelFemale>
-	
-	<Paraceratherium.label>парацератерий</Paraceratherium.label>
+    <Gigantopithecus.label>гигантопитек</Gigantopithecus.label>
+    <Gigantopithecus.labelPlural>гигантопитеки</Gigantopithecus.labelPlural>
+    <Gigantopithecus.lifeStages.0.label>гигантопитек</Gigantopithecus.lifeStages.0.label>
+    <Gigantopithecus.lifeStages.0.labelPlural>гигантопитеки</Gigantopithecus.lifeStages.0.labelPlural>
+    <Gigantopithecus.lifeStages.0.labelMale>самец гигантопитека</Gigantopithecus.lifeStages.0.labelMale>
+    <Gigantopithecus.lifeStages.0.labelMalePlural>самцы гигантопитеков</Gigantopithecus.lifeStages.0.labelMalePlural>
+    <Gigantopithecus.lifeStages.0.labelFemale>самка гигантопитека</Gigantopithecus.lifeStages.0.labelFemale>
+    <Gigantopithecus.lifeStages.0.labelFemalePlural>самки гигантопитеков</Gigantopithecus.lifeStages.0.labelFemalePlural>
+    <Gigantopithecus.lifeStages.1.label>гигантопитек</Gigantopithecus.lifeStages.1.label>
+    <Gigantopithecus.lifeStages.1.labelPlural>гигантопитеки</Gigantopithecus.lifeStages.1.labelPlural>
+    <Gigantopithecus.lifeStages.1.labelMale>самец гигантопитека</Gigantopithecus.lifeStages.1.labelMale>
+    <Gigantopithecus.lifeStages.1.labelMalePlural>самцы гигантопитеков</Gigantopithecus.lifeStages.1.labelMalePlural>
+    <Gigantopithecus.lifeStages.1.labelFemale>самка гигантопитека</Gigantopithecus.lifeStages.1.labelFemale>
+    <Gigantopithecus.lifeStages.1.labelFemalePlural>самки гигантопитеков</Gigantopithecus.lifeStages.1.labelFemalePlural>
+    <Gigantopithecus.lifeStages.2.label>гигантопитек</Gigantopithecus.lifeStages.2.label>
+    <Gigantopithecus.lifeStages.2.labelPlural>гигантопитеки</Gigantopithecus.lifeStages.2.labelPlural>
+    <Gigantopithecus.lifeStages.2.labelMale>самец гигантопитека</Gigantopithecus.lifeStages.2.labelMale>
+    <Gigantopithecus.lifeStages.2.labelMalePlural>самцы гигантопитеков</Gigantopithecus.lifeStages.2.labelMalePlural>
+    <Gigantopithecus.lifeStages.2.labelFemale>самка гигантопитека</Gigantopithecus.lifeStages.2.labelFemale>
+    <Gigantopithecus.lifeStages.2.labelFemalePlural>самки гигантопитеков</Gigantopithecus.lifeStages.2.labelFemalePlural>
+    <Gigantopithecus.labelMale>самец гигантопитека</Gigantopithecus.labelMale>
+    <Gigantopithecus.labelMalePlural>самцы гигантопитеки</Gigantopithecus.labelMalePlural>
+    <Gigantopithecus.labelFemale>самка гигантопитека</Gigantopithecus.labelFemale>
+    <Gigantopithecus.labelFemalePlural>самки гигантопитеки</Gigantopithecus.labelFemalePlural>
+
+    <Paraceratherium.label>парацератерий</Paraceratherium.label>
     <Paraceratherium.labelPlural>парацератерии</Paraceratherium.labelPlural>
-	<Paraceratherium.lifeStages.0.labelMale>телёнок парацератерия</Paraceratherium.lifeStages.0.labelMale>
-  	<Paraceratherium.lifeStages.0.labelFemale>тёлка парацератерия</Paraceratherium.lifeStages.0.labelFemale>
-    <Paraceratherium.labelMale>самец парацератерия</Paraceratherium.labelMale>
-    <Paraceratherium.labelFemale>самка парацератерия</Paraceratherium.labelFemale>
+    <Paraceratherium.lifeStages.0.label>телёнок парацератерия</Paraceratherium.lifeStages.0.label>
+    <Paraceratherium.lifeStages.0.labelPlural>телята парацератерии</Paraceratherium.lifeStages.0.labelPlural>
+    <Paraceratherium.lifeStages.0.labelMale>телёнок парацератерия</Paraceratherium.lifeStages.0.labelMale>
+    <Paraceratherium.lifeStages.0.labelMalePlural>телята парацератерия</Paraceratherium.lifeStages.0.labelMalePlural>
+    <Paraceratherium.lifeStages.0.labelFemale>тёлочка парацератерия</Paraceratherium.lifeStages.0.labelFemale>
+    <Paraceratherium.lifeStages.0.labelFemalePlural>тёлочки парацератерии</Paraceratherium.lifeStages.0.labelFemalePlural>
+    <Paraceratherium.lifeStages.1.label>парацератерий</Paraceratherium.lifeStages.1.label>
+    <Paraceratherium.lifeStages.1.labelPlural>парацератерии</Paraceratherium.lifeStages.1.labelPlural>
+    <Paraceratherium.lifeStages.1.labelMale>самец  парацератерия</Paraceratherium.lifeStages.1.labelMale>
+    <Paraceratherium.lifeStages.1.labelMalePlural>самцы  парацератерии</Paraceratherium.lifeStages.1.labelMalePlural>
+    <Paraceratherium.lifeStages.1.labelFemale>самка  парацератерия</Paraceratherium.lifeStages.1.labelFemale>
+    <Paraceratherium.lifeStages.1.labelFemalePlural>самки  парацератерии</Paraceratherium.lifeStages.1.labelFemalePlural>
+    <Paraceratherium.lifeStages.2.label>парацератерий</Paraceratherium.lifeStages.2.label>
+    <Paraceratherium.lifeStages.2.labelPlural>парацератерии</Paraceratherium.lifeStages.2.labelPlural>
+    <Paraceratherium.lifeStages.2.labelMale>самец  парацератерия</Paraceratherium.lifeStages.2.labelMale>
+    <Paraceratherium.lifeStages.2.labelMalePlural>самцы  парацератерия</Paraceratherium.lifeStages.2.labelMalePlural>
+    <Paraceratherium.lifeStages.2.labelFemale>самка  парацератерия</Paraceratherium.lifeStages.2.labelFemale>
+    <Paraceratherium.lifeStages.2.labelFemalePlural>самки  парацератерии</Paraceratherium.lifeStages.2.labelFemalePlural>
+    <Paraceratherium.labelMale>самец  парацератерия</Paraceratherium.labelMale>
+    <Paraceratherium.labelMalePlural>самцы парацератерии</Paraceratherium.labelMalePlural>
+    <Paraceratherium.labelFemale>самка  парацератерия</Paraceratherium.labelFemale>
+    <Paraceratherium.labelFemalePlural>самки парацератерии</Paraceratherium.labelFemalePlural>
 
-	<Titanis.label>титанис</Titanis.label>
-    <Titanis.labelPlural>стадо титанисов</Titanis.labelPlural>
-	<Titanis.lifeStages.0.labelMale>птицы титаниса</Titanis.lifeStages.0.labelMale>
-  	<Titanis.lifeStages.0.labelFemale>птицы титаниса</Titanis.lifeStages.0.labelFemale>
+    <Titanis.label>титанис</Titanis.label>
+    <Titanis.labelPlural>титанисы</Titanis.labelPlural>
+    <Titanis.lifeStages.0.label>титанис</Titanis.lifeStages.0.label>
+    <Titanis.lifeStages.0.labelPlural>титанисы</Titanis.lifeStages.0.labelPlural>
+    <Titanis.lifeStages.0.labelMale>самец титаниса</Titanis.lifeStages.0.labelMale>
+    <Titanis.lifeStages.0.labelMalePlural>самцы титанисы</Titanis.lifeStages.0.labelMalePlural>
+    <Titanis.lifeStages.0.labelFemale>самка титаниса</Titanis.lifeStages.0.labelFemale>
+    <Titanis.lifeStages.0.labelFemalePlural>самки титанисы</Titanis.lifeStages.0.labelFemalePlural>
+    <Titanis.lifeStages.1.label>титанис</Titanis.lifeStages.1.label>
+    <Titanis.lifeStages.1.labelPlural>титанисы</Titanis.lifeStages.1.labelPlural>
+    <Titanis.lifeStages.1.labelMale>самец титаниса</Titanis.lifeStages.1.labelMale>
+    <Titanis.lifeStages.1.labelMalePlural>самцы титанисы</Titanis.lifeStages.1.labelMalePlural>
+    <Titanis.lifeStages.1.labelFemale>самка титаниса</Titanis.lifeStages.1.labelFemale>
+    <Titanis.lifeStages.1.labelFemalePlural>самки титанисы</Titanis.lifeStages.1.labelFemalePlural>
+    <Titanis.lifeStages.2.label>титанис</Titanis.lifeStages.2.label>
+    <Titanis.lifeStages.2.labelPlural>титанисы</Titanis.lifeStages.2.labelPlural>
+    <Titanis.lifeStages.2.labelMale>самец титаниса</Titanis.lifeStages.2.labelMale>
+    <Titanis.lifeStages.2.labelMalePlural>самцы титанисы</Titanis.lifeStages.2.labelMalePlural>
+    <Titanis.lifeStages.2.labelFemale>самка титаниса</Titanis.lifeStages.2.labelFemale>
+    <Titanis.lifeStages.2.labelFemalePlural>самки титанисы</Titanis.lifeStages.2.labelFemalePlural>
     <Titanis.labelMale>самец титаниса</Titanis.labelMale>
+    <Titanis.labelMalePlural>самцы титанисы</Titanis.labelMalePlural>
     <Titanis.labelFemale>самка титаниса</Titanis.labelFemale>
+    <Titanis.labelFemalePlural>самки титанисы</Titanis.labelFemalePlural>
 
-	<Titanoboa.label>титанобоа</Titanoboa.label>
-    <Titanoboa.labelPlural>змеи титанобоа</Titanoboa.labelPlural>
+    <Titanoboa.label>титанобоа</Titanoboa.label>
+    <Titanoboa.labelPlural>титанобоа</Titanoboa.labelPlural>
+    <Titanoboa.lifeStages.0.label>титанобоа</Titanoboa.lifeStages.0.label>
+    <Titanoboa.lifeStages.0.labelPlural>титанобоа</Titanoboa.lifeStages.0.labelPlural>
+    <Titanoboa.lifeStages.0.labelMale>самец титанобоа</Titanoboa.lifeStages.0.labelMale>
+    <Titanoboa.lifeStages.0.labelMalePlural>самцы титанобоа</Titanoboa.lifeStages.0.labelMalePlural>
+    <Titanoboa.lifeStages.0.labelFemale>самка титанобоа</Titanoboa.lifeStages.0.labelFemale>
+    <Titanoboa.lifeStages.0.labelFemalePlural>самки титанобоа</Titanoboa.lifeStages.0.labelFemalePlural>
+    <Titanoboa.lifeStages.1.label>титанобоа</Titanoboa.lifeStages.1.label>
+    <Titanoboa.lifeStages.1.labelPlural>титанобоа</Titanoboa.lifeStages.1.labelPlural>
+    <Titanoboa.lifeStages.1.labelMale>самец титанобоа</Titanoboa.lifeStages.1.labelMale>
+    <Titanoboa.lifeStages.1.labelMalePlural>самцы титанобоа</Titanoboa.lifeStages.1.labelMalePlural>
+    <Titanoboa.lifeStages.1.labelFemale>самка титанобоа</Titanoboa.lifeStages.1.labelFemale>
+    <Titanoboa.lifeStages.1.labelFemalePlural>самки титанобоа</Titanoboa.lifeStages.1.labelFemalePlural>
+    <Titanoboa.lifeStages.2.label>титанобоа</Titanoboa.lifeStages.2.label>
+    <Titanoboa.lifeStages.2.labelPlural>титанобоа</Titanoboa.lifeStages.2.labelPlural>
+    <Titanoboa.lifeStages.2.labelMale>самец титанобоа</Titanoboa.lifeStages.2.labelMale>
+    <Titanoboa.lifeStages.2.labelMalePlural>самцы титанобоа</Titanoboa.lifeStages.2.labelMalePlural>
+    <Titanoboa.lifeStages.2.labelFemale>самка титанобоа</Titanoboa.lifeStages.2.labelFemale>
+    <Titanoboa.lifeStages.2.labelFemalePlural>самки титанобоа</Titanoboa.lifeStages.2.labelFemalePlural>
     <Titanoboa.labelMale>самец титанобоа</Titanoboa.labelMale>
+    <Titanoboa.labelMalePlural>самцы титанобоа</Titanoboa.labelMalePlural>
     <Titanoboa.labelFemale>самка титанобоа</Titanoboa.labelFemale>
+    <Titanoboa.labelFemalePlural>самки титанобоа</Titanoboa.labelFemalePlural>
 
-	<WoollyMammoth.label>шерстистый мамонт</WoollyMammoth.label>
+    <WoollyMammoth.label>шерстистый мамонт</WoollyMammoth.label>
     <WoollyMammoth.labelPlural>шерстистые мамонты</WoollyMammoth.labelPlural>
-	<WoollyMammoth.lifeStages.0.labelMale>мамонтёнок</WoollyMammoth.lifeStages.0.labelMale>
-  	<WoollyMammoth.lifeStages.0.labelFemale>мамонтёнок</WoollyMammoth.lifeStages.0.labelFemale>
-    <WoollyMammoth.labelMale>самец шерстяного мамонта</WoollyMammoth.labelMale>
-    <WoollyMammoth.labelFemale>самка шерстяного мамонта</WoollyMammoth.labelFemale>
-	
-	<Elasmotherium.label>эласмотерий</Elasmotherium.label>
+    <WoollyMammoth.lifeStages.0.label>телёнок шерстистого мамонта</WoollyMammoth.lifeStages.0.label>
+    <WoollyMammoth.lifeStages.0.labelPlural>телята шерстистого мамонта</WoollyMammoth.lifeStages.0.labelPlural>
+    <WoollyMammoth.lifeStages.0.labelMale>телёнок шерстистого мамонта</WoollyMammoth.lifeStages.0.labelMale>
+    <WoollyMammoth.lifeStages.0.labelMalePlural>телята шерстистого мамонта</WoollyMammoth.lifeStages.0.labelMalePlural>
+    <WoollyMammoth.lifeStages.0.labelFemale>тёлочка шерстистого мамонта</WoollyMammoth.lifeStages.0.labelFemale>
+    <WoollyMammoth.lifeStages.0.labelFemalePlural>тёлочки шерстистого мамонта</WoollyMammoth.lifeStages.0.labelFemalePlural>
+    <WoollyMammoth.lifeStages.1.label>шерстистый маммонт</WoollyMammoth.lifeStages.1.label>
+    <WoollyMammoth.lifeStages.1.labelPlural>шерстистый маммонт</WoollyMammoth.lifeStages.1.labelPlural>
+    <WoollyMammoth.lifeStages.1.labelMale>самец  шерстистого мамонта</WoollyMammoth.lifeStages.1.labelMale>
+    <WoollyMammoth.lifeStages.1.labelMalePlural>самцы  шерстистого мамонта</WoollyMammoth.lifeStages.1.labelMalePlural>
+    <WoollyMammoth.lifeStages.1.labelFemale>самка шерстистого мамонта</WoollyMammoth.lifeStages.1.labelFemale>
+    <WoollyMammoth.lifeStages.1.labelFemalePlural>самки  шерстистого мамонта</WoollyMammoth.lifeStages.1.labelFemalePlural>
+    <WoollyMammoth.lifeStages.2.label>шерстистый маммонт</WoollyMammoth.lifeStages.2.label>
+    <WoollyMammoth.lifeStages.2.labelPlural>шерстистые маммонты</WoollyMammoth.lifeStages.2.labelPlural>
+    <WoollyMammoth.lifeStages.2.labelMale>самец  шерстистого мамонта</WoollyMammoth.lifeStages.2.labelMale>
+    <WoollyMammoth.lifeStages.2.labelMalePlural>самцы  шерстистого мамонта</WoollyMammoth.lifeStages.2.labelMalePlural>
+    <WoollyMammoth.lifeStages.2.labelFemale>самка  шерстистого мамонта</WoollyMammoth.lifeStages.2.labelFemale>
+    <WoollyMammoth.lifeStages.2.labelFemalePlural>самки  шерстистого мамонта</WoollyMammoth.lifeStages.2.labelFemalePlural>
+    <WoollyMammoth.labelMale>самец  шерстистого мамонта</WoollyMammoth.labelMale>
+    <WoollyMammoth.labelMalePlural>самцы  шерстистого мамонта</WoollyMammoth.labelMalePlural>
+    <WoollyMammoth.labelFemale>самка  шерстистого мамонта</WoollyMammoth.labelFemale>
+    <WoollyMammoth.labelFemalePlural>самки  шерстистого мамонта</WoollyMammoth.labelFemalePlural>
+
+
+    <!-- UPDATE#1 -->
+
+    <Elasmotherium.label>эласмотерий</Elasmotherium.label>
     <Elasmotherium.labelPlural>эласмотерии</Elasmotherium.labelPlural>
+    <Elasmotherium.lifeStages.0.label>эласмотерий</Elasmotherium.lifeStages.0.label>
+    <Elasmotherium.lifeStages.0.labelPlural>эласмотерии</Elasmotherium.lifeStages.0.labelPlural>
+    <Elasmotherium.lifeStages.0.labelMale>самец эласмотерия</Elasmotherium.lifeStages.0.labelMale>
+    <Elasmotherium.lifeStages.0.labelMalePlural>самцы эласмотерия</Elasmotherium.lifeStages.0.labelMalePlural>
+    <Elasmotherium.lifeStages.0.labelFemale>самка эласмотерия</Elasmotherium.lifeStages.0.labelFemale>
+    <Elasmotherium.lifeStages.0.labelFemalePlural>самки эласмотерия</Elasmotherium.lifeStages.0.labelFemalePlural>
+    <Elasmotherium.lifeStages.1.label>эласмотерий</Elasmotherium.lifeStages.1.label>
+    <Elasmotherium.lifeStages.1.labelPlural>эласмотерии</Elasmotherium.lifeStages.1.labelPlural>
+    <Elasmotherium.lifeStages.1.labelMale>самец эласмотерия</Elasmotherium.lifeStages.1.labelMale>
+    <Elasmotherium.lifeStages.1.labelMalePlural>самцы эласмотерия</Elasmotherium.lifeStages.1.labelMalePlural>
+    <Elasmotherium.lifeStages.1.labelFemale>самка эласмотерия</Elasmotherium.lifeStages.1.labelFemale>
+    <Elasmotherium.lifeStages.1.labelFemalePlural>самки эласмотерия</Elasmotherium.lifeStages.1.labelFemalePlural>
+    <Elasmotherium.lifeStages.2.label>эласмотерий</Elasmotherium.lifeStages.2.label>
+    <Elasmotherium.lifeStages.2.labelPlural>эласмотерии</Elasmotherium.lifeStages.2.labelPlural>
+    <Elasmotherium.lifeStages.2.labelMale>самец эласмотерия</Elasmotherium.lifeStages.2.labelMale>
+    <Elasmotherium.lifeStages.2.labelMalePlural>самцы эласмотерия</Elasmotherium.lifeStages.2.labelMalePlural>
+    <Elasmotherium.lifeStages.2.labelFemale>самка эласмотерия</Elasmotherium.lifeStages.2.labelFemale>
+    <Elasmotherium.lifeStages.2.labelFemalePlural>самки эласмотерия</Elasmotherium.lifeStages.2.labelFemalePlural>
     <Elasmotherium.labelMale>самец эласмотерия</Elasmotherium.labelMale>
+    <Elasmotherium.labelMalePlural>самцы эласмотерия</Elasmotherium.labelMalePlural>
     <Elasmotherium.labelFemale>самка эласмотерия</Elasmotherium.labelFemale>
-	
-	<Smilodon.label>смилодон</Smilodon.label>
+    <Elasmotherium.labelFemalePlural>самки эласмотерия</Elasmotherium.labelFemalePlural>
+
+    <Smilodon.label>смилодон</Smilodon.label>
     <Smilodon.labelPlural>смилодоны</Smilodon.labelPlural>
+    <Smilodon.lifeStages.0.label>смилодон</Smilodon.lifeStages.0.label>
+    <Smilodon.lifeStages.0.labelPlural>смилодоны</Smilodon.lifeStages.0.labelPlural>
+    <Smilodon.lifeStages.0.labelMale>самец смилодона</Smilodon.lifeStages.0.labelMale>
+    <Smilodon.lifeStages.0.labelMalePlural>самцы смилодоны</Smilodon.lifeStages.0.labelMalePlural>
+    <Smilodon.lifeStages.0.labelFemale>самка смилодона</Smilodon.lifeStages.0.labelFemale>
+    <Smilodon.lifeStages.0.labelFemalePlural>самки смилодоны</Smilodon.lifeStages.0.labelFemalePlural>
+    <Smilodon.lifeStages.1.label>смилодон</Smilodon.lifeStages.1.label>
+    <Smilodon.lifeStages.1.labelPlural>смилодон</Smilodon.lifeStages.1.labelPlural>
+    <Smilodon.lifeStages.1.labelMale>самец смилодона</Smilodon.lifeStages.1.labelMale>
+    <Smilodon.lifeStages.1.labelMalePlural>самцы смилодоны</Smilodon.lifeStages.1.labelMalePlural>
+    <Smilodon.lifeStages.1.labelFemale>самка смилодона</Smilodon.lifeStages.1.labelFemale>
+    <Smilodon.lifeStages.1.labelFemalePlural>самки смилодоны</Smilodon.lifeStages.1.labelFemalePlural>
+    <Smilodon.lifeStages.2.label>смилодон</Smilodon.lifeStages.2.label>
+    <Smilodon.lifeStages.2.labelPlural>смилодон</Smilodon.lifeStages.2.labelPlural>
+    <Smilodon.lifeStages.2.labelMale>самец смилодона</Smilodon.lifeStages.2.labelMale>
+    <Smilodon.lifeStages.2.labelMalePlural>самцы смилодоны</Smilodon.lifeStages.2.labelMalePlural>
+    <Smilodon.lifeStages.2.labelFemale>самка смилодона</Smilodon.lifeStages.2.labelFemale>
+    <Smilodon.lifeStages.2.labelFemalePlural>самки смилодоны</Smilodon.lifeStages.2.labelFemalePlural>
     <Smilodon.labelMale>самец смилодона</Smilodon.labelMale>
+    <Smilodon.labelMalePlural>самцы смилодоны</Smilodon.labelMalePlural>
     <Smilodon.labelFemale>самка смилодона</Smilodon.labelFemale>
-	
-	<Chalicotherium.label>халикотерий</Chalicotherium.label>
+    <Smilodon.labelFemalePlural>самки смилодоны</Smilodon.labelFemalePlural>
+
+    <Chalicotherium.label>халикотерий</Chalicotherium.label>
     <Chalicotherium.labelPlural>халикотерии</Chalicotherium.labelPlural>
+    <Chalicotherium.lifeStages.0.label>халикотерий</Chalicotherium.lifeStages.0.label>
+    <Chalicotherium.lifeStages.0.labelPlural>халикотерии</Chalicotherium.lifeStages.0.labelPlural>
+    <Chalicotherium.lifeStages.0.labelMale>самец халикотерия</Chalicotherium.lifeStages.0.labelMale>
+    <Chalicotherium.lifeStages.0.labelMalePlural>самцы халикотерия</Chalicotherium.lifeStages.0.labelMalePlural>
+    <Chalicotherium.lifeStages.0.labelFemale>самка халикотерия</Chalicotherium.lifeStages.0.labelFemale>
+    <Chalicotherium.lifeStages.0.labelFemalePlural>самки халикотерия</Chalicotherium.lifeStages.0.labelFemalePlural>
+    <Chalicotherium.lifeStages.1.label>халикотерий</Chalicotherium.lifeStages.1.label>
+    <Chalicotherium.lifeStages.1.labelPlural>халикотерии</Chalicotherium.lifeStages.1.labelPlural>
+    <Chalicotherium.lifeStages.1.labelMale>самец халикотерия</Chalicotherium.lifeStages.1.labelMale>
+    <Chalicotherium.lifeStages.1.labelMalePlural>самцы халикотерия</Chalicotherium.lifeStages.1.labelMalePlural>
+    <Chalicotherium.lifeStages.1.labelFemale>самка халикотерия</Chalicotherium.lifeStages.1.labelFemale>
+    <Chalicotherium.lifeStages.1.labelFemalePlural>самки халикотерия</Chalicotherium.lifeStages.1.labelFemalePlural>
+    <Chalicotherium.lifeStages.2.label>халикотерий</Chalicotherium.lifeStages.2.label>
+    <Chalicotherium.lifeStages.2.labelPlural>халикотерии</Chalicotherium.lifeStages.2.labelPlural>
+    <Chalicotherium.lifeStages.2.labelMale>самец халикотерия</Chalicotherium.lifeStages.2.labelMale>
+    <Chalicotherium.lifeStages.2.labelMalePlural>самцы халикотерия</Chalicotherium.lifeStages.2.labelMalePlural>
+    <Chalicotherium.lifeStages.2.labelFemale>самка халикотерия</Chalicotherium.lifeStages.2.labelFemale>
+    <Chalicotherium.lifeStages.2.labelFemalePlural>самки халикотерия</Chalicotherium.lifeStages.2.labelFemalePlural>
     <Chalicotherium.labelMale>самец халикотерия</Chalicotherium.labelMale>
+    <Chalicotherium.labelMalePlural>самцы халикотерия</Chalicotherium.labelMalePlural>
     <Chalicotherium.labelFemale>самка халикотерия</Chalicotherium.labelFemale>
-	
-	<Megaloceros.label>мегалоцерос</Megaloceros.label>
+    <Chalicotherium.labelFemalePlural>самки халикотерия</Chalicotherium.labelFemalePlural>
+
+    <Megaloceros.label>мегалоцерос</Megaloceros.label>
     <Megaloceros.labelPlural>мегалоцеросы</Megaloceros.labelPlural>
-    <Megaloceros.labelMale>самец мегалоцеросa</Megaloceros.labelMale>
-    <Megaloceros.labelFemale>самка мегалоцеросa</Megaloceros.labelFemale>
+    <Megaloceros.lifeStages.0.label>мегалоцерос</Megaloceros.lifeStages.0.label>
+    <Megaloceros.lifeStages.0.labelPlural>мегалоцеросы</Megaloceros.lifeStages.0.labelPlural>
+    <Megaloceros.lifeStages.0.labelMale>самец мегалоцероса</Megaloceros.lifeStages.0.labelMale>
+    <Megaloceros.lifeStages.0.labelMalePlural>самцы мегалоцероса</Megaloceros.lifeStages.0.labelMalePlural>
+    <Megaloceros.lifeStages.0.labelFemale>самка мегалоцероса</Megaloceros.lifeStages.0.labelFemale>
+    <Megaloceros.lifeStages.0.labelFemalePlural>самки мегалоцероса</Megaloceros.lifeStages.0.labelFemalePlural>
+    <Megaloceros.lifeStages.1.label>мегалоцерос</Megaloceros.lifeStages.1.label>
+    <Megaloceros.lifeStages.1.labelPlural>мегалоцеросы</Megaloceros.lifeStages.1.labelPlural>
+    <Megaloceros.lifeStages.1.labelMale>самец мегалоцероса</Megaloceros.lifeStages.1.labelMale>
+    <Megaloceros.lifeStages.1.labelMalePlural>самцы мегалоцероса</Megaloceros.lifeStages.1.labelMalePlural>
+    <Megaloceros.lifeStages.1.labelFemale>самка мегалоцероса</Megaloceros.lifeStages.1.labelFemale>
+    <Megaloceros.lifeStages.1.labelFemalePlural>самки мегалоцероса</Megaloceros.lifeStages.1.labelFemalePlural>
+    <Megaloceros.lifeStages.2.label>мегалоцерос</Megaloceros.lifeStages.2.label>
+    <Megaloceros.lifeStages.2.labelPlural>мегалоцеросы</Megaloceros.lifeStages.2.labelPlural>
+    <Megaloceros.lifeStages.2.labelMale>самец мегалоцероса</Megaloceros.lifeStages.2.labelMale>
+    <Megaloceros.lifeStages.2.labelMalePlural>самцы мегалоцероса</Megaloceros.lifeStages.2.labelMalePlural>
+    <Megaloceros.lifeStages.2.labelFemale>самка мегалоцероса</Megaloceros.lifeStages.2.labelFemale>
+    <Megaloceros.lifeStages.2.labelFemalePlural>самки мегалоцероса</Megaloceros.lifeStages.2.labelFemalePlural>
+    <Megaloceros.labelMale>самец мегалоцероса</Megaloceros.labelMale>
+    <Megaloceros.labelMalePlural>самцы мегалоцеросы</Megaloceros.labelMalePlural>
+    <Megaloceros.labelFemale>самка мегалоцероса</Megaloceros.labelFemale>
+    <Megaloceros.labelFemalePlural>самки мегалоцеросы</Megaloceros.labelFemalePlural>
 
-	<Procoptodon.label>прокоптодон</Procoptodon.label>
+    <Procoptodon.label>прокоптодон</Procoptodon.label>
     <Procoptodon.labelPlural>прокоптодоны</Procoptodon.labelPlural>
-    <Procoptodon.labelMale>самец прокоптодонa</Procoptodon.labelMale>
-    <Procoptodon.labelFemale>самка прокоптодонa</Procoptodon.labelFemale>
-	
-	<Megalania.label>мегалания</Megalania.label>
+    <Procoptodon.lifeStages.0.label>прокоптодон</Procoptodon.lifeStages.0.label>
+    <Procoptodon.lifeStages.0.labelPlural>прокоптодон</Procoptodon.lifeStages.0.labelPlural>
+    <Procoptodon.lifeStages.0.labelMale>самец прокоптодона</Procoptodon.lifeStages.0.labelMale>
+    <Procoptodon.lifeStages.0.labelMalePlural>самцы прокоптодона</Procoptodon.lifeStages.0.labelMalePlural>
+    <Procoptodon.lifeStages.0.labelFemale>самка прокоптодона</Procoptodon.lifeStages.0.labelFemale>
+    <Procoptodon.lifeStages.0.labelFemalePlural>самки прокоптодона</Procoptodon.lifeStages.0.labelFemalePlural>
+    <Procoptodon.lifeStages.1.label>прокоптодон</Procoptodon.lifeStages.1.label>
+    <Procoptodon.lifeStages.1.labelPlural>прокоптодон</Procoptodon.lifeStages.1.labelPlural>
+    <Procoptodon.lifeStages.1.labelMale>самец прокоптодона</Procoptodon.lifeStages.1.labelMale>
+    <Procoptodon.lifeStages.1.labelMalePlural>самцы прокоптодона</Procoptodon.lifeStages.1.labelMalePlural>
+    <Procoptodon.lifeStages.1.labelFemale>самка прокоптодона</Procoptodon.lifeStages.1.labelFemale>
+    <Procoptodon.lifeStages.1.labelFemalePlural>самки прокоптодона</Procoptodon.lifeStages.1.labelFemalePlural>
+    <Procoptodon.lifeStages.2.label>прокоптодон</Procoptodon.lifeStages.2.label>
+    <Procoptodon.lifeStages.2.labelPlural>прокоптодон</Procoptodon.lifeStages.2.labelPlural>
+    <Procoptodon.lifeStages.2.labelMale>самец прокоптодона</Procoptodon.lifeStages.2.labelMale>
+    <Procoptodon.lifeStages.2.labelMalePlural>самцы прокоптодона</Procoptodon.lifeStages.2.labelMalePlural>
+    <Procoptodon.lifeStages.2.labelFemale>самка прокоптодона</Procoptodon.lifeStages.2.labelFemale>
+    <Procoptodon.lifeStages.2.labelFemalePlural>самки прокоптодона</Procoptodon.lifeStages.2.labelFemalePlural>
+    <Procoptodon.labelMale>самец прокоптодона</Procoptodon.labelMale>
+    <Procoptodon.labelMalePlural>самцы прокоптодона</Procoptodon.labelMalePlural>
+    <Procoptodon.labelFemale>самка прокоптодона</Procoptodon.labelFemale>
+    <Procoptodon.labelFemalePlural>самки прокоптодона</Procoptodon.labelFemalePlural>
+
+    <Megalania.label>мегалания</Megalania.label>
     <Megalania.labelPlural>мегалании</Megalania.labelPlural>
-    <Megalania.labelMale>самец мегалании</Megalania.labelMale>
-    <Megalania.labelFemale>самка мегалании</Megalania.labelFemale>
+    <Megalania.lifeStages.0.label>мегалания</Megalania.lifeStages.0.label>
+    <Megalania.lifeStages.0.labelPlural>мегалания</Megalania.lifeStages.0.labelPlural>
+    <Megalania.lifeStages.0.labelMale>самец мегалания</Megalania.lifeStages.0.labelMale>
+    <Megalania.lifeStages.0.labelMalePlural>самцы мегалании</Megalania.lifeStages.0.labelMalePlural>
+    <Megalania.lifeStages.0.labelFemale>самка мегалания</Megalania.lifeStages.0.labelFemale>
+    <Megalania.lifeStages.0.labelFemalePlural>самки мегалании</Megalania.lifeStages.0.labelFemalePlural>
+    <Megalania.lifeStages.1.label>мегалания</Megalania.lifeStages.1.label>
+    <Megalania.lifeStages.1.labelPlural>мегалания</Megalania.lifeStages.1.labelPlural>
+    <Megalania.lifeStages.1.labelMale>самец мегалания</Megalania.lifeStages.1.labelMale>
+    <Megalania.lifeStages.1.labelMalePlural>самцы мегалании</Megalania.lifeStages.1.labelMalePlural>
+    <Megalania.lifeStages.1.labelFemale>самка мегалания</Megalania.lifeStages.1.labelFemale>
+    <Megalania.lifeStages.1.labelFemalePlural>самки мегалании</Megalania.lifeStages.1.labelFemalePlural>
+    <Megalania.lifeStages.2.label>мегалания</Megalania.lifeStages.2.label>
+    <Megalania.lifeStages.2.labelPlural>мегалания</Megalania.lifeStages.2.labelPlural>
+    <Megalania.lifeStages.2.labelMale>самец мегалания</Megalania.lifeStages.2.labelMale>
+    <Megalania.lifeStages.2.labelMalePlural>самцы мегалании</Megalania.lifeStages.2.labelMalePlural>
+    <Megalania.lifeStages.2.labelFemale>самка мегалания</Megalania.lifeStages.2.labelFemale>
+    <Megalania.lifeStages.2.labelFemalePlural>самки мегалании</Megalania.lifeStages.2.labelFemalePlural>
+    <Megalania.labelMale>самец мегалания</Megalania.labelMale>
+    <Megalania.labelMalePlural>самцы мегалании</Megalania.labelMalePlural>
+    <Megalania.labelFemale>самка мегалания</Megalania.labelFemale>
+    <Megalania.labelFemalePlural>самки мегалании</Megalania.labelFemalePlural>
 	
-	<Gomphotaria.label>гомфотария</Gomphotaria.label>
+    <!-- UPDATE#2 -->
+
+    <Gomphotaria.label>гомфотария</Gomphotaria.label>
     <Gomphotaria.labelPlural>гомфотарии</Gomphotaria.labelPlural>
+    <Gomphotaria.lifeStages.0.label>телёнок гомфотарии</Gomphotaria.lifeStages.0.label>
+    <Gomphotaria.lifeStages.0.labelPlural>телята гомфотарии</Gomphotaria.lifeStages.0.labelPlural>
+    <Gomphotaria.lifeStages.0.labelMale>телёнок гомфотарии</Gomphotaria.lifeStages.0.labelMale>
+    <Gomphotaria.lifeStages.0.labelMalePlural>телята гомфотарии</Gomphotaria.lifeStages.0.labelMalePlural>
+    <Gomphotaria.lifeStages.0.labelFemale>тёлочка гомфотарии</Gomphotaria.lifeStages.0.labelFemale>
+    <Gomphotaria.lifeStages.0.labelFemalePlural>тёлочки гомфотарии</Gomphotaria.lifeStages.0.labelFemalePlural>
+    <Gomphotaria.lifeStages.1.label>гомфотария</Gomphotaria.lifeStages.1.label>
+    <Gomphotaria.lifeStages.1.labelPlural>гомфотария</Gomphotaria.lifeStages.1.labelPlural>
+    <Gomphotaria.lifeStages.1.labelMale>самец гомфотарии</Gomphotaria.lifeStages.1.labelMale>
+    <Gomphotaria.lifeStages.1.labelMalePlural>самецы гомфотарии</Gomphotaria.lifeStages.1.labelMalePlural>
+    <Gomphotaria.lifeStages.1.labelFemale>самка гомфотарии</Gomphotaria.lifeStages.1.labelFemale>
+    <Gomphotaria.lifeStages.1.labelFemalePlural>самки гомфотарии</Gomphotaria.lifeStages.1.labelFemalePlural>
+    <Gomphotaria.lifeStages.2.label>гомфотария</Gomphotaria.lifeStages.2.label>
+    <Gomphotaria.lifeStages.2.labelPlural>гомфотария</Gomphotaria.lifeStages.2.labelPlural>
+    <Gomphotaria.lifeStages.2.labelMale>самец гомфотарии</Gomphotaria.lifeStages.2.labelMale>
+    <Gomphotaria.lifeStages.2.labelMalePlural>самецы гомфотарии</Gomphotaria.lifeStages.2.labelMalePlural>
+    <Gomphotaria.lifeStages.2.labelFemale>самка гомфотарии</Gomphotaria.lifeStages.2.labelFemale>
+    <Gomphotaria.lifeStages.2.labelFemalePlural>самки гомфотарии</Gomphotaria.lifeStages.2.labelFemalePlural>
     <Gomphotaria.labelMale>самец гомфотарии</Gomphotaria.labelMale>
+    <Gomphotaria.labelMalePlural>самецы гомфотарии</Gomphotaria.labelMalePlural>
     <Gomphotaria.labelFemale>самка гомфотарии</Gomphotaria.labelFemale>
-	
-	<Diprotodon.label>дипротодон</Diprotodon.label>	
+    <Gomphotaria.labelFemalePlural>самки гомфотарии</Gomphotaria.labelFemalePlural>
+
+    <Diprotodon.label>дипротодон</Diprotodon.label>
     <Diprotodon.labelPlural>дипротодоны</Diprotodon.labelPlural>
+    <Diprotodon.lifeStages.0.label>дипротодон</Diprotodon.lifeStages.0.label>
+    <Diprotodon.lifeStages.0.labelPlural>дипротодон</Diprotodon.lifeStages.0.labelPlural>
+    <Diprotodon.lifeStages.0.labelMale>самец дипротодона</Diprotodon.lifeStages.0.labelMale>
+    <Diprotodon.lifeStages.0.labelMalePlural>самцы дипротодона</Diprotodon.lifeStages.0.labelMalePlural>
+    <Diprotodon.lifeStages.0.labelFemale>самка дипротодона</Diprotodon.lifeStages.0.labelFemale>
+    <Diprotodon.lifeStages.0.labelFemalePlural>самки дипротодона</Diprotodon.lifeStages.0.labelFemalePlural>
+    <Diprotodon.lifeStages.1.label>дипротодон</Diprotodon.lifeStages.1.label>
+    <Diprotodon.lifeStages.1.labelPlural>дипротодон</Diprotodon.lifeStages.1.labelPlural>
+    <Diprotodon.lifeStages.1.labelMale>самец дипротодона</Diprotodon.lifeStages.1.labelMale>
+    <Diprotodon.lifeStages.1.labelMalePlural>самцы дипротодона</Diprotodon.lifeStages.1.labelMalePlural>
+    <Diprotodon.lifeStages.1.labelFemale>самка дипротодона</Diprotodon.lifeStages.1.labelFemale>
+    <Diprotodon.lifeStages.1.labelFemalePlural>самки дипротодона</Diprotodon.lifeStages.1.labelFemalePlural>
+    <Diprotodon.lifeStages.2.label>дипротодон</Diprotodon.lifeStages.2.label>
+    <Diprotodon.lifeStages.2.labelPlural>дипротодон</Diprotodon.lifeStages.2.labelPlural>
+    <Diprotodon.lifeStages.2.labelMale>самец дипротодона</Diprotodon.lifeStages.2.labelMale>
+    <Diprotodon.lifeStages.2.labelMalePlural>самцы дипротодона</Diprotodon.lifeStages.2.labelMalePlural>
+    <Diprotodon.lifeStages.2.labelFemale>самка дипротодона</Diprotodon.lifeStages.2.labelFemale>
+    <Diprotodon.lifeStages.2.labelFemalePlural>самки дипротодона</Diprotodon.lifeStages.2.labelFemalePlural>
     <Diprotodon.labelMale>самец дипротодона</Diprotodon.labelMale>
+    <Diprotodon.labelMalePlural>самцы дипротодона</Diprotodon.labelMalePlural>
     <Diprotodon.labelFemale>самка дипротодона</Diprotodon.labelFemale>
-	
-	<ShortfacedBear.label>короткомордый медведь</ShortfacedBear.label>
-    <ShortfacedBear.labelPlural>короткомордые медведи</ShortfacedBear.labelPlural>
-	<ShortfacedBear.lifeStages.0.labelMale>короткомордый медвежонок</ShortfacedBear.lifeStages.0.labelMale>
-  	<ShortfacedBear.lifeStages.0.labelFemale>короткомордый медвежонок</ShortfacedBear.lifeStages.0.labelFemale>
-    <ShortfacedBear.labelMale>короткомордый медведь</ShortfacedBear.labelMale>
-    <ShortfacedBear.labelFemale>короткомордая медведица</ShortfacedBear.labelFemale>
+    <Diprotodon.labelFemalePlural>самки дипротодона</Diprotodon.labelFemalePlural>
 
-	<Dinocrocuta.label>динокрокута</Dinocrocuta.label>
+    <ShortfacedBear.label>коротко-мордый медведь</ShortfacedBear.label>
+    <ShortfacedBear.labelPlural>коротко-мордые медведи</ShortfacedBear.labelPlural>
+    <ShortfacedBear.lifeStages.0.label>коротко-мордый медведь</ShortfacedBear.lifeStages.0.label>
+    <ShortfacedBear.lifeStages.0.labelPlural>коротко-мордые медведи</ShortfacedBear.lifeStages.0.labelPlural>
+    <ShortfacedBear.lifeStages.0.labelMale>самец коротко-мордого медведя</ShortfacedBear.lifeStages.0.labelMale>
+    <ShortfacedBear.lifeStages.0.labelMalePlural>самцы коротко-мордого медведя</ShortfacedBear.lifeStages.0.labelMalePlural>
+    <ShortfacedBear.lifeStages.0.labelFemale>самка коротко-мордого медведя</ShortfacedBear.lifeStages.0.labelFemale>
+    <ShortfacedBear.lifeStages.0.labelFemalePlural>самки коротко-мордого медведя</ShortfacedBear.lifeStages.0.labelFemalePlural>
+    <ShortfacedBear.lifeStages.1.label>коротко-мордый медведь</ShortfacedBear.lifeStages.1.label>
+    <ShortfacedBear.lifeStages.1.labelPlural>коротко-мордый медведь</ShortfacedBear.lifeStages.1.labelPlural>
+    <ShortfacedBear.lifeStages.1.labelMale>самец коротко-мордого медведя</ShortfacedBear.lifeStages.1.labelMale>
+    <ShortfacedBear.lifeStages.1.labelMalePlural>самцы коротко-мордого медведя</ShortfacedBear.lifeStages.1.labelMalePlural>
+    <ShortfacedBear.lifeStages.1.labelFemale>самка коротко-мордого медведя</ShortfacedBear.lifeStages.1.labelFemale>
+    <ShortfacedBear.lifeStages.1.labelFemalePlural>самки коротко-мордого медведя</ShortfacedBear.lifeStages.1.labelFemalePlural>
+    <ShortfacedBear.lifeStages.2.label>коротко-мордый медведь</ShortfacedBear.lifeStages.2.label>
+    <ShortfacedBear.lifeStages.2.labelPlural>коротко-мордый медведь</ShortfacedBear.lifeStages.2.labelPlural>
+    <ShortfacedBear.lifeStages.2.labelMale>самец коротко-мордого медведя</ShortfacedBear.lifeStages.2.labelMale>
+    <ShortfacedBear.lifeStages.2.labelMalePlural>самцы коротко-мордого медведя</ShortfacedBear.lifeStages.2.labelMalePlural>
+    <ShortfacedBear.lifeStages.2.labelFemale>самка коротко-мордого медведя</ShortfacedBear.lifeStages.2.labelFemale>
+    <ShortfacedBear.lifeStages.2.labelFemalePlural>самки коротко-мордого медведя</ShortfacedBear.lifeStages.2.labelFemalePlural>
+    <ShortfacedBear.labelMale>самец коротко-мордого медведя</ShortfacedBear.labelMale>
+    <ShortfacedBear.labelMalePlural>самцы коротко-мордого медведя</ShortfacedBear.labelMalePlural>
+    <ShortfacedBear.labelFemale>самка коротко-мордого медведя</ShortfacedBear.labelFemale>
+    <ShortfacedBear.labelFemalePlural>самки коротко-мордого медведя</ShortfacedBear.labelFemalePlural>
+
+    <Dinocrocuta.label>динокрокут</Dinocrocuta.label>
     <Dinocrocuta.labelPlural>динокрокуты</Dinocrocuta.labelPlural>
+    <Dinocrocuta.lifeStages.0.label>динокрокут</Dinocrocuta.lifeStages.0.label>
+    <Dinocrocuta.lifeStages.0.labelPlural>динокрокуты</Dinocrocuta.lifeStages.0.labelPlural>
+    <Dinocrocuta.lifeStages.0.labelMale>самец динокрокута</Dinocrocuta.lifeStages.0.labelMale>
+    <Dinocrocuta.lifeStages.0.labelMalePlural>самцы динокрокута</Dinocrocuta.lifeStages.0.labelMalePlural>
+    <Dinocrocuta.lifeStages.0.labelFemale>самка динокрокута</Dinocrocuta.lifeStages.0.labelFemale>
+    <Dinocrocuta.lifeStages.0.labelFemalePlural>самки динокрокута</Dinocrocuta.lifeStages.0.labelFemalePlural>
+    <Dinocrocuta.lifeStages.1.label>динокрокута</Dinocrocuta.lifeStages.1.label>
+    <Dinocrocuta.lifeStages.1.labelPlural>динокрокута</Dinocrocuta.lifeStages.1.labelPlural>
+    <Dinocrocuta.lifeStages.1.labelMale>самец динокрокута</Dinocrocuta.lifeStages.1.labelMale>
+    <Dinocrocuta.lifeStages.1.labelMalePlural>самцы динокрокута</Dinocrocuta.lifeStages.1.labelMalePlural>
+    <Dinocrocuta.lifeStages.1.labelFemale>самка динокрокута</Dinocrocuta.lifeStages.1.labelFemale>
+    <Dinocrocuta.lifeStages.1.labelFemalePlural>самки динокрокута</Dinocrocuta.lifeStages.1.labelFemalePlural>
+    <Dinocrocuta.lifeStages.2.label>динокрокута</Dinocrocuta.lifeStages.2.label>
+    <Dinocrocuta.lifeStages.2.labelPlural>динокрокута</Dinocrocuta.lifeStages.2.labelPlural>
+    <Dinocrocuta.lifeStages.2.labelMale>самец динокрокута</Dinocrocuta.lifeStages.2.labelMale>
+    <Dinocrocuta.lifeStages.2.labelMalePlural>самцы динокрокута</Dinocrocuta.lifeStages.2.labelMalePlural>
+    <Dinocrocuta.lifeStages.2.labelFemale>самка динокрокута</Dinocrocuta.lifeStages.2.labelFemale>
+    <Dinocrocuta.lifeStages.2.labelFemalePlural>самки динокрокута</Dinocrocuta.lifeStages.2.labelFemalePlural>
     <Dinocrocuta.labelMale>самец динокрокута</Dinocrocuta.labelMale>
+    <Dinocrocuta.labelMalePlural>самцы динокрокута</Dinocrocuta.labelMalePlural>
     <Dinocrocuta.labelFemale>самка динокрокута</Dinocrocuta.labelFemale>
-	
-	<Sivatherium.label>сиватерий</Sivatherium.label>
+    <Dinocrocuta.labelFemalePlural>самки динокрокута</Dinocrocuta.labelFemalePlural>
+
+    <Sivatherium.label>сиватерий</Sivatherium.label>
     <Sivatherium.labelPlural>сиватерии</Sivatherium.labelPlural>
+    <Sivatherium.lifeStages.0.label>телёнок сиватерия</Sivatherium.lifeStages.0.label>
+    <Sivatherium.lifeStages.0.labelPlural>телята сиватерия</Sivatherium.lifeStages.0.labelPlural>
+    <Sivatherium.lifeStages.0.labelMale>телёнок сиватерия</Sivatherium.lifeStages.0.labelMale>
+    <Sivatherium.lifeStages.0.labelMalePlural>телята сиватерия</Sivatherium.lifeStages.0.labelMalePlural>
+    <Sivatherium.lifeStages.0.labelFemale>тёлочка сиватерия</Sivatherium.lifeStages.0.labelFemale>
+    <Sivatherium.lifeStages.0.labelFemalePlural>тёлочки сиватерия</Sivatherium.lifeStages.0.labelFemalePlural>
+    <Sivatherium.lifeStages.1.label>сиватерий</Sivatherium.lifeStages.1.label>
+    <Sivatherium.lifeStages.1.labelPlural>сиватерии</Sivatherium.lifeStages.1.labelPlural>
+    <Sivatherium.lifeStages.1.labelMale>самец сиватерия</Sivatherium.lifeStages.1.labelMale>
+    <Sivatherium.lifeStages.1.labelMalePlural>самцы сиватерия</Sivatherium.lifeStages.1.labelMalePlural>
+    <Sivatherium.lifeStages.1.labelFemale>самка сиватерия</Sivatherium.lifeStages.1.labelFemale>
+    <Sivatherium.lifeStages.1.labelFemalePlural>самки сиватерия</Sivatherium.lifeStages.1.labelFemalePlural>
+    <Sivatherium.lifeStages.2.label>сиватерий</Sivatherium.lifeStages.2.label>
+    <Sivatherium.lifeStages.2.labelPlural>сиватерии</Sivatherium.lifeStages.2.labelPlural>
+    <Sivatherium.lifeStages.2.labelMale>самец сиватерия</Sivatherium.lifeStages.2.labelMale>
+    <Sivatherium.lifeStages.2.labelMalePlural>самцы сиватерия</Sivatherium.lifeStages.2.labelMalePlural>
+    <Sivatherium.lifeStages.2.labelFemale>самка сиватерия</Sivatherium.lifeStages.2.labelFemale>
+    <Sivatherium.lifeStages.2.labelFemalePlural>самки сиватерия</Sivatherium.lifeStages.2.labelFemalePlural>
     <Sivatherium.labelMale>самец сиватерия</Sivatherium.labelMale>
+    <Sivatherium.labelMalePlural>самцы сиватерии</Sivatherium.labelMalePlural>
     <Sivatherium.labelFemale>самка сиватерия</Sivatherium.labelFemale>
-	
-	<Andrewsarchus.label>эндрюсарх</Andrewsarchus.label>
+    <Sivatherium.labelFemalePlural>самки сиватерии</Sivatherium.labelFemalePlural>
+
+
+    <!-- UPDATE#3 -->
+
+    <Andrewsarchus.label>эндрюсарх</Andrewsarchus.label>
     <Andrewsarchus.labelPlural>эндрюсархи</Andrewsarchus.labelPlural>
+    <Andrewsarchus.lifeStages.0.label>эндрюсарх</Andrewsarchus.lifeStages.0.label>
+    <Andrewsarchus.lifeStages.0.labelPlural>эндрюсархи</Andrewsarchus.lifeStages.0.labelPlural>
+    <Andrewsarchus.lifeStages.0.labelMale>самец эндрюсарха</Andrewsarchus.lifeStages.0.labelMale>
+    <Andrewsarchus.lifeStages.0.labelMalePlural>самцы эндрюсарха</Andrewsarchus.lifeStages.0.labelMalePlural>
+    <Andrewsarchus.lifeStages.0.labelFemale>самка эндрюсарха</Andrewsarchus.lifeStages.0.labelFemale>
+    <Andrewsarchus.lifeStages.0.labelFemalePlural>самки эндрюсарха</Andrewsarchus.lifeStages.0.labelFemalePlural>
+    <Andrewsarchus.lifeStages.1.label>эндрюсарх</Andrewsarchus.lifeStages.1.label>
+    <Andrewsarchus.lifeStages.1.labelPlural>эндрюсархи</Andrewsarchus.lifeStages.1.labelPlural>
+    <Andrewsarchus.lifeStages.1.labelMale>самец эндрюсарха</Andrewsarchus.lifeStages.1.labelMale>
+    <Andrewsarchus.lifeStages.1.labelMalePlural>самцы эндрюсарха</Andrewsarchus.lifeStages.1.labelMalePlural>
+    <Andrewsarchus.lifeStages.1.labelFemale>самка эндрюсарха</Andrewsarchus.lifeStages.1.labelFemale>
+    <Andrewsarchus.lifeStages.1.labelFemalePlural>самки эндрюсарха</Andrewsarchus.lifeStages.1.labelFemalePlural>
+    <Andrewsarchus.lifeStages.2.label>эндрюсарх</Andrewsarchus.lifeStages.2.label>
+    <Andrewsarchus.lifeStages.2.labelPlural>эндрюсархи</Andrewsarchus.lifeStages.2.labelPlural>
+    <Andrewsarchus.lifeStages.2.labelMale>самец эндрюсарха</Andrewsarchus.lifeStages.2.labelMale>
+    <Andrewsarchus.lifeStages.2.labelMalePlural>самцы эндрюсарха</Andrewsarchus.lifeStages.2.labelMalePlural>
+    <Andrewsarchus.lifeStages.2.labelFemale>самка эндрюсарха</Andrewsarchus.lifeStages.2.labelFemale>
+    <Andrewsarchus.lifeStages.2.labelFemalePlural>самки эндрюсарха</Andrewsarchus.lifeStages.2.labelFemalePlural>
     <Andrewsarchus.labelMale>самец эндрюсарха</Andrewsarchus.labelMale>
+    <Andrewsarchus.labelMalePlural>самцы эндрюсархи</Andrewsarchus.labelMalePlural>
     <Andrewsarchus.labelFemale>самка эндрюсарха</Andrewsarchus.labelFemale>
-	
-	<Dinornis.label>динорнис</Dinornis.label>
-    <Dinornis.labelPlural>птицы динорниса</Dinornis.labelPlural>
-	<Dinornis.lifeStages.0.labelMale>птенец динорниса</Dinornis.lifeStages.0.labelMale>
-  	<Dinornis.lifeStages.0.labelFemale>птенец динорниса</Dinornis.lifeStages.0.labelFemale>
+    <Andrewsarchus.labelFemalePlural>самки эндрюсархи</Andrewsarchus.labelFemalePlural>
+
+    <Dinornis.label>динорнис</Dinornis.label>
+    <Dinornis.labelPlural>динорнисы</Dinornis.labelPlural>
+    <Dinornis.lifeStages.0.label>динорнис</Dinornis.lifeStages.0.label>
+    <Dinornis.lifeStages.0.labelPlural>динорнисы</Dinornis.lifeStages.0.labelPlural>
+    <Dinornis.lifeStages.0.labelMale>самец динорниса</Dinornis.lifeStages.0.labelMale>
+    <Dinornis.lifeStages.0.labelMalePlural>самцы динорниса</Dinornis.lifeStages.0.labelMalePlural>
+    <Dinornis.lifeStages.0.labelFemale>самка динорниса</Dinornis.lifeStages.0.labelFemale>
+    <Dinornis.lifeStages.0.labelFemalePlural>самки динорниса</Dinornis.lifeStages.0.labelFemalePlural>
+    <Dinornis.lifeStages.1.label>динорнис</Dinornis.lifeStages.1.label>
+    <Dinornis.lifeStages.1.labelPlural>динорнисы</Dinornis.lifeStages.1.labelPlural>
+    <Dinornis.lifeStages.1.labelMale>самец динорниса</Dinornis.lifeStages.1.labelMale>
+    <Dinornis.lifeStages.1.labelMalePlural>самцы динорниса</Dinornis.lifeStages.1.labelMalePlural>
+    <Dinornis.lifeStages.1.labelFemale>самка динорниса</Dinornis.lifeStages.1.labelFemale>
+    <Dinornis.lifeStages.1.labelFemalePlural>самки динорниса</Dinornis.lifeStages.1.labelFemalePlural>
+    <Dinornis.lifeStages.2.label>динорнис</Dinornis.lifeStages.2.label>
+    <Dinornis.lifeStages.2.labelPlural>динорнисы</Dinornis.lifeStages.2.labelPlural>
+    <Dinornis.lifeStages.2.labelMale>самец динорниса</Dinornis.lifeStages.2.labelMale>
+    <Dinornis.lifeStages.2.labelMalePlural>самцы динорниса</Dinornis.lifeStages.2.labelMalePlural>
+    <Dinornis.lifeStages.2.labelFemale>самка динорниса</Dinornis.lifeStages.2.labelFemale>
+    <Dinornis.lifeStages.2.labelFemalePlural>самки динорниса</Dinornis.lifeStages.2.labelFemalePlural>
     <Dinornis.labelMale>самец динорниса</Dinornis.labelMale>
+    <Dinornis.labelMalePlural>самцы динорнисы</Dinornis.labelMalePlural>
     <Dinornis.labelFemale>самка динорниса</Dinornis.labelFemale>
-	
-	<Macrauchenia.label>макраухения</Macrauchenia.label>
+    <Dinornis.labelFemalePlural>самки динорнисы</Dinornis.labelFemalePlural>
+
+    <Macrauchenia.label>макраухения</Macrauchenia.label>
     <Macrauchenia.labelPlural>макраухении</Macrauchenia.labelPlural>
+    <Macrauchenia.lifeStages.0.label>макраухения</Macrauchenia.lifeStages.0.label>
+    <Macrauchenia.lifeStages.0.labelPlural>макраухения</Macrauchenia.lifeStages.0.labelPlural>
+    <Macrauchenia.lifeStages.0.labelMale>самец макраухении</Macrauchenia.lifeStages.0.labelMale>
+    <Macrauchenia.lifeStages.0.labelMalePlural>самцы макраухении</Macrauchenia.lifeStages.0.labelMalePlural>
+    <Macrauchenia.lifeStages.0.labelFemale>самка макраухении</Macrauchenia.lifeStages.0.labelFemale>
+    <Macrauchenia.lifeStages.0.labelFemalePlural>самки макраухении</Macrauchenia.lifeStages.0.labelFemalePlural>
+    <Macrauchenia.lifeStages.1.label>макраухения</Macrauchenia.lifeStages.1.label>
+    <Macrauchenia.lifeStages.1.labelPlural>макраухения</Macrauchenia.lifeStages.1.labelPlural>
+    <Macrauchenia.lifeStages.1.labelMale>самец макраухении</Macrauchenia.lifeStages.1.labelMale>
+    <Macrauchenia.lifeStages.1.labelMalePlural>самцы макраухении</Macrauchenia.lifeStages.1.labelMalePlural>
+    <Macrauchenia.lifeStages.1.labelFemale>самка макраухении</Macrauchenia.lifeStages.1.labelFemale>
+    <Macrauchenia.lifeStages.1.labelFemalePlural>самки макраухении</Macrauchenia.lifeStages.1.labelFemalePlural>
+    <Macrauchenia.lifeStages.2.label>макраухения</Macrauchenia.lifeStages.2.label>
+    <Macrauchenia.lifeStages.2.labelPlural>макраухения</Macrauchenia.lifeStages.2.labelPlural>
+    <Macrauchenia.lifeStages.2.labelMale>самец макраухении</Macrauchenia.lifeStages.2.labelMale>
+    <Macrauchenia.lifeStages.2.labelMalePlural>самцы макраухении</Macrauchenia.lifeStages.2.labelMalePlural>
+    <Macrauchenia.lifeStages.2.labelFemale>самка макраухении</Macrauchenia.lifeStages.2.labelFemale>
+    <Macrauchenia.lifeStages.2.labelFemalePlural>самки макраухении</Macrauchenia.lifeStages.2.labelFemalePlural>
     <Macrauchenia.labelMale>самец макраухении</Macrauchenia.labelMale>
+    <Macrauchenia.labelMalePlural>самцы макраухении</Macrauchenia.labelMalePlural>
     <Macrauchenia.labelFemale>самка макраухении</Macrauchenia.labelFemale>
-	
-	<Quinkana.label>квинкана</Quinkana.label>
+    <Macrauchenia.labelFemalePlural>самки макраухении</Macrauchenia.labelFemalePlural>
+
+    <Quinkana.label>квинкана</Quinkana.label>
     <Quinkana.labelPlural>квинканы</Quinkana.labelPlural>
+    <Quinkana.lifeStages.0.label>квинкана</Quinkana.lifeStages.0.label>
+    <Quinkana.lifeStages.0.labelPlural>квинкана</Quinkana.lifeStages.0.labelPlural>
+    <Quinkana.lifeStages.0.labelMale>самец квинканы</Quinkana.lifeStages.0.labelMale>
+    <Quinkana.lifeStages.0.labelMalePlural>самцы квинканы</Quinkana.lifeStages.0.labelMalePlural>
+    <Quinkana.lifeStages.0.labelFemale>самка квинканы</Quinkana.lifeStages.0.labelFemale>
+    <Quinkana.lifeStages.0.labelFemalePlural>самки квинканы</Quinkana.lifeStages.0.labelFemalePlural>
+    <Quinkana.lifeStages.1.label>квинкана</Quinkana.lifeStages.1.label>
+    <Quinkana.lifeStages.1.labelPlural>квинкана</Quinkana.lifeStages.1.labelPlural>
+    <Quinkana.lifeStages.1.labelMale>самец квинканы</Quinkana.lifeStages.1.labelMale>
+    <Quinkana.lifeStages.1.labelMalePlural>самцы квинканы</Quinkana.lifeStages.1.labelMalePlural>
+    <Quinkana.lifeStages.1.labelFemale>самка квинканы</Quinkana.lifeStages.1.labelFemale>
+    <Quinkana.lifeStages.1.labelFemalePlural>самки квинканы</Quinkana.lifeStages.1.labelFemalePlural>
+    <Quinkana.lifeStages.2.label>квинкана</Quinkana.lifeStages.2.label>
+    <Quinkana.lifeStages.2.labelPlural>квинкана</Quinkana.lifeStages.2.labelPlural>
+    <Quinkana.lifeStages.2.labelMale>самец квинканы</Quinkana.lifeStages.2.labelMale>
+    <Quinkana.lifeStages.2.labelMalePlural>самцы квинканы</Quinkana.lifeStages.2.labelMalePlural>
+    <Quinkana.lifeStages.2.labelFemale>самка квинканы</Quinkana.lifeStages.2.labelFemale>
+    <Quinkana.lifeStages.2.labelFemalePlural>самки квинканы</Quinkana.lifeStages.2.labelFemalePlural>
     <Quinkana.labelMale>самец квинканы</Quinkana.labelMale>
+    <Quinkana.labelMalePlural>самцы квинканы</Quinkana.labelMalePlural>
     <Quinkana.labelFemale>самка квинканы</Quinkana.labelFemale>
+    <Quinkana.labelFemalePlural>самки квинканы</Quinkana.labelFemalePlural>
 	
-	<Deinotherium.label>дейнотрий</Deinotherium.label>
+    <!-- UPDATE#5 -->
+
+    <Deinotherium.label>дейнотерий</Deinotherium.label>
     <Deinotherium.labelPlural>дейнотерии</Deinotherium.labelPlural>
-	<Deinotherium.lifeStages.0.labelMale>телёнок дейнотерия</Deinotherium.lifeStages.0.labelMale>
-  	<Deinotherium.lifeStages.0.labelFemale>тёлка дейнотерия</Deinotherium.lifeStages.0.labelFemale>
+    <Deinotherium.lifeStages.0.label>телёнок дейнотерия</Deinotherium.lifeStages.0.label>
+    <Deinotherium.lifeStages.0.labelPlural>телята дейнотерия</Deinotherium.lifeStages.0.labelPlural>
+    <Deinotherium.lifeStages.0.labelMale>телёнок дейнотерия</Deinotherium.lifeStages.0.labelMale>
+    <Deinotherium.lifeStages.0.labelMalePlural>телята дейнотерия</Deinotherium.lifeStages.0.labelMalePlural>
+    <Deinotherium.lifeStages.0.labelFemale>тёлка дейнотерия</Deinotherium.lifeStages.0.labelFemale>
+    <Deinotherium.lifeStages.0.labelFemalePlural>тёлочки дейнотерия</Deinotherium.lifeStages.0.labelFemalePlural>
+    <Deinotherium.lifeStages.1.label>дейнотерий</Deinotherium.lifeStages.1.label>
+    <Deinotherium.lifeStages.1.labelPlural>дейнотерии</Deinotherium.lifeStages.1.labelPlural>
+    <Deinotherium.lifeStages.1.labelMale>самец дейнотерия</Deinotherium.lifeStages.1.labelMale>
+    <Deinotherium.lifeStages.1.labelMalePlural>самцы дейнотерия</Deinotherium.lifeStages.1.labelMalePlural>
+    <Deinotherium.lifeStages.1.labelFemale>самка дейнотерия</Deinotherium.lifeStages.1.labelFemale>
+    <Deinotherium.lifeStages.1.labelFemalePlural>самки дейнотерия</Deinotherium.lifeStages.1.labelFemalePlural>
+    <Deinotherium.lifeStages.2.label>дейнотерий</Deinotherium.lifeStages.2.label>
+    <Deinotherium.lifeStages.2.labelPlural>дейнотерии</Deinotherium.lifeStages.2.labelPlural>
+    <Deinotherium.lifeStages.2.labelMale>самец дейнотерия</Deinotherium.lifeStages.2.labelMale>
+    <Deinotherium.lifeStages.2.labelMalePlural>самцы дейнотерия</Deinotherium.lifeStages.2.labelMalePlural>
+    <Deinotherium.lifeStages.2.labelFemale>самка дейнотерия</Deinotherium.lifeStages.2.labelFemale>
+    <Deinotherium.lifeStages.2.labelFemalePlural>самки дейнотерия</Deinotherium.lifeStages.2.labelFemalePlural>
     <Deinotherium.labelMale>самец дейнотерия</Deinotherium.labelMale>
+    <Deinotherium.labelMalePlural>самцы дейнотерии</Deinotherium.labelMalePlural>
     <Deinotherium.labelFemale>самка дейнотерия</Deinotherium.labelFemale>
-	
-	<Aurochs.label>тур</Aurochs.label>
+    <Deinotherium.labelFemalePlural>самки дейнотерии</Deinotherium.labelFemalePlural>
+
+    <Aurochs.label>тур</Aurochs.label>
     <Aurochs.labelPlural>туры</Aurochs.labelPlural>
-	<Aurochs.lifeStages.0.labelMale>телёнок тура</Aurochs.lifeStages.0.labelMale>
-  	<Aurochs.lifeStages.0.labelFemale>тёлка тура</Aurochs.lifeStages.0.labelFemale>
-    <Aurochs.labelMale>самец тура</Aurochs.labelMale>
-    <Aurochs.labelFemale>самка тура</Aurochs.labelFemale>
-	
-	<Megalochelys.label>гигантская черепаха</Megalochelys.label>
+    <Aurochs.lifeStages.0.label>телёнок тура</Aurochs.lifeStages.0.label>
+    <Aurochs.lifeStages.0.labelPlural>телята тура</Aurochs.lifeStages.0.labelPlural>
+    <Aurochs.lifeStages.0.labelMale>телёнок тура</Aurochs.lifeStages.0.labelMale>
+    <Aurochs.lifeStages.0.labelMalePlural>телята тура</Aurochs.lifeStages.0.labelMalePlural>
+    <Aurochs.lifeStages.0.labelFemale>тёлка тура</Aurochs.lifeStages.0.labelFemale>
+    <Aurochs.lifeStages.0.labelFemalePlural>тёлочки тура</Aurochs.lifeStages.0.labelFemalePlural>
+    <Aurochs.lifeStages.1.label>тур</Aurochs.lifeStages.1.label>
+    <Aurochs.lifeStages.1.labelPlural>туры</Aurochs.lifeStages.1.labelPlural>
+    <Aurochs.lifeStages.1.labelMale>бык тур</Aurochs.lifeStages.1.labelMale>
+    <Aurochs.lifeStages.1.labelMalePlural>быки тура</Aurochs.lifeStages.1.labelMalePlural>
+    <Aurochs.lifeStages.1.labelFemale>корова тур</Aurochs.lifeStages.1.labelFemale>
+    <Aurochs.lifeStages.1.labelFemalePlural>коровы тура</Aurochs.lifeStages.1.labelFemalePlural>
+    <Aurochs.lifeStages.2.label>тур</Aurochs.lifeStages.2.label>
+    <Aurochs.lifeStages.2.labelPlural>туры</Aurochs.lifeStages.2.labelPlural>
+    <Aurochs.lifeStages.2.labelMale>бык тур</Aurochs.lifeStages.2.labelMale>
+    <Aurochs.lifeStages.2.labelMalePlural>быки тура</Aurochs.lifeStages.2.labelMalePlural>
+    <Aurochs.lifeStages.2.labelFemale>корова тур</Aurochs.lifeStages.2.labelFemale>
+    <Aurochs.lifeStages.2.labelFemalePlural>коровы тура</Aurochs.lifeStages.2.labelFemalePlural>
+    <Aurochs.labelMale>бык тур</Aurochs.labelMale>
+    <Aurochs.labelMalePlural>быки тур</Aurochs.labelMalePlural>
+    <Aurochs.labelFemale>корова тур</Aurochs.labelFemale>
+    <Aurochs.labelFemalePlural>коровы тур</Aurochs.labelFemalePlural>
+
+    <Megalochelys.label>гигантская черепаха</Megalochelys.label>
     <Megalochelys.labelPlural>гигантские черепахи</Megalochelys.labelPlural>
+    <Megalochelys.lifeStages.0.label>гигантская черепаха</Megalochelys.lifeStages.0.label>
+    <Megalochelys.lifeStages.0.labelPlural>гигантские черепахи</Megalochelys.lifeStages.0.labelPlural>
+    <Megalochelys.lifeStages.0.labelMale>самец гигантской черепахи</Megalochelys.lifeStages.0.labelMale>
+    <Megalochelys.lifeStages.0.labelMalePlural>самцы гигантской черепахи</Megalochelys.lifeStages.0.labelMalePlural>
+    <Megalochelys.lifeStages.0.labelFemale>самка гигантской черепахи</Megalochelys.lifeStages.0.labelFemale>
+    <Megalochelys.lifeStages.0.labelFemalePlural>самки гигантской черепахи</Megalochelys.lifeStages.0.labelFemalePlural>
+    <Megalochelys.lifeStages.1.label>гигантская черепаха</Megalochelys.lifeStages.1.label>
+    <Megalochelys.lifeStages.1.labelPlural>гигантские черепахи</Megalochelys.lifeStages.1.labelPlural>
+    <Megalochelys.lifeStages.1.labelMale>самец гигантской черепахи</Megalochelys.lifeStages.1.labelMale>
+    <Megalochelys.lifeStages.1.labelMalePlural>самцы гигантской черепахи</Megalochelys.lifeStages.1.labelMalePlural>
+    <Megalochelys.lifeStages.1.labelFemale>самка гигантской черепахи</Megalochelys.lifeStages.1.labelFemale>
+    <Megalochelys.lifeStages.1.labelFemalePlural>самки гигантской черепахи</Megalochelys.lifeStages.1.labelFemalePlural>
+    <Megalochelys.lifeStages.2.label>гигантская черепаха</Megalochelys.lifeStages.2.label>
+    <Megalochelys.lifeStages.2.labelPlural>гигантские черепахи</Megalochelys.lifeStages.2.labelPlural>
+    <Megalochelys.lifeStages.2.labelMale>самец гигантской черепахи</Megalochelys.lifeStages.2.labelMale>
+    <Megalochelys.lifeStages.2.labelMalePlural>самцы гигантской черепахи</Megalochelys.lifeStages.2.labelMalePlural>
+    <Megalochelys.lifeStages.2.labelFemale>самка гигантской черепахи</Megalochelys.lifeStages.2.labelFemale>
+    <Megalochelys.lifeStages.2.labelFemalePlural>самки гигантской черепахи</Megalochelys.lifeStages.2.labelFemalePlural>
     <Megalochelys.labelMale>самец гигантской черепахи</Megalochelys.labelMale>
+    <Megalochelys.labelMalePlural>самцы гигантской черепахи</Megalochelys.labelMalePlural>
     <Megalochelys.labelFemale>самка гигантской черепахи</Megalochelys.labelFemale>
-	
-	<Palaeeudyptes.label>поладиптис</Palaeeudyptes.label>
+    <Megalochelys.labelFemalePlural>самки гигантской черепахи</Megalochelys.labelFemalePlural>
+
+    <Palaeeudyptes.label>поладиптис</Palaeeudyptes.label>
     <Palaeeudyptes.labelPlural>поладиптисы</Palaeeudyptes.labelPlural>
-	<Palaeeudyptes.lifeStages.0.labelMale>птенец поладиптисa</Palaeeudyptes.lifeStages.0.labelMale>
-  	<Palaeeudyptes.lifeStages.0.labelFemale>птенец поладиптисa</Palaeeudyptes.lifeStages.0.labelFemale>
-    <Palaeeudyptes.labelMale>самец поладиптисa</Palaeeudyptes.labelMale>
-    <Palaeeudyptes.labelFemale>самка поладиптисa</Palaeeudyptes.labelFemale>
-	
-	<Josephoartigasia.label>гигантский грызун</Josephoartigasia.label>
+    <Palaeeudyptes.lifeStages.0.label>поладиптис</Palaeeudyptes.lifeStages.0.label>
+    <Palaeeudyptes.lifeStages.0.labelPlural>поладиптисы</Palaeeudyptes.lifeStages.0.labelPlural>
+    <Palaeeudyptes.lifeStages.0.labelMale>самец поладиптиса</Palaeeudyptes.lifeStages.0.labelMale>
+    <Palaeeudyptes.lifeStages.0.labelMalePlural>самцы поладиптиса</Palaeeudyptes.lifeStages.0.labelMalePlural>
+    <Palaeeudyptes.lifeStages.0.labelFemale>самка поладиптиса</Palaeeudyptes.lifeStages.0.labelFemale>
+    <Palaeeudyptes.lifeStages.0.labelFemalePlural>самки поладиптиса</Palaeeudyptes.lifeStages.0.labelFemalePlural>
+    <Palaeeudyptes.lifeStages.1.label>поладиптис</Palaeeudyptes.lifeStages.1.label>
+    <Palaeeudyptes.lifeStages.1.labelPlural>поладиптисы</Palaeeudyptes.lifeStages.1.labelPlural>
+    <Palaeeudyptes.lifeStages.1.labelMale>самец поладиптиса</Palaeeudyptes.lifeStages.1.labelMale>
+    <Palaeeudyptes.lifeStages.1.labelMalePlural>самцы поладиптиса</Palaeeudyptes.lifeStages.1.labelMalePlural>
+    <Palaeeudyptes.lifeStages.1.labelFemale>самка поладиптиса</Palaeeudyptes.lifeStages.1.labelFemale>
+    <Palaeeudyptes.lifeStages.1.labelFemalePlural>самки поладиптиса</Palaeeudyptes.lifeStages.1.labelFemalePlural>
+    <Palaeeudyptes.lifeStages.2.label>поладиптис</Palaeeudyptes.lifeStages.2.label>
+    <Palaeeudyptes.lifeStages.2.labelPlural>поладиптисы</Palaeeudyptes.lifeStages.2.labelPlural>
+    <Palaeeudyptes.lifeStages.2.labelMale>самец поладиптиса</Palaeeudyptes.lifeStages.2.labelMale>
+    <Palaeeudyptes.lifeStages.2.labelMalePlural>самцы поладиптиса</Palaeeudyptes.lifeStages.2.labelMalePlural>
+    <Palaeeudyptes.lifeStages.2.labelFemale>самка поладиптиса</Palaeeudyptes.lifeStages.2.labelFemale>
+    <Palaeeudyptes.lifeStages.2.labelFemalePlural>самки поладиптиса</Palaeeudyptes.lifeStages.2.labelFemalePlural>
+    <Palaeeudyptes.labelMale>самец поладиптиса</Palaeeudyptes.labelMale>
+    <Palaeeudyptes.labelMalePlural>самцы поладиптиса</Palaeeudyptes.labelMalePlural>
+    <Palaeeudyptes.labelFemale>самка поладиптиса</Palaeeudyptes.labelFemale>
+    <Palaeeudyptes.labelFemalePlural>самки поладиптиса</Palaeeudyptes.labelFemalePlural>
+
+    <Josephoartigasia.label>гигантский грызун</Josephoartigasia.label>
     <Josephoartigasia.labelPlural>гигантские грызуны</Josephoartigasia.labelPlural>
+    <Josephoartigasia.lifeStages.0.label>гигантский грызун</Josephoartigasia.lifeStages.0.label>
+    <Josephoartigasia.lifeStages.0.labelPlural>гигантский грызун</Josephoartigasia.lifeStages.0.labelPlural>
+    <Josephoartigasia.lifeStages.0.labelMale>самец гигантского грызуна</Josephoartigasia.lifeStages.0.labelMale>
+    <Josephoartigasia.lifeStages.0.labelMalePlural>самцы гигантского грызуна</Josephoartigasia.lifeStages.0.labelMalePlural>
+    <Josephoartigasia.lifeStages.0.labelFemale>самка гигантского грызуна</Josephoartigasia.lifeStages.0.labelFemale>
+    <Josephoartigasia.lifeStages.0.labelFemalePlural>самки гигантского грызуна</Josephoartigasia.lifeStages.0.labelFemalePlural>
+    <Josephoartigasia.lifeStages.1.label>гигантский грызун</Josephoartigasia.lifeStages.1.label>
+    <Josephoartigasia.lifeStages.1.labelPlural>гигантский грызун</Josephoartigasia.lifeStages.1.labelPlural>
+    <Josephoartigasia.lifeStages.1.labelMale>самец гигантского грызуна</Josephoartigasia.lifeStages.1.labelMale>
+    <Josephoartigasia.lifeStages.1.labelMalePlural>самцы гигантского грызуна</Josephoartigasia.lifeStages.1.labelMalePlural>
+    <Josephoartigasia.lifeStages.1.labelFemale>самка гигантского грызуна</Josephoartigasia.lifeStages.1.labelFemale>
+    <Josephoartigasia.lifeStages.1.labelFemalePlural>самки гигантского грызуна</Josephoartigasia.lifeStages.1.labelFemalePlural>
+    <Josephoartigasia.lifeStages.2.label>гигантский грызун</Josephoartigasia.lifeStages.2.label>
+    <Josephoartigasia.lifeStages.2.labelPlural>гигантский грызун</Josephoartigasia.lifeStages.2.labelPlural>
+    <Josephoartigasia.lifeStages.2.labelMale>самец гигантского грызуна</Josephoartigasia.lifeStages.2.labelMale>
+    <Josephoartigasia.lifeStages.2.labelMalePlural>самцы гигантского грызуна</Josephoartigasia.lifeStages.2.labelMalePlural>
+    <Josephoartigasia.lifeStages.2.labelFemale>самка гигантского грызуна</Josephoartigasia.lifeStages.2.labelFemale>
+    <Josephoartigasia.lifeStages.2.labelFemalePlural>самки гигантского грызуна</Josephoartigasia.lifeStages.2.labelFemalePlural>
     <Josephoartigasia.labelMale>самец гигантского грызуна</Josephoartigasia.labelMale>
+    <Josephoartigasia.labelMalePlural>самцы гигантского грызуна</Josephoartigasia.labelMalePlural>
     <Josephoartigasia.labelFemale>самка гигантского грызуна</Josephoartigasia.labelFemale>
-	
-	<Gigantophis.label>гигантофис</Gigantophis.label>
+    <Josephoartigasia.labelFemalePlural>самки гигантского грызуна</Josephoartigasia.labelFemalePlural>
+
+    <Gigantophis.label>гигантофис</Gigantophis.label>
     <Gigantophis.labelPlural>гигантофисы</Gigantophis.labelPlural>
-    <Gigantophis.labelMale>самец гигантофисa</Gigantophis.labelMale>
-    <Gigantophis.labelFemale>самка гигантофисa</Gigantophis.labelFemale>
-	
-	<Meganeura.label>меганевра</Meganeura.label>
+    <Gigantophis.lifeStages.0.label>гигантофис</Gigantophis.lifeStages.0.label>
+    <Gigantophis.lifeStages.0.labelPlural>гигантофисы</Gigantophis.lifeStages.0.labelPlural>
+    <Gigantophis.lifeStages.0.labelMale>самец гигантофиса</Gigantophis.lifeStages.0.labelMale>
+    <Gigantophis.lifeStages.0.labelMalePlural>самцы гигантофиса</Gigantophis.lifeStages.0.labelMalePlural>
+    <Gigantophis.lifeStages.0.labelFemale>самка гигантофиса</Gigantophis.lifeStages.0.labelFemale>
+    <Gigantophis.lifeStages.0.labelFemalePlural>самки гигантофиса</Gigantophis.lifeStages.0.labelFemalePlural>
+    <Gigantophis.lifeStages.1.label>гигантофис</Gigantophis.lifeStages.1.label>
+    <Gigantophis.lifeStages.1.labelPlural>гигантофисы</Gigantophis.lifeStages.1.labelPlural>
+    <Gigantophis.lifeStages.1.labelMale>самец гигантофиса</Gigantophis.lifeStages.1.labelMale>
+    <Gigantophis.lifeStages.1.labelMalePlural>самцы гигантофиса</Gigantophis.lifeStages.1.labelMalePlural>
+    <Gigantophis.lifeStages.1.labelFemale>самка гигантофиса</Gigantophis.lifeStages.1.labelFemale>
+    <Gigantophis.lifeStages.1.labelFemalePlural>самки гигантофиса</Gigantophis.lifeStages.1.labelFemalePlural>
+    <Gigantophis.lifeStages.2.label>гигантофис</Gigantophis.lifeStages.2.label>
+    <Gigantophis.lifeStages.2.labelPlural>гигантофисы</Gigantophis.lifeStages.2.labelPlural>
+    <Gigantophis.lifeStages.2.labelMale>самец гигантофиса</Gigantophis.lifeStages.2.labelMale>
+    <Gigantophis.lifeStages.2.labelMalePlural>самцы гигантофиса</Gigantophis.lifeStages.2.labelMalePlural>
+    <Gigantophis.lifeStages.2.labelFemale>самка гигантофиса</Gigantophis.lifeStages.2.labelFemale>
+    <Gigantophis.lifeStages.2.labelFemalePlural>самки гигантофиса</Gigantophis.lifeStages.2.labelFemalePlural>
+    <Gigantophis.labelMale>самец гигантофиса</Gigantophis.labelMale>
+    <Gigantophis.labelMalePlural>самцы гигантофиса</Gigantophis.labelMalePlural>
+    <Gigantophis.labelFemale>самка гигантофиса</Gigantophis.labelFemale>
+    <Gigantophis.labelFemalePlural>самки гигантофиса</Gigantophis.labelFemalePlural>
+
+    <Meganeura.label>меганевра</Meganeura.label>
     <Meganeura.labelPlural>меганевры</Meganeura.labelPlural>
-	<Meganeura.lifeStages.0.labelMale>личинка меганевры</Meganeura.lifeStages.0.labelMale>
-  	<Meganeura.lifeStages.0.labelFemale>личинка меганевры</Meganeura.lifeStages.0.labelFemale>
-    <Meganeura.labelMale>самец меганевры</Meganeura.labelMale>
+    <Meganeura.lifeStages.0.label>нимфа меганевры</Meganeura.lifeStages.0.label>
+    <Meganeura.lifeStages.0.labelPlural>нимфы меганевры</Meganeura.lifeStages.0.labelPlural>
+    <Meganeura.lifeStages.0.labelMale>нимфа меганевры</Meganeura.lifeStages.0.labelMale>
+    <Meganeura.lifeStages.0.labelMalePlural>нимфы меганевры</Meganeura.lifeStages.0.labelMalePlural>
+    <Meganeura.lifeStages.0.labelFemale>нимфа меганевры</Meganeura.lifeStages.0.labelFemale>
+    <Meganeura.lifeStages.0.labelFemalePlural>нимфы меганевры</Meganeura.lifeStages.0.labelFemalePlural>
+    <Meganeura.lifeStages.1.label>меганевра</Meganeura.lifeStages.1.label>
+    <Meganeura.lifeStages.1.labelPlural>меганевра</Meganeura.lifeStages.1.labelPlural>
+    <Meganeura.lifeStages.1.labelMale>самец меганевра</Meganeura.lifeStages.1.labelMale>
+    <Meganeura.lifeStages.1.labelMalePlural>самцы меганевры</Meganeura.lifeStages.1.labelMalePlural>
+    <Meganeura.lifeStages.1.labelFemale>самка меганевры</Meganeura.lifeStages.1.labelFemale>
+    <Meganeura.lifeStages.1.labelFemalePlural>самки меганевры</Meganeura.lifeStages.1.labelFemalePlural>
+    <Meganeura.lifeStages.2.label>меганевра</Meganeura.lifeStages.2.label>
+    <Meganeura.lifeStages.2.labelPlural>меганевра</Meganeura.lifeStages.2.labelPlural>
+    <Meganeura.lifeStages.2.labelMale>самец меганевра</Meganeura.lifeStages.2.labelMale>
+    <Meganeura.lifeStages.2.labelMalePlural>самцы меганевры</Meganeura.lifeStages.2.labelMalePlural>
+    <Meganeura.lifeStages.2.labelFemale>самка меганевры</Meganeura.lifeStages.2.labelFemale>
+    <Meganeura.lifeStages.2.labelFemalePlural>самки меганевры</Meganeura.lifeStages.2.labelFemalePlural>
+    <Meganeura.labelMale>самец меганевра</Meganeura.labelMale>
+    <Meganeura.labelMalePlural>самцы меганевры</Meganeura.labelMalePlural>
     <Meganeura.labelFemale>самка меганевры</Meganeura.labelFemale>
-	
-	<Zygolophodon.label>зиголофодон</Zygolophodon.label>
+    <Meganeura.labelFemalePlural>самки меганевры</Meganeura.labelFemalePlural>
+
+    <Zygolophodon.label>зиголофодон</Zygolophodon.label>
     <Zygolophodon.labelPlural>зиголофодоны</Zygolophodon.labelPlural>
-	<Zygolophodon.lifeStages.0.labelMale>телёнок зиголофодонa</Zygolophodon.lifeStages.0.labelMale>
-  	<Zygolophodon.lifeStages.0.labelFemale>тёлка зиголофодонa</Zygolophodon.lifeStages.0.labelFemale>
-    <Zygolophodon.labelMale>самец зиголофодонa</Zygolophodon.labelMale>
-    <Zygolophodon.labelFemale>самка зиголофодонa</Zygolophodon.labelFemale>
-	
-	<Platybelodon.label>платибеладон</Platybelodon.label>
-    <Platybelodon.labelPlural>платибеладоны</Platybelodon.labelPlural>
-	<Platybelodon.lifeStages.0.labelMale>телёнок платибеладона</Platybelodon.lifeStages.0.labelMale>
-  	<Platybelodon.lifeStages.0.labelFemale>тёлка платибеладона</Platybelodon.lifeStages.0.labelFemale>
-    <Platybelodon.labelMale>самец платибеладона</Platybelodon.labelMale>
-    <Platybelodon.labelFemale>самка платибеладона</Platybelodon.labelFemale>
+    <Zygolophodon.lifeStages.0.label>телёнок зиголофодона</Zygolophodon.lifeStages.0.label>
+    <Zygolophodon.lifeStages.0.labelPlural>телята зиголофодона</Zygolophodon.lifeStages.0.labelPlural>
+    <Zygolophodon.lifeStages.0.labelMale>телёнок зиголофодона</Zygolophodon.lifeStages.0.labelMale>
+    <Zygolophodon.lifeStages.0.labelMalePlural>телята зиголофодона</Zygolophodon.lifeStages.0.labelMalePlural>
+    <Zygolophodon.lifeStages.0.labelFemale>тёлка зиголофодона</Zygolophodon.lifeStages.0.labelFemale>
+    <Zygolophodon.lifeStages.0.labelFemalePlural>тёлочка зиголофодона</Zygolophodon.lifeStages.0.labelFemalePlural>
+    <Zygolophodon.lifeStages.1.label>зиголофодон</Zygolophodon.lifeStages.1.label>
+    <Zygolophodon.lifeStages.1.labelPlural>зиголофодон</Zygolophodon.lifeStages.1.labelPlural>
+    <Zygolophodon.lifeStages.1.labelMale>самец зиголофодона</Zygolophodon.lifeStages.1.labelMale>
+    <Zygolophodon.lifeStages.1.labelMalePlural>самцы зиголофодона</Zygolophodon.lifeStages.1.labelMalePlural>
+    <Zygolophodon.lifeStages.1.labelFemale>самка зиголофодона</Zygolophodon.lifeStages.1.labelFemale>
+    <Zygolophodon.lifeStages.1.labelFemalePlural>самки зиголофодона</Zygolophodon.lifeStages.1.labelFemalePlural>
+    <Zygolophodon.lifeStages.2.label>зиголофодон</Zygolophodon.lifeStages.2.label>
+    <Zygolophodon.lifeStages.2.labelPlural>зиголофодон</Zygolophodon.lifeStages.2.labelPlural>
+    <Zygolophodon.lifeStages.2.labelMale>самец зиголофодона</Zygolophodon.lifeStages.2.labelMale>
+    <Zygolophodon.lifeStages.2.labelMalePlural>самцы зиголофодона</Zygolophodon.lifeStages.2.labelMalePlural>
+    <Zygolophodon.lifeStages.2.labelFemale>самка зиголофодона</Zygolophodon.lifeStages.2.labelFemale>
+    <Zygolophodon.lifeStages.2.labelFemalePlural>самки зиголофодона</Zygolophodon.lifeStages.2.labelFemalePlural>
+    <Zygolophodon.labelMale>самец зиголофодона</Zygolophodon.labelMale>
+    <Zygolophodon.labelMalePlural>самцы зиголофодона</Zygolophodon.labelMalePlural>
+    <Zygolophodon.labelFemale>самка зиголофодона</Zygolophodon.labelFemale>
+    <Zygolophodon.labelFemalePlural>самки зиголофодона</Zygolophodon.labelFemalePlural>
 
-	<Purussaurus.label>пурусзавр</Purussaurus.label>
+    <Platybelodon.label>платибелодон</Platybelodon.label>
+    <Platybelodon.labelPlural>платибелодоны</Platybelodon.labelPlural>
+    <Platybelodon.lifeStages.0.label>телёнок платибелодона</Platybelodon.lifeStages.0.label>
+    <Platybelodon.lifeStages.0.labelPlural>телята платибелодона</Platybelodon.lifeStages.0.labelPlural>
+    <Platybelodon.lifeStages.0.labelMale>телёнок платибелодона</Platybelodon.lifeStages.0.labelMale>
+    <Platybelodon.lifeStages.0.labelMalePlural>телята платибелодона</Platybelodon.lifeStages.0.labelMalePlural>
+    <Platybelodon.lifeStages.0.labelFemale>тёлка платибелодона</Platybelodon.lifeStages.0.labelFemale>
+    <Platybelodon.lifeStages.0.labelFemalePlural>тёлочки платибелодона</Platybelodon.lifeStages.0.labelFemalePlural>
+    <Platybelodon.lifeStages.1.label>платибелодон</Platybelodon.lifeStages.1.label>
+    <Platybelodon.lifeStages.1.labelPlural>платибелодон</Platybelodon.lifeStages.1.labelPlural>
+    <Platybelodon.lifeStages.1.labelMale>самец платибелодона</Platybelodon.lifeStages.1.labelMale>
+    <Platybelodon.lifeStages.1.labelMalePlural>самцы платибелодона</Platybelodon.lifeStages.1.labelMalePlural>
+    <Platybelodon.lifeStages.1.labelFemale>самка платибелодона</Platybelodon.lifeStages.1.labelFemale>
+    <Platybelodon.lifeStages.1.labelFemalePlural>самки платибелодона</Platybelodon.lifeStages.1.labelFemalePlural>
+    <Platybelodon.lifeStages.2.label>платибелодон</Platybelodon.lifeStages.2.label>
+    <Platybelodon.lifeStages.2.labelPlural>платибелодон</Platybelodon.lifeStages.2.labelPlural>
+    <Platybelodon.lifeStages.2.labelMale>самец платибелодона</Platybelodon.lifeStages.2.labelMale>
+    <Platybelodon.lifeStages.2.labelMalePlural>самцы платибелодона</Platybelodon.lifeStages.2.labelMalePlural>
+    <Platybelodon.lifeStages.2.labelFemale>самка платибелодона</Platybelodon.lifeStages.2.labelFemale>
+    <Platybelodon.lifeStages.2.labelFemalePlural>самки платибелодона</Platybelodon.lifeStages.2.labelFemalePlural>
+    <Platybelodon.labelMale>самец платибелодона</Platybelodon.labelMale>
+    <Platybelodon.labelMalePlural>самцы платибелодона</Platybelodon.labelMalePlural>
+    <Platybelodon.labelFemale>самка платибелодона</Platybelodon.labelFemale>
+    <Platybelodon.labelFemalePlural>самки платибелодона</Platybelodon.labelFemalePlural>
+
+    <Purussaurus.label>пурусзавр</Purussaurus.label>
     <Purussaurus.labelPlural>пурусзавры</Purussaurus.labelPlural>
+    <Purussaurus.lifeStages.0.label>пурусзавр</Purussaurus.lifeStages.0.label>
+    <Purussaurus.lifeStages.0.labelPlural>пурусзавры</Purussaurus.lifeStages.0.labelPlural>
+    <Purussaurus.lifeStages.0.labelMale>самец пурусзавра</Purussaurus.lifeStages.0.labelMale>
+    <Purussaurus.lifeStages.0.labelMalePlural>самцы пурусзавра</Purussaurus.lifeStages.0.labelMalePlural>
+    <Purussaurus.lifeStages.0.labelFemale>самка пурусзавра</Purussaurus.lifeStages.0.labelFemale>
+    <Purussaurus.lifeStages.0.labelFemalePlural>самки пурусзавра</Purussaurus.lifeStages.0.labelFemalePlural>
+    <Purussaurus.lifeStages.1.label>пурусзавр</Purussaurus.lifeStages.1.label>
+    <Purussaurus.lifeStages.1.labelPlural>пурусзавры</Purussaurus.lifeStages.1.labelPlural>
+    <Purussaurus.lifeStages.1.labelMale>самец пурусзавра</Purussaurus.lifeStages.1.labelMale>
+    <Purussaurus.lifeStages.1.labelMalePlural>самцы пурусзавра</Purussaurus.lifeStages.1.labelMalePlural>
+    <Purussaurus.lifeStages.1.labelFemale>самка пурусзавра</Purussaurus.lifeStages.1.labelFemale>
+    <Purussaurus.lifeStages.1.labelFemalePlural>самки пурусзавра</Purussaurus.lifeStages.1.labelFemalePlural>
+    <Purussaurus.lifeStages.2.label>пурусзавр</Purussaurus.lifeStages.2.label>
+    <Purussaurus.lifeStages.2.labelPlural>пурусзавры</Purussaurus.lifeStages.2.labelPlural>
+    <Purussaurus.lifeStages.2.labelMale>самец пурусзавра</Purussaurus.lifeStages.2.labelMale>
+    <Purussaurus.lifeStages.2.labelMalePlural>самцы пурусзавра</Purussaurus.lifeStages.2.labelMalePlural>
+    <Purussaurus.lifeStages.2.labelFemale>самка пурусзавра</Purussaurus.lifeStages.2.labelFemale>
+    <Purussaurus.lifeStages.2.labelFemalePlural>самки пурусзавра</Purussaurus.lifeStages.2.labelFemalePlural>
     <Purussaurus.labelMale>самец пурусзавра</Purussaurus.labelMale>
+    <Purussaurus.labelMalePlural>самцы пурусзавра</Purussaurus.labelMalePlural>
     <Purussaurus.labelFemale>самка пурусзавра</Purussaurus.labelFemale>
+    <Purussaurus.labelFemalePlural>самки пурусзавра</Purussaurus.labelFemalePlural>
 
-	<Uintatherium.label>уинтатерий</Uintatherium.label>
+    <Uintatherium.label>уинтатерий</Uintatherium.label>
     <Uintatherium.labelPlural>уинтатерии</Uintatherium.labelPlural>
-	<Uintatherium.lifeStages.0.labelMale>телёнок уинтатерия</Uintatherium.lifeStages.0.labelMale>
-  	<Uintatherium.lifeStages.0.labelFemale>тёлка уинтатерия</Uintatherium.lifeStages.0.labelFemale>
+    <Uintatherium.lifeStages.0.label>уинтатерий</Uintatherium.lifeStages.0.label>
+    <Uintatherium.lifeStages.0.labelPlural>уинтатерии</Uintatherium.lifeStages.0.labelPlural>
+    <Uintatherium.lifeStages.0.labelMale>самец уинтатерия</Uintatherium.lifeStages.0.labelMale>
+    <Uintatherium.lifeStages.0.labelMalePlural>самцы уинтатерия</Uintatherium.lifeStages.0.labelMalePlural>
+    <Uintatherium.lifeStages.0.labelFemale>самка уинтатерия</Uintatherium.lifeStages.0.labelFemale>
+    <Uintatherium.lifeStages.0.labelFemalePlural>самки уинтатерия</Uintatherium.lifeStages.0.labelFemalePlural>
+    <Uintatherium.lifeStages.1.label>уинтатерий</Uintatherium.lifeStages.1.label>
+    <Uintatherium.lifeStages.1.labelPlural>уинтатерии</Uintatherium.lifeStages.1.labelPlural>
+    <Uintatherium.lifeStages.1.labelMale>самец уинтатерия</Uintatherium.lifeStages.1.labelMale>
+    <Uintatherium.lifeStages.1.labelMalePlural>самцы уинтатерия</Uintatherium.lifeStages.1.labelMalePlural>
+    <Uintatherium.lifeStages.1.labelFemale>самка уинтатерия</Uintatherium.lifeStages.1.labelFemale>
+    <Uintatherium.lifeStages.1.labelFemalePlural>самки уинтатерия</Uintatherium.lifeStages.1.labelFemalePlural>
+    <Uintatherium.lifeStages.2.label>уинтатерий</Uintatherium.lifeStages.2.label>
+    <Uintatherium.lifeStages.2.labelPlural>уинтатерии</Uintatherium.lifeStages.2.labelPlural>
+    <Uintatherium.lifeStages.2.labelMale>самец уинтатерия</Uintatherium.lifeStages.2.labelMale>
+    <Uintatherium.lifeStages.2.labelMalePlural>самцы уинтатерия</Uintatherium.lifeStages.2.labelMalePlural>
+    <Uintatherium.lifeStages.2.labelFemale>самка уинтатерия</Uintatherium.lifeStages.2.labelFemale>
+    <Uintatherium.lifeStages.2.labelFemalePlural>самки уинтатерия</Uintatherium.lifeStages.2.labelFemalePlural>
     <Uintatherium.labelMale>самец уинтатерия</Uintatherium.labelMale>
+    <Uintatherium.labelMalePlural>самцы уинтатерия</Uintatherium.labelMalePlural>
     <Uintatherium.labelFemale>самка уинтатерия</Uintatherium.labelFemale>
+    <Uintatherium.labelFemalePlural>самки уинтатерия</Uintatherium.labelFemalePlural>
 
-	<Pulmonoscorpius.label>пульмоноскорпион</Pulmonoscorpius.label>
+    <Pulmonoscorpius.label>пульмоноскорпион</Pulmonoscorpius.label>
     <Pulmonoscorpius.labelPlural>пульмоноскорпионы</Pulmonoscorpius.labelPlural>
-	<Pulmonoscorpius.lifeStages.0.labelMale>личинка пульмоноскорпиона</Pulmonoscorpius.lifeStages.0.labelMale>
-  	<Pulmonoscorpius.lifeStages.0.labelFemale>личинка пульмоноскорпиона</Pulmonoscorpius.lifeStages.0.labelFemale>
+    <Pulmonoscorpius.lifeStages.0.label>личинка пульмоноскорпиона</Pulmonoscorpius.lifeStages.0.label>
+    <Pulmonoscorpius.lifeStages.0.labelPlural>личинки пульмоноскорпиона</Pulmonoscorpius.lifeStages.0.labelPlural>
+    <Pulmonoscorpius.lifeStages.0.labelMale>личинка пульмоноскорпиона</Pulmonoscorpius.lifeStages.0.labelMale>
+    <Pulmonoscorpius.lifeStages.0.labelMalePlural>личинки пульмоноскорпиона</Pulmonoscorpius.lifeStages.0.labelMalePlural>
+    <Pulmonoscorpius.lifeStages.0.labelFemale>личинка пульмоноскорпиона</Pulmonoscorpius.lifeStages.0.labelFemale>
+    <Pulmonoscorpius.lifeStages.0.labelFemalePlural>личинки пульмоноскорпиона</Pulmonoscorpius.lifeStages.0.labelFemalePlural>
+    <Pulmonoscorpius.lifeStages.1.label>пульмоноскорпион</Pulmonoscorpius.lifeStages.1.label>
+    <Pulmonoscorpius.lifeStages.1.labelPlural>пульмоноскорпионы</Pulmonoscorpius.lifeStages.1.labelPlural>
+    <Pulmonoscorpius.lifeStages.1.labelMale>самец пульмоноскорпиона</Pulmonoscorpius.lifeStages.1.labelMale>
+    <Pulmonoscorpius.lifeStages.1.labelMalePlural>самцы пульмоноскорпиона</Pulmonoscorpius.lifeStages.1.labelMalePlural>
+    <Pulmonoscorpius.lifeStages.1.labelFemale>самка пульмоноскорпиона</Pulmonoscorpius.lifeStages.1.labelFemale>
+    <Pulmonoscorpius.lifeStages.1.labelFemalePlural>самки пульмоноскорпиона</Pulmonoscorpius.lifeStages.1.labelFemalePlural>
+    <Pulmonoscorpius.lifeStages.2.label>пульмоноскорпион</Pulmonoscorpius.lifeStages.2.label>
+    <Pulmonoscorpius.lifeStages.2.labelPlural>пульмоноскорпионы</Pulmonoscorpius.lifeStages.2.labelPlural>
+    <Pulmonoscorpius.lifeStages.2.labelMale>самец пульмоноскорпиона</Pulmonoscorpius.lifeStages.2.labelMale>
+    <Pulmonoscorpius.lifeStages.2.labelMalePlural>самцы пульмоноскорпиона</Pulmonoscorpius.lifeStages.2.labelMalePlural>
+    <Pulmonoscorpius.lifeStages.2.labelFemale>самка пульмоноскорпиона</Pulmonoscorpius.lifeStages.2.labelFemale>
+    <Pulmonoscorpius.lifeStages.2.labelFemalePlural>самки пульмоноскорпиона</Pulmonoscorpius.lifeStages.2.labelFemalePlural>
     <Pulmonoscorpius.labelMale>самец пульмоноскорпиона</Pulmonoscorpius.labelMale>
+    <Pulmonoscorpius.labelMalePlural>самцы пульмоноскорпиона</Pulmonoscorpius.labelMalePlural>
     <Pulmonoscorpius.labelFemale>самка пульмоноскорпиона</Pulmonoscorpius.labelFemale>
-	
-	<Dinopithecus.label>динопитек</Dinopithecus.label>
+    <Pulmonoscorpius.labelFemalePlural>самки пульмоноскорпиона</Pulmonoscorpius.labelFemalePlural>
+
+    <Dinopithecus.label>динопитек</Dinopithecus.label>
     <Dinopithecus.labelPlural>динопитеки</Dinopithecus.labelPlural>
-    <Dinopithecus.labelMale>самец динопитекa</Dinopithecus.labelMale>
-    <Dinopithecus.labelFemale>самка динопитекa</Dinopithecus.labelFemale>
-	
-	<Castoroides.label>гигантский бобёр</Castoroides.label>
-    <Castoroides.labelPlural>гигантские бобра</Castoroides.labelPlural>
+    <Dinopithecus.lifeStages.0.label>динопитек</Dinopithecus.lifeStages.0.label>
+    <Dinopithecus.lifeStages.0.labelPlural>динопитеки</Dinopithecus.lifeStages.0.labelPlural>
+    <Dinopithecus.lifeStages.0.labelMale>самец динопитека</Dinopithecus.lifeStages.0.labelMale>
+    <Dinopithecus.lifeStages.0.labelMalePlural>самцы динопитека</Dinopithecus.lifeStages.0.labelMalePlural>
+    <Dinopithecus.lifeStages.0.labelFemale>самка динопитека</Dinopithecus.lifeStages.0.labelFemale>
+    <Dinopithecus.lifeStages.0.labelFemalePlural>самки динопитека</Dinopithecus.lifeStages.0.labelFemalePlural>
+    <Dinopithecus.lifeStages.1.label>динопитек</Dinopithecus.lifeStages.1.label>
+    <Dinopithecus.lifeStages.1.labelPlural>динопитеки</Dinopithecus.lifeStages.1.labelPlural>
+    <Dinopithecus.lifeStages.1.labelMale>самец динопитека</Dinopithecus.lifeStages.1.labelMale>
+    <Dinopithecus.lifeStages.1.labelMalePlural>самцы динопитека</Dinopithecus.lifeStages.1.labelMalePlural>
+    <Dinopithecus.lifeStages.1.labelFemale>самка динопитека</Dinopithecus.lifeStages.1.labelFemale>
+    <Dinopithecus.lifeStages.1.labelFemalePlural>самки динопитека</Dinopithecus.lifeStages.1.labelFemalePlural>
+    <Dinopithecus.lifeStages.2.label>динопитек</Dinopithecus.lifeStages.2.label>
+    <Dinopithecus.lifeStages.2.labelPlural>динопитеки</Dinopithecus.lifeStages.2.labelPlural>
+    <Dinopithecus.lifeStages.2.labelMale>самец динопитека</Dinopithecus.lifeStages.2.labelMale>
+    <Dinopithecus.lifeStages.2.labelMalePlural>самцы динопитека</Dinopithecus.lifeStages.2.labelMalePlural>
+    <Dinopithecus.lifeStages.2.labelFemale>самка динопитека</Dinopithecus.lifeStages.2.labelFemale>
+    <Dinopithecus.lifeStages.2.labelFemalePlural>самки динопитека</Dinopithecus.lifeStages.2.labelFemalePlural>
+    <Dinopithecus.labelMale>самец динопитека</Dinopithecus.labelMale>
+    <Dinopithecus.labelMalePlural>самцы динопитека</Dinopithecus.labelMalePlural>
+    <Dinopithecus.labelFemale>самка динопитека</Dinopithecus.labelFemale>
+    <Dinopithecus.labelFemalePlural>самки динопитека</Dinopithecus.labelFemalePlural>
+
+    <Castoroides.label>гигантский бобёр</Castoroides.label>
+    <Castoroides.labelPlural>гигантские бобры</Castoroides.labelPlural>
+    <Castoroides.lifeStages.0.label>гигантский бобёр</Castoroides.lifeStages.0.label>
+    <Castoroides.lifeStages.0.labelPlural>гигантские бобры</Castoroides.lifeStages.0.labelPlural>
+    <Castoroides.lifeStages.0.labelMale>самец гигантского бобра</Castoroides.lifeStages.0.labelMale>
+    <Castoroides.lifeStages.0.labelMalePlural>самцы гигантского бобра</Castoroides.lifeStages.0.labelMalePlural>
+    <Castoroides.lifeStages.0.labelFemale>самка гигантского бобра</Castoroides.lifeStages.0.labelFemale>
+    <Castoroides.lifeStages.0.labelFemalePlural>самки гигантского бобра</Castoroides.lifeStages.0.labelFemalePlural>
+    <Castoroides.lifeStages.1.label>гигантский бобёр</Castoroides.lifeStages.1.label>
+    <Castoroides.lifeStages.1.labelPlural>гигантские бобры</Castoroides.lifeStages.1.labelPlural>
+    <Castoroides.lifeStages.1.labelMale>самец гигантского бобра</Castoroides.lifeStages.1.labelMale>
+    <Castoroides.lifeStages.1.labelMalePlural>самцы гигантского бобра</Castoroides.lifeStages.1.labelMalePlural>
+    <Castoroides.lifeStages.1.labelFemale>самка гигантского бобра</Castoroides.lifeStages.1.labelFemale>
+    <Castoroides.lifeStages.1.labelFemalePlural>самки гигантского бобра</Castoroides.lifeStages.1.labelFemalePlural>
+    <Castoroides.lifeStages.2.label>гигантский бобёр</Castoroides.lifeStages.2.label>
+    <Castoroides.lifeStages.2.labelPlural>гигантские бобры</Castoroides.lifeStages.2.labelPlural>
+    <Castoroides.lifeStages.2.labelMale>самец гигантского бобра</Castoroides.lifeStages.2.labelMale>
+    <Castoroides.lifeStages.2.labelMalePlural>самцы гигантского бобра</Castoroides.lifeStages.2.labelMalePlural>
+    <Castoroides.lifeStages.2.labelFemale>самка гигантского бобра</Castoroides.lifeStages.2.labelFemale>
+    <Castoroides.lifeStages.2.labelFemalePlural>самки гигантского бобра</Castoroides.lifeStages.2.labelFemalePlural>
     <Castoroides.labelMale>самец гигантского бобра</Castoroides.labelMale>
+    <Castoroides.labelMalePlural>самцы гигантского бобра</Castoroides.labelMalePlural>
     <Castoroides.labelFemale>самка гигантского бобра</Castoroides.labelFemale>
-	
-	<Enhydriodon.label>энгидриодон</Enhydriodon.label>
+    <Castoroides.labelFemalePlural>самки гигантского бобра</Castoroides.labelFemalePlural>
+
+    <Enhydriodon.label>энгидриодон</Enhydriodon.label>
     <Enhydriodon.labelPlural>энгидриодоны</Enhydriodon.labelPlural>
-    <Enhydriodon.labelMale>самец энгидриодоны</Enhydriodon.labelMale>
-    <Enhydriodon.labelFemale>самка энгидриодоны</Enhydriodon.labelFemale>
+    <Enhydriodon.lifeStages.0.label>энгидриодон</Enhydriodon.lifeStages.0.label>
+    <Enhydriodon.lifeStages.0.labelPlural>энгидриодон</Enhydriodon.lifeStages.0.labelPlural>
+    <Enhydriodon.lifeStages.0.labelMale>самец энгидриодона</Enhydriodon.lifeStages.0.labelMale>
+    <Enhydriodon.lifeStages.0.labelMalePlural>самцы энгидриодона</Enhydriodon.lifeStages.0.labelMalePlural>
+    <Enhydriodon.lifeStages.0.labelFemale>самка энгидриодона</Enhydriodon.lifeStages.0.labelFemale>
+    <Enhydriodon.lifeStages.0.labelFemalePlural>самки энгидриодона</Enhydriodon.lifeStages.0.labelFemalePlural>
+    <Enhydriodon.lifeStages.1.label>энгидриодон</Enhydriodon.lifeStages.1.label>
+    <Enhydriodon.lifeStages.1.labelPlural>энгидриодон</Enhydriodon.lifeStages.1.labelPlural>
+    <Enhydriodon.lifeStages.1.labelMale>самец энгидриодона</Enhydriodon.lifeStages.1.labelMale>
+    <Enhydriodon.lifeStages.1.labelMalePlural>самцы энгидриодона</Enhydriodon.lifeStages.1.labelMalePlural>
+    <Enhydriodon.lifeStages.1.labelFemale>самка энгидриодона</Enhydriodon.lifeStages.1.labelFemale>
+    <Enhydriodon.lifeStages.1.labelFemalePlural>самки энгидриодона</Enhydriodon.lifeStages.1.labelFemalePlural>
+    <Enhydriodon.lifeStages.2.label>энгидриодон</Enhydriodon.lifeStages.2.label>
+    <Enhydriodon.lifeStages.2.labelPlural>энгидриодон</Enhydriodon.lifeStages.2.labelPlural>
+    <Enhydriodon.lifeStages.2.labelMale>самец энгидриодона</Enhydriodon.lifeStages.2.labelMale>
+    <Enhydriodon.lifeStages.2.labelMalePlural>самцы энгидриодона</Enhydriodon.lifeStages.2.labelMalePlural>
+    <Enhydriodon.lifeStages.2.labelFemale>самка энгидриодона</Enhydriodon.lifeStages.2.labelFemale>
+    <Enhydriodon.lifeStages.2.labelFemalePlural>самки энгидриодона</Enhydriodon.lifeStages.2.labelFemalePlural>
+    <Enhydriodon.labelMale>самец энгидриодона</Enhydriodon.labelMale>
+    <Enhydriodon.labelMalePlural>самцы энгидриодона</Enhydriodon.labelMalePlural>
+    <Enhydriodon.labelFemale>самка энгидриодона</Enhydriodon.labelFemale>
+    <Enhydriodon.labelFemalePlural>самки энгидриодона</Enhydriodon.labelFemalePlural>
 </LanguageData>
