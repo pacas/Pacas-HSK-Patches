@@ -119,19 +119,26 @@
         <mods>
             <li>Masakis HSK Patch</li>
         </mods>
-        <match Class="PatchOperationSequence">
-            <operations>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/ThingDef[defName="AA_RottingMoundItem"]</xpath> 
-                    <value>
-                        <comps>
-                            <li>
-                                <compClass>Core_SK_Patch.CompAutoForbidden</compClass>
-                            </li>
-                        </comps>
-                    </value>
-                </li>
-            </operations>
+        <match Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="AA_RottingMoundItem"]/comps</xpath>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="AA_RottingMoundItem"]</xpath> 
+                <value>
+                    <comps>
+                        <li>
+                            <compClass>Core_SK_Patch.CompAutoForbidden</compClass>
+                        </li>
+                    </comps>
+                </value>
+            </nomatch>
+            <match Class="PatchOperationAdd">
+                <xpath>Defs/ThingDef[defName="AA_RottingMoundItem"]/comps</xpath> 
+                <value>
+                    <li>
+                        <compClass>Core_SK_Patch.CompAutoForbidden</compClass>
+                    </li>
+                </value>
+            </match>
         </match>
     </Operation>
 </Patch>

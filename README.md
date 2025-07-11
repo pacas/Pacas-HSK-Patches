@@ -31,5 +31,9 @@ How to download only the mods you are interested in:<br>
 <br>
 <img src="https://i.imgur.com/fdngbbh.png"><br>
 Rimworld is owned by Tynan Sylvester.<br>
-Mod authors for these awesome mods. Check out their other mods!
-Everything in this repository belongs to the owners of the original mods. I only do HSK conversions. Please, download and endorse original mod!
+Mod authors for these awesome mods. Check out their other mods!<br>
+Everything in this repository belongs to the owners of the original mods. I only do HSK conversions. Please, download and endorse original mod!<br>
+
+
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=pacas/Pacas-HSK-Patches&type=Date)](https://www.star-history.com/#pacas/Pacas-HSK-Patches&Date)
