@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>*/DesignationCategoryDef[defName = "Power"]/specialDesignatorClasses</xpath>	  
+					<value>
+						<li>Parallel_PowerGrid.Designator_DeconstructPara</li>					
+					</value>   					
+				</li>
+			</operations>
+	</Operation>	
+</Patch>

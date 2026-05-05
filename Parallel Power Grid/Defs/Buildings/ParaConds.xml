@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef Name="ParaBuilding" Abstract="True">
+		<thingClass>Building</thingClass>
+		<category>Building</category>		
+		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>35</WorkToBuild>
+			<Flammability>0.7</Flammability>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<costList>
+			<Wire>1</Wire>
+		</costList>
+		<placeWorkers>			
+			<li>Parallel_PowerGrid.PlaceWorker_ParaNet</li>
+		</placeWorkers>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<repairEffect>Repair</repairEffect>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Power</designationCategory>
+		<clearBuildingArea>false</clearBuildingArea>		
+		<researchPrerequisites>
+			<li>Electricity</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="ParaBuilding" Name="ParaCond" Abstract="True">		
+		<description>A parallel set of electrical cables for moving power around. Can be placed under walls and other buildings.</description>	
+		<placingDraggableDimensions>1</placingDraggableDimensions>	
+		<neverMultiSelect>true</neverMultiSelect>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>			
+			<blueprintClass>Parallel_PowerGrid.Blueprint_Show</blueprintClass>					
+		</building>
+	</ThingDef>
+	
+	<ThingDef ParentName="ParaBuilding" Name="ParaBat" Abstract="True">				
+		<description>Stores electricity on a parallel grid when there is excess power and yields it when there is not. Warning - charged batteries tend to explode when exposed to rain or fire.</description>
+		<thingClass>Parallel_PowerGrid.ParaBattery</thingClass>	
+		<graphicData>			
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>		
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.40</fillPercent>
+		<tickerType>Normal</tickerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1.0</Flammability>
+			<Beauty>-15</Beauty>
+		</statBases>	
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>HeavyMetallic</li>
+		</stuffCategories>
+		<costStuffCount>35</costStuffCount>
+		<costList>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ElectronicComponents>3</ElectronicComponents>
+		</costList>
+		<rotatable>true</rotatable>
+		<canOverlapZones>false</canOverlapZones>
+		<staticSunShadowHeight>0.2</staticSunShadowHeight>   
+		<clearBuildingArea>true</clearBuildingArea>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>		
+		<researchPrerequisites>
+			<li>Batteries</li>
+		</researchPrerequisites>
+	</ThingDef> 
+  
+	<ThingDef ParentName="ParaCond">
+		<defName>ParaCondRed</defName>		
+		<label>parallel conduit (Red)</label>
+		<graphicData>
+			<texPath>Things/ParallelPowerGrid/ParaConduitRed_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>16384</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/ParallelPowerGrid/ParaConduitRedBP_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<uiIconPath>Things/ParallelPowerGrid/ParaConduitRed_MenuIcon</uiIconPath>
+		<comps>
+			<li Class="Parallel_PowerGrid.CompProperties_ParaPower">
+				<compClass>Parallel_PowerGrid.Comp_ParaPower</compClass>
+				<startElectricalFires>false</startElectricalFires>
+				<Layer>0</Layer>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ParaCond">
+		<defName>ParaCondBlue</defName>
+		<label>parallel conduit (Blue)</label>
+		<graphicData>
+			<texPath>Things/ParallelPowerGrid/ParaConduitBlue_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>8192</li>					
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/ParallelPowerGrid/ParaConduitBlueBP_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<uiIconPath>Things/ParallelPowerGrid/ParaConduitBlue_MenuIcon</uiIconPath>
+		<comps>
+			<li Class="Parallel_PowerGrid.CompProperties_ParaPower">
+				<compClass>Parallel_PowerGrid.Comp_ParaPower</compClass>
+				<startElectricalFires>false</startElectricalFires>
+				<Layer>1</Layer>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ParaCond">
+		<defName>ParaCondGreen</defName>
+		<label>parallel conduit (Green)</label>
+		<graphicData>
+			<texPath>Things/ParallelPowerGrid/ParaConduitGreen_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>4096</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<blueprintGraphicData>
+				<texPath>Things/ParallelPowerGrid/ParaConduitGreenBP_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		<uiIconPath>Things/ParallelPowerGrid/ParaConduitGreen_MenuIcon</uiIconPath>
+		<comps>
+			<li Class="Parallel_PowerGrid.CompProperties_ParaPower">
+				<compClass>Parallel_PowerGrid.Comp_ParaPower</compClass>
+				<startElectricalFires>false</startElectricalFires>
+				<Layer>2</Layer>
+			</li>
+		</comps>
+	</ThingDef>
+ 
+ 
+	<ThingDef ParentName="ParaBuilding">
+		<defName>ParaCondSocket</defName>	
+		<thingClass>Parallel_PowerGrid.ParaBuilding</thingClass>		
+		<label>parallel conduit socket (All)</label>
+		<description>A Socket that can be used to connect parallel conduits to normal conduits. Can be placed under walls and other buildings.</description>
+		<graphicData>
+			<texPath>Things/ParallelPowerGrid/ParaSocket_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>
+				<li>4096</li>
+				<li>8192</li>					
+				<li>16384</li>				
+				<li>PowerConduit</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<blueprintGraphicData>
+				<texPath>Things/ParallelPowerGrid/ParaSocket_AtlasBP</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<linkType>Basic</linkType>
+				<linkFlags>
+					<li>4096</li>
+					<li>8192</li>	
+					<li>16384</li>
+					<li>PowerConduit</li>
+				</linkFlags>
+			</blueprintGraphicData>			
+			<blueprintClass>Parallel_PowerGrid.Blueprint_Show</blueprintClass>
+		</building>
+		<costList>
+			<Wire>4</Wire>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<uiIconPath>Things/ParallelPowerGrid/ParaSocket</uiIconPath>
+		<comps>
+			<li Class="Parallel_PowerGrid.CompProperties_ParaPower">
+				<compClass>Parallel_PowerGrid.Comp_ParaTransmitter</compClass>   
+				<startElectricalFires>false</startElectricalFires>
+				<Layer>-1</Layer>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower> 		
+			</li>	  
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ParaBuilding">
+		<defName>ParaCondSocketRed</defName>	
+		<thingClass>Parallel_PowerGrid.ParaBuilding</thingClass>		
+		<label>parallel conduit Socket (red)</label>
+		<description>A Socket that can be used to connect red parallel conduits to normal conduits. Can be placed under walls and other buildings.</description>
+		<graphicData>
+			<texPath>Things/ParallelPowerGrid/ParaRedSocket_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>				
+				<li>16384</li>
+				<li>PowerConduit</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<blueprintGraphicData>
+				<texPath>Things/ParallelPowerGrid/ParaSocketRed_AtlasBP</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<linkType>Basic</linkType>
+				<linkFlags>
+					<li>16384</li>
+					<li>PowerConduit</li>
+				</linkFlags>
+			</blueprintGraphicData>
+			<blueprintClass>Parallel_PowerGrid.Blueprint_Show</blueprintClass>
+		</building>
+		<costList>
+			<Wire>2</Wire>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<uiIconPath>Things/ParallelPowerGrid/ParaSocketRed</uiIconPath>
+		<comps>
+			<li Class="Parallel_PowerGrid.CompProperties_ParaPower">
+				<compClass>Parallel_PowerGrid.Comp_ParaTransmitter</compClass>   
+				<startElectricalFires>false</startElectricalFires>
+				<Layer>-10</Layer>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower> 		
+			</li>	  
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ParaBuilding">
+		<defName>ParaCondSocketBlue</defName>		
+		<thingClass>Parallel_PowerGrid.ParaBuilding</thingClass>		
+		<label>parallel conduit socket (blue)</label>
+		<description>A Socket that can be used to connect blue parallel conduits to normal conduits. Can be placed under walls and other buildings.</description>
+		<graphicData>
+			<texPath>Things/ParallelPowerGrid/ParaBlueSocket_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>				
+				<li>8192</li>
+				<li>PowerConduit</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<blueprintGraphicData>
+				<texPath>Things/ParallelPowerGrid/ParaSocketBlue_AtlasBP</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<linkType>Basic</linkType>
+				<linkFlags>
+					<li>8192</li>
+					<li>PowerConduit</li>
+				</linkFlags>
+			</blueprintGraphicData>
+			<blueprintClass>Parallel_PowerGrid.Blueprint_Show</blueprintClass>
+		</building>
+		<costList>
+			<Wire>2</Wire>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<uiIconPath>Things/ParallelPowerGrid/ParaSocketBlue</uiIconPath>
+		<comps>
+			<li Class="Parallel_PowerGrid.CompProperties_ParaPower">
+				<compClass>Parallel_PowerGrid.Comp_ParaTransmitter</compClass>   
+				<startElectricalFires>false</startElectricalFires>
+				<Layer>-9</Layer>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower> 		
+			</li>	  
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ParaBuilding">
+		<defName>ParaCondSocketGreen</defName>	
+		<thingClass>Parallel_PowerGrid.ParaBuilding</thingClass>		
+		<label>parallel conduit socket (green)</label>
+		<description>A Socket that can be used to connect green parallel conduits to normal conduits. Can be placed under walls and other buildings.</description>
+		<graphicData>
+			<texPath>Things/ParallelPowerGrid/ParaGreenSocket_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>Basic</linkType>
+			<linkFlags>			
+				<li>4096</li>			
+				<li>PowerConduit</li>
+			</linkFlags>
+			<damageData>
+				<rect>(0,0.35,1,0.3)</rect>
+			</damageData>
+		</graphicData>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
+			<blueprintGraphicData>
+				<texPath>Things/ParallelPowerGrid/ParaSocketGreen_AtlasBP</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+				<linkType>Basic</linkType>
+				<linkFlags>
+					<li>4096</li>
+					<li>PowerConduit</li>
+				</linkFlags>
+			</blueprintGraphicData>
+			<blueprintClass>Parallel_PowerGrid.Blueprint_Show</blueprintClass>
+		</building>
+		<costList>
+			<Wire>2</Wire>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<uiIconPath>Things/ParallelPowerGrid/ParaSocketGreen</uiIconPath>
+		<comps>
+			<li Class="Parallel_PowerGrid.CompProperties_ParaPower">
+				<compClass>Parallel_PowerGrid.Comp_ParaTransmitter</compClass>   
+				<startElectricalFires>false</startElectricalFires>
+				<Layer>-8</Layer>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower> 		
+			</li>	  
+		</comps>
+	</ThingDef>
+	
+  <ThingDef ParentName="ParaBat">
+    <defName>ParaBatteryRed</defName>
+    <label>battery parallel red</label>
+	<graphicData>
+		<texPath>Things/ParallelPowerGrid/BatteryRed</texPath>
+		<linkFlags>
+			<li>16384</li>
+		</linkFlags>
+	</graphicData>
+	<uiIconPath>Things/ParallelPowerGrid/BatteryRed_north</uiIconPath>    
+    <comps>
+      <li Class="Parallel_PowerGrid.CompProperties_ParaBattery">
+		<Layer>0</Layer>
+        <storedEnergyMax>1000</storedEnergyMax>
+        <efficiency>0.5</efficiency>
+        <startElectricalFires>true</startElectricalFires>        
+      </li>      
+    </comps>
+  </ThingDef>
+  
+    <ThingDef ParentName="ParaBat">
+    <defName>ParaBatteryBlue</defName>
+    <label>battery parallel blue</label>
+	<graphicData>
+		<texPath>Things/ParallelPowerGrid/BatteryBlue</texPath>
+		<linkFlags>
+		<li>8192</li>
+		</linkFlags>
+	</graphicData>
+	<uiIconPath>Things/ParallelPowerGrid/BatteryBlue_north</uiIconPath>    
+    <comps>
+      <li Class="Parallel_PowerGrid.CompProperties_ParaBattery">
+		<Layer>1</Layer>
+        <storedEnergyMax>1000</storedEnergyMax>
+        <efficiency>0.5</efficiency>
+        <startElectricalFires>true</startElectricalFires>        
+      </li>
+    </comps>
+  </ThingDef>
+	
+  <ThingDef ParentName="ParaBat">
+    <defName>ParaBatteryGreen</defName>
+    <label>battery parallel green</label>
+    <graphicData>
+      <texPath>Things/ParallelPowerGrid/BatteryGreen</texPath>
+      <linkFlags>
+		<li>4096</li>
+      </linkFlags>
+    </graphicData>
+	<uiIconPath>Things/ParallelPowerGrid/BatteryGreen_north</uiIconPath>    
+    <comps>
+      <li Class="Parallel_PowerGrid.CompProperties_ParaBattery">
+        <Layer>2</Layer>
+        <storedEnergyMax>1000</storedEnergyMax>
+        <efficiency>0.5</efficiency>
+        <startElectricalFires>true</startElectricalFires>
+      </li>      
+    </comps>
+  </ThingDef>
+
+ </Defs>

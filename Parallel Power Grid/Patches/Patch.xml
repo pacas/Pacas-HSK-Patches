@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_PowerConduit"]/defNames</xpath>
+		<value>
+			<li>ParaCondRed</li>
+			<li>ParaCondBlue</li>
+			<li>ParaCondGreen</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Switchers"]/defNames</xpath>
+		<value>
+			<li>ParaCondSocket</li>
+			<li>ParaCondSocketRed</li>
+			<li>ParaCondSocketBlue</li>
+			<li>ParaCondSocketGreen</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_Battery"]/defNames</xpath>
+		<value>
+			<li>ParaBatteryRed</li>
+			<li>ParaBatteryGreen</li>
+			<li>ParaBatteryBlue</li>
+		</value>
+	</Operation>
+</Patch>
+

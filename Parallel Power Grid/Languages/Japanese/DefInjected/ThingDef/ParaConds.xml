@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ParaCondRed.label>パラレル 電力線(赤)</ParaCondRed.label>
+  <ParaCondRed.description>電気を送電する為のパラレル電力ケーブルです。壁の中やその他の建築物を通すことができます。</ParaCondRed.description>
+  <Blueprint_ParaCondRed.label>パラレル 電力線(赤)(設計)</Blueprint_ParaCondRed.label>
+  <Frame_ParaCondRed.label>パラレル 電力線(赤)(施工)</Frame_ParaCondRed.label>
+  <Frame_ParaCondRed.description>電気を送電する為のパラレル電力ケーブルです。壁の中やその他の建築物を通すことができます。</Frame_ParaCondRed.description>
+
+  <ParaCondBlue.label>パラレル 電力線(青)</ParaCondBlue.label>
+  <ParaCondBlue.description>電気を送電する為のパラレル電力ケーブルです。壁の中やその他の建築物を通すことができます。</ParaCondBlue.description>
+  <Blueprint_ParaCondBlue.label>パラレル 電力線(青)(設計)</Blueprint_ParaCondBlue.label>
+  <Frame_ParaCondBlue.label>パラレル 電力線(青)(施工)</Frame_ParaCondBlue.label>
+  <Frame_ParaCondBlue.description>電気を送電する為のパラレル電力ケーブルです。壁の中やその他の建築物を通すことができます。</Frame_ParaCondBlue.description>
+
+  <ParaCondGreen.label>パラレル 電力線(緑)</ParaCondGreen.label>
+  <ParaCondGreen.description>電気を送電する為のパラレル電力ケーブルです。壁の中やその他の建築物を通すことができます。</ParaCondGreen.description>
+  <Blueprint_ParaCondGreen.label>パラレル 電力線(緑)(設計)</Blueprint_ParaCondGreen.label>
+  <Frame_ParaCondGreen.label>パラレル 電力線(緑)(施工)</Frame_ParaCondGreen.label>
+  <Frame_ParaCondGreen.description>電気を送電する為のパラレル電力ケーブルです。壁の中やその他の建築物を通すことができます。</Frame_ParaCondGreen.description>  
+
+  <ParaCondSocket.label>パラレル 電力線 ソケット</ParaCondSocket.label>
+  <ParaCondSocket.description>パラレル電力線を通常の電力線に接続するために使用するソケットです。壁の中やその他の建築物を通すことができます。</ParaCondSocket.description>
+  <Blueprint_ParaCondSocket.label>パラレル 電力線 ソケット(設計)</Blueprint_ParaCondSocket.label>
+  <Frame_ParaCondSocket.label>パラレル 電力線 ソケット(施工)</Frame_ParaCondSocket.label>
+  <Frame_ParaCondSocket.description>パラレル電力線を通常の電力線に接続するために使用するソケットです。壁の中やその他の建築物を通すことができます。</Frame_ParaCondSocket.description>
+
+  <ParaCondSocketRed.label>パラレル 電力線 ソケット(赤)</ParaCondSocketRed.label>
+  <ParaCondSocketRed.description>赤色の並列電力線を通常の電力線に接続するために使用されるソケット。あなたは壁や他の建物を通り抜けることができます。</ParaCondSocketRed.description>
+  <Blueprint_ParaCondSocketRed.label>パラレル 電力線 ソケット(赤)(設計)</Blueprint_ParaCondSocketRed.label>
+  <Frame_ParaCondSocketRed.label>パラレル 電力線 ソケット(赤)(施工)</Frame_ParaCondSocketRed.label>  
+  <Frame_ParaCondSocketRed.description>赤色の並列電力線を通常の電力線に接続するために使用されるソケット。あなたは壁や他の建物を通り抜けることができます。</Frame_ParaCondSocketRed.description>
+
+  <ParaCondSocketBlue.label>パラレル 電力線 ソケット(青)</ParaCondSocketBlue.label>
+  <ParaCondSocketBlue.description>青色の並列電力線を通常の電力線に接続するためのソケット。あなたは壁や他の建物を通り抜けることができます。</ParaCondSocketBlue.description>
+  <Blueprint_ParaCondSocketBlue.label>パラレル 電力線 ソケット(青)(設計)</Blueprint_ParaCondSocketBlue.label>
+  <Frame_ParaCondSocketBlue.label>パラレル 電力線 ソケット(青)(施工)</Frame_ParaCondSocketBlue.label>
+  <Frame_ParaCondSocketBlue.description>青色の並列電力線を通常の電力線に接続するためのソケット。あなたは壁や他の建物を通り抜けることができます。</Frame_ParaCondSocketBlue.description>
+
+  <ParaCondSocketGreen.label>パラレル 電力線 ソケット(緑)</ParaCondSocketGreen.label>
+  <ParaCondSocketGreen.description>緑色のパラレル電力線を通常の電力線に接続するためのソケット。あなたは壁や他の建物を通り抜けることができます。</ParaCondSocketGreen.description>
+  <Blueprint_ParaCondSocketGreen.label>パラレル 電力線 ソケット(緑)(設計)</Blueprint_ParaCondSocketGreen.label>
+  <Frame_ParaCondSocketGreen.label>パラレル 電力線 ソケット(緑)(施工)</Frame_ParaCondSocketGreen.label>
+  <Frame_ParaCondSocketGreen.description>緑色のパラレル電力線を通常の電力線に接続するためのソケット。あなたは壁や他の建物を通り抜けることができます。</Frame_ParaCondSocketGreen.description>
+
+  <ParaBatteryRed.label>パラレル バッテリー (赤)</ParaBatteryRed.label>
+  <ParaBatteryRed.description>余剰電力があるときはパラレルバッテリーに電力を蓄え、電力が不足したときは電力を供給します。\n(警告)過充電や雨水に漏れることは爆発の原因となります。</ParaBatteryRed.description>
+  <Blueprint_ParaBatteryRed.label>パラレル バッテリー (赤)(設計)</Blueprint_ParaBatteryRed.label>
+  <Blueprint_Install_ParaBatteryRed.label>パラレル バッテリー (赤)(移動先)</Blueprint_Install_ParaBatteryRed.label>
+  <Frame_ParaBatteryRed.label>パラレル バッテリー (赤)(施工)</Frame_ParaBatteryRed.label>
+  <Frame_ParaBatteryRed.description>余剰電力があるときはパラレルバッテリーに電力を蓄え、電力が不足したときは電力を供給します。\n(警告)過充電や雨水に漏れることは爆発の原因となります。</Frame_ParaBatteryRed.description>
+
+  <ParaBatteryBlue.label>パラレル バッテリー (青)</ParaBatteryBlue.label>
+  <ParaBatteryBlue.description>余剰電力があるときはパラレルバッテリーに電力を蓄え、電力が不足したときは電力を供給します。\n(警告)過充電や雨水に漏れることは爆発の原因となります。</ParaBatteryBlue.description>
+  <Blueprint_ParaBatteryBlue.label>パラレル バッテリー (青)(設計)</Blueprint_ParaBatteryBlue.label>
+  <Blueprint_Install_ParaBatteryBlue.label>パラレル バッテリー (青)(移動先)</Blueprint_Install_ParaBatteryBlue.label>
+  <Frame_ParaBatteryBlue.label>パラレル バッテリー (青)(施工)</Frame_ParaBatteryBlue.label>
+  <Frame_ParaBatteryBlue.description>余剰電力があるときはパラレルバッテリーに電力を蓄え、電力が不足したときは電力を供給します。\n(警告)過充電や雨水に漏れることは爆発の原因となります。</Frame_ParaBatteryBlue.description>
+
+  <ParaBatteryGreen.label>パラレル バッテリー (緑)</ParaBatteryGreen.label>
+  <ParaBatteryGreen.description>余剰電力があるときはパラレルバッテリーに電力を蓄え、電力が不足したときは電力を供給します。\n(警告)過充電や雨水に漏れることは爆発の原因となります。</ParaBatteryGreen.description>
+  <Blueprint_ParaBatteryGreen.label>パラレル バッテリー (緑)(設計)</Blueprint_ParaBatteryGreen.label>
+  <Blueprint_Install_ParaBatteryGreen.label>パラレル バッテリー (緑)(移動先)</Blueprint_Install_ParaBatteryGreen.label>
+  <Frame_ParaBatteryGreen.label>パラレル バッテリー (緑)(施工)</Frame_ParaBatteryGreen.label>
+  <Frame_ParaBatteryGreen.description>余剰電力があるときはパラレルバッテリーに電力を蓄え、電力が不足したときは電力を供給します。\n(警告)過充電や雨水に漏れることは爆発の原因となります。</Frame_ParaBatteryGreen.description>
+
+</LanguageData>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ParaCondRed.label>并联电线(红)</ParaCondRed.label>
+  <ParaCondRed.description>一个用来传输电力的电缆，可以安置在墙里或建筑里</ParaCondRed.description>
+  <ParaCondRed_Blueprint.label>并联电线(红)(蓝图)</ParaCondRed_Blueprint.label>
+  <ParaCondRed_Frame.label>并联电线(红)(建造中)</ParaCondRed_Frame.label>
+  <ParaCondRed_Frame.description>一个用来传输电力的电缆，可以安置在墙里或建筑里</ParaCondRed_Frame.description>
+
+  <ParaCondBlue.label>并联电线(蓝)</ParaCondBlue.label>
+  <ParaCondBlue.description>一个用来传输电力的电缆，可以安置在墙里或建筑里</ParaCondBlue.description>
+  <ParaCondBlue_Blueprint.label>并联电线(蓝)(蓝图)</ParaCondBlue_Blueprint.label>
+  <ParaCondBlue_Frame.label>并联电线(蓝)(建造中)</ParaCondBlue_Frame.label>
+  <ParaCondBlue_Frame.description>一个用来传输电力的电缆，可以安置在墙里或建筑里</ParaCondBlue_Frame.description>  
+  
+  <ParaCondGreen.label>并联电线(绿)</ParaCondGreen.label>
+  <ParaCondGreen.description>一个用来传输电力的电缆，可以安置在墙里或建筑里</ParaCondGreen.description>
+  <ParaCondGreen_Blueprint.label>并联电线(绿)(蓝图)</ParaCondGreen_Blueprint.label>
+  <ParaCondGreen_Frame.label>并联电线(绿)(建造中)</ParaCondGreen_Frame.label>
+  <ParaCondGreen_Frame.description>一个用来传输电力的电缆，可以安置在墙里或建筑里</ParaCondGreen_Frame.description> 
+  
+
+  <ParaCondSocket.label>并联插座</ParaCondSocket.label>
+  <ParaCondSocket.description>一个可以将并联电路连接至并联电路的插座，可以安置在墙里或建筑里.</ParaCondSocket.description>
+  <ParaCondSocket_Blueprint.label>并联插座(蓝图)</ParaCondSocket_Blueprint.label>
+  <ParaCondSocket_Frame.label>并联插座(建造中)</ParaCondSocket_Frame.label>
+  <ParaCondSocket_Frame.description>一个可以将并联电路连接至并联电路的插座，可以安置在墙里或建筑里.</ParaCondSocket_Frame.description>
+  
+  <ParaCondSocketRed.label>并联插座(红)</ParaCondSocketRed.label>
+  <ParaCondSocketRed.description>一个可以将红并联电路连接至并联电路的插座，可以安置在墙里或建筑里.</ParaCondSocketRed.description>
+  <ParaCondSocketRed_Blueprint.label>并联插座(红)(蓝图)</ParaCondSocketRed_Blueprint.label>
+  <ParaCondSocketRed_Frame.label>并联插座(红)(建造中)</ParaCondSocketRed_Frame.label>
+  <ParaCondSocketRed_Frame.description>一个可以将红并联电路连接至并联电路的插座，可以安置在墙里或建筑里.</ParaCondSocketRed_Frame.description>  
+  
+    <ParaCondSocketBlue.label>并联插座(蓝)</ParaCondSocketBlue.label>
+  <ParaCondSocketBlue.description>一个可以将蓝并联电路连接至并联电路的插座，可以安置在墙里或建筑里.</ParaCondSocketBlue.description>
+  <ParaCondSocketBlue_Blueprint.label>并联插座(蓝)(蓝图)</ParaCondSocketBlue_Blueprint.label>
+  <ParaCondSocketBlue_Frame.label>并联插座(蓝)(建造中)</ParaCondSocketBlue_Frame.label>
+  <ParaCondSocketBlue_Frame.description>一个可以将蓝并联电路连接至并联电路的插座，可以安置在墙里或建筑里.</ParaCondSocketBlue_Frame.description>
+  
+      <ParaCondSocketGreen.label>并联插座(绿)</ParaCondSocketGreen.label>
+  <ParaCondSocketGreen.description>一个可以将绿并联电路连接至并联电路的插座，可以安置在墙里或建筑里.</ParaCondSocketGreen.description>
+  <ParaCondSocketGreen_Blueprint.label>并联插座(绿)(蓝图)</ParaCondSocketGreen_Blueprint.label>
+  <ParaCondSocketGreen_Frame.label>并联插座(绿)(建造中)</ParaCondSocketGreen_Frame.label>
+  <ParaCondSocketGreen_Frame.description>一个可以将绿并联电路连接至并联电路的插座，可以安置在墙里或建筑里.</ParaCondSocketGreen_Frame.description>
+
+  <ParaBatteryRed.label>红色并联电池</ParaBatteryRed.label>
+  <ParaBatteryRed.description>用来储存并联电路的电池，当电池充满时将自动停止充电</ParaBatteryRed.description>
+  <ParaBatteryRed_Blueprint.label>红色并联电池(蓝图)</ParaBatteryRed_Blueprint.label>
+  <ParaBatteryRed_Blueprint_Install.label>红色并联电池(蓝图)</ParaBatteryRed_Blueprint_Install.label>
+  <ParaBatteryRed_Frame.label>红色并联电池(建造中)</ParaBatteryRed_Frame.label>
+  <ParaBatteryRed_Frame.description>用来储存并联电路的电池，当电池充满时将自动停止充电</ParaBatteryRed_Frame.description>
+
+  <ParaBatteryBlue.label>蓝色并联电池</ParaBatteryBlue.label>
+  <ParaBatteryBlue.description>用来储存并联电路的电池，当电池充满时将自动停止充电</ParaBatteryBlue.description>
+  <ParaBatteryBlue_Blueprint.label>蓝色并联电池(蓝图)</ParaBatteryBlue_Blueprint.label>
+  <ParaBatteryBlue_Blueprint_Install.label>蓝色并联电池(蓝图)</ParaBatteryBlue_Blueprint_Install.label>
+  <ParaBatteryBlue_Frame.label>蓝色并联电池(建造中)</ParaBatteryBlue_Frame.label>
+  <ParaBatteryBlue_Frame.description>用来储存并联电路的电池，当电池充满时将自动停止充电</ParaBatteryBlue_Frame.description>
+
+  <ParaBatteryGreen.label>绿色并联电池</ParaBatteryGreen.label>
+  <ParaBatteryGreen.description>用来储存并联电路的电池，当电池充满时将自动停止充电</ParaBatteryGreen.description>
+  <ParaBatteryGreen_Blueprint.label>绿色并联电池(蓝图)</ParaBatteryGreen_Blueprint.label>
+  <ParaBatteryGreen_Blueprint_Install.label>绿色并联电池(蓝图)</ParaBatteryGreen_Blueprint_Install.label>
+  <ParaBatteryGreen_Frame.label>绿色并联电池(建造中)</ParaBatteryGreen_Frame.label>
+  <ParaBatteryGreen_Frame.description>用来储存并联电路的电池，当电池充满时将自动停止充电</ParaBatteryGreen_Frame.description>
+  
+</LanguageData>
