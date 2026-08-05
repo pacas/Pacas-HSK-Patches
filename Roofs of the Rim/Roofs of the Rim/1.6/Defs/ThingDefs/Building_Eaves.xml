@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--============================== BaseRoofBuilding ==============================-->
+    <ThingDef ParentName="BuildingBase" Name="BaseRoofBuilding" Abstract="True">
+        <thingClass>Building</thingClass>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <damageData>
+                <enabled>false</enabled>
+            </damageData>
+        </graphicData>
+        <altitudeLayer>Blueprint</altitudeLayer>
+        <category>Building</category>
+        <selectable>true</selectable>
+        <destroyable>true</destroyable>
+        <clearBuildingArea>false</clearBuildingArea>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <passability>Standable</passability>
+        <building>
+            <isEdifice>false</isEdifice>
+            <canPlaceOverWall>true</canPlaceOverWall>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <castEdgeShadows>false</castEdgeShadows>
+        <blockWind>false</blockWind>
+        <fillPercent>0.05</fillPercent>
+        <coversFloor>false</coversFloor>
+        <drawStyleCategory>Default1D</drawStyleCategory>
+        <tickerType>Never</tickerType>
+        <rotatable>true</rotatable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <holdsRoof>false</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>0</staticSunShadowHeight>
+        <blockLight>false</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <fertility>0</fertility>
+        <terrainAffordanceNeeded/>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>2</multiplier>
+            </li>
+        </damageMultipliers>
+        <modExtensions Inherit="False">
+            <li MayRequire="owlchemist.perspectivebuildings" Class="Perspective.Offsetter">
+                <mirror>False</mirror>
+                <offsetType>Eight</offsetType>
+                <offsets>
+                    <li>(0.5, 0, 0.5)</li>
+                </offsets>
+            </li>
+        </modExtensions>
+    </ThingDef>
+    <!--============================== Rafter ==============================-->
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveWoody</defName>
+        <label>Wood eave</label>
+        <description>A standard eave. Made out of wood.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/WoodEave/Eave</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/WoodEave_Icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveWoodyCorner</defName>
+        <label>Wood corner eave (outer)</label>
+        <description>Corner eave to fill the gap.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/WoodEave_Corner/Eavecornerout</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/Eavecornerout_Icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Mass>1.5</Mass>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveWoodyCorner_InnerSmall</defName>
+        <label>Wood corner eave (inner small)</label>
+        <description>Corner eave to fill the gap.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/WoodEave_Corner_Inner/woodyEave-innercornersmall</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/WoodEave_Corner_Inner/woodyEave-innercornersmall_south</uiIconPath>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Mass>1.5</Mass>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveWoodyCorner_InnerLarge</defName>
+        <label>Wood corner eave (inner large)</label>
+        <description>Corner eave to fill the gap.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/WoodEave_Corner_Inner/woodyEave-innercorner</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/WoodEave_Corner_Inner/woodyEave-innercorner_south</uiIconPath>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Mass>1.5</Mass>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+    </ThingDef>
+    
+    
+    
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveStony</defName>
+        <label>Stone eave</label>
+        <description>A standard eave. Made out of blocks.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/StoneEave/Eave</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/StoneEave_Icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Bricks</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveStonyCorner</defName>
+        <label>Stone corner eave (outer)</label>
+        <description>Corner eave to fill the gap.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/StoneEave_Corner/Eavecornerout</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/Eavecornerout_Icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Mass>1.5</Mass>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Bricks</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveStonyCorner_InnerSmall</defName>
+        <label>Stone corner eave (inner small)</label>
+        <description>Corner eave to fill the gap.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/StoneEave_Corner_Inner/stonyEave-innercornersmall</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+		<uiIconPath>Things/Building/StoneEave_Corner_Inner/stonyEave-innercornersmall_south</uiIconPath>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Mass>1.5</Mass>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Bricks</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveStonyCorner_InnerLarge</defName>
+        <label>Stone corner eave (inner large)</label>
+        <description>Corner eave to fill the gap.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/StoneEave_Corner_Inner/stonyEave-innercorner</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+		<uiIconPath>Things/Building/StoneEave_Corner_Inner/stonyEave-innercorner_south</uiIconPath>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <Beauty>1</Beauty>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Mass>1.5</Mass>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Bricks</li>
+        </stuffCategories>
+    </ThingDef>
+    
+    
+    
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_Eave</defName>
+        <label>metal eave</label>
+        <description>A standard eave. Made out of metals.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/MetalEave/Eave</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/MetalEave_Icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>0.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_EaveMetalCorner</defName>
+        <label>metal corner eave (outer)</label>
+        <description>Corner eave to fill the gap.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/MetalEave_Corner/Eavecornerout</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/Eavecornerout_Icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>0.0</Flammability>
+            <Beauty>1</Beauty>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+            <Mass>1.5</Mass>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    </ThingDef>
+	<ThingDef ParentName="BaseRoofBuilding">
+		<defName>AR_EaveMetalCorner_InnerSmall</defName>
+		<label>metal corner eave (inner small)</label>
+		<description>Corner eave to fill the gap.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/MetalEave_Corner_Inner/Eave-corner-inner</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/MetalEave_Corner_Inner/Eave-corner-inner_south</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>1</Beauty>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+			<Mass>1.5</Mass>
+		</statBases>
+		<costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+	</ThingDef>
+	<ThingDef ParentName="BaseRoofBuilding">
+		<defName>AR_EaveMetalCorner_InnerLarge</defName>
+		<label>metal corner eave (inner large)</label>
+		<description>Corner eave to fill the gap.</description>
+		<graphicData>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>Things/Building/MetalEave_Corner_Inner/Eave-corner-innersmall</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<uiIconPath>Things/Building/MetalEave_Corner_Inner/Eave-corner-innersmall_south</uiIconPath>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>135</WorkToBuild>
+			<Flammability>0.0</Flammability>
+			<Beauty>1</Beauty>
+			<MeditationFocusStrength>0.22</MeditationFocusStrength>
+			<Mass>1.5</Mass>
+		</statBases>
+		<costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+	</ThingDef>
+    <!--============================================================-->
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_Rafter</defName>
+        <label>Metal rafter</label>
+        <description>Use this rafters and try to decorate your metal buildings again.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Rafter</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/Rafter_icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_RafterStony</defName>
+        <label>Stone rafter</label>
+        <description>Use this rafters and try to decorate your stone buildings again.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Rafter</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/Rafter_icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Bricks</li>
+        </stuffCategories>
+    </ThingDef>
+    <ThingDef ParentName="BaseRoofBuilding">
+        <defName>AR_RafterWoody</defName>
+        <label>Wood rafter</label>
+        <description>Use this rafters and try to decorate your wooden buildings again.</description>
+        <graphicData>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/Rafter</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/Building/Rafter_icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+    </ThingDef>
+</Defs>
